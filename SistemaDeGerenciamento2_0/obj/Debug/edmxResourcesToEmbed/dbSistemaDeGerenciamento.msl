@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="dbSistemaDeGerenciamento2_0ModelStoreContainer" CdmEntityContainer="dbSistemaDeGerenciamento2_0Entities">
+    <EntitySetMapping Name="tb_cadastro_despesa">
+      <EntityTypeMapping TypeName="dbSistemaDeGerenciamento2_0Model.tb_cadastro_despesa">
+        <MappingFragment StoreEntitySet="tb_cadastro_despesa">
+          <ScalarProperty Name="id_categoria_despesa" ColumnName="id_categoria_despesa" />
+          <ScalarProperty Name="cd_categoria_agrupadora" ColumnName="cd_categoria_agrupadora" />
+          <ScalarProperty Name="cd_categoria" ColumnName="cd_categoria" />
+          <ScalarProperty Name="cd_tipo_custo" ColumnName="cd_tipo_custo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_configuração_financeira">
+      <EntityTypeMapping TypeName="dbSistemaDeGerenciamento2_0Model.tb_configuração_financeira">
+        <MappingFragment StoreEntitySet="tb_configuração_financeira">
+          <ScalarProperty Name="id_configuracao_financeira" ColumnName="id_configuracao_financeira" />
+          <ScalarProperty Name="cf_juros_dia" ColumnName="cf_juros_dia" />
+          <ScalarProperty Name="cf_multa_porcentagem" ColumnName="cf_multa_porcentagem" />
+          <ScalarProperty Name="cf_multa_fixa" ColumnName="cf_multa_fixa" />
+          <ScalarProperty Name="cf_carencia" ColumnName="cf_carencia" />
+          <ScalarProperty Name="cf_desconto" ColumnName="cf_desconto" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_despesa">
+      <EntityTypeMapping TypeName="dbSistemaDeGerenciamento2_0Model.tb_despesa">
+        <MappingFragment StoreEntitySet="tb_despesa">
+          <ScalarProperty Name="dp_vencimento" ColumnName="dp_vencimento" />
+          <ScalarProperty Name="id_despesa" ColumnName="id_despesa" />
+          <ScalarProperty Name="dp_data" ColumnName="dp_data" />
+          <ScalarProperty Name="dp_observacao" ColumnName="dp_observacao" />
+          <ScalarProperty Name="dp_sub_valor_total" ColumnName="dp_sub_valor_total" />
+          <ScalarProperty Name="dp_desconto" ColumnName="dp_desconto" />
+          <ScalarProperty Name="dp_valor_lancamento" ColumnName="dp_valor_lancamento" />
+          <ScalarProperty Name="dp_forma_pagamento" ColumnName="dp_forma_pagamento" />
+          <ScalarProperty Name="dp_pagamento_em" ColumnName="dp_pagamento_em" />
+          <ScalarProperty Name="fk_registro" ColumnName="fk_registro" />
+          <ScalarProperty Name="fk_grupo" ColumnName="fk_grupo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_endereços">
+      <EntityTypeMapping TypeName="dbSistemaDeGerenciamento2_0Model.tb_endereços">
+        <MappingFragment StoreEntitySet="tb_endereços">
+          <ScalarProperty Name="id_endereco" ColumnName="id_endereco" />
+          <ScalarProperty Name="ed_tipo" ColumnName="ed_tipo" />
+          <ScalarProperty Name="ed_cep" ColumnName="ed_cep" />
+          <ScalarProperty Name="ed_locgradouro" ColumnName="ed_locgradouro" />
+          <ScalarProperty Name="ed_numero" ColumnName="ed_numero" />
+          <ScalarProperty Name="ed_complemento" ColumnName="ed_complemento" />
+          <ScalarProperty Name="ed_bairro" ColumnName="ed_bairro" />
+          <ScalarProperty Name="ed_cidade" ColumnName="ed_cidade" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_estoque">
+      <EntityTypeMapping TypeName="dbSistemaDeGerenciamento2_0Model.tb_estoque">
+        <MappingFragment StoreEntitySet="tb_estoque">
+          <ScalarProperty Name="id_estoque" ColumnName="id_estoque" />
+          <ScalarProperty Name="eq_quantidade" ColumnName="eq_quantidade" />
+          <ScalarProperty Name="ep_data_exclusao" ColumnName="ep_data_exclusao" />
+          <ScalarProperty Name="ep_codigo_barras" ColumnName="ep_codigo_barras" />
+          <ScalarProperty Name="ep_status_situacao" ColumnName="ep_status_situacao" />
+          <ScalarProperty Name="fk_produto" ColumnName="fk_produto" />
+          <ScalarProperty Name="fk_nota_fiscal_entrada" ColumnName="fk_nota_fiscal_entrada" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_grupo">
+      <EntityTypeMapping TypeName="dbSistemaDeGerenciamento2_0Model.tb_grupo">
+        <MappingFragment StoreEntitySet="tb_grupo">
+          <ScalarProperty Name="gp_nome_agrupador" ColumnName="gp_nome_agrupador" />
+          <ScalarProperty Name="id_grupo" ColumnName="id_grupo" />
+          <ScalarProperty Name="gp_nome_grupo" ColumnName="gp_nome_grupo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_informações_comeciais">
+      <EntityTypeMapping TypeName="dbSistemaDeGerenciamento2_0Model.tb_informações_comeciais">
+        <MappingFragment StoreEntitySet="tb_informações_comeciais">
+          <ScalarProperty Name="id_informacao_comercial" ColumnName="id_informacao_comercial" />
+          <ScalarProperty Name="ic_situacao" ColumnName="ic_situacao" />
+          <ScalarProperty Name="ic_prioridade" ColumnName="ic_prioridade" />
+          <ScalarProperty Name="ic_vendedor" ColumnName="ic_vendedor" />
+          <ScalarProperty Name="ic_limite_credito" ColumnName="ic_limite_credito" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_nota_fiscal_entrada">
+      <EntityTypeMapping TypeName="dbSistemaDeGerenciamento2_0Model.tb_nota_fiscal_entrada">
+        <MappingFragment StoreEntitySet="tb_nota_fiscal_entrada">
+          <ScalarProperty Name="id_nota_fiscal_entrada" ColumnName="id_nota_fiscal_entrada" />
+          <ScalarProperty Name="nfe_numero_nf_entrada" ColumnName="nfe_numero_nf_entrada" />
+          <ScalarProperty Name="nfe_quantidade" ColumnName="nfe_quantidade" />
+          <ScalarProperty Name="nfe_codigo_produto" ColumnName="nfe_codigo_produto" />
+          <ScalarProperty Name="nfe_indice" ColumnName="nfe_indice" />
+          <ScalarProperty Name="nfe_cnpj" ColumnName="nfe_cnpj" />
+          <ScalarProperty Name="nfe_razao_social" ColumnName="nfe_razao_social" />
+          <ScalarProperty Name="nfe_descricao_social" ColumnName="nfe_descricao_social" />
+          <ScalarProperty Name="nfe_unidade" ColumnName="nfe_unidade" />
+          <ScalarProperty Name="nfe_valor_unitario" ColumnName="nfe_valor_unitario" />
+          <ScalarProperty Name="nfe_valor_total" ColumnName="nfe_valor_total" />
+          <ScalarProperty Name="nfe_data_emissao" ColumnName="nfe_data_emissao" />
+          <ScalarProperty Name="nfe_data_lancamento" ColumnName="nfe_data_lancamento" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_nota_fiscal_saida">
+      <EntityTypeMapping TypeName="dbSistemaDeGerenciamento2_0Model.tb_nota_fiscal_saida">
+        <MappingFragment StoreEntitySet="tb_nota_fiscal_saida">
+          <ScalarProperty Name="id_nota_fiscal_saida" ColumnName="id_nota_fiscal_saida" />
+          <ScalarProperty Name="nfs_numero_nf_saida" ColumnName="nfs_numero_nf_saida" />
+          <ScalarProperty Name="nfs_data_emissao" ColumnName="nfs_data_emissao" />
+          <ScalarProperty Name="nfs_quantidade" ColumnName="nfs_quantidade" />
+          <ScalarProperty Name="nfs_valor_total_parcial" ColumnName="nfs_valor_total_parcial" />
+          <ScalarProperty Name="nfs_valor_pago" ColumnName="nfs_valor_pago" />
+          <ScalarProperty Name="nfs_valor_juros" ColumnName="nfs_valor_juros" />
+          <ScalarProperty Name="nfs_valor_desconto" ColumnName="nfs_valor_desconto" />
+          <ScalarProperty Name="fk_estoque" ColumnName="fk_estoque" />
+          <ScalarProperty Name="fk_nome_vendedor" ColumnName="fk_nome_vendedor" />
+          <ScalarProperty Name="fk_nome_cliente" ColumnName="fk_nome_cliente" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_permissoes">
+      <EntityTypeMapping TypeName="dbSistemaDeGerenciamento2_0Model.tb_permissoes">
+        <MappingFragment StoreEntitySet="tb_permissoes">
+          <ScalarProperty Name="id_acesso_pdv" ColumnName="id_acesso_pdv" />
+          <ScalarProperty Name="pm_vendas_do_dias" ColumnName="pm_vendas_do_dias" />
+          <ScalarProperty Name="pm_receber_conta" ColumnName="pm_receber_conta" />
+          <ScalarProperty Name="pm_todas_vendas" ColumnName="pm_todas_vendas" />
+          <ScalarProperty Name="pm_editar_venda" ColumnName="pm_editar_venda" />
+          <ScalarProperty Name="pm_remover_venda" ColumnName="pm_remover_venda" />
+          <ScalarProperty Name="pm_cancelar_venda" ColumnName="pm_cancelar_venda" />
+          <ScalarProperty Name="pm_realizar_devolucao" ColumnName="pm_realizar_devolucao" />
+          <ScalarProperty Name="pm_alerta_contas_atrasadas" ColumnName="pm_alerta_contas_atrasadas" />
+          <ScalarProperty Name="pm_visualizar_lancamentos" ColumnName="pm_visualizar_lancamentos" />
+          <ScalarProperty Name="pm_visualizar_contas_pagar" ColumnName="pm_visualizar_contas_pagar" />
+          <ScalarProperty Name="pm_visualizar_contas_receber" ColumnName="pm_visualizar_contas_receber" />
+          <ScalarProperty Name="pm_receber_contas" ColumnName="pm_receber_contas" />
+          <ScalarProperty Name="pm_pagar_contas" ColumnName="pm_pagar_contas" />
+          <ScalarProperty Name="pm_visualizar_fluxo_caixa" ColumnName="pm_visualizar_fluxo_caixa" />
+          <ScalarProperty Name="pm_visualizar_lancamento_faturamento" ColumnName="pm_visualizar_lancamento_faturamento" />
+          <ScalarProperty Name="pm_ajustar_configuracao_geral" ColumnName="pm_ajustar_configuracao_geral" />
+          <ScalarProperty Name="pm_editar_categoria" ColumnName="pm_editar_categoria" />
+          <ScalarProperty Name="pm_criar_editar_usuario" ColumnName="pm_criar_editar_usuario" />
+          <ScalarProperty Name="pm_visualizar_visao_geral" ColumnName="pm_visualizar_visao_geral" />
+          <ScalarProperty Name="pm_visualizar_dre" ColumnName="pm_visualizar_dre" />
+          <ScalarProperty Name="pm_criar_visualizar_relatorios" ColumnName="pm_criar_visualizar_relatorios" />
+          <ScalarProperty Name="pm_adicionar_produto" ColumnName="pm_adicionar_produto" />
+          <ScalarProperty Name="pm_editar_produto" ColumnName="pm_editar_produto" />
+          <ScalarProperty Name="pm_remover_produto" ColumnName="pm_remover_produto" />
+          <ScalarProperty Name="pm_filtrar_produto" ColumnName="pm_filtrar_produto" />
+          <ScalarProperty Name="pm_alerta_estoque_baixo" ColumnName="pm_alerta_estoque_baixo" />
+          <ScalarProperty Name="pm_tabela_produtos_removidos" ColumnName="pm_tabela_produtos_removidos" />
+          <ScalarProperty Name="pm_efetuar_cadastro" ColumnName="pm_efetuar_cadastro" />
+          <ScalarProperty Name="pm_editar_cadastro" ColumnName="pm_editar_cadastro" />
+          <ScalarProperty Name="pm_remover_cadastro" ColumnName="pm_remover_cadastro" />
+          <ScalarProperty Name="pm_visualizar_cadastro_completo" ColumnName="pm_visualizar_cadastro_completo" />
+          <ScalarProperty Name="pm_editar_cretido_cadastro" ColumnName="pm_editar_cretido_cadastro" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_produto">
+      <EntityTypeMapping TypeName="dbSistemaDeGerenciamento2_0Model.tb_produto">
+        <MappingFragment StoreEntitySet="tb_produto">
+          <ScalarProperty Name="pd_tipo_unidade" ColumnName="pd_tipo_unidade" />
+          <ScalarProperty Name="pd_tipo_produto" ColumnName="pd_tipo_produto" />
+          <ScalarProperty Name="pd_codigo_barras1" ColumnName="pd_codigo_barras" />
+          <ScalarProperty Name="id_produto" ColumnName="id_produto" />
+          <ScalarProperty Name="pd_codigo" ColumnName="pd_codigo" />
+          <ScalarProperty Name="pd_finalidade" ColumnName="pd_finalidade" />
+          <ScalarProperty Name="pd_nome" ColumnName="pd_nome" />
+          <ScalarProperty Name="pd_estoque_minimo" ColumnName="pd_estoque_minimo" />
+          <ScalarProperty Name="pd_custo" ColumnName="pd_custo" />
+          <ScalarProperty Name="pd_margem" ColumnName="pd_margem" />
+          <ScalarProperty Name="pd_preco" ColumnName="pd_preco" />
+          <ScalarProperty Name="pd_observacoes" ColumnName="pd_observacoes" />
+          <ScalarProperty Name="fk_grupo" ColumnName="fk_grupo" />
+          <ScalarProperty Name="fk_registro" ColumnName="fk_registro" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_registro">
+      <EntityTypeMapping TypeName="dbSistemaDeGerenciamento2_0Model.tb_registro">
+        <MappingFragment StoreEntitySet="tb_registro">
+          <ScalarProperty Name="id_registro" ColumnName="id_registro" />
+          <ScalarProperty Name="rg_tipo_cadastro" ColumnName="rg_tipo_cadastro" />
+          <ScalarProperty Name="rg_categoria" ColumnName="rg_categoria" />
+          <ScalarProperty Name="rg_cpf" ColumnName="rg_cpf" />
+          <ScalarProperty Name="rg_nome" ColumnName="rg_nome" />
+          <ScalarProperty Name="rg_sexo" ColumnName="rg_sexo" />
+          <ScalarProperty Name="rg_rg" ColumnName="rg_rg" />
+          <ScalarProperty Name="rg_data_nascimento" ColumnName="rg_data_nascimento" />
+          <ScalarProperty Name="rg_data_cadastro" ColumnName="rg_data_cadastro" />
+          <ScalarProperty Name="rg_observacoes" ColumnName="rg_observacoes" />
+          <ScalarProperty Name="rg_login" ColumnName="rg_login" />
+          <ScalarProperty Name="rg_senha" ColumnName="rg_senha" />
+          <ScalarProperty Name="rg_cnpj" ColumnName="rg_cnpj" />
+          <ScalarProperty Name="rg_nome_fantasia" ColumnName="rg_nome_fantasia" />
+          <ScalarProperty Name="rg_razao_social" ColumnName="rg_razao_social" />
+          <ScalarProperty Name="rg_email_xml" ColumnName="rg_email_xml" />
+          <ScalarProperty Name="rg_inscricao_estadual" ColumnName="rg_inscricao_estadual" />
+          <ScalarProperty Name="rg_inscricao_municipal" ColumnName="rg_inscricao_municipal" />
+          <ScalarProperty Name="rg_email" ColumnName="rg_email" />
+          <ScalarProperty Name="rg_telefone1" ColumnName="rg_telefone1" />
+          <ScalarProperty Name="rg_telefone2" ColumnName="rg_telefone2" />
+          <ScalarProperty Name="fk_permissoes" ColumnName="fk_permissoes" />
+          <ScalarProperty Name="fk_informacao_comercial" ColumnName="fk_informacao_comercial" />
+          <ScalarProperty Name="fk_endereco" ColumnName="fk_endereco" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_repeticao_despesa">
+      <EntityTypeMapping TypeName="dbSistemaDeGerenciamento2_0Model.tb_repeticao_despesa">
+        <MappingFragment StoreEntitySet="tb_repeticao_despesa">
+          <ScalarProperty Name="id_repeticao_despesas" ColumnName="id_repeticao_despesas" />
+          <ScalarProperty Name="rp_data_inicial" ColumnName="rp_data_inicial" />
+          <ScalarProperty Name="rp_data_final" ColumnName="rp_data_final" />
+          <ScalarProperty Name="rp_observacao" ColumnName="rp_observacao" />
+          <ScalarProperty Name="fk_registro" ColumnName="fk_registro" />
+          <ScalarProperty Name="fk_cadastro_despesa" ColumnName="fk_cadastro_despesa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

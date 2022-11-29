@@ -1,0 +1,341 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E385FE39-F498-47B8-8A16-96F35FD43703}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SistemaDeGerenciamento2_0</RootNamespace>
+    <AssemblyName>SistemaDeGerenciamento2_0</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v21.2" />
+    <Reference Include="DevExpress.Data.Desktop.v21.2" />
+    <Reference Include="DevExpress.Data.v21.2" />
+    <Reference Include="DevExpress.Images.v21.2, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v21.2.Core, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Pdf.v21.2.Core, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.PivotGrid.v21.2.Core, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v21.2.Core" />
+    <Reference Include="DevExpress.RichEdit.v21.2.Core, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v21.2" />
+    <Reference Include="DevExpress.Xpo.v21.2, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v21.2" />
+    <Reference Include="DevExpress.Sparkline.v21.2.Core" />
+    <Reference Include="DevExpress.XtraEditors.v21.2" />
+    <Reference Include="DevExpress.XtraGrid.v21.2, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v21.2, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPivotGrid.v21.2, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v21.2, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraRichEdit.v21.2, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v21.2, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class\MensagemErros.cs" />
+    <Compile Include="Class\MensagemAtencao.cs" />
+    <Compile Include="dbSistemaDeGerenciamento2_0.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbSistemaDeGerenciamento2_0.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="dbSistemaDeGerenciamento2_0.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbSistemaDeGerenciamento2_0.tt</DependentUpon>
+    </Compile>
+    <Compile Include="dbSistemaDeGerenciamento2_0.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbSistemaDeGerenciamento2_0.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmAcessoRapido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmAcessoRapido.Designer.cs">
+      <DependentUpon>frmAcessoRapido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmAdicionarGrupo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmAdicionarGrupo.Designer.cs">
+      <DependentUpon>frmAdicionarGrupo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmAdicionarAgrupador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmAdicionarAgrupador.Designer.cs">
+      <DependentUpon>frmAdicionarAgrupador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmEntradaNF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmEntradaNF.Designer.cs">
+      <DependentUpon>frmEntradaNF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmFinanceiro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmFinanceiro.Designer.cs">
+      <DependentUpon>frmFinanceiro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmProdutos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmProdutos.Designer.cs">
+      <DependentUpon>frmProdutos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmTelaPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmTelaPrincipal.Designer.cs">
+      <DependentUpon>frmTelaPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmCadastroProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmCadastroProduto.Designer.cs">
+      <DependentUpon>frmCadastroProduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmCadastroGrupoSubGrupo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmCadastroGrupoSubGrupo.Designer.cs">
+      <DependentUpon>frmCadastroGrupoSubGrupo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\ManipulacaoTextBox.cs" />
+    <Compile Include="Class\LogErros.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="tb_cadastro_despesa.cs">
+      <DependentUpon>dbSistemaDeGerenciamento2_0.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_configuração_financeira.cs">
+      <DependentUpon>dbSistemaDeGerenciamento2_0.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_despesa.cs">
+      <DependentUpon>dbSistemaDeGerenciamento2_0.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_endereços.cs">
+      <DependentUpon>dbSistemaDeGerenciamento2_0.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_estoque.cs">
+      <DependentUpon>dbSistemaDeGerenciamento2_0.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_grupo.cs">
+      <DependentUpon>dbSistemaDeGerenciamento2_0.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_informações_comeciais.cs">
+      <DependentUpon>dbSistemaDeGerenciamento2_0.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_nota_fiscal_entrada.cs">
+      <DependentUpon>dbSistemaDeGerenciamento2_0.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_nota_fiscal_saida.cs">
+      <DependentUpon>dbSistemaDeGerenciamento2_0.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_permissoes.cs">
+      <DependentUpon>dbSistemaDeGerenciamento2_0.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_produto.cs">
+      <DependentUpon>dbSistemaDeGerenciamento2_0.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_registro.cs">
+      <DependentUpon>dbSistemaDeGerenciamento2_0.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_repeticao_despesa.cs">
+      <DependentUpon>dbSistemaDeGerenciamento2_0.tt</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Forms\frmAcessoRapido.resx">
+      <DependentUpon>frmAcessoRapido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmAdicionarGrupo.resx">
+      <DependentUpon>frmAdicionarGrupo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmAdicionarAgrupador.resx">
+      <DependentUpon>frmAdicionarAgrupador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmEntradaNF.resx">
+      <DependentUpon>frmEntradaNF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmFinanceiro.resx">
+      <DependentUpon>frmFinanceiro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmProdutos.resx">
+      <DependentUpon>frmProdutos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmTelaPrincipal.resx">
+      <DependentUpon>frmTelaPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmCadastroProduto.resx">
+      <DependentUpon>frmCadastroProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmCadastroGrupoSubGrupo.resx">
+      <DependentUpon>frmCadastroGrupoSubGrupo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <EntityDeploy Include="dbSistemaDeGerenciamento2_0.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>dbSistemaDeGerenciamento2_0.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="dbSistemaDeGerenciamento2_0.edmx.diagram">
+      <DependentUpon>dbSistemaDeGerenciamento2_0.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancelar.png" />
+    <None Include="Resources\salvar.png" />
+    <None Include="Resources\ferramenta-preta20.png" />
+    <None Include="Resources\ferramenta-preta.png" />
+    <None Include="Resources\ferramenta.png" />
+    <None Include="Resources\produtos-verde.png" />
+    <None Include="Resources\cadastro-preto.png" />
+    <None Include="Resources\configuracao-preta-grande.png" />
+    <None Include="Resources\carrinho-preto-grande.png" />
+    <None Include="Resources\cadastros-preto-grande.png" />
+    <None Include="Resources\produto-preto1.png" />
+    <None Include="Resources\produto-preto.png" />
+    <None Include="Resources\separador.png" />
+    <None Include="Resources\registrar-preto.png" />
+    <None Include="Resources\configuracao-preta.png" />
+    <None Include="Resources\dinheiro-preto.png" />
+    <None Include="Resources\entrada-preta.png" />
+    <None Include="Resources\saida-preto.png" />
+    <None Include="Resources\caminhao-preto.png" />
+    <None Include="Resources\carrinho-preto.png" />
+    <None Include="Resources\cadastros-preto.png" />
+    <None Include="Resources\produtos-preto.png" />
+    <None Include="Resources\adcao9.png" />
+    <None Include="Resources\configuracao.png" />
+    <None Include="Resources\relatorio.png" />
+    <None Include="Resources\produtos.png" />
+    <None Include="Resources\cadastros.png" />
+    <None Include="Resources\dinheiro.png" />
+    <None Include="Resources\computador.png" />
+    <None Include="Resources\olhos.png" />
+    <None Include="Resources\foguete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\informacao20.png" />
+    <None Include="Resources\informacao.png" />
+    <None Include="Resources\configuracao-preta1.png" />
+    <None Include="Resources\relatorio-preto.png" />
+    <None Include="Resources\cadastros-preto-1.png" />
+    <None Include="Resources\produto-preto2.png" />
+    <None Include="Resources\produto-preto11.png" />
+    <None Include="Resources\dinheiro-preto3.png" />
+    <None Include="Resources\dinheiro-preto2.png" />
+    <None Include="Resources\dinheiro-preto1.png" />
+    <None Include="Resources\computer-preto.png" />
+    <None Include="Resources\olhos-preto.png" />
+    <None Include="Resources\foguete-preto2.png" />
+    <None Include="Resources\foguete-preto11.png" />
+    <None Include="Resources\foguete-preto1.png" />
+    <None Include="Resources\foguete-preto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="dbSistemaDeGerenciamento2_0.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>dbSistemaDeGerenciamento2_0.edmx</DependentUpon>
+      <LastGenOutput>dbSistemaDeGerenciamento2_0.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="dbSistemaDeGerenciamento2_0.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>dbSistemaDeGerenciamento2_0.edmx</DependentUpon>
+      <LastGenOutput>dbSistemaDeGerenciamento2_0.cs</LastGenOutput>
+    </Content>
+    <None Include="Resources\pasta_aberta.png" />
+    <None Include="Resources\tabela.png" />
+    <None Include="Resources\limpar_preto.png" />
+    <None Include="Resources\lupa_preta.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este projeto faz referência a pacotes do NuGet que não estão presentes neste computador. Use a Restauração de Pacotes do NuGet para baixá-los.  Para obter mais informações, consulte http://go.microsoft.com/fwlink/?LinkID=322105. O arquivo ausente é {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
