@@ -21,13 +21,23 @@ namespace SistemaDeGerenciamento2_0.Class
             MessageBox.Show($"(CAD-GR01) Erro ao Cadastrar Grupo \n\nErro: {_e}", "Erro Cadastro Grupo!", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
+        public static void ErroAoCadastroAgrupador(Exception _e)
+        {
+            MessageBox.Show($"(CAD-AG01) Erro ao Cadastrar Agrupador \n\nErro: {_e}", "Erro Cadastro Agrupador!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
         #endregion Cadastrar
 
         #region Buscar
 
         public static void ErroAoBuscarGrupo(Exception _e)
         {
-            MessageBox.Show($"(BUS-GR01) Erro ao Cadastrar Grupo \n\nErro: {_e}", "Erro Cadastro Grupo!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            MessageBox.Show($"(BUS-GR01) Erro ao Buscar Grupo \n\nErro: {_e}", "Erro Buscar Grupo!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        public static void ErroAoBuscarAgrupador(Exception _e)
+        {
+            MessageBox.Show($"(BUS-AG01) Erro ao Buscar Agrupador \n\nErro: {_e}", "Erro Buscar Agrupador!", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
         #endregion Buscar

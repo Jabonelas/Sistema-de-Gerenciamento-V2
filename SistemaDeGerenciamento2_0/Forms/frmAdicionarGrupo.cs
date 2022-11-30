@@ -3,6 +3,7 @@ using DevExpress.XtraEditors;
 using DevExpress.XtraEditors.Filtering.Templates;
 using DevExpress.XtraLayout.Filtering.Templates;
 using SistemaDeGerenciamento2_0.Class;
+using SistemaDeGerenciamento2_0.Properties;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -24,7 +25,7 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             InitializeComponent();
 
-            PreencherComboBoxSubGrupos();
+            PreencherComboBoxAgrupador();
         }
 
         private void frmAdicionarGrupo_MouseMove(object sender, MouseEventArgs e)
@@ -41,17 +42,24 @@ namespace SistemaDeGerenciamento2_0.Forms
             Y = this.Top - MousePosition.Y;
         }
 
-        private void PreencherComboBoxSubGrupos()
+        private void PreencherComboBoxAgrupador()
         {
-            using (SistemaDeGerenciamento2_0Entities3 db = new SistemaDeGerenciamento2_0Entities3())
+            try
             {
-                //SistemaDeGerenciamento2_0Entities3 db = new SistemaDeGerenciamento2_0Entities3();
+                using (SistemaDeGerenciamento2_0Entities3 db = new SistemaDeGerenciamento2_0Entities3())
+                {
+                    List<string> listaSubGrupo = new List<string>();
 
-                List<string> listaSubGrupo = new List<string>();
+                    listaSubGrupo = db.tb_grupo.Select(x => x.gp_nome_agrupador).Distinct().ToList();
 
-                listaSubGrupo = db.tb_grupo.Select(x => x.gp_nome_agrupador).Distinct().ToList();
+                    listaSubGrupo.ForEach(x => cmbAgrupador.Properties.Items.Add(x));
+                }
+            }
+            catch (Exception x)
+            {
+                LogErros.EscreverArquivoDeLog($"{DateTime.Now} - Erro ao Buscar Agrupador - | {x.Message} | {x.StackTrace}");
 
-                listaSubGrupo.ForEach(x => cmbAgrupador.Properties.Items.Add(x));
+                MensagemErros.ErroAoCadastroAgrupador(x);
             }
         }
 
@@ -107,6 +115,8 @@ namespace SistemaDeGerenciamento2_0.Forms
                 {
                     db.tb_grupo.Add(grupoProduto);
                     db.SaveChanges();
+
+                    ChamandoAlertaEstoqueBaixo();
                 }
             }
             catch (Exception x)
@@ -115,6 +125,12 @@ namespace SistemaDeGerenciamento2_0.Forms
 
                 MensagemErros.ErroAoCadastroGrupo(x);
             }
+        }
+
+        private void ChamandoAlertaEstoqueBaixo()
+        {
+            DadosMensagemAlerta msg = new DadosMensagemAlerta("\n Sucesso!", Resources.salvar_verde50);
+            AlertaSalvar.Show(this, $" {msg.titulo} ", msg.texto, string.Empty, msg.image, msg);
         }
     }
 }

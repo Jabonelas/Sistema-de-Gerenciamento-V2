@@ -25,9 +25,16 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             InitializeComponent();
 
-            var tarefa = Task.Run(() =>
+            var tarefa = Task.Run(async () =>
             {
-                PreencherComboBoxGrupo();
+                await PreencherComboBoxGrupo();
+            });
+
+            var esperador = tarefa.GetAwaiter();
+
+            esperador.OnCompleted(() =>
+            {
+                PreenchimentoComboBoxGrupo();
             });
         }
 
@@ -48,16 +55,21 @@ namespace SistemaDeGerenciamento2_0.Forms
                        .Select(x => new GrupoStruct { idGrupo = x.id_grupo, nomeGrupo = x.gp_nome_grupo, nomeAgrupador = x.gp_nome_agrupador })
                        .Distinct()
                        .ToList();
-
-                    cmbGrupo.Properties.DataSource = Grupo;
-                    cmbGrupo.Properties.DisplayMember = "nomeGrupo";
-                    cmbGrupo.Properties.ValueMember = "idGrupo";
                 }
             }
-            catch (Exception)
+            catch (Exception x)
             {
-                throw;
+                LogErros.EscreverArquivoDeLog($"{DateTime.Now} - Erro ao Buscar Grupo - | {x.Message} | {x.StackTrace}");
+
+                MensagemErros.ErroAoBuscarGrupo(x);
             }
+        }
+
+        private void PreenchimentoComboBoxGrupo()
+        {
+            cmbGrupo.Properties.DataSource = Grupo;
+            cmbGrupo.Properties.DisplayMember = "nomeGrupo";
+            cmbGrupo.Properties.ValueMember = "idGrupo";
         }
 
         private void frmCadastroProduto_MouseMove(object sender, MouseEventArgs e)
@@ -107,7 +119,7 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private void btnAcessarGrupoSubGrupo_Click(object sender, EventArgs e)
         {
-            frmCadastroGrupoSubGrupo frmCadastroGrupoSubGrupo = new frmCadastroGrupoSubGrupo();
+            frmCadastroGrupoAgrupador frmCadastroGrupoSubGrupo = new frmCadastroGrupoAgrupador();
             frmCadastroGrupoSubGrupo.ShowDialog();
         }
 
@@ -158,8 +170,8 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private void Salvar()
         {
-            if (txtNome.Text != string.Empty || cmbGrupo.Text != string.Empty || cmbFinalidade.Text != string.Empty ||
-                cmbTipoProduto.Text != string.Empty || txtTipoUnidade.Text != "Ex.: Peça, Un, Kg")
+            if (txtNome.Text != string.Empty && cmbGrupo.Text != string.Empty && cmbFinalidade.Text != string.Empty &&
+                cmbTipoProduto.Text != string.Empty && txtTipoUnidade.Text != "Ex.: Peça, Un, Kg")
             {
                 ConexaoSalvar();
             }
@@ -255,6 +267,10 @@ namespace SistemaDeGerenciamento2_0.Forms
             margemLucro = ((valorPreco * 100) / valorCusto) / 100;
 
             txtMargemLucro.Text = (margemLucro - 1).ToString("P");
+        }
+
+        private void frmCadastroProduto_Shown(object sender, EventArgs e)
+        {
         }
     }
 }

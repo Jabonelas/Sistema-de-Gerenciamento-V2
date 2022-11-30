@@ -1,6 +1,6 @@
 ﻿namespace SistemaDeGerenciamento2_0.Forms
 {
-    partial class frmCadastroGrupoSubGrupo
+    partial class frmCadastroGrupoAgrupador
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCadastroGrupoSubGrupo));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCadastroGrupoAgrupador));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Grupo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SubGrupo = new System.Windows.Forms.DataGridViewTextBoxColumn();

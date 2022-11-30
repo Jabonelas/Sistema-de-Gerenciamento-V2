@@ -1,4 +1,6 @@
 ﻿using DevExpress.XtraEditors;
+using SistemaDeGerenciamento2_0.Class;
+using SistemaDeGerenciamento2_0.Properties;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -19,6 +21,12 @@ namespace SistemaDeGerenciamento2_0.Forms
         public frmAdicionarAgrupador()
         {
             InitializeComponent();
+        }
+
+        private void ChamandoAlertaEstoqueBaixo()
+        {
+            DadosMensagemAlerta msg = new DadosMensagemAlerta("\n Sucesso!", Resources.salvar_verde50);
+            AlertaSalvar.Show(this, $" {msg.titulo} ", msg.texto, string.Empty, msg.image, msg);
         }
 
         private void btnFechar_Click(object sender, EventArgs e)
@@ -65,23 +73,44 @@ namespace SistemaDeGerenciamento2_0.Forms
             if (txtAgrupador.Text != string.Empty)
             {
                 Salvar();
+
+                txtAgrupador.Text = "";
+            }
+            else
+            {
+                MensagemAtencao.MensagemPreencherCampos(this);
             }
         }
 
         private void Salvar()
         {
-            using (SistemaDeGerenciamento2_0Entities3 db = new SistemaDeGerenciamento2_0Entities3())
+            try
             {
-                var subGrupo = new tb_grupo() { gp_nome_agrupador = txtAgrupador.Text };
-                //SistemaDeGerenciamento2_0Entities3 db = new SistemaDeGerenciamento2_0Entities3();
-                db.tb_grupo.Add(subGrupo);
-                db.SaveChanges();
+                using (SistemaDeGerenciamento2_0Entities3 db = new SistemaDeGerenciamento2_0Entities3())
+                {
+                    var subGrupo = new tb_grupo() { gp_nome_agrupador = txtAgrupador.Text };
+                    db.tb_grupo.Add(subGrupo);
+                    db.SaveChanges();
+
+                    ChamandoAlertaEstoqueBaixo();
+                }
+            }
+            catch (Exception x)
+            {
+                LogErros.EscreverArquivoDeLog($"{DateTime.Now} - Erro ao Cadastrar Agrupador - | {x.Message} | {x.StackTrace}");
+
+                MensagemErros.ErroAoCadastroAgrupador(x);
             }
         }
 
         private void txtAgrupador_KeyPress(object sender, KeyPressEventArgs e)
         {
             ManipulacaoTextBox.TeclaDigitadaFoiLetras(e, txtAgrupador);
+        }
+
+        private void AlertaSalvar_BeforeFormShow(object sender, DevExpress.XtraBars.Alerter.AlertFormEventArgs e)
+        {
+            e.AlertForm.OpacityLevel = 1;
         }
     }
 }

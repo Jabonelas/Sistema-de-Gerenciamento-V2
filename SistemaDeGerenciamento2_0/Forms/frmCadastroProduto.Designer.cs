@@ -495,6 +495,7 @@
             this.Name = "frmCadastroProduto";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "telacadastro";
+            this.Shown += new System.EventHandler(this.frmCadastroProduto_Shown);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmCadastroProduto_KeyDown);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.frmCadastroProduto_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.frmCadastroProduto_MouseMove);

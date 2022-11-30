@@ -81,6 +81,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class\DadosMensagemAlerta.cs" />
     <Compile Include="Class\MensagemErros.cs" />
     <Compile Include="Class\MensagemAtencao.cs" />
     <Compile Include="dbSistemaDeGerenciamento2_0.Context.cs">
@@ -146,11 +147,11 @@
     <Compile Include="Forms\frmCadastroProduto.Designer.cs">
       <DependentUpon>frmCadastroProduto.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\frmCadastroGrupoSubGrupo.cs">
+    <Compile Include="Forms\frmCadastroGrupoAgrupador.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\frmCadastroGrupoSubGrupo.Designer.cs">
-      <DependentUpon>frmCadastroGrupoSubGrupo.cs</DependentUpon>
+    <Compile Include="Forms\frmCadastroGrupoAgrupador.Designer.cs">
+      <DependentUpon>frmCadastroGrupoAgrupador.cs</DependentUpon>
     </Compile>
     <Compile Include="Class\ManipulacaoTextBox.cs" />
     <Compile Include="Class\LogErros.cs" />
@@ -224,8 +225,8 @@
     <EmbeddedResource Include="Forms\frmCadastroProduto.resx">
       <DependentUpon>frmCadastroProduto.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frmCadastroGrupoSubGrupo.resx">
-      <DependentUpon>frmCadastroGrupoSubGrupo.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\frmCadastroGrupoAgrupador.resx">
+      <DependentUpon>frmCadastroGrupoAgrupador.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -317,6 +318,8 @@
       <DependentUpon>dbSistemaDeGerenciamento2_0.edmx</DependentUpon>
       <LastGenOutput>dbSistemaDeGerenciamento2_0.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\salvar_verde50.png" />
+    <None Include="Resources\salvar_verde.png" />
     <None Include="Resources\pasta_aberta.png" />
     <None Include="Resources\tabela.png" />
     <None Include="Resources\limpar_preto.png" />

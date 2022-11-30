@@ -11,12 +11,12 @@ using System.Windows.Forms;
 
 namespace SistemaDeGerenciamento2_0.Forms
 {
-    public partial class frmCadastroGrupoSubGrupo : DevExpress.XtraEditors.XtraForm
+    public partial class frmCadastroGrupoAgrupador : DevExpress.XtraEditors.XtraForm
     {
         private int X = 0;
         private int Y = 0;
 
-        public frmCadastroGrupoSubGrupo()
+        public frmCadastroGrupoAgrupador()
         {
             InitializeComponent();
         }
