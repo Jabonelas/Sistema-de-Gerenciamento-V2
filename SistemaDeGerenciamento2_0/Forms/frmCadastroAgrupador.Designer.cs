@@ -123,9 +123,10 @@
             this.txtAgrupador.Name = "txtAgrupador";
             this.txtAgrupador.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAgrupador.Properties.Appearance.Options.UseFont = true;
+            this.txtAgrupador.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.RegExpMaskManager));
+            this.txtAgrupador.Properties.MaskSettings.Set("mask", "\\p{L}+");
             this.txtAgrupador.Size = new System.Drawing.Size(300, 26);
             this.txtAgrupador.TabIndex = 96;
-            this.txtAgrupador.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtAgrupador_KeyPress);
             // 
             // btnFechar
             // 
@@ -153,7 +154,7 @@
             this.pictureBox6.TabIndex = 95;
             this.pictureBox6.TabStop = false;
             // 
-            // frmAdicionarAgrupador
+            // frmCadastroAgrupador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -167,7 +168,7 @@
             this.Controls.Add(this.pictureBox6);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.KeyPreview = true;
-            this.Name = "frmAdicionarAgrupador";
+            this.Name = "frmCadastroAgrupador";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmAdicionarSubGrupo";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmAdicionarSubGrupo_KeyDown);

@@ -85,6 +85,7 @@
     <Compile Include="Class\DadosMensagemAlerta.cs" />
     <Compile Include="Class\MensagemErros.cs" />
     <Compile Include="Class\MensagemAtencao.cs" />
+    <Compile Include="Class\Validacoes.cs" />
     <Compile Include="Forms\frmAcessoRapido.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -166,6 +167,60 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="SistemaDeGerenciamento2_0.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SistemaDeGerenciamento2_0.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SistemaDeGerenciamento2_0.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SistemaDeGerenciamento2_0.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SistemaDeGerenciamento2_0.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SistemaDeGerenciamento2_0.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="tb_cadastro_despesa.cs">
+      <DependentUpon>SistemaDeGerenciamento2_0.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_configuracao_financeira.cs">
+      <DependentUpon>SistemaDeGerenciamento2_0.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_despesa.cs">
+      <DependentUpon>SistemaDeGerenciamento2_0.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_enderecos.cs">
+      <DependentUpon>SistemaDeGerenciamento2_0.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_estoque.cs">
+      <DependentUpon>SistemaDeGerenciamento2_0.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_grupo.cs">
+      <DependentUpon>SistemaDeGerenciamento2_0.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_informacoes_comeciais.cs">
+      <DependentUpon>SistemaDeGerenciamento2_0.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_nota_fiscal_entrada.cs">
+      <DependentUpon>SistemaDeGerenciamento2_0.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_nota_fiscal_saida.cs">
+      <DependentUpon>SistemaDeGerenciamento2_0.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_permissoes.cs">
+      <DependentUpon>SistemaDeGerenciamento2_0.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_produto.cs">
+      <DependentUpon>SistemaDeGerenciamento2_0.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_registro.cs">
+      <DependentUpon>SistemaDeGerenciamento2_0.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_repeticao_despesa.cs">
+      <DependentUpon>SistemaDeGerenciamento2_0.tt</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Forms\frmAcessoRapido.resx">
       <DependentUpon>frmAcessoRapido.cs</DependentUpon>
     </EmbeddedResource>
@@ -219,6 +274,13 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <EntityDeploy Include="SistemaDeGerenciamento2_0.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>SistemaDeGerenciamento2_0.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="SistemaDeGerenciamento2_0.edmx.diagram">
+      <DependentUpon>SistemaDeGerenciamento2_0.edmx</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\cancelar.png" />
@@ -287,6 +349,18 @@
     <None Include="Resources\fornecedor_20px.png" />
     <None Include="Resources\carrinho-preto20.png" />
     <None Include="Resources\cliente.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SistemaDeGerenciamento2_0.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>SistemaDeGerenciamento2_0.edmx</DependentUpon>
+      <LastGenOutput>SistemaDeGerenciamento2_0.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="SistemaDeGerenciamento2_0.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>SistemaDeGerenciamento2_0.edmx</DependentUpon>
+      <LastGenOutput>SistemaDeGerenciamento2_0.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

@@ -30,6 +30,37 @@ namespace SistemaDeGerenciamento2_0.Forms
             PreencherComboBoxAgrupador();
         }
 
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            FecharTela();
+        }
+
+        private void btnSalvar_Click(object sender, EventArgs e)
+        {
+            if (txtNomeGrupo.Text != string.Empty || cmbAgrupador.Text != string.Empty)
+            {
+                verificarExistenciaGrupoComMesmoNomeEAgrupador();
+
+                if (isExiteGrupoComMesmoNomeEAgrupadorCadastrado == false)
+                {
+                    Salvar();
+                }
+                else
+                {
+                    MensagemAtencao.MensagemValorJaExistente();
+                }
+            }
+            else
+            {
+                MensagemAtencao.MensagemPreencherCampos();
+            }
+        }
+
+        private void btnFechar_Click(object sender, EventArgs e)
+        {
+            FecharTela();
+        }
+
         private void frmAdicionarGrupo_MouseMove(object sender, MouseEventArgs e)
         {
             if (e.Button != MouseButtons.Left) return;
@@ -44,11 +75,19 @@ namespace SistemaDeGerenciamento2_0.Forms
             Y = this.Top - MousePosition.Y;
         }
 
+        private void frmAdicionarGrupo_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+            {
+                FecharTela();
+            }
+        }
+
         private void PreencherComboBoxAgrupador()
         {
             try
             {
-                using (SistemaDeGerenciamento2_0Entities4 db = new SistemaDeGerenciamento2_0Entities4())
+                using (SistemaDeGerenciamento2_0Entities5 db = new SistemaDeGerenciamento2_0Entities5())
                 {
                     List<string> listaSubGrupo = new List<string>();
 
@@ -65,24 +104,6 @@ namespace SistemaDeGerenciamento2_0.Forms
             }
         }
 
-        private void btnFechar_Click(object sender, EventArgs e)
-        {
-            FecharTela();
-        }
-
-        private void frmAdicionarGrupo_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Escape)
-            {
-                FecharTela();
-            }
-        }
-
-        private void btnCancelar_Click(object sender, EventArgs e)
-        {
-            FecharTela();
-        }
-
         private void FecharTela()
         {
             if (txtNomeGrupo.Text == string.Empty && cmbAgrupador.Text == string.Empty)
@@ -95,16 +116,11 @@ namespace SistemaDeGerenciamento2_0.Forms
             }
         }
 
-        private void txtNomeGrupo_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            ManipulacaoTextBox.TeclaDigitadaFoiLetras(e, txtNomeGrupo);
-        }
-
         private void verificarExistenciaGrupoComMesmoNomeEAgrupador()
         {
             try
             {
-                using (SistemaDeGerenciamento2_0Entities4 db = new SistemaDeGerenciamento2_0Entities4())
+                using (SistemaDeGerenciamento2_0Entities5 db = new SistemaDeGerenciamento2_0Entities5())
                 {
                     var grupo = db.tb_grupo.Where(x => x.gp_nome_grupo.Equals(txtNomeGrupo.Text))
                         .Where(x => x.gp_nome_agrupador.Equals(cmbAgrupador.Text))
@@ -128,34 +144,13 @@ namespace SistemaDeGerenciamento2_0.Forms
             }
         }
 
-        private void btnSalvar_Click(object sender, EventArgs e)
-        {
-            if (txtNomeGrupo.Text != string.Empty || cmbAgrupador.Text != string.Empty)
-            {
-                verificarExistenciaGrupoComMesmoNomeEAgrupador();
-
-                if (isExiteGrupoComMesmoNomeEAgrupadorCadastrado == false)
-                {
-                    Salvar();
-                }
-                else
-                {
-                    MensagemAtencao.MensagemValorJaExistente(this);
-                }
-            }
-            else
-            {
-                MensagemAtencao.MensagemPreencherCampos(this);
-            }
-        }
-
         private void Salvar()
         {
             try
             {
                 var grupoProduto = new tb_grupo() { gp_nome_grupo = txtNomeGrupo.Text, gp_nome_agrupador = cmbAgrupador.Text };
 
-                using (SistemaDeGerenciamento2_0Entities4 db = new SistemaDeGerenciamento2_0Entities4())
+                using (SistemaDeGerenciamento2_0Entities5 db = new SistemaDeGerenciamento2_0Entities5())
                 {
                     db.tb_grupo.Add(grupoProduto);
                     db.SaveChanges();
@@ -178,6 +173,11 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             DadosMensagemAlerta msg = new DadosMensagemAlerta("\n   Sucesso!", Resources.salvar_verde50);
             AlertaSalvar.Show(this, $"{msg.titulo}", msg.texto, string.Empty, msg.image, msg);
+        }
+
+        private void cmbAgrupador_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            ManipulacaoTextBox.DigitarApenasLetras(e, cmbAgrupador);
         }
     }
 }

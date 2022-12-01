@@ -48,7 +48,7 @@
             // 
             this.labelControl3.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl3.Appearance.Options.UseFont = true;
-            this.labelControl3.Location = new System.Drawing.Point(41, 74);
+            this.labelControl3.Location = new System.Drawing.Point(41, 46);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Size = new System.Drawing.Size(82, 20);
             this.labelControl3.TabIndex = 87;
@@ -58,7 +58,7 @@
             // 
             this.labelControl1.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl1.Appearance.Options.UseFont = true;
-            this.labelControl1.Location = new System.Drawing.Point(481, 74);
+            this.labelControl1.Location = new System.Drawing.Point(767, 46);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(181, 20);
             this.labelControl1.TabIndex = 88;
@@ -77,9 +77,9 @@
             // 
             // pnlCadastroRegistro
             // 
-            this.pnlCadastroRegistro.Location = new System.Drawing.Point(29, 158);
+            this.pnlCadastroRegistro.Location = new System.Drawing.Point(29, 126);
             this.pnlCadastroRegistro.Name = "pnlCadastroRegistro";
-            this.pnlCadastroRegistro.Size = new System.Drawing.Size(1018, 533);
+            this.pnlCadastroRegistro.Size = new System.Drawing.Size(1018, 593);
             this.pnlCadastroRegistro.TabIndex = 137;
             // 
             // btnFechar
@@ -101,7 +101,7 @@
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox6.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.separador;
-            this.pictureBox6.Location = new System.Drawing.Point(-158, 28);
+            this.pictureBox6.Location = new System.Drawing.Point(-158, 18);
             this.pictureBox6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(1389, 38);
@@ -115,9 +115,9 @@
             this.simpleButton3.Appearance.Options.UseFont = true;
             this.simpleButton3.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.funcionario_20;
             this.simpleButton3.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
-            this.simpleButton3.Location = new System.Drawing.Point(681, 100);
+            this.simpleButton3.Location = new System.Drawing.Point(967, 72);
             this.simpleButton3.Name = "simpleButton3";
-            this.simpleButton3.Size = new System.Drawing.Size(80, 52);
+            this.simpleButton3.Size = new System.Drawing.Size(80, 43);
             this.simpleButton3.TabIndex = 92;
             this.simpleButton3.Text = "Funcionário";
             this.simpleButton3.ToolTip = "Funcionário";
@@ -128,9 +128,9 @@
             this.simpleButton2.Appearance.Options.UseFont = true;
             this.simpleButton2.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.fornecedor_20px;
             this.simpleButton2.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
-            this.simpleButton2.Location = new System.Drawing.Point(582, 100);
+            this.simpleButton2.Location = new System.Drawing.Point(868, 72);
             this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.Size = new System.Drawing.Size(80, 52);
+            this.simpleButton2.Size = new System.Drawing.Size(80, 43);
             this.simpleButton2.TabIndex = 91;
             this.simpleButton2.Text = "Fornecedor";
             this.simpleButton2.ToolTip = "Forncedor";
@@ -139,18 +139,24 @@
             // 
             this.simpleButton1.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.simpleButton1.Appearance.Options.UseFont = true;
+            this.simpleButton1.AppearanceHovered.BackColor = System.Drawing.Color.Transparent;
+            this.simpleButton1.AppearanceHovered.BackColor2 = System.Drawing.Color.Transparent;
+            this.simpleButton1.AppearanceHovered.Options.UseBackColor = true;
+            this.simpleButton1.AppearancePressed.BackColor = System.Drawing.Color.Transparent;
+            this.simpleButton1.AppearancePressed.BackColor2 = System.Drawing.Color.Transparent;
+            this.simpleButton1.AppearancePressed.Options.UseBackColor = true;
             this.simpleButton1.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.cliente;
             this.simpleButton1.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
-            this.simpleButton1.Location = new System.Drawing.Point(481, 100);
+            this.simpleButton1.Location = new System.Drawing.Point(767, 72);
             this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(80, 52);
+            this.simpleButton1.Size = new System.Drawing.Size(80, 43);
             this.simpleButton1.TabIndex = 90;
             this.simpleButton1.Text = "Cliente";
             this.simpleButton1.ToolTip = "Cliente";
             // 
             // cmbTipoPessoa
             // 
-            this.cmbTipoPessoa.Location = new System.Drawing.Point(41, 100);
+            this.cmbTipoPessoa.Location = new System.Drawing.Point(41, 72);
             this.cmbTipoPessoa.Name = "cmbTipoPessoa";
             this.cmbTipoPessoa.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbTipoPessoa.Properties.Appearance.Options.UseFont = true;
@@ -168,16 +174,16 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1072, 723);
-            this.Controls.Add(this.pnlCadastroRegistro);
             this.Controls.Add(this.labelControl13);
             this.Controls.Add(this.btnFechar);
-            this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.simpleButton3);
             this.Controls.Add(this.simpleButton2);
             this.Controls.Add(this.simpleButton1);
             this.Controls.Add(this.labelControl1);
             this.Controls.Add(this.labelControl3);
             this.Controls.Add(this.cmbTipoPessoa);
+            this.Controls.Add(this.pictureBox6);
+            this.Controls.Add(this.pnlCadastroRegistro);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.KeyPreview = true;
             this.Name = "frmCadastroRegistros";

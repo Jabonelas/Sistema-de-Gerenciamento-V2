@@ -1,0 +1,463 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SistemaDeGerenciamento2_0Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="tb_cadastro_despesa">
+    <Key>
+      <PropertyRef Name="id_categoria_despesa" />
+    </Key>
+    <Property Name="id_categoria_despesa" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="cd_categoria_agrupadora" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="cd_categoria" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="cd_tipo_custo" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="tb_repeticao_despesa" Relationship="Self.tb_repeticao_despesa_fk1" FromRole="tb_cadastro_despesa" ToRole="tb_repeticao_despesa" />
+  </EntityType>
+  <EntityType Name="tb_configuracao_financeira">
+    <Key>
+      <PropertyRef Name="id_configuracao_financeira" />
+    </Key>
+    <Property Name="id_configuracao_financeira" Type="Int32" Nullable="false" />
+    <Property Name="cf_juros_dia" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="cf_multa_porcentagem" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="cf_multa_fixa" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="cf_carencia" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="cf_desconto" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tb_despesa">
+    <Key>
+      <PropertyRef Name="id_despesa" />
+    </Key>
+    <Property Name="id_despesa" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="dp_data" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="dp_observacao" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="dp_sub_valor_total" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="dp_desconto" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="dp_valor_lancamento" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="dp_forma_pagamento" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="dp_pagamento_em" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="dp_vencimentod" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="fk_registro" Type="Int32" Nullable="false" />
+    <Property Name="fk_grupo" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="tb_registro" Relationship="Self.tb_despesa_fk0" FromRole="tb_despesa" ToRole="tb_registro" />
+    <NavigationProperty Name="tb_grupo" Relationship="Self.tb_despesa_fk1" FromRole="tb_despesa" ToRole="tb_grupo" />
+  </EntityType>
+  <EntityType Name="tb_enderecos">
+    <Key>
+      <PropertyRef Name="id_endereco" />
+    </Key>
+    <Property Name="id_endereco" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ed_tipo" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ed_cep" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ed_locgradouro" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ed_numero" Type="Int32" Nullable="false" />
+    <Property Name="ed_complemento" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="ed_bairro" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ed_cidade" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="tb_registro" Relationship="Self.tb_registro_fk2" FromRole="tb_enderecos" ToRole="tb_registro" />
+  </EntityType>
+  <EntityType Name="tb_estoque">
+    <Key>
+      <PropertyRef Name="id_estoque" />
+    </Key>
+    <Property Name="id_estoque" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="eq_quantidade" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="ep_data_exclusao" Type="DateTime" Precision="0" />
+    <Property Name="ep_codigo_barras" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="ep_status_situacao" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="fk_produto" Type="Int32" Nullable="false" />
+    <Property Name="fk_nota_fiscal_entrada" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="tb_produto" Relationship="Self.tb_estoque_fk0" FromRole="tb_estoque" ToRole="tb_produto" />
+    <NavigationProperty Name="tb_nota_fiscal_entrada" Relationship="Self.tb_estoque_fk1" FromRole="tb_estoque" ToRole="tb_nota_fiscal_entrada" />
+    <NavigationProperty Name="tb_nota_fiscal_saida" Relationship="Self.tb_nota_fiscal_saida_fk0" FromRole="tb_estoque" ToRole="tb_nota_fiscal_saida" />
+  </EntityType>
+  <EntityType Name="tb_grupo">
+    <Key>
+      <PropertyRef Name="id_grupo" />
+    </Key>
+    <Property Name="id_grupo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="gp_nome_grupo" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="gp_nome_agrupador" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="tb_despesa" Relationship="Self.tb_despesa_fk1" FromRole="tb_grupo" ToRole="tb_despesa" />
+    <NavigationProperty Name="tb_produto" Relationship="Self.tb_produto_fk0" FromRole="tb_grupo" ToRole="tb_produto" />
+  </EntityType>
+  <EntityType Name="tb_informacoes_comeciais">
+    <Key>
+      <PropertyRef Name="id_informacao_comercial" />
+    </Key>
+    <Property Name="id_informacao_comercial" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ic_situacao" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ic_prioridade" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ic_vendedor" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ic_limite_credito" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
+    <NavigationProperty Name="tb_registro" Relationship="Self.tb_registro_fk1" FromRole="tb_informacoes_comeciais" ToRole="tb_registro" />
+  </EntityType>
+  <EntityType Name="tb_nota_fiscal_entrada">
+    <Key>
+      <PropertyRef Name="id_nota_fiscal_entrada" />
+    </Key>
+    <Property Name="id_nota_fiscal_entrada" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nfe_numero_nf_entrada" Type="Int32" Nullable="false" />
+    <Property Name="nfe_quantidade" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="nfe_codigo_produto" Type="Int32" Nullable="false" />
+    <Property Name="nfe_indice" Type="Int32" Nullable="false" />
+    <Property Name="nfe_cnpj" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="nfe_razao_social" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="nfe_descricao_social" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="nfe_unidade" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="nfe_valor_unitario" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="nfe_valor_total" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="nfe_data_emissao" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="nfe_data_lancamento" Type="DateTime" Nullable="false" Precision="0" />
+    <NavigationProperty Name="tb_estoque" Relationship="Self.tb_estoque_fk1" FromRole="tb_nota_fiscal_entrada" ToRole="tb_estoque" />
+  </EntityType>
+  <EntityType Name="tb_nota_fiscal_saida">
+    <Key>
+      <PropertyRef Name="id_nota_fiscal_saida" />
+    </Key>
+    <Property Name="id_nota_fiscal_saida" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nfs_numero_nf_saida" Type="Int32" Nullable="false" />
+    <Property Name="nfs_data_emissao" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="nfs_quantidade" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="nfs_valor_total_parcial" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="nfs_valor_pago" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="nfs_valor_juros" Type="Decimal" Precision="10" Scale="2" />
+    <Property Name="nfs_valor_desconto" Type="Decimal" Precision="10" Scale="2" />
+    <Property Name="nfs_vendedor" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="fk_estoque" Type="Int32" />
+    <Property Name="fk_registro_cliente" Type="Int32" />
+    <NavigationProperty Name="tb_estoque" Relationship="Self.tb_nota_fiscal_saida_fk0" FromRole="tb_nota_fiscal_saida" ToRole="tb_estoque" />
+    <NavigationProperty Name="tb_registro" Relationship="Self.tb_nota_fiscal_saida_fk1" FromRole="tb_nota_fiscal_saida" ToRole="tb_registro" />
+  </EntityType>
+  <EntityType Name="tb_permissoes">
+    <Key>
+      <PropertyRef Name="id_acesso_pdv" />
+    </Key>
+    <Property Name="id_acesso_pdv" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="pm_vendas_do_dias" Type="Binary" MaxLength="1" FixedLength="true" Nullable="false" />
+    <Property Name="pm_receber_conta" Type="Binary" MaxLength="1" FixedLength="true" Nullable="false" />
+    <Property Name="pm_todas_vendas" Type="Binary" MaxLength="1" FixedLength="true" Nullable="false" />
+    <Property Name="pm_editar_venda" Type="Binary" MaxLength="1" FixedLength="true" Nullable="false" />
+    <Property Name="pm_remover_venda" Type="Binary" MaxLength="1" FixedLength="true" Nullable="false" />
+    <Property Name="pm_cancelar_venda" Type="Binary" MaxLength="1" FixedLength="true" Nullable="false" />
+    <Property Name="pm_realizar_devolucao" Type="Binary" MaxLength="1" FixedLength="true" Nullable="false" />
+    <Property Name="pm_alerta_contas_atrasadas" Type="Binary" MaxLength="1" FixedLength="true" Nullable="false" />
+    <Property Name="pm_visualizar_lancamentos" Type="Binary" MaxLength="1" FixedLength="true" Nullable="false" />
+    <Property Name="pm_visualizar_contas_pagar" Type="Binary" MaxLength="1" FixedLength="true" Nullable="false" />
+    <Property Name="pm_visualizar_contas_receber" Type="Binary" MaxLength="1" FixedLength="true" Nullable="false" />
+    <Property Name="pm_receber_contas" Type="Binary" MaxLength="1" FixedLength="true" Nullable="false" />
+    <Property Name="pm_pagar_contas" Type="Binary" MaxLength="1" FixedLength="true" Nullable="false" />
+    <Property Name="pm_visualizar_fluxo_caixa" Type="Binary" MaxLength="1" FixedLength="true" Nullable="false" />
+    <Property Name="pm_visualizar_lancamento_faturamento" Type="Binary" MaxLength="1" FixedLength="true" Nullable="false" />
+    <Property Name="pm_ajustar_configuracao_geral" Type="Binary" MaxLength="1" FixedLength="true" Nullable="false" />
+    <Property Name="pm_editar_categoria" Type="Binary" MaxLength="1" FixedLength="true" Nullable="false" />
+    <Property Name="pm_criar_editar_usuario" Type="Binary" MaxLength="1" FixedLength="true" Nullable="false" />
+    <Property Name="pm_visualizar_visao_geral" Type="Binary" MaxLength="1" FixedLength="true" Nullable="false" />
+    <Property Name="pm_visualizar_dre" Type="Binary" MaxLength="1" FixedLength="true" Nullable="false" />
+    <Property Name="pm_criar_visualizar_relatorios" Type="Binary" MaxLength="1" FixedLength="true" Nullable="false" />
+    <Property Name="pm_adicionar_produto" Type="Binary" MaxLength="1" FixedLength="true" Nullable="false" />
+    <Property Name="pm_editar_produto" Type="Binary" MaxLength="1" FixedLength="true" Nullable="false" />
+    <Property Name="pm_remover_produto" Type="Binary" MaxLength="1" FixedLength="true" Nullable="false" />
+    <Property Name="pm_filtrar_produto" Type="Binary" MaxLength="1" FixedLength="true" Nullable="false" />
+    <Property Name="pm_alerta_estoque_baixo" Type="Binary" MaxLength="1" FixedLength="true" Nullable="false" />
+    <Property Name="pm_tabela_produtos_removidos" Type="Binary" MaxLength="1" FixedLength="true" Nullable="false" />
+    <Property Name="pm_efetuar_cadastro" Type="Binary" MaxLength="1" FixedLength="true" Nullable="false" />
+    <Property Name="pm_editar_cadastro" Type="Binary" MaxLength="1" FixedLength="true" Nullable="false" />
+    <Property Name="pm_remover_cadastro" Type="Binary" MaxLength="1" FixedLength="true" Nullable="false" />
+    <Property Name="pm_visualizar_cadastro_completo" Type="Binary" MaxLength="1" FixedLength="true" Nullable="false" />
+    <Property Name="pm_editar_cretido_cadastro" Type="Binary" MaxLength="1" FixedLength="true" Nullable="false" />
+    <NavigationProperty Name="tb_registro" Relationship="Self.tb_registro_fk0" FromRole="tb_permissoes" ToRole="tb_registro" />
+  </EntityType>
+  <EntityType Name="tb_produto">
+    <Key>
+      <PropertyRef Name="id_produto" />
+    </Key>
+    <Property Name="id_produto" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="pd_codigo" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="pd_finalidade" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="pd_nome" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="pd_estoque_minimo" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="pd_custo" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="pd_margem" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="pd_preco" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="pd_observacoes" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="fk_grupo" Type="Int32" Nullable="false" />
+    <Property Name="fk_registro_forncedor" Type="Int32" />
+    <Property Name="pd_codigo_barras" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="pd_tipo_produto" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="pd_tipo_unidade" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="pd_usuario_cadastrador" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="tb_estoque" Relationship="Self.tb_estoque_fk0" FromRole="tb_produto" ToRole="tb_estoque" />
+    <NavigationProperty Name="tb_grupo" Relationship="Self.tb_produto_fk0" FromRole="tb_produto" ToRole="tb_grupo" />
+    <NavigationProperty Name="tb_registro" Relationship="Self.tb_produto_fk1" FromRole="tb_produto" ToRole="tb_registro" />
+  </EntityType>
+  <EntityType Name="tb_registro">
+    <Key>
+      <PropertyRef Name="id_registro" />
+    </Key>
+    <Property Name="id_registro" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="rg_tipo_cadastro" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="rg_categoria" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="rg_cpf" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="rg_nome" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="rg_sexo" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="rg_rg" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="rg_data_nascimento" Type="DateTime" Precision="0" />
+    <Property Name="rg_data_cadastro" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="rg_observacoes" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="rg_login" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="rg_senha" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="rg_cnpj" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="rg_nome_fantasia" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="rg_razao_social" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="rg_email_xml" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="rg_inscricao_estadual" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="rg_inscricao_municipal" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="rg_email" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="rg_telefone1" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="rg_telefone2" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="fk_permissoes" Type="Int32" />
+    <Property Name="fk_informacao_comercial" Type="Int32" />
+    <Property Name="fk_endereco" Type="Int32" />
+    <NavigationProperty Name="tb_despesa" Relationship="Self.tb_despesa_fk0" FromRole="tb_registro" ToRole="tb_despesa" />
+    <NavigationProperty Name="tb_enderecos" Relationship="Self.tb_registro_fk2" FromRole="tb_registro" ToRole="tb_enderecos" />
+    <NavigationProperty Name="tb_informacoes_comeciais" Relationship="Self.tb_registro_fk1" FromRole="tb_registro" ToRole="tb_informacoes_comeciais" />
+    <NavigationProperty Name="tb_nota_fiscal_saida" Relationship="Self.tb_nota_fiscal_saida_fk1" FromRole="tb_registro" ToRole="tb_nota_fiscal_saida" />
+    <NavigationProperty Name="tb_permissoes" Relationship="Self.tb_registro_fk0" FromRole="tb_registro" ToRole="tb_permissoes" />
+    <NavigationProperty Name="tb_produto" Relationship="Self.tb_produto_fk1" FromRole="tb_registro" ToRole="tb_produto" />
+    <NavigationProperty Name="tb_repeticao_despesa" Relationship="Self.tb_repeticao_despesa_fk0" FromRole="tb_registro" ToRole="tb_repeticao_despesa" />
+  </EntityType>
+  <EntityType Name="tb_repeticao_despesa">
+    <Key>
+      <PropertyRef Name="id_repeticao_despesas" />
+    </Key>
+    <Property Name="id_repeticao_despesas" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="rp_data_inicial" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="rp_data_final" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="rp_observacao" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="fk_registro" Type="Int32" Nullable="false" />
+    <Property Name="fk_cadastro_despesa" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="tb_cadastro_despesa" Relationship="Self.tb_repeticao_despesa_fk1" FromRole="tb_repeticao_despesa" ToRole="tb_cadastro_despesa" />
+    <NavigationProperty Name="tb_registro" Relationship="Self.tb_repeticao_despesa_fk0" FromRole="tb_repeticao_despesa" ToRole="tb_registro" />
+  </EntityType>
+  <Association Name="tb_repeticao_despesa_fk1">
+    <End Role="tb_cadastro_despesa" Type="Self.tb_cadastro_despesa" Multiplicity="1" />
+    <End Role="tb_repeticao_despesa" Type="Self.tb_repeticao_despesa" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_cadastro_despesa">
+        <PropertyRef Name="id_categoria_despesa" />
+      </Principal>
+      <Dependent Role="tb_repeticao_despesa">
+        <PropertyRef Name="fk_cadastro_despesa" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="tb_despesa_fk0">
+    <End Role="tb_registro" Type="Self.tb_registro" Multiplicity="1" />
+    <End Role="tb_despesa" Type="Self.tb_despesa" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_registro">
+        <PropertyRef Name="id_registro" />
+      </Principal>
+      <Dependent Role="tb_despesa">
+        <PropertyRef Name="fk_registro" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="tb_despesa_fk1">
+    <End Role="tb_grupo" Type="Self.tb_grupo" Multiplicity="1" />
+    <End Role="tb_despesa" Type="Self.tb_despesa" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_grupo">
+        <PropertyRef Name="id_grupo" />
+      </Principal>
+      <Dependent Role="tb_despesa">
+        <PropertyRef Name="fk_grupo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="tb_registro_fk2">
+    <End Role="tb_enderecos" Type="Self.tb_enderecos" Multiplicity="0..1" />
+    <End Role="tb_registro" Type="Self.tb_registro" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_enderecos">
+        <PropertyRef Name="id_endereco" />
+      </Principal>
+      <Dependent Role="tb_registro">
+        <PropertyRef Name="fk_endereco" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="tb_estoque_fk0">
+    <End Role="tb_produto" Type="Self.tb_produto" Multiplicity="1" />
+    <End Role="tb_estoque" Type="Self.tb_estoque" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_produto">
+        <PropertyRef Name="id_produto" />
+      </Principal>
+      <Dependent Role="tb_estoque">
+        <PropertyRef Name="fk_produto" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="tb_estoque_fk1">
+    <End Role="tb_nota_fiscal_entrada" Type="Self.tb_nota_fiscal_entrada" Multiplicity="1" />
+    <End Role="tb_estoque" Type="Self.tb_estoque" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_nota_fiscal_entrada">
+        <PropertyRef Name="id_nota_fiscal_entrada" />
+      </Principal>
+      <Dependent Role="tb_estoque">
+        <PropertyRef Name="fk_nota_fiscal_entrada" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="tb_nota_fiscal_saida_fk0">
+    <End Role="tb_estoque" Type="Self.tb_estoque" Multiplicity="0..1" />
+    <End Role="tb_nota_fiscal_saida" Type="Self.tb_nota_fiscal_saida" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_estoque">
+        <PropertyRef Name="id_estoque" />
+      </Principal>
+      <Dependent Role="tb_nota_fiscal_saida">
+        <PropertyRef Name="fk_estoque" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="tb_produto_fk0">
+    <End Role="tb_grupo" Type="Self.tb_grupo" Multiplicity="1" />
+    <End Role="tb_produto" Type="Self.tb_produto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_grupo">
+        <PropertyRef Name="id_grupo" />
+      </Principal>
+      <Dependent Role="tb_produto">
+        <PropertyRef Name="fk_grupo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="tb_registro_fk1">
+    <End Role="tb_informacoes_comeciais" Type="Self.tb_informacoes_comeciais" Multiplicity="0..1" />
+    <End Role="tb_registro" Type="Self.tb_registro" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_informacoes_comeciais">
+        <PropertyRef Name="id_informacao_comercial" />
+      </Principal>
+      <Dependent Role="tb_registro">
+        <PropertyRef Name="fk_informacao_comercial" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="tb_nota_fiscal_saida_fk1">
+    <End Role="tb_registro" Type="Self.tb_registro" Multiplicity="0..1" />
+    <End Role="tb_nota_fiscal_saida" Type="Self.tb_nota_fiscal_saida" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_registro">
+        <PropertyRef Name="id_registro" />
+      </Principal>
+      <Dependent Role="tb_nota_fiscal_saida">
+        <PropertyRef Name="fk_registro_cliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="tb_registro_fk0">
+    <End Role="tb_permissoes" Type="Self.tb_permissoes" Multiplicity="0..1" />
+    <End Role="tb_registro" Type="Self.tb_registro" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_permissoes">
+        <PropertyRef Name="id_acesso_pdv" />
+      </Principal>
+      <Dependent Role="tb_registro">
+        <PropertyRef Name="fk_permissoes" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="tb_produto_fk1">
+    <End Role="tb_registro" Type="Self.tb_registro" Multiplicity="0..1" />
+    <End Role="tb_produto" Type="Self.tb_produto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_registro">
+        <PropertyRef Name="id_registro" />
+      </Principal>
+      <Dependent Role="tb_produto">
+        <PropertyRef Name="fk_registro_forncedor" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="tb_repeticao_despesa_fk0">
+    <End Role="tb_registro" Type="Self.tb_registro" Multiplicity="1" />
+    <End Role="tb_repeticao_despesa" Type="Self.tb_repeticao_despesa" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_registro">
+        <PropertyRef Name="id_registro" />
+      </Principal>
+      <Dependent Role="tb_repeticao_despesa">
+        <PropertyRef Name="fk_registro" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="SistemaDeGerenciamento2_0Entities5" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="tb_cadastro_despesa" EntityType="Self.tb_cadastro_despesa" />
+    <EntitySet Name="tb_configuracao_financeira" EntityType="Self.tb_configuracao_financeira" />
+    <EntitySet Name="tb_despesa" EntityType="Self.tb_despesa" />
+    <EntitySet Name="tb_enderecos" EntityType="Self.tb_enderecos" />
+    <EntitySet Name="tb_estoque" EntityType="Self.tb_estoque" />
+    <EntitySet Name="tb_grupo" EntityType="Self.tb_grupo" />
+    <EntitySet Name="tb_informacoes_comeciais" EntityType="Self.tb_informacoes_comeciais" />
+    <EntitySet Name="tb_nota_fiscal_entrada" EntityType="Self.tb_nota_fiscal_entrada" />
+    <EntitySet Name="tb_nota_fiscal_saida" EntityType="Self.tb_nota_fiscal_saida" />
+    <EntitySet Name="tb_permissoes" EntityType="Self.tb_permissoes" />
+    <EntitySet Name="tb_produto" EntityType="Self.tb_produto" />
+    <EntitySet Name="tb_registro" EntityType="Self.tb_registro" />
+    <EntitySet Name="tb_repeticao_despesa" EntityType="Self.tb_repeticao_despesa" />
+    <AssociationSet Name="tb_repeticao_despesa_fk1" Association="Self.tb_repeticao_despesa_fk1">
+      <End Role="tb_cadastro_despesa" EntitySet="tb_cadastro_despesa" />
+      <End Role="tb_repeticao_despesa" EntitySet="tb_repeticao_despesa" />
+    </AssociationSet>
+    <AssociationSet Name="tb_despesa_fk0" Association="Self.tb_despesa_fk0">
+      <End Role="tb_registro" EntitySet="tb_registro" />
+      <End Role="tb_despesa" EntitySet="tb_despesa" />
+    </AssociationSet>
+    <AssociationSet Name="tb_despesa_fk1" Association="Self.tb_despesa_fk1">
+      <End Role="tb_grupo" EntitySet="tb_grupo" />
+      <End Role="tb_despesa" EntitySet="tb_despesa" />
+    </AssociationSet>
+    <AssociationSet Name="tb_registro_fk2" Association="Self.tb_registro_fk2">
+      <End Role="tb_enderecos" EntitySet="tb_enderecos" />
+      <End Role="tb_registro" EntitySet="tb_registro" />
+    </AssociationSet>
+    <AssociationSet Name="tb_estoque_fk0" Association="Self.tb_estoque_fk0">
+      <End Role="tb_produto" EntitySet="tb_produto" />
+      <End Role="tb_estoque" EntitySet="tb_estoque" />
+    </AssociationSet>
+    <AssociationSet Name="tb_estoque_fk1" Association="Self.tb_estoque_fk1">
+      <End Role="tb_nota_fiscal_entrada" EntitySet="tb_nota_fiscal_entrada" />
+      <End Role="tb_estoque" EntitySet="tb_estoque" />
+    </AssociationSet>
+    <AssociationSet Name="tb_nota_fiscal_saida_fk0" Association="Self.tb_nota_fiscal_saida_fk0">
+      <End Role="tb_estoque" EntitySet="tb_estoque" />
+      <End Role="tb_nota_fiscal_saida" EntitySet="tb_nota_fiscal_saida" />
+    </AssociationSet>
+    <AssociationSet Name="tb_produto_fk0" Association="Self.tb_produto_fk0">
+      <End Role="tb_grupo" EntitySet="tb_grupo" />
+      <End Role="tb_produto" EntitySet="tb_produto" />
+    </AssociationSet>
+    <AssociationSet Name="tb_registro_fk1" Association="Self.tb_registro_fk1">
+      <End Role="tb_informacoes_comeciais" EntitySet="tb_informacoes_comeciais" />
+      <End Role="tb_registro" EntitySet="tb_registro" />
+    </AssociationSet>
+    <AssociationSet Name="tb_nota_fiscal_saida_fk1" Association="Self.tb_nota_fiscal_saida_fk1">
+      <End Role="tb_registro" EntitySet="tb_registro" />
+      <End Role="tb_nota_fiscal_saida" EntitySet="tb_nota_fiscal_saida" />
+    </AssociationSet>
+    <AssociationSet Name="tb_registro_fk0" Association="Self.tb_registro_fk0">
+      <End Role="tb_permissoes" EntitySet="tb_permissoes" />
+      <End Role="tb_registro" EntitySet="tb_registro" />
+    </AssociationSet>
+    <AssociationSet Name="tb_produto_fk1" Association="Self.tb_produto_fk1">
+      <End Role="tb_registro" EntitySet="tb_registro" />
+      <End Role="tb_produto" EntitySet="tb_produto" />
+    </AssociationSet>
+    <AssociationSet Name="tb_repeticao_despesa_fk0" Association="Self.tb_repeticao_despesa_fk0">
+      <End Role="tb_registro" EntitySet="tb_registro" />
+      <End Role="tb_repeticao_despesa" EntitySet="tb_repeticao_despesa" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

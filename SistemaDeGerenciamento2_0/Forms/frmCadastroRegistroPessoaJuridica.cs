@@ -16,6 +16,12 @@ namespace SistemaDeGerenciamento2_0.Forms
         public frmCadastroRegistroPessoaJuridica()
         {
             InitializeComponent();
+
+            txtDataCadastro.Text = DateTime.Now.ToString();
+        }
+
+        private void textEdit8_EditValueChanged(object sender, EventArgs e)
+        {
         }
     }
 }

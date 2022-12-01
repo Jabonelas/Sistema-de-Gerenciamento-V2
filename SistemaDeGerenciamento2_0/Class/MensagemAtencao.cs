@@ -19,14 +19,19 @@ namespace SistemaDeGerenciamento2_0
             }
         }
 
-        public static void MensagemPreencherCampos(Form form)
+        public static void MensagemPreencherCampos()
         {
             MessageBox.Show("Por Favor, Preencher Campos Obrigatorios!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
 
-        public static void MensagemValorJaExistente(Form form)
+        public static void MensagemValorJaExistente()
         {
             MessageBox.Show("Desculpa valor ja existente, por favor digite um valor diferente!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        }
+
+        public static void MensagemCPFDigitadoInvalido()
+        {
+            MessageBox.Show("Por Favor Digite Um CPF Inválido!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
     }
 }

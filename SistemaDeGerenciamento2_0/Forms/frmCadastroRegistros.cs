@@ -16,6 +16,8 @@ namespace SistemaDeGerenciamento2_0.Forms
         public frmCadastroRegistros()
         {
             InitializeComponent();
+
+            cmbTipoPessoa.Text = "Pessoa Fisica";
         }
 
         private void cmbTipoPessoa_SelectedValueChanged(object sender, EventArgs e)

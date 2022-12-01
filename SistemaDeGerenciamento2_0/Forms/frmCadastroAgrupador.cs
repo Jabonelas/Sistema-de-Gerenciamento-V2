@@ -25,21 +25,26 @@ namespace SistemaDeGerenciamento2_0.Forms
             InitializeComponent();
         }
 
-        private void ChamandoAlertaSucessoNoCantoInferiorDireito()
-        {
-            DadosMensagemAlerta msg = new DadosMensagemAlerta("\n   Sucesso!", Resources.salvar_verde50);
-            AlertaSalvar.Show(this, $"{msg.titulo}", msg.texto, string.Empty, msg.image, msg);
-        }
-
-        private void FecharTela()
+        private void btnSalvar_Click(object sender, EventArgs e)
         {
             if (txtAgrupador.Text != string.Empty)
             {
-                MensagemAtencao.MensagemCancelar(this);
+                VerificarExistenciaAgrupador();
+
+                if (isExiteAgrupadorCadastradoComMesmoNome == false)
+                {
+                    Salvar();
+
+                    txtAgrupador.Text = string.Empty;
+                }
+                else
+                {
+                    MensagemAtencao.MensagemValorJaExistente();
+                }
             }
             else
             {
-                this.Close();
+                MensagemAtencao.MensagemPreencherCampos();
             }
         }
 
@@ -75,26 +80,21 @@ namespace SistemaDeGerenciamento2_0.Forms
             this.Top = Y + MousePosition.Y;
         }
 
-        private void btnSalvar_Click(object sender, EventArgs e)
+        private void ChamandoAlertaSucessoNoCantoInferiorDireito()
+        {
+            DadosMensagemAlerta msg = new DadosMensagemAlerta("\n   Sucesso!", Resources.salvar_verde50);
+            AlertaSalvar.Show(this, $"{msg.titulo}", msg.texto, string.Empty, msg.image, msg);
+        }
+
+        private void FecharTela()
         {
             if (txtAgrupador.Text != string.Empty)
             {
-                VerificarExistenciaAgrupador();
-
-                if (isExiteAgrupadorCadastradoComMesmoNome == false)
-                {
-                    Salvar();
-
-                    txtAgrupador.Text = string.Empty;
-                }
-                else
-                {
-                    MensagemAtencao.MensagemValorJaExistente(this);
-                }
+                MensagemAtencao.MensagemCancelar(this);
             }
             else
             {
-                MensagemAtencao.MensagemPreencherCampos(this);
+                this.Close();
             }
         }
 
@@ -102,7 +102,7 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             try
             {
-                using (SistemaDeGerenciamento2_0Entities4 db = new SistemaDeGerenciamento2_0Entities4())
+                using (SistemaDeGerenciamento2_0Entities5 db = new SistemaDeGerenciamento2_0Entities5())
                 {
                     var agrupador = db.tb_grupo.Where(x => x.gp_nome_agrupador.Equals(txtAgrupador.Text))
                                 .Select(x => x.gp_nome_agrupador)
@@ -130,7 +130,7 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             try
             {
-                using (SistemaDeGerenciamento2_0Entities4 db = new SistemaDeGerenciamento2_0Entities4())
+                using (SistemaDeGerenciamento2_0Entities5 db = new SistemaDeGerenciamento2_0Entities5())
                 {
                     var subGrupo = new tb_grupo() { gp_nome_agrupador = txtAgrupador.Text };
                     db.tb_grupo.Add(subGrupo);
@@ -147,18 +147,9 @@ namespace SistemaDeGerenciamento2_0.Forms
             }
         }
 
-        private void txtAgrupador_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            ManipulacaoTextBox.TeclaDigitadaFoiLetras(e, txtAgrupador);
-        }
-
         private void AlertaSalvar_BeforeFormShow(object sender, DevExpress.XtraBars.Alerter.AlertFormEventArgs e)
         {
             e.AlertForm.OpacityLevel = 1;
-        }
-
-        private void simpleButton1_Click(object sender, EventArgs e)
-        {
         }
     }
 }

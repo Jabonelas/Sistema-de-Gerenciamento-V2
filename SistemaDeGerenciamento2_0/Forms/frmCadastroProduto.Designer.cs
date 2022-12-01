@@ -278,11 +278,15 @@
             this.txtCusto.Name = "txtCusto";
             this.txtCusto.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCusto.Properties.Appearance.Options.UseFont = true;
+            this.txtCusto.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.NumericMaskManager));
+            this.txtCusto.Properties.MaskSettings.Set("MaskManagerSignature", "allowNull=False");
+            this.txtCusto.Properties.MaskSettings.Set("mask", "c");
+            this.txtCusto.Properties.MaskSettings.Set("hideInsignificantZeros", null);
             this.txtCusto.Properties.MaxLength = 20;
             this.txtCusto.Properties.NullText = "R$ 0,00";
+            this.txtCusto.Properties.UseMaskAsDisplayFormat = true;
             this.txtCusto.Size = new System.Drawing.Size(180, 26);
             this.txtCusto.TabIndex = 98;
-            this.txtCusto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCusto_KeyPress);
             this.txtCusto.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtCusto_KeyUp);
             // 
             // txtMargemLucro
@@ -291,10 +295,14 @@
             this.txtMargemLucro.Name = "txtMargemLucro";
             this.txtMargemLucro.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMargemLucro.Properties.Appearance.Options.UseFont = true;
+            this.txtMargemLucro.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.NumericMaskManager));
+            this.txtMargemLucro.Properties.MaskSettings.Set("MaskManagerSignature", "allowNull=False");
+            this.txtMargemLucro.Properties.MaskSettings.Set("mask", "P");
+            this.txtMargemLucro.Properties.MaxLength = 20;
             this.txtMargemLucro.Properties.NullText = "0,00%";
+            this.txtMargemLucro.Properties.UseMaskAsDisplayFormat = true;
             this.txtMargemLucro.Size = new System.Drawing.Size(180, 26);
             this.txtMargemLucro.TabIndex = 97;
-            this.txtMargemLucro.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMargemLucro_KeyPress);
             this.txtMargemLucro.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtMargemLucro_KeyUp);
             // 
             // txtPreco
@@ -303,10 +311,14 @@
             this.txtPreco.Name = "txtPreco";
             this.txtPreco.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPreco.Properties.Appearance.Options.UseFont = true;
+            this.txtPreco.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.NumericMaskManager));
+            this.txtPreco.Properties.MaskSettings.Set("MaskManagerSignature", "allowNull=False");
+            this.txtPreco.Properties.MaskSettings.Set("mask", "c");
+            this.txtPreco.Properties.MaxLength = 20;
             this.txtPreco.Properties.NullText = "R$ 0,00";
+            this.txtPreco.Properties.UseMaskAsDisplayFormat = true;
             this.txtPreco.Size = new System.Drawing.Size(180, 26);
             this.txtPreco.TabIndex = 96;
-            this.txtPreco.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPreco_KeyPress);
             this.txtPreco.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtPreco_KeyUp);
             // 
             // txtEstoqueMinimo
@@ -315,10 +327,14 @@
             this.txtEstoqueMinimo.Name = "txtEstoqueMinimo";
             this.txtEstoqueMinimo.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEstoqueMinimo.Properties.Appearance.Options.UseFont = true;
+            this.txtEstoqueMinimo.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.NumericMaskManager));
+            this.txtEstoqueMinimo.Properties.MaskSettings.Set("MaskManagerSignature", "allowNull=False");
+            this.txtEstoqueMinimo.Properties.MaskSettings.Set("mask", "d");
+            this.txtEstoqueMinimo.Properties.MaxLength = 20;
             this.txtEstoqueMinimo.Properties.NullText = "0";
+            this.txtEstoqueMinimo.Properties.UseMaskAsDisplayFormat = true;
             this.txtEstoqueMinimo.Size = new System.Drawing.Size(180, 26);
             this.txtEstoqueMinimo.TabIndex = 92;
-            this.txtEstoqueMinimo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtEstoqueMinimo_KeyPress);
             // 
             // txtTipoUnidade
             // 
@@ -326,10 +342,12 @@
             this.txtTipoUnidade.Name = "txtTipoUnidade";
             this.txtTipoUnidade.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTipoUnidade.Properties.Appearance.Options.UseFont = true;
+            this.txtTipoUnidade.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.RegExpMaskManager));
+            this.txtTipoUnidade.Properties.MaskSettings.Set("mask", "\\p{L}+");
+            this.txtTipoUnidade.Properties.MaxLength = 20;
             this.txtTipoUnidade.Properties.NullText = "Ex.: Peça, Un, Kg";
             this.txtTipoUnidade.Size = new System.Drawing.Size(288, 26);
             this.txtTipoUnidade.TabIndex = 90;
-            this.txtTipoUnidade.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTipoUnidade_KeyPress);
             // 
             // cmbTipoProduto
             // 
@@ -343,8 +361,10 @@
             "Normal",
             "Composicao",
             "Grade"});
+            this.cmbTipoProduto.Properties.MaxLength = 20;
             this.cmbTipoProduto.Size = new System.Drawing.Size(243, 26);
             this.cmbTipoProduto.TabIndex = 87;
+            this.cmbTipoProduto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cmbTipoProduto_KeyPress);
             // 
             // cmbFinalidade
             // 
@@ -358,8 +378,10 @@
             "Venda ",
             "Uso / Consumo",
             "Matéria Prima"});
+            this.cmbFinalidade.Properties.MaxLength = 20;
             this.cmbFinalidade.Size = new System.Drawing.Size(243, 26);
             this.cmbFinalidade.TabIndex = 85;
+            this.cmbFinalidade.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cmbFinalidade_KeyPress);
             // 
             // txtNome
             // 
@@ -377,9 +399,12 @@
             this.txtCodigoDeBarras.Name = "txtCodigoDeBarras";
             this.txtCodigoDeBarras.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCodigoDeBarras.Properties.Appearance.Options.UseFont = true;
+            this.txtCodigoDeBarras.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.NumericMaskManager));
+            this.txtCodigoDeBarras.Properties.MaskSettings.Set("MaskManagerSignature", "allowNull=False");
+            this.txtCodigoDeBarras.Properties.MaskSettings.Set("mask", "d");
+            this.txtCodigoDeBarras.Properties.MaxLength = 20;
             this.txtCodigoDeBarras.Size = new System.Drawing.Size(288, 26);
             this.txtCodigoDeBarras.TabIndex = 83;
-            this.txtCodigoDeBarras.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCodigoDeBarras_KeyPress);
             // 
             // txtCodigo
             // 
@@ -451,6 +476,7 @@
             this.cmbGrupo.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.cmbGrupo.Properties.DropDownRows = 5;
+            this.cmbGrupo.Properties.MaxLength = 20;
             this.cmbGrupo.Properties.NullText = "";
             this.cmbGrupo.Properties.PopupSizeable = false;
             this.cmbGrupo.Size = new System.Drawing.Size(206, 26);
@@ -465,6 +491,7 @@
             this.cmbFornecedor.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.cmbFornecedor.Properties.DropDownRows = 5;
+            this.cmbFornecedor.Properties.MaxLength = 20;
             this.cmbFornecedor.Properties.NullText = "";
             this.cmbFornecedor.Properties.PopupSizeable = false;
             this.cmbFornecedor.Size = new System.Drawing.Size(240, 26);
@@ -524,7 +551,6 @@
             this.Name = "frmCadastroProduto";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "telacadastro";
-            this.Shown += new System.EventHandler(this.frmCadastroProduto_Shown);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmCadastroProduto_KeyDown);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.frmCadastroProduto_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.frmCadastroProduto_MouseMove);

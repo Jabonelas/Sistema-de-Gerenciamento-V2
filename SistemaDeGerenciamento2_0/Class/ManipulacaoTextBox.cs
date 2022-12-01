@@ -8,9 +8,11 @@ using System.Windows.Forms;
 
 namespace SistemaDeGerenciamento2_0
 {
-    internal class ManipulacaoTextBox
+    internal static class ManipulacaoTextBox
     {
-        public static bool TeclaDigitadaFoiNumero(KeyPressEventArgs e, DevExpress.XtraEditors.TextEdit _textBox)
+        #region Digitar Apenas Numeros
+
+        public static bool DigitarApenasNumero(KeyPressEventArgs e, DevExpress.XtraEditors.TextEdit _textBox)
         {
             _textBox.Properties.MaxLength = 20;
 
@@ -21,9 +23,13 @@ namespace SistemaDeGerenciamento2_0
             return true;
         }
 
-        public static bool TeclaDigitadaFoiLetras(KeyPressEventArgs e, DevExpress.XtraEditors.TextEdit _textBox)
+        #endregion Digitar Apenas Numeros
+
+        #region Digitar Apenas Letras
+
+        public static bool DigitarApenasLetras(KeyPressEventArgs e, DevExpress.XtraEditors.TextEdit _textBox)
         {
-            _textBox.Properties.MaxLength = 20;
+            _textBox.Properties.MaxLength = 100;
 
             if (!Char.IsLetter(e.KeyChar) && e.KeyChar != (char)8 && e.KeyChar != (char)32)
             {
@@ -32,6 +38,26 @@ namespace SistemaDeGerenciamento2_0
 
             return true;
         }
+
+        #endregion Digitar Apenas Letras
+
+        #region Digitar Apenas Letras e Numeros
+
+        public static bool DigitarApenasLetrasOuNumeros(KeyPressEventArgs e, DevExpress.XtraEditors.TextEdit _textBox)
+        {
+            _textBox.Properties.MaxLength = 20;
+
+            if (!Char.IsLetter(e.KeyChar) && e.KeyChar != (char)8 && e.KeyChar != (char)32 && !Char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+
+            return true;
+        }
+
+        #endregion Digitar Apenas Letras e Numeros
+
+        #region Formato Dinheiro
 
         public static void FormatoDinheiro(KeyPressEventArgs e, object sender, DevExpress.XtraEditors.TextEdit _textBox)
         {
@@ -62,6 +88,10 @@ namespace SistemaDeGerenciamento2_0
             }
         }
 
+        #endregion Formato Dinheiro
+
+        #region Formato Porcentagem
+
         public static void PreenchimentoPorcentagem(KeyPressEventArgs e, object sender, DevExpress.XtraEditors.TextEdit _textBox)
         {
             try
@@ -90,16 +120,172 @@ namespace SistemaDeGerenciamento2_0
             }
         }
 
-        public static bool TeclaDigitadaFoiLetrasOuNumeros(KeyPressEventArgs e, DevExpress.XtraEditors.TextEdit _textBox)
-        {
-            _textBox.Properties.MaxLength = 20;
+        #endregion Formato Porcentagem
 
-            if (!Char.IsLetter(e.KeyChar) && e.KeyChar != (char)8 && e.KeyChar != (char)32 && !Char.IsDigit(e.KeyChar))
+        #region Formato Data
+
+        public static void FormatoData(DevExpress.XtraEditors.TextEdit _textBox)
+        {
+            _textBox.Properties.MaxLength = 10;
+
+            switch (_textBox.Text.Length)
+            {
+                case 0:
+                    _textBox.Text = "";
+                    break;
+
+                case 2:
+                    _textBox.Text = _textBox.Text + "/";
+                    _textBox.SelectionStart = 3;
+                    break;
+
+                case 5:
+                    _textBox.Text = _textBox.Text + "/";
+                    _textBox.SelectionStart = 6;
+                    break;
+            }
+        }
+
+        #endregion Formato Data
+
+        #region Formato de CPF
+
+        public static void FormatoCPF(KeyPressEventArgs e, DevExpress.XtraEditors.TextEdit _txtBox)
+        {
+            _txtBox.Properties.MaxLength = 14;
+
+            if (char.IsNumber(e.KeyChar) == true)
+            {
+                switch (_txtBox.Text.Length)
+                {
+                    case 0:
+                        _txtBox.Text = "";
+                        break;
+
+                    case 3:
+                        _txtBox.Text = _txtBox.Text + ".";
+                        _txtBox.SelectionStart = 4;
+                        break;
+
+                    case 7:
+                        _txtBox.Text = _txtBox.Text + ".";
+                        _txtBox.SelectionStart = 8;
+                        break;
+
+                    case 11:
+                        _txtBox.Text = _txtBox.Text + "-";
+                        _txtBox.SelectionStart = 12;
+                        break;
+                }
+            }
+        }
+
+        #endregion Formato de CPF
+
+        #region Formato RG
+
+        public static void FormatoRG(KeyPressEventArgs e, DevExpress.XtraEditors.TextEdit _txtBox)
+        {
+            _txtBox.Properties.MaxLength = 13;
+
+            if (char.IsNumber(e.KeyChar) == true)
+            {
+                switch (_txtBox.Text.Length)
+                {
+                    case 0:
+                        _txtBox.Text = "";
+                        break;
+
+                    case 2:
+                        _txtBox.Text = _txtBox.Text + ".";
+                        _txtBox.SelectionStart = 3;
+                        break;
+
+                    case 6:
+                        _txtBox.Text = _txtBox.Text + ".";
+                        _txtBox.SelectionStart = 7;
+                        break;
+
+                    case 10:
+                        _txtBox.Text = _txtBox.Text + "-";
+                        _txtBox.SelectionStart = 11;
+                        break;
+                }
+            }
+        }
+
+        #endregion Formato RG
+
+        #region Formatar TextBox Email
+
+        public static bool FormatoEmail(KeyPressEventArgs e)
+        {
+            if (!Char.IsLetter(e.KeyChar) && e.KeyChar != (char)8 && e.KeyChar != (char)64
+                && !Char.IsDigit(e.KeyChar) && e.KeyChar != (char)45 && e.KeyChar != (char)46
+                && e.KeyChar != (char)95 && e.KeyChar != (char)47)
             {
                 e.Handled = true;
             }
 
             return true;
         }
+
+        #endregion Formatar TextBox Email
+
+        #region Formato Celular
+
+        public static void FormatoCelular(KeyPressEventArgs e, DevExpress.XtraEditors.TextEdit _textBox)
+        {
+            if (char.IsNumber(e.KeyChar) == true)
+            {
+                switch (_textBox.Text.Length)
+                {
+                    case 0:
+                        _textBox.Text = "(";
+                        _textBox.SelectionStart = 1;
+                        break;
+
+                    case 3:
+                        _textBox.Text = _textBox.Text + ") ";
+                        _textBox.SelectionStart = 5;
+                        break;
+
+                    case 10:
+                        _textBox.Text = _textBox.Text + "-";
+                        _textBox.SelectionStart = 11;
+                        break;
+                }
+            }
+        }
+
+        #endregion Formato Celular
+
+        #region Formato Telefone Residencial
+
+        public static void FormatoTelefone(KeyPressEventArgs e, DevExpress.XtraEditors.TextEdit _textBox)
+        {
+            if (char.IsNumber(e.KeyChar) == true)
+            {
+                switch (_textBox.Text.Length)
+                {
+                    case 0:
+                        _textBox.Text = "(";
+                        _textBox.SelectionStart = 1;
+                        break;
+
+                    case 3:
+                        _textBox.Text = _textBox.Text + ") ";
+                        _textBox.SelectionStart = 5;
+                        break;
+
+                    case 10:
+                        _textBox.Text = _textBox.Text + "-";
+                        _textBox.SelectionStart = 11;
+                        break;
+                }
+            }
+        }
+
+        #endregion Formato Telefone Residencial
     }
 }

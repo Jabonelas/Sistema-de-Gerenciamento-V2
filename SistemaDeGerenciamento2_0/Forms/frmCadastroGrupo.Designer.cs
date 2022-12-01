@@ -109,6 +109,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.cmbAgrupador.Size = new System.Drawing.Size(200, 26);
             this.cmbAgrupador.TabIndex = 97;
+            this.cmbAgrupador.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cmbAgrupador_KeyPress);
             // 
             // txtNomeGrupo
             // 
@@ -116,9 +117,10 @@
             this.txtNomeGrupo.Name = "txtNomeGrupo";
             this.txtNomeGrupo.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNomeGrupo.Properties.Appearance.Options.UseFont = true;
+            this.txtNomeGrupo.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.RegExpMaskManager));
+            this.txtNomeGrupo.Properties.MaskSettings.Set("mask", "\\p{L}+");
             this.txtNomeGrupo.Size = new System.Drawing.Size(200, 26);
             this.txtNomeGrupo.TabIndex = 96;
-            this.txtNomeGrupo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNomeGrupo_KeyPress);
             // 
             // btnFechar
             // 
@@ -176,7 +178,7 @@
             this.AlertaSalvar.ShowPinButton = false;
             this.AlertaSalvar.ShowToolTips = false;
             // 
-            // frmAdicionarGrupo
+            // frmCadastroGrupo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -192,7 +194,7 @@
             this.Controls.Add(this.labelControl3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.KeyPreview = true;
-            this.Name = "frmAdicionarGrupo";
+            this.Name = "frmCadastroGrupo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmAdicionarGrupo";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmAdicionarGrupo_KeyDown);

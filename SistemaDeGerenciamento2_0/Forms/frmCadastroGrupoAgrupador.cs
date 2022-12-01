@@ -32,38 +32,9 @@ namespace SistemaDeGerenciamento2_0.Forms
             public string nomeAgrupador { get; set; }
         }
 
-        private void PreencherGridView()
-        {
-            DataTable dt = new DataTable();
-            dt.Columns.Add("Grupo");
-            dt.Columns.Add("Agrupador");
-
-            SistemaDeGerenciamento2_0Entities4 db = new SistemaDeGerenciamento2_0Entities4();
-
-            ListaGrupoAgrupador = db.tb_grupo.Where(x => !string.IsNullOrEmpty(x.gp_nome_grupo))
-                .Select(x => new GrupoClass { nomeGrupo = x.gp_nome_grupo, nomeAgrupador = x.gp_nome_agrupador })
-                .ToList();
-
-            foreach (var item in ListaGrupoAgrupador)
-            {
-                dt.Rows.Add(item.nomeGrupo, item.nomeAgrupador);
-            }
-
-            gdvGruposAgrupadores.DataSource = dt;
-            gdvGruposAgrupadores.Refresh();
-        }
-
         private void btnFechar_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void frmCadastroGrupoSubGrupo_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Escape)
-            {
-                this.Close();
-            }
         }
 
         private void btnAdicionarGrupo_Click(object sender, EventArgs e)
@@ -76,6 +47,14 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             frmCadastroAgrupador frmAdicionarSubGrupo = new frmCadastroAgrupador();
             frmAdicionarSubGrupo.ShowDialog();
+        }
+
+        private void frmCadastroGrupoSubGrupo_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+            {
+                this.Close();
+            }
         }
 
         private void frmCadastroGrupoSubGrupo_MouseDown(object sender, MouseEventArgs e)
@@ -95,6 +74,27 @@ namespace SistemaDeGerenciamento2_0.Forms
         private void frmCadastroGrupoAgrupador_Activated(object sender, EventArgs e)
         {
             PreencherGridView();
+        }
+
+        private void PreencherGridView()
+        {
+            DataTable dt = new DataTable();
+            dt.Columns.Add("Grupo");
+            dt.Columns.Add("Agrupador");
+
+            SistemaDeGerenciamento2_0Entities5 db = new SistemaDeGerenciamento2_0Entities5();
+
+            ListaGrupoAgrupador = db.tb_grupo.Where(x => !string.IsNullOrEmpty(x.gp_nome_grupo))
+                .Select(x => new GrupoClass { nomeGrupo = x.gp_nome_grupo, nomeAgrupador = x.gp_nome_agrupador })
+                .ToList();
+
+            foreach (var item in ListaGrupoAgrupador)
+            {
+                dt.Rows.Add(item.nomeGrupo, item.nomeAgrupador);
+            }
+
+            gdvGruposAgrupadores.DataSource = dt;
+            gdvGruposAgrupadores.Refresh();
         }
     }
 }

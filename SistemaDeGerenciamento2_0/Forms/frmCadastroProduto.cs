@@ -49,7 +49,7 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             try
             {
-                using (SistemaDeGerenciamento2_0Entities4 db = new SistemaDeGerenciamento2_0Entities4())
+                using (SistemaDeGerenciamento2_0Entities5 db = new SistemaDeGerenciamento2_0Entities5())
                 {
                     ListaIdGrupoAgrupador = db.tb_grupo.Where(x => !string.IsNullOrEmpty(x.gp_nome_grupo))
                     .Select(x => new GrupoClass { idGrupo = x.id_grupo, nomeGrupo = x.gp_nome_grupo, nomeAgrupador = x.gp_nome_agrupador })
@@ -64,11 +64,66 @@ namespace SistemaDeGerenciamento2_0.Forms
             }
         }
 
-        private void PreenchimentoComboBoxGrupo()
+        private void btnFechar_Click(object sender, EventArgs e)
         {
-            cmbGrupo.Properties.DataSource = ListaIdGrupoAgrupador;
-            cmbGrupo.Properties.DisplayMember = "nomeGrupo";
-            cmbGrupo.Properties.ValueMember = "idGrupo";
+            VerificacaoFecharTela();
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            VerificacaoFecharTela();
+        }
+
+        private void btnAcessarGrupoSubGrupo_Click(object sender, EventArgs e)
+        {
+            frmCadastroGrupoAgrupador frmCadastroGrupoSubGrupo = new frmCadastroGrupoAgrupador();
+            frmCadastroGrupoSubGrupo.ShowDialog();
+        }
+
+        private void btnSalvar_Click(object sender, EventArgs e)
+        {
+            Salvar();
+        }
+
+        private void txtCusto_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (txtCusto.Text != string.Empty && txtCusto.Text != "R$ 0,00" && txtCusto.Text != "R$ " && txtCusto.Text != "R$" && txtCusto.Text != "R")
+            {
+                CalcularPreco();
+            }
+        }
+
+        private void txtMargemLucro_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (txtMargemLucro.Text != string.Empty)
+            {
+                CalcularPreco();
+            }
+            else
+            {
+                txtPreco.Text = txtCusto.Text;
+            }
+        }
+
+        private void txtPreco_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (txtPreco.Text != string.Empty && txtPreco.Text != "R$ 0,00" && txtPreco.Text != "R$ " && txtPreco.Text != "R$" && txtPreco.Text != "R")
+            {
+                CalcularMargemLucro();
+            }
+        }
+
+        private void txtCodigo_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            ManipulacaoTextBox.DigitarApenasLetrasOuNumeros(e, txtCodigo);
+        }
+
+        private void frmCadastroProduto_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+            {
+                VerificacaoFecharTela();
+            }
         }
 
         private void frmCadastroProduto_MouseMove(object sender, MouseEventArgs e)
@@ -98,73 +153,11 @@ namespace SistemaDeGerenciamento2_0.Forms
             }
         }
 
-        private void btnFechar_Click(object sender, EventArgs e)
+        private void PreenchimentoComboBoxGrupo()
         {
-            VerificacaoFecharTela();
-        }
-
-        private void frmCadastroProduto_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Escape)
-            {
-                VerificacaoFecharTela();
-            }
-        }
-
-        private void btnCancelar_Click(object sender, EventArgs e)
-        {
-            VerificacaoFecharTela();
-        }
-
-        private void btnAcessarGrupoSubGrupo_Click(object sender, EventArgs e)
-        {
-            frmCadastroGrupoAgrupador frmCadastroGrupoSubGrupo = new frmCadastroGrupoAgrupador();
-            frmCadastroGrupoSubGrupo.ShowDialog();
-        }
-
-        private void txtCodigo_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            ManipulacaoTextBox.TeclaDigitadaFoiLetrasOuNumeros(e, txtCodigo);
-        }
-
-        private void txtCodigoDeBarras_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            ManipulacaoTextBox.TeclaDigitadaFoiNumero(e, txtCodigoDeBarras);
-        }
-
-        private void txtNome_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            ManipulacaoTextBox.TeclaDigitadaFoiLetras(e, txtNome);
-        }
-
-        private void txtTipoUnidade_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            ManipulacaoTextBox.TeclaDigitadaFoiLetras(e, txtTipoUnidade);
-        }
-
-        private void txtEstoqueMinimo_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            ManipulacaoTextBox.TeclaDigitadaFoiNumero(e, txtEstoqueMinimo);
-        }
-
-        private void txtCusto_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            ManipulacaoTextBox.FormatoDinheiro(e, sender, txtCusto);
-        }
-
-        private void txtPreco_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            ManipulacaoTextBox.FormatoDinheiro(e, sender, txtPreco);
-        }
-
-        private void txtMargemLucro_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            ManipulacaoTextBox.PreenchimentoPorcentagem(e, sender, txtMargemLucro);
-        }
-
-        private void btnSalvar_Click(object sender, EventArgs e)
-        {
-            Salvar();
+            cmbGrupo.Properties.DataSource = ListaIdGrupoAgrupador;
+            cmbGrupo.Properties.DisplayMember = "nomeGrupo";
+            cmbGrupo.Properties.ValueMember = "idGrupo";
         }
 
         private void Salvar()
@@ -176,7 +169,7 @@ namespace SistemaDeGerenciamento2_0.Forms
             }
             else
             {
-                MensagemAtencao.MensagemPreencherCampos(this);
+                MensagemAtencao.MensagemPreencherCampos();
             }
         }
 
@@ -184,7 +177,7 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             try
             {
-                using (SistemaDeGerenciamento2_0Entities4 db = new SistemaDeGerenciamento2_0Entities4())
+                using (SistemaDeGerenciamento2_0Entities5 db = new SistemaDeGerenciamento2_0Entities5())
                 {
                     var CadastroProduto = new tb_produto()
                     {
@@ -214,14 +207,6 @@ namespace SistemaDeGerenciamento2_0.Forms
             }
         }
 
-        private void txtCusto_KeyUp(object sender, KeyEventArgs e)
-        {
-            if (txtCusto.Text != string.Empty && txtCusto.Text != "R$ 0,00" && txtCusto.Text != "R$ " && txtCusto.Text != "R$" && txtCusto.Text != "R")
-            {
-                CalcularPreco();
-            }
-        }
-
         private void CalcularPreco()
         {
             decimal valorCusto = Convert.ToDecimal(txtCusto.Text.Replace("R$", ""));
@@ -235,27 +220,7 @@ namespace SistemaDeGerenciamento2_0.Forms
             txtPreco.Text = valorPreco.ToString("C");
         }
 
-        private void txtMargemLucro_KeyUp(object sender, KeyEventArgs e)
-        {
-            if (txtMargemLucro.Text != string.Empty)
-            {
-                CalcularPreco();
-            }
-            else
-            {
-                txtPreco.Text = txtCusto.Text;
-            }
-        }
-
-        private void txtPreco_KeyUp(object sender, KeyEventArgs e)
-        {
-            if (txtPreco.Text != string.Empty && txtPreco.Text != "R$ 0,00" && txtPreco.Text != "R$ " && txtPreco.Text != "R$" && txtPreco.Text != "R")
-            {
-                CalcularMargem();
-            }
-        }
-
-        private void CalcularMargem()
+        private void CalcularMargemLucro()
         {
             decimal valorCusto = Convert.ToDecimal(txtCusto.Text.Replace("R$", ""));
 
@@ -268,8 +233,19 @@ namespace SistemaDeGerenciamento2_0.Forms
             txtMargemLucro.Text = (margemLucro - 1).ToString("P");
         }
 
-        private void frmCadastroProduto_Shown(object sender, EventArgs e)
+        private void txtNome_KeyPress(object sender, KeyPressEventArgs e)
         {
+            ManipulacaoTextBox.DigitarApenasLetras(e, txtNome);
+        }
+
+        private void cmbFinalidade_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            ManipulacaoTextBox.DigitarApenasLetras(e, cmbFinalidade);
+        }
+
+        private void cmbTipoProduto_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            ManipulacaoTextBox.DigitarApenasLetras(e, cmbTipoProduto);
         }
     }
 }
