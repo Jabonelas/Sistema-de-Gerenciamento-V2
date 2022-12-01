@@ -67,8 +67,6 @@ namespace SistemaDeGerenciamento2_0.Forms
                 {
                     var fimItens = false;
 
-                    var isEmitente = false;
-
                     DataTable dt = new DataTable();
                     dt.Columns.Add("Item");
                     dt.Columns.Add("ID");
@@ -155,8 +153,8 @@ namespace SistemaDeGerenciamento2_0.Forms
                         }
                     }
 
-                    gridControl1.DataSource = dt;
-                    gridControl1.Refresh();
+                    gdvNotaFiscalEntrada.DataSource = dt;
+                    gdvNotaFiscalEntrada.Refresh();
                 }
             }
             catch (Exception x)

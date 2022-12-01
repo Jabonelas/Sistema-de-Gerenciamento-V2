@@ -38,11 +38,6 @@ namespace SistemaDeGerenciamento2_0
             }
         }
 
-        private void btnAcessoRapido_Click(object sender, EventArgs e)
-        {
-            TelaAcessoRapido();
-        }
-
         private void Produtos_Click(object sender, EventArgs e)
         {
             frmProdutos frmProdutos = new frmProdutos();
@@ -53,6 +48,17 @@ namespace SistemaDeGerenciamento2_0
         {
             frmFinanceiro frmFinanceiro = new frmFinanceiro();
             frmFinanceiro.ShowDialog();
+        }
+
+        private void Cadastro_Click(object sender, EventArgs e)
+        {
+            frmCadastroRegistros frmCadastroRegistros = new frmCadastroRegistros();
+            frmCadastroRegistros.ShowDialog();
+        }
+
+        private void btnAcessoRapido_Click_1(object sender, EventArgs e)
+        {
+            TelaAcessoRapido();
         }
     }
 }

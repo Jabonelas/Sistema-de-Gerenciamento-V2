@@ -54,7 +54,7 @@
             this.txtNaturezaDaOperacao = new DevExpress.XtraEditors.TextEdit();
             this.txtLocalArquivo = new DevExpress.XtraEditors.TextEdit();
             this.btnProcurar = new DevExpress.XtraEditors.SimpleButton();
-            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
+            this.gdvNotaFiscalEntrada = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
             this.txtTelefoneEmissor = new DevExpress.XtraEditors.TextEdit();
@@ -80,7 +80,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtNumeroNF.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNaturezaDaOperacao.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtLocalArquivo.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gdvNotaFiscalEntrada)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTelefoneEmissor.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNomeFantasia.Properties)).BeginInit();
@@ -285,7 +285,7 @@
             // 
             this.labelControl2.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl2.Appearance.Options.UseFont = true;
-            this.labelControl2.Location = new System.Drawing.Point(376, 338);
+            this.labelControl2.Location = new System.Drawing.Point(371, 338);
             this.labelControl2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(114, 20);
@@ -296,7 +296,7 @@
             // 
             this.labelControl1.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl1.Appearance.Options.UseFont = true;
-            this.labelControl1.Location = new System.Drawing.Point(376, 398);
+            this.labelControl1.Location = new System.Drawing.Point(371, 398);
             this.labelControl1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(76, 20);
@@ -305,7 +305,7 @@
             // 
             // txtValorTotalNF
             // 
-            this.txtValorTotalNF.Location = new System.Drawing.Point(376, 422);
+            this.txtValorTotalNF.Location = new System.Drawing.Point(371, 422);
             this.txtValorTotalNF.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtValorTotalNF.Name = "txtValorTotalNF";
             this.txtValorTotalNF.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -316,7 +316,7 @@
             // 
             // txtDataEmissao
             // 
-            this.txtDataEmissao.Location = new System.Drawing.Point(376, 362);
+            this.txtDataEmissao.Location = new System.Drawing.Point(371, 362);
             this.txtDataEmissao.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtDataEmissao.Name = "txtDataEmissao";
             this.txtDataEmissao.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -389,20 +389,21 @@
             this.btnProcurar.Text = "Procurar";
             this.btnProcurar.Click += new System.EventHandler(this.btnProcurar_Click);
             // 
-            // gridControl1
+            // gdvNotaFiscalEntrada
             // 
-            this.gridControl1.Location = new System.Drawing.Point(44, 468);
-            this.gridControl1.MainView = this.gridView1;
-            this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(985, 197);
-            this.gridControl1.TabIndex = 146;
-            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gdvNotaFiscalEntrada.Location = new System.Drawing.Point(44, 468);
+            this.gdvNotaFiscalEntrada.MainView = this.gridView1;
+            this.gdvNotaFiscalEntrada.Name = "gdvNotaFiscalEntrada";
+            this.gdvNotaFiscalEntrada.Size = new System.Drawing.Size(985, 197);
+            this.gdvNotaFiscalEntrada.TabIndex = 146;
+            this.gdvNotaFiscalEntrada.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
             // 
             // gridView1
             // 
-            this.gridView1.GridControl = this.gridControl1;
+            this.gridView1.GridControl = this.gdvNotaFiscalEntrada;
             this.gridView1.Name = "gridView1";
+            this.gridView1.OptionsFind.FindNullPrompt = "Buscar...";
             // 
             // labelControl9
             // 
@@ -472,7 +473,7 @@
             // 
             // txtEstado
             // 
-            this.txtEstado.Location = new System.Drawing.Point(376, 304);
+            this.txtEstado.Location = new System.Drawing.Point(371, 304);
             this.txtEstado.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtEstado.Name = "txtEstado";
             this.txtEstado.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -485,7 +486,7 @@
             // 
             this.labelControl15.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl15.Appearance.Options.UseFont = true;
-            this.labelControl15.Location = new System.Drawing.Point(376, 282);
+            this.labelControl15.Location = new System.Drawing.Point(371, 282);
             this.labelControl15.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.labelControl15.Name = "labelControl15";
             this.labelControl15.Size = new System.Drawing.Size(48, 20);
@@ -564,7 +565,7 @@
             this.Controls.Add(this.txtNomeFantasia);
             this.Controls.Add(this.txtTelefoneEmissor);
             this.Controls.Add(this.labelControl9);
-            this.Controls.Add(this.gridControl1);
+            this.Controls.Add(this.gdvNotaFiscalEntrada);
             this.Controls.Add(this.labelControl6);
             this.Controls.Add(this.txtRazaoSocialEmitente);
             this.Controls.Add(this.labelControl4);
@@ -611,7 +612,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtNumeroNF.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNaturezaDaOperacao.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtLocalArquivo.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gdvNotaFiscalEntrada)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTelefoneEmissor.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNomeFantasia.Properties)).EndInit();
@@ -650,7 +651,7 @@
         private DevExpress.XtraEditors.TextEdit txtNaturezaDaOperacao;
         private DevExpress.XtraEditors.TextEdit txtLocalArquivo;
         private DevExpress.XtraEditors.SimpleButton btnProcurar;
-        private DevExpress.XtraGrid.GridControl gridControl1;
+        private DevExpress.XtraGrid.GridControl gdvNotaFiscalEntrada;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private DevExpress.XtraEditors.LabelControl labelControl9;
         private DevExpress.XtraEditors.TextEdit txtTelefoneEmissor;

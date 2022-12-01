@@ -85,7 +85,7 @@ namespace SistemaDeGerenciamento2_0
                 }
                 e.Handled = true;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
             }
         }

@@ -32,7 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTelaPrincipal));
             this.pnlTelaPrincipal = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormContainer();
             this.accordionControl1 = new DevExpress.XtraBars.Navigation.AccordionControl();
-            this.wsxfrzgbh = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.btnAcessoRapido = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.VisaoGeral = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.PDV = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.Financeiro = new DevExpress.XtraBars.Navigation.AccordionControlElement();
@@ -64,7 +64,7 @@
             this.accordionControl1.Appearance.Item.Default.Options.UseFont = true;
             this.accordionControl1.Dock = System.Windows.Forms.DockStyle.Left;
             this.accordionControl1.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
-            this.wsxfrzgbh,
+            this.btnAcessoRapido,
             this.VisaoGeral,
             this.PDV,
             this.Financeiro,
@@ -79,12 +79,13 @@
             this.accordionControl1.TabIndex = 1;
             this.accordionControl1.ViewType = DevExpress.XtraBars.Navigation.AccordionControlViewType.HamburgerMenu;
             // 
-            // wsxfrzgbh
+            // btnAcessoRapido
             // 
-            this.wsxfrzgbh.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.foguete_preto2;
-            this.wsxfrzgbh.Name = "wsxfrzgbh";
-            this.wsxfrzgbh.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.wsxfrzgbh.Text = "Acesso Rápido";
+            this.btnAcessoRapido.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.foguete_preto2;
+            this.btnAcessoRapido.Name = "btnAcessoRapido";
+            this.btnAcessoRapido.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.btnAcessoRapido.Text = "Acesso Rápido";
+            this.btnAcessoRapido.Click += new System.EventHandler(this.btnAcessoRapido_Click_1);
             // 
             // VisaoGeral
             // 
@@ -154,6 +155,7 @@
             this.Cadastro.Name = "Cadastro";
             this.Cadastro.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.Cadastro.Text = "Cadastros";
+            this.Cadastro.Click += new System.EventHandler(this.Cadastro_Click);
             // 
             // Produtos
             // 
@@ -241,7 +243,7 @@
         private DevExpress.XtraBars.Navigation.AccordionControlElement Relatorios;
         private DevExpress.XtraBars.Navigation.AccordionControlElement Configuracao;
         private DevExpress.XtraBars.SkinBarSubItem skinBarSubItem1;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement wsxfrzgbh;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement btnAcessoRapido;
     }
 }
 

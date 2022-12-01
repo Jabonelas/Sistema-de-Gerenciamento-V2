@@ -65,6 +65,7 @@
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
@@ -84,38 +85,41 @@
     <Compile Include="Class\DadosMensagemAlerta.cs" />
     <Compile Include="Class\MensagemErros.cs" />
     <Compile Include="Class\MensagemAtencao.cs" />
-    <Compile Include="dbSistemaDeGerenciamento2_0.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>dbSistemaDeGerenciamento2_0.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="dbSistemaDeGerenciamento2_0.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>dbSistemaDeGerenciamento2_0.tt</DependentUpon>
-    </Compile>
-    <Compile Include="dbSistemaDeGerenciamento2_0.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>dbSistemaDeGerenciamento2_0.edmx</DependentUpon>
-    </Compile>
     <Compile Include="Forms\frmAcessoRapido.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\frmAcessoRapido.Designer.cs">
       <DependentUpon>frmAcessoRapido.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\frmAdicionarGrupo.cs">
+    <Compile Include="Forms\frmCadastroGrupo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\frmAdicionarGrupo.Designer.cs">
-      <DependentUpon>frmAdicionarGrupo.cs</DependentUpon>
+    <Compile Include="Forms\frmCadastroGrupo.Designer.cs">
+      <DependentUpon>frmCadastroGrupo.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\frmAdicionarAgrupador.cs">
+    <Compile Include="Forms\frmCadastroAgrupador.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\frmAdicionarAgrupador.Designer.cs">
-      <DependentUpon>frmAdicionarAgrupador.cs</DependentUpon>
+    <Compile Include="Forms\frmCadastroAgrupador.Designer.cs">
+      <DependentUpon>frmCadastroAgrupador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmCadastroRegistroPessoaFisica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmCadastroRegistroPessoaFisica.Designer.cs">
+      <DependentUpon>frmCadastroRegistroPessoaFisica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmCadastroRegistroPessoaJuridica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmCadastroRegistroPessoaJuridica.Designer.cs">
+      <DependentUpon>frmCadastroRegistroPessoaJuridica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmCadastroRegistros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmCadastroRegistros.Designer.cs">
+      <DependentUpon>frmCadastroRegistros.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\frmEntradaNF.cs">
       <SubType>Form</SubType>
@@ -162,53 +166,23 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="tb_cadastro_despesa.cs">
-      <DependentUpon>dbSistemaDeGerenciamento2_0.tt</DependentUpon>
-    </Compile>
-    <Compile Include="tb_configuração_financeira.cs">
-      <DependentUpon>dbSistemaDeGerenciamento2_0.tt</DependentUpon>
-    </Compile>
-    <Compile Include="tb_despesa.cs">
-      <DependentUpon>dbSistemaDeGerenciamento2_0.tt</DependentUpon>
-    </Compile>
-    <Compile Include="tb_endereços.cs">
-      <DependentUpon>dbSistemaDeGerenciamento2_0.tt</DependentUpon>
-    </Compile>
-    <Compile Include="tb_estoque.cs">
-      <DependentUpon>dbSistemaDeGerenciamento2_0.tt</DependentUpon>
-    </Compile>
-    <Compile Include="tb_grupo.cs">
-      <DependentUpon>dbSistemaDeGerenciamento2_0.tt</DependentUpon>
-    </Compile>
-    <Compile Include="tb_informações_comeciais.cs">
-      <DependentUpon>dbSistemaDeGerenciamento2_0.tt</DependentUpon>
-    </Compile>
-    <Compile Include="tb_nota_fiscal_entrada.cs">
-      <DependentUpon>dbSistemaDeGerenciamento2_0.tt</DependentUpon>
-    </Compile>
-    <Compile Include="tb_nota_fiscal_saida.cs">
-      <DependentUpon>dbSistemaDeGerenciamento2_0.tt</DependentUpon>
-    </Compile>
-    <Compile Include="tb_permissoes.cs">
-      <DependentUpon>dbSistemaDeGerenciamento2_0.tt</DependentUpon>
-    </Compile>
-    <Compile Include="tb_produto.cs">
-      <DependentUpon>dbSistemaDeGerenciamento2_0.tt</DependentUpon>
-    </Compile>
-    <Compile Include="tb_registro.cs">
-      <DependentUpon>dbSistemaDeGerenciamento2_0.tt</DependentUpon>
-    </Compile>
-    <Compile Include="tb_repeticao_despesa.cs">
-      <DependentUpon>dbSistemaDeGerenciamento2_0.tt</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="Forms\frmAcessoRapido.resx">
       <DependentUpon>frmAcessoRapido.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frmAdicionarGrupo.resx">
-      <DependentUpon>frmAdicionarGrupo.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\frmCadastroGrupo.resx">
+      <DependentUpon>frmCadastroGrupo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frmAdicionarAgrupador.resx">
-      <DependentUpon>frmAdicionarAgrupador.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\frmCadastroAgrupador.resx">
+      <DependentUpon>frmCadastroAgrupador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmCadastroRegistroPessoaFisica.resx">
+      <DependentUpon>frmCadastroRegistroPessoaFisica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmCadastroRegistroPessoaJuridica.resx">
+      <DependentUpon>frmCadastroRegistroPessoaJuridica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmCadastroRegistros.resx">
+      <DependentUpon>frmCadastroRegistros.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmEntradaNF.resx">
       <DependentUpon>frmEntradaNF.cs</DependentUpon>
@@ -235,13 +209,6 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="App.config" />
-    <EntityDeploy Include="dbSistemaDeGerenciamento2_0.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>dbSistemaDeGerenciamento2_0.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <None Include="dbSistemaDeGerenciamento2_0.edmx.diagram">
-      <DependentUpon>dbSistemaDeGerenciamento2_0.edmx</DependentUpon>
-    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -308,22 +275,18 @@
     <None Include="Resources\foguete-preto.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="dbSistemaDeGerenciamento2_0.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>dbSistemaDeGerenciamento2_0.edmx</DependentUpon>
-      <LastGenOutput>dbSistemaDeGerenciamento2_0.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="dbSistemaDeGerenciamento2_0.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>dbSistemaDeGerenciamento2_0.edmx</DependentUpon>
-      <LastGenOutput>dbSistemaDeGerenciamento2_0.cs</LastGenOutput>
-    </Content>
     <None Include="Resources\salvar_verde50.png" />
     <None Include="Resources\salvar_verde.png" />
     <None Include="Resources\pasta_aberta.png" />
     <None Include="Resources\tabela.png" />
     <None Include="Resources\limpar_preto.png" />
     <None Include="Resources\lupa_preta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\funcionario_20.png" />
+    <None Include="Resources\fornecedor_20px.png" />
+    <None Include="Resources\carrinho-preto20.png" />
+    <None Include="Resources\cliente.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

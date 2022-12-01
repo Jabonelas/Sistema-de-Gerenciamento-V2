@@ -19,7 +19,7 @@ namespace SistemaDeGerenciamento2_0.Forms
         private int X = 0;
         private int Y = 0;
 
-        private List<GrupoStruct> Grupo = new List<GrupoStruct>();
+        private List<GrupoClass> ListaIdGrupoAgrupador = new List<GrupoClass>();
 
         public frmCadastroProduto()
         {
@@ -27,7 +27,7 @@ namespace SistemaDeGerenciamento2_0.Forms
 
             var tarefa = Task.Run(async () =>
             {
-                await PreencherComboBoxGrupo();
+                await BuscarDadosParaPreencherComboBoxGrupo();
             });
 
             var esperador = tarefa.GetAwaiter();
@@ -38,23 +38,22 @@ namespace SistemaDeGerenciamento2_0.Forms
             });
         }
 
-        private class GrupoStruct
+        private class GrupoClass
         {
             public int idGrupo { get; set; }
             public string nomeGrupo { get; set; }
             public string nomeAgrupador { get; set; }
         }
 
-        private async Task PreencherComboBoxGrupo()
+        private async Task BuscarDadosParaPreencherComboBoxGrupo()
         {
             try
             {
-                using (SistemaDeGerenciamento2_0Entities3 db = new SistemaDeGerenciamento2_0Entities3())
+                using (SistemaDeGerenciamento2_0Entities4 db = new SistemaDeGerenciamento2_0Entities4())
                 {
-                    Grupo = db.tb_grupo.Where(x => !string.IsNullOrEmpty(x.gp_nome_grupo))
-                       .Select(x => new GrupoStruct { idGrupo = x.id_grupo, nomeGrupo = x.gp_nome_grupo, nomeAgrupador = x.gp_nome_agrupador })
-                       .Distinct()
-                       .ToList();
+                    ListaIdGrupoAgrupador = db.tb_grupo.Where(x => !string.IsNullOrEmpty(x.gp_nome_grupo))
+                    .Select(x => new GrupoClass { idGrupo = x.id_grupo, nomeGrupo = x.gp_nome_grupo, nomeAgrupador = x.gp_nome_agrupador })
+                    .ToList();
                 }
             }
             catch (Exception x)
@@ -67,7 +66,7 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private void PreenchimentoComboBoxGrupo()
         {
-            cmbGrupo.Properties.DataSource = Grupo;
+            cmbGrupo.Properties.DataSource = ListaIdGrupoAgrupador;
             cmbGrupo.Properties.DisplayMember = "nomeGrupo";
             cmbGrupo.Properties.ValueMember = "idGrupo";
         }
@@ -185,7 +184,7 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             try
             {
-                using (SistemaDeGerenciamento2_0Entities3 db = new SistemaDeGerenciamento2_0Entities3())
+                using (SistemaDeGerenciamento2_0Entities4 db = new SistemaDeGerenciamento2_0Entities4())
                 {
                     var CadastroProduto = new tb_produto()
                     {

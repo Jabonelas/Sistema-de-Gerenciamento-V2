@@ -18,9 +18,8 @@ namespace SistemaDeGerenciamento2_0
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new frmAdicionarAgrupador());
-            Application.Run(new frmTelaPrincipal());
-            //Application.Run(new frmEntradaNF());
+            Application.Run(new frmCadastroRegistros());
+            //Application.Run(new frmTelaPrincipal());
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using DevExpress.XtraEditors;
+﻿using DevExpress.Data.Filtering.Helpers;
+using DevExpress.XtraEditors;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -19,6 +20,37 @@ namespace SistemaDeGerenciamento2_0.Forms
         public frmCadastroGrupoAgrupador()
         {
             InitializeComponent();
+
+            PreencherGridView();
+        }
+
+        private List<GrupoClass> ListaGrupoAgrupador = new List<GrupoClass>();
+
+        private class GrupoClass
+        {
+            public string nomeGrupo { get; set; }
+            public string nomeAgrupador { get; set; }
+        }
+
+        private void PreencherGridView()
+        {
+            DataTable dt = new DataTable();
+            dt.Columns.Add("Grupo");
+            dt.Columns.Add("Agrupador");
+
+            SistemaDeGerenciamento2_0Entities4 db = new SistemaDeGerenciamento2_0Entities4();
+
+            ListaGrupoAgrupador = db.tb_grupo.Where(x => !string.IsNullOrEmpty(x.gp_nome_grupo))
+                .Select(x => new GrupoClass { nomeGrupo = x.gp_nome_grupo, nomeAgrupador = x.gp_nome_agrupador })
+                .ToList();
+
+            foreach (var item in ListaGrupoAgrupador)
+            {
+                dt.Rows.Add(item.nomeGrupo, item.nomeAgrupador);
+            }
+
+            gdvGruposAgrupadores.DataSource = dt;
+            gdvGruposAgrupadores.Refresh();
         }
 
         private void btnFechar_Click(object sender, EventArgs e)
@@ -36,13 +68,13 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private void btnAdicionarGrupo_Click(object sender, EventArgs e)
         {
-            frmAdicionarGrupo frmAdicionarGrupo = new frmAdicionarGrupo();
+            frmCadastroGrupo frmAdicionarGrupo = new frmCadastroGrupo();
             frmAdicionarGrupo.ShowDialog();
         }
 
         private void btnAdicionarSubGrupo_Click(object sender, EventArgs e)
         {
-            frmAdicionarAgrupador frmAdicionarSubGrupo = new frmAdicionarAgrupador();
+            frmCadastroAgrupador frmAdicionarSubGrupo = new frmCadastroAgrupador();
             frmAdicionarSubGrupo.ShowDialog();
         }
 
@@ -58,6 +90,11 @@ namespace SistemaDeGerenciamento2_0.Forms
             if (e.Button != MouseButtons.Left) return;
             this.Left = X + MousePosition.X;
             this.Top = Y + MousePosition.Y;
+        }
+
+        private void frmCadastroGrupoAgrupador_Activated(object sender, EventArgs e)
+        {
+            PreencherGridView();
         }
     }
 }

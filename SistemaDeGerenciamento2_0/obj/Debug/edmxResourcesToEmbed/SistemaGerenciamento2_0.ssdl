@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Schema Namespace="SistemaDeGerenciamento2_0Model3.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+<Schema Namespace="SistemaDeGerenciamento2_0Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
   <EntityType Name="tb_cadastro_despesa">
     <Key>
       <PropertyRef Name="id_categoria_despesa" />
@@ -13,7 +13,7 @@
     <Key>
       <PropertyRef Name="id_configuracao_financeira" />
     </Key>
-    <Property Name="id_configuracao_financeira" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_configuracao_financeira" Type="int" Nullable="false" />
     <Property Name="cf_juros_dia" Type="decimal" Precision="10" Scale="2" Nullable="false" />
     <Property Name="cf_multa_porcentagem" Type="decimal" Precision="10" Scale="2" Nullable="false" />
     <Property Name="cf_multa_fixa" Type="decimal" Precision="10" Scale="2" Nullable="false" />
@@ -32,7 +32,7 @@
     <Property Name="dp_valor_lancamento" Type="decimal" Precision="10" Scale="2" Nullable="false" />
     <Property Name="dp_forma_pagamento" Type="varchar" MaxLength="255" Nullable="false" />
     <Property Name="dp_pagamento_em" Type="varchar" MaxLength="255" Nullable="false" />
-    <Property Name="dp_vencimento" Type="date" Nullable="false" />
+    <Property Name="dp_vencimentod" Type="date" Nullable="false" />
     <Property Name="fk_registro" Type="int" Nullable="false" />
     <Property Name="fk_grupo" Type="int" Nullable="false" />
   </EntityType>
@@ -67,7 +67,7 @@
     </Key>
     <Property Name="id_grupo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="gp_nome_grupo" Type="varchar" MaxLength="255" />
-    <Property Name="gp_nome_agrupador" Type="varchar" MaxLength="255" />
+    <Property Name="gp_nome_agrupador" Type="varchar" MaxLength="255" Nullable="false" />
   </EntityType>
   <EntityType Name="tb_informações_comeciais">
     <Key>
@@ -109,9 +109,9 @@
     <Property Name="nfs_valor_pago" Type="decimal" Precision="10" Scale="2" Nullable="false" />
     <Property Name="nfs_valor_juros" Type="decimal" Precision="10" Scale="2" />
     <Property Name="nfs_valor_desconto" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="nfs_vendedor" Type="varchar" MaxLength="255" />
     <Property Name="fk_estoque" Type="int" />
-    <Property Name="fk_nome_vendedor" Type="int" Nullable="false" />
-    <Property Name="fk_nome_cliente" Type="int" />
+    <Property Name="fk_registro_cliente" Type="int" />
   </EntityType>
   <EntityType Name="tb_permissoes">
     <Key>
@@ -157,19 +157,19 @@
     </Key>
     <Property Name="id_produto" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="pd_codigo" Type="varchar" MaxLength="255" Nullable="false" />
-    <Property Name="pd_codigo_barras" Type="varchar" MaxLength="255" Nullable="false" />
     <Property Name="pd_finalidade" Type="varchar" MaxLength="255" Nullable="false" />
     <Property Name="pd_nome" Type="varchar" MaxLength="255" Nullable="false" />
     <Property Name="pd_estoque_minimo" Type="decimal" Precision="10" Scale="2" Nullable="false" />
     <Property Name="pd_custo" Type="decimal" Precision="10" Scale="2" Nullable="false" />
     <Property Name="pd_margem" Type="decimal" Precision="10" Scale="2" Nullable="false" />
     <Property Name="pd_preco" Type="decimal" Precision="10" Scale="2" Nullable="false" />
-    <Property Name="pd_tipo_produto" Type="varchar" MaxLength="255" Nullable="false" />
-    <Property Name="pd_tipo_unidade" Type="varchar" MaxLength="255" Nullable="false" />
     <Property Name="pd_observacoes" Type="varchar" MaxLength="255" Nullable="false" />
     <Property Name="fk_grupo" Type="int" Nullable="false" />
-    <Property Name="fk_registro_cadastrador" Type="int" />
-    <Property Name="fk_registo_forncedor" Type="int" />
+    <Property Name="fk_registro_forncedor" Type="int" />
+    <Property Name="pd_codigo_barras" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="pd_tipo_produto" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="pd_tipo_unidade" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="pd_usuario_cadastrador" Type="varchar" MaxLength="255" />
   </EntityType>
   <EntityType Name="tb_registro">
     <Key>
@@ -272,18 +272,6 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="tb_nota_fiscal_saida_fk1">
-    <End Role="tb_registro" Type="Self.tb_registro" Multiplicity="1" />
-    <End Role="tb_nota_fiscal_saida" Type="Self.tb_nota_fiscal_saida" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="tb_registro">
-        <PropertyRef Name="id_registro" />
-      </Principal>
-      <Dependent Role="tb_nota_fiscal_saida">
-        <PropertyRef Name="fk_nome_vendedor" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="tb_nota_fiscal_saida_fk2">
     <End Role="tb_registro" Type="Self.tb_registro" Multiplicity="0..1" />
     <End Role="tb_nota_fiscal_saida" Type="Self.tb_nota_fiscal_saida" Multiplicity="*" />
     <ReferentialConstraint>
@@ -291,7 +279,7 @@
         <PropertyRef Name="id_registro" />
       </Principal>
       <Dependent Role="tb_nota_fiscal_saida">
-        <PropertyRef Name="fk_nome_cliente" />
+        <PropertyRef Name="fk_registro_cliente" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -315,7 +303,7 @@
         <PropertyRef Name="id_registro" />
       </Principal>
       <Dependent Role="tb_produto">
-        <PropertyRef Name="fk_registro_cadastrador" />
+        <PropertyRef Name="fk_registro_forncedor" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -379,7 +367,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <EntityContainer Name="SistemaDeGerenciamento2_0Model3StoreContainer">
+  <EntityContainer Name="SistemaDeGerenciamento2_0ModelStoreContainer">
     <EntitySet Name="tb_cadastro_despesa" EntityType="Self.tb_cadastro_despesa" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="tb_configuração_financeira" EntityType="Self.tb_configuração_financeira" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="tb_despesa" EntityType="Self.tb_despesa" Schema="dbo" store:Type="Tables" />
@@ -414,10 +402,6 @@
       <End Role="tb_nota_fiscal_saida" EntitySet="tb_nota_fiscal_saida" />
     </AssociationSet>
     <AssociationSet Name="tb_nota_fiscal_saida_fk1" Association="Self.tb_nota_fiscal_saida_fk1">
-      <End Role="tb_registro" EntitySet="tb_registro" />
-      <End Role="tb_nota_fiscal_saida" EntitySet="tb_nota_fiscal_saida" />
-    </AssociationSet>
-    <AssociationSet Name="tb_nota_fiscal_saida_fk2" Association="Self.tb_nota_fiscal_saida_fk2">
       <End Role="tb_registro" EntitySet="tb_registro" />
       <End Role="tb_nota_fiscal_saida" EntitySet="tb_nota_fiscal_saida" />
     </AssociationSet>

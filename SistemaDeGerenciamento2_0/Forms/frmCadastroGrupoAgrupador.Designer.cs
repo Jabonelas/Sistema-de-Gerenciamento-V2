@@ -29,41 +29,17 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCadastroGrupoAgrupador));
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Grupo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SubGrupo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnAdicionarSubGrupo = new DevExpress.XtraEditors.SimpleButton();
             this.btnAdicionarGrupo = new DevExpress.XtraEditors.SimpleButton();
             this.btnFechar = new DevExpress.XtraEditors.SimpleButton();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.gdvGruposAgrupadores = new DevExpress.XtraGrid.GridControl();
+            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gdvGruposAgrupadores)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Grupo,
-            this.SubGrupo});
-            this.dataGridView1.Location = new System.Drawing.Point(30, 140);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(523, 187);
-            this.dataGridView1.TabIndex = 75;
-            // 
-            // Grupo
-            // 
-            this.Grupo.HeaderText = "Grupo";
-            this.Grupo.Name = "Grupo";
-            this.Grupo.Width = 220;
-            // 
-            // SubGrupo
-            // 
-            this.SubGrupo.HeaderText = "SubGrupo";
-            this.SubGrupo.Name = "SubGrupo";
-            this.SubGrupo.Width = 220;
             // 
             // btnAdicionarSubGrupo
             // 
@@ -89,11 +65,11 @@
             this.btnAdicionarSubGrupo.ImageOptions.ImageToTextIndent = 10;
             this.btnAdicionarSubGrupo.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
             this.btnAdicionarSubGrupo.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnAdicionarSubGrupo.Location = new System.Drawing.Point(292, 62);
+            this.btnAdicionarSubGrupo.Location = new System.Drawing.Point(325, 66);
             this.btnAdicionarSubGrupo.Name = "btnAdicionarSubGrupo";
             this.btnAdicionarSubGrupo.Size = new System.Drawing.Size(217, 30);
             this.btnAdicionarSubGrupo.TabIndex = 73;
-            this.btnAdicionarSubGrupo.Text = "Adicionar Sub-Grupo de Produto";
+            this.btnAdicionarSubGrupo.Text = "Adicionar Agrupador de Produto";
             this.btnAdicionarSubGrupo.Click += new System.EventHandler(this.btnAdicionarSubGrupo_Click);
             // 
             // btnAdicionarGrupo
@@ -120,7 +96,7 @@
             this.btnAdicionarGrupo.ImageOptions.ImageToTextIndent = 10;
             this.btnAdicionarGrupo.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
             this.btnAdicionarGrupo.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnAdicionarGrupo.Location = new System.Drawing.Point(49, 62);
+            this.btnAdicionarGrupo.Location = new System.Drawing.Point(47, 66);
             this.btnAdicionarGrupo.Name = "btnAdicionarGrupo";
             this.btnAdicionarGrupo.Size = new System.Drawing.Size(217, 30);
             this.btnAdicionarGrupo.TabIndex = 72;
@@ -163,41 +139,57 @@
             this.labelControl3.TabIndex = 80;
             this.labelControl3.Text = "Grupo de Produto";
             // 
-            // frmCadastroGrupoSubGrupo
+            // gdvGruposAgrupadores
+            // 
+            this.gdvGruposAgrupadores.Location = new System.Drawing.Point(32, 119);
+            this.gdvGruposAgrupadores.MainView = this.gridView1;
+            this.gdvGruposAgrupadores.Name = "gdvGruposAgrupadores";
+            this.gdvGruposAgrupadores.Size = new System.Drawing.Size(524, 200);
+            this.gdvGruposAgrupadores.TabIndex = 81;
+            this.gdvGruposAgrupadores.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView1});
+            // 
+            // gridView1
+            // 
+            this.gridView1.GridControl = this.gdvGruposAgrupadores;
+            this.gridView1.Name = "gridView1";
+            this.gridView1.OptionsFind.FindNullPrompt = "Buscar...";
+            // 
+            // frmCadastroGrupoAgrupador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(588, 348);
+            this.Controls.Add(this.gdvGruposAgrupadores);
             this.Controls.Add(this.labelControl3);
-            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnAdicionarSubGrupo);
             this.Controls.Add(this.btnAdicionarGrupo);
             this.Controls.Add(this.btnFechar);
             this.Controls.Add(this.pictureBox6);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.KeyPreview = true;
-            this.Name = "frmCadastroGrupoSubGrupo";
+            this.Name = "frmCadastroGrupoAgrupador";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "XtraForm1";
+            this.Activated += new System.EventHandler(this.frmCadastroGrupoAgrupador_Activated);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmCadastroGrupoSubGrupo_KeyDown);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.frmCadastroGrupoSubGrupo_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.frmCadastroGrupoSubGrupo_MouseMove);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gdvGruposAgrupadores)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Grupo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SubGrupo;
         private DevExpress.XtraEditors.SimpleButton btnAdicionarSubGrupo;
         private DevExpress.XtraEditors.SimpleButton btnAdicionarGrupo;
         private DevExpress.XtraEditors.SimpleButton btnFechar;
         private System.Windows.Forms.PictureBox pictureBox6;
         private DevExpress.XtraEditors.LabelControl labelControl3;
+        private DevExpress.XtraGrid.GridControl gdvGruposAgrupadores;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
     }
 }

@@ -18,7 +18,7 @@ namespace SistemaDeGerenciamento2_0.Class
 
         public static void ErroAoCadastroGrupo(Exception _e)
         {
-            MessageBox.Show($"(CAD-GR01) Erro ao Cadastrar Grupo \n\nErro: {_e}", "Erro Cadastro Grupo!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            MessageBox.Show($"(CAD-GR01) Erro ao Cadastrar Grupo \n\nErro: {_e.Message}", "Erro Cadastro Grupo!", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
         public static void ErroAoCadastroAgrupador(Exception _e)
@@ -33,6 +33,16 @@ namespace SistemaDeGerenciamento2_0.Class
         public static void ErroAoBuscarGrupo(Exception _e)
         {
             MessageBox.Show($"(BUS-GR01) Erro ao Buscar Grupo \n\nErro: {_e}", "Erro Buscar Grupo!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        public static void ErroAoBuscarGrupoEAgrupador(Exception _e)
+        {
+            MessageBox.Show($"(BUS-GR02) Erro ao Buscar Grupo e Agrupador \n\nErro: {_e}", "Erro Buscar Grupo e Agrupador!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        public static void ErroAoBuscarAgrupadorTelaGrupo(Exception _e)
+        {
+            MessageBox.Show($"(BUS-GR03) Erro ao Buscar Agrupador na tela de Grupo \n\nErro: {_e}", "Erro Buscar Agrupador!", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
         public static void ErroAoBuscarAgrupador(Exception _e)

@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="SistemaDeGerenciamento2_0Model3StoreContainer" CdmEntityContainer="SistemaDeGerenciamento2_0Entities3">
+  <EntityContainerMapping StorageEntityContainer="SistemaDeGerenciamento2_0ModelStoreContainer" CdmEntityContainer="SistemaDeGerenciamento2_0Entities4">
     <EntitySetMapping Name="tb_cadastro_despesa">
-      <EntityTypeMapping TypeName="IsTypeOf(SistemaDeGerenciamento2_0Model3.tb_cadastro_despesa)">
+      <EntityTypeMapping TypeName="SistemaDeGerenciamento2_0Model.tb_cadastro_despesa">
         <MappingFragment StoreEntitySet="tb_cadastro_despesa">
           <ScalarProperty Name="id_categoria_despesa" ColumnName="id_categoria_despesa" />
           <ScalarProperty Name="cd_categoria_agrupadora" ColumnName="cd_categoria_agrupadora" />
@@ -12,7 +12,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="tb_configuração_financeira">
-      <EntityTypeMapping TypeName="IsTypeOf(SistemaDeGerenciamento2_0Model3.tb_configuração_financeira)">
+      <EntityTypeMapping TypeName="SistemaDeGerenciamento2_0Model.tb_configuração_financeira">
         <MappingFragment StoreEntitySet="tb_configuração_financeira">
           <ScalarProperty Name="id_configuracao_financeira" ColumnName="id_configuracao_financeira" />
           <ScalarProperty Name="cf_juros_dia" ColumnName="cf_juros_dia" />
@@ -24,7 +24,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="tb_despesa">
-      <EntityTypeMapping TypeName="IsTypeOf(SistemaDeGerenciamento2_0Model3.tb_despesa)">
+      <EntityTypeMapping TypeName="SistemaDeGerenciamento2_0Model.tb_despesa">
         <MappingFragment StoreEntitySet="tb_despesa">
           <ScalarProperty Name="id_despesa" ColumnName="id_despesa" />
           <ScalarProperty Name="dp_data" ColumnName="dp_data" />
@@ -34,14 +34,14 @@
           <ScalarProperty Name="dp_valor_lancamento" ColumnName="dp_valor_lancamento" />
           <ScalarProperty Name="dp_forma_pagamento" ColumnName="dp_forma_pagamento" />
           <ScalarProperty Name="dp_pagamento_em" ColumnName="dp_pagamento_em" />
-          <ScalarProperty Name="dp_vencimento" ColumnName="dp_vencimento" />
+          <ScalarProperty Name="dp_vencimentod" ColumnName="dp_vencimentod" />
           <ScalarProperty Name="fk_registro" ColumnName="fk_registro" />
           <ScalarProperty Name="fk_grupo" ColumnName="fk_grupo" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="tb_endereços">
-      <EntityTypeMapping TypeName="IsTypeOf(SistemaDeGerenciamento2_0Model3.tb_endereços)">
+      <EntityTypeMapping TypeName="SistemaDeGerenciamento2_0Model.tb_endereços">
         <MappingFragment StoreEntitySet="tb_endereços">
           <ScalarProperty Name="id_endereco" ColumnName="id_endereco" />
           <ScalarProperty Name="ed_tipo" ColumnName="ed_tipo" />
@@ -55,7 +55,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="tb_estoque">
-      <EntityTypeMapping TypeName="IsTypeOf(SistemaDeGerenciamento2_0Model3.tb_estoque)">
+      <EntityTypeMapping TypeName="SistemaDeGerenciamento2_0Model.tb_estoque">
         <MappingFragment StoreEntitySet="tb_estoque">
           <ScalarProperty Name="id_estoque" ColumnName="id_estoque" />
           <ScalarProperty Name="eq_quantidade" ColumnName="eq_quantidade" />
@@ -68,7 +68,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="tb_grupo">
-      <EntityTypeMapping TypeName="IsTypeOf(SistemaDeGerenciamento2_0Model3.tb_grupo)">
+      <EntityTypeMapping TypeName="SistemaDeGerenciamento2_0Model.tb_grupo">
         <MappingFragment StoreEntitySet="tb_grupo">
           <ScalarProperty Name="id_grupo" ColumnName="id_grupo" />
           <ScalarProperty Name="gp_nome_grupo" ColumnName="gp_nome_grupo" />
@@ -77,7 +77,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="tb_informações_comeciais">
-      <EntityTypeMapping TypeName="IsTypeOf(SistemaDeGerenciamento2_0Model3.tb_informações_comeciais)">
+      <EntityTypeMapping TypeName="SistemaDeGerenciamento2_0Model.tb_informações_comeciais">
         <MappingFragment StoreEntitySet="tb_informações_comeciais">
           <ScalarProperty Name="id_informacao_comercial" ColumnName="id_informacao_comercial" />
           <ScalarProperty Name="ic_situacao" ColumnName="ic_situacao" />
@@ -88,7 +88,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="tb_nota_fiscal_entrada">
-      <EntityTypeMapping TypeName="IsTypeOf(SistemaDeGerenciamento2_0Model3.tb_nota_fiscal_entrada)">
+      <EntityTypeMapping TypeName="SistemaDeGerenciamento2_0Model.tb_nota_fiscal_entrada">
         <MappingFragment StoreEntitySet="tb_nota_fiscal_entrada">
           <ScalarProperty Name="id_nota_fiscal_entrada" ColumnName="id_nota_fiscal_entrada" />
           <ScalarProperty Name="nfe_numero_nf_entrada" ColumnName="nfe_numero_nf_entrada" />
@@ -107,7 +107,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="tb_nota_fiscal_saida">
-      <EntityTypeMapping TypeName="IsTypeOf(SistemaDeGerenciamento2_0Model3.tb_nota_fiscal_saida)">
+      <EntityTypeMapping TypeName="SistemaDeGerenciamento2_0Model.tb_nota_fiscal_saida">
         <MappingFragment StoreEntitySet="tb_nota_fiscal_saida">
           <ScalarProperty Name="id_nota_fiscal_saida" ColumnName="id_nota_fiscal_saida" />
           <ScalarProperty Name="nfs_numero_nf_saida" ColumnName="nfs_numero_nf_saida" />
@@ -117,14 +117,14 @@
           <ScalarProperty Name="nfs_valor_pago" ColumnName="nfs_valor_pago" />
           <ScalarProperty Name="nfs_valor_juros" ColumnName="nfs_valor_juros" />
           <ScalarProperty Name="nfs_valor_desconto" ColumnName="nfs_valor_desconto" />
+          <ScalarProperty Name="nfs_vendedor" ColumnName="nfs_vendedor" />
           <ScalarProperty Name="fk_estoque" ColumnName="fk_estoque" />
-          <ScalarProperty Name="fk_nome_vendedor" ColumnName="fk_nome_vendedor" />
-          <ScalarProperty Name="fk_nome_cliente" ColumnName="fk_nome_cliente" />
+          <ScalarProperty Name="fk_registro_cliente" ColumnName="fk_registro_cliente" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="tb_permissoes">
-      <EntityTypeMapping TypeName="IsTypeOf(SistemaDeGerenciamento2_0Model3.tb_permissoes)">
+      <EntityTypeMapping TypeName="SistemaDeGerenciamento2_0Model.tb_permissoes">
         <MappingFragment StoreEntitySet="tb_permissoes">
           <ScalarProperty Name="id_acesso_pdv" ColumnName="id_acesso_pdv" />
           <ScalarProperty Name="pm_vendas_do_dias" ColumnName="pm_vendas_do_dias" />
@@ -163,27 +163,28 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="tb_produto">
-      <EntityTypeMapping TypeName="IsTypeOf(SistemaDeGerenciamento2_0Model3.tb_produto)">
+      <EntityTypeMapping TypeName="SistemaDeGerenciamento2_0Model.tb_produto">
         <MappingFragment StoreEntitySet="tb_produto">
-          <ScalarProperty Name="fk_registro_cadastrador" ColumnName="fk_registro_cadastrador" />
           <ScalarProperty Name="id_produto" ColumnName="id_produto" />
           <ScalarProperty Name="pd_codigo" ColumnName="pd_codigo" />
-          <ScalarProperty Name="pd_codigo_barras" ColumnName="pd_codigo_barras" />
           <ScalarProperty Name="pd_finalidade" ColumnName="pd_finalidade" />
           <ScalarProperty Name="pd_nome" ColumnName="pd_nome" />
           <ScalarProperty Name="pd_estoque_minimo" ColumnName="pd_estoque_minimo" />
           <ScalarProperty Name="pd_custo" ColumnName="pd_custo" />
           <ScalarProperty Name="pd_margem" ColumnName="pd_margem" />
           <ScalarProperty Name="pd_preco" ColumnName="pd_preco" />
-          <ScalarProperty Name="pd_tipo_produto" ColumnName="pd_tipo_produto" />
-          <ScalarProperty Name="pd_tipo_unidade" ColumnName="pd_tipo_unidade" />
           <ScalarProperty Name="pd_observacoes" ColumnName="pd_observacoes" />
           <ScalarProperty Name="fk_grupo" ColumnName="fk_grupo" />
+          <ScalarProperty Name="fk_registro_forncedor" ColumnName="fk_registro_forncedor" />
+          <ScalarProperty Name="pd_codigo_barras" ColumnName="pd_codigo_barras" />
+          <ScalarProperty Name="pd_tipo_produto" ColumnName="pd_tipo_produto" />
+          <ScalarProperty Name="pd_tipo_unidade" ColumnName="pd_tipo_unidade" />
+          <ScalarProperty Name="pd_usuario_cadastrador" ColumnName="pd_usuario_cadastrador" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="tb_registro">
-      <EntityTypeMapping TypeName="IsTypeOf(SistemaDeGerenciamento2_0Model3.tb_registro)">
+      <EntityTypeMapping TypeName="SistemaDeGerenciamento2_0Model.tb_registro">
         <MappingFragment StoreEntitySet="tb_registro">
           <ScalarProperty Name="id_registro" ColumnName="id_registro" />
           <ScalarProperty Name="rg_tipo_cadastro" ColumnName="rg_tipo_cadastro" />
@@ -213,7 +214,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="tb_repeticao_despesa">
-      <EntityTypeMapping TypeName="IsTypeOf(SistemaDeGerenciamento2_0Model3.tb_repeticao_despesa)">
+      <EntityTypeMapping TypeName="SistemaDeGerenciamento2_0Model.tb_repeticao_despesa">
         <MappingFragment StoreEntitySet="tb_repeticao_despesa">
           <ScalarProperty Name="id_repeticao_despesas" ColumnName="id_repeticao_despesas" />
           <ScalarProperty Name="rp_data_inicial" ColumnName="rp_data_inicial" />
