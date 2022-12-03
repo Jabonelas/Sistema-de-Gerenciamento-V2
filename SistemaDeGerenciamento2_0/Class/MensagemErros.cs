@@ -11,10 +11,16 @@ namespace SistemaDeGerenciamento2_0.Class
     {
         #region Cadastrar
 
+        #region Produto
+
         public static void ErroAoCadastroProduto(Exception _e)
         {
             MessageBox.Show($"(CAD-PR01) Erro ao Cadastrar Produto \n\nErro: {_e}", "Erro Cadastro Produto!", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
+
+        #endregion Produto
+
+        #region Grupo
 
         public static void ErroAoCadastroGrupo(Exception _e)
         {
@@ -26,9 +32,13 @@ namespace SistemaDeGerenciamento2_0.Class
             MessageBox.Show($"(CAD-AG01) Erro ao Cadastrar Agrupador \n\nErro: {_e}", "Erro Cadastro Agrupador!", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
+        #endregion Grupo
+
         #endregion Cadastrar
 
         #region Buscar
+
+        #region Grupo
 
         public static void ErroAoBuscarGrupo(Exception _e)
         {
@@ -45,10 +55,30 @@ namespace SistemaDeGerenciamento2_0.Class
             MessageBox.Show($"(BUS-GR03) Erro ao Buscar Agrupador na tela de Grupo \n\nErro: {_e}", "Erro Buscar Agrupador!", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
+        #endregion Grupo
+
+        #region Agrupador
+
         public static void ErroAoBuscarAgrupador(Exception _e)
         {
             MessageBox.Show($"(BUS-AG01) Erro ao Buscar Agrupador \n\nErro: {_e}", "Erro Buscar Agrupador!", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
+
+        #endregion Agrupador
+
+        #region Produto
+
+        public static void ErroAoBuscarCodigoDeProduto(Exception _e)
+        {
+            MessageBox.Show($"(BUS-PR01) Erro ao Buscar Codigo de Produto \n\nErro: {_e}", "Erro Buscar Codigo de Produto!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        public static void ErroAoBuscarNomeDoProdutoEFornecedor(Exception _e)
+        {
+            MessageBox.Show($"(BUS-PR02) Erro ao Buscar Nome do Produto e Fornecedor \n\nErro: {_e}", "Erro Buscar Nome do Produto e Fornecedor!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        #endregion Produto
 
         #endregion Buscar
 

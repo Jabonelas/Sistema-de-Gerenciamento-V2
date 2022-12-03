@@ -37,13 +37,17 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
-            if (txtNomeGrupo.Text != string.Empty || cmbAgrupador.Text != string.Empty)
+            if (txtNomeGrupo.Text != string.Empty && cmbAgrupador.Text != string.Empty)
             {
                 verificarExistenciaGrupoComMesmoNomeEAgrupador();
 
                 if (isExiteGrupoComMesmoNomeEAgrupadorCadastrado == false)
                 {
-                    Salvar();
+                    ConexaoSalvar();
+
+                    txtNomeGrupo.BackColor = Color.FromArgb(0, 255, 255, 255);
+
+                    cmbAgrupador.BackColor = Color.FromArgb(0, 255, 255, 255);
                 }
                 else
                 {
@@ -52,7 +56,13 @@ namespace SistemaDeGerenciamento2_0.Forms
             }
             else
             {
+                txtNomeGrupo.BackColor = Color.LightGray;
+
+                cmbAgrupador.BackColor = Color.LightGray;
+
                 MensagemAtencao.MensagemPreencherCampos();
+
+                txtNomeGrupo.Focus();
             }
         }
 
@@ -144,7 +154,7 @@ namespace SistemaDeGerenciamento2_0.Forms
             }
         }
 
-        private void Salvar()
+        private void ConexaoSalvar()
         {
             try
             {

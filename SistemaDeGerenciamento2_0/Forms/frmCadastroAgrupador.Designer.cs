@@ -96,7 +96,7 @@
             this.btnCancelar.Location = new System.Drawing.Point(209, 180);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(113, 30);
-            this.btnCancelar.TabIndex = 107;
+            this.btnCancelar.TabIndex = 2;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
@@ -113,7 +113,7 @@
             this.btnSalvar.Location = new System.Drawing.Point(79, 180);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(113, 30);
-            this.btnSalvar.TabIndex = 106;
+            this.btnSalvar.TabIndex = 1;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
@@ -126,7 +126,7 @@
             this.txtAgrupador.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.RegExpMaskManager));
             this.txtAgrupador.Properties.MaskSettings.Set("mask", "\\p{L}+");
             this.txtAgrupador.Size = new System.Drawing.Size(300, 26);
-            this.txtAgrupador.TabIndex = 96;
+            this.txtAgrupador.TabIndex = 0;
             // 
             // btnFechar
             // 

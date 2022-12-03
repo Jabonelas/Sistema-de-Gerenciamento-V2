@@ -1,4 +1,5 @@
-﻿using DevExpress.XtraEditors;
+﻿using DevExpress.Emf;
+using DevExpress.XtraEditors;
 using SistemaDeGerenciamento2_0.Class;
 using SistemaDeGerenciamento2_0.Properties;
 using System;
@@ -33,9 +34,11 @@ namespace SistemaDeGerenciamento2_0.Forms
 
                 if (isExiteAgrupadorCadastradoComMesmoNome == false)
                 {
-                    Salvar();
+                    ConexaoSalvar();
 
                     txtAgrupador.Text = string.Empty;
+
+                    txtAgrupador.BackColor = Color.FromArgb(0, 255, 255, 255);
                 }
                 else
                 {
@@ -44,7 +47,11 @@ namespace SistemaDeGerenciamento2_0.Forms
             }
             else
             {
+                txtAgrupador.BackColor = Color.LightGray;
+
                 MensagemAtencao.MensagemPreencherCampos();
+
+                txtAgrupador.Focus();
             }
         }
 
@@ -126,7 +133,7 @@ namespace SistemaDeGerenciamento2_0.Forms
             }
         }
 
-        private void Salvar()
+        private void ConexaoSalvar()
         {
             try
             {

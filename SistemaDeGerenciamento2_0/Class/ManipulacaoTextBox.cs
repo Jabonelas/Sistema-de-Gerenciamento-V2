@@ -186,7 +186,7 @@ namespace SistemaDeGerenciamento2_0
 
         public static void FormatoRG(KeyPressEventArgs e, DevExpress.XtraEditors.TextEdit _txtBox)
         {
-            _txtBox.Properties.MaxLength = 13;
+            _txtBox.Properties.MaxLength = 12;
 
             if (char.IsNumber(e.KeyChar) == true)
             {

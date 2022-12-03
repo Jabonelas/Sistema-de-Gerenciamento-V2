@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using System.IO;
 using SistemaDeGerenciamento2_0.Class;
 using System.Diagnostics;
+using SistemaDeGerenciamento2_0.Properties;
 
 namespace SistemaDeGerenciamento2_0.Forms
 {
@@ -18,6 +19,8 @@ namespace SistemaDeGerenciamento2_0.Forms
     {
         private int X = 0;
         private int Y = 0;
+
+        private bool isCodigoDeprodutoJaCadastrado = false;
 
         private List<GrupoClass> ListaIdGrupoAgrupador = new List<GrupoClass>();
 
@@ -82,7 +85,50 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
-            Salvar();
+            //VerificarExistenciaNomeProdutoComMesmoFornecedor();
+
+            //VerificarExistenciaProdutoComMesmoCodigoDeProduto();
+
+            //if (isCodigoDeprodutoJaCadastrado == false)
+            //{
+            //    Salvar();
+            //}
+            //else
+            //{
+            //    MensagemAtencao.MensagemProdutoJaExistente();
+            //}
+        }
+
+        private void VerificarExistenciaNomeProdutoComMesmoFornecedor()
+        {
+            try
+            {
+                using (SistemaDeGerenciamento2_0Entities5 db = new SistemaDeGerenciamento2_0Entities5())
+                {
+                    int valor = Convert.ToInt32(cmbFornecedor.Properties.GetKeyValueByDisplayValue(cmbFornecedor.Text));
+
+                    var nomeProdutoEForneecedor = db.tb_produto.Where(x => x.pd_nome.Equals(txtNome.Text))
+                        .Where(x => x.fk_registro_forncedor.Equals(valor)).
+                        Select(x => x.pd_nome).ToList();
+
+                    if (nomeProdutoEForneecedor.Count > 0)
+                    {
+                        MessageBox.Show("encontrou uma coisa");
+
+                        MensagemAtencao.MensagemProdutoJaExistente();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Não encontrou uma coisa");
+                    }
+                }
+            }
+            catch (Exception x)
+            {
+                LogErros.EscreverArquivoDeLog($"{DateTime.Now} - Erro ao Buscar Nome do Produto e Fornecedor - | {x.Message} | {x.StackTrace}");
+
+                MensagemErros.ErroAoBuscarNomeDoProdutoEFornecedor(x);
+            }
         }
 
         private void txtCusto_KeyUp(object sender, KeyEventArgs e)
@@ -166,11 +212,58 @@ namespace SistemaDeGerenciamento2_0.Forms
                 cmbTipoProduto.Text != string.Empty && txtTipoUnidade.Text != "Ex.: Peça, Un, Kg")
             {
                 ConexaoSalvar();
+
+                CorFundoTextBox(Color.FromArgb(0, 255, 255, 255));
             }
             else
             {
+                CorFundoTextBox(Color.LightGray);
+
                 MensagemAtencao.MensagemPreencherCampos();
             }
+        }
+
+        private void VerificarExistenciaProdutoComMesmoCodigoDeProduto()
+        {
+            try
+            {
+                using (SistemaDeGerenciamento2_0Entities5 db = new SistemaDeGerenciamento2_0Entities5())
+                {
+                    var codigoProduto = db.tb_produto.Where(x => x.pd_codigo.Equals(txtCodigo.Text)).Select(x => x.pd_codigo).ToList();
+
+                    if (codigoProduto.Count > 0)
+                    {
+                        isCodigoDeprodutoJaCadastrado = true;
+
+                        MensagemAtencao.MensagemProdutoJaExistente();
+                    }
+                    else
+                    {
+                        isCodigoDeprodutoJaCadastrado = false;
+                    }
+                }
+            }
+            catch (Exception x)
+            {
+                LogErros.EscreverArquivoDeLog($"{DateTime.Now} - Erro ao Buscar Codigo Produto - | {x.Message} | {x.StackTrace}");
+
+                MensagemErros.ErroAoBuscarCodigoDeProduto(x);
+            }
+        }
+
+        private void CorFundoTextBox(Color corFundo)
+        {
+            txtCodigo.BackColor = corFundo;
+            cmbFinalidade.BackColor = corFundo;
+            txtNome.BackColor = corFundo;
+            cmbGrupo.BackColor = corFundo;
+            cmbFornecedor.BackColor = corFundo;
+            txtTipoUnidade.BackColor = corFundo;
+            cmbTipoProduto.BackColor = corFundo;
+            txtCusto.BackColor = corFundo;
+            txtMargemLucro.BackColor = corFundo;
+            txtPreco.BackColor = corFundo;
+            txtEstoqueMinimo.BackColor = corFundo;
         }
 
         private void ConexaoSalvar()
@@ -193,18 +286,27 @@ namespace SistemaDeGerenciamento2_0.Forms
                         pd_tipo_unidade = txtTipoUnidade.Text,
                         pd_observacoes = txtObservacoes.Text,
                         fk_grupo = Convert.ToInt32(cmbGrupo.Properties.GetKeyValueByDisplayValue(cmbGrupo.Text)),
+                        fk_registro_forncedor = Convert.ToInt32(cmbFornecedor.Properties.GetKeyValueByDisplayValue(cmbFornecedor.Text)),
                     };
 
                     db.tb_produto.Add(CadastroProduto);
                     db.SaveChanges();
+
+                    ChamandoAlertaSucessoNoCantoInferiorDireito();
                 }
             }
             catch (Exception x)
             {
-                LogErros.EscreverArquivoDeLog($"Erro ao Cadastrar Produto {x.ToString()}");
+                LogErros.EscreverArquivoDeLog($"{DateTime.Now} - Erro ao Cadastrar Produto - | {x.Message} | {x.StackTrace}");
 
                 MensagemErros.ErroAoCadastroProduto(x);
             }
+        }
+
+        private void ChamandoAlertaSucessoNoCantoInferiorDireito()
+        {
+            DadosMensagemAlerta msg = new DadosMensagemAlerta("\n   Sucesso!", Resources.salvar_verde50);
+            AlertaSalvar.Show(this, $"{msg.titulo}", msg.texto, string.Empty, msg.image, msg);
         }
 
         private void CalcularPreco()

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCadastroProduto));
             this.labelControl12 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
@@ -63,6 +64,7 @@
             this.cmbGrupo = new DevExpress.XtraEditors.LookUpEdit();
             this.cmbFornecedor = new DevExpress.XtraEditors.LookUpEdit();
             this.labelControl14 = new DevExpress.XtraEditors.LabelControl();
+            this.AlertaSalvar = new DevExpress.XtraBars.Alerter.AlertControl(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pcbRequesitosCodigo.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCusto.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMargemLucro.Properties)).BeginInit();
@@ -362,6 +364,7 @@
             "Composicao",
             "Grade"});
             this.cmbTipoProduto.Properties.MaxLength = 20;
+            this.cmbTipoProduto.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             this.cmbTipoProduto.Size = new System.Drawing.Size(243, 26);
             this.cmbTipoProduto.TabIndex = 87;
             this.cmbTipoProduto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cmbTipoProduto_KeyPress);
@@ -379,6 +382,7 @@
             "Uso / Consumo",
             "Matéria Prima"});
             this.cmbFinalidade.Properties.MaxLength = 20;
+            this.cmbFinalidade.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             this.cmbFinalidade.Size = new System.Drawing.Size(243, 26);
             this.cmbFinalidade.TabIndex = 85;
             this.cmbFinalidade.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cmbFinalidade_KeyPress);
@@ -507,6 +511,26 @@
             this.labelControl14.TabIndex = 110;
             this.labelControl14.Text = "Fornecedor:";
             // 
+            // AlertaSalvar
+            // 
+            this.AlertaSalvar.AppearanceCaption.BackColor = System.Drawing.Color.Red;
+            this.AlertaSalvar.AppearanceCaption.BackColor2 = System.Drawing.Color.Yellow;
+            this.AlertaSalvar.AppearanceCaption.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AlertaSalvar.AppearanceCaption.ForeColor = System.Drawing.Color.White;
+            this.AlertaSalvar.AppearanceCaption.Options.UseBackColor = true;
+            this.AlertaSalvar.AppearanceCaption.Options.UseFont = true;
+            this.AlertaSalvar.AppearanceCaption.Options.UseForeColor = true;
+            this.AlertaSalvar.AppearanceHotTrackedText.BackColor = System.Drawing.Color.Lime;
+            this.AlertaSalvar.AppearanceHotTrackedText.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AlertaSalvar.AppearanceHotTrackedText.Options.UseBackColor = true;
+            this.AlertaSalvar.AppearanceHotTrackedText.Options.UseFont = true;
+            this.AlertaSalvar.AppearanceText.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AlertaSalvar.AppearanceText.Options.UseFont = true;
+            this.AlertaSalvar.AutoFormDelay = 2000;
+            this.AlertaSalvar.ShowCloseButton = false;
+            this.AlertaSalvar.ShowPinButton = false;
+            this.AlertaSalvar.ShowToolTips = false;
+            // 
             // frmCadastroProduto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -610,5 +634,6 @@
         private DevExpress.XtraEditors.LookUpEdit cmbGrupo;
         private DevExpress.XtraEditors.LookUpEdit cmbFornecedor;
         private DevExpress.XtraEditors.LabelControl labelControl14;
+        private DevExpress.XtraBars.Alerter.AlertControl AlertaSalvar;
     }
 }

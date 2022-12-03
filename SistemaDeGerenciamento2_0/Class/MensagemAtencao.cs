@@ -33,5 +33,20 @@ namespace SistemaDeGerenciamento2_0
         {
             MessageBox.Show("Por Favor Digite Um CPF Inválido!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
+
+        public static void MensagemProdutoJaExistente()
+        {
+            MessageBox.Show("Desculpa codigo de produto ou nome de produto ja existente, por favor digite um valor diferente!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        }
+
+        public static void MensagemRGDigitadoInvalido()
+        {
+            MessageBox.Show("Por Favor Digite Um RG Inválido!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        }
+
+        public static void MensagemEmailDigitadoInvalido()
+        {
+            MessageBox.Show("Por Favor Digite Um Email Inválido!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        }
     }
 }
