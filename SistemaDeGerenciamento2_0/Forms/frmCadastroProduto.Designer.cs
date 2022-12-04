@@ -213,7 +213,7 @@
             this.txtObservacoes.Options.HorizontalRuler.Visibility = DevExpress.XtraRichEdit.RichEditRulerVisibility.Hidden;
             this.txtObservacoes.Options.VerticalRuler.Visibility = DevExpress.XtraRichEdit.RichEditRulerVisibility.Hidden;
             this.txtObservacoes.Size = new System.Drawing.Size(888, 89);
-            this.txtObservacoes.TabIndex = 100;
+            this.txtObservacoes.TabIndex = 14;
             // 
             // labelControl13
             // 
@@ -253,7 +253,7 @@
             this.btnCancelar.Location = new System.Drawing.Point(805, 492);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(113, 30);
-            this.btnCancelar.TabIndex = 103;
+            this.btnCancelar.TabIndex = 15;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
@@ -270,7 +270,7 @@
             this.btnSalvar.Location = new System.Drawing.Point(675, 492);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(113, 30);
-            this.btnSalvar.TabIndex = 102;
+            this.btnSalvar.TabIndex = 15;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
@@ -288,7 +288,7 @@
             this.txtCusto.Properties.NullText = "R$ 0,00";
             this.txtCusto.Properties.UseMaskAsDisplayFormat = true;
             this.txtCusto.Size = new System.Drawing.Size(180, 26);
-            this.txtCusto.TabIndex = 98;
+            this.txtCusto.TabIndex = 9;
             this.txtCusto.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtCusto_KeyUp);
             // 
             // txtMargemLucro
@@ -304,7 +304,7 @@
             this.txtMargemLucro.Properties.NullText = "0,00%";
             this.txtMargemLucro.Properties.UseMaskAsDisplayFormat = true;
             this.txtMargemLucro.Size = new System.Drawing.Size(180, 26);
-            this.txtMargemLucro.TabIndex = 97;
+            this.txtMargemLucro.TabIndex = 10;
             this.txtMargemLucro.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtMargemLucro_KeyUp);
             // 
             // txtPreco
@@ -320,7 +320,7 @@
             this.txtPreco.Properties.NullText = "R$ 0,00";
             this.txtPreco.Properties.UseMaskAsDisplayFormat = true;
             this.txtPreco.Size = new System.Drawing.Size(180, 26);
-            this.txtPreco.TabIndex = 96;
+            this.txtPreco.TabIndex = 12;
             this.txtPreco.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtPreco_KeyUp);
             // 
             // txtEstoqueMinimo
@@ -336,7 +336,7 @@
             this.txtEstoqueMinimo.Properties.NullText = "0";
             this.txtEstoqueMinimo.Properties.UseMaskAsDisplayFormat = true;
             this.txtEstoqueMinimo.Size = new System.Drawing.Size(180, 26);
-            this.txtEstoqueMinimo.TabIndex = 92;
+            this.txtEstoqueMinimo.TabIndex = 13;
             // 
             // txtTipoUnidade
             // 
@@ -349,7 +349,7 @@
             this.txtTipoUnidade.Properties.MaxLength = 20;
             this.txtTipoUnidade.Properties.NullText = "Ex.: Peça, Un, Kg";
             this.txtTipoUnidade.Size = new System.Drawing.Size(288, 26);
-            this.txtTipoUnidade.TabIndex = 90;
+            this.txtTipoUnidade.TabIndex = 7;
             // 
             // cmbTipoProduto
             // 
@@ -366,7 +366,7 @@
             this.cmbTipoProduto.Properties.MaxLength = 20;
             this.cmbTipoProduto.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             this.cmbTipoProduto.Size = new System.Drawing.Size(243, 26);
-            this.cmbTipoProduto.TabIndex = 87;
+            this.cmbTipoProduto.TabIndex = 8;
             this.cmbTipoProduto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cmbTipoProduto_KeyPress);
             // 
             // cmbFinalidade
@@ -384,7 +384,7 @@
             this.cmbFinalidade.Properties.MaxLength = 20;
             this.cmbFinalidade.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             this.cmbFinalidade.Size = new System.Drawing.Size(243, 26);
-            this.cmbFinalidade.TabIndex = 85;
+            this.cmbFinalidade.TabIndex = 2;
             this.cmbFinalidade.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cmbFinalidade_KeyPress);
             // 
             // txtNome
@@ -394,7 +394,7 @@
             this.txtNome.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNome.Properties.Appearance.Options.UseFont = true;
             this.txtNome.Size = new System.Drawing.Size(589, 26);
-            this.txtNome.TabIndex = 84;
+            this.txtNome.TabIndex = 3;
             this.txtNome.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNome_KeyPress);
             // 
             // txtCodigoDeBarras
@@ -408,7 +408,7 @@
             this.txtCodigoDeBarras.Properties.MaskSettings.Set("mask", "d");
             this.txtCodigoDeBarras.Properties.MaxLength = 20;
             this.txtCodigoDeBarras.Size = new System.Drawing.Size(288, 26);
-            this.txtCodigoDeBarras.TabIndex = 83;
+            this.txtCodigoDeBarras.TabIndex = 1;
             // 
             // txtCodigo
             // 
@@ -418,7 +418,7 @@
             this.txtCodigo.Properties.Appearance.Options.UseFont = true;
             this.txtCodigo.Properties.MaxLength = 20;
             this.txtCodigo.Size = new System.Drawing.Size(243, 26);
-            this.txtCodigo.TabIndex = 76;
+            this.txtCodigo.TabIndex = 0;
             this.txtCodigo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCodigo_KeyPress);
             // 
             // btnFechar
@@ -442,7 +442,7 @@
             this.btnAcessarGrupoSubGrupo.Location = new System.Drawing.Point(887, 156);
             this.btnAcessarGrupoSubGrupo.Name = "btnAcessarGrupoSubGrupo";
             this.btnAcessarGrupoSubGrupo.Size = new System.Drawing.Size(31, 26);
-            this.btnAcessarGrupoSubGrupo.TabIndex = 74;
+            this.btnAcessarGrupoSubGrupo.TabIndex = 5;
             this.btnAcessarGrupoSubGrupo.ToolTip = "Criar/Editar grupos";
             this.btnAcessarGrupoSubGrupo.Click += new System.EventHandler(this.btnAcessarGrupoSubGrupo_Click);
             // 
@@ -484,7 +484,7 @@
             this.cmbGrupo.Properties.NullText = "";
             this.cmbGrupo.Properties.PopupSizeable = false;
             this.cmbGrupo.Size = new System.Drawing.Size(206, 26);
-            this.cmbGrupo.TabIndex = 108;
+            this.cmbGrupo.TabIndex = 4;
             // 
             // cmbFornecedor
             // 
@@ -499,7 +499,7 @@
             this.cmbFornecedor.Properties.NullText = "";
             this.cmbFornecedor.Properties.PopupSizeable = false;
             this.cmbFornecedor.Size = new System.Drawing.Size(240, 26);
-            this.cmbFornecedor.TabIndex = 109;
+            this.cmbFornecedor.TabIndex = 6;
             // 
             // labelControl14
             // 

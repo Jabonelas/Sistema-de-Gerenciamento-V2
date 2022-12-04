@@ -43,9 +43,9 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private class GrupoClass
         {
-            public int idGrupo { get; set; }
-            public string nomeGrupo { get; set; }
-            public string nomeAgrupador { get; set; }
+            public int IDGrupo { get; set; }
+            public string NomeGrupo { get; set; }
+            public string NomeAgrupador { get; set; }
         }
 
         private async Task BuscarDadosParaPreencherComboBoxGrupo()
@@ -55,7 +55,7 @@ namespace SistemaDeGerenciamento2_0.Forms
                 using (SistemaDeGerenciamento2_0Entities5 db = new SistemaDeGerenciamento2_0Entities5())
                 {
                     ListaIdGrupoAgrupador = db.tb_grupo.Where(x => !string.IsNullOrEmpty(x.gp_nome_grupo))
-                    .Select(x => new GrupoClass { idGrupo = x.id_grupo, nomeGrupo = x.gp_nome_grupo, nomeAgrupador = x.gp_nome_agrupador })
+                    .Select(x => new GrupoClass { IDGrupo = x.id_grupo, NomeGrupo = x.gp_nome_grupo, NomeAgrupador = x.gp_nome_agrupador })
                     .ToList();
                 }
             }
@@ -202,8 +202,8 @@ namespace SistemaDeGerenciamento2_0.Forms
         private void PreenchimentoComboBoxGrupo()
         {
             cmbGrupo.Properties.DataSource = ListaIdGrupoAgrupador;
-            cmbGrupo.Properties.DisplayMember = "nomeGrupo";
-            cmbGrupo.Properties.ValueMember = "idGrupo";
+            cmbGrupo.Properties.DisplayMember = "NomeGrupo";
+            cmbGrupo.Properties.ValueMember = "IDGrupo";
         }
 
         private void Salvar()

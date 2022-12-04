@@ -1,5 +1,7 @@
-﻿using DevExpress.XtraEditors;
+﻿using DevExpress.LookAndFeel;
+using DevExpress.XtraEditors;
 using DevExpress.XtraPrinting.Native;
+using DevExpress.XtraVerticalGrid.ViewInfo;
 using SistemaDeGerenciamento2_0.Class;
 using System;
 using System.Collections.Generic;
@@ -9,7 +11,9 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.UI.WebControls.WebParts;
 using System.Windows.Forms;
+using static DevExpress.XtraPrinting.Export.Pdf.PdfImageCache;
 
 namespace SistemaDeGerenciamento2_0.Forms
 {
@@ -22,6 +26,10 @@ namespace SistemaDeGerenciamento2_0.Forms
             InitializeComponent();
 
             txtDataCadastro.Text = DateTime.Now.ToString();
+
+            PreechendoListaEstado();
+
+            PreenchimentoComboBoxGrupo();
         }
 
         private void frmCadastroRegistroPessoaFisica_Load(object sender, EventArgs e)
@@ -67,14 +75,17 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private void txtDataNascimento_Leave(object sender, EventArgs e)
         {
-            if (Validacoes.IsPreencimentoCompleto(txtDataNascimento) == true)
+            if (txtDataNascimento.Text != string.Empty)
             {
-                if (Validacoes.IsDataValida(txtDataNascimento) == false)
+                if (Validacoes.IsPreencimentoCompleto(txtDataNascimento) == true)
                 {
+                    if (Validacoes.IsDataValida(txtDataNascimento) == false)
+                    {
+                        return;
+                    }
+
                     return;
                 }
-
-                return;
             }
         }
 
@@ -90,38 +101,44 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private void txtCPF_Leave(object sender, EventArgs e)
         {
-            if (Validacoes.IsPreencimentoCompleto(txtCPF) == true)
+            if (txtCPF.Text != string.Empty)
             {
-                if (Validacoes.IsCpfValido(txtCPF.Text) == false)
+                if (Validacoes.IsPreencimentoCompleto(txtCPF) == true)
                 {
-                    MensagemAtencao.MensagemCPFDigitadoInvalido();
+                    if (Validacoes.IsCpfValido(txtCPF.Text) == false)
+                    {
+                        MensagemAtencao.MensagemCPFDigitadoInvalido();
 
-                    txtCPF.BackColor = Color.LightGray;
+                        txtCPF.BackColor = Color.LightGray;
 
-                    txtCPF.Focus();
-                }
-                else
-                {
-                    txtCPF.BackColor = Color.FromArgb(0, 255, 255, 255);
+                        txtCPF.Focus();
+                    }
+                    else
+                    {
+                        txtCPF.BackColor = Color.FromArgb(0, 255, 255, 255);
+                    }
                 }
             }
         }
 
         private void txtRG_Leave(object sender, EventArgs e)
         {
-            if (Validacoes.IsPreencimentoCompleto(txtRG) == true)
+            if (txtRG.Text != string.Empty)
             {
-                if (Validacoes.IsRGValido(txtRG.Text) == false)
+                if (Validacoes.IsPreencimentoCompleto(txtRG) == true)
                 {
-                    MensagemAtencao.MensagemRGDigitadoInvalido();
+                    if (Validacoes.IsRGValido(txtRG.Text) == false)
+                    {
+                        MensagemAtencao.MensagemRGDigitadoInvalido();
 
-                    txtRG.BackColor = Color.LightGray;
+                        txtRG.BackColor = Color.LightGray;
 
-                    txtRG.Focus();
-                }
-                else
-                {
-                    txtRG.BackColor = Color.FromArgb(0, 255, 255, 255);
+                        txtRG.Focus();
+                    }
+                    else
+                    {
+                        txtRG.BackColor = Color.FromArgb(0, 255, 255, 255);
+                    }
                 }
             }
         }
@@ -132,23 +149,72 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private void txtEmail_Leave(object sender, EventArgs e)
         {
-            if (Validacoes.IsEmailValido(txtEmail.Text) == false)
+            if (txtEmail.Text != string.Empty)
             {
-                MensagemAtencao.MensagemEmailDigitadoInvalido();
+                if (Validacoes.IsEmailValido(txtEmail.Text) == false)
+                {
+                    MensagemAtencao.MensagemEmailDigitadoInvalido();
 
-                txtEmail.BackColor = Color.LightGray;
+                    txtEmail.BackColor = Color.LightGray;
 
-                txtEmail.Focus();
-            }
-            else
-            {
-                txtEmail.BackColor = Color.FromArgb(0, 255, 255, 255);
+                    txtEmail.Focus();
+                }
+                else
+                {
+                    txtEmail.BackColor = Color.FromArgb(0, 255, 255, 255);
+                }
             }
         }
 
         private void btnBuscarPorCEP_Click(object sender, EventArgs e)
         {
-            PreenchimentoPorCEP(txtCEP);
+            //PreenchimentoPorCEP(txtCEP);
+        }
+
+        private class EstadoClass
+        {
+            public string NomeEstado { get; set; }
+            public string Sigla { get; set; }
+        }
+
+        private List<EstadoClass> ListaEstados = new List<EstadoClass>();
+
+        private void PreechendoListaEstado()
+        {
+            ListaEstados.Add(new EstadoClass { NomeEstado = "Acre", Sigla = "AC" });
+            ListaEstados.Add(new EstadoClass { NomeEstado = "Alagoas", Sigla = "AL" });
+            ListaEstados.Add(new EstadoClass { NomeEstado = "Amapá", Sigla = "AP" });
+            ListaEstados.Add(new EstadoClass { NomeEstado = "Amazonas", Sigla = "AM" });
+            ListaEstados.Add(new EstadoClass { NomeEstado = "Bahia", Sigla = "BA" });
+            ListaEstados.Add(new EstadoClass { NomeEstado = "Ceará", Sigla = "CE" });
+            ListaEstados.Add(new EstadoClass { NomeEstado = "Distrito Federal", Sigla = "DF" });
+            ListaEstados.Add(new EstadoClass { NomeEstado = "Espírito Santo", Sigla = "ES" });
+            ListaEstados.Add(new EstadoClass { NomeEstado = "Goiás", Sigla = "GO" });
+            ListaEstados.Add(new EstadoClass { NomeEstado = "Maranhão", Sigla = "MA" });
+            ListaEstados.Add(new EstadoClass { NomeEstado = "Mato Grosso", Sigla = "MT" });
+            ListaEstados.Add(new EstadoClass { NomeEstado = "Mato Grosso do Sul", Sigla = "MS" });
+            ListaEstados.Add(new EstadoClass { NomeEstado = "Minas Gerais", Sigla = "MG" });
+            ListaEstados.Add(new EstadoClass { NomeEstado = "Pará", Sigla = "PA" });
+            ListaEstados.Add(new EstadoClass { NomeEstado = "Paraíba", Sigla = "PB" });
+            ListaEstados.Add(new EstadoClass { NomeEstado = "Paraná", Sigla = "PR" });
+            ListaEstados.Add(new EstadoClass { NomeEstado = "Pernambuco", Sigla = "PE" });
+            ListaEstados.Add(new EstadoClass { NomeEstado = "Piauí", Sigla = "PI" });
+            ListaEstados.Add(new EstadoClass { NomeEstado = "Rio de Janeiro", Sigla = "RJ" });
+            ListaEstados.Add(new EstadoClass { NomeEstado = "Rio Grande do Norte", Sigla = "RN" });
+            ListaEstados.Add(new EstadoClass { NomeEstado = "Rio Grande do Sul", Sigla = "RS" });
+            ListaEstados.Add(new EstadoClass { NomeEstado = "Rondônia", Sigla = "RO" });
+            ListaEstados.Add(new EstadoClass { NomeEstado = "Roraima", Sigla = "RR" });
+            ListaEstados.Add(new EstadoClass { NomeEstado = "Santa Catarina", Sigla = "SC" });
+            ListaEstados.Add(new EstadoClass { NomeEstado = "São Paulo", Sigla = "SP" });
+            ListaEstados.Add(new EstadoClass { NomeEstado = "Sergipe", Sigla = "SE" });
+            ListaEstados.Add(new EstadoClass { NomeEstado = "Tocantins", Sigla = "TO" });
+        }
+
+        private void PreenchimentoComboBoxGrupo()
+        {
+            cmbEstado.Properties.DataSource = ListaEstados;
+            cmbEstado.Properties.DisplayMember = "NomeEstado";
+            cmbEstado.Properties.ValueMember = "Sigla";
         }
 
         private int qntCEPexecutado = 0;
@@ -177,8 +243,6 @@ namespace SistemaDeGerenciamento2_0.Forms
                             if (item.uf != null)
                             {
                                 PreenchendoCamposCEP(item);
-
-                                //_txtCEP.BorderColorActive = Color.DodgerBlue;
                             }
                             else
                             {
@@ -207,6 +271,21 @@ namespace SistemaDeGerenciamento2_0.Forms
             txtBairro.Text = _item.bairro;
             txtCidade.Text = _item.localidade;
             cmbEstado.Text = _item.uf;
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void txtCEP_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            ManipulacaoTextBox.FormatoCEP(txtCEP);
+        }
+
+        private void txtCEP_Leave(object sender, EventArgs e)
+        {
+            Validacoes.IsPreencimentoCompleto(txtCEP);
         }
     }
 }

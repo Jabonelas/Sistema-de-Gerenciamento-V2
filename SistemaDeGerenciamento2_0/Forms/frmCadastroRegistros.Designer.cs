@@ -35,9 +35,9 @@
             this.pnlCadastroRegistro = new DevExpress.XtraEditors.PanelControl();
             this.btnFechar = new DevExpress.XtraEditors.SimpleButton();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            this.btnFuncionario = new DevExpress.XtraEditors.SimpleButton();
+            this.bntFornecedor = new DevExpress.XtraEditors.SimpleButton();
+            this.btnCliente = new DevExpress.XtraEditors.SimpleButton();
             this.cmbTipoPessoa = new DevExpress.XtraEditors.ComboBoxEdit();
             ((System.ComponentModel.ISupportInitialize)(this.pnlCadastroRegistro)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -109,50 +109,50 @@
             this.pictureBox6.TabIndex = 119;
             this.pictureBox6.TabStop = false;
             // 
-            // simpleButton3
+            // btnFuncionario
             // 
-            this.simpleButton3.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton3.Appearance.Options.UseFont = true;
-            this.simpleButton3.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.funcionario_20;
-            this.simpleButton3.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
-            this.simpleButton3.Location = new System.Drawing.Point(967, 72);
-            this.simpleButton3.Name = "simpleButton3";
-            this.simpleButton3.Size = new System.Drawing.Size(80, 43);
-            this.simpleButton3.TabIndex = 92;
-            this.simpleButton3.Text = "Funcionário";
-            this.simpleButton3.ToolTip = "Funcionário";
+            this.btnFuncionario.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFuncionario.Appearance.Options.UseFont = true;
+            this.btnFuncionario.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.funcionario_20;
+            this.btnFuncionario.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
+            this.btnFuncionario.Location = new System.Drawing.Point(967, 72);
+            this.btnFuncionario.Name = "btnFuncionario";
+            this.btnFuncionario.Size = new System.Drawing.Size(80, 43);
+            this.btnFuncionario.TabIndex = 92;
+            this.btnFuncionario.Text = "Funcionário";
+            this.btnFuncionario.ToolTip = "Funcionário";
             // 
-            // simpleButton2
+            // bntFornecedor
             // 
-            this.simpleButton2.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton2.Appearance.Options.UseFont = true;
-            this.simpleButton2.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.fornecedor_20px;
-            this.simpleButton2.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
-            this.simpleButton2.Location = new System.Drawing.Point(868, 72);
-            this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.Size = new System.Drawing.Size(80, 43);
-            this.simpleButton2.TabIndex = 91;
-            this.simpleButton2.Text = "Fornecedor";
-            this.simpleButton2.ToolTip = "Forncedor";
+            this.bntFornecedor.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bntFornecedor.Appearance.Options.UseFont = true;
+            this.bntFornecedor.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.fornecedor_20px;
+            this.bntFornecedor.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
+            this.bntFornecedor.Location = new System.Drawing.Point(868, 72);
+            this.bntFornecedor.Name = "bntFornecedor";
+            this.bntFornecedor.Size = new System.Drawing.Size(80, 43);
+            this.bntFornecedor.TabIndex = 91;
+            this.bntFornecedor.Text = "Fornecedor";
+            this.bntFornecedor.ToolTip = "Forncedor";
             // 
-            // simpleButton1
+            // btnCliente
             // 
-            this.simpleButton1.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton1.Appearance.Options.UseFont = true;
-            this.simpleButton1.AppearanceHovered.BackColor = System.Drawing.Color.Transparent;
-            this.simpleButton1.AppearanceHovered.BackColor2 = System.Drawing.Color.Transparent;
-            this.simpleButton1.AppearanceHovered.Options.UseBackColor = true;
-            this.simpleButton1.AppearancePressed.BackColor = System.Drawing.Color.Transparent;
-            this.simpleButton1.AppearancePressed.BackColor2 = System.Drawing.Color.Transparent;
-            this.simpleButton1.AppearancePressed.Options.UseBackColor = true;
-            this.simpleButton1.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.cliente;
-            this.simpleButton1.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
-            this.simpleButton1.Location = new System.Drawing.Point(767, 72);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(80, 43);
-            this.simpleButton1.TabIndex = 90;
-            this.simpleButton1.Text = "Cliente";
-            this.simpleButton1.ToolTip = "Cliente";
+            this.btnCliente.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCliente.Appearance.Options.UseFont = true;
+            this.btnCliente.AppearanceHovered.BackColor = System.Drawing.Color.Transparent;
+            this.btnCliente.AppearanceHovered.BackColor2 = System.Drawing.Color.Transparent;
+            this.btnCliente.AppearanceHovered.Options.UseBackColor = true;
+            this.btnCliente.AppearancePressed.BackColor = System.Drawing.Color.Transparent;
+            this.btnCliente.AppearancePressed.BackColor2 = System.Drawing.Color.Transparent;
+            this.btnCliente.AppearancePressed.Options.UseBackColor = true;
+            this.btnCliente.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.cliente;
+            this.btnCliente.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
+            this.btnCliente.Location = new System.Drawing.Point(767, 72);
+            this.btnCliente.Name = "btnCliente";
+            this.btnCliente.Size = new System.Drawing.Size(80, 43);
+            this.btnCliente.TabIndex = 90;
+            this.btnCliente.Text = "Cliente";
+            this.btnCliente.ToolTip = "Cliente";
             // 
             // cmbTipoPessoa
             // 
@@ -176,9 +176,9 @@
             this.ClientSize = new System.Drawing.Size(1072, 723);
             this.Controls.Add(this.labelControl13);
             this.Controls.Add(this.btnFechar);
-            this.Controls.Add(this.simpleButton3);
-            this.Controls.Add(this.simpleButton2);
-            this.Controls.Add(this.simpleButton1);
+            this.Controls.Add(this.btnFuncionario);
+            this.Controls.Add(this.bntFornecedor);
+            this.Controls.Add(this.btnCliente);
             this.Controls.Add(this.labelControl1);
             this.Controls.Add(this.labelControl3);
             this.Controls.Add(this.cmbTipoPessoa);
@@ -203,9 +203,9 @@
         private DevExpress.XtraEditors.ComboBoxEdit cmbTipoPessoa;
         private DevExpress.XtraEditors.LabelControl labelControl3;
         private DevExpress.XtraEditors.LabelControl labelControl1;
-        private DevExpress.XtraEditors.SimpleButton simpleButton1;
-        private DevExpress.XtraEditors.SimpleButton simpleButton2;
-        private DevExpress.XtraEditors.SimpleButton simpleButton3;
+        private DevExpress.XtraEditors.SimpleButton btnCliente;
+        private DevExpress.XtraEditors.SimpleButton bntFornecedor;
+        private DevExpress.XtraEditors.SimpleButton btnFuncionario;
         private System.Windows.Forms.PictureBox pictureBox6;
         private DevExpress.XtraEditors.SimpleButton btnFechar;
         private DevExpress.XtraEditors.LabelControl labelControl13;

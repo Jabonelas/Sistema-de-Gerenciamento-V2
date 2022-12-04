@@ -150,31 +150,31 @@ namespace SistemaDeGerenciamento2_0
 
         #region Formato de CPF
 
-        public static void FormatoCPF(KeyPressEventArgs e, DevExpress.XtraEditors.TextEdit _txtBox)
+        public static void FormatoCPF(KeyPressEventArgs e, DevExpress.XtraEditors.TextEdit _textBox)
         {
-            _txtBox.Properties.MaxLength = 14;
+            _textBox.Properties.MaxLength = 14;
 
             if (char.IsNumber(e.KeyChar) == true)
             {
-                switch (_txtBox.Text.Length)
+                switch (_textBox.Text.Length)
                 {
                     case 0:
-                        _txtBox.Text = "";
+                        _textBox.Text = "";
                         break;
 
                     case 3:
-                        _txtBox.Text = _txtBox.Text + ".";
-                        _txtBox.SelectionStart = 4;
+                        _textBox.Text = _textBox.Text + ".";
+                        _textBox.SelectionStart = 4;
                         break;
 
                     case 7:
-                        _txtBox.Text = _txtBox.Text + ".";
-                        _txtBox.SelectionStart = 8;
+                        _textBox.Text = _textBox.Text + ".";
+                        _textBox.SelectionStart = 8;
                         break;
 
                     case 11:
-                        _txtBox.Text = _txtBox.Text + "-";
-                        _txtBox.SelectionStart = 12;
+                        _textBox.Text = _textBox.Text + "-";
+                        _textBox.SelectionStart = 12;
                         break;
                 }
             }
@@ -184,31 +184,32 @@ namespace SistemaDeGerenciamento2_0
 
         #region Formato RG
 
-        public static void FormatoRG(KeyPressEventArgs e, DevExpress.XtraEditors.TextEdit _txtBox)
+        public static void FormatoRG(KeyPressEventArgs e, DevExpress.XtraEditors.TextEdit _textBox
+            )
         {
-            _txtBox.Properties.MaxLength = 12;
+            _textBox.Properties.MaxLength = 12;
 
             if (char.IsNumber(e.KeyChar) == true)
             {
-                switch (_txtBox.Text.Length)
+                switch (_textBox.Text.Length)
                 {
                     case 0:
-                        _txtBox.Text = "";
+                        _textBox.Text = "";
                         break;
 
                     case 2:
-                        _txtBox.Text = _txtBox.Text + ".";
-                        _txtBox.SelectionStart = 3;
+                        _textBox.Text = _textBox.Text + ".";
+                        _textBox.SelectionStart = 3;
                         break;
 
                     case 6:
-                        _txtBox.Text = _txtBox.Text + ".";
-                        _txtBox.SelectionStart = 7;
+                        _textBox.Text = _textBox.Text + ".";
+                        _textBox.SelectionStart = 7;
                         break;
 
                     case 10:
-                        _txtBox.Text = _txtBox.Text + "-";
-                        _txtBox.SelectionStart = 11;
+                        _textBox.Text = _textBox.Text + "-";
+                        _textBox.SelectionStart = 11;
                         break;
                 }
             }
@@ -236,6 +237,8 @@ namespace SistemaDeGerenciamento2_0
 
         public static void FormatoCelular(KeyPressEventArgs e, DevExpress.XtraEditors.TextEdit _textBox)
         {
+            _textBox.Properties.MaxLength = 15;
+
             if (char.IsNumber(e.KeyChar) == true)
             {
                 switch (_textBox.Text.Length)
@@ -264,6 +267,8 @@ namespace SistemaDeGerenciamento2_0
 
         public static void FormatoTelefone(KeyPressEventArgs e, DevExpress.XtraEditors.TextEdit _textBox)
         {
+            _textBox.Properties.MaxLength = 14;
+
             if (char.IsNumber(e.KeyChar) == true)
             {
                 switch (_textBox.Text.Length)
@@ -278,14 +283,35 @@ namespace SistemaDeGerenciamento2_0
                         _textBox.SelectionStart = 5;
                         break;
 
-                    case 10:
+                    case 9:
                         _textBox.Text = _textBox.Text + "-";
-                        _textBox.SelectionStart = 11;
+                        _textBox.SelectionStart = 10;
                         break;
                 }
             }
         }
 
         #endregion Formato Telefone Residencial
+
+        #region Formato CEP
+
+        public static void FormatoCEP(DevExpress.XtraEditors.TextEdit _textBox)
+        {
+            _textBox.Properties.MaxLength = 9;
+
+            switch (_textBox.Text.Length)
+            {
+                case 0:
+                    _textBox.Text = "";
+                    break;
+
+                case 5:
+                    _textBox.Text = _textBox.Text + "-";
+                    _textBox.SelectionStart = 6;
+                    break;
+            }
+        }
+
+        #endregion Formato CEP
     }
 }

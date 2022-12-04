@@ -588,6 +588,8 @@
             this.txtCEP.Properties.Appearance.Options.UseFont = true;
             this.txtCEP.Size = new System.Drawing.Size(138, 26);
             this.txtCEP.TabIndex = 230;
+            this.txtCEP.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCEP_KeyPress);
+            this.txtCEP.Leave += new System.EventHandler(this.txtCEP_Leave);
             // 
             // txtObservacoes
             // 
@@ -617,6 +619,7 @@
             this.btnCancelar.Size = new System.Drawing.Size(113, 30);
             this.btnCancelar.TabIndex = 237;
             this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnSalvar
             // 
@@ -657,6 +660,7 @@
             this.cmbEstado.Properties.MaxLength = 20;
             this.cmbEstado.Properties.NullText = "";
             this.cmbEstado.Properties.PopupSizeable = false;
+            this.cmbEstado.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
             this.cmbEstado.Size = new System.Drawing.Size(91, 26);
             this.cmbEstado.TabIndex = 240;
             // 

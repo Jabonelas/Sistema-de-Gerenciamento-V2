@@ -19,9 +19,9 @@ namespace SistemaDeGerenciamento2_0.Class
             var response = await cliente.GetAsync(string.Empty);
             var content = await response.Content.ReadAsStringAsync();
 
-            var users = JsonConvert.DeserializeObject<DadosCEP>(content);
+            //var users = JsonConvert.DeserializeObject<DadosCEP>(content);
 
-            temperatures = users;
+            //temperatures = users;
         }
 
         public DadosCEP RetornoApi()
