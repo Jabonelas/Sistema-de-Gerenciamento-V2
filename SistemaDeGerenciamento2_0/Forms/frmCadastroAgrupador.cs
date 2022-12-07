@@ -42,7 +42,7 @@ namespace SistemaDeGerenciamento2_0.Forms
                 }
                 else
                 {
-                    MensagemAtencao.MensagemValorJaExistente("Agrupador");
+                    MensagemAtencao.MensagemJaExistente("Agrupador");
                 }
             }
             else

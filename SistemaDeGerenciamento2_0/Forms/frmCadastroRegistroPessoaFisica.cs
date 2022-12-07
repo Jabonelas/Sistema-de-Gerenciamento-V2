@@ -71,7 +71,7 @@ namespace SistemaDeGerenciamento2_0.Forms
                 }
                 else
                 {
-                    MensagemAtencao.MensagemValorJaExistente("CPF");
+                    MensagemAtencao.MensagemJaExistente("CPF");
                 }
             }
             else
@@ -136,7 +136,7 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private void txtResidencial_KeyPress(object sender, KeyPressEventArgs e)
         {
-            ManipulacaoTextBox.FormatoTelefone(e, txtTelefoneResidencial);
+            ManipulacaoTextBox.FormatoTelefone(e, txtTelefoneFixo);
         }
 
         private void txtCPF_Leave(object sender, EventArgs e)
@@ -505,7 +505,7 @@ namespace SistemaDeGerenciamento2_0.Forms
                         rg_data_nascimento = Convert.ToDateTime(txtDataNascimento.Text),
                         rg_email = txtEmail.Text,
                         rg_celular = txtCelular.Text,
-                        rg_telefone_fixo = txtTelefoneResidencial.Text,
+                        rg_telefone_fixo = txtTelefoneFixo.Text,
                         fk_endereco = FK_Endereco,
                         fk_informacao_comercial = FK_InformacoesComerciais,
                     };
@@ -555,19 +555,19 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private void txtTelefoneResidencial_Leave(object sender, EventArgs e)
         {
-            if (txtTelefoneResidencial.Text != string.Empty)
+            if (txtTelefoneFixo.Text != string.Empty)
             {
-                if (Validacoes.IsCampoPreenchido(txtTelefoneResidencial) == false)
+                if (Validacoes.IsCampoPreenchido(txtTelefoneFixo) == false)
                 {
-                    txtTelefoneResidencial.BackColor = Color.LightGray;
+                    txtTelefoneFixo.BackColor = Color.LightGray;
 
                     MensagemAtencao.MensagemCampoDigitadoInvalido("Telefone");
 
-                    txtTelefoneResidencial.Focus();
+                    txtTelefoneFixo.Focus();
                 }
                 else
                 {
-                    txtTelefoneResidencial.BackColor = Color.FromArgb(0, 255, 255, 255);
+                    txtTelefoneFixo.BackColor = Color.FromArgb(0, 255, 255, 255);
                 }
             }
         }

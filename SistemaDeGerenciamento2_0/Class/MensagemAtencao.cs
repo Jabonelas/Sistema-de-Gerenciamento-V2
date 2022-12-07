@@ -24,11 +24,6 @@ namespace SistemaDeGerenciamento2_0
             MessageBox.Show("Por Favor, Preencher Campos Obrigatorios!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
 
-        public static void MensagemValorJaExistente(string _corpoMensagem)
-        {
-            MessageBox.Show($"Desculpa valor {_corpoMensagem} ja existente, por favor digite um valor diferente!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-        }
-
         public static void MensagemProdutoJaExistente()
         {
             MessageBox.Show("Desculpa codigo de produto ou nome de produto ja existente, por favor digite um valor diferente!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -44,10 +39,20 @@ namespace SistemaDeGerenciamento2_0
             MessageBox.Show("Desculpe, Cliente / Fornecedor menor de Idade!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
 
-        public static void MensagemFornecedorNaoCadastrado()
+        public static void MensagemNaoCadastrado(string _corpo)
         {
-            MessageBox.Show("Desculpe, Fornecedor não cadastrado!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            MessageBox.Show($"Desculpe, {_corpo} não cadastrado!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
+
+        public static void MensagemJaExistente(string _corpoMensagem)
+        {
+            MessageBox.Show($"Desculpa {_corpoMensagem} ja existente, por favor digite um valor diferente!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        }
+
+        //public static void MensagemJaCadastrado(string _corpo)
+        //{
+        //    MessageBox.Show($"Desculpe, {_corpo} Já cadastrado!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        //}
 
         public static void MensagemNaoAceitoValoresNegativos()
         {

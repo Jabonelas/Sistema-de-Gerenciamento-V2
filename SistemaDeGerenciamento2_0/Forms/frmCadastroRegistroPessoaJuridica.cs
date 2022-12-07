@@ -81,7 +81,7 @@ namespace SistemaDeGerenciamento2_0.Forms
                 }
                 else
                 {
-                    MensagemAtencao.MensagemValorJaExistente("CNPJ");
+                    MensagemAtencao.MensagemJaExistente("CNPJ");
                 }
             }
             else

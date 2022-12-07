@@ -19,9 +19,9 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private int Y = 0;
 
-        private string localArquivo = string.Empty;
+        private string cnpjRecepitor = string.Empty;
 
-        private bool IsCnpjExiste = false;
+        private string localArquivo = string.Empty;
 
         public frmEntradaNF()
         {
@@ -314,6 +314,48 @@ namespace SistemaDeGerenciamento2_0.Forms
             }
         }
 
+        private void LerXMLPegarDadosRecepitor()
+        {
+            try
+            {
+                var isRecepitor = false;
+
+                using (XmlReader meuXml = XmlReader.Create(localArquivo))
+                {
+                    while (meuXml.Read())
+                    {
+                        if (meuXml.NodeType == XmlNodeType.Element && meuXml.Name == "dest")
+                        {
+                            isRecepitor = true;
+                        }
+                        else if (meuXml.NodeType == XmlNodeType.Element && meuXml.Name == "det")
+                        {
+                            break;
+                        }
+
+                        if (isRecepitor)
+                        {
+                            //CNPJ
+                            if (meuXml.NodeType == XmlNodeType.Element && meuXml.Name == "CNPJ")
+                            {
+                                string CNPJ = meuXml.ReadElementString();
+
+                                double CNPJConvertido = Convert.ToDouble(CNPJ);
+
+                                cnpjRecepitor = string.Format(@"{0:00\.000\.000\/0000\-00}", CNPJConvertido);
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception x)
+            {
+                LogErros.EscreverArquivoDeLog($"{DateTime.Now} - Erro ao Ler Dados do Emissor da Xml - | {x.Message} | {x.StackTrace}");
+
+                MensagemErros.ErroAoLerDadosEmissorXml(x);
+            }
+        }
+
         private void FecharTela()
         {
             if (txtRazaoSocialEmitente.Text != string.Empty)
@@ -328,14 +370,74 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
-            VerificarExistenciaCadastroFornecedor();
+            bool IsCnpjFornecedorCadastrado = VerificarExistenciaCadastroFornecedor();
 
-            if (IsCnpjExiste == true)
+            if (IsCnpjFornecedorCadastrado == true)
             {
+                bool IsNFExistente = VerificarExistenciaNF();
+
+                if (IsNFExistente == false)
+                {
+                    bool IsCnpjDaEmpresa = VerificarCNPJRecepitor();
+
+                    if (IsCnpjDaEmpresa == true)
+                    {
+                        MessageBox.Show("Test");
+                    }
+                }
             }
-            else
+        }
+
+        private bool VerificarCNPJRecepitor()
+        {
+            try
             {
-                MensagemAtencao.MensagemFornecedorNaoCadastrado();
+                using (SistemaDeGerenciamento2_0Entities5 db = new SistemaDeGerenciamento2_0Entities5())
+                {
+                    var verificarCnpjRecepitor = db.tb_registro.Where(x => x.rg_categoria == "Empresa" && x.rg_cnpj == cnpjRecepitor).Select(x => x.rg_cnpj).ToList();
+
+                    if (verificarCnpjRecepitor.Count > 0)
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        return false;
+                    }
+                }
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
+
+        private bool VerificarExistenciaNF()
+        {
+            try
+            {
+                using (SistemaDeGerenciamento2_0Entities5 db = new SistemaDeGerenciamento2_0Entities5())
+                {
+                    var numeroNF = db.tb_nota_fiscal_entrada.Where(x => x.nfe_cnpj == txtCNPJEmissor.Text &&
+                    x.nfe_numero_nf_entrada == Convert.ToInt32(txtNumeroNF.Text)).Select(x => x.nfe_cnpj).ToList();
+
+                    if (numeroNF.Count > 0)
+                    {
+                        MensagemAtencao.MensagemJaExistente("Nota Fiscal");
+
+                        return true;
+                    }
+                    else
+                    {
+                        return false;
+                    }
+                }
+            }
+            catch (Exception x)
+            {
+                MessageBox.Show(x.ToString());
+
+                return false;
             }
         }
 
@@ -354,7 +456,7 @@ namespace SistemaDeGerenciamento2_0.Forms
             }
         }
 
-        private void VerificarExistenciaCadastroFornecedor()
+        private bool VerificarExistenciaCadastroFornecedor()
         {
             try
             {
@@ -364,11 +466,13 @@ namespace SistemaDeGerenciamento2_0.Forms
 
                     if (cnpj.Count > 0)
                     {
-                        IsCnpjExiste = true;
+                        return true;
                     }
                     else
                     {
-                        IsCnpjExiste = false;
+                        MensagemAtencao.MensagemNaoCadastrado("Forncedor");
+
+                        return false;
                     }
                 }
             }
@@ -377,6 +481,8 @@ namespace SistemaDeGerenciamento2_0.Forms
                 LogErros.EscreverArquivoDeLog($"{DateTime.Now} - Erro ao Buscar CNPJ para verificação de existencia de cadastro - | {x.Message} | {x.StackTrace}");
 
                 MensagemErros.ErroAoBuscarCNPJParaVerificacaSeExisteCadastro(x);
+
+                return false;
             }
         }
     }

@@ -20,13 +20,17 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private void btnNovoUsuario_Click(object sender, EventArgs e)
         {
+        }
+
+        private void btnEmpresa_Click(object sender, EventArgs e)
+        {
             TelaNovoUsuario();
         }
 
         private void TelaNovoUsuario()
         {
             pnlConfiguracoes.Controls.Clear();
-            frmNovoUsuario frmNovoUsuario = new frmNovoUsuario();
+            frmDadosEmpresa frmNovoUsuario = new frmDadosEmpresa();
             frmNovoUsuario.TopLevel = false;
             pnlConfiguracoes.Controls.Add(frmNovoUsuario);
             pnlConfiguracoes.Tag = frmNovoUsuario;

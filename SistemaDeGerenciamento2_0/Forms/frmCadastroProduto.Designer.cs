@@ -298,6 +298,7 @@
             this.txtCusto.Size = new System.Drawing.Size(180, 26);
             this.txtCusto.TabIndex = 9;
             this.txtCusto.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtCusto_KeyUp);
+            this.txtCusto.Leave += new System.EventHandler(this.txtCusto_Leave);
             // 
             // txtMargemLucro
             // 
@@ -314,6 +315,7 @@
             this.txtMargemLucro.Size = new System.Drawing.Size(180, 26);
             this.txtMargemLucro.TabIndex = 10;
             this.txtMargemLucro.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtMargemLucro_KeyUp);
+            this.txtMargemLucro.Leave += new System.EventHandler(this.txtMargemLucro_Leave);
             // 
             // txtPreco
             // 
@@ -330,6 +332,7 @@
             this.txtPreco.Size = new System.Drawing.Size(180, 26);
             this.txtPreco.TabIndex = 12;
             this.txtPreco.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtPreco_KeyUp);
+            this.txtPreco.Leave += new System.EventHandler(this.txtPreco_Leave);
             // 
             // txtEstoqueMinimo
             // 
@@ -345,6 +348,7 @@
             this.txtEstoqueMinimo.Properties.UseMaskAsDisplayFormat = true;
             this.txtEstoqueMinimo.Size = new System.Drawing.Size(180, 26);
             this.txtEstoqueMinimo.TabIndex = 13;
+            this.txtEstoqueMinimo.Leave += new System.EventHandler(this.txtEstoqueMinimo_Leave);
             // 
             // txtTipoUnidade
             // 
@@ -633,7 +637,6 @@
             this.Name = "frmCadastroProduto";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "telacadastro";
-            this.Load += new System.EventHandler(this.frmCadastroProduto_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmCadastroProduto_KeyDown);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.frmCadastroProduto_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.frmCadastroProduto_MouseMove);

@@ -71,6 +71,16 @@ namespace SistemaDeGerenciamento2_0.Class
             MessageBox.Show($"(CAD-RE06) Erro ao Cadastrar Registro - Pessoa Juridica \n\nErro: {_e.Message}", "Erro Cadastro Registro - Pessoa Juridica!", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
+        public static void ErroAoCadastroDadosEmpresa(Exception _e)
+        {
+            MessageBox.Show($"(CAD-RE07) Erro ao Cadastrar Dados da Empresa \n\nErro: {_e.Message}", "Erro Cadastro Dados da Empresa!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        public static void ErroAoCadastroEnderecoEmpresa(Exception _e)
+        {
+            MessageBox.Show($"(CAD-RE08) Erro ao Cadastrar Endereço da Empresa \n\nErro: {_e.Message}", "Erro Cadastro Endereço da Empresa!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
         #endregion Registro
 
         #endregion Cadastrar
@@ -119,7 +129,17 @@ namespace SistemaDeGerenciamento2_0.Class
 
         public static void ErroAoBuscarCodigoDeBarrasProduto(Exception _e)
         {
-            MessageBox.Show($"(BUS-PR03) Erro ao Buscar Codigo de Barras Produto \n\nErro: {_e}", "Erro Buscar Codigo de Barras roduto!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            MessageBox.Show($"(BUS-PR03) Erro ao Buscar Codigo de Barras Produto \n\nErro: {_e}", "Erro Buscar Codigo de Barras Produto!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        public static void ErroAoBuscarDadosEmpresa(Exception _e)
+        {
+            MessageBox.Show($"(BUS-PR04) Erro ao Buscar Dados da Empresa \n\nErro: {_e}", "Erro Buscar Dados da Empresa!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        public static void ErroAoBuscarEndereco(Exception _e)
+        {
+            MessageBox.Show($"(BUS-PR05) Erro ao Buscar Endereço da Empresa \n\nErro: {_e}", "Erro Buscar Endereço da Empresa!", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
         #endregion Produto
@@ -159,6 +179,20 @@ namespace SistemaDeGerenciamento2_0.Class
         }
 
         #endregion Produto
+
+        #region Registro
+
+        public static void ErroAoAtualizarEnderecoEmpresa(Exception _e)
+        {
+            MessageBox.Show($"(CAD-RG01) Erro ao Atualizar Endereço da Empresa \n\nErro: {_e}", "Erro Atuazliar Endereço da Empresa!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        public static void ErroAoAtualizarDadosEmpresa(Exception _e)
+        {
+            MessageBox.Show($"(CAD-RG02) Erro ao Atualizar Dados da Empresa \n\nErro: {_e}", "Erro Atuazliar Dados da Empresa!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        #endregion Registro
 
         #endregion Atualizar
 

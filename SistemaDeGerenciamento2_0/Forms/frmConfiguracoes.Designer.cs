@@ -67,6 +67,7 @@
             this.btnEmpresa.TabIndex = 125;
             this.btnEmpresa.Text = "Empresa";
             this.btnEmpresa.ToolTip = "Forncedor";
+            this.btnEmpresa.Click += new System.EventHandler(this.btnEmpresa_Click);
             // 
             // btnNovoUsuario
             // 
@@ -85,7 +86,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(968, 563);
+            this.ClientSize = new System.Drawing.Size(953, 563);
             this.Controls.Add(this.pnlConfiguracoes);
             this.Controls.Add(this.btnPerfil);
             this.Controls.Add(this.btnEmpresa);

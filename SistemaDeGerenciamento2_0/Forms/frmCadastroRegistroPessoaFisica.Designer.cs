@@ -42,7 +42,7 @@
             this.txtEmail = new DevExpress.XtraEditors.TextEdit();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
             this.txtCelular = new DevExpress.XtraEditors.TextEdit();
-            this.txtTelefoneResidencial = new DevExpress.XtraEditors.TextEdit();
+            this.txtTelefoneFixo = new DevExpress.XtraEditors.TextEdit();
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
@@ -90,7 +90,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtDataNascimento.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtEmail.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCelular.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtTelefoneResidencial.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTelefoneFixo.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbPrioridade.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbSituacao.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDataCadastro.Properties)).BeginInit();
@@ -258,17 +258,17 @@
             this.txtCelular.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCelular_KeyPress);
             this.txtCelular.Leave += new System.EventHandler(this.txtCelular_Leave);
             // 
-            // txtTelefoneResidencial
+            // txtTelefoneFixo
             // 
-            this.txtTelefoneResidencial.Location = new System.Drawing.Point(712, 171);
-            this.txtTelefoneResidencial.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtTelefoneResidencial.Name = "txtTelefoneResidencial";
-            this.txtTelefoneResidencial.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTelefoneResidencial.Properties.Appearance.Options.UseFont = true;
-            this.txtTelefoneResidencial.Size = new System.Drawing.Size(293, 26);
-            this.txtTelefoneResidencial.TabIndex = 7;
-            this.txtTelefoneResidencial.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtResidencial_KeyPress);
-            this.txtTelefoneResidencial.Leave += new System.EventHandler(this.txtTelefoneResidencial_Leave);
+            this.txtTelefoneFixo.Location = new System.Drawing.Point(712, 171);
+            this.txtTelefoneFixo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtTelefoneFixo.Name = "txtTelefoneFixo";
+            this.txtTelefoneFixo.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTelefoneFixo.Properties.Appearance.Options.UseFont = true;
+            this.txtTelefoneFixo.Size = new System.Drawing.Size(293, 26);
+            this.txtTelefoneFixo.TabIndex = 7;
+            this.txtTelefoneFixo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtResidencial_KeyPress);
+            this.txtTelefoneFixo.Leave += new System.EventHandler(this.txtTelefoneResidencial_Leave);
             // 
             // labelControl7
             // 
@@ -286,9 +286,9 @@
             this.labelControl8.Appearance.Options.UseFont = true;
             this.labelControl8.Location = new System.Drawing.Point(712, 143);
             this.labelControl8.Name = "labelControl8";
-            this.labelControl8.Size = new System.Drawing.Size(140, 20);
+            this.labelControl8.Size = new System.Drawing.Size(92, 20);
             this.labelControl8.TabIndex = 153;
-            this.labelControl8.Text = "Telefone Residencial:";
+            this.labelControl8.Text = "Telefone Fixo:";
             // 
             // labelControl9
             // 
@@ -792,7 +792,7 @@
             this.Controls.Add(this.labelControl9);
             this.Controls.Add(this.labelControl8);
             this.Controls.Add(this.labelControl7);
-            this.Controls.Add(this.txtTelefoneResidencial);
+            this.Controls.Add(this.txtTelefoneFixo);
             this.Controls.Add(this.txtCelular);
             this.Controls.Add(this.labelControl6);
             this.Controls.Add(this.txtEmail);
@@ -820,7 +820,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtDataNascimento.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtEmail.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCelular.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtTelefoneResidencial.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTelefoneFixo.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbPrioridade.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbSituacao.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDataCadastro.Properties)).EndInit();
@@ -857,7 +857,7 @@
         private DevExpress.XtraEditors.TextEdit txtEmail;
         private DevExpress.XtraEditors.LabelControl labelControl6;
         private DevExpress.XtraEditors.TextEdit txtCelular;
-        private DevExpress.XtraEditors.TextEdit txtTelefoneResidencial;
+        private DevExpress.XtraEditors.TextEdit txtTelefoneFixo;
         private DevExpress.XtraEditors.LabelControl labelControl7;
         private DevExpress.XtraEditors.LabelControl labelControl8;
         private DevExpress.XtraEditors.LabelControl labelControl9;
