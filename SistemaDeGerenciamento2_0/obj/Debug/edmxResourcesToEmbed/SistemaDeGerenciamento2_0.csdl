@@ -45,13 +45,14 @@
     </Key>
     <Property Name="id_endereco" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="ed_tipo" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="ed_cep" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ed_cep" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
     <Property Name="ed_locgradouro" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="ed_numero" Type="Int32" Nullable="false" />
+    <Property Name="ed_numero" Type="String" Nullable="false" MaxLength="255" Unicode="false" FixedLength="false" />
     <Property Name="ed_complemento" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
     <Property Name="ed_bairro" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="ed_cidade" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
     <NavigationProperty Name="tb_registro" Relationship="Self.tb_registro_fk2" FromRole="tb_enderecos" ToRole="tb_registro" />
+    <Property Name="ed_estado" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
   </EntityType>
   <EntityType Name="tb_estoque">
     <Key>
@@ -83,10 +84,10 @@
       <PropertyRef Name="id_informacao_comercial" />
     </Key>
     <Property Name="id_informacao_comercial" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="ic_situacao" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="ic_prioridade" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="ic_vendedor" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="ic_limite_credito" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="ic_situacao" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="ic_prioridade" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="ic_vendedor" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="ic_limite_credito" Type="Decimal" Precision="10" Scale="2" />
     <NavigationProperty Name="tb_registro" Relationship="Self.tb_registro_fk1" FromRole="tb_informacoes_comeciais" ToRole="tb_registro" />
   </EntityType>
   <EntityType Name="tb_nota_fiscal_entrada">
@@ -211,8 +212,6 @@
     <Property Name="rg_inscricao_estadual" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
     <Property Name="rg_inscricao_municipal" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
     <Property Name="rg_email" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
-    <Property Name="rg_telefone1" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
-    <Property Name="rg_telefone2" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
     <Property Name="fk_permissoes" Type="Int32" />
     <Property Name="fk_informacao_comercial" Type="Int32" />
     <Property Name="fk_endereco" Type="Int32" />
@@ -223,6 +222,8 @@
     <NavigationProperty Name="tb_permissoes" Relationship="Self.tb_registro_fk0" FromRole="tb_registro" ToRole="tb_permissoes" />
     <NavigationProperty Name="tb_produto" Relationship="Self.tb_produto_fk1" FromRole="tb_registro" ToRole="tb_produto" />
     <NavigationProperty Name="tb_repeticao_despesa" Relationship="Self.tb_repeticao_despesa_fk0" FromRole="tb_registro" ToRole="tb_repeticao_despesa" />
+    <Property Name="rg_celular" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="rg_telefone_fixo" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
   </EntityType>
   <EntityType Name="tb_repeticao_despesa">
     <Key>

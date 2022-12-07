@@ -52,13 +52,28 @@ namespace SistemaDeGerenciamento2_0
 
         private void Cadastro_Click(object sender, EventArgs e)
         {
-            frmCadastroRegistros frmCadastroRegistros = new frmCadastroRegistros();
+            frmCadastroRegistros frmCadastroRegistros = new frmCadastroRegistros("Cliente");
             frmCadastroRegistros.ShowDialog();
         }
 
         private void btnAcessoRapido_Click_1(object sender, EventArgs e)
         {
             TelaAcessoRapido();
+        }
+
+        private void Configuracao_Click(object sender, EventArgs e)
+        {
+            TelaConfiguracoes();
+        }
+
+        private void TelaConfiguracoes()
+        {
+            pnlTelaPrincipal.Controls.Clear();
+            frmConfiguracoes frmConfiguracoes = new frmConfiguracoes();
+            frmConfiguracoes.TopLevel = false;
+            pnlTelaPrincipal.Controls.Add(frmConfiguracoes);
+            pnlTelaPrincipal.Tag = frmConfiguracoes;
+            frmConfiguracoes.Show();
         }
     }
 }

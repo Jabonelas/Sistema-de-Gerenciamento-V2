@@ -42,11 +42,11 @@ namespace SistemaDeGerenciamento2_0
         public string rg_inscricao_estadual { get; set; }
         public string rg_inscricao_municipal { get; set; }
         public string rg_email { get; set; }
-        public string rg_telefone1 { get; set; }
-        public string rg_telefone2 { get; set; }
         public Nullable<int> fk_permissoes { get; set; }
         public Nullable<int> fk_informacao_comercial { get; set; }
         public Nullable<int> fk_endereco { get; set; }
+        public string rg_celular { get; set; }
+        public string rg_telefone_fixo { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<tb_despesa> tb_despesa { get; set; }

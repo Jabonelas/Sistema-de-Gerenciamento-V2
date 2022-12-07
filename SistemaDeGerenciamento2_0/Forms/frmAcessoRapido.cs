@@ -32,5 +32,23 @@ namespace SistemaDeGerenciamento2_0.Forms
             frmCadastroProduto frmCadastroProduto = new frmCadastroProduto();
             frmCadastroProduto.ShowDialog();
         }
+
+        private void btnNovoCliente_Click(object sender, EventArgs e)
+        {
+            frmCadastroRegistros frmCadastroRegistros = new frmCadastroRegistros("Cliente");
+            frmCadastroRegistros.ShowDialog();
+        }
+
+        private void btnNovoFornecedor_Click(object sender, EventArgs e)
+        {
+            frmCadastroRegistros frmCadastroRegistros = new frmCadastroRegistros("Fornecedor");
+            frmCadastroRegistros.ShowDialog();
+        }
+
+        private void btnNovoTransporte_Click(object sender, EventArgs e)
+        {
+            frmCadastroRegistros frmCadastroRegistros = new frmCadastroRegistros("Funcionario");
+            frmCadastroRegistros.ShowDialog();
+        }
     }
 }

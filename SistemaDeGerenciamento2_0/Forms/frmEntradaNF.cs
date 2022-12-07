@@ -16,13 +16,31 @@ namespace SistemaDeGerenciamento2_0.Forms
     public partial class frmEntradaNF : DevExpress.XtraEditors.XtraForm
     {
         private int X = 0;
+
         private int Y = 0;
 
         private string localArquivo = string.Empty;
 
+        private bool IsCnpjExiste = false;
+
         public frmEntradaNF()
         {
             InitializeComponent();
+        }
+
+        private void btnProcurar_Click(object sender, EventArgs e)
+        {
+            ArquivoLocal();
+        }
+
+        private void btnFechar_Click(object sender, EventArgs e)
+        {
+            FecharTela();
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            FecharTela();
         }
 
         private void frmEntradaNF_MouseMove(object sender, MouseEventArgs e)
@@ -39,6 +57,19 @@ namespace SistemaDeGerenciamento2_0.Forms
             Y = this.Top - MousePosition.Y;
         }
 
+        private void frmEntradaNF_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+            {
+                FecharTela();
+            }
+        }
+
+        private void frmEntradaNF_Shown(object sender, EventArgs e)
+        {
+            ArquivoLocal();
+        }
+
         private void ArquivoLocal()
         {
             OpenFileDialog abrirPesquisa = new OpenFileDialog();
@@ -48,9 +79,15 @@ namespace SistemaDeGerenciamento2_0.Forms
             {
                 localArquivo = abrirPesquisa.FileName;
 
+                LerXML();
+
+                LerXMLPegarDadosEmissor();
+
                 txtLocalArquivo.Text = localArquivo;
             }
         }
+
+        private DataTable dt = new DataTable();
 
         private void LerXML()
         {
@@ -67,10 +104,9 @@ namespace SistemaDeGerenciamento2_0.Forms
                 {
                     var fimItens = false;
 
-                    DataTable dt = new DataTable();
                     dt.Columns.Add("Item");
-                    dt.Columns.Add("ID");
-                    dt.Columns.Add("Decricao");
+                    dt.Columns.Add("Código Produto");
+                    dt.Columns.Add("Decrição");
                     dt.Columns.Add("Quantidade");
                     dt.Columns.Add("Unidade");
                     dt.Columns.Add("Valor");
@@ -278,15 +314,6 @@ namespace SistemaDeGerenciamento2_0.Forms
             }
         }
 
-        private void btnProcurar_Click(object sender, EventArgs e)
-        {
-            ArquivoLocal();
-
-            LerXML();
-
-            LerXMLPegarDadosEmissor();
-        }
-
         private void FecharTela()
         {
             if (txtRazaoSocialEmitente.Text != string.Empty)
@@ -299,31 +326,58 @@ namespace SistemaDeGerenciamento2_0.Forms
             }
         }
 
-        private void btnFechar_Click(object sender, EventArgs e)
+        private void btnSalvar_Click(object sender, EventArgs e)
         {
-            FecharTela();
-        }
+            VerificarExistenciaCadastroFornecedor();
 
-        private void frmEntradaNF_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Escape)
+            if (IsCnpjExiste == true)
             {
-                FecharTela();
+            }
+            else
+            {
+                MensagemAtencao.MensagemFornecedorNaoCadastrado();
             }
         }
 
-        private void btnCancelar_Click(object sender, EventArgs e)
+        private void VerificarExistenciaCadastroProduto()
         {
-            FecharTela();
+            try
+            {
+                using (SistemaDeGerenciamento2_0Entities5 db = new SistemaDeGerenciamento2_0Entities5())
+                {
+                    //var codigoProduto = db.tb_produto.Where(x => x.pd_codigo.Equals(dt.))
+                }
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
 
-        private void frmEntradaNF_Shown(object sender, EventArgs e)
+        private void VerificarExistenciaCadastroFornecedor()
         {
-            ArquivoLocal();
+            try
+            {
+                using (SistemaDeGerenciamento2_0Entities5 db = new SistemaDeGerenciamento2_0Entities5())
+                {
+                    var cnpj = db.tb_registro.Where(x => x.rg_cnpj.Equals(txtCNPJEmissor.Text)).Select(x => x.rg_cnpj).ToList();
 
-            LerXML();
+                    if (cnpj.Count > 0)
+                    {
+                        IsCnpjExiste = true;
+                    }
+                    else
+                    {
+                        IsCnpjExiste = false;
+                    }
+                }
+            }
+            catch (Exception x)
+            {
+                LogErros.EscreverArquivoDeLog($"{DateTime.Now} - Erro ao Buscar CNPJ para verificação de existencia de cadastro - | {x.Message} | {x.StackTrace}");
 
-            LerXMLPegarDadosEmissor();
+                MensagemErros.ErroAoBuscarCNPJParaVerificacaSeExisteCadastro(x);
+            }
         }
     }
 }

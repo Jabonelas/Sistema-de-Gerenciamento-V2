@@ -24,7 +24,7 @@ namespace SistemaDeGerenciamento2_0
         public string ic_situacao { get; set; }
         public string ic_prioridade { get; set; }
         public string ic_vendedor { get; set; }
-        public decimal ic_limite_credito { get; set; }
+        public Nullable<decimal> ic_limite_credito { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<tb_registro> tb_registro { get; set; }

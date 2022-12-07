@@ -51,7 +51,7 @@ namespace SistemaDeGerenciamento2_0.Forms
                 }
                 else
                 {
-                    MensagemAtencao.MensagemValorJaExistente();
+                    MensagemAtencao.MensagemValorJaExistente("Grupo e Agrupador");
                 }
             }
             else

@@ -30,6 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCadastroProduto));
+            DevExpress.DataAccess.Sql.CustomSqlQuery customSqlQuery1 = new DevExpress.DataAccess.Sql.CustomSqlQuery();
+            DevExpress.DataAccess.Sql.CustomSqlQuery customSqlQuery2 = new DevExpress.DataAccess.Sql.CustomSqlQuery();
             this.labelControl12 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
@@ -61,10 +63,14 @@
             this.btnAcessarGrupoSubGrupo = new DevExpress.XtraEditors.SimpleButton();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pcbRequesitosCodigoDeBarras = new DevExpress.XtraEditors.PictureEdit();
-            this.cmbGrupo = new DevExpress.XtraEditors.LookUpEdit();
             this.cmbFornecedor = new DevExpress.XtraEditors.LookUpEdit();
+            this.queryFornecedor = new System.Windows.Forms.BindingSource(this.components);
+            this.sqlFornecedor = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             this.labelControl14 = new DevExpress.XtraEditors.LabelControl();
             this.AlertaSalvar = new DevExpress.XtraBars.Alerter.AlertControl(this.components);
+            this.cmbGrupo = new DevExpress.XtraEditors.LookUpEdit();
+            this.queryGrupo = new System.Windows.Forms.BindingSource(this.components);
+            this.sqlGrupo = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pcbRequesitosCodigo.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCusto.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMargemLucro.Properties)).BeginInit();
@@ -78,8 +84,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtCodigo.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbRequesitosCodigoDeBarras.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cmbGrupo.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbFornecedor.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.queryFornecedor)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbGrupo.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.queryGrupo)).BeginInit();
             this.SuspendLayout();
             // 
             // labelControl12
@@ -471,21 +479,6 @@
             this.pcbRequesitosCodigoDeBarras.TabIndex = 106;
             this.pcbRequesitosCodigoDeBarras.ToolTip = "Se não for informado, \r\num código de barras\r\n para uso interno será\r\ngerado.";
             // 
-            // cmbGrupo
-            // 
-            this.cmbGrupo.Location = new System.Drawing.Point(675, 156);
-            this.cmbGrupo.Name = "cmbGrupo";
-            this.cmbGrupo.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbGrupo.Properties.Appearance.Options.UseFont = true;
-            this.cmbGrupo.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cmbGrupo.Properties.DropDownRows = 5;
-            this.cmbGrupo.Properties.MaxLength = 20;
-            this.cmbGrupo.Properties.NullText = "";
-            this.cmbGrupo.Properties.PopupSizeable = false;
-            this.cmbGrupo.Size = new System.Drawing.Size(206, 26);
-            this.cmbGrupo.TabIndex = 4;
-            // 
             // cmbFornecedor
             // 
             this.cmbFornecedor.Location = new System.Drawing.Point(30, 230);
@@ -494,12 +487,36 @@
             this.cmbFornecedor.Properties.Appearance.Options.UseFont = true;
             this.cmbFornecedor.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cmbFornecedor.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("id_registro", "ID", 20, DevExpress.Utils.FormatType.Numeric, "", true, DevExpress.Utils.HorzAlignment.Far, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("rg_cnpj", "CNPJ", 60, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("rg_nome_fantasia", "Nome Fantasia", 96, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default)});
+            this.cmbFornecedor.Properties.DataSource = this.queryFornecedor;
+            this.cmbFornecedor.Properties.DisplayMember = "rg_cnpj";
             this.cmbFornecedor.Properties.DropDownRows = 5;
             this.cmbFornecedor.Properties.MaxLength = 20;
             this.cmbFornecedor.Properties.NullText = "";
             this.cmbFornecedor.Properties.PopupSizeable = false;
+            this.cmbFornecedor.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
+            this.cmbFornecedor.Properties.ValueMember = "id_registro";
             this.cmbFornecedor.Size = new System.Drawing.Size(240, 26);
             this.cmbFornecedor.TabIndex = 6;
+            // 
+            // queryFornecedor
+            // 
+            this.queryFornecedor.DataMember = "Query";
+            this.queryFornecedor.DataSource = this.sqlFornecedor;
+            // 
+            // sqlFornecedor
+            // 
+            this.sqlFornecedor.ConnectionName = "SistemaDeGerenciamento2_0.Properties.Settings.SistemaDeGerenciamento2_0Connection" +
+    "String";
+            this.sqlFornecedor.Name = "sqlFornecedor";
+            customSqlQuery1.Name = "Query";
+            customSqlQuery1.Sql = resources.GetString("customSqlQuery1.Sql");
+            this.sqlFornecedor.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
+            customSqlQuery1});
+            this.sqlFornecedor.ResultSchemaSerializable = resources.GetString("sqlFornecedor.ResultSchemaSerializable");
             // 
             // labelControl14
             // 
@@ -531,11 +548,53 @@
             this.AlertaSalvar.ShowPinButton = false;
             this.AlertaSalvar.ShowToolTips = false;
             // 
+            // cmbGrupo
+            // 
+            this.cmbGrupo.Location = new System.Drawing.Point(675, 156);
+            this.cmbGrupo.Name = "cmbGrupo";
+            this.cmbGrupo.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbGrupo.Properties.Appearance.Options.UseFont = true;
+            this.cmbGrupo.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cmbGrupo.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("id_grupo", "ID", 25, DevExpress.Utils.FormatType.Numeric, "", true, DevExpress.Utils.HorzAlignment.Far, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("gp_nome_grupo", "Nome Grupo", 87, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("gp_nome_agrupador", "Nome Agrupador", 109, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default)});
+            this.cmbGrupo.Properties.DataSource = this.queryGrupo;
+            this.cmbGrupo.Properties.DisplayMember = "gp_nome_grupo";
+            this.cmbGrupo.Properties.DropDownRows = 5;
+            this.cmbGrupo.Properties.MaxLength = 20;
+            this.cmbGrupo.Properties.NullText = "";
+            this.cmbGrupo.Properties.PopupSizeable = false;
+            this.cmbGrupo.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
+            this.cmbGrupo.Properties.ValueMember = "id_grupo";
+            this.cmbGrupo.Size = new System.Drawing.Size(206, 26);
+            this.cmbGrupo.TabIndex = 4;
+            // 
+            // queryGrupo
+            // 
+            this.queryGrupo.DataMember = "Query";
+            this.queryGrupo.DataSource = this.sqlGrupo;
+            // 
+            // sqlGrupo
+            // 
+            this.sqlGrupo.ConnectionName = "SistemaDeGerenciamento2_0.Properties.Settings.SistemaDeGerenciamento2_0Connection" +
+    "String";
+            this.sqlGrupo.Name = "sqlGrupo";
+            customSqlQuery2.Name = "Query";
+            customSqlQuery2.Sql = "select \"tb_grupo\".\"id_grupo\",\r\n       \"tb_grupo\".\"gp_nome_grupo\",\r\n       \"tb_gru" +
+    "po\".\"gp_nome_agrupador\"\r\n  from \"dbo\".\"tb_grupo\" \"tb_grupo\"\r\nwhere  \"tb_grupo\".\"" +
+    "gp_nome_grupo\" is not null";
+            this.sqlGrupo.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
+            customSqlQuery2});
+            this.sqlGrupo.ResultSchemaSerializable = resources.GetString("sqlGrupo.ResultSchemaSerializable");
+            // 
             // frmCadastroProduto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(952, 538);
+            this.Controls.Add(this.cmbGrupo);
             this.Controls.Add(this.labelControl14);
             this.Controls.Add(this.cmbFornecedor);
             this.Controls.Add(this.pcbRequesitosCodigoDeBarras);
@@ -569,12 +628,12 @@
             this.Controls.Add(this.btnFechar);
             this.Controls.Add(this.btnAcessarGrupoSubGrupo);
             this.Controls.Add(this.pictureBox6);
-            this.Controls.Add(this.cmbGrupo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.KeyPreview = true;
             this.Name = "frmCadastroProduto";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "telacadastro";
+            this.Load += new System.EventHandler(this.frmCadastroProduto_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmCadastroProduto_KeyDown);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.frmCadastroProduto_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.frmCadastroProduto_MouseMove);
@@ -591,8 +650,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtCodigo.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbRequesitosCodigoDeBarras.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cmbGrupo.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbFornecedor.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.queryFornecedor)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbGrupo.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.queryGrupo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -631,9 +692,13 @@
         private DevExpress.XtraEditors.SimpleButton btnCancelar;
         private DevExpress.XtraEditors.PictureEdit pcbRequesitosCodigo;
         private DevExpress.XtraEditors.PictureEdit pcbRequesitosCodigoDeBarras;
-        private DevExpress.XtraEditors.LookUpEdit cmbGrupo;
         private DevExpress.XtraEditors.LookUpEdit cmbFornecedor;
         private DevExpress.XtraEditors.LabelControl labelControl14;
         private DevExpress.XtraBars.Alerter.AlertControl AlertaSalvar;
+        private DevExpress.XtraEditors.LookUpEdit cmbGrupo;
+        private System.Windows.Forms.BindingSource queryGrupo;
+        private DevExpress.DataAccess.Sql.SqlDataSource sqlGrupo;
+        private System.Windows.Forms.BindingSource queryFornecedor;
+        private DevExpress.DataAccess.Sql.SqlDataSource sqlFornecedor;
     }
 }

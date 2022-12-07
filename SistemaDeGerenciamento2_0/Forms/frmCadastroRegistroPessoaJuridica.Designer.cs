@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.txtRazaoSocial = new DevExpress.XtraEditors.TextEdit();
@@ -56,14 +57,14 @@
             this.txtNumero = new DevExpress.XtraEditors.TextEdit();
             this.txtLogradouro = new DevExpress.XtraEditors.TextEdit();
             this.btnBuscarPorCEP = new DevExpress.XtraEditors.SimpleButton();
-            this.xbmTipoEndereco = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.cmbTipoEndereco = new DevExpress.XtraEditors.ComboBoxEdit();
             this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
             this.txtCEP = new DevExpress.XtraEditors.TextEdit();
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
-            this.txtTelefone2 = new DevExpress.XtraEditors.TextEdit();
-            this.txtTelefone1 = new DevExpress.XtraEditors.TextEdit();
+            this.txtTelefoneFixo = new DevExpress.XtraEditors.TextEdit();
+            this.txtCelular = new DevExpress.XtraEditors.TextEdit();
             this.labelControl16 = new DevExpress.XtraEditors.LabelControl();
             this.txtEmail = new DevExpress.XtraEditors.TextEdit();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
@@ -73,6 +74,11 @@
             this.txtDataCadastro = new DevExpress.XtraEditors.TextEdit();
             this.btnCancelar = new DevExpress.XtraEditors.SimpleButton();
             this.btnSalvar = new DevExpress.XtraEditors.SimpleButton();
+            this.cmbEstado = new DevExpress.XtraEditors.LookUpEdit();
+            this.labelControl23 = new DevExpress.XtraEditors.LabelControl();
+            this.AlertaSalvar = new DevExpress.XtraBars.Alerter.AlertControl(this.components);
+            this.lblDataCadastro = new DevExpress.XtraEditors.LabelControl();
+            this.pictureEdit3 = new DevExpress.XtraEditors.PictureEdit();
             ((System.ComponentModel.ISupportInitialize)(this.txtRazaoSocial.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNomeFantasia.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCNPJ.Properties)).BeginInit();
@@ -86,14 +92,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtComplemento.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNumero.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtLogradouro.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.xbmTipoEndereco.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbTipoEndereco.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCEP.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtTelefone2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtTelefone1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTelefoneFixo.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtCelular.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtEmail.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDataCadastro.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbEstado.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit3.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // labelControl5
@@ -123,8 +131,9 @@
             this.txtRazaoSocial.Name = "txtRazaoSocial";
             this.txtRazaoSocial.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRazaoSocial.Properties.Appearance.Options.UseFont = true;
-            this.txtRazaoSocial.Size = new System.Drawing.Size(473, 26);
-            this.txtRazaoSocial.TabIndex = 155;
+            this.txtRazaoSocial.Properties.MaxLength = 100;
+            this.txtRazaoSocial.Size = new System.Drawing.Size(472, 26);
+            this.txtRazaoSocial.TabIndex = 2;
             // 
             // labelControl3
             // 
@@ -143,8 +152,9 @@
             this.txtNomeFantasia.Name = "txtNomeFantasia";
             this.txtNomeFantasia.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNomeFantasia.Properties.Appearance.Options.UseFont = true;
+            this.txtNomeFantasia.Properties.MaxLength = 100;
             this.txtNomeFantasia.Size = new System.Drawing.Size(461, 26);
-            this.txtNomeFantasia.TabIndex = 153;
+            this.txtNomeFantasia.TabIndex = 1;
             // 
             // labelControl1
             // 
@@ -174,7 +184,9 @@
             this.txtCNPJ.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCNPJ.Properties.Appearance.Options.UseFont = true;
             this.txtCNPJ.Size = new System.Drawing.Size(256, 26);
-            this.txtCNPJ.TabIndex = 148;
+            this.txtCNPJ.TabIndex = 0;
+            this.txtCNPJ.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCNPJ_KeyPress);
+            this.txtCNPJ.Leave += new System.EventHandler(this.txtCNPJ_Leave);
             // 
             // txtEmailXML
             // 
@@ -184,7 +196,9 @@
             this.txtEmailXML.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmailXML.Properties.Appearance.Options.UseFont = true;
             this.txtEmailXML.Size = new System.Drawing.Size(293, 26);
-            this.txtEmailXML.TabIndex = 160;
+            this.txtEmailXML.TabIndex = 3;
+            this.txtEmailXML.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtEmailXML_KeyPress);
+            this.txtEmailXML.Leave += new System.EventHandler(this.txtEmailXML_Leave);
             // 
             // labelControl6
             // 
@@ -235,7 +249,7 @@
             this.txtObservacoes.Options.HorizontalRuler.Visibility = DevExpress.XtraRichEdit.RichEditRulerVisibility.Hidden;
             this.txtObservacoes.Options.VerticalRuler.Visibility = DevExpress.XtraRichEdit.RichEditRulerVisibility.Hidden;
             this.txtObservacoes.Size = new System.Drawing.Size(991, 87);
-            this.txtObservacoes.TabIndex = 210;
+            this.txtObservacoes.TabIndex = 18;
             // 
             // txtInscricaoEstadual
             // 
@@ -244,9 +258,11 @@
             this.txtInscricaoEstadual.Name = "txtInscricaoEstadual";
             this.txtInscricaoEstadual.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtInscricaoEstadual.Properties.Appearance.Options.UseFont = true;
+            this.txtInscricaoEstadual.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.NumericMaskManager));
+            this.txtInscricaoEstadual.Properties.MaskSettings.Set("mask", "d");
+            this.txtInscricaoEstadual.Properties.MaxLength = 14;
             this.txtInscricaoEstadual.Size = new System.Drawing.Size(255, 26);
-            this.txtInscricaoEstadual.TabIndex = 186;
-            this.txtInscricaoEstadual.EditValueChanged += new System.EventHandler(this.textEdit8_EditValueChanged);
+            this.txtInscricaoEstadual.TabIndex = 4;
             // 
             // txtInscricaoMunicipal
             // 
@@ -255,8 +271,11 @@
             this.txtInscricaoMunicipal.Name = "txtInscricaoMunicipal";
             this.txtInscricaoMunicipal.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtInscricaoMunicipal.Properties.Appearance.Options.UseFont = true;
-            this.txtInscricaoMunicipal.Size = new System.Drawing.Size(328, 26);
-            this.txtInscricaoMunicipal.TabIndex = 212;
+            this.txtInscricaoMunicipal.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.NumericMaskManager));
+            this.txtInscricaoMunicipal.Properties.MaskSettings.Set("mask", "d");
+            this.txtInscricaoMunicipal.Properties.MaxLength = 14;
+            this.txtInscricaoMunicipal.Size = new System.Drawing.Size(327, 26);
+            this.txtInscricaoMunicipal.TabIndex = 5;
             // 
             // labelControl20
             // 
@@ -282,7 +301,7 @@
             // 
             this.labelControl15.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl15.Appearance.Options.UseFont = true;
-            this.labelControl15.Location = new System.Drawing.Point(752, 288);
+            this.labelControl15.Location = new System.Drawing.Point(523, 288);
             this.labelControl15.Name = "labelControl15";
             this.labelControl15.Size = new System.Drawing.Size(50, 20);
             this.labelControl15.TabIndex = 233;
@@ -292,7 +311,7 @@
             // 
             this.labelControl14.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl14.Appearance.Options.UseFont = true;
-            this.labelControl14.Location = new System.Drawing.Point(495, 288);
+            this.labelControl14.Location = new System.Drawing.Point(801, 288);
             this.labelControl14.Name = "labelControl14";
             this.labelControl14.Size = new System.Drawing.Size(43, 20);
             this.labelControl14.TabIndex = 232;
@@ -330,23 +349,25 @@
             // 
             // txtCidade
             // 
-            this.txtCidade.Location = new System.Drawing.Point(752, 316);
+            this.txtCidade.Location = new System.Drawing.Point(523, 316);
             this.txtCidade.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtCidade.Name = "txtCidade";
             this.txtCidade.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCidade.Properties.Appearance.Options.UseFont = true;
             this.txtCidade.Size = new System.Drawing.Size(252, 26);
-            this.txtCidade.TabIndex = 228;
+            this.txtCidade.TabIndex = 13;
+            this.txtCidade.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCidade_KeyPress);
             // 
             // txtBairro
             // 
-            this.txtBairro.Location = new System.Drawing.Point(495, 316);
+            this.txtBairro.Location = new System.Drawing.Point(801, 316);
             this.txtBairro.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtBairro.Name = "txtBairro";
             this.txtBairro.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBairro.Properties.Appearance.Options.UseFont = true;
             this.txtBairro.Size = new System.Drawing.Size(202, 26);
-            this.txtBairro.TabIndex = 227;
+            this.txtBairro.TabIndex = 14;
+            this.txtBairro.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBairro_KeyPress);
             // 
             // txtComplemento
             // 
@@ -355,8 +376,9 @@
             this.txtComplemento.Name = "txtComplemento";
             this.txtComplemento.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtComplemento.Properties.Appearance.Options.UseFont = true;
+            this.txtComplemento.Properties.MaxLength = 100;
             this.txtComplemento.Size = new System.Drawing.Size(292, 26);
-            this.txtComplemento.TabIndex = 226;
+            this.txtComplemento.TabIndex = 17;
             // 
             // txtNumero
             // 
@@ -366,7 +388,8 @@
             this.txtNumero.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNumero.Properties.Appearance.Options.UseFont = true;
             this.txtNumero.Size = new System.Drawing.Size(124, 26);
-            this.txtNumero.TabIndex = 225;
+            this.txtNumero.TabIndex = 16;
+            this.txtNumero.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNumero_KeyPress);
             // 
             // txtLogradouro
             // 
@@ -375,39 +398,43 @@
             this.txtLogradouro.Name = "txtLogradouro";
             this.txtLogradouro.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLogradouro.Properties.Appearance.Options.UseFont = true;
+            this.txtLogradouro.Properties.MaxLength = 100;
             this.txtLogradouro.Size = new System.Drawing.Size(461, 26);
-            this.txtLogradouro.TabIndex = 224;
+            this.txtLogradouro.TabIndex = 15;
             // 
             // btnBuscarPorCEP
             // 
             this.btnBuscarPorCEP.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.lupa_preta;
-            this.btnBuscarPorCEP.Location = new System.Drawing.Point(405, 316);
+            this.btnBuscarPorCEP.Location = new System.Drawing.Point(346, 316);
             this.btnBuscarPorCEP.Name = "btnBuscarPorCEP";
             this.btnBuscarPorCEP.Size = new System.Drawing.Size(31, 26);
-            this.btnBuscarPorCEP.TabIndex = 223;
+            this.btnBuscarPorCEP.TabIndex = 11;
             this.btnBuscarPorCEP.ToolTip = "Consultar\r\n    CEP";
+            this.btnBuscarPorCEP.Click += new System.EventHandler(this.btnBuscarPorCEP_Click);
             // 
-            // xbmTipoEndereco
+            // cmbTipoEndereco
             // 
-            this.xbmTipoEndereco.Location = new System.Drawing.Point(12, 316);
-            this.xbmTipoEndereco.Name = "xbmTipoEndereco";
-            this.xbmTipoEndereco.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.xbmTipoEndereco.Properties.Appearance.Options.UseFont = true;
-            this.xbmTipoEndereco.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.cmbTipoEndereco.Location = new System.Drawing.Point(12, 316);
+            this.cmbTipoEndereco.Name = "cmbTipoEndereco";
+            this.cmbTipoEndereco.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbTipoEndereco.Properties.Appearance.Options.UseFont = true;
+            this.cmbTipoEndereco.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.xbmTipoEndereco.Properties.Items.AddRange(new object[] {
+            this.cmbTipoEndereco.Properties.Items.AddRange(new object[] {
             "Principal",
             "Cobrança",
             "Entrega",
-            "Trabalho"});
-            this.xbmTipoEndereco.Size = new System.Drawing.Size(157, 26);
-            this.xbmTipoEndereco.TabIndex = 222;
+            "Trabalho",
+            ""});
+            this.cmbTipoEndereco.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            this.cmbTipoEndereco.Size = new System.Drawing.Size(157, 26);
+            this.cmbTipoEndereco.TabIndex = 9;
             // 
             // labelControl10
             // 
             this.labelControl10.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl10.Appearance.Options.UseFont = true;
-            this.labelControl10.Location = new System.Drawing.Point(225, 288);
+            this.labelControl10.Location = new System.Drawing.Point(201, 288);
             this.labelControl10.Name = "labelControl10";
             this.labelControl10.Size = new System.Drawing.Size(28, 20);
             this.labelControl10.TabIndex = 221;
@@ -415,19 +442,21 @@
             // 
             // txtCEP
             // 
-            this.txtCEP.Location = new System.Drawing.Point(225, 316);
+            this.txtCEP.Location = new System.Drawing.Point(201, 316);
             this.txtCEP.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtCEP.Name = "txtCEP";
             this.txtCEP.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCEP.Properties.Appearance.Options.UseFont = true;
-            this.txtCEP.Size = new System.Drawing.Size(174, 26);
-            this.txtCEP.TabIndex = 220;
+            this.txtCEP.Size = new System.Drawing.Size(138, 26);
+            this.txtCEP.TabIndex = 10;
+            this.txtCEP.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCEP_KeyPress);
+            this.txtCEP.Leave += new System.EventHandler(this.txtCEP_Leave);
             // 
             // labelControl9
             // 
             this.labelControl9.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl9.Appearance.Options.UseFont = true;
-            this.labelControl9.Location = new System.Drawing.Point(11, 288);
+            this.labelControl9.Location = new System.Drawing.Point(12, 288);
             this.labelControl9.Name = "labelControl9";
             this.labelControl9.Size = new System.Drawing.Size(33, 20);
             this.labelControl9.TabIndex = 219;
@@ -439,9 +468,9 @@
             this.labelControl8.Appearance.Options.UseFont = true;
             this.labelControl8.Location = new System.Drawing.Point(711, 204);
             this.labelControl8.Name = "labelControl8";
-            this.labelControl8.Size = new System.Drawing.Size(73, 20);
+            this.labelControl8.Size = new System.Drawing.Size(92, 20);
             this.labelControl8.TabIndex = 218;
-            this.labelControl8.Text = "Telefone 2:";
+            this.labelControl8.Text = "Telefone Fixo:";
             // 
             // labelControl7
             // 
@@ -449,29 +478,33 @@
             this.labelControl7.Appearance.Options.UseFont = true;
             this.labelControl7.Location = new System.Drawing.Point(362, 204);
             this.labelControl7.Name = "labelControl7";
-            this.labelControl7.Size = new System.Drawing.Size(73, 20);
+            this.labelControl7.Size = new System.Drawing.Size(49, 20);
             this.labelControl7.TabIndex = 217;
-            this.labelControl7.Text = "Telefone 1:";
+            this.labelControl7.Text = "Celular:";
             // 
-            // txtTelefone2
+            // txtTelefoneFixo
             // 
-            this.txtTelefone2.Location = new System.Drawing.Point(711, 232);
-            this.txtTelefone2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtTelefone2.Name = "txtTelefone2";
-            this.txtTelefone2.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTelefone2.Properties.Appearance.Options.UseFont = true;
-            this.txtTelefone2.Size = new System.Drawing.Size(293, 26);
-            this.txtTelefone2.TabIndex = 216;
+            this.txtTelefoneFixo.Location = new System.Drawing.Point(711, 232);
+            this.txtTelefoneFixo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtTelefoneFixo.Name = "txtTelefoneFixo";
+            this.txtTelefoneFixo.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTelefoneFixo.Properties.Appearance.Options.UseFont = true;
+            this.txtTelefoneFixo.Size = new System.Drawing.Size(292, 26);
+            this.txtTelefoneFixo.TabIndex = 8;
+            this.txtTelefoneFixo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTelefoneFixo_KeyPress);
+            this.txtTelefoneFixo.Leave += new System.EventHandler(this.txtTelefoneFixo_Leave);
             // 
-            // txtTelefone1
+            // txtCelular
             // 
-            this.txtTelefone1.Location = new System.Drawing.Point(362, 232);
-            this.txtTelefone1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtTelefone1.Name = "txtTelefone1";
-            this.txtTelefone1.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTelefone1.Properties.Appearance.Options.UseFont = true;
-            this.txtTelefone1.Size = new System.Drawing.Size(293, 26);
-            this.txtTelefone1.TabIndex = 215;
+            this.txtCelular.Location = new System.Drawing.Point(362, 232);
+            this.txtCelular.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtCelular.Name = "txtCelular";
+            this.txtCelular.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCelular.Properties.Appearance.Options.UseFont = true;
+            this.txtCelular.Size = new System.Drawing.Size(293, 26);
+            this.txtCelular.TabIndex = 7;
+            this.txtCelular.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCelular_KeyPress);
+            this.txtCelular.Leave += new System.EventHandler(this.txtCelular_Leave);
             // 
             // labelControl16
             // 
@@ -491,7 +524,9 @@
             this.txtEmail.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmail.Properties.Appearance.Options.UseFont = true;
             this.txtEmail.Size = new System.Drawing.Size(293, 26);
-            this.txtEmail.TabIndex = 213;
+            this.txtEmail.TabIndex = 6;
+            this.txtEmail.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtEmail_KeyPress);
+            this.txtEmail.Leave += new System.EventHandler(this.txtEmail_Leave);
             // 
             // pictureBox6
             // 
@@ -531,7 +566,8 @@
             // 
             this.labelControl18.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl18.Appearance.Options.UseFont = true;
-            this.labelControl18.Location = new System.Drawing.Point(361, -1);
+            this.labelControl18.LineVisible = true;
+            this.labelControl18.Location = new System.Drawing.Point(839, -1);
             this.labelControl18.Name = "labelControl18";
             this.labelControl18.Size = new System.Drawing.Size(98, 20);
             this.labelControl18.TabIndex = 240;
@@ -539,13 +575,13 @@
             // 
             // txtDataCadastro
             // 
-            this.txtDataCadastro.Location = new System.Drawing.Point(361, 27);
+            this.txtDataCadastro.Location = new System.Drawing.Point(839, 27);
             this.txtDataCadastro.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtDataCadastro.Name = "txtDataCadastro";
             this.txtDataCadastro.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDataCadastro.Properties.Appearance.Options.UseFont = true;
             this.txtDataCadastro.Properties.ReadOnly = true;
-            this.txtDataCadastro.Size = new System.Drawing.Size(196, 26);
+            this.txtDataCadastro.Size = new System.Drawing.Size(164, 26);
             this.txtDataCadastro.TabIndex = 239;
             // 
             // btnCancelar
@@ -561,8 +597,9 @@
             this.btnCancelar.Location = new System.Drawing.Point(889, 538);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(113, 30);
-            this.btnCancelar.TabIndex = 242;
+            this.btnCancelar.TabIndex = 20;
             this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnSalvar
             // 
@@ -577,14 +614,89 @@
             this.btnSalvar.Location = new System.Drawing.Point(759, 538);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(113, 30);
-            this.btnSalvar.TabIndex = 241;
+            this.btnSalvar.TabIndex = 19;
             this.btnSalvar.Text = "Salvar";
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
+            // 
+            // cmbEstado
+            // 
+            this.cmbEstado.Location = new System.Drawing.Point(405, 316);
+            this.cmbEstado.Name = "cmbEstado";
+            this.cmbEstado.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbEstado.Properties.Appearance.Options.UseFont = true;
+            this.cmbEstado.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cmbEstado.Properties.DropDownRows = 5;
+            this.cmbEstado.Properties.MaxLength = 20;
+            this.cmbEstado.Properties.NullText = "";
+            this.cmbEstado.Properties.PopupSizeable = false;
+            this.cmbEstado.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
+            this.cmbEstado.Size = new System.Drawing.Size(91, 26);
+            this.cmbEstado.TabIndex = 12;
+            // 
+            // labelControl23
+            // 
+            this.labelControl23.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl23.Appearance.Options.UseFont = true;
+            this.labelControl23.Location = new System.Drawing.Point(405, 288);
+            this.labelControl23.Name = "labelControl23";
+            this.labelControl23.Size = new System.Drawing.Size(48, 20);
+            this.labelControl23.TabIndex = 244;
+            this.labelControl23.Text = "Estado:";
+            // 
+            // AlertaSalvar
+            // 
+            this.AlertaSalvar.AppearanceCaption.BackColor = System.Drawing.Color.Red;
+            this.AlertaSalvar.AppearanceCaption.BackColor2 = System.Drawing.Color.Yellow;
+            this.AlertaSalvar.AppearanceCaption.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AlertaSalvar.AppearanceCaption.ForeColor = System.Drawing.Color.White;
+            this.AlertaSalvar.AppearanceCaption.Options.UseBackColor = true;
+            this.AlertaSalvar.AppearanceCaption.Options.UseFont = true;
+            this.AlertaSalvar.AppearanceCaption.Options.UseForeColor = true;
+            this.AlertaSalvar.AppearanceHotTrackedText.BackColor = System.Drawing.Color.Lime;
+            this.AlertaSalvar.AppearanceHotTrackedText.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AlertaSalvar.AppearanceHotTrackedText.Options.UseBackColor = true;
+            this.AlertaSalvar.AppearanceHotTrackedText.Options.UseFont = true;
+            this.AlertaSalvar.AppearanceText.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AlertaSalvar.AppearanceText.Options.UseFont = true;
+            this.AlertaSalvar.AutoFormDelay = 2000;
+            this.AlertaSalvar.ShowCloseButton = false;
+            this.AlertaSalvar.ShowPinButton = false;
+            this.AlertaSalvar.ShowToolTips = false;
+            // 
+            // lblDataCadastro
+            // 
+            this.lblDataCadastro.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDataCadastro.Appearance.Options.UseFont = true;
+            this.lblDataCadastro.Location = new System.Drawing.Point(855, 30);
+            this.lblDataCadastro.Name = "lblDataCadastro";
+            this.lblDataCadastro.Size = new System.Drawing.Size(98, 20);
+            this.lblDataCadastro.TabIndex = 245;
+            this.lblDataCadastro.Text = "Data Cadastro:";
+            // 
+            // pictureEdit3
+            // 
+            this.pictureEdit3.EditValue = global::SistemaDeGerenciamento2_0.Properties.Resources.informacao20;
+            this.pictureEdit3.Location = new System.Drawing.Point(812, 348);
+            this.pictureEdit3.Name = "pictureEdit3";
+            this.pictureEdit3.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.pictureEdit3.Properties.Appearance.Options.UseBackColor = true;
+            this.pictureEdit3.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.pictureEdit3.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit3.Properties.ZoomAcceleration = 5D;
+            this.pictureEdit3.Size = new System.Drawing.Size(23, 20);
+            this.pictureEdit3.TabIndex = 288;
+            this.pictureEdit3.ToolTip = "O Complemento é um campo opcional.";
             // 
             // frmCadastroRegistroPessoaJuridica
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1018, 586);
+            this.Controls.Add(this.pictureEdit3);
+            this.Controls.Add(this.lblDataCadastro);
+            this.Controls.Add(this.cmbEstado);
+            this.Controls.Add(this.labelControl23);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.labelControl18);
@@ -603,14 +715,14 @@
             this.Controls.Add(this.txtNumero);
             this.Controls.Add(this.txtLogradouro);
             this.Controls.Add(this.btnBuscarPorCEP);
-            this.Controls.Add(this.xbmTipoEndereco);
+            this.Controls.Add(this.cmbTipoEndereco);
             this.Controls.Add(this.labelControl10);
             this.Controls.Add(this.txtCEP);
             this.Controls.Add(this.labelControl9);
             this.Controls.Add(this.labelControl8);
             this.Controls.Add(this.labelControl7);
-            this.Controls.Add(this.txtTelefone2);
-            this.Controls.Add(this.txtTelefone1);
+            this.Controls.Add(this.txtTelefoneFixo);
+            this.Controls.Add(this.txtCelular);
             this.Controls.Add(this.labelControl16);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.pictureBox6);
@@ -646,14 +758,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtComplemento.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNumero.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtLogradouro.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.xbmTipoEndereco.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbTipoEndereco.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCEP.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtTelefone2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtTelefone1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTelefoneFixo.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtCelular.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtEmail.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDataCadastro.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbEstado.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit3.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -688,14 +802,14 @@
         private DevExpress.XtraEditors.TextEdit txtNumero;
         private DevExpress.XtraEditors.TextEdit txtLogradouro;
         private DevExpress.XtraEditors.SimpleButton btnBuscarPorCEP;
-        private DevExpress.XtraEditors.ComboBoxEdit xbmTipoEndereco;
+        private DevExpress.XtraEditors.ComboBoxEdit cmbTipoEndereco;
         private DevExpress.XtraEditors.LabelControl labelControl10;
         private DevExpress.XtraEditors.TextEdit txtCEP;
         private DevExpress.XtraEditors.LabelControl labelControl9;
         private DevExpress.XtraEditors.LabelControl labelControl8;
         private DevExpress.XtraEditors.LabelControl labelControl7;
-        private DevExpress.XtraEditors.TextEdit txtTelefone2;
-        private DevExpress.XtraEditors.TextEdit txtTelefone1;
+        private DevExpress.XtraEditors.TextEdit txtTelefoneFixo;
+        private DevExpress.XtraEditors.TextEdit txtCelular;
         private DevExpress.XtraEditors.LabelControl labelControl16;
         private DevExpress.XtraEditors.TextEdit txtEmail;
         private System.Windows.Forms.PictureBox pictureBox6;
@@ -705,5 +819,10 @@
         private DevExpress.XtraEditors.TextEdit txtDataCadastro;
         private DevExpress.XtraEditors.SimpleButton btnCancelar;
         private DevExpress.XtraEditors.SimpleButton btnSalvar;
+        private DevExpress.XtraEditors.LookUpEdit cmbEstado;
+        private DevExpress.XtraEditors.LabelControl labelControl23;
+        private DevExpress.XtraBars.Alerter.AlertControl AlertaSalvar;
+        private DevExpress.XtraEditors.LabelControl lblDataCadastro;
+        private DevExpress.XtraEditors.PictureEdit pictureEdit3;
     }
 }

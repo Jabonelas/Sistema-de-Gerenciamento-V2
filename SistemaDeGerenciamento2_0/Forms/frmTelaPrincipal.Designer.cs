@@ -178,6 +178,7 @@
             this.Configuracao.Name = "Configuracao";
             this.Configuracao.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.Configuracao.Text = "Configurações";
+            this.Configuracao.Click += new System.EventHandler(this.Configuracao_Click);
             // 
             // fluentDesignFormControl1
             // 

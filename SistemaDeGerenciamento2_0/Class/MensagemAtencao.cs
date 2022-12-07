@@ -24,14 +24,9 @@ namespace SistemaDeGerenciamento2_0
             MessageBox.Show("Por Favor, Preencher Campos Obrigatorios!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
 
-        public static void MensagemValorJaExistente()
+        public static void MensagemValorJaExistente(string _corpoMensagem)
         {
-            MessageBox.Show("Desculpa valor ja existente, por favor digite um valor diferente!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-        }
-
-        public static void MensagemCPFDigitadoInvalido()
-        {
-            MessageBox.Show("Por Favor Digite Um CPF Inválido!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            MessageBox.Show($"Desculpa valor {_corpoMensagem} ja existente, por favor digite um valor diferente!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
 
         public static void MensagemProdutoJaExistente()
@@ -39,14 +34,24 @@ namespace SistemaDeGerenciamento2_0
             MessageBox.Show("Desculpa codigo de produto ou nome de produto ja existente, por favor digite um valor diferente!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
 
-        public static void MensagemRGDigitadoInvalido()
+        public static void MensagemCampoDigitadoInvalido(string _corpo)
         {
-            MessageBox.Show("Por Favor Digite Um RG Inválido!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            MessageBox.Show($"Por Favor Digite Um {_corpo} válido!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
 
-        public static void MensagemEmailDigitadoInvalido()
+        public static void MensagemDataNasciemntoInvalida()
         {
-            MessageBox.Show("Por Favor Digite Um Email Inválido!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            MessageBox.Show("Desculpe, Cliente / Fornecedor menor de Idade!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        }
+
+        public static void MensagemFornecedorNaoCadastrado()
+        {
+            MessageBox.Show("Desculpe, Fornecedor não cadastrado!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        }
+
+        public static void MensagemNaoAceitoValoresNegativos()
+        {
+            MessageBox.Show("Desculpe, não é aceitos valores negativos!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
     }
 }

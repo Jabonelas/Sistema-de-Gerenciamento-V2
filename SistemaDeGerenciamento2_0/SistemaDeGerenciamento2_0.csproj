@@ -36,8 +36,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="DevExpress.BonusSkins.v21.2" />
+    <Reference Include="DevExpress.CodeParser.v21.2, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Data.Desktop.v21.2" />
     <Reference Include="DevExpress.Data.v21.2" />
+    <Reference Include="DevExpress.DataAccess.v21.2, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Images.v21.2, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Office.v21.2.Core, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Pdf.v21.2.Core, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
@@ -61,8 +63,8 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json.Bson, Version=1.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.Bson.1.0.2\lib\net45\Newtonsoft.Json.Bson.dll</HintPath>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -88,6 +90,8 @@
     <Compile Include="Class\ApiCorreios.cs" />
     <Compile Include="Class\DadosCEP.cs" />
     <Compile Include="Class\DadosMensagemAlerta.cs" />
+    <Compile Include="Class\LimparCampos.cs" />
+    <Compile Include="Class\ListaEstados.cs" />
     <Compile Include="Class\MensagemErros.cs" />
     <Compile Include="Class\MensagemAtencao.cs" />
     <Compile Include="Class\Validacoes.cs" />
@@ -127,6 +131,12 @@
     <Compile Include="Forms\frmCadastroRegistros.Designer.cs">
       <DependentUpon>frmCadastroRegistros.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\frmConfiguracoes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmConfiguracoes.Designer.cs">
+      <DependentUpon>frmConfiguracoes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\frmEntradaNF.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -138,6 +148,12 @@
     </Compile>
     <Compile Include="Forms\frmFinanceiro.Designer.cs">
       <DependentUpon>frmFinanceiro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmNovoUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmNovoUsuario.Designer.cs">
+      <DependentUpon>frmNovoUsuario.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\frmProdutos.cs">
       <SubType>Form</SubType>
@@ -244,11 +260,17 @@
     <EmbeddedResource Include="Forms\frmCadastroRegistros.resx">
       <DependentUpon>frmCadastroRegistros.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmConfiguracoes.resx">
+      <DependentUpon>frmConfiguracoes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmEntradaNF.resx">
       <DependentUpon>frmEntradaNF.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmFinanceiro.resx">
       <DependentUpon>frmFinanceiro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmNovoUsuario.resx">
+      <DependentUpon>frmNovoUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmProdutos.resx">
       <DependentUpon>frmProdutos.cs</DependentUpon>
@@ -356,6 +378,12 @@
     <None Include="Resources\cliente.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\funcionario_15.png" />
+    <None Include="Resources\cadastro_15.png" />
+    <None Include="Resources\cadastro_30.png" />
+    <None Include="Resources\cadastro_20.png" />
+    <None Include="Resources\empresa_20.png" />
+    <None Include="Resources\perfil.png" />
     <Content Include="SistemaDeGerenciamento2_0.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>SistemaDeGerenciamento2_0.edmx</DependentUpon>

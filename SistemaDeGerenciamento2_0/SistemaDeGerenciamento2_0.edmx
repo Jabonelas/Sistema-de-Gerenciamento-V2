@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="SistemaDeGerenciamento2_0Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="SistemaDeGerenciamento2_0Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="tb_cadastro_despesa">
           <Key>
             <PropertyRef Name="id_categoria_despesa" />
@@ -47,12 +47,13 @@
           </Key>
           <Property Name="id_endereco" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="ed_tipo" Type="varchar" MaxLength="255" Nullable="false" />
-          <Property Name="ed_cep" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="ed_cep" Type="varchar" MaxLength="255" />
           <Property Name="ed_locgradouro" Type="varchar" MaxLength="255" Nullable="false" />
-          <Property Name="ed_numero" Type="int" Nullable="false" />
+          <Property Name="ed_numero" Type="varchar" MaxLength="255" Nullable="false" />
           <Property Name="ed_complemento" Type="varchar" MaxLength="255" />
           <Property Name="ed_bairro" Type="varchar" MaxLength="255" Nullable="false" />
           <Property Name="ed_cidade" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="ed_estado" Type="varchar" MaxLength="255" Nullable="false" />
         </EntityType>
         <EntityType Name="tb_estoque">
           <Key>
@@ -79,10 +80,10 @@
             <PropertyRef Name="id_informacao_comercial" />
           </Key>
           <Property Name="id_informacao_comercial" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="ic_situacao" Type="varchar" MaxLength="255" Nullable="false" />
-          <Property Name="ic_prioridade" Type="varchar" MaxLength="255" Nullable="false" />
-          <Property Name="ic_vendedor" Type="varchar" MaxLength="255" Nullable="false" />
-          <Property Name="ic_limite_credito" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+          <Property Name="ic_situacao" Type="varchar" MaxLength="255" />
+          <Property Name="ic_prioridade" Type="varchar" MaxLength="255" />
+          <Property Name="ic_vendedor" Type="varchar" MaxLength="255" />
+          <Property Name="ic_limite_credito" Type="decimal" Precision="10" Scale="2" />
         </EntityType>
         <EntityType Name="tb_nota_fiscal_entrada">
           <Key>
@@ -199,8 +200,8 @@
           <Property Name="rg_inscricao_estadual" Type="varchar" MaxLength="255" />
           <Property Name="rg_inscricao_municipal" Type="varchar" MaxLength="255" />
           <Property Name="rg_email" Type="varchar" MaxLength="255" />
-          <Property Name="rg_telefone1" Type="varchar" MaxLength="255" />
-          <Property Name="rg_telefone2" Type="varchar" MaxLength="255" />
+          <Property Name="rg_celular" Type="varchar" MaxLength="255" />
+          <Property Name="rg_telefone_fixo" Type="varchar" MaxLength="255" />
           <Property Name="fk_permissoes" Type="int" />
           <Property Name="fk_informacao_comercial" Type="int" />
           <Property Name="fk_endereco" Type="int" />
@@ -439,8 +440,7 @@
             <End Role="tb_repeticao_despesa" EntitySet="tb_repeticao_despesa" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="SistemaDeGerenciamento2_0Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -489,13 +489,14 @@
           </Key>
           <Property Name="id_endereco" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="ed_tipo" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="ed_cep" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ed_cep" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
           <Property Name="ed_locgradouro" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="ed_numero" Type="Int32" Nullable="false" />
+          <Property Name="ed_numero" Type="String" Nullable="false" MaxLength="255" Unicode="false" FixedLength="false" />
           <Property Name="ed_complemento" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
           <Property Name="ed_bairro" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="ed_cidade" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
           <NavigationProperty Name="tb_registro" Relationship="Self.tb_registro_fk2" FromRole="tb_enderecos" ToRole="tb_registro" />
+          <Property Name="ed_estado" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityType Name="tb_estoque">
           <Key>
@@ -527,10 +528,10 @@
             <PropertyRef Name="id_informacao_comercial" />
           </Key>
           <Property Name="id_informacao_comercial" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="ic_situacao" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="ic_prioridade" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="ic_vendedor" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="ic_limite_credito" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
+          <Property Name="ic_situacao" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="ic_prioridade" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="ic_vendedor" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="ic_limite_credito" Type="Decimal" Precision="10" Scale="2" />
           <NavigationProperty Name="tb_registro" Relationship="Self.tb_registro_fk1" FromRole="tb_informacoes_comeciais" ToRole="tb_registro" />
         </EntityType>
         <EntityType Name="tb_nota_fiscal_entrada">
@@ -655,8 +656,6 @@
           <Property Name="rg_inscricao_estadual" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
           <Property Name="rg_inscricao_municipal" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
           <Property Name="rg_email" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
-          <Property Name="rg_telefone1" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
-          <Property Name="rg_telefone2" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
           <Property Name="fk_permissoes" Type="Int32" />
           <Property Name="fk_informacao_comercial" Type="Int32" />
           <Property Name="fk_endereco" Type="Int32" />
@@ -667,6 +666,8 @@
           <NavigationProperty Name="tb_permissoes" Relationship="Self.tb_registro_fk0" FromRole="tb_registro" ToRole="tb_permissoes" />
           <NavigationProperty Name="tb_produto" Relationship="Self.tb_produto_fk1" FromRole="tb_registro" ToRole="tb_produto" />
           <NavigationProperty Name="tb_repeticao_despesa" Relationship="Self.tb_repeticao_despesa_fk0" FromRole="tb_registro" ToRole="tb_repeticao_despesa" />
+          <Property Name="rg_celular" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="rg_telefone_fixo" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityType Name="tb_repeticao_despesa">
           <Key>
@@ -952,6 +953,7 @@
           <EntitySetMapping Name="tb_enderecos">
             <EntityTypeMapping TypeName="SistemaDeGerenciamento2_0Model.tb_enderecos">
               <MappingFragment StoreEntitySet="tb_enderecos">
+                <ScalarProperty Name="ed_estado" ColumnName="ed_estado" />
                 <ScalarProperty Name="id_endereco" ColumnName="id_endereco" />
                 <ScalarProperty Name="ed_tipo" ColumnName="ed_tipo" />
                 <ScalarProperty Name="ed_cep" ColumnName="ed_cep" />
@@ -1095,6 +1097,8 @@
           <EntitySetMapping Name="tb_registro">
             <EntityTypeMapping TypeName="SistemaDeGerenciamento2_0Model.tb_registro">
               <MappingFragment StoreEntitySet="tb_registro">
+                <ScalarProperty Name="rg_telefone_fixo" ColumnName="rg_telefone_fixo" />
+                <ScalarProperty Name="rg_celular" ColumnName="rg_celular" />
                 <ScalarProperty Name="id_registro" ColumnName="id_registro" />
                 <ScalarProperty Name="rg_tipo_cadastro" ColumnName="rg_tipo_cadastro" />
                 <ScalarProperty Name="rg_categoria" ColumnName="rg_categoria" />
@@ -1114,8 +1118,6 @@
                 <ScalarProperty Name="rg_inscricao_estadual" ColumnName="rg_inscricao_estadual" />
                 <ScalarProperty Name="rg_inscricao_municipal" ColumnName="rg_inscricao_municipal" />
                 <ScalarProperty Name="rg_email" ColumnName="rg_email" />
-                <ScalarProperty Name="rg_telefone1" ColumnName="rg_telefone1" />
-                <ScalarProperty Name="rg_telefone2" ColumnName="rg_telefone2" />
                 <ScalarProperty Name="fk_permissoes" ColumnName="fk_permissoes" />
                 <ScalarProperty Name="fk_informacao_comercial" ColumnName="fk_informacao_comercial" />
                 <ScalarProperty Name="fk_endereco" ColumnName="fk_endereco" />

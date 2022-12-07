@@ -42,12 +42,13 @@
     </Key>
     <Property Name="id_endereco" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="ed_tipo" Type="varchar" MaxLength="255" Nullable="false" />
-    <Property Name="ed_cep" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="ed_cep" Type="varchar" MaxLength="255" />
     <Property Name="ed_locgradouro" Type="varchar" MaxLength="255" Nullable="false" />
-    <Property Name="ed_numero" Type="int" Nullable="false" />
+    <Property Name="ed_numero" Type="varchar" MaxLength="255" Nullable="false" />
     <Property Name="ed_complemento" Type="varchar" MaxLength="255" />
     <Property Name="ed_bairro" Type="varchar" MaxLength="255" Nullable="false" />
     <Property Name="ed_cidade" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="ed_estado" Type="varchar" MaxLength="255" Nullable="false" />
   </EntityType>
   <EntityType Name="tb_estoque">
     <Key>
@@ -74,10 +75,10 @@
       <PropertyRef Name="id_informacao_comercial" />
     </Key>
     <Property Name="id_informacao_comercial" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="ic_situacao" Type="varchar" MaxLength="255" Nullable="false" />
-    <Property Name="ic_prioridade" Type="varchar" MaxLength="255" Nullable="false" />
-    <Property Name="ic_vendedor" Type="varchar" MaxLength="255" Nullable="false" />
-    <Property Name="ic_limite_credito" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="ic_situacao" Type="varchar" MaxLength="255" />
+    <Property Name="ic_prioridade" Type="varchar" MaxLength="255" />
+    <Property Name="ic_vendedor" Type="varchar" MaxLength="255" />
+    <Property Name="ic_limite_credito" Type="decimal" Precision="10" Scale="2" />
   </EntityType>
   <EntityType Name="tb_nota_fiscal_entrada">
     <Key>
@@ -194,8 +195,8 @@
     <Property Name="rg_inscricao_estadual" Type="varchar" MaxLength="255" />
     <Property Name="rg_inscricao_municipal" Type="varchar" MaxLength="255" />
     <Property Name="rg_email" Type="varchar" MaxLength="255" />
-    <Property Name="rg_telefone1" Type="varchar" MaxLength="255" />
-    <Property Name="rg_telefone2" Type="varchar" MaxLength="255" />
+    <Property Name="rg_celular" Type="varchar" MaxLength="255" />
+    <Property Name="rg_telefone_fixo" Type="varchar" MaxLength="255" />
     <Property Name="fk_permissoes" Type="int" />
     <Property Name="fk_informacao_comercial" Type="int" />
     <Property Name="fk_endereco" Type="int" />

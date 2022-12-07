@@ -73,6 +73,36 @@ namespace SistemaDeGerenciamento2_0.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cadastro_15 {
+            get {
+                object obj = ResourceManager.GetObject("cadastro_15", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cadastro_20 {
+            get {
+                object obj = ResourceManager.GetObject("cadastro_20", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cadastro_30 {
+            get {
+                object obj = ResourceManager.GetObject("cadastro_30", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap cadastro_preto {
             get {
                 object obj = ResourceManager.GetObject("cadastro-preto", resourceCulture);
@@ -293,6 +323,16 @@ namespace SistemaDeGerenciamento2_0.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap empresa_20 {
+            get {
+                object obj = ResourceManager.GetObject("empresa_20", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap entrada_preta {
             get {
                 object obj = ResourceManager.GetObject("entrada-preta", resourceCulture);
@@ -393,6 +433,16 @@ namespace SistemaDeGerenciamento2_0.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap funcionario_15 {
+            get {
+                object obj = ResourceManager.GetObject("funcionario_15", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap funcionario_20 {
             get {
                 object obj = ResourceManager.GetObject("funcionario_20", resourceCulture);
@@ -466,6 +516,16 @@ namespace SistemaDeGerenciamento2_0.Properties {
         internal static System.Drawing.Bitmap pasta_aberta {
             get {
                 object obj = ResourceManager.GetObject("pasta_aberta", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap perfil {
+            get {
+                object obj = ResourceManager.GetObject("perfil", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

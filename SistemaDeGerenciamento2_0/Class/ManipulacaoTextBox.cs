@@ -10,8 +10,6 @@ namespace SistemaDeGerenciamento2_0
 {
     internal static class ManipulacaoTextBox
     {
-        #region Digitar Apenas Numeros
-
         public static bool DigitarApenasNumero(KeyPressEventArgs e, DevExpress.XtraEditors.TextEdit _textBox)
         {
             _textBox.Properties.MaxLength = 20;
@@ -22,10 +20,6 @@ namespace SistemaDeGerenciamento2_0
             }
             return true;
         }
-
-        #endregion Digitar Apenas Numeros
-
-        #region Digitar Apenas Letras
 
         public static bool DigitarApenasLetras(KeyPressEventArgs e, DevExpress.XtraEditors.TextEdit _textBox)
         {
@@ -39,10 +33,6 @@ namespace SistemaDeGerenciamento2_0
             return true;
         }
 
-        #endregion Digitar Apenas Letras
-
-        #region Digitar Apenas Letras e Numeros
-
         public static bool DigitarApenasLetrasOuNumeros(KeyPressEventArgs e, DevExpress.XtraEditors.TextEdit _textBox)
         {
             _textBox.Properties.MaxLength = 20;
@@ -54,10 +44,6 @@ namespace SistemaDeGerenciamento2_0
 
             return true;
         }
-
-        #endregion Digitar Apenas Letras e Numeros
-
-        #region Formato Dinheiro
 
         public static void FormatoDinheiro(KeyPressEventArgs e, object sender, DevExpress.XtraEditors.TextEdit _textBox)
         {
@@ -88,10 +74,6 @@ namespace SistemaDeGerenciamento2_0
             }
         }
 
-        #endregion Formato Dinheiro
-
-        #region Formato Porcentagem
-
         public static void PreenchimentoPorcentagem(KeyPressEventArgs e, object sender, DevExpress.XtraEditors.TextEdit _textBox)
         {
             try
@@ -120,10 +102,6 @@ namespace SistemaDeGerenciamento2_0
             }
         }
 
-        #endregion Formato Porcentagem
-
-        #region Formato Data
-
         public static void FormatoData(DevExpress.XtraEditors.TextEdit _textBox)
         {
             _textBox.Properties.MaxLength = 10;
@@ -145,10 +123,6 @@ namespace SistemaDeGerenciamento2_0
                     break;
             }
         }
-
-        #endregion Formato Data
-
-        #region Formato de CPF
 
         public static void FormatoCPF(KeyPressEventArgs e, DevExpress.XtraEditors.TextEdit _textBox)
         {
@@ -179,10 +153,6 @@ namespace SistemaDeGerenciamento2_0
                 }
             }
         }
-
-        #endregion Formato de CPF
-
-        #region Formato RG
 
         public static void FormatoRG(KeyPressEventArgs e, DevExpress.XtraEditors.TextEdit _textBox
             )
@@ -215,12 +185,10 @@ namespace SistemaDeGerenciamento2_0
             }
         }
 
-        #endregion Formato RG
-
-        #region Formatar TextBox Email
-
-        public static bool FormatoEmail(KeyPressEventArgs e)
+        public static bool FormatoEmail(KeyPressEventArgs e, DevExpress.XtraEditors.TextEdit _textBox)
         {
+            _textBox.Properties.MaxLength = 50;
+
             if (!Char.IsLetter(e.KeyChar) && e.KeyChar != (char)8 && e.KeyChar != (char)64
                 && !Char.IsDigit(e.KeyChar) && e.KeyChar != (char)45 && e.KeyChar != (char)46
                 && e.KeyChar != (char)95 && e.KeyChar != (char)47)
@@ -230,10 +198,6 @@ namespace SistemaDeGerenciamento2_0
 
             return true;
         }
-
-        #endregion Formatar TextBox Email
-
-        #region Formato Celular
 
         public static void FormatoCelular(KeyPressEventArgs e, DevExpress.XtraEditors.TextEdit _textBox)
         {
@@ -261,10 +225,6 @@ namespace SistemaDeGerenciamento2_0
             }
         }
 
-        #endregion Formato Celular
-
-        #region Formato Telefone Residencial
-
         public static void FormatoTelefone(KeyPressEventArgs e, DevExpress.XtraEditors.TextEdit _textBox)
         {
             _textBox.Properties.MaxLength = 14;
@@ -291,10 +251,6 @@ namespace SistemaDeGerenciamento2_0
             }
         }
 
-        #endregion Formato Telefone Residencial
-
-        #region Formato CEP
-
         public static void FormatoCEP(DevExpress.XtraEditors.TextEdit _textBox)
         {
             _textBox.Properties.MaxLength = 9;
@@ -312,6 +268,39 @@ namespace SistemaDeGerenciamento2_0
             }
         }
 
-        #endregion Formato CEP
+        public static void FormatoCNPJ(KeyPressEventArgs e, DevExpress.XtraEditors.TextEdit _txtBox)
+        {
+            _txtBox.Properties.MaxLength = 18;
+
+            if (char.IsNumber(e.KeyChar) == true)
+            {
+                switch (_txtBox.Text.Length)
+                {
+                    case 0:
+                        _txtBox.Text = "";
+                        break;
+
+                    case 2:
+                        _txtBox.Text = _txtBox.Text + ".";
+                        _txtBox.SelectionStart = 3;
+                        break;
+
+                    case 6:
+                        _txtBox.Text = _txtBox.Text + ".";
+                        _txtBox.SelectionStart = 7;
+                        break;
+
+                    case 10:
+                        _txtBox.Text = _txtBox.Text + "/";
+                        _txtBox.SelectionStart = 11;
+                        break;
+
+                    case 15:
+                        _txtBox.Text = _txtBox.Text + "-";
+                        _txtBox.SelectionStart = 16;
+                        break;
+                }
+            }
+        }
     }
 }

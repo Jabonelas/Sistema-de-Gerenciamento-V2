@@ -18,6 +18,11 @@ namespace SistemaDeGerenciamento2_0.Class
             MessageBox.Show($"(CAD-PR01) Erro ao Cadastrar Produto \n\nErro: {_e}", "Erro Cadastro Produto!", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
+        public static void ErroAoCadastroCodigoDeBarrasProduto(Exception _e)
+        {
+            MessageBox.Show($"(CAD-PR02) Erro ao Cadastrar Codigo de Barras do Produto \n\nErro: {_e}", "Erro Cadastrar Codigo de Barras do Produto!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
         #endregion Produto
 
         #region Grupo
@@ -33,6 +38,40 @@ namespace SistemaDeGerenciamento2_0.Class
         }
 
         #endregion Grupo
+
+        #region Registro
+
+        public static void ErroAoCadastroRegistroEnderecoPessoaJuridica(Exception _e)
+        {
+            MessageBox.Show($"(CAD-RE01) Erro ao Cadastrar Registro - Endereço  - Pessoa Juridica \n\nErro: {_e.Message}", "Erro Cadastro Registro - Endereço  - Pessoa Juridica!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        public static void ErroAoCadastroRegistroPessoaFisica(Exception _e)
+        {
+            MessageBox.Show($"(CAD-RE02) Erro ao Cadastrar Registro - Pessoa Fisica \n\nErro: {_e.Message}", "Erro Cadastro Registro - Pessoa Fisica!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        public static void ErroAoCadastroRegistroInformacoesComerciaisPessoaFisica(Exception _e)
+        {
+            MessageBox.Show($"(CAD-RE03) Erro ao Cadastrar Registro - Informações Comerciais - Pessoa Fisica \n\nErro: {_e.Message}", "Erro Cadastro Registro - Informações Comerciais - Pessoa Fisica!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        public static void ErroAoCadastroRegistroInformacoesComerciaisPessoaJuridica(Exception _e)
+        {
+            MessageBox.Show($"(CAD-RE04) Erro ao Cadastrar Registro - Informações Comerciais - Pessoa Juridica \n\nErro: {_e.Message}", "Erro Cadastro Registro - Informações Comerciais - Pessoa Juridica!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        public static void ErroAoCadastroRegistroEnderecoPessoaFisica(Exception _e)
+        {
+            MessageBox.Show($"(CAD-RE05) Erro ao Cadastrar Registro - Endereço  - Pessoa Fisica \n\nErro: {_e.Message}", "Erro Cadastro Registro - Endereço  - Pessoa Fisica!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        public static void ErroAoCadastroRegistroPessoaJuridica(Exception _e)
+        {
+            MessageBox.Show($"(CAD-RE06) Erro ao Cadastrar Registro - Pessoa Juridica \n\nErro: {_e.Message}", "Erro Cadastro Registro - Pessoa Juridica!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        #endregion Registro
 
         #endregion Cadastrar
 
@@ -78,9 +117,50 @@ namespace SistemaDeGerenciamento2_0.Class
             MessageBox.Show($"(BUS-PR02) Erro ao Buscar Nome do Produto e Fornecedor \n\nErro: {_e}", "Erro Buscar Nome do Produto e Fornecedor!", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
+        public static void ErroAoBuscarCodigoDeBarrasProduto(Exception _e)
+        {
+            MessageBox.Show($"(BUS-PR03) Erro ao Buscar Codigo de Barras Produto \n\nErro: {_e}", "Erro Buscar Codigo de Barras roduto!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
         #endregion Produto
 
+        #region Registro
+
+        public static void ErroAoBuscarCPFParaVerificacaoExistencia(Exception _e)
+        {
+            MessageBox.Show($"(BUS-RE01) Erro ao Buscar CPF para verificação de existencia \n\nErro: {_e}", "Erro Buscar CPF para verificação!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        public static void ErroAoBuscarCNPJParaVerificacaoExistencia(Exception _e)
+        {
+            MessageBox.Show($"(BUS-RE02) Erro ao Buscar CNPJ para verificação de existencia \n\nErro: {_e}", "Erro Buscar CNPJ para verificação!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        #endregion Registro
+
+        #region Financeiro
+
+        public static void ErroAoBuscarCNPJParaVerificacaSeExisteCadastro(Exception _e)
+        {
+            MessageBox.Show($"(BUS-FI01) Erro ao Buscar CNPJ para verificação de existencia de cadastro \n\nErro: {_e}", "Erro Buscar CNPJ para verificação de existencia!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        #endregion Financeiro
+
         #endregion Buscar
+
+        #region Atualizar
+
+        #region Produto
+
+        public static void ErroAoAtualizarProduto(Exception _e)
+        {
+            MessageBox.Show($"(CAD-AT01) Erro ao Atualizar Codigo de Barras do Produto \n\nErro: {_e}", "Erro Atuazliar Produto!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        #endregion Produto
+
+        #endregion Atualizar
 
         #region Ler Arquivos
 
