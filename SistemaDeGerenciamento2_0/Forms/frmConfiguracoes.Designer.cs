@@ -28,19 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pnlConfiguracoes = new DevExpress.XtraEditors.PanelControl();
             this.btnPerfil = new DevExpress.XtraEditors.SimpleButton();
             this.btnEmpresa = new DevExpress.XtraEditors.SimpleButton();
             this.btnNovoUsuario = new DevExpress.XtraEditors.SimpleButton();
-            ((System.ComponentModel.ISupportInitialize)(this.pnlConfiguracoes)).BeginInit();
+            this.pnlConfiguracoes = new System.Windows.Forms.FlowLayoutPanel();
             this.SuspendLayout();
-            // 
-            // pnlConfiguracoes
-            // 
-            this.pnlConfiguracoes.Location = new System.Drawing.Point(18, 74);
-            this.pnlConfiguracoes.Name = "pnlConfiguracoes";
-            this.pnlConfiguracoes.Size = new System.Drawing.Size(929, 477);
-            this.pnlConfiguracoes.TabIndex = 127;
             // 
             // btnPerfil
             // 
@@ -82,6 +74,13 @@
             this.btnNovoUsuario.ToolTip = "Cliente";
             this.btnNovoUsuario.Click += new System.EventHandler(this.btnNovoUsuario_Click);
             // 
+            // pnlConfiguracoes
+            // 
+            this.pnlConfiguracoes.Location = new System.Drawing.Point(5, 80);
+            this.pnlConfiguracoes.Name = "pnlConfiguracoes";
+            this.pnlConfiguracoes.Size = new System.Drawing.Size(944, 477);
+            this.pnlConfiguracoes.TabIndex = 128;
+            // 
             // frmConfiguracoes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -94,7 +93,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmConfiguracoes";
             this.Text = "frmConfiguracoes";
-            ((System.ComponentModel.ISupportInitialize)(this.pnlConfiguracoes)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -103,6 +101,6 @@
         private DevExpress.XtraEditors.SimpleButton btnPerfil;
         private DevExpress.XtraEditors.SimpleButton btnEmpresa;
         private DevExpress.XtraEditors.SimpleButton btnNovoUsuario;
-        private DevExpress.XtraEditors.PanelControl pnlConfiguracoes;
+        private System.Windows.Forms.FlowLayoutPanel pnlConfiguracoes;
     }
 }

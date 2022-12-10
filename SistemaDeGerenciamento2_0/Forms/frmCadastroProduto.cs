@@ -109,6 +109,11 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
+            Salvar();
+        }
+
+        private void Salvar()
+        {
             bool IsNomeProdutoComMesmoFornecedorJaCadastrado = VerificarExistenciaNomeProdutoComMesmoFornecedor();
 
             if (IsNomeProdutoComMesmoFornecedorJaCadastrado == false)
@@ -121,7 +126,7 @@ namespace SistemaDeGerenciamento2_0.Forms
 
                     if (IsCodigoDeBarrasJaCadastrado == false)
                     {
-                        Salvar();
+                        VerificandoPreenchimentoTextBox();
 
                         if (txtCodigoDeBarras.Text == string.Empty)
                         {
@@ -320,6 +325,10 @@ namespace SistemaDeGerenciamento2_0.Forms
             {
                 VerificacaoFecharTela();
             }
+            else if (e.KeyCode == Keys.F10)
+            {
+                Salvar();
+            }
         }
 
         private void frmCadastroProduto_MouseMove(object sender, MouseEventArgs e)
@@ -356,7 +365,7 @@ namespace SistemaDeGerenciamento2_0.Forms
         //    cmbGrupo.Properties.ValueMember = "IDGrupo";
         //}
 
-        private void Salvar()
+        private void VerificandoPreenchimentoTextBox()
         {
             if (txtNome.Text != string.Empty && cmbGrupo.Text != string.Empty && cmbFinalidade.Text != string.Empty &&
                 cmbTipoProduto.Text != string.Empty && txtTipoUnidade.Text != "Ex.: Peça, Un, Kg")

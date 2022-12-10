@@ -13,7 +13,7 @@ namespace SistemaDeGerenciamento2_0.Forms
 {
     public partial class frmCadastroRegistros : DevExpress.XtraEditors.XtraForm
     {
-        private string tipoCadastro = "Cliente";
+        private string tipoCadastro = string.Empty;
 
         public frmCadastroRegistros(string _tipoCadastro)
         {
@@ -26,25 +26,53 @@ namespace SistemaDeGerenciamento2_0.Forms
             TipoCadastro(tipoCadastro);
         }
 
-        private void TipoCadastro(string _tipoCadastro)
+        private void btnCliente_Click(object sender, EventArgs e)
         {
-            if (_tipoCadastro == "Cliente")
-            {
-                btnCliente.Appearance.BackColor = Color.LightGray;
-            }
-            else if (_tipoCadastro == "Funcionario")
-            {
-                btnFuncionario.Appearance.BackColor = Color.LightGray;
-            }
-            else if (_tipoCadastro == "Fornecedor")
-            {
-                btnFornecedor.Appearance.BackColor = Color.LightGray;
-            }
+            TipoCliente();
+        }
+
+        private void btnFuncionario_Click(object sender, EventArgs e)
+        {
+            TipoFuncionario();
+        }
+
+        private void btnFornecedor_Click(object sender, EventArgs e)
+        {
+            TipoFornecedor();
+        }
+
+        private void btnFechar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
 
         private void cmbTipoPessoa_SelectedValueChanged(object sender, EventArgs e)
         {
             TipoPessoa();
+        }
+
+        private void frmCadastroRegistros_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+            {
+                MensagemAtencao.MensagemCancelar(this);
+            }
+        }
+
+        private void TipoCadastro(string _tipoCadastro)
+        {
+            if (_tipoCadastro == "Cliente")
+            {
+                TipoCliente();
+            }
+            else if (_tipoCadastro == "Funcionario")
+            {
+                TipoFuncionario();
+            }
+            else if (_tipoCadastro == "Fornecedor")
+            {
+                TipoFornecedor();
+            }
         }
 
         private void TipoPessoa()
@@ -79,20 +107,7 @@ namespace SistemaDeGerenciamento2_0.Forms
             frm.Show();
         }
 
-        private void btnFechar_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void frmCadastroRegistros_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Escape)
-            {
-                this.Close();
-            }
-        }
-
-        private void btnCliente_Click(object sender, EventArgs e)
+        private void TipoCliente()
         {
             btnCliente.Appearance.BackColor = Color.LightGray;
             btnFuncionario.Appearance.BackColor = Color.Transparent;
@@ -103,7 +118,7 @@ namespace SistemaDeGerenciamento2_0.Forms
             TipoPessoa();
         }
 
-        private void btnFornecedor_Click(object sender, EventArgs e)
+        private void TipoFornecedor()
         {
             btnCliente.Appearance.BackColor = Color.Transparent;
             btnFuncionario.Appearance.BackColor = Color.Transparent;
@@ -114,7 +129,7 @@ namespace SistemaDeGerenciamento2_0.Forms
             TipoPessoa();
         }
 
-        private void btnFuncionario_Click(object sender, EventArgs e)
+        private void TipoFuncionario()
         {
             btnCliente.Appearance.BackColor = Color.Transparent;
             btnFuncionario.Appearance.BackColor = Color.LightGray;

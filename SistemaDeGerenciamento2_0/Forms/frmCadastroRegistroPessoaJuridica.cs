@@ -22,8 +22,6 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private string tipoCadastro = string.Empty;
 
-    
-
         private ApiCorreios Api = new ApiCorreios();
 
         private Form telaRegistro = null;
@@ -39,55 +37,9 @@ namespace SistemaDeGerenciamento2_0.Forms
             SetandoDados();
         }
 
-        private void SetandoDados()
-        {
-            lblDataCadastro.Text = DateTime.Now.ToString();
-
-            PreenchimentoComboBoxEstado();
-        }
-
-        private void PreenchimentoComboBoxEstado()
-        {
-            ListaEstados.PreechendoListaEstado();
-
-            cmbEstado.Properties.DataSource = ListaEstados.listaEstados;
-            cmbEstado.Properties.DisplayMember = "Sigla";
-            cmbEstado.Properties.ValueMember = "NomeEstado";
-        }
-
         private void btnSalvar_Click(object sender, EventArgs e)
         {
-            bool IsCampoBasicoPreenchido = VerificandoPreenchimentoBasico();
-
-            bool IsCampoEnderecoPreenchido = VerificandoPreenchimentoCampoEndereco();
-
-            if (IsCampoEnderecoPreenchido == true && IsCampoBasicoPreenchido == true)
-            {
-                bool isCNPJJaExistente = VerificarExitenciaCNPJ();
-
-                if (isCNPJJaExistente == false)
-                {
-                    SalvarInformacoesComerciais();
-
-                    SalvarEndereco();
-
-                    SalvarRegisto();
-
-                    ChamandoAlertaSucessoNoCantoInferiorDireito();
-
-                    LimparCampos.LimpaCampos(this.Controls);
-
-                    txtObservacoes.Text = string.Empty;
-                }
-                else
-                {
-                    MensagemAtencao.MensagemJaExistente("CNPJ");
-                }
-            }
-            else
-            {
-                MensagemAtencao.MensagemPreencherCampos();
-            }
+            Salvar();
         }
 
         private void btnBuscarPorCEP_Click(object sender, EventArgs e)
@@ -107,19 +59,22 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private void txtCNPJ_Leave(object sender, EventArgs e)
         {
-            if (Validacoes.IsCampoPreenchido(txtCNPJ) == true)
+            if (txtCNPJ.Text != string.Empty)
             {
-                if (Validacoes.IsCnpjValido(txtCNPJ.Text) == true)
+                if (Validacoes.IsCampoPreenchido(txtCNPJ) == true)
                 {
-                    txtCNPJ.BackColor = Color.FromArgb(0, 255, 255, 255);
-                }
-                else
-                {
-                    MensagemAtencao.MensagemCampoDigitadoInvalido("CNPJ");
+                    if (Validacoes.IsCnpjValido(txtCNPJ.Text) == true)
+                    {
+                        txtCNPJ.BackColor = Color.FromArgb(0, 255, 255, 255);
+                    }
+                    else
+                    {
+                        MensagemAtencao.MensagemCampoDigitadoInvalido("CNPJ");
 
-                    txtCNPJ.BackColor = Color.LightGray;
+                        txtCNPJ.BackColor = Color.LightGray;
 
-                    txtCNPJ.Focus();
+                        txtCNPJ.Focus();
+                    }
                 }
             }
         }
@@ -209,6 +164,140 @@ namespace SistemaDeGerenciamento2_0.Forms
             Validacoes.IsCampoPreenchido(txtCEP);
         }
 
+        private void txtCelular_Leave(object sender, EventArgs e)
+        {
+            if (txtCelular.Text != string.Empty)
+            {
+                if (Validacoes.IsCampoPreenchido(txtCelular) == false)
+                {
+                    txtCelular.BackColor = Color.LightGray;
+
+                    MensagemAtencao.MensagemCampoDigitadoInvalido("Celular");
+
+                    txtCelular.Focus();
+                }
+                else
+                {
+                    txtCelular.BackColor = Color.FromArgb(0, 255, 255, 255);
+                }
+            }
+        }
+
+        private void txtTelefoneFixo_Leave(object sender, EventArgs e)
+        {
+            if (txtTelefoneFixo.Text != string.Empty)
+            {
+                if (Validacoes.IsCampoPreenchido(txtTelefoneFixo) == false)
+                {
+                    txtTelefoneFixo.BackColor = Color.LightGray;
+
+                    MensagemAtencao.MensagemCampoDigitadoInvalido("Telefone");
+
+                    txtTelefoneFixo.Focus();
+                }
+                else
+                {
+                    txtTelefoneFixo.BackColor = Color.FromArgb(0, 255, 255, 255);
+                }
+            }
+        }
+
+        private void txtLimiteCredito_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            ManipulacaoTextBox.FormatoDinheiro(e, sender, txtLimiteCredito);
+        }
+
+        private void frmCadastroRegistroPessoaJuridica_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+            {
+                MensagemAtencao.MensagemCancelar(telaRegistro);
+            }
+            else if (e.KeyCode == Keys.F10)
+            {
+                Salvar();
+            }
+        }
+
+        private void SetandoDados()
+        {
+            lblDataCadastro.Text = DateTime.Now.ToString();
+
+            PreenchimentoComboBoxEstado();
+        }
+
+        private void PreenchimentoComboBoxEstado()
+        {
+            ListaEstados.PreechendoListaEstado();
+
+            cmbEstado.Properties.DataSource = ListaEstados.listaEstados;
+            cmbEstado.Properties.DisplayMember = "Sigla";
+            cmbEstado.Properties.ValueMember = "NomeEstado";
+        }
+
+        private void Salvar()
+        {
+            bool IsCampoBasicoPreenchido = VerificandoPreenchimentoBasico();
+
+            bool IsCampoEnderecoPreenchido = VerificandoPreenchimentoCampoEndereco();
+
+            if (IsCampoEnderecoPreenchido == true && IsCampoBasicoPreenchido == true)
+            {
+                bool isCNPJJaExistente = VerificarExitenciaCNPJ();
+
+                if (isCNPJJaExistente == false)
+                {
+                    SalvarInformacoesComerciais();
+
+                    SalvarEndereco();
+
+                    SalvarRegisto();
+
+                    ChamandoAlertaSucessoNoCantoInferiorDireito();
+
+                    LimparCampos.LimpaCampos(this.Controls);
+
+                    txtObservacoes.Text = string.Empty;
+                }
+                else
+                {
+                    MensagemAtencao.MensagemJaExistente("CNPJ");
+                }
+            }
+            else
+            {
+                MensagemAtencao.MensagemPreencherCampos();
+            }
+        }
+
+        private void SalvarInformacoesComerciais()
+        {
+            try
+            {
+                using (SistemaDeGerenciamento2_0Entities5 db = new SistemaDeGerenciamento2_0Entities5())
+                {
+                    var informacaoComercialPessoaFisica = new tb_informacoes_comeciais()
+                    {
+                        ic_limite_credito = Convert.ToDecimal(txtLimiteCredito.Text.Replace("R$ ", "")),
+                        ic_prioridade = cmbPrioridade.Text,
+                        ic_situacao = cmbSituacao.Text,
+                        ic_vendedor = "Nome Usuario que esta cadastrando"
+                    };
+
+                    db.tb_informacoes_comeciais.Add(informacaoComercialPessoaFisica);
+                    db.SaveChanges();
+
+                    FK_InformacoesComerciais = informacaoComercialPessoaFisica.id_informacao_comercial;
+                }
+            }
+            catch (Exception x)
+            {
+                LogErros.EscreverArquivoDeLog($"{DateTime.Now} - Erro ao Cadastrar Registro - Informações Comerciais - Pessoa Fisica | {x.Message} | {x.StackTrace}");
+
+                MensagemErros.ErroAoCadastroRegistroInformacoesComerciaisPessoaFisica(x);
+            }
+        }
+
         private void ChamandoAlertaSucessoNoCantoInferiorDireito()
         {
             DadosMensagemAlerta msg = new DadosMensagemAlerta("\n   Sucesso!", Resources.salvar_verde50);
@@ -292,31 +381,6 @@ namespace SistemaDeGerenciamento2_0.Forms
             txtBairro.BackColor = _corFundo;
             txtLogradouro.BackColor = _corFundo;
             txtNumero.BackColor = _corFundo;
-        }
-
-        private void SalvarInformacoesComerciais()
-        {
-            try
-            {
-                using (SistemaDeGerenciamento2_0Entities5 db = new SistemaDeGerenciamento2_0Entities5())
-                {
-                    var informacaoComercialPessoaFisica = new tb_informacoes_comeciais()
-                    {
-                        ic_vendedor = "Nome Usuario que esta cadastrando"
-                    };
-
-                    db.tb_informacoes_comeciais.Add(informacaoComercialPessoaFisica);
-                    db.SaveChanges();
-
-                    FK_InformacoesComerciais = informacaoComercialPessoaFisica.id_informacao_comercial;
-                }
-            }
-            catch (Exception x)
-            {
-                LogErros.EscreverArquivoDeLog($"{DateTime.Now} - Erro ao Cadastrar Registro - Informações Comerciais - Pessoa Juridica | {x.Message} | {x.StackTrace}");
-
-                MensagemErros.ErroAoCadastroRegistroInformacoesComerciaisPessoaJuridica(x);
-            }
         }
 
         private void SalvarEndereco()
@@ -440,44 +504,6 @@ namespace SistemaDeGerenciamento2_0.Forms
             txtBairro.Text = _item.bairro;
             txtCidade.Text = _item.localidade;
             cmbEstado.Text = _item.uf;
-        }
-
-        private void txtCelular_Leave(object sender, EventArgs e)
-        {
-            if (txtCelular.Text != string.Empty)
-            {
-                if (Validacoes.IsCampoPreenchido(txtCelular) == false)
-                {
-                    txtCelular.BackColor = Color.LightGray;
-
-                    MensagemAtencao.MensagemCampoDigitadoInvalido("Celular");
-
-                    txtCelular.Focus();
-                }
-                else
-                {
-                    txtCelular.BackColor = Color.FromArgb(0, 255, 255, 255);
-                }
-            }
-        }
-
-        private void txtTelefoneFixo_Leave(object sender, EventArgs e)
-        {
-            if (txtTelefoneFixo.Text != string.Empty)
-            {
-                if (Validacoes.IsCampoPreenchido(txtTelefoneFixo) == false)
-                {
-                    txtTelefoneFixo.BackColor = Color.LightGray;
-
-                    MensagemAtencao.MensagemCampoDigitadoInvalido("Telefone");
-
-                    txtTelefoneFixo.Focus();
-                }
-                else
-                {
-                    txtTelefoneFixo.BackColor = Color.FromArgb(0, 255, 255, 255);
-                }
-            }
         }
     }
 }

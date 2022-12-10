@@ -97,7 +97,7 @@
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(113, 30);
             this.btnCancelar.TabIndex = 2;
-            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.Text = "Cancelar (Esc)";
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnSalvar
@@ -114,7 +114,7 @@
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(113, 30);
             this.btnSalvar.TabIndex = 1;
-            this.btnSalvar.Text = "Salvar";
+            this.btnSalvar.Text = "Salvar (F10)";
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // txtAgrupador

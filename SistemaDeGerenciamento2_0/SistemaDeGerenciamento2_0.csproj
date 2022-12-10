@@ -90,6 +90,7 @@
     <Compile Include="Class\ApiCorreios.cs" />
     <Compile Include="Class\DadosCEP.cs" />
     <Compile Include="Class\DadosMensagemAlerta.cs" />
+    <Compile Include="Class\DadosNotaFiscalEntrada.cs" />
     <Compile Include="Class\LimparCampos.cs" />
     <Compile Include="Class\ListaEstados.cs" />
     <Compile Include="Class\MensagemErros.cs" />
@@ -100,6 +101,18 @@
     </Compile>
     <Compile Include="Forms\frmAcessoRapido.Designer.cs">
       <DependentUpon>frmAcessoRapido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmCadastroUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmCadastroUsuario.Designer.cs">
+      <DependentUpon>frmCadastroUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmNovoUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmNovoUsuario.Designer.cs">
+      <DependentUpon>frmNovoUsuario.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\frmCadastroGrupo.cs">
       <SubType>Form</SubType>
@@ -203,47 +216,14 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>SistemaDeGerenciamento2_0.edmx</DependentUpon>
     </Compile>
-    <Compile Include="tb_cadastro_despesa.cs">
-      <DependentUpon>SistemaDeGerenciamento2_0.tt</DependentUpon>
-    </Compile>
-    <Compile Include="tb_configuracao_financeira.cs">
-      <DependentUpon>SistemaDeGerenciamento2_0.tt</DependentUpon>
-    </Compile>
-    <Compile Include="tb_despesa.cs">
-      <DependentUpon>SistemaDeGerenciamento2_0.tt</DependentUpon>
-    </Compile>
-    <Compile Include="tb_enderecos.cs">
-      <DependentUpon>SistemaDeGerenciamento2_0.tt</DependentUpon>
-    </Compile>
-    <Compile Include="tb_estoque.cs">
-      <DependentUpon>SistemaDeGerenciamento2_0.tt</DependentUpon>
-    </Compile>
-    <Compile Include="tb_grupo.cs">
-      <DependentUpon>SistemaDeGerenciamento2_0.tt</DependentUpon>
-    </Compile>
-    <Compile Include="tb_informacoes_comeciais.cs">
-      <DependentUpon>SistemaDeGerenciamento2_0.tt</DependentUpon>
-    </Compile>
-    <Compile Include="tb_nota_fiscal_entrada.cs">
-      <DependentUpon>SistemaDeGerenciamento2_0.tt</DependentUpon>
-    </Compile>
-    <Compile Include="tb_nota_fiscal_saida.cs">
-      <DependentUpon>SistemaDeGerenciamento2_0.tt</DependentUpon>
-    </Compile>
-    <Compile Include="tb_permissoes.cs">
-      <DependentUpon>SistemaDeGerenciamento2_0.tt</DependentUpon>
-    </Compile>
-    <Compile Include="tb_produto.cs">
-      <DependentUpon>SistemaDeGerenciamento2_0.tt</DependentUpon>
-    </Compile>
-    <Compile Include="tb_registro.cs">
-      <DependentUpon>SistemaDeGerenciamento2_0.tt</DependentUpon>
-    </Compile>
-    <Compile Include="tb_repeticao_despesa.cs">
-      <DependentUpon>SistemaDeGerenciamento2_0.tt</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="Forms\frmAcessoRapido.resx">
       <DependentUpon>frmAcessoRapido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmCadastroUsuario.resx">
+      <DependentUpon>frmCadastroUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmNovoUsuario.resx">
+      <DependentUpon>frmNovoUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmCadastroGrupo.resx">
       <DependentUpon>frmCadastroGrupo.cs</DependentUpon>

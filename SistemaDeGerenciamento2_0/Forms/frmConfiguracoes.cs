@@ -20,14 +20,25 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private void btnNovoUsuario_Click(object sender, EventArgs e)
         {
-        }
-
-        private void btnEmpresa_Click(object sender, EventArgs e)
-        {
             TelaNovoUsuario();
         }
 
         private void TelaNovoUsuario()
+        {
+            pnlConfiguracoes.Controls.Clear();
+            frmNovoUsuario frmCadastroUsuario = new frmNovoUsuario();
+            frmCadastroUsuario.TopLevel = false;
+            pnlConfiguracoes.Controls.Add(frmCadastroUsuario);
+            pnlConfiguracoes.Tag = frmCadastroUsuario;
+            frmCadastroUsuario.Show();
+        }
+
+        private void btnEmpresa_Click(object sender, EventArgs e)
+        {
+            TelaCadastrarEmpresa();
+        }
+
+        private void TelaCadastrarEmpresa()
         {
             pnlConfiguracoes.Controls.Clear();
             frmDadosEmpresa frmNovoUsuario = new frmDadosEmpresa();

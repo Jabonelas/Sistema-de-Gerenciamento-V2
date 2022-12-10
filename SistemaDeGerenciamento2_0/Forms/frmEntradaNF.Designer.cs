@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmEntradaNF));
             this.labelControl13 = new DevExpress.XtraEditors.LabelControl();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
@@ -68,6 +69,7 @@
             this.labelControl16 = new DevExpress.XtraEditors.LabelControl();
             this.btnCancelar = new DevExpress.XtraEditors.SimpleButton();
             this.btnSalvar = new DevExpress.XtraEditors.SimpleButton();
+            this.AlertaSalvar = new DevExpress.XtraBars.Alerter.AlertControl(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtBairroEmissor.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtInscricaoEstadualEmissor.Properties)).BeginInit();
@@ -195,7 +197,7 @@
             // 
             // txtPaisEmissor
             // 
-            this.txtPaisEmissor.Location = new System.Drawing.Point(697, 362);
+            this.txtPaisEmissor.Location = new System.Drawing.Point(696, 362);
             this.txtPaisEmissor.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtPaisEmissor.Name = "txtPaisEmissor";
             this.txtPaisEmissor.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -206,7 +208,7 @@
             // 
             // txtCEPEmissor
             // 
-            this.txtCEPEmissor.Location = new System.Drawing.Point(697, 304);
+            this.txtCEPEmissor.Location = new System.Drawing.Point(696, 304);
             this.txtCEPEmissor.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtCEPEmissor.Name = "txtCEPEmissor";
             this.txtCEPEmissor.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -305,7 +307,7 @@
             // 
             // txtValorTotalNF
             // 
-            this.txtValorTotalNF.Location = new System.Drawing.Point(371, 422);
+            this.txtValorTotalNF.Location = new System.Drawing.Point(370, 422);
             this.txtValorTotalNF.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtValorTotalNF.Name = "txtValorTotalNF";
             this.txtValorTotalNF.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -316,7 +318,7 @@
             // 
             // txtDataEmissao
             // 
-            this.txtDataEmissao.Location = new System.Drawing.Point(371, 362);
+            this.txtDataEmissao.Location = new System.Drawing.Point(370, 362);
             this.txtDataEmissao.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtDataEmissao.Name = "txtDataEmissao";
             this.txtDataEmissao.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -338,7 +340,7 @@
             // 
             // txtNaturezaDaOperacao
             // 
-            this.txtNaturezaDaOperacao.Location = new System.Drawing.Point(697, 422);
+            this.txtNaturezaDaOperacao.Location = new System.Drawing.Point(696, 422);
             this.txtNaturezaDaOperacao.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtNaturezaDaOperacao.Name = "txtNaturezaDaOperacao";
             this.txtNaturezaDaOperacao.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -473,7 +475,7 @@
             // 
             // txtEstado
             // 
-            this.txtEstado.Location = new System.Drawing.Point(371, 304);
+            this.txtEstado.Location = new System.Drawing.Point(370, 304);
             this.txtEstado.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtEstado.Name = "txtEstado";
             this.txtEstado.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -529,7 +531,7 @@
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(113, 30);
             this.btnCancelar.TabIndex = 158;
-            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.Text = "Cancelar (Esc)";
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnSalvar
@@ -546,8 +548,28 @@
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(113, 30);
             this.btnSalvar.TabIndex = 157;
-            this.btnSalvar.Text = "Salvar";
+            this.btnSalvar.Text = "Salvar (F10)";
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
+            // 
+            // AlertaSalvar
+            // 
+            this.AlertaSalvar.AppearanceCaption.BackColor = System.Drawing.Color.Red;
+            this.AlertaSalvar.AppearanceCaption.BackColor2 = System.Drawing.Color.Yellow;
+            this.AlertaSalvar.AppearanceCaption.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AlertaSalvar.AppearanceCaption.ForeColor = System.Drawing.Color.White;
+            this.AlertaSalvar.AppearanceCaption.Options.UseBackColor = true;
+            this.AlertaSalvar.AppearanceCaption.Options.UseFont = true;
+            this.AlertaSalvar.AppearanceCaption.Options.UseForeColor = true;
+            this.AlertaSalvar.AppearanceHotTrackedText.BackColor = System.Drawing.Color.Lime;
+            this.AlertaSalvar.AppearanceHotTrackedText.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AlertaSalvar.AppearanceHotTrackedText.Options.UseBackColor = true;
+            this.AlertaSalvar.AppearanceHotTrackedText.Options.UseFont = true;
+            this.AlertaSalvar.AppearanceText.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AlertaSalvar.AppearanceText.Options.UseFont = true;
+            this.AlertaSalvar.AutoFormDelay = 2000;
+            this.AlertaSalvar.ShowCloseButton = false;
+            this.AlertaSalvar.ShowPinButton = false;
+            this.AlertaSalvar.ShowToolTips = false;
             // 
             // frmEntradaNF
             // 
@@ -666,5 +688,6 @@
         private DevExpress.XtraEditors.LabelControl labelControl16;
         private DevExpress.XtraEditors.SimpleButton btnCancelar;
         private DevExpress.XtraEditors.SimpleButton btnSalvar;
+        private DevExpress.XtraBars.Alerter.AlertControl AlertaSalvar;
     }
 }

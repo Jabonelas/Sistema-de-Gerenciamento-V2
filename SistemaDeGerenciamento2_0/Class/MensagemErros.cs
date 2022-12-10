@@ -83,6 +83,24 @@ namespace SistemaDeGerenciamento2_0.Class
 
         #endregion Registro
 
+        #region NF Entrada
+
+        public static void ErroAoCadastroNotaFiscalEntrada(Exception _e)
+        {
+            MessageBox.Show($"(CAD-NFE01) Erro ao Cadastrar Nota Fiscal de Entrada\n\nErro: {_e.Message}", "Erro Cadastrar Nota Fiscal de Entrada!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        #endregion NF Entrada
+
+        #region Estoque
+
+        public static void ErroAoCadastroEstoque(Exception _e)
+        {
+            MessageBox.Show($"(CAD-ES01) Erro ao Cadastrar Estoque\n\nErro: {_e.Message}", "Erro Cadastrar Estoque!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        #endregion Estoque
+
         #endregion Cadastrar
 
         #region Buscar
@@ -142,6 +160,16 @@ namespace SistemaDeGerenciamento2_0.Class
             MessageBox.Show($"(BUS-PR05) Erro ao Buscar Endereço da Empresa \n\nErro: {_e}", "Erro Buscar Endereço da Empresa!", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
+        public static void ErroAoBuscarValorDoProduto(Exception _e)
+        {
+            MessageBox.Show($"(BUS-PR06) Erro ao Buscar Valor do Produto \n\nErro: {_e}", "Erro Buscar Valor do Produto!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        public static void ErroAoBuscarCodigoDoProdutoEDescricao(Exception _e)
+        {
+            MessageBox.Show($"(BUS-PR07) Erro ao Buscar Código do Produto e Descrição \n\nErro: {_e}", "Erro Buscar Código do Produto e Descrição!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
         #endregion Produto
 
         #region Registro
@@ -156,6 +184,11 @@ namespace SistemaDeGerenciamento2_0.Class
             MessageBox.Show($"(BUS-RE02) Erro ao Buscar CNPJ para verificação de existencia \n\nErro: {_e}", "Erro Buscar CNPJ para verificação!", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
+        public static void ErroAoBuscarCNPJDaEmpresa(Exception _e)
+        {
+            MessageBox.Show($"(BUS-RE03) Erro ao Buscar CNPJ da Empresa \n\nErro: {_e}", "Erro Buscar CNPJ da Empresa!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
         #endregion Registro
 
         #region Financeiro
@@ -166,6 +199,15 @@ namespace SistemaDeGerenciamento2_0.Class
         }
 
         #endregion Financeiro
+
+        #region NF Entrada
+
+        public static void ErroAoBuscarNFEntradaExistente(Exception _e)
+        {
+            MessageBox.Show($"(BUS-NFE01) Erro ao Bucar Nota Fiscal de Entrada para verificar existencia \n\nErro: {_e}", "Erro Buscar Nota Fiscal de Entrada!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        #endregion NF Entrada
 
         #endregion Buscar
 

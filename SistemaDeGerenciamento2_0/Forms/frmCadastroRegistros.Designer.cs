@@ -32,14 +32,13 @@
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl13 = new DevExpress.XtraEditors.LabelControl();
-            this.pnlCadastroRegistro = new DevExpress.XtraEditors.PanelControl();
             this.btnFechar = new DevExpress.XtraEditors.SimpleButton();
             this.btnFuncionario = new DevExpress.XtraEditors.SimpleButton();
             this.btnFornecedor = new DevExpress.XtraEditors.SimpleButton();
             this.btnCliente = new DevExpress.XtraEditors.SimpleButton();
             this.cmbTipoPessoa = new DevExpress.XtraEditors.ComboBoxEdit();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pnlCadastroRegistro)).BeginInit();
+            this.pnlCadastroRegistro = new System.Windows.Forms.FlowLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this.cmbTipoPessoa.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.SuspendLayout();
@@ -48,7 +47,7 @@
             // 
             this.labelControl3.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl3.Appearance.Options.UseFont = true;
-            this.labelControl3.Location = new System.Drawing.Point(41, 46);
+            this.labelControl3.Location = new System.Drawing.Point(29, 46);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Size = new System.Drawing.Size(82, 20);
             this.labelControl3.TabIndex = 87;
@@ -74,13 +73,6 @@
             this.labelControl13.Size = new System.Drawing.Size(167, 20);
             this.labelControl13.TabIndex = 122;
             this.labelControl13.Text = "Cadastro Novo Registro";
-            // 
-            // pnlCadastroRegistro
-            // 
-            this.pnlCadastroRegistro.Location = new System.Drawing.Point(29, 126);
-            this.pnlCadastroRegistro.Name = "pnlCadastroRegistro";
-            this.pnlCadastroRegistro.Size = new System.Drawing.Size(1018, 593);
-            this.pnlCadastroRegistro.TabIndex = 137;
             // 
             // btnFechar
             // 
@@ -140,7 +132,7 @@
             // 
             // cmbTipoPessoa
             // 
-            this.cmbTipoPessoa.Location = new System.Drawing.Point(41, 72);
+            this.cmbTipoPessoa.Location = new System.Drawing.Point(29, 72);
             this.cmbTipoPessoa.Name = "cmbTipoPessoa";
             this.cmbTipoPessoa.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbTipoPessoa.Properties.Appearance.Options.UseFont = true;
@@ -166,11 +158,20 @@
             this.pictureBox6.TabIndex = 119;
             this.pictureBox6.TabStop = false;
             // 
+            // pnlCadastroRegistro
+            // 
+            this.pnlCadastroRegistro.AutoScroll = true;
+            this.pnlCadastroRegistro.Location = new System.Drawing.Point(15, 136);
+            this.pnlCadastroRegistro.Name = "pnlCadastroRegistro";
+            this.pnlCadastroRegistro.Size = new System.Drawing.Size(1041, 582);
+            this.pnlCadastroRegistro.TabIndex = 138;
+            // 
             // frmCadastroRegistros
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1072, 723);
+            this.Controls.Add(this.pnlCadastroRegistro);
             this.Controls.Add(this.labelControl13);
             this.Controls.Add(this.btnFechar);
             this.Controls.Add(this.btnFuncionario);
@@ -180,14 +181,12 @@
             this.Controls.Add(this.labelControl3);
             this.Controls.Add(this.cmbTipoPessoa);
             this.Controls.Add(this.pictureBox6);
-            this.Controls.Add(this.pnlCadastroRegistro);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.KeyPreview = true;
             this.Name = "frmCadastroRegistros";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmCadastroRegistros";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmCadastroRegistros_KeyDown);
-            ((System.ComponentModel.ISupportInitialize)(this.pnlCadastroRegistro)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbTipoPessoa.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.ResumeLayout(false);
@@ -206,6 +205,6 @@
         private System.Windows.Forms.PictureBox pictureBox6;
         private DevExpress.XtraEditors.SimpleButton btnFechar;
         private DevExpress.XtraEditors.LabelControl labelControl13;
-        private DevExpress.XtraEditors.PanelControl pnlCadastroRegistro;
+        private System.Windows.Forms.FlowLayoutPanel pnlCadastroRegistro;
     }
 }

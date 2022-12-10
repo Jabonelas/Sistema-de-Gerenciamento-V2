@@ -55,9 +55,10 @@
       <PropertyRef Name="id_estoque" />
     </Key>
     <Property Name="id_estoque" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="eq_quantidade" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="ep_quantidade" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="ep_data_entrada" Type="date" />
     <Property Name="ep_data_exclusao" Type="date" />
-    <Property Name="ep_codigo_barras" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="ep_codigo_barras" Type="varchar" MaxLength="255" Nullable="false" />
     <Property Name="ep_status_situacao" Type="varchar" MaxLength="255" />
     <Property Name="fk_produto" Type="int" Nullable="false" />
     <Property Name="fk_nota_fiscal_entrada" Type="int" Nullable="false" />
@@ -87,7 +88,7 @@
     <Property Name="id_nota_fiscal_entrada" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="nfe_numero_nf_entrada" Type="int" Nullable="false" />
     <Property Name="nfe_quantidade" Type="decimal" Precision="10" Scale="2" Nullable="false" />
-    <Property Name="nfe_codigo_produto" Type="int" Nullable="false" />
+    <Property Name="nfe_codigo_produto" Type="varchar" MaxLength="255" Nullable="false" />
     <Property Name="nfe_indice" Type="int" Nullable="false" />
     <Property Name="nfe_cnpj" Type="varchar" MaxLength="255" Nullable="false" />
     <Property Name="nfe_razao_social" Type="varchar" MaxLength="255" Nullable="false" />
@@ -116,9 +117,10 @@
   </EntityType>
   <EntityType Name="tb_permissoes">
     <Key>
-      <PropertyRef Name="id_acesso_pdv" />
+      <PropertyRef Name="id_permissoes" />
     </Key>
-    <Property Name="id_acesso_pdv" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_permissoes" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="pm_acesso_pdv" Type="binary" MaxLength="1" Nullable="false" />
     <Property Name="pm_vendas_do_dias" Type="binary" MaxLength="1" Nullable="false" />
     <Property Name="pm_receber_conta" Type="binary" MaxLength="1" Nullable="false" />
     <Property Name="pm_todas_vendas" Type="binary" MaxLength="1" Nullable="false" />
@@ -313,7 +315,7 @@
     <End Role="tb_registro" Type="Self.tb_registro" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="tb_permissoes">
-        <PropertyRef Name="id_acesso_pdv" />
+        <PropertyRef Name="id_permissoes" />
       </Principal>
       <Dependent Role="tb_registro">
         <PropertyRef Name="fk_permissoes" />

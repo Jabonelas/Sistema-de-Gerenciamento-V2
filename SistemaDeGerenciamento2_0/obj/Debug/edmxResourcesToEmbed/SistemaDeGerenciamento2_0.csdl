@@ -59,15 +59,16 @@
       <PropertyRef Name="id_estoque" />
     </Key>
     <Property Name="id_estoque" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="eq_quantidade" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
     <Property Name="ep_data_exclusao" Type="DateTime" Precision="0" />
-    <Property Name="ep_codigo_barras" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="ep_codigo_barras" Type="String" Nullable="false" MaxLength="255" Unicode="false" FixedLength="false" />
     <Property Name="ep_status_situacao" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
     <Property Name="fk_produto" Type="Int32" Nullable="false" />
     <Property Name="fk_nota_fiscal_entrada" Type="Int32" Nullable="false" />
     <NavigationProperty Name="tb_produto" Relationship="Self.tb_estoque_fk0" FromRole="tb_estoque" ToRole="tb_produto" />
     <NavigationProperty Name="tb_nota_fiscal_entrada" Relationship="Self.tb_estoque_fk1" FromRole="tb_estoque" ToRole="tb_nota_fiscal_entrada" />
     <NavigationProperty Name="tb_nota_fiscal_saida" Relationship="Self.tb_nota_fiscal_saida_fk0" FromRole="tb_estoque" ToRole="tb_nota_fiscal_saida" />
+    <Property Name="ep_quantidade" Type="Decimal" Nullable="false" Precision="10" Scale="2" />
+    <Property Name="ep_data_entrada" Type="DateTime" Precision="0" />
   </EntityType>
   <EntityType Name="tb_grupo">
     <Key>
@@ -97,7 +98,7 @@
     <Property Name="id_nota_fiscal_entrada" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="nfe_numero_nf_entrada" Type="Int32" Nullable="false" />
     <Property Name="nfe_quantidade" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
-    <Property Name="nfe_codigo_produto" Type="Int32" Nullable="false" />
+    <Property Name="nfe_codigo_produto" Type="String" Nullable="false" MaxLength="255" Unicode="false" FixedLength="false" />
     <Property Name="nfe_indice" Type="Int32" Nullable="false" />
     <Property Name="nfe_cnpj" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="nfe_razao_social" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
@@ -130,6 +131,7 @@
   <EntityType Name="tb_permissoes">
     <Key>
       <PropertyRef Name="id_acesso_pdv" />
+      <PropertyRef Name="id_permissoes" />
     </Key>
     <Property Name="id_acesso_pdv" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="pm_vendas_do_dias" Type="Binary" MaxLength="1" FixedLength="true" Nullable="false" />
@@ -165,6 +167,9 @@
     <Property Name="pm_visualizar_cadastro_completo" Type="Binary" MaxLength="1" FixedLength="true" Nullable="false" />
     <Property Name="pm_editar_cretido_cadastro" Type="Binary" MaxLength="1" FixedLength="true" Nullable="false" />
     <NavigationProperty Name="tb_registro" Relationship="Self.tb_registro_fk0" FromRole="tb_permissoes" ToRole="tb_registro" />
+    <Property Name="id_permissoes" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="pm_acesso_pdv" Type="Binary" Nullable="false" MaxLength="1" FixedLength="true" />
+    <NavigationProperty Name="tb_registro1" Relationship="SistemaDeGerenciamento2_0Model.tb_registro_fk01" FromRole="tb_permissoes" ToRole="tb_registro" />
   </EntityType>
   <EntityType Name="tb_produto">
     <Key>
@@ -224,6 +229,7 @@
     <NavigationProperty Name="tb_repeticao_despesa" Relationship="Self.tb_repeticao_despesa_fk0" FromRole="tb_registro" ToRole="tb_repeticao_despesa" />
     <Property Name="rg_celular" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
     <Property Name="rg_telefone_fixo" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="tb_permissoes1" Relationship="SistemaDeGerenciamento2_0Model.tb_registro_fk01" FromRole="tb_registro" ToRole="tb_permissoes" />
   </EntityType>
   <EntityType Name="tb_repeticao_despesa">
     <Key>
@@ -460,5 +466,21 @@
       <End Role="tb_registro" EntitySet="tb_registro" />
       <End Role="tb_repeticao_despesa" EntitySet="tb_repeticao_despesa" />
     </AssociationSet>
+    <AssociationSet Name="tb_registro_fk01" Association="SistemaDeGerenciamento2_0Model.tb_registro_fk01">
+      <End Role="tb_permissoes" EntitySet="tb_permissoes" />
+      <End Role="tb_registro" EntitySet="tb_registro" />
+    </AssociationSet>
   </EntityContainer>
+  <Association Name="tb_registro_fk01">
+    <End Type="SistemaDeGerenciamento2_0Model.tb_permissoes" Role="tb_permissoes" Multiplicity="0..1" />
+    <End Type="SistemaDeGerenciamento2_0Model.tb_registro" Role="tb_registro" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_permissoes">
+        <PropertyRef Name="id_permissoes" />
+      </Principal>
+      <Dependent Role="tb_registro">
+        <PropertyRef Name="fk_permissoes" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
 </Schema>

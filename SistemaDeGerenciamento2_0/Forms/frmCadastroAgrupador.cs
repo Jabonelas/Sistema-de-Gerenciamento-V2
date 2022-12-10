@@ -28,6 +28,11 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
+            Salvar();
+        }
+
+        private void Salvar()
+        {
             if (txtAgrupador.Text != string.Empty)
             {
                 VerificarExistenciaAgrupador();
@@ -70,6 +75,10 @@ namespace SistemaDeGerenciamento2_0.Forms
             if (e.KeyCode == Keys.Escape)
             {
                 FecharTela();
+            }
+            else if (e.KeyCode == Keys.F10)
+            {
+                Salvar();
             }
         }
 

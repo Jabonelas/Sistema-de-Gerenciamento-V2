@@ -47,37 +47,7 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
-            bool IsCampoEnderecoPreenchido = VerificandoPreenchimentoCampoEndereco();
-
-            bool IsCampoBasicoPreenchido = VerificandoPreenchimentoBasico();
-
-            if (IsCampoEnderecoPreenchido == true && IsCampoBasicoPreenchido == true)
-            {
-                VerificarExitenciaCPF();
-
-                if (isCPFJaExistente == false)
-                {
-                    SalvarInformacoesComerciais();
-
-                    SalvarEndereco();
-
-                    SalvarRegisto();
-
-                    ChamandoAlertaSucessoNoCantoInferiorDireito();
-
-                    LimparCampos.LimpaCampos(this.Controls);
-
-                    txtObservacoes.Text = string.Empty;
-                }
-                else
-                {
-                    MensagemAtencao.MensagemJaExistente("CPF");
-                }
-            }
-            else
-            {
-                MensagemAtencao.MensagemPreencherCampos();
-            }
+            Salvar();
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
@@ -233,9 +203,74 @@ namespace SistemaDeGerenciamento2_0.Forms
             ManipulacaoTextBox.DigitarApenasLetrasOuNumeros(e, txtBairro);
         }
 
-        private void txtLimiteCredito_KeyPress(object sender, KeyPressEventArgs e)
+        private void txtLimiteCredito_KeyPress_1(object sender, KeyPressEventArgs e)
         {
             ManipulacaoTextBox.FormatoDinheiro(e, sender, txtLimiteCredito);
+        }
+
+        private void txtLimiteCredito_Leave(object sender, EventArgs e)
+        {
+            if (txtLimiteCredito.Text != string.Empty)
+            {
+                decimal valorCredito = Convert.ToDecimal(txtLimiteCredito.Text.Replace("R$ ", ""));
+
+                if (valorCredito < 0)
+                {
+                    MensagemAtencao.MensagemNaoAceitoValoresNegativos();
+
+                    txtLimiteCredito.Focus();
+                }
+            }
+        }
+
+        private void txtCelular_Leave(object sender, EventArgs e)
+        {
+            if (txtCelular.Text != string.Empty)
+            {
+                if (Validacoes.IsCampoPreenchido(txtCelular) == false)
+                {
+                    txtCelular.BackColor = Color.LightGray;
+
+                    MensagemAtencao.MensagemCampoDigitadoInvalido("Celular");
+
+                    txtCelular.Focus();
+                }
+                else
+                {
+                    txtCelular.BackColor = Color.FromArgb(0, 255, 255, 255);
+                }
+            }
+        }
+
+        private void txtTelefoneResidencial_Leave(object sender, EventArgs e)
+        {
+            if (txtTelefoneFixo.Text != string.Empty)
+            {
+                if (Validacoes.IsCampoPreenchido(txtTelefoneFixo) == false)
+                {
+                    txtTelefoneFixo.BackColor = Color.LightGray;
+
+                    MensagemAtencao.MensagemCampoDigitadoInvalido("Telefone");
+
+                    txtTelefoneFixo.Focus();
+                }
+                else
+                {
+                    txtTelefoneFixo.BackColor = Color.FromArgb(0, 255, 255, 255);
+                }
+            }
+        }
+
+        private void frmCadastroRegistroPessoaFisica_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+            {
+                MensagemAtencao.MensagemCancelar(telaRegistro);
+            }
+            else if (e.KeyCode == Keys.F10)
+            {
+                Salvar();
+            }
         }
 
         private void SetandoDados()
@@ -251,6 +286,41 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             DadosMensagemAlerta msg = new DadosMensagemAlerta("\n   Sucesso!", Resources.salvar_verde50);
             AlertaSalvar.Show(this, $"{msg.titulo}", msg.texto, string.Empty, msg.image, msg);
+        }
+
+        private void Salvar()
+        {
+            bool IsCampoEnderecoPreenchido = VerificandoPreenchimentoCampoEndereco();
+
+            bool IsCampoBasicoPreenchido = VerificandoPreenchimentoBasico();
+
+            if (IsCampoEnderecoPreenchido == true && IsCampoBasicoPreenchido == true)
+            {
+                VerificarExitenciaCPF();
+
+                if (isCPFJaExistente == false)
+                {
+                    SalvarInformacoesComerciais();
+
+                    SalvarEndereco();
+
+                    SalvarRegisto();
+
+                    ChamandoAlertaSucessoNoCantoInferiorDireito();
+
+                    LimparCampos.LimpaCampos(this.Controls);
+
+                    txtObservacoes.Text = string.Empty;
+                }
+                else
+                {
+                    MensagemAtencao.MensagemJaExistente("CPF");
+                }
+            }
+            else
+            {
+                MensagemAtencao.MensagemPreencherCampos();
+            }
         }
 
         private void VerificarExitenciaCPF()
@@ -519,56 +589,6 @@ namespace SistemaDeGerenciamento2_0.Forms
                 LogErros.EscreverArquivoDeLog($"{DateTime.Now} - Erro ao Cadastrar Registro | {x.Message} | {x.StackTrace}");
 
                 MensagemErros.ErroAoCadastroRegistroPessoaFisica(x);
-            }
-        }
-
-        private void txtLimiteCredito_Leave(object sender, EventArgs e)
-        {
-            decimal valorCredito = Convert.ToDecimal(txtLimiteCredito.Text.Replace("R$ ", ""));
-
-            if (valorCredito < 0)
-            {
-                MensagemAtencao.MensagemNaoAceitoValoresNegativos();
-
-                txtLimiteCredito.Focus();
-            }
-        }
-
-        private void txtCelular_Leave(object sender, EventArgs e)
-        {
-            if (txtCelular.Text != string.Empty)
-            {
-                if (Validacoes.IsCampoPreenchido(txtCelular) == false)
-                {
-                    txtCelular.BackColor = Color.LightGray;
-
-                    MensagemAtencao.MensagemCampoDigitadoInvalido("Celular");
-
-                    txtCelular.Focus();
-                }
-                else
-                {
-                    txtCelular.BackColor = Color.FromArgb(0, 255, 255, 255);
-                }
-            }
-        }
-
-        private void txtTelefoneResidencial_Leave(object sender, EventArgs e)
-        {
-            if (txtTelefoneFixo.Text != string.Empty)
-            {
-                if (Validacoes.IsCampoPreenchido(txtTelefoneFixo) == false)
-                {
-                    txtTelefoneFixo.BackColor = Color.LightGray;
-
-                    MensagemAtencao.MensagemCampoDigitadoInvalido("Telefone");
-
-                    txtTelefoneFixo.Focus();
-                }
-                else
-                {
-                    txtTelefoneFixo.BackColor = Color.FromArgb(0, 255, 255, 255);
-                }
             }
         }
     }

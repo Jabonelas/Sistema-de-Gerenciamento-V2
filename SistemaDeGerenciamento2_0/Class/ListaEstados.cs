@@ -19,6 +19,8 @@ namespace SistemaDeGerenciamento2_0.Class
 
         public static void PreechendoListaEstado()
         {
+            listaEstados.Clear();
+
             listaEstados.Add(new EstadoClass { Sigla = "AC", NomeEstado = "Acre" });
             listaEstados.Add(new EstadoClass { Sigla = "AL", NomeEstado = "Alagoas" });
             listaEstados.Add(new EstadoClass { Sigla = "AP", NomeEstado = "Amapá" });

@@ -58,8 +58,9 @@
     <EntitySetMapping Name="tb_estoque">
       <EntityTypeMapping TypeName="SistemaDeGerenciamento2_0Model.tb_estoque">
         <MappingFragment StoreEntitySet="tb_estoque">
+          <ScalarProperty Name="ep_data_entrada" ColumnName="ep_data_entrada" />
+          <ScalarProperty Name="ep_quantidade" ColumnName="ep_quantidade" />
           <ScalarProperty Name="id_estoque" ColumnName="id_estoque" />
-          <ScalarProperty Name="eq_quantidade" ColumnName="eq_quantidade" />
           <ScalarProperty Name="ep_data_exclusao" ColumnName="ep_data_exclusao" />
           <ScalarProperty Name="ep_codigo_barras" ColumnName="ep_codigo_barras" />
           <ScalarProperty Name="ep_status_situacao" ColumnName="ep_status_situacao" />
@@ -127,7 +128,8 @@
     <EntitySetMapping Name="tb_permissoes">
       <EntityTypeMapping TypeName="SistemaDeGerenciamento2_0Model.tb_permissoes">
         <MappingFragment StoreEntitySet="tb_permissoes">
-          <ScalarProperty Name="id_acesso_pdv" ColumnName="id_acesso_pdv" />
+          <ScalarProperty Name="pm_acesso_pdv" ColumnName="pm_acesso_pdv" />
+          <ScalarProperty Name="id_permissoes" ColumnName="id_permissoes" />
           <ScalarProperty Name="pm_vendas_do_dias" ColumnName="pm_vendas_do_dias" />
           <ScalarProperty Name="pm_receber_conta" ColumnName="pm_receber_conta" />
           <ScalarProperty Name="pm_todas_vendas" ColumnName="pm_todas_vendas" />

@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTelaPrincipal));
-            this.pnlTelaPrincipal = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormContainer();
             this.accordionControl1 = new DevExpress.XtraBars.Navigation.AccordionControl();
             this.btnAcessoRapido = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.VisaoGeral = new DevExpress.XtraBars.Navigation.AccordionControlElement();
@@ -43,18 +42,11 @@
             this.fluentDesignFormControl1 = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormControl();
             this.skinBarSubItem1 = new DevExpress.XtraBars.SkinBarSubItem();
             this.fluentFormDefaultManager1 = new DevExpress.XtraBars.FluentDesignSystem.FluentFormDefaultManager(this.components);
+            this.pnlTelaPrincipal = new System.Windows.Forms.FlowLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fluentDesignFormControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fluentFormDefaultManager1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pnlTelaPrincipal
-            // 
-            this.pnlTelaPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlTelaPrincipal.Location = new System.Drawing.Point(260, 31);
-            this.pnlTelaPrincipal.Name = "pnlTelaPrincipal";
-            this.pnlTelaPrincipal.Size = new System.Drawing.Size(973, 447);
-            this.pnlTelaPrincipal.TabIndex = 0;
             // 
             // accordionControl1
             // 
@@ -209,12 +201,19 @@
             this.skinBarSubItem1});
             this.fluentFormDefaultManager1.MaxItemId = 1;
             // 
+            // pnlTelaPrincipal
+            // 
+            this.pnlTelaPrincipal.AutoScroll = true;
+            this.pnlTelaPrincipal.Location = new System.Drawing.Point(260, 31);
+            this.pnlTelaPrincipal.Name = "pnlTelaPrincipal";
+            this.pnlTelaPrincipal.Size = new System.Drawing.Size(973, 447);
+            this.pnlTelaPrincipal.TabIndex = 3;
+            // 
             // frmTelaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1233, 478);
-            this.ControlContainer = this.pnlTelaPrincipal;
             this.Controls.Add(this.pnlTelaPrincipal);
             this.Controls.Add(this.accordionControl1);
             this.Controls.Add(this.fluentDesignFormControl1);
@@ -232,7 +231,6 @@
         }
 
         #endregion
-        private DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormContainer pnlTelaPrincipal;
         private DevExpress.XtraBars.Navigation.AccordionControl accordionControl1;
         private DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormControl fluentDesignFormControl1;
         private DevExpress.XtraBars.FluentDesignSystem.FluentFormDefaultManager fluentFormDefaultManager1;
@@ -245,6 +243,7 @@
         private DevExpress.XtraBars.Navigation.AccordionControlElement Configuracao;
         private DevExpress.XtraBars.SkinBarSubItem skinBarSubItem1;
         private DevExpress.XtraBars.Navigation.AccordionControlElement btnAcessoRapido;
+        private System.Windows.Forms.FlowLayoutPanel pnlTelaPrincipal;
     }
 }
 

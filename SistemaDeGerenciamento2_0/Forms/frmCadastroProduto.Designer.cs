@@ -262,7 +262,7 @@
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(113, 30);
             this.btnCancelar.TabIndex = 15;
-            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.Text = "Cancelar (Esc)";
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnSalvar
@@ -279,7 +279,7 @@
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(113, 30);
             this.btnSalvar.TabIndex = 15;
-            this.btnSalvar.Text = "Salvar";
+            this.btnSalvar.Text = "Salvar (F10)";
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // txtCusto
@@ -302,7 +302,7 @@
             // 
             // txtMargemLucro
             // 
-            this.txtMargemLucro.Location = new System.Drawing.Point(265, 305);
+            this.txtMargemLucro.Location = new System.Drawing.Point(266, 305);
             this.txtMargemLucro.Name = "txtMargemLucro";
             this.txtMargemLucro.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMargemLucro.Properties.Appearance.Options.UseFont = true;
@@ -319,7 +319,7 @@
             // 
             // txtPreco
             // 
-            this.txtPreco.Location = new System.Drawing.Point(501, 305);
+            this.txtPreco.Location = new System.Drawing.Point(502, 305);
             this.txtPreco.Name = "txtPreco";
             this.txtPreco.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPreco.Properties.Appearance.Options.UseFont = true;
@@ -352,7 +352,7 @@
             // 
             // txtTipoUnidade
             // 
-            this.txtTipoUnidade.Location = new System.Drawing.Point(331, 230);
+            this.txtTipoUnidade.Location = new System.Drawing.Point(328, 230);
             this.txtTipoUnidade.Name = "txtTipoUnidade";
             this.txtTipoUnidade.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTipoUnidade.Properties.Appearance.Options.UseFont = true;
@@ -365,7 +365,7 @@
             // 
             // cmbTipoProduto
             // 
-            this.cmbTipoProduto.Location = new System.Drawing.Point(675, 230);
+            this.cmbTipoProduto.Location = new System.Drawing.Point(674, 230);
             this.cmbTipoProduto.Name = "cmbTipoProduto";
             this.cmbTipoProduto.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbTipoProduto.Properties.Appearance.Options.UseFont = true;
@@ -411,7 +411,7 @@
             // 
             // txtCodigoDeBarras
             // 
-            this.txtCodigoDeBarras.Location = new System.Drawing.Point(331, 88);
+            this.txtCodigoDeBarras.Location = new System.Drawing.Point(330, 88);
             this.txtCodigoDeBarras.Name = "txtCodigoDeBarras";
             this.txtCodigoDeBarras.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCodigoDeBarras.Properties.Appearance.Options.UseFont = true;

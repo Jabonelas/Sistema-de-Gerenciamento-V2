@@ -19,14 +19,6 @@ namespace SistemaDeGerenciamento2_0.Forms
             this.Size = new Size(973, 447);
         }
 
-        private void panelControl1_Paint(object sender, PaintEventArgs e)
-        {
-        }
-
-        private void pictureBox8_Click(object sender, EventArgs e)
-        {
-        }
-
         private void btnNovoProduto_Click(object sender, EventArgs e)
         {
             frmCadastroProduto frmCadastroProduto = new frmCadastroProduto();

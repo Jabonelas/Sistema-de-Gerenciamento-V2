@@ -26,6 +26,11 @@ namespace SistemaDeGerenciamento2_0.Forms
         private List<tb_registro> listaDadosEmpresa = new List<tb_registro>();
         private List<tb_enderecos> listaEnderecoEmpresa = new List<tb_enderecos>();
 
+        private void das()
+        {
+            sist
+        }
+
         public frmDadosEmpresa()
         {
             InitializeComponent();
@@ -56,6 +61,11 @@ namespace SistemaDeGerenciamento2_0.Forms
         }
 
         private void btnSalvar_Click(object sender, EventArgs e)
+        {
+            Salvar();
+        }
+
+        private void Salvar()
         {
             bool IsCampoPreenchidos = VerificandoPreenchimento();
 
@@ -529,6 +539,14 @@ namespace SistemaDeGerenciamento2_0.Forms
                     txtNumero.Text = item.ed_numero;
                     txtComplemento.Text = item.ed_complemento;
                 }
+            }
+        }
+
+        private void frmDadosEmpresa_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.F10)
+            {
+                Salvar();
             }
         }
     }

@@ -1,5 +1,6 @@
 ﻿using DevExpress.XtraEditors;
 using SistemaDeGerenciamento2_0.Class;
+using SistemaDeGerenciamento2_0.Properties;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -28,6 +29,14 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private DataTable dt = new DataTable();
 
+        private List<int> ListaFKNFEntrada = new List<int>();
+
+        private List<DadosNotaFiscalEntrada> ListaDadosNFEntrada = new List<DadosNotaFiscalEntrada>();
+
+        private List<DadosNotaFiscalEntrada> ListaCodigoProdutoEDescricaoDaNF = new List<DadosNotaFiscalEntrada>();
+
+        private List<DadosNotaFiscalEntrada> ListaValorProdutoECoditoProdutoNF = new List<DadosNotaFiscalEntrada>();
+
         public frmEntradaNF()
         {
             InitializeComponent();
@@ -41,6 +50,11 @@ namespace SistemaDeGerenciamento2_0.Forms
         private void btnFechar_Click(object sender, EventArgs e)
         {
             FecharTela();
+        }
+
+        private void btnSalvar_Click(object sender, EventArgs e)
+        {
+            Salvar();
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
@@ -68,11 +82,59 @@ namespace SistemaDeGerenciamento2_0.Forms
             {
                 FecharTela();
             }
+            else if (e.KeyCode == Keys.F10)
+            {
+                Salvar();
+            }
         }
 
         private void frmEntradaNF_Shown(object sender, EventArgs e)
         {
             ArquivoLocal();
+        }
+
+        private void Salvar()
+        {
+            bool IsCnpjFornecedorCadastrado = VerificarExistenciaCadastroFornecedor();
+
+            if (IsCnpjFornecedorCadastrado == true)
+            {
+                bool IsNFExistente = VerificarExistenciaNF();
+
+                if (IsNFExistente == false)
+                {
+                    bool IsCnpjDaEmpresa = VerificarCNPJRecepitor();
+
+                    if (IsCnpjDaEmpresa == true)
+                    {
+                        bool IsCodigoProdutoEDescricaoCadastrado = VerificandoCodigoProdutoEDescricao();
+
+                        if (IsCodigoProdutoEDescricaoCadastrado == true)
+                        {
+                            bool IsValorProdutoIgualValorCadastrado = VerificandoValorProduto();
+
+                            if (IsValorProdutoIgualValorCadastrado == true)
+                            {
+                                SalvarNFEntrada();
+
+                                AdicionandoFKNFEntradaNaListaDadosNFEntrada();
+
+                                SalvarEstoque();
+
+                                ChamandoAlertaSucessoNoCantoInferiorDireito();
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        private void LimparListas()
+        {
+            ListaCodigoProdutoEDescricaoDaNF.Clear();
+            ListaValorProdutoECoditoProdutoNF.Clear();
+            ListaDadosNFEntrada.Clear();
+            ListaFKNFEntrada.Clear();
         }
 
         private void ArquivoLocal()
@@ -82,29 +144,20 @@ namespace SistemaDeGerenciamento2_0.Forms
             abrirPesquisa.Filter = "Abrir Arquivo XML (*.xml;) |*.xml;";
             if (abrirPesquisa.ShowDialog() == DialogResult.OK)
             {
-                ListaCodigoProdutoEDescricaoDaNF.Clear();
-                ListaValorProdutoECoditoProdutoNF.Clear();
+                LimparListas();
 
                 localArquivo = abrirPesquisa.FileName;
-
-                LerXML();
 
                 LerXMLPegarDadosEmissor();
 
                 LerXMLPegarDadosRecepitor();
 
+                LerXML();
+
+                PreencherGrid();
+
                 txtLocalArquivo.Text = localArquivo;
             }
-        }
-
-        //private Dictionary<decimal, string> ListaValorProdutoECoditoProdutoNF = new Dictionary<decimal, string>();
-        private List<ValorProdutoECoditoProdutoNF> ListaValorProdutoECoditoProdutoNF = new List<ValorProdutoECoditoProdutoNF>();
-
-        public class ValorProdutoECoditoProdutoNF
-        {
-            public decimal valorProduto { get; set; }
-
-            public string codigoProduto { get; set; }
         }
 
         private bool VerificandoValorProduto()
@@ -115,14 +168,19 @@ namespace SistemaDeGerenciamento2_0.Forms
 
                 using (SistemaDeGerenciamento2_0Entities5 db = new SistemaDeGerenciamento2_0Entities5())
                 {
+                    int i = 0;
+
                     foreach (var item in ListaValorProdutoECoditoProdutoNF)
                     {
-                        decimal valorProdutoConvertido = Convert.ToDecimal(item.valorProduto);
+                        decimal valorProdutoConvertido = Convert.ToDecimal(item.valorUnitario);
 
                         var valorProduto = db.tb_produto.Where(x => x.pd_custo == valorProdutoConvertido && x.pd_codigo == item.codigoProduto)
-                        .Select(x => x.pd_codigo).ToList();
+                        .Select(x => x.pd_codigo_barras).ToList();
 
                         valorProduto.ForEach(x => ListaValorProduto.Add(x));
+                        valorProduto.ForEach(x => ListaDadosNFEntrada[i].codigoBarras = x);
+
+                        i++;
                     }
 
                     if (ListaValorProdutoECoditoProdutoNF.Count == ListaValorProduto.Count)
@@ -139,21 +197,13 @@ namespace SistemaDeGerenciamento2_0.Forms
             }
             catch (Exception x)
             {
-                MessageBox.Show(x.ToString());
+                LogErros.EscreverArquivoDeLog($"{DateTime.Now} - Erro ao Buscar Valor do Produto - | {x.Message} | {x.StackTrace}");
+
+                MensagemErros.ErroAoBuscarValorDoProduto(x);
 
                 return false;
             }
         }
-
-        //private Dictionary<string, string> ListaCodigoProdutoEDescricaoDaNF = new Dictionary<string, string>();
-
-        public class CodigoProdutoNomeProduto
-        {
-            public string codigoProduto { get; set; }
-            public string nomeProduto { get; set; }
-        }
-
-        private List<CodigoProdutoNomeProduto> ListaCodigoProdutoEDescricaoDaNF = new List<CodigoProdutoNomeProduto>();
 
         private bool VerificandoCodigoProdutoEDescricao()
         {
@@ -163,12 +213,17 @@ namespace SistemaDeGerenciamento2_0.Forms
 
                 using (SistemaDeGerenciamento2_0Entities5 db = new SistemaDeGerenciamento2_0Entities5())
                 {
+                    int i = 0;
+
                     foreach (var item in ListaCodigoProdutoEDescricaoDaNF)
                     {
-                        var codigoProduto = db.tb_produto.Where(x => x.pd_codigo == item.codigoProduto && x.pd_nome == item.nomeProduto)
-                        .Select(x => x.pd_codigo).ToList();
+                        var codigoProduto = db.tb_produto.Where(x => x.pd_codigo == item.codigoProduto && x.pd_nome == item.descricao)
+                        .Select(x => x.id_produto).ToList();
 
-                        codigoProduto.ForEach(x => ListaCodigoProdutoEDescricaoCadastrado.Add(x));
+                        codigoProduto.ForEach(x => ListaCodigoProdutoEDescricaoCadastrado.Add(x.ToString()));
+                        codigoProduto.ForEach(x => ListaDadosNFEntrada[i].FKProduto = x);
+
+                        i++;
                     }
 
                     if (ListaCodigoProdutoEDescricaoDaNF.Count == ListaCodigoProdutoEDescricaoCadastrado.Count)
@@ -185,9 +240,140 @@ namespace SistemaDeGerenciamento2_0.Forms
             }
             catch (Exception x)
             {
-                MessageBox.Show(x.ToString());
+                LogErros.EscreverArquivoDeLog($"{DateTime.Now} - Erro ao Buscar Codigo do Produto e Descrição - | {x.Message} | {x.StackTrace}");
+
+                MensagemErros.ErroAoBuscarCodigoDoProdutoEDescricao(x);
 
                 return false;
+            }
+        }
+
+        private void PreencherGrid()
+        {
+            var item = "";
+            var codigoProduto = "";
+            var descricaoProduto = "";
+            var tipoUnidade = "";
+            var quantidadeProduto = "";
+            var valorUnidade = "";
+            var valorProduto = "";
+
+            using (XmlReader meuXml = XmlReader.Create(localArquivo))
+            {
+                var fimItens = false;
+
+                dt.Clear();
+
+                dt.Rows.Clear();
+
+                dt.Columns.Clear();
+
+                gdvNotaFiscalEntrada.Refresh();
+
+                gridView1.RefreshData();
+
+                dt.Columns.Add("Item");
+                dt.Columns.Add("Código Produto");
+                dt.Columns.Add("Decrição");
+                dt.Columns.Add("Quantidade");
+                dt.Columns.Add("Unidade");
+                dt.Columns.Add("Valor Unitario");
+                dt.Columns.Add("Valor Total");
+
+                while (meuXml.Read())
+                {
+                    if (meuXml.NodeType == XmlNodeType.Element && meuXml.Name == "det")
+                    {
+                        item = meuXml.GetAttribute("nItem");
+
+                        codigoProduto = "";
+                        descricaoProduto = "";
+                        tipoUnidade = "";
+                        quantidadeProduto = "";
+                        valorUnidade = "";
+                        valorProduto = "";
+                    }
+                    else if (meuXml.NodeType == XmlNodeType.Element && meuXml.Name == "total")
+                    {
+                        fimItens = true;
+                    }
+
+                    if (!fimItens)
+                    {
+                        //Codigo do Produto
+                        if (meuXml.NodeType == XmlNodeType.Element && meuXml.Name == "cProd")
+                        {
+                            codigoProduto = meuXml.ReadElementString();
+                        }
+
+                        //Descrição do Produto
+                        if (meuXml.NodeType == XmlNodeType.Element && meuXml.Name == "xProd")
+                        {
+                            descricaoProduto = meuXml.ReadElementString();
+
+                            ListaCodigoProdutoEDescricaoDaNF.Add(new DadosNotaFiscalEntrada { codigoProduto = codigoProduto, descricao = descricaoProduto });
+                        }
+
+                        //Quantidade de Produto
+                        if (meuXml.NodeType == XmlNodeType.Element && meuXml.Name == "qCom")
+                        {
+                            quantidadeProduto = meuXml.ReadElementString().Replace(".", ",");
+                        }
+
+                        //Tipo unidade
+                        if (meuXml.NodeType == XmlNodeType.Element && meuXml.Name == "uCom")
+                        {
+                            tipoUnidade = meuXml.ReadElementString();
+                        }
+                        //Valor da Unidade
+                        if (meuXml.NodeType == XmlNodeType.Element && meuXml.Name == "vUnCom")
+                        {
+                            valorUnidade = meuXml.ReadElementString().Replace(".", ",");
+
+                            ListaValorProdutoECoditoProdutoNF.Add(new DadosNotaFiscalEntrada
+                            {
+                                valorUnitario = Convert.ToDecimal(valorUnidade),
+                                codigoProduto = codigoProduto
+                            });
+                        }
+                        // Valor do Produto
+                        if (meuXml.NodeType == XmlNodeType.Element && meuXml.Name == "vProd")
+                        {
+                            valorProduto = meuXml.ReadElementString().Replace(".", ",");
+
+                            decimal valorUnidadeConvertido = Convert.ToDecimal(valorUnidade);
+                            decimal valorProdutoConvertido = Convert.ToDecimal(valorProduto);
+                            decimal quantidadeProdutoConvertido = Convert.ToDecimal(quantidadeProduto);
+
+                            dt.Rows.Add(item,
+                                codigoProduto,
+                                descricaoProduto,
+                                string.Format("{0000:00}", quantidadeProdutoConvertido),
+                                tipoUnidade,
+                                string.Format("{0:C}", valorUnidadeConvertido),
+                                string.Format("{0:C}", valorProdutoConvertido));
+
+                            ListaDadosNFEntrada.Add(new DadosNotaFiscalEntrada
+                            {
+                                numeroNFEntrada = Convert.ToInt32(txtNumeroNF.Text),
+                                quantidade = Convert.ToDecimal(quantidadeProduto),
+                                codigoProduto = codigoProduto,
+                                indiceProduto = Convert.ToInt32(item),
+                                cnpj = txtCNPJEmissor.Text,
+                                razaoSocial = txtRazaoSocialEmitente.Text,
+                                descricao = descricaoProduto,
+                                unidade = tipoUnidade,
+                                valorUnitario = Convert.ToDecimal(valorUnidade.Replace("R$ ", "")),
+                                valorTotal = Convert.ToDecimal(txtValorTotalNF.Text.Replace("R$ ", "")),
+                                dataEmissao = Convert.ToDateTime(txtDataEmissao.Text),
+                                dataLancamento = DateTime.Today
+                            });
+                        }
+                    }
+                }
+
+                gdvNotaFiscalEntrada.DataSource = dt;
+                gdvNotaFiscalEntrada.Refresh();
             }
         }
 
@@ -195,32 +381,9 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             try
             {
-                var item = "";
-                var codigoProduto = "";
-                var descricaoProduto = "";
-                var quantidadeProduto = "";
-                var valorUnidade = "";
-                var valorProduto = "";
-
                 using (XmlReader meuXml = XmlReader.Create(localArquivo))
                 {
                     var fimItens = false;
-
-                    dt.Clear();
-
-                    dt.Rows.Clear();
-
-                    dt.Columns.Clear();
-
-                    gdvNotaFiscalEntrada.Refresh();
-                    gridView1.RefreshData();
-
-                    dt.Columns.Add("Item");
-                    dt.Columns.Add("Código Produto");
-                    dt.Columns.Add("Decrição");
-                    dt.Columns.Add("Quantidade");
-                    dt.Columns.Add("Unidade");
-                    dt.Columns.Add("Valor");
 
                     while (meuXml.Read())
                     {
@@ -246,74 +409,7 @@ namespace SistemaDeGerenciamento2_0.Forms
 
                             txtValorTotalNF.Text = string.Format("{0:C}", valorTotal);
                         }
-
-                        //// Preencher GridView
-
-                        if (meuXml.NodeType == XmlNodeType.Element && meuXml.Name == "det")
-                        {
-                            item = meuXml.GetAttribute("nItem");
-
-                            codigoProduto = "";
-                            descricaoProduto = "";
-                            quantidadeProduto = "";
-                            valorUnidade = "";
-                            valorProduto = "";
-                        }
-                        else if (meuXml.NodeType == XmlNodeType.Element && meuXml.Name == "total")
-                        {
-                            fimItens = true;
-                        }
-
-                        if (!fimItens)
-                        {
-                            //Codigo do Produto
-                            if (meuXml.NodeType == XmlNodeType.Element && meuXml.Name == "cProd")
-                            {
-                                codigoProduto = meuXml.ReadElementString();
-                            }
-
-                            //Descrição do Produto
-                            if (meuXml.NodeType == XmlNodeType.Element && meuXml.Name == "xProd")
-                            {
-                                descricaoProduto = meuXml.ReadElementString();
-
-                                ListaCodigoProdutoEDescricaoDaNF.Add(new CodigoProdutoNomeProduto { codigoProduto = codigoProduto, nomeProduto = descricaoProduto });
-                            }
-
-                            //Quantidade de Produto
-                            if (meuXml.NodeType == XmlNodeType.Element && meuXml.Name == "qCom")
-                            {
-                                quantidadeProduto = meuXml.ReadElementString().Replace(".", ",");
-                            }
-
-                            //Valor da Unidade
-                            if (meuXml.NodeType == XmlNodeType.Element && meuXml.Name == "vUnCom")
-                            {
-                                valorUnidade = meuXml.ReadElementString().Replace(".", ",");
-
-                                ListaValorProdutoECoditoProdutoNF.Add(new ValorProdutoECoditoProdutoNF
-                                {
-                                    valorProduto = Convert.ToDecimal(valorUnidade),
-                                    codigoProduto = codigoProduto
-                                });
-                            }
-                            // Valor do Produto
-                            if (meuXml.NodeType == XmlNodeType.Element && meuXml.Name == "vProd")
-                            {
-                                valorProduto = meuXml.ReadElementString().Replace(".", ",");
-
-                                decimal valorUnidadeConvertido = Convert.ToDecimal(valorUnidade);
-                                decimal valorProdutoConvertido = Convert.ToDecimal(valorProduto);
-                                decimal quantidadeProdutoConvertido = Convert.ToDecimal(quantidadeProduto);
-
-                                dt.Rows.Add(item, codigoProduto, descricaoProduto, string.Format("{0000:00}", quantidadeProdutoConvertido),
-                                    string.Format("{0:C}", valorUnidadeConvertido), string.Format("{0:C}", valorProdutoConvertido));
-                            }
-                        }
                     }
-
-                    gdvNotaFiscalEntrada.DataSource = dt;
-                    gdvNotaFiscalEntrada.Refresh();
                 }
             }
             catch (Exception x)
@@ -492,33 +588,91 @@ namespace SistemaDeGerenciamento2_0.Forms
             }
         }
 
-        private void btnSalvar_Click(object sender, EventArgs e)
+        private void ChamandoAlertaSucessoNoCantoInferiorDireito()
         {
-            bool IsCnpjFornecedorCadastrado = VerificarExistenciaCadastroFornecedor();
+            DadosMensagemAlerta msg = new DadosMensagemAlerta("\n   Sucesso!", Resources.salvar_verde50);
+            AlertaSalvar.Show(this, $"{msg.titulo}", msg.texto, string.Empty, msg.image, msg);
+        }
 
-            if (IsCnpjFornecedorCadastrado == true)
+        private void SalvarNFEntrada()
+        {
+            try
             {
-                bool IsNFExistente = VerificarExistenciaNF();
-
-                if (IsNFExistente == false)
+                using (SistemaDeGerenciamento2_0Entities5 db = new SistemaDeGerenciamento2_0Entities5())
                 {
-                    bool IsCnpjDaEmpresa = VerificarCNPJRecepitor();
-
-                    if (IsCnpjDaEmpresa == true)
+                    foreach (var item in ListaDadosNFEntrada)
                     {
-                        bool IsCodigoProdutoEDescricaoCadastrado = VerificandoCodigoProdutoEDescricao();
-
-                        if (IsCodigoProdutoEDescricaoCadastrado == true)
+                        var dadosNFEntrada = new tb_nota_fiscal_entrada
                         {
-                            bool IsValorProdutoIgualValorCadastrado = VerificandoValorProduto();
+                            nfe_numero_nf_entrada = item.numeroNFEntrada,
+                            nfe_quantidade = item.quantidade,
+                            nfe_codigo_produto = item.codigoProduto,
+                            nfe_indice = item.indiceProduto,
+                            nfe_cnpj = item.cnpj,
+                            nfe_razao_social = item.razaoSocial,
+                            nfe_descricao_social = item.descricao,
+                            nfe_unidade = item.unidade,
+                            nfe_valor_unitario = item.valorUnitario,
+                            nfe_valor_total = item.valorTotal,
+                            nfe_data_emissao = item.dataEmissao,
+                            nfe_data_lancamento = item.dataLancamento,
+                        };
 
-                            if (IsValorProdutoIgualValorCadastrado == true)
-                            {
-                                MessageBox.Show("Ate aqui esta dando td certo");
-                            }
-                        }
+                        db.tb_nota_fiscal_entrada.Add(dadosNFEntrada);
+                        db.SaveChanges();
+
+                        ListaFKNFEntrada.Add(dadosNFEntrada.id_nota_fiscal_entrada);
                     }
                 }
+            }
+            catch (Exception x)
+            {
+                LogErros.EscreverArquivoDeLog($"{DateTime.Now} - Erro ao Cadastrar Nota Fiscal de Entrada - | {x.Message} | {x.StackTrace}");
+
+                MensagemErros.ErroAoCadastroNotaFiscalEntrada(x);
+            }
+        }
+
+        private void AdicionandoFKNFEntradaNaListaDadosNFEntrada()
+        {
+            int i = 0;
+
+            foreach (var item in ListaFKNFEntrada)
+            {
+                ListaDadosNFEntrada[i].FKNFEntrada = item;
+
+                i++;
+            }
+        }
+
+        private void SalvarEstoque()
+        {
+            try
+            {
+                using (SistemaDeGerenciamento2_0Entities5 db = new SistemaDeGerenciamento2_0Entities5())
+                {
+                    foreach (var item in ListaDadosNFEntrada)
+                    {
+                        var dadosEstoque = new tb_estoque
+                        {
+                            ep_quantidade = item.quantidade,
+                            ep_data_entrada = item.dataLancamento,
+                            ep_codigo_barras = item.codigoBarras,
+                            ep_status_situacao = "L",
+                            fk_produto = item.FKProduto,
+                            fk_nota_fiscal_entrada = item.FKNFEntrada,
+                        };
+
+                        db.tb_estoque.Add(dadosEstoque);
+                        db.SaveChanges();
+                    }
+                }
+            }
+            catch (Exception x)
+            {
+                LogErros.EscreverArquivoDeLog($"{DateTime.Now} - Erro ao Cadastrar Estoque - | {x.Message} | {x.StackTrace}");
+
+                MensagemErros.ErroAoCadastroEstoque(x);
             }
         }
 
@@ -545,7 +699,9 @@ namespace SistemaDeGerenciamento2_0.Forms
             }
             catch (Exception x)
             {
-                MessageBox.Show(x.ToString());
+                LogErros.EscreverArquivoDeLog($"{DateTime.Now} - Erro ao Buscar CNPJ Recepitor - | {x.Message} | {x.StackTrace}");
+
+                MensagemErros.ErroAoBuscarCNPJDaEmpresa(x);
 
                 return false;
             }
@@ -576,7 +732,9 @@ namespace SistemaDeGerenciamento2_0.Forms
             }
             catch (Exception x)
             {
-                MessageBox.Show(x.ToString());
+                LogErros.EscreverArquivoDeLog($"{DateTime.Now} - Erro ao Buscar Existencia de Nota Fiscal de Entrada - | {x.Message} | {x.StackTrace}");
+
+                MensagemErros.ErroAoBuscarNFEntradaExistente(x);
 
                 return false;
             }
