@@ -127,6 +127,8 @@ namespace SistemaDeGerenciamento2_0.Forms
                         {
                             GerarCodigoDeBarras();
                         }
+
+                        LimparCampos.LimpaCampos(this.Controls);
                     }
                 }
             }

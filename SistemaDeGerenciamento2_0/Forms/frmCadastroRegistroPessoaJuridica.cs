@@ -22,7 +22,7 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private string tipoCadastro = string.Empty;
 
-        private bool isCNPJJaExistente = false;
+    
 
         private ApiCorreios Api = new ApiCorreios();
 
@@ -63,7 +63,7 @@ namespace SistemaDeGerenciamento2_0.Forms
 
             if (IsCampoEnderecoPreenchido == true && IsCampoBasicoPreenchido == true)
             {
-                VerificarExitenciaCNPJ();
+                bool isCNPJJaExistente = VerificarExitenciaCNPJ();
 
                 if (isCNPJJaExistente == false)
                 {
@@ -215,7 +215,7 @@ namespace SistemaDeGerenciamento2_0.Forms
             AlertaSalvar.Show(this, $"{msg.titulo}", msg.texto, string.Empty, msg.image, msg);
         }
 
-        private void VerificarExitenciaCNPJ()
+        private bool VerificarExitenciaCNPJ()
         {
             try
             {
@@ -225,11 +225,11 @@ namespace SistemaDeGerenciamento2_0.Forms
 
                     if (CPFCadastrado.Count > 0)
                     {
-                        isCNPJJaExistente = true;
+                        return true;
                     }
                     else
                     {
-                        isCNPJJaExistente = false;
+                        return false;
                     }
                 }
             }
@@ -238,6 +238,8 @@ namespace SistemaDeGerenciamento2_0.Forms
                 LogErros.EscreverArquivoDeLog($"{DateTime.Now} - Erro ao Buscar CNPJ para verifica a exitencia no cadastro - Registro Pessoa Juridica | {x.Message} | {x.StackTrace}");
 
                 MensagemErros.ErroAoBuscarCNPJParaVerificacaoExistencia(x);
+
+                return false;
             }
         }
 

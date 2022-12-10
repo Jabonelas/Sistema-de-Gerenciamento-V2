@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
+using static SistemaDeGerenciamento2_0.Forms.frmEntradaNF;
 
 namespace SistemaDeGerenciamento2_0.Forms
 {
@@ -22,6 +23,10 @@ namespace SistemaDeGerenciamento2_0.Forms
         private string cnpjRecepitor = string.Empty;
 
         private string localArquivo = string.Empty;
+
+        private string enderecoEmissor = string.Empty;
+
+        private DataTable dt = new DataTable();
 
         public frmEntradaNF()
         {
@@ -77,17 +82,114 @@ namespace SistemaDeGerenciamento2_0.Forms
             abrirPesquisa.Filter = "Abrir Arquivo XML (*.xml;) |*.xml;";
             if (abrirPesquisa.ShowDialog() == DialogResult.OK)
             {
+                ListaCodigoProdutoEDescricaoDaNF.Clear();
+                ListaValorProdutoECoditoProdutoNF.Clear();
+
                 localArquivo = abrirPesquisa.FileName;
 
                 LerXML();
 
                 LerXMLPegarDadosEmissor();
 
+                LerXMLPegarDadosRecepitor();
+
                 txtLocalArquivo.Text = localArquivo;
             }
         }
 
-        private DataTable dt = new DataTable();
+        //private Dictionary<decimal, string> ListaValorProdutoECoditoProdutoNF = new Dictionary<decimal, string>();
+        private List<ValorProdutoECoditoProdutoNF> ListaValorProdutoECoditoProdutoNF = new List<ValorProdutoECoditoProdutoNF>();
+
+        public class ValorProdutoECoditoProdutoNF
+        {
+            public decimal valorProduto { get; set; }
+
+            public string codigoProduto { get; set; }
+        }
+
+        private bool VerificandoValorProduto()
+        {
+            try
+            {
+                List<string> ListaValorProduto = new List<string>();
+
+                using (SistemaDeGerenciamento2_0Entities5 db = new SistemaDeGerenciamento2_0Entities5())
+                {
+                    foreach (var item in ListaValorProdutoECoditoProdutoNF)
+                    {
+                        decimal valorProdutoConvertido = Convert.ToDecimal(item.valorProduto);
+
+                        var valorProduto = db.tb_produto.Where(x => x.pd_custo == valorProdutoConvertido && x.pd_codigo == item.codigoProduto)
+                        .Select(x => x.pd_codigo).ToList();
+
+                        valorProduto.ForEach(x => ListaValorProduto.Add(x));
+                    }
+
+                    if (ListaValorProdutoECoditoProdutoNF.Count == ListaValorProduto.Count)
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        MensagemAtencao.MensagemProdutoComValoresDivergentes();
+
+                        return false;
+                    }
+                }
+            }
+            catch (Exception x)
+            {
+                MessageBox.Show(x.ToString());
+
+                return false;
+            }
+        }
+
+        //private Dictionary<string, string> ListaCodigoProdutoEDescricaoDaNF = new Dictionary<string, string>();
+
+        public class CodigoProdutoNomeProduto
+        {
+            public string codigoProduto { get; set; }
+            public string nomeProduto { get; set; }
+        }
+
+        private List<CodigoProdutoNomeProduto> ListaCodigoProdutoEDescricaoDaNF = new List<CodigoProdutoNomeProduto>();
+
+        private bool VerificandoCodigoProdutoEDescricao()
+        {
+            try
+            {
+                List<string> ListaCodigoProdutoEDescricaoCadastrado = new List<string>();
+
+                using (SistemaDeGerenciamento2_0Entities5 db = new SistemaDeGerenciamento2_0Entities5())
+                {
+                    foreach (var item in ListaCodigoProdutoEDescricaoDaNF)
+                    {
+                        var codigoProduto = db.tb_produto.Where(x => x.pd_codigo == item.codigoProduto && x.pd_nome == item.nomeProduto)
+                        .Select(x => x.pd_codigo).ToList();
+
+                        codigoProduto.ForEach(x => ListaCodigoProdutoEDescricaoCadastrado.Add(x));
+                    }
+
+                    if (ListaCodigoProdutoEDescricaoDaNF.Count == ListaCodigoProdutoEDescricaoCadastrado.Count)
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        MensagemAtencao.MensagemNaoCadastrado("Produto em Nota Fiscal");
+
+                        return false;
+                    }
+                }
+            }
+            catch (Exception x)
+            {
+                MessageBox.Show(x.ToString());
+
+                return false;
+            }
+        }
 
         private void LerXML()
         {
@@ -103,6 +205,15 @@ namespace SistemaDeGerenciamento2_0.Forms
                 using (XmlReader meuXml = XmlReader.Create(localArquivo))
                 {
                     var fimItens = false;
+
+                    dt.Clear();
+
+                    dt.Rows.Clear();
+
+                    dt.Columns.Clear();
+
+                    gdvNotaFiscalEntrada.Refresh();
+                    gridView1.RefreshData();
 
                     dt.Columns.Add("Item");
                     dt.Columns.Add("Código Produto");
@@ -155,26 +266,38 @@ namespace SistemaDeGerenciamento2_0.Forms
 
                         if (!fimItens)
                         {
+                            //Codigo do Produto
                             if (meuXml.NodeType == XmlNodeType.Element && meuXml.Name == "cProd")
                             {
                                 codigoProduto = meuXml.ReadElementString();
                             }
 
+                            //Descrição do Produto
                             if (meuXml.NodeType == XmlNodeType.Element && meuXml.Name == "xProd")
                             {
                                 descricaoProduto = meuXml.ReadElementString();
+
+                                ListaCodigoProdutoEDescricaoDaNF.Add(new CodigoProdutoNomeProduto { codigoProduto = codigoProduto, nomeProduto = descricaoProduto });
                             }
 
+                            //Quantidade de Produto
                             if (meuXml.NodeType == XmlNodeType.Element && meuXml.Name == "qCom")
                             {
                                 quantidadeProduto = meuXml.ReadElementString().Replace(".", ",");
                             }
 
+                            //Valor da Unidade
                             if (meuXml.NodeType == XmlNodeType.Element && meuXml.Name == "vUnCom")
                             {
                                 valorUnidade = meuXml.ReadElementString().Replace(".", ",");
-                            }
 
+                                ListaValorProdutoECoditoProdutoNF.Add(new ValorProdutoECoditoProdutoNF
+                                {
+                                    valorProduto = Convert.ToDecimal(valorUnidade),
+                                    codigoProduto = codigoProduto
+                                });
+                            }
+                            // Valor do Produto
                             if (meuXml.NodeType == XmlNodeType.Element && meuXml.Name == "vProd")
                             {
                                 valorProduto = meuXml.ReadElementString().Replace(".", ",");
@@ -260,7 +383,7 @@ namespace SistemaDeGerenciamento2_0.Forms
                             {
                                 txtCidade.Text = meuXml.ReadElementString();
                             }
-                            //Etado
+                            //Estado
                             if (meuXml.NodeType == XmlNodeType.Element && meuXml.Name == "UF")
                             {
                                 txtEstado.Text = meuXml.ReadElementString();
@@ -275,18 +398,19 @@ namespace SistemaDeGerenciamento2_0.Forms
                                 txtCEPEmissor.Text = string.Format("{0:00000-000}", CEPConvertido);
                             }
 
-                            string endereco = string.Empty;
                             //Endereco
                             if (meuXml.NodeType == XmlNodeType.Element && meuXml.Name == "xLgr")
                             {
-                                endereco = meuXml.ReadElementString();
+                                enderecoEmissor = meuXml.ReadElementString();
                             }
+
+                            string numero = string.Empty;
                             //Numero Endereco
                             if (meuXml.NodeType == XmlNodeType.Element && meuXml.Name == "nro")
                             {
-                                endereco += " Nº " + meuXml.ReadElementString();
+                                numero = meuXml.ReadElementString();
 
-                                txtEnderecoEmissor.Text = endereco;
+                                txtEnderecoEmissor.Text = $"{enderecoEmissor} Nº {numero}";
                             }
                             //Inscrição Estadual
                             if (meuXml.NodeType == XmlNodeType.Element && meuXml.Name == "IE")
@@ -335,7 +459,7 @@ namespace SistemaDeGerenciamento2_0.Forms
 
                         if (isRecepitor)
                         {
-                            //CNPJ
+                            //CNPJ do Recepitor
                             if (meuXml.NodeType == XmlNodeType.Element && meuXml.Name == "CNPJ")
                             {
                                 string CNPJ = meuXml.ReadElementString();
@@ -382,7 +506,17 @@ namespace SistemaDeGerenciamento2_0.Forms
 
                     if (IsCnpjDaEmpresa == true)
                     {
-                        MessageBox.Show("Test");
+                        bool IsCodigoProdutoEDescricaoCadastrado = VerificandoCodigoProdutoEDescricao();
+
+                        if (IsCodigoProdutoEDescricaoCadastrado == true)
+                        {
+                            bool IsValorProdutoIgualValorCadastrado = VerificandoValorProduto();
+
+                            if (IsValorProdutoIgualValorCadastrado == true)
+                            {
+                                MessageBox.Show("Ate aqui esta dando td certo");
+                            }
+                        }
                     }
                 }
             }
@@ -394,7 +528,8 @@ namespace SistemaDeGerenciamento2_0.Forms
             {
                 using (SistemaDeGerenciamento2_0Entities5 db = new SistemaDeGerenciamento2_0Entities5())
                 {
-                    var verificarCnpjRecepitor = db.tb_registro.Where(x => x.rg_categoria == "Empresa" && x.rg_cnpj == cnpjRecepitor).Select(x => x.rg_cnpj).ToList();
+                    var verificarCnpjRecepitor = db.tb_registro.Where(x => x.rg_categoria == "Empresa" && x.rg_cnpj == cnpjRecepitor)
+                        .Select(x => x.rg_cnpj).ToList();
 
                     if (verificarCnpjRecepitor.Count > 0)
                     {
@@ -402,12 +537,16 @@ namespace SistemaDeGerenciamento2_0.Forms
                     }
                     else
                     {
+                        MensagemAtencao.MensagemNaoCadastrado("Destinatário");
+
                         return false;
                     }
                 }
             }
-            catch (Exception)
+            catch (Exception x)
             {
+                MessageBox.Show(x.ToString());
+
                 return false;
             }
         }
@@ -418,8 +557,10 @@ namespace SistemaDeGerenciamento2_0.Forms
             {
                 using (SistemaDeGerenciamento2_0Entities5 db = new SistemaDeGerenciamento2_0Entities5())
                 {
+                    int numeroNFTextBox = Convert.ToInt32(txtNumeroNF.Text);
+
                     var numeroNF = db.tb_nota_fiscal_entrada.Where(x => x.nfe_cnpj == txtCNPJEmissor.Text &&
-                    x.nfe_numero_nf_entrada == Convert.ToInt32(txtNumeroNF.Text)).Select(x => x.nfe_cnpj).ToList();
+                    x.nfe_numero_nf_entrada == numeroNFTextBox).Select(x => x.nfe_cnpj).ToList();
 
                     if (numeroNF.Count > 0)
                     {
@@ -438,21 +579,6 @@ namespace SistemaDeGerenciamento2_0.Forms
                 MessageBox.Show(x.ToString());
 
                 return false;
-            }
-        }
-
-        private void VerificarExistenciaCadastroProduto()
-        {
-            try
-            {
-                using (SistemaDeGerenciamento2_0Entities5 db = new SistemaDeGerenciamento2_0Entities5())
-                {
-                    //var codigoProduto = db.tb_produto.Where(x => x.pd_codigo.Equals(dt.))
-                }
-            }
-            catch (Exception)
-            {
-                throw;
             }
         }
 

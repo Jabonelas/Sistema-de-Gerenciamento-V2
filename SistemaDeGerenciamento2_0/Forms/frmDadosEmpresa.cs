@@ -220,7 +220,7 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private void txtTelefoneFixo_KeyPress(object sender, KeyPressEventArgs e)
         {
-            ManipulacaoTextBox.FormatoCelular(e, txtTelefoneFixo);
+            ManipulacaoTextBox.FormatoTelefone(e, txtTelefoneFixo);
         }
 
         private void PreenchimentoComboBoxEstado()

@@ -26,7 +26,7 @@ namespace SistemaDeGerenciamento2_0
 
         public static void MensagemProdutoJaExistente()
         {
-            MessageBox.Show("Desculpa codigo de produto ou nome de produto ja existente, por favor digite um valor diferente!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            MessageBox.Show("Desculpe, codigo de produto ou nome de produto ja existente, por favor digite um valor diferente!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
 
         public static void MensagemCampoDigitadoInvalido(string _corpo)
@@ -46,17 +46,17 @@ namespace SistemaDeGerenciamento2_0
 
         public static void MensagemJaExistente(string _corpoMensagem)
         {
-            MessageBox.Show($"Desculpa {_corpoMensagem} ja existente, por favor digite um valor diferente!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            MessageBox.Show($"Desculpe, {_corpoMensagem} ja existente, por favor digite um valor diferente!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
-
-        //public static void MensagemJaCadastrado(string _corpo)
-        //{
-        //    MessageBox.Show($"Desculpe, {_corpo} Já cadastrado!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-        //}
 
         public static void MensagemNaoAceitoValoresNegativos()
         {
             MessageBox.Show("Desculpe, não é aceitos valores negativos!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        }
+
+        public static void MensagemProdutoComValoresDivergentes()
+        {
+            MessageBox.Show("Desculpe, Produtos com Valores Divergentes do Cadastrado!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
     }
 }
