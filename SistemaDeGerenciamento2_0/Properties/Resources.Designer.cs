@@ -63,6 +63,16 @@ namespace SistemaDeGerenciamento2_0.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap acesso_20px {
+            get {
+                object obj = ResourceManager.GetObject("acesso_20px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap adcao9 {
             get {
                 object obj = ResourceManager.GetObject("adcao9", resourceCulture);
@@ -493,9 +503,39 @@ namespace SistemaDeGerenciamento2_0.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap olho_20 {
+            get {
+                object obj = ResourceManager.GetObject("olho_20", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap olho_aberto_20 {
+            get {
+                object obj = ResourceManager.GetObject("olho_aberto_20", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap olhos {
             get {
                 object obj = ResourceManager.GetObject("olhos", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap olhos_15 {
+            get {
+                object obj = ResourceManager.GetObject("olhos_15", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -526,6 +566,16 @@ namespace SistemaDeGerenciamento2_0.Properties {
         internal static System.Drawing.Bitmap perfil {
             get {
                 object obj = ResourceManager.GetObject("perfil", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap permissao_20 {
+            get {
+                object obj = ResourceManager.GetObject("permissao_20", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -666,6 +716,16 @@ namespace SistemaDeGerenciamento2_0.Properties {
         internal static System.Drawing.Bitmap separador {
             get {
                 object obj = ResourceManager.GetObject("separador", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap separador___Copia {
+            get {
+                object obj = ResourceManager.GetObject("separador - Copia", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

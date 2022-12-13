@@ -1,12 +1,6 @@
-﻿using DevExpress.Emf;
-using DevExpress.XtraEditors.ColorPick.Picker;
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace SistemaDeGerenciamento2_0.Class
@@ -57,6 +51,8 @@ namespace SistemaDeGerenciamento2_0.Class
                 _textBox.BackColor = Color.LightGray;
 
                 MessageBox.Show("Por Favor Preencha o Campo Completamente", "Atenção!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+                _textBox.Text = string.Empty;
 
                 _textBox.Focus();
             }

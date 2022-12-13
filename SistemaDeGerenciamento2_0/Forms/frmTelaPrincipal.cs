@@ -1,12 +1,5 @@
-﻿using DevExpress.XtraBars;
-using SistemaDeGerenciamento2_0.Forms;
+﻿using SistemaDeGerenciamento2_0.Forms;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 
 namespace SistemaDeGerenciamento2_0
@@ -23,7 +16,7 @@ namespace SistemaDeGerenciamento2_0
         private void TelaAcessoRapido()
         {
             pnlTelaPrincipal.Controls.Clear();
-            frmAcessoRapido frmAcessoRapido = new frmAcessoRapido();
+            frmPemissaoCadastro frmAcessoRapido = new frmPemissaoCadastro();
             frmAcessoRapido.TopLevel = false;
             pnlTelaPrincipal.Controls.Add(frmAcessoRapido);
             pnlTelaPrincipal.Tag = frmAcessoRapido;

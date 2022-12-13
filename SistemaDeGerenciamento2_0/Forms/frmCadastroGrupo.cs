@@ -1,17 +1,10 @@
-﻿using DevExpress.Utils.Extensions;
-using DevExpress.XtraEditors;
-using DevExpress.XtraEditors.Filtering.Templates;
-using DevExpress.XtraLayout.Filtering.Templates;
-using SistemaDeGerenciamento2_0.Class;
+﻿using SistemaDeGerenciamento2_0.Class;
 using SistemaDeGerenciamento2_0.Properties;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace SistemaDeGerenciamento2_0.Forms
@@ -20,8 +13,6 @@ namespace SistemaDeGerenciamento2_0.Forms
     {
         private int X = 0;
         private int Y = 0;
-
-        private bool isExiteGrupoComMesmoNomeEAgrupadorCadastrado = false;
 
         public frmCadastroGrupo()
         {
@@ -44,9 +35,7 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             if (txtNomeGrupo.Text != string.Empty && cmbAgrupador.Text != string.Empty)
             {
-                verificarExistenciaGrupoComMesmoNomeEAgrupador();
-
-                if (isExiteGrupoComMesmoNomeEAgrupadorCadastrado == false)
+                if (IsGrupoComMesmoNomeEAgrupadorExiste() == false)
                 {
                     ConexaoSalvar();
 
@@ -106,7 +95,7 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             try
             {
-                using (SistemaDeGerenciamento2_0Entities5 db = new SistemaDeGerenciamento2_0Entities5())
+                using (SistemaDeGerenciamento2_0Entities7 db = new SistemaDeGerenciamento2_0Entities7())
                 {
                     List<string> listaSubGrupo = new List<string>();
 
@@ -135,24 +124,26 @@ namespace SistemaDeGerenciamento2_0.Forms
             }
         }
 
-        private void verificarExistenciaGrupoComMesmoNomeEAgrupador()
+        private bool IsGrupoComMesmoNomeEAgrupadorExiste()
         {
             try
             {
-                using (SistemaDeGerenciamento2_0Entities5 db = new SistemaDeGerenciamento2_0Entities5())
+                using (SistemaDeGerenciamento2_0Entities7 db = new SistemaDeGerenciamento2_0Entities7())
                 {
-                    var grupo = db.tb_grupo.Where(x => x.gp_nome_grupo.Equals(txtNomeGrupo.Text))
-                        .Where(x => x.gp_nome_agrupador.Equals(cmbAgrupador.Text))
-                        .ToList();
+                    var grupo = db.tb_grupo.Where(x => x.gp_nome_grupo.Equals(txtNomeGrupo.Text)).Any();
+                    //.Where(x => x.gp_nome_agrupador.Equals(cmbAgrupador.Text))
+                    //.ToList();
 
-                    if (grupo.Count > 0)
-                    {
-                        isExiteGrupoComMesmoNomeEAgrupadorCadastrado = true;
-                    }
-                    else
-                    {
-                        isExiteGrupoComMesmoNomeEAgrupadorCadastrado = false;
-                    }
+                    //if (grupo.Count > 0)
+                    //{
+                    //    isExiteGrupoComMesmoNomeEAgrupadorCadastrado = true;
+                    //}
+                    //else
+                    //{
+                    //    isExiteGrupoComMesmoNomeEAgrupadorCadastrado = false;
+                    //}
+
+                    return grupo;
                 }
             }
             catch (Exception x)
@@ -160,6 +151,8 @@ namespace SistemaDeGerenciamento2_0.Forms
                 LogErros.EscreverArquivoDeLog($"{DateTime.Now} - Erro ao Buscar Grupo e Agrupador - | {x.Message} | {x.StackTrace}");
 
                 MensagemErros.ErroAoBuscarGrupoEAgrupador(x);
+
+                return false;
             }
         }
 
@@ -169,7 +162,7 @@ namespace SistemaDeGerenciamento2_0.Forms
             {
                 var grupoProduto = new tb_grupo() { gp_nome_grupo = txtNomeGrupo.Text, gp_nome_agrupador = cmbAgrupador.Text };
 
-                using (SistemaDeGerenciamento2_0Entities5 db = new SistemaDeGerenciamento2_0Entities5())
+                using (SistemaDeGerenciamento2_0Entities7 db = new SistemaDeGerenciamento2_0Entities7())
                 {
                     db.tb_grupo.Add(grupoProduto);
                     db.SaveChanges();

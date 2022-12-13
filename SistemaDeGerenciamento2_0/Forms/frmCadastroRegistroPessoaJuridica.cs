@@ -1,16 +1,9 @@
-﻿using DevExpress.XtraEditors;
-using DevExpress.XtraPrinting.Native;
-using SistemaDeGerenciamento2_0.Class;
+﻿using SistemaDeGerenciamento2_0.Class;
 using SistemaDeGerenciamento2_0.Properties;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace SistemaDeGerenciamento2_0.Forms
@@ -73,6 +66,8 @@ namespace SistemaDeGerenciamento2_0.Forms
 
                         txtCNPJ.BackColor = Color.LightGray;
 
+                        txtCNPJ.Text = string.Empty;
+
                         txtCNPJ.Focus();
                     }
                 }
@@ -93,6 +88,8 @@ namespace SistemaDeGerenciamento2_0.Forms
                     MensagemAtencao.MensagemCampoDigitadoInvalido("Email");
 
                     txtEmail.BackColor = Color.LightGray;
+
+                    txtEmail.Text = string.Empty;
 
                     txtEmail.Focus();
                 }
@@ -117,6 +114,8 @@ namespace SistemaDeGerenciamento2_0.Forms
                     txtEmail.BackColor = Color.LightGray;
 
                     MensagemAtencao.MensagemCampoDigitadoInvalido("Email");
+
+                    txtEmail.Text = string.Empty;
 
                     txtEmail.Focus();
                 }
@@ -174,6 +173,8 @@ namespace SistemaDeGerenciamento2_0.Forms
 
                     MensagemAtencao.MensagemCampoDigitadoInvalido("Celular");
 
+                    txtCelular.Text = string.Empty;
+
                     txtCelular.Focus();
                 }
                 else
@@ -192,6 +193,8 @@ namespace SistemaDeGerenciamento2_0.Forms
                     txtTelefoneFixo.BackColor = Color.LightGray;
 
                     MensagemAtencao.MensagemCampoDigitadoInvalido("Telefone");
+
+                    txtTelefoneFixo.Text = string.Empty;
 
                     txtTelefoneFixo.Focus();
                 }
@@ -274,7 +277,7 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             try
             {
-                using (SistemaDeGerenciamento2_0Entities5 db = new SistemaDeGerenciamento2_0Entities5())
+                using (SistemaDeGerenciamento2_0Entities7 db = new SistemaDeGerenciamento2_0Entities7())
                 {
                     var informacaoComercialPessoaFisica = new tb_informacoes_comeciais()
                     {
@@ -308,7 +311,7 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             try
             {
-                using (SistemaDeGerenciamento2_0Entities5 db = new SistemaDeGerenciamento2_0Entities5())
+                using (SistemaDeGerenciamento2_0Entities7 db = new SistemaDeGerenciamento2_0Entities7())
                 {
                     var CPFCadastrado = db.tb_registro.Where(x => x.rg_cnpj == txtCNPJ.Text).Select(x => x.rg_cnpj).ToList();
 
@@ -387,7 +390,7 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             try
             {
-                using (SistemaDeGerenciamento2_0Entities5 db = new SistemaDeGerenciamento2_0Entities5())
+                using (SistemaDeGerenciamento2_0Entities7 db = new SistemaDeGerenciamento2_0Entities7())
                 {
                     var enderecoPessoaFisica = new tb_enderecos()
                     {
@@ -419,7 +422,7 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             try
             {
-                using (SistemaDeGerenciamento2_0Entities5 db = new SistemaDeGerenciamento2_0Entities5())
+                using (SistemaDeGerenciamento2_0Entities7 db = new SistemaDeGerenciamento2_0Entities7())
                 {
                     var pessoaFisica = new tb_registro()
                     {

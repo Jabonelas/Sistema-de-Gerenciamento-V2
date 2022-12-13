@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace SistemaDeGerenciamento2_0.Class
@@ -208,6 +204,15 @@ namespace SistemaDeGerenciamento2_0.Class
         }
 
         #endregion NF Entrada
+
+        #region Novo Usuário
+
+        public static void ErroAoBuscarDadosNovoUsuario(Exception _e)
+        {
+            MessageBox.Show($"(BUS-NU01) Erro ao Bucar Usuário e Senha para preencher dados da tela de cadastrar novo usuário \n\nErro: {_e}", "Erro Buscar Usuário !", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        #endregion Novo Usuário
 
         #endregion Buscar
 

@@ -1,22 +1,10 @@
-﻿using DevExpress.LookAndFeel;
-using DevExpress.XtraEditors;
-using DevExpress.XtraLayout.Filtering.Templates;
-using DevExpress.XtraPrinting.Native;
-using DevExpress.XtraVerticalGrid.ViewInfo;
-using SistemaDeGerenciamento2_0.Class;
+﻿using SistemaDeGerenciamento2_0.Class;
 using SistemaDeGerenciamento2_0.Properties;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Web.UI;
-using System.Web.UI.WebControls.WebParts;
 using System.Windows.Forms;
-using static DevExpress.XtraPrinting.Export.Pdf.PdfImageCache;
 
 namespace SistemaDeGerenciamento2_0.Forms
 {
@@ -121,6 +109,8 @@ namespace SistemaDeGerenciamento2_0.Forms
 
                         txtCPF.BackColor = Color.LightGray;
 
+                        txtCPF.Text = string.Empty;
+
                         txtCPF.Focus();
                     }
                     else
@@ -143,6 +133,8 @@ namespace SistemaDeGerenciamento2_0.Forms
 
                         txtRG.BackColor = Color.LightGray;
 
+                        txtRG.Text = string.Empty;
+
                         txtRG.Focus();
                     }
                     else
@@ -162,6 +154,8 @@ namespace SistemaDeGerenciamento2_0.Forms
                     MensagemAtencao.MensagemCampoDigitadoInvalido("Email");
 
                     txtEmail.BackColor = Color.LightGray;
+
+                    txtEmail.Text = string.Empty;
 
                     txtEmail.Focus();
                 }
@@ -233,6 +227,8 @@ namespace SistemaDeGerenciamento2_0.Forms
 
                     MensagemAtencao.MensagemCampoDigitadoInvalido("Celular");
 
+                    txtCelular.Text = string.Empty;
+
                     txtCelular.Focus();
                 }
                 else
@@ -251,6 +247,8 @@ namespace SistemaDeGerenciamento2_0.Forms
                     txtTelefoneFixo.BackColor = Color.LightGray;
 
                     MensagemAtencao.MensagemCampoDigitadoInvalido("Telefone");
+
+                    txtTelefoneFixo.Text = string.Empty;
 
                     txtTelefoneFixo.Focus();
                 }
@@ -327,7 +325,7 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             try
             {
-                using (SistemaDeGerenciamento2_0Entities5 db = new SistemaDeGerenciamento2_0Entities5())
+                using (SistemaDeGerenciamento2_0Entities7 db = new SistemaDeGerenciamento2_0Entities7())
                 {
                     var CPFCadastrado = db.tb_registro.Where(x => x.rg_cpf == txtCPF.Text).Select(x => x.rg_cpf).ToList();
 
@@ -358,6 +356,8 @@ namespace SistemaDeGerenciamento2_0.Forms
                 txtDataNascimento.BackColor = Color.LightGray;
 
                 MensagemAtencao.MensagemDataNasciemntoInvalida();
+
+                txtDataNascimento.Text = string.Empty;
 
                 txtDataNascimento.Focus();
             }
@@ -501,7 +501,7 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             try
             {
-                using (SistemaDeGerenciamento2_0Entities5 db = new SistemaDeGerenciamento2_0Entities5())
+                using (SistemaDeGerenciamento2_0Entities7 db = new SistemaDeGerenciamento2_0Entities7())
                 {
                     var informacaoComercialPessoaFisica = new tb_informacoes_comeciais()
                     {
@@ -529,7 +529,7 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             try
             {
-                using (SistemaDeGerenciamento2_0Entities5 db = new SistemaDeGerenciamento2_0Entities5())
+                using (SistemaDeGerenciamento2_0Entities7 db = new SistemaDeGerenciamento2_0Entities7())
                 {
                     var enderecoPessoaFisica = new tb_enderecos()
                     {
@@ -561,7 +561,7 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             try
             {
-                using (SistemaDeGerenciamento2_0Entities5 db = new SistemaDeGerenciamento2_0Entities5())
+                using (SistemaDeGerenciamento2_0Entities7 db = new SistemaDeGerenciamento2_0Entities7())
                 {
                     var pessoaFisica = new tb_registro()
                     {

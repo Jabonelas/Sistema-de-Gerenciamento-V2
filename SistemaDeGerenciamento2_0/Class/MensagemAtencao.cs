@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
 
 namespace SistemaDeGerenciamento2_0
 {
@@ -57,6 +52,11 @@ namespace SistemaDeGerenciamento2_0
         public static void MensagemProdutoComValoresDivergentes()
         {
             MessageBox.Show("Desculpe, Produtos com Valores Divergentes do Cadastrado!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        }
+
+        public static void MensagemSenhasDivergentes()
+        {
+            MessageBox.Show("Desculpe, Senhas Divergentes Por Favor Verique!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
     }
 }

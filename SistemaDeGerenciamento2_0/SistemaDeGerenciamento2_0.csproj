@@ -168,6 +168,12 @@
     <Compile Include="Forms\frmDadosEmpresa.Designer.cs">
       <DependentUpon>frmDadosEmpresa.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\frmPermissoes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPermissoes.Designer.cs">
+      <DependentUpon>frmPermissoes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\frmProdutos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -216,6 +222,45 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>SistemaDeGerenciamento2_0.edmx</DependentUpon>
     </Compile>
+    <Compile Include="tb_cadastro_despesa.cs">
+      <DependentUpon>SistemaDeGerenciamento2_0.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_configuracao_financeira.cs">
+      <DependentUpon>SistemaDeGerenciamento2_0.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_despesa.cs">
+      <DependentUpon>SistemaDeGerenciamento2_0.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_enderecos.cs">
+      <DependentUpon>SistemaDeGerenciamento2_0.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_estoque.cs">
+      <DependentUpon>SistemaDeGerenciamento2_0.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_grupo.cs">
+      <DependentUpon>SistemaDeGerenciamento2_0.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_informacoes_comeciais.cs">
+      <DependentUpon>SistemaDeGerenciamento2_0.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_nota_fiscal_entrada.cs">
+      <DependentUpon>SistemaDeGerenciamento2_0.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_nota_fiscal_saida.cs">
+      <DependentUpon>SistemaDeGerenciamento2_0.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_permissoes.cs">
+      <DependentUpon>SistemaDeGerenciamento2_0.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_produto.cs">
+      <DependentUpon>SistemaDeGerenciamento2_0.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_registro.cs">
+      <DependentUpon>SistemaDeGerenciamento2_0.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_repeticao_despesa.cs">
+      <DependentUpon>SistemaDeGerenciamento2_0.tt</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Forms\frmAcessoRapido.resx">
       <DependentUpon>frmAcessoRapido.cs</DependentUpon>
     </EmbeddedResource>
@@ -251,6 +296,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmDadosEmpresa.resx">
       <DependentUpon>frmDadosEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPermissoes.resx">
+      <DependentUpon>frmPermissoes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmProdutos.resx">
       <DependentUpon>frmProdutos.cs</DependentUpon>
@@ -364,6 +412,14 @@
     <None Include="Resources\cadastro_20.png" />
     <None Include="Resources\empresa_20.png" />
     <None Include="Resources\perfil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\olho_aberto_20.png" />
+    <None Include="Resources\olho_20.png" />
+    <None Include="Resources\olhos_15.png" />
+    <None Include="Resources\separador - Copia.png" />
+    <None Include="Resources\acesso_20px.png" />
+    <None Include="Resources\permissao_20.png" />
     <Content Include="SistemaDeGerenciamento2_0.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>SistemaDeGerenciamento2_0.edmx</DependentUpon>

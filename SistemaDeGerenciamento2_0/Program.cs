@@ -1,9 +1,5 @@
-﻿using DevExpress.Skins;
-using DevExpress.UserSkins;
-using SistemaDeGerenciamento2_0.Forms;
+﻿using SistemaDeGerenciamento2_0.Forms;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Windows.Forms;
 
 namespace SistemaDeGerenciamento2_0
@@ -20,7 +16,8 @@ namespace SistemaDeGerenciamento2_0
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new frmTelaPrincipal());
             //Application.Run(new frmEntradaNF());
-            Application.Run(new frmNovoUsuario());
+            //Application.Run(new frmNovoUsuario());
+            Application.Run(new frmCadastroUsuario());
         }
     }
 }

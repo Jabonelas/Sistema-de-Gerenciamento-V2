@@ -1,7 +1,4 @@
-﻿using System;
-using System.Linq;
-
-namespace SistemaDeGerenciamento2_0.Class
+﻿namespace SistemaDeGerenciamento2_0.Class
 {
     public partial class DadosCEP
     {

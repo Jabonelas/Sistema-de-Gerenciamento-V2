@@ -1,14 +1,10 @@
-﻿using DevExpress.XtraEditors;
-using SistemaDeGerenciamento2_0.Class;
+﻿using SistemaDeGerenciamento2_0.Class;
 using SistemaDeGerenciamento2_0.Properties;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -25,11 +21,6 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private List<tb_registro> listaDadosEmpresa = new List<tb_registro>();
         private List<tb_enderecos> listaEnderecoEmpresa = new List<tb_enderecos>();
-
-        private void das()
-        {
-            sist
-        }
 
         public frmDadosEmpresa()
         {
@@ -307,7 +298,7 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             try
             {
-                using (SistemaDeGerenciamento2_0Entities5 db = new SistemaDeGerenciamento2_0Entities5())
+                using (SistemaDeGerenciamento2_0Entities7 db = new SistemaDeGerenciamento2_0Entities7())
                 {
                     var enderecoEmpresa = db.tb_enderecos.Where(x => x.id_endereco.Equals(IDEndereco)).ToList();
 
@@ -337,7 +328,7 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             try
             {
-                using (SistemaDeGerenciamento2_0Entities5 db = new SistemaDeGerenciamento2_0Entities5())
+                using (SistemaDeGerenciamento2_0Entities7 db = new SistemaDeGerenciamento2_0Entities7())
                 {
                     var dadosEmpresa = db.tb_registro.Where(x => x.rg_categoria.Equals("Empresa")).ToList();
 
@@ -368,7 +359,7 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             try
             {
-                using (SistemaDeGerenciamento2_0Entities5 db = new SistemaDeGerenciamento2_0Entities5())
+                using (SistemaDeGerenciamento2_0Entities7 db = new SistemaDeGerenciamento2_0Entities7())
                 {
                     listaEnderecoEmpresa = db.tb_enderecos.Where(x => x.id_endereco.Equals(IDEndereco)).ToList();
                 }
@@ -385,7 +376,7 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             try
             {
-                using (SistemaDeGerenciamento2_0Entities5 db = new SistemaDeGerenciamento2_0Entities5())
+                using (SistemaDeGerenciamento2_0Entities7 db = new SistemaDeGerenciamento2_0Entities7())
                 {
                     listaDadosEmpresa = db.tb_registro.Where(x => x.rg_categoria.Equals("Empresa")).ToList();
 
@@ -407,7 +398,7 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             try
             {
-                using (SistemaDeGerenciamento2_0Entities5 db = new SistemaDeGerenciamento2_0Entities5())
+                using (SistemaDeGerenciamento2_0Entities7 db = new SistemaDeGerenciamento2_0Entities7())
                 {
                     var enderecoEmpresa = new tb_enderecos()
                     {
@@ -440,7 +431,7 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             try
             {
-                using (SistemaDeGerenciamento2_0Entities5 db = new SistemaDeGerenciamento2_0Entities5())
+                using (SistemaDeGerenciamento2_0Entities7 db = new SistemaDeGerenciamento2_0Entities7())
                 {
                     var dadosEmpresa = new tb_registro()
                     {

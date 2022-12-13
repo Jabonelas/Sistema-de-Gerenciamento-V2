@@ -1,15 +1,9 @@
-﻿using DevExpress.Emf;
-using DevExpress.XtraEditors;
-using SistemaDeGerenciamento2_0.Class;
+﻿using SistemaDeGerenciamento2_0.Class;
 using SistemaDeGerenciamento2_0.Properties;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace SistemaDeGerenciamento2_0.Forms
@@ -18,8 +12,6 @@ namespace SistemaDeGerenciamento2_0.Forms
     {
         private int X = 0;
         private int Y = 0;
-
-        private bool isExiteAgrupadorCadastradoComMesmoNome = false;
 
         public frmCadastroAgrupador()
         {
@@ -35,9 +27,7 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             if (txtAgrupador.Text != string.Empty)
             {
-                VerificarExistenciaAgrupador();
-
-                if (isExiteAgrupadorCadastradoComMesmoNome == false)
+                if (IsNomeAgrupadorExiste() == false)
                 {
                     ConexaoSalvar();
 
@@ -114,24 +104,15 @@ namespace SistemaDeGerenciamento2_0.Forms
             }
         }
 
-        private void VerificarExistenciaAgrupador()
+        private bool IsNomeAgrupadorExiste()
         {
             try
             {
-                using (SistemaDeGerenciamento2_0Entities5 db = new SistemaDeGerenciamento2_0Entities5())
+                using (SistemaDeGerenciamento2_0Entities7 db = new SistemaDeGerenciamento2_0Entities7())
                 {
-                    var agrupador = db.tb_grupo.Where(x => x.gp_nome_agrupador.Equals(txtAgrupador.Text))
-                                .Select(x => x.gp_nome_agrupador)
-                                .ToList();
+                    var agrupador = db.tb_grupo.Where(x => x.gp_nome_agrupador.Equals(txtAgrupador.Text)).Any();
 
-                    if (agrupador.Count > 0)
-                    {
-                        isExiteAgrupadorCadastradoComMesmoNome = true;
-                    }
-                    else
-                    {
-                        isExiteAgrupadorCadastradoComMesmoNome = false;
-                    }
+                    return agrupador;
                 }
             }
             catch (Exception x)
@@ -139,6 +120,8 @@ namespace SistemaDeGerenciamento2_0.Forms
                 LogErros.EscreverArquivoDeLog($"{DateTime.Now} - Erro ao Buscar Agrupador - | {x.Message} | {x.StackTrace}");
 
                 MensagemErros.ErroAoBuscarAgrupador(x);
+
+                return false;
             }
         }
 
@@ -146,7 +129,7 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             try
             {
-                using (SistemaDeGerenciamento2_0Entities5 db = new SistemaDeGerenciamento2_0Entities5())
+                using (SistemaDeGerenciamento2_0Entities7 db = new SistemaDeGerenciamento2_0Entities7())
                 {
                     var subGrupo = new tb_grupo() { gp_nome_agrupador = txtAgrupador.Text };
                     db.tb_grupo.Add(subGrupo);

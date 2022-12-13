@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-    <Schema Namespace="SistemaDeGerenciamento2_0Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+      <Schema Namespace="SistemaDeGerenciamento2_0Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="tb_cadastro_despesa">
           <Key>
             <PropertyRef Name="id_categoria_despesa" />
@@ -442,7 +442,8 @@
             <End Role="tb_repeticao_despesa" EntitySet="tb_repeticao_despesa" />
           </AssociationSet>
         </EntityContainer>
-      </Schema></edmx:StorageModels>
+      </Schema>
+    </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="SistemaDeGerenciamento2_0Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -493,28 +494,28 @@
           <Property Name="ed_tipo" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="ed_cep" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
           <Property Name="ed_locgradouro" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="ed_numero" Type="String" Nullable="false" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="ed_numero" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="ed_complemento" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
           <Property Name="ed_bairro" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="ed_cidade" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ed_estado" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
           <NavigationProperty Name="tb_registro" Relationship="Self.tb_registro_fk2" FromRole="tb_enderecos" ToRole="tb_registro" />
-          <Property Name="ed_estado" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityType Name="tb_estoque">
           <Key>
             <PropertyRef Name="id_estoque" />
           </Key>
           <Property Name="id_estoque" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ep_quantidade" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
+          <Property Name="ep_data_entrada" Type="DateTime" Precision="0" />
           <Property Name="ep_data_exclusao" Type="DateTime" Precision="0" />
-          <Property Name="ep_codigo_barras" Type="String" Nullable="false" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="ep_codigo_barras" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="ep_status_situacao" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
           <Property Name="fk_produto" Type="Int32" Nullable="false" />
           <Property Name="fk_nota_fiscal_entrada" Type="Int32" Nullable="false" />
           <NavigationProperty Name="tb_produto" Relationship="Self.tb_estoque_fk0" FromRole="tb_estoque" ToRole="tb_produto" />
           <NavigationProperty Name="tb_nota_fiscal_entrada" Relationship="Self.tb_estoque_fk1" FromRole="tb_estoque" ToRole="tb_nota_fiscal_entrada" />
           <NavigationProperty Name="tb_nota_fiscal_saida" Relationship="Self.tb_nota_fiscal_saida_fk0" FromRole="tb_estoque" ToRole="tb_nota_fiscal_saida" />
-          <Property Name="ep_quantidade" Type="Decimal" Nullable="false" Precision="10" Scale="2" />
-          <Property Name="ep_data_entrada" Type="DateTime" Precision="0" />
         </EntityType>
         <EntityType Name="tb_grupo">
           <Key>
@@ -544,7 +545,7 @@
           <Property Name="id_nota_fiscal_entrada" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="nfe_numero_nf_entrada" Type="Int32" Nullable="false" />
           <Property Name="nfe_quantidade" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
-          <Property Name="nfe_codigo_produto" Type="String" Nullable="false" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="nfe_codigo_produto" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="nfe_indice" Type="Int32" Nullable="false" />
           <Property Name="nfe_cnpj" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="nfe_razao_social" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
@@ -576,10 +577,10 @@
         </EntityType>
         <EntityType Name="tb_permissoes">
           <Key>
-            <PropertyRef Name="id_acesso_pdv" />
             <PropertyRef Name="id_permissoes" />
           </Key>
-          <Property Name="id_acesso_pdv" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="id_permissoes" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="pm_acesso_pdv" Type="Binary" MaxLength="1" FixedLength="true" Nullable="false" />
           <Property Name="pm_vendas_do_dias" Type="Binary" MaxLength="1" FixedLength="true" Nullable="false" />
           <Property Name="pm_receber_conta" Type="Binary" MaxLength="1" FixedLength="true" Nullable="false" />
           <Property Name="pm_todas_vendas" Type="Binary" MaxLength="1" FixedLength="true" Nullable="false" />
@@ -613,9 +614,6 @@
           <Property Name="pm_visualizar_cadastro_completo" Type="Binary" MaxLength="1" FixedLength="true" Nullable="false" />
           <Property Name="pm_editar_cretido_cadastro" Type="Binary" MaxLength="1" FixedLength="true" Nullable="false" />
           <NavigationProperty Name="tb_registro" Relationship="Self.tb_registro_fk0" FromRole="tb_permissoes" ToRole="tb_registro" />
-          <Property Name="id_permissoes" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="pm_acesso_pdv" Type="Binary" Nullable="false" MaxLength="1" FixedLength="true" />
-          <NavigationProperty Name="tb_registro1" Relationship="SistemaDeGerenciamento2_0Model.tb_registro_fk01" FromRole="tb_permissoes" ToRole="tb_registro" />
         </EntityType>
         <EntityType Name="tb_produto">
           <Key>
@@ -663,6 +661,8 @@
           <Property Name="rg_inscricao_estadual" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
           <Property Name="rg_inscricao_municipal" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
           <Property Name="rg_email" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="rg_celular" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="rg_telefone_fixo" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
           <Property Name="fk_permissoes" Type="Int32" />
           <Property Name="fk_informacao_comercial" Type="Int32" />
           <Property Name="fk_endereco" Type="Int32" />
@@ -673,9 +673,6 @@
           <NavigationProperty Name="tb_permissoes" Relationship="Self.tb_registro_fk0" FromRole="tb_registro" ToRole="tb_permissoes" />
           <NavigationProperty Name="tb_produto" Relationship="Self.tb_produto_fk1" FromRole="tb_registro" ToRole="tb_produto" />
           <NavigationProperty Name="tb_repeticao_despesa" Relationship="Self.tb_repeticao_despesa_fk0" FromRole="tb_registro" ToRole="tb_repeticao_despesa" />
-          <Property Name="rg_celular" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
-          <Property Name="rg_telefone_fixo" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
-          <NavigationProperty Name="tb_permissoes1" Relationship="SistemaDeGerenciamento2_0Model.tb_registro_fk01" FromRole="tb_registro" ToRole="tb_permissoes" />
         </EntityType>
         <EntityType Name="tb_repeticao_despesa">
           <Key>
@@ -815,7 +812,7 @@
           <End Role="tb_registro" Type="Self.tb_registro" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="tb_permissoes">
-              <PropertyRef Name="id_acesso_pdv" />
+              <PropertyRef Name="id_permissoes" />
             </Principal>
             <Dependent Role="tb_registro">
               <PropertyRef Name="fk_permissoes" />
@@ -846,7 +843,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="SistemaDeGerenciamento2_0Entities5" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="SistemaDeGerenciamento2_0Entities7" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="tb_cadastro_despesa" EntityType="Self.tb_cadastro_despesa" />
           <EntitySet Name="tb_configuracao_financeira" EntityType="Self.tb_configuracao_financeira" />
           <EntitySet Name="tb_despesa" EntityType="Self.tb_despesa" />
@@ -912,29 +909,13 @@
             <End Role="tb_registro" EntitySet="tb_registro" />
             <End Role="tb_repeticao_despesa" EntitySet="tb_repeticao_despesa" />
           </AssociationSet>
-          <AssociationSet Name="tb_registro_fk01" Association="SistemaDeGerenciamento2_0Model.tb_registro_fk01">
-            <End Role="tb_permissoes" EntitySet="tb_permissoes" />
-            <End Role="tb_registro" EntitySet="tb_registro" />
-          </AssociationSet>
         </EntityContainer>
-        <Association Name="tb_registro_fk01">
-          <End Type="SistemaDeGerenciamento2_0Model.tb_permissoes" Role="tb_permissoes" Multiplicity="0..1" />
-          <End Type="SistemaDeGerenciamento2_0Model.tb_registro" Role="tb_registro" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="tb_permissoes">
-              <PropertyRef Name="id_permissoes" />
-            </Principal>
-            <Dependent Role="tb_registro">
-              <PropertyRef Name="fk_permissoes" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="SistemaDeGerenciamento2_0ModelStoreContainer" CdmEntityContainer="SistemaDeGerenciamento2_0Entities5">
+        <EntityContainerMapping StorageEntityContainer="SistemaDeGerenciamento2_0ModelStoreContainer" CdmEntityContainer="SistemaDeGerenciamento2_0Entities7">
           <EntitySetMapping Name="tb_cadastro_despesa">
             <EntityTypeMapping TypeName="SistemaDeGerenciamento2_0Model.tb_cadastro_despesa">
               <MappingFragment StoreEntitySet="tb_cadastro_despesa">
@@ -977,7 +958,6 @@
           <EntitySetMapping Name="tb_enderecos">
             <EntityTypeMapping TypeName="SistemaDeGerenciamento2_0Model.tb_enderecos">
               <MappingFragment StoreEntitySet="tb_enderecos">
-                <ScalarProperty Name="ed_estado" ColumnName="ed_estado" />
                 <ScalarProperty Name="id_endereco" ColumnName="id_endereco" />
                 <ScalarProperty Name="ed_tipo" ColumnName="ed_tipo" />
                 <ScalarProperty Name="ed_cep" ColumnName="ed_cep" />
@@ -986,15 +966,16 @@
                 <ScalarProperty Name="ed_complemento" ColumnName="ed_complemento" />
                 <ScalarProperty Name="ed_bairro" ColumnName="ed_bairro" />
                 <ScalarProperty Name="ed_cidade" ColumnName="ed_cidade" />
+                <ScalarProperty Name="ed_estado" ColumnName="ed_estado" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="tb_estoque">
             <EntityTypeMapping TypeName="SistemaDeGerenciamento2_0Model.tb_estoque">
               <MappingFragment StoreEntitySet="tb_estoque">
-                <ScalarProperty Name="ep_data_entrada" ColumnName="ep_data_entrada" />
-                <ScalarProperty Name="ep_quantidade" ColumnName="ep_quantidade" />
                 <ScalarProperty Name="id_estoque" ColumnName="id_estoque" />
+                <ScalarProperty Name="ep_quantidade" ColumnName="ep_quantidade" />
+                <ScalarProperty Name="ep_data_entrada" ColumnName="ep_data_entrada" />
                 <ScalarProperty Name="ep_data_exclusao" ColumnName="ep_data_exclusao" />
                 <ScalarProperty Name="ep_codigo_barras" ColumnName="ep_codigo_barras" />
                 <ScalarProperty Name="ep_status_situacao" ColumnName="ep_status_situacao" />
@@ -1062,8 +1043,8 @@
           <EntitySetMapping Name="tb_permissoes">
             <EntityTypeMapping TypeName="SistemaDeGerenciamento2_0Model.tb_permissoes">
               <MappingFragment StoreEntitySet="tb_permissoes">
-                <ScalarProperty Name="pm_acesso_pdv" ColumnName="pm_acesso_pdv" />
                 <ScalarProperty Name="id_permissoes" ColumnName="id_permissoes" />
+                <ScalarProperty Name="pm_acesso_pdv" ColumnName="pm_acesso_pdv" />
                 <ScalarProperty Name="pm_vendas_do_dias" ColumnName="pm_vendas_do_dias" />
                 <ScalarProperty Name="pm_receber_conta" ColumnName="pm_receber_conta" />
                 <ScalarProperty Name="pm_todas_vendas" ColumnName="pm_todas_vendas" />
@@ -1123,8 +1104,6 @@
           <EntitySetMapping Name="tb_registro">
             <EntityTypeMapping TypeName="SistemaDeGerenciamento2_0Model.tb_registro">
               <MappingFragment StoreEntitySet="tb_registro">
-                <ScalarProperty Name="rg_telefone_fixo" ColumnName="rg_telefone_fixo" />
-                <ScalarProperty Name="rg_celular" ColumnName="rg_celular" />
                 <ScalarProperty Name="id_registro" ColumnName="id_registro" />
                 <ScalarProperty Name="rg_tipo_cadastro" ColumnName="rg_tipo_cadastro" />
                 <ScalarProperty Name="rg_categoria" ColumnName="rg_categoria" />
@@ -1144,6 +1123,8 @@
                 <ScalarProperty Name="rg_inscricao_estadual" ColumnName="rg_inscricao_estadual" />
                 <ScalarProperty Name="rg_inscricao_municipal" ColumnName="rg_inscricao_municipal" />
                 <ScalarProperty Name="rg_email" ColumnName="rg_email" />
+                <ScalarProperty Name="rg_celular" ColumnName="rg_celular" />
+                <ScalarProperty Name="rg_telefone_fixo" ColumnName="rg_telefone_fixo" />
                 <ScalarProperty Name="fk_permissoes" ColumnName="fk_permissoes" />
                 <ScalarProperty Name="fk_informacao_comercial" ColumnName="fk_informacao_comercial" />
                 <ScalarProperty Name="fk_endereco" ColumnName="fk_endereco" />

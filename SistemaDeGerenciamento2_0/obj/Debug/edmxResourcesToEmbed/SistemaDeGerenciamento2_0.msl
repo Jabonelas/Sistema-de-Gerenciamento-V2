@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="SistemaDeGerenciamento2_0ModelStoreContainer" CdmEntityContainer="SistemaDeGerenciamento2_0Entities5">
+  <EntityContainerMapping StorageEntityContainer="SistemaDeGerenciamento2_0ModelStoreContainer" CdmEntityContainer="SistemaDeGerenciamento2_0Entities7">
     <EntitySetMapping Name="tb_cadastro_despesa">
       <EntityTypeMapping TypeName="SistemaDeGerenciamento2_0Model.tb_cadastro_despesa">
         <MappingFragment StoreEntitySet="tb_cadastro_despesa">
@@ -43,7 +43,6 @@
     <EntitySetMapping Name="tb_enderecos">
       <EntityTypeMapping TypeName="SistemaDeGerenciamento2_0Model.tb_enderecos">
         <MappingFragment StoreEntitySet="tb_enderecos">
-          <ScalarProperty Name="ed_estado" ColumnName="ed_estado" />
           <ScalarProperty Name="id_endereco" ColumnName="id_endereco" />
           <ScalarProperty Name="ed_tipo" ColumnName="ed_tipo" />
           <ScalarProperty Name="ed_cep" ColumnName="ed_cep" />
@@ -52,15 +51,16 @@
           <ScalarProperty Name="ed_complemento" ColumnName="ed_complemento" />
           <ScalarProperty Name="ed_bairro" ColumnName="ed_bairro" />
           <ScalarProperty Name="ed_cidade" ColumnName="ed_cidade" />
+          <ScalarProperty Name="ed_estado" ColumnName="ed_estado" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="tb_estoque">
       <EntityTypeMapping TypeName="SistemaDeGerenciamento2_0Model.tb_estoque">
         <MappingFragment StoreEntitySet="tb_estoque">
-          <ScalarProperty Name="ep_data_entrada" ColumnName="ep_data_entrada" />
-          <ScalarProperty Name="ep_quantidade" ColumnName="ep_quantidade" />
           <ScalarProperty Name="id_estoque" ColumnName="id_estoque" />
+          <ScalarProperty Name="ep_quantidade" ColumnName="ep_quantidade" />
+          <ScalarProperty Name="ep_data_entrada" ColumnName="ep_data_entrada" />
           <ScalarProperty Name="ep_data_exclusao" ColumnName="ep_data_exclusao" />
           <ScalarProperty Name="ep_codigo_barras" ColumnName="ep_codigo_barras" />
           <ScalarProperty Name="ep_status_situacao" ColumnName="ep_status_situacao" />
@@ -128,8 +128,8 @@
     <EntitySetMapping Name="tb_permissoes">
       <EntityTypeMapping TypeName="SistemaDeGerenciamento2_0Model.tb_permissoes">
         <MappingFragment StoreEntitySet="tb_permissoes">
-          <ScalarProperty Name="pm_acesso_pdv" ColumnName="pm_acesso_pdv" />
           <ScalarProperty Name="id_permissoes" ColumnName="id_permissoes" />
+          <ScalarProperty Name="pm_acesso_pdv" ColumnName="pm_acesso_pdv" />
           <ScalarProperty Name="pm_vendas_do_dias" ColumnName="pm_vendas_do_dias" />
           <ScalarProperty Name="pm_receber_conta" ColumnName="pm_receber_conta" />
           <ScalarProperty Name="pm_todas_vendas" ColumnName="pm_todas_vendas" />
@@ -189,8 +189,6 @@
     <EntitySetMapping Name="tb_registro">
       <EntityTypeMapping TypeName="SistemaDeGerenciamento2_0Model.tb_registro">
         <MappingFragment StoreEntitySet="tb_registro">
-          <ScalarProperty Name="rg_telefone_fixo" ColumnName="rg_telefone_fixo" />
-          <ScalarProperty Name="rg_celular" ColumnName="rg_celular" />
           <ScalarProperty Name="id_registro" ColumnName="id_registro" />
           <ScalarProperty Name="rg_tipo_cadastro" ColumnName="rg_tipo_cadastro" />
           <ScalarProperty Name="rg_categoria" ColumnName="rg_categoria" />
@@ -210,6 +208,8 @@
           <ScalarProperty Name="rg_inscricao_estadual" ColumnName="rg_inscricao_estadual" />
           <ScalarProperty Name="rg_inscricao_municipal" ColumnName="rg_inscricao_municipal" />
           <ScalarProperty Name="rg_email" ColumnName="rg_email" />
+          <ScalarProperty Name="rg_celular" ColumnName="rg_celular" />
+          <ScalarProperty Name="rg_telefone_fixo" ColumnName="rg_telefone_fixo" />
           <ScalarProperty Name="fk_permissoes" ColumnName="fk_permissoes" />
           <ScalarProperty Name="fk_informacao_comercial" ColumnName="fk_informacao_comercial" />
           <ScalarProperty Name="fk_endereco" ColumnName="fk_endereco" />

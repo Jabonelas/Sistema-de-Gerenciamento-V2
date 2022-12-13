@@ -1,17 +1,11 @@
-﻿using DevExpress.XtraEditors;
-using SistemaDeGerenciamento2_0.Class;
+﻿using SistemaDeGerenciamento2_0.Class;
 using SistemaDeGerenciamento2_0.Properties;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
-using static SistemaDeGerenciamento2_0.Forms.frmEntradaNF;
 
 namespace SistemaDeGerenciamento2_0.Forms
 {
@@ -95,37 +89,19 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private void Salvar()
         {
-            bool IsCnpjFornecedorCadastrado = VerificarExistenciaCadastroFornecedor();
-
-            if (IsCnpjFornecedorCadastrado == true)
+            if (VerificarExistenciaCadastroFornecedor() == true
+                && VerificarExistenciaNF() == false
+                && VerificarCNPJRecepitor() == true
+                && VerificandoCodigoProdutoEDescricao() == true
+                && VerificandoValorProduto() == true)
             {
-                bool IsNFExistente = VerificarExistenciaNF();
+                SalvarNFEntrada();
 
-                if (IsNFExistente == false)
-                {
-                    bool IsCnpjDaEmpresa = VerificarCNPJRecepitor();
+                AdicionandoFKNFEntradaNaListaDadosNFEntrada();
 
-                    if (IsCnpjDaEmpresa == true)
-                    {
-                        bool IsCodigoProdutoEDescricaoCadastrado = VerificandoCodigoProdutoEDescricao();
+                SalvarEstoque();
 
-                        if (IsCodigoProdutoEDescricaoCadastrado == true)
-                        {
-                            bool IsValorProdutoIgualValorCadastrado = VerificandoValorProduto();
-
-                            if (IsValorProdutoIgualValorCadastrado == true)
-                            {
-                                SalvarNFEntrada();
-
-                                AdicionandoFKNFEntradaNaListaDadosNFEntrada();
-
-                                SalvarEstoque();
-
-                                ChamandoAlertaSucessoNoCantoInferiorDireito();
-                            }
-                        }
-                    }
-                }
+                ChamandoAlertaSucessoNoCantoInferiorDireito();
             }
         }
 
@@ -166,7 +142,7 @@ namespace SistemaDeGerenciamento2_0.Forms
             {
                 List<string> ListaValorProduto = new List<string>();
 
-                using (SistemaDeGerenciamento2_0Entities5 db = new SistemaDeGerenciamento2_0Entities5())
+                using (SistemaDeGerenciamento2_0Entities7 db = new SistemaDeGerenciamento2_0Entities7())
                 {
                     int i = 0;
 
@@ -211,7 +187,7 @@ namespace SistemaDeGerenciamento2_0.Forms
             {
                 List<string> ListaCodigoProdutoEDescricaoCadastrado = new List<string>();
 
-                using (SistemaDeGerenciamento2_0Entities5 db = new SistemaDeGerenciamento2_0Entities5())
+                using (SistemaDeGerenciamento2_0Entities7 db = new SistemaDeGerenciamento2_0Entities7())
                 {
                     int i = 0;
 
@@ -598,7 +574,7 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             try
             {
-                using (SistemaDeGerenciamento2_0Entities5 db = new SistemaDeGerenciamento2_0Entities5())
+                using (SistemaDeGerenciamento2_0Entities7 db = new SistemaDeGerenciamento2_0Entities7())
                 {
                     foreach (var item in ListaDadosNFEntrada)
                     {
@@ -649,7 +625,7 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             try
             {
-                using (SistemaDeGerenciamento2_0Entities5 db = new SistemaDeGerenciamento2_0Entities5())
+                using (SistemaDeGerenciamento2_0Entities7 db = new SistemaDeGerenciamento2_0Entities7())
                 {
                     foreach (var item in ListaDadosNFEntrada)
                     {
@@ -680,21 +656,16 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             try
             {
-                using (SistemaDeGerenciamento2_0Entities5 db = new SistemaDeGerenciamento2_0Entities5())
+                using (SistemaDeGerenciamento2_0Entities7 db = new SistemaDeGerenciamento2_0Entities7())
                 {
                     var verificarCnpjRecepitor = db.tb_registro.Where(x => x.rg_categoria == "Empresa" && x.rg_cnpj == cnpjRecepitor)
-                        .Select(x => x.rg_cnpj).ToList();
+                        .Select(x => x.rg_cnpj).Any();
 
-                    if (verificarCnpjRecepitor.Count > 0)
-                    {
-                        return true;
-                    }
-                    else
+                    if (verificarCnpjRecepitor == false)
                     {
                         MensagemAtencao.MensagemNaoCadastrado("Destinatário");
-
-                        return false;
                     }
+                    return false;
                 }
             }
             catch (Exception x)
@@ -711,23 +682,19 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             try
             {
-                using (SistemaDeGerenciamento2_0Entities5 db = new SistemaDeGerenciamento2_0Entities5())
+                using (SistemaDeGerenciamento2_0Entities7 db = new SistemaDeGerenciamento2_0Entities7())
                 {
                     int numeroNFTextBox = Convert.ToInt32(txtNumeroNF.Text);
 
                     var numeroNF = db.tb_nota_fiscal_entrada.Where(x => x.nfe_cnpj == txtCNPJEmissor.Text &&
-                    x.nfe_numero_nf_entrada == numeroNFTextBox).Select(x => x.nfe_cnpj).ToList();
+                    x.nfe_numero_nf_entrada == numeroNFTextBox).Any();
 
-                    if (numeroNF.Count > 0)
+                    if (numeroNF == true)
                     {
                         MensagemAtencao.MensagemJaExistente("Nota Fiscal");
+                    }
 
-                        return true;
-                    }
-                    else
-                    {
-                        return false;
-                    }
+                    return numeroNF;
                 }
             }
             catch (Exception x)
@@ -744,20 +711,16 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             try
             {
-                using (SistemaDeGerenciamento2_0Entities5 db = new SistemaDeGerenciamento2_0Entities5())
+                using (SistemaDeGerenciamento2_0Entities7 db = new SistemaDeGerenciamento2_0Entities7())
                 {
-                    var cnpj = db.tb_registro.Where(x => x.rg_cnpj.Equals(txtCNPJEmissor.Text)).Select(x => x.rg_cnpj).ToList();
+                    var cnpj = db.tb_registro.Where(x => x.rg_cnpj.Equals(txtCNPJEmissor.Text)).Any();
 
-                    if (cnpj.Count > 0)
-                    {
-                        return true;
-                    }
-                    else
+                    if (cnpj == false)
                     {
                         MensagemAtencao.MensagemNaoCadastrado("Forncedor");
-
-                        return false;
                     }
+
+                    return cnpj;
                 }
             }
             catch (Exception x)

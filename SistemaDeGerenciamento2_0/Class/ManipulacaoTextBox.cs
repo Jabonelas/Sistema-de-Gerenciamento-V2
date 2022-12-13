@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace SistemaDeGerenciamento2_0
@@ -26,6 +22,20 @@ namespace SistemaDeGerenciamento2_0
             _textBox.Properties.MaxLength = 100;
 
             if (!Char.IsLetter(e.KeyChar) && e.KeyChar != (char)8 && e.KeyChar != (char)32)
+            {
+                e.Handled = true;
+            }
+
+            return true;
+        }
+
+        public static bool DigitoValidoParaSenha(KeyPressEventArgs e)
+        {
+            if (!Char.IsLetter(e.KeyChar) && e.KeyChar != (char)8 && e.KeyChar != (char)64
+                && !Char.IsDigit(e.KeyChar) && e.KeyChar != (char)45 && e.KeyChar != (char)46 && e.KeyChar != (char)95
+                && e.KeyChar != (char)33 && e.KeyChar != (char)35 && e.KeyChar != (char)36 && e.KeyChar != (char)37
+                && e.KeyChar != (char)168 && e.KeyChar != (char)38 && e.KeyChar != (char)42 && e.KeyChar != (char)61
+                && e.KeyChar != (char)43)
             {
                 e.Handled = true;
             }

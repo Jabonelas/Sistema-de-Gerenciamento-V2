@@ -1,13 +1,7 @@
-﻿using DevExpress.Data.Filtering.Helpers;
-using DevExpress.XtraEditors;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace SistemaDeGerenciamento2_0.Forms
@@ -82,7 +76,7 @@ namespace SistemaDeGerenciamento2_0.Forms
             dt.Columns.Add("Grupo");
             dt.Columns.Add("Agrupador");
 
-            SistemaDeGerenciamento2_0Entities5 db = new SistemaDeGerenciamento2_0Entities5();
+            SistemaDeGerenciamento2_0Entities7 db = new SistemaDeGerenciamento2_0Entities7();
 
             ListaGrupoAgrupador = db.tb_grupo.Where(x => !string.IsNullOrEmpty(x.gp_nome_grupo))
                 .Select(x => new GrupoClass { nomeGrupo = x.gp_nome_grupo, nomeAgrupador = x.gp_nome_agrupador })
