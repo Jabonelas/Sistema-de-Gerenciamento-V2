@@ -110,9 +110,9 @@ namespace SistemaDeGerenciamento2_0.Forms
             {
                 using (SistemaDeGerenciamento2_0Entities7 db = new SistemaDeGerenciamento2_0Entities7())
                 {
-                    var agrupador = db.tb_grupo.Where(x => x.gp_nome_agrupador.Equals(txtAgrupador.Text)).Any();
+                    var IsExisteAgrupador = db.tb_grupo.Where(x => x.gp_nome_agrupador.Equals(txtAgrupador.Text)).Any();
 
-                    return agrupador;
+                    return IsExisteAgrupador;
                 }
             }
             catch (Exception x)

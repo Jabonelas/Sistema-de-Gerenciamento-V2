@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="SistemaDeGerenciamento2_0Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="SistemaDeGerenciamento2_0Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="tb_cadastro_despesa">
           <Key>
             <PropertyRef Name="id_categoria_despesa" />
@@ -125,39 +125,39 @@
             <PropertyRef Name="id_permissoes" />
           </Key>
           <Property Name="id_permissoes" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="pm_acesso_pdv" Type="binary" MaxLength="1" Nullable="false" />
-          <Property Name="pm_vendas_do_dias" Type="binary" MaxLength="1" Nullable="false" />
-          <Property Name="pm_receber_conta" Type="binary" MaxLength="1" Nullable="false" />
-          <Property Name="pm_todas_vendas" Type="binary" MaxLength="1" Nullable="false" />
-          <Property Name="pm_editar_venda" Type="binary" MaxLength="1" Nullable="false" />
-          <Property Name="pm_remover_venda" Type="binary" MaxLength="1" Nullable="false" />
-          <Property Name="pm_cancelar_venda" Type="binary" MaxLength="1" Nullable="false" />
-          <Property Name="pm_realizar_devolucao" Type="binary" MaxLength="1" Nullable="false" />
-          <Property Name="pm_alerta_contas_atrasadas" Type="binary" MaxLength="1" Nullable="false" />
-          <Property Name="pm_visualizar_lancamentos" Type="binary" MaxLength="1" Nullable="false" />
-          <Property Name="pm_visualizar_contas_pagar" Type="binary" MaxLength="1" Nullable="false" />
-          <Property Name="pm_visualizar_contas_receber" Type="binary" MaxLength="1" Nullable="false" />
-          <Property Name="pm_receber_contas" Type="binary" MaxLength="1" Nullable="false" />
-          <Property Name="pm_pagar_contas" Type="binary" MaxLength="1" Nullable="false" />
-          <Property Name="pm_visualizar_fluxo_caixa" Type="binary" MaxLength="1" Nullable="false" />
-          <Property Name="pm_visualizar_lancamento_faturamento" Type="binary" MaxLength="1" Nullable="false" />
-          <Property Name="pm_ajustar_configuracao_geral" Type="binary" MaxLength="1" Nullable="false" />
-          <Property Name="pm_editar_categoria" Type="binary" MaxLength="1" Nullable="false" />
-          <Property Name="pm_criar_editar_usuario" Type="binary" MaxLength="1" Nullable="false" />
-          <Property Name="pm_visualizar_visao_geral" Type="binary" MaxLength="1" Nullable="false" />
-          <Property Name="pm_visualizar_dre" Type="binary" MaxLength="1" Nullable="false" />
-          <Property Name="pm_criar_visualizar_relatorios" Type="binary" MaxLength="1" Nullable="false" />
-          <Property Name="pm_adicionar_produto" Type="binary" MaxLength="1" Nullable="false" />
-          <Property Name="pm_editar_produto" Type="binary" MaxLength="1" Nullable="false" />
-          <Property Name="pm_remover_produto" Type="binary" MaxLength="1" Nullable="false" />
-          <Property Name="pm_filtrar_produto" Type="binary" MaxLength="1" Nullable="false" />
-          <Property Name="pm_alerta_estoque_baixo" Type="binary" MaxLength="1" Nullable="false" />
-          <Property Name="pm_tabela_produtos_removidos" Type="binary" MaxLength="1" Nullable="false" />
-          <Property Name="pm_efetuar_cadastro" Type="binary" MaxLength="1" Nullable="false" />
-          <Property Name="pm_editar_cadastro" Type="binary" MaxLength="1" Nullable="false" />
-          <Property Name="pm_remover_cadastro" Type="binary" MaxLength="1" Nullable="false" />
-          <Property Name="pm_visualizar_cadastro_completo" Type="binary" MaxLength="1" Nullable="false" />
-          <Property Name="pm_editar_cretido_cadastro" Type="binary" MaxLength="1" Nullable="false" />
+          <Property Name="pm_acesso_pdv" Type="bit" Nullable="false" />
+          <Property Name="pm_vendas_do_dias" Type="bit" Nullable="false" />
+          <Property Name="pm_receber_conta" Type="bit" Nullable="false" />
+          <Property Name="pm_todas_vendas" Type="bit" Nullable="false" />
+          <Property Name="pm_editar_venda" Type="bit" Nullable="false" />
+          <Property Name="pm_remover_venda" Type="bit" Nullable="false" />
+          <Property Name="pm_cancelar_venda" Type="bit" Nullable="false" />
+          <Property Name="pm_realizar_devolucao" Type="bit" Nullable="false" />
+          <Property Name="pm_alerta_contas_atrasadas" Type="bit" Nullable="false" />
+          <Property Name="pm_visualizar_lancamentos" Type="bit" Nullable="false" />
+          <Property Name="pm_visualizar_contas_pagar" Type="bit" Nullable="false" />
+          <Property Name="pm_visualizar_contas_receber" Type="bit" Nullable="false" />
+          <Property Name="pm_receber_contas" Type="bit" Nullable="false" />
+          <Property Name="pm_pagar_contas" Type="bit" Nullable="false" />
+          <Property Name="pm_visualizar_fluxo_caixa" Type="bit" Nullable="false" />
+          <Property Name="pm_visualizar_lancamento_faturamento" Type="bit" Nullable="false" />
+          <Property Name="pm_ajustar_configuracao_geral" Type="bit" Nullable="false" />
+          <Property Name="pm_editar_categoria" Type="bit" Nullable="false" />
+          <Property Name="pm_criar_editar_usuario" Type="bit" Nullable="false" />
+          <Property Name="pm_visualizar_visao_geral" Type="bit" Nullable="false" />
+          <Property Name="pm_visualizar_dre" Type="bit" Nullable="false" />
+          <Property Name="pm_criar_visualizar_relatorios" Type="bit" Nullable="false" />
+          <Property Name="pm_adicionar_produto" Type="bit" Nullable="false" />
+          <Property Name="pm_editar_produto" Type="bit" Nullable="false" />
+          <Property Name="pm_remover_produto" Type="bit" Nullable="false" />
+          <Property Name="pm_filtrar_produto" Type="bit" Nullable="false" />
+          <Property Name="pm_alerta_estoque_baixo" Type="bit" Nullable="false" />
+          <Property Name="pm_tabela_produtos_removidos" Type="bit" Nullable="false" />
+          <Property Name="pm_efetuar_cadastro" Type="bit" Nullable="false" />
+          <Property Name="pm_editar_cadastro" Type="bit" Nullable="false" />
+          <Property Name="pm_remover_cadastro" Type="bit" Nullable="false" />
+          <Property Name="pm_visualizar_cadastro_completo" Type="bit" Nullable="false" />
+          <Property Name="pm_editar_cretido_cadastro" Type="bit" Nullable="false" />
         </EntityType>
         <EntityType Name="tb_produto">
           <Key>
@@ -442,8 +442,7 @@
             <End Role="tb_repeticao_despesa" EntitySet="tb_repeticao_despesa" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="SistemaDeGerenciamento2_0Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -580,39 +579,39 @@
             <PropertyRef Name="id_permissoes" />
           </Key>
           <Property Name="id_permissoes" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="pm_acesso_pdv" Type="Binary" MaxLength="1" FixedLength="true" Nullable="false" />
-          <Property Name="pm_vendas_do_dias" Type="Binary" MaxLength="1" FixedLength="true" Nullable="false" />
-          <Property Name="pm_receber_conta" Type="Binary" MaxLength="1" FixedLength="true" Nullable="false" />
-          <Property Name="pm_todas_vendas" Type="Binary" MaxLength="1" FixedLength="true" Nullable="false" />
-          <Property Name="pm_editar_venda" Type="Binary" MaxLength="1" FixedLength="true" Nullable="false" />
-          <Property Name="pm_remover_venda" Type="Binary" MaxLength="1" FixedLength="true" Nullable="false" />
-          <Property Name="pm_cancelar_venda" Type="Binary" MaxLength="1" FixedLength="true" Nullable="false" />
-          <Property Name="pm_realizar_devolucao" Type="Binary" MaxLength="1" FixedLength="true" Nullable="false" />
-          <Property Name="pm_alerta_contas_atrasadas" Type="Binary" MaxLength="1" FixedLength="true" Nullable="false" />
-          <Property Name="pm_visualizar_lancamentos" Type="Binary" MaxLength="1" FixedLength="true" Nullable="false" />
-          <Property Name="pm_visualizar_contas_pagar" Type="Binary" MaxLength="1" FixedLength="true" Nullable="false" />
-          <Property Name="pm_visualizar_contas_receber" Type="Binary" MaxLength="1" FixedLength="true" Nullable="false" />
-          <Property Name="pm_receber_contas" Type="Binary" MaxLength="1" FixedLength="true" Nullable="false" />
-          <Property Name="pm_pagar_contas" Type="Binary" MaxLength="1" FixedLength="true" Nullable="false" />
-          <Property Name="pm_visualizar_fluxo_caixa" Type="Binary" MaxLength="1" FixedLength="true" Nullable="false" />
-          <Property Name="pm_visualizar_lancamento_faturamento" Type="Binary" MaxLength="1" FixedLength="true" Nullable="false" />
-          <Property Name="pm_ajustar_configuracao_geral" Type="Binary" MaxLength="1" FixedLength="true" Nullable="false" />
-          <Property Name="pm_editar_categoria" Type="Binary" MaxLength="1" FixedLength="true" Nullable="false" />
-          <Property Name="pm_criar_editar_usuario" Type="Binary" MaxLength="1" FixedLength="true" Nullable="false" />
-          <Property Name="pm_visualizar_visao_geral" Type="Binary" MaxLength="1" FixedLength="true" Nullable="false" />
-          <Property Name="pm_visualizar_dre" Type="Binary" MaxLength="1" FixedLength="true" Nullable="false" />
-          <Property Name="pm_criar_visualizar_relatorios" Type="Binary" MaxLength="1" FixedLength="true" Nullable="false" />
-          <Property Name="pm_adicionar_produto" Type="Binary" MaxLength="1" FixedLength="true" Nullable="false" />
-          <Property Name="pm_editar_produto" Type="Binary" MaxLength="1" FixedLength="true" Nullable="false" />
-          <Property Name="pm_remover_produto" Type="Binary" MaxLength="1" FixedLength="true" Nullable="false" />
-          <Property Name="pm_filtrar_produto" Type="Binary" MaxLength="1" FixedLength="true" Nullable="false" />
-          <Property Name="pm_alerta_estoque_baixo" Type="Binary" MaxLength="1" FixedLength="true" Nullable="false" />
-          <Property Name="pm_tabela_produtos_removidos" Type="Binary" MaxLength="1" FixedLength="true" Nullable="false" />
-          <Property Name="pm_efetuar_cadastro" Type="Binary" MaxLength="1" FixedLength="true" Nullable="false" />
-          <Property Name="pm_editar_cadastro" Type="Binary" MaxLength="1" FixedLength="true" Nullable="false" />
-          <Property Name="pm_remover_cadastro" Type="Binary" MaxLength="1" FixedLength="true" Nullable="false" />
-          <Property Name="pm_visualizar_cadastro_completo" Type="Binary" MaxLength="1" FixedLength="true" Nullable="false" />
-          <Property Name="pm_editar_cretido_cadastro" Type="Binary" MaxLength="1" FixedLength="true" Nullable="false" />
+          <Property Name="pm_acesso_pdv" Type="Boolean" Nullable="false" />
+          <Property Name="pm_vendas_do_dias" Type="Boolean" Nullable="false" />
+          <Property Name="pm_receber_conta" Type="Boolean" Nullable="false" />
+          <Property Name="pm_todas_vendas" Type="Boolean" Nullable="false" />
+          <Property Name="pm_editar_venda" Type="Boolean" Nullable="false" />
+          <Property Name="pm_remover_venda" Type="Boolean" Nullable="false" />
+          <Property Name="pm_cancelar_venda" Type="Boolean" Nullable="false" />
+          <Property Name="pm_realizar_devolucao" Type="Boolean" Nullable="false" />
+          <Property Name="pm_alerta_contas_atrasadas" Type="Boolean" Nullable="false" />
+          <Property Name="pm_visualizar_lancamentos" Type="Boolean" Nullable="false" />
+          <Property Name="pm_visualizar_contas_pagar" Type="Boolean" Nullable="false" />
+          <Property Name="pm_visualizar_contas_receber" Type="Boolean" Nullable="false" />
+          <Property Name="pm_receber_contas" Type="Boolean" Nullable="false" />
+          <Property Name="pm_pagar_contas" Type="Boolean" Nullable="false" />
+          <Property Name="pm_visualizar_fluxo_caixa" Type="Boolean" Nullable="false" />
+          <Property Name="pm_visualizar_lancamento_faturamento" Type="Boolean" Nullable="false" />
+          <Property Name="pm_ajustar_configuracao_geral" Type="Boolean" Nullable="false" />
+          <Property Name="pm_editar_categoria" Type="Boolean" Nullable="false" />
+          <Property Name="pm_criar_editar_usuario" Type="Boolean" Nullable="false" />
+          <Property Name="pm_visualizar_visao_geral" Type="Boolean" Nullable="false" />
+          <Property Name="pm_visualizar_dre" Type="Boolean" Nullable="false" />
+          <Property Name="pm_criar_visualizar_relatorios" Type="Boolean" Nullable="false" />
+          <Property Name="pm_adicionar_produto" Type="Boolean" Nullable="false" />
+          <Property Name="pm_editar_produto" Type="Boolean" Nullable="false" />
+          <Property Name="pm_remover_produto" Type="Boolean" Nullable="false" />
+          <Property Name="pm_filtrar_produto" Type="Boolean" Nullable="false" />
+          <Property Name="pm_alerta_estoque_baixo" Type="Boolean" Nullable="false" />
+          <Property Name="pm_tabela_produtos_removidos" Type="Boolean" Nullable="false" />
+          <Property Name="pm_efetuar_cadastro" Type="Boolean" Nullable="false" />
+          <Property Name="pm_editar_cadastro" Type="Boolean" Nullable="false" />
+          <Property Name="pm_remover_cadastro" Type="Boolean" Nullable="false" />
+          <Property Name="pm_visualizar_cadastro_completo" Type="Boolean" Nullable="false" />
+          <Property Name="pm_editar_cretido_cadastro" Type="Boolean" Nullable="false" />
           <NavigationProperty Name="tb_registro" Relationship="Self.tb_registro_fk0" FromRole="tb_permissoes" ToRole="tb_registro" />
         </EntityType>
         <EntityType Name="tb_produto">

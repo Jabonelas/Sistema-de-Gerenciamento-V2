@@ -180,7 +180,7 @@
             this.fluentDesignFormControl1.Location = new System.Drawing.Point(0, 0);
             this.fluentDesignFormControl1.Manager = this.fluentFormDefaultManager1;
             this.fluentDesignFormControl1.Name = "fluentDesignFormControl1";
-            this.fluentDesignFormControl1.Size = new System.Drawing.Size(1233, 31);
+            this.fluentDesignFormControl1.Size = new System.Drawing.Size(1237, 31);
             this.fluentDesignFormControl1.TabIndex = 2;
             this.fluentDesignFormControl1.TabStop = false;
             this.fluentDesignFormControl1.TitleItemLinks.Add(this.skinBarSubItem1);
@@ -206,14 +206,14 @@
             this.pnlTelaPrincipal.AutoScroll = true;
             this.pnlTelaPrincipal.Location = new System.Drawing.Point(260, 31);
             this.pnlTelaPrincipal.Name = "pnlTelaPrincipal";
-            this.pnlTelaPrincipal.Size = new System.Drawing.Size(973, 447);
+            this.pnlTelaPrincipal.Size = new System.Drawing.Size(977, 447);
             this.pnlTelaPrincipal.TabIndex = 3;
             // 
             // frmTelaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1233, 478);
+            this.ClientSize = new System.Drawing.Size(1237, 478);
             this.Controls.Add(this.pnlTelaPrincipal);
             this.Controls.Add(this.accordionControl1);
             this.Controls.Add(this.fluentDesignFormControl1);

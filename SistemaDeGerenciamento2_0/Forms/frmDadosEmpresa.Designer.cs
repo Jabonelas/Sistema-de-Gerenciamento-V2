@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            DevExpress.XtraSplashScreen.SplashScreenManager splashScreenManager1 = new DevExpress.XtraSplashScreen.SplashScreenManager(this, null, true, true);
             this.txtInscricaoMunicipal = new DevExpress.XtraEditors.TextEdit();
             this.txtInscricaoEstadual = new DevExpress.XtraEditors.TextEdit();
             this.pictureEdit2 = new DevExpress.XtraEditors.PictureEdit();
@@ -71,6 +72,8 @@
             this.btnSalvar = new DevExpress.XtraEditors.SimpleButton();
             this.txtNomeFantasia = new DevExpress.XtraEditors.TextEdit();
             this.AlertaSalvar = new DevExpress.XtraBars.Alerter.AlertControl(this.components);
+            this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.txtInscricaoMunicipal.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtInscricaoEstadual.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).BeginInit();
@@ -92,11 +95,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit3.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNomeFantasia.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
+            // 
+            // splashScreenManager1
+            // 
+            splashScreenManager1.ClosingDelay = 500;
             // 
             // txtInscricaoMunicipal
             // 
-            this.txtInscricaoMunicipal.Location = new System.Drawing.Point(668, 58);
+            this.txtInscricaoMunicipal.Location = new System.Drawing.Point(665, 113);
             this.txtInscricaoMunicipal.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtInscricaoMunicipal.Name = "txtInscricaoMunicipal";
             this.txtInscricaoMunicipal.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -110,7 +118,7 @@
             // 
             // txtInscricaoEstadual
             // 
-            this.txtInscricaoEstadual.Location = new System.Drawing.Point(341, 58);
+            this.txtInscricaoEstadual.Location = new System.Drawing.Point(338, 113);
             this.txtInscricaoEstadual.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtInscricaoEstadual.Name = "txtInscricaoEstadual";
             this.txtInscricaoEstadual.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -125,7 +133,7 @@
             // pictureEdit2
             // 
             this.pictureEdit2.EditValue = global::SistemaDeGerenciamento2_0.Properties.Resources.informacao20;
-            this.pictureEdit2.Location = new System.Drawing.Point(804, 30);
+            this.pictureEdit2.Location = new System.Drawing.Point(801, 85);
             this.pictureEdit2.Name = "pictureEdit2";
             this.pictureEdit2.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.pictureEdit2.Properties.Appearance.Options.UseBackColor = true;
@@ -139,7 +147,7 @@
             // pictureEdit1
             // 
             this.pictureEdit1.EditValue = global::SistemaDeGerenciamento2_0.Properties.Resources.informacao20;
-            this.pictureEdit1.Location = new System.Drawing.Point(468, 30);
+            this.pictureEdit1.Location = new System.Drawing.Point(465, 85);
             this.pictureEdit1.Name = "pictureEdit1";
             this.pictureEdit1.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.pictureEdit1.Properties.Appearance.Options.UseBackColor = true;
@@ -154,7 +162,7 @@
             // 
             this.labelControl6.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl6.Appearance.Options.UseFont = true;
-            this.labelControl6.Location = new System.Drawing.Point(668, 30);
+            this.labelControl6.Location = new System.Drawing.Point(665, 85);
             this.labelControl6.Name = "labelControl6";
             this.labelControl6.Size = new System.Drawing.Size(130, 20);
             this.labelControl6.TabIndex = 257;
@@ -164,7 +172,7 @@
             // 
             this.labelControl4.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl4.Appearance.Options.UseFont = true;
-            this.labelControl4.Location = new System.Drawing.Point(341, 30);
+            this.labelControl4.Location = new System.Drawing.Point(338, 85);
             this.labelControl4.Name = "labelControl4";
             this.labelControl4.Size = new System.Drawing.Size(121, 20);
             this.labelControl4.TabIndex = 255;
@@ -172,7 +180,7 @@
             // 
             // txtRazaoSocial
             // 
-            this.txtRazaoSocial.Location = new System.Drawing.Point(532, 118);
+            this.txtRazaoSocial.Location = new System.Drawing.Point(529, 173);
             this.txtRazaoSocial.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtRazaoSocial.Name = "txtRazaoSocial";
             this.txtRazaoSocial.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -186,7 +194,7 @@
             // 
             this.labelControl3.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl3.Appearance.Options.UseFont = true;
-            this.labelControl3.Location = new System.Drawing.Point(532, 92);
+            this.labelControl3.Location = new System.Drawing.Point(529, 147);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Size = new System.Drawing.Size(88, 20);
             this.labelControl3.TabIndex = 254;
@@ -196,7 +204,7 @@
             // 
             this.labelControl1.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl1.Appearance.Options.UseFont = true;
-            this.labelControl1.Location = new System.Drawing.Point(6, 92);
+            this.labelControl1.Location = new System.Drawing.Point(3, 147);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(102, 20);
             this.labelControl1.TabIndex = 253;
@@ -206,7 +214,7 @@
             // 
             this.labelControl2.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl2.Appearance.Options.UseFont = true;
-            this.labelControl2.Location = new System.Drawing.Point(6, 30);
+            this.labelControl2.Location = new System.Drawing.Point(3, 85);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(36, 20);
             this.labelControl2.TabIndex = 252;
@@ -214,7 +222,7 @@
             // 
             // txtCNPJ
             // 
-            this.txtCNPJ.Location = new System.Drawing.Point(6, 58);
+            this.txtCNPJ.Location = new System.Drawing.Point(3, 113);
             this.txtCNPJ.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtCNPJ.Name = "txtCNPJ";
             this.txtCNPJ.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -226,7 +234,7 @@
             // 
             // cmbEstado
             // 
-            this.cmbEstado.Location = new System.Drawing.Point(242, 343);
+            this.cmbEstado.Location = new System.Drawing.Point(242, 393);
             this.cmbEstado.Name = "cmbEstado";
             this.cmbEstado.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbEstado.Properties.Appearance.Options.UseFont = true;
@@ -244,7 +252,7 @@
             // 
             this.labelControl23.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl23.Appearance.Options.UseFont = true;
-            this.labelControl23.Location = new System.Drawing.Point(242, 315);
+            this.labelControl23.Location = new System.Drawing.Point(242, 365);
             this.labelControl23.Name = "labelControl23";
             this.labelControl23.Size = new System.Drawing.Size(48, 20);
             this.labelControl23.TabIndex = 278;
@@ -254,7 +262,7 @@
             // 
             this.labelControl20.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl20.Appearance.Options.UseFont = true;
-            this.labelControl20.Location = new System.Drawing.Point(11, 279);
+            this.labelControl20.Location = new System.Drawing.Point(11, 329);
             this.labelControl20.Name = "labelControl20";
             this.labelControl20.Size = new System.Drawing.Size(55, 15);
             this.labelControl20.TabIndex = 276;
@@ -264,7 +272,7 @@
             // 
             this.labelControl15.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl15.Appearance.Options.UseFont = true;
-            this.labelControl15.Location = new System.Drawing.Point(398, 315);
+            this.labelControl15.Location = new System.Drawing.Point(398, 365);
             this.labelControl15.Name = "labelControl15";
             this.labelControl15.Size = new System.Drawing.Size(50, 20);
             this.labelControl15.TabIndex = 275;
@@ -274,7 +282,7 @@
             // 
             this.labelControl14.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl14.Appearance.Options.UseFont = true;
-            this.labelControl14.Location = new System.Drawing.Point(700, 315);
+            this.labelControl14.Location = new System.Drawing.Point(700, 365);
             this.labelControl14.Name = "labelControl14";
             this.labelControl14.Size = new System.Drawing.Size(43, 20);
             this.labelControl14.TabIndex = 274;
@@ -284,7 +292,7 @@
             // 
             this.labelControl13.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl13.Appearance.Options.UseFont = true;
-            this.labelControl13.Location = new System.Drawing.Point(631, 373);
+            this.labelControl13.Location = new System.Drawing.Point(631, 423);
             this.labelControl13.Name = "labelControl13";
             this.labelControl13.Size = new System.Drawing.Size(98, 20);
             this.labelControl13.TabIndex = 273;
@@ -294,7 +302,7 @@
             // 
             this.labelControl12.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl12.Appearance.Options.UseFont = true;
-            this.labelControl12.Location = new System.Drawing.Point(455, 375);
+            this.labelControl12.Location = new System.Drawing.Point(455, 425);
             this.labelControl12.Name = "labelControl12";
             this.labelControl12.Size = new System.Drawing.Size(57, 20);
             this.labelControl12.TabIndex = 272;
@@ -304,7 +312,7 @@
             // 
             this.labelControl11.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl11.Appearance.Options.UseFont = true;
-            this.labelControl11.Location = new System.Drawing.Point(6, 373);
+            this.labelControl11.Location = new System.Drawing.Point(3, 423);
             this.labelControl11.Name = "labelControl11";
             this.labelControl11.Size = new System.Drawing.Size(81, 20);
             this.labelControl11.TabIndex = 271;
@@ -312,7 +320,7 @@
             // 
             // txtCidade
             // 
-            this.txtCidade.Location = new System.Drawing.Point(398, 343);
+            this.txtCidade.Location = new System.Drawing.Point(398, 393);
             this.txtCidade.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtCidade.Name = "txtCidade";
             this.txtCidade.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -323,7 +331,7 @@
             // 
             // txtBairro
             // 
-            this.txtBairro.Location = new System.Drawing.Point(700, 343);
+            this.txtBairro.Location = new System.Drawing.Point(700, 393);
             this.txtBairro.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtBairro.Name = "txtBairro";
             this.txtBairro.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -335,7 +343,7 @@
             // 
             // txtComplemento
             // 
-            this.txtComplemento.Location = new System.Drawing.Point(631, 401);
+            this.txtComplemento.Location = new System.Drawing.Point(631, 451);
             this.txtComplemento.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtComplemento.Name = "txtComplemento";
             this.txtComplemento.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -346,7 +354,7 @@
             // 
             // txtNumero
             // 
-            this.txtNumero.Location = new System.Drawing.Point(455, 401);
+            this.txtNumero.Location = new System.Drawing.Point(455, 451);
             this.txtNumero.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtNumero.Name = "txtNumero";
             this.txtNumero.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -357,7 +365,7 @@
             // 
             // txtLogradouro
             // 
-            this.txtLogradouro.Location = new System.Drawing.Point(6, 401);
+            this.txtLogradouro.Location = new System.Drawing.Point(3, 451);
             this.txtLogradouro.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtLogradouro.Name = "txtLogradouro";
             this.txtLogradouro.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -369,7 +377,7 @@
             // btnBuscarPorCEP
             // 
             this.btnBuscarPorCEP.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.lupa_preta;
-            this.btnBuscarPorCEP.Location = new System.Drawing.Point(151, 343);
+            this.btnBuscarPorCEP.Location = new System.Drawing.Point(151, 393);
             this.btnBuscarPorCEP.Name = "btnBuscarPorCEP";
             this.btnBuscarPorCEP.Size = new System.Drawing.Size(31, 26);
             this.btnBuscarPorCEP.TabIndex = 262;
@@ -380,7 +388,7 @@
             // 
             this.labelControl10.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl10.Appearance.Options.UseFont = true;
-            this.labelControl10.Location = new System.Drawing.Point(6, 315);
+            this.labelControl10.Location = new System.Drawing.Point(3, 365);
             this.labelControl10.Name = "labelControl10";
             this.labelControl10.Size = new System.Drawing.Size(28, 20);
             this.labelControl10.TabIndex = 270;
@@ -388,7 +396,7 @@
             // 
             // txtCEP
             // 
-            this.txtCEP.Location = new System.Drawing.Point(6, 343);
+            this.txtCEP.Location = new System.Drawing.Point(3, 393);
             this.txtCEP.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtCEP.Name = "txtCEP";
             this.txtCEP.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -402,7 +410,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.separador;
-            this.pictureBox1.Location = new System.Drawing.Point(-160, 277);
+            this.pictureBox1.Location = new System.Drawing.Point(-160, 327);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(1238, 38);
@@ -414,7 +422,7 @@
             // 
             this.labelControl19.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl19.Appearance.Options.UseFont = true;
-            this.labelControl19.Location = new System.Drawing.Point(11, 165);
+            this.labelControl19.Location = new System.Drawing.Point(3, 218);
             this.labelControl19.Name = "labelControl19";
             this.labelControl19.Size = new System.Drawing.Size(52, 15);
             this.labelControl19.TabIndex = 286;
@@ -424,7 +432,7 @@
             // 
             this.labelControl8.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl8.Appearance.Options.UseFont = true;
-            this.labelControl8.Location = new System.Drawing.Point(688, 201);
+            this.labelControl8.Location = new System.Drawing.Point(685, 256);
             this.labelControl8.Name = "labelControl8";
             this.labelControl8.Size = new System.Drawing.Size(92, 20);
             this.labelControl8.TabIndex = 284;
@@ -434,7 +442,7 @@
             // 
             this.labelControl7.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl7.Appearance.Options.UseFont = true;
-            this.labelControl7.Location = new System.Drawing.Point(379, 201);
+            this.labelControl7.Location = new System.Drawing.Point(376, 256);
             this.labelControl7.Name = "labelControl7";
             this.labelControl7.Size = new System.Drawing.Size(49, 20);
             this.labelControl7.TabIndex = 283;
@@ -442,7 +450,7 @@
             // 
             // txtTelefoneFixo
             // 
-            this.txtTelefoneFixo.Location = new System.Drawing.Point(688, 229);
+            this.txtTelefoneFixo.Location = new System.Drawing.Point(685, 284);
             this.txtTelefoneFixo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtTelefoneFixo.Name = "txtTelefoneFixo";
             this.txtTelefoneFixo.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -454,7 +462,7 @@
             // 
             // txtCelular
             // 
-            this.txtCelular.Location = new System.Drawing.Point(379, 229);
+            this.txtCelular.Location = new System.Drawing.Point(376, 284);
             this.txtCelular.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtCelular.Name = "txtCelular";
             this.txtCelular.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -468,7 +476,7 @@
             // 
             this.labelControl5.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl5.Appearance.Options.UseFont = true;
-            this.labelControl5.Location = new System.Drawing.Point(6, 201);
+            this.labelControl5.Location = new System.Drawing.Point(3, 256);
             this.labelControl5.Name = "labelControl5";
             this.labelControl5.Size = new System.Drawing.Size(46, 20);
             this.labelControl5.TabIndex = 282;
@@ -476,7 +484,7 @@
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(6, 229);
+            this.txtEmail.Location = new System.Drawing.Point(3, 284);
             this.txtEmail.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -490,7 +498,7 @@
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox6.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.separador;
-            this.pictureBox6.Location = new System.Drawing.Point(-160, 163);
+            this.pictureBox6.Location = new System.Drawing.Point(-163, 218);
             this.pictureBox6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(1238, 38);
@@ -501,7 +509,7 @@
             // pictureEdit3
             // 
             this.pictureEdit3.EditValue = global::SistemaDeGerenciamento2_0.Properties.Resources.informacao20;
-            this.pictureEdit3.Location = new System.Drawing.Point(735, 373);
+            this.pictureEdit3.Location = new System.Drawing.Point(735, 423);
             this.pictureEdit3.Name = "pictureEdit3";
             this.pictureEdit3.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.pictureEdit3.Properties.Appearance.Options.UseBackColor = true;
@@ -516,7 +524,7 @@
             // 
             this.labelControl16.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl16.Appearance.Options.UseFont = true;
-            this.labelControl16.Location = new System.Drawing.Point(11, 2);
+            this.labelControl16.Location = new System.Drawing.Point(3, 47);
             this.labelControl16.Name = "labelControl16";
             this.labelControl16.Size = new System.Drawing.Size(87, 15);
             this.labelControl16.TabIndex = 289;
@@ -526,7 +534,7 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.separador;
-            this.pictureBox2.Location = new System.Drawing.Point(-160, 0);
+            this.pictureBox2.Location = new System.Drawing.Point(-163, 47);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(1238, 38);
@@ -544,7 +552,7 @@
             this.btnSalvar.ImageOptions.ImageToTextIndent = 10;
             this.btnSalvar.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
             this.btnSalvar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnSalvar.Location = new System.Drawing.Point(791, 444);
+            this.btnSalvar.Location = new System.Drawing.Point(791, 494);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(113, 30);
             this.btnSalvar.TabIndex = 290;
@@ -553,7 +561,7 @@
             // 
             // txtNomeFantasia
             // 
-            this.txtNomeFantasia.Location = new System.Drawing.Point(6, 118);
+            this.txtNomeFantasia.Location = new System.Drawing.Point(3, 173);
             this.txtNomeFantasia.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtNomeFantasia.Name = "txtNomeFantasia";
             this.txtNomeFantasia.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -583,11 +591,34 @@
             this.AlertaSalvar.ShowPinButton = false;
             this.AlertaSalvar.ShowToolTips = false;
             // 
+            // labelControl9
+            // 
+            this.labelControl9.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl9.Appearance.Options.UseFont = true;
+            this.labelControl9.Location = new System.Drawing.Point(3, 3);
+            this.labelControl9.Name = "labelControl9";
+            this.labelControl9.Size = new System.Drawing.Size(130, 20);
+            this.labelControl9.TabIndex = 292;
+            this.labelControl9.Text = " Cadastro Empresa";
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox3.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.separador;
+            this.pictureBox3.Location = new System.Drawing.Point(-26, 18);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(215, 25);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 291;
+            this.pictureBox3.TabStop = false;
+            // 
             // frmDadosEmpresa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(929, 489);
+            this.ClientSize = new System.Drawing.Size(923, 547);
+            this.Controls.Add(this.labelControl9);
+            this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.pictureEdit3);
             this.Controls.Add(this.labelControl19);
@@ -655,6 +686,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit3.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNomeFantasia.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -704,5 +736,7 @@
         private DevExpress.XtraEditors.SimpleButton btnSalvar;
         private DevExpress.XtraEditors.TextEdit txtNomeFantasia;
         private DevExpress.XtraBars.Alerter.AlertControl AlertaSalvar;
+        private DevExpress.XtraEditors.LabelControl labelControl9;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }

@@ -130,20 +130,9 @@ namespace SistemaDeGerenciamento2_0.Forms
             {
                 using (SistemaDeGerenciamento2_0Entities7 db = new SistemaDeGerenciamento2_0Entities7())
                 {
-                    var grupo = db.tb_grupo.Where(x => x.gp_nome_grupo.Equals(txtNomeGrupo.Text)).Any();
-                    //.Where(x => x.gp_nome_agrupador.Equals(cmbAgrupador.Text))
-                    //.ToList();
+                    var IsExisteGrupo = db.tb_grupo.Where(x => x.gp_nome_grupo.Equals(txtNomeGrupo.Text)).Any();
 
-                    //if (grupo.Count > 0)
-                    //{
-                    //    isExiteGrupoComMesmoNomeEAgrupadorCadastrado = true;
-                    //}
-                    //else
-                    //{
-                    //    isExiteGrupoComMesmoNomeEAgrupadorCadastrado = false;
-                    //}
-
-                    return grupo;
+                    return IsExisteGrupo;
                 }
             }
             catch (Exception x)

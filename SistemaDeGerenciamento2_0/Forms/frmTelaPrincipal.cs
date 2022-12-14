@@ -62,7 +62,7 @@ namespace SistemaDeGerenciamento2_0
         private void TelaConfiguracoes()
         {
             pnlTelaPrincipal.Controls.Clear();
-            frmConfiguracoes frmConfiguracoes = new frmConfiguracoes();
+            frmConfiguracoes frmConfiguracoes = new frmConfiguracoes(this);
             frmConfiguracoes.TopLevel = false;
             pnlTelaPrincipal.Controls.Add(frmConfiguracoes);
             pnlTelaPrincipal.Tag = frmConfiguracoes;

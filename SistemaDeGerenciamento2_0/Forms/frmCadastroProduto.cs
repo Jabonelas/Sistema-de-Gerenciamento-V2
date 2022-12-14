@@ -111,50 +111,36 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private void Salvar()
         {
-            bool IsNomeProdutoComMesmoFornecedorJaCadastrado = VerificarExistenciaNomeProdutoComMesmoFornecedor();
-
-            if (IsNomeProdutoComMesmoFornecedorJaCadastrado == false)
+            if (IsNomeProdutoComMesmoFornecedorJaCadastrado() == false &&
+                IsCodigoDeprodutoJaCadastrado() == false &&
+                IsCodigoDeBarrasJaCadastrado() == false &&
+                IsTodosTextBoxForamPreenchidos() == true)
             {
-                bool IsCodigoDeprodutoJaCadastrado = VerificarExistenciaProdutoComMesmoCodigoDeProduto();
+                ConexaoSalvar();
 
-                if (IsCodigoDeprodutoJaCadastrado == false)
+                if (txtCodigoDeBarras.Text == string.Empty)
                 {
-                    bool IsCodigoDeBarrasJaCadastrado = VerificaExistenciaCodigoDeBarras();
-
-                    if (IsCodigoDeBarrasJaCadastrado == false)
-                    {
-                        VerificandoPreenchimentoTextBox();
-
-                        if (txtCodigoDeBarras.Text == string.Empty)
-                        {
-                            GerarCodigoDeBarras();
-                        }
-
-                        LimparCampos.LimpaCampos(this.Controls);
-                    }
+                    GerarCodigoDeBarras();
                 }
+
+                LimparCampos.LimpaCampos(this.Controls);
             }
         }
 
-        private bool VerificaExistenciaCodigoDeBarras()
+        private bool IsCodigoDeBarrasJaCadastrado()
         {
             try
             {
                 using (SistemaDeGerenciamento2_0Entities7 db = new SistemaDeGerenciamento2_0Entities7())
                 {
-                    var codigoDeBarrasProduto = db.tb_produto.Where(x => x.pd_codigo_barras.Equals(txtCodigoDeBarras.Text))
-                        .Select(x => x.pd_codigo_barras).ToList();
+                    var IsExisteCodigoDeBarrasProduto = db.tb_produto.Where(x => x.pd_codigo_barras.Equals(txtCodigoDeBarras.Text)).Any();
 
-                    if (codigoDeBarrasProduto.Count > 0)
+                    if (IsExisteCodigoDeBarrasProduto == true)
                     {
                         MensagemAtencao.MensagemJaExistente("Codigo de Barras");
+                    }
 
-                        return true;
-                    }
-                    else
-                    {
-                        return false;
-                    }
+                    return IsExisteCodigoDeBarrasProduto;
                 }
             }
             catch (Exception x)
@@ -204,7 +190,7 @@ namespace SistemaDeGerenciamento2_0.Forms
             {
                 using (SistemaDeGerenciamento2_0Entities7 db = new SistemaDeGerenciamento2_0Entities7())
                 {
-                    var codigoDeBarrasProduto = db.tb_produto.First(x => x.id_produto.Equals(idProduto));
+                    var codigoDeBarrasProduto = db.tb_produto.FirstOrDefault(x => x.id_produto.Equals(idProduto));
 
                     codigoDeBarrasProduto.pd_codigo_barras = _codigoDeBarras;
 
@@ -249,7 +235,7 @@ namespace SistemaDeGerenciamento2_0.Forms
         //    cmbFornecedor.Properties.ValueMember = "ID";
         //}
 
-        private bool VerificarExistenciaNomeProdutoComMesmoFornecedor()
+        private bool IsNomeProdutoComMesmoFornecedorJaCadastrado()
         {
             try
             {
@@ -257,20 +243,14 @@ namespace SistemaDeGerenciamento2_0.Forms
                 {
                     int valor = Convert.ToInt32(cmbFornecedor.Properties.GetKeyValueByDisplayValue(cmbFornecedor.Text));
 
-                    var nomeProdutoEForneecedor = db.tb_produto.Where(x => x.pd_nome.Equals(txtNome.Text))
-                        .Where(x => x.fk_registro_forncedor == valor)
-                        .Select(x => x.pd_nome).ToList();
+                    var IsExisteNomeProdutoEFornecedor = db.tb_produto.Where(x => x.pd_nome.Equals(txtNome.Text)).Any();
 
-                    if (nomeProdutoEForneecedor.Count > 0)
+                    if (IsExisteNomeProdutoEFornecedor == true)
                     {
                         MensagemAtencao.MensagemProdutoJaExistente();
+                    }
 
-                        return true;
-                    }
-                    else
-                    {
-                        return false;
-                    }
+                    return IsExisteNomeProdutoEFornecedor;
                 }
             }
             catch (Exception x)
@@ -362,41 +342,38 @@ namespace SistemaDeGerenciamento2_0.Forms
         //    cmbGrupo.Properties.ValueMember = "IDGrupo";
         //}
 
-        private void VerificandoPreenchimentoTextBox()
+        private bool IsTodosTextBoxForamPreenchidos()
         {
             if (txtNome.Text != string.Empty && cmbGrupo.Text != string.Empty && cmbFinalidade.Text != string.Empty &&
                 cmbTipoProduto.Text != string.Empty && txtTipoUnidade.Text != "Ex.: Peça, Un, Kg")
             {
-                ConexaoSalvar();
-
                 CorFundoTextBox(Color.FromArgb(0, 255, 255, 255));
+
+                return true;
             }
             else
             {
                 CorFundoTextBox(Color.LightGray);
 
                 MensagemAtencao.MensagemPreencherCampos();
+
+                return false;
             }
         }
 
-        private bool VerificarExistenciaProdutoComMesmoCodigoDeProduto()
+        private bool IsCodigoDeprodutoJaCadastrado()
         {
             try
             {
                 using (SistemaDeGerenciamento2_0Entities7 db = new SistemaDeGerenciamento2_0Entities7())
                 {
-                    var codigoProduto = db.tb_produto.Where(x => x.pd_codigo.Equals(txtCodigo.Text)).Select(x => x.pd_codigo).ToList();
+                    var IsExistecodigoProduto = db.tb_produto.Where(x => x.pd_codigo.Equals(txtCodigo.Text)).Any();
 
-                    if (codigoProduto.Count > 0)
+                    if (IsExistecodigoProduto == true)
                     {
                         MensagemAtencao.MensagemProdutoJaExistente();
-
-                        return true;
                     }
-                    else
-                    {
-                        return false;
-                    }
+                    return IsExistecodigoProduto;
                 }
             }
             catch (Exception x)

@@ -1,4 +1,6 @@
-﻿using SistemaDeGerenciamento2_0.Class;
+﻿using DevExpress.XtraGrid;
+using DevExpress.XtraSplashScreen;
+using SistemaDeGerenciamento2_0.Class;
 using SistemaDeGerenciamento2_0.Properties;
 using System;
 using System.Collections.Generic;
@@ -13,6 +15,8 @@ namespace SistemaDeGerenciamento2_0.Forms
 {
     public partial class frmCadastroUsuario : DevExpress.XtraEditors.XtraForm
     {
+        public int? FK_Permissoes = 0;
+
         public frmCadastroUsuario()
         {
             InitializeComponent();
@@ -95,7 +99,19 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private void cmbFuncionario_TextChanged(object sender, EventArgs e)
         {
+            ReloadData();
+
             BuscarFKPermissoes();
+
+            TelaPermissoes();
+        }
+
+        private void ReloadData()
+        {
+            using (var handle = SplashScreenManager.ShowOverlayForm(this))
+            {
+                BuscarFKPermissoes();
+            }
         }
 
         private async void BuscarFKPermissoes()
@@ -113,6 +129,8 @@ namespace SistemaDeGerenciamento2_0.Forms
                     {
                         txtNomeUsuario.Text = item.rg_login;
                         txtSenha.Text = item.rg_senha;
+                        txtConfirmacaoSenha.Text = item.rg_senha;
+                        FK_Permissoes = item.fk_permissoes;
                     }
                 }
             }

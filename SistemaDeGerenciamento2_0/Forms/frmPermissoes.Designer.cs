@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPermissoes));
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
@@ -93,14 +94,12 @@
             this.pictureEdit18 = new DevExpress.XtraEditors.PictureEdit();
             this.chkAcessoAoPDV = new DevExpress.XtraEditors.CheckEdit();
             this.pictureEdit19 = new DevExpress.XtraEditors.PictureEdit();
-            this.chkCriarEditarUsuario = new DevExpress.XtraEditors.CheckEdit();
             this.pictureEdit11 = new DevExpress.XtraEditors.PictureEdit();
             this.chkAjustarConfiguracaoGeral = new DevExpress.XtraEditors.CheckEdit();
             this.pictureEdit10 = new DevExpress.XtraEditors.PictureEdit();
             this.chkVisualizarFluxoCaixa = new DevExpress.XtraEditors.CheckEdit();
             this.pictureEdit5 = new DevExpress.XtraEditors.PictureEdit();
             this.chkPermitePagarReceberContas = new DevExpress.XtraEditors.CheckEdit();
-            this.pictureEdit6 = new DevExpress.XtraEditors.PictureEdit();
             this.chkVisualizarContasReceberPagar = new DevExpress.XtraEditors.CheckEdit();
             this.pictureEdit8 = new DevExpress.XtraEditors.PictureEdit();
             this.chkAlertaContasAtrasadas = new DevExpress.XtraEditors.CheckEdit();
@@ -109,6 +108,7 @@
             this.btnSalvar = new DevExpress.XtraEditors.SimpleButton();
             this.pictureEdit25 = new DevExpress.XtraEditors.PictureEdit();
             this.pictureEdit21 = new DevExpress.XtraEditors.PictureEdit();
+            this.AlertaSalvar = new DevExpress.XtraBars.Alerter.AlertControl(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl5)).BeginInit();
@@ -167,14 +167,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit18.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chkAcessoAoPDV.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit19.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chkCriarEditarUsuario.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit11.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chkAjustarConfiguracaoGeral.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit10.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chkVisualizarFluxoCaixa.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit5.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chkPermitePagarReceberContas.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit6.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chkVisualizarContasReceberPagar.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit8.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chkAlertaContasAtrasadas.Properties)).BeginInit();
@@ -229,7 +227,7 @@
             // 
             this.separatorControl5.BackColor = System.Drawing.Color.Silver;
             this.separatorControl5.LineColor = System.Drawing.Color.Black;
-            this.separatorControl5.Location = new System.Drawing.Point(387, 466);
+            this.separatorControl5.Location = new System.Drawing.Point(387, 445);
             this.separatorControl5.Name = "separatorControl5";
             this.separatorControl5.Size = new System.Drawing.Size(363, 23);
             this.separatorControl5.TabIndex = 233;
@@ -240,7 +238,7 @@
             this.labelControl5.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl5.Appearance.Options.UseBackColor = true;
             this.labelControl5.Appearance.Options.UseFont = true;
-            this.labelControl5.Location = new System.Drawing.Point(410, 445);
+            this.labelControl5.Location = new System.Drawing.Point(410, 424);
             this.labelControl5.Name = "labelControl5";
             this.labelControl5.Size = new System.Drawing.Size(70, 21);
             this.labelControl5.TabIndex = 225;
@@ -250,7 +248,7 @@
             // 
             this.separatorControl1.BackColor = System.Drawing.Color.Silver;
             this.separatorControl1.LineColor = System.Drawing.Color.Black;
-            this.separatorControl1.Location = new System.Drawing.Point(386, 265);
+            this.separatorControl1.Location = new System.Drawing.Point(386, 253);
             this.separatorControl1.Name = "separatorControl1";
             this.separatorControl1.Size = new System.Drawing.Size(363, 23);
             this.separatorControl1.TabIndex = 244;
@@ -261,7 +259,7 @@
             this.labelControl3.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl3.Appearance.Options.UseBackColor = true;
             this.labelControl3.Appearance.Options.UseFont = true;
-            this.labelControl3.Location = new System.Drawing.Point(413, 239);
+            this.labelControl3.Location = new System.Drawing.Point(413, 230);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Size = new System.Drawing.Size(67, 21);
             this.labelControl3.TabIndex = 234;
@@ -292,7 +290,7 @@
             // 
             this.separatorControl6.BackColor = System.Drawing.Color.Silver;
             this.separatorControl6.LineColor = System.Drawing.Color.Black;
-            this.separatorControl6.Location = new System.Drawing.Point(6, 545);
+            this.separatorControl6.Location = new System.Drawing.Point(6, 517);
             this.separatorControl6.Name = "separatorControl6";
             this.separatorControl6.Size = new System.Drawing.Size(363, 23);
             this.separatorControl6.TabIndex = 268;
@@ -303,7 +301,7 @@
             this.labelControl6.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl6.Appearance.Options.UseBackColor = true;
             this.labelControl6.Appearance.Options.UseFont = true;
-            this.labelControl6.Location = new System.Drawing.Point(29, 524);
+            this.labelControl6.Location = new System.Drawing.Point(29, 496);
             this.labelControl6.Name = "labelControl6";
             this.labelControl6.Size = new System.Drawing.Size(110, 21);
             this.labelControl6.TabIndex = 260;
@@ -311,7 +309,7 @@
             // 
             // chkCriarEditarUsuarios
             // 
-            this.chkCriarEditarUsuarios.Location = new System.Drawing.Point(29, 567);
+            this.chkCriarEditarUsuarios.Location = new System.Drawing.Point(29, 539);
             this.chkCriarEditarUsuarios.Name = "chkCriarEditarUsuarios";
             this.chkCriarEditarUsuarios.Properties.Appearance.BackColor = System.Drawing.Color.Silver;
             this.chkCriarEditarUsuarios.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -324,7 +322,7 @@
             // pictureEdit26
             // 
             this.pictureEdit26.EditValue = global::SistemaDeGerenciamento2_0.Properties.Resources.informacao20;
-            this.pictureEdit26.Location = new System.Drawing.Point(200, 569);
+            this.pictureEdit26.Location = new System.Drawing.Point(200, 541);
             this.pictureEdit26.Name = "pictureEdit26";
             this.pictureEdit26.Properties.Appearance.BackColor = System.Drawing.Color.Silver;
             this.pictureEdit26.Properties.Appearance.Options.UseBackColor = true;
@@ -339,7 +337,7 @@
             // pictureEdit30
             // 
             this.pictureEdit30.EditValue = global::SistemaDeGerenciamento2_0.Properties.Resources.acesso_20px;
-            this.pictureEdit30.Location = new System.Drawing.Point(4, 523);
+            this.pictureEdit30.Location = new System.Drawing.Point(4, 495);
             this.pictureEdit30.Name = "pictureEdit30";
             this.pictureEdit30.Properties.Appearance.BackColor = System.Drawing.Color.Silver;
             this.pictureEdit30.Properties.Appearance.BackColor2 = System.Drawing.Color.Gray;
@@ -352,7 +350,7 @@
             // 
             // chkAlertaEstoqueBaixo
             // 
-            this.chkAlertaEstoqueBaixo.Location = new System.Drawing.Point(410, 184);
+            this.chkAlertaEstoqueBaixo.Location = new System.Drawing.Point(410, 177);
             this.chkAlertaEstoqueBaixo.Name = "chkAlertaEstoqueBaixo";
             this.chkAlertaEstoqueBaixo.Properties.Appearance.BackColor = System.Drawing.Color.Silver;
             this.chkAlertaEstoqueBaixo.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -365,7 +363,7 @@
             // pictureEdit27
             // 
             this.pictureEdit27.EditValue = global::SistemaDeGerenciamento2_0.Properties.Resources.informacao20;
-            this.pictureEdit27.Location = new System.Drawing.Point(575, 186);
+            this.pictureEdit27.Location = new System.Drawing.Point(575, 179);
             this.pictureEdit27.Name = "pictureEdit27";
             this.pictureEdit27.Properties.Appearance.BackColor = System.Drawing.Color.Silver;
             this.pictureEdit27.Properties.Appearance.Options.UseBackColor = true;
@@ -378,7 +376,7 @@
             // 
             // chkProdutosRemovidos
             // 
-            this.chkProdutosRemovidos.Location = new System.Drawing.Point(410, 154);
+            this.chkProdutosRemovidos.Location = new System.Drawing.Point(410, 147);
             this.chkProdutosRemovidos.Name = "chkProdutosRemovidos";
             this.chkProdutosRemovidos.Properties.Appearance.BackColor = System.Drawing.Color.Silver;
             this.chkProdutosRemovidos.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -391,7 +389,7 @@
             // pictureEdit28
             // 
             this.pictureEdit28.EditValue = global::SistemaDeGerenciamento2_0.Properties.Resources.informacao20;
-            this.pictureEdit28.Location = new System.Drawing.Point(575, 156);
+            this.pictureEdit28.Location = new System.Drawing.Point(575, 149);
             this.pictureEdit28.Name = "pictureEdit28";
             this.pictureEdit28.Properties.Appearance.BackColor = System.Drawing.Color.Silver;
             this.pictureEdit28.Properties.Appearance.Options.UseBackColor = true;
@@ -404,7 +402,7 @@
             // 
             // chkPesquisarProduto
             // 
-            this.chkPesquisarProduto.Location = new System.Drawing.Point(410, 124);
+            this.chkPesquisarProduto.Location = new System.Drawing.Point(410, 117);
             this.chkPesquisarProduto.Name = "chkPesquisarProduto";
             this.chkPesquisarProduto.Properties.Appearance.BackColor = System.Drawing.Color.Silver;
             this.chkPesquisarProduto.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -417,7 +415,7 @@
             // pictureEdit29
             // 
             this.pictureEdit29.EditValue = global::SistemaDeGerenciamento2_0.Properties.Resources.informacao20;
-            this.pictureEdit29.Location = new System.Drawing.Point(557, 126);
+            this.pictureEdit29.Location = new System.Drawing.Point(557, 119);
             this.pictureEdit29.Name = "pictureEdit29";
             this.pictureEdit29.Properties.Appearance.BackColor = System.Drawing.Color.Silver;
             this.pictureEdit29.Properties.Appearance.Options.UseBackColor = true;
@@ -431,7 +429,7 @@
             // 
             // cnkEditarRemoverProduto
             // 
-            this.cnkEditarRemoverProduto.Location = new System.Drawing.Point(411, 94);
+            this.cnkEditarRemoverProduto.Location = new System.Drawing.Point(411, 87);
             this.cnkEditarRemoverProduto.Name = "cnkEditarRemoverProduto";
             this.cnkEditarRemoverProduto.Properties.Appearance.BackColor = System.Drawing.Color.Silver;
             this.cnkEditarRemoverProduto.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -444,7 +442,7 @@
             // pictureEdit31
             // 
             this.pictureEdit31.EditValue = global::SistemaDeGerenciamento2_0.Properties.Resources.informacao20;
-            this.pictureEdit31.Location = new System.Drawing.Point(608, 96);
+            this.pictureEdit31.Location = new System.Drawing.Point(608, 89);
             this.pictureEdit31.Name = "pictureEdit31";
             this.pictureEdit31.Properties.Appearance.BackColor = System.Drawing.Color.Silver;
             this.pictureEdit31.Properties.Appearance.Options.UseBackColor = true;
@@ -457,7 +455,7 @@
             // 
             // chkCadastrarProduto
             // 
-            this.chkCadastrarProduto.Location = new System.Drawing.Point(410, 64);
+            this.chkCadastrarProduto.Location = new System.Drawing.Point(410, 57);
             this.chkCadastrarProduto.Name = "chkCadastrarProduto";
             this.chkCadastrarProduto.Properties.Appearance.BackColor = System.Drawing.Color.Silver;
             this.chkCadastrarProduto.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -470,7 +468,7 @@
             // pictureEdit32
             // 
             this.pictureEdit32.EditValue = global::SistemaDeGerenciamento2_0.Properties.Resources.informacao20;
-            this.pictureEdit32.Location = new System.Drawing.Point(560, 66);
+            this.pictureEdit32.Location = new System.Drawing.Point(560, 59);
             this.pictureEdit32.Name = "pictureEdit32";
             this.pictureEdit32.Properties.Appearance.BackColor = System.Drawing.Color.Silver;
             this.pictureEdit32.Properties.Appearance.Options.UseBackColor = true;
@@ -492,12 +490,12 @@
             this.pictureEdit33.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
             this.pictureEdit33.Properties.PictureAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.pictureEdit33.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit33.Size = new System.Drawing.Size(368, 219);
+            this.pictureEdit33.Size = new System.Drawing.Size(368, 210);
             this.pictureEdit33.TabIndex = 254;
             // 
             // chkVisualizarCadastrosCompleto
             // 
-            this.chkVisualizarCadastrosCompleto.Location = new System.Drawing.Point(410, 393);
+            this.chkVisualizarCadastrosCompleto.Location = new System.Drawing.Point(410, 372);
             this.chkVisualizarCadastrosCompleto.Name = "chkVisualizarCadastrosCompleto";
             this.chkVisualizarCadastrosCompleto.Properties.Appearance.BackColor = System.Drawing.Color.Silver;
             this.chkVisualizarCadastrosCompleto.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -510,7 +508,7 @@
             // pictureEdit3
             // 
             this.pictureEdit3.EditValue = global::SistemaDeGerenciamento2_0.Properties.Resources.informacao20;
-            this.pictureEdit3.Location = new System.Drawing.Point(639, 395);
+            this.pictureEdit3.Location = new System.Drawing.Point(639, 374);
             this.pictureEdit3.Name = "pictureEdit3";
             this.pictureEdit3.Properties.Appearance.BackColor = System.Drawing.Color.Silver;
             this.pictureEdit3.Properties.Appearance.Options.UseBackColor = true;
@@ -523,7 +521,7 @@
             // 
             // chkRemoverCadastros
             // 
-            this.chkRemoverCadastros.Location = new System.Drawing.Point(410, 361);
+            this.chkRemoverCadastros.Location = new System.Drawing.Point(410, 340);
             this.chkRemoverCadastros.Name = "chkRemoverCadastros";
             this.chkRemoverCadastros.Properties.Appearance.BackColor = System.Drawing.Color.Silver;
             this.chkRemoverCadastros.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -536,7 +534,7 @@
             // pictureEdit2
             // 
             this.pictureEdit2.EditValue = global::SistemaDeGerenciamento2_0.Properties.Resources.informacao20;
-            this.pictureEdit2.Location = new System.Drawing.Point(568, 363);
+            this.pictureEdit2.Location = new System.Drawing.Point(568, 342);
             this.pictureEdit2.Name = "pictureEdit2";
             this.pictureEdit2.Properties.Appearance.BackColor = System.Drawing.Color.Silver;
             this.pictureEdit2.Properties.Appearance.Options.UseBackColor = true;
@@ -549,7 +547,7 @@
             // 
             // chkEditarCadastros
             // 
-            this.chkEditarCadastros.Location = new System.Drawing.Point(410, 329);
+            this.chkEditarCadastros.Location = new System.Drawing.Point(410, 308);
             this.chkEditarCadastros.Name = "chkEditarCadastros";
             this.chkEditarCadastros.Properties.Appearance.BackColor = System.Drawing.Color.Silver;
             this.chkEditarCadastros.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -562,7 +560,7 @@
             // pictureEdit1
             // 
             this.pictureEdit1.EditValue = global::SistemaDeGerenciamento2_0.Properties.Resources.informacao20;
-            this.pictureEdit1.Location = new System.Drawing.Point(546, 331);
+            this.pictureEdit1.Location = new System.Drawing.Point(546, 310);
             this.pictureEdit1.Name = "pictureEdit1";
             this.pictureEdit1.Properties.Appearance.BackColor = System.Drawing.Color.Silver;
             this.pictureEdit1.Properties.Appearance.Options.UseBackColor = true;
@@ -575,7 +573,7 @@
             // 
             // chkEfetuarCadastros
             // 
-            this.chkEfetuarCadastros.Location = new System.Drawing.Point(410, 298);
+            this.chkEfetuarCadastros.Location = new System.Drawing.Point(410, 277);
             this.chkEfetuarCadastros.Name = "chkEfetuarCadastros";
             this.chkEfetuarCadastros.Properties.Appearance.BackColor = System.Drawing.Color.Silver;
             this.chkEfetuarCadastros.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -588,7 +586,7 @@
             // pcbRequesitosCodigoDeBarras
             // 
             this.pcbRequesitosCodigoDeBarras.EditValue = global::SistemaDeGerenciamento2_0.Properties.Resources.informacao20;
-            this.pcbRequesitosCodigoDeBarras.Location = new System.Drawing.Point(557, 301);
+            this.pcbRequesitosCodigoDeBarras.Location = new System.Drawing.Point(557, 280);
             this.pcbRequesitosCodigoDeBarras.Name = "pcbRequesitosCodigoDeBarras";
             this.pcbRequesitosCodigoDeBarras.Properties.Appearance.BackColor = System.Drawing.Color.Silver;
             this.pcbRequesitosCodigoDeBarras.Properties.Appearance.Options.UseBackColor = true;
@@ -602,7 +600,7 @@
             // pictureEdit20
             // 
             this.pictureEdit20.EditValue = global::SistemaDeGerenciamento2_0.Properties.Resources.acesso_20px;
-            this.pictureEdit20.Location = new System.Drawing.Point(385, 238);
+            this.pictureEdit20.Location = new System.Drawing.Point(385, 229);
             this.pictureEdit20.Name = "pictureEdit20";
             this.pictureEdit20.Properties.Appearance.BackColor = System.Drawing.Color.Silver;
             this.pictureEdit20.Properties.Appearance.BackColor2 = System.Drawing.Color.Gray;
@@ -610,12 +608,12 @@
             this.pictureEdit20.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
             this.pictureEdit20.Properties.PictureAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.pictureEdit20.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit20.Size = new System.Drawing.Size(368, 199);
+            this.pictureEdit20.Size = new System.Drawing.Size(368, 188);
             this.pictureEdit20.TabIndex = 243;
             // 
             // chkCriarVisualizarRelatorios
             // 
-            this.chkCriarVisualizarRelatorios.Location = new System.Drawing.Point(410, 556);
+            this.chkCriarVisualizarRelatorios.Location = new System.Drawing.Point(410, 529);
             this.chkCriarVisualizarRelatorios.Name = "chkCriarVisualizarRelatorios";
             this.chkCriarVisualizarRelatorios.Properties.Appearance.BackColor = System.Drawing.Color.Silver;
             this.chkCriarVisualizarRelatorios.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -628,7 +626,7 @@
             // pictureEdit36
             // 
             this.pictureEdit36.EditValue = global::SistemaDeGerenciamento2_0.Properties.Resources.informacao20;
-            this.pictureEdit36.Location = new System.Drawing.Point(618, 558);
+            this.pictureEdit36.Location = new System.Drawing.Point(618, 531);
             this.pictureEdit36.Name = "pictureEdit36";
             this.pictureEdit36.Properties.Appearance.BackColor = System.Drawing.Color.Silver;
             this.pictureEdit36.Properties.Appearance.Options.UseBackColor = true;
@@ -641,7 +639,7 @@
             // 
             // chkVisualizarDRE
             // 
-            this.chkVisualizarDRE.Location = new System.Drawing.Point(410, 526);
+            this.chkVisualizarDRE.Location = new System.Drawing.Point(410, 499);
             this.chkVisualizarDRE.Name = "chkVisualizarDRE";
             this.chkVisualizarDRE.Properties.Appearance.BackColor = System.Drawing.Color.Silver;
             this.chkVisualizarDRE.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -654,7 +652,7 @@
             // pictureEdit37
             // 
             this.pictureEdit37.EditValue = global::SistemaDeGerenciamento2_0.Properties.Resources.informacao20;
-            this.pictureEdit37.Location = new System.Drawing.Point(534, 528);
+            this.pictureEdit37.Location = new System.Drawing.Point(534, 501);
             this.pictureEdit37.Name = "pictureEdit37";
             this.pictureEdit37.Properties.Appearance.BackColor = System.Drawing.Color.Silver;
             this.pictureEdit37.Properties.Appearance.Options.UseBackColor = true;
@@ -667,7 +665,7 @@
             // 
             // chkVisualizarVisaoGeral
             // 
-            this.chkVisualizarVisaoGeral.Location = new System.Drawing.Point(410, 496);
+            this.chkVisualizarVisaoGeral.Location = new System.Drawing.Point(410, 469);
             this.chkVisualizarVisaoGeral.Name = "chkVisualizarVisaoGeral";
             this.chkVisualizarVisaoGeral.Properties.Appearance.BackColor = System.Drawing.Color.Silver;
             this.chkVisualizarVisaoGeral.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -680,7 +678,7 @@
             // pictureEdit38
             // 
             this.pictureEdit38.EditValue = global::SistemaDeGerenciamento2_0.Properties.Resources.informacao20;
-            this.pictureEdit38.Location = new System.Drawing.Point(581, 498);
+            this.pictureEdit38.Location = new System.Drawing.Point(581, 471);
             this.pictureEdit38.Name = "pictureEdit38";
             this.pictureEdit38.Properties.Appearance.BackColor = System.Drawing.Color.Silver;
             this.pictureEdit38.Properties.Appearance.Options.UseBackColor = true;
@@ -694,7 +692,7 @@
             // pictureEdit39
             // 
             this.pictureEdit39.EditValue = global::SistemaDeGerenciamento2_0.Properties.Resources.acesso_20px;
-            this.pictureEdit39.Location = new System.Drawing.Point(385, 444);
+            this.pictureEdit39.Location = new System.Drawing.Point(385, 423);
             this.pictureEdit39.Name = "pictureEdit39";
             this.pictureEdit39.Properties.Appearance.BackColor = System.Drawing.Color.Silver;
             this.pictureEdit39.Properties.Appearance.BackColor2 = System.Drawing.Color.Gray;
@@ -702,7 +700,7 @@
             this.pictureEdit39.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
             this.pictureEdit39.Properties.PictureAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.pictureEdit39.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit39.Size = new System.Drawing.Size(368, 158);
+            this.pictureEdit39.Size = new System.Drawing.Size(368, 151);
             this.pictureEdit39.TabIndex = 232;
             // 
             // chkRealizarDevolucao
@@ -983,18 +981,6 @@
             this.pictureEdit19.TabIndex = 148;
             this.pictureEdit19.ToolTip = "Permite a utilização de PDV.";
             // 
-            // chkCriarEditarUsuario
-            // 
-            this.chkCriarEditarUsuario.Location = new System.Drawing.Point(29, 475);
-            this.chkCriarEditarUsuario.Name = "chkCriarEditarUsuario";
-            this.chkCriarEditarUsuario.Properties.Appearance.BackColor = System.Drawing.Color.Silver;
-            this.chkCriarEditarUsuario.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkCriarEditarUsuario.Properties.Appearance.Options.UseBackColor = true;
-            this.chkCriarEditarUsuario.Properties.Appearance.Options.UseFont = true;
-            this.chkCriarEditarUsuario.Properties.Caption = "Criar / Editar Usuário";
-            this.chkCriarEditarUsuario.Size = new System.Drawing.Size(162, 24);
-            this.chkCriarEditarUsuario.TabIndex = 146;
-            // 
             // pictureEdit11
             // 
             this.pictureEdit11.EditValue = global::SistemaDeGerenciamento2_0.Properties.Resources.informacao20;
@@ -1073,20 +1059,6 @@
             this.chkPermitePagarReceberContas.Size = new System.Drawing.Size(244, 24);
             this.chkPermitePagarReceberContas.TabIndex = 137;
             // 
-            // pictureEdit6
-            // 
-            this.pictureEdit6.EditValue = global::SistemaDeGerenciamento2_0.Properties.Resources.informacao20;
-            this.pictureEdit6.Location = new System.Drawing.Point(197, 477);
-            this.pictureEdit6.Name = "pictureEdit6";
-            this.pictureEdit6.Properties.Appearance.BackColor = System.Drawing.Color.Silver;
-            this.pictureEdit6.Properties.Appearance.Options.UseBackColor = true;
-            this.pictureEdit6.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.pictureEdit6.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit6.Properties.ZoomAcceleration = 5D;
-            this.pictureEdit6.Size = new System.Drawing.Size(23, 20);
-            this.pictureEdit6.TabIndex = 136;
-            this.pictureEdit6.ToolTip = "Se não for informado, \r\num código de barras\r\n para uso interno será\r\ngerado.";
-            // 
             // chkVisualizarContasReceberPagar
             // 
             this.chkVisualizarContasReceberPagar.Location = new System.Drawing.Point(29, 355);
@@ -1154,6 +1126,7 @@
             this.btnCancelar.Size = new System.Drawing.Size(113, 30);
             this.btnCancelar.TabIndex = 127;
             this.btnCancelar.Text = "Cancelar (Esc)";
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnSalvar
             // 
@@ -1183,7 +1156,7 @@
             this.pictureEdit25.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
             this.pictureEdit25.Properties.PictureAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.pictureEdit25.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit25.Size = new System.Drawing.Size(368, 235);
+            this.pictureEdit25.Size = new System.Drawing.Size(368, 207);
             this.pictureEdit25.TabIndex = 176;
             // 
             // pictureEdit21
@@ -1199,6 +1172,26 @@
             this.pictureEdit21.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.pictureEdit21.Size = new System.Drawing.Size(368, 263);
             this.pictureEdit21.TabIndex = 167;
+            // 
+            // AlertaSalvar
+            // 
+            this.AlertaSalvar.AppearanceCaption.BackColor = System.Drawing.Color.Red;
+            this.AlertaSalvar.AppearanceCaption.BackColor2 = System.Drawing.Color.Yellow;
+            this.AlertaSalvar.AppearanceCaption.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AlertaSalvar.AppearanceCaption.ForeColor = System.Drawing.Color.White;
+            this.AlertaSalvar.AppearanceCaption.Options.UseBackColor = true;
+            this.AlertaSalvar.AppearanceCaption.Options.UseFont = true;
+            this.AlertaSalvar.AppearanceCaption.Options.UseForeColor = true;
+            this.AlertaSalvar.AppearanceHotTrackedText.BackColor = System.Drawing.Color.Lime;
+            this.AlertaSalvar.AppearanceHotTrackedText.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AlertaSalvar.AppearanceHotTrackedText.Options.UseBackColor = true;
+            this.AlertaSalvar.AppearanceHotTrackedText.Options.UseFont = true;
+            this.AlertaSalvar.AppearanceText.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AlertaSalvar.AppearanceText.Options.UseFont = true;
+            this.AlertaSalvar.AutoFormDelay = 2000;
+            this.AlertaSalvar.ShowCloseButton = false;
+            this.AlertaSalvar.ShowPinButton = false;
+            this.AlertaSalvar.ShowToolTips = false;
             // 
             // frmPermissoes
             // 
@@ -1270,14 +1263,12 @@
             this.Controls.Add(this.chkAcessoAoPDV);
             this.Controls.Add(this.pictureEdit19);
             this.Controls.Add(this.labelControl2);
-            this.Controls.Add(this.chkCriarEditarUsuario);
             this.Controls.Add(this.pictureEdit11);
             this.Controls.Add(this.chkAjustarConfiguracaoGeral);
             this.Controls.Add(this.pictureEdit10);
             this.Controls.Add(this.chkVisualizarFluxoCaixa);
             this.Controls.Add(this.pictureEdit5);
             this.Controls.Add(this.chkPermitePagarReceberContas);
-            this.Controls.Add(this.pictureEdit6);
             this.Controls.Add(this.chkVisualizarContasReceberPagar);
             this.Controls.Add(this.pictureEdit8);
             this.Controls.Add(this.chkAlertaContasAtrasadas);
@@ -1348,14 +1339,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit18.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chkAcessoAoPDV.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit19.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chkCriarEditarUsuario.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit11.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chkAjustarConfiguracaoGeral.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit10.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chkVisualizarFluxoCaixa.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit5.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chkPermitePagarReceberContas.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit6.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chkVisualizarContasReceberPagar.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit8.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chkAlertaContasAtrasadas.Properties)).EndInit();
@@ -1375,12 +1364,10 @@
         private DevExpress.XtraEditors.PictureEdit pictureEdit9;
         private DevExpress.XtraEditors.CheckEdit chkAlertaContasAtrasadas;
         private DevExpress.XtraEditors.PictureEdit pictureEdit8;
-        private DevExpress.XtraEditors.PictureEdit pictureEdit6;
         private DevExpress.XtraEditors.PictureEdit pictureEdit5;
         private DevExpress.XtraEditors.PictureEdit pictureEdit10;
         private DevExpress.XtraEditors.CheckEdit chkAjustarConfiguracaoGeral;
         private DevExpress.XtraEditors.PictureEdit pictureEdit11;
-        private DevExpress.XtraEditors.CheckEdit chkCriarEditarUsuario;
         private DevExpress.XtraEditors.PictureEdit pictureEdit19;
         private DevExpress.XtraEditors.CheckEdit chkAcessoAoPDV;
         private DevExpress.XtraEditors.PictureEdit pictureEdit18;
@@ -1448,5 +1435,6 @@
         private DevExpress.XtraEditors.PictureEdit pictureEdit30;
         private DevExpress.XtraEditors.PictureEdit pictureEdit26;
         private DevExpress.XtraEditors.CheckEdit chkCriarEditarUsuarios;
+        private DevExpress.XtraBars.Alerter.AlertControl AlertaSalvar;
     }
 }

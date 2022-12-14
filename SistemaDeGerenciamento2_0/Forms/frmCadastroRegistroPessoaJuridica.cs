@@ -240,15 +240,9 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private void Salvar()
         {
-            bool IsCampoBasicoPreenchido = VerificandoPreenchimentoBasico();
-
-            bool IsCampoEnderecoPreenchido = VerificandoPreenchimentoCampoEndereco();
-
-            if (IsCampoEnderecoPreenchido == true && IsCampoBasicoPreenchido == true)
+            if (IsCampoEnderecoPreenchido() == true && IsCampoBasicoPreenchido() == true)
             {
-                bool isCNPJJaExistente = VerificarExitenciaCNPJ();
-
-                if (isCNPJJaExistente == false)
+                if (IsCNPJJaExistente() == false)
                 {
                     SalvarInformacoesComerciais();
 
@@ -261,10 +255,6 @@ namespace SistemaDeGerenciamento2_0.Forms
                     LimparCampos.LimpaCampos(this.Controls);
 
                     txtObservacoes.Text = string.Empty;
-                }
-                else
-                {
-                    MensagemAtencao.MensagemJaExistente("CNPJ");
                 }
             }
             else
@@ -307,22 +297,19 @@ namespace SistemaDeGerenciamento2_0.Forms
             AlertaSalvar.Show(this, $"{msg.titulo}", msg.texto, string.Empty, msg.image, msg);
         }
 
-        private bool VerificarExitenciaCNPJ()
+        private bool IsCNPJJaExistente()
         {
             try
             {
                 using (SistemaDeGerenciamento2_0Entities7 db = new SistemaDeGerenciamento2_0Entities7())
                 {
-                    var CPFCadastrado = db.tb_registro.Where(x => x.rg_cnpj == txtCNPJ.Text).Select(x => x.rg_cnpj).ToList();
+                    var IsCNPJCadastrado = db.tb_registro.Where(x => x.rg_cnpj == txtCNPJ.Text).Any();
 
-                    if (CPFCadastrado.Count > 0)
+                    if (IsCNPJCadastrado == true)
                     {
-                        return true;
+                        MensagemAtencao.MensagemJaExistente("CNPJ");
                     }
-                    else
-                    {
-                        return false;
-                    }
+                    return IsCNPJCadastrado;
                 }
             }
             catch (Exception x)
@@ -335,7 +322,7 @@ namespace SistemaDeGerenciamento2_0.Forms
             }
         }
 
-        private bool VerificandoPreenchimentoBasico()
+        private bool IsCampoBasicoPreenchido()
         {
             if (txtCNPJ.Text != string.Empty && txtNomeFantasia.Text != string.Empty && txtRazaoSocial.Text != string.Empty)
             {
@@ -358,7 +345,7 @@ namespace SistemaDeGerenciamento2_0.Forms
             txtRazaoSocial.BackColor = _corFundo;
         }
 
-        private bool VerificandoPreenchimentoCampoEndereco()
+        private bool IsCampoEnderecoPreenchido()
         {
             if (cmbTipoEndereco.Text != string.Empty && cmbEstado.Text != string.Empty && txtCidade.Text != string.Empty &&
                 txtBairro.Text != string.Empty && txtLogradouro.Text != string.Empty && txtNumero.Text != string.Empty)

@@ -1,4 +1,5 @@
-﻿using SistemaDeGerenciamento2_0.Class;
+﻿using DevExpress.XtraSplashScreen;
+using SistemaDeGerenciamento2_0.Class;
 using SistemaDeGerenciamento2_0.Properties;
 using System;
 using System.Collections.Generic;
@@ -22,7 +23,9 @@ namespace SistemaDeGerenciamento2_0.Forms
         private List<tb_registro> listaDadosEmpresa = new List<tb_registro>();
         private List<tb_enderecos> listaEnderecoEmpresa = new List<tb_enderecos>();
 
-        public frmDadosEmpresa()
+        private frmTelaPrincipal principal;
+
+        public frmDadosEmpresa(frmTelaPrincipal _principal)
         {
             InitializeComponent();
 
@@ -40,7 +43,27 @@ namespace SistemaDeGerenciamento2_0.Forms
                 PreenchendoTextBoxEnderecoEmpresa();
             });
 
+            principal = _principal;
+
+            ReloadData();
+
             PreenchimentoComboBoxEstado();
+        }
+
+        private void ReloadData()
+        {
+            try
+            {
+                using (var handle = SplashScreenManager.ShowOverlayForm(principal))
+                {
+                    BuscaPreencherTextBoxDadosEmpresa();
+                    BuscaPreencherTextBoxEnderecoEmpresa();
+                }
+            }
+            catch (Exception x)
+            {
+                MessageBox.Show(x.ToString());
+            }
         }
 
         private void btnBuscarPorCEP_Click(object sender, EventArgs e)

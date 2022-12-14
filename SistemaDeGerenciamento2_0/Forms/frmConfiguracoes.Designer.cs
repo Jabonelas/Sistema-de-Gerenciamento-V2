@@ -46,6 +46,7 @@
             this.btnPerfil.TabIndex = 126;
             this.btnPerfil.Text = "Perfil";
             this.btnPerfil.ToolTip = "Funcionário";
+            this.btnPerfil.Click += new System.EventHandler(this.btnPerfil_Click);
             // 
             // btnEmpresa
             // 
@@ -78,14 +79,14 @@
             // 
             this.pnlConfiguracoes.Location = new System.Drawing.Point(5, 80);
             this.pnlConfiguracoes.Name = "pnlConfiguracoes";
-            this.pnlConfiguracoes.Size = new System.Drawing.Size(944, 477);
+            this.pnlConfiguracoes.Size = new System.Drawing.Size(944, 542);
             this.pnlConfiguracoes.TabIndex = 128;
             // 
             // frmConfiguracoes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(953, 563);
+            this.ClientSize = new System.Drawing.Size(953, 622);
             this.Controls.Add(this.pnlConfiguracoes);
             this.Controls.Add(this.btnPerfil);
             this.Controls.Add(this.btnEmpresa);

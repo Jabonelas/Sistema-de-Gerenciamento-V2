@@ -14,10 +14,10 @@ namespace SistemaDeGerenciamento2_0
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new frmTelaPrincipal());
+            Application.Run(new frmTelaPrincipal());
             //Application.Run(new frmEntradaNF());
             //Application.Run(new frmNovoUsuario());
-            Application.Run(new frmCadastroUsuario());
+            //Application.Run(new frmCadastroUsuario());
         }
     }
 }

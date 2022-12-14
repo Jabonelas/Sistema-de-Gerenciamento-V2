@@ -16,7 +16,7 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private string tipoCadastro = string.Empty;
 
-        private bool isCPFJaExistente = false;
+        //private bool isCPFJaExistente = false;
 
         private ApiCorreios Api = new ApiCorreios();
 
@@ -288,15 +288,9 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private void Salvar()
         {
-            bool IsCampoEnderecoPreenchido = VerificandoPreenchimentoCampoEndereco();
-
-            bool IsCampoBasicoPreenchido = VerificandoPreenchimentoBasico();
-
-            if (IsCampoEnderecoPreenchido == true && IsCampoBasicoPreenchido == true)
+            if (IsCampoEnderecoPreenchido() == true && IsCampoBasicoPreenchido() == true)
             {
-                VerificarExitenciaCPF();
-
-                if (isCPFJaExistente == false)
+                if (IsCPFJaCadastrado() == false)
                 {
                     SalvarInformacoesComerciais();
 
@@ -310,10 +304,6 @@ namespace SistemaDeGerenciamento2_0.Forms
 
                     txtObservacoes.Text = string.Empty;
                 }
-                else
-                {
-                    MensagemAtencao.MensagemJaExistente("CPF");
-                }
             }
             else
             {
@@ -321,22 +311,20 @@ namespace SistemaDeGerenciamento2_0.Forms
             }
         }
 
-        private void VerificarExitenciaCPF()
+        private bool IsCPFJaCadastrado()
         {
             try
             {
                 using (SistemaDeGerenciamento2_0Entities7 db = new SistemaDeGerenciamento2_0Entities7())
                 {
-                    var CPFCadastrado = db.tb_registro.Where(x => x.rg_cpf == txtCPF.Text).Select(x => x.rg_cpf).ToList();
+                    var IsExisteCPFCadastrado = db.tb_registro.Where(x => x.rg_cpf == txtCPF.Text).Any();
 
-                    if (CPFCadastrado.Count > 0)
+                    if (IsExisteCPFCadastrado == true)
                     {
-                        isCPFJaExistente = true;
+                        MensagemAtencao.MensagemJaExistente("CPF");
                     }
-                    else
-                    {
-                        isCPFJaExistente = false;
-                    }
+
+                    return IsExisteCPFCadastrado;
                 }
             }
             catch (Exception x)
@@ -344,6 +332,8 @@ namespace SistemaDeGerenciamento2_0.Forms
                 LogErros.EscreverArquivoDeLog($"{DateTime.Now} - Erro ao Buscar CPF para verifica a exitencia no cadastro - Registro Pessoa Fisica | {x.Message} | {x.StackTrace}");
 
                 MensagemErros.ErroAoBuscarCPFParaVerificacaoExistencia(x);
+
+                return false;
             }
         }
 
@@ -447,7 +437,7 @@ namespace SistemaDeGerenciamento2_0.Forms
             cmbEstado.Text = _item.uf;
         }
 
-        private bool VerificandoPreenchimentoBasico()
+        private bool IsCampoBasicoPreenchido()
         {
             if (txtCPF.Text != string.Empty && txtNome.Text != string.Empty)
             {
@@ -469,7 +459,7 @@ namespace SistemaDeGerenciamento2_0.Forms
             txtNome.BackColor = _corFundo;
         }
 
-        private bool VerificandoPreenchimentoCampoEndereco()
+        private bool IsCampoEnderecoPreenchido()
         {
             if (cmbTipoEndereco.Text != string.Empty && cmbEstado.Text != string.Empty && txtCidade.Text != string.Empty &&
                 txtBairro.Text != string.Empty && txtLogradouro.Text != string.Empty && txtNumero.Text != string.Empty)
