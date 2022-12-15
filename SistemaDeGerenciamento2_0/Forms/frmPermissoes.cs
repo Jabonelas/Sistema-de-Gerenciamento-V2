@@ -33,6 +33,16 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
+            FechaTela();
+        }
+
+        private void btnSalvar_Click(object sender, EventArgs e)
+        {
+            Salvar();
+        }
+
+        private void FechaTela()
+        {
             if (form.txtNomeUsuario.Text == string.Empty && form.txtSenha.Text == string.Empty && form.txtNomeUsuario.Text == string.Empty)
             {
                 form.Close();
@@ -43,7 +53,7 @@ namespace SistemaDeGerenciamento2_0.Forms
             }
         }
 
-        private void btnSalvar_Click(object sender, EventArgs e)
+        private void Salvar()
         {
             if (IsTextBoxPreenchidos() == true
                 && IsSenhaIgualConfimacaoSenha() == true)
@@ -100,7 +110,6 @@ namespace SistemaDeGerenciamento2_0.Forms
                         pm_visualizar_contas_pagar = Convert.ToBoolean(chkVisualizarContasReceberPagar.Checked),
                         pm_receber_contas = Convert.ToBoolean(chkPermitePagarReceberContas.Checked),
                         pm_visualizar_fluxo_caixa = Convert.ToBoolean(chkVisualizarFluxoCaixa.Checked),
-                        pm_ajustar_configuracao_geral = Convert.ToBoolean(chkAjustarConfiguracaoGeral.Checked),
 
                         ////Configuração
                         pm_criar_editar_usuario = Convert.ToBoolean(chkCriarEditarUsuarios.Checked),
@@ -189,7 +198,6 @@ namespace SistemaDeGerenciamento2_0.Forms
                                 chkVisualizarContasReceberPagar.Checked = Convert.ToBoolean(item.pm_visualizar_contas_pagar);
                                 chkPermitePagarReceberContas.Checked = Convert.ToBoolean(item.pm_receber_contas);
                                 chkVisualizarFluxoCaixa.Checked = Convert.ToBoolean(item.pm_visualizar_fluxo_caixa);
-                                chkAjustarConfiguracaoGeral.Checked = Convert.ToBoolean(item.pm_ajustar_configuracao_geral);
 
                                 //Configuração
                                 chkCriarEditarUsuarios.Checked = Convert.ToBoolean(item.pm_criar_editar_usuario);
@@ -246,7 +254,6 @@ namespace SistemaDeGerenciamento2_0.Forms
                     checkBoxPreenchidas.pm_visualizar_contas_pagar = Convert.ToBoolean(chkVisualizarContasReceberPagar.Checked);
                     checkBoxPreenchidas.pm_receber_contas = Convert.ToBoolean(chkPermitePagarReceberContas.Checked);
                     checkBoxPreenchidas.pm_visualizar_fluxo_caixa = Convert.ToBoolean(chkVisualizarFluxoCaixa.Checked);
-                    checkBoxPreenchidas.pm_ajustar_configuracao_geral = Convert.ToBoolean(chkAjustarConfiguracaoGeral.Checked);
 
                     ////Configuração
                     checkBoxPreenchidas.pm_criar_editar_usuario = Convert.ToBoolean(chkCriarEditarUsuarios.Checked);
@@ -316,6 +323,18 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             DadosMensagemAlerta msg = new DadosMensagemAlerta("\n   Sucesso!", Resources.salvar_verde50);
             AlertaSalvar.Show(this, $"{msg.titulo}", msg.texto, string.Empty, msg.image, msg);
+        }
+
+        private void frmPermissoes_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+            {
+                FechaTela();
+            }
+            else if (e.KeyCode == Keys.F10)
+            {
+                Salvar();
+            }
         }
     }
 }

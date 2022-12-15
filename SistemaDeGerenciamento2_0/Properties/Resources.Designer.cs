@@ -483,6 +483,26 @@ namespace SistemaDeGerenciamento2_0.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap lapis_15 {
+            get {
+                object obj = ResourceManager.GetObject("lapis_15", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap lapis_20 {
+            get {
+                object obj = ResourceManager.GetObject("lapis_20", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap limpar_preto {
             get {
                 object obj = ResourceManager.GetObject("limpar_preto", resourceCulture);
@@ -736,6 +756,16 @@ namespace SistemaDeGerenciamento2_0.Properties {
         internal static System.Drawing.Bitmap tabela {
             get {
                 object obj = ResourceManager.GetObject("tabela", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap usuario_100 {
+            get {
+                object obj = ResourceManager.GetObject("usuario_100", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -1,5 +1,15 @@
-﻿using System;
+﻿using DevExpress.Data.PivotGrid;
+using DevExpress.Utils.Extensions;
+using DevExpress.XtraSplashScreen;
+using SistemaDeGerenciamento2_0.Class;
+using SistemaDeGerenciamento2_0.Properties;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
 using System.Drawing;
+using System.Linq;
+using System.Windows.Forms;
 
 namespace SistemaDeGerenciamento2_0.Forms
 {
@@ -22,7 +32,7 @@ namespace SistemaDeGerenciamento2_0.Forms
         private void TelaNovoUsuario()
         {
             pnlConfiguracoes.Controls.Clear();
-            frmNovoUsuario frmCadastroUsuario = new frmNovoUsuario();
+            frmNovoUsuario frmCadastroUsuario = new frmNovoUsuario(principal);
             frmCadastroUsuario.TopLevel = false;
             pnlConfiguracoes.Controls.Add(frmCadastroUsuario);
             pnlConfiguracoes.Tag = frmCadastroUsuario;

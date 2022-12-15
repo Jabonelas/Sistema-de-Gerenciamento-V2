@@ -45,8 +45,8 @@
             this.txtNovaSenha = new DevExpress.XtraEditors.TextEdit();
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
             this.pcbRequesitosCodigoDeBarras = new DevExpress.XtraEditors.PictureEdit();
-            this.btnCancelar = new DevExpress.XtraEditors.SimpleButton();
             this.btnSalvar = new DevExpress.XtraEditors.SimpleButton();
+            this.pcbExibirSenha = new DevExpress.XtraEditors.PictureEdit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCodigo.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
@@ -56,6 +56,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtConfirmarSenha.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNovaSenha.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbRequesitosCodigoDeBarras.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbExibirSenha.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // labelControl13
@@ -241,22 +242,6 @@
             this.pcbRequesitosCodigoDeBarras.TabIndex = 299;
             this.pcbRequesitosCodigoDeBarras.ToolTip = "Password: Caracteres Permitidos \r\n(!,@,#,$,%,¨,& ,*,_ ,-,+,=)";
             // 
-            // btnCancelar
-            // 
-            this.btnCancelar.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.Appearance.Options.UseFont = true;
-            this.btnCancelar.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.cancelar;
-            this.btnCancelar.ImageOptions.ImageIndex = 5;
-            this.btnCancelar.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftBottom;
-            this.btnCancelar.ImageOptions.ImageToTextIndent = 10;
-            this.btnCancelar.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-            this.btnCancelar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnCancelar.Location = new System.Drawing.Point(798, 306);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(113, 30);
-            this.btnCancelar.TabIndex = 300;
-            this.btnCancelar.Text = "Cancelar (Esc)";
-            // 
             // btnSalvar
             // 
             this.btnSalvar.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -267,18 +252,33 @@
             this.btnSalvar.ImageOptions.ImageToTextIndent = 10;
             this.btnSalvar.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
             this.btnSalvar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnSalvar.Location = new System.Drawing.Point(668, 306);
+            this.btnSalvar.Location = new System.Drawing.Point(798, 301);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(113, 30);
             this.btnSalvar.TabIndex = 301;
             this.btnSalvar.Text = "Salvar (F10)";
+            // 
+            // pcbExibirSenha
+            // 
+            this.pcbExibirSenha.EditValue = global::SistemaDeGerenciamento2_0.Properties.Resources.olho_20;
+            this.pcbExibirSenha.Location = new System.Drawing.Point(459, 182);
+            this.pcbExibirSenha.Name = "pcbExibirSenha";
+            this.pcbExibirSenha.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.pcbExibirSenha.Properties.Appearance.Options.UseBackColor = true;
+            this.pcbExibirSenha.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.pcbExibirSenha.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pcbExibirSenha.Properties.ZoomAcceleration = 5D;
+            this.pcbExibirSenha.Size = new System.Drawing.Size(26, 20);
+            this.pcbExibirSenha.TabIndex = 302;
+            this.pcbExibirSenha.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pcbExibirSenha_MouseDown);
+            this.pcbExibirSenha.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pcbExibirSenha_MouseUp);
             // 
             // frmPerfilUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(923, 366);
-            this.Controls.Add(this.btnCancelar);
+            this.Controls.Add(this.pcbExibirSenha);
             this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.pcbRequesitosCodigoDeBarras);
             this.Controls.Add(this.labelControl7);
@@ -309,6 +309,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtConfirmarSenha.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNovaSenha.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbRequesitosCodigoDeBarras.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbExibirSenha.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -333,7 +334,7 @@
         private DevExpress.XtraEditors.TextEdit txtNovaSenha;
         private DevExpress.XtraEditors.LabelControl labelControl7;
         private DevExpress.XtraEditors.PictureEdit pcbRequesitosCodigoDeBarras;
-        private DevExpress.XtraEditors.SimpleButton btnCancelar;
         private DevExpress.XtraEditors.SimpleButton btnSalvar;
+        private DevExpress.XtraEditors.PictureEdit pcbExibirSenha;
     }
 }

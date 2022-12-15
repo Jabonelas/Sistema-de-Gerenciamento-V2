@@ -29,7 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmNovoUsuario));
+            DevExpress.XtraSplashScreen.SplashScreenManager splashScreenManager1 = new DevExpress.XtraSplashScreen.SplashScreenManager(this, null, true, true);
             this.btnNovoUsuario = new DevExpress.XtraEditors.SimpleButton();
+            this.pnlUsuarios = new System.Windows.Forms.FlowLayoutPanel();
             this.SuspendLayout();
             // 
             // btnNovoUsuario
@@ -49,11 +51,24 @@
             this.btnNovoUsuario.Text = "Novo Usuário";
             this.btnNovoUsuario.Click += new System.EventHandler(this.btnNovoUsuario_Click);
             // 
+            // pnlUsuarios
+            // 
+            this.pnlUsuarios.AutoScroll = true;
+            this.pnlUsuarios.Location = new System.Drawing.Point(41, 77);
+            this.pnlUsuarios.Name = "pnlUsuarios";
+            this.pnlUsuarios.Size = new System.Drawing.Size(858, 362);
+            this.pnlUsuarios.TabIndex = 20;
+            // 
+            // splashScreenManager1
+            // 
+            splashScreenManager1.ClosingDelay = 500;
+            // 
             // frmNovoUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(944, 477);
+            this.Controls.Add(this.pnlUsuarios);
             this.Controls.Add(this.btnNovoUsuario);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmNovoUsuario";
@@ -65,5 +80,6 @@
         #endregion
 
         private DevExpress.XtraEditors.SimpleButton btnNovoUsuario;
+        private System.Windows.Forms.FlowLayoutPanel pnlUsuarios;
     }
 }

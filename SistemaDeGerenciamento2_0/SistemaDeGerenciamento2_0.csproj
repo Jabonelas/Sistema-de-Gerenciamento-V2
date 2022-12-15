@@ -206,6 +206,12 @@
     </Compile>
     <Compile Include="Class\ManipulacaoTextBox.cs" />
     <Compile Include="Class\LogErros.cs" />
+    <Compile Include="Forms\uscUsuarios.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\uscUsuarios.Designer.cs">
+      <DependentUpon>uscUsuarios.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
@@ -318,9 +324,13 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmCadastroProduto.resx">
       <DependentUpon>frmCadastroProduto.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmCadastroGrupoAgrupador.resx">
       <DependentUpon>frmCadastroGrupoAgrupador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\uscUsuarios.resx">
+      <DependentUpon>uscUsuarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -430,6 +440,9 @@
     <None Include="Resources\separador - Copia.png" />
     <None Include="Resources\acesso_20px.png" />
     <None Include="Resources\permissao_20.png" />
+    <None Include="Resources\usuario_100.png" />
+    <None Include="Resources\lapis_15.png" />
+    <None Include="Resources\lapis_20.png" />
     <Content Include="SistemaDeGerenciamento2_0.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>SistemaDeGerenciamento2_0.edmx</DependentUpon>
