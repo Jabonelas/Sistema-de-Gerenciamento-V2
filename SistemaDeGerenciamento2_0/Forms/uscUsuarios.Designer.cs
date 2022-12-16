@@ -32,6 +32,9 @@
             this.lblUsuario = new DevExpress.XtraEditors.LabelControl();
             this.btnDetalhes = new DevExpress.XtraEditors.SimpleButton();
             this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.lblId = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
             this.SuspendLayout();
             // 
@@ -49,7 +52,7 @@
             // 
             this.lblUsuario.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUsuario.Appearance.Options.UseFont = true;
-            this.lblUsuario.Location = new System.Drawing.Point(137, 83);
+            this.lblUsuario.Location = new System.Drawing.Point(186, 86);
             this.lblUsuario.Name = "lblUsuario";
             this.lblUsuario.Size = new System.Drawing.Size(94, 21);
             this.lblUsuario.TabIndex = 2;
@@ -74,6 +77,7 @@
             this.btnDetalhes.TabIndex = 16;
             this.btnDetalhes.Text = "Detalhes                                                                         " +
     "                           ";
+            this.btnDetalhes.ToolTip = "Exibir Detalhes Usuário";
             this.btnDetalhes.Click += new System.EventHandler(this.btnDetalhes_Click);
             // 
             // pictureEdit1
@@ -87,10 +91,43 @@
             this.pictureEdit1.Size = new System.Drawing.Size(100, 96);
             this.pictureEdit1.TabIndex = 0;
             // 
+            // labelControl1
+            // 
+            this.labelControl1.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl1.Appearance.Options.UseFont = true;
+            this.labelControl1.Location = new System.Drawing.Point(125, 25);
+            this.labelControl1.Name = "labelControl1";
+            this.labelControl1.Size = new System.Drawing.Size(18, 20);
+            this.labelControl1.TabIndex = 17;
+            this.labelControl1.Text = "ID:";
+            // 
+            // lblId
+            // 
+            this.lblId.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblId.Appearance.Options.UseFont = true;
+            this.lblId.Location = new System.Drawing.Point(149, 25);
+            this.lblId.Name = "lblId";
+            this.lblId.Size = new System.Drawing.Size(90, 20);
+            this.lblId.TabIndex = 18;
+            this.lblId.Text = "labelControl2";
+            // 
+            // labelControl2
+            // 
+            this.labelControl2.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl2.Appearance.Options.UseFont = true;
+            this.labelControl2.Location = new System.Drawing.Point(127, 87);
+            this.labelControl2.Name = "labelControl2";
+            this.labelControl2.Size = new System.Drawing.Size(53, 20);
+            this.labelControl2.TabIndex = 19;
+            this.labelControl2.Text = "Usuário:";
+            // 
             // uscUsuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.labelControl2);
+            this.Controls.Add(this.lblId);
+            this.Controls.Add(this.labelControl1);
             this.Controls.Add(this.btnDetalhes);
             this.Controls.Add(this.lblUsuario);
             this.Controls.Add(this.lblNomeFuncionario);
@@ -109,5 +146,8 @@
         private DevExpress.XtraEditors.LabelControl lblNomeFuncionario;
         private DevExpress.XtraEditors.LabelControl lblUsuario;
         private DevExpress.XtraEditors.SimpleButton btnDetalhes;
+        private DevExpress.XtraEditors.LabelControl labelControl1;
+        private DevExpress.XtraEditors.LabelControl lblId;
+        private DevExpress.XtraEditors.LabelControl labelControl2;
     }
 }

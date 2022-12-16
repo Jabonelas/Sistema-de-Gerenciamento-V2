@@ -231,9 +231,9 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private void PreenchimentoComboBoxEstado()
         {
-            ListaEstados.PreechendoListaEstado();
+            Estados.PreechendoListaEstado();
 
-            cmbEstado.Properties.DataSource = ListaEstados.listaEstados;
+            cmbEstado.Properties.DataSource = Estados.listaEstados;
             cmbEstado.Properties.DisplayMember = "Sigla";
             cmbEstado.Properties.ValueMember = "NomeEstado";
         }

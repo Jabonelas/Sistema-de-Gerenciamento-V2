@@ -97,6 +97,20 @@ namespace SistemaDeGerenciamento2_0.Class
 
         #endregion Estoque
 
+        #region Configuracoes
+
+        public static void ErroAoCadastroPermissoes(Exception _e)
+        {
+            MessageBox.Show($"(CAD-CO01) Erro ao Cadastrar Permissões do Usuário\n\nErro: {_e.Message}", "Erro Cadastrar Permissões!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        public static void ErroAoCadastroUsuario(Exception _e)
+        {
+            MessageBox.Show($"(CAD-CO02) Erro ao Cadastrar Usuário\n\nErro: {_e.Message}", "Erro Cadastrar Usuário!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        #endregion Configuracoes
+
         #endregion Cadastrar
 
         #region Buscar
@@ -205,14 +219,24 @@ namespace SistemaDeGerenciamento2_0.Class
 
         #endregion NF Entrada
 
-        #region Novo Usuário
+        #region Configuracoes
 
         public static void ErroAoBuscarDadosNovoUsuario(Exception _e)
         {
-            MessageBox.Show($"(BUS-NU01) Erro ao Bucar Usuário e Senha para preencher dados da tela de cadastrar novo usuário \n\nErro: {_e}", "Erro Buscar Usuário !", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            MessageBox.Show($"(BUS-CO01) Erro ao Bucar Usuário e Senha para preencher dados da tela de cadastrar novo usuário \n\nErro: {_e}", "Erro Buscar Usuário!", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
-        #endregion Novo Usuário
+        public static void ErroAoBuscarPermissoesUsuario(Exception _e)
+        {
+            MessageBox.Show($"(BUS-CO02) Erro ao Bucar Permissões do Usuário Para Preenhcer CheckBox \n\nErro: {_e}", "Erro Buscar Permissões!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        public static void ErroAoBuscarListaFuncionarios(Exception _e)
+        {
+            MessageBox.Show($"(BUS-CO03) Erro ao Bucar Lista Funcionarios Cadastrado \n\nErro: {_e}", "Erro Buscar  Funcionarios!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        #endregion Configuracoes
 
         #endregion Buscar
 
@@ -240,6 +264,15 @@ namespace SistemaDeGerenciamento2_0.Class
         }
 
         #endregion Registro
+
+        #region Configuracoes
+
+        public static void ErroAoAtualizarPermissoesUsuario(Exception _e)
+        {
+            MessageBox.Show($"(ATU-CO01) Erro ao Atualizar Permissões do Usuário\n\nErro: {_e}", "Erro Atualizar Permissões!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        #endregion Configuracoes
 
         #endregion Atualizar
 

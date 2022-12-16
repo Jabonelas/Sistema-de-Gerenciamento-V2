@@ -23,11 +23,13 @@ namespace SistemaDeGerenciamento2_0.Forms
         private List<tb_registro> listaDadosEmpresa = new List<tb_registro>();
         private List<tb_enderecos> listaEnderecoEmpresa = new List<tb_enderecos>();
 
-        private frmTelaPrincipal principal;
+        private frmTelaPrincipal frmTelaPrincipal;
 
-        public frmDadosEmpresa(frmTelaPrincipal _principal)
+        public frmDadosEmpresa(frmTelaPrincipal _frmTelaPrincipal)
         {
             InitializeComponent();
+
+            frmTelaPrincipal = _frmTelaPrincipal;
 
             var tarefa = Task.Run(async () =>
             {
@@ -43,27 +45,9 @@ namespace SistemaDeGerenciamento2_0.Forms
                 PreenchendoTextBoxEnderecoEmpresa();
             });
 
-            principal = _principal;
-
             ReloadData();
 
             PreenchimentoComboBoxEstado();
-        }
-
-        private void ReloadData()
-        {
-            try
-            {
-                using (var handle = SplashScreenManager.ShowOverlayForm(principal))
-                {
-                    BuscaPreencherTextBoxDadosEmpresa();
-                    BuscaPreencherTextBoxEnderecoEmpresa();
-                }
-            }
-            catch (Exception x)
-            {
-                MessageBox.Show(x.ToString());
-            }
         }
 
         private void btnBuscarPorCEP_Click(object sender, EventArgs e)
@@ -77,33 +61,6 @@ namespace SistemaDeGerenciamento2_0.Forms
         private void btnSalvar_Click(object sender, EventArgs e)
         {
             Salvar();
-        }
-
-        private void Salvar()
-        {
-            bool IsCampoPreenchidos = VerificandoPreenchimento();
-
-            if (IsCampoPreenchidos == true)
-            {
-                if (IsEmpresaJaCadastrada == false)
-                {
-                    SalvarEndereco();
-
-                    SalvarRegistro();
-                }
-                else
-                {
-                    AtualizarRegistroEmpresa();
-
-                    AtualizarEnderecoEmrpesa();
-                }
-
-                ChamandoAlertaSucessoNoCantoInferiorDireito();
-            }
-        }
-
-        private void txtBairro_EditValueChanged(object sender, EventArgs e)
-        {
         }
 
         private void txtCNPJ_KeyPress(object sender, KeyPressEventArgs e)
@@ -138,19 +95,22 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private void txtCNPJ_Leave(object sender, EventArgs e)
         {
-            if (Validacoes.IsCampoPreenchido(txtCNPJ) == true)
+            if (txtCNPJ.Text != string.Empty)
             {
-                if (Validacoes.IsCnpjValido(txtCNPJ.Text) == true)
+                if (Validacoes.IsCampoPreenchido(txtCNPJ) == true)
                 {
-                    txtCNPJ.BackColor = Color.FromArgb(0, 255, 255, 255);
-                }
-                else
-                {
-                    MensagemAtencao.MensagemCampoDigitadoInvalido("CNPJ");
+                    if (Validacoes.IsCnpjValido(txtCNPJ.Text) == true)
+                    {
+                        txtCNPJ.BackColor = Color.FromArgb(0, 255, 255, 255);
+                    }
+                    else
+                    {
+                        MensagemAtencao.MensagemCampoDigitadoInvalido("CNPJ");
 
-                    txtCNPJ.BackColor = Color.LightGray;
+                        txtCNPJ.BackColor = Color.LightGray;
 
-                    txtCNPJ.Focus();
+                        txtCNPJ.Focus();
+                    }
                 }
             }
         }
@@ -247,11 +207,43 @@ namespace SistemaDeGerenciamento2_0.Forms
             ManipulacaoTextBox.FormatoTelefone(e, txtTelefoneFixo);
         }
 
+        private void ReloadData()
+        {
+            using (var handle = SplashScreenManager.ShowOverlayForm(frmTelaPrincipal))
+            {
+                BuscaPreencherTextBoxDadosEmpresa();
+                BuscaPreencherTextBoxEnderecoEmpresa();
+            }
+        }
+
+        private void Salvar()
+        {
+            bool IsCampoPreenchidos = VerificandoPreenchimento();
+
+            if (IsCampoPreenchidos == true)
+            {
+                if (IsEmpresaJaCadastrada == false)
+                {
+                    SalvarEndereco();
+
+                    SalvarRegistro();
+                }
+                else
+                {
+                    AtualizarRegistroEmpresa();
+
+                    AtualizarEnderecoEmrpesa();
+                }
+
+                ChamandoAlertaSucessoNoCantoInferiorDireito();
+            }
+        }
+
         private void PreenchimentoComboBoxEstado()
         {
-            ListaEstados.PreechendoListaEstado();
+            Estados.PreechendoListaEstado();
 
-            cmbEstado.Properties.DataSource = ListaEstados.listaEstados;
+            cmbEstado.Properties.DataSource = Estados.listaEstados;
             cmbEstado.Properties.DisplayMember = "Sigla";
             cmbEstado.Properties.ValueMember = "NomeEstado";
         }
@@ -562,6 +554,15 @@ namespace SistemaDeGerenciamento2_0.Forms
             {
                 Salvar();
             }
+            else if (e.KeyCode == Keys.Escape)
+            {
+                MensagemAtencao.MensagemCancelar(this);
+            }
+        }
+
+        private void btnFechar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

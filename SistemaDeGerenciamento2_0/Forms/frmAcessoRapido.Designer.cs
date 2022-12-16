@@ -151,6 +151,7 @@
             this.btnDadosEmpresa.Size = new System.Drawing.Size(179, 30);
             this.btnDadosEmpresa.TabIndex = 18;
             this.btnDadosEmpresa.Text = "Dados da Empresa";
+            this.btnDadosEmpresa.Click += new System.EventHandler(this.btnDadosEmpresa_Click);
             // 
             // btnIrParaConfiguracoes
             // 
@@ -167,6 +168,7 @@
             this.btnIrParaConfiguracoes.Size = new System.Drawing.Size(179, 30);
             this.btnIrParaConfiguracoes.TabIndex = 16;
             this.btnIrParaConfiguracoes.Text = "Ir para Configurações";
+            this.btnIrParaConfiguracoes.Click += new System.EventHandler(this.btnIrParaConfiguracoes_Click);
             // 
             // btnNovoUsuario
             // 
@@ -183,6 +185,7 @@
             this.btnNovoUsuario.Size = new System.Drawing.Size(179, 30);
             this.btnNovoUsuario.TabIndex = 15;
             this.btnNovoUsuario.Text = "Novo Usuário";
+            this.btnNovoUsuario.Click += new System.EventHandler(this.btnNovoUsuario_Click);
             // 
             // panelControl4
             // 
@@ -481,14 +484,14 @@
             this.pictureBox5.TabIndex = 23;
             this.pictureBox5.TabStop = false;
             // 
-            // frmAcessoRapido
+            // frmPemissaoCadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(968, 563);
             this.Controls.Add(this.panelControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "frmAcessoRapido";
+            this.Name = "frmPemissaoCadastro";
             this.Text = "frmAcessoRapido";
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);

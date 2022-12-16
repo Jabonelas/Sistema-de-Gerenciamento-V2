@@ -1,7 +1,9 @@
 ﻿using DevExpress.Utils.Extensions;
 using DevExpress.XtraSplashScreen;
+using SistemaDeGerenciamento2_0.Class;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
 
@@ -11,31 +13,30 @@ namespace SistemaDeGerenciamento2_0.Forms
     {
         private List<tb_registro> listaFuncionarios = new List<tb_registro>();
 
-        private frmTelaPrincipal principal;
+        private frmTelaPrincipal frmTelaPrincipal;
 
-        public frmNovoUsuario(frmTelaPrincipal _principal)
+        public frmNovoUsuario(frmTelaPrincipal _frmTelaPrincipal)
         {
             InitializeComponent();
 
-            principal = _principal;
+            frmTelaPrincipal = _frmTelaPrincipal;
 
             ReloadData();
         }
 
+        private void btnNovoUsuario_Click(object sender, EventArgs e)
+        {
+            frmCadastroUsuario frmCadastroUsuario = new frmCadastroUsuario();
+            frmCadastroUsuario.ShowDialog();
+        }
+
         private void ReloadData()
         {
-            try
+            using (var handle = SplashScreenManager.ShowOverlayForm(frmTelaPrincipal))
             {
-                using (var handle = SplashScreenManager.ShowOverlayForm(principal))
-                {
-                    ListaFuncionarios();
+                ListaFuncionarios();
 
-                    ListandoUsuarios();
-                }
-            }
-            catch (Exception x)
-            {
-                MessageBox.Show(x.ToString());
+                ListandoUsuarios();
             }
         }
 
@@ -52,7 +53,9 @@ namespace SistemaDeGerenciamento2_0.Forms
             }
             catch (Exception x)
             {
-                MessageBox.Show(x.ToString());
+                LogErros.EscreverArquivoDeLog($"{DateTime.Now} - Erro ao Buscar Lista de Funcionarios Cadastrados - | {x.Message} | {x.StackTrace}");
+
+                MensagemErros.ErroAoBuscarListaFuncionarios(x);
             }
         }
 
@@ -60,19 +63,13 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             foreach (var item in listaFuncionarios)
             {
-                pnlUsuarios.Controls.Add(new uscUsuarios()
+                pnlUsuarios.Controls.Add(new uscUsuarios(frmTelaPrincipal)
                 {
                     nomeFuncionario = item.rg_nome,
                     usuario = item.rg_login,
-                    IDCadastro = item.id_registro,
+                    id = item.id_registro.ToString(),
                 });
             }
-        }
-
-        private void btnNovoUsuario_Click(object sender, EventArgs e)
-        {
-            frmCadastroUsuario frmCadastroUsuario = new frmCadastroUsuario();
-            frmCadastroUsuario.ShowDialog();
         }
     }
 }

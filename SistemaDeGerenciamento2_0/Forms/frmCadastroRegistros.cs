@@ -22,6 +22,7 @@ namespace SistemaDeGerenciamento2_0.Forms
         private void btnCliente_Click(object sender, EventArgs e)
         {
             TipoCliente();
+            TipoCliente();
         }
 
         private void btnFuncionario_Click(object sender, EventArgs e)

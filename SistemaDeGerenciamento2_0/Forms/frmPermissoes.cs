@@ -127,7 +127,9 @@ namespace SistemaDeGerenciamento2_0.Forms
             }
             catch (Exception x)
             {
-                MessageBox.Show(x.ToString());
+                LogErros.EscreverArquivoDeLog($"{DateTime.Now} - Erro ao Salvar Permissões de Acesso - | {x.Message} | {x.StackTrace}");
+
+                MensagemErros.ErroAoCadastroPermissoes(x);
             }
         }
 
@@ -151,7 +153,9 @@ namespace SistemaDeGerenciamento2_0.Forms
             }
             catch (Exception x)
             {
-                MessageBox.Show(x.ToString());
+                LogErros.EscreverArquivoDeLog($"{DateTime.Now} - Erro ao Cadastrar Usuário - | {x.Message} | {x.StackTrace}");
+
+                MensagemErros.ErroAoCadastroUsuario(x);
             }
         }
 
@@ -213,7 +217,9 @@ namespace SistemaDeGerenciamento2_0.Forms
             }
             catch (Exception x)
             {
-                MessageBox.Show(x.ToString());
+                LogErros.EscreverArquivoDeLog($"{DateTime.Now} - Erro ao Buscar Permissões Para Preencher CheckBox - | {x.Message} | {x.StackTrace}");
+
+                MensagemErros.ErroAoBuscarPermissoesUsuario(x);
             }
         }
 
@@ -268,7 +274,9 @@ namespace SistemaDeGerenciamento2_0.Forms
             }
             catch (Exception x)
             {
-                MessageBox.Show(x.ToString());
+                LogErros.EscreverArquivoDeLog($"{DateTime.Now} - Erro ao Atualizar Permissões - | {x.Message} | {x.StackTrace}");
+
+                MensagemErros.ErroAoAtualizarPermissoesUsuario(x);
             }
         }
 

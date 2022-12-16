@@ -122,7 +122,6 @@
             this.btnCliente.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.cliente;
             this.btnCliente.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
             this.btnCliente.Location = new System.Drawing.Point(767, 72);
-            this.btnCliente.LookAndFeel.UseDefaultLookAndFeel = false;
             this.btnCliente.Name = "btnCliente";
             this.btnCliente.Size = new System.Drawing.Size(80, 43);
             this.btnCliente.TabIndex = 1;

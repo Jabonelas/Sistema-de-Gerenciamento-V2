@@ -2,7 +2,7 @@
 
 namespace SistemaDeGerenciamento2_0.Class
 {
-    public static class ListaEstados
+    public static class Estados
     {
         public static List<EstadoClass> listaEstados = new List<EstadoClass>();
 

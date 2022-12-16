@@ -63,7 +63,7 @@
             // 
             this.labelControl13.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl13.Appearance.Options.UseFont = true;
-            this.labelControl13.Location = new System.Drawing.Point(3, 2);
+            this.labelControl13.Location = new System.Drawing.Point(19, 12);
             this.labelControl13.Name = "labelControl13";
             this.labelControl13.Size = new System.Drawing.Size(37, 20);
             this.labelControl13.TabIndex = 103;
@@ -73,7 +73,7 @@
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox6.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.separador;
-            this.pictureBox6.Location = new System.Drawing.Point(-24, 17);
+            this.pictureBox6.Location = new System.Drawing.Point(-14, 28);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(215, 25);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -84,7 +84,7 @@
             // 
             this.labelControl1.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl1.Appearance.Options.UseFont = true;
-            this.labelControl1.Location = new System.Drawing.Point(3, 82);
+            this.labelControl1.Location = new System.Drawing.Point(19, 96);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(40, 20);
             this.labelControl1.TabIndex = 105;
@@ -92,7 +92,7 @@
             // 
             // txtCodigo
             // 
-            this.txtCodigo.Location = new System.Drawing.Point(3, 108);
+            this.txtCodigo.Location = new System.Drawing.Point(19, 122);
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCodigo.Properties.Appearance.Options.UseFont = true;
@@ -105,7 +105,7 @@
             // 
             this.labelControl2.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl2.Appearance.Options.UseFont = true;
-            this.labelControl2.Location = new System.Drawing.Point(340, 82);
+            this.labelControl2.Location = new System.Drawing.Point(338, 96);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(44, 20);
             this.labelControl2.TabIndex = 107;
@@ -113,7 +113,7 @@
             // 
             // textEdit1
             // 
-            this.textEdit1.Location = new System.Drawing.Point(340, 108);
+            this.textEdit1.Location = new System.Drawing.Point(338, 122);
             this.textEdit1.Name = "textEdit1";
             this.textEdit1.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textEdit1.Properties.Appearance.Options.UseFont = true;
@@ -126,7 +126,7 @@
             // 
             this.labelControl3.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl3.Appearance.Options.UseFont = true;
-            this.labelControl3.Location = new System.Drawing.Point(677, 82);
+            this.labelControl3.Location = new System.Drawing.Point(657, 96);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Size = new System.Drawing.Size(53, 20);
             this.labelControl3.TabIndex = 109;
@@ -134,7 +134,7 @@
             // 
             // textEdit2
             // 
-            this.textEdit2.Location = new System.Drawing.Point(677, 108);
+            this.textEdit2.Location = new System.Drawing.Point(657, 122);
             this.textEdit2.Name = "textEdit2";
             this.textEdit2.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textEdit2.Properties.Appearance.Options.UseFont = true;
@@ -147,7 +147,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.separador;
-            this.pictureBox1.Location = new System.Drawing.Point(-153, 57);
+            this.pictureBox1.Location = new System.Drawing.Point(-153, 71);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(1231, 25);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -158,7 +158,7 @@
             // 
             this.labelControl16.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl16.Appearance.Options.UseFont = true;
-            this.labelControl16.Location = new System.Drawing.Point(3, 50);
+            this.labelControl16.Location = new System.Drawing.Point(19, 67);
             this.labelControl16.Name = "labelControl16";
             this.labelControl16.Size = new System.Drawing.Size(115, 15);
             this.labelControl16.TabIndex = 290;
@@ -168,7 +168,7 @@
             // 
             this.labelControl4.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl4.Appearance.Options.UseFont = true;
-            this.labelControl4.Location = new System.Drawing.Point(3, 150);
+            this.labelControl4.Location = new System.Drawing.Point(19, 164);
             this.labelControl4.Name = "labelControl4";
             this.labelControl4.Size = new System.Drawing.Size(79, 15);
             this.labelControl4.TabIndex = 297;
@@ -178,7 +178,7 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.separador;
-            this.pictureBox2.Location = new System.Drawing.Point(-150, 157);
+            this.pictureBox2.Location = new System.Drawing.Point(-150, 171);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(1228, 25);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -189,7 +189,7 @@
             // 
             this.labelControl6.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl6.Appearance.Options.UseFont = true;
-            this.labelControl6.Location = new System.Drawing.Point(3, 182);
+            this.labelControl6.Location = new System.Drawing.Point(19, 196);
             this.labelControl6.Name = "labelControl6";
             this.labelControl6.Size = new System.Drawing.Size(82, 20);
             this.labelControl6.TabIndex = 293;
@@ -197,7 +197,7 @@
             // 
             // txtConfirmarSenha
             // 
-            this.txtConfirmarSenha.Location = new System.Drawing.Point(340, 208);
+            this.txtConfirmarSenha.Location = new System.Drawing.Point(340, 222);
             this.txtConfirmarSenha.Name = "txtConfirmarSenha";
             this.txtConfirmarSenha.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtConfirmarSenha.Properties.Appearance.Options.UseFont = true;
@@ -209,7 +209,7 @@
             // 
             // txtNovaSenha
             // 
-            this.txtNovaSenha.Location = new System.Drawing.Point(3, 208);
+            this.txtNovaSenha.Location = new System.Drawing.Point(19, 222);
             this.txtNovaSenha.Name = "txtNovaSenha";
             this.txtNovaSenha.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNovaSenha.Properties.Appearance.Options.UseFont = true;
@@ -222,7 +222,7 @@
             // 
             this.labelControl7.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl7.Appearance.Options.UseFont = true;
-            this.labelControl7.Location = new System.Drawing.Point(340, 182);
+            this.labelControl7.Location = new System.Drawing.Point(340, 196);
             this.labelControl7.Name = "labelControl7";
             this.labelControl7.Size = new System.Drawing.Size(113, 20);
             this.labelControl7.TabIndex = 298;
@@ -231,7 +231,7 @@
             // pcbRequesitosCodigoDeBarras
             // 
             this.pcbRequesitosCodigoDeBarras.EditValue = global::SistemaDeGerenciamento2_0.Properties.Resources.informacao20;
-            this.pcbRequesitosCodigoDeBarras.Location = new System.Drawing.Point(91, 182);
+            this.pcbRequesitosCodigoDeBarras.Location = new System.Drawing.Point(107, 196);
             this.pcbRequesitosCodigoDeBarras.Name = "pcbRequesitosCodigoDeBarras";
             this.pcbRequesitosCodigoDeBarras.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.pcbRequesitosCodigoDeBarras.Properties.Appearance.Options.UseBackColor = true;
@@ -252,7 +252,7 @@
             this.btnSalvar.ImageOptions.ImageToTextIndent = 10;
             this.btnSalvar.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
             this.btnSalvar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnSalvar.Location = new System.Drawing.Point(798, 301);
+            this.btnSalvar.Location = new System.Drawing.Point(787, 304);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(113, 30);
             this.btnSalvar.TabIndex = 301;
@@ -261,7 +261,7 @@
             // pcbExibirSenha
             // 
             this.pcbExibirSenha.EditValue = global::SistemaDeGerenciamento2_0.Properties.Resources.olho_20;
-            this.pcbExibirSenha.Location = new System.Drawing.Point(459, 182);
+            this.pcbExibirSenha.Location = new System.Drawing.Point(459, 196);
             this.pcbExibirSenha.Name = "pcbExibirSenha";
             this.pcbExibirSenha.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.pcbExibirSenha.Properties.Appearance.Options.UseBackColor = true;

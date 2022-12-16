@@ -15,28 +15,26 @@ namespace SistemaDeGerenciamento2_0.Forms
 {
     public partial class frmConfiguracoes : DevExpress.XtraEditors.XtraForm
     {
-        private frmTelaPrincipal principal;
+        private int X = 0;
+        private int Y = 0;
 
-        public frmConfiguracoes(frmTelaPrincipal _principal)
+        private frmTelaPrincipal frmTelaPrincipal;
+
+        public frmConfiguracoes(frmTelaPrincipal _frmTelaPrincipal)
         {
             InitializeComponent();
 
-            principal = _principal;
+            frmTelaPrincipal = _frmTelaPrincipal;
+
+            TelaNovoUsuario();
         }
 
         private void btnNovoUsuario_Click(object sender, EventArgs e)
         {
-            TelaNovoUsuario();
-        }
+            this.Size = new Size(953, 622);
+            pnlConfiguracoes.Size = new Size(944, 542);
 
-        private void TelaNovoUsuario()
-        {
-            pnlConfiguracoes.Controls.Clear();
-            frmNovoUsuario frmCadastroUsuario = new frmNovoUsuario(principal);
-            frmCadastroUsuario.TopLevel = false;
-            pnlConfiguracoes.Controls.Add(frmCadastroUsuario);
-            pnlConfiguracoes.Tag = frmCadastroUsuario;
-            frmCadastroUsuario.Show();
+            TelaNovoUsuario();
         }
 
         private void btnEmpresa_Click(object sender, EventArgs e)
@@ -47,16 +45,6 @@ namespace SistemaDeGerenciamento2_0.Forms
             TelaCadastrarEmpresa();
         }
 
-        private void TelaCadastrarEmpresa()
-        {
-            pnlConfiguracoes.Controls.Clear();
-            frmDadosEmpresa frmNovoUsuario = new frmDadosEmpresa(principal);
-            frmNovoUsuario.TopLevel = false;
-            pnlConfiguracoes.Controls.Add(frmNovoUsuario);
-            pnlConfiguracoes.Tag = frmNovoUsuario;
-            frmNovoUsuario.Show();
-        }
-
         private void btnPerfil_Click(object sender, EventArgs e)
         {
             this.Size = new Size(953, 432);
@@ -65,14 +53,58 @@ namespace SistemaDeGerenciamento2_0.Forms
             TelaPerfilUsuario();
         }
 
+        private void TelaNovoUsuario()
+        {
+            pnlConfiguracoes.Controls.Clear();
+            frmNovoUsuario frmCadastroUsuario = new frmNovoUsuario(frmTelaPrincipal);
+            frmCadastroUsuario.TopLevel = false;
+            pnlConfiguracoes.Controls.Add(frmCadastroUsuario);
+            pnlConfiguracoes.Tag = frmCadastroUsuario;
+            frmCadastroUsuario.Show();
+        }
+
+        private void TelaCadastrarEmpresa()
+        {
+            pnlConfiguracoes.Controls.Clear();
+            frmDadosEmpresa frmNovoUsuario = new frmDadosEmpresa(frmTelaPrincipal);
+            frmNovoUsuario.TopLevel = false;
+            pnlConfiguracoes.Controls.Add(frmNovoUsuario);
+            pnlConfiguracoes.Tag = frmNovoUsuario;
+            frmNovoUsuario.Show();
+        }
+
         private void TelaPerfilUsuario()
         {
             pnlConfiguracoes.Controls.Clear();
-            frmPerfilUsuario frmPerfilUsuario = new frmPerfilUsuario(principal);
+            frmPerfilUsuario frmPerfilUsuario = new frmPerfilUsuario(frmTelaPrincipal);
             frmPerfilUsuario.TopLevel = false;
             pnlConfiguracoes.Controls.Add(frmPerfilUsuario);
             pnlConfiguracoes.Tag = frmPerfilUsuario;
             frmPerfilUsuario.Show();
+        }
+
+        private void btnFechar_Click(object sender, EventArgs e)
+        {
+            MensagemAtencao.MensagemCancelar(this);
+        }
+
+        private void frmConfiguracoes_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (e.Button != MouseButtons.Left) return;
+            this.Left = X + MousePosition.X;
+            this.Top = Y + MousePosition.Y;
+        }
+
+        private void frmConfiguracoes_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button != MouseButtons.Left) return;
+            X = this.Left - MousePosition.X;
+            Y = this.Top - MousePosition.Y;
+        }
+
+        private void frmConfiguracoes_KeyDown(object sender, KeyEventArgs e)
+        {
+            MensagemAtencao.MensagemCancelar(this);
         }
     }
 }

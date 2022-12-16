@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            DevExpress.DataAccess.Sql.CustomSqlQuery customSqlQuery2 = new DevExpress.DataAccess.Sql.CustomSqlQuery();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCadastroUsuario));
             DevExpress.XtraSplashScreen.SplashScreenManager splashScreenManager1 = new DevExpress.XtraSplashScreen.SplashScreenManager(this, null, true, true);
+            DevExpress.DataAccess.Sql.CustomSqlQuery customSqlQuery1 = new DevExpress.DataAccess.Sql.CustomSqlQuery();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCadastroUsuario));
             this.queryBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.sqlDataSource2 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
@@ -48,6 +48,7 @@
             this.btnFechar = new DevExpress.XtraEditors.SimpleButton();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.cmbFuncionario = new DevExpress.XtraEditors.LookUpEdit();
+            this.cmbFuncionario2 = new DevExpress.XtraEditors.LookUpEdit();
             ((System.ComponentModel.ISupportInitialize)(this.queryBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbExibirSenha.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbRequesitosCodigoDeBarras.Properties)).BeginInit();
@@ -56,7 +57,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtNomeUsuario.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbFuncionario.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbFuncionario2.Properties)).BeginInit();
             this.SuspendLayout();
+            // 
+            // splashScreenManager1
+            // 
+            splashScreenManager1.ClosingDelay = 500;
             // 
             // queryBindingSource
             // 
@@ -67,12 +73,12 @@
             // 
             this.sqlDataSource2.ConnectionName = "SistemaDeGerenciamento2_0ConnectionString";
             this.sqlDataSource2.Name = "sqlDataSource2";
-            customSqlQuery2.Name = "Query";
-            customSqlQuery2.Sql = "select \"tb_registro\".\"id_registro\",\r\n       \"tb_registro\".\"rg_nome\"\r\n  from \"dbo\"" +
+            customSqlQuery1.Name = "Query";
+            customSqlQuery1.Sql = "select \"tb_registro\".\"id_registro\",\r\n       \"tb_registro\".\"rg_nome\"\r\n  from \"dbo\"" +
     ".\"tb_registro\" \"tb_registro\"\r\nwhere \"tb_registro\".\"rg_tipo_cadastro\" = \'Funciona" +
     "rio\'";
             this.sqlDataSource2.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
-            customSqlQuery2});
+            customSqlQuery1});
             this.sqlDataSource2.ResultSchemaSerializable = "PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTIiPjxWaWV3IE5hbWU9IlF1ZXJ5Ij48RmllbGQgTmFtZ" +
     "T0iaWRfcmVnaXN0cm8iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJyZ19ub21lIiBUeXBlPSJTd" +
     "HJpbmciIC8+PC9WaWV3PjwvRGF0YVNldD4=";
@@ -240,18 +246,28 @@
             this.cmbFuncionario.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
             this.cmbFuncionario.Properties.ValueMember = "id_registro";
             this.cmbFuncionario.Size = new System.Drawing.Size(206, 26);
-            this.cmbFuncionario.TabIndex = 5;
-            this.cmbFuncionario.TextChanged += new System.EventHandler(this.cmbFuncionario_TextChanged);
+            this.cmbFuncionario.TabIndex = 116;
+            this.cmbFuncionario.TextChanged += new System.EventHandler(this.cmbFuncionario_TextChanged_1);
             // 
-            // splashScreenManager1
+            // cmbFuncionario2
             // 
-            splashScreenManager1.ClosingDelay = 500;
+            this.cmbFuncionario2.Location = new System.Drawing.Point(27, 89);
+            this.cmbFuncionario2.Name = "cmbFuncionario2";
+            this.cmbFuncionario2.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbFuncionario2.Properties.Appearance.Options.UseFont = true;
+            this.cmbFuncionario2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cmbFuncionario2.Size = new System.Drawing.Size(206, 26);
+            this.cmbFuncionario2.TabIndex = 117;
+            this.cmbFuncionario2.Visible = false;
             // 
             // frmCadastroUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(847, 577);
+            this.Controls.Add(this.cmbFuncionario2);
+            this.Controls.Add(this.cmbFuncionario);
             this.Controls.Add(this.pcbExibirSenha);
             this.Controls.Add(this.pcbRequesitosCodigoDeBarras);
             this.Controls.Add(this.pnlPermissoes);
@@ -265,12 +281,13 @@
             this.Controls.Add(this.labelControl3);
             this.Controls.Add(this.btnFechar);
             this.Controls.Add(this.pictureBox6);
-            this.Controls.Add(this.cmbFuncionario);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.KeyPreview = true;
             this.Name = "frmCadastroUsuario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmCadastroUsuario";
             this.Shown += new System.EventHandler(this.frmCadastroUsuario_Shown);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmCadastroUsuario_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.queryBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbExibirSenha.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbRequesitosCodigoDeBarras.Properties)).EndInit();
@@ -279,6 +296,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtNomeUsuario.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbFuncionario.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbFuncionario2.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -297,9 +315,10 @@
         private DevExpress.XtraEditors.PictureEdit pcbRequesitosCodigoDeBarras;
         private DevExpress.XtraEditors.PictureEdit pcbExibirSenha;
         public DevExpress.XtraEditors.TextEdit txtConfirmacaoSenha;
-        public DevExpress.XtraEditors.LookUpEdit cmbFuncionario;
         public DevExpress.XtraEditors.TextEdit txtSenha;
         public DevExpress.XtraEditors.TextEdit txtNomeUsuario;
         public System.Windows.Forms.FlowLayoutPanel pnlPermissoes;
+        public DevExpress.XtraEditors.LookUpEdit cmbFuncionario;
+        public DevExpress.XtraEditors.LookUpEdit cmbFuncionario2;
     }
 }

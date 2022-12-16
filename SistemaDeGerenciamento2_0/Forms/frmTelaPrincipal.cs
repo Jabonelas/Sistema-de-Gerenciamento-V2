@@ -16,7 +16,7 @@ namespace SistemaDeGerenciamento2_0
         private void TelaAcessoRapido()
         {
             pnlTelaPrincipal.Controls.Clear();
-            frmPemissaoCadastro frmAcessoRapido = new frmPemissaoCadastro();
+            frmPemissaoCadastro frmAcessoRapido = new frmPemissaoCadastro(this);
             frmAcessoRapido.TopLevel = false;
             pnlTelaPrincipal.Controls.Add(frmAcessoRapido);
             pnlTelaPrincipal.Tag = frmAcessoRapido;

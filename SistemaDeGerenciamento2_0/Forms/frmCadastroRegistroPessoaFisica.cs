@@ -1,10 +1,12 @@
-﻿using SistemaDeGerenciamento2_0.Class;
+﻿using DevExpress.XtraEditors;
+using SistemaDeGerenciamento2_0.Class;
 using SistemaDeGerenciamento2_0.Properties;
 using System;
 using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
+using static SistemaDeGerenciamento2_0.Class.Estados;
 
 namespace SistemaDeGerenciamento2_0.Forms
 {
@@ -375,9 +377,9 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private void PreenchimentoComboBoxEstado()
         {
-            ListaEstados.PreechendoListaEstado();
+            Estados.PreechendoListaEstado();
 
-            cmbEstado.Properties.DataSource = ListaEstados.listaEstados;
+            cmbEstado.Properties.DataSource = Estados.listaEstados;
             cmbEstado.Properties.DisplayMember = "Sigla";
             cmbEstado.Properties.ValueMember = "NomeEstado";
         }
@@ -579,6 +581,34 @@ namespace SistemaDeGerenciamento2_0.Forms
                 LogErros.EscreverArquivoDeLog($"{DateTime.Now} - Erro ao Cadastrar Registro | {x.Message} | {x.StackTrace}");
 
                 MensagemErros.ErroAoCadastroRegistroPessoaFisica(x);
+            }
+        }
+
+        private void labelControl11_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void labelControl13_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void labelControl12_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void pictureEdit3_EditValueChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void frmCadastroRegistroPessoaFisica_Load(object sender, EventArgs e)
+        {
+        }
+
+        private void frmCadastroRegistroPessoaFisica_Shown(object sender, EventArgs e)
+        {
+            if (Estados.listaEstados.Count > 0)
+            {
+                cmbEstado.EditValue = Estados.listaEstados[3].NomeEstado;
             }
         }
     }
