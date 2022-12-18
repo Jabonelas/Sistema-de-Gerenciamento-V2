@@ -1,0 +1,390 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"></assembly>
+  <data name="btnOk.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 336</value>
+  </data>
+  <data name="btnCancel.AccessibleName" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="btnCancel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>104, 336</value>
+  </data>
+  <data name="btnCancel.Text" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="btnRemoveRecurrence.AccessibleName" xml:space="preserve">
+    <value>Remover Recorrência</value>
+  </data>
+  <data name="btnRemoveRecurrence.Location" type="System.Drawing.Point, System.Drawing">
+    <value>192, 336</value>
+  </data>
+  <data name="btnRemoveRecurrence.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 23</value>
+  </data>
+  <data name="btnRemoveRecurrence.Text" xml:space="preserve">
+    <value>&amp;Remover Recorrências</value>
+  </data>
+  <data name="grpAptTime.AccessibleName" xml:space="preserve">
+    <value>Hora do compromisso</value>
+  </data>
+  <data name="cbDuration.Location" type="System.Drawing.Point, System.Drawing">
+    <value>353, 32</value>
+  </data>
+  <data name="cbDuration.Properties.AccessibleName" xml:space="preserve">
+    <value>Duração:</value>
+  </data>
+  <data name="edtEndTime.Location" type="System.Drawing.Point, System.Drawing">
+    <value>193, 32</value>
+  </data>
+  <data name="edtEndTime.Properties.AccessibleName" xml:space="preserve">
+    <value>Término:</value>
+  </data>
+  <data name="lblEnd.AccessibleName" xml:space="preserve">
+    <value>Fim:</value>
+  </data>
+  <data name="lblEnd.Location" type="System.Drawing.Point, System.Drawing">
+    <value>167, 35</value>
+  </data>
+  <data name="lblEnd.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 13</value>
+  </data>
+  <data name="lblEnd.Text" xml:space="preserve">
+    <value>&amp;Fim:</value>
+  </data>
+  <data name="edtStartTime.Properties.AccessibleName" xml:space="preserve">
+    <value>Hora de início:</value>
+  </data>
+  <data name="lblStart.AccessibleName" xml:space="preserve">
+    <value>Início:</value>
+  </data>
+  <data name="lblStart.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 13</value>
+  </data>
+  <data name="lblStart.Text" xml:space="preserve">
+    <value>&amp;Início:</value>
+  </data>
+  <data name="lblDuration.AccessibleName" xml:space="preserve">
+    <value>Duração:</value>
+  </data>
+  <data name="lblDuration.Location" type="System.Drawing.Point, System.Drawing">
+    <value>303, 35</value>
+  </data>
+  <data name="lblDuration.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 13</value>
+  </data>
+  <data name="lblDuration.Text" xml:space="preserve">
+    <value>Dura&amp;ção:</value>
+  </data>
+  <data name="grpAptTime.Size" type="System.Drawing.Size, System.Drawing">
+    <value>490, 64</value>
+  </data>
+  <data name="grpAptTime.Text" xml:space="preserve">
+    <value>Hora do compromisso</value>
+  </data>
+  <data name="grpRecurrencePattern.AccessibleName" xml:space="preserve">
+    <value>Padrão de Recorrência</value>
+  </data>
+  <data name="yearlyRecurrenceControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>378, 96</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"></assembly>
+  <data name="yearlyRecurrenceControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="monthlyRecurrenceControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>378, 96</value>
+  </data>
+  <data name="monthlyRecurrenceControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="weeklyRecurrenceControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>110, 34</value>
+  </data>
+  <data name="weeklyRecurrenceControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>378, 96</value>
+  </data>
+  <data name="weeklyRecurrenceControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="dailyRecurrenceControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>378, 96</value>
+  </data>
+  <data name="dailyRecurrenceControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="chkWeekly.Properties.AccessibleName" xml:space="preserve">
+    <value>Semanalmente</value>
+  </data>
+  <data name="chkWeekly.Properties.Caption" xml:space="preserve">
+    <value>&amp;Semanalmente</value>
+  </data>
+  <data name="chkWeekly.Size" type="System.Drawing.Size, System.Drawing">
+    <value>93, 19</value>
+  </data>
+  <data name="chkMonthly.Properties.AccessibleName" xml:space="preserve">
+    <value>Mensalmente</value>
+  </data>
+  <data name="chkMonthly.Properties.Caption" xml:space="preserve">
+    <value>&amp;Mensalmente</value>
+  </data>
+  <data name="chkMonthly.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 19</value>
+  </data>
+  <data name="chkDaily.Properties.AccessibleName" xml:space="preserve">
+    <value>Diariamente</value>
+  </data>
+  <data name="chkDaily.Properties.Caption" xml:space="preserve">
+    <value>&amp;Diariamente</value>
+  </data>
+  <data name="chkDaily.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 19</value>
+  </data>
+  <data name="chkYearly.Properties.AccessibleName" xml:space="preserve">
+    <value>Anualmente</value>
+  </data>
+  <data name="chkYearly.Properties.Caption" xml:space="preserve">
+    <value>&amp;Anualmente</value>
+  </data>
+  <data name="chkYearly.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 19</value>
+  </data>
+  <data name="grpRecurrencePattern.Size" type="System.Drawing.Size, System.Drawing">
+    <value>490, 128</value>
+  </data>
+  <data name="grpRecurrencePattern.Text" xml:space="preserve">
+    <value>Padrão de Recorrência</value>
+  </data>
+  <data name="grpRecurrenceRange.AccessibleName" xml:space="preserve">
+    <value>Intervalo de recorrência</value>
+  </data>
+  <data name="spinRangeOccurrencesCount.Location" type="System.Drawing.Point, System.Drawing">
+    <value>281, 56</value>
+  </data>
+  <data name="spinRangeOccurrencesCount.Properties.AccessibleName" xml:space="preserve">
+    <value>Termina depois de cada corrência de Texto Editável:</value>
+  </data>
+  <data name="spinRangeOccurrencesCount.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="edtRangeEnd.Location" type="System.Drawing.Point, System.Drawing">
+    <value>281, 80</value>
+  </data>
+  <data name="edtRangeEnd.Properties.AccessibleName" xml:space="preserve">
+    <value>Termina em:</value>
+  </data>
+  <data name="edtRangeEnd.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="edtRangeStart.Location" type="System.Drawing.Point, System.Drawing">
+    <value>51, 32</value>
+  </data>
+  <data name="edtRangeStart.Properties.AccessibleName" xml:space="preserve">
+    <value>Data de início</value>
+  </data>
+  <data name="edtRangeStart.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="lblRangeOccurrencesCount.AccessibleName" xml:space="preserve">
+    <value>ocorrências</value>
+  </data>
+  <data name="lblRangeOccurrencesCount.Location" type="System.Drawing.Point, System.Drawing">
+    <value>327, 59</value>
+  </data>
+  <data name="lblRangeOccurrencesCount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 13</value>
+  </data>
+  <data name="lblRangeOccurrencesCount.Text" xml:space="preserve">
+    <value>ocorrências</value>
+  </data>
+  <data name="lblRangeStart.AccessibleName" xml:space="preserve">
+    <value>Início:</value>
+  </data>
+  <data name="lblRangeStart.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 36</value>
+  </data>
+  <data name="lblRangeStart.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 13</value>
+  </data>
+  <data name="lblRangeStart.Text" xml:space="preserve">
+    <value>&amp;Início:</value>
+  </data>
+  <data name="chkNoEndDate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>184, 32</value>
+  </data>
+  <data name="chkNoEndDate.Properties.AccessibleName" xml:space="preserve">
+    <value>Sem data final</value>
+  </data>
+  <data name="chkNoEndDate.Properties.Caption" xml:space="preserve">
+    <value>Sem data &amp;final</value>
+  </data>
+  <data name="chkNoEndDate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 19</value>
+  </data>
+  <data name="chkEndAfterNumberOfOccurrences.Location" type="System.Drawing.Point, System.Drawing">
+    <value>184, 56</value>
+  </data>
+  <data name="chkEndAfterNumberOfOccurrences.Properties.AccessibleName" xml:space="preserve">
+    <value>Término após:</value>
+  </data>
+  <data name="chkEndAfterNumberOfOccurrences.Properties.Caption" xml:space="preserve">
+    <value>Término a&amp;pós:</value>
+  </data>
+  <data name="chkEndAfterNumberOfOccurrences.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 19</value>
+  </data>
+  <data name="chkEndByDate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>184, 80</value>
+  </data>
+  <data name="chkEndByDate.Properties.AccessibleName" xml:space="preserve">
+    <value>Termina em:</value>
+  </data>
+  <data name="chkEndByDate.Properties.Caption" xml:space="preserve">
+    <value>Termina &amp;em:</value>
+  </data>
+  <data name="chkEndByDate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 19</value>
+  </data>
+  <data name="grpRecurrenceRange.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 216</value>
+  </data>
+  <data name="grpRecurrenceRange.Size" type="System.Drawing.Size, System.Drawing">
+    <value>490, 112</value>
+  </data>
+  <data name="grpRecurrenceRange.Text" xml:space="preserve">
+    <value>Intervalo de recorrência</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>523, 374</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"></assembly>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Recorrência do Compromisso</value>
+  </data>
+  <data name="btnOk.AccessibleName" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="btnOk.Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+</root>

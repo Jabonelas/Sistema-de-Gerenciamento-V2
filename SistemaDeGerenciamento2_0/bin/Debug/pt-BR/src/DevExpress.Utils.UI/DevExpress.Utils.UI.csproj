@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F170A60A-CC59-49FE-A103-818ECF43235F}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>DevExpress.Utils.v21.2.UI</AssemblyName>
+    <AssemblyOriginatorKeyFile>..\DevExpress.Key\StrongKey.snk</AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>DevExpress.Utils.UI</RootNamespace>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SignAssembly>true</SignAssembly>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>..\DevExpress.Dll\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE;DEBUG;DXWhidbey</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>..\DevExpress.Dll\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE;DXWhidbey</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Design">
+      <Name>System.Design</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\AssemblyVersion.cs">
+      <Link>AssemblyVersion.cs</Link>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CollectionEditorContentControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CollectionEditorFormBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FilterStringEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormatStringEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StringArrayEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SummaryEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SummaryEditorFormBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XmlSchemaEditorControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="XmlSchemaEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CollectionEditorContentControl.pt-BR.resx">
+      <DependentUpon>CollectionEditorContentControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollectionEditorContentControl.resx">
+      <DependentUpon>CollectionEditorContentControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollectionEditorFormBase.pt-BR.resx">
+      <DependentUpon>CollectionEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollectionEditorFormBase.resx">
+      <DependentUpon>CollectionEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormatStringEditorForm.pt-BR.resx">
+      <DependentUpon>FormatStringEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormatStringEditorForm.resx">
+      <DependentUpon>FormatStringEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StringArrayEditorForm.pt-BR.resx">
+      <DependentUpon>StringArrayEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StringArrayEditorForm.resx">
+      <DependentUpon>StringArrayEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilterStringEditorForm.pt-BR.resx">
+      <DependentUpon>FilterStringEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilterStringEditorForm.resx">
+      <DependentUpon>FilterStringEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.pt-BR.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRes.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorForm.pt-BR.resx">
+      <DependentUpon>SummaryEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorForm.resx">
+      <DependentUpon>SummaryEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorFormBase.pt-BR.resx">
+      <DependentUpon>SummaryEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SummaryEditorFormBase.resx">
+      <DependentUpon>SummaryEditorFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorControl.pt-BR.resx">
+      <DependentUpon>XmlSchemaEditorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorControl.resx">
+      <DependentUpon>XmlSchemaEditorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorForm.pt-BR.resx">
+      <DependentUpon>XmlSchemaEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlSchemaEditorForm.resx">
+      <DependentUpon>XmlSchemaEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

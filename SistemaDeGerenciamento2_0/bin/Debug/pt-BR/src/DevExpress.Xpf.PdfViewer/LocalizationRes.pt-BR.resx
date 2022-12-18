@@ -1,0 +1,899 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="PdfViewerStringId.CancelButtonCaption" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="PdfViewerStringId.CommandCloseFileCaption" xml:space="preserve">
+    <value>Fechar</value>
+  </data>
+  <data name="PdfViewerStringId.FindControlClose" xml:space="preserve">
+    <value>Fechar</value>
+  </data>
+  <data name="PdfViewerStringId.CommandCopyCaption" xml:space="preserve">
+    <value>Copiar</value>
+  </data>
+  <data name="PdfViewerStringId.CommandNextPageCaption" xml:space="preserve">
+    <value>Próximo</value>
+  </data>
+  <data name="PdfViewerStringId.FindControlNext" xml:space="preserve">
+    <value>Próximo</value>
+  </data>
+  <data name="PdfViewerStringId.FileRibbonGroupCaption" xml:space="preserve">
+    <value>Arquivo</value>
+  </data>
+  <data name="PdfViewerStringId.CommandZoom100Caption" xml:space="preserve">
+    <value>100%</value>
+  </data>
+  <data name="PdfViewerStringId.MessageSearchCaption" xml:space="preserve">
+    <value>Procurar</value>
+  </data>
+  <data name="PdfViewerStringId.MessageShowFindTextCaption" xml:space="preserve">
+    <value>Procurar</value>
+  </data>
+  <data name="PdfViewerStringId.MessageErrorCaption" xml:space="preserve">
+    <value>Erro</value>
+  </data>
+  <data name="PdfViewerStringId.PropertiesCaption" xml:space="preserve">
+    <value>Propriedades</value>
+  </data>
+  <data name="PdfViewerStringId.CommandOpenFileCaption" xml:space="preserve">
+    <value>Abrir</value>
+  </data>
+  <data name="PdfViewerStringId.CommandPreviousPageCaption" xml:space="preserve">
+    <value>Anterior</value>
+  </data>
+  <data name="PdfViewerStringId.FindControlPrevious" xml:space="preserve">
+    <value>Anterior</value>
+  </data>
+  <data name="PdfViewerStringId.CommandPrintFileCaption" xml:space="preserve">
+    <value>Imprimir</value>
+  </data>
+  <data name="PdfViewerStringId.NavigationRibbonGroupCaption" xml:space="preserve">
+    <value>Navegação</value>
+  </data>
+  <data name="PdfViewerStringId.CommandViewExactZoomListCaption" xml:space="preserve">
+    <value>Zoom</value>
+  </data>
+  <data name="PdfViewerStringId.ZoomRibbonGroupCaption" xml:space="preserve">
+    <value>Zoom</value>
+  </data>
+  <data name="PdfViewerStringId.CommandSaveAsCaption" xml:space="preserve">
+    <value>Salvar como</value>
+  </data>
+  <data name="PdfViewerStringId.CommandZoomInCaption" xml:space="preserve">
+    <value>Zoom de Aproximação</value>
+  </data>
+  <data name="PdfViewerStringId.CommandZoomOutCaption" xml:space="preserve">
+    <value>Zoom de Afastamento</value>
+  </data>
+  <data name="PdfViewerStringId.CommandSelectAllCaption" xml:space="preserve">
+    <value>Selecionar tudo</value>
+  </data>
+  <data name="PdfViewerStringId.DefaultDocumentName" xml:space="preserve">
+    <value>Documento</value>
+  </data>
+  <data name="PdfViewerStringId.FindControlSearchCaption" xml:space="preserve">
+    <value>Pesquisa:</value>
+  </data>
+  <data name="PdfViewerStringId.MessageSearchFinishedNoMatchesFound" xml:space="preserve">
+    <value>Terminou a busca em todo o documento. Nenhuma correspondência foi encontrada.</value>
+  </data>
+  <data name="PdfViewerStringId.CommandNextPageDescription" xml:space="preserve">
+    <value>Mostrar Próxima página.</value>
+  </data>
+  <data name="PdfViewerStringId.CommandPreviousPageDescription" xml:space="preserve">
+    <value>Mostrar Página anterior.</value>
+  </data>
+  <data name="PdfViewerStringId.MessageShowFindTextHintCaption" xml:space="preserve">
+    <value>Localizar texto</value>
+  </data>
+  <data name="PdfViewerStringId.PropertiesDescriptionCaption" xml:space="preserve">
+    <value>Descrição</value>
+  </data>
+  <data name="PdfViewerStringId.PropertiesTitle" xml:space="preserve">
+    <value>Título</value>
+  </data>
+  <data name="PdfViewerStringId.PrintDialogPageRangeAll" xml:space="preserve">
+    <value>Todos</value>
+  </data>
+  <data name="PdfViewerStringId.PropertiesFile" xml:space="preserve">
+    <value>Arquivo</value>
+  </data>
+  <data name="PdfViewerStringId.PrintDialogOrientation" xml:space="preserve">
+    <value>Orientação</value>
+  </data>
+  <data name="PdfViewerStringId.PrintDialogLocation" xml:space="preserve">
+    <value>Localização</value>
+  </data>
+  <data name="PdfViewerStringId.PropertiesLocation" xml:space="preserve">
+    <value>Localização</value>
+  </data>
+  <data name="PdfViewerStringId.PropertiesSubject" xml:space="preserve">
+    <value>Assunto</value>
+  </data>
+  <data name="PdfViewerStringId.PrintDialogTitle" xml:space="preserve">
+    <value>Imprimir</value>
+  </data>
+  <data name="PdfViewerStringId.BarCaption" xml:space="preserve">
+    <value>Visualizador de PDF</value>
+  </data>
+  <data name="PdfViewerStringId.CommandClockwiseRotateCaption" xml:space="preserve">
+    <value>Girar no sentido horário</value>
+  </data>
+  <data name="PdfViewerStringId.CommandCloseFileDescription" xml:space="preserve">
+    <value>Fechar um arquivo PDF.</value>
+  </data>
+  <data name="PdfViewerStringId.CommandCursorModeHandToolCaption" xml:space="preserve">
+    <value>Ferramenta de mão</value>
+  </data>
+  <data name="PdfViewerStringId.CommandCursorModeSelectToolCaption" xml:space="preserve">
+    <value>Selecione a ferramenta</value>
+  </data>
+  <data name="PdfViewerStringId.CommandNextViewCaption" xml:space="preserve">
+    <value>Próxima exibição</value>
+  </data>
+  <data name="PdfViewerStringId.CommandOpenFileDescription" xml:space="preserve">
+    <value>Abrir um arquivo PDF.</value>
+  </data>
+  <data name="PdfViewerStringId.CommandSetActualSizeZoomModeCaption" xml:space="preserve">
+    <value>Tamanho real</value>
+  </data>
+  <data name="PdfViewerStringId.CommandSetFitWidthZoomModeCaption" xml:space="preserve">
+    <value>Ajustar largura</value>
+  </data>
+  <data name="PdfViewerStringId.CommandSetPageLevelZoomModeCaption" xml:space="preserve">
+    <value>Zoom para página nível</value>
+  </data>
+  <data name="PdfViewerStringId.CommandShowDocumentProperties" xml:space="preserve">
+    <value>Propriedades do documento...</value>
+  </data>
+  <data name="PdfViewerStringId.CommandViewCursorModeListGroupCaption" xml:space="preserve">
+    <value>Modo de cursor</value>
+  </data>
+  <data name="PdfViewerStringId.CommandViewExactZoomListDescription" xml:space="preserve">
+    <value>Alterar o nível de zoom do documento PDF.</value>
+  </data>
+  <data name="PdfViewerStringId.CommandZoom10Caption" xml:space="preserve">
+    <value>10%</value>
+  </data>
+  <data name="PdfViewerStringId.CommandZoom125Caption" xml:space="preserve">
+    <value>125%</value>
+  </data>
+  <data name="PdfViewerStringId.CommandZoom150Caption" xml:space="preserve">
+    <value>150%</value>
+  </data>
+  <data name="PdfViewerStringId.CommandZoom200Caption" xml:space="preserve">
+    <value>200%</value>
+  </data>
+  <data name="PdfViewerStringId.CommandZoom25Caption" xml:space="preserve">
+    <value>25%</value>
+  </data>
+  <data name="PdfViewerStringId.CommandZoom400Caption" xml:space="preserve">
+    <value>400%</value>
+  </data>
+  <data name="PdfViewerStringId.CommandZoom500Caption" xml:space="preserve">
+    <value>500%</value>
+  </data>
+  <data name="PdfViewerStringId.CommandZoom50Caption" xml:space="preserve">
+    <value>50%</value>
+  </data>
+  <data name="PdfViewerStringId.CommandZoom75Caption" xml:space="preserve">
+    <value>75%</value>
+  </data>
+  <data name="PdfViewerStringId.CommandZoomInDescription" xml:space="preserve">
+    <value>Zoom para obter uma visão mais apurada do documento PDF.</value>
+  </data>
+  <data name="PdfViewerStringId.CommandZoomInShortcutCaption" xml:space="preserve">
+    <value>(Ctrl + e)</value>
+  </data>
+  <data name="PdfViewerStringId.CommandZoomOutDescription" xml:space="preserve">
+    <value>Diminuir o zoom para ver mais da página em um reduz tamanho.</value>
+  </data>
+  <data name="PdfViewerStringId.CommandZoomOutShortcutCaption" xml:space="preserve">
+    <value>(Ctrl + sinal de menos)</value>
+  </data>
+  <data name="PdfViewerStringId.DesignerActionListCreateBarsTransaction" xml:space="preserve">
+    <value>Criar barras</value>
+  </data>
+  <data name="PdfViewerStringId.DesignerActionListCreateRibbonTransaction" xml:space="preserve">
+    <value>Criar a faixa de opções</value>
+  </data>
+  <data name="PdfViewerStringId.DesignerActionMethodCreateBars" xml:space="preserve">
+    <value>Criar barras</value>
+  </data>
+  <data name="PdfViewerStringId.DesignerActionMethodCreateRibbon" xml:space="preserve">
+    <value>Criar a faixa de opções</value>
+  </data>
+  <data name="PdfViewerStringId.DesignerActionMethodLoadPdf" xml:space="preserve">
+    <value>Arquivo PDF de carga...</value>
+  </data>
+  <data name="PdfViewerStringId.DesignerActionMethodUndockInParentContainer" xml:space="preserve">
+    <value>Desencaixar no recipiente pai</value>
+  </data>
+  <data name="PdfViewerStringId.DesignerActionMethodUnloadPdf" xml:space="preserve">
+    <value>Descarregar PDF arquivo</value>
+  </data>
+  <data name="PdfViewerStringId.MessageAddCommandConstructorError" xml:space="preserve">
+    <value>não pode encontrar um construtor com um parâmetro de tipo PdfViewer na classe {0}</value>
+  </data>
+  <data name="PdfViewerStringId.MessageCantLoadDocument" xml:space="preserve">
+    <value>Houve um erro ao carregar um documento.</value>
+  </data>
+  <data name="PdfViewerStringId.MessageDocumentIsProtected" xml:space="preserve">
+    <value>{0} é protegido</value>
+  </data>
+  <data name="PdfViewerStringId.MessageEnterPasswordLabel" xml:space="preserve">
+    <value>Por favor digite uma senha de documento aberto</value>
+  </data>
+  <data name="PdfViewerStringId.MessageErrorCurrentPageNumberOutOfRange" xml:space="preserve">
+    <value>o valor de número de página atual deve ser maior que 0.</value>
+  </data>
+  <data name="PdfViewerStringId.MessageErrorZoomFactorOutOfRange" xml:space="preserve">
+    <value>o fator de zoom deve ser maior ou igual a {0} e menor ou igual a {1}.</value>
+  </data>
+  <data name="PdfViewerStringId.MessageIncorrectPassword" xml:space="preserve">
+    <value>a senha está incorreta. Por favor, certifique-se que a tecla Caps Lock não está ativado.</value>
+  </data>
+  <data name="PdfViewerStringId.MessageLoadingError" xml:space="preserve">
+    <value>Não é possível carregar o documento PDF porque o seguinte arquivo não está disponível ou não é um válido documento PDF.
+{0}
+Por favor, certifique-se de que o aplicativo pode acessar este arquivo, e que é válido, ou especificar um arquivo diferente.</value>
+  </data>
+  <data name="PdfViewerStringId.MessageSearchFinished" xml:space="preserve">
+    <value>Acabou a busca em todo o documento. Foram encontradas correspondências chega.</value>
+  </data>
+  <data name="PdfViewerStringId.OpenDocumentCaption" xml:space="preserve">
+    <value>Abrir...</value>
+  </data>
+  <data name="PdfViewerStringId.PageSize" xml:space="preserve">
+    <value>{0:0.00} x {1:0.00} em</value>
+  </data>
+  <data name="PdfViewerStringId.PdfFileExtension" xml:space="preserve">
+    <value>.pdf</value>
+  </data>
+  <data name="PdfViewerStringId.PdfFileFilter" xml:space="preserve">
+    <value>arquivos PDF (.pdf)|*.pdf</value>
+  </data>
+  <data name="PdfViewerStringId.RecentDocumentsCaption" xml:space="preserve">
+    <value>Documentos recentes</value>
+  </data>
+  <data name="PdfViewerStringId.RotateRibbonGroupCaption" xml:space="preserve">
+    <value>Girar visualização</value>
+  </data>
+  <data name="PdfViewerStringId.SavingDocumentCaption" xml:space="preserve">
+    <value>Salvando</value>
+  </data>
+  <data name="PdfViewerStringId.CommandCounterclockwiseRotateCaption" xml:space="preserve">
+    <value>Counterclockwise rotação</value>
+  </data>
+  <data name="PdfViewerStringId.CommandCursorModeMarqueeZoomCaption" xml:space="preserve">
+    <value>Letreiro digital zoom</value>
+  </data>
+  <data name="PdfViewerStringId.CommandOpenFileFromWebCaption" xml:space="preserve">
+    <value>Aberto a partir da web</value>
+  </data>
+  <data name="PdfViewerStringId.CommandOpenFileFromWebDescription" xml:space="preserve">
+    <value>Abrir um arquivo PDF de web.</value>
+  </data>
+  <data name="PdfViewerStringId.CommandPreviousViewCaption" xml:space="preserve">
+    <value>Vista anterior</value>
+  </data>
+  <data name="PdfViewerStringId.CommandPrintFileDescription" xml:space="preserve">
+    <value>Impressão arquivos.</value>
+  </data>
+  <data name="PdfViewerStringId.CommandSetFitVisibleZoomModeCaption" xml:space="preserve">
+    <value>Caber visível</value>
+  </data>
+  <data name="PdfViewerStringId.LoadingDocumentCaption" xml:space="preserve">
+    <value>Carregando... Por favor aguarde.</value>
+  </data>
+  <data name="PdfViewerStringId.MessageDocumentHasNoPages" xml:space="preserve">
+    <value>o documento não contiver quaisquer páginas.</value>
+  </data>
+  <data name="PdfViewerStringId.MessageEnterUrlLabel" xml:space="preserve">
+    <value>Por favor insira um endereço de url do documento</value>
+  </data>
+  <data name="PdfViewerStringId.MessageIncorrectUrl" xml:space="preserve">
+    <value>{0} não é válido endereço de url.</value>
+  </data>
+  <data name="PdfViewerStringId.MessageSecurityWarningCaption" xml:space="preserve">
+    <value>Aviso de segurança</value>
+  </data>
+  <data name="PdfViewerStringId.MessageSecurityWarningUriOpening" xml:space="preserve">
+    <value>o documento que está tentando acessar um recurso externo usando o seguinte URI (identificador de recurso uniforme): '{0}'
+Você quer abri-la?</value>
+  </data>
+  <data name="PdfViewerStringId.OpenDocumentFromWebCaption" xml:space="preserve">
+    <value>Aberto a partir da web</value>
+  </data>
+  <data name="PdfViewerStringId.PrintDialogCollate" xml:space="preserve">
+    <value>COLLATE</value>
+  </data>
+  <data name="PdfViewerStringId.PrintDialogComment" xml:space="preserve">
+    <value>Comentário</value>
+  </data>
+  <data name="PdfViewerStringId.PrintDialogDocumentsInQueue" xml:space="preserve">
+    <value>Documento (s) em fila</value>
+  </data>
+  <data name="PdfViewerStringId.PrintDialogFilePath" xml:space="preserve">
+    <value>Caminho do arquivo</value>
+  </data>
+  <data name="PdfViewerStringId.PrintDialogNumberOfCopies" xml:space="preserve">
+    <value>Número de cópias</value>
+  </data>
+  <data name="PdfViewerStringId.PrintDialogPageRange" xml:space="preserve">
+    <value>Intervalo de páginas</value>
+  </data>
+  <data name="PdfViewerStringId.PrintDialogPageRangeCurrent" xml:space="preserve">
+    <value>Página atual</value>
+  </data>
+  <data name="PdfViewerStringId.PrintDialogPageRangePages" xml:space="preserve">
+    <value>Páginas:</value>
+  </data>
+  <data name="PdfViewerStringId.PrintDialogPageRangePagesExample" xml:space="preserve">
+    <value>Por exemplo, 5-12</value>
+  </data>
+  <data name="PdfViewerStringId.PrintDialogPageSizing" xml:space="preserve">
+    <value>Dimensionamento de Page</value>
+  </data>
+  <data name="PdfViewerStringId.PrintDialogPageSizingActualSize" xml:space="preserve">
+    <value>Tamanho real</value>
+  </data>
+  <data name="PdfViewerStringId.PrintDialogPageSizingCustomScale" xml:space="preserve">
+    <value>Escala personalizada:</value>
+  </data>
+  <data name="PdfViewerStringId.PrintDialogPageSizingFit" xml:space="preserve">
+    <value>Caber</value>
+  </data>
+  <data name="PdfViewerStringId.PrintDialogPaginationOf" xml:space="preserve">
+    <value>({0})</value>
+  </data>
+  <data name="PdfViewerStringId.PrintDialogPaperSource" xml:space="preserve">
+    <value>Fonte de papel</value>
+  </data>
+  <data name="PdfViewerStringId.PrintDialogPrinterName" xml:space="preserve">
+    <value>Nome da impressora</value>
+  </data>
+  <data name="PdfViewerStringId.PrintDialogPrinterPreferences" xml:space="preserve">
+    <value>Preferências</value>
+  </data>
+  <data name="PdfViewerStringId.PrintDialogPrintingDpi" xml:space="preserve">
+    <value>DPI de impressão</value>
+  </data>
+  <data name="PdfViewerStringId.PrintDialogPrintToFile" xml:space="preserve">
+    <value>Imprimir para arquivo</value>
+  </data>
+  <data name="PdfViewerStringId.PrintDialogStatus" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="PdfViewerStringId.PrintFileExtension" xml:space="preserve">
+    <value>PRN</value>
+  </data>
+  <data name="PdfViewerStringId.PropertiesAdvancedCaption" xml:space="preserve">
+    <value>Avançado</value>
+  </data>
+  <data name="PdfViewerStringId.PropertiesApplication" xml:space="preserve">
+    <value>Aplicativo</value>
+  </data>
+  <data name="PdfViewerStringId.PropertiesAuthor" xml:space="preserve">
+    <value>Autor</value>
+  </data>
+  <data name="PdfViewerStringId.PropertiesCreated" xml:space="preserve">
+    <value>Criado</value>
+  </data>
+  <data name="PdfViewerStringId.PropertiesFileSize" xml:space="preserve">
+    <value>Tamanho do arquivo</value>
+  </data>
+  <data name="PdfViewerStringId.PropertiesKeywords" xml:space="preserve">
+    <value>Palavras-chave</value>
+  </data>
+  <data name="PdfViewerStringId.PropertiesModified" xml:space="preserve">
+    <value>Modificado</value>
+  </data>
+  <data name="PdfViewerStringId.PropertiesNumberOfPages" xml:space="preserve">
+    <value>Número de páginas</value>
+  </data>
+  <data name="PdfViewerStringId.PropertiesPageSize" xml:space="preserve">
+    <value>Tamanho da página</value>
+  </data>
+  <data name="PdfViewerStringId.PropertiesProducer" xml:space="preserve">
+    <value>Produtor</value>
+  </data>
+  <data name="PdfViewerStringId.PropertiesRevisionCaption" xml:space="preserve">
+    <value>Revisão</value>
+  </data>
+  <data name="PdfViewerStringId.PropertiesVersion" xml:space="preserve">
+    <value>Versão</value>
+  </data>
+  <data name="PdfViewerStringId.SaveChangesCaption" xml:space="preserve">
+    <value>Visualizador de PDF</value>
+  </data>
+  <data name="PdfViewerStringId.SaveChangesMessage" xml:space="preserve">
+    <value>Você quer salvar as alterações ao documento antes de fechá-lo?</value>
+  </data>
+  <data name="PdfViewerStringId.SavingDocumentMessage" xml:space="preserve">
+    <value>... Por favor aguarde.</value>
+  </data>
+  <data name="PdfViewerStringId.PrintDialogPrintOrientationAuto" xml:space="preserve">
+    <value>Auto</value>
+  </data>
+  <data name="PdfViewerStringId.PrintDialogPrintOrientationLandscape" xml:space="preserve">
+    <value>Paisagem</value>
+  </data>
+  <data name="PdfViewerStringId.PrintDialogPrintOrientationPortrait" xml:space="preserve">
+    <value>Retrato</value>
+  </data>
+  <data name="PdfViewerStringId.PrintDialogPrintButtonCaption" xml:space="preserve">
+    <value>Imprimir</value>
+  </data>
+  <data name="PdfViewerStringId.DesignerActionMethodDockInParentContainer" xml:space="preserve">
+    <value>Doca no recipiente pai</value>
+  </data>
+  <data name="PdfViewerStringId.PrintFileFilter" xml:space="preserve">
+    <value>Arquivos para impressão (.prn)|*.prn</value>
+  </data>
+  <data name="PdfViewerStringId.CommandExportCaption" xml:space="preserve">
+    <value>Exportação</value>
+  </data>
+  <data name="PdfViewerStringId.OutlinesViewerHideAfterUseCaption" xml:space="preserve">
+    <value>Ocultar após o uso</value>
+  </data>
+  <data name="PdfViewerStringId.MessageExportError" xml:space="preserve">
+    <value>ocorreu um erro ao exportar os dados do documento formulário.</value>
+  </data>
+  <data name="PdfViewerStringId.MessageImportError" xml:space="preserve">
+    <value>não é possível importar os dados especificados para a forma de documento.
+{0}
+Por favor, verifique se os dados fornecidos atendem a especificação de {1}.</value>
+  </data>
+  <data name="PdfViewerStringId.FormDataRibbonGroupCaption" xml:space="preserve">
+    <value>Dados de formulário</value>
+  </data>
+  <data name="PdfViewerStringId.CommandOneColumnView" xml:space="preserve">
+    <value>Habilitar a rolagem</value>
+  </data>
+  <data name="PdfViewerStringId.CommandShowCoverPage" xml:space="preserve">
+    <value>Mostrar a página de rosto</value>
+  </data>
+  <data name="PdfViewerStringId.CommandSinglePageView" xml:space="preserve">
+    <value>Modo de exibição de página única</value>
+  </data>
+  <data name="PdfViewerStringId.CommandTwoColumnView" xml:space="preserve">
+    <value>Duas páginas de rolagem</value>
+  </data>
+  <data name="PdfViewerStringId.CommandTwoPageView" xml:space="preserve">
+    <value>Dois modo de exibição de página</value>
+  </data>
+  <data name="PdfViewerStringId.CommandPageLayoutCaption" xml:space="preserve">
+    <value>Exibição de página</value>
+  </data>
+  <data name="PdfViewerStringId.CommandExportDescription" xml:space="preserve">
+    <value>Exportar dados de formulário para o arquivo.</value>
+  </data>
+  <data name="PdfViewerStringId.CommandImportCaption" xml:space="preserve">
+    <value>Importação</value>
+  </data>
+  <data name="PdfViewerStringId.CommandImportDescription" xml:space="preserve">
+    <value>Importar dados de formulário do arquivo.</value>
+  </data>
+  <data name="PdfViewerStringId.BarFormDataCaption" xml:space="preserve">
+    <value>Dados de formulário</value>
+  </data>
+  <data name="PdfViewerStringId.FormDataFileFilter" xml:space="preserve">
+    <value>Arquivos FDF (.fdf)|*.fdf|Arquivos XML (.xml)|*.xml</value>
+  </data>
+  <data name="PdfViewerStringId.MessageSaveAsError" xml:space="preserve">
+    <value>Não pode salvar o PDF com o seguinte nome: {0}.</value>
+  </data>
+  <data name="PdfViewerStringId.OutlinesViewerExpandCurrentCaption" xml:space="preserve">
+    <value>Expandir marcador atual</value>
+  </data>
+  <data name="PdfViewerStringId.OutlinesViewerPanelCaption" xml:space="preserve">
+    <value>Marcadores</value>
+  </data>
+  <data name="PdfViewerStringId.OutlinesViewerPrintCaption" xml:space="preserve">
+    <value>Imprimir página(s)</value>
+  </data>
+  <data name="PdfViewerStringId.OutlinesViewerGoToCaption" xml:space="preserve">
+    <value>Ir para o indicador</value>
+  </data>
+  <data name="PdfViewerStringId.OutlinesViewerPrintSectionCaption" xml:space="preserve">
+    <value>Imprimir as seções são</value>
+  </data>
+  <data name="PdfViewerStringId.OutlinesViewerCollapseTopLevelCaption" xml:space="preserve">
+    <value>Indicador de nível superior de colapso</value>
+  </data>
+  <data name="PdfViewerStringId.OutlinesViewerExpandTopLevelCaption" xml:space="preserve">
+    <value>Indicador de nível superior expandir</value>
+  </data>
+  <data name="PdfViewerStringId.OutlinesViewerWrapLongItemsCaption" xml:space="preserve">
+    <value>Embrulhar os marcadores de tempo</value>
+  </data>
+  <data name="PdfViewerStringId.ThumbnailsViewerPrintPagesCaption" xml:space="preserve">
+    <value>Imprimir páginas...</value>
+  </data>
+  <data name="PdfViewerStringId.ThumbnailsViewerPrintPagesDescription" xml:space="preserve">
+    <value>Imprimir páginas...</value>
+  </data>
+  <data name="PdfViewerStringId.AttachmentsViewerPanelCaption" xml:space="preserve">
+    <value>Anexos</value>
+  </data>
+  <data name="PdfViewerStringId.AttachmentsViewerSaveCaption" xml:space="preserve">
+    <value>Salvar anexo...</value>
+  </data>
+  <data name="PdfViewerStringId.AttachmentsViewerSaveDescription" xml:space="preserve">
+    <value>Salvar anexo</value>
+  </data>
+  <data name="PdfViewerStringId.ThumbnailsViewerZoomInCaption" xml:space="preserve">
+    <value>Ampliar as miniaturas de página</value>
+  </data>
+  <data name="PdfViewerStringId.ThumbnailsViewerZoomInDescription" xml:space="preserve">
+    <value>Ampliar as miniaturas de página</value>
+  </data>
+  <data name="PdfViewerStringId.ThumbnailsViewerZoomOutCaption" xml:space="preserve">
+    <value>Reduzir as miniaturas de página</value>
+  </data>
+  <data name="PdfViewerStringId.ThumbnailsViewerZoomOutDescription" xml:space="preserve">
+    <value>Reduzir as miniaturas de página</value>
+  </data>
+  <data name="PdfViewerStringId.AnnotationPropertiesCancelCaption" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="PdfViewerStringId.AttachmentsViewerDescriptionHeader" xml:space="preserve">
+    <value>Descrição</value>
+  </data>
+  <data name="PdfViewerStringId.CommandDeleteAnnotationCaption" xml:space="preserve">
+    <value>Apagar</value>
+  </data>
+  <data name="PdfViewerStringId.AnnotationPropertiesOkCaption" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="PdfViewerStringId.AnnotationPropertyAppearanceGroupCaption" xml:space="preserve">
+    <value>Aparência</value>
+  </data>
+  <data name="PdfViewerStringId.AnnotationPropertyGeneralGroupCaption" xml:space="preserve">
+    <value>Geral</value>
+  </data>
+  <data name="PdfViewerStringId.ViewRibbonGroupCaption" xml:space="preserve">
+    <value>Vista</value>
+  </data>
+  <data name="PdfViewerStringId.AttachmentsViewerFileNameHeader" xml:space="preserve">
+    <value>Nome</value>
+  </data>
+  <data name="PdfViewerStringId.AttachmentsViewerSizeHeader" xml:space="preserve">
+    <value>Tamanho</value>
+  </data>
+  <data name="PdfViewerStringId.AnnotationPropertyColor" xml:space="preserve">
+    <value>Cor</value>
+  </data>
+  <data name="PdfViewerStringId.CommandCursorModeTextStrikethroughCaption" xml:space="preserve">
+    <value>Tachado</value>
+  </data>
+  <data name="PdfViewerStringId.CommandCursorModeTextUnderlineCaption" xml:space="preserve">
+    <value>Sublinhado</value>
+  </data>
+  <data name="PdfViewerStringId.FindRibbonGroupCaption" xml:space="preserve">
+    <value>Procurar</value>
+  </data>
+  <data name="PdfViewerStringId.CommentTextRibbonGroupCaption" xml:space="preserve">
+    <value>Texto</value>
+  </data>
+  <data name="PdfViewerStringId.AnnotationPropertySubject" xml:space="preserve">
+    <value>Assunto</value>
+  </data>
+  <data name="PdfViewerStringId.AnnotationPropertyComment" xml:space="preserve">
+    <value>Comentário</value>
+  </data>
+  <data name="PdfViewerStringId.BarCommentCaption" xml:space="preserve">
+    <value>Comentário</value>
+  </data>
+  <data name="PdfViewerStringId.AnnotationPropertyOpacity" xml:space="preserve">
+    <value>Opacidade</value>
+  </data>
+  <data name="PdfViewerStringId.AnnotationPropertyModified" xml:space="preserve">
+    <value>Modificado</value>
+  </data>
+  <data name="PdfViewerStringId.AttachmentsViewerModifiedHeader" xml:space="preserve">
+    <value>Modificado</value>
+  </data>
+  <data name="PdfViewerStringId.AnnotationPropertyAuthor" xml:space="preserve">
+    <value>Autor</value>
+  </data>
+  <data name="PdfViewerStringId.AnnotationPropertiesStrikeOutMarkupType" xml:space="preserve">
+    <value>Tachado</value>
+  </data>
+  <data name="PdfViewerStringId.AnnotationPropertiesUnderlineMarkupType" xml:space="preserve">
+    <value>Sublinhado</value>
+  </data>
+  <data name="PdfViewerStringId.AttachmentsViewerOpenDescription" xml:space="preserve">
+    <value>Abrir o arquivo em seu aplicativo nativo</value>
+  </data>
+  <data name="PdfViewerStringId.ThumbnailsViewerPanelCaption" xml:space="preserve">
+    <value>Miniaturas de página</value>
+  </data>
+  <data name="PdfViewerStringId.CommentsViewerEditCaption" xml:space="preserve">
+    <value>Editar</value>
+  </data>
+  <data name="PdfViewerStringId.CommentsViewerPropertiesCaption" xml:space="preserve">
+    <value>Propriedades</value>
+  </data>
+  <data name="PdfViewerStringId.CommentsViewerSetStatusNoneCaption" xml:space="preserve">
+    <value>Nenhum</value>
+  </data>
+  <data name="PdfViewerStringId.CommentsViewerRemoveCaption" xml:space="preserve">
+    <value>Remover</value>
+  </data>
+  <data name="PdfViewerStringId.CommentsViewerSortDateCaption" xml:space="preserve">
+    <value>Data</value>
+  </data>
+  <data name="PdfViewerStringId.SortCommentsByDateCaption" xml:space="preserve">
+    <value>Data</value>
+  </data>
+  <data name="PdfViewerStringId.CommentsViewerSortPageCaption" xml:space="preserve">
+    <value>Página</value>
+  </data>
+  <data name="PdfViewerStringId.SortCommentsByPageCaption" xml:space="preserve">
+    <value>Página</value>
+  </data>
+  <data name="PdfViewerStringId.CommentsViewerSortTypeCaption" xml:space="preserve">
+    <value>Tipo</value>
+  </data>
+  <data name="PdfViewerStringId.SortCommentsByTypeCaption" xml:space="preserve">
+    <value>Tipo</value>
+  </data>
+  <data name="PdfViewerStringId.SortCommentsCheckedStatusCaption" xml:space="preserve">
+    <value>Verificado</value>
+  </data>
+  <data name="PdfViewerStringId.SortCommentsUncheckedStatusCaption" xml:space="preserve">
+    <value>Não verificado</value>
+  </data>
+  <data name="PdfViewerStringId.CommentsViewerPanelCaption" xml:space="preserve">
+    <value>Comentários</value>
+  </data>
+  <data name="PdfViewerStringId.CommentsViewerCollapseAllCaption" xml:space="preserve">
+    <value>Recolher tudo</value>
+  </data>
+  <data name="PdfViewerStringId.CommentsViewerExpandAllCaption" xml:space="preserve">
+    <value>Expandir tudo</value>
+  </data>
+  <data name="PdfViewerStringId.CommentsViewerSortAuthorCaption" xml:space="preserve">
+    <value>Autor</value>
+  </data>
+  <data name="PdfViewerStringId.SortCommentsByAuthorCaption" xml:space="preserve">
+    <value>Autor</value>
+  </data>
+  <data name="PdfViewerStringId.AnnotationPropertiesCommentIcon" xml:space="preserve">
+    <value>Comentário</value>
+  </data>
+  <data name="PdfViewerStringId.AnnotationPropertiesHelpIcon" xml:space="preserve">
+    <value>Ajuda</value>
+  </data>
+  <data name="PdfViewerStringId.CommentsViewerFilterTypeGroupCaption" xml:space="preserve">
+    <value>Tipo</value>
+  </data>
+  <data name="PdfViewerStringId.CommentsViewerFilterCheckedGroupCaption" xml:space="preserve">
+    <value>Verificado</value>
+  </data>
+  <data name="PdfViewerStringId.CommentsViewerFilterCheckedGroupCheckedCaption" xml:space="preserve">
+    <value>Verificado</value>
+  </data>
+  <data name="PdfViewerStringId.CommentsViewerFilterCheckedGroupUncheckedCaption" xml:space="preserve">
+    <value>Não verificado</value>
+  </data>
+  <data name="PdfViewerStringId.CommentsViewerFilterClearAllCaption" xml:space="preserve">
+    <value>Limpar Tudo</value>
+  </data>
+  <data name="PdfViewerStringId.AnnotationPropertiesParagraphIcon" xml:space="preserve">
+    <value>Parágrafo</value>
+  </data>
+  <data name="PdfViewerStringId.AnnotationPropertiesCircleIcon" xml:space="preserve">
+    <value>Círculo</value>
+  </data>
+  <data name="PdfViewerStringId.AnnotationPropertiesStarIcon" xml:space="preserve">
+    <value>Estrela</value>
+  </data>
+  <data name="PdfViewerStringId.AnnotationPropertiesCrossIcon" xml:space="preserve">
+    <value>Cruz</value>
+  </data>
+  <data name="PdfViewerStringId.CommentsViewerFilterAuthorGroupCaption" xml:space="preserve">
+    <value>Autor</value>
+  </data>
+  <data name="PdfViewerStringId.CommentsViewerFilterStatusGroupCaption" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="PdfViewerStringId.CommentViewerEditCaption" xml:space="preserve">
+    <value>Editar</value>
+  </data>
+  <data name="PdfViewerStringId.CommentViewerPropertiesCaption" xml:space="preserve">
+    <value>Propriedades</value>
+  </data>
+  <data name="PdfViewerStringId.CommentViewerSetStatusNoneCaption" xml:space="preserve">
+    <value>Nenhum</value>
+  </data>
+  <data name="PdfViewerStringId.CommentViewerRemoveCaption" xml:space="preserve">
+    <value>Remover</value>
+  </data>
+  <data name="PdfViewerStringId.CommentViewerSortDateCaption" xml:space="preserve">
+    <value>Data</value>
+  </data>
+  <data name="PdfViewerStringId.CommentViewerSortPageCaption" xml:space="preserve">
+    <value>Página</value>
+  </data>
+  <data name="PdfViewerStringId.CommentViewerFilterTypeGroupCaption" xml:space="preserve">
+    <value>Tipo</value>
+  </data>
+  <data name="PdfViewerStringId.CommentViewerSortTypeCaption" xml:space="preserve">
+    <value>Tipo</value>
+  </data>
+  <data name="PdfViewerStringId.CommentViewerFilterCheckedGroupCaption" xml:space="preserve">
+    <value>Verificado</value>
+  </data>
+  <data name="PdfViewerStringId.CommentViewerFilterCheckedGroupCheckedCaption" xml:space="preserve">
+    <value>Verificado</value>
+  </data>
+  <data name="PdfViewerStringId.CommentViewerFilterCheckedGroupUncheckedCaption" xml:space="preserve">
+    <value>Não verificado</value>
+  </data>
+  <data name="PdfViewerStringId.CommentViewerFilterClearAllCaption" xml:space="preserve">
+    <value>Limpar Tudo</value>
+  </data>
+  <data name="PdfViewerStringId.CommentViewerPanelCaption" xml:space="preserve">
+    <value>Comentários</value>
+  </data>
+  <data name="PdfViewerStringId.CommentViewerCollapseAllCaption" xml:space="preserve">
+    <value>Recolher tudo</value>
+  </data>
+  <data name="PdfViewerStringId.CommentViewerExpandAllCaption" xml:space="preserve">
+    <value>Expandir tudo</value>
+  </data>
+  <data name="PdfViewerStringId.CommentViewerFilterAuthorGroupCaption" xml:space="preserve">
+    <value>Autor</value>
+  </data>
+  <data name="PdfViewerStringId.CommentViewerSortAuthorCaption" xml:space="preserve">
+    <value>Autor</value>
+  </data>
+  <data name="PdfViewerStringId.CommentViewerFilterStatusGroupCaption" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="PdfViewerStringId.CommentNoteRibbonGroupCaption" xml:space="preserve">
+    <value>Nota</value>
+  </data>
+  <data name="PdfViewerStringId.AnnotationFilterTypeCustom" xml:space="preserve">
+    <value>Personalizado</value>
+  </data>
+  <data name="PdfViewerStringId.AnnotationFilterTypeStrikethrough" xml:space="preserve">
+    <value>Tachado</value>
+  </data>
+  <data name="PdfViewerStringId.AnnotationFilterTypeUnderline" xml:space="preserve">
+    <value>Sublinhado</value>
+  </data>
+  <data name="PdfViewerStringId.AnnotationFilterTypeLine" xml:space="preserve">
+    <value>Linha</value>
+  </data>
+  <data name="PdfViewerStringId.AnnotationFilterTypeSquare" xml:space="preserve">
+    <value>Retângulo</value>
+  </data>
+  <data name="PdfViewerStringId.AnnotationFilterTypePolygon" xml:space="preserve">
+    <value>Polígono</value>
+  </data>
+  <data name="PdfViewerStringId.AnnotationFilterTypeFreeText" xml:space="preserve">
+    <value>Caixa de Texto</value>
+  </data>
+</root>

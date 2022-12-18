@@ -21,25 +21,21 @@ namespace SistemaDeGerenciamento2_0.Forms
             this.Close();
         }
 
-        private void frmProdutos_Load(object sender, EventArgs e)
-        {
-        }
 
-        private void simpleButton1_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void simpleButton2_Click(object sender, EventArgs e)
-        {
-            txtBuscarProduto.Text = string.Empty;
-        }
+    
 
         private void frmProdutos_KeyDown(object sender, System.Windows.Forms.KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Escape)
             {
-                MensagemAtencao.MensagemCancelar(this);
+                this.Close();
             }
+        }
+
+        private void btnAdicionarGrupo_Click(object sender, EventArgs e)
+        {
+            frmCadastroProduto frmCadastroProduto = new frmCadastroProduto();
+            frmCadastroProduto.ShowDialog();
         }
     }
 }

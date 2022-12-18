@@ -1,0 +1,887 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_DateOccurringDialog_IntervalToday" xml:space="preserve">
+    <value>Hoje</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_CustomConditionDialog_InvalidExpressionMessageTitle" xml:space="preserve">
+    <value>Erro</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_PredefinedIconSetFormat_IndicatorsGroup" xml:space="preserve">
+    <value>Indicadores</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_BetweenDialog_Title" xml:space="preserve">
+    <value>Entre</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_BetweenDialog_RangeValuesConnector" xml:space="preserve">
+    <value>e</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_CustomConditionDialog_InvalidExpressionMessageEx" xml:space="preserve">
+    <value>A expressão especificada é inválida.</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_LessThanDialog_Title" xml:space="preserve">
+    <value>Menor que</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_DateOccurringDialog_IntervalInTheLast7Days" xml:space="preserve">
+    <value>Nos últimos 7 dias</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_DateOccurringDialog_IntervalLastMonth" xml:space="preserve">
+    <value>No mês passado</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_DateOccurringDialog_IntervalLastWeek" xml:space="preserve">
+    <value>Na semana passada</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_DateOccurringDialog_IntervalNextMonth" xml:space="preserve">
+    <value>No próximo mês</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_DateOccurringDialog_IntervalNextWeek" xml:space="preserve">
+    <value>Na próxima semana</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_DateOccurringDialog_IntervalThisMonth" xml:space="preserve">
+    <value>Este mês</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_DateOccurringDialog_IntervalThisWeek" xml:space="preserve">
+    <value>Esta semana</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_DateOccurringDialog_IntervalTomorrow" xml:space="preserve">
+    <value>Amanhã</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_DateOccurringDialog_IntervalYesterday" xml:space="preserve">
+    <value>Ontem</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_GreaterThanDialog_Title" xml:space="preserve">
+    <value>Maior que</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_LessThanDialog_Connector" xml:space="preserve">
+    <value>com</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_CustomConditionDialog_Title" xml:space="preserve">
+    <value>Condição personalizada</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_EqualToDialog_Title" xml:space="preserve">
+    <value>Igual a</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_GreaterThanDialog_Connector" xml:space="preserve">
+    <value>com</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_GreaterThanDialog_Description" xml:space="preserve">
+    <value>Células que são maiores que o formato:</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_DateOccurringDialog_Connector" xml:space="preserve">
+    <value>com</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_PredefinedDataBarFormat_SolidFillGroup" xml:space="preserve">
+    <value>Preenchimento sólido</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_PredefinedFormat_BoldText" xml:space="preserve">
+    <value>Texto em Negrito</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_PredefinedFormat_GreenFillWithDarkGreenText" xml:space="preserve">
+    <value>Preenchimento Verde com Texto Verde Escuro</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_PredefinedFormat_GreenText" xml:space="preserve">
+    <value>Texto verde</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_PredefinedFormat_ItalicText" xml:space="preserve">
+    <value>Texto em itálico</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_PredefinedFormat_StrikethroughText" xml:space="preserve">
+    <value>Texto tachado</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_PredefinedFormat_YellowFillWithDarkYellowText" xml:space="preserve">
+    <value>Preenchimento amarelo com texto amarelo escuro</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_PredefinedIconSetFormat_Arrows3ColoredIconSet" xml:space="preserve">
+    <value>3 Flechas (Colorido)</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_PredefinedIconSetFormat_Arrows3GrayIconSet" xml:space="preserve">
+    <value>3 Flechas (cinza)</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_PredefinedIconSetFormat_Arrows4ColoredIconSet" xml:space="preserve">
+    <value>4 Setas (Colorido)</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_PredefinedIconSetFormat_Arrows4GrayIconSet" xml:space="preserve">
+    <value>4 Setas (Cinza)</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_PredefinedIconSetFormat_Arrows5ColoredIconSet" xml:space="preserve">
+    <value>5 Setas (colorido)</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_PredefinedIconSetFormat_Arrows5GrayIconSet" xml:space="preserve">
+    <value>5 Setas (Cinza)</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_PredefinedIconSetFormat_Boxes5IconSet" xml:space="preserve">
+    <value>5 Caixas</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_PredefinedIconSetFormat_Description" xml:space="preserve">
+    <value>Escolher um conjunto de ícones para representar
+os valores dessa coluna.</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_PredefinedIconSetFormat_DirectionalGroup" xml:space="preserve">
+    <value>Direcional</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_PredefinedIconSetFormat_Flags3IconSet" xml:space="preserve">
+    <value>Três Bandeiras</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_PredefinedIconSetFormat_PositiveNegativeArrowsColoredIconSet" xml:space="preserve">
+    <value>Setas (Colorido)</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_PredefinedIconSetFormat_PositiveNegativeArrowsGrayIconSet" xml:space="preserve">
+    <value>Setas (Cinza)</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_PredefinedIconSetFormat_PositiveNegativeGroup" xml:space="preserve">
+    <value>Positivo/Negativo</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_PredefinedIconSetFormat_PositiveNegativeTrianglesIconSet" xml:space="preserve">
+    <value>Triângulos</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_PredefinedIconSetFormat_Ratings4IconSet" xml:space="preserve">
+    <value>4 Avaliações</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_PredefinedIconSetFormat_Ratings5IconSet" xml:space="preserve">
+    <value>5 Avaliações</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_PredefinedIconSetFormat_RatingsGroup" xml:space="preserve">
+    <value>Avaliações</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Dialog_ApplyFormatToWholeRowText" xml:space="preserve">
+    <value>Aplicar formato para toda a linha</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_EqualToDialog_Connector" xml:space="preserve">
+    <value>com</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_EqualToDialog_Description" xml:space="preserve">
+    <value>Formatar células que estão igual a:</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_AboveAverageDialog_Description" xml:space="preserve">
+    <value>Formatar células que estão ACIMA DA MÉDIA:</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_AboveAverageDialog_Title" xml:space="preserve">
+    <value>Acima da média</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_BelowAverageDialog_Connector" xml:space="preserve">
+    <value>para esta coluna com</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_BelowAverageDialog_Description" xml:space="preserve">
+    <value>Formatar células que estão ABAIXO DA MÉDIA:</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_BelowAverageDialog_Title" xml:space="preserve">
+    <value>Abaixo da média</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_BetweenDialog_Connector" xml:space="preserve">
+    <value>com</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_BetweenDialog_Description" xml:space="preserve">
+    <value>Formatar células que estão ENTRE:</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Bottom10PercentDialog_Connector" xml:space="preserve">
+    <value>% com</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Bottom10PercentDialog_Title" xml:space="preserve">
+    <value>Inferior a 10%</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_CustomConditionDialog_Connector" xml:space="preserve">
+    <value>com</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_CustomConditionDialog_InvalidExpressionMessage" xml:space="preserve">
+    <value>a expressão especificada contém símbolos inválidos (personagem {0}).</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Bottom10ItemsDialog_Connector" xml:space="preserve">
+    <value>com</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_TextThatContainsDialog_Connector" xml:space="preserve">
+    <value>com</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Top10ItemsDialog_Connector" xml:space="preserve">
+    <value>com</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_DataBarBorder" xml:space="preserve">
+    <value>Borda</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_FormatColor" xml:space="preserve">
+    <value>Cor:</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_Bottom" xml:space="preserve">
+    <value>Fundo</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_Top" xml:space="preserve">
+    <value>Topo</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_FormatFontFamily" xml:space="preserve">
+    <value>Fonte:</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_ValueBasedExpression" xml:space="preserve">
+    <value>Valor:</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_DataBarColor" xml:space="preserve">
+    <value>Cor</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_ShowModeAll" xml:space="preserve">
+    <value>Todos</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_Apply" xml:space="preserve">
+    <value>Aplicar</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_FormatFontSize" xml:space="preserve">
+    <value>Tamanho:</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_FormatUnderline" xml:space="preserve">
+    <value>Sublinhado</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_ValueBasedType" xml:space="preserve">
+    <value>Tipo:</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_ClearButtonDescription" xml:space="preserve">
+    <value>Limpar</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_NumberMode" xml:space="preserve">
+    <value>Número</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_PercentMode" xml:space="preserve">
+    <value>Percentual</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_Between" xml:space="preserve">
+    <value>Entre</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_FormatStrikethrough" xml:space="preserve">
+    <value>Tachado</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_Font" xml:space="preserve">
+    <value>Fonte</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_Preview" xml:space="preserve">
+    <value>Pré-Visualizar:</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_Maximum" xml:space="preserve">
+    <value>Máxima</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_Minimum" xml:space="preserve">
+    <value>Mínimo</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_Format" xml:space="preserve">
+    <value>Formato</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_ExpressionMode" xml:space="preserve">
+    <value>Expressão</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_FieldNameMode" xml:space="preserve">
+    <value>Nome campo</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_Numeric" xml:space="preserve">
+    <value>Numérico</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_Date" xml:space="preserve">
+    <value>Data</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_AboveAverageDialog_Connector" xml:space="preserve">
+    <value>para esta coluna com</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_CustomConditionDialog_Description" xml:space="preserve">
+    <value>Formatar células que correspondem a condição a seguir:</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_PredefinedColorScaleFormat_Description" xml:space="preserve">
+    <value>aplicar uma cor a uma gama de
+células desta coluna. A cor indica
+onde cada célula cair dentro desse intervalo.</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_PredefinedDataBarFormat_BlueGradientDataBar" xml:space="preserve">
+    <value>Barra de dados azul degradê</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_PredefinedDataBarFormat_BlueSolidDataBar" xml:space="preserve">
+    <value>Barra de Dados Azul</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_PredefinedDataBarFormat_GradientFillGroup" xml:space="preserve">
+    <value>Preenchimento gradiente</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_PredefinedDataBarFormat_GreenSolidDataBar" xml:space="preserve">
+    <value>Barra de dados verde</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_PredefinedDataBarFormat_OrangeGradientDataBar" xml:space="preserve">
+    <value>Barra de Dados Laranja Gradiente</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_PredefinedDataBarFormat_OrangeSolidDataBar" xml:space="preserve">
+    <value>Barra de dados laranja</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_PredefinedDataBarFormat_RedSolidDataBar" xml:space="preserve">
+    <value>Barra de dados vermelho</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_PredefinedFormat_LightGreenFill" xml:space="preserve">
+    <value>Luz de preenchimento verde</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_PredefinedFormat_LightRedFill" xml:space="preserve">
+    <value>Luz de preenchimento vermelho</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_PredefinedFormat_LightRedFillWithDarkRedText" xml:space="preserve">
+    <value>Luz vermelha preencher com texto vermelho escuro</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_PredefinedFormat_RedText" xml:space="preserve">
+    <value>Texto em vermelho</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_PredefinedIconSetFormat_Quarters5IconSet" xml:space="preserve">
+    <value>5 Quartos</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_PredefinedIconSetFormat_RedToBlackIconSet" xml:space="preserve">
+    <value>Vermelho ou preto</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_PredefinedIconSetFormat_ShapesGroup" xml:space="preserve">
+    <value>Formas</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_PredefinedIconSetFormat_Signs3IconSet" xml:space="preserve">
+    <value>3 Sinais</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_PredefinedIconSetFormat_Stars3IconSet" xml:space="preserve">
+    <value>3 Estrelas</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_PredefinedIconSetFormat_Symbols3CircledIconSet" xml:space="preserve">
+    <value>3 Símbolos (circulados)</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_PredefinedIconSetFormat_Symbols3UncircledIconSet" xml:space="preserve">
+    <value>3 Símbolos (Uncircled)</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_PredefinedIconSetFormat_Triangles3IconSet" xml:space="preserve">
+    <value>3 Triângulos</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_TextThatContainsDialog_Description" xml:space="preserve">
+    <value>Formatar células que contêm o texto:</value>
+  </data>
+  <data name="ConditionalFormattingStringId.MenuColumnConditionalFormatting" xml:space="preserve">
+    <value>Formatação condicional</value>
+  </data>
+  <data name="ConditionalFormattingStringId.MenuColumnConditionalFormatting_ClearRules_FromAllColumns" xml:space="preserve">
+    <value>Regras claras de todas as colunas</value>
+  </data>
+  <data name="ConditionalFormattingStringId.MenuColumnConditionalFormatting_ClearRules_FromCurrentColumns" xml:space="preserve">
+    <value>Regras claras desta coluna</value>
+  </data>
+  <data name="ConditionalFormattingStringId.MenuColumnConditionalFormatting_ColorScales" xml:space="preserve">
+    <value>Escalas de cor</value>
+  </data>
+  <data name="ConditionalFormattingStringId.MenuColumnConditionalFormatting_DataBars" xml:space="preserve">
+    <value>Barras de dados</value>
+  </data>
+  <data name="ConditionalFormattingStringId.MenuColumnConditionalFormatting_HighlightCellsRules" xml:space="preserve">
+    <value>Realçar regras de células</value>
+  </data>
+  <data name="ConditionalFormattingStringId.MenuColumnConditionalFormatting_HighlightCellsRules_Between" xml:space="preserve">
+    <value>Entre...</value>
+  </data>
+  <data name="ConditionalFormattingStringId.MenuColumnConditionalFormatting_HighlightCellsRules_EqualTo" xml:space="preserve">
+    <value>Igual a...</value>
+  </data>
+  <data name="ConditionalFormattingStringId.MenuColumnConditionalFormatting_HighlightCellsRules_GreaterThan" xml:space="preserve">
+    <value>Maior que...</value>
+  </data>
+  <data name="ConditionalFormattingStringId.MenuColumnConditionalFormatting_HighlightCellsRules_TextThatContains" xml:space="preserve">
+    <value>Texto que contém...</value>
+  </data>
+  <data name="ConditionalFormattingStringId.MenuColumnConditionalFormatting_IconSets" xml:space="preserve">
+    <value>Conjuntos de ícones</value>
+  </data>
+  <data name="ConditionalFormattingStringId.MenuColumnConditionalFormatting_TopBottomRules" xml:space="preserve">
+    <value>Regras de cima/baixo</value>
+  </data>
+  <data name="ConditionalFormattingStringId.MenuColumnConditionalFormatting_TopBottomRules_AboveAverage" xml:space="preserve">
+    <value>Acima da média...</value>
+  </data>
+  <data name="ConditionalFormattingStringId.MenuColumnConditionalFormatting_TopBottomRules_BelowAverage" xml:space="preserve">
+    <value>Abaixo da média...</value>
+  </data>
+  <data name="ConditionalFormattingStringId.MenuColumnConditionalFormatting_TopBottomRules_Bottom10Percent" xml:space="preserve">
+    <value>Inferior a 10%...</value>
+  </data>
+  <data name="ConditionalFormattingStringId.MenuColumnConditionalFormatting_TopBottomRules_Top10Items" xml:space="preserve">
+    <value>Top 10 itens...</value>
+  </data>
+  <data name="ConditionalFormattingStringId.MenuColumnConditionalFormatting_TopBottomRules_Top10Percent" xml:space="preserve">
+    <value>Top 10%...</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_CustomConditionEditor_Title" xml:space="preserve">
+    <value>Custom condição Editor</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_DateOccurringDialog_Description" xml:space="preserve">
+    <value>Formatar células que contêm uma data de ocorrência:</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Top10ItemsDialog_Description" xml:space="preserve">
+    <value>Formatar células que estes estão no TOP:</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Top10PercentDialog_Connector" xml:space="preserve">
+    <value>% com</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Top10PercentDialog_Description" xml:space="preserve">
+    <value>Formatar células que estes estão no TOP:</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_GreaterThan" xml:space="preserve">
+    <value>Maior que</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_EqualTo" xml:space="preserve">
+    <value>Igual a</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_LessThanDialog_Description" xml:space="preserve">
+    <value>Formatar células que estão menos THAN:</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_2ColorScaleDescription" xml:space="preserve">
+    <value>Escala de 2 cores</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_3ColorScaleDescription" xml:space="preserve">
+    <value>Escala de 3 cores</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_Above" xml:space="preserve">
+    <value>Acima da média</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_AboveBelowDescription" xml:space="preserve">
+    <value>Formatar apenas os valores que estão acima ou abaixo da média</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_AboveBelowRangeDescription" xml:space="preserve">
+    <value>a média de valores de célula da coluna</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_AboveBelowTitle" xml:space="preserve">
+    <value>Formatar valores que são:</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_AboveMode" xml:space="preserve">
+    <value>Acima</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_AppliesTo" xml:space="preserve">
+    <value>Aplica-se a</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_ApplySameAppearance" xml:space="preserve">
+    <value>Aplicar a mesma aparência como positivo bar</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_BeginningWith" xml:space="preserve">
+    <value>Começando com</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_Below" xml:space="preserve">
+    <value>Abaixo da média</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_BelowMode" xml:space="preserve">
+    <value>Abaixo</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_Blanks" xml:space="preserve">
+    <value>Espaços em branco</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_CellsContainDescription" xml:space="preserve">
+    <value>Formatar apenas células que contenham</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_CellValue" xml:space="preserve">
+    <value>Valor da célula</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_Containing" xml:space="preserve">
+    <value>Contendo</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_ContainTitle" xml:space="preserve">
+    <value>Formatar apenas células com:</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_DataBar" xml:space="preserve">
+    <value>Barra de dados</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_DataBarFill" xml:space="preserve">
+    <value>Preencher</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_DataBarNegative" xml:space="preserve">
+    <value>Aparência negativo Bar:</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_DataBarNoBorder" xml:space="preserve">
+    <value>Sem borda</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_DataBarPositive" xml:space="preserve">
+    <value>Aparência positiva de barra:</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_DatesOccurring" xml:space="preserve">
+    <value>Datas ocorrendo</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_DeleteButtonDescription" xml:space="preserve">
+    <value>Excluir a regra</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_EditButtonDescription" xml:space="preserve">
+    <value>Editar regra...</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_EditFormattingRule" xml:space="preserve">
+    <value>Editar regra de formatação</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_EditRuleDescription" xml:space="preserve">
+    <value>Edite a descrição da regra:</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_EndingWith" xml:space="preserve">
+    <value>Terminando com</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_Fill" xml:space="preserve">
+    <value>Preencher</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_FillModeGradient" xml:space="preserve">
+    <value>Preenchimento gradiente</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_FillModeSolid" xml:space="preserve">
+    <value>Preenchimento sólido</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_FormatBackgroundColor" xml:space="preserve">
+    <value>Cor de fundo:</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_FormatButtonDescription" xml:space="preserve">
+    <value>Formato...</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_FormatCells" xml:space="preserve">
+    <value>Formatar células</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_FormatFontStyle" xml:space="preserve">
+    <value>Estilo da fonte:</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_FormatFontWeight" xml:space="preserve">
+    <value>Font-weight:</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_FormulaDescription" xml:space="preserve">
+    <value>Usar uma fórmula para determinar quais células para formatar</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_FormulaTitle" xml:space="preserve">
+    <value>Formatar valores onde esta fórmula é true:</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_GradedColorScale" xml:space="preserve">
+    <value>Classificados de escala de cores</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_GreaterOrEqual" xml:space="preserve">
+    <value>Maior que ou igual a</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_IconDescription" xml:space="preserve">
+    <value>Conjuntos de ícones</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_IconDescriptionCondition" xml:space="preserve">
+    <value>quando</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_IconDescriptionValueCondition" xml:space="preserve">
+    <value>quando o valor é</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_IconSet" xml:space="preserve">
+    <value>Conjunto de ícones</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_IconSetRulesTitle" xml:space="preserve">
+    <value>Exibir cada ícone de acordo com estas regras:</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_IconSetValueType" xml:space="preserve">
+    <value>Tipo de valor:</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_LessOrEqual" xml:space="preserve">
+    <value>Menor ou igual a</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_LessThan" xml:space="preserve">
+    <value>Menos de</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_MaxValue" xml:space="preserve">
+    <value>Valor Max:</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_Midpoint" xml:space="preserve">
+    <value>Ponto médio</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_MinMaxValueType" xml:space="preserve">
+    <value>Tipo de valor de min/Max:</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_MinValue" xml:space="preserve">
+    <value>Min valor:</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_NewButtonDescription" xml:space="preserve">
+    <value>Nova regra...</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_NewFormattingRule" xml:space="preserve">
+    <value>Nova regra de formatação</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_NoBlanks" xml:space="preserve">
+    <value>Não há espaços em branco</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_NoFormatSet" xml:space="preserve">
+    <value>Não há formato definido</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_NotBetween" xml:space="preserve">
+    <value>Não entre</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_NotContaining" xml:space="preserve">
+    <value>Não contendo</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_NotEqualTo" xml:space="preserve">
+    <value>Não é igual a</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_ReverseButtonDescription" xml:space="preserve">
+    <value>Inverter a ordem do ícone</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_Rule" xml:space="preserve">
+    <value>Regra</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_SelectRuleType" xml:space="preserve">
+    <value>Selecione um tipo de regra:</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_ShowModeCurrent" xml:space="preserve">
+    <value>Coluna atual</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_ShowRulesFor" xml:space="preserve">
+    <value>Mostrar regras de formatação para:</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_SpecificText" xml:space="preserve">
+    <value>Texto específico</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_Title" xml:space="preserve">
+    <value>Gerenciador de regras formatação condicional</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_TopBottomDescription" xml:space="preserve">
+    <value>Formatar apenas topo ou fundo classificado valores</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_TopBottomRangeDescription" xml:space="preserve">
+    <value>% dos valores de célula da coluna</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_TopBottomTitle" xml:space="preserve">
+    <value>Formato valoriza esse rank na:</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_ValueBasedDescription" xml:space="preserve">
+    <value>Formatar todas as células com base em seus valores</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_ValueBasedStyle" xml:space="preserve">
+    <value>Formatar estilo:</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_ValueBasedTitle" xml:space="preserve">
+    <value>Formatar todas as células com base em seus valores:</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_PredefinedColorScaleFormat_BlueWhiteRedColorScale" xml:space="preserve">
+    <value>Escala de cores vermelho - branco - azul</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_PredefinedColorScaleFormat_GreenWhiteColorScale" xml:space="preserve">
+    <value>Verde - escala de cor branca</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_PredefinedColorScaleFormat_GreenWhiteRedColorScale" xml:space="preserve">
+    <value>Verde - branco - vermelho cor escala</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_PredefinedColorScaleFormat_GreenYellowColorScale" xml:space="preserve">
+    <value>Verde - amarelo cor de escala</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_PredefinedColorScaleFormat_GreenYellowRedColorScale" xml:space="preserve">
+    <value>Escala de cores vermelho - amarelo - verde</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_PredefinedColorScaleFormat_RedWhiteBlueColorScale" xml:space="preserve">
+    <value>Vermelho - branco - azul cor escala</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_PredefinedColorScaleFormat_RedWhiteColorScale" xml:space="preserve">
+    <value>Vermelho - escala de cor branca</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_PredefinedColorScaleFormat_RedWhiteGreenColorScale" xml:space="preserve">
+    <value>Escala de cor verde vermelho - branco-</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_PredefinedColorScaleFormat_RedYellowGreenColorScale" xml:space="preserve">
+    <value>Escala de cores verde - amarelo - vermelho</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_PredefinedColorScaleFormat_WhiteGreenColorScale" xml:space="preserve">
+    <value>Branco - escala de cor verde</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_PredefinedColorScaleFormat_WhiteRedColorScale" xml:space="preserve">
+    <value>Branco - escala de cor vermelha</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_PredefinedColorScaleFormat_YellowGreenColorScale" xml:space="preserve">
+    <value>Amarelo - escala de cor verde</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_PredefinedDataBarFormat_Description" xml:space="preserve">
+    <value>Adicionar uma barra de dados coloridos para representar
+o valor em uma célula. Quanto maior o
+valor, quanto mais o bar</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_PredefinedDataBarFormat_GreenGradientDataBar" xml:space="preserve">
+    <value>Gradiente verde barra de dados</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_PredefinedDataBarFormat_LightBlueGradientDataBar" xml:space="preserve">
+    <value>Gradiente de luz azul barra de dados</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_PredefinedDataBarFormat_LightBlueSolidDataBar" xml:space="preserve">
+    <value>Luz azul barra de dados</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_PredefinedDataBarFormat_PurpleGradientDataBar" xml:space="preserve">
+    <value>Roxo barra de dados gradiente</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_PredefinedDataBarFormat_PurpleSolidDataBar" xml:space="preserve">
+    <value>Barra de dados roxo</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_PredefinedDataBarFormat_RedGradientDataBar" xml:space="preserve">
+    <value>Gradiente vermelho barra de dados</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_PredefinedIconSetFormat_TrafficLights3RimmedIconSet" xml:space="preserve">
+    <value>3 Semáforos (aro)</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_PredefinedIconSetFormat_TrafficLights3UnrimmedIconSet" xml:space="preserve">
+    <value>3 semáforos (Unrimmed)</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_PredefinedIconSetFormat_TrafficLights4IconSet" xml:space="preserve">
+    <value>4 Luzes de tráfego</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Bottom10ItemsDialog_Description" xml:space="preserve">
+    <value>Formatar células que rank no fundo:</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Bottom10ItemsDialog_Title" xml:space="preserve">
+    <value>Fundo 10 itens</value>
+  </data>
+  <data name="ConditionalFormattingStringId.MenuColumnConditionalFormatting_HighlightCellsRules_ADateOccurring" xml:space="preserve">
+    <value>Um encontro que está ocorrendo...</value>
+  </data>
+  <data name="ConditionalFormattingStringId.MenuColumnConditionalFormatting_HighlightCellsRules_CustomCondition" xml:space="preserve">
+    <value>Custom condição...</value>
+  </data>
+  <data name="ConditionalFormattingStringId.MenuColumnConditionalFormatting_ManageRules" xml:space="preserve">
+    <value>Gerenciar regras</value>
+  </data>
+  <data name="ConditionalFormattingStringId.MenuColumnConditionalFormatting_TopBottomRules_Bottom10Items" xml:space="preserve">
+    <value>Fundo 10 itens...</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_Down" xml:space="preserve">
+    <value>Baixo</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_Up" xml:space="preserve">
+    <value>Cima</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_Auto" xml:space="preserve">
+    <value>&lt; auto &gt;</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_IconDescriptionConnector" xml:space="preserve">
+    <value>e</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_IconSetStyle" xml:space="preserve">
+    <value>Style icon:</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Bottom10PercentDialog_Description" xml:space="preserve">
+    <value>Formatar células que rank no fundo:</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_CustomIconGroup" xml:space="preserve">
+    <value>Personalizado</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_FilterAll" xml:space="preserve">
+    <value>(Todos)</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_FormatIconDescription" xml:space="preserve">
+    <value>Selecione o ícone:</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_TextThatContainsDialog_Title" xml:space="preserve">
+    <value>Texto que contém</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_ApplyToRow" xml:space="preserve">
+    <value>Aplicar a linha</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_Manager_Icon" xml:space="preserve">
+    <value>Ícone</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_DateOccurringDialog_Title" xml:space="preserve">
+    <value>Ocorrendo uma data</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_UniqueDuplicateDialog_Unique" xml:space="preserve">
+    <value>Exclusivo</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_UniqueDuplicateDialog_Duplicate" xml:space="preserve">
+    <value>Duplicar</value>
+  </data>
+  <data name="ConditionalFormattingStringId.ConditionalFormatting_UniqueDuplicateDialog_Title" xml:space="preserve">
+    <value>Valores duplicados</value>
+  </data>
+</root>

@@ -1,0 +1,1527 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Count" xml:space="preserve">
+    <value>Counts the number of cells in a range that contain numbers.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.If" xml:space="preserve">
+    <value>Checks whether a condition is met, and returns one value if TRUE, and another value if FALSE.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.IsNA" xml:space="preserve">
+    <value>Checks whether a value is #N/A, and returns TRUE or FALSE.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.IsError" xml:space="preserve">
+    <value>Checks whether a value is an error (#N/A, #VALUE!, #REF!, #DIV/0!, #NUM!, #NAME?, or #NULL!), and returns TRUE or FALSE.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Sum" xml:space="preserve">
+    <value>Adds all the numbers in a range of cells.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Average" xml:space="preserve">
+    <value>Returns the average (arithmetic mean) of its arguments, which can be numbers or names, arrays, or references that contain numbers.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Min" xml:space="preserve">
+    <value>Returns the smallest number in a set of values. Ignores logical values and text.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Max" xml:space="preserve">
+    <value>Returns the largest value in a set of values. Ignores logical values and text.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Row" xml:space="preserve">
+    <value>Returns the row number of a reference.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Column" xml:space="preserve">
+    <value>Returns the column number of a reference.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.NA" xml:space="preserve">
+    <value>Returns the error value #N/A (value not available).</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Npv" xml:space="preserve">
+    <value>Returns the net present value of an investment based on a discount rate and a series of future payments (negative values) and income (positive values).</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.StDev" xml:space="preserve">
+    <value>Estimates standard deviation based on a sample (ignores logical values and text in the sample).</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Dollar" xml:space="preserve">
+    <value>Converts a number to text, using currency format.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Fixed" xml:space="preserve">
+    <value>Rounds a number to the specified number of decimals and returns the result as text with or without commas.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Sin" xml:space="preserve">
+    <value>Returns the sine of an angle.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Cos" xml:space="preserve">
+    <value>Returns the cosine of an angle.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Tan" xml:space="preserve">
+    <value>Returns the tangent of an angle.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.ATan" xml:space="preserve">
+    <value>Returns the arctangent of a number in radians, in the range -Pi/2 to Pi/2.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Pi" xml:space="preserve">
+    <value>Returns the value of Pi, 3.14159265358979, accurate to 15 digits.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Sqrt" xml:space="preserve">
+    <value>Returns the square root of a number.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Exp" xml:space="preserve">
+    <value>Returns e raised to the power of a given number.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Ln" xml:space="preserve">
+    <value>Returns the natural logarithm of a number.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Log10" xml:space="preserve">
+    <value>Returns the base-10 logarithm of a number.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Abs" xml:space="preserve">
+    <value>Returns the absolute value of a number, a number without its sign.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Int" xml:space="preserve">
+    <value>Rounds a number down to the nearest integer.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Sign" xml:space="preserve">
+    <value>Returns the sign of a number: 1 if the number is positive, zero if the number is zero, or -1 if the number is negative.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Round" xml:space="preserve">
+    <value>Rounds a number to a specified number of digits.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Lookup" xml:space="preserve">
+    <value>Looks up a value either from a one-row or one-column range or from an array. Provided for backward compatibility.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Index" xml:space="preserve">
+    <value>Returns a value or reference of the cell at the intersection of a particular row and column, in a given range.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Rept" xml:space="preserve">
+    <value>Repeats text a given number of times. Use REPT to fill a cell with a number of instances of a text string.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Mid" xml:space="preserve">
+    <value>Returns the characters from the middle of a text string, given a starting position and length.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Len" xml:space="preserve">
+    <value>Returns the number of characters in a text string.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Value" xml:space="preserve">
+    <value>Converts a text string that represents a number to a number.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.True" xml:space="preserve">
+    <value>Returns the logical value TRUE.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.False" xml:space="preserve">
+    <value>Returns the logical value FALSE.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.And" xml:space="preserve">
+    <value>Checks whether all arguments are TRUE, and returns TRUE if all arguments are TRUE.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Or" xml:space="preserve">
+    <value>Checks whether any of the arguments are TRUE, and returns TRUE or FALSE. Returns FALSE only if all arguments are FALSE.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Not" xml:space="preserve">
+    <value>Changes FALSE to TRUE, or TRUE to FALSE.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Mod" xml:space="preserve">
+    <value>Returns the remainder after a number is divided by a divisor.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.DCount" xml:space="preserve">
+    <value>Counts the cells containing numbers in the field (column) of records in the database that match the conditions you specify.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.DSum" xml:space="preserve">
+    <value>Adds the numbers in the field (column) of records in the database that match the conditions you specify.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.DAverage" xml:space="preserve">
+    <value>Averages the values in a column in a list or database that match conditions you specify.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.DMin" xml:space="preserve">
+    <value>Returns the smallest number in the field (column) of records in the database that match the conditions you specify.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.DMax" xml:space="preserve">
+    <value>Returns the largest number in the field (column) of records in the database that match the conditions you specify.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.DStDev" xml:space="preserve">
+    <value>Estimates the standard deviation based on a sample from selected database entries.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Var" xml:space="preserve">
+    <value>Estimates variance based on a sample (ignores logical values and text in the sample).</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.DVar" xml:space="preserve">
+    <value>Estimates variance based on a sample from selected database entries.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Text" xml:space="preserve">
+    <value>Converts a value to text in a specific number format.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Linest" xml:space="preserve">
+    <value>Returns statistics that describe a linear trend matching known data points, by fitting a straight line using the least squares method.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Trend" xml:space="preserve">
+    <value>Returns numbers in a linear trend matching known data points, using the least squares method.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Logest" xml:space="preserve">
+    <value>Returns statistics that describe an exponential curve matching known data points.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Growth" xml:space="preserve">
+    <value>Returns numbers in an exponential growth trend matching known data points.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Pv" xml:space="preserve">
+    <value>Returns the present value of an investment: the total amount that a series of future payments is worth now.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Fv" xml:space="preserve">
+    <value>Returns the future value of an investment based on periodic, constant payments and a constant interest rate.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.NPer" xml:space="preserve">
+    <value>Returns the number of periods for an investment based on periodic, constant payments and a constant interest rate.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Pmt" xml:space="preserve">
+    <value>Calculates the payment for a loan based on constant payments and a constant interest rate.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Rate" xml:space="preserve">
+    <value>Returns the interest rate per period of a loan or an investment. For example, use 6%/4 for quarterly payments at 6% APR.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Mirr" xml:space="preserve">
+    <value>Returns the internal rate of return for a series of periodic cash flows, considering both cost of investment and interest on reinvestment of cash.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Irr" xml:space="preserve">
+    <value>Returns the internal rate of return for a series of cash flows.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Rand" xml:space="preserve">
+    <value>Returns a random number greater than or equal to 0 and less than 1, evenly distributed (changes on recalculation).</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Match" xml:space="preserve">
+    <value>Returns the relative position of an item in an array that matches a specified value in a specified order.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Date" xml:space="preserve">
+    <value>Returns the number that represents the date in Spreadsheet date-time code.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Time" xml:space="preserve">
+    <value>Converts hours, minutes, and seconds given as numbers to an Spreadsheet serial number, formatted with a time format.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Day" xml:space="preserve">
+    <value>Returns the day of the month, a number from 1 to 31.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Month" xml:space="preserve">
+    <value>Returns the month, a number from 1 (January) to 12 (December).</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Year" xml:space="preserve">
+    <value>Returns the year of a date, an integer in the range 1900 - 9999.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.WeekDay" xml:space="preserve">
+    <value>Returns a number from 1 to 7 identifying the day of the week of a date.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Hour" xml:space="preserve">
+    <value>Returns the hour as a number from 0 (12:00 A.M.) to 23 (11:00 P.M.).</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Minute" xml:space="preserve">
+    <value>Returns the minute, a number from 0 to 59.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Second" xml:space="preserve">
+    <value>Returns the second, a number from 0 to 59.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Now" xml:space="preserve">
+    <value>Returns the current date and time formatted as a date and time.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Areas" xml:space="preserve">
+    <value>Returns the number of areas in a reference. An area is a range of contiguous cells or a single cell.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Rows" xml:space="preserve">
+    <value>Returns the number of rows in a reference or array.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Columns" xml:space="preserve">
+    <value>Returns the number of columns in an array or reference.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Offset" xml:space="preserve">
+    <value>Returns a reference to a range that is a given number of rows and columns from a given reference.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Search" xml:space="preserve">
+    <value>Returns the number of the character at which a specific character or text string is first found, reading left to right (not case-sensitive).</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Transpose" xml:space="preserve">
+    <value>Converts a vertical range of cells to a horizontal range, or vice versa.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Type" xml:space="preserve">
+    <value>Returns an integer representing the data type of a value: number = 1; text = 2; logical value = 4; error value = 16; array = 64.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Call" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.ATan2" xml:space="preserve">
+    <value>Returns the arctangent of the specified x- and y- coordinates, in radians between -Pi and Pi, excluding -Pi.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.ASin" xml:space="preserve">
+    <value>Returns the arcsine of a number in radians, in the range -Pi/2 to Pi/2.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.ACos" xml:space="preserve">
+    <value>Returns the arccosine of a number, in radians in the range 0 to Pi. The arccosine is the angle whose cosine is Number.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Choose" xml:space="preserve">
+    <value>Chooses a value or action to perform from a list of values, based on an index number.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.HLookup" xml:space="preserve">
+    <value>Looks for a value in the top row of a table or array of values and returns the value in the same column from a row you specify.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.VLookup" xml:space="preserve">
+    <value>Looks for a value in the leftmost column of a table, and then returns a value in the same row from a column you specify. By default, the table must be sorted in an ascending order.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.IsRef" xml:space="preserve">
+    <value>Checks whether a value is a reference, and returns TRUE or FALSE.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Log" xml:space="preserve">
+    <value>Returns the logarithm of a number to the base you specify.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Char" xml:space="preserve">
+    <value>Returns the character specified by the code number from the character set for your computer.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Lower" xml:space="preserve">
+    <value>Converts all letters in a text string to lowercase.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Upper" xml:space="preserve">
+    <value>Converts a text string to all uppercase letters.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Proper" xml:space="preserve">
+    <value>Converts a text string to proper case; the first letter in each word in uppercase, and all other letters to lowercase.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Left" xml:space="preserve">
+    <value>Returns the specified number of characters from the start of a text string.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Right" xml:space="preserve">
+    <value>Returns the specified number of characters from the end of a text string.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Exact" xml:space="preserve">
+    <value>Checks whether two text strings are exactly the same, and returns TRUE or FALSE. EXACT is case-sensitive.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Trim" xml:space="preserve">
+    <value>Removes all spaces from a text string except for single spaces between words.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Replace" xml:space="preserve">
+    <value>Replaces part of a text string with a different text string.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Substitute" xml:space="preserve">
+    <value>Replaces existing text with new text in a text string.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Code" xml:space="preserve">
+    <value>Returns a numeric code for the first character in a text string, in the character set used by your computer.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Find" xml:space="preserve">
+    <value>Returns the starting position of one text string within another text string. FIND is case-sensitive.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Cell" xml:space="preserve">
+    <value>Returns information about the formatting, location, or contents of the first cell, according to the sheet's reading order, in a reference.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.IsErr" xml:space="preserve">
+    <value>Checks whether a value is an error (#VALUE!, #REF!, #DIV/0!, #NUM!, #NAME?, or #NULL!) excluding #N/A, and returns TRUE or FALSE.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.IsText" xml:space="preserve">
+    <value>Checks whether a value is text, and returns TRUE or FALSE.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.IsNumber" xml:space="preserve">
+    <value>Checks whether a value is a number, and returns TRUE or FALSE.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.IsBlank" xml:space="preserve">
+    <value>Checks whether a reference is to an empty cell, and returns TRUE or FALSE.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.T" xml:space="preserve">
+    <value>Checks whether a value is text, and returns the text if it is, or returns double quotes (empty text) if it is not.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.N" xml:space="preserve">
+    <value>Converts non-number value to a number, dates to serial numbers, TRUE to 1, anything else to 0 (zero).</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.DateValue" xml:space="preserve">
+    <value>Converts a date in the form of text to a number that represents the date in Spreadsheet date-time code.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.TimeValue" xml:space="preserve">
+    <value>Converts a text time to an Spreadsheet serial number for a time, a number from 0 (12:00:00 AM) to 0.999988426 (11:59:59 PM). Format the number with a time format after entering the formula.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Sln" xml:space="preserve">
+    <value>Returns the straight-line depreciation of an asset for one period.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Syd" xml:space="preserve">
+    <value>Returns the sum-of-years' digits depreciation of an asset for a specified period.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Ddb" xml:space="preserve">
+    <value>Returns the depreciation of an asset for a specified period using the double-declining balance method or some other method you specify.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Indirect" xml:space="preserve">
+    <value>Returns the reference specified by a text string.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Call" xml:space="preserve">
+    <value>Calls a procedure in a dynamic link library or code resource.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Clean" xml:space="preserve">
+    <value>Removes all nonprintable characters from text.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.MDeterm" xml:space="preserve">
+    <value>Returns the matrix determinant of an array.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.MInverse" xml:space="preserve">
+    <value>Returns the inverse matrix for the matrix stored in an array.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.MMult" xml:space="preserve">
+    <value>Returns the matrix product of two arrays, an array with the same number of rows as array1 and columns as array2.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Ipmt" xml:space="preserve">
+    <value>Returns the interest payment for a given period for an investment, based on periodic, constant payments and a constant interest rate.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Ppmt" xml:space="preserve">
+    <value>Returns the payment on the principal for a given investment based on periodic, constant payments and a constant interest rate.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.CountA" xml:space="preserve">
+    <value>Counts the number of cells in a range that are not empty.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Product" xml:space="preserve">
+    <value>Multiplies all the numbers given as arguments.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Fact" xml:space="preserve">
+    <value>Returns the factorial of a number, equal to 1*2*3*...* Number.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.DProduct" xml:space="preserve">
+    <value>Multiplies the values in the field (column) of records in the database that match the conditions you specify.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.IsNonText" xml:space="preserve">
+    <value>Checks whether a value is not text (blank cells are not text), and returns TRUE or FALSE.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.StDevP" xml:space="preserve">
+    <value>Calculates standard deviation based on the entire population given as arguments (ignores logical values and text).</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.VarP" xml:space="preserve">
+    <value>Calculates variance based on the entire population (ignores logical values and text in the population).</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.DStDevP" xml:space="preserve">
+    <value>Calculates the standard deviation based on the entire population of selected database entries.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.DVarP" xml:space="preserve">
+    <value>Calculates variance based on the entire population of selected database entries.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Trunc" xml:space="preserve">
+    <value>Truncates a number to an integer by removing the decimal, or fractional, part of the number.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.IsLogical" xml:space="preserve">
+    <value>Checks whether a value is a logical value (TRUE or FALSE), and returns TRUE or FALSE.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.DCountA" xml:space="preserve">
+    <value>Counts nonblank cells in the field (column) of records in the database that match the conditions you specify.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.FindB" xml:space="preserve">
+    <value>Finds the starting position of one text string within another text string. FINDB is case-sensitive. Use with double-byte character sets (DBCS).</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.SearchB" xml:space="preserve">
+    <value> Returns the number of the character at which a specific character or text string is first found, reading left to right (not case-sensitive). Use with double-byte character sets (DBCS).</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.ReplaceB" xml:space="preserve">
+    <value>Replaces part of a text string with a different text string. Use with double-byte character sets (DBCS).</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.LeftB" xml:space="preserve">
+    <value>Returns the specified number of characters from the start of a text string. Use with double-byte character sets (DBCS).</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.RightB" xml:space="preserve">
+    <value>Returns the specified number of characters from the end of a text string. Use with double-byte character sets (DBCS).</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.MidB" xml:space="preserve">
+    <value>Returns characters from the middle of a text string, given a starting position and length. Use with double-byte character sets (DBCS).</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.LenB" xml:space="preserve">
+    <value>Returns the number of characters in a text string. Use with double-byte character sets (DBCS).</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.RoundUp" xml:space="preserve">
+    <value>Rounds a number up, away from zero.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.RoundDown" xml:space="preserve">
+    <value>Rounds a number down, toward zero.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Asc" xml:space="preserve">
+    <value>Changes full-width (double-byte) characters to half-width (single-byte) characters. Use with double-byte character sets (DBCS).</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Rank" xml:space="preserve">
+    <value>Returns the rank of a number in a list of numbers: its size relative to other values in the list.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Address" xml:space="preserve">
+    <value>Creates a cell reference as text, given specified row and column numbers.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Days360" xml:space="preserve">
+    <value>Returns the number of days between two dates based on a 360-day year (twelve 30-day months).</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Today" xml:space="preserve">
+    <value>Returns the current date formatted as a date.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Vdb" xml:space="preserve">
+    <value>Returns the depreciation of an asset for any period you specify, including partial periods, using the double-declining balance method or some other method you specify.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Median" xml:space="preserve">
+    <value>Returns the median, or the number in the middle of the set of given numbers.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.SumProduct" xml:space="preserve">
+    <value>Returns the sum of the products of corresponding ranges or arrays.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.SinH" xml:space="preserve">
+    <value>Returns the hyperbolic sine of a number.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.CosH" xml:space="preserve">
+    <value>Returns the hyperbolic cosine of a number.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.TanH" xml:space="preserve">
+    <value>Returns the hyperbolic tangent of a number.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.ASinH" xml:space="preserve">
+    <value>Returns the inverse hyperbolic sine of a number.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.ACosH" xml:space="preserve">
+    <value>Returns the inverse hyperbolic cosine of a number.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.ATanH" xml:space="preserve">
+    <value>Returns the inverse hyperbolic tangent of a number.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.DGet" xml:space="preserve">
+    <value>Extracts from a database a single record that matches the conditions you specify.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Info" xml:space="preserve">
+    <value>Returns information about the current operating environment.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Db" xml:space="preserve">
+    <value>Returns the depreciation of an asset for a specified period using the fixed-declining balance method.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Frequency" xml:space="preserve">
+    <value>Calculates how often values occur within a range of values and then returns a vertical array of numbers having one more element than Bins_array.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.ErrorType" xml:space="preserve">
+    <value>Returns a number matching an error value.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.RegisterId" xml:space="preserve">
+    <value>Returns the register ID of the specified dynamic link library (DLL) or code resource that has been previously registered.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Avedev" xml:space="preserve">
+    <value>Returns the average of the absolute deviations of data points from their mean. Arguments can be numbers or names, arrays, or references that contain numbers.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.BetaDistCompatibility" xml:space="preserve">
+    <value>Returns the cumulative beta probability density function.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.GammaLn" xml:space="preserve">
+    <value>Returns the natural logarithm of the gamma function.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.BetaInv" xml:space="preserve">
+    <value>Returns the inverse of the cumulative beta probability density function (BETADIST).</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.BinomDist" xml:space="preserve">
+    <value>Returns the individual term binomial distribution probability.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.ChiDist" xml:space="preserve">
+    <value>Returns the right-tailed probability of the chi-squared distribution.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.ChiInv" xml:space="preserve">
+    <value>Returns the inverse of the right-tailed probability of the chi-squared distribution.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Combin" xml:space="preserve">
+    <value>Returns the number of combinations for a given number of items.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Confidence" xml:space="preserve">
+    <value>Returns the confidence interval for a population mean, using a normal distribution.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.CritBinom" xml:space="preserve">
+    <value>Returns the smallest value for which the cumulative binomial distribution is greater than or equal to a criterion value.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Even" xml:space="preserve">
+    <value>Rounds a positive number up and negative number down to the nearest even integer.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.ExponDist" xml:space="preserve">
+    <value>Returns the exponential distribution.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.FDist" xml:space="preserve">
+    <value>Returns the (right-tailed) F probability distribution (degree of diversity) for two data sets.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.FInv" xml:space="preserve">
+    <value>Returns the inverse of the (right-tailed) F probability distribution: if p = FDIST(x,...), then FINV(p,...) = x.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Fisher" xml:space="preserve">
+    <value>Returns the Fisher transformation.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.FisherInv" xml:space="preserve">
+    <value>Returns the inverse of the Fisher transformation: if y = FISHER(x), then FISHERINV(y) = x.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Floor" xml:space="preserve">
+    <value>Rounds a number down to the nearest multiple of significance.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.GammaDist" xml:space="preserve">
+    <value>Returns the gamma distribution.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.GammaInv" xml:space="preserve">
+    <value>Returns the inverse of the gamma cumulative distribution: if p = GAMMADIST(x,...), then GAMMAINV(p,...) = x.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Ceiling" xml:space="preserve">
+    <value>Rounds a number up, to the nearest multiple of significance.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.HypGeomDist" xml:space="preserve">
+    <value>Returns the hypergeometric distribution.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.LogNormDistCompatibility" xml:space="preserve">
+    <value>Returns the cumulative lognormal distribution of x, where ln(x) is normally distributed with parameters Mean and Standard_dev.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.LogInvCompatibility" xml:space="preserve">
+    <value>Returns the inverse of the lognormal cumulative distribution function of x, where ln(x) is normally distributed with parameters Mean and Standard_dev.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.NegBinomDist" xml:space="preserve">
+    <value>Returns the negative binomial distribution, the probability that there will be Number_f failures before the Number_s-th success, with Probability_s probability of a success.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.NormDistCompatibility" xml:space="preserve">
+    <value>Returns the normal cumulative distribution for the specified mean and standard deviation.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.NormSDistCompatibility" xml:space="preserve">
+    <value>Returns the standard normal cumulative distribution (has a mean of zero and a standard deviation of one).</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.NormInvCompatibility" xml:space="preserve">
+    <value>Returns the inverse of the normal cumulative distribution for the specified mean and standard deviation.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.NormSInvCompatibility" xml:space="preserve">
+    <value>Returns the inverse of the standard normal cumulative distribution (has a mean of zero and a standard deviation of one).</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Standardize" xml:space="preserve">
+    <value>Returns a normalized value from a distribution characterized by a mean and standard deviation.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Odd" xml:space="preserve">
+    <value>Rounds a positive number up and negative number down to the nearest odd integer.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Permut" xml:space="preserve">
+    <value>Returns the number of permutations for a given number of objects that can be selected from the total objects.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Poisson" xml:space="preserve">
+    <value>Returns the Poisson distribution.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.TDist" xml:space="preserve">
+    <value>Returns the Student's t-distribution.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Weibull" xml:space="preserve">
+    <value>Returns the Weibull distribution.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.SumXMY2" xml:space="preserve">
+    <value>Sums the squares of the differences in two corresponding ranges or arrays.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.SumX2MY2" xml:space="preserve">
+    <value>Sums the differences between the squares of two corresponding ranges or arrays.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.SumX2PY2" xml:space="preserve">
+    <value>Returns the sum total of the sums of squares of numbers in two corresponding ranges or arrays.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.ChiTest" xml:space="preserve">
+    <value>Returns the test for independence: the value from the chi-squared distribution for the statistic and the appropriate degrees of freedom.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Correl" xml:space="preserve">
+    <value>Returns the correlation coefficient between two data sets.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Covar" xml:space="preserve">
+    <value>Returns covariance, the average of the products of deviations for each data point pair in two data sets.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Forecast" xml:space="preserve">
+    <value>Calculates, or predicts, a future value along a linear trend by using existing values.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.FTest" xml:space="preserve">
+    <value>Returns the result of an F-test, the two-tailed probability that the variances in Array1 and Array2 are not significantly different.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Intercept" xml:space="preserve">
+    <value>Calculates the point at which a line will intersect the y-axis by using a best-fit regression line plotted through the known x-values and y-values.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Pearson" xml:space="preserve">
+    <value>Returns the Pearson product moment correlation coefficient, r.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Rsq" xml:space="preserve">
+    <value>Returns the square of the Pearson product moment correlation coefficient through the given data points.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.StEYX" xml:space="preserve">
+    <value>Returns the standard error of the predicted y-value for each x in a regression.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Slope" xml:space="preserve">
+    <value>Returns the slope of the linear regression line through the given data points.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.TTest" xml:space="preserve">
+    <value>Returns the probability associated with a Student's t-Test.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Prob" xml:space="preserve">
+    <value>Returns the probability that values in a range are between two limits or equal to a lower limit.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.DevSq" xml:space="preserve">
+    <value>Returns the sum of squares of deviations of data points from their sample mean.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Geomean" xml:space="preserve">
+    <value>Returns the geometric mean of an array or range of positive numeric data.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.HarMean" xml:space="preserve">
+    <value>Returns the harmonic mean of a data set of positive numbers: the reciprocal of the arithmetic mean of reciprocals.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.SumSq" xml:space="preserve">
+    <value>Returns the sum of the squares of the arguments. The arguments can be numbers, arrays, names, or references to cells that contain numbers.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Kurt" xml:space="preserve">
+    <value>Returns the kurtosis of a data set.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Skew" xml:space="preserve">
+    <value>Returns the skewness of a distribution: a characterization of the degree of asymmetry of a distribution around its mean.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.ZTest" xml:space="preserve">
+    <value>Returns the one-tailed P-value of a z-test.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Large" xml:space="preserve">
+    <value>Returns the k-th largest value in a data set. For example, the fifth largest number.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Small" xml:space="preserve">
+    <value>Returns the k-th smallest value in a data set. For example, the fifth smallest number.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Quartile" xml:space="preserve">
+    <value>Returns the quartile of a data set.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Percentile" xml:space="preserve">
+    <value>Returns the k-th percentile of values in a range.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.PercentRank" xml:space="preserve">
+    <value>Returns the rank of a value in a data set as a percentage of the data set.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Mode" xml:space="preserve">
+    <value>Returns the most frequently occurring, or repetitive, value in an array or range of data.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Trimmean" xml:space="preserve">
+    <value>Returns the mean of the interior portion of a set of data values.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Tinv" xml:space="preserve">
+    <value>Returns the two-tailed inverse of the Student's t-distribution.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Concatenate" xml:space="preserve">
+    <value>Joins several text strings into one text string.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Power" xml:space="preserve">
+    <value>Returns the result of a number raised to a power.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Radians" xml:space="preserve">
+    <value>Converts degrees to radians.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Degrees" xml:space="preserve">
+    <value>Converts radians to degrees.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Subtotal" xml:space="preserve">
+    <value>Returns a subtotal in a list or database.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.SumIf" xml:space="preserve">
+    <value>Adds the cells specified by a given condition or criteria.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.CountIf" xml:space="preserve">
+    <value>Counts the number of cells within a range that meet the given condition.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.CountBlank" xml:space="preserve">
+    <value>Counts the number of empty cells in a specified range of cells.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.IsPmt" xml:space="preserve">
+    <value>Returns the interest paid during a specific period of an investment.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.DateDif" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Roman" xml:space="preserve">
+    <value>Converts an Arabic numeral to Roman, as text.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.GetPivotData" xml:space="preserve">
+    <value>Extracts data stored in a PivotTable.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Hyperlink" xml:space="preserve">
+    <value>Creates a shortcut or jump that opens a document stored on your hard drive, a network server, or on the Internet.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Phonetic" xml:space="preserve">
+    <value>Get phonetic string.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.AverageA" xml:space="preserve">
+    <value>Returns the average (arithmetic mean) of its arguments, evaluating text and FALSE in arguments as 0; TRUE evaluates as 1. Arguments can be numbers, names, arrays, or references.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.MaxA" xml:space="preserve">
+    <value>Returns the largest value in a set of values. Does not ignore logical values and text.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.MinA" xml:space="preserve">
+    <value>Returns the smallest value in a set of values. Does not ignore logical values and text.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.StDevPA" xml:space="preserve">
+    <value>Calculates standard deviation based on an entire population, including logical values and text. Text and the logical value FALSE have the value 0; the logical value TRUE has the value 1.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.VarPA" xml:space="preserve">
+    <value>Calculates variance based on the entire population, including logical values and text. Text and the logical value FALSE have the value 0; the logical value TRUE has the value 1.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.StDevA" xml:space="preserve">
+    <value>Estimates standard deviation based on a sample, including logical values and text. Text and the logical value FALSE have the value 0; the logical value TRUE has the value 1.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.VarA" xml:space="preserve">
+    <value>Estimates variance based on a sample, including logical values and text. Text and the logical value FALSE have the value 0; the logical value TRUE has the value 1.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.BahtText" xml:space="preserve">
+    <value>Converts a number to text (baht).</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Rtd" xml:space="preserve">
+    <value>Retrieves real-time data from a program that supports COM automation.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.CubeValue" xml:space="preserve">
+    <value>Returns an aggregated value from the cube.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.CubeMember" xml:space="preserve">
+    <value>Returns a member or tuple from the cube.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.CubeMemberProperty" xml:space="preserve">
+    <value>Returns the value of a member property from the cube.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.CubeRankedMember" xml:space="preserve">
+    <value>Returns the nth, or ranked, member in a set.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Hex2Bin" xml:space="preserve">
+    <value>Converts a Hexadecimal number to binary.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Hex2Dec" xml:space="preserve">
+    <value>Converts a hexadecimal number to decimal.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Hex2Oct" xml:space="preserve">
+    <value>Converts a hexadecimal number to octal.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Dec2Bin" xml:space="preserve">
+    <value>Converts a decimal number to binary.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Dec2Hex" xml:space="preserve">
+    <value>Converts a decimal number to hexadecimal.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Dec2Oct" xml:space="preserve">
+    <value>Converts a decimal number to octal.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Oct2Bin" xml:space="preserve">
+    <value>Converts an octal number to binary.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Oct2Hex" xml:space="preserve">
+    <value>Converts an octal number to hexadecimal.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Oct2Dec" xml:space="preserve">
+    <value>Converts an octal number to decimal.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Bin2Dec" xml:space="preserve">
+    <value>Converts a binary number to decimal.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Bin2Oct" xml:space="preserve">
+    <value>Converts a binary number to octal.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Bin2Hex" xml:space="preserve">
+    <value>Converts a binary number to hexadecimal.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.ImSub" xml:space="preserve">
+    <value>Returns the difference of two complex numbers.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.ImDiv" xml:space="preserve">
+    <value>Returns the quotient of two complex numbers.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.ImPower" xml:space="preserve">
+    <value>Returns a complex number raised to an integer power.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.ImAbs" xml:space="preserve">
+    <value>Returns the absolute value (modulus) of a complex number.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.ImSqrt" xml:space="preserve">
+    <value>Returns the square root of a complex number.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.ImLn" xml:space="preserve">
+    <value>Returns the natural logarithm of a complex number.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.ImLog2" xml:space="preserve">
+    <value>Returns the base-2 logarithm of a complex number.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.ImLog10" xml:space="preserve">
+    <value>Returns the base-10 logarithm of a complex number.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.ImSin" xml:space="preserve">
+    <value>Returns the sine of a complex number.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.ImCos" xml:space="preserve">
+    <value>Returns the cosine of a complex number.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.ImExp" xml:space="preserve">
+    <value>Returns the exponential of a complex number.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.ImArgument" xml:space="preserve">
+    <value>Returns the argument q, an angle expressed in radians.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.ImConjugate" xml:space="preserve">
+    <value>Returns the complex conjugate of a complex number.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Imaginary" xml:space="preserve">
+    <value>Returns the imaginary coefficient of a complex number.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.ImReal" xml:space="preserve">
+    <value>Returns the real coefficient of a complex number.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Complex" xml:space="preserve">
+    <value>Converts real and imaginary coefficients into a complex number.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.ImSum" xml:space="preserve">
+    <value>Returns the sum of complex numbers.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.ImProduct" xml:space="preserve">
+    <value>Returns the product of 1 to 255 complex numbers.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Seriessum" xml:space="preserve">
+    <value>Returns the sum of a power series based on the formula.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.FactDouble" xml:space="preserve">
+    <value>Returns the double factorial of a number.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.SqrtPi" xml:space="preserve">
+    <value>Returns the square root of (number * Pi).</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Quotient" xml:space="preserve">
+    <value>Returns the integer portion of a division.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Delta" xml:space="preserve">
+    <value>Tests whether two numbers are equal.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Gestep" xml:space="preserve">
+    <value>Tests whether a number is greater than a threshold value.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.IsEven" xml:space="preserve">
+    <value>Returns TRUE if the number is even.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.IsOdd" xml:space="preserve">
+    <value>Returns TRUE if the number is odd.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.MRound" xml:space="preserve">
+    <value>Returns a number rounded to the desired multiple.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Erf" xml:space="preserve">
+    <value>Returns the error function.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Erfc" xml:space="preserve">
+    <value>Returns the complementary error function.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.BesselJ" xml:space="preserve">
+    <value>Returns the Bessel function Jn(x).</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.BesselK" xml:space="preserve">
+    <value>Returns the modified Bessel function Kn(x).</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.BesselY" xml:space="preserve">
+    <value>Returns the Bessel function Yn(x).</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.BesselI" xml:space="preserve">
+    <value>Returns the modified Bessel function In(x).</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Xirr" xml:space="preserve">
+    <value>Returns the internal rate of return for a schedule of cash flows.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Xnpv" xml:space="preserve">
+    <value>Returns the net present value for a schedule of cash flows.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.PriceMat" xml:space="preserve">
+    <value>Returns the price per $100 face value of a security that pays interest at maturity.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.YieldMat" xml:space="preserve">
+    <value>Returns the annual yield of a security that pays interest at maturity.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Intrate" xml:space="preserve">
+    <value>Returns the interest rate for a fully invested security.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Received" xml:space="preserve">
+    <value>Returns the amount received at maturity for a fully invested security.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Disc" xml:space="preserve">
+    <value>Returns the discount rate for a security.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.PriceDisc" xml:space="preserve">
+    <value>Returns the price per $100 face value of a discounted security.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.YieldDisc" xml:space="preserve">
+    <value>Returns the annual yield for a discounted security. For example, a treasury bill.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.TbillEq" xml:space="preserve">
+    <value>Returns the bond-equivalent yield for a treasury bill.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.TbillPrice" xml:space="preserve">
+    <value>Returns the price per $100 face value for a treasury bill.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.TbillYield" xml:space="preserve">
+    <value>Returns the yield for a treasury bill.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Price" xml:space="preserve">
+    <value>Returns the price per $100 face value of a security that pays periodic interest.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Yield" xml:space="preserve">
+    <value>Returns the yield on a security that pays periodic interest.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.DollarDe" xml:space="preserve">
+    <value>Converts a dollar price, expressed as a fraction, into a dollar price, expressed as a decimal number.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.DollarFr" xml:space="preserve">
+    <value>Converts a dollar price, expressed as a decimal number, into a dollar price, expressed as a fraction.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Nominal" xml:space="preserve">
+    <value>Returns the annual nominal interest rate.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Effect" xml:space="preserve">
+    <value>Returns the effective annual interest rate.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.CumPrinc" xml:space="preserve">
+    <value>Returns the cumulative principal paid on a loan between two periods.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.CumIpmt" xml:space="preserve">
+    <value>Returns the cumulative interest paid between two periods.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.EDate" xml:space="preserve">
+    <value>Returns the serial number of the date that is the indicated number of months before or after the start date.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.EOMonth" xml:space="preserve">
+    <value>Returns the serial number of the last day of the month before or after a specified number of months.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.YearFrac" xml:space="preserve">
+    <value>Returns the year fraction representing the number of whole days between start_date and end_date.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.CoupDaybs" xml:space="preserve">
+    <value>Returns the number of days from the beginning of the coupon period to the settlement date.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.CoupDays" xml:space="preserve">
+    <value>Returns the number of days in the coupon period that contains the settlement date.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.CoupDaysnc" xml:space="preserve">
+    <value>Returns the number of days from the settlement date to the next coupon date.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Coupncd" xml:space="preserve">
+    <value>Returns the next coupon date after the settlement date.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.CoupNum" xml:space="preserve">
+    <value>Returns the number of coupons payable between the settlement date and maturity date.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Couppcd" xml:space="preserve">
+    <value>Returns the previous coupon date before the settlement date.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Duration" xml:space="preserve">
+    <value>Returns the annual duration of a security with periodic interest payments.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.MDuration" xml:space="preserve">
+    <value>Returns the Macauley modified duration for a security with an assumed par value of $100.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.OddLPrice" xml:space="preserve">
+    <value>Returns the price per $100 face value of a security with an odd last period.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.OddLYield" xml:space="preserve">
+    <value>Returns the yield of a security with an odd last period.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.OddFPrice" xml:space="preserve">
+    <value>Returns the price per $100 face value of a security with an odd first period.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.OddFYield" xml:space="preserve">
+    <value>Returns the yield of a security with an odd first period.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.RandBetween" xml:space="preserve">
+    <value>Returns a random number between the numbers you specify.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.WeekNum" xml:space="preserve">
+    <value>Returns the week number in the year.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Amordegrc" xml:space="preserve">
+    <value>Returns the prorated linear depreciation of an asset for each accounting period.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Amorlinc" xml:space="preserve">
+    <value>Returns the prorated linear depreciation of an asset for each accounting period.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Convert" xml:space="preserve">
+    <value>Converts a number from one measurement system to another.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Accrint" xml:space="preserve">
+    <value>Returns the accrued interest for a security that pays periodic interest.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Accrintm" xml:space="preserve">
+    <value>Returns the accrued interest for a security that pays interest at maturity.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.WorkDay" xml:space="preserve">
+    <value>Returns the serial number of the date before or after a specified number of workdays.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.NetworkDays" xml:space="preserve">
+    <value>Returns the number of whole workdays between two dates.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Gcd" xml:space="preserve">
+    <value>Returns the greatest common divisor.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Multinomial" xml:space="preserve">
+    <value>Returns the multinomial of a set of numbers.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Lcm" xml:space="preserve">
+    <value>Returns the least common multiple.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.FvSchedule" xml:space="preserve">
+    <value>Returns the future value of an initial principal after applying a series of compound interest rates.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.CubeKpiMember" xml:space="preserve">
+    <value>Returns a key performance indicator (KPI) property and displays the KPI name in the cell.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.CubeSet" xml:space="preserve">
+    <value>Defines a calculated set of members or tuples by sending a set expression to the cube on the server, which creates the set, and then returns that set to Spreadsheet.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.CubeSetCount" xml:space="preserve">
+    <value>Returns the number of items in a set.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.IfError" xml:space="preserve">
+    <value>Returns value_if_error if expression is an error and the value of the expression itself otherwise.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.CountIfs" xml:space="preserve">
+    <value>Counts the number of cells specified by a given set of conditions or criteria.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.SumIfs" xml:space="preserve">
+    <value>Adds the cells specified by a given set of conditions or criteria.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.AverageIf" xml:space="preserve">
+    <value>Finds average(arithmetic mean) for the cells specified by a given condition or criteria.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.AverageIfs" xml:space="preserve">
+    <value>Finds average(arithmetic mean) for the cells specified by a given set of conditions or criteria.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Aggregate" xml:space="preserve">
+    <value>Returns an aggregate in a list or database.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.BinomDotDist" xml:space="preserve">
+    <value>Returns the individual term binomial distribution probability.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.BinomDotInv" xml:space="preserve">
+    <value>Returns the smallest value for which the cumulative binomial distribution is greater than or equal to a criterion value.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.ConfidenceNorm" xml:space="preserve">
+    <value>Returns the confidence interval for a population mean, using a normal distribution.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.ConfidenceDotT" xml:space="preserve">
+    <value>Returns the confidence interval for a population mean, using a Student's T distribution.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.ChisqDotTest" xml:space="preserve">
+    <value>Returns the test for independence: the value from the chi-squared distribution for the statistic and the appropriate degrees of freedom.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.FDotTest" xml:space="preserve">
+    <value>Returns the result of an F-test, the two-tailed probability that the variances in Array1 and Array2 are not significantly different.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.CovarianceP" xml:space="preserve">
+    <value>Returns population covariance, the average of the products of deviations for each data point pair in two data sets.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.CovarianceS" xml:space="preserve">
+    <value>Returns sample covariance, the average of the products of deviations for each data point pair in two data sets.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.ExponDotDist" xml:space="preserve">
+    <value>Returns the exponential distribution.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.GammaDotDist" xml:space="preserve">
+    <value>Returns the gamma distribution.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.GammaDotInv" xml:space="preserve">
+    <value>Returns the inverse of the gamma cumulative distribution: if p = GAMMA.DIST(x,...), then GAMMA.INV(p,...) = x.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.ModeMult" xml:space="preserve">
+    <value>Returns a vertical array of the most frequently occurring, or repetitive, values in an array or range of data.  For a horizontal array, use =TRANSPOSE(MODE.MULT(number1,number2,...)).</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.ModeSngl" xml:space="preserve">
+    <value>Returns the most frequently occurring, or repetitive, value in an array or range of data.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.NormDist" xml:space="preserve">
+    <value>Returns the normal distribution for the specified mean and standard deviation.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.NormInv" xml:space="preserve">
+    <value>Returns the inverse of the normal cumulative distribution for the specified mean and standard deviation.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.PercentileExc" xml:space="preserve">
+    <value>Returns the k-th percentile of values in a range, where k is in the range 0..1, exclusive.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.PercentileInc" xml:space="preserve">
+    <value>Returns the k-th percentile of values in a range, where k is in the range 0..1, inclusive.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.PercentRankExc" xml:space="preserve">
+    <value>Returns the rank of a value in a data set as a percentage of the data set as a percentage (0..1, exclusive) of the data set.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.PercentRankInc" xml:space="preserve">
+    <value>Returns the rank of a value in a data set as a percentage of the data set as a percentage (0..1, inclusive) of the data set.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.PoissonDotDist" xml:space="preserve">
+    <value>Returns the Poisson distribution.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.QuartileExc" xml:space="preserve">
+    <value>Returns the quartile of a data set, based on percentile values from 0..1, exclusive.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.QuartileInc" xml:space="preserve">
+    <value>Returns the quartile of a data set, based on percentile values from 0..1, inclusive.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.RankDotAvg" xml:space="preserve">
+    <value>Returns the rank of a number in a list of numbers: its size relative to other values in the list; if more than one value has the same rank, the average rank is returned.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.RankDotEq" xml:space="preserve">
+    <value>Returns the rank of a number in a list of numbers: its size relative to other values in the list; if more than one value has the same rank, the top rank of that set of values is returned.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.StDevDotS" xml:space="preserve">
+    <value>Estimates standard deviation based on a sample (ignores logical values and text in the sample).</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.StDevDotP" xml:space="preserve">
+    <value>Calculates standard deviation based on the entire population given as arguments (ignores logical values and text).</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.TDotDist" xml:space="preserve">
+    <value>Returns the left-tailed Student's t-distribution.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.TDotDistDot2t" xml:space="preserve">
+    <value>Returns the two-tailed Student's t-distribution.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.TDotDistDotTt" xml:space="preserve">
+    <value>Returns the right-tailed Student's t-distribution.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.TDotInv" xml:space="preserve">
+    <value>Returns the left-tailed inverse of the Student's t-distribution.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.TDotInvDot2t" xml:space="preserve">
+    <value>Returns the two-tailed inverse of the Student's t-distribution.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.VarDotS" xml:space="preserve">
+    <value>Estimates variance based on a sample (ignores logical values and text in the sample).</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.VarDotP" xml:space="preserve">
+    <value>Calculates variance based on the entire population (ignores logical values and text in the population).</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.WeibullDotDist" xml:space="preserve">
+    <value>Returns the Weibull distribution.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.NetworkDaysIntl" xml:space="preserve">
+    <value>Returns the number of whole workdays between two dates with custom weekend parameters.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.WorkDayIntl" xml:space="preserve">
+    <value>Returns the serial number of the date before or after a specified number of workdays with custom weekend parameters.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.IsoCeiling" xml:space="preserve">
+    <value>Rounds a number up, to the nearest integer or to the nearest multiple of significance.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.BetaDist" xml:space="preserve">
+    <value>Returns the beta probability distribution function.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.BetaDotInv" xml:space="preserve">
+    <value>Returns the inverse of the cumulative beta probability density function (BETA.DIST).</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.ChisqDotDist" xml:space="preserve">
+    <value>Returns the left-tailed probability of the chi-squared distribution.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.ChisqDotDistDotRt" xml:space="preserve">
+    <value>Returns the right-tailed probability of the chi-squared distribution.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.ChisqDotInv" xml:space="preserve">
+    <value>Returns the inverse of the left-tailed probability of the chi-squared distribution.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.ChisqDotInvDotRt" xml:space="preserve">
+    <value>Returns the inverse of the right-tailed probability of the chi-squared distribution.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.FDotDist" xml:space="preserve">
+    <value>Returns the (left-tailed) F probability distribution (degree of diversity) for two data sets.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.FDotDistDotRt" xml:space="preserve">
+    <value>Returns the (right-tailed) F probability distribution (degree of diversity) for two data sets.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.FDotInv" xml:space="preserve">
+    <value>Returns the inverse of the (left-tailed) F probability distribution: if p = F.DIST(x,...), then F.INV(p,...) = x.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.FDotinvDotRt" xml:space="preserve">
+    <value>Returns the inverse of the (right-tailed) F probability distribution: if p = F.DIST.RT(x,...), then F.INV.RT(p,...) = x.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.HypgeomDotDist" xml:space="preserve">
+    <value>Returns the hypergeometric distribution.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.LogNormDist" xml:space="preserve">
+    <value>Returns the lognormal distribution of x, where ln(x) is normally distributed with parameters Mean and Standard_dev.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.LogNormInv" xml:space="preserve">
+    <value>Returns the inverse of the lognormal cumulative distribution function of x, where ln(x) is normally distributed with parameters Mean and Standard_dev.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.NegbinomDotDist" xml:space="preserve">
+    <value>Returns the negative binomial distribution, the probability that there will be Number_f failures before the Number_s-th success, with Probability_s probability of a success.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.NormSDist" xml:space="preserve">
+    <value>Returns the standard normal distribution (has a mean of zero and a standard deviation of one).</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.NormSInv" xml:space="preserve">
+    <value>Returns the inverse of the standard normal cumulative distribution (has a mean of zero and a standard deviation of one).</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.TDotTest" xml:space="preserve">
+    <value>Returns the probability associated with a Student's t-Test.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.ZDotTest" xml:space="preserve">
+    <value>Returns the one-tailed P-value of a z-test.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.ErfPrecise" xml:space="preserve">
+    <value>Returns the error function.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.ErfcPrecise" xml:space="preserve">
+    <value>Returns the complementary error function.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.GammaLnPrecise" xml:space="preserve">
+    <value>Returns the natural logarithm of the gamma function.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.CeilingDotPrecise" xml:space="preserve">
+    <value>Rounds a number up, to the nearest integer or to the nearest multiple of significance.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.FloorDotPrecise" xml:space="preserve">
+    <value>Rounds a number down, to the nearest integer or to the nearest multiple of significance.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.ACot" xml:space="preserve">
+    <value>Returns the arccotangent of a number, in radians in the range 0 to Pi.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.ACotH" xml:space="preserve">
+    <value>Returns the inverse hyperbolic cotangent of a number.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Cot" xml:space="preserve">
+    <value>Returns the cotangent of an angle.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.CotH" xml:space="preserve">
+    <value>Returns the hyperbolic cotangent of a number.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Csc" xml:space="preserve">
+    <value>Returns the cosecant of an angle.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.CscH" xml:space="preserve">
+    <value>Returns the hyperbolic cosecant of an angle.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Sec" xml:space="preserve">
+    <value>Returns the secant of an angle.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.SecH" xml:space="preserve">
+    <value>Returns the hyperbolic secant of an angle.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.ImTan" xml:space="preserve">
+    <value>Returns the tangent of a complex number.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.ImCot" xml:space="preserve">
+    <value>Returns the cotangent of a complex number.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.ImCsc" xml:space="preserve">
+    <value>Returns the cosecant of a complex number.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.ImCscH" xml:space="preserve">
+    <value>Returns the hyperbolic cosecant of a complex number.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.ImSec" xml:space="preserve">
+    <value>Returns the secant of a complex number.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.ImSecH" xml:space="preserve">
+    <value>Returns the hyperbolic secant of a complex number.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.BitAnd" xml:space="preserve">
+    <value>Returns a bitwise 'And' of two numbers.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.BitOr" xml:space="preserve">
+    <value>Returns a bitwise 'Or' of two numbers.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.BitXor" xml:space="preserve">
+    <value>Returns a bitwise 'Exclusive Or' of two numbers.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.BitLShift" xml:space="preserve">
+    <value>Returns a number shifted left by shift_amount bits.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.BitRShift" xml:space="preserve">
+    <value>Returns a number shifted right by shift_amount bits.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Permutationa" xml:space="preserve">
+    <value>Returns the number of permutations for a given number of objects (with repetitions) that can be selected from the total objects.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.CombinA" xml:space="preserve">
+    <value>Returns the number of combinations with repetitions for a given number of items.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.XOr" xml:space="preserve">
+    <value>Returns a logical 'Exclusive Or' of all arguments.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.PDuration" xml:space="preserve">
+    <value>Returns the number of periods required by an investment to reach a specified value.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Base" xml:space="preserve">
+    <value>Converts a number into a text representation with the given radix (base).</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Decimal" xml:space="preserve">
+    <value>Converts a text representation of a number in a given base into a decimal number.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Days" xml:space="preserve">
+    <value>Returns the number of days between the two dates.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.BinomDistRange" xml:space="preserve">
+    <value>Returns the probability of a trial result using a binomial distribution.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Gamma" xml:space="preserve">
+    <value>Returns the Gamma function value.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.SkewP" xml:space="preserve">
+    <value>Returns the skewness of a distribution based on a population: a characterization of the degree of asymmetry of a distribution around its mean.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Phi" xml:space="preserve">
+    <value>Returns the value of the density function for a standard normal distribution.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.RRI" xml:space="preserve">
+    <value>Returns an equivalent interest rate for the growth of an investment.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Unicode" xml:space="preserve">
+    <value>Returns the number (code point) corresponding to the first character of the text.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.MUnit" xml:space="preserve">
+    <value>Returns the unit matrix for the specified dimension.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Arabic" xml:space="preserve">
+    <value>Converts a Roman numeral to Arabic.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.ISOWeekNum" xml:space="preserve">
+    <value>Returns number of the ISO week number of the year for a given date.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.NumberValue" xml:space="preserve">
+    <value>Converts text to number in a locale-independent manner.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Sheet" xml:space="preserve">
+    <value>Returns the sheet number of the referenced sheet.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Sheets" xml:space="preserve">
+    <value>Returns the number of sheets in a reference.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.FormulaText" xml:space="preserve">
+    <value>Returns a formula as a string.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.IsFormula" xml:space="preserve">
+    <value>Checks whether a reference is to a cell containing a formula, and returns TRUE or FALSE.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.IfNA" xml:space="preserve">
+    <value>Returns the value you specify if the expression resolves to #N/A, otherwise returns the result of the expression.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.CeilingMath" xml:space="preserve">
+    <value>Rounds a number up, to the nearest integer or to the nearest multiple of significance.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.FloorMath" xml:space="preserve">
+    <value>Rounds a number down, to the nearest integer or to the nearest multiple of significance.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.ImSinH" xml:space="preserve">
+    <value>Returns the hyperbolic sine of a complex number.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.ImCosH" xml:space="preserve">
+    <value>Returns the hyperbolic cosine of a complex number.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.FunctionFilterXML" xml:space="preserve">
+    <value>Returns specific data from the XML content by using the specified XPath.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.FunctionWebService" xml:space="preserve">
+    <value>Returns data from a web service.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.EncodeURL" xml:space="preserve">
+    <value>Returns a URL-encoded string.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Concat" xml:space="preserve">
+    <value>Concatenates a list or range of text strings.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Ifs" xml:space="preserve">
+    <value>Checks whether one or more conditions are met and returns a value corresponding to the first TRUE condition.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.MaxIfs" xml:space="preserve">
+    <value>Returns the maximum value among cells specified by a given set of conditions or criteria.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.MinIfs" xml:space="preserve">
+    <value>Returns the minimum value among cells specified by a given set of conditions or criteria.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Switch" xml:space="preserve">
+    <value>Evaluates an expression against a list of values and returns the result corresponding to the first matching value. If there is no match, an optional default value is returned.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.TextJoin" xml:space="preserve">
+    <value>Concatenates a list or range of text strings using a delimiter.</value>
+  </data>
+  <data name="XtraSpreadsheetFunctionDescriptionStringId.Single" xml:space="preserve">
+    <value>Reduces many values to a single value. The logic works as follows: if the value is a single item, then return the item; if the value is a range, then return the value from the cell on the same row or column as the formula; if the value is an array, then pick the top-left value.</value>
+  </data>
+</root>

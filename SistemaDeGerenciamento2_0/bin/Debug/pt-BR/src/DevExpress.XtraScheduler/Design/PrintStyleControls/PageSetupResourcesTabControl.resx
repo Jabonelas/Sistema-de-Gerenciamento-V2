@@ -1,0 +1,608 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace">
+    </xsd:import>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0">
+                </xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string">
+              </xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string">
+              </xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string">
+              </xsd:attribute>
+              <xsd:attribute ref="xml:space">
+              </xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string">
+              </xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string">
+              </xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1">
+                </xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2">
+                </xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1">
+              </xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3">
+              </xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4">
+              </xsd:attribute>
+              <xsd:attribute ref="xml:space">
+              </xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1">
+                </xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required">
+              </xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  </assembly>
+  <data name="spnResourcesPerPage.EditValue" type="System.Decimal, mscorlib">
+    <value>1</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  </assembly>
+  <data name="spnResourcesPerPage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>368, 8</value>
+  </data>
+  <data name="spnResourcesPerPage.Properties.AccessibleName" xml:space="preserve">
+    <value>Resource per page</value>
+  </data>
+  <data name="spnResourcesPerPage.Properties.Mask.EditMask" xml:space="preserve">
+    <value>N00</value>
+  </data>
+  <data name="spnResourcesPerPage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 19</value>
+  </data>
+  <data name="spnResourcesPerPage.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;spnResourcesPerPage.Name" xml:space="preserve">
+    <value>spnResourcesPerPage</value>
+  </data>
+  <data name="&gt;&gt;spnResourcesPerPage.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;spnResourcesPerPage.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="chkPrintCustomCollection.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 64</value>
+  </data>
+  <data name="chkPrintCustomCollection.Properties.Caption" xml:space="preserve">
+    <value>Print using the custom collection</value>
+  </data>
+  <data name="chkPrintCustomCollection.Size" type="System.Drawing.Size, System.Drawing">
+    <value>176, 19</value>
+  </data>
+  <data name="chkPrintCustomCollection.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;chkPrintCustomCollection.Name" xml:space="preserve">
+    <value>chkPrintCustomCollection</value>
+  </data>
+  <data name="&gt;&gt;chkPrintCustomCollection.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;chkPrintCustomCollection.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="lbResources.AccessibleName" xml:space="preserve">
+    <value>Available resources</value>
+  </data>
+  <data name="lbResources.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 44</value>
+  </data>
+  <data name="lbResources.Size" type="System.Drawing.Size, System.Drawing">
+    <value>192, 204</value>
+  </data>
+  <data name="lbResources.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;lbResources.Name" xml:space="preserve">
+    <value>lbResources</value>
+  </data>
+  <data name="&gt;&gt;lbResources.Parent" xml:space="preserve">
+    <value>grpCustomCollection</value>
+  </data>
+  <data name="&gt;&gt;lbResources.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lbCustomResourceCollection.AccessibleName" xml:space="preserve">
+    <value>Resource to print</value>
+  </data>
+  <data name="lbCustomResourceCollection.Location" type="System.Drawing.Point, System.Drawing">
+    <value>264, 44</value>
+  </data>
+  <data name="lbCustomResourceCollection.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 204</value>
+  </data>
+  <data name="lbCustomResourceCollection.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;lbCustomResourceCollection.Name" xml:space="preserve">
+    <value>lbCustomResourceCollection</value>
+  </data>
+  <data name="&gt;&gt;lbCustomResourceCollection.Parent" xml:space="preserve">
+    <value>grpCustomCollection</value>
+  </data>
+  <data name="&gt;&gt;lbCustomResourceCollection.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="lblResourcesKind.AccessibleName" xml:space="preserve">
+    <value>Resource kind</value>
+  </data>
+  <data name="lblResourcesKind.Location" type="System.Drawing.Point, System.Drawing">
+    <value>240, 67</value>
+  </data>
+  <data name="lblResourcesKind.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 13</value>
+  </data>
+  <data name="lblResourcesKind.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="lblResourcesKind.Text" xml:space="preserve">
+    <value>Resources kind:</value>
+  </data>
+  <data name="&gt;&gt;lblResourcesKind.Name" xml:space="preserve">
+    <value>lblResourcesKind</value>
+  </data>
+  <data name="&gt;&gt;lblResourcesKind.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblResourcesKind.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="lblResourcesPerPage.AccessibleName" xml:space="preserve">
+    <value>Resource per page</value>
+  </data>
+  <data name="lblResourcesPerPage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>240, 11</value>
+  </data>
+  <data name="lblResourcesPerPage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 13</value>
+  </data>
+  <data name="lblResourcesPerPage.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="lblResourcesPerPage.Text" xml:space="preserve">
+    <value>Resources per page:</value>
+  </data>
+  <data name="&gt;&gt;lblResourcesPerPage.Name" xml:space="preserve">
+    <value>lblResourcesPerPage</value>
+  </data>
+  <data name="&gt;&gt;lblResourcesPerPage.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblResourcesPerPage.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="btnToCustomCollection.AccessibleName" xml:space="preserve">
+    <value>&gt;</value>
+  </data>
+  <data name="btnToCustomCollection.Location" type="System.Drawing.Point, System.Drawing">
+    <value>208, 44</value>
+  </data>
+  <data name="btnToCustomCollection.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 23</value>
+  </data>
+  <data name="btnToCustomCollection.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="btnToCustomCollection.Text" xml:space="preserve">
+    <value>&gt;</value>
+  </data>
+  <data name="&gt;&gt;btnToCustomCollection.Name" xml:space="preserve">
+    <value>btnToCustomCollection</value>
+  </data>
+  <data name="&gt;&gt;btnToCustomCollection.Parent" xml:space="preserve">
+    <value>grpCustomCollection</value>
+  </data>
+  <data name="&gt;&gt;btnToCustomCollection.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="btnFromCustomCollection.AccessibleName" xml:space="preserve">
+    <value>&lt;</value>
+  </data>
+  <data name="btnFromCustomCollection.Location" type="System.Drawing.Point, System.Drawing">
+    <value>208, 140</value>
+  </data>
+  <data name="btnFromCustomCollection.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 23</value>
+  </data>
+  <data name="btnFromCustomCollection.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="btnFromCustomCollection.Text" xml:space="preserve">
+    <value>&lt;</value>
+  </data>
+  <data name="&gt;&gt;btnFromCustomCollection.Name" xml:space="preserve">
+    <value>btnFromCustomCollection</value>
+  </data>
+  <data name="&gt;&gt;btnFromCustomCollection.Parent" xml:space="preserve">
+    <value>grpCustomCollection</value>
+  </data>
+  <data name="&gt;&gt;btnFromCustomCollection.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="btnAllToCustomCollection.AccessibleName" xml:space="preserve">
+    <value>&gt;&gt;</value>
+  </data>
+  <data name="btnAllToCustomCollection.Location" type="System.Drawing.Point, System.Drawing">
+    <value>208, 76</value>
+  </data>
+  <data name="btnAllToCustomCollection.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 23</value>
+  </data>
+  <data name="btnAllToCustomCollection.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="btnAllToCustomCollection.Text" xml:space="preserve">
+    <value>&gt;&gt;</value>
+  </data>
+  <data name="&gt;&gt;btnAllToCustomCollection.Name" xml:space="preserve">
+    <value>btnAllToCustomCollection</value>
+  </data>
+  <data name="&gt;&gt;btnAllToCustomCollection.Parent" xml:space="preserve">
+    <value>grpCustomCollection</value>
+  </data>
+  <data name="&gt;&gt;btnAllToCustomCollection.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="btnAllFromCustomCollection.AccessibleName" xml:space="preserve">
+    <value>&lt;&lt;</value>
+  </data>
+  <data name="btnAllFromCustomCollection.Location" type="System.Drawing.Point, System.Drawing">
+    <value>208, 108</value>
+  </data>
+  <data name="btnAllFromCustomCollection.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 23</value>
+  </data>
+  <data name="btnAllFromCustomCollection.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="btnAllFromCustomCollection.Text" xml:space="preserve">
+    <value>&lt;&lt;</value>
+  </data>
+  <data name="&gt;&gt;btnAllFromCustomCollection.Name" xml:space="preserve">
+    <value>btnAllFromCustomCollection</value>
+  </data>
+  <data name="&gt;&gt;btnAllFromCustomCollection.Parent" xml:space="preserve">
+    <value>grpCustomCollection</value>
+  </data>
+  <data name="&gt;&gt;btnAllFromCustomCollection.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="btnMoveUp.AccessibleName" xml:space="preserve">
+    <value>Up</value>
+  </data>
+  <data name="btnMoveUp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>208, 192</value>
+  </data>
+  <data name="btnMoveUp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 23</value>
+  </data>
+  <data name="btnMoveUp.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="btnMoveUp.Text" xml:space="preserve">
+    <value>Up</value>
+  </data>
+  <data name="&gt;&gt;btnMoveUp.Name" xml:space="preserve">
+    <value>btnMoveUp</value>
+  </data>
+  <data name="&gt;&gt;btnMoveUp.Parent" xml:space="preserve">
+    <value>grpCustomCollection</value>
+  </data>
+  <data name="&gt;&gt;btnMoveUp.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="btnMoveDown.AccessibleName" xml:space="preserve">
+    <value>Down</value>
+  </data>
+  <data name="btnMoveDown.Location" type="System.Drawing.Point, System.Drawing">
+    <value>208, 224</value>
+  </data>
+  <data name="btnMoveDown.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 23</value>
+  </data>
+  <data name="btnMoveDown.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="btnMoveDown.Text" xml:space="preserve">
+    <value>Down</value>
+  </data>
+  <data name="&gt;&gt;btnMoveDown.Name" xml:space="preserve">
+    <value>btnMoveDown</value>
+  </data>
+  <data name="&gt;&gt;btnMoveDown.Parent" xml:space="preserve">
+    <value>grpCustomCollection</value>
+  </data>
+  <data name="&gt;&gt;btnMoveDown.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="cbGroupBy.Location" type="System.Drawing.Point, System.Drawing">
+    <value>368, 36</value>
+  </data>
+  <data name="cbGroupBy.Properties.AccessibleName" xml:space="preserve">
+    <value>Group by</value>
+  </data>
+  <data name="cbGroupBy.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 19</value>
+  </data>
+  <data name="cbGroupBy.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;cbGroupBy.Name" xml:space="preserve">
+    <value>cbGroupBy</value>
+  </data>
+  <data name="&gt;&gt;cbGroupBy.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;cbGroupBy.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="lblGroupBy.AccessibleName" xml:space="preserve">
+    <value>Group by</value>
+  </data>
+  <data name="lblGroupBy.Location" type="System.Drawing.Point, System.Drawing">
+    <value>240, 39</value>
+  </data>
+  <data name="lblGroupBy.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 13</value>
+  </data>
+  <data name="lblGroupBy.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="lblGroupBy.Text" xml:space="preserve">
+    <value>Group by:</value>
+  </data>
+  <data name="&gt;&gt;lblGroupBy.Name" xml:space="preserve">
+    <value>lblGroupBy</value>
+  </data>
+  <data name="&gt;&gt;lblGroupBy.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblGroupBy.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="cbResourcesKind.Location" type="System.Drawing.Point, System.Drawing">
+    <value>368, 64</value>
+  </data>
+  <data name="cbResourcesKind.Properties.AccessibleName" xml:space="preserve">
+    <value>Resource kind</value>
+  </data>
+  <data name="cbResourcesKind.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 19</value>
+  </data>
+  <data name="cbResourcesKind.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;cbResourcesKind.Name" xml:space="preserve">
+    <value>cbResourcesKind</value>
+  </data>
+  <data name="&gt;&gt;cbResourcesKind.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;cbResourcesKind.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="chkPrintAllResourcesOnOnePage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 8</value>
+  </data>
+  <data name="chkPrintAllResourcesOnOnePage.Properties.Caption" xml:space="preserve">
+    <value>Print all resources on one page</value>
+  </data>
+  <data name="chkPrintAllResourcesOnOnePage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>171, 19</value>
+  </data>
+  <data name="chkPrintAllResourcesOnOnePage.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;chkPrintAllResourcesOnOnePage.Name" xml:space="preserve">
+    <value>chkPrintAllResourcesOnOnePage</value>
+  </data>
+  <data name="&gt;&gt;chkPrintAllResourcesOnOnePage.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;chkPrintAllResourcesOnOnePage.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="chkUseActiveViewGroupType.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 36</value>
+  </data>
+  <data name="chkUseActiveViewGroupType.Properties.Caption" xml:space="preserve">
+    <value>Use current grouping of the active view</value>
+  </data>
+  <data name="chkUseActiveViewGroupType.Size" type="System.Drawing.Size, System.Drawing">
+    <value>213, 19</value>
+  </data>
+  <data name="chkUseActiveViewGroupType.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;chkUseActiveViewGroupType.Name" xml:space="preserve">
+    <value>chkUseActiveViewGroupType</value>
+  </data>
+  <data name="&gt;&gt;chkUseActiveViewGroupType.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;chkUseActiveViewGroupType.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lblAvailableResource.AccessibleName" xml:space="preserve">
+    <value>Available resources</value>
+  </data>
+  <data name="lblAvailableResource.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 24</value>
+  </data>
+  <data name="lblAvailableResource.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 13</value>
+  </data>
+  <data name="lblAvailableResource.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblAvailableResource.Text" xml:space="preserve">
+    <value>Available resources:</value>
+  </data>
+  <data name="&gt;&gt;lblAvailableResource.Name" xml:space="preserve">
+    <value>lblAvailableResource</value>
+  </data>
+  <data name="&gt;&gt;lblAvailableResource.Parent" xml:space="preserve">
+    <value>grpCustomCollection</value>
+  </data>
+  <data name="&gt;&gt;lblAvailableResource.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblCustomResourcesCollection.AccessibleName" xml:space="preserve">
+    <value>Resource to print</value>
+  </data>
+  <data name="lblCustomResourcesCollection.Location" type="System.Drawing.Point, System.Drawing">
+    <value>264, 24</value>
+  </data>
+  <data name="lblCustomResourcesCollection.Size" type="System.Drawing.Size, System.Drawing">
+    <value>92, 13</value>
+  </data>
+  <data name="lblCustomResourcesCollection.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="lblCustomResourcesCollection.Text" xml:space="preserve">
+    <value>Resources to print:</value>
+  </data>
+  <data name="&gt;&gt;lblCustomResourcesCollection.Name" xml:space="preserve">
+    <value>lblCustomResourcesCollection</value>
+  </data>
+  <data name="&gt;&gt;lblCustomResourcesCollection.Parent" xml:space="preserve">
+    <value>grpCustomCollection</value>
+  </data>
+  <data name="&gt;&gt;lblCustomResourcesCollection.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="grpCustomCollection.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 88</value>
+  </data>
+  <data name="grpCustomCollection.Size" type="System.Drawing.Size, System.Drawing">
+    <value>472, 256</value>
+  </data>
+  <data name="grpCustomCollection.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="grpCustomCollection.Text" xml:space="preserve">
+    <value>Custom collection</value>
+  </data>
+  <data name="&gt;&gt;grpCustomCollection.Name" xml:space="preserve">
+    <value>grpCustomCollection</value>
+  </data>
+  <data name="&gt;&gt;grpCustomCollection.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;grpCustomCollection.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>488, 352</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>PageSetupResourcesTabControl</value>
+  </data>
+</root>

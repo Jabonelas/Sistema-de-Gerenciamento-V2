@@ -1,0 +1,760 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="XtraSpreadsheetStringId.MenuCmd_InsertCellsCommandGroupDescription" xml:space="preserve">
+    <value>Clique aqui para inserir células, linhas ou colunas da planilha ou tabela, ou para adicionar uma folha na pasta de trabalho.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_ErrorUseInvalidWorkbook" xml:space="preserve">
+    <value>Esta pasta de trabalho não é mais válida.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Scope_Workbook" xml:space="preserve">
+    <value>Pasta de trabalho</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.FileFilterDescription_DocFiles" xml:space="preserve">
+    <value>Pasta de trabalho do Excel 97-2003</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.FileFilterDescription_XlsmFiles" xml:space="preserve">
+    <value>Pasta de trabalho habilitada para Macro do Excel</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_ShowInsertSheetCellsFormDescription" xml:space="preserve">
+    <value>Adicionar novas linhas, colunas, células ou folhas de pasta de trabalho.
+
+Novas linhas serão adicionadas acima da seleção e serão adicionadas novas colunas à esquerda da seleção.
+
+Adicionar três colunas ao mesmo tempo, selecionando três colunas existentes primeiro; Isso também funciona para várias linhas.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_ErrorDeleteSingularWorksheet" xml:space="preserve">
+    <value>Pasta de trabalho deve conter pelo menos uma planilha visível. Para ocultar, excluir, ou mover a folha, inserir uma nova folha ou reexibir uma folha escondida.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_ErrorIncorrectIndexToInsert" xml:space="preserve">
+    <value>Índice de planilha não pode ser negativo ou maior que o número de planilhas em uma pasta de trabalho.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_ErrorUseRangeFromAnotherWorkbook" xml:space="preserve">
+    <value>Não pode usar uma variedade de outra pasta de trabalho.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_ErrorUseStyleFromAnotherWorkbook" xml:space="preserve">
+    <value>Não pode usar um objeto de estilo de outra pasta de trabalho.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_ErrorWorksheetToBeDeletedNotFound" xml:space="preserve">
+    <value>Planilha não é encontrada em uma pasta de trabalho.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_ExternalWorkbookWithoutSheets" xml:space="preserve">
+    <value>Link externo deve conter pelo menos um planilha.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Msg_XFTableHasBeenTruncated" xml:space="preserve">
+    <value>Possível perda de formatação: o número de formatos excede o valor máximo. Tabela de formato alargado foi truncada.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Scope_ExternalWorkbook" xml:space="preserve">
+    <value>pasta de trabalho externa</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Caption_PageHome" xml:space="preserve">
+    <value>Página principal</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Caption_ColorAutomatic" xml:space="preserve">
+    <value>Automático</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Caption_GroupAlignment" xml:space="preserve">
+    <value>Alinhamento</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Caption_GroupClipboard" xml:space="preserve">
+    <value>Área de transferência</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Caption_PasteSpecial_Comments" xml:space="preserve">
+    <value>&amp;comentários</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Caption_PasteSpecial_Formulas" xml:space="preserve">
+    <value>&amp;fórmulas</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Caption_PasteSpecial_Values" xml:space="preserve">
+    <value>&amp;valores</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_FormatAllBorders" xml:space="preserve">
+    <value>Todas as bordas</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_FormatBordersCommandGroup" xml:space="preserve">
+    <value>Bordas</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.FormatCellsForm_HorizontalAlignmentCaption_General" xml:space="preserve">
+    <value>Geral</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_FormatNumberGeneral" xml:space="preserve">
+    <value>Geral</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Caption_PageChartsLayout" xml:space="preserve">
+    <value>Layout</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_FormatNumberText" xml:space="preserve">
+    <value>Texto</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_FunctionsTextCommandGroup" xml:space="preserve">
+    <value>Texto</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Tooltip_FormulaBarCancelButton" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_RemoveCellsCommandGroup" xml:space="preserve">
+    <value>Apagar</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_RemoveSheetColumnsContextMenuItem" xml:space="preserve">
+    <value>Apagar</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_RemoveSheetContextMenuItem" xml:space="preserve">
+    <value>Apagar</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_RemoveSheetRowsContextMenuItem" xml:space="preserve">
+    <value>Apagar</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_MailMergeResetRangeCommand" xml:space="preserve">
+    <value>Redefinir</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.FormatCellsForm_VerticalAlignmentCaption_Bottom" xml:space="preserve">
+    <value>Fundo</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_ChartDataLabelsLeftCommand" xml:space="preserve">
+    <value>Esquerda</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_ChartDataLabelsRightCommand" xml:space="preserve">
+    <value>Direita</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.FormatCellsForm_VerticalAlignmentCaption_Top" xml:space="preserve">
+    <value>Topo</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Caption_GroupChartsLayoutLabels" xml:space="preserve">
+    <value>Rótulos</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.FormatCellsForm_HorizontalAlignmentCaption_Center" xml:space="preserve">
+    <value>Centro</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.FormatCellsForm_VerticalAlignmentCaption_Center" xml:space="preserve">
+    <value>Centro</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_ChartDataLabelsCenterCommand" xml:space="preserve">
+    <value>Centro</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Caption_CustomTableStyleCategory" xml:space="preserve">
+    <value>Personalizado</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Caption_FormatNumberCustom" xml:space="preserve">
+    <value>Personalizado</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Caption_StyleGalleryGroupCustom" xml:space="preserve">
+    <value>Personalizado</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Caption_TableStyleNameIsNone" xml:space="preserve">
+    <value>Nenhum</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.FormatCellsForm_UnderlineCaption_None" xml:space="preserve">
+    <value>Nenhum</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_ChartDataLabelsNoneCommand" xml:space="preserve">
+    <value>Nenhum</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_ChartErrorBarsNoneCommand" xml:space="preserve">
+    <value>Nenhum</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_ChartHidePrimaryHorizontalAxisCommand" xml:space="preserve">
+    <value>Nenhum</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_ChartHidePrimaryVerticalAxisCommand" xml:space="preserve">
+    <value>Nenhum</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_ChartHideUpDownBarsCommand" xml:space="preserve">
+    <value>Nenhum</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_ChartLegendNoneCommand" xml:space="preserve">
+    <value>Nenhum</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_ChartLinesNoneCommand" xml:space="preserve">
+    <value>Nenhum</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_ChartPrimaryHorizontalAxisTitleNoneCommand" xml:space="preserve">
+    <value>Nenhum</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_ChartPrimaryHorizontalGridlinesNoneCommand" xml:space="preserve">
+    <value>Nenhum</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_ChartPrimaryVerticalAxisTitleNoneCommand" xml:space="preserve">
+    <value>Nenhum</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_ChartPrimaryVerticalGridlinesNoneCommand" xml:space="preserve">
+    <value>Nenhum</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_ChartTitleNoneCommand" xml:space="preserve">
+    <value>Nenhum</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_PageSetupMarginsCommandGroup" xml:space="preserve">
+    <value>Margens</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_PageSetupPaperKindCommandGroup" xml:space="preserve">
+    <value>Tamanho</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_PageSetupSetPaperKind" xml:space="preserve">
+    <value>Tamanho</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MoveOrCopySheetForm_Copy" xml:space="preserve">
+    <value>Copiar</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Caption_PageFile" xml:space="preserve">
+    <value>Arquivo</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Caption_GroupTableTools" xml:space="preserve">
+    <value>Ferramentas</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.FontStyle_Bold" xml:space="preserve">
+    <value>Negrito</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.FontStyle_Italic" xml:space="preserve">
+    <value>Itálico</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_ConditionalFormattingIconSetsIndicatorsCommandGroup" xml:space="preserve">
+    <value>Indicadores</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Caption_GroupChartsDesignType" xml:space="preserve">
+    <value>Tipo</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Caption_GroupTableProperties" xml:space="preserve">
+    <value>Propriedades</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_InsertChartBarCommandGroup" xml:space="preserve">
+    <value>Barra</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_FormatClearCommandGroup" xml:space="preserve">
+    <value>Limpar</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_FormatNumberAccountingCurrency" xml:space="preserve">
+    <value>Moeda</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Caption_GroupNumber" xml:space="preserve">
+    <value>Número</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_FormatNumberDecimal" xml:space="preserve">
+    <value>Número</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Caption_ConditionalFormattingBetweenRule_FormText" xml:space="preserve">
+    <value>Entre</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_InsertChartArea" xml:space="preserve">
+    <value>Área</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_InsertChartAreaCommandGroup" xml:space="preserve">
+    <value>Área</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_InsertChartLine" xml:space="preserve">
+    <value>Linha</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_InsertChartLineCommandGroup" xml:space="preserve">
+    <value>Linha</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Caption_GroupFont" xml:space="preserve">
+    <value>Fonte</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.FormatCellsForm_HorizontalAlignmentCaption_Justify" xml:space="preserve">
+    <value>Justificar</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.FormatCellsForm_VerticalAlignmentCaption_Justify" xml:space="preserve">
+    <value>Justificar</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Caption_GroupPageSetup" xml:space="preserve">
+    <value>Configurar Página</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_InsertChartColumnCommandGroup" xml:space="preserve">
+    <value>Coluna</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_HideColumnsContextMenuItem" xml:space="preserve">
+    <value>Ocultar</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_HideRowsContextMenuItem" xml:space="preserve">
+    <value>Ocultar</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_HideSheetContextMenuItem" xml:space="preserve">
+    <value>Ocultar</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Caption_GroupStyles" xml:space="preserve">
+    <value>Estilos</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Caption_PageInsert" xml:space="preserve">
+    <value>Inserir</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_InsertCellsCommandGroup" xml:space="preserve">
+    <value>Inserir</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_InsertSheetColumnsContextMenuItem" xml:space="preserve">
+    <value>Inserir</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_InsertSheetContextMenuItem" xml:space="preserve">
+    <value>Inserir</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_InsertSheetRowsContextMenuItem" xml:space="preserve">
+    <value>Inserir</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Caption_GroupMailMergeBinding" xml:space="preserve">
+    <value>Design</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Caption_PageChartsDesign" xml:space="preserve">
+    <value>Design</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Caption_TableToolsDesignPage" xml:space="preserve">
+    <value>Design</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Caption_GroupLinks" xml:space="preserve">
+    <value>Links</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Caption_GroupTables" xml:space="preserve">
+    <value>Tabelas</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Caption_PageView" xml:space="preserve">
+    <value>Vista</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Caption_GroupChartsLayoutAxes" xml:space="preserve">
+    <value>Eixos</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_ChartAxesCommandGroup" xml:space="preserve">
+    <value>Eixos</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_ChartLegendCommandGroup" xml:space="preserve">
+    <value>Legenda</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Caption_GroupChartsDesignData" xml:space="preserve">
+    <value>Dados</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Caption_PageData" xml:space="preserve">
+    <value>Dados</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_FunctionsInsertMax" xml:space="preserve">
+    <value>Max</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_FunctionsInsertMin" xml:space="preserve">
+    <value>Min</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_InsertChartConeCommandGroup" xml:space="preserve">
+    <value>Cone</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_InsertChartHorizontalConeCommandGroup" xml:space="preserve">
+    <value>Cone</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_InsertChartCylinderCommandGroup" xml:space="preserve">
+    <value>Cilindro</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_InsertChartHorizontalCylinderCommandGroup" xml:space="preserve">
+    <value>Cilindro</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_InsertChartHorizontalPyramidCommandGroup" xml:space="preserve">
+    <value>Pirâmide</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_InsertChartPyramidCommandGroup" xml:space="preserve">
+    <value>Pirâmide</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_InsertChartBubble" xml:space="preserve">
+    <value>Bolha</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_InsertChartBubbleCommandGroup" xml:space="preserve">
+    <value>Bolha</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_InsertChartConeClusteredDescription" xml:space="preserve">
+    <value>Compare valores entre categorias.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_InsertChartCylinderClusteredDescription" xml:space="preserve">
+    <value>Compare valores entre categorias.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_InsertChartHorizontalConeClusteredDescription" xml:space="preserve">
+    <value>Compare valores entre categorias.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_InsertChartHorizontalCylinderClusteredDescription" xml:space="preserve">
+    <value>Compare valores entre categorias.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_InsertChartHorizontalPyramidClusteredDescription" xml:space="preserve">
+    <value>Compare valores entre categorias.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_InsertChartPyramidClusteredDescription" xml:space="preserve">
+    <value>Compare valores entre categorias.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_InsertChartConeStackedDescription" xml:space="preserve">
+    <value>Compare a contribuição de cada valor para um total entre categorias.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_InsertChartCylinderStackedDescription" xml:space="preserve">
+    <value>Compare a contribuição de cada valor para um total entre categorias.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_InsertChartHorizontalConeStackedDescription" xml:space="preserve">
+    <value>Compare a contribuição de cada valor para um total entre categorias.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_InsertChartHorizontalCylinderStackedDescription" xml:space="preserve">
+    <value>Compare a contribuição de cada valor para um total entre categorias.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_InsertChartHorizontalPyramidStackedDescription" xml:space="preserve">
+    <value>Compare a contribuição de cada valor para um total entre categorias.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_InsertChartPyramidStackedDescription" xml:space="preserve">
+    <value>Compare a contribuição de cada valor para um total entre categorias.</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_InsertChartPie2D" xml:space="preserve">
+    <value>Torta</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_InsertChartPieCommandGroup" xml:space="preserve">
+    <value>Torta</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_InsertChartStackedArea" xml:space="preserve">
+    <value>Área Empilhada</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_InsertChartStackedLine" xml:space="preserve">
+    <value>Linha Empilhada</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_FunctionsInsertAverage" xml:space="preserve">
+    <value>Média</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_FunctionsInsertSum" xml:space="preserve">
+    <value>Soma</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Caption_GroupZoom" xml:space="preserve">
+    <value>Zoom</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Caption_PageFormat" xml:space="preserve">
+    <value>Formato</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_FormatCommandGroup" xml:space="preserve">
+    <value>Formato</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_FormatNumberScientific" xml:space="preserve">
+    <value>Científico</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Caption_GroupCommon" xml:space="preserve">
+    <value>Comum</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_ChartDataLabelsBestFitCommand" xml:space="preserve">
+    <value>Melhor Ajuste</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_ChartLinesCommandGroup" xml:space="preserve">
+    <value>Linhas</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_ViewNormalView" xml:space="preserve">
+    <value>Normal</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.StyleName_Normal" xml:space="preserve">
+    <value>Normal</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Caption_GroupArrange" xml:space="preserve">
+    <value>Organizar</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Caption_GroupShow" xml:space="preserve">
+    <value>Mostrar</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_ChartDataLabelsDefaultCommand" xml:space="preserve">
+    <value>Mostrar</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Caption_FormatNumberDate" xml:space="preserve">
+    <value>Data</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_MailMergeSetFooterRangeCommand" xml:space="preserve">
+    <value>Rodapé</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_MailMergeSetHeaderRangeCommand" xml:space="preserve">
+    <value>Cabeçalho</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.FormatCellsForm_UnderlineCaption_Double" xml:space="preserve">
+    <value>Duplo</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_FormatBorderLineStyle" xml:space="preserve">
+    <value>Linha Estilo</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_MailMergeSetDetailDataMemberCommand" xml:space="preserve">
+    <value>Membro de Dados</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Caption_ConditionalFormattingDuplicateValuesRule_FormText" xml:space="preserve">
+    <value>Valores duplicados</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Caption_ConditionalFormattingDuplicateValuesRule_LabelHeaderText" xml:space="preserve">
+    <value>Formatar células que contêm:</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Caption_ConditionalFormattingEqualToRule_FormText" xml:space="preserve">
+    <value>Igual a</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Caption_ConditionalFormattingTextContainsRule_FormText" xml:space="preserve">
+    <value>Texto que contém</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Caption_ConditionalFormattingTopBottomRule_LabelWithText" xml:space="preserve">
+    <value>com</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Caption_GroupCells" xml:space="preserve">
+    <value>Células</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Caption_GroupCharts" xml:space="preserve">
+    <value>Gráficos</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Caption_GroupChartsDesignLayouts" xml:space="preserve">
+    <value>Layouts de gráfico</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Caption_GroupChartsDesignStyles" xml:space="preserve">
+    <value>Estilos de gráfico</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Caption_GroupChartsLayoutAnalysis" xml:space="preserve">
+    <value>Análise</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Caption_GroupEditing" xml:space="preserve">
+    <value>Edição</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Caption_GroupFormulaAuditing" xml:space="preserve">
+    <value>Auditoria de fórmulas</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Caption_GroupFunctionLibrary" xml:space="preserve">
+    <value>Biblioteca de funções</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Caption_GroupIllustrations" xml:space="preserve">
+    <value>Ilustrações</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Caption_GroupMailMergeExtended" xml:space="preserve">
+    <value>Intervalos de modelo</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Caption_GroupMailMergeMode" xml:space="preserve">
+    <value>Modo</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Caption_MediumTableStyleCategory" xml:space="preserve">
+    <value>Médio</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Caption_MediumTableStyleNamePart" xml:space="preserve">
+    <value>Médio</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Caption_ConditionalFormattingDateOccurringRule_LabelWithText" xml:space="preserve">
+    <value>com</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Caption_ConditionalFormattingDuplicateValuesRule_LabelWithText" xml:space="preserve">
+    <value>valores com</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Caption_ConditionalFormattingGreaterThanRule_FormText" xml:space="preserve">
+    <value>Maior que</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Caption_ConditionalFormattingTopBottomPercentRule_LabelWithText" xml:space="preserve">
+    <value>% com</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Caption_PagePageLayout" xml:space="preserve">
+    <value>Layout de página</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Caption_SearchInValues" xml:space="preserve">
+    <value>Valores</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_MailMergeHorizontalModeCommand" xml:space="preserve">
+    <value>Horizontal</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_MailMergeVerticalModeCommand" xml:space="preserve">
+    <value>Vertical</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Caption_TimePeriod_Today" xml:space="preserve">
+    <value>Hoje</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_EditingFind" xml:space="preserve">
+    <value>Procurar</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_EditingSelectConstants" xml:space="preserve">
+    <value>Constantes</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_CalculationModeAutomatic" xml:space="preserve">
+    <value>Automático</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Caption_NoColor" xml:space="preserve">
+    <value>Sem cor</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_MailMergeSetFilterCommand" xml:space="preserve">
+    <value>Editar Filtro</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Caption_GroupPrint" xml:space="preserve">
+    <value>Imprimir</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_CalculationModeManual" xml:space="preserve">
+    <value>Manual</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Caption_GroupMailMergeFiltering" xml:space="preserve">
+    <value>Filtro</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.Caption_PermissionSort" xml:space="preserve">
+    <value>Classificar</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.CaptionAllFunctionsGroup" xml:space="preserve">
+    <value>Todos</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_CopySelection" xml:space="preserve">
+      <value>Copiar</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_CutSelection" xml:space="preserve">
+      <value>Recortar</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_FormatCellsContextMenuItem" xml:space="preserve">
+      <value>Formatar Células...</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_FormatClearContents" xml:space="preserve">
+      <value>Limpar Conteúdo</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_FormatColumnWidth" xml:space="preserve">
+      <value>Largura da Coluna...</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_FormatRowHeight" xml:space="preserve">
+      <value>Altura da Linha...</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_HideColumns" xml:space="preserve">
+      <value>Ocultar Colunas</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_HideRows" xml:space="preserve">
+      <value>Ocultar Linhas</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_InsertComment" xml:space="preserve">
+      <value>Novo Comentário</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_InsertHyperlink" xml:space="preserve">
+      <value>Hiperlink...</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_Paste" xml:space="preserve">
+      <value>Colar</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_UnhideColumns" xml:space="preserve">
+      <value>Reexibir Colunas</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_UnhideRows" xml:space="preserve">
+      <value>Reexibir Linhas</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_EditComment" xml:space="preserve">
+      <value>Editar Comentário</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_EditHyperlink" xml:space="preserve">
+      <value>Editar Hiperlink...</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_HideSheet" xml:space="preserve">
+      <value>Ocultar Planilha</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_InsertSheet" xml:space="preserve">
+      <value>Inserir Planilha</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_MoveOrCopySheet" xml:space="preserve">
+      <value>Mover ou Copiar Planilha...</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_RemoveHyperlink" xml:space="preserve">
+      <value>Remover Hiperlink</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_RemoveSheet" xml:space="preserve">
+      <value>Excluir Planilha</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_RenameSheet" xml:space="preserve">
+      <value>Renomear Planilha...</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_ReviewDeleteCommentContextMenuItem" xml:space="preserve">
+      <value>Excluir Comentário</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_ReviewShowHideComment" xml:space="preserve">
+      <value>Mostrar/Ocultar Comentário</value>
+  </data>
+  <data name="XtraSpreadsheetStringId.MenuCmd_UnhideSheet" xml:space="preserve">
+      <value>Reexibir Planilha...</value>
+  </data>
+</root>

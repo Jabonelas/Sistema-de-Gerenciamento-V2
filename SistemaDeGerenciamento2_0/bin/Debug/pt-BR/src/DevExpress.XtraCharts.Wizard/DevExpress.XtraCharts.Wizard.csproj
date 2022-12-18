@@ -1,0 +1,3108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3CB35EF6-3135-45A8-84F1-7E6A217F5D7F}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>DevExpress.XtraCharts.v21.2.Wizard</AssemblyName>
+    <AssemblyOriginatorKeyFile>..\DevExpress.Key\StrongKey.snk</AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>DevExpress.XtraCharts.Wizard</RootNamespace>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SignAssembly>true</SignAssembly>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>..\DevExpress.Dll\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DXWhidbey;DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>..\DevExpress.Dll\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DXWhidbey;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Design">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Web">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\AssemblyVersion.cs">
+      <Link>AssemblyVersion.cs</Link>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ChartDesigner\DesignerFormBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartDesigner\DesignerModules\ChartActionsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartDesigner\DesignerModules\PropertyGridEditors\DesignerCollectionEditorForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartDesigner\DesignerModules\ChartDataControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartDesigner\ElementsOptions\SizeControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartDesigner\DesignerModules\TaskLinkCollectionModelEditorForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Design\IntervalCollectionEditorForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Design\ChartShortcutKeyCollectionEditorForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Design\CalculatedFieldCollectionEditorForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Design\DrillDownTemplateControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Design\PropertyGridForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\AddRemoveChartNamedElementControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\AnnotationControls\AnnotationAnchorPointControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\AnnotationControls\AnnotationAppearanceControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\AnnotationControls\AnnotationChartAnchorPointControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\AnnotationControls\AnnotationControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\AnnotationControls\AnnotationFreePositionControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\AnnotationControls\AnnotationFreePositionDockingControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\AnnotationControls\AnnotationFreePositionIndentsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\AnnotationControls\AnnotationGeneralControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\AnnotationControls\AnnotationImageContentControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\AnnotationControls\AnnotationListRedactControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\AnnotationControls\AnnotationPaneAnchorPointControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\AnnotationControls\AnnotationRelativePositionControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\AnnotationControls\AnnotationSeriesPointAnchorPointControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\AnnotationControls\AnnotationShapePositionControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\AnnotationControls\AnnotationTextContentControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\AnnotationControls\AxisCoordinateControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\BackgroundControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\ChartAppearanceControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\ChartAxesControls\3DAxes\Axis3DAppearanceControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\ChartAxesControls\3DAxes\Axis3DControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\ChartAxesControls\AxesNotSupportedControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\ChartAxesControls\AxisDateTimeScaleOptionsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\ChartAxesControls\AxisGeneralControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\ChartAxesControls\AxisGeneralTabsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\ChartAxesControls\AxisLabelControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\ChartAxesControls\AxisLabelLayoutControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\ChartAxesControls\AxisLabelOverlappingSettingsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\ChartAxesControls\AxisLabelTextSettingsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\ChartAxesControls\AxisNumericScaleOptionsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\ChartAxesControls\AxisRangeControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\ChartAxesControls\AxisScaleOptionsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\ChartAxesControls\AxisScaleOptionsControlBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\ChartAxesControls\LabelsGeneralControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\ChartAxesControls\RadarAxes\RadarAxesElementsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\ChartAxesControls\RadarAxes\RadarAxisAppearanceControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\ChartAxesControls\RadarAxes\RadarAxisXControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\ChartAxesControls\RadarAxes\RadarAxisYControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\ChartAxesControls\WorkdaysControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\ChartAxesControls\XYAxes\AxesElementsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\ChartAxesControls\XYAxes\AxisAppearanceControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\ChartAxesControls\XYAxes\AxisTitleControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\ChartAxesControls\XYAxes\ChartAxisControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\ChartAxesControls\XYAxes\ConstantLineAppearanceControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\ChartAxesControls\XYAxes\ConstantLineGeneralControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\ChartAxesControls\XYAxes\ConstantLineListRedactControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\ChartAxesControls\XYAxes\ConstantLinesControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\ChartAxesControls\XYAxes\ConstantLineTitleControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\ChartAxesControls\XYAxes\CustomLabelsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\ChartAxesControls\XYAxes\CustomLabelsListRedactControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\ChartAxesControls\XYAxes\GridLinesControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\ChartAxesControls\XYAxes\ScaleBreakAppearanceControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\ChartAxesControls\XYAxes\ScaleBreakGeneralControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\ChartAxesControls\XYAxes\ScaleBreakListRedactControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\ChartAxesControls\XYAxes\ScaleBreaksAutoControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\ChartAxesControls\XYAxes\ScaleBreaksControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\ChartAxesControls\XYAxes\StripAppearanceControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\ChartAxesControls\XYAxes\StripsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\ChartAxesControls\XYAxes\StripsLimitsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\ChartAxesControls\XYAxes\StripsListRedactControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\ChartAxesControls\XYAxes\StripsRedactControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\ChartAxesControls\XYAxes\TickmarksControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\ChartDataControl\DataBindingControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\ChartDataControl\SeriesDataBindingControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\ChartDataControl\SeriesTemplateDataBindingControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\ChartDiagramControls\DiagramNotFoundControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\ChartDiagramControls\Pie3DDiagramControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\ChartDiagramControls\PieDiagramControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\ChartDiagramControls\RadarDiagramControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\ChartDiagramControls\RadarDiagramDrawingStyleControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\ChartDiagramControls\RotateControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\ChartDiagramControls\ScrollingOptionsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\ChartDiagramControls\ScrollingZooming2DControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\ChartDiagramControls\ScrollingZooming3DControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\ChartDiagramControls\SecondaryAxesRedact.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\ChartDiagramControls\XYDiagram3DControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\ChartDiagramControls\XYDiagramControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\ChartDiagramControls\ZoomingOptionsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\ChartImageListBoxContainer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\ChartLegendControls\LegendControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\ChartLegendControls\LegendGeneralControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\ChartLegendControls\LegendInteriorControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\ChartLegendControls\LegendMarkerControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\ChartLegendControls\LegendTextControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\ChartPaneControls\AxisScrollBarOptionsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\ChartPaneControls\PaneControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\ChartPaneControls\PanesNotSupportedControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\ChartPaneControls\PanesRedact.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\ChartPaneControls\ScrollBarOptionsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\ChartPropertiesTabsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\ChartTitleControls\SeriesTitleListRedactControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\ChartTitleControls\TitleControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\ChartTitleControls\TitleGeneralControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\ChartTitleControls\TitleListRedactControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\ChartTypeControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Design\CustomLegendItemCollectionEditorForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Design\LegendTargetEditControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\SeriesViewControls\AuxiliaryControls\SeriesGroupsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\SeriesViewControls\AuxiliaryControls\NestedDoughnutOptionsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Design\SeriesGroupSelectControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\SeriesViewControls\GeneralOptionsControls\NestedDoughnutGeneralOptionsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\TextPatternControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\DateTimeOptionsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Design\AnnotationAnchoringTypesForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Design\AnnotationCollectionEditorForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Design\AnnotationShapePositionTypesForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Design\AnnotationTypesForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Design\AxisVisibilityInPanesForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Design\ChartPrintingDesigner.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Design\ChartTitleEditorForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Design\CollectionEditorForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Design\ConstantLineCollectionEditorForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Design\CrosshairLabelPositionTypesForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Design\CustomAxisLabelCollectionEditorForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Design\DataFilterCollectionForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Design\DataMemberPickerContainer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Design\DockableTitleEditorForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Design\ExplodedPointsListForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Design\FontEditControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Design\HolidaysCollectionForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Design\HolidaysEditControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Design\HolidaysImportForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Design\IndicatorsCollectionForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Design\IndicatorTypeForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Design\KnownDateForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Design\PaletteEditControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Design\PaletteEditorForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Design\PatternEditorForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Design\PointsGrid.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Design\PointsListForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Design\ScaleBreakCollectionEditorForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Design\SecondaryAxisCollectionEditorForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Design\SeriesCollectionForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Design\SeriesPointFilterCollectionForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Design\SeriesPointListForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Design\SeriesTitleEditorForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Design\SeriesViewAxisEditControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Design\SeriesViewPaneEditControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Design\StringCollectionEditorForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Design\StripCollectionEditorForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Design\SummaryFunctionBindingControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Design\SummaryFunctionEditorForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Design\TaskLinkCollectionEditorForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Design\ToolTipPositionTypesForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Design\ViewTypesForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Design\WorkdaysControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Design\XYDiagramPaneCollectionEditorForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\ImageControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\MainWizardControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\NotificationControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\NumericOptionsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\PivotGridDataSourceControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\RectangleIndentsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\SeriesConfigControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\SeriesLabelsControls\BarSeriesLabelOptionsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\SeriesLabelsControls\BubbleSeriesLabelOptionsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\SeriesLabelsControls\BubbleViewControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\SeriesLabelsControls\ConnectorControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\SeriesLabelsControls\FunnelSeriesLabelOptionsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\SeriesLabelsControls\LabelControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\SeriesLabelsControls\LayoutSettingsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\SeriesLabelsControls\OverlappingSettingsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\SeriesLabelsControls\PieSeriesLabelOptionsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\SeriesLabelsControls\PointSeriesLabelOptionsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\SeriesLabelsControls\RangeAreaSeriesLabelOptionsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\SeriesLabelsControls\RangeBarLabelSettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\SeriesLabelsControls\SeriesLabelGeneralControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\SeriesLabelsControls\SeriesLabelNotSupportedControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\SeriesLabelsControls\TextSettingsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\SeriesListBoxControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\SeriesViewControls\AuxiliaryControls\BarDistanceControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\SeriesViewControls\AuxiliaryControls\BorderControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\SeriesViewControls\AuxiliaryControls\ColorControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\SeriesViewControls\AuxiliaryControls\DoughnutOptionsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\SeriesViewControls\AuxiliaryControls\ExplodedPointsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\SeriesViewControls\AuxiliaryControls\FinancialLineStyleControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\SeriesViewControls\AuxiliaryControls\LineStyleControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\SeriesViewControls\AuxiliaryControls\MarkerBaseControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\SeriesViewControls\AuxiliaryControls\MarkerBorderControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\SeriesViewControls\AuxiliaryControls\MarkerControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\SeriesViewControls\AuxiliaryControls\PolygonFillStyle3DSeriesViewControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\SeriesViewControls\AuxiliaryControls\PolygonFillStyleSeriesViewControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\SeriesViewControls\AuxiliaryControls\RangeBorderControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\SeriesViewControls\AuxiliaryControls\RectangleFillStyle3DSeriesViewControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\SeriesViewControls\AuxiliaryControls\RectangleFillStyleSeriesViewControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\SeriesViewControls\AuxiliaryControls\ReductionOptionsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\SeriesViewControls\AuxiliaryControls\SeriesTitlesControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\SeriesViewControls\AuxiliaryControls\ShadowControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\SeriesViewControls\AuxiliaryControls\XYDiagramSeriesViewLinkedElementsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\SeriesViewControls\GeneralOptionsControls\Area3DGeneralOptionsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\SeriesViewControls\GeneralOptionsControls\Bar3DGeneralOptionsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\SeriesViewControls\GeneralOptionsControls\BarGeneralOptionsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\SeriesViewControls\GeneralOptionsControls\BubbleGeneralOptionsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\SeriesViewControls\GeneralOptionsControls\FinancialGeneralOptionsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\SeriesViewControls\GeneralOptionsControls\Funnel3DGeneralOptionsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\SeriesViewControls\GeneralOptionsControls\FunnelGeneralOptionsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\SeriesViewControls\GeneralOptionsControls\Line3DGeneralOptionsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\SeriesViewControls\GeneralOptionsControls\Pie3DGeneralOptionsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\SeriesViewControls\GeneralOptionsControls\PieGeneralOptionsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\SeriesViewControls\GeneralOptionsControls\RadarLineGeneralOptionsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\SeriesViewControls\GeneralOptionsControls\SplineGeneralOptionsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\SeriesViewControls\GeneralOptionsControls\StackedBarGeneralOptionsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\SeriesViewControls\GeneralOptionsControls\StepLineGeneralOptionsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\SeriesViewControls\GeneralOptionsControls\SwiftPlotGeneralOptionsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\SeriesViewControls\IndicatorControls\FibonacciIndicatorControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\SeriesViewControls\IndicatorControls\FinancialIndicatorControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\SeriesViewControls\IndicatorControls\FinancialIndicatorPointControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\SeriesViewControls\IndicatorControls\IndicatorControlBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\SeriesViewControls\IndicatorControls\IndicatorsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\SeriesViewControls\IndicatorControls\IndicatorsSelectionControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\SeriesViewControls\IndicatorControls\MovingAverageControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\SeriesViewControls\IndicatorControls\SingleLevelIndicatorControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\SeriesViewControls\IndicatorControls\SubsetBasedIndicatorControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\SeriesViewControls\IndicatorControls\TrendLineControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\SeriesViewControls\RadarSeriesViewControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\SeriesViewControls\SeriesViewAppearanceControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\SeriesViewControls\SimpleDiagramSeriesViewBaseControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\SeriesViewControls\XYDiagram3DSeriesViewBaseControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\SeriesViewControls\XYDiagramSeriesViewBaseControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\SeriesViewControls\XYDiagramSeriesViewBaseGeneralControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\TextAppearanceControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\TopNOptionsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\WizardFormBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ChartDesigner\DesignerFormBase.pt-BR.resx">
+      <DependentUpon>DesignerFormBase.cs</DependentUpon>
+      <DependentUpon>DesignerFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartDesigner\DesignerFormBase.resx">
+      <DependentUpon>DesignerFormBase.cs</DependentUpon>
+      <DependentUpon>DesignerFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartDesigner\DesignerModules\ChartActionsControl.pt-BR.resx">
+      <DependentUpon>ChartActionsControl.cs</DependentUpon>
+      <DependentUpon>ChartActionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartDesigner\DesignerModules\ChartActionsControl.resx">
+      <DependentUpon>ChartActionsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>ChartActionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartDesigner\DesignerModules\ChartDataControl.pt-BR.resx">
+      <DependentUpon>ChartDataControl.cs</DependentUpon>
+      <DependentUpon>ChartDataControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartDesigner\DesignerModules\PropertyGridEditors\DesignerCollectionEditorForm.pt-BR.resx">
+      <DependentUpon>DesignerCollectionEditorForm.cs</DependentUpon>
+      <DependentUpon>DesignerCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartDesigner\DesignerModules\PropertyGridEditors\DesignerCollectionEditorForm.resx">
+      <DependentUpon>DesignerCollectionEditorForm.cs</DependentUpon>
+      <DependentUpon>DesignerCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartDesigner\DesignerModules\ChartDataControl.resx">
+      <DependentUpon>ChartDataControl.cs</DependentUpon>
+      <DependentUpon>ChartDataControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartDesigner\ElementsOptions\SizeControl.pt-BR.resx">
+      <DependentUpon>SizeControl.cs</DependentUpon>
+      <DependentUpon>SizeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartDesigner\ElementsOptions\SizeControl.resx">
+      <DependentUpon>SizeControl.cs</DependentUpon>
+      <DependentUpon>SizeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartDesigner\DesignerModules\TaskLinkCollectionModelEditorForm.resx">
+      <DependentUpon>TaskLinkCollectionModelEditorForm.cs</DependentUpon>
+      <DependentUpon>TaskLinkCollectionModelEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChartDesigner\Localization\LocalizationRes.pt-BR.resx" />
+    <EmbeddedResource Include="ChartDesigner\Localization\LocalizationRes.resx" />
+    <EmbeddedResource Include="ChartDesigner\Localization\PropertyNamesRes.pt-BR.resx" />
+    <EmbeddedResource Include="ChartDesigner\Localization\PropertyNamesRes.resx" />
+    <EmbeddedResource Include="Design\IntervalCollectionEditorForm.pt-BR.resx">
+      <DependentUpon>IntervalCollectionEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\IntervalCollectionEditorForm.resx">
+      <DependentUpon>IntervalCollectionEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ChartShortcutKeyCollectionEditorForm.pt-BR.resx">
+      <DependentUpon>ChartShortcutKeyCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ChartShortcutKeyCollectionEditorForm.resx">
+      <DependentUpon>ChartShortcutKeyCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\CalculatedFieldCollectionEditorForm.pt-BR.resx">
+      <DependentUpon>CalculatedFieldCollectionEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\CalculatedFieldCollectionEditorForm.resx">
+      <DependentUpon>CalculatedFieldCollectionEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\DrillDownTemplateControl.resx">
+      <DependentUpon>DrillDownTemplateControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\LegendTargetEditControl.pt-BR.resx">
+      <DependentUpon>LegendTargetEditControl.cs</DependentUpon>
+      <DependentUpon>LegendTargetEditControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\PropertyGridForm.pt-BR.resx">
+      <DependentUpon>PropertyGridForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\PropertyGridForm.resx">
+      <DependentUpon>PropertyGridForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartAxesControls\AxisNumericScaleOptionsControl.pt-BR.resx">
+      <DependentUpon>AxisNumericScaleOptionsControl.cs</DependentUpon>
+      <DependentUpon>AxisNumericScaleOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartAxesControls\AxisNumericScaleOptionsControl.resx">
+      <DependentUpon>AxisNumericScaleOptionsControl.cs</DependentUpon>
+      <DependentUpon>AxisNumericScaleOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartAxesControls\AxisScaleOptionsControl.pt-BR.resx">
+      <DependentUpon>AxisScaleOptionsControl.cs</DependentUpon>
+      <DependentUpon>AxisScaleOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartAxesControls\AxisScaleOptionsControl.resx">
+      <DependentUpon>AxisScaleOptionsControl.cs</DependentUpon>
+      <DependentUpon>AxisScaleOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartAxesControls\AxisScaleOptionsControlBase.pt-BR.resx">
+      <DependentUpon>AxisScaleOptionsControlBase.cs</DependentUpon>
+      <DependentUpon>AxisScaleOptionsControlBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartAxesControls\AxisScaleOptionsControlBase.resx">
+      <DependentUpon>AxisScaleOptionsControlBase.cs</DependentUpon>
+      <DependentUpon>AxisScaleOptionsControlBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\CustomLegendItemCollectionEditorForm.resx">
+      <DependentUpon>CustomLegendItemCollectionEditorForm.cs</DependentUpon>
+      <DependentUpon>CustomLegendItemCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\LegendTargetEditControl.resx">
+      <DependentUpon>LegendTargetEditControl.cs</DependentUpon>
+      <DependentUpon>LegendTargetEditControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\AuxiliaryControls\SeriesGroupsControl.pt-BR.resx">
+      <DependentUpon>SeriesGroupsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>SeriesGroupsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\AuxiliaryControls\SeriesGroupsControl.resx">
+      <DependentUpon>SeriesGroupsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>SeriesGroupsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\AuxiliaryControls\NestedDoughnutOptionsControl.pt-BR.resx">
+      <DependentUpon>NestedDoughnutOptionsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>NestedDoughnutOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\AuxiliaryControls\NestedDoughnutOptionsControl.resx">
+      <DependentUpon>NestedDoughnutOptionsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>NestedDoughnutOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\SeriesGroupSelectControl.pt-BR.resx">
+      <DependentUpon>SeriesGroupSelectControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>SeriesGroupSelectControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\SeriesGroupSelectControl.resx">
+      <DependentUpon>SeriesGroupSelectControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>SeriesGroupSelectControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\GeneralOptionsControls\NestedDoughnutGeneralOptionsControl.pt-BR.resx">
+      <DependentUpon>NestedDoughnutGeneralOptionsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>NestedDoughnutGeneralOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\GeneralOptionsControls\NestedDoughnutGeneralOptionsControl.resx">
+      <DependentUpon>NestedDoughnutGeneralOptionsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>NestedDoughnutGeneralOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\TextPatternControl.pt-BR.resx">
+      <DependentUpon>TextPatternControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>TextPatternControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\TextPatternControl.resx">
+      <DependentUpon>TextPatternControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>TextPatternControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\PatternEditorForm.pt-BR.resx">
+      <DependentUpon>PatternEditorForm.cs</DependentUpon>
+      <DependentUpon>PatternEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\PatternEditorForm.resx">
+      <DependentUpon>PatternEditorForm.cs</DependentUpon>
+      <DependentUpon>PatternEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\PointsGrid.pt-BR.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PointsGrid.cs</DependentUpon>
+      <DependentUpon>PointsGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\DataMemberPickerContainer.pt-BR.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DataMemberPickerContainer.cs</DependentUpon>
+      <DependentUpon>DataMemberPickerContainer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartImageListBoxContainer.pt-BR.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ChartImageListBoxContainer.cs</DependentUpon>
+      <DependentUpon>ChartImageListBoxContainer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\AnnotationAnchoringTypesForm.pt-BR.resx">
+      <DependentUpon>AnnotationAnchoringTypesForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>AnnotationAnchoringTypesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\AnnotationAnchoringTypesForm.resx">
+      <DependentUpon>AnnotationAnchoringTypesForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>AnnotationAnchoringTypesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\AnnotationCollectionEditorForm.pt-BR.resx">
+      <DependentUpon>AnnotationCollectionEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>AnnotationCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\AnnotationCollectionEditorForm.resx">
+      <DependentUpon>AnnotationCollectionEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>AnnotationCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\AnnotationShapePositionTypesForm.pt-BR.resx">
+      <DependentUpon>AnnotationShapePositionTypesForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>AnnotationShapePositionTypesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\AnnotationShapePositionTypesForm.resx">
+      <DependentUpon>AnnotationShapePositionTypesForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>AnnotationShapePositionTypesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\AnnotationTypesForm.pt-BR.resx">
+      <DependentUpon>AnnotationTypesForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>AnnotationTypesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\AnnotationTypesForm.resx">
+      <DependentUpon>AnnotationTypesForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>AnnotationTypesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\AxisVisibilityInPanesForm.pt-BR.resx">
+      <DependentUpon>AxisVisibilityInPanesForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>AxisVisibilityInPanesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\AxisVisibilityInPanesForm.resx">
+      <DependentUpon>AxisVisibilityInPanesForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>AxisVisibilityInPanesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ChartPrintingDesigner.pt-BR.resx">
+      <DependentUpon>ChartPrintingDesigner.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>ChartPrintingDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ChartPrintingDesigner.resx">
+      <DependentUpon>ChartPrintingDesigner.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>ChartPrintingDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ChartTitleEditorForm.pt-BR.resx">
+      <DependentUpon>ChartTitleEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>ChartTitleEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ChartTitleEditorForm.resx">
+      <DependentUpon>ChartTitleEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>ChartTitleEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\CollectionEditorForm.pt-BR.resx">
+      <DependentUpon>CollectionEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>CollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\CollectionEditorForm.resx">
+      <DependentUpon>CollectionEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>CollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ConstantLineCollectionEditorForm.pt-BR.resx">
+      <DependentUpon>ConstantLineCollectionEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>ConstantLineCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ConstantLineCollectionEditorForm.resx">
+      <DependentUpon>ConstantLineCollectionEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>ConstantLineCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\CrosshairLabelPositionTypesForm.pt-BR.resx">
+      <DependentUpon>CrosshairLabelPositionTypesForm.cs</DependentUpon>
+      <DependentUpon>CrosshairLabelPositionTypesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\CrosshairLabelPositionTypesForm.resx">
+      <DependentUpon>CrosshairLabelPositionTypesForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>CrosshairLabelPositionTypesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\CustomAxisLabelCollectionEditorForm.pt-BR.resx">
+      <DependentUpon>CustomAxisLabelCollectionEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>CustomAxisLabelCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\CustomAxisLabelCollectionEditorForm.resx">
+      <DependentUpon>CustomAxisLabelCollectionEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>CustomAxisLabelCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\DataFilterCollectionForm.pt-BR.resx">
+      <DependentUpon>DataFilterCollectionForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>DataFilterCollectionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\DataFilterCollectionForm.resx">
+      <DependentUpon>DataFilterCollectionForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>DataFilterCollectionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\DataMemberPickerContainer.resx">
+      <DependentUpon>DataMemberPickerContainer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>DataMemberPickerContainer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\DockableTitleEditorForm.pt-BR.resx">
+      <DependentUpon>DockableTitleEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>DockableTitleEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\DockableTitleEditorForm.resx">
+      <DependentUpon>DockableTitleEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>DockableTitleEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ExplodedPointsListForm.pt-BR.resx">
+      <DependentUpon>ExplodedPointsListForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>ExplodedPointsListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ExplodedPointsListForm.resx">
+      <DependentUpon>ExplodedPointsListForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>ExplodedPointsListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\FontEditControl.pt-BR.resx">
+      <DependentUpon>FontEditControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>FontEditControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\FontEditControl.resx">
+      <DependentUpon>FontEditControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>FontEditControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\HolidaysCollectionForm.pt-BR.resx">
+      <DependentUpon>HolidaysCollectionForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>HolidaysCollectionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\HolidaysCollectionForm.resx">
+      <DependentUpon>HolidaysCollectionForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>HolidaysCollectionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\HolidaysEditControl.pt-BR.resx">
+      <DependentUpon>HolidaysEditControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>HolidaysEditControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\HolidaysEditControl.resx">
+      <DependentUpon>HolidaysEditControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>HolidaysEditControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\HolidaysImportForm.pt-BR.resx">
+      <DependentUpon>HolidaysImportForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>HolidaysImportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\HolidaysImportForm.resx">
+      <DependentUpon>HolidaysImportForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>HolidaysImportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\IndicatorsCollectionForm.pt-BR.resx">
+      <DependentUpon>IndicatorsCollectionForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>IndicatorsCollectionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\IndicatorsCollectionForm.resx">
+      <DependentUpon>IndicatorsCollectionForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>IndicatorsCollectionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\IndicatorTypeForm.pt-BR.resx">
+      <DependentUpon>IndicatorTypeForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>IndicatorTypeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\IndicatorTypeForm.resx">
+      <DependentUpon>IndicatorTypeForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>IndicatorTypeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\KnownDateForm.pt-BR.resx">
+      <DependentUpon>KnownDateForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>KnownDateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\KnownDateForm.resx">
+      <DependentUpon>KnownDateForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>KnownDateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\PaletteEditControl.pt-BR.resx">
+      <DependentUpon>PaletteEditControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>PaletteEditControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\PaletteEditControl.resx">
+      <DependentUpon>PaletteEditControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>PaletteEditControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\PaletteEditorForm.pt-BR.resx">
+      <DependentUpon>PaletteEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>PaletteEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\PaletteEditorForm.resx">
+      <DependentUpon>PaletteEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>PaletteEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\PointsGrid.resx">
+      <DependentUpon>PointsGrid.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>PointsGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\PointsListForm.pt-BR.resx">
+      <DependentUpon>PointsListForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>PointsListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\PointsListForm.resx">
+      <DependentUpon>PointsListForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>PointsListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ScaleBreakCollectionEditorForm.pt-BR.resx">
+      <DependentUpon>ScaleBreakCollectionEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>ScaleBreakCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ScaleBreakCollectionEditorForm.resx">
+      <DependentUpon>ScaleBreakCollectionEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>ScaleBreakCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\SecondaryAxisCollectionEditorForm.pt-BR.resx">
+      <DependentUpon>SecondaryAxisCollectionEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>SecondaryAxisCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\SecondaryAxisCollectionEditorForm.resx">
+      <DependentUpon>SecondaryAxisCollectionEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>SecondaryAxisCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\SeriesCollectionForm.pt-BR.resx">
+      <DependentUpon>SeriesCollectionForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>SeriesCollectionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\SeriesCollectionForm.resx">
+      <DependentUpon>SeriesCollectionForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>SeriesCollectionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\SeriesPointFilterCollectionForm.pt-BR.resx">
+      <DependentUpon>SeriesPointFilterCollectionForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>SeriesPointFilterCollectionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\SeriesPointFilterCollectionForm.resx">
+      <DependentUpon>SeriesPointFilterCollectionForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>SeriesPointFilterCollectionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\SeriesPointListForm.pt-BR.resx">
+      <DependentUpon>SeriesPointListForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>SeriesPointListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\SeriesPointListForm.resx">
+      <DependentUpon>SeriesPointListForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>SeriesPointListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\SeriesTitleEditorForm.pt-BR.resx">
+      <DependentUpon>SeriesTitleEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>SeriesTitleEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\SeriesTitleEditorForm.resx">
+      <DependentUpon>SeriesTitleEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>SeriesTitleEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\SeriesViewAxisEditControl.pt-BR.resx">
+      <DependentUpon>SeriesViewAxisEditControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>SeriesViewAxisEditControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\SeriesViewAxisEditControl.resx">
+      <DependentUpon>SeriesViewAxisEditControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>SeriesViewAxisEditControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\SeriesViewPaneEditControl.pt-BR.resx">
+      <DependentUpon>SeriesViewPaneEditControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>SeriesViewPaneEditControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\SeriesViewPaneEditControl.resx">
+      <DependentUpon>SeriesViewPaneEditControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>SeriesViewPaneEditControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\StringCollectionEditorForm.pt-BR.resx">
+      <DependentUpon>StringCollectionEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>StringCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\StringCollectionEditorForm.resx">
+      <DependentUpon>StringCollectionEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>StringCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\StripCollectionEditorForm.pt-BR.resx">
+      <DependentUpon>StripCollectionEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>StripCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\StripCollectionEditorForm.resx">
+      <DependentUpon>StripCollectionEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>StripCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\SummaryFunctionBindingControl.pt-BR.resx">
+      <DependentUpon>SummaryFunctionBindingControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>SummaryFunctionBindingControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\SummaryFunctionBindingControl.resx">
+      <DependentUpon>SummaryFunctionBindingControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>SummaryFunctionBindingControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\SummaryFunctionEditorForm.pt-BR.resx">
+      <DependentUpon>SummaryFunctionEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>SummaryFunctionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\SummaryFunctionEditorForm.resx">
+      <DependentUpon>SummaryFunctionEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>SummaryFunctionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\TaskLinkCollectionEditorForm.pt-BR.resx">
+      <DependentUpon>TaskLinkCollectionEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>TaskLinkCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\TaskLinkCollectionEditorForm.resx">
+      <DependentUpon>TaskLinkCollectionEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>TaskLinkCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ToolTipPositionTypesForm.pt-BR.resx">
+      <DependentUpon>ToolTipPositionTypesForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>ToolTipPositionTypesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ToolTipPositionTypesForm.resx">
+      <DependentUpon>ToolTipPositionTypesForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>ToolTipPositionTypesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ViewTypesForm.pt-BR.resx">
+      <DependentUpon>ViewTypesForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>ViewTypesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ViewTypesForm.resx">
+      <DependentUpon>ViewTypesForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>ViewTypesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\WorkdaysControl.pt-BR.resx">
+      <DependentUpon>WorkdaysControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>WorkdaysControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\WorkdaysControl.resx">
+      <DependentUpon>WorkdaysControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>WorkdaysControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\XYDiagramPaneCollectionEditorForm.pt-BR.resx">
+      <DependentUpon>XYDiagramPaneCollectionEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>XYDiagramPaneCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\XYDiagramPaneCollectionEditorForm.resx">
+      <DependentUpon>XYDiagramPaneCollectionEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>XYDiagramPaneCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartAxesControls\AxisLabelOverlappingSettingsControl.pt-BR.resx">
+      <DependentUpon>AxisLabelOverlappingSettingsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>AxisLabelOverlappingSettingsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartAxesControls\AxisLabelOverlappingSettingsControl.resx">
+      <DependentUpon>AxisLabelOverlappingSettingsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>AxisLabelOverlappingSettingsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\NotificationControl.pt-BR.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NotificationControl.cs</DependentUpon>
+      <DependentUpon>NotificationControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\AuxiliaryControls\RangeBorderControl.pt-BR.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>RangeBorderControl.cs</DependentUpon>
+      <DependentUpon>RangeBorderControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartAxesControls\LabelsGeneralControl.pt-BR.resx">
+      <DependentUpon>LabelsGeneralControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>LabelsGeneralControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartAxesControls\LabelsGeneralControl.resx">
+      <DependentUpon>LabelsGeneralControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>LabelsGeneralControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesLabelsControls\RangeAreaSeriesLabelOptionsControl.pt-BR.resx">
+      <DependentUpon>RangeAreaSeriesLabelOptionsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>RangeAreaSeriesLabelOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesLabelsControls\RangeAreaSeriesLabelOptionsControl.resx">
+      <DependentUpon>RangeAreaSeriesLabelOptionsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>RangeAreaSeriesLabelOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\AuxiliaryControls\RangeBorderControl.resx">
+      <DependentUpon>RangeBorderControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>RangeBorderControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\IndicatorControls\IndicatorsControl.pt-BR.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>IndicatorsControl.cs</DependentUpon>
+      <DependentUpon>IndicatorsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\IndicatorControls\IndicatorsSelectionControl.pt-BR.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>IndicatorsSelectionControl.cs</DependentUpon>
+      <DependentUpon>IndicatorsSelectionControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesLabelsControls\LayoutSettingsControl.pt-BR.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LayoutSettingsControl.cs</DependentUpon>
+      <DependentUpon>LayoutSettingsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\PivotGridDataSourceControl.pt-BR.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PivotGridDataSourceControl.cs</DependentUpon>
+      <DependentUpon>PivotGridDataSourceControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartAxesControls\WorkdaysControl.pt-BR.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>WorkdaysControl.cs</DependentUpon>
+      <DependentUpon>WorkdaysControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\IndicatorControls\SubsetBasedIndicatorControl.pt-BR.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SubsetBasedIndicatorControl.cs</DependentUpon>
+      <DependentUpon>SubsetBasedIndicatorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\AddRemoveChartNamedElementControl.pt-BR.resx">
+      <DependentUpon>AddRemoveChartNamedElementControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>AddRemoveChartNamedElementControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\AddRemoveChartNamedElementControl.resx">
+      <DependentUpon>AddRemoveChartNamedElementControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>AddRemoveChartNamedElementControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\AnnotationControls\AnnotationAnchorPointControl.pt-BR.resx">
+      <DependentUpon>AnnotationAnchorPointControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>AnnotationAnchorPointControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\AnnotationControls\AnnotationAnchorPointControl.resx">
+      <DependentUpon>AnnotationAnchorPointControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>AnnotationAnchorPointControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\AnnotationControls\AnnotationAppearanceControl.pt-BR.resx">
+      <DependentUpon>AnnotationAppearanceControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>AnnotationAppearanceControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\AnnotationControls\AnnotationAppearanceControl.resx">
+      <DependentUpon>AnnotationAppearanceControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>AnnotationAppearanceControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\AnnotationControls\AnnotationChartAnchorPointControl.pt-BR.resx">
+      <DependentUpon>AnnotationChartAnchorPointControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>AnnotationChartAnchorPointControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\AnnotationControls\AnnotationChartAnchorPointControl.resx">
+      <DependentUpon>AnnotationChartAnchorPointControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>AnnotationChartAnchorPointControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\AnnotationControls\AnnotationControl.pt-BR.resx">
+      <DependentUpon>AnnotationControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>AnnotationControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\AnnotationControls\AnnotationControl.resx">
+      <DependentUpon>AnnotationControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>AnnotationControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\AnnotationControls\AnnotationFreePositionControl.pt-BR.resx">
+      <DependentUpon>AnnotationFreePositionControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>AnnotationFreePositionControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\AnnotationControls\AnnotationFreePositionControl.resx">
+      <DependentUpon>AnnotationFreePositionControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>AnnotationFreePositionControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\AnnotationControls\AnnotationFreePositionDockingControl.pt-BR.resx">
+      <DependentUpon>AnnotationFreePositionDockingControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>AnnotationFreePositionDockingControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\AnnotationControls\AnnotationFreePositionDockingControl.resx">
+      <DependentUpon>AnnotationFreePositionDockingControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>AnnotationFreePositionDockingControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\AnnotationControls\AnnotationFreePositionIndentsControl.pt-BR.resx">
+      <DependentUpon>AnnotationFreePositionIndentsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>AnnotationFreePositionIndentsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\AnnotationControls\AnnotationFreePositionIndentsControl.resx">
+      <DependentUpon>AnnotationFreePositionIndentsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>AnnotationFreePositionIndentsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\AnnotationControls\AnnotationGeneralControl.pt-BR.resx">
+      <DependentUpon>AnnotationGeneralControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>AnnotationGeneralControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\AnnotationControls\AnnotationGeneralControl.resx">
+      <DependentUpon>AnnotationGeneralControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>AnnotationGeneralControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\AnnotationControls\AnnotationImageContentControl.pt-BR.resx">
+      <DependentUpon>AnnotationImageContentControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>AnnotationImageContentControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\AnnotationControls\AnnotationImageContentControl.resx">
+      <DependentUpon>AnnotationImageContentControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>AnnotationImageContentControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\AnnotationControls\AnnotationListRedactControl.pt-BR.resx">
+      <DependentUpon>AnnotationListRedactControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>AnnotationListRedactControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\AnnotationControls\AnnotationListRedactControl.resx">
+      <DependentUpon>AnnotationListRedactControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>AnnotationListRedactControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\AnnotationControls\AnnotationPaneAnchorPointControl.pt-BR.resx">
+      <DependentUpon>AnnotationPaneAnchorPointControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>AnnotationPaneAnchorPointControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\AnnotationControls\AnnotationPaneAnchorPointControl.resx">
+      <DependentUpon>AnnotationPaneAnchorPointControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>AnnotationPaneAnchorPointControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\AnnotationControls\AnnotationRelativePositionControl.pt-BR.resx">
+      <DependentUpon>AnnotationRelativePositionControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>AnnotationRelativePositionControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\AnnotationControls\AnnotationRelativePositionControl.resx">
+      <DependentUpon>AnnotationRelativePositionControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>AnnotationRelativePositionControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\AnnotationControls\AnnotationSeriesPointAnchorPointControl.pt-BR.resx">
+      <DependentUpon>AnnotationSeriesPointAnchorPointControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>AnnotationSeriesPointAnchorPointControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\AnnotationControls\AnnotationSeriesPointAnchorPointControl.resx">
+      <DependentUpon>AnnotationSeriesPointAnchorPointControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>AnnotationSeriesPointAnchorPointControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\AnnotationControls\AnnotationShapePositionControl.pt-BR.resx">
+      <DependentUpon>AnnotationShapePositionControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>AnnotationShapePositionControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\AnnotationControls\AnnotationShapePositionControl.resx">
+      <DependentUpon>AnnotationShapePositionControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>AnnotationShapePositionControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\AnnotationControls\AnnotationTextContentControl.pt-BR.resx">
+      <DependentUpon>AnnotationTextContentControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>AnnotationTextContentControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\AnnotationControls\AnnotationTextContentControl.resx">
+      <DependentUpon>AnnotationTextContentControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>AnnotationTextContentControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\AnnotationControls\AxisCoordinateControl.pt-BR.resx">
+      <DependentUpon>AxisCoordinateControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>AxisCoordinateControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\AnnotationControls\AxisCoordinateControl.resx">
+      <DependentUpon>AxisCoordinateControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>AxisCoordinateControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\BackgroundControl.pt-BR.resx">
+      <DependentUpon>BackgroundControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>BackgroundControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\BackgroundControl.resx">
+      <DependentUpon>BackgroundControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>BackgroundControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartAppearanceControl.pt-BR.resx">
+      <DependentUpon>ChartAppearanceControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>ChartAppearanceControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartAppearanceControl.resx">
+      <DependentUpon>ChartAppearanceControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>ChartAppearanceControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartAxesControls\3DAxes\Axis3DAppearanceControl.pt-BR.resx">
+      <DependentUpon>Axis3DAppearanceControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>Axis3DAppearanceControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartAxesControls\3DAxes\Axis3DAppearanceControl.resx">
+      <DependentUpon>Axis3DAppearanceControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>Axis3DAppearanceControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartAxesControls\3DAxes\Axis3DControl.pt-BR.resx">
+      <DependentUpon>Axis3DControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>Axis3DControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartAxesControls\3DAxes\Axis3DControl.resx">
+      <DependentUpon>Axis3DControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>Axis3DControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartAxesControls\AxesNotSupportedControl.pt-BR.resx">
+      <DependentUpon>AxesNotSupportedControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>AxesNotSupportedControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartAxesControls\AxesNotSupportedControl.resx">
+      <DependentUpon>AxesNotSupportedControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>AxesNotSupportedControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartAxesControls\AxisDateTimeScaleOptionsControl.pt-BR.resx">
+      <DependentUpon>AxisDateTimeScaleOptionsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>AxisDateTimeScaleOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartAxesControls\AxisDateTimeScaleOptionsControl.resx">
+      <DependentUpon>AxisDateTimeScaleOptionsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>AxisDateTimeScaleOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartAxesControls\AxisGeneralControl.pt-BR.resx">
+      <DependentUpon>AxisGeneralControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>AxisGeneralControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartAxesControls\AxisGeneralControl.resx">
+      <DependentUpon>AxisGeneralControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>AxisGeneralControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartAxesControls\AxisGeneralTabsControl.pt-BR.resx">
+      <DependentUpon>AxisGeneralTabsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>AxisGeneralTabsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartAxesControls\AxisGeneralTabsControl.resx">
+      <DependentUpon>AxisGeneralTabsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>AxisGeneralTabsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartAxesControls\AxisLabelControl.pt-BR.resx">
+      <DependentUpon>AxisLabelControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>AxisLabelControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartAxesControls\AxisLabelControl.resx">
+      <DependentUpon>AxisLabelControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>AxisLabelControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartAxesControls\AxisLabelLayoutControl.pt-BR.resx">
+      <DependentUpon>AxisLabelLayoutControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>AxisLabelLayoutControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartAxesControls\AxisLabelLayoutControl.resx">
+      <DependentUpon>AxisLabelLayoutControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>AxisLabelLayoutControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartAxesControls\AxisLabelTextSettingsControl.pt-BR.resx">
+      <DependentUpon>AxisLabelTextSettingsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>AxisLabelTextSettingsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartAxesControls\AxisLabelTextSettingsControl.resx">
+      <DependentUpon>AxisLabelTextSettingsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>AxisLabelTextSettingsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartAxesControls\AxisRangeControl.pt-BR.resx">
+      <DependentUpon>AxisRangeControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>AxisRangeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartAxesControls\AxisRangeControl.resx">
+      <DependentUpon>AxisRangeControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>AxisRangeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartAxesControls\RadarAxes\RadarAxesElementsControl.pt-BR.resx">
+      <DependentUpon>RadarAxesElementsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>RadarAxesElementsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartAxesControls\RadarAxes\RadarAxesElementsControl.resx">
+      <DependentUpon>RadarAxesElementsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>RadarAxesElementsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartAxesControls\RadarAxes\RadarAxisAppearanceControl.pt-BR.resx">
+      <DependentUpon>RadarAxisAppearanceControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>RadarAxisAppearanceControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartAxesControls\RadarAxes\RadarAxisAppearanceControl.resx">
+      <DependentUpon>RadarAxisAppearanceControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>RadarAxisAppearanceControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartAxesControls\RadarAxes\RadarAxisXControl.pt-BR.resx">
+      <DependentUpon>RadarAxisXControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>RadarAxisXControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartAxesControls\RadarAxes\RadarAxisXControl.resx">
+      <DependentUpon>RadarAxisXControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>RadarAxisXControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartAxesControls\RadarAxes\RadarAxisYControl.pt-BR.resx">
+      <DependentUpon>RadarAxisYControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>RadarAxisYControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartAxesControls\RadarAxes\RadarAxisYControl.resx">
+      <DependentUpon>RadarAxisYControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>RadarAxisYControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartAxesControls\WorkdaysControl.resx">
+      <DependentUpon>WorkdaysControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>WorkdaysControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartAxesControls\XYAxes\AxesElementsControl.pt-BR.resx">
+      <DependentUpon>AxesElementsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>AxesElementsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartAxesControls\XYAxes\AxesElementsControl.resx">
+      <DependentUpon>AxesElementsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>AxesElementsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartAxesControls\XYAxes\AxisAppearanceControl.pt-BR.resx">
+      <DependentUpon>AxisAppearanceControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>AxisAppearanceControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartAxesControls\XYAxes\AxisAppearanceControl.resx">
+      <DependentUpon>AxisAppearanceControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>AxisAppearanceControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartAxesControls\XYAxes\AxisTitleControl.pt-BR.resx">
+      <DependentUpon>AxisTitleControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>AxisTitleControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartAxesControls\XYAxes\AxisTitleControl.resx">
+      <DependentUpon>AxisTitleControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>AxisTitleControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartAxesControls\XYAxes\ChartAxisControl.pt-BR.resx">
+      <DependentUpon>ChartAxisControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>ChartAxisControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartAxesControls\XYAxes\ChartAxisControl.resx">
+      <DependentUpon>ChartAxisControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>ChartAxisControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartAxesControls\XYAxes\ConstantLineAppearanceControl.pt-BR.resx">
+      <DependentUpon>ConstantLineAppearanceControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>ConstantLineAppearanceControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartAxesControls\XYAxes\ConstantLineAppearanceControl.resx">
+      <DependentUpon>ConstantLineAppearanceControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>ConstantLineAppearanceControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartAxesControls\XYAxes\ConstantLineGeneralControl.pt-BR.resx">
+      <DependentUpon>ConstantLineGeneralControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>ConstantLineGeneralControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartAxesControls\XYAxes\ConstantLineGeneralControl.resx">
+      <DependentUpon>ConstantLineGeneralControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>ConstantLineGeneralControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartAxesControls\XYAxes\ConstantLineListRedactControl.pt-BR.resx">
+      <DependentUpon>ConstantLineListRedactControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>ConstantLineListRedactControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartAxesControls\XYAxes\ConstantLineListRedactControl.resx">
+      <DependentUpon>ConstantLineListRedactControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>ConstantLineListRedactControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartAxesControls\XYAxes\ConstantLinesControl.pt-BR.resx">
+      <DependentUpon>ConstantLinesControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>ConstantLinesControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartAxesControls\XYAxes\ConstantLinesControl.resx">
+      <DependentUpon>ConstantLinesControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>ConstantLinesControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartAxesControls\XYAxes\ConstantLineTitleControl.pt-BR.resx">
+      <DependentUpon>ConstantLineTitleControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>ConstantLineTitleControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartAxesControls\XYAxes\ConstantLineTitleControl.resx">
+      <DependentUpon>ConstantLineTitleControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>ConstantLineTitleControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartAxesControls\XYAxes\CustomLabelsControl.pt-BR.resx">
+      <DependentUpon>CustomLabelsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>CustomLabelsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartAxesControls\XYAxes\CustomLabelsControl.resx">
+      <DependentUpon>CustomLabelsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>CustomLabelsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartAxesControls\XYAxes\CustomLabelsListRedactControl.pt-BR.resx">
+      <DependentUpon>CustomLabelsListRedactControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>CustomLabelsListRedactControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartAxesControls\XYAxes\CustomLabelsListRedactControl.resx">
+      <DependentUpon>CustomLabelsListRedactControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>CustomLabelsListRedactControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartAxesControls\XYAxes\GridLinesControl.pt-BR.resx">
+      <DependentUpon>GridLinesControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>GridLinesControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartAxesControls\XYAxes\GridLinesControl.resx">
+      <DependentUpon>GridLinesControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>GridLinesControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartAxesControls\XYAxes\ScaleBreakAppearanceControl.pt-BR.resx">
+      <DependentUpon>ScaleBreakAppearanceControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>ScaleBreakAppearanceControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartAxesControls\XYAxes\ScaleBreakAppearanceControl.resx">
+      <DependentUpon>ScaleBreakAppearanceControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>ScaleBreakAppearanceControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartAxesControls\XYAxes\ScaleBreakGeneralControl.pt-BR.resx">
+      <DependentUpon>ScaleBreakGeneralControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>ScaleBreakGeneralControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartAxesControls\XYAxes\ScaleBreakGeneralControl.resx">
+      <DependentUpon>ScaleBreakGeneralControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>ScaleBreakGeneralControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartAxesControls\XYAxes\ScaleBreakListRedactControl.pt-BR.resx">
+      <DependentUpon>ScaleBreakListRedactControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>ScaleBreakListRedactControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartAxesControls\XYAxes\ScaleBreakListRedactControl.resx">
+      <DependentUpon>ScaleBreakListRedactControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>ScaleBreakListRedactControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartAxesControls\XYAxes\ScaleBreaksAutoControl.pt-BR.resx">
+      <DependentUpon>ScaleBreaksAutoControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>ScaleBreaksAutoControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartAxesControls\XYAxes\ScaleBreaksAutoControl.resx">
+      <DependentUpon>ScaleBreaksAutoControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>ScaleBreaksAutoControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartAxesControls\XYAxes\ScaleBreaksControl.pt-BR.resx">
+      <DependentUpon>ScaleBreaksControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>ScaleBreaksControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartAxesControls\XYAxes\ScaleBreaksControl.resx">
+      <DependentUpon>ScaleBreaksControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>ScaleBreaksControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartAxesControls\XYAxes\StripAppearanceControl.pt-BR.resx">
+      <DependentUpon>StripAppearanceControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>StripAppearanceControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartAxesControls\XYAxes\StripAppearanceControl.resx">
+      <DependentUpon>StripAppearanceControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>StripAppearanceControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartAxesControls\XYAxes\StripsControl.pt-BR.resx">
+      <DependentUpon>StripsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>StripsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartAxesControls\XYAxes\StripsControl.resx">
+      <DependentUpon>StripsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>StripsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartAxesControls\XYAxes\StripsLimitsControl.pt-BR.resx">
+      <DependentUpon>StripsLimitsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>StripsLimitsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartAxesControls\XYAxes\StripsLimitsControl.resx">
+      <DependentUpon>StripsLimitsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>StripsLimitsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartAxesControls\XYAxes\StripsListRedactControl.pt-BR.resx">
+      <DependentUpon>StripsListRedactControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>StripsListRedactControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartAxesControls\XYAxes\StripsListRedactControl.resx">
+      <DependentUpon>StripsListRedactControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>StripsListRedactControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartAxesControls\XYAxes\StripsRedactControl.pt-BR.resx">
+      <DependentUpon>StripsRedactControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>StripsRedactControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartAxesControls\XYAxes\StripsRedactControl.resx">
+      <DependentUpon>StripsRedactControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>StripsRedactControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartAxesControls\XYAxes\TickmarksControl.pt-BR.resx">
+      <DependentUpon>TickmarksControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>TickmarksControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartAxesControls\XYAxes\TickmarksControl.resx">
+      <DependentUpon>TickmarksControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>TickmarksControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartDataControl\DataBindingControl.pt-BR.resx">
+      <DependentUpon>DataBindingControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>DataBindingControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartDataControl\DataBindingControl.resx">
+      <DependentUpon>DataBindingControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>DataBindingControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartDataControl\SeriesDataBindingControl.pt-BR.resx">
+      <DependentUpon>SeriesDataBindingControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>SeriesDataBindingControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartDataControl\SeriesDataBindingControl.resx">
+      <DependentUpon>SeriesDataBindingControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>SeriesDataBindingControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartDataControl\SeriesTemplateDataBindingControl.pt-BR.resx">
+      <DependentUpon>SeriesTemplateDataBindingControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>SeriesTemplateDataBindingControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartDataControl\SeriesTemplateDataBindingControl.resx">
+      <DependentUpon>SeriesTemplateDataBindingControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>SeriesTemplateDataBindingControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartDiagramControls\DiagramNotFoundControl.pt-BR.resx">
+      <DependentUpon>DiagramNotFoundControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>DiagramNotFoundControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartDiagramControls\DiagramNotFoundControl.resx">
+      <DependentUpon>DiagramNotFoundControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>DiagramNotFoundControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartDiagramControls\Pie3DDiagramControl.pt-BR.resx">
+      <DependentUpon>Pie3DDiagramControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>Pie3DDiagramControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartDiagramControls\Pie3DDiagramControl.resx">
+      <DependentUpon>Pie3DDiagramControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>Pie3DDiagramControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartDiagramControls\PieDiagramControl.pt-BR.resx">
+      <DependentUpon>PieDiagramControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>PieDiagramControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartDiagramControls\PieDiagramControl.resx">
+      <DependentUpon>PieDiagramControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>PieDiagramControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartDiagramControls\RadarDiagramControl.pt-BR.resx">
+      <DependentUpon>RadarDiagramControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>RadarDiagramControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartDiagramControls\RadarDiagramControl.resx">
+      <DependentUpon>RadarDiagramControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>RadarDiagramControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartDiagramControls\RadarDiagramDrawingStyleControl.pt-BR.resx">
+      <DependentUpon>RadarDiagramDrawingStyleControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>RadarDiagramDrawingStyleControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartDiagramControls\RadarDiagramDrawingStyleControl.resx">
+      <DependentUpon>RadarDiagramDrawingStyleControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>RadarDiagramDrawingStyleControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartDiagramControls\RotateControl.pt-BR.resx">
+      <DependentUpon>RotateControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>RotateControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartDiagramControls\RotateControl.resx">
+      <DependentUpon>RotateControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>RotateControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartDiagramControls\ScrollingOptionsControl.pt-BR.resx">
+      <DependentUpon>ScrollingOptionsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>ScrollingOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartDiagramControls\ScrollingOptionsControl.resx">
+      <DependentUpon>ScrollingOptionsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>ScrollingOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartDiagramControls\ScrollingZooming2DControl.pt-BR.resx">
+      <DependentUpon>ScrollingZooming2DControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>ScrollingZooming2DControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartDiagramControls\ScrollingZooming2DControl.resx">
+      <DependentUpon>ScrollingZooming2DControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>ScrollingZooming2DControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartDiagramControls\ScrollingZooming3DControl.pt-BR.resx">
+      <DependentUpon>ScrollingZooming3DControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>ScrollingZooming3DControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartDiagramControls\ScrollingZooming3DControl.resx">
+      <DependentUpon>ScrollingZooming3DControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>ScrollingZooming3DControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartDiagramControls\SecondaryAxesRedact.pt-BR.resx">
+      <DependentUpon>SecondaryAxesRedact.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>SecondaryAxesRedact.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartDiagramControls\SecondaryAxesRedact.resx">
+      <DependentUpon>SecondaryAxesRedact.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>SecondaryAxesRedact.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartDiagramControls\XYDiagram3DControl.pt-BR.resx">
+      <DependentUpon>XYDiagram3DControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>XYDiagram3DControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartDiagramControls\XYDiagram3DControl.resx">
+      <DependentUpon>XYDiagram3DControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>XYDiagram3DControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartDiagramControls\XYDiagramControl.pt-BR.resx">
+      <DependentUpon>XYDiagramControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>XYDiagramControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartDiagramControls\XYDiagramControl.resx">
+      <DependentUpon>XYDiagramControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>XYDiagramControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartDiagramControls\ZoomingOptionsControl.pt-BR.resx">
+      <DependentUpon>ZoomingOptionsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>ZoomingOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartDiagramControls\ZoomingOptionsControl.resx">
+      <DependentUpon>ZoomingOptionsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>ZoomingOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartImageListBoxContainer.resx">
+      <DependentUpon>ChartImageListBoxContainer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>ChartImageListBoxContainer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartLegendControls\LegendControl.pt-BR.resx">
+      <DependentUpon>LegendControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>LegendControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartLegendControls\LegendControl.resx">
+      <DependentUpon>LegendControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>LegendControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartLegendControls\LegendGeneralControl.pt-BR.resx">
+      <DependentUpon>LegendGeneralControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>LegendGeneralControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartLegendControls\LegendGeneralControl.resx">
+      <DependentUpon>LegendGeneralControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>LegendGeneralControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartLegendControls\LegendInteriorControl.pt-BR.resx">
+      <DependentUpon>LegendInteriorControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>LegendInteriorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartLegendControls\LegendInteriorControl.resx">
+      <DependentUpon>LegendInteriorControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>LegendInteriorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartLegendControls\LegendMarkerControl.pt-BR.resx">
+      <DependentUpon>LegendMarkerControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>LegendMarkerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartLegendControls\LegendMarkerControl.resx">
+      <DependentUpon>LegendMarkerControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>LegendMarkerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartLegendControls\LegendTextControl.pt-BR.resx">
+      <DependentUpon>LegendTextControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>LegendTextControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartLegendControls\LegendTextControl.resx">
+      <DependentUpon>LegendTextControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>LegendTextControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartPaneControls\AxisScrollBarOptionsControl.pt-BR.resx">
+      <DependentUpon>AxisScrollBarOptionsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>AxisScrollBarOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartPaneControls\AxisScrollBarOptionsControl.resx">
+      <DependentUpon>AxisScrollBarOptionsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>AxisScrollBarOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartPaneControls\PaneControl.pt-BR.resx">
+      <DependentUpon>PaneControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>PaneControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartPaneControls\PaneControl.resx">
+      <DependentUpon>PaneControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>PaneControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartPaneControls\PanesNotSupportedControl.pt-BR.resx">
+      <DependentUpon>PanesNotSupportedControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>PanesNotSupportedControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartPaneControls\PanesNotSupportedControl.resx">
+      <DependentUpon>PanesNotSupportedControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>PanesNotSupportedControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartPaneControls\PanesRedact.pt-BR.resx">
+      <DependentUpon>PanesRedact.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>PanesRedact.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartPaneControls\PanesRedact.resx">
+      <DependentUpon>PanesRedact.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>PanesRedact.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartPaneControls\ScrollBarOptionsControl.pt-BR.resx">
+      <DependentUpon>ScrollBarOptionsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>ScrollBarOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartPaneControls\ScrollBarOptionsControl.resx">
+      <DependentUpon>ScrollBarOptionsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>ScrollBarOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartPropertiesTabsControl.pt-BR.resx">
+      <DependentUpon>ChartPropertiesTabsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>ChartPropertiesTabsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartPropertiesTabsControl.resx">
+      <DependentUpon>ChartPropertiesTabsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>ChartPropertiesTabsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartTitleControls\SeriesTitleListRedactControl.pt-BR.resx">
+      <DependentUpon>SeriesTitleListRedactControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>SeriesTitleListRedactControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartTitleControls\SeriesTitleListRedactControl.resx">
+      <DependentUpon>SeriesTitleListRedactControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>SeriesTitleListRedactControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartTitleControls\TitleControl.pt-BR.resx">
+      <DependentUpon>TitleControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>TitleControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartTitleControls\TitleControl.resx">
+      <DependentUpon>TitleControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>TitleControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartTitleControls\TitleGeneralControl.pt-BR.resx">
+      <DependentUpon>TitleGeneralControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>TitleGeneralControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartTitleControls\TitleGeneralControl.resx">
+      <DependentUpon>TitleGeneralControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>TitleGeneralControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartTitleControls\TitleListRedactControl.pt-BR.resx">
+      <DependentUpon>TitleListRedactControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>TitleListRedactControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartTitleControls\TitleListRedactControl.resx">
+      <DependentUpon>TitleListRedactControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>TitleListRedactControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartTypeControl.pt-BR.resx">
+      <DependentUpon>ChartTypeControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>ChartTypeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ChartTypeControl.resx">
+      <DependentUpon>ChartTypeControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>ChartTypeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\DateTimeOptionsControl.pt-BR.resx">
+      <DependentUpon>DateTimeOptionsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>DateTimeOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\DateTimeOptionsControl.resx">
+      <DependentUpon>DateTimeOptionsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>DateTimeOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ImageControl.pt-BR.resx">
+      <DependentUpon>ImageControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>ImageControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\ImageControl.resx">
+      <DependentUpon>ImageControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>ImageControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\MainWizardControl.pt-BR.resx">
+      <DependentUpon>MainWizardControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>MainWizardControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\MainWizardControl.resx">
+      <DependentUpon>MainWizardControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>MainWizardControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\NotificationControl.resx">
+      <DependentUpon>NotificationControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>NotificationControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\NumericOptionsControl.pt-BR.resx">
+      <DependentUpon>NumericOptionsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>NumericOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\NumericOptionsControl.resx">
+      <DependentUpon>NumericOptionsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>NumericOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\PivotGridDataSourceControl.resx">
+      <DependentUpon>PivotGridDataSourceControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>PivotGridDataSourceControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\RectangleIndentsControl.pt-BR.resx">
+      <DependentUpon>RectangleIndentsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>RectangleIndentsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\RectangleIndentsControl.resx">
+      <DependentUpon>RectangleIndentsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>RectangleIndentsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesConfigControl.pt-BR.resx">
+      <DependentUpon>SeriesConfigControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>SeriesConfigControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesConfigControl.resx">
+      <DependentUpon>SeriesConfigControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>SeriesConfigControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesLabelsControls\BarSeriesLabelOptionsControl.pt-BR.resx">
+      <DependentUpon>BarSeriesLabelOptionsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>BarSeriesLabelOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesLabelsControls\BarSeriesLabelOptionsControl.resx">
+      <DependentUpon>BarSeriesLabelOptionsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>BarSeriesLabelOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesLabelsControls\BubbleSeriesLabelOptionsControl.pt-BR.resx">
+      <DependentUpon>BubbleSeriesLabelOptionsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>BubbleSeriesLabelOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesLabelsControls\BubbleSeriesLabelOptionsControl.resx">
+      <DependentUpon>BubbleSeriesLabelOptionsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>BubbleSeriesLabelOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesLabelsControls\BubbleViewControl.pt-BR.resx">
+      <DependentUpon>BubbleViewControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>BubbleViewControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesLabelsControls\BubbleViewControl.resx">
+      <DependentUpon>BubbleViewControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>BubbleViewControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesLabelsControls\ConnectorControl.pt-BR.resx">
+      <DependentUpon>ConnectorControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>ConnectorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesLabelsControls\ConnectorControl.resx">
+      <DependentUpon>ConnectorControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>ConnectorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesLabelsControls\FunnelSeriesLabelOptionsControl.pt-BR.resx">
+      <DependentUpon>FunnelSeriesLabelOptionsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>FunnelSeriesLabelOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesLabelsControls\FunnelSeriesLabelOptionsControl.resx">
+      <DependentUpon>FunnelSeriesLabelOptionsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>FunnelSeriesLabelOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesLabelsControls\LabelControl.pt-BR.resx">
+      <DependentUpon>LabelControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>LabelControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesLabelsControls\LabelControl.resx">
+      <DependentUpon>LabelControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>LabelControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesLabelsControls\LayoutSettingsControl.resx">
+      <DependentUpon>LayoutSettingsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>LayoutSettingsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesLabelsControls\OverlappingSettingsControl.pt-BR.resx">
+      <DependentUpon>OverlappingSettingsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>OverlappingSettingsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesLabelsControls\OverlappingSettingsControl.resx">
+      <DependentUpon>OverlappingSettingsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>OverlappingSettingsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesLabelsControls\PieSeriesLabelOptionsControl.pt-BR.resx">
+      <DependentUpon>PieSeriesLabelOptionsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>PieSeriesLabelOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesLabelsControls\PieSeriesLabelOptionsControl.resx">
+      <DependentUpon>PieSeriesLabelOptionsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>PieSeriesLabelOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesLabelsControls\PointSeriesLabelOptionsControl.pt-BR.resx">
+      <DependentUpon>PointSeriesLabelOptionsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>PointSeriesLabelOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesLabelsControls\PointSeriesLabelOptionsControl.resx">
+      <DependentUpon>PointSeriesLabelOptionsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>PointSeriesLabelOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesLabelsControls\RangeBarLabelSettings.pt-BR.resx">
+      <DependentUpon>RangeBarLabelSettings.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>RangeBarLabelSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesLabelsControls\RangeBarLabelSettings.resx">
+      <DependentUpon>RangeBarLabelSettings.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>RangeBarLabelSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesLabelsControls\SeriesLabelGeneralControl.pt-BR.resx">
+      <DependentUpon>SeriesLabelGeneralControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>SeriesLabelGeneralControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesLabelsControls\SeriesLabelGeneralControl.resx">
+      <DependentUpon>SeriesLabelGeneralControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>SeriesLabelGeneralControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesLabelsControls\SeriesLabelNotSupportedControl.pt-BR.resx">
+      <DependentUpon>SeriesLabelNotSupportedControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>SeriesLabelNotSupportedControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesLabelsControls\SeriesLabelNotSupportedControl.resx">
+      <DependentUpon>SeriesLabelNotSupportedControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>SeriesLabelNotSupportedControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesLabelsControls\TextSettingsControl.pt-BR.resx">
+      <DependentUpon>TextSettingsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>TextSettingsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesLabelsControls\TextSettingsControl.resx">
+      <DependentUpon>TextSettingsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>TextSettingsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesListBoxControl.pt-BR.resx">
+      <DependentUpon>SeriesListBoxControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>SeriesListBoxControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesListBoxControl.resx">
+      <DependentUpon>SeriesListBoxControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>SeriesListBoxControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\AuxiliaryControls\BarDistanceControl.pt-BR.resx">
+      <DependentUpon>BarDistanceControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>BarDistanceControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\AuxiliaryControls\BarDistanceControl.resx">
+      <DependentUpon>BarDistanceControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>BarDistanceControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\AuxiliaryControls\BorderControl.pt-BR.resx">
+      <DependentUpon>BorderControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>BorderControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\AuxiliaryControls\BorderControl.resx">
+      <DependentUpon>BorderControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>BorderControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\AuxiliaryControls\ColorControl.pt-BR.resx">
+      <DependentUpon>ColorControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>ColorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\AuxiliaryControls\ColorControl.resx">
+      <DependentUpon>ColorControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>ColorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\AuxiliaryControls\DoughnutOptionsControl.pt-BR.resx">
+      <DependentUpon>DoughnutOptionsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>DoughnutOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\AuxiliaryControls\DoughnutOptionsControl.resx">
+      <DependentUpon>DoughnutOptionsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>DoughnutOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\AuxiliaryControls\ExplodedPointsControl.pt-BR.resx">
+      <DependentUpon>ExplodedPointsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>ExplodedPointsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\AuxiliaryControls\ExplodedPointsControl.resx">
+      <DependentUpon>ExplodedPointsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>ExplodedPointsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\AuxiliaryControls\FinancialLineStyleControl.pt-BR.resx">
+      <DependentUpon>FinancialLineStyleControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>FinancialLineStyleControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\AuxiliaryControls\FinancialLineStyleControl.resx">
+      <DependentUpon>FinancialLineStyleControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>FinancialLineStyleControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\AuxiliaryControls\LineStyleControl.pt-BR.resx">
+      <DependentUpon>LineStyleControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>LineStyleControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\AuxiliaryControls\LineStyleControl.resx">
+      <DependentUpon>LineStyleControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>LineStyleControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\AuxiliaryControls\MarkerBaseControl.pt-BR.resx">
+      <DependentUpon>MarkerBaseControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>MarkerBaseControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\AuxiliaryControls\MarkerBaseControl.resx">
+      <DependentUpon>MarkerBaseControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>MarkerBaseControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\AuxiliaryControls\MarkerBorderControl.pt-BR.resx">
+      <DependentUpon>MarkerBorderControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>MarkerBorderControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\AuxiliaryControls\MarkerBorderControl.resx">
+      <DependentUpon>MarkerBorderControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>MarkerBorderControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\AuxiliaryControls\MarkerControl.pt-BR.resx">
+      <DependentUpon>MarkerControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>MarkerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\AuxiliaryControls\MarkerControl.resx">
+      <DependentUpon>MarkerControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>MarkerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\AuxiliaryControls\PolygonFillStyle3DSeriesViewControl.pt-BR.resx">
+      <DependentUpon>PolygonFillStyle3DSeriesViewControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>PolygonFillStyle3DSeriesViewControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\AuxiliaryControls\PolygonFillStyle3DSeriesViewControl.resx">
+      <DependentUpon>PolygonFillStyle3DSeriesViewControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>PolygonFillStyle3DSeriesViewControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\AuxiliaryControls\PolygonFillStyleSeriesViewControl.pt-BR.resx">
+      <DependentUpon>PolygonFillStyleSeriesViewControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>PolygonFillStyleSeriesViewControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\AuxiliaryControls\PolygonFillStyleSeriesViewControl.resx">
+      <DependentUpon>PolygonFillStyleSeriesViewControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>PolygonFillStyleSeriesViewControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\AuxiliaryControls\RectangleFillStyle3DSeriesViewControl.pt-BR.resx">
+      <DependentUpon>RectangleFillStyle3DSeriesViewControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>RectangleFillStyle3DSeriesViewControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\AuxiliaryControls\RectangleFillStyle3DSeriesViewControl.resx">
+      <DependentUpon>RectangleFillStyle3DSeriesViewControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>RectangleFillStyle3DSeriesViewControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\AuxiliaryControls\RectangleFillStyleSeriesViewControl.pt-BR.resx">
+      <DependentUpon>RectangleFillStyleSeriesViewControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>RectangleFillStyleSeriesViewControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\AuxiliaryControls\RectangleFillStyleSeriesViewControl.resx">
+      <DependentUpon>RectangleFillStyleSeriesViewControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>RectangleFillStyleSeriesViewControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\AuxiliaryControls\ReductionOptionsControl.pt-BR.resx">
+      <DependentUpon>ReductionOptionsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>ReductionOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\AuxiliaryControls\ReductionOptionsControl.resx">
+      <DependentUpon>ReductionOptionsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>ReductionOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\AuxiliaryControls\SeriesTitlesControl.pt-BR.resx">
+      <DependentUpon>SeriesTitlesControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>SeriesTitlesControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\AuxiliaryControls\SeriesTitlesControl.resx">
+      <DependentUpon>SeriesTitlesControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>SeriesTitlesControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\AuxiliaryControls\ShadowControl.pt-BR.resx">
+      <DependentUpon>ShadowControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>ShadowControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\AuxiliaryControls\ShadowControl.resx">
+      <DependentUpon>ShadowControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>ShadowControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\AuxiliaryControls\XYDiagramSeriesViewLinkedElementsControl.pt-BR.resx">
+      <DependentUpon>XYDiagramSeriesViewLinkedElementsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>XYDiagramSeriesViewLinkedElementsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\AuxiliaryControls\XYDiagramSeriesViewLinkedElementsControl.resx">
+      <DependentUpon>XYDiagramSeriesViewLinkedElementsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>XYDiagramSeriesViewLinkedElementsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\GeneralOptionsControls\Area3DGeneralOptionsControl.pt-BR.resx">
+      <DependentUpon>Area3DGeneralOptionsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>Area3DGeneralOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\GeneralOptionsControls\Area3DGeneralOptionsControl.resx">
+      <DependentUpon>Area3DGeneralOptionsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>Area3DGeneralOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\GeneralOptionsControls\Bar3DGeneralOptionsControl.pt-BR.resx">
+      <DependentUpon>Bar3DGeneralOptionsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>Bar3DGeneralOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\GeneralOptionsControls\Bar3DGeneralOptionsControl.resx">
+      <DependentUpon>Bar3DGeneralOptionsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>Bar3DGeneralOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\GeneralOptionsControls\BarGeneralOptionsControl.pt-BR.resx">
+      <DependentUpon>BarGeneralOptionsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>BarGeneralOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\GeneralOptionsControls\BarGeneralOptionsControl.resx">
+      <DependentUpon>BarGeneralOptionsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>BarGeneralOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\GeneralOptionsControls\BubbleGeneralOptionsControl.pt-BR.resx">
+      <DependentUpon>BubbleGeneralOptionsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>BubbleGeneralOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\GeneralOptionsControls\BubbleGeneralOptionsControl.resx">
+      <DependentUpon>BubbleGeneralOptionsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>BubbleGeneralOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\GeneralOptionsControls\FinancialGeneralOptionsControl.pt-BR.resx">
+      <DependentUpon>FinancialGeneralOptionsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>FinancialGeneralOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\GeneralOptionsControls\FinancialGeneralOptionsControl.resx">
+      <DependentUpon>FinancialGeneralOptionsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>FinancialGeneralOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\GeneralOptionsControls\Funnel3DGeneralOptionsControl.pt-BR.resx">
+      <DependentUpon>Funnel3DGeneralOptionsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>Funnel3DGeneralOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\GeneralOptionsControls\Funnel3DGeneralOptionsControl.resx">
+      <DependentUpon>Funnel3DGeneralOptionsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>Funnel3DGeneralOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\GeneralOptionsControls\FunnelGeneralOptionsControl.pt-BR.resx">
+      <DependentUpon>FunnelGeneralOptionsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>FunnelGeneralOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\GeneralOptionsControls\FunnelGeneralOptionsControl.resx">
+      <DependentUpon>FunnelGeneralOptionsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>FunnelGeneralOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\GeneralOptionsControls\Line3DGeneralOptionsControl.pt-BR.resx">
+      <DependentUpon>Line3DGeneralOptionsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>Line3DGeneralOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\GeneralOptionsControls\Line3DGeneralOptionsControl.resx">
+      <DependentUpon>Line3DGeneralOptionsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>Line3DGeneralOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\GeneralOptionsControls\Pie3DGeneralOptionsControl.pt-BR.resx">
+      <DependentUpon>Pie3DGeneralOptionsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>Pie3DGeneralOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\GeneralOptionsControls\Pie3DGeneralOptionsControl.resx">
+      <DependentUpon>Pie3DGeneralOptionsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>Pie3DGeneralOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\GeneralOptionsControls\PieGeneralOptionsControl.pt-BR.resx">
+      <DependentUpon>PieGeneralOptionsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>PieGeneralOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\GeneralOptionsControls\PieGeneralOptionsControl.resx">
+      <DependentUpon>PieGeneralOptionsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>PieGeneralOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\GeneralOptionsControls\RadarLineGeneralOptionsControl.pt-BR.resx">
+      <DependentUpon>RadarLineGeneralOptionsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>RadarLineGeneralOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\GeneralOptionsControls\RadarLineGeneralOptionsControl.resx">
+      <DependentUpon>RadarLineGeneralOptionsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>RadarLineGeneralOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\GeneralOptionsControls\SplineGeneralOptionsControl.pt-BR.resx">
+      <DependentUpon>SplineGeneralOptionsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>SplineGeneralOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\GeneralOptionsControls\SplineGeneralOptionsControl.resx">
+      <DependentUpon>SplineGeneralOptionsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>SplineGeneralOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\GeneralOptionsControls\StackedBarGeneralOptionsControl.pt-BR.resx">
+      <DependentUpon>StackedBarGeneralOptionsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>StackedBarGeneralOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\GeneralOptionsControls\StackedBarGeneralOptionsControl.resx">
+      <DependentUpon>StackedBarGeneralOptionsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>StackedBarGeneralOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\GeneralOptionsControls\StepLineGeneralOptionsControl.pt-BR.resx">
+      <DependentUpon>StepLineGeneralOptionsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>StepLineGeneralOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\GeneralOptionsControls\StepLineGeneralOptionsControl.resx">
+      <DependentUpon>StepLineGeneralOptionsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>StepLineGeneralOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\GeneralOptionsControls\SwiftPlotGeneralOptionsControl.pt-BR.resx">
+      <DependentUpon>SwiftPlotGeneralOptionsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>SwiftPlotGeneralOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\GeneralOptionsControls\SwiftPlotGeneralOptionsControl.resx">
+      <DependentUpon>SwiftPlotGeneralOptionsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>SwiftPlotGeneralOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\IndicatorControls\FibonacciIndicatorControl.pt-BR.resx">
+      <DependentUpon>FibonacciIndicatorControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>FibonacciIndicatorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\IndicatorControls\FibonacciIndicatorControl.resx">
+      <DependentUpon>FibonacciIndicatorControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>FibonacciIndicatorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\IndicatorControls\FinancialIndicatorControl.pt-BR.resx">
+      <DependentUpon>FinancialIndicatorControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>FinancialIndicatorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\IndicatorControls\FinancialIndicatorControl.resx">
+      <DependentUpon>FinancialIndicatorControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>FinancialIndicatorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\IndicatorControls\FinancialIndicatorPointControl.pt-BR.resx">
+      <DependentUpon>FinancialIndicatorPointControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>FinancialIndicatorPointControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\IndicatorControls\FinancialIndicatorPointControl.resx">
+      <DependentUpon>FinancialIndicatorPointControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>FinancialIndicatorPointControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\IndicatorControls\IndicatorControlBase.pt-BR.resx">
+      <DependentUpon>IndicatorControlBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>IndicatorControlBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\IndicatorControls\IndicatorControlBase.resx">
+      <DependentUpon>IndicatorControlBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>IndicatorControlBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\IndicatorControls\IndicatorsControl.resx">
+      <DependentUpon>IndicatorsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>IndicatorsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\IndicatorControls\IndicatorsSelectionControl.resx">
+      <DependentUpon>IndicatorsSelectionControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>IndicatorsSelectionControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\IndicatorControls\MovingAverageControl.pt-BR.resx">
+      <DependentUpon>MovingAverageControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>MovingAverageControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\IndicatorControls\MovingAverageControl.resx">
+      <DependentUpon>MovingAverageControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>MovingAverageControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\IndicatorControls\SingleLevelIndicatorControl.pt-BR.resx">
+      <DependentUpon>SingleLevelIndicatorControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>SingleLevelIndicatorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\IndicatorControls\SingleLevelIndicatorControl.resx">
+      <DependentUpon>SingleLevelIndicatorControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>SingleLevelIndicatorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\IndicatorControls\SubsetBasedIndicatorControl.resx">
+      <DependentUpon>SubsetBasedIndicatorControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>SubsetBasedIndicatorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\IndicatorControls\TrendLineControl.pt-BR.resx">
+      <DependentUpon>TrendLineControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>TrendLineControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\IndicatorControls\TrendLineControl.resx">
+      <DependentUpon>TrendLineControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>TrendLineControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\RadarSeriesViewControl.pt-BR.resx">
+      <DependentUpon>RadarSeriesViewControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>RadarSeriesViewControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\RadarSeriesViewControl.resx">
+      <DependentUpon>RadarSeriesViewControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>RadarSeriesViewControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\SeriesViewAppearanceControl.pt-BR.resx">
+      <DependentUpon>SeriesViewAppearanceControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>SeriesViewAppearanceControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\SeriesViewAppearanceControl.resx">
+      <DependentUpon>SeriesViewAppearanceControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>SeriesViewAppearanceControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\SimpleDiagramSeriesViewBaseControl.pt-BR.resx">
+      <DependentUpon>SimpleDiagramSeriesViewBaseControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>SimpleDiagramSeriesViewBaseControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\SimpleDiagramSeriesViewBaseControl.resx">
+      <DependentUpon>SimpleDiagramSeriesViewBaseControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>SimpleDiagramSeriesViewBaseControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\XYDiagram3DSeriesViewBaseControl.pt-BR.resx">
+      <DependentUpon>XYDiagram3DSeriesViewBaseControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>XYDiagram3DSeriesViewBaseControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\XYDiagram3DSeriesViewBaseControl.resx">
+      <DependentUpon>XYDiagram3DSeriesViewBaseControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>XYDiagram3DSeriesViewBaseControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\XYDiagramSeriesViewBaseControl.pt-BR.resx">
+      <DependentUpon>XYDiagramSeriesViewBaseControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>XYDiagramSeriesViewBaseControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\XYDiagramSeriesViewBaseControl.resx">
+      <DependentUpon>XYDiagramSeriesViewBaseControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>XYDiagramSeriesViewBaseControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\XYDiagramSeriesViewBaseGeneralControl.pt-BR.resx">
+      <DependentUpon>XYDiagramSeriesViewBaseGeneralControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>XYDiagramSeriesViewBaseGeneralControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\SeriesViewControls\XYDiagramSeriesViewBaseGeneralControl.resx">
+      <DependentUpon>XYDiagramSeriesViewBaseGeneralControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>XYDiagramSeriesViewBaseGeneralControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\TextAppearanceControl.pt-BR.resx">
+      <DependentUpon>TextAppearanceControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>TextAppearanceControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\TextAppearanceControl.resx">
+      <DependentUpon>TextAppearanceControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>TextAppearanceControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\TopNOptionsControl.pt-BR.resx">
+      <DependentUpon>TopNOptionsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>TopNOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\TopNOptionsControl.resx">
+      <DependentUpon>TopNOptionsControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>TopNOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\WizardFormBase.pt-BR.resx">
+      <DependentUpon>WizardFormBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>WizardFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\WizardFormBase.resx">
+      <DependentUpon>WizardFormBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <DependentUpon>WizardFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+  </PropertyGroup>
+</Project>

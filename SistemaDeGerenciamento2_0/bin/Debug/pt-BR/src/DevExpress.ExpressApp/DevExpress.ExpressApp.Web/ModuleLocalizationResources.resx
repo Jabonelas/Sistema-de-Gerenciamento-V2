@@ -1,0 +1,759 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Non-calculated\ActionDesign\Actions\ChooseTheme\Caption" xml:space="preserve">
+    <value>Choose Theme</value>
+  </data>
+  <data name="ActionDesign\Actions\ChooseTheme\ShortCaption" xml:space="preserve">
+    <value>Choose Theme</value>
+  </data>
+  <data name="ActionDesign\Actions\ChooseTheme\NullValuePrompt" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="ActionDesign\Actions\ChooseTheme\ConfirmationMessage" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="ActionDesign\Actions\ChooseTheme\ToolTip" xml:space="preserve">
+    <value>Choose Theme</value>
+  </data>
+  <data name="Non-calculated\ActionDesign\Actions\Edit\Caption" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="ActionDesign\Actions\Edit\ShortCaption" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="ActionDesign\Actions\Edit\NullValuePrompt" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="ActionDesign\Actions\Edit\ConfirmationMessage" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="ActionDesign\Actions\Edit\ToolTip" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="Non-calculated\ActionDesign\Actions\InlineEdit\Caption" xml:space="preserve">
+    <value>Inline Edit</value>
+  </data>
+  <data name="ActionDesign\Actions\InlineEdit\ShortCaption" xml:space="preserve">
+    <value>Inline Edit</value>
+  </data>
+  <data name="ActionDesign\Actions\InlineEdit\NullValuePrompt" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="ActionDesign\Actions\InlineEdit\ConfirmationMessage" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="ActionDesign\Actions\InlineEdit\ToolTip" xml:space="preserve">
+    <value>Inline Edit</value>
+  </data>
+  <data name="Non-calculated\ActionDesign\Actions\SwitchToEditMode\Caption" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="ActionDesign\Actions\SwitchToEditMode\ShortCaption" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="ActionDesign\Actions\SwitchToEditMode\NullValuePrompt" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="ActionDesign\Actions\SwitchToEditMode\ConfirmationMessage" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="ActionDesign\Actions\SwitchToEditMode\ToolTip" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="Non-calculated\ActionDesign\Actions\ExportAnalysis\Caption" xml:space="preserve">
+    <value>Export Analysis to</value>
+  </data>
+  <data name="ActionDesign\Actions\ExportAnalysis\ShortCaption" xml:space="preserve">
+    <value>Export Analysis to</value>
+  </data>
+  <data name="ActionDesign\Actions\ExportAnalysis\NullValuePrompt" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="ActionDesign\Actions\ExportAnalysis\ConfirmationMessage" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="ActionDesign\Actions\ExportAnalysis\ToolTip" xml:space="preserve">
+    <value>Export Analysis to</value>
+  </data>
+  <data name="Non-calculated\ActionDesign\Actions\Export\Caption" xml:space="preserve">
+    <value>Export to</value>
+  </data>
+  <data name="ActionDesign\Actions\Export\ShortCaption" xml:space="preserve">
+    <value>Export to</value>
+  </data>
+  <data name="ActionDesign\Actions\Export\NullValuePrompt" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="ActionDesign\Actions\Export\ConfirmationMessage" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="ActionDesign\Actions\Export\ToolTip" xml:space="preserve">
+    <value>Export to</value>
+  </data>
+  <data name="Non-calculated\ActionDesign\Actions\QuickCreateAction\Caption" xml:space="preserve">
+    <value>Quick create</value>
+  </data>
+  <data name="ActionDesign\Actions\QuickCreateAction\ShortCaption" xml:space="preserve">
+    <value>Quick create</value>
+  </data>
+  <data name="ActionDesign\Actions\QuickCreateAction\NullValuePrompt" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="ActionDesign\Actions\QuickCreateAction\ConfirmationMessage" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="ActionDesign\Actions\QuickCreateAction\ToolTip" xml:space="preserve">
+    <value>Quick create</value>
+  </data>
+  <data name="Non-calculated\ActionDesign\Actions\NavigateTo\Caption" xml:space="preserve">
+    <value>Navigate To</value>
+  </data>
+  <data name="ActionDesign\Actions\NavigateTo\ShortCaption" xml:space="preserve">
+    <value>Navigate To</value>
+  </data>
+  <data name="ActionDesign\Actions\NavigateTo\NullValuePrompt" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="ActionDesign\Actions\NavigateTo\ConfirmationMessage" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="ActionDesign\Actions\NavigateTo\ToolTip" xml:space="preserve">
+    <value>Navigate To</value>
+  </data>
+  <data name="BOModel\DevExpress.ExpressApp.Web.Editors.UserControlDashboardOrganizationItem\ObjectCaptionFormat" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Non-calculated\BOModel\DevExpress.ExpressApp.Web.Editors.UserControlDashboardOrganizationItem\Caption" xml:space="preserve">
+    <value>User Control</value>
+  </data>
+  <data name="BOModel\DevExpress.ExpressApp.Web.Editors.UserControlDashboardOrganizationItem\OwnMembers\ControlPath\EditMask" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="BOModel\DevExpress.ExpressApp.Web.Editors.UserControlDashboardOrganizationItem\OwnMembers\ControlPath\DisplayFormat" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Non-calculated\BOModel\DevExpress.ExpressApp.Web.Editors.UserControlDashboardOrganizationItem\OwnMembers\ControlPath\Caption" xml:space="preserve">
+    <value>Control Path</value>
+  </data>
+  <data name="BOModel\DevExpress.ExpressApp.Web.Editors.UserControlDashboardOrganizationItem\OwnMembers\ControlPath\CaptionForTrue" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="BOModel\DevExpress.ExpressApp.Web.Editors.UserControlDashboardOrganizationItem\OwnMembers\ControlPath\CaptionForFalse" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Non-calculated\BOModel\DevExpress.ExpressApp.Web.Editors.UserControlDashboardOrganizationItem\OwnMembers\ControlPath\PredefinedValues" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="BOModel\DevExpress.ExpressApp.Web.Editors.UserControlDashboardOrganizationItem\OwnMembers\ControlPath\NullText" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Non-calculated\BOModel\DevExpress.ExpressApp.Web.Editors.UserControlDashboardOrganizationItem\OwnMembers\ControlPath\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="BOModel\DevExpress.ExpressApp.Web.LogonAttemptsAmountedToLimit\ObjectCaptionFormat" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Non-calculated\BOModel\DevExpress.ExpressApp.Web.LogonAttemptsAmountedToLimit\Caption" xml:space="preserve">
+    <value>Logon Attempts Amounted To Limit</value>
+  </data>
+  <data name="BOModel\DevExpress.ExpressApp.Web.ParameterlessLogonFailedInfo\ObjectCaptionFormat" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Non-calculated\BOModel\DevExpress.ExpressApp.Web.ParameterlessLogonFailedInfo\Caption" xml:space="preserve">
+    <value>Parameterless Logon Failed Info</value>
+  </data>
+  <data name="BOModel\DevExpress.ExpressApp.Web.ParameterlessLogonFailedInfo\OwnMembers\Message\EditMask" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="BOModel\DevExpress.ExpressApp.Web.ParameterlessLogonFailedInfo\OwnMembers\Message\DisplayFormat" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Non-calculated\BOModel\DevExpress.ExpressApp.Web.ParameterlessLogonFailedInfo\OwnMembers\Message\Caption" xml:space="preserve">
+    <value>Message</value>
+  </data>
+  <data name="BOModel\DevExpress.ExpressApp.Web.ParameterlessLogonFailedInfo\OwnMembers\Message\CaptionForTrue" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="BOModel\DevExpress.ExpressApp.Web.ParameterlessLogonFailedInfo\OwnMembers\Message\CaptionForFalse" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Non-calculated\BOModel\DevExpress.ExpressApp.Web.ParameterlessLogonFailedInfo\OwnMembers\Message\PredefinedValues" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="BOModel\DevExpress.ExpressApp.Web.ParameterlessLogonFailedInfo\OwnMembers\Message\NullText" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Non-calculated\BOModel\DevExpress.ExpressApp.Web.ParameterlessLogonFailedInfo\OwnMembers\Message\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Non-calculated\Localization\ASPxImagePropertyEditor\Value" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Non-calculated\Localization\ASPxImagePropertyEditor\Clear\Value" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="Non-calculated\Localization\ASPxImagePropertyEditor\Edit\Value" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="Non-calculated\Localization\Captions\MyAccount\Value" xml:space="preserve">
+    <value>My Account</value>
+  </data>
+  <data name="Non-calculated\Localization\Captions\SelectAll\Value" xml:space="preserve">
+    <value>(Select All)</value>
+  </data>
+  <data name="Non-calculated\Localization\Confirmations\Value" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Non-calculated\Localization\Confirmations\Cancel\Value" xml:space="preserve">
+    <value>Unsaved changes will be lost. Do you want to proceed?</value>
+  </data>
+  <data name="Non-calculated\Localization\Messages\BrowserIsIncompatible\Value" xml:space="preserve">
+    <value>The current browser version is not supported. Currently, the following browsers are supported: Internet Explorer 9+, Mozilla Firefox 2+, Google Chrome 1+, Opera 9+, Apple Safari 3+, Microsoft Edge</value>
+  </data>
+  <data name="Non-calculated\Localization\Messages\SessionIsExpired\Value" xml:space="preserve">
+    <value>The current web session is expired. Please reload this page using the browser's Refresh button.</value>
+  </data>
+  <data name="Non-calculated\Localization\Messages\ThereAreNoRecordsToDisplay\Value" xml:space="preserve">
+    <value>There are no records to display.</value>
+  </data>
+  <data name="Non-calculated\Localization\Texts\IgnoreWarning\Value" xml:space="preserve">
+    <value>Ignore warnings</value>
+  </data>
+  <data name="Non-calculated\ViewItems\PropertyEditors\ImagePropertyEditor\DefaultDisplayFormat" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Non-calculated\ViewItems\PropertyEditors\ImagePropertyEditor\DefaultEditMask" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Non-calculated\ViewItems\PropertyEditors\LookupProperty\DefaultDisplayFormat" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Non-calculated\ViewItems\PropertyEditors\LookupProperty\DefaultEditMask" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Non-calculated\ViewItems\PropertyEditors\ObjectProperty\DefaultDisplayFormat" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Non-calculated\ViewItems\PropertyEditors\ObjectProperty\DefaultEditMask" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Non-calculated\ViewItems\PropertyEditors\System.Boolean\DefaultDisplayFormat" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Non-calculated\ViewItems\PropertyEditors\System.Boolean\DefaultEditMask" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Non-calculated\ViewItems\PropertyEditors\System.Byte\DefaultDisplayFormat" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Non-calculated\ViewItems\PropertyEditors\System.Byte\DefaultEditMask" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Non-calculated\ViewItems\PropertyEditors\System.Byte[]\DefaultDisplayFormat" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Non-calculated\ViewItems\PropertyEditors\System.Byte[]\DefaultEditMask" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Non-calculated\ViewItems\PropertyEditors\System.DateTime\DefaultDisplayFormat" xml:space="preserve">
+    <value>{0:d}</value>
+  </data>
+  <data name="Non-calculated\ViewItems\PropertyEditors\System.DateTime\DefaultEditMask" xml:space="preserve">
+    <value>d</value>
+  </data>
+  <data name="Non-calculated\ViewItems\PropertyEditors\System.Decimal\DefaultDisplayFormat" xml:space="preserve">
+    <value>{0:C}</value>
+  </data>
+  <data name="Non-calculated\ViewItems\PropertyEditors\System.Decimal\DefaultEditMask" xml:space="preserve">
+    <value>C</value>
+  </data>
+  <data name="Non-calculated\ViewItems\PropertyEditors\System.Double\DefaultDisplayFormat" xml:space="preserve">
+    <value>{0:#,###,##0.##############################}</value>
+  </data>
+  <data name="Non-calculated\ViewItems\PropertyEditors\System.Double\DefaultEditMask" xml:space="preserve">
+    <value>#,###,##0.##############################</value>
+  </data>
+  <data name="Non-calculated\ViewItems\PropertyEditors\System.Drawing.Color\DefaultDisplayFormat" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Non-calculated\ViewItems\PropertyEditors\System.Drawing.Color\DefaultEditMask" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Non-calculated\ViewItems\PropertyEditors\System.Drawing.Image\DefaultDisplayFormat" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Non-calculated\ViewItems\PropertyEditors\System.Drawing.Image\DefaultEditMask" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Non-calculated\ViewItems\PropertyEditors\System.Enum\DefaultDisplayFormat" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Non-calculated\ViewItems\PropertyEditors\System.Enum\DefaultEditMask" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Non-calculated\ViewItems\PropertyEditors\System.Int16\DefaultDisplayFormat" xml:space="preserve">
+    <value>{0:N0}</value>
+  </data>
+  <data name="Non-calculated\ViewItems\PropertyEditors\System.Int16\DefaultEditMask" xml:space="preserve">
+    <value>N0</value>
+  </data>
+  <data name="Non-calculated\ViewItems\PropertyEditors\System.Int32\DefaultDisplayFormat" xml:space="preserve">
+    <value>{0:N0}</value>
+  </data>
+  <data name="Non-calculated\ViewItems\PropertyEditors\System.Int32\DefaultEditMask" xml:space="preserve">
+    <value>N0</value>
+  </data>
+  <data name="Non-calculated\ViewItems\PropertyEditors\System.Int64\DefaultDisplayFormat" xml:space="preserve">
+    <value>{0:N0}</value>
+  </data>
+  <data name="Non-calculated\ViewItems\PropertyEditors\System.Int64\DefaultEditMask" xml:space="preserve">
+    <value>N0</value>
+  </data>
+  <data name="Non-calculated\ViewItems\PropertyEditors\System.Single\DefaultDisplayFormat" xml:space="preserve">
+    <value>{0:#,###,##0.##############################}</value>
+  </data>
+  <data name="Non-calculated\ViewItems\PropertyEditors\System.Single\DefaultEditMask" xml:space="preserve">
+    <value>#,###,##0.##############################</value>
+  </data>
+  <data name="Non-calculated\ViewItems\PropertyEditors\System.String\DefaultDisplayFormat" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Non-calculated\ViewItems\PropertyEditors\System.String\DefaultEditMask" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Non-calculated\ViewItems\PropertyEditors\System.TimeSpan\DefaultDisplayFormat" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Non-calculated\ViewItems\PropertyEditors\System.TimeSpan\DefaultEditMask" xml:space="preserve">
+    <value>([0-9]{1,5}\.)??(([0-9])|([0-1][0-9])|([2][0123])):[0-5][0-9]:[0-5][0-9](\.[0-9]{1,3})??</value>
+  </data>
+  <data name="Non-calculated\ViewItems\PropertyEditors\System.Type\DefaultDisplayFormat" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Non-calculated\ViewItems\PropertyEditors\System.Type\DefaultEditMask" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Non-calculated\ViewItems\PropertyEditors\System.UInt16\DefaultDisplayFormat" xml:space="preserve">
+    <value>{0:N0}</value>
+  </data>
+  <data name="Non-calculated\ViewItems\PropertyEditors\System.UInt16\DefaultEditMask" xml:space="preserve">
+    <value>N0</value>
+  </data>
+  <data name="Non-calculated\ViewItems\PropertyEditors\System.UInt32\DefaultDisplayFormat" xml:space="preserve">
+    <value>{0:N0}</value>
+  </data>
+  <data name="Non-calculated\ViewItems\PropertyEditors\System.UInt32\DefaultEditMask" xml:space="preserve">
+    <value>N0</value>
+  </data>
+  <data name="Non-calculated\ViewItems\PropertyEditors\System.UInt64\DefaultDisplayFormat" xml:space="preserve">
+    <value>{0:N0}</value>
+  </data>
+  <data name="Non-calculated\ViewItems\PropertyEditors\System.UInt64\DefaultEditMask" xml:space="preserve">
+    <value>N0</value>
+  </data>
+  <data name="Non-calculated\Views\AboutInfo_DetailView\Items\AboutText\Text" xml:space="preserve">
+    <value>{0:ProductName}&lt;br&gt;{0:Version}&lt;br&gt;{0:Copyright}&lt;br&gt;{0:Description}</value>
+  </data>
+  <data name="Views\LogonAttemptsAmountedToLimit_DetailView\ObjectCaptionFormat" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\LogonAttemptsAmountedToLimit_DetailView\Caption" xml:space="preserve">
+    <value>Log In</value>
+  </data>
+  <data name="Views\LogonAttemptsAmountedToLimit_DetailView\CaptionColon" xml:space="preserve">
+    <value>:</value>
+  </data>
+  <data name="Non-calculated\Views\LogonAttemptsAmountedToLimit_DetailView\Items\LogonText\Text" xml:space="preserve">
+    <value>After three unsuccessful login attempts, the browser should be closed. Please consider contacting an administrator about your login details.</value>
+  </data>
+  <data name="Non-calculated\Views\LogonAttemptsAmountedToLimit_DetailView\Items\LogonText\Caption" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\LogonAttemptsAmountedToLimit_DetailView\Layout\RootGroup\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\LogonAttemptsAmountedToLimit_DetailView\Layout\RootGroup\ToolTipTitle" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\LogonAttemptsAmountedToLimit_DetailView\Layout\RootGroup\LogonText\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\LogonAttemptsAmountedToLimit_DetailView\Layout\RootGroup\LogonText\ToolTipTitle" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\LogonAttemptsAmountedToLimit_ListView\Caption" xml:space="preserve">
+    <value>Logon Attempts Amounted To Limit</value>
+  </data>
+  <data name="Views\LogonAttemptsAmountedToLimit_LookupListView\Caption" xml:space="preserve">
+    <value>Logon Attempts Amounted To Limit</value>
+  </data>
+  <data name="Views\ParameterlessLogonFailedInfo_DefaultDetailView\ObjectCaptionFormat" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\ParameterlessLogonFailedInfo_DefaultDetailView\Caption" xml:space="preserve">
+    <value>Log In</value>
+  </data>
+  <data name="Views\ParameterlessLogonFailedInfo_DefaultDetailView\CaptionColon" xml:space="preserve">
+    <value>:</value>
+  </data>
+  <data name="Non-calculated\Views\ParameterlessLogonFailedInfo_DefaultDetailView\Items\Image\Caption" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Non-calculated\Views\ParameterlessLogonFailedInfo_DefaultDetailView\Items\Message\Text" xml:space="preserve">
+    <value>{0} Please consider contacting an administrator about your login details.</value>
+  </data>
+  <data name="Non-calculated\Views\ParameterlessLogonFailedInfo_DefaultDetailView\Items\Message\Caption" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\ParameterlessLogonFailedInfo_DefaultDetailView\Layout\RootGroup\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\ParameterlessLogonFailedInfo_DefaultDetailView\Layout\RootGroup\ToolTipTitle" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\ParameterlessLogonFailedInfo_DefaultDetailView\Layout\RootGroup\Image\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\ParameterlessLogonFailedInfo_DefaultDetailView\Layout\RootGroup\Image\ToolTipTitle" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\ParameterlessLogonFailedInfo_DefaultDetailView\Layout\RootGroup\Message\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\ParameterlessLogonFailedInfo_DefaultDetailView\Layout\RootGroup\Message\ToolTipTitle" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\ParameterlessLogonFailedInfo_DetailView\ObjectCaptionFormat" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\ParameterlessLogonFailedInfo_DetailView\Caption" xml:space="preserve">
+    <value>Parameterless Logon Failed Info</value>
+  </data>
+  <data name="Views\ParameterlessLogonFailedInfo_DetailView\CaptionColon" xml:space="preserve">
+    <value>:</value>
+  </data>
+  <data name="Views\ParameterlessLogonFailedInfo_DetailView\Items\Message\EditMask" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\ParameterlessLogonFailedInfo_DetailView\Items\Message\DisplayFormat" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\ParameterlessLogonFailedInfo_DetailView\Items\Message\Caption" xml:space="preserve">
+    <value>Message</value>
+  </data>
+  <data name="Views\ParameterlessLogonFailedInfo_DetailView\Items\Message\CaptionForTrue" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\ParameterlessLogonFailedInfo_DetailView\Items\Message\CaptionForFalse" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\ParameterlessLogonFailedInfo_DetailView\Items\Message\PredefinedValues" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\ParameterlessLogonFailedInfo_DetailView\Items\Message\NullText" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\ParameterlessLogonFailedInfo_DetailView\Items\Message\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\ParameterlessLogonFailedInfo_DetailView\Layout\Main\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\ParameterlessLogonFailedInfo_DetailView\Layout\Main\ToolTipTitle" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\ParameterlessLogonFailedInfo_DetailView\Layout\Main\SimpleEditors\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\ParameterlessLogonFailedInfo_DetailView\Layout\Main\SimpleEditors\ToolTipTitle" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\ParameterlessLogonFailedInfo_DetailView\Layout\Main\SimpleEditors\ParameterlessLogonFailedInfo\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\ParameterlessLogonFailedInfo_DetailView\Layout\Main\SimpleEditors\ParameterlessLogonFailedInfo\ToolTipTitle" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\ParameterlessLogonFailedInfo_DetailView\Layout\Main\SimpleEditors\ParameterlessLogonFailedInfo\Message\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\ParameterlessLogonFailedInfo_DetailView\Layout\Main\SimpleEditors\ParameterlessLogonFailedInfo\Message\ToolTipTitle" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\ParameterlessLogonFailedInfo_ListView\Caption" xml:space="preserve">
+    <value>Parameterless Logon Failed Info</value>
+  </data>
+  <data name="Views\ParameterlessLogonFailedInfo_ListView\Columns\Message\EditMask" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\ParameterlessLogonFailedInfo_ListView\Columns\Message\DisplayFormat" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\ParameterlessLogonFailedInfo_ListView\Columns\Message\Caption" xml:space="preserve">
+    <value>Message</value>
+  </data>
+  <data name="Views\ParameterlessLogonFailedInfo_ListView\Columns\Message\CaptionForTrue" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\ParameterlessLogonFailedInfo_ListView\Columns\Message\CaptionForFalse" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\ParameterlessLogonFailedInfo_ListView\Columns\Message\PredefinedValues" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\ParameterlessLogonFailedInfo_ListView\Columns\Message\NullText" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\ParameterlessLogonFailedInfo_ListView\Columns\Message\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\ParameterlessLogonFailedInfo_LookupListView\Caption" xml:space="preserve">
+    <value>Parameterless Logon Failed Info</value>
+  </data>
+  <data name="Views\ParameterlessLogonFailedInfo_LookupListView\Columns\Message\EditMask" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\ParameterlessLogonFailedInfo_LookupListView\Columns\Message\DisplayFormat" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\ParameterlessLogonFailedInfo_LookupListView\Columns\Message\Caption" xml:space="preserve">
+    <value>Message</value>
+  </data>
+  <data name="Views\ParameterlessLogonFailedInfo_LookupListView\Columns\Message\CaptionForTrue" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\ParameterlessLogonFailedInfo_LookupListView\Columns\Message\CaptionForFalse" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\ParameterlessLogonFailedInfo_LookupListView\Columns\Message\PredefinedValues" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\ParameterlessLogonFailedInfo_LookupListView\Columns\Message\NullText" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\ParameterlessLogonFailedInfo_LookupListView\Columns\Message\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\UserControlDashboardOrganizationItem_DetailView\ObjectCaptionFormat" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\UserControlDashboardOrganizationItem_DetailView\Caption" xml:space="preserve">
+    <value>User Control</value>
+  </data>
+  <data name="Views\UserControlDashboardOrganizationItem_DetailView\CaptionColon" xml:space="preserve">
+    <value>:</value>
+  </data>
+  <data name="Views\UserControlDashboardOrganizationItem_DetailView\Items\ControlPath\EditMask" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\UserControlDashboardOrganizationItem_DetailView\Items\ControlPath\DisplayFormat" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\UserControlDashboardOrganizationItem_DetailView\Items\ControlPath\Caption" xml:space="preserve">
+    <value>Control Path</value>
+  </data>
+  <data name="Views\UserControlDashboardOrganizationItem_DetailView\Items\ControlPath\CaptionForTrue" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\UserControlDashboardOrganizationItem_DetailView\Items\ControlPath\CaptionForFalse" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\UserControlDashboardOrganizationItem_DetailView\Items\ControlPath\PredefinedValues" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\UserControlDashboardOrganizationItem_DetailView\Items\ControlPath\NullText" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\UserControlDashboardOrganizationItem_DetailView\Items\ControlPath\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\UserControlDashboardOrganizationItem_DetailView\Layout\Main\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\UserControlDashboardOrganizationItem_DetailView\Layout\Main\ToolTipTitle" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\UserControlDashboardOrganizationItem_DetailView\Layout\Main\SizeableEditors\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\UserControlDashboardOrganizationItem_DetailView\Layout\Main\SizeableEditors\ToolTipTitle" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\UserControlDashboardOrganizationItem_DetailView\Layout\Main\SizeableEditors\ControlPath\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\UserControlDashboardOrganizationItem_DetailView\Layout\Main\SizeableEditors\ControlPath\ToolTipTitle" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\UserControlDashboardOrganizationItem_ListView\Caption" xml:space="preserve">
+    <value>User Control</value>
+  </data>
+  <data name="Views\UserControlDashboardOrganizationItem_ListView\Columns\ControlPath\EditMask" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\UserControlDashboardOrganizationItem_ListView\Columns\ControlPath\DisplayFormat" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\UserControlDashboardOrganizationItem_ListView\Columns\ControlPath\Caption" xml:space="preserve">
+    <value>Control Path</value>
+  </data>
+  <data name="Views\UserControlDashboardOrganizationItem_ListView\Columns\ControlPath\CaptionForTrue" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\UserControlDashboardOrganizationItem_ListView\Columns\ControlPath\CaptionForFalse" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\UserControlDashboardOrganizationItem_ListView\Columns\ControlPath\PredefinedValues" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\UserControlDashboardOrganizationItem_ListView\Columns\ControlPath\NullText" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\UserControlDashboardOrganizationItem_ListView\Columns\ControlPath\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\UserControlDashboardOrganizationItem_LookupListView\Caption" xml:space="preserve">
+    <value>User Control</value>
+  </data>
+  <data name="Views\UserControlDashboardOrganizationItem_LookupListView\Columns\ControlPath\EditMask" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\UserControlDashboardOrganizationItem_LookupListView\Columns\ControlPath\DisplayFormat" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\UserControlDashboardOrganizationItem_LookupListView\Columns\ControlPath\Caption" xml:space="preserve">
+    <value>Control Path</value>
+  </data>
+  <data name="Views\UserControlDashboardOrganizationItem_LookupListView\Columns\ControlPath\CaptionForTrue" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\UserControlDashboardOrganizationItem_LookupListView\Columns\ControlPath\CaptionForFalse" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\UserControlDashboardOrganizationItem_LookupListView\Columns\ControlPath\PredefinedValues" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\UserControlDashboardOrganizationItem_LookupListView\Columns\ControlPath\NullText" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\UserControlDashboardOrganizationItem_LookupListView\Columns\ControlPath\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+</root>

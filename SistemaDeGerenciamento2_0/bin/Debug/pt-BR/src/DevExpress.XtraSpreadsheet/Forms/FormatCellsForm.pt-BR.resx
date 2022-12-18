@@ -1,0 +1,400 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="xtraTabAlignment.Text" xml:space="preserve">
+    <value>Alinhamento</value>
+  </data>
+  <data name="btnCancel.Text" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="btnOk.Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="xtraTabBorder.Text" xml:space="preserve">
+    <value>Borda</value>
+  </data>
+  <data name="xtraTabFont.Text" xml:space="preserve">
+    <value>Fonte</value>
+  </data>
+  <data name="xtraTabNumber.Text" xml:space="preserve">
+    <value>Número</value>
+  </data>
+  <data name="xtraTabProtection.Text" xml:space="preserve">
+    <value>Proteção</value>
+  </data>
+  <data name="lbCategory.Text" xml:space="preserve">
+    <value>&amp;Categoria</value>
+  </data>
+  <data name="xtraTabFill.Text" xml:space="preserve">
+    <value>Preencher</value>
+  </data>
+  <data name="lblVertical.AccessibleName" xml:space="preserve">
+    <value>Vertical</value>
+  </data>
+  <data name="lBoxFont.AccessibleName" xml:space="preserve">
+    <value>Fonte</value>
+  </data>
+  <data name="lBoxFontStyle.AccessibleName" xml:space="preserve">
+    <value>Estilo da fonte</value>
+  </data>
+  <data name="lBoxNumberCategory.AccessibleName" xml:space="preserve">
+    <value>Número de categoria</value>
+  </data>
+  <data name="lBoxSize.AccessibleName" xml:space="preserve">
+    <value>Tamanho</value>
+  </data>
+  <data name="lblTextAlignmet.AccessibleName" xml:space="preserve">
+    <value>Alinhamento de texto</value>
+  </data>
+  <data name="lblTextAlignmet.Text" xml:space="preserve">
+    <value>Alinhamento de texto</value>
+  </data>
+  <data name="lblTextControl.AccessibleName" xml:space="preserve">
+    <value>Controle de texto</value>
+  </data>
+  <data name="lblTextControl.Text" xml:space="preserve">
+    <value>Controle de texto</value>
+  </data>
+  <data name="lblTextDirectoin.AccessibleName" xml:space="preserve">
+    <value>Direção do texto</value>
+  </data>
+  <data name="lblUnderline.AccessibleName" xml:space="preserve">
+    <value>Sublinhar</value>
+  </data>
+  <data name="lblSize.AccessibleName" xml:space="preserve">
+    <value>Tamanho</value>
+  </data>
+  <data name="lblStyle.AccessibleName" xml:space="preserve">
+    <value>Estilo</value>
+  </data>
+  <data name="lblColorBorder.AccessibleName" xml:space="preserve">
+    <value>Cor</value>
+  </data>
+  <data name="lblColorFont.AccessibleName" xml:space="preserve">
+    <value>Cor</value>
+  </data>
+  <data name="lblDegrees.AccessibleName" xml:space="preserve">
+    <value>Graus</value>
+  </data>
+  <data name="lblFillColor.AccessibleName" xml:space="preserve">
+    <value>Cor de preenchimento</value>
+  </data>
+  <data name="lblFont.AccessibleName" xml:space="preserve">
+    <value>Fonte</value>
+  </data>
+  <data name="lblFontStyle.AccessibleName" xml:space="preserve">
+    <value>Estilo da fonte</value>
+  </data>
+  <data name="lblHorizontal.AccessibleName" xml:space="preserve">
+    <value>Horizontal</value>
+  </data>
+  <data name="lblIndent.AccessibleName" xml:space="preserve">
+    <value>Travessão</value>
+  </data>
+  <data name="lblIndent.Text" xml:space="preserve">
+    <value>Travessão:</value>
+  </data>
+  <data name="lblInside.AccessibleName" xml:space="preserve">
+    <value>Dentro</value>
+  </data>
+  <data name="lblInside.Text" xml:space="preserve">
+    <value>Dentro</value>
+  </data>
+  <data name="lblNone.AccessibleName" xml:space="preserve">
+    <value>Nenhum</value>
+  </data>
+  <data name="lblNumberSample.AccessibleName" xml:space="preserve">
+    <value>Amostra</value>
+  </data>
+  <data name="lblOutline.AccessibleName" xml:space="preserve">
+    <value>Estrutura de tópicos</value>
+  </data>
+  <data name="lblPatternColor.AccessibleName" xml:space="preserve">
+    <value>Cor padrão</value>
+  </data>
+  <data name="lblPatternStyle.AccessibleName" xml:space="preserve">
+    <value>Estilo padrão</value>
+  </data>
+  <data name="lblProtection.AccessibleName" xml:space="preserve">
+    <value>Proteção</value>
+  </data>
+  <data name="lblRightToLeft.AccessibleName" xml:space="preserve">
+    <value>Direita para a esquerda</value>
+  </data>
+  <data name="lblRightToLeft.Text" xml:space="preserve">
+    <value>Direita para a esquerda</value>
+  </data>
+  <data name="lblBackgroundColor.AccessibleName" xml:space="preserve">
+    <value>Cor de fundo</value>
+  </data>
+  <data name="lblCategoryDescription.AccessibleName" xml:space="preserve">
+    <value>Descrição da categoria</value>
+  </data>
+  <data name="lblSize.Text" xml:space="preserve">
+    <value>&amp;Tamanho:</value>
+  </data>
+  <data name="lblVertical.Text" xml:space="preserve">
+    <value>&amp;Vertical:</value>
+  </data>
+  <data name="lblFont.Text" xml:space="preserve">
+    <value>&amp;Fonte:</value>
+  </data>
+  <data name="lblFontDescription.AccessibleName" xml:space="preserve">
+    <value>Descrição da fonte</value>
+  </data>
+  <data name="lblFontDescription.Text" xml:space="preserve">
+    <value>é uma fonte TrueType. A mesma fonte será usada na sua impressora e sua tela.</value>
+  </data>
+  <data name="lblHorizontal.Text" xml:space="preserve">
+    <value>&amp;Horizontal:</value>
+  </data>
+  <data name="lblNone.Text" xml:space="preserve">
+    <value>&amp;Nenhum</value>
+  </data>
+  <data name="lblOutline.Text" xml:space="preserve">
+    <value>&amp;Contorno</value>
+  </data>
+  <data name="lblProtection.Text" xml:space="preserve">
+    <value>Bloqueio de células ou ocultar fórmulas não tem efeito até que você proteger a planilha (guia revisão, mudanças
+grupo, botão proteger planilha).</value>
+  </data>
+  <data name="lblColorBorder.Text" xml:space="preserve">
+    <value>&amp;Cor:</value>
+  </data>
+  <data name="lblColorFont.Text" xml:space="preserve">
+    <value>&amp;Cor:</value>
+  </data>
+  <data name="lblDegrees.Text" xml:space="preserve">
+    <value>&amp;Graus</value>
+  </data>
+  <data name="lblBorder.AccessibleName" xml:space="preserve">
+    <value>Borda</value>
+  </data>
+  <data name="lblBorder.Text" xml:space="preserve">
+    <value>Borda</value>
+  </data>
+  <data name="lblBorderDescription.AccessibleName" xml:space="preserve">
+    <value>Descrição da Borda</value>
+  </data>
+  <data name="chkMergeCells.Properties.Caption" xml:space="preserve">
+    <value>&amp;Mesclar células</value>
+  </data>
+  <data name="chkWrapText.Properties.Caption" xml:space="preserve">
+    <value>&amp;Quebrar texto</value>
+  </data>
+  <data name="grpOrientation.AccessibleName" xml:space="preserve">
+    <value>Orientação</value>
+  </data>
+  <data name="grpOrientation.Text" xml:space="preserve">
+    <value>Orientação</value>
+  </data>
+  <data name="lblFontStyle.Text" xml:space="preserve">
+    <value>Estilo de f&amp;onte:</value>
+  </data>
+  <data name="chkLocked.Properties.Caption" xml:space="preserve">
+    <value>&amp;Bloqueado</value>
+  </data>
+  <data name="lblTextDirectoin.Text" xml:space="preserve">
+    <value>&amp; direção do texto:</value>
+  </data>
+  <data name="lblUnderline.Text" xml:space="preserve">
+    <value>&amp; sublinhar:</value>
+  </data>
+  <data name="lblStyle.Text" xml:space="preserve">
+    <value>&amp; estilo:</value>
+  </data>
+  <data name="btnInside.AccessibleName" xml:space="preserve">
+    <value>Dentro</value>
+  </data>
+  <data name="btnNone.AccessibleName" xml:space="preserve">
+    <value>Nenhum</value>
+  </data>
+  <data name="chkNoColor.AccessibleName" xml:space="preserve">
+    <value>Sem cor</value>
+  </data>
+  <data name="chkNoColor.Text" xml:space="preserve">
+    <value>Sem cor</value>
+  </data>
+  <data name="edtColorBorder.Properties.NullText" xml:space="preserve">
+    <value>Automático</value>
+  </data>
+  <data name="edtFontPreview.Text" xml:space="preserve">
+    <value>AaBbCcYyZz</value>
+  </data>
+  <data name="edtHorizontalAlignment.Properties.NullText" xml:space="preserve">
+    <value>Geral</value>
+  </data>
+  <data name="edtTextDirection.Properties.NullText" xml:space="preserve">
+    <value>Contexto</value>
+  </data>
+  <data name="edtUnderline.Properties.NullText" xml:space="preserve">
+    <value>Nenhum</value>
+  </data>
+  <data name="edtVerticalAlignment.Properties.NullText" xml:space="preserve">
+    <value>Fundo</value>
+  </data>
+  <data name="grpEffects.AccessibleName" xml:space="preserve">
+    <value>Efeitos</value>
+  </data>
+  <data name="grpEffects.Text" xml:space="preserve">
+    <value>Efeitos</value>
+  </data>
+  <data name="grpFillSample.AccessibleName" xml:space="preserve">
+    <value>Amostra</value>
+  </data>
+  <data name="grpFillSample.Text" xml:space="preserve">
+    <value>Amostra</value>
+  </data>
+  <data name="grpLine.AccessibleName" xml:space="preserve">
+    <value>Linha</value>
+  </data>
+  <data name="grpLine.Text" xml:space="preserve">
+    <value>Linha</value>
+  </data>
+  <data name="grpNumberSample.AccessibleName" xml:space="preserve">
+    <value>Amostra</value>
+  </data>
+  <data name="grpNumberSample.Text" xml:space="preserve">
+    <value>Amostra</value>
+  </data>
+  <data name="chkNormalFont.Properties.Caption" xml:space="preserve">
+    <value>&amp;Fonte normal</value>
+  </data>
+  <data name="grpPreview.AccessibleName" xml:space="preserve">
+    <value>Prever</value>
+  </data>
+  <data name="grpPreview.Text" xml:space="preserve">
+    <value>Prever</value>
+  </data>
+  <data name="btnOutline.AccessibleName" xml:space="preserve">
+    <value>Estrutura de tópicos</value>
+  </data>
+  <data name="chkShrinkToFit.Properties.Caption" xml:space="preserve">
+    <value>Encolher para caber</value>
+  </data>
+  <data name="lblBackgroundColor.Text" xml:space="preserve">
+    <value>Fundo &amp; cor:</value>
+  </data>
+  <data name="lblPatternColor.Text" xml:space="preserve">
+    <value>Padrão de cor</value>
+  </data>
+  <data name="lblPatternStyle.Text" xml:space="preserve">
+    <value>Estilo &amp;Padrão</value>
+  </data>
+</root>

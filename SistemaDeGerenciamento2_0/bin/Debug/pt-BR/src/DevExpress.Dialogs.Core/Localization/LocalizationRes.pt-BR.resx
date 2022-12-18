@@ -1,0 +1,339 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="DialogsStringId.CancelButtonText" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="DialogsStringId.OkButtonText" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="DialogsStringId.ContextMenuCollapseCommandText" xml:space="preserve">
+    <value>Recolher</value>
+  </data>
+  <data name="DialogsStringId.ContextMenuExpandCommandText" xml:space="preserve">
+    <value>Expandir</value>
+  </data>
+  <data name="DialogsStringId.SaveFileDialogOkButtonText" xml:space="preserve">
+    <value>Salvar</value>
+  </data>
+  <data name="DialogsStringId.OpenFileDialogDefaultTitle" xml:space="preserve">
+    <value>Abrir</value>
+  </data>
+  <data name="DialogsStringId.OpenFileDialogOkButtonText" xml:space="preserve">
+    <value>Abrir</value>
+  </data>
+  <data name="DialogsStringId.SaveFileDialogDefaultTitle" xml:space="preserve">
+    <value>Salvar como</value>
+  </data>
+  <data name="DialogsStringId.ContextMenuSelectCommandText" xml:space="preserve">
+    <value>Selecionar</value>
+  </data>
+  <data name="DialogsStringId.ContentViewMode" xml:space="preserve">
+    <value>Conteúdo</value>
+  </data>
+  <data name="DialogsStringId.ListViewMode" xml:space="preserve">
+    <value>Lista</value>
+  </data>
+  <data name="DialogsStringId.DetailsView_NameColumnCaption" xml:space="preserve">
+    <value>Nome</value>
+  </data>
+  <data name="DialogsStringId.DetailsView_SizeColumnCaption" xml:space="preserve">
+    <value>Tamanho</value>
+  </data>
+  <data name="DialogsStringId.DetailsView_TypeColumnCaption" xml:space="preserve">
+    <value>Tipo</value>
+  </data>
+  <data name="DialogsStringId.ContextMenuCopyCommandText" xml:space="preserve">
+    <value>&amp;Copiar</value>
+  </data>
+  <data name="DialogsStringId.ContextMenuDeleteCommandText" xml:space="preserve">
+    <value>&amp;Apagar</value>
+  </data>
+  <data name="DialogsStringId.ContextMenuCutCommandText" xml:space="preserve">
+    <value>Cor&amp;tar</value>
+  </data>
+  <data name="DialogsStringId.SmallViewMode" xml:space="preserve">
+    <value>Itens pequenos</value>
+  </data>
+  <data name="DialogsStringId.ContextMenuAddNetworkPlaceCommandText" xml:space="preserve">
+    <value>Adicionar uma rede &amp; local</value>
+  </data>
+  <data name="DialogsStringId.ContextMenuConnectNetworkDriveCommandText" xml:space="preserve">
+    <value>Mapa &amp; unidade de rede...</value>
+  </data>
+  <data name="DialogsStringId.ContextMenuDisconnectNetworkDriveCommandText" xml:space="preserve">
+    <value>Des&amp;connectar unidade de rede...</value>
+  </data>
+  <data name="DialogsStringId.ContextMenuDisplaySettingsCommandText" xml:space="preserve">
+    <value>&amp; configurações de exibição</value>
+  </data>
+  <data name="DialogsStringId.ContextMenuEditCommandText" xml:space="preserve">
+    <value>&amp; Editar</value>
+  </data>
+  <data name="DialogsStringId.ContextMenuEjectCommandText" xml:space="preserve">
+    <value>E&amp;jetar</value>
+  </data>
+  <data name="DialogsStringId.ContextMenuExtractCommandText" xml:space="preserve">
+    <value>Ex&amp;trair  todos...</value>
+  </data>
+  <data name="DialogsStringId.ContextMenuFormatCommandText" xml:space="preserve">
+    <value>Forma&amp;tar...</value>
+  </data>
+  <data name="DialogsStringId.ContextMenuLinkCommandText" xml:space="preserve">
+    <value>Criar &amp;atalho</value>
+  </data>
+  <data name="DialogsStringId.ContextMenuManageCommandText" xml:space="preserve">
+    <value>&amp;Gerenciar</value>
+  </data>
+  <data name="DialogsStringId.ContextMenuOpenAsCommandText" xml:space="preserve">
+    <value>Abrir &amp;com</value>
+  </data>
+  <data name="DialogsStringId.ContextMenuOpenCommandText" xml:space="preserve">
+    <value>&amp;Abrir</value>
+  </data>
+  <data name="DialogsStringId.ContextMenuOpenContainingCommandText" xml:space="preserve">
+    <value>Abrir &amp;pasta</value>
+  </data>
+  <data name="DialogsStringId.ContextMenuPasteCommandText" xml:space="preserve">
+    <value>&amp;Colar</value>
+  </data>
+  <data name="DialogsStringId.ContextMenuPersonalizeCommandText" xml:space="preserve">
+    <value>Pe&amp;rsonalizar</value>
+  </data>
+  <data name="DialogsStringId.ContextMenuPinToHomeCommandText" xml:space="preserve">
+    <value>Acrescentar ao acesso rápido</value>
+  </data>
+  <data name="DialogsStringId.ContextMenuPreviousVersionsCommandText" xml:space="preserve">
+    <value>Restauração de &amp;versões anterior</value>
+  </data>
+  <data name="DialogsStringId.ContextMenuPrintCommandText" xml:space="preserve">
+    <value>&amp;impressão</value>
+  </data>
+  <data name="DialogsStringId.ContextMenuPropertiesCommandText" xml:space="preserve">
+    <value>P&amp;ropriedades</value>
+  </data>
+  <data name="DialogsStringId.ContextMenuRenameCommandText" xml:space="preserve">
+    <value>Ren&amp;omear</value>
+  </data>
+  <data name="DialogsStringId.ContextMenuUpdateEncryptionSettingsWorkCommandText" xml:space="preserve">
+    <value>Propriedade do arquivo</value>
+  </data>
+  <data name="DialogsStringId.ContextMenuWindowsShareCommandText" xml:space="preserve">
+    <value>&amp;Dar acesso a</value>
+  </data>
+  <data name="DialogsStringId.CreatePromptMessage" xml:space="preserve">
+    <value>{0} não existe.
+
+Você quer criá-lo?</value>
+  </data>
+  <data name="DialogsStringId.DetailsView_DateModifiedColumnCaption" xml:space="preserve">
+    <value>Data modificada</value>
+  </data>
+  <data name="DialogsStringId.DetailsViewMode" xml:space="preserve">
+    <value>Detalhes</value>
+  </data>
+  <data name="DialogsStringId.DragDrop_CopyTooltip" xml:space="preserve">
+    <value>Copiar para</value>
+  </data>
+  <data name="DialogsStringId.DragDrop_LinkTooltip" xml:space="preserve">
+    <value>Criar um elo em</value>
+  </data>
+  <data name="DialogsStringId.DragDrop_MoveTooltip" xml:space="preserve">
+    <value>Mover para</value>
+  </data>
+  <data name="DialogsStringId.DragDropConfirmationDialog_Copy" xml:space="preserve">
+    <value>Tem certeza que deseja copiar "{0}" para "{1}"?</value>
+  </data>
+  <data name="DialogsStringId.DragDropConfirmationDialog_CreateLink" xml:space="preserve">
+    <value>Tem certeza que você deseja adicionar um atalho para "{0}" para a pasta "{1}"?</value>
+  </data>
+  <data name="DialogsStringId.DragDropConfirmationDialog_Move" xml:space="preserve">
+    <value>Tem certeza que deseja mover "{0};" para "{1}"?</value>
+  </data>
+  <data name="DialogsStringId.ExtraLargeViewMode" xml:space="preserve">
+    <value>Itens extra grandes</value>
+  </data>
+  <data name="DialogsStringId.FileIsReadOnlyMessage" xml:space="preserve">
+    <value>Este arquivo está definido como sendo somente para leitura.
+
+Tente novamente com um nome de arquivo diferente.</value>
+  </data>
+  <data name="DialogsStringId.FileNameLabelText" xml:space="preserve">
+    <value>Nome do arquivo:</value>
+  </data>
+  <data name="DialogsStringId.FileNotFoundMessage" xml:space="preserve">
+    <value>Arquivo não encontrado.
+
+Verifique o nome do arquivo e tente novamente.</value>
+  </data>
+  <data name="DialogsStringId.FolderBrowserDialogDefaultTitle" xml:space="preserve">
+    <value>Procure por um diretório</value>
+  </data>
+  <data name="DialogsStringId.InvalidFileNameMessage" xml:space="preserve">
+    <value>o nome do arquivo não é válido.</value>
+  </data>
+  <data name="DialogsStringId.LargeViewMode" xml:space="preserve">
+    <value>Itens grandes</value>
+  </data>
+  <data name="DialogsStringId.MakeNewFolderButtonText" xml:space="preserve">
+    <value>Criar nova diretório</value>
+  </data>
+  <data name="DialogsStringId.MediumViewMode" xml:space="preserve">
+    <value>Itens médios</value>
+  </data>
+  <data name="DialogsStringId.MessageBoxCaption" xml:space="preserve">
+    <value>Erro!</value>
+  </data>
+  <data name="DialogsStringId.NewFolderButtonText" xml:space="preserve">
+    <value>Novo diretório</value>
+  </data>
+  <data name="DialogsStringId.OverwritePromptMessage" xml:space="preserve">
+    <value>{0} já existe.
+
+Você quer substituí-lo?</value>
+  </data>
+  <data name="DialogsStringId.PathError_Caption" xml:space="preserve">
+    <value>Explorador de arquivos</value>
+  </data>
+  <data name="DialogsStringId.PathError_MessageFormatString" xml:space="preserve">
+    <value>Windows não consegue encontrar '{0}'. Verifique a ortografia e tente novamente.</value>
+  </data>
+  <data name="DialogsStringId.PathNotExistMessage" xml:space="preserve">
+    <value>Caminho não existe.
+
+Verifique o caminho e tente novamente.</value>
+  </data>
+  <data name="DialogsStringId.PromptMessagesCaption" xml:space="preserve">
+    <value>Confirme Salvar Como</value>
+  </data>
+  <data name="DialogsStringId.TilesViewMode" xml:space="preserve">
+    <value>Telhas</value>
+  </data>
+  <data name="DialogsStringId.NewStyleFolderBrowserFileNameLabelText" xml:space="preserve">
+    <value>Pasta:</value>
+  </data>
+  <data name="DialogsStringId.InvalidFolderNameMessage" xml:space="preserve">
+    <value>O nome da pasta não é válido.</value>
+  </data>
+  <data name="DialogsStringId.PathNotExistsMessage" xml:space="preserve">
+    <value>Caminho não existe.
+
+Verifique o caminho e tente novamente.</value>
+  </data>
+</root>

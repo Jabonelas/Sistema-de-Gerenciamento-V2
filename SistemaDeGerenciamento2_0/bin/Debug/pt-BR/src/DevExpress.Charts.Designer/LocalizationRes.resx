@@ -1,0 +1,3052 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ChartDesignerStringIDs.AddChartElement" xml:space="preserve">
+    <value>Add Chart Element</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AddSeriesTemplateDataTab" xml:space="preserve">
+    <value>The Chart's Data tab is actual only when data is provided using the Series Template. Select the Add Series Template menu item to use a template.</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AnnotationChartAnchorPoint" xml:space="preserve">
+    <value>Chart Anchor Point</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AnnotationFreePosition" xml:space="preserve">
+    <value>Free Position</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AnnotationPaneAnchorPoint" xml:space="preserve">
+    <value>Pane Anchor Point</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AnnotationRelativePosition" xml:space="preserve">
+    <value>Relative Position</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AnnotationSeriesPointAnchorPoint" xml:space="preserve">
+    <value>SeriesPoint Anchor Point</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Area2DDropFromFarAnimation" xml:space="preserve">
+    <value>Drop From Far</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Area2DDropFromNearAnimation" xml:space="preserve">
+    <value>Drop From Near</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Area2DGrowUpAnimation" xml:space="preserve">
+    <value>Grow Up</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Area2DStretchFromFarAnimation" xml:space="preserve">
+    <value>Stretch From Far</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Area2DStretchFromNearAnimation" xml:space="preserve">
+    <value>Stretch From Near</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Area2DStretchOutAnimation" xml:space="preserve">
+    <value>Stretch Out</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Area2DUnwindAnimation" xml:space="preserve">
+    <value>Unwind</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AreaEmptyPointOptions" xml:space="preserve">
+    <value>New Area Empty Point Options</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AreaFullStackedSeries2D" xml:space="preserve">
+    <value>Full-Stacked Area 2D</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AreaFullStackedSeries3D" xml:space="preserve">
+    <value>Full-Stacked Area 3D</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AreaSeries2D" xml:space="preserve">
+    <value>Area 2D</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AreaSeries3D" xml:space="preserve">
+    <value>Area 3D</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AreaStacked2DFadeInAnimation" xml:space="preserve">
+    <value>Fade In</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AreaStackedSeries2D" xml:space="preserve">
+    <value>Stacked Area 2D</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AreaStackedSeries3D" xml:space="preserve">
+    <value>Stacked Area 3D</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AreaStepFullStackedSeries2D" xml:space="preserve">
+    <value>Full-Stacked Step Area 2D</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AreaStepSeries2D" xml:space="preserve">
+    <value>Step Area 2D</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AreaStepStackedSeries2D" xml:space="preserve">
+    <value>Stacked Step Area 2D</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Auto" xml:space="preserve">
+    <value>Auto</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AverageTrueRange" xml:space="preserve">
+    <value>Average True Range</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AxisCategoryTitle" xml:space="preserve">
+    <value>Axis Options</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AxisOptions_AppearanceGroup" xml:space="preserve">
+    <value>Appearance</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AxisOptions_AxisAlignment" xml:space="preserve">
+    <value>Alignment</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AxisOptions_AxisKind" xml:space="preserve">
+    <value>Position</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AxisOptions_AxisKind_BottomCaption" xml:space="preserve">
+    <value>Show At Bottom</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AxisOptions_AxisKind_BottomDescription" xml:space="preserve">
+    <value>Show the axis at the bottom of a diagram.</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AxisOptions_AxisKind_CircularAxisYVisibleCaption" xml:space="preserve">
+    <value>Show Axis</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AxisOptions_AxisKind_CircularAxisYVisibleDescription" xml:space="preserve">
+    <value>Show the Axis Y.</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AxisOptions_AxisKind_LeftCaption" xml:space="preserve">
+    <value>Show On Left</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AxisOptions_AxisKind_LeftDescription" xml:space="preserve">
+    <value>Show the axis on the left of a diagram.</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AxisOptions_AxisKind_RightCaption" xml:space="preserve">
+    <value>Show On Right</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AxisOptions_AxisKind_RightDescription" xml:space="preserve">
+    <value>Show the axis on the right of a diagram.</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AxisOptions_AxisKind_TopCaption" xml:space="preserve">
+    <value>Show On Top</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AxisOptions_AxisKind_TopDescription" xml:space="preserve">
+    <value>Show the axis on the top of a diagram.</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AxisOptions_AxisKindNoneCaption" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AxisOptions_AxisKindNoneDescription" xml:space="preserve">
+    <value>Do not display the axis.</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AxisOptions_AxisLabelNoneCaption" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AxisOptions_AxisLabelNoneDescription" xml:space="preserve">
+    <value>Turn off axis labels.</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AxisOptions_AxisReverse" xml:space="preserve">
+    <value>Reverse</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AxisOptions_CircularXLabelOrientation_NormalCaption" xml:space="preserve">
+    <value>Show Labels</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AxisOptions_CircularXLabelOrientation_NormalDescription" xml:space="preserve">
+    <value>Show axis labels.</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AxisOptions_CircularYLabelOrientation_NormalCaption" xml:space="preserve">
+    <value>Show Labels</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AxisOptions_CircularYLabelOrientation_NormalDescription" xml:space="preserve">
+    <value>Show axis labels.</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AxisOptions_DateTimeFormat" xml:space="preserve">
+    <value>Format:</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AxisOptions_DateTimeGridAlignment" xml:space="preserve">
+    <value>Grid Alignment:</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AxisOptions_DateTimeMeasureUnit" xml:space="preserve">
+    <value>Measure Unit:</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AxisOptions_DateTimeOptionsGroup" xml:space="preserve">
+    <value>Date&amp;Time Options</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AxisOptions_ElementsGroup" xml:space="preserve">
+    <value>Elements</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AxisOptions_GeneralGroup" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AxisOptions_GridlinesStaticText" xml:space="preserve">
+    <value>Grid Lines</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AxisOptions_Interlaced" xml:space="preserve">
+    <value>Interlaced</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AxisOptions_LabelsOrientation" xml:space="preserve">
+    <value>Labels</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AxisOptions_MajorVisible" xml:space="preserve">
+    <value>Major</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AxisOptions_MinorVisible" xml:space="preserve">
+    <value>Minor</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AxisOptions_RangeGroup" xml:space="preserve">
+    <value>Range</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AxisOptions_TickMarksStaticText" xml:space="preserve">
+    <value>Tickmarks</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AxisOptions_TitleContent" xml:space="preserve">
+    <value>Text:</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AxisOptions_TitleGroup" xml:space="preserve">
+    <value>Axis Title</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AxisOptions_TitlePosition" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AxisOptions_TitlePosition_NoneCaption" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AxisOptions_TitlePosition_NoneDescription" xml:space="preserve">
+    <value>Turn off the axis title.</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AxisOptions_TitleVisibility" xml:space="preserve">
+    <value>Title Visibility</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AxisOptions_VisibleRangeHeader" xml:space="preserve">
+    <value>Visible Range</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AxisOptions_VisibleRangeMaxValue" xml:space="preserve">
+    <value>Max:</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AxisOptions_VisibleRangeMinValue" xml:space="preserve">
+    <value>Min:</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AxisOptions_WholeRangeHeader" xml:space="preserve">
+    <value>Whole Range</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AxisOptions_WholeRangeMaxValue" xml:space="preserve">
+    <value>Max:</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AxisOptions_WholeRangeMinValue" xml:space="preserve">
+    <value>Min:</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AxisOptions_XLabelOrientation_NormalCaption" xml:space="preserve">
+    <value>Show Labels</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AxisOptions_XLabelOrientation_NormalDescription" xml:space="preserve">
+    <value>Show axis labels.</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AxisOptions_XLabelOrientation_Rotated45Caption" xml:space="preserve">
+    <value>45 Degrees</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AxisOptions_XLabelOrientation_Rotated45Description" xml:space="preserve">
+    <value>Show axis labels rotated at 45 degrees.</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AxisOptions_XLabelOrientation_Rotated90Caption" xml:space="preserve">
+    <value>90 Degrees</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AxisOptions_XLabelOrientation_Rotated90Description" xml:space="preserve">
+    <value>Show axis labels rotated at 90 degrees.</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AxisOptions_XLabelOrientation_RotatedMinus45Caption" xml:space="preserve">
+    <value>-45 Degrees</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AxisOptions_XLabelOrientation_RotatedMinus45Description" xml:space="preserve">
+    <value>Show axis labels rotated at -45 degrees.</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AxisOptions_XLabelOrientation_RotatedMinus90Caption" xml:space="preserve">
+    <value>-90 Degrees</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AxisOptions_XLabelOrientation_RotatedMinus90Description" xml:space="preserve">
+    <value>Show axis labels rotated at -90 degrees.</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AxisOptions_XLabelOrientation_StaggeredCaption" xml:space="preserve">
+    <value>Staggered</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AxisOptions_XLabelOrientation_StaggeredDescription" xml:space="preserve">
+    <value>Show axis labels in staggered order.</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AxisOptions_XTitlePosition_BottomCaption" xml:space="preserve">
+    <value>Bottom</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AxisOptions_XTitlePosition_BottomDescription" xml:space="preserve">
+    <value>Show the title at the bottom of an axis.</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AxisOptions_XTitlePosition_CenterCaption" xml:space="preserve">
+    <value>Center</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AxisOptions_XTitlePosition_CenterDescription" xml:space="preserve">
+    <value>Show the title in the center of an axis.</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AxisOptions_XTitlePosition_LeftCaption" xml:space="preserve">
+    <value>Left</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AxisOptions_XTitlePosition_LeftDescription" xml:space="preserve">
+    <value>Show the title on the left of an axis.</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AxisOptions_XTitlePosition_RightCaption" xml:space="preserve">
+    <value>Right</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AxisOptions_XTitlePosition_RightDescription" xml:space="preserve">
+    <value>Show the title on the right of an axis.</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AxisOptions_YLabelOrientation_DescriptionCaption" xml:space="preserve">
+    <value>Show axis labels.</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AxisOptions_YLabelOrientation_NormalCaption" xml:space="preserve">
+    <value>Show Labels</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AxisOptions_YLabelOrientation_Rotated90Caption" xml:space="preserve">
+    <value>90 Degrees</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AxisOptions_YLabelOrientation_Rotated90Description" xml:space="preserve">
+    <value>Show axis labels rotated at 90 degrees.</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AxisOptions_YLabelOrientation_RotatedMinus90Caption" xml:space="preserve">
+    <value>-90 Degrees</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AxisOptions_YLabelOrientation_RotatedMinus90Description" xml:space="preserve">
+    <value>Show axis labels rotated at -90 degrees.</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AxisOptions_YTitlePosition_CenterCaption" xml:space="preserve">
+    <value>Center</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AxisOptions_YTitlePosition_CenterDescription" xml:space="preserve">
+    <value>Show the title in the center of an axis.</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AxisOptions_YTitlePosition_TopCaption" xml:space="preserve">
+    <value>Top</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AxisOptions_YTitlePosition_TopDescription" xml:space="preserve">
+    <value>Show the title on the top of an axis.</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AxisPageCategoryTitle" xml:space="preserve">
+    <value>Axis</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Bar2DBounceAnimation" xml:space="preserve">
+    <value>Bounce</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Bar2DDropInAnimation" xml:space="preserve">
+    <value>Drop In</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Bar2DFadeInAnimation" xml:space="preserve">
+    <value>Fade In</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Bar2DGrowUpAnimation" xml:space="preserve">
+    <value>Grow Up</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Bar2DModelBorderlessGradient" xml:space="preserve">
+    <value>Borderless Gradient</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Bar2DModelBorderlessSimple" xml:space="preserve">
+    <value>Borderless Simple</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Bar2DModelFlat" xml:space="preserve">
+    <value>Flat</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Bar2DModelFlatGlass" xml:space="preserve">
+    <value>Flat Glass</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Bar2DModelGlassCylinder" xml:space="preserve">
+    <value>Glass Cylinder</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Bar2DModelGradient" xml:space="preserve">
+    <value>Gradient</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Bar2DModelOutset" xml:space="preserve">
+    <value>Outset</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Bar2DModelQuasi3D" xml:space="preserve">
+    <value>Quasi 3D</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Bar2DModelSimple" xml:space="preserve">
+    <value>Simple</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Bar2DModelSteelColumn" xml:space="preserve">
+    <value>Steel Column</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Bar2DModelTransparent" xml:space="preserve">
+    <value>Transparent</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Bar2DSlideFromBottomAnimation" xml:space="preserve">
+    <value>Slide From Bottom</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Bar2DSlideFromLeftAnimation" xml:space="preserve">
+    <value>Slide From Left</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Bar2DSlideFromRightAnimation" xml:space="preserve">
+    <value>Slide From Right</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Bar2DSlideFromTopAnimation" xml:space="preserve">
+    <value>Slide From Top</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Bar2DWidenAnimation" xml:space="preserve">
+    <value>Widen</value>
+  </data>
+  <data name="ChartDesignerStringIDs.BarFullStackedSeries2D" xml:space="preserve">
+    <value>Full-Stacked Bar 2D</value>
+  </data>
+  <data name="ChartDesignerStringIDs.BarItemMenu_Annotation" xml:space="preserve">
+    <value>Annotation</value>
+  </data>
+  <data name="ChartDesignerStringIDs.BarItemMenu_AxisElements" xml:space="preserve">
+    <value>Axis Elements</value>
+  </data>
+  <data name="ChartDesignerStringIDs.BarItemMenu_ChartElements" xml:space="preserve">
+    <value>Chart Elements</value>
+  </data>
+  <data name="ChartDesignerStringIDs.BarItemMenu_ChartTitle" xml:space="preserve">
+    <value>Chart Title</value>
+  </data>
+  <data name="ChartDesignerStringIDs.BarItemMenu_ConstantLine" xml:space="preserve">
+    <value>Constant Line</value>
+  </data>
+  <data name="ChartDesignerStringIDs.BarItemMenu_Indicator" xml:space="preserve">
+    <value>Indicator...</value>
+  </data>
+  <data name="ChartDesignerStringIDs.BarItemMenu_PieTotalLabel" xml:space="preserve">
+    <value>Pie Total Label</value>
+  </data>
+  <data name="ChartDesignerStringIDs.BarItemMenu_ScaleBreak" xml:space="preserve">
+    <value>Scale Break</value>
+  </data>
+  <data name="ChartDesignerStringIDs.BarItemMenu_SecondaryAxisX" xml:space="preserve">
+    <value>Secondary Axis X</value>
+  </data>
+  <data name="ChartDesignerStringIDs.BarItemMenu_SecondaryAxisY" xml:space="preserve">
+    <value>Secondary Axis Y</value>
+  </data>
+  <data name="ChartDesignerStringIDs.BarItemMenu_Series" xml:space="preserve">
+    <value>Series...</value>
+  </data>
+  <data name="ChartDesignerStringIDs.BarItemMenu_SeriesElements" xml:space="preserve">
+    <value>Series Elements</value>
+  </data>
+  <data name="ChartDesignerStringIDs.BarItemMenu_SeriesTemplate" xml:space="preserve">
+    <value>Series Template...</value>
+  </data>
+  <data name="ChartDesignerStringIDs.BarItemMenu_StackedBarTotalLabel" xml:space="preserve">
+    <value>Stacked Bar Total Label</value>
+  </data>
+  <data name="ChartDesignerStringIDs.BarItemMenu_Strip" xml:space="preserve">
+    <value>Strip</value>
+  </data>
+  <data name="ChartDesignerStringIDs.BarItemMenu_Title" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="ChartDesignerStringIDs.BarSeries3D" xml:space="preserve">
+    <value>Bar 3D (Manhattan Bar)</value>
+  </data>
+  <data name="ChartDesignerStringIDs.BarSideBySideFullStackedSeries2D" xml:space="preserve">
+    <value>Side-By-Side Full Stacked Bar 2D</value>
+  </data>
+  <data name="ChartDesignerStringIDs.BarSideBySideSeries2D" xml:space="preserve">
+    <value>Side-by-Side Bar 2D</value>
+  </data>
+  <data name="ChartDesignerStringIDs.BarSideBySideSeries3D" xml:space="preserve">
+    <value>Side-by-Side Bar 3D</value>
+  </data>
+  <data name="ChartDesignerStringIDs.BarSideBySideStackedSeries2D" xml:space="preserve">
+    <value>Side-by-Side Stacked Bar 2D</value>
+  </data>
+  <data name="ChartDesignerStringIDs.BarStackedSeries2D" xml:space="preserve">
+    <value>Stacked Bar 2D</value>
+  </data>
+  <data name="ChartDesignerStringIDs.BollingerBands" xml:space="preserve">
+    <value>Bollinger Bands</value>
+  </data>
+  <data name="ChartDesignerStringIDs.BoxPlotSeries2D" xml:space="preserve">
+    <value>Box Plot 2D</value>
+  </data>
+  <data name="ChartDesignerStringIDs.BubbleSeries2D" xml:space="preserve">
+    <value>Bubble 2D</value>
+  </data>
+  <data name="ChartDesignerStringIDs.BubbleSeries3D" xml:space="preserve">
+    <value>Bubble 3D</value>
+  </data>
+  <data name="ChartDesignerStringIDs.CancelButtonCaption" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="ChartDesignerStringIDs.CandleStickSeries2D" xml:space="preserve">
+    <value>Candle Stick 2D</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ChaikinsVolatility" xml:space="preserve">
+    <value>Chaikin's Volatility</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ChangeChartType" xml:space="preserve">
+    <value>Change Chart Type</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ChartAnnotationOptions_General" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ChartAnnotationOptions_SelectedAnnotation" xml:space="preserve">
+    <value>Annotation</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ChartAnnotationOptions_Text" xml:space="preserve">
+    <value>Text</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ChartAnnotationOptionsRibbonCategoryTitle" xml:space="preserve">
+    <value>Annotation Options</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ChartDesignerAddCalculatedField" xml:space="preserve">
+    <value>Add Calculated Field</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ChartDesignerCalculatedFieldType" xml:space="preserve">
+    <value>Field Type</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ChartDesignerCalculatedFieldType_Boolean" xml:space="preserve">
+    <value>Boolean</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ChartDesignerCalculatedFieldType_Byte" xml:space="preserve">
+    <value>Byte</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ChartDesignerCalculatedFieldType_DateTime" xml:space="preserve">
+    <value>Date Time</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ChartDesignerCalculatedFieldType_Decimal" xml:space="preserve">
+    <value>Decimal</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ChartDesignerCalculatedFieldType_Double" xml:space="preserve">
+    <value>Double</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ChartDesignerCalculatedFieldType_Float" xml:space="preserve">
+    <value>Float</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ChartDesignerCalculatedFieldType_Guid" xml:space="preserve">
+    <value>Guid</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ChartDesignerCalculatedFieldType_Int16" xml:space="preserve">
+    <value>Int16</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ChartDesignerCalculatedFieldType_Int32" xml:space="preserve">
+    <value>Int32</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ChartDesignerCalculatedFieldType_None" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ChartDesignerCalculatedFieldType_String" xml:space="preserve">
+    <value>String</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ChartDesignerCalculatedFieldType_TimeSpan" xml:space="preserve">
+    <value>Time Span</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ChartDesignerDeleteCalculatedField" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ChartDesignerEditCalculatedFieldExpression" xml:space="preserve">
+    <value>Edit Expression...</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ChartDesignerWindowTitle" xml:space="preserve">
+    <value>Chart Designer</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ChartStructureDockPanelTitle" xml:space="preserve">
+    <value>Chart Structure</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ChartTitleOptions_General" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ChartTitleOptions_Position" xml:space="preserve">
+    <value>Position</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ChartTitleOptions_SelectedTitle" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ChartTitleOptions_Text" xml:space="preserve">
+    <value>Text:</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ChartTitleOptionsRibbonCategoryTitle" xml:space="preserve">
+    <value>Title Options</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ChartViewGallery_Area" xml:space="preserve">
+    <value>Area Series</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ChartViewGallery_BarSeries" xml:space="preserve">
+    <value>Bar Series</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ChartViewGallery_BoxPlot" xml:space="preserve">
+    <value>Box Plot</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ChartViewGallery_Financial" xml:space="preserve">
+    <value>Financial Series</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ChartViewGallery_Funnel" xml:space="preserve">
+    <value>Funnel Series</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ChartViewGallery_LineSeries" xml:space="preserve">
+    <value>Line Series</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ChartViewGallery_Pie" xml:space="preserve">
+    <value>Pie Series</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ChartViewGallery_PointBubble" xml:space="preserve">
+    <value>Point and Bubble Series</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ChartViewGallery_Polar" xml:space="preserve">
+    <value>Polar Series</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ChartViewGallery_Radar" xml:space="preserve">
+    <value>Radar Series</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ChartViewGallery_RangeSeries" xml:space="preserve">
+    <value>Range Series</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ChooseDataSource" xml:space="preserve">
+    <value>Choose a datasource:</value>
+  </data>
+  <data name="ChartDesignerStringIDs.CircularAreaSpinAnimation" xml:space="preserve">
+    <value>Spin</value>
+  </data>
+  <data name="ChartDesignerStringIDs.CircularAreaSpinZoomInAnimation" xml:space="preserve">
+    <value>Spin Zoom In</value>
+  </data>
+  <data name="ChartDesignerStringIDs.CircularAreaUnwindAnimation" xml:space="preserve">
+    <value>Unwind</value>
+  </data>
+  <data name="ChartDesignerStringIDs.CircularAreaZoomInAnimation" xml:space="preserve">
+    <value>Zoom In</value>
+  </data>
+  <data name="ChartDesignerStringIDs.CircularLineSpinAnimation" xml:space="preserve">
+    <value>Spin</value>
+  </data>
+  <data name="ChartDesignerStringIDs.CircularLineSpinZoomInAnimation" xml:space="preserve">
+    <value>Spin Zoom In</value>
+  </data>
+  <data name="ChartDesignerStringIDs.CircularLineUnwindAnimation" xml:space="preserve">
+    <value>Unwind</value>
+  </data>
+  <data name="ChartDesignerStringIDs.CircularLineZoomInAnimation" xml:space="preserve">
+    <value>Zoom In</value>
+  </data>
+  <data name="ChartDesignerStringIDs.CircularMarkerFadeInAnimation" xml:space="preserve">
+    <value>Fade In</value>
+  </data>
+  <data name="ChartDesignerStringIDs.CircularMarkerSlideFromBottomCenterAnimation" xml:space="preserve">
+    <value>Slide From Bottom Center</value>
+  </data>
+  <data name="ChartDesignerStringIDs.CircularMarkerSlideFromCenterAnimation" xml:space="preserve">
+    <value>Slide From Center</value>
+  </data>
+  <data name="ChartDesignerStringIDs.CircularMarkerSlideFromLeftCenterAnimation" xml:space="preserve">
+    <value>Slide From Left Center</value>
+  </data>
+  <data name="ChartDesignerStringIDs.CircularMarkerSlideFromRightCenterAnimation" xml:space="preserve">
+    <value>Slide From Right Center</value>
+  </data>
+  <data name="ChartDesignerStringIDs.CircularMarkerSlideFromTopCenterAnimation" xml:space="preserve">
+    <value>Slide From Top Center</value>
+  </data>
+  <data name="ChartDesignerStringIDs.CircularMarkerSlideToCenterAnimation" xml:space="preserve">
+    <value>Slide To Center</value>
+  </data>
+  <data name="ChartDesignerStringIDs.CircularMarkerWidenAnimation" xml:space="preserve">
+    <value>Widen</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ClearSeriesDataButtonCaption" xml:space="preserve">
+    <value>Clear Series Data</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ColorizerKeyDouble" xml:space="preserve">
+    <value>Add Double</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ColorizerKeyInt" xml:space="preserve">
+    <value>Add Integer</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ColorizerKeyString" xml:space="preserve">
+    <value>Add String</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ColorObjectColorizer" xml:space="preserve">
+    <value>ColorObjectColorizer</value>
+  </data>
+  <data name="ChartDesignerStringIDs.CommandMessages_IncompatibleWithDateTimeConstantLineValueCaption" xml:space="preserve">
+    <value>Incorrect Value Format</value>
+  </data>
+  <data name="ChartDesignerStringIDs.CommandMessages_IncompatibleWithDateTimeConstantLineValueMessage" xml:space="preserve">
+    <value>The entered value has an incorrect type. Must be DateTime</value>
+  </data>
+  <data name="ChartDesignerStringIDs.CommandMessages_IncompatibleWithDateTimeScaleBreakEdge1Caption" xml:space="preserve">
+    <value>Incorrect Value Format</value>
+  </data>
+  <data name="ChartDesignerStringIDs.CommandMessages_IncompatibleWithDateTimeScaleBreakEdge1Message" xml:space="preserve">
+    <value>The entered value has an incorrect type. Must be DateTime</value>
+  </data>
+  <data name="ChartDesignerStringIDs.CommandMessages_IncompatibleWithDateTimeScaleBreakEdge2Caption" xml:space="preserve">
+    <value>Incorrect Value Format</value>
+  </data>
+  <data name="ChartDesignerStringIDs.CommandMessages_IncompatibleWithDateTimeScaleBreakEdge2Message" xml:space="preserve">
+    <value>The entered value has an incorrect type. Must be DateTime</value>
+  </data>
+  <data name="ChartDesignerStringIDs.CommandMessages_IncompatibleWithDateTimeStripMaxLimitCaption" xml:space="preserve">
+    <value>Incorrect Value Format</value>
+  </data>
+  <data name="ChartDesignerStringIDs.CommandMessages_IncompatibleWithDateTimeStripMaxLimitMessage" xml:space="preserve">
+    <value>The entered value has an incorrect type. Must be DateTime</value>
+  </data>
+  <data name="ChartDesignerStringIDs.CommandMessages_IncompatibleWithDateTimeStripMinLimitCaption" xml:space="preserve">
+    <value>Incorrect Value Format</value>
+  </data>
+  <data name="ChartDesignerStringIDs.CommandMessages_IncompatibleWithDateTimeStripMinLimitMessage" xml:space="preserve">
+    <value>The entered value has an incorrect type. Must be DateTime</value>
+  </data>
+  <data name="ChartDesignerStringIDs.CommandMessages_IncompatibleWithNumericalScaleBreakEdge1Caption" xml:space="preserve">
+    <value>Incorrect Value Format</value>
+  </data>
+  <data name="ChartDesignerStringIDs.CommandMessages_IncompatibleWithNumericalScaleBreakEdge1Message" xml:space="preserve">
+    <value>The entered value has an incorrect type. Must be Numerical</value>
+  </data>
+  <data name="ChartDesignerStringIDs.CommandMessages_IncompatibleWithNumericalScaleBreakEdge2Caption" xml:space="preserve">
+    <value>Incorrect Value Format</value>
+  </data>
+  <data name="ChartDesignerStringIDs.CommandMessages_IncompatibleWithNumericalScaleBreakEdge2Message" xml:space="preserve">
+    <value>The entered value has an incorrect type. Must be Numerical</value>
+  </data>
+  <data name="ChartDesignerStringIDs.CommandMessages_IncompatibleWithNumericalStripMaxLimitCaption" xml:space="preserve">
+    <value>Incorrect Value Format</value>
+  </data>
+  <data name="ChartDesignerStringIDs.CommandMessages_IncompatibleWithNumericalStripMaxLimitMessage" xml:space="preserve">
+    <value>The entered value has an incorrect type. Must be Numerical</value>
+  </data>
+  <data name="ChartDesignerStringIDs.CommandMessages_IncompatibleWithNumericalStripMinLimitCaption" xml:space="preserve">
+    <value>Incorrect Value Format</value>
+  </data>
+  <data name="ChartDesignerStringIDs.CommandMessages_IncompatibleWithNumericalStripMinLimitMessage" xml:space="preserve">
+    <value>The entered value has an incorrect type. Must be Numerical</value>
+  </data>
+  <data name="ChartDesignerStringIDs.CommandMessages_IncompatibleWithNumericConstantLineValueCaption" xml:space="preserve">
+    <value>Incorrect Value Format</value>
+  </data>
+  <data name="ChartDesignerStringIDs.CommandMessages_IncompatibleWithNumericConstantLineValueMessage" xml:space="preserve">
+    <value>The entered value has an incorrect type. Must be Numerical</value>
+  </data>
+  <data name="ChartDesignerStringIDs.CommandMessages_IncompatibleWithTimeSpanConstantLineValueCaption" xml:space="preserve">
+    <value>Incorrect Value Format</value>
+  </data>
+  <data name="ChartDesignerStringIDs.CommandMessages_IncompatibleWithTimeSpanConstantLineValueMessage" xml:space="preserve">
+    <value>The entered value has an incorrect type. Must be TimeSpan</value>
+  </data>
+  <data name="ChartDesignerStringIDs.CommandMessages_IncompatibleWithTimeSpanScaleBreakEdge1Caption" xml:space="preserve">
+    <value>Incorrect Value Format</value>
+  </data>
+  <data name="ChartDesignerStringIDs.CommandMessages_IncompatibleWithTimeSpanScaleBreakEdge1Message" xml:space="preserve">
+    <value>The entered value has an incorrect type. Must be TimeSpan</value>
+  </data>
+  <data name="ChartDesignerStringIDs.CommandMessages_IncompatibleWithTimeSpanScaleBreakEdge2Caption" xml:space="preserve">
+    <value>Incorrect Value Format</value>
+  </data>
+  <data name="ChartDesignerStringIDs.CommandMessages_IncompatibleWithTimeSpanScaleBreakEdge2Message" xml:space="preserve">
+    <value>The entered value has an incorrect type. Must be TimeSpan</value>
+  </data>
+  <data name="ChartDesignerStringIDs.CommandMessages_IncompatibleWithTimeSpanStripMaxLimitCaption" xml:space="preserve">
+    <value>Incorrect Value Format</value>
+  </data>
+  <data name="ChartDesignerStringIDs.CommandMessages_IncompatibleWithTimeSpanStripMaxLimitMessage" xml:space="preserve">
+    <value>The entered value has an incorrect type. Must be TimeSpan</value>
+  </data>
+  <data name="ChartDesignerStringIDs.CommandMessages_IncompatibleWithTimeSpanStripMinLimitCaption" xml:space="preserve">
+    <value>Incorrect Value Format</value>
+  </data>
+  <data name="ChartDesignerStringIDs.CommandMessages_IncompatibleWithTimeSpanStripMinLimitMessage" xml:space="preserve">
+    <value>The entered value has an incorrect type. Must be TimeSpan</value>
+  </data>
+  <data name="ChartDesignerStringIDs.CommodityChannelIndex" xml:space="preserve">
+    <value>Commodity Channel Index</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ComplexAnnotationContent" xml:space="preserve">
+    <value>Complex Content</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ComplexTitleContent" xml:space="preserve">
+    <value>Complex Content</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ConstantLine_GeneralGroupTitle" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ConstantLine_LegendText" xml:space="preserve">
+    <value>Text In Legend:</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ConstantLine_LineColor" xml:space="preserve">
+    <value>Color</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ConstantLine_Thickness" xml:space="preserve">
+    <value>Thickness:</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ConstantLine_TitleForeground" xml:space="preserve">
+    <value>Color</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ConstantLine_TitleGroupTitle" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ConstantLine_TitlePosition" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ConstantLine_TitlePositionCaption_FarAboveHorizontal" xml:space="preserve">
+    <value>Right Above</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ConstantLine_TitlePositionCaption_FarAboveVertical" xml:space="preserve">
+    <value>Right Above</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ConstantLine_TitlePositionCaption_FarBelowHorizontal" xml:space="preserve">
+    <value>Right Below</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ConstantLine_TitlePositionCaption_FarBelowVertical" xml:space="preserve">
+    <value>Right Below</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ConstantLine_TitlePositionCaption_NearAboveHorizontal" xml:space="preserve">
+    <value>Left Above</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ConstantLine_TitlePositionCaption_NearAboveVertical" xml:space="preserve">
+    <value>Left Above</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ConstantLine_TitlePositionCaption_NearBelowHorizontal" xml:space="preserve">
+    <value>Left Below</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ConstantLine_TitlePositionCaption_NearBelowVertical" xml:space="preserve">
+    <value>Left Below</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ConstantLine_TitlePositionCaption_None" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ConstantLine_TitlePositionDescription_FarAboveHorizontal" xml:space="preserve">
+    <value>Show the title above the line on the right.</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ConstantLine_TitlePositionDescription_FarAboveVertical" xml:space="preserve">
+    <value>Show the title above the line on the right.</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ConstantLine_TitlePositionDescription_FarBelowHorizontal" xml:space="preserve">
+    <value>Show the title below the line on the right.</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ConstantLine_TitlePositionDescription_FarBelowVertical" xml:space="preserve">
+    <value>Show the title below the line on the right.</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ConstantLine_TitlePositionDescription_NearAboveHorizontal" xml:space="preserve">
+    <value>Show the title above the line on the left.</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ConstantLine_TitlePositionDescription_NearAboveVertical" xml:space="preserve">
+    <value>Show the title above the line on the left.</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ConstantLine_TitlePositionDescription_NearBelowHorizontal" xml:space="preserve">
+    <value>Show the title below the line on the left.</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ConstantLine_TitlePositionDescription_NearBelowVertical" xml:space="preserve">
+    <value>Show the title below the line on the left.</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ConstantLine_TitlePositionDescription_None" xml:space="preserve">
+    <value>Turn off the title.</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ConstantLine_TitleText" xml:space="preserve">
+    <value>Text:</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ConstantLine_Value" xml:space="preserve">
+    <value>Value:</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ConstantLineCategoryTitle" xml:space="preserve">
+    <value>Constant Line Options</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ConstantLinePageCategoryTitle" xml:space="preserve">
+    <value>Constant Line</value>
+  </data>
+  <data name="ChartDesignerStringIDs.CountTopNOptions" xml:space="preserve">
+    <value>CountTopNOptions</value>
+  </data>
+  <data name="ChartDesignerStringIDs.DashStyle_Dash" xml:space="preserve">
+    <value>Dash</value>
+  </data>
+  <data name="ChartDesignerStringIDs.DashStyle_DashDot" xml:space="preserve">
+    <value>Dash Dot</value>
+  </data>
+  <data name="ChartDesignerStringIDs.DashStyle_DashDotDot" xml:space="preserve">
+    <value>Dash Dot Dot</value>
+  </data>
+  <data name="ChartDesignerStringIDs.DashStyle_Dot" xml:space="preserve">
+    <value>Dot</value>
+  </data>
+  <data name="ChartDesignerStringIDs.DashStyle_Solid" xml:space="preserve">
+    <value>Solid</value>
+  </data>
+  <data name="ChartDesignerStringIDs.DataEditor_ArgumentColumnHeader" xml:space="preserve">
+    <value>Argument</value>
+  </data>
+  <data name="ChartDesignerStringIDs.DataEditor_BrushColumnHeader" xml:space="preserve">
+    <value>Brush</value>
+  </data>
+  <data name="ChartDesignerStringIDs.DataEditor_CloseValueColumnHeader" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="ChartDesignerStringIDs.DataEditor_HighValueColumnHeader" xml:space="preserve">
+    <value>High</value>
+  </data>
+  <data name="ChartDesignerStringIDs.DataEditor_LowValueColumnHeader" xml:space="preserve">
+    <value>Low</value>
+  </data>
+  <data name="ChartDesignerStringIDs.DataEditor_MaxColumnHeader" xml:space="preserve">
+    <value>Max</value>
+  </data>
+  <data name="ChartDesignerStringIDs.DataEditor_MeanColumnHeader" xml:space="preserve">
+    <value>Mean</value>
+  </data>
+  <data name="ChartDesignerStringIDs.DataEditor_MedianColumnHeader" xml:space="preserve">
+    <value>Median</value>
+  </data>
+  <data name="ChartDesignerStringIDs.DataEditor_MinColumnHeader" xml:space="preserve">
+    <value>Min</value>
+  </data>
+  <data name="ChartDesignerStringIDs.DataEditor_OpenValueColumnHeader" xml:space="preserve">
+    <value>Open</value>
+  </data>
+  <data name="ChartDesignerStringIDs.DataEditor_Quartile1ColumnHeader" xml:space="preserve">
+    <value>Quartile1</value>
+  </data>
+  <data name="ChartDesignerStringIDs.DataEditor_Quartile3ColumnHeader" xml:space="preserve">
+    <value>Quartile3</value>
+  </data>
+  <data name="ChartDesignerStringIDs.DataEditor_Value2ColumnHeader" xml:space="preserve">
+    <value>Value 2</value>
+  </data>
+  <data name="ChartDesignerStringIDs.DataEditor_ValueColumnHeader" xml:space="preserve">
+    <value>Value</value>
+  </data>
+  <data name="ChartDesignerStringIDs.DataEditor_WeightValueColumnHeader" xml:space="preserve">
+    <value>Weight</value>
+  </data>
+  <data name="ChartDesignerStringIDs.DataSourceBasedErrorBars" xml:space="preserve">
+    <value>DataSource Based Error Bars</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Default_Elements_AddAnnotation" xml:space="preserve">
+    <value>Add Annotation</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Default_Elements_AddChartTitle" xml:space="preserve">
+    <value>Add Chart Title</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Default_Elements_AddConstantLine" xml:space="preserve">
+    <value>Add Constant Line</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Default_Elements_AddConstantLineX" xml:space="preserve">
+    <value>Add Constant Line To Axis X</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Default_Elements_AddConstantLineXDescription" xml:space="preserve">
+    <value>Add a constant line to the primary X-axis.</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Default_Elements_AddConstantLineY" xml:space="preserve">
+    <value>Add Constant Line To Axis Y</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Default_Elements_AddConstantLineYDescription" xml:space="preserve">
+    <value>Add a constant line to the primary Y-axis.</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Default_Elements_AddIndicator" xml:space="preserve">
+    <value>Add Indicator</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Default_Elements_AddIndicator_FibonacciIndicatorsGalleryGroup" xml:space="preserve">
+    <value>Fibonacci</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Default_Elements_AddIndicator_MovingAverageIndicatorsGalleryGroup" xml:space="preserve">
+    <value>Moving Average</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Default_Elements_AddIndicator_OscillatorsGalleryGroup" xml:space="preserve">
+    <value>Oscillator Indicators</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Default_Elements_AddIndicator_PriceIndicatorsGalleryGroup" xml:space="preserve">
+    <value>Price Indicators</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Default_Elements_AddIndicator_SimpleIndicatorsGalleryGroup" xml:space="preserve">
+    <value>Simple</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Default_Elements_AddIndicator_TrendIndicatorsGalleryGroup" xml:space="preserve">
+    <value>Trend Indicators</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Default_Elements_AddLegend" xml:space="preserve">
+    <value>Add Legend</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Default_Elements_AddPaneHorizontal" xml:space="preserve">
+    <value>Add Pane At Right</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Default_Elements_AddPaneHorizontalDescription" xml:space="preserve">
+    <value>Add a new pane to the right of the current pane and stack them horizontally.</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Default_Elements_AddPaneVertical" xml:space="preserve">
+    <value>Add Pane Below</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Default_Elements_AddPaneVerticalDescription" xml:space="preserve">
+    <value>Add a new pane below the current pane and stack them vertically.</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Default_Elements_AddScaleBreakX" xml:space="preserve">
+    <value>Add Scale Break To Axis X</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Default_Elements_AddScaleBreakXDescription" xml:space="preserve">
+    <value>Add a scale break to the primary X-axis.</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Default_Elements_AddScaleBreakY" xml:space="preserve">
+    <value>Add Scale Break To Axis Y</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Default_Elements_AddScaleBreakYDescription" xml:space="preserve">
+    <value>Add a scale break to the primary Y-axis.</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Default_Elements_AddSecondaryAxisX" xml:space="preserve">
+    <value>Add Axis X</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Default_Elements_AddSecondaryAxisY" xml:space="preserve">
+    <value>Add Axis Y</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Default_Elements_AddStripX" xml:space="preserve">
+    <value>Add Strip To Axis X</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Default_Elements_AddStripXDescription" xml:space="preserve">
+    <value>Add a strip to the primary X-axis.</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Default_Elements_AddStripY" xml:space="preserve">
+    <value>Add Strip To Axis Y</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Default_Elements_AddStripYDescription" xml:space="preserve">
+    <value>Add a strip to the primary Y-axis.</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Default_Elements_AnnotationsGroup" xml:space="preserve">
+    <value>Annotations</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Default_Elements_AxesElementsGroupTitle" xml:space="preserve">
+    <value>Axes Elements</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Default_Elements_AxesGroupTitle" xml:space="preserve">
+    <value>Axes</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Default_Elements_ChartAreaElementsGroupTitle" xml:space="preserve">
+    <value>Chart Area Elements</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Default_Elements_IndicatorsGroup" xml:space="preserve">
+    <value>Indicators</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Default_Elements_Legend" xml:space="preserve">
+    <value>Legend</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Default_Elements_Pane" xml:space="preserve">
+    <value>Pane</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Default_ElementsPageTitle" xml:space="preserve">
+    <value>Elements</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Default_Main_AddSeriesManuallyGroupTitle" xml:space="preserve">
+    <value>Add New Series</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Default_Main_ChangeChartTypeGroupTitle" xml:space="preserve">
+    <value>Change Chart Type</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Default_Main_CircularDiagramCircleShapeStyleCaption" xml:space="preserve">
+    <value>Circle</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Default_Main_CircularDiagramOptionsGroup" xml:space="preserve">
+    <value>Diagram Options</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Default_Main_CircularDiagramPolygonShapeStyleCaption" xml:space="preserve">
+    <value>Polygon</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Default_Main_CircularDiagramRotationDirection" xml:space="preserve">
+    <value>Rotation Direction</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Default_Main_CircularDiagramRotationDirectionClockwise" xml:space="preserve">
+    <value>Clockwise</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Default_Main_CircularDiagramRotationDirectionCounterclockwise" xml:space="preserve">
+    <value>Counterclockwise</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Default_Main_CircularDiagramShapeStyle" xml:space="preserve">
+    <value>Shape Style</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Default_Main_CircularDiagramStartAngle" xml:space="preserve">
+    <value>Start Angle</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Default_Main_Diagram3DOptionsGroup" xml:space="preserve">
+    <value>Diagram Options</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Default_Main_Diagram3DPerspectiveAngle" xml:space="preserve">
+    <value>Perspective Angle:</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Default_Main_Diagram3DZoomPercent" xml:space="preserve">
+    <value>Zoom Percent:</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Default_Main_EnableAxisXNavigationCheckCaption" xml:space="preserve">
+    <value>Axis X</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Default_Main_EnableAxisYNavigationCheckCaption" xml:space="preserve">
+    <value>Axis Y</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Default_Main_NavigationHeader" xml:space="preserve">
+    <value>Zoom &amp; Scroll</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Default_Main_Palette" xml:space="preserve">
+    <value>Palette</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Default_Main_PaneOrientationButtonCaption" xml:space="preserve">
+    <value>Panes Orientation</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Default_Main_PaneOrientationHorizontal" xml:space="preserve">
+    <value>Horizontal</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Default_Main_PaneOrientationVertical" xml:space="preserve">
+    <value>Vertical</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Default_Main_SimpleDiagramLayoutDimensionWithColon" xml:space="preserve">
+    <value>Dimension:</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Default_Main_SimpleDiagramLayoutDimensionWithoutColon" xml:space="preserve">
+    <value>Dimension</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Default_Main_SimpleDiagramLayoutDirection" xml:space="preserve">
+    <value>Layout Direction</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Default_Main_SimpleDiagramLayoutDirectionHorizontalCaption" xml:space="preserve">
+    <value>Horizontal</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Default_Main_SimpleDiagramLayoutDirectionVerticalCaption" xml:space="preserve">
+    <value>Vertical</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Default_Main_SimpleDiagramPropertiesGroup" xml:space="preserve">
+    <value>Diagram Options</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Default_Main_XYDiagram2DPropertiesGroup" xml:space="preserve">
+    <value>Diagram Options</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Default_Main_XYDiagramRotated" xml:space="preserve">
+    <value>Rotated</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Default_MainPageTitle" xml:space="preserve">
+    <value>Chart</value>
+  </data>
+  <data name="ChartDesignerStringIDs.DefaultAnnotationContent" xml:space="preserve">
+    <value>Annotation</value>
+  </data>
+  <data name="ChartDesignerStringIDs.DefaultAxisTitleText" xml:space="preserve">
+    <value>Axis</value>
+  </data>
+  <data name="ChartDesignerStringIDs.DefaultChartTitleContent" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="ChartDesignerStringIDs.DefaultConstantLineTitle" xml:space="preserve">
+    <value>Constant Line</value>
+  </data>
+  <data name="ChartDesignerStringIDs.DefaultPane" xml:space="preserve">
+    <value>Default Pane</value>
+  </data>
+  <data name="ChartDesignerStringIDs.DefaultSeriesNamePrefix" xml:space="preserve">
+    <value>Series</value>
+  </data>
+  <data name="ChartDesignerStringIDs.DefaultStripLegendText" xml:space="preserve">
+    <value>Strip</value>
+  </data>
+  <data name="ChartDesignerStringIDs.DetrendedPriceOscillator" xml:space="preserve">
+    <value>Detrended Price Oscillator</value>
+  </data>
+  <data name="ChartDesignerStringIDs.DragDataMembers" xml:space="preserve">
+    <value>Drag data members to the corresponding cell to define chart data.</value>
+  </data>
+  <data name="ChartDesignerStringIDs.DragDropDataMembers_Argument" xml:space="preserve">
+    <value>Argument</value>
+  </data>
+  <data name="ChartDesignerStringIDs.DragDropDataMembers_Close" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="ChartDesignerStringIDs.DragDropDataMembers_Color" xml:space="preserve">
+    <value>Color</value>
+  </data>
+  <data name="ChartDesignerStringIDs.DragDropDataMembers_High" xml:space="preserve">
+    <value>High</value>
+  </data>
+  <data name="ChartDesignerStringIDs.DragDropDataMembers_Low" xml:space="preserve">
+    <value>Low</value>
+  </data>
+  <data name="ChartDesignerStringIDs.DragDropDataMembers_Open" xml:space="preserve">
+    <value>Open</value>
+  </data>
+  <data name="ChartDesignerStringIDs.DragDropDataMembers_Series" xml:space="preserve">
+    <value>Series</value>
+  </data>
+  <data name="ChartDesignerStringIDs.DragDropDataMembers_ToolTipHint" xml:space="preserve">
+    <value>ToolTip Hint</value>
+  </data>
+  <data name="ChartDesignerStringIDs.DragDropDataMembers_Value" xml:space="preserve">
+    <value>Value</value>
+  </data>
+  <data name="ChartDesignerStringIDs.DragDropDataMembers_Value2" xml:space="preserve">
+    <value>Value 2</value>
+  </data>
+  <data name="ChartDesignerStringIDs.DragDropDataMembers_Weight" xml:space="preserve">
+    <value>Weight</value>
+  </data>
+  <data name="ChartDesignerStringIDs.EmptyDiagramHintBar" xml:space="preserve">
+    <value>The Chart has no data to visualize. Click the Add button to expand the Add menu and select the way to provide data to visualize.</value>
+  </data>
+  <data name="ChartDesignerStringIDs.EmptyDiagramHintRibbon" xml:space="preserve">
+    <value>There is no data to visualize. To see the chart, switch to the Chart ribbon tab and choose a desired series type from the Add New Series gallery.</value>
+  </data>
+  <data name="ChartDesignerStringIDs.EmptyPointOptions" xml:space="preserve">
+    <value>New Empty Point Options</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ErrorBarDirection_Both" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ErrorBarDirection_Minus" xml:space="preserve">
+    <value>High</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ErrorBarDirection_Plus" xml:space="preserve">
+    <value>Low</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ErrorBarEndStyle_Cap" xml:space="preserve">
+    <value>Cap</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ErrorBarEndStyle_NoCap" xml:space="preserve">
+    <value>No Cap</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ExponentialMovingAverage" xml:space="preserve">
+    <value>Exponential Moving Average</value>
+  </data>
+  <data name="ChartDesignerStringIDs.FibonacciArcs" xml:space="preserve">
+    <value>Fibonacci Arcs</value>
+  </data>
+  <data name="ChartDesignerStringIDs.FibonacciFans" xml:space="preserve">
+    <value>Fibonacci Fans</value>
+  </data>
+  <data name="ChartDesignerStringIDs.FibonacciRetracement" xml:space="preserve">
+    <value>Fibonacci Retracement</value>
+  </data>
+  <data name="ChartDesignerStringIDs.FixedValueErrorBars" xml:space="preserve">
+    <value>Fixed Value Error Bars</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Font" xml:space="preserve">
+    <value>Font</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Font_Bold" xml:space="preserve">
+    <value>Bold</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Font_Family" xml:space="preserve">
+    <value>Name:</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Font_Italic" xml:space="preserve">
+    <value>Italic</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Font_Size" xml:space="preserve">
+    <value>Size:</value>
+  </data>
+  <data name="ChartDesignerStringIDs.FunnelSeries2D" xml:space="preserve">
+    <value>Funnel 2D</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Indicator_AdvancedGroupCaption" xml:space="preserve">
+    <value>Advanced</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Indicator_Arg1ValLevel1Header" xml:space="preserve">
+    <value>Start Point</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Indicator_Arg2ValLevel2Header" xml:space="preserve">
+    <value>End Point</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Indicator_Argument1" xml:space="preserve">
+    <value>Argument:</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Indicator_Argument2" xml:space="preserve">
+    <value>Argument:</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Indicator_AxisY" xml:space="preserve">
+    <value>Axis Y</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Indicator_Color" xml:space="preserve">
+    <value>Color</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Indicator_DisplayName" xml:space="preserve">
+    <value>Display Name:</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Indicator_ErrorBarsDirection" xml:space="preserve">
+    <value>Direction:</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Indicator_ErrorBarsEndStyle" xml:space="preserve">
+    <value>End Style:</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Indicator_ErrorBarsGroupCaption" xml:space="preserve">
+    <value>Error Bars</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Indicator_FibonacciArcsShowLevel100" xml:space="preserve">
+    <value>Show Level 100%</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Indicator_FibonacciFansShowLevel0" xml:space="preserve">
+    <value>Show Level 0%</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Indicator_FibonacciIndicatorShowLevel23_6" xml:space="preserve">
+    <value>Show Level 23.6%</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Indicator_FibonacciIndicatorShowLevel76_4" xml:space="preserve">
+    <value>Show Level 76.4%</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Indicator_FibonacciRetracementShowAdditionalLevels" xml:space="preserve">
+    <value>Show Additional Levels</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Indicator_GeneralGroupCaption" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Indicator_IndicatorPageTitle" xml:space="preserve">
+    <value>Indicator</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Indicator_LegendText" xml:space="preserve">
+    <value>Text in Legend:</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Indicator_MovingAverageEnvelopePercent" xml:space="preserve">
+    <value>Envelope Percent:</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Indicator_MovingAverageKind" xml:space="preserve">
+    <value>Kind: </value>
+  </data>
+  <data name="ChartDesignerStringIDs.Indicator_MovingAveragePointsCount" xml:space="preserve">
+    <value>Points Count:</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Indicator_PresentationGroupCaption" xml:space="preserve">
+    <value>Presentation</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Indicator_SeparatePaneGroupCaption" xml:space="preserve">
+    <value>Pane &amp; Axis</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Indicator_Thickness" xml:space="preserve">
+    <value>Thickness:</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Indicator_TrendLineExtrapolateToInfinity" xml:space="preserve">
+    <value>Extrapolate to Infinity</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Indicator_ValueLevel" xml:space="preserve">
+    <value>Value Level:</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Indicator_ValueLevel1" xml:space="preserve">
+    <value>Value Level:</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Indicator_ValueLevel2" xml:space="preserve">
+    <value>Value Level:</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Indicator_ValueLevelForRegressionLine" xml:space="preserve">
+    <value>Value level</value>
+  </data>
+  <data name="ChartDesignerStringIDs.IndicatorCategoryTitle" xml:space="preserve">
+    <value>Indicator Options</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Indicators_MovingAverageKind_Envelope" xml:space="preserve">
+    <value>Envelope</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Indicators_MovingAverageKind_EnvelopeDescription" xml:space="preserve">
+    <value>Only the Envelope is shown.</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Indicators_MovingAverageKind_MovingAverage" xml:space="preserve">
+    <value>Moving Average</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Indicators_MovingAverageKind_MovingAverageAndEnvelope" xml:space="preserve">
+    <value>Moving Average nd Envelope</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Indicators_MovingAverageKind_MovingAverageAndEnvelopeDescription" xml:space="preserve">
+    <value>Both the Moving Average and Envelope are shown.</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Indicators_MovingAverageKind_MovingAverageDescription" xml:space="preserve">
+    <value>Only the Moving Average is shown.</value>
+  </data>
+  <data name="ChartDesignerStringIDs.KeyColorColorizer" xml:space="preserve">
+    <value>KeyColorColorizer</value>
+  </data>
+  <data name="ChartDesignerStringIDs.LegendOptions_Layout" xml:space="preserve">
+    <value>Layout</value>
+  </data>
+  <data name="ChartDesignerStringIDs.LegendOptions_Orientation" xml:space="preserve">
+    <value>Orientation</value>
+  </data>
+  <data name="ChartDesignerStringIDs.LegendOptions_Orientation_Horizontal" xml:space="preserve">
+    <value>Horizontal</value>
+  </data>
+  <data name="ChartDesignerStringIDs.LegendOptions_Orientation_HorizontalDescription" xml:space="preserve">
+    <value>Order legend items from left to right.</value>
+  </data>
+  <data name="ChartDesignerStringIDs.LegendOptions_Orientation_Vertical" xml:space="preserve">
+    <value>Vertical</value>
+  </data>
+  <data name="ChartDesignerStringIDs.LegendOptions_Orientation_VerticalDescription" xml:space="preserve">
+    <value>Order legend items from top to bottom.</value>
+  </data>
+  <data name="ChartDesignerStringIDs.LegendOptions_ReverseItems" xml:space="preserve">
+    <value>Reverse Items</value>
+  </data>
+  <data name="ChartDesignerStringIDs.LegendOptions_SelectedLegend" xml:space="preserve">
+    <value>Legend</value>
+  </data>
+  <data name="ChartDesignerStringIDs.LegendOptionsRibbonCategoryTitle" xml:space="preserve">
+    <value>Legend Options</value>
+  </data>
+  <data name="ChartDesignerStringIDs.LegendPosition" xml:space="preserve">
+    <value>Position</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Line2DBlowUpAnimation" xml:space="preserve">
+    <value>Blow Up</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Line2DSlideFromBottomAnimation" xml:space="preserve">
+    <value>Slide From Bottom</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Line2DSlideFromLeftAnimation" xml:space="preserve">
+    <value>Slide From Left</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Line2DSlideFromRightAnimation" xml:space="preserve">
+    <value>Slide From Right</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Line2DSlideFromTopAnimation" xml:space="preserve">
+    <value>Slide From Top</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Line2DStretchFromFarAnimation" xml:space="preserve">
+    <value>Stretch From Far</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Line2DStretchFromNearAnimation" xml:space="preserve">
+    <value>Stretch From Near</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Line2DUnwindAnimation" xml:space="preserve">
+    <value>Unwind</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Line2DUnwrapHorizontallyAnimation" xml:space="preserve">
+    <value>Unwrap Horizontally</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Line2DUnwrapVerticallyAnimation" xml:space="preserve">
+    <value>Unwrap Vertically</value>
+  </data>
+  <data name="ChartDesignerStringIDs.LineEmptyPointOptions" xml:space="preserve">
+    <value>New Line Empty Point Options</value>
+  </data>
+  <data name="ChartDesignerStringIDs.LineFullStackedSeries2D" xml:space="preserve">
+    <value>Full-Stacked Line 2D</value>
+  </data>
+  <data name="ChartDesignerStringIDs.LineScatterSeries2D" xml:space="preserve">
+    <value>Scatter Line 2D</value>
+  </data>
+  <data name="ChartDesignerStringIDs.LineSeries2D" xml:space="preserve">
+    <value>Line 2D</value>
+  </data>
+  <data name="ChartDesignerStringIDs.LineStackedSeries2D" xml:space="preserve">
+    <value>Stacked Line 2D</value>
+  </data>
+  <data name="ChartDesignerStringIDs.LineStepSeries2D" xml:space="preserve">
+    <value>Step Line 2D</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Marker2DAnimationFadeIn" xml:space="preserve">
+    <value>Fade In</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Marker2DAnimationSlideFromBottom" xml:space="preserve">
+    <value>Slide From Bottom</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Marker2DAnimationSlideFromBottomCenter" xml:space="preserve">
+    <value>Slide From Bottom Center</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Marker2DAnimationSlideFromLeft" xml:space="preserve">
+    <value>Slide From Left</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Marker2DAnimationSlideFromLeftBottomCorner" xml:space="preserve">
+    <value>Slide From Left Bottom Corner</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Marker2DAnimationSlideFromLeftCenter" xml:space="preserve">
+    <value>Slide From Left Center</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Marker2DAnimationSlideFromLeftTopCorner" xml:space="preserve">
+    <value>Slide From Left Top Corner</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Marker2DAnimationSlideFromRight" xml:space="preserve">
+    <value>Slide From Right</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Marker2DAnimationSlideFromRightBottomCorner" xml:space="preserve">
+    <value>Slide From Right Bottom Corner</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Marker2DAnimationSlideFromRightCenter" xml:space="preserve">
+    <value>Slide From Right Center</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Marker2DAnimationSlideFromRightTopCorner" xml:space="preserve">
+    <value>Slide From Right Top Corner</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Marker2DAnimationSlideFromTop" xml:space="preserve">
+    <value>Slide From Top</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Marker2DAnimationSlideFromTopCenter" xml:space="preserve">
+    <value>Slide From Top Center</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Marker2DAnimationWiden" xml:space="preserve">
+    <value>Widen</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Marker2DModelCircle" xml:space="preserve">
+    <value>Circle</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Marker2DModelCross" xml:space="preserve">
+    <value>Cross</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Marker2DModelDiamond" xml:space="preserve">
+    <value>Diamond</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Marker2DModelDollar" xml:space="preserve">
+    <value>Dollar</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Marker2DModelInvertedTriangle" xml:space="preserve">
+    <value>Inverted Triangle</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Marker2DModelPentagon" xml:space="preserve">
+    <value>Pentagon</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Marker2DModelPlus" xml:space="preserve">
+    <value>Plus</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Marker2DModelPolygon" xml:space="preserve">
+    <value>Polygon</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Marker2DModelRing" xml:space="preserve">
+    <value>Ring</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Marker2DModelSquare" xml:space="preserve">
+    <value>Square</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Marker2DModelStar" xml:space="preserve">
+    <value>Star</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Marker2DModelTriangle" xml:space="preserve">
+    <value>Triangle</value>
+  </data>
+  <data name="ChartDesignerStringIDs.MassIndex" xml:space="preserve">
+    <value>Mass Index</value>
+  </data>
+  <data name="ChartDesignerStringIDs.MedianPrice" xml:space="preserve">
+    <value>Median Price</value>
+  </data>
+  <data name="ChartDesignerStringIDs.MovingAverageConvergenceDivergence" xml:space="preserve">
+    <value>Moving Average Convergence/Divergence</value>
+  </data>
+  <data name="ChartDesignerStringIDs.NestedDonutSeries2D" xml:space="preserve">
+    <value>Nested Donut 2D</value>
+  </data>
+  <data name="ChartDesignerStringIDs.NewAverageSummaryFunction" xml:space="preserve">
+    <value>New AverageFunction</value>
+  </data>
+  <data name="ChartDesignerStringIDs.NewAxis" xml:space="preserve">
+    <value>New Axis</value>
+  </data>
+  <data name="ChartDesignerStringIDs.NewAxisLabel" xml:space="preserve">
+    <value>New Axis Label</value>
+  </data>
+  <data name="ChartDesignerStringIDs.NewAxisRange" xml:space="preserve">
+    <value>New Axis Range</value>
+  </data>
+  <data name="ChartDesignerStringIDs.NewCalculatedField" xml:space="preserve">
+    <value>New Calculated Field</value>
+  </data>
+  <data name="ChartDesignerStringIDs.NewChartToolTipController" xml:space="preserve">
+    <value>New Tool Tip Controller</value>
+  </data>
+  <data name="ChartDesignerStringIDs.NewCountSummaryFunction" xml:space="preserve">
+    <value>New CountFunction</value>
+  </data>
+  <data name="ChartDesignerStringIDs.NewCrosshairAxisLabelOptions" xml:space="preserve">
+    <value>New Crosshair Axis Label Options</value>
+  </data>
+  <data name="ChartDesignerStringIDs.NewCrosshairFreePosition" xml:space="preserve">
+    <value>New Crosshair Free Position</value>
+  </data>
+  <data name="ChartDesignerStringIDs.NewCrosshairMousePosition" xml:space="preserve">
+    <value>New Crosshair Mouse Position</value>
+  </data>
+  <data name="ChartDesignerStringIDs.NewCrosshairOptions" xml:space="preserve">
+    <value>New Crosshair Options</value>
+  </data>
+  <data name="ChartDesignerStringIDs.NewCustomLegendItem" xml:space="preserve">
+    <value>New Custom Legend Item</value>
+  </data>
+  <data name="ChartDesignerStringIDs.NewDateTimeOptions" xml:space="preserve">
+    <value>New Date Time Options</value>
+  </data>
+  <data name="ChartDesignerStringIDs.NewDateTimeSummaryOptions" xml:space="preserve">
+    <value>New DateTimeSummaryOptions</value>
+  </data>
+  <data name="ChartDesignerStringIDs.NewExponentialMovingAverage" xml:space="preserve">
+    <value>New Exponential Moving Average</value>
+  </data>
+  <data name="ChartDesignerStringIDs.NewFibonacciArcs" xml:space="preserve">
+    <value>New Fibonacci Arcs</value>
+  </data>
+  <data name="ChartDesignerStringIDs.NewFibonacciFans" xml:space="preserve">
+    <value>New Fibonacci Fans</value>
+  </data>
+  <data name="ChartDesignerStringIDs.NewFibonacciRetracement" xml:space="preserve">
+    <value>New Fibonacci Retracement</value>
+  </data>
+  <data name="ChartDesignerStringIDs.NewGridLayout" xml:space="preserve">
+    <value>New Grid Layout</value>
+  </data>
+  <data name="ChartDesignerStringIDs.NewIndicatorLabel" xml:space="preserve">
+    <value>New Indicator Label</value>
+  </data>
+  <data name="ChartDesignerStringIDs.NewLayoutDefinition" xml:space="preserve">
+    <value>New Layout Definition</value>
+  </data>
+  <data name="ChartDesignerStringIDs.NewLegend" xml:space="preserve">
+    <value>New Legend</value>
+  </data>
+  <data name="ChartDesignerStringIDs.NewLineStyle" xml:space="preserve">
+    <value>New Line Style</value>
+  </data>
+  <data name="ChartDesignerStringIDs.NewMaxSummaryFunction" xml:space="preserve">
+    <value>New MaxFunction</value>
+  </data>
+  <data name="ChartDesignerStringIDs.NewMinSummaryFunction" xml:space="preserve">
+    <value>New MinFunction</value>
+  </data>
+  <data name="ChartDesignerStringIDs.NewNavigationOptions" xml:space="preserve">
+    <value>New Navigation Options</value>
+  </data>
+  <data name="ChartDesignerStringIDs.NewNumericOptions" xml:space="preserve">
+    <value>New Numeric Options</value>
+  </data>
+  <data name="ChartDesignerStringIDs.NewNumericSummaryOptions" xml:space="preserve">
+    <value>New NumericSummaryOptions</value>
+  </data>
+  <data name="ChartDesignerStringIDs.NewPane" xml:space="preserve">
+    <value>New Pane</value>
+  </data>
+  <data name="ChartDesignerStringIDs.NewPaneTitle" xml:space="preserve">
+    <value>New Pane Title</value>
+  </data>
+  <data name="ChartDesignerStringIDs.NewPieTotalLabel" xml:space="preserve">
+    <value>New Pie Total Label</value>
+  </data>
+  <data name="ChartDesignerStringIDs.NewReductionStockOptions" xml:space="preserve">
+    <value>New Reduction Stock Options</value>
+  </data>
+  <data name="ChartDesignerStringIDs.NewRegressionLine" xml:space="preserve">
+    <value>New Regression Line</value>
+  </data>
+  <data name="ChartDesignerStringIDs.NewResolveOverlappingOptions" xml:space="preserve">
+    <value>New Resolve Overlapping Options</value>
+  </data>
+  <data name="ChartDesignerStringIDs.NewScrollBarOptions" xml:space="preserve">
+    <value>New Scroll Bar Options</value>
+  </data>
+  <data name="ChartDesignerStringIDs.NewSeriesBorder" xml:space="preserve">
+    <value>New Series Border</value>
+  </data>
+  <data name="ChartDesignerStringIDs.NewSeriesLabel" xml:space="preserve">
+    <value>New Series Label</value>
+  </data>
+  <data name="ChartDesignerStringIDs.NewSeriesPoint" xml:space="preserve">
+    <value>New SeriesPoint</value>
+  </data>
+  <data name="ChartDesignerStringIDs.NewSidePoint" xml:space="preserve">
+    <value>New Side Point</value>
+  </data>
+  <data name="ChartDesignerStringIDs.NewSimpleMovingAverage" xml:space="preserve">
+    <value>New Simple Moving Average</value>
+  </data>
+  <data name="ChartDesignerStringIDs.NewStackedBarTotalLabel" xml:space="preserve">
+    <value>New Stacked Bar Total Label</value>
+  </data>
+  <data name="ChartDesignerStringIDs.NewSubtotal" xml:space="preserve">
+    <value>New Subtotal</value>
+  </data>
+  <data name="ChartDesignerStringIDs.NewSummary" xml:space="preserve">
+    <value>New Summary</value>
+  </data>
+  <data name="ChartDesignerStringIDs.NewSumSummaryFunction" xml:space="preserve">
+    <value>New SumFunction</value>
+  </data>
+  <data name="ChartDesignerStringIDs.NewTimeInterval" xml:space="preserve">
+    <value>New Time Interval</value>
+  </data>
+  <data name="ChartDesignerStringIDs.NewTimeSpanSummaryOptions" xml:space="preserve">
+    <value>New TimeSpanSummaryOptions</value>
+  </data>
+  <data name="ChartDesignerStringIDs.NewTitle" xml:space="preserve">
+    <value>New Title</value>
+  </data>
+  <data name="ChartDesignerStringIDs.NewToolTipFreePosition" xml:space="preserve">
+    <value>New Tool Tip Free Position</value>
+  </data>
+  <data name="ChartDesignerStringIDs.NewToolTipMousePosition" xml:space="preserve">
+    <value>New Tool Tip Mouse Position</value>
+  </data>
+  <data name="ChartDesignerStringIDs.NewToolTipOptions" xml:space="preserve">
+    <value>New Tool Tip Options</value>
+  </data>
+  <data name="ChartDesignerStringIDs.NewToolTipRelativePosition" xml:space="preserve">
+    <value>New Tool Tip Relative Position</value>
+  </data>
+  <data name="ChartDesignerStringIDs.NewTrendLine" xml:space="preserve">
+    <value>New Trend Line</value>
+  </data>
+  <data name="ChartDesignerStringIDs.NewTriangularMovingAverage" xml:space="preserve">
+    <value>New Triangular Moving Average</value>
+  </data>
+  <data name="ChartDesignerStringIDs.NewWaterfallAbsoluteValueOptions" xml:space="preserve">
+    <value>New WaterfallAbsoluteValueOptions</value>
+  </data>
+  <data name="ChartDesignerStringIDs.NewWaterfallRelativeValueOptions" xml:space="preserve">
+    <value>New WaterfallRelativeValueOptions</value>
+  </data>
+  <data name="ChartDesignerStringIDs.NewWeightedMovingAverage" xml:space="preserve">
+    <value>New Weighted Moving Average</value>
+  </data>
+  <data name="ChartDesignerStringIDs.NewWorkdaysOptions" xml:space="preserve">
+    <value>New Workdays Options</value>
+  </data>
+  <data name="ChartDesignerStringIDs.NewWorkTimeRule" xml:space="preserve">
+    <value>New Work Time Rule</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OKButtonCaption" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Options_Title" xml:space="preserve">
+    <value>TITLE</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsAnnotation_Angle" xml:space="preserve">
+    <value>Angle</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsAnnotation_Content" xml:space="preserve">
+    <value>Content</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsAnnotation_RuntimeAnchoring" xml:space="preserve">
+    <value>Runtime Anchoring</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsAnnotation_RuntimeMoving" xml:space="preserve">
+    <value>Runtime Moving</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsAnnotation_RuntimeResizing" xml:space="preserve">
+    <value>Runtime Resizing</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsAnnotation_RuntimeRotation" xml:space="preserve">
+    <value>Runtime Rotation</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsAnnotation_Visible" xml:space="preserve">
+    <value>Visible</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsAxis_Alignment" xml:space="preserve">
+    <value>Alignment</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsAxis_GridLinesMinorVisible" xml:space="preserve">
+    <value>Grid Lines Minor Visible</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsAxis_GridLinesVisible" xml:space="preserve">
+    <value>Grid Lines Visible</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsAxis_Interlaced" xml:space="preserve">
+    <value>Interlaced</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsAxis_Logarithmic" xml:space="preserve">
+    <value>Logarithmic</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsAxis_LogarithmicBase" xml:space="preserve">
+    <value>Logarithmic Base</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsAxis_Reverse" xml:space="preserve">
+    <value>Reverse</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsAxis_TickmarksMinorVisible" xml:space="preserve">
+    <value>Tickmarks Minor Visible</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsAxis_TickmarksVisible" xml:space="preserve">
+    <value>Tickmarks Visible</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsAxis_Visible" xml:space="preserve">
+    <value>Visible</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsAxis_VisualRange" xml:space="preserve">
+    <value>VISUAL RANGE</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsAxis_WholeRange" xml:space="preserve">
+    <value>WHOLE RANGE</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsAxisRange_Auto" xml:space="preserve">
+    <value>Auto</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsAxisRange_MaxValue" xml:space="preserve">
+    <value>Max Value</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsAxisRange_MinValue" xml:space="preserve">
+    <value>Min Value</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsChart_AnimationMode" xml:space="preserve">
+    <value>Animation Mode</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsChart_AutoLayout" xml:space="preserve">
+    <value>Auto Layout</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsChart_FontFamily" xml:space="preserve">
+    <value>Font Family</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsChart_FontStretch" xml:space="preserve">
+    <value>Font Stretch</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsChart_FontStyle" xml:space="preserve">
+    <value>Font Style</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsChart_FontWeight" xml:space="preserve">
+    <value>Font Weight</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsChart_Palette" xml:space="preserve">
+    <value>Palette</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsChartTitle_Content" xml:space="preserve">
+    <value>Content</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsChartTitle_Dock" xml:space="preserve">
+    <value>Dock</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsChartTitle_HorizontalAlignment" xml:space="preserve">
+    <value>Horizontal Alignment</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsChartTitle_SeriesTitleTextPattern" xml:space="preserve">
+    <value>Pattern</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsChartTitle_VerticalAlignment" xml:space="preserve">
+    <value>Vertical Alignment</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsChartTitle_Visible" xml:space="preserve">
+    <value>Visible</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsConstantLine_Alignment" xml:space="preserve">
+    <value>Alignment</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsConstantLine_Brush" xml:space="preserve">
+    <value>Brush</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsConstantLine_Legend" xml:space="preserve">
+    <value>Legend</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsConstantLine_LegendText" xml:space="preserve">
+    <value>Legend Text</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsConstantLine_ShowBelowLine" xml:space="preserve">
+    <value>Show Below Line</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsConstantLine_Value" xml:space="preserve">
+    <value>Value</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsConstantLine_Visible" xml:space="preserve">
+    <value>Visible</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsDiagram_DependentAxesYRange" xml:space="preserve">
+    <value>Dependent Axes Y Range</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsDiagram_Dimension" xml:space="preserve">
+    <value>Dimension</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsDiagram_EnableAxisXNavigation" xml:space="preserve">
+    <value>Enable Axis X Navigation</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsDiagram_EnableAxisYNavigation" xml:space="preserve">
+    <value>Enable Axis Y Navigation</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsDiagram_LayoutDirection" xml:space="preserve">
+    <value>Layout Direction</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsDiagram_PaneOrientation" xml:space="preserve">
+    <value>Pane Orientation</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsDiagram_PerspectiveAngle" xml:space="preserve">
+    <value>Perspective Angle</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsDiagram_Rotated" xml:space="preserve">
+    <value>Rotated</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsDiagram_RotationDirection" xml:space="preserve">
+    <value>Rotation Direction</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsDiagram_RuntimeRotation" xml:space="preserve">
+    <value>Runtime Rotation</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsDiagram_RuntimeScrolling" xml:space="preserve">
+    <value>Runtime Scrolling</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsDiagram_RuntimeZooming" xml:space="preserve">
+    <value>Runtime Zooming</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsDiagram_SeriesDistance" xml:space="preserve">
+    <value>Series Distance</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsDiagram_SeriesPadding" xml:space="preserve">
+    <value>Series Padding</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsDiagram_ShapeStyle" xml:space="preserve">
+    <value>Shape Style</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsDiagram_StartAngle" xml:space="preserve">
+    <value>Start Angle</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsDiagram_ZoomPercent" xml:space="preserve">
+    <value>Zoom Percent</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsDockPanelTitle" xml:space="preserve">
+    <value>Options</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsIndicators_Argument1" xml:space="preserve">
+    <value>Argument 1</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsIndicators_Argument2" xml:space="preserve">
+    <value>Argument 2</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsIndicators_Direction" xml:space="preserve">
+    <value>Direction</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsIndicators_EndStyle" xml:space="preserve">
+    <value>End Style</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsIndicators_EnvelopePercent" xml:space="preserve">
+    <value>Envelope Percent</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsIndicators_ExtrapolateToInfinity" xml:space="preserve">
+    <value>Extrapolate To Infinity</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsIndicators_Legend" xml:space="preserve">
+    <value>Legend</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsIndicators_LegendText" xml:space="preserve">
+    <value>Legend Text</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsIndicators_LongPeriod" xml:space="preserve">
+    <value>Long Period</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsIndicators_MovingAverageKind" xml:space="preserve">
+    <value>Moving Average Kind</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsIndicators_MovingAveragePointsCount" xml:space="preserve">
+    <value>Moving Average Points Count</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsIndicators_Multiplier" xml:space="preserve">
+    <value>Multiplier</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsIndicators_NegativeError" xml:space="preserve">
+    <value>Negative Error</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsIndicators_Percent" xml:space="preserve">
+    <value>Percent</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsIndicators_PointsCount" xml:space="preserve">
+    <value>Points Count</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsIndicators_PositiveError" xml:space="preserve">
+    <value>Positive Error</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsIndicators_ShortPeriod" xml:space="preserve">
+    <value>Short Period</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsIndicators_ShowAdditionalLevels" xml:space="preserve">
+    <value>Show Additional Levels</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsIndicators_ShowInLegend" xml:space="preserve">
+    <value>Show In Legend</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsIndicators_ShowLevel0" xml:space="preserve">
+    <value>Show Level 0</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsIndicators_ShowLevel100" xml:space="preserve">
+    <value>Show Level 100</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsIndicators_ShowLevel23_6" xml:space="preserve">
+    <value>Show Level 23.6%</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsIndicators_ShowLevel76_4" xml:space="preserve">
+    <value>Show Level 76.4%</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsIndicators_SignalSmoothingPeriod" xml:space="preserve">
+    <value>Signal Smoothing Period</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsIndicators_StandardDeviationMultiplier" xml:space="preserve">
+    <value>Standard Deviation Multiplier</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsIndicators_SumPointsCount" xml:space="preserve">
+    <value>Sum Points Count</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsIndicators_ValueLevel" xml:space="preserve">
+    <value>Value Level</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsIndicators_ValueLevel1" xml:space="preserve">
+    <value>Value Level 1</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsIndicators_ValueLevel2" xml:space="preserve">
+    <value>Value Level 2</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsIndicators_Visible" xml:space="preserve">
+    <value>Visible</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsLegend_DockTarget" xml:space="preserve">
+    <value>Dock Target</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsLegend_HorizontalAlignment" xml:space="preserve">
+    <value>Horizontal Alignment</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsLegend_HorizontalPosition" xml:space="preserve">
+    <value>Horizontal Position</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsLegend_ItemVisibilityMode" xml:space="preserve">
+    <value>Item Visibility Mode</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsLegend_MarkerMode" xml:space="preserve">
+    <value>Marker Mode</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsLegend_Orientation" xml:space="preserve">
+    <value>Orientation</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsLegend_ReverseItems" xml:space="preserve">
+    <value>Reverse Items</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsLegend_VerticalPosition" xml:space="preserve">
+    <value>Vertical Position</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsLegend_Visible" xml:space="preserve">
+    <value>Visible</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsPane_DomainBorderBrush" xml:space="preserve">
+    <value>Domain Border Brush</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsPane_DomainBrush" xml:space="preserve">
+    <value>Domain Brush</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsPane_EnableAxisXNavigation" xml:space="preserve">
+    <value>Enable Axis X Navigation</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsPane_EnableAxisYNavigation" xml:space="preserve">
+    <value>Enable Axis Y Navigation</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsPane_MirrorHeight" xml:space="preserve">
+    <value>Mirror Height</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsPieTotalLabel_Content" xml:space="preserve">
+    <value>Content</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsPieTotalLabel_Margin" xml:space="preserve">
+    <value>Margin</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsPieTotalLabel_Padding" xml:space="preserve">
+    <value>Padding</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsPieTotalLabel_TextPattern" xml:space="preserve">
+    <value>Text Pattern</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsPieTotalLabel_Visibility" xml:space="preserve">
+    <value>Visibility</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsScaleBreak_Edge1" xml:space="preserve">
+    <value>Edge 1</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsScaleBreak_Edge2" xml:space="preserve">
+    <value>Edge 2</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsScaleBreak_Visible" xml:space="preserve">
+    <value>Visible</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsSeries_AreaWidth" xml:space="preserve">
+    <value>Area Width</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsSeries_AxisX" xml:space="preserve">
+    <value>Axis X</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsSeries_AxisY" xml:space="preserve">
+    <value>Axis Y</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsSeries_BarWidth" xml:space="preserve">
+    <value>Bar Width</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsSeries_BoxWidth" xml:space="preserve">
+    <value>Box Width</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsSeries_CandleWidth" xml:space="preserve">
+    <value>Candle Width</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsSeries_Closed" xml:space="preserve">
+    <value>Closed</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsSeries_ColorEach" xml:space="preserve">
+    <value>Color Each</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsSeries_DataSourceSorted" xml:space="preserve">
+    <value>Data Source Sorted</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsSeries_DisplayName" xml:space="preserve">
+    <value>Display Name</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsSeries_FallingBarBrush" xml:space="preserve">
+    <value>Falling Bar Brush</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsSeries_Group" xml:space="preserve">
+    <value>Group</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsSeries_HoleRadiusPercent" xml:space="preserve">
+    <value>Hole Radius Percent</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsSeries_InnerIndent" xml:space="preserve">
+    <value>Inner Indent</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsSeries_InvertedStep" xml:space="preserve">
+    <value>Inverted Step</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsSeries_LabelsVisibility" xml:space="preserve">
+    <value>Labels Visibility</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsSeries_Legend" xml:space="preserve">
+    <value>Legend</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsSeries_LegendTextPattern" xml:space="preserve">
+    <value>Legend Text Pattern</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsSeries_LevelLineLength" xml:space="preserve">
+    <value>Level Line Length</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsSeries_LineTension" xml:space="preserve">
+    <value>Line Tension</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsSeries_Marker1Size" xml:space="preserve">
+    <value>Marker 1 Size</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsSeries_Marker1Visible" xml:space="preserve">
+    <value>Marker 1 Visible</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsSeries_Marker2Size" xml:space="preserve">
+    <value>Marker 2 Size</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsSeries_Marker2Visible" xml:space="preserve">
+    <value>Marker 2 Visible</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsSeries_MarkerSize" xml:space="preserve">
+    <value>Marker Size</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsSeries_MarkerVisible" xml:space="preserve">
+    <value>Marker Visible</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsSeries_MaxMarkerSize" xml:space="preserve">
+    <value>Max Marker Size</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsSeries_MaxMarkerVisible" xml:space="preserve">
+    <value>Max Marker Visible</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsSeries_MaxSize" xml:space="preserve">
+    <value>Max Size</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsSeries_MinMarkerSize" xml:space="preserve">
+    <value>Min Marker Size</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsSeries_MinMarkerVisible" xml:space="preserve">
+    <value>Min Marker Visible</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsSeries_MinSize" xml:space="preserve">
+    <value>Min Size</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsSeries_Pane" xml:space="preserve">
+    <value>Pane</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsSeries_RisingBarBrush" xml:space="preserve">
+    <value>Rising Bar Brush</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsSeries_Rotation" xml:space="preserve">
+    <value>Rotation</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsSeries_ShowInLegend" xml:space="preserve">
+    <value>Show In Legend</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsSeries_ShowOpenClose" xml:space="preserve">
+    <value>Show Open Close</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsSeries_SizeUnit" xml:space="preserve">
+    <value>Size Unit</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsSeries_StackedGroup" xml:space="preserve">
+    <value>Stacked Group</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsSeries_StartBarBrush" xml:space="preserve">
+    <value>Start Bar Brush</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsSeries_SubtotalBarBrush" xml:space="preserve">
+    <value>Subtotal Bar Brush</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsSeries_SweepDirection" xml:space="preserve">
+    <value>Sweep Direction</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsSeries_TotalBarBrush" xml:space="preserve">
+    <value>Total Bar Brush</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsSeries_Transparency" xml:space="preserve">
+    <value>Transparency</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsSeries_ValueOptions" xml:space="preserve">
+    <value>Value Options</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsSeries_Visible" xml:space="preserve">
+    <value>Visible</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsSeries_Weight" xml:space="preserve">
+    <value>Weight</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsStrip_Brush" xml:space="preserve">
+    <value>Brush</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsStrip_Legend" xml:space="preserve">
+    <value>Legend</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsStrip_LegendText" xml:space="preserve">
+    <value>Legend Text</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsStrip_MaxLimit" xml:space="preserve">
+    <value>Max Limit</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsStrip_MinLimit" xml:space="preserve">
+    <value>Min Limit</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsStrip_Visible" xml:space="preserve">
+    <value>Visible</value>
+  </data>
+  <data name="ChartDesignerStringIDs.PanePrefix" xml:space="preserve">
+    <value>Pane #</value>
+  </data>
+  <data name="ChartDesignerStringIDs.PatternEditor_CancelButtonText" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="ChartDesignerStringIDs.PatternEditor_FormatComboBox_Currency" xml:space="preserve">
+    <value>Currency</value>
+  </data>
+  <data name="ChartDesignerStringIDs.PatternEditor_FormatComboBox_Custom" xml:space="preserve">
+    <value>Custom</value>
+  </data>
+  <data name="ChartDesignerStringIDs.PatternEditor_FormatComboBox_DateTime" xml:space="preserve">
+    <value>DateTime</value>
+  </data>
+  <data name="ChartDesignerStringIDs.PatternEditor_FormatComboBox_Default" xml:space="preserve">
+    <value>Default</value>
+  </data>
+  <data name="ChartDesignerStringIDs.PatternEditor_FormatComboBox_Number" xml:space="preserve">
+    <value>Number</value>
+  </data>
+  <data name="ChartDesignerStringIDs.PatternEditor_FormatComboBox_Percent" xml:space="preserve">
+    <value>Percent</value>
+  </data>
+  <data name="ChartDesignerStringIDs.PatternEditor_FormatComboBox_Special" xml:space="preserve">
+    <value>Special</value>
+  </data>
+  <data name="ChartDesignerStringIDs.PatternEditor_FormatLabelText" xml:space="preserve">
+    <value>Format</value>
+  </data>
+  <data name="ChartDesignerStringIDs.PatternEditor_OkButtonText" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="ChartDesignerStringIDs.PatternEditor_PatternLabelText" xml:space="preserve">
+    <value>Pattern</value>
+  </data>
+  <data name="ChartDesignerStringIDs.PatternEditor_PlaceholdersLabelText" xml:space="preserve">
+    <value>Placeholders</value>
+  </data>
+  <data name="ChartDesignerStringIDs.PatternEditor_WindowTitle" xml:space="preserve">
+    <value>Pattern Editor</value>
+  </data>
+  <data name="ChartDesignerStringIDs.PercentageErrorBars" xml:space="preserve">
+    <value>Percentage Error Bars</value>
+  </data>
+  <data name="ChartDesignerStringIDs.PercentageTopNOptions" xml:space="preserve">
+    <value>PercentageTopNOptions</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Pie2DBurstAnimation" xml:space="preserve">
+    <value>Burst</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Pie2DDropInAnimation" xml:space="preserve">
+    <value>Drop In</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Pie2DFadeInAnimation" xml:space="preserve">
+    <value>Fade In</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Pie2DFanAnimation" xml:space="preserve">
+    <value>Fan</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Pie2DFanZoomInAnimation" xml:space="preserve">
+    <value>Fan Zoom In</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Pie2DFlyInAnimation" xml:space="preserve">
+    <value>Fly In</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Pie2DGrowUpAnimation" xml:space="preserve">
+    <value>Grow Up</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Pie2DPopUpAnimation" xml:space="preserve">
+    <value>Pop Up</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Pie2DSpinAnimation" xml:space="preserve">
+    <value>Spin</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Pie2DSpinZoomInAnimation" xml:space="preserve">
+    <value>Spin Zoom In</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Pie2DWidenAnimation" xml:space="preserve">
+    <value>Widen</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Pie2DZoomInAnimation" xml:space="preserve">
+    <value>Zoom In</value>
+  </data>
+  <data name="ChartDesignerStringIDs.PieSeries2D" xml:space="preserve">
+    <value>Pie 2D</value>
+  </data>
+  <data name="ChartDesignerStringIDs.PieSeries3D" xml:space="preserve">
+    <value>Pie 3D</value>
+  </data>
+  <data name="ChartDesignerStringIDs.PointBasedSegmentColorizer" xml:space="preserve">
+    <value>PointBasedSegmentColorizer</value>
+  </data>
+  <data name="ChartDesignerStringIDs.PointSeries2D" xml:space="preserve">
+    <value>Point 2D</value>
+  </data>
+  <data name="ChartDesignerStringIDs.PointSeries3D" xml:space="preserve">
+    <value>Point 3D</value>
+  </data>
+  <data name="ChartDesignerStringIDs.PolarAreaSeries2D" xml:space="preserve">
+    <value>Polar Area 2D</value>
+  </data>
+  <data name="ChartDesignerStringIDs.PolarLineScatterSeries2D" xml:space="preserve">
+    <value>Scatter Polar Line 2D</value>
+  </data>
+  <data name="ChartDesignerStringIDs.PolarLineSeries2D" xml:space="preserve">
+    <value> Polar Line 2D</value>
+  </data>
+  <data name="ChartDesignerStringIDs.PolarPointSeries2D" xml:space="preserve">
+    <value>Polar Point 2D</value>
+  </data>
+  <data name="ChartDesignerStringIDs.PolarRangeAreaSeries2D" xml:space="preserve">
+    <value>Polar Range Area 2D</value>
+  </data>
+  <data name="ChartDesignerStringIDs.PrimaryAxisXName" xml:space="preserve">
+    <value>Primary Axis X</value>
+  </data>
+  <data name="ChartDesignerStringIDs.PrimaryAxisYName" xml:space="preserve">
+    <value>Primary Axis Y</value>
+  </data>
+  <data name="ChartDesignerStringIDs.PropertiesDockPanelTitle" xml:space="preserve">
+    <value>Properties</value>
+  </data>
+  <data name="ChartDesignerStringIDs.RadarAreaSeries2D" xml:space="preserve">
+    <value>Radar Area 2D</value>
+  </data>
+  <data name="ChartDesignerStringIDs.RadarLineScatterSeries2D" xml:space="preserve">
+    <value>Scatter Radar Line 2D</value>
+  </data>
+  <data name="ChartDesignerStringIDs.RadarLineSeries2D" xml:space="preserve">
+    <value>Radar Line 2D</value>
+  </data>
+  <data name="ChartDesignerStringIDs.RadarPointSeries2D" xml:space="preserve">
+    <value>Radar Point 2D</value>
+  </data>
+  <data name="ChartDesignerStringIDs.RadarRangeAreaSeries2D" xml:space="preserve">
+    <value>Radar Range Area 2D</value>
+  </data>
+  <data name="ChartDesignerStringIDs.RangeAreaSeries2D" xml:space="preserve">
+    <value>Range Area 2D</value>
+  </data>
+  <data name="ChartDesignerStringIDs.RangeBarOverlappedSeries2D" xml:space="preserve">
+    <value>Overlapped Range Bar 2D</value>
+  </data>
+  <data name="ChartDesignerStringIDs.RangeBarSideBySideSeries2D" xml:space="preserve">
+    <value>Side-By-Side Range Bar 2D</value>
+  </data>
+  <data name="ChartDesignerStringIDs.RangeColorizer" xml:space="preserve">
+    <value>RangeColorizer</value>
+  </data>
+  <data name="ChartDesignerStringIDs.RangeControlClientAreaView" xml:space="preserve">
+    <value>New Area View</value>
+  </data>
+  <data name="ChartDesignerStringIDs.RangeControlClientBarView" xml:space="preserve">
+    <value>New Bar View</value>
+  </data>
+  <data name="ChartDesignerStringIDs.RangeControlClientLineView" xml:space="preserve">
+    <value>New Line View</value>
+  </data>
+  <data name="ChartDesignerStringIDs.RangeControlOptions" xml:space="preserve">
+    <value>New Range Control Options</value>
+  </data>
+  <data name="ChartDesignerStringIDs.RangeSegmentColorizer" xml:space="preserve">
+    <value>RangeSegmentColorizer</value>
+  </data>
+  <data name="ChartDesignerStringIDs.RateOfChange" xml:space="preserve">
+    <value>Rate of Change</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Redo" xml:space="preserve">
+    <value>Redo</value>
+  </data>
+  <data name="ChartDesignerStringIDs.RegressionLine" xml:space="preserve">
+    <value>Regression Line</value>
+  </data>
+  <data name="ChartDesignerStringIDs.RelativeStrengthIndex" xml:space="preserve">
+    <value>Relative Strength Index</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SaveAndExitButtonCaption" xml:space="preserve">
+    <value>Save and Exit</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SaveAndExitWindowText" xml:space="preserve">
+    <value>Do you want to save the settings?</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ScaleBreak_CategoryCaption" xml:space="preserve">
+    <value>Scale Break Options</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ScaleBreak_Edge1" xml:space="preserve">
+    <value>Edge 1:</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ScaleBreak_Edge2" xml:space="preserve">
+    <value>Edge 2:</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ScaleBreak_GeneralGroupCaption" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ScaleBreak_PageCaption" xml:space="preserve">
+    <value>Scale Break</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ScaleOptionsAutomatic" xml:space="preserve">
+    <value>Automatic</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ScaleOptionsContinuous" xml:space="preserve">
+    <value>Continuous</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ScaleOptionsInterval" xml:space="preserve">
+    <value>Interval</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ScaleOptionsIntervalCount" xml:space="preserve">
+    <value>Interval Count</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ScaleOptionsIntervalWidth" xml:space="preserve">
+    <value>Interval Width</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ScaleOptionsManual" xml:space="preserve">
+    <value>Manual</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SecondaryAxisXPrefix" xml:space="preserve">
+    <value>Secondary Axis X #</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SecondaryAxisYPrefix" xml:space="preserve">
+    <value>Secondary Axis Y #</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesDataPanelTitle" xml:space="preserve">
+    <value>Series Data</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_AddIndicatorsGroupTitle" xml:space="preserve">
+    <value>Add Indicator</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_ArgumentAxis" xml:space="preserve">
+    <value>Argument Axis:</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_ArgumentDataMember" xml:space="preserve">
+    <value>Argument:</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_ChangeSeriesView" xml:space="preserve">
+    <value>Change Series View</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_ChartDataSource" xml:space="preserve">
+    <value>Chart Data Source</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_CloseValueDataMember" xml:space="preserve">
+    <value>Close Value:</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_ColorDataMember" xml:space="preserve">
+    <value>Color:</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_ConnectorThickness" xml:space="preserve">
+    <value>Connector:</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_DataMembersPageGroup" xml:space="preserve">
+    <value>Data Members</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_DataPage" xml:space="preserve">
+    <value>Data</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_DataSourceNone" xml:space="preserve">
+    <value>No Data Source</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_DataSourcePageGroup" xml:space="preserve">
+    <value>Data Source</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_FunnelAlignToCenter" xml:space="preserve">
+    <value>Align to Center</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_FunnelOptionsGroup" xml:space="preserve">
+    <value>Funnel</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_FunnelPointDistance" xml:space="preserve">
+    <value>Point Distance:</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_FunnelRatio" xml:space="preserve">
+    <value>Height / Width:</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_FunnelRatioAuto" xml:space="preserve">
+    <value>Height / Width Auto</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_HighValueDataMember" xml:space="preserve">
+    <value>High Value:</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_HoleRadiusPercent" xml:space="preserve">
+    <value>Hole percent:</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_Indent" xml:space="preserve">
+    <value>Indent:</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_Labels_0DegreesCaption" xml:space="preserve">
+    <value>0 Degrees</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_Labels_0DegreesDescription" xml:space="preserve">
+    <value>Show data labels without rotation.</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_Labels_135DegreesCaption" xml:space="preserve">
+    <value>135 Degrees</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_Labels_135DegreesDescription" xml:space="preserve">
+    <value>Show data labels rotated at 135 degrees.</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_Labels_180DegreesCaption" xml:space="preserve">
+    <value>180 Degrees</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_Labels_180DegreesDescription" xml:space="preserve">
+    <value>Show data labels rotated at 180 degrees.</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_Labels_225DegreesCaption" xml:space="preserve">
+    <value>225 Degrees</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_Labels_225DegreesDescription" xml:space="preserve">
+    <value>Show data labels rotated at 225 degrees.</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_Labels_270DegreesCaption" xml:space="preserve">
+    <value>270 Degrees</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_Labels_270DegreesDescription" xml:space="preserve">
+    <value>Show data labels rotated at 270 degrees.</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_Labels_315DegreesCaption" xml:space="preserve">
+    <value>315 Degrees</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_Labels_315DegreesDescription" xml:space="preserve">
+    <value>Show data labels rotated at 315 degrees.</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_Labels_3DTopCaption" xml:space="preserve">
+    <value>Top</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_Labels_3DTopDescription" xml:space="preserve">
+    <value>Show data labels on the top of point markers.</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_Labels_45DegreesCaption" xml:space="preserve">
+    <value>45 Degrees</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_Labels_45DegreesDescription" xml:space="preserve">
+    <value>Show data labels rotated at 45 degrees.</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_Labels_90DegreesCaption" xml:space="preserve">
+    <value>90 Degrees</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_Labels_90DegreesDescription" xml:space="preserve">
+    <value>Show data labels rotated at 90 degrees.</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_Labels_Area3DEnabledCaption" xml:space="preserve">
+    <value>Enabled</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_Labels_Area3DEnabledDescription" xml:space="preserve">
+    <value>Turn on data labels.</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_Labels_Bar3DEnabledCaption" xml:space="preserve">
+    <value>Enabled</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_Labels_Bar3DEnabledDescription" xml:space="preserve">
+    <value>Turn on data labels.</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_Labels_Bubble2DCenterCaption" xml:space="preserve">
+    <value>Center</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_Labels_Bubble2DCenterDescription" xml:space="preserve">
+    <value>Show data labels in the center of bubbles.</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_Labels_CenteredInBarsCaption" xml:space="preserve">
+    <value>Center</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_Labels_CenteredInBarsDescription" xml:space="preserve">
+    <value>Show data labels in the center of bars.</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_Labels_EnabledCaption" xml:space="preserve">
+    <value>Enabled</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_Labels_EnabledDescription" xml:space="preserve">
+    <value>Turn on data labels.</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_Labels_FunnelCenterPointCaption" xml:space="preserve">
+    <value>Center</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_Labels_FunnelCenterPointDescription" xml:space="preserve">
+    <value>Show data labels in the center of funnel points.</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_Labels_FunnelLeftColumnPointCaption" xml:space="preserve">
+    <value>Left Column</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_Labels_FunnelLeftColumnPointDescription" xml:space="preserve">
+    <value>The labels are organized into a straight column on the left of the funnel series points.</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_Labels_FunnelLeftPointCaption" xml:space="preserve">
+    <value>Left</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_Labels_FunnelLeftPointDescription" xml:space="preserve">
+    <value>Show data labels on the left of funnel points.</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_Labels_FunnelRightColumnPointCaption" xml:space="preserve">
+    <value>Right Column</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_Labels_FunnelRightColumnPointDescription" xml:space="preserve">
+    <value>The labels are organized into a straight column on the right of the funnel series points.</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_Labels_FunnelRightPointCaption" xml:space="preserve">
+    <value>Right</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_Labels_FunnelRightPointDescription" xml:space="preserve">
+    <value>Show data labels on the right of funnel points.</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_Labels_InsideSlicesCaption" xml:space="preserve">
+    <value>Inside</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_Labels_InsideSlicesDescription" xml:space="preserve">
+    <value>Show data labels inside pie slices.</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_Labels_Marker3DCenterCaption" xml:space="preserve">
+    <value>Center</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_Labels_Marker3DCenterDescription" xml:space="preserve">
+    <value>Show data labels in the center of point markers.</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_Labels_NoneCaption" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_Labels_NoneDescription" xml:space="preserve">
+    <value>Turn off data labels.</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_Labels_OutsideCaption" xml:space="preserve">
+    <value>Outside</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_Labels_OutsideDescription" xml:space="preserve">
+    <value>Show data labels outside bars.</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_Labels_OutsideSlicesCaption" xml:space="preserve">
+    <value>Outside</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_Labels_OutsideSlicesDescription" xml:space="preserve">
+    <value>Show data labels outside pie slices.</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_Labels_StackedBarCenteredInBarCaption" xml:space="preserve">
+    <value>Center</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_Labels_StackedBarCenteredInBarDescription" xml:space="preserve">
+    <value>Show data labels in the center of bars.</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_Labels_TwoColumnsCaption" xml:space="preserve">
+    <value>Two Columns</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_Labels_TwoColumnsDescription" xml:space="preserve">
+    <value>Show data labels in two columns.</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_LabelsGroupTitle" xml:space="preserve">
+    <value>Labels</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_LabelsVisibility" xml:space="preserve">
+    <value>Labels Visibility</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_LayoutGroup" xml:space="preserve">
+    <value>Layout</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_LowValueDataMember" xml:space="preserve">
+    <value>Low Value:</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_Main" xml:space="preserve">
+    <value>Main</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_MarkersCaption" xml:space="preserve">
+    <value>Appearance</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_Model" xml:space="preserve">
+    <value>Model</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_NestedDonut2DOptionsGroup" xml:space="preserve">
+    <value>Nested Donut</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_NestedDonutGroup" xml:space="preserve">
+    <value>Group</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_NestedDonutInnerIndent" xml:space="preserve">
+    <value>Inner Indent</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_NestedDonutWeight" xml:space="preserve">
+    <value>Weight</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_NoModelString" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_OpenValueDataMember" xml:space="preserve">
+    <value>Open Value:</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_PieDoughnutOptionsGroup" xml:space="preserve">
+    <value>Pie/Doughnut</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_RangeArea2DMaxValueLabelPositionCaption" xml:space="preserve">
+    <value>Max</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_RangeArea2DMaxValueLabelPositionDescription" xml:space="preserve">
+    <value>Show only the label for the maximum value of a data point.</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_RangeArea2DMinValueLabelPositionCaption" xml:space="preserve">
+    <value>Min</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_RangeArea2DMinValueLabelPositionDescription" xml:space="preserve">
+    <value>Show only the label for the minimum value of a data point.</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_RangeArea2DOneLabelPositionCaption" xml:space="preserve">
+    <value>Center </value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_RangeArea2DOneLabelPositionDescription" xml:space="preserve">
+    <value>Show one label in the center of the range area with both minimum and maximum values.</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_RangeArea2DTwoLabelsPositionCaption" xml:space="preserve">
+    <value>Both </value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_RangeArea2DTwoLabelsPositionDescription" xml:space="preserve">
+    <value>Show both labels with minimum and maximum values of a data point.</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_RangeArea2DValue1LabelPositionCaption" xml:space="preserve">
+    <value>Value</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_RangeArea2DValue1LabelPositionDescription" xml:space="preserve">
+    <value>Show only the label for the first value of a data point.</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_RangeArea2DValue2LabelPositionCaption" xml:space="preserve">
+    <value>Value 2</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_RangeArea2DValue2LabelPositionDescription" xml:space="preserve">
+    <value>Show only the label for the second value of a data point.</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_RangeBarMaxValueLabelPositionCaption" xml:space="preserve">
+    <value>Max</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_RangeBarMaxValueLabelPositionDescription" xml:space="preserve">
+    <value>Show only the label for the maximum range bar value.</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_RangeBarMinValueLabelPositionCaption" xml:space="preserve">
+    <value>Min</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_RangeBarMinValueLabelPositionDescription" xml:space="preserve">
+    <value>Show only the label for the minimum range bar value.</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_RangeBarOneLabelPositionCaption" xml:space="preserve">
+    <value>Center </value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_RangeBarOneLabelPositionDescription" xml:space="preserve">
+    <value>Show one label in the center of the range bar with both minimum and maximum values.</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_RangeBarTwoLabelsLabelPositionCaption" xml:space="preserve">
+    <value>Both</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_RangeBarTwoLabelsLabelPositionDescription" xml:space="preserve">
+    <value>Show both labels with minimum and maximum values.</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_SelectedSeries" xml:space="preserve">
+    <value>Series</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_SelectedSeries_View" xml:space="preserve">
+    <value>View</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_SeriesDataMember" xml:space="preserve">
+    <value>Series:</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_SeriesDataSource" xml:space="preserve">
+    <value>Series Data Source</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_SeriesLabelsPosition" xml:space="preserve">
+    <value>Labels</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_SeriesName" xml:space="preserve">
+    <value>Name:</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_SeriesPane" xml:space="preserve">
+    <value>Pane:</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_SeriesTitle" xml:space="preserve">
+    <value>Series Title</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_SeriesVisibility" xml:space="preserve">
+    <value>Visibility</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_Value2DataMember" xml:space="preserve">
+    <value>Value 2:</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_ValueAxis" xml:space="preserve">
+    <value>Value Axis:</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_ValueDataMember" xml:space="preserve">
+    <value>Value:</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_WeightDataMember" xml:space="preserve">
+    <value>Weight:</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptionsRibbonCategoryTitle" xml:space="preserve">
+    <value>Series Options</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesTemplate" xml:space="preserve">
+    <value>Template</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SimpleMovingAverage" xml:space="preserve">
+    <value>Simple Moving Average</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SplineAreaFullStackedSeries2D" xml:space="preserve">
+    <value>Spline Area Full Stacked 2D</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SplineAreaSeries2D" xml:space="preserve">
+    <value>Spline Area 2D</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SplineAreaStackedSeries2D" xml:space="preserve">
+    <value>Spline Area Stacked 2D</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SplineSeries2D" xml:space="preserve">
+    <value>Spline 2D</value>
+  </data>
+  <data name="ChartDesignerStringIDs.StandardDeviation" xml:space="preserve">
+    <value>Standard Deviation</value>
+  </data>
+  <data name="ChartDesignerStringIDs.StandardDeviationErrorBars" xml:space="preserve">
+    <value>Standard Deviation Error Bars</value>
+  </data>
+  <data name="ChartDesignerStringIDs.StandardErrorBars" xml:space="preserve">
+    <value>Standard Error Bars</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Stock2DExpandAnimation" xml:space="preserve">
+    <value>Expand</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Stock2DFadeInAnimation" xml:space="preserve">
+    <value>Fade In</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Stock2DSlideFromBottomAnimation" xml:space="preserve">
+    <value>Slide From Bottom</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Stock2DSlideFromLeftAnimation" xml:space="preserve">
+    <value>Slide From Left</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Stock2DSlideFromRightAnimation" xml:space="preserve">
+    <value>Slide From Right</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Stock2DSlideFromTopAnimation" xml:space="preserve">
+    <value>Slide From Top</value>
+  </data>
+  <data name="ChartDesignerStringIDs.StockSeries2D" xml:space="preserve">
+    <value>Stock 2D</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Strip_AxisLabelText" xml:space="preserve">
+    <value>Text On Axis:</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Strip_Brush" xml:space="preserve">
+    <value>Color</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Strip_CategoryCaption" xml:space="preserve">
+    <value>Strip Options</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Strip_GeneralGroupCaption" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Strip_LegendText" xml:space="preserve">
+    <value>Text In Legend:</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Strip_MaxLimit" xml:space="preserve">
+    <value>Max Limit:</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Strip_MinLimit" xml:space="preserve">
+    <value>Min Limit:</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Strip_PageCaption" xml:space="preserve">
+    <value>Strip</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Strip_TextGroupCaption" xml:space="preserve">
+    <value>Text</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ThicknessNone" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="ChartDesignerStringIDs.TreeAdditionalPanelCollection" xml:space="preserve">
+    <value>Additional Panes</value>
+  </data>
+  <data name="ChartDesignerStringIDs.TreeAnnotation" xml:space="preserve">
+    <value>Annotation</value>
+  </data>
+  <data name="ChartDesignerStringIDs.TreeAnnotationCollection" xml:space="preserve">
+    <value>Annotations</value>
+  </data>
+  <data name="ChartDesignerStringIDs.TreeAxesSubnode" xml:space="preserve">
+    <value>Axes</value>
+  </data>
+  <data name="ChartDesignerStringIDs.TreeAxisCustomLabel" xml:space="preserve">
+    <value>Custom Label</value>
+  </data>
+  <data name="ChartDesignerStringIDs.TreeAxisCustomLabelCollection" xml:space="preserve">
+    <value>Custom Labels</value>
+  </data>
+  <data name="ChartDesignerStringIDs.TreeChart" xml:space="preserve">
+    <value>Chart</value>
+  </data>
+  <data name="ChartDesignerStringIDs.TreeConstantLineCollection" xml:space="preserve">
+    <value>Constant Lines</value>
+  </data>
+  <data name="ChartDesignerStringIDs.TreeDiagramPolarDiagram2D" xml:space="preserve">
+    <value>Polar Diagram</value>
+  </data>
+  <data name="ChartDesignerStringIDs.TreeDiagramRadarDiagram2D" xml:space="preserve">
+    <value>Radar Diagram</value>
+  </data>
+  <data name="ChartDesignerStringIDs.TreeDiagramSimpleDiagram2D" xml:space="preserve">
+    <value>Simple Diagram</value>
+  </data>
+  <data name="ChartDesignerStringIDs.TreeDiagramSimpleDiagram3D" xml:space="preserve">
+    <value>3D Simple Diagram</value>
+  </data>
+  <data name="ChartDesignerStringIDs.TreeDiagramXYDiagram2D" xml:space="preserve">
+    <value>Cartesian Diagram</value>
+  </data>
+  <data name="ChartDesignerStringIDs.TreeDiagramXYDiagram3D" xml:space="preserve">
+    <value>3D Cartesian Diagram</value>
+  </data>
+  <data name="ChartDesignerStringIDs.TreeIndicatorCollection" xml:space="preserve">
+    <value>Indicators</value>
+  </data>
+  <data name="ChartDesignerStringIDs.TreeLegend" xml:space="preserve">
+    <value>Legend #</value>
+  </data>
+  <data name="ChartDesignerStringIDs.TreeLegendCollection" xml:space="preserve">
+    <value>Legends</value>
+  </data>
+  <data name="ChartDesignerStringIDs.TreePanesSubnode" xml:space="preserve">
+    <value>Panes</value>
+  </data>
+  <data name="ChartDesignerStringIDs.TreePaneTitleModel" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="ChartDesignerStringIDs.TreePieTotalLabelModel" xml:space="preserve">
+    <value>Pie Total Label</value>
+  </data>
+  <data name="ChartDesignerStringIDs.TreePrimaryAxisX" xml:space="preserve">
+    <value>Primary Axis X</value>
+  </data>
+  <data name="ChartDesignerStringIDs.TreePrimaryAxisY" xml:space="preserve">
+    <value>Primary Axis Y</value>
+  </data>
+  <data name="ChartDesignerStringIDs.TreeScaleBreakCollectionModel" xml:space="preserve">
+    <value>Scale Breaks</value>
+  </data>
+  <data name="ChartDesignerStringIDs.TreeScaleBreakModel" xml:space="preserve">
+    <value>Scale Break</value>
+  </data>
+  <data name="ChartDesignerStringIDs.TreeSecondaryAxesCollectionX" xml:space="preserve">
+    <value>Secondary Axes X</value>
+  </data>
+  <data name="ChartDesignerStringIDs.TreeSecondaryAxesCollectionY" xml:space="preserve">
+    <value>Secondary Axes Y</value>
+  </data>
+  <data name="ChartDesignerStringIDs.TreeSeries" xml:space="preserve">
+    <value>Series</value>
+  </data>
+  <data name="ChartDesignerStringIDs.TreeSeriesCollection" xml:space="preserve">
+    <value>Series</value>
+  </data>
+  <data name="ChartDesignerStringIDs.TreeStackedBarTotalLabelModel" xml:space="preserve">
+    <value>Stacked Bar Total Label</value>
+  </data>
+  <data name="ChartDesignerStringIDs.TreeStripCollectionModel" xml:space="preserve">
+    <value>Strips</value>
+  </data>
+  <data name="ChartDesignerStringIDs.TreeStripModel" xml:space="preserve">
+    <value>Strip</value>
+  </data>
+  <data name="ChartDesignerStringIDs.TreeTitle" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="ChartDesignerStringIDs.TreeTitleCollection" xml:space="preserve">
+    <value>Titles</value>
+  </data>
+  <data name="ChartDesignerStringIDs.TrendLine" xml:space="preserve">
+    <value>Trend Line</value>
+  </data>
+  <data name="ChartDesignerStringIDs.TrendSegmentColorizer" xml:space="preserve">
+    <value>TrendSegmentColorizer</value>
+  </data>
+  <data name="ChartDesignerStringIDs.TriangularMovingAverage" xml:space="preserve">
+    <value>Triangular Moving Average</value>
+  </data>
+  <data name="ChartDesignerStringIDs.TripleExponentialMovingAverageTema" xml:space="preserve">
+    <value>Triple Exponential Moving Average (TEMA)</value>
+  </data>
+  <data name="ChartDesignerStringIDs.TripleExponentialMovingAverageTrix" xml:space="preserve">
+    <value>Triple Exponential Moving Average (TriX)</value>
+  </data>
+  <data name="ChartDesignerStringIDs.TypicalPrice" xml:space="preserve">
+    <value>Typical Price</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Undo" xml:space="preserve">
+    <value>Undo</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ValueLevel_Close" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ValueLevel_High" xml:space="preserve">
+    <value>High</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ValueLevel_Low" xml:space="preserve">
+    <value>Low</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ValueLevel_Open" xml:space="preserve">
+    <value>Open</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ValueLevel_Value" xml:space="preserve">
+    <value>Value</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ValueLevel_Value2" xml:space="preserve">
+    <value>Value2</value>
+  </data>
+  <data name="ChartDesignerStringIDs.ValueTopNOptions" xml:space="preserve">
+    <value>ValueTopNOptions</value>
+  </data>
+  <data name="ChartDesignerStringIDs.WaterfallSeries2D" xml:space="preserve">
+    <value>Waterfall 2D</value>
+  </data>
+  <data name="ChartDesignerStringIDs.WeightedClose" xml:space="preserve">
+    <value>Weighted Close</value>
+  </data>
+  <data name="ChartDesignerStringIDs.WeightedMovingAverage" xml:space="preserve">
+    <value>Weighted Moving Average</value>
+  </data>
+  <data name="ChartDesignerStringIDs.WilliamsR" xml:space="preserve">
+    <value>Williams %R</value>
+  </data>
+</root>

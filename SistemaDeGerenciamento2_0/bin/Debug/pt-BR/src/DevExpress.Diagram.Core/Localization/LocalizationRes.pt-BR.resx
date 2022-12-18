@@ -1,0 +1,1593 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="DiagramControlStringId.SoftwareIcons_Add_Name" xml:space="preserve">
+    <value>Adicionar</value>
+  </data>
+  <data name="DiagramControlStringId.SoftwareIcons_Remove_Name" xml:space="preserve">
+    <value>Remover</value>
+  </data>
+  <data name="DiagramControlStringId.RibbonPageGroup_Appearance" xml:space="preserve">
+    <value>Aparência</value>
+  </data>
+  <data name="DiagramControlStringId.RibbonPageGroup_TreeLayout" xml:space="preserve">
+    <value>Layout</value>
+  </data>
+  <data name="DiagramControlStringId.Tools_Text" xml:space="preserve">
+    <value>Texto</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_Cancel" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="DiagramControlStringId.ContextMenu_Close" xml:space="preserve">
+    <value>Fechar</value>
+  </data>
+  <data name="DiagramControlStringId.RibbonPageGroup_Options" xml:space="preserve">
+    <value>Opções</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_Delete" xml:space="preserve">
+    <value>Apagar</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_NewFile" xml:space="preserve">
+    <value>Novo</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_ShowGrid" xml:space="preserve">
+    <value>Grade</value>
+  </data>
+  <data name="DiagramControlStringId.Ribbon_CanvasNoneAutoSize" xml:space="preserve">
+    <value>Nenhum</value>
+  </data>
+  <data name="DiagramControlStringId.Ribbon_PageSize" xml:space="preserve">
+    <value>Tamanho</value>
+  </data>
+  <data name="DiagramControlStringId.SoftwareIcons_Collapse_Name" xml:space="preserve">
+    <value>Recolher</value>
+  </data>
+  <data name="DiagramControlStringId.SoftwareIcons_Expand_Name" xml:space="preserve">
+    <value>Expandir</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_Copy" xml:space="preserve">
+    <value>Copiar</value>
+  </data>
+  <data name="DiagramControlStringId.RibbonPageGroup_Zoom" xml:space="preserve">
+    <value>Zoom</value>
+  </data>
+  <data name="DiagramControlStringId.RibbonPageGroup_File" xml:space="preserve">
+    <value>Arquivo</value>
+  </data>
+  <data name="DiagramControlStringId.Font_Font" xml:space="preserve">
+    <value>Fonte</value>
+  </data>
+  <data name="DiagramControlStringId.RibbonPageGroup_Font" xml:space="preserve">
+    <value>Fonte</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_ToggleFontStrikethrough" xml:space="preserve">
+    <value>Tachado</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_ToggleFontUnderline" xml:space="preserve">
+    <value>Sublinhado</value>
+  </data>
+  <data name="DiagramControlStringId.Panel_Shapes_Name" xml:space="preserve">
+    <value>Formas</value>
+  </data>
+  <data name="DiagramControlStringId.RibbonPageGroup_Tools" xml:space="preserve">
+    <value>Ferramentas</value>
+  </data>
+  <data name="DiagramControlStringId.SoftwareIcons_Tools_Name" xml:space="preserve">
+    <value>Ferramentas</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_ToggleFontBold" xml:space="preserve">
+    <value>Negrito</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_ToggleFontItalic" xml:space="preserve">
+    <value>Itálico</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_SaveFile" xml:space="preserve">
+    <value>Salvar</value>
+  </data>
+  <data name="DiagramControlStringId.SDLDiagramShapes_Save_Name" xml:space="preserve">
+    <value>Salvar</value>
+  </data>
+  <data name="DiagramControlStringId.Ribbon_HorizontalOrientation" xml:space="preserve">
+    <value>Paisagem</value>
+  </data>
+  <data name="DiagramControlStringId.Ribbon_VerticalOrientation" xml:space="preserve">
+    <value>Retrato</value>
+  </data>
+  <data name="DiagramControlStringId.PageSize_Height" xml:space="preserve">
+    <value>Altura</value>
+  </data>
+  <data name="DiagramControlStringId.ShapeInfo_Height" xml:space="preserve">
+    <value>Altura</value>
+  </data>
+  <data name="DiagramControlStringId.PageSize_Width" xml:space="preserve">
+    <value>Largura</value>
+  </data>
+  <data name="DiagramControlStringId.ShapeInfo_Width" xml:space="preserve">
+    <value>Largura</value>
+  </data>
+  <data name="DiagramControlStringId.Panel_Properties_Name" xml:space="preserve">
+    <value>Propriedades</value>
+  </data>
+  <data name="DiagramControlStringId.SoftwareIcons_Properties_Name" xml:space="preserve">
+    <value>Propriedades</value>
+  </data>
+  <data name="DiagramControlStringId.RibbonPage_Home" xml:space="preserve">
+    <value>Página principal</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_Cut" xml:space="preserve">
+    <value>Recortar</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_Paste" xml:space="preserve">
+    <value>Colar</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_SetHorizontalAlignment_Justify" xml:space="preserve">
+    <value>Justificar</value>
+  </data>
+  <data name="DiagramControlStringId.SoftwareIcons_Filter_Name" xml:space="preserve">
+    <value>Filtro</value>
+  </data>
+  <data name="DiagramControlStringId.Ribbon_Orientation" xml:space="preserve">
+    <value>Orientação</value>
+  </data>
+  <data name="DiagramControlStringId.SoftwareIcons_Sort_Name" xml:space="preserve">
+    <value>Classificar</value>
+  </data>
+  <data name="DiagramControlStringId.BasicFlowchartShapes_Data_Name" xml:space="preserve">
+    <value>Dados</value>
+  </data>
+  <data name="DiagramControlStringId.RibbonPageGroup_PageSetup" xml:space="preserve">
+    <value>Configurar Página</value>
+  </data>
+  <data name="DiagramControlStringId.RibbonPageGroup_Paragraph" xml:space="preserve">
+    <value>Parágrafo</value>
+  </data>
+  <data name="DiagramControlStringId.RibbonPageGroup_Show" xml:space="preserve">
+    <value>Mostrar</value>
+  </data>
+  <data name="DiagramControlStringId.Font_FontSize" xml:space="preserve">
+    <value>Tamanho da Fonte</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_Redo" xml:space="preserve">
+    <value>Refazer</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_Undo" xml:space="preserve">
+    <value>Desfazer</value>
+  </data>
+  <data name="DiagramControlStringId.BasicFlowchartShapes_Document_Name" xml:space="preserve">
+    <value>Documento</value>
+  </data>
+  <data name="DiagramControlStringId.DefaultDocumentName" xml:space="preserve">
+    <value>Documento</value>
+  </data>
+  <data name="DiagramControlStringId.RibbonPageGroup_Document" xml:space="preserve">
+    <value>Documento</value>
+  </data>
+  <data name="DiagramControlStringId.SDLDiagramShapes_Document_Name" xml:space="preserve">
+    <value>Documento</value>
+  </data>
+  <data name="DiagramControlStringId.SoftwareIcons_Document_Name" xml:space="preserve">
+    <value>Documento</value>
+  </data>
+  <data name="DiagramControlStringId.BasicShapes_Cross_Name" xml:space="preserve">
+    <value>Cruz</value>
+  </data>
+  <data name="DiagramControlStringId.BasicShapes_Ellipse_Name" xml:space="preserve">
+    <value>Elipse</value>
+  </data>
+  <data name="DiagramControlStringId.BasicShapes_Pentagon_Name" xml:space="preserve">
+    <value>Pentágono</value>
+  </data>
+  <data name="DiagramControlStringId.BasicShapes_Rectangle_Name" xml:space="preserve">
+    <value>Retângulo</value>
+  </data>
+  <data name="DiagramControlStringId.BasicShapes_Triangle_Name" xml:space="preserve">
+    <value>Triângulo</value>
+  </data>
+  <data name="DiagramControlStringId.ContextMenu_Move_Down" xml:space="preserve">
+    <value>Mover para Baixo</value>
+  </data>
+  <data name="DiagramControlStringId.ContextMenu_Move_Up" xml:space="preserve">
+    <value>Mover para Cima</value>
+  </data>
+  <data name="DiagramControlStringId.ContextMenu_Order" xml:space="preserve">
+    <value>Ordem</value>
+  </data>
+  <data name="DiagramControlStringId.ContextMenu_View" xml:space="preserve">
+    <value>Vista</value>
+  </data>
+  <data name="DiagramControlStringId.RibbonPage_View" xml:space="preserve">
+    <value>Vista</value>
+  </data>
+  <data name="DiagramControlStringId.DecorativeShapes_Wave_Name" xml:space="preserve">
+    <value>Onda</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_BringToFront" xml:space="preserve">
+    <value>Trazer para Frente</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_FitToWidth" xml:space="preserve">
+    <value>Largura da Página</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_OpenFile" xml:space="preserve">
+    <value>Abrir...</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_SendToBack" xml:space="preserve">
+    <value>Enviar para Trás</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_ZoomIn" xml:space="preserve">
+    <value>Zoom de Aproximação</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_ZoomOut" xml:space="preserve">
+    <value>Zoom de Afastamento</value>
+  </data>
+  <data name="DiagramControlStringId.PropertyGridOption_None" xml:space="preserve">
+    <value>(nenhum)</value>
+  </data>
+  <data name="DiagramControlStringId.PropertyGridView_Alphabetical" xml:space="preserve">
+    <value>Alfabético</value>
+  </data>
+  <data name="DiagramControlStringId.RibbonPage_Design" xml:space="preserve">
+    <value>Design</value>
+  </data>
+  <data name="DiagramControlStringId.RibbonPageGroup_Arrange" xml:space="preserve">
+    <value>Organizar</value>
+  </data>
+  <data name="DiagramControlStringId.RibbonPageGroup_Clipboard" xml:space="preserve">
+    <value>Área de transferência</value>
+  </data>
+  <data name="DiagramControlStringId.ShapeInfo_Angle" xml:space="preserve">
+    <value>Ângulo</value>
+  </data>
+  <data name="DiagramControlStringId.SoftwareIcons_Forward_Name" xml:space="preserve">
+    <value>Avançar</value>
+  </data>
+  <data name="DiagramControlStringId.Themes_Lines_Name" xml:space="preserve">
+    <value>Linhas</value>
+  </data>
+  <data name="DiagramControlStringId.Shape_BackgroundColor" xml:space="preserve">
+    <value>Fundo</value>
+  </data>
+  <data name="DiagramControlStringId.Arrow_ClosedDiamond" xml:space="preserve">
+    <value>Diamante fechado</value>
+  </data>
+  <data name="DiagramControlStringId.BasicShapes_Star24_Name" xml:space="preserve">
+    <value>Estrela de 24 pontos</value>
+  </data>
+  <data name="DiagramControlStringId.BasicShapes_Star32_Name" xml:space="preserve">
+    <value>Estrela de 32 pontos</value>
+  </data>
+  <data name="DiagramControlStringId.BasicShapes_Star4_Name" xml:space="preserve">
+    <value>Estrela de 4 pontos</value>
+  </data>
+  <data name="DiagramControlStringId.BasicShapes_Star6_Name" xml:space="preserve">
+    <value>Estrela de 6 pontos</value>
+  </data>
+  <data name="DiagramControlStringId.BasicShapes_Star7_Name" xml:space="preserve">
+    <value>Estrela de 7 pontos</value>
+  </data>
+  <data name="DiagramControlStringId.BasicShapes_Can_Name" xml:space="preserve">
+    <value>Pode</value>
+  </data>
+  <data name="DiagramControlStringId.ArrowShapes_BentArrow_Name" xml:space="preserve">
+    <value>Seta curvada</value>
+  </data>
+  <data name="DiagramControlStringId.ArrowShapes_CircularArrow_Name" xml:space="preserve">
+    <value>Seta circular</value>
+  </data>
+  <data name="DiagramControlStringId.ArrowShapes_FlexibleArrow_Name" xml:space="preserve">
+    <value>Seta flexível</value>
+  </data>
+  <data name="DiagramControlStringId.ArrowShapes_ModernArrow_Name" xml:space="preserve">
+    <value>Seta moderna</value>
+  </data>
+  <data name="DiagramControlStringId.ArrowShapes_Name" xml:space="preserve">
+    <value>Formas de seta</value>
+  </data>
+  <data name="DiagramControlStringId.ArrowShapes_SimpleDoubleArrow_Name" xml:space="preserve">
+    <value>Seta dupla simples</value>
+  </data>
+  <data name="DiagramControlStringId.BasicFlowchartShapes_Custom2_Name" xml:space="preserve">
+    <value>Custom2</value>
+  </data>
+  <data name="DiagramControlStringId.BasicFlowchartShapes_Custom3_Name" xml:space="preserve">
+    <value>Custom3</value>
+  </data>
+  <data name="DiagramControlStringId.BasicFlowchartShapes_Custom4_Name" xml:space="preserve">
+    <value>Custom4</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_FocusNextControl" xml:space="preserve">
+    <value>Foco no próximo controle</value>
+  </data>
+  <data name="DiagramControlStringId.Category_Options" xml:space="preserve">
+    <value>Opções</value>
+  </data>
+  <data name="DiagramControlStringId.PageMargin_Bottom" xml:space="preserve">
+    <value>Fundo</value>
+  </data>
+  <data name="DiagramControlStringId.PageMargin_Left" xml:space="preserve">
+    <value>Esquerda</value>
+  </data>
+  <data name="DiagramControlStringId.PageMargin_Right" xml:space="preserve">
+    <value>Direita</value>
+  </data>
+  <data name="DiagramControlStringId.PageMargin_Top" xml:space="preserve">
+    <value>Topo</value>
+  </data>
+  <data name="DiagramControlStringId.PageSize" xml:space="preserve">
+    <value>Tamanho</value>
+  </data>
+  <data name="DiagramControlStringId.StatusBarZoomEditor" xml:space="preserve">
+    <value>Zoom</value>
+  </data>
+  <data name="DiagramControlStringId.AutoSize_Fill" xml:space="preserve">
+    <value>Preencher</value>
+  </data>
+  <data name="DiagramControlStringId.FontFamily" xml:space="preserve">
+    <value>Fonte</value>
+  </data>
+  <data name="DiagramControlStringId.AutoSize_None" xml:space="preserve">
+    <value>Nenhum</value>
+  </data>
+  <data name="DiagramControlStringId.LineJump_None" xml:space="preserve">
+    <value>Nenhum</value>
+  </data>
+  <data name="DiagramControlStringId.Category_Layout" xml:space="preserve">
+    <value>Layout</value>
+  </data>
+  <data name="DiagramControlStringId.PageOrientation_Horizontal" xml:space="preserve">
+    <value>Paisagem</value>
+  </data>
+  <data name="DiagramControlStringId.PageOrientation_Vertical" xml:space="preserve">
+    <value>Retrato</value>
+  </data>
+  <data name="DiagramControlStringId.StatusBarHeight" xml:space="preserve">
+    <value>Altura</value>
+  </data>
+  <data name="DiagramControlStringId.StatusBarWidth" xml:space="preserve">
+    <value>Largura</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_Print" xml:space="preserve">
+    <value>Imprimir</value>
+  </data>
+  <data name="DiagramControlStringId.PrintMenu" xml:space="preserve">
+    <value>Imprimir</value>
+  </data>
+  <data name="DiagramControlStringId.ShowGrid" xml:space="preserve">
+    <value>Grade</value>
+  </data>
+  <data name="DiagramControlStringId.PageOrientation" xml:space="preserve">
+    <value>Orientação</value>
+  </data>
+  <data name="DiagramControlStringId.FontSize" xml:space="preserve">
+    <value>Tamanho da Fonte</value>
+  </data>
+  <data name="DiagramControlStringId.BackgroundColor" xml:space="preserve">
+    <value>Fundo</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_SelectTool_EllipseTool" xml:space="preserve">
+    <value>Elipse</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_SelectTool_RectangleTool" xml:space="preserve">
+    <value>Retângulo</value>
+  </data>
+  <data name="DiagramControlStringId.Category_Appearance" xml:space="preserve">
+    <value>Aparência</value>
+  </data>
+  <data name="DiagramControlStringId.Category_Behavior" xml:space="preserve">
+    <value>Comportamento</value>
+  </data>
+  <data name="DiagramControlStringId.LineJump_HorizontalLines" xml:space="preserve">
+    <value>Linhas Horizontais</value>
+  </data>
+  <data name="DiagramControlStringId.LineJump_VerticalLines" xml:space="preserve">
+    <value>Linhas Verticais</value>
+  </data>
+  <data name="DiagramControlStringId.MeasureUnit_Pixels_Shorthand" xml:space="preserve">
+    <value>px</value>
+  </data>
+  <data name="DiagramControlStringId.StatusBarAngle" xml:space="preserve">
+    <value>Ângulo</value>
+  </data>
+  <data name="DiagramControlStringId.SoftwareIcons_Back_Name" xml:space="preserve">
+    <value>Voltar</value>
+  </data>
+  <data name="DiagramControlStringId.Region_PageOrientation" xml:space="preserve">
+    <value>Orientação da página</value>
+  </data>
+  <data name="DiagramControlStringId.Region_PageSize" xml:space="preserve">
+    <value>Tamanho da página</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_DecreaseFontSize" xml:space="preserve">
+    <value>Diminuir tamanho da fonte</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_IncreaseFontSize" xml:space="preserve">
+    <value>Aumentar tamanho da fonte</value>
+  </data>
+  <data name="DiagramControlStringId.ArrowShapes_StripedArrow_Name" xml:space="preserve">
+    <value>Seta listrada</value>
+  </data>
+  <data name="DiagramControlStringId.AutoSize_AutoSize_Description" xml:space="preserve">
+    <value>Automaticamente redimensionar a página.</value>
+  </data>
+  <data name="DiagramControlStringId.AutoSize_Description2" xml:space="preserve">
+    <value>Automaticamente redimensionar a página.</value>
+  </data>
+  <data name="DiagramControlStringId.Arrow_FilledDot" xml:space="preserve">
+    <value>Ponto cheio</value>
+  </data>
+  <data name="DiagramControlStringId.Arrow_FilledFletch" xml:space="preserve">
+    <value>Fletch cheio</value>
+  </data>
+  <data name="DiagramControlStringId.ArrowShapes_BlockArrow_Name" xml:space="preserve">
+    <value>Seta de bloco</value>
+  </data>
+  <data name="DiagramControlStringId.Arrow_ClosedASMEArrow" xml:space="preserve">
+    <value>Seta de ASME fechado</value>
+  </data>
+  <data name="DiagramControlStringId.DecorativeShapes_DoubleWave_Name" xml:space="preserve">
+    <value>Dupla onda</value>
+  </data>
+  <data name="DiagramControlStringId.ClipboardPasteErrorMessage" xml:space="preserve">
+    <value>Não é possível colar itens da área de transferência</value>
+  </data>
+  <data name="DiagramControlStringId.BasicShapes_RoundCornerRectangle_Name" xml:space="preserve">
+    <value>Retângulo de canto redondo</value>
+  </data>
+  <data name="DiagramControlStringId.BasicShapes_RoundedRectangle_Name" xml:space="preserve">
+    <value>Arredondado retângulo</value>
+  </data>
+  <data name="DiagramControlStringId.BasicShapes_RightParenthesis_Name" xml:space="preserve">
+    <value>Parêntese direito</value>
+  </data>
+  <data name="DiagramControlStringId.BasicShapes_Octagon_Name" xml:space="preserve">
+    <value>Octagon</value>
+  </data>
+  <data name="DiagramControlStringId.BasicShapes_LShape_Name" xml:space="preserve">
+    <value>L forma</value>
+  </data>
+  <data name="DiagramControlStringId.BasicShapes_Donut_Name" xml:space="preserve">
+    <value>Donut</value>
+  </data>
+  <data name="DiagramControlStringId.BasicShapes_Frame_Name" xml:space="preserve">
+    <value>Frame</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_FocusPrevControl" xml:space="preserve">
+    <value>Controle de foco anterior</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_MoveSelection_Down" xml:space="preserve">
+    <value>Mover a seleção para baixo</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_MoveSelection_Left" xml:space="preserve">
+    <value>Mover a seleção esquerda</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_MoveSelection_Right" xml:space="preserve">
+    <value>Mover para a direita da seleção</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_MoveSelection_Up" xml:space="preserve">
+    <value>Mover a seleção</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_NewFile_Description" xml:space="preserve">
+    <value>Criar um novo diagrama</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_OpenFile_Description" xml:space="preserve">
+    <value>Abrir um arquivo de diagrama</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_Redo_Description" xml:space="preserve">
+    <value>Refazer a última operação.</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_SaveFile_Description" xml:space="preserve">
+    <value>Salvar este diagrama</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_SaveFileAs" xml:space="preserve">
+    <value>Salvar como...</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_SaveFileAs_Description" xml:space="preserve">
+    <value>Salvar este diagrama com um nome diferente</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_SelectAll" xml:space="preserve">
+    <value>Selecionar todos os itens</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_ChangeConnectorType_Straight" xml:space="preserve">
+    <value>Em linha reta</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_Copy_Description" xml:space="preserve">
+    <value>Colocar uma cópia da seleção na área de transferência, então você pode colá-lo em outro lugar.</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_Cut_Description" xml:space="preserve">
+    <value>Remover a seleção e colocá-lo na área de transferência, então você pode colá-lo em outro lugar.</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_Edit" xml:space="preserve">
+    <value>Editar texto</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_Empty" xml:space="preserve">
+    <value>Nenhum</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_SelectPrevItem" xml:space="preserve">
+    <value>Selecione o Item anterior</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_SelectTool" xml:space="preserve">
+    <value>Selecione a ferramenta</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_SendBackward" xml:space="preserve">
+    <value>Enviar para trás</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_SendToBack_Description" xml:space="preserve">
+    <value>Enviar o objeto selecionado atrás de todos os outros objetos.</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_SetHorizontalAlignment_Justify_Description" xml:space="preserve">
+    <value>Distribuir seu texto uniformemente entre as margens.</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_SetHorizontalAlignment_Left" xml:space="preserve">
+    <value>Alinhar à esquerda</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_SetHorizontalAlignment_Left_Description" xml:space="preserve">
+    <value>Alinhar seu conteúdo para a esquerda.</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_SetHorizontalAlignment_Right_Description" xml:space="preserve">
+    <value>Alinhar seu conteúdo para a direita.</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_SetPageParameters_PageSize" xml:space="preserve">
+    <value>Mais tamanhos de página...</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_SetPageParameters_PageSize_Description" xml:space="preserve">
+    <value>Escolher um tamanho de página na lista ou definir um tamanho personalizado.</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_SetPageParameters_PageSize_Header" xml:space="preserve">
+    <value>Configuração de página</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_SetVerticalAlignment_Bottom" xml:space="preserve">
+    <value>Alinhar parte inferior</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_SetVerticalAlignment_Bottom_Description" xml:space="preserve">
+    <value>Alinhar o texto à parte inferior do bloco de texto.</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_SetVerticalAlignment_Center" xml:space="preserve">
+    <value>Alinhe o meio</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_SetVerticalAlignment_Top" xml:space="preserve">
+    <value>Alinhar parte superior</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_SetVerticalAlignment_Top_Description" xml:space="preserve">
+    <value>Alinhar o texto à parte superior do bloco de texto.</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_ShowPopupMenu" xml:space="preserve">
+    <value>Mostrar o Menu pop-up</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_StartDragTool" xml:space="preserve">
+    <value>Inicie a ferramenta de arrastar</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_ToggleFontBold_Description" xml:space="preserve">
+    <value>Colocar seu texto em negrito.</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_ToggleFontItalic_Description" xml:space="preserve">
+    <value>Coloca em itálico o texto.</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_ToggleFontStrikethrough_Description" xml:space="preserve">
+    <value>Algo fora desenhando uma linha através de la Cruz</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_ToggleFontUnderline_Description" xml:space="preserve">
+    <value>Sublinhar o seu texto.</value>
+  </data>
+  <data name="DiagramControlStringId.MessageAddCommandConstructorError" xml:space="preserve">
+    <value>Não consigo encontrar um construtor com um parâmetro de tipo DiagramControl na classe {0}</value>
+  </data>
+  <data name="DiagramControlStringId.PageOrientation_Description" xml:space="preserve">
+    <value>Alternar a página entre layouts de retrato e paisagem.</value>
+  </data>
+  <data name="DiagramControlStringId.PageOrientationHeader" xml:space="preserve">
+    <value>Galeria de orientação de página</value>
+  </data>
+  <data name="DiagramControlStringId.PageOrientationSelectorName" xml:space="preserve">
+    <value>Seletor de orientação de página</value>
+  </data>
+  <data name="DiagramControlStringId.PageSize_Description" xml:space="preserve">
+    <value>Escolher um tamanho de página.</value>
+  </data>
+  <data name="DiagramControlStringId.PageSizeHeader" xml:space="preserve">
+    <value>Galeria de tamanho de página</value>
+  </data>
+  <data name="DiagramControlStringId.PageSizeSelectorName" xml:space="preserve">
+    <value>Seletor do tamanho da página</value>
+  </data>
+  <data name="DiagramControlStringId.PropertyGridView_Categorized" xml:space="preserve">
+    <value>Categorizado</value>
+  </data>
+  <data name="DiagramControlStringId.QuickShapes_Name" xml:space="preserve">
+    <value>Formas rápidas</value>
+  </data>
+  <data name="DiagramControlStringId.Region_PageMargin" xml:space="preserve">
+    <value>Margem da página</value>
+  </data>
+  <data name="DiagramControlStringId.ReLayout" xml:space="preserve">
+    <value>Re-Layout de página</value>
+  </data>
+  <data name="DiagramControlStringId.Ribbon_GridSize" xml:space="preserve">
+    <value>Tamanho da grade</value>
+  </data>
+  <data name="DiagramControlStringId.Ribbon_MeasureUnit" xml:space="preserve">
+    <value>Unidade de medida</value>
+  </data>
+  <data name="DiagramControlStringId.ShowPageBreaks" xml:space="preserve">
+    <value>Quebras de página</value>
+  </data>
+  <data name="DiagramControlStringId.TabHeader_PageSize" xml:space="preserve">
+    <value>Tamanho da página</value>
+  </data>
+  <data name="DiagramControlStringId.DocumentFormat_AllFiles" xml:space="preserve">
+    <value>Todos os arquivos</value>
+  </data>
+  <data name="DiagramControlStringId.DocumentFormat_XmlFiles" xml:space="preserve">
+    <value>Arquivos XML</value>
+  </data>
+  <data name="DiagramControlStringId.DocumentLoadErrorMessage" xml:space="preserve">
+    <value>O arquivo especificado não pode ser carregado</value>
+  </data>
+  <data name="DiagramControlStringId.DocumentSaveErrorMessage" xml:space="preserve">
+    <value>O arquivo especificado não pode ser salvo.</value>
+  </data>
+  <data name="DiagramControlStringId.FontFamily_Description" xml:space="preserve">
+    <value>Escolher uma nova fonte para o seu texto.</value>
+  </data>
+  <data name="DiagramControlStringId.ForegroundColor" xml:space="preserve">
+    <value>Cor da fonte</value>
+  </data>
+  <data name="DiagramControlStringId.MeasureUnit_Inches" xml:space="preserve">
+    <value>Polegadas</value>
+  </data>
+  <data name="DiagramControlStringId.MeasureUnit_Millimeters" xml:space="preserve">
+    <value>Milímetros</value>
+  </data>
+  <data name="DiagramControlStringId.MeasureUnit_Pixels" xml:space="preserve">
+    <value>Pixels</value>
+  </data>
+  <data name="DiagramControlStringId.Menu_AllowEmptySelection_Button" xml:space="preserve">
+    <value>Seleção vazia</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_Undo_Description" xml:space="preserve">
+    <value>Desfazer a última operação.</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_UseTool" xml:space="preserve">
+    <value>Use a ferramenta</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_BringToFront_Description" xml:space="preserve">
+    <value>Traz o objeto selecionado na frente de todos os outros objetos.</value>
+  </data>
+  <data name="DiagramControlStringId.BasicShapes_LeftBrace_Name" xml:space="preserve">
+    <value>Chave Esquerda</value>
+  </data>
+  <data name="DiagramControlStringId.BasicShapes_LeftParenthesis_Name" xml:space="preserve">
+    <value>Parênteses Esquerdo</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_ExportDiagram_BMP_Description" xml:space="preserve">
+    <value>Salvar o diagrama como arquivo de imagem de bitmap que ocupa mais espaço de disco devido à falta de compressão.</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_ExportDiagram_GIF_Description" xml:space="preserve">
+    <value>Salvar o diagrama como uma imagem GIF que é compacto, mas tem uma qualidade reduzida se o diagrama tiver mais de 256 cores.</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_ExportDiagram_JPEG_Description" xml:space="preserve">
+    <value>Salvar o diagrama como uma imagem JPEG que atinge boa compressão com pouca perda perceptível de qualidade de imagem.</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_ExportDiagram_PNG_Description" xml:space="preserve">
+    <value>Salvar o diagrama como uma imagem PNG que tem uma alta qualidade e leva muito pouco espaço, se o diagrama tiver grandes áreas de cor uniforme exatamente.</value>
+  </data>
+  <data name="DiagramControlStringId.SaveFileAsDialogTitle" xml:space="preserve">
+    <value>Salve o arquivo como</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_SelectTool_PointerTool_Description" xml:space="preserve">
+    <value>Selecionar, mover e redimensionar objetos.</value>
+  </data>
+  <data name="DiagramControlStringId.ShowRulers" xml:space="preserve">
+    <value>Régua</value>
+  </data>
+  <data name="DiagramControlStringId.StrokeColor_Description" xml:space="preserve">
+    <value>Mudar a cor do traçado.</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_Print_Description" xml:space="preserve">
+    <value>Selecione a impressora, o número de cópias e outras opções de impressão antes de imprimir.</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_Paste_Description" xml:space="preserve">
+    <value>Cole o conteúdo da área de transferência.</value>
+  </data>
+  <data name="DiagramControlStringId.LineJump_ThreeSides" xml:space="preserve">
+    <value>3 lados</value>
+  </data>
+  <data name="DiagramControlStringId.LineJump_TwoSides" xml:space="preserve">
+    <value>2 lados</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_SelectTool_PointerTool" xml:space="preserve">
+    <value>Ferramenta Ponteiro</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_SetHorizontalAlignment_Right" xml:space="preserve">
+    <value>Alinhar a direita</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_SetHorizontalAlignment_Center" xml:space="preserve">
+    <value>Alinhar o centro</value>
+  </data>
+  <data name="DiagramControlStringId.LineJump_Bow" xml:space="preserve">
+    <value>Arco</value>
+  </data>
+  <data name="DiagramControlStringId.LineJump_FiveSides" xml:space="preserve">
+    <value>5 lados</value>
+  </data>
+  <data name="DiagramControlStringId.LineJump_FourSides" xml:space="preserve">
+    <value>4 lados</value>
+  </data>
+  <data name="DiagramControlStringId.LineJump_Gap" xml:space="preserve">
+    <value>Gap</value>
+  </data>
+  <data name="DiagramControlStringId.LineJump_SevenSides" xml:space="preserve">
+    <value>7 lados</value>
+  </data>
+  <data name="DiagramControlStringId.LineJump_SixSides" xml:space="preserve">
+    <value>6 lados</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_IncreaseFontSize_Description" xml:space="preserve">
+    <value>Aumentar um pouco seu texto.</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_QuickPrint" xml:space="preserve">
+    <value>Impressão rápida</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_QuickPrint_Description" xml:space="preserve">
+    <value>Enviar o documento diretamente para a impressora padrão, sem fazer alterações.</value>
+  </data>
+  <data name="DiagramControlStringId.AutoSize" xml:space="preserve">
+    <value>Tamanho automático</value>
+  </data>
+  <data name="DiagramControlStringId.AutoSize_AutoSize" xml:space="preserve">
+    <value>Tamanho automático</value>
+  </data>
+  <data name="DiagramControlStringId.DecorativeShapes_DownRibbon_Name" xml:space="preserve">
+    <value>Abaixo da faixa de opções</value>
+  </data>
+  <data name="DiagramControlStringId.PrintMenu_Description" xml:space="preserve">
+    <value>Imprimir este diagrama</value>
+  </data>
+  <data name="DiagramControlStringId.Region_LineJumps" xml:space="preserve">
+    <value>Saltos de linha</value>
+  </data>
+  <data name="DiagramControlStringId.ReLayoutTree" xml:space="preserve">
+    <value>Hierarquia</value>
+  </data>
+  <data name="DiagramControlStringId.RibbonGallery_ThemeStyles" xml:space="preserve">
+    <value>Estilos de tema</value>
+  </data>
+  <data name="DiagramControlStringId.RibbonGallery_VariantStyles" xml:space="preserve">
+    <value>Estilos de variantes</value>
+  </data>
+  <data name="DiagramControlStringId.RibbonPageGroup_Action" xml:space="preserve">
+    <value>Ação</value>
+  </data>
+  <data name="DiagramControlStringId.RibbonPageGroup_ShapeStyles" xml:space="preserve">
+    <value>Estilos de forma</value>
+  </data>
+  <data name="DiagramControlStringId.RibbonPageGroup_Themes" xml:space="preserve">
+    <value>Temas</value>
+  </data>
+  <data name="DiagramControlStringId.RibbonPageGroup_Toolbox" xml:space="preserve">
+    <value>Caixa de ferramentas</value>
+  </data>
+  <data name="DiagramControlStringId.SDLDiagramShapes_Alternative_Name" xml:space="preserve">
+    <value>Alternativa</value>
+  </data>
+  <data name="DiagramControlStringId.SDLDiagramShapes_DiskStorage_Name" xml:space="preserve">
+    <value>Armazenamento em disco</value>
+  </data>
+  <data name="DiagramControlStringId.SDLDiagramShapes_DividedEvent_Name" xml:space="preserve">
+    <value>Evento dividido</value>
+  </data>
+  <data name="DiagramControlStringId.SDLDiagramShapes_DividedProcess_Name" xml:space="preserve">
+    <value>Processo dividido</value>
+  </data>
+  <data name="DiagramControlStringId.SDLDiagramShapes_MessageFromUser_Name" xml:space="preserve">
+    <value>Mensagem do usuário</value>
+  </data>
+  <data name="DiagramControlStringId.SDLDiagramShapes_MessageToUser_Name" xml:space="preserve">
+    <value>Mensagem para o usuário</value>
+  </data>
+  <data name="DiagramControlStringId.SnapToGrid" xml:space="preserve">
+    <value>Snap para grade</value>
+  </data>
+  <data name="DiagramControlStringId.SnapToItems" xml:space="preserve">
+    <value>Snap para itens</value>
+  </data>
+  <data name="DiagramControlStringId.SoftwareIcons_Calendar_Name" xml:space="preserve">
+    <value>Calendário</value>
+  </data>
+  <data name="DiagramControlStringId.SoftwareIcons_Database_Name" xml:space="preserve">
+    <value>Banco de dados</value>
+  </data>
+  <data name="DiagramControlStringId.SoftwareIcons_HardDrive_Name" xml:space="preserve">
+    <value>Disco rígido</value>
+  </data>
+  <data name="DiagramControlStringId.SoftwareIcons_Lock_Name" xml:space="preserve">
+    <value>Bloqueio</value>
+  </data>
+  <data name="DiagramControlStringId.SoftwareIcons_Name" xml:space="preserve">
+    <value>Ícones do software</value>
+  </data>
+  <data name="DiagramControlStringId.SoftwareIcons_Network_Name" xml:space="preserve">
+    <value>Rede</value>
+  </data>
+  <data name="DiagramControlStringId.SoftwareIcons_Permission_Name" xml:space="preserve">
+    <value>Permissão</value>
+  </data>
+  <data name="DiagramControlStringId.SoftwareIcons_ZoomIn_Name" xml:space="preserve">
+    <value>ZoomIn</value>
+  </data>
+  <data name="DiagramControlStringId.SoftwareIcons_ZoomOut_Name" xml:space="preserve">
+    <value>ZoomOut</value>
+  </data>
+  <data name="DiagramControlStringId.Themes" xml:space="preserve">
+    <value>Temas</value>
+  </data>
+  <data name="DiagramControlStringId.Themes_BalancedEffect_Name" xml:space="preserve">
+    <value>Equilibrado</value>
+  </data>
+  <data name="DiagramControlStringId.Themes_Daybreak_Name" xml:space="preserve">
+    <value>Alvorada</value>
+  </data>
+  <data name="DiagramControlStringId.Themes_FocusedEffect_Name" xml:space="preserve">
+    <value>Focada</value>
+  </data>
+  <data name="DiagramControlStringId.Themes_Integral_Name" xml:space="preserve">
+    <value>Integral</value>
+  </data>
+  <data name="DiagramControlStringId.Themes_IntenseEffect_Name" xml:space="preserve">
+    <value>Intenso</value>
+  </data>
+  <data name="DiagramControlStringId.Themes_Linear_Name" xml:space="preserve">
+    <value>Linear</value>
+  </data>
+  <data name="DiagramControlStringId.Themes_ModerateEffect_Name" xml:space="preserve">
+    <value>Moderada</value>
+  </data>
+  <data name="DiagramControlStringId.Themes_Parallel_Name" xml:space="preserve">
+    <value>Paralelo</value>
+  </data>
+  <data name="DiagramControlStringId.Themes_RefinedEffect_Name" xml:space="preserve">
+    <value>Refinado</value>
+  </data>
+  <data name="DiagramControlStringId.ToolDisplayFormat" xml:space="preserve">
+    <value>{0} ferramenta</value>
+  </data>
+  <data name="DiagramControlStringId.Validation_Size" xml:space="preserve">
+    <value>O valor de {0} deve ser maior ou igual a {1}.</value>
+  </data>
+  <data name="DiagramControlStringId.VerticalTextAlignmentButtonGroup" xml:space="preserve">
+    <value>Grupo de botões de alinhamento de texto vertical</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_TreeLayout_Down" xml:space="preserve">
+    <value>Cima para baixo</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_TreeLayout_Left" xml:space="preserve">
+    <value>Direita para a esquerda</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_TreeLayout_Right" xml:space="preserve">
+    <value>Esquerda para a direita</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_TreeLayout_Up" xml:space="preserve">
+    <value>Baixo para cima</value>
+  </data>
+  <data name="DiagramControlStringId.DocumentDisplayFormat_Modified" xml:space="preserve">
+    <value>{0}*</value>
+  </data>
+  <data name="DiagramControlStringId.ExportAs" xml:space="preserve">
+    <value>Exportar como...</value>
+  </data>
+  <data name="DiagramControlStringId.FontSize_Description" xml:space="preserve">
+    <value>Alterar o tamanho do seu texto.</value>
+  </data>
+  <data name="DiagramControlStringId.FontSizeAndFamilyButtonGroup" xml:space="preserve">
+    <value>Tamanho da fonte e grupo de botões de família</value>
+  </data>
+  <data name="DiagramControlStringId.FontTypeAndColorButtonGroup" xml:space="preserve">
+    <value>Tipo de fonte e grupo de botões de cor</value>
+  </data>
+  <data name="DiagramControlStringId.ForegroundColor_Description" xml:space="preserve">
+    <value>Mudar a cor do seu texto.</value>
+  </data>
+  <data name="DiagramControlStringId.HorizontalTextAlignmentButtonGroup" xml:space="preserve">
+    <value>Grupo de botões de alinhamento de texto horizontal</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_ChangeConnectorType_RightAngle" xml:space="preserve">
+    <value>Ângulo direito</value>
+  </data>
+  <data name="DiagramControlStringId.No_Shapes_Found_Name" xml:space="preserve">
+    <value>Não há correspondência</value>
+  </data>
+  <data name="DiagramControlStringId.No_Stencils_Open_Name" xml:space="preserve">
+    <value>Não há nenhuma estênceis abertas.</value>
+  </data>
+  <data name="DiagramControlStringId.Themes_NoTheme_Name" xml:space="preserve">
+    <value>Não tema</value>
+  </data>
+  <data name="DiagramControlStringId.SDLDiagramShapes_CreateRequest_Name" xml:space="preserve">
+    <value>CreateRequest</value>
+  </data>
+  <data name="DiagramControlStringId.SDLDiagramShapes_Decision1_Name" xml:space="preserve">
+    <value>Decision1</value>
+  </data>
+  <data name="DiagramControlStringId.SDLDiagramShapes_Decision2_Name" xml:space="preserve">
+    <value>Decision2</value>
+  </data>
+  <data name="DiagramControlStringId.RibbonPageGroup_ImageTools_ImageStyles" xml:space="preserve">
+    <value>Estilos de imagem</value>
+  </data>
+  <data name="DiagramControlStringId.ShowContainerHeader" xml:space="preserve">
+    <value>Mostrar cabeçalho</value>
+  </data>
+  <data name="DiagramControlStringId.RibbonPageGroup_UserInterfaceThemes" xml:space="preserve">
+    <value>Temas de interface do usuário</value>
+  </data>
+  <data name="DiagramControlStringId.ShowPageBreaks_Description" xml:space="preserve">
+    <value>Girar sobre quebras de página para ver o que será impresso em cada página do seu documento.</value>
+  </data>
+  <data name="DiagramControlStringId.ShowRulers_Description" xml:space="preserve">
+    <value>Ver os governantes usados para medir e alinhar objetos no documento.</value>
+  </data>
+  <data name="DiagramControlStringId.SnapToGrid_Description" xml:space="preserve">
+    <value>Posicionar itens do diagrama para a interseção mais próxima da grade.</value>
+  </data>
+  <data name="DiagramControlStringId.SnapToItems_Description" xml:space="preserve">
+    <value>Alinhe itens de diagrama com o outro.</value>
+  </data>
+  <data name="DiagramControlStringId.StandardContainers_Banner" xml:space="preserve">
+    <value>Banner</value>
+  </data>
+  <data name="DiagramControlStringId.StandardContainers_Classic" xml:space="preserve">
+    <value>Clássico</value>
+  </data>
+  <data name="DiagramControlStringId.StandardContainers_Corners" xml:space="preserve">
+    <value>Cantos</value>
+  </data>
+  <data name="DiagramControlStringId.StatusBarShapeInfo" xml:space="preserve">
+    <value>Informação de forma</value>
+  </data>
+  <data name="DiagramControlStringId.Stencils_Name" xml:space="preserve">
+    <value>ESTÊNCEIS</value>
+  </data>
+  <data name="DiagramControlStringId.StrokeColor" xml:space="preserve">
+    <value>Acidente vascular cerebral</value>
+  </data>
+  <data name="DiagramControlStringId.TabHeader_LayoutAndRouting" xml:space="preserve">
+    <value>Layout e roteamento</value>
+  </data>
+  <data name="DiagramControlStringId.Themes_Sequence_Name" xml:space="preserve">
+    <value>Seqüência de</value>
+  </data>
+  <data name="DiagramControlStringId.Themes_SubtleEffect_Name" xml:space="preserve">
+    <value>Sutil</value>
+  </data>
+  <data name="DiagramControlStringId.Themes_ThemeStyleId_Name" xml:space="preserve">
+    <value>{0} efeito, sotaque {1}</value>
+  </data>
+  <data name="DiagramControlStringId.Themes_VariantStyleId_Name" xml:space="preserve">
+    <value>variante {0}</value>
+  </data>
+  <data name="DiagramControlStringId.Tool_Connector" xml:space="preserve">
+    <value>conector</value>
+  </data>
+  <data name="DiagramControlStringId.Tool_Pointer" xml:space="preserve">
+    <value>ponteiro</value>
+  </data>
+  <data name="DiagramControlStringId.PrintPreview_ZoomSelector" xml:space="preserve">
+    <value>Seletor de zoom</value>
+  </data>
+  <data name="DiagramControlStringId.PropertiesPanel" xml:space="preserve">
+    <value>Painel de propriedades</value>
+  </data>
+  <data name="DiagramControlStringId.Menu_SnapToGrid_Button" xml:space="preserve">
+    <value>Snap para grade</value>
+  </data>
+  <data name="DiagramControlStringId.Menu_SnapToItems_Button" xml:space="preserve">
+    <value>Snap para itens</value>
+  </data>
+  <data name="DiagramControlStringId.LayoutAndRoutingGroupSuperTip_Caption" xml:space="preserve">
+    <value>Layout e roteamento</value>
+  </data>
+  <data name="DiagramControlStringId.LayoutAndRoutingGroupSuperTip_Description" xml:space="preserve">
+    <value>Mostrar a guia Layout e roteamento na caixa de diálogo.</value>
+  </data>
+  <data name="DiagramControlStringId.ReLayout_Description" xml:space="preserve">
+    <value>Esquematize o diagrama, permitindo que o software para reposicionar os itens.</value>
+  </data>
+  <data name="DiagramControlStringId.ReLayoutCircularHeader" xml:space="preserve">
+    <value>Circular</value>
+  </data>
+  <data name="DiagramControlStringId.ReLayoutSugiyama" xml:space="preserve">
+    <value>Em camadas</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_CircularLayout" xml:space="preserve">
+    <value>Circular</value>
+  </data>
+  <data name="DiagramControlStringId.More_Shapes_Name" xml:space="preserve">
+    <value>Formas mais</value>
+  </data>
+  <data name="DiagramControlStringId.RibbonPageCategory_ImageTools" xml:space="preserve">
+    <value>Ferramentas de imagem</value>
+  </data>
+  <data name="DiagramControlStringId.SDLDiagramShapes_Name" xml:space="preserve">
+    <value>Formas de diagrama SDL</value>
+  </data>
+  <data name="DiagramControlStringId.SDLDiagramShapes_OffPageReference_Name" xml:space="preserve">
+    <value>Fora a referência da página</value>
+  </data>
+  <data name="DiagramControlStringId.SDLDiagramShapes_OnPageReference_Name" xml:space="preserve">
+    <value>Na referência da página</value>
+  </data>
+  <data name="DiagramControlStringId.SDLDiagramShapes_PrimitiveFromCallControl_Name" xml:space="preserve">
+    <value>Primitivas de controle de chamada</value>
+  </data>
+  <data name="DiagramControlStringId.SDLDiagramShapes_PrimitiveToCallControl_Name" xml:space="preserve">
+    <value>Primitiva para chamar o controle</value>
+  </data>
+  <data name="DiagramControlStringId.SDLDiagramShapes_Procedure_Name" xml:space="preserve">
+    <value>Procedimento</value>
+  </data>
+  <data name="DiagramControlStringId.SDLDiagramShapes_Return_Name" xml:space="preserve">
+    <value>Retornar</value>
+  </data>
+  <data name="DiagramControlStringId.SDLDiagramShapes_Start_Name" xml:space="preserve">
+    <value>Começar</value>
+  </data>
+  <data name="DiagramControlStringId.SDLDiagramShapes_Terminator_Name" xml:space="preserve">
+    <value>Exterminador do futuro</value>
+  </data>
+  <data name="DiagramControlStringId.SDLDiagramShapes_VariableProcedure_Name" xml:space="preserve">
+    <value>Procedimento de variável</value>
+  </data>
+  <data name="DiagramControlStringId.SDLDiagramShapes_VariableStart_Name" xml:space="preserve">
+    <value>Começar a variável</value>
+  </data>
+  <data name="DiagramControlStringId.Search_Shapes_Null_Text" xml:space="preserve">
+    <value>Formas de pesquisa...</value>
+  </data>
+  <data name="DiagramControlStringId.Selector_CustomSize" xml:space="preserve">
+    <value>Tamanho personalizado</value>
+  </data>
+  <data name="DiagramControlStringId.Selector_PredefinedSize" xml:space="preserve">
+    <value>Pré-definido o tamanho</value>
+  </data>
+  <data name="DiagramControlStringId.SeparatorName" xml:space="preserve">
+    <value>Separador de Item de barra</value>
+  </data>
+  <data name="DiagramControlStringId.ShapesPanel" xml:space="preserve">
+    <value>Painel de formas</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_StartDragToolAlternate" xml:space="preserve">
+    <value>Comece a arrastar ferramenta alternativa</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_SugiyamaLayout_Down" xml:space="preserve">
+    <value>Cima para baixo</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_SugiyamaLayout_Left" xml:space="preserve">
+    <value>Direita para a esquerda</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_SugiyamaLayout_Right" xml:space="preserve">
+    <value>Esquerda para a direita</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_SugiyamaLayout_Up" xml:space="preserve">
+    <value>Baixo para cima</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_TipOverTreeLayout_LeftToRight" xml:space="preserve">
+    <value>Esquerda para a direita</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_TipOverTreeLayout_RightToLeft" xml:space="preserve">
+    <value>Direita para a esquerda</value>
+  </data>
+  <data name="DiagramControlStringId.ExportAs_Description" xml:space="preserve">
+    <value>Exportar o diagrama para vários formatos de arquivo como PNG ou JPEG</value>
+  </data>
+  <data name="DiagramControlStringId.ExportDiagram_ExportFailed" xml:space="preserve">
+    <value>Exportação falhou</value>
+  </data>
+  <data name="DiagramControlStringId.FontSize_OutOfRangeErrorMessage" xml:space="preserve">
+    <value>Tamanho da fonte deve ser entre {0} e {1}.</value>
+  </data>
+  <data name="DiagramControlStringId.InsertImage_DialogFilter" xml:space="preserve">
+    <value>Todas as imagens</value>
+  </data>
+  <data name="DiagramControlStringId.ImageStretchMode_Uniform" xml:space="preserve">
+    <value>Uniforme</value>
+  </data>
+  <data name="DiagramControlStringId.ImageToolsSetImageScale_0_25" xml:space="preserve">
+    <value>25 %</value>
+  </data>
+  <data name="DiagramControlStringId.ImageToolsSetImageScale_0_5" xml:space="preserve">
+    <value>50 %</value>
+  </data>
+  <data name="DiagramControlStringId.ImageToolsSetImageScale_0_75" xml:space="preserve">
+    <value>75 %</value>
+  </data>
+  <data name="DiagramControlStringId.ImageToolsSetImageScale_1" xml:space="preserve">
+    <value>100 %</value>
+  </data>
+  <data name="DiagramControlStringId.ImageToolsSetImageScale_1_5" xml:space="preserve">
+    <value>150 %</value>
+  </data>
+  <data name="DiagramControlStringId.ImageToolsSetImageScale_2" xml:space="preserve">
+    <value>200 %</value>
+  </data>
+  <data name="DiagramControlStringId.ImageToolsSetImageScale_4" xml:space="preserve">
+    <value>400 %</value>
+  </data>
+  <data name="DiagramControlStringId.BasicShapes_Plaque_Name" xml:space="preserve">
+    <value>Placa bacteriana</value>
+  </data>
+  <data name="DiagramControlStringId.BasicShapes_RightBrace_Name" xml:space="preserve">
+    <value>Cinta direita</value>
+  </data>
+  <data name="DiagramControlStringId.BasicShapes_Chevron_Name" xml:space="preserve">
+    <value>Chevron</value>
+  </data>
+  <data name="DiagramControlStringId.AutoSize_Fill_Description" xml:space="preserve">
+    <value>Preenche toda a área visível</value>
+  </data>
+  <data name="DiagramControlStringId.AutoSize_None_Description" xml:space="preserve">
+    <value>o tamanho da página não é alterado ao mudar-se elementos além das suas fronteiras.</value>
+  </data>
+  <data name="DiagramControlStringId.AutoSizeSelector" xml:space="preserve">
+    <value>Auto seletor de tamanho</value>
+  </data>
+  <data name="DiagramControlStringId.BackgroundColor_Description" xml:space="preserve">
+    <value>Para mudar a cor de fundo.</value>
+  </data>
+  <data name="DiagramControlStringId.AutoSize_Description" xml:space="preserve">
+    <value>Ajustar o tamanho da página sobre o movimento de elementos além das suas fronteiras.</value>
+  </data>
+  <data name="DiagramControlStringId.ArrowShapes_UTurnArrow_Name" xml:space="preserve">
+    <value>U virar seta</value>
+  </data>
+  <data name="DiagramControlStringId.ArrowShapes_LeftRightArrowBlock_Name" xml:space="preserve">
+    <value>Deixou o bloco de seta para a direita</value>
+  </data>
+  <data name="DiagramControlStringId.ArrowShapes_LeftRightUpArrow_Name" xml:space="preserve">
+    <value>Esquerda direita seta para cima</value>
+  </data>
+  <data name="DiagramControlStringId.ArrowShapes_NotchedArrow_Name" xml:space="preserve">
+    <value>Entalhado seta</value>
+  </data>
+  <data name="DiagramControlStringId.ArrowShapes_QuadArrow_Name" xml:space="preserve">
+    <value>Seta Quad</value>
+  </data>
+  <data name="DiagramControlStringId.ArrowShapes_QuadArrowBlock_Name" xml:space="preserve">
+    <value>Bloco de seta Quad</value>
+  </data>
+  <data name="DiagramControlStringId.ArrowShapes_SharpBentArrow_Name" xml:space="preserve">
+    <value>Seta curvada afiada</value>
+  </data>
+  <data name="DiagramControlStringId.Arrow_Filled90" xml:space="preserve">
+    <value>Seta cheia 90</value>
+  </data>
+  <data name="DiagramControlStringId.Arrow_FilledDoubleArrow" xml:space="preserve">
+    <value>Cheio de seta dupla</value>
+  </data>
+  <data name="DiagramControlStringId.ArrowShapes_CurvedLeftArrow_Name" xml:space="preserve">
+    <value>Seta para a esquerda em curva</value>
+  </data>
+  <data name="DiagramControlStringId.ArrowShapes_CurvedRightArrow_Name" xml:space="preserve">
+    <value>Seta para a direita em curva</value>
+  </data>
+  <data name="DiagramControlStringId.Arrow_FilledSquare" xml:space="preserve">
+    <value>Praça cheia</value>
+  </data>
+  <data name="DiagramControlStringId.Arrow_IndentedFilledArrow" xml:space="preserve">
+    <value>Indented cheio de seta</value>
+  </data>
+  <data name="DiagramControlStringId.Arrow_Open90" xml:space="preserve">
+    <value>Seta de 90 aberto</value>
+  </data>
+  <data name="DiagramControlStringId.Arrow_OpenFletch" xml:space="preserve">
+    <value>Open fletch</value>
+  </data>
+  <data name="DiagramControlStringId.Arrow_OutdentedFilledArrow" xml:space="preserve">
+    <value>Outdented cheio de seta</value>
+  </data>
+  <data name="DiagramControlStringId.DecorativeShapes_UpRibbon_Name" xml:space="preserve">
+    <value>Acima da faixa de opções</value>
+  </data>
+  <data name="DiagramControlStringId.BasicShapes_SnipDiagonalCornerRectangle_Name" xml:space="preserve">
+    <value>Retângulo de recorte Diagonal do canto</value>
+  </data>
+  <data name="DiagramControlStringId.BasicShapes_SnipSameSideCornerRectangle_Name" xml:space="preserve">
+    <value>Cortar o rectângulo de canto mesmo lado</value>
+  </data>
+  <data name="DiagramControlStringId.ContainerHeaderPadding_P12" xml:space="preserve">
+    <value>12 px.</value>
+  </data>
+  <data name="DiagramControlStringId.ContextMenu_Names_Only" xml:space="preserve">
+    <value>Nomes só</value>
+  </data>
+  <data name="DiagramControlStringId.ContextMenu_Names_Under_Icons" xml:space="preserve">
+    <value>Nomes em ícones</value>
+  </data>
+  <data name="DiagramControlStringId.DashType_DashDashDot" xml:space="preserve">
+    <value>Ponto de traço do traço</value>
+  </data>
+  <data name="DiagramControlStringId.DashType_DashDot" xml:space="preserve">
+    <value>Ponto traço</value>
+  </data>
+  <data name="DiagramControlStringId.DashType_DashDotDot" xml:space="preserve">
+    <value>Traço ponto ponto</value>
+  </data>
+  <data name="DiagramControlStringId.DashType_HalfDash" xml:space="preserve">
+    <value>Metade do traço</value>
+  </data>
+  <data name="DiagramControlStringId.DashType_HalfDot" xml:space="preserve">
+    <value>Meio ponto</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_BringForward_Description" xml:space="preserve">
+    <value>Trazer o objeto selecionado para frente um nível para que está escondido atrás de objetos menos</value>
+  </data>
+  <data name="DiagramControlStringId.DecorativeShapes_LightningBolt_Name" xml:space="preserve">
+    <value>Lightning Bolt</value>
+  </data>
+  <data name="DiagramControlStringId.RibbonPage_FormatContainer" xml:space="preserve">
+    <value>Formato</value>
+  </data>
+  <data name="DiagramControlStringId.PrintPreview_PageOfPagesDisplayFormat" xml:space="preserve">
+    <value>Página {0} de {1}</value>
+  </data>
+  <data name="DiagramControlStringId.DashType_Dot" xml:space="preserve">
+    <value>Ponto</value>
+  </data>
+  <data name="DiagramControlStringId.PrintPreview_Title" xml:space="preserve">
+    <value>Prever</value>
+  </data>
+  <data name="DiagramControlStringId.RibbonPageGroup_ImageTools_Arrange" xml:space="preserve">
+    <value>Organizar</value>
+  </data>
+  <data name="DiagramControlStringId.RibbonPageGroup_ImageTools_Picture" xml:space="preserve">
+    <value>Imagens</value>
+  </data>
+  <data name="DiagramControlStringId.Category_Common" xml:space="preserve">
+    <value>Comum</value>
+  </data>
+  <data name="DiagramControlStringId.RibbonPageGroup_Navigation" xml:space="preserve">
+    <value>Navegação</value>
+  </data>
+  <data name="DiagramControlStringId.PrintPreview_BestFit" xml:space="preserve">
+    <value>Melhor Ajuste</value>
+  </data>
+  <data name="DiagramControlStringId.RibbonPage_PrintPreview" xml:space="preserve">
+    <value>Visualizar Impressão</value>
+  </data>
+  <data name="DiagramControlStringId.PrintPreview_Close" xml:space="preserve">
+    <value>Fechar</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_InsertImage" xml:space="preserve">
+    <value>Imagens</value>
+  </data>
+  <data name="DiagramControlStringId.RibbonPage_FormatImage" xml:space="preserve">
+    <value>Formato</value>
+  </data>
+  <data name="DiagramControlStringId.RibbonPage_Insert" xml:space="preserve">
+    <value>Inserir</value>
+  </data>
+  <data name="DiagramControlStringId.DashType_Solid" xml:space="preserve">
+    <value>Sólido</value>
+  </data>
+  <data name="DiagramControlStringId.ImageStretchMode_Stretch" xml:space="preserve">
+    <value>Estendido</value>
+  </data>
+  <data name="DiagramControlStringId.ImageFlipMode_Both" xml:space="preserve">
+    <value>Ambos</value>
+  </data>
+  <data name="DiagramControlStringId.ImageFlipMode_None" xml:space="preserve">
+    <value>Nenhum</value>
+  </data>
+  <data name="DiagramControlStringId.ImageToolsRotate" xml:space="preserve">
+    <value>Girar</value>
+  </data>
+  <data name="DiagramControlStringId.Themes_Office_Name" xml:space="preserve">
+    <value>Escritório</value>
+  </data>
+  <data name="DiagramControlStringId.Category_Export" xml:space="preserve">
+    <value>Exportação</value>
+  </data>
+  <data name="DiagramControlStringId.RibbonPageGroup_ContainerSize" xml:space="preserve">
+    <value>Tamanho</value>
+  </data>
+  <data name="DiagramControlStringId.PrintPreview_Print" xml:space="preserve">
+    <value>Imprimir</value>
+  </data>
+  <data name="DiagramControlStringId.ImageFlipMode_Vertical" xml:space="preserve">
+    <value>Vertical</value>
+  </data>
+  <data name="DiagramControlStringId.BasicFlowchartShapes_Database_Name" xml:space="preserve">
+    <value>Banco de dados</value>
+  </data>
+  <data name="DiagramControlStringId.ContainerPadding" xml:space="preserve">
+    <value>Acolchoamento</value>
+  </data>
+  <data name="DiagramControlStringId.DashType_Dash" xml:space="preserve">
+    <value>Traço</value>
+  </data>
+  <data name="DiagramControlStringId.Panes" xml:space="preserve">
+    <value>Painéis</value>
+  </data>
+  <data name="DiagramControlStringId.ImageFlipMode_Horizontal" xml:space="preserve">
+    <value>Horizontal</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_SetSelectedImagesStretchMode_Stretch" xml:space="preserve">
+    <value>Estendido</value>
+  </data>
+  <data name="DiagramControlStringId.Category_Data" xml:space="preserve">
+    <value>Dados</value>
+  </data>
+  <data name="DiagramControlStringId.LineJump_Square" xml:space="preserve">
+    <value>Praça</value>
+  </data>
+  <data name="DiagramControlStringId.PrintPreview_Zoom" xml:space="preserve">
+    <value>Zoom</value>
+  </data>
+  <data name="DiagramControlStringId.ChangeConnectorType" xml:space="preserve">
+    <value>Conectores</value>
+  </data>
+  <data name="DiagramControlStringId.ChangeConnectorType_Description" xml:space="preserve">
+    <value>Alterar a aparência dos conectores no diagrama.</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_SelectTool_PanTool" xml:space="preserve">
+    <value>Ferramenta Pan</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_ShowContainerHeader" xml:space="preserve">
+    <value>Mostrar cabeçalho</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_TreeLayoutForSubordinates_BottomToTop" xml:space="preserve">
+    <value>Baixo para cima</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_TreeLayoutForSubordinates_TopToBottom" xml:space="preserve">
+    <value>Cima para baixo</value>
+  </data>
+  <data name="DiagramControlStringId.Tool_Pan" xml:space="preserve">
+    <value>Pan</value>
+  </data>
+  <data name="DiagramControlStringId.OpenFile_UnknownItemKindMessage" xml:space="preserve">
+    <value>O diagrama contém um item desconhecido: '{0}'</value>
+  </data>
+  <data name="DiagramControlStringId.ReLayoutPartsTipOverTreeHeader" xml:space="preserve">
+    <value>TipOver</value>
+  </data>
+  <data name="DiagramControlStringId.ReLayoutPartsTreeHeader" xml:space="preserve">
+    <value>Hierarquia</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_MindMapTreeLayout_Horizontal" xml:space="preserve">
+    <value>Horizontal</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_MindMapTreeLayoutForSubordinates_Horizontal" xml:space="preserve">
+    <value>Horizontal</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_MindMapTreeLayout_Vertical" xml:space="preserve">
+    <value>Vertical</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_MindMapTreeLayoutForSubordinates_Vertical" xml:space="preserve">
+    <value>Vertical</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_TipOverTreeLayoutForSubordinates_RightToLeft" xml:space="preserve">
+    <value>Direita para a esquerda</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_TreeLayoutForSubordinates_RightToLeft" xml:space="preserve">
+    <value>Direita para a esquerda</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_TipOverTreeLayoutForSubordinates_LeftToRight" xml:space="preserve">
+    <value>Esquerda para a direita</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_TreeLayoutForSubordinates_LeftToRight" xml:space="preserve">
+    <value>Esquerda para a direita</value>
+  </data>
+  <data name="DiagramControlStringId.ShapeStyles" xml:space="preserve">
+    <value>Estilos de forma</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_SelectTool_PanTool_Description" xml:space="preserve">
+    <value>Arraste para se deslocar pela tela de desenho.</value>
+  </data>
+  <data name="DiagramControlStringId.ReLayoutParts_Description" xml:space="preserve">
+    <value>Re-Layout subordinados do item raiz ou itens selecionados.</value>
+  </data>
+  <data name="DiagramControlStringId.ExportDiagram_ExportFailed_UnsupportedFormat_Message" xml:space="preserve">
+    <value>Tentativa de salvar o conteúdo do diagrama usando uma extensão de arquivo não suportado.</value>
+  </data>
+  <data name="DiagramControlStringId.DiagramCommand_ChangeConnectorType_OrgChart" xml:space="preserve">
+    <value>Organograma</value>
+  </data>
+  <data name="DiagramControlStringId.Category_Protection" xml:space="preserve">
+    <value>Proteção</value>
+  </data>
+  <data name="DiagramControlStringId.Arrow_Diamond" xml:space="preserve">
+    <value>Diamante</value>
+  </data>
+  <data name="DiagramControlStringId.BasicShapes_Diamond_Name" xml:space="preserve">
+    <value>Diamante</value>
+  </data>
+  <data name="DiagramControlStringId.PrintPreview_Scale" xml:space="preserve">
+    <value>Escala</value>
+  </data>
+  <data name="DiagramControlStringId.PrintPreview_Scale_Dialog_Title" xml:space="preserve">
+    <value>Escala</value>
+  </data>
+  <data name="DiagramControlStringId.Tool_Text" xml:space="preserve">
+    <value>Texto</value>
+  </data>
+  <data name="DiagramControlStringId.PropertiesPanel_Content" xml:space="preserve">
+    <value>Conteúdo</value>
+  </data>
+  <data name="DiagramControlStringId.PropertiesPanel_Bottom" xml:space="preserve">
+    <value>Fundo</value>
+  </data>
+  <data name="DiagramControlStringId.PropertiesPanel_Left" xml:space="preserve">
+    <value>Esquerda</value>
+  </data>
+  <data name="DiagramControlStringId.PropertiesPanel_Right" xml:space="preserve">
+    <value>Direita</value>
+  </data>
+  <data name="DiagramControlStringId.PropertiesPanel_Top" xml:space="preserve">
+    <value>Topo</value>
+  </data>
+  <data name="DiagramControlStringId.PropertiesPanel_Width" xml:space="preserve">
+    <value>Largura</value>
+  </data>
+  <data name="DiagramControlStringId.PropertiesPanel_Landscape" xml:space="preserve">
+    <value>Paisagem</value>
+  </data>
+  <data name="DiagramControlStringId.PropertiesPanel_Height" xml:space="preserve">
+    <value>Altura</value>
+  </data>
+  <data name="DiagramControlStringId.PropertiesPanel_Type" xml:space="preserve">
+    <value>Tipo</value>
+  </data>
+  <data name="DiagramControlStringId.PropertiesPanel_Header" xml:space="preserve">
+    <value>Cabeçalho</value>
+  </data>
+  <data name="DiagramControlStringId.PropertiesPanel_Padding" xml:space="preserve">
+    <value>Acolchoamento</value>
+  </data>
+  <data name="DiagramControlStringId.PropertiesPanel_Angle" xml:space="preserve">
+    <value>Ângulo</value>
+  </data>
+  <data name="DiagramControlStringId.PropertiesPanel_BackgroundColor" xml:space="preserve">
+    <value>Fundo</value>
+  </data>
+  <data name="DiagramControlStringId.PropertiesPanel_StretchMode" xml:space="preserve">
+    <value>Estendido</value>
+  </data>
+  <data name="DiagramControlStringId.PropertiesPanel_PageSize" xml:space="preserve">
+    <value>Tamanho da página</value>
+  </data>
+  <data name="DiagramControlStringId.ListOrientation_Horizontal" xml:space="preserve">
+    <value>Horizontal</value>
+  </data>
+  <data name="DiagramControlStringId.ListOrientation_Vertical" xml:space="preserve">
+    <value>Vertical</value>
+  </data>
+  <data name="DiagramControlStringId.ListOrientation" xml:space="preserve">
+    <value>Orientação</value>
+  </data>
+  <data name="DiagramControlStringId.PropertiesPanel_Orientation" xml:space="preserve">
+    <value>Orientação</value>
+  </data>
+  <data name="DiagramControlStringId.InsertList" xml:space="preserve">
+    <value>Lista</value>
+  </data>
+  <data name="DiagramControlStringId.PropertiesPanel_TopLeft" xml:space="preserve">
+    <value>Topo Esquerda</value>
+  </data>
+  <data name="DiagramControlStringId.PropertiesPanel_TopRight" xml:space="preserve">
+    <value>Topo Direita</value>
+  </data>
+</root>

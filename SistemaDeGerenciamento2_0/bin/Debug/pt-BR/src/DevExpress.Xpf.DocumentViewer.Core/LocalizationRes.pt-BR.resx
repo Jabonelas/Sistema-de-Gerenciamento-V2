@@ -1,0 +1,675 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="DocumentViewerStringId.CancelButtonCaption" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="DocumentViewerStringId.CommandCloseFileCaption" xml:space="preserve">
+    <value>Fechar</value>
+  </data>
+  <data name="DocumentViewerStringId.FindControlClose" xml:space="preserve">
+    <value>Fechar</value>
+  </data>
+  <data name="DocumentViewerStringId.CommandCopyCaption" xml:space="preserve">
+    <value>Copiar</value>
+  </data>
+  <data name="DocumentViewerStringId.CommandNextPageCaption" xml:space="preserve">
+    <value>Próximo</value>
+  </data>
+  <data name="DocumentViewerStringId.FindControlNext" xml:space="preserve">
+    <value>Próximo</value>
+  </data>
+  <data name="DocumentViewerStringId.FileRibbonGroupCaption" xml:space="preserve">
+    <value>Arquivo</value>
+  </data>
+  <data name="DocumentViewerStringId.CommandZoom100Caption" xml:space="preserve">
+    <value>100%</value>
+  </data>
+  <data name="DocumentViewerStringId.MessageSearchCaption" xml:space="preserve">
+    <value>Procurar</value>
+  </data>
+  <data name="DocumentViewerStringId.MessageShowFindTextCaption" xml:space="preserve">
+    <value>Procurar</value>
+  </data>
+  <data name="DocumentViewerStringId.MessageErrorCaption" xml:space="preserve">
+    <value>Erro</value>
+  </data>
+  <data name="DocumentViewerStringId.PropertiesCaption" xml:space="preserve">
+    <value>Propriedades</value>
+  </data>
+  <data name="DocumentViewerStringId.CommandOpenFileCaption" xml:space="preserve">
+    <value>Abrir</value>
+  </data>
+  <data name="DocumentViewerStringId.CommandPreviousPageCaption" xml:space="preserve">
+    <value>Anterior</value>
+  </data>
+  <data name="DocumentViewerStringId.FindControlPrevious" xml:space="preserve">
+    <value>Anterior</value>
+  </data>
+  <data name="DocumentViewerStringId.CommandPrintFileCaption" xml:space="preserve">
+    <value>Imprimir</value>
+  </data>
+  <data name="DocumentViewerStringId.NavigationRibbonGroupCaption" xml:space="preserve">
+    <value>Navegação</value>
+  </data>
+  <data name="DocumentViewerStringId.CommandViewExactZoomListCaption" xml:space="preserve">
+    <value>Zoom</value>
+  </data>
+  <data name="DocumentViewerStringId.ZoomRibbonGroupCaption" xml:space="preserve">
+    <value>Zoom</value>
+  </data>
+  <data name="DocumentViewerStringId.CommandSaveAsCaption" xml:space="preserve">
+    <value>Salvar como</value>
+  </data>
+  <data name="DocumentViewerStringId.CommandZoomInCaption" xml:space="preserve">
+    <value>Zoom de Aproximação</value>
+  </data>
+  <data name="DocumentViewerStringId.CommandZoomOutCaption" xml:space="preserve">
+    <value>Zoom de Afastamento</value>
+  </data>
+  <data name="DocumentViewerStringId.CommandSelectAllCaption" xml:space="preserve">
+    <value>Selecionar tudo</value>
+  </data>
+  <data name="DocumentViewerStringId.DefaultDocumentName" xml:space="preserve">
+    <value>Documento</value>
+  </data>
+  <data name="DocumentViewerStringId.FindControlSearchCaption" xml:space="preserve">
+    <value>Pesquisa:</value>
+  </data>
+  <data name="DocumentViewerStringId.MessageSearchFinishedNoMatchesFound" xml:space="preserve">
+    <value>Terminou a busca em todo o documento. Nenhuma correspondência foi encontrada.</value>
+  </data>
+  <data name="DocumentViewerStringId.CommandNextPageDescription" xml:space="preserve">
+    <value>Mostrar Próxima página.</value>
+  </data>
+  <data name="DocumentViewerStringId.CommandPreviousPageDescription" xml:space="preserve">
+    <value>Mostrar Página anterior.</value>
+  </data>
+  <data name="DocumentViewerStringId.MessageShowFindTextHintCaption" xml:space="preserve">
+    <value>Localizar texto</value>
+  </data>
+  <data name="DocumentViewerStringId.PropertiesDescriptionCaption" xml:space="preserve">
+    <value>Descrição</value>
+  </data>
+  <data name="DocumentViewerStringId.PropertiesTitle" xml:space="preserve">
+    <value>Título</value>
+  </data>
+  <data name="DocumentViewerStringId.PrintDialogPageRangeAll" xml:space="preserve">
+    <value>Todos</value>
+  </data>
+  <data name="DocumentViewerStringId.PropertiesFile" xml:space="preserve">
+    <value>Arquivo</value>
+  </data>
+  <data name="DocumentViewerStringId.PrintDialogOrientation" xml:space="preserve">
+    <value>Orientação</value>
+  </data>
+  <data name="DocumentViewerStringId.PrintDialogLocation" xml:space="preserve">
+    <value>Localização</value>
+  </data>
+  <data name="DocumentViewerStringId.PropertiesLocation" xml:space="preserve">
+    <value>Localização</value>
+  </data>
+  <data name="DocumentViewerStringId.PropertiesSubject" xml:space="preserve">
+    <value>Assunto</value>
+  </data>
+  <data name="DocumentViewerStringId.PrintDialogTitle" xml:space="preserve">
+    <value>Imprimir</value>
+  </data>
+  <data name="DocumentViewerStringId.BarCaption" xml:space="preserve">
+    <value>Visualizador de PDF</value>
+  </data>
+  <data name="DocumentViewerStringId.CommandClockwiseRotateCaption" xml:space="preserve">
+    <value>Girar no sentido horário</value>
+  </data>
+  <data name="DocumentViewerStringId.CommandCloseFileDescription" xml:space="preserve">
+    <value>Fechar um arquivo PDF.</value>
+  </data>
+  <data name="DocumentViewerStringId.CommandCursorModeHandToolCaption" xml:space="preserve">
+    <value>Ferramenta de mão</value>
+  </data>
+  <data name="DocumentViewerStringId.CommandCursorModeSelectToolCaption" xml:space="preserve">
+    <value>Selecione a ferramenta</value>
+  </data>
+  <data name="DocumentViewerStringId.CommandNextViewCaption" xml:space="preserve">
+    <value>Próxima exibição</value>
+  </data>
+  <data name="DocumentViewerStringId.CommandOpenFileDescription" xml:space="preserve">
+    <value>Abrir um arquivo PDF.</value>
+  </data>
+  <data name="DocumentViewerStringId.CommandSetActualSizeZoomModeCaption" xml:space="preserve">
+    <value>Tamanho real</value>
+  </data>
+  <data name="DocumentViewerStringId.CommandSetFitWidthZoomModeCaption" xml:space="preserve">
+    <value>Ajustar largura</value>
+  </data>
+  <data name="DocumentViewerStringId.CommandSetPageLevelZoomModeCaption" xml:space="preserve">
+    <value>Zoom para página nível</value>
+  </data>
+  <data name="DocumentViewerStringId.CommandShowDocumentProperties" xml:space="preserve">
+    <value>Propriedades do documento...</value>
+  </data>
+  <data name="DocumentViewerStringId.CommandViewCursorModeListGroupCaption" xml:space="preserve">
+    <value>Modo de cursor</value>
+  </data>
+  <data name="DocumentViewerStringId.CommandViewExactZoomListDescription" xml:space="preserve">
+    <value>Alterar o nível de zoom do documento PDF.</value>
+  </data>
+  <data name="DocumentViewerStringId.CommandZoom10Caption" xml:space="preserve">
+    <value>10%</value>
+  </data>
+  <data name="DocumentViewerStringId.CommandZoom125Caption" xml:space="preserve">
+    <value>125%</value>
+  </data>
+  <data name="DocumentViewerStringId.CommandZoom150Caption" xml:space="preserve">
+    <value>150%</value>
+  </data>
+  <data name="DocumentViewerStringId.CommandZoom200Caption" xml:space="preserve">
+    <value>200%</value>
+  </data>
+  <data name="DocumentViewerStringId.CommandZoom25Caption" xml:space="preserve">
+    <value>25%</value>
+  </data>
+  <data name="DocumentViewerStringId.CommandZoom400Caption" xml:space="preserve">
+    <value>400%</value>
+  </data>
+  <data name="DocumentViewerStringId.CommandZoom500Caption" xml:space="preserve">
+    <value>500%</value>
+  </data>
+  <data name="DocumentViewerStringId.CommandZoom50Caption" xml:space="preserve">
+    <value>50%</value>
+  </data>
+  <data name="DocumentViewerStringId.CommandZoom75Caption" xml:space="preserve">
+    <value>75%</value>
+  </data>
+  <data name="DocumentViewerStringId.CommandZoomInDescription" xml:space="preserve">
+    <value>Zoom para obter uma visão mais apurada do documento PDF.</value>
+  </data>
+  <data name="DocumentViewerStringId.CommandZoomInShortcutCaption" xml:space="preserve">
+    <value>(Ctrl + e)</value>
+  </data>
+  <data name="DocumentViewerStringId.CommandZoomOutDescription" xml:space="preserve">
+    <value>Diminuir o zoom para ver mais da página em um reduz tamanho.</value>
+  </data>
+  <data name="DocumentViewerStringId.CommandZoomOutShortcutCaption" xml:space="preserve">
+    <value>(Ctrl + sinal de menos)</value>
+  </data>
+  <data name="DocumentViewerStringId.DesignerActionListCreateBarsTransaction" xml:space="preserve">
+    <value>Criar barras</value>
+  </data>
+  <data name="DocumentViewerStringId.DesignerActionListCreateRibbonTransaction" xml:space="preserve">
+    <value>Criar a faixa de opções</value>
+  </data>
+  <data name="DocumentViewerStringId.DesignerActionMethodCreateBars" xml:space="preserve">
+    <value>Criar barras</value>
+  </data>
+  <data name="DocumentViewerStringId.DesignerActionMethodCreateRibbon" xml:space="preserve">
+    <value>Criar a faixa de opções</value>
+  </data>
+  <data name="DocumentViewerStringId.DesignerActionMethodLoadPdf" xml:space="preserve">
+    <value>Arquivo PDF de carga...</value>
+  </data>
+  <data name="DocumentViewerStringId.DesignerActionMethodUndockInParentContainer" xml:space="preserve">
+    <value>Desencaixar no recipiente pai</value>
+  </data>
+  <data name="DocumentViewerStringId.DesignerActionMethodUnloadPdf" xml:space="preserve">
+    <value>Descarregar PDF arquivo</value>
+  </data>
+  <data name="DocumentViewerStringId.MessageAddCommandConstructorError" xml:space="preserve">
+    <value>não pode encontrar um construtor com um parâmetro de tipo PdfViewer na classe {0}</value>
+  </data>
+  <data name="DocumentViewerStringId.MessageCantLoadDocument" xml:space="preserve">
+    <value>Houve um erro ao carregar um documento.</value>
+  </data>
+  <data name="DocumentViewerStringId.MessageDocumentIsProtected" xml:space="preserve">
+    <value>{0} é protegido</value>
+  </data>
+  <data name="DocumentViewerStringId.MessageEnterPasswordLabel" xml:space="preserve">
+    <value>Por favor digite uma senha de documento aberto</value>
+  </data>
+  <data name="DocumentViewerStringId.MessageErrorCurrentPageNumberOutOfRange" xml:space="preserve">
+    <value>o valor de número de página atual deve ser maior que 0.</value>
+  </data>
+  <data name="DocumentViewerStringId.MessageErrorZoomFactorOutOfRange" xml:space="preserve">
+    <value>o fator de zoom deve ser maior ou igual a {0} e menor ou igual a {1}.</value>
+  </data>
+  <data name="DocumentViewerStringId.MessageIncorrectPassword" xml:space="preserve">
+    <value>a senha está incorreta. Por favor, certifique-se que a tecla Caps Lock não está ativado.</value>
+  </data>
+  <data name="DocumentViewerStringId.MessageLoadingError" xml:space="preserve">
+    <value>Não é possível carregar o documento PDF porque o seguinte arquivo não está disponível ou não é um válido documento PDF.
+{0}
+Por favor, certifique-se de que o aplicativo pode acessar este arquivo, e que é válido, ou especificar um arquivo diferente.</value>
+  </data>
+  <data name="DocumentViewerStringId.MessageSearchFinished" xml:space="preserve">
+    <value>Acabou a busca em todo o documento. Foram encontradas correspondências chega.</value>
+  </data>
+  <data name="DocumentViewerStringId.OpenDocumentCaption" xml:space="preserve">
+    <value>Abrir...</value>
+  </data>
+  <data name="DocumentViewerStringId.PageSize" xml:space="preserve">
+    <value>{0:0.00} x {1:0.00} em</value>
+  </data>
+  <data name="DocumentViewerStringId.PdfFileExtension" xml:space="preserve">
+    <value>. pdf</value>
+  </data>
+  <data name="DocumentViewerStringId.PdfFileFilter" xml:space="preserve">
+    <value>arquivos PDF (. pdf) | *.pdf</value>
+  </data>
+  <data name="DocumentViewerStringId.RecentDocumentsCaption" xml:space="preserve">
+    <value>Documentos recentes</value>
+  </data>
+  <data name="DocumentViewerStringId.RotateRibbonGroupCaption" xml:space="preserve">
+    <value>Girar visualização</value>
+  </data>
+  <data name="DocumentViewerStringId.SavingDocumentCaption" xml:space="preserve">
+    <value>Salvando</value>
+  </data>
+  <data name="DocumentViewerStringId.CommandCounterclockwiseRotateCaption" xml:space="preserve">
+    <value>Counterclockwise rotação</value>
+  </data>
+  <data name="DocumentViewerStringId.CommandCursorModeMarqueeZoomCaption" xml:space="preserve">
+    <value>Letreiro digital zoom</value>
+  </data>
+  <data name="DocumentViewerStringId.CommandOpenFileFromWebCaption" xml:space="preserve">
+    <value>Aberto a partir da web</value>
+  </data>
+  <data name="DocumentViewerStringId.CommandOpenFileFromWebDescription" xml:space="preserve">
+    <value>Abrir um arquivo PDF de web.</value>
+  </data>
+  <data name="DocumentViewerStringId.CommandPreviousViewCaption" xml:space="preserve">
+    <value>Vista anterior</value>
+  </data>
+  <data name="DocumentViewerStringId.CommandPrintFileDescription" xml:space="preserve">
+    <value>Impressão arquivos.</value>
+  </data>
+  <data name="DocumentViewerStringId.CommandSetFitVisibleZoomModeCaption" xml:space="preserve">
+    <value>Caber visível</value>
+  </data>
+  <data name="DocumentViewerStringId.LoadingDocumentCaption" xml:space="preserve">
+    <value>Carregando... Por favor aguarde.</value>
+  </data>
+  <data name="DocumentViewerStringId.MessageDocumentHasNoPages" xml:space="preserve">
+    <value>o documento não contiver quaisquer páginas.</value>
+  </data>
+  <data name="DocumentViewerStringId.MessageEnterUrlLabel" xml:space="preserve">
+    <value>Por favor insira um endereço de url do documento</value>
+  </data>
+  <data name="DocumentViewerStringId.MessageIncorrectUrl" xml:space="preserve">
+    <value>{0} não é válido endereço de url.</value>
+  </data>
+  <data name="DocumentViewerStringId.MessageSecurityWarningCaption" xml:space="preserve">
+    <value>Aviso de segurança</value>
+  </data>
+  <data name="DocumentViewerStringId.MessageSecurityWarningUriOpening" xml:space="preserve">
+    <value>o documento que está tentando acessar um recurso externo usando o seguinte URI (identificador de recurso uniforme): '{0}'
+Você quer abri-la?</value>
+  </data>
+  <data name="DocumentViewerStringId.OpenDocumentFromWebCaption" xml:space="preserve">
+    <value>Aberto a partir da web</value>
+  </data>
+  <data name="DocumentViewerStringId.PrintDialogCollate" xml:space="preserve">
+    <value>COLLATE</value>
+  </data>
+  <data name="DocumentViewerStringId.PrintDialogComment" xml:space="preserve">
+    <value>Comentário</value>
+  </data>
+  <data name="DocumentViewerStringId.PrintDialogDocumentsInQueue" xml:space="preserve">
+    <value>Documento (s) em fila</value>
+  </data>
+  <data name="DocumentViewerStringId.PrintDialogFilePath" xml:space="preserve">
+    <value>Caminho do arquivo</value>
+  </data>
+  <data name="DocumentViewerStringId.PrintDialogNumberOfCopies" xml:space="preserve">
+    <value>Número de cópias</value>
+  </data>
+  <data name="DocumentViewerStringId.PrintDialogPageRange" xml:space="preserve">
+    <value>Intervalo de páginas</value>
+  </data>
+  <data name="DocumentViewerStringId.PrintDialogPageRangeCurrent" xml:space="preserve">
+    <value>Página atual</value>
+  </data>
+  <data name="DocumentViewerStringId.PrintDialogPageRangePages" xml:space="preserve">
+    <value>Páginas:</value>
+  </data>
+  <data name="DocumentViewerStringId.PrintDialogPageRangePagesExample" xml:space="preserve">
+    <value>Por exemplo, 5-12</value>
+  </data>
+  <data name="DocumentViewerStringId.PrintDialogPageSizing" xml:space="preserve">
+    <value>Dimensionamento de Page</value>
+  </data>
+  <data name="DocumentViewerStringId.PrintDialogPageSizingActualSize" xml:space="preserve">
+    <value>Tamanho real</value>
+  </data>
+  <data name="DocumentViewerStringId.PrintDialogPageSizingCustomScale" xml:space="preserve">
+    <value>Escala personalizada:</value>
+  </data>
+  <data name="DocumentViewerStringId.PrintDialogPageSizingFit" xml:space="preserve">
+    <value>Caber</value>
+  </data>
+  <data name="DocumentViewerStringId.PrintDialogPaginationOf" xml:space="preserve">
+    <value>({0})</value>
+  </data>
+  <data name="DocumentViewerStringId.PrintDialogPaperSource" xml:space="preserve">
+    <value>Fonte de papel</value>
+  </data>
+  <data name="DocumentViewerStringId.PrintDialogPrinterName" xml:space="preserve">
+    <value>Nome da impressora</value>
+  </data>
+  <data name="DocumentViewerStringId.PrintDialogPrinterPreferences" xml:space="preserve">
+    <value>Preferências</value>
+  </data>
+  <data name="DocumentViewerStringId.PrintDialogPrintingDpi" xml:space="preserve">
+    <value>DPI de impressão</value>
+  </data>
+  <data name="DocumentViewerStringId.PrintDialogPrintToFile" xml:space="preserve">
+    <value>Imprimir para arquivo</value>
+  </data>
+  <data name="DocumentViewerStringId.PrintDialogStatus" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="DocumentViewerStringId.PrintFileExtension" xml:space="preserve">
+    <value>PRN</value>
+  </data>
+  <data name="DocumentViewerStringId.PropertiesAdvancedCaption" xml:space="preserve">
+    <value>Avançado</value>
+  </data>
+  <data name="DocumentViewerStringId.PropertiesApplication" xml:space="preserve">
+    <value>Aplicativo</value>
+  </data>
+  <data name="DocumentViewerStringId.PropertiesAuthor" xml:space="preserve">
+    <value>Autor</value>
+  </data>
+  <data name="DocumentViewerStringId.PropertiesCreated" xml:space="preserve">
+    <value>Criado</value>
+  </data>
+  <data name="DocumentViewerStringId.PropertiesFileSize" xml:space="preserve">
+    <value>Tamanho do arquivo</value>
+  </data>
+  <data name="DocumentViewerStringId.PropertiesKeywords" xml:space="preserve">
+    <value>Palavras-chave</value>
+  </data>
+  <data name="DocumentViewerStringId.PropertiesModified" xml:space="preserve">
+    <value>Modificado</value>
+  </data>
+  <data name="DocumentViewerStringId.PropertiesNumberOfPages" xml:space="preserve">
+    <value>Número de páginas</value>
+  </data>
+  <data name="DocumentViewerStringId.PropertiesPageSize" xml:space="preserve">
+    <value>Tamanho da página</value>
+  </data>
+  <data name="DocumentViewerStringId.PropertiesProducer" xml:space="preserve">
+    <value>Produtor</value>
+  </data>
+  <data name="DocumentViewerStringId.PropertiesRevisionCaption" xml:space="preserve">
+    <value>Revisão</value>
+  </data>
+  <data name="DocumentViewerStringId.PropertiesVersion" xml:space="preserve">
+    <value>Versão</value>
+  </data>
+  <data name="DocumentViewerStringId.SaveChangesCaption" xml:space="preserve">
+    <value>Visualizador de PDF</value>
+  </data>
+  <data name="DocumentViewerStringId.SaveChangesMessage" xml:space="preserve">
+    <value>Você quer salvar as alterações ao documento antes de fechá-lo?</value>
+  </data>
+  <data name="DocumentViewerStringId.SavingDocumentMessage" xml:space="preserve">
+    <value>... Por favor aguarde.</value>
+  </data>
+  <data name="DocumentViewerStringId.PrintDialogPrintOrientationAuto" xml:space="preserve">
+    <value>Auto</value>
+  </data>
+  <data name="DocumentViewerStringId.PrintDialogPrintOrientationLandscape" xml:space="preserve">
+    <value>Paisagem</value>
+  </data>
+  <data name="DocumentViewerStringId.PrintDialogPrintOrientationPortrait" xml:space="preserve">
+    <value>Retrato</value>
+  </data>
+  <data name="DocumentViewerStringId.PrintDialogPrintButtonCaption" xml:space="preserve">
+    <value>Imprimir</value>
+  </data>
+  <data name="DocumentViewerStringId.DesignerActionMethodDockInParentContainer" xml:space="preserve">
+    <value>Doca no recipiente pai</value>
+  </data>
+  <data name="DocumentViewerStringId.PrintFileFilter" xml:space="preserve">
+    <value>Arquivos para impressão (PRN) | * PRN</value>
+  </data>
+  <data name="DocumentViewerStringId.CommandNextViewCaption" xml:space="preserve">
+    <value>Próxima exibição</value>
+  </data>
+  <data name="DocumentViewerStringId.FindControlNext" xml:space="preserve">
+    <value>Próximo</value>
+  </data>
+  <data name="DocumentViewerStringId.FindControlPrevious" xml:space="preserve">
+    <value>Anterior</value>
+  </data>
+  <data name="DocumentViewerStringId.MessageSettingsCaption" xml:space="preserve">
+    <value>Configurações</value>
+  </data>
+  <data name="DocumentViewerStringId.OpenFileDialogTitle" xml:space="preserve">
+    <value>Abrir</value>
+  </data>
+  <data name="DocumentViewerStringId.RotateRibbonGroupCaption" xml:space="preserve">
+    <value>Girar</value>
+  </data>
+  <data name="DocumentViewerStringId.FileRibbonGroupCaption" xml:space="preserve">
+    <value>Arquivo</value>
+  </data>
+  <data name="DocumentViewerStringId.FindControlCaseSensitive" xml:space="preserve">
+    <value>Maiúsculas e minúsculas</value>
+  </data>
+  <data name="DocumentViewerStringId.FindControlClose" xml:space="preserve">
+    <value>Fechar</value>
+  </data>
+  <data name="DocumentViewerStringId.CommandCloseCaption" xml:space="preserve">
+    <value>Fechar</value>
+  </data>
+  <data name="DocumentViewerStringId.CommandNextPageCaption" xml:space="preserve">
+    <value>Próximo</value>
+  </data>
+  <data name="DocumentViewerStringId.CommandPreviousPageCaption" xml:space="preserve">
+    <value>Anterior</value>
+  </data>
+  <data name="DocumentViewerStringId.CommandZoomCaption" xml:space="preserve">
+    <value>Zoom</value>
+  </data>
+  <data name="DocumentViewerStringId.ZoomRibbonGroupCaption" xml:space="preserve">
+    <value>Zoom</value>
+  </data>
+  <data name="DocumentViewerStringId.MessageShowFindTextCaption" xml:space="preserve">
+    <value>Procurar</value>
+  </data>
+  <data name="DocumentViewerStringId.CommandOpenCaption" xml:space="preserve">
+    <value>Abrir</value>
+  </data>
+  <data name="DocumentViewerStringId.NavigationRibbonGroupCaption" xml:space="preserve">
+    <value>Navegação</value>
+  </data>
+  <data name="DocumentViewerStringId.CommandOpenDescription" xml:space="preserve">
+    <value>Abrir um documento.</value>
+  </data>
+  <data name="DocumentViewerStringId.CommandSetActualSizeZoomModeCaption" xml:space="preserve">
+    <value>Tamanho real</value>
+  </data>
+  <data name="DocumentViewerStringId.CommandSetFitVisibleZoomModeCaption" xml:space="preserve">
+    <value>Caber visível</value>
+  </data>
+  <data name="DocumentViewerStringId.CommandSetFitWidthZoomModeCaption" xml:space="preserve">
+    <value>Ajustar largura</value>
+  </data>
+  <data name="DocumentViewerStringId.CommandSetPageLevelZoomModeCaption" xml:space="preserve">
+    <value>Zoom para página nível</value>
+  </data>
+  <data name="DocumentViewerStringId.CommandZoom100Caption" xml:space="preserve">
+    <value>100%</value>
+  </data>
+  <data name="DocumentViewerStringId.CommandZoom10Caption" xml:space="preserve">
+    <value>10%</value>
+  </data>
+  <data name="DocumentViewerStringId.CommandZoom125Caption" xml:space="preserve">
+    <value>125%</value>
+  </data>
+  <data name="DocumentViewerStringId.CommandZoom150Caption" xml:space="preserve">
+    <value>150%</value>
+  </data>
+  <data name="DocumentViewerStringId.CommandZoom200Caption" xml:space="preserve">
+    <value>200%</value>
+  </data>
+  <data name="DocumentViewerStringId.CommandZoom25Caption" xml:space="preserve">
+    <value>25%</value>
+  </data>
+  <data name="DocumentViewerStringId.CommandZoom400Caption" xml:space="preserve">
+    <value>400%</value>
+  </data>
+  <data name="DocumentViewerStringId.CommandZoom500Caption" xml:space="preserve">
+    <value>500%</value>
+  </data>
+  <data name="DocumentViewerStringId.CommandZoom50Caption" xml:space="preserve">
+    <value>50%</value>
+  </data>
+  <data name="DocumentViewerStringId.CommandZoom75Caption" xml:space="preserve">
+    <value>75%</value>
+  </data>
+  <data name="DocumentViewerStringId.CommandZoomInCaption" xml:space="preserve">
+    <value>Zoom de Aproximação</value>
+  </data>
+  <data name="DocumentViewerStringId.CommandZoomOutCaption" xml:space="preserve">
+    <value>Zoom de Afastamento</value>
+  </data>
+  <data name="DocumentViewerStringId.CommandZoomOutDescription" xml:space="preserve">
+    <value>Diminuir o zoom para ver mais da página em um reduz tamanho.</value>
+  </data>
+  <data name="DocumentViewerStringId.DocumentMapExpandCurrentCaption" xml:space="preserve">
+    <value>Expandir marcador atual</value>
+  </data>
+  <data name="DocumentViewerStringId.CommandCloseDescription" xml:space="preserve">
+    <value>Fechar um documento.</value>
+  </data>
+  <data name="DocumentViewerStringId.CommandZoomDescription" xml:space="preserve">
+    <value>Altere o nível de zoom do documento.</value>
+  </data>
+  <data name="DocumentViewerStringId.DocumentMapCollapseTopLevelCaption" xml:space="preserve">
+    <value>Indicador de nível superior de colapso</value>
+  </data>
+  <data name="DocumentViewerStringId.DocumentMapExpandTopLevelCaption" xml:space="preserve">
+    <value>Indicador de nível superior expandir</value>
+  </data>
+  <data name="DocumentViewerStringId.PaginationRibbonItemStringFormat" xml:space="preserve">
+    <value>de {0}</value>
+  </data>
+</root>

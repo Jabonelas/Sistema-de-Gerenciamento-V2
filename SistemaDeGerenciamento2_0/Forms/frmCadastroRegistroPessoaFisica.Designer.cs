@@ -218,7 +218,6 @@
             this.labelControl11.Size = new System.Drawing.Size(81, 20);
             this.labelControl11.TabIndex = 165;
             this.labelControl11.Text = "Logradouro:";
-            this.labelControl11.Click += new System.EventHandler(this.labelControl11_Click);
             // 
             // labelControl12
             // 
@@ -229,7 +228,6 @@
             this.labelControl12.Size = new System.Drawing.Size(57, 20);
             this.labelControl12.TabIndex = 166;
             this.labelControl12.Text = "Número:";
-            this.labelControl12.Click += new System.EventHandler(this.labelControl12_Click);
             // 
             // labelControl13
             // 
@@ -240,7 +238,6 @@
             this.labelControl13.Size = new System.Drawing.Size(98, 20);
             this.labelControl13.TabIndex = 167;
             this.labelControl13.Text = "Complemento:";
-            this.labelControl13.Click += new System.EventHandler(this.labelControl13_Click);
             // 
             // labelControl14
             // 
@@ -408,7 +405,6 @@
             this.pictureEdit3.Size = new System.Drawing.Size(23, 20);
             this.pictureEdit3.TabIndex = 288;
             this.pictureEdit3.ToolTip = "O Complemento é um campo opcional.";
-            this.pictureEdit3.EditValueChanged += new System.EventHandler(this.pictureEdit3_EditValueChanged);
             // 
             // txtLimiteCredito
             // 
@@ -548,7 +544,6 @@
             this.txtComplemento.Properties.MaxLength = 100;
             this.txtComplemento.Size = new System.Drawing.Size(292, 26);
             this.txtComplemento.TabIndex = 15;
-            this.txtComplemento.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtComplemento_KeyPress);
             // 
             // txtNumero
             // 
@@ -818,7 +813,6 @@
             this.KeyPreview = true;
             this.Name = "frmCadastroRegistroPessoaFisica";
             this.Text = "frmCadastroRegistroPessoaFisica";
-            this.Load += new System.EventHandler(this.frmCadastroRegistroPessoaFisica_Load);
             this.Shown += new System.EventHandler(this.frmCadastroRegistroPessoaFisica_Shown);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmCadastroRegistroPessoaFisica_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit3.Properties)).EndInit();

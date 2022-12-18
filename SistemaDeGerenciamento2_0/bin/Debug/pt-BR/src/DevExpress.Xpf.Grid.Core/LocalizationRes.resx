@@ -1,0 +1,1496 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="GridControlStringId.CellPeerName" xml:space="preserve">
+    <value>Row {0}, Column {1}: {2}</value>
+  </data>
+  <data name="GridControlStringId.GridGroupPanelText" xml:space="preserve">
+    <value>Drag a column header here to group by that column</value>
+  </data>
+  <data name="GridControlStringId.ErrorWindowTitle" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="GridControlStringId.InvalidRowExceptionMessage" xml:space="preserve">
+    <value>Do you want to correct the value?</value>
+  </data>
+  <data name="GridControlStringId.GridOutlookIntervals" xml:space="preserve">
+    <value>Older;Last Month;Earlier this Month;Three Weeks Ago;Two Weeks Ago;Last Week;;;;;;;;Yesterday;Today;Tomorrow;;;;;;;;Next Week;Two Weeks Away;Three Weeks Away;Later this Month;Next Month;Beyond Next Month;</value>
+  </data>
+  <data name="GridControlStringId.DefaultGroupSummaryFormatString_Count" xml:space="preserve">
+    <value>Count={0}</value>
+  </data>
+  <data name="GridControlStringId.DefaultGroupSummaryFormatString_Min" xml:space="preserve">
+    <value>Min of {1} is {0}</value>
+  </data>
+  <data name="GridControlStringId.DefaultGroupSummaryFormatString_Max" xml:space="preserve">
+    <value>Max of {1} is {0}</value>
+  </data>
+  <data name="GridControlStringId.DefaultGroupSummaryFormatString_Avg" xml:space="preserve">
+    <value>Avg of {1} is {0:0.##}</value>
+  </data>
+  <data name="GridControlStringId.DefaultGroupSummaryFormatString_Sum" xml:space="preserve">
+    <value>Sum of {1} is {0:0.##}</value>
+  </data>
+  <data name="GridControlStringId.DefaultTotalSummaryFormatStringInSameColumn_Count" xml:space="preserve">
+    <value>Count={0}</value>
+  </data>
+  <data name="GridControlStringId.DefaultTotalSummaryFormatStringInSameColumn_Min" xml:space="preserve">
+    <value>Min={0}</value>
+  </data>
+  <data name="GridControlStringId.DefaultTotalSummaryFormatStringInSameColumn_Max" xml:space="preserve">
+    <value>Max={0}</value>
+  </data>
+  <data name="GridControlStringId.DefaultTotalSummaryFormatStringInSameColumn_Avg" xml:space="preserve">
+    <value>Avg={0:0.##}</value>
+  </data>
+  <data name="GridControlStringId.DefaultTotalSummaryFormatStringInSameColumn_Sum" xml:space="preserve">
+    <value>Sum={0:0.##}</value>
+  </data>
+  <data name="GridControlStringId.DefaultTotalSummaryFormatString_Count" xml:space="preserve">
+    <value>Count={0}</value>
+  </data>
+  <data name="GridControlStringId.DefaultTotalSummaryFormatString_Min" xml:space="preserve">
+    <value>Min of {1} is {0}</value>
+  </data>
+  <data name="GridControlStringId.DefaultTotalSummaryFormatString_Max" xml:space="preserve">
+    <value>Max of {1} is {0}</value>
+  </data>
+  <data name="GridControlStringId.DefaultTotalSummaryFormatString_Avg" xml:space="preserve">
+    <value>Avg of {1} is {0:0.##}</value>
+  </data>
+  <data name="GridControlStringId.DefaultTotalSummaryFormatString_Sum" xml:space="preserve">
+    <value>Sum of {1} is {0:0.##}</value>
+  </data>
+  <data name="GridControlStringId.PopupFilterAll" xml:space="preserve">
+    <value>(All)</value>
+  </data>
+  <data name="GridControlStringId.PopupFilterBlanks" xml:space="preserve">
+    <value>(Blanks)</value>
+  </data>
+  <data name="GridControlStringId.PopupFilterNonBlanks" xml:space="preserve">
+    <value>(Non blanks)</value>
+  </data>
+  <data name="GridControlStringId.ColumnChooserCaption" xml:space="preserve">
+    <value>Column Chooser</value>
+  </data>
+  <data name="GridControlStringId.ColumnBandChooserCaption" xml:space="preserve">
+    <value>Customization</value>
+  </data>
+  <data name="GridControlStringId.ColumnChooserCaptionForMasterDetail" xml:space="preserve">
+    <value>{0}: Column Chooser</value>
+  </data>
+  <data name="GridControlStringId.ColumnChooserDragText" xml:space="preserve">
+    <value>Drag a column here to customize layout</value>
+  </data>
+  <data name="GridControlStringId.BandChooserDragText" xml:space="preserve">
+    <value>Drag a band here to customize layout</value>
+  </data>
+  <data name="GridControlStringId.ColumnBandChooserColumnsTabCaption" xml:space="preserve">
+    <value>Columns</value>
+  </data>
+  <data name="GridControlStringId.ColumnBandChooserBandsTabCaption" xml:space="preserve">
+    <value>Bands</value>
+  </data>
+  <data name="GridControlStringId.GridNewRowText" xml:space="preserve">
+    <value>Click here to add a new row</value>
+  </data>
+  <data name="GridControlStringId.ExcelColumnFilterPopupSearchScopeDay" xml:space="preserve">
+    <value>Date</value>
+  </data>
+    <data name="GridControlStringId.ExcelColumnFilterPopupSearchScopeMonth" xml:space="preserve">
+    <value>Month</value>
+  </data>
+    <data name="GridControlStringId.ExcelColumnFilterPopupSearchScopeYear" xml:space="preserve">
+    <value>Year</value>
+  </data>
+    <data name="GridControlStringId.ExcelColumnFilterPopupSearchScopeAll" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="GridControlStringId.ExcelColumnFilterPopupValuesTabCaption" xml:space="preserve">
+    <value>FILTER VALUES</value>
+  </data>
+  <data name="GridControlStringId.ExcelColumnFilterPopupFilterRulesTabCaption" xml:space="preserve">
+    <value>FILTER RULES</value>
+  </data>
+  <data name="GridControlStringId.ExcelColumnFilterPopupClearFilter" xml:space="preserve">
+    <value>Clear Filter</value>
+  </data>
+  <data name="GridControlStringId.ExcelColumnFilterPopupFilterBetweenFrom" xml:space="preserve">
+    <value>From: </value>
+  </data>
+    <data name="GridControlStringId.ExcelColumnFilterPopupFilterBetweenTo" xml:space="preserve">
+    <value>To: </value>
+  </data>
+  <data name="GridControlStringId.AddCurrentSelectionToFilter" xml:space="preserve">
+    <value>Add current selection to filter</value>
+  </data>
+  <data name="GridControlStringId.ExcelColumnFilterPopupSearchNullText" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="GridControlStringId.ExcelColumnFilterPopupSearchNullTextAll" xml:space="preserve">
+    <value>Search (All)</value>
+  </data>
+  <data name="GridControlStringId.ExcelColumnFilterPopupSearchNullTextYear" xml:space="preserve">
+    <value>Search Year</value>
+  </data>
+  <data name="GridControlStringId.ExcelColumnFilterPopupSearchNullTextMonth" xml:space="preserve">
+    <value>Search Month</value>
+  </data>
+  <data name="GridControlStringId.ExcelColumnFilterPopupSearchNullTextDate" xml:space="preserve">
+    <value>Search Date</value>
+  </data>
+  <data name="GridControlStringId.ExcelColumnFilterPopupEnterValue" xml:space="preserve">
+    <value>Enter a value...</value>
+  </data>
+  <data name="GridControlStringId.ExcelColumnFilterPopupSelectValue" xml:space="preserve">
+    <value>Select a value...</value>
+  </data>
+  <data name="GridControlStringId.ExcelColumnFilterPopupSelectDate" xml:space="preserve">
+    <value>Select a date...</value>
+  </data>
+
+  <data name="GridControlStringId.ExtendedColumnChooserSearchColumns" xml:space="preserve">
+    <value>Search Columns...</value>
+  </data>
+  <data name="GridControlStringId.ExtendedColumnChooserSearchColumnsAndBands" xml:space="preserve">
+    <value>Search Columns and Bands...</value>
+  </data>
+
+  <data name="GridControlStringId.MenuGroupPanelFullCollapse" xml:space="preserve">
+    <value>Full Collapse</value>
+  </data>
+  <data name="GridControlStringId.MenuGroupPanelFullExpand" xml:space="preserve">
+    <value>Full Expand</value>
+  </data>
+  <data name="GridControlStringId.MenuGroupPanelClearGrouping" xml:space="preserve">
+    <value>Clear Grouping</value>
+  </data>
+  <data name="GridControlStringId.MenuColumnSortAscending" xml:space="preserve">
+    <value>Sort Ascending</value>
+  </data>
+  <data name="GridControlStringId.MenuColumnSortDescending" xml:space="preserve">
+    <value>Sort Descending</value>
+  </data>
+  <data name="GridControlStringId.MenuColumnSortBySummaryAscending" xml:space="preserve">
+    <value>Ascending</value>
+  </data>
+  <data name="GridControlStringId.MenuColumnSortBySummaryDescending" xml:space="preserve">
+    <value>Descending</value>
+  </data>
+  <data name="GridControlStringId.MenuColumnClearSorting" xml:space="preserve">
+    <value>Clear Sorting</value>
+  </data>
+  <data name="GridControlStringId.MenuColumnUnGroup" xml:space="preserve">
+    <value>Ungroup</value>
+  </data>
+  <data name="GridControlStringId.MenuColumnGroup" xml:space="preserve">
+    <value>Group By This Column</value>
+  </data>
+  <data name="GridControlStringId.MenuColumnShowGroupPanel" xml:space="preserve">
+    <value>Show Group Panel</value>
+  </data>
+  <data name="GridControlStringId.MenuColumnHideGroupPanel" xml:space="preserve">
+    <value>Hide Group Panel</value>
+  </data>
+  <data name="GridControlStringId.MenuColumnResetGroupSummarySort" xml:space="preserve">
+    <value>Clear Summary Sorting</value>
+  </data>
+  <data name="GridControlStringId.MenuColumnSortGroupBySummaryMenu" xml:space="preserve">
+    <value>Sort By Summary</value>
+  </data>
+  <data name="GridControlStringId.MenuColumnGroupSummarySortFormat" xml:space="preserve">
+    <value>{1} by '{0}' - {2}</value>
+  </data>
+  <data name="GridControlStringId.MenuColumnGroupSummaryEditor" xml:space="preserve">
+    <value>Group Summary Editor...</value>
+  </data>
+  <data name="GridControlStringId.MenuColumnShowColumnChooser" xml:space="preserve">
+    <value>Show Column Chooser</value>
+  </data>
+  <data name="GridControlStringId.MenuColumnHideColumnChooser" xml:space="preserve">
+    <value>Hide Column Chooser</value>
+  </data>
+  <data name="GridControlStringId.MenuColumnShowColumnBandChooser" xml:space="preserve">
+    <value>Show Column/Band Chooser</value>
+  </data>
+  <data name="GridControlStringId.MenuColumnHideColumnBandChooser" xml:space="preserve">
+    <value>Hide Column/Band Chooser</value>
+  </data>
+  <data name="GridControlStringId.MenuFooterSum" xml:space="preserve">
+    <value>Sum</value>
+  </data>
+  <data name="GridControlStringId.MenuFooterMax" xml:space="preserve">
+    <value>Max</value>
+  </data>
+  <data name="GridControlStringId.MenuFooterMin" xml:space="preserve">
+    <value>Min</value>
+  </data>
+  <data name="GridControlStringId.MenuFooterCount" xml:space="preserve">
+    <value>Count</value>
+  </data>
+  <data name="GridControlStringId.MenuFooterAverage" xml:space="preserve">
+    <value>Average</value>
+  </data>
+  <data name="GridControlStringId.MenuFooterCustomize" xml:space="preserve">
+    <value>Customize...</value>
+  </data>
+  <data name="GridControlStringId.MenuFooterRowCount" xml:space="preserve">
+    <value>Show row count</value>
+  </data>
+  <data name="GridControlStringId.GroupSummaryEditorFormCaption" xml:space="preserve">
+    <value>Group Summaries</value>
+  </data>
+  <data name="GridControlStringId.TotalSummaryEditorFormCaption" xml:space="preserve">
+    <value>Totals for '{0}'</value>
+  </data>
+  <data name="GridControlStringId.TotalSummaryPanelEditorFormCaption" xml:space="preserve">
+    <value>View Totals</value>
+  </data>
+  <data name="GridControlStringId.SummaryEditorFormItemsTabCaption" xml:space="preserve">
+    <value>Items</value>
+  </data>
+  <data name="GridControlStringId.SummaryEditorFormOrderTabCaption" xml:space="preserve">
+    <value>Order</value>
+  </data>
+  <data name="GridControlStringId.SummaryEditorFormOrderLeftSide" xml:space="preserve">
+    <value>Left side:</value>
+  </data>
+  <data name="GridControlStringId.SummaryEditorFormOrderRightSide" xml:space="preserve">
+    <value>Right side:</value>
+  </data>
+  <data name="GridControlStringId.SummaryEditorFormOrderAndAlignmentTabCaption" xml:space="preserve">
+    <value>Order and Alignment</value>
+  </data>
+  <data name="GridControlStringId.MenuColumnBestFit" xml:space="preserve">
+    <value>Best Fit</value>
+  </data>
+  <data name="GridControlStringId.MenuColumnBestFitColumns" xml:space="preserve">
+    <value>Best Fit (all columns)</value>
+  </data>
+  <data name="GridControlStringId.MenuColumnUnboundExpressionEditor" xml:space="preserve">
+    <value>Expression Editor...</value>
+  </data>
+  <data name="GridControlStringId.MenuColumnClearFilter" xml:space="preserve">
+    <value>Clear Filter</value>
+  </data>
+  <data name="GridControlStringId.MenuColumnFilterEditor" xml:space="preserve">
+    <value>Filter Editor...</value>
+  </data>
+  <data name="GridControlStringId.FilterEditorTitle" xml:space="preserve">
+    <value>Filter Editor</value>
+  </data>
+  <data name="GridControlStringId.FilterEditorNotEditableMessage" xml:space="preserve">
+    <value>The GridControl does not contain a column that you can apply filter to.</value>
+  </data>
+  <data name="GridControlStringId.FilterPanelCaptionFormatStringForMasterDetail" xml:space="preserve">
+    <value>{0} filter:</value>
+  </data>
+  <data name="GridControlStringId.GroupPanelDisplayFormatStringForMasterDetail" xml:space="preserve">
+    <value>{0}:</value>
+  </data>
+  <data name="GridControlStringId.ProgressWindowTitle" xml:space="preserve">
+    <value>Loading data</value>
+  </data>
+  <data name="GridControlStringId.ProgressWindowCancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="GridControlStringId.ProgressWindowTitleCancelling" xml:space="preserve">
+    <value>Cancelling</value>
+  </data>
+  <data name="GridControlStringId.MenuColumnFixedStyle" xml:space="preserve">
+    <value>Fixed Style</value>
+  </data>
+  <data name="GridControlStringId.MenuColumnFixedNone" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="GridControlStringId.MenuColumnFixedLeft" xml:space="preserve">
+    <value>Left</value>
+  </data>
+  <data name="GridControlStringId.MenuColumnFixedRight" xml:space="preserve">
+    <value>Right</value>
+  </data>
+  <data name="GridControlStringId.MenuColumnShowSearchPanel" xml:space="preserve">
+    <value>Show Search Panel</value>
+  </data>
+  <data name="GridControlStringId.MenuColumnHideSearchPanel" xml:space="preserve">
+    <value>Hide Search Panel</value>
+  </data>
+  <data name="GridControlStringId.MenuColumnGroupInterval" xml:space="preserve">
+    <value>Group Interval</value>
+  </data>
+  <data name="GridControlStringId.MenuColumnGroupIntervalNone" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="GridControlStringId.MenuColumnGroupIntervalDay" xml:space="preserve">
+    <value>Day</value>
+  </data>
+  <data name="GridControlStringId.MenuColumnGroupIntervalMonth" xml:space="preserve">
+    <value>Month</value>
+  </data>
+  <data name="GridControlStringId.MenuColumnGroupIntervalYear" xml:space="preserve">
+    <value>Year</value>
+  </data>
+  <data name="GridControlStringId.MenuColumnGroupIntervalSmart" xml:space="preserve">
+    <value>Smart</value>
+  </data>
+  <data name="GridControlStringId.SummaryEditorFormMoveItemUpCaption" xml:space="preserve">
+    <value>Up</value>
+  </data>
+  <data name="GridControlStringId.SummaryEditorFormMoveItemDownCaption" xml:space="preserve">
+    <value>Down</value>
+  </data>
+  <data name="GridControlStringId.MenuColumnSortBySummaryAverage" xml:space="preserve">
+    <value>Average</value>
+  </data>
+  <data name="GridControlStringId.MenuColumnSortBySummaryCount" xml:space="preserve">
+    <value>Count</value>
+  </data>
+  <data name="GridControlStringId.MenuColumnSortBySummaryMax" xml:space="preserve">
+    <value>Max</value>
+  </data>
+  <data name="GridControlStringId.MenuColumnSortBySummaryMin" xml:space="preserve">
+    <value>Min</value>
+  </data>
+  <data name="GridControlStringId.MenuColumnSortBySummarySum" xml:space="preserve">
+    <value>Sum</value>
+  </data>
+  <data name="GridControlStringId.GridGroupRowDisplayTextFormat" xml:space="preserve">
+    <value>{0}: {1}</value>
+  </data>
+  <data name="GridControlStringId.DefaultGroupColumnSummaryFormatStringInSameColumn_Count" xml:space="preserve">
+    <value>Count={0}</value>
+  </data>
+  <data name="GridControlStringId.DefaultGroupColumnSummaryFormatStringInSameColumn_Min" xml:space="preserve">
+    <value>Min={0}</value>
+  </data>
+  <data name="GridControlStringId.DefaultGroupColumnSummaryFormatStringInSameColumn_Max" xml:space="preserve">
+    <value>Max={0}</value>
+  </data>
+  <data name="GridControlStringId.DefaultGroupColumnSummaryFormatStringInSameColumn_Avg" xml:space="preserve">
+    <value>Avg={0:0.##}</value>
+  </data>
+  <data name="GridControlStringId.DefaultGroupColumnSummaryFormatStringInSameColumn_Sum" xml:space="preserve">
+    <value>Sum={0:0.##}</value>
+  </data>
+  <data name="GridControlStringId.DefaultGroupColumnSummaryFormatString_Count" xml:space="preserve">
+    <value>Count={0}</value>
+  </data>
+  <data name="GridControlStringId.DefaultGroupColumnSummaryFormatString_Min" xml:space="preserve">
+    <value>Min of {1} is {0}</value>
+  </data>
+  <data name="GridControlStringId.DefaultGroupColumnSummaryFormatString_Max" xml:space="preserve">
+    <value>Max of {1} is {0}</value>
+  </data>
+  <data name="GridControlStringId.DefaultGroupColumnSummaryFormatString_Avg" xml:space="preserve">
+    <value>Avg of {1} is {0:0.##}</value>
+  </data>
+  <data name="GridControlStringId.DefaultGroupColumnSummaryFormatString_Sum" xml:space="preserve">
+    <value>Sum of {1} is {0:0.##}</value>
+  </data>
+  <data name="GridControlStringId.ErrorPanelTextFormatString" xml:space="preserve">
+    <value>Error occurred during processing server request ({0})</value>
+  </data>
+  <data name="GridControlStringId.DDExtensionsAddRows" xml:space="preserve">
+    <value>Add rows</value>
+  </data>
+  <data name="GridControlStringId.DDExtensionsCannotDropHere" xml:space="preserve">
+    <value>Cannot drop here</value>
+  </data>
+  <data name="GridControlStringId.DDExtensionsDraggingMultipleRows" xml:space="preserve">
+    <value>Dragging {0} rows</value>
+  </data>
+  <data name="GridControlStringId.DDExtensionsDraggingOneRow" xml:space="preserve">
+    <value>Dragging 1 row:</value>
+  </data>
+  <data name="GridControlStringId.DDExtensionsInsertAfter" xml:space="preserve">
+    <value>Insert after row:</value>
+  </data>
+  <data name="GridControlStringId.DDExtensionsInsertBefore" xml:space="preserve">
+    <value>Insert before row:</value>
+  </data>
+  <data name="GridControlStringId.DDExtensionsMoveToChildrenCollection" xml:space="preserve">
+    <value>Move to children collection:</value>
+  </data>
+  <data name="GridControlStringId.DDExtensionsMoveToGroup" xml:space="preserve">
+    <value>Move to group:</value>
+  </data>
+  <data name="GridControlStringId.DDExtensionsRow" xml:space="preserve">
+    <value>Row</value>
+  </data>
+  <data name="GridControlStringId.SummaryItemsSeparator" xml:space="preserve">
+    <value>, </value>
+  </data>
+  <data name="GridControlStringId.MenuFooterCustom" xml:space="preserve">
+    <value>Custom</value>
+  </data>
+  <data name="GridControlStringId.MenuColumnConditionalFormatting" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.MenuColumnConditionalFormatting_HighlightCellsRules" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.MenuColumnConditionalFormatting_HighlightCellsRules_GreaterThan" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.MenuColumnConditionalFormatting_HighlightCellsRules_LessThan" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.MenuColumnConditionalFormatting_HighlightCellsRules_Between" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.MenuColumnConditionalFormatting_HighlightCellsRules_EqualTo" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.MenuColumnConditionalFormatting_HighlightCellsRules_TextThatContains" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.MenuColumnConditionalFormatting_TopBottomRules" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.MenuColumnConditionalFormatting_TopBottomRules_Top10Items" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.MenuColumnConditionalFormatting_TopBottomRules_Bottom10Items" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.MenuColumnConditionalFormatting_TopBottomRules_Top10Percent" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.MenuColumnConditionalFormatting_TopBottomRules_Bottom10Percent" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.MenuColumnConditionalFormatting_TopBottomRules_AboveAverage" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.MenuColumnConditionalFormatting_TopBottomRules_BelowAverage" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.MenuColumnConditionalFormatting_DataBars" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.MenuColumnConditionalFormatting_ColorScales" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.MenuColumnConditionalFormatting_IconSets" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.MenuColumnConditionalFormatting_ClearRules" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.MenuColumnConditionalFormatting_ClearRules_FromAllColumns" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.MenuColumnConditionalFormatting_ClearRules_FromCurrentColumns" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_PredefinedFormat_LightRedFillWithDarkRedText" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_PredefinedFormat_YellowFillWithDarkYellowText" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_PredefinedFormat_GreenFillWithDarkGreenText" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_PredefinedFormat_LightRedFill" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_PredefinedFormat_RedText" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_PredefinedFormat_BoldText" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_PredefinedFormat_ItalicText" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_PredefinedFormat_StrikethroughText" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_GreaterThanDialog_Title" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_LessThanDialog_Title" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_BetweenDialog_Title" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_EqualToDialog_Title" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_TextThatContainsDialog_Title" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Top10ItemsDialog_Title" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Bottom10ItemsDialog_Title" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Top10PercentDialog_Title" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Bottom10PercentDialog_Title" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_AboveAverageDialog_Title" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_BelowAverageDialog_Title" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_GreaterThanDialog_Description" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_LessThanDialog_Description" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_BetweenDialog_Description" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_EqualToDialog_Description" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_TextThatContainsDialog_Description" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Top10ItemsDialog_Description" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Bottom10ItemsDialog_Description" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Top10PercentDialog_Description" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Bottom10PercentDialog_Description" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_AboveAverageDialog_Description" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_BelowAverageDialog_Description" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_BetweenDialog_RangeValuesConnector" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.InvalidValueErrorMessage" xml:space="preserve">
+    <value>Invalid Value</value>
+  </data>
+  <data name="GridControlStringId.CheckboxSelectorColumnCaption" xml:space="preserve">
+    <value>Selection</value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Dialog_ApplyFormatToWholeRowText" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_GreaterThanDialog_Connector" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_LessThanDialog_Connector" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_BetweenDialog_Connector" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_EqualToDialog_Connector" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_BelowAverageDialog_Connector" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_AboveAverageDialog_Connector" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Bottom10PercentDialog_Connector" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Top10PercentDialog_Connector" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Bottom10ItemsDialog_Connector" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Top10ItemsDialog_Connector" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_TextThatContainsDialog_Connector" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_PredefinedColorScaleFormat_GreenYellowRedColorScale" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_PredefinedColorScaleFormat_RedYellowGreenColorScale" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_PredefinedColorScaleFormat_GreenWhiteRedColorScale" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_PredefinedColorScaleFormat_RedWhiteGreenColorScale" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_PredefinedColorScaleFormat_BlueWhiteRedColorScale" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_PredefinedColorScaleFormat_RedWhiteBlueColorScale" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_PredefinedColorScaleFormat_WhiteRedColorScale" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_PredefinedColorScaleFormat_RedWhiteColorScale" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_PredefinedColorScaleFormat_GreenWhiteColorScale" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_PredefinedColorScaleFormat_WhiteGreenColorScale" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_PredefinedColorScaleFormat_GreenYellowColorScale" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_PredefinedColorScaleFormat_YellowGreenColorScale" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_PredefinedColorScaleFormat_Description" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_PredefinedDataBarFormat_BlueSolidDataBar" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_PredefinedDataBarFormat_GreenSolidDataBar" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_PredefinedDataBarFormat_RedSolidDataBar" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_PredefinedDataBarFormat_OrangeSolidDataBar" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_PredefinedDataBarFormat_LightBlueSolidDataBar" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_PredefinedDataBarFormat_PurpleSolidDataBar" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_PredefinedDataBarFormat_BlueGradientDataBar" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_PredefinedDataBarFormat_GreenGradientDataBar" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_PredefinedDataBarFormat_RedGradientDataBar" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_PredefinedDataBarFormat_OrangeGradientDataBar" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_PredefinedDataBarFormat_LightBlueGradientDataBar" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_PredefinedDataBarFormat_PurpleGradientDataBar" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_PredefinedDataBarFormat_Description" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_PredefinedDataBarFormat_SolidFillGroup" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_PredefinedDataBarFormat_GradientFillGroup" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_PredefinedIconSetFormat_Arrows3ColoredIconSet" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_PredefinedIconSetFormat_Arrows4ColoredIconSet" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_PredefinedIconSetFormat_Arrows5ColoredIconSet" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_PredefinedIconSetFormat_Arrows3GrayIconSet" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_PredefinedIconSetFormat_Arrows4GrayIconSet" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_PredefinedIconSetFormat_Arrows5GrayIconSet" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_PredefinedIconSetFormat_Boxes5IconSet" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_PredefinedIconSetFormat_Flags3IconSet" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_PredefinedIconSetFormat_Quarters5IconSet" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_PredefinedIconSetFormat_Ratings4IconSet" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_PredefinedIconSetFormat_Ratings5IconSet" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_PredefinedIconSetFormat_RedToBlackIconSet" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_PredefinedIconSetFormat_Signs3IconSet" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_PredefinedIconSetFormat_Stars3IconSet" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_PredefinedIconSetFormat_Symbols3CircledIconSet" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_PredefinedIconSetFormat_Symbols3UncircledIconSet" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_PredefinedIconSetFormat_TrafficLights3UnrimmedIconSet" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_PredefinedIconSetFormat_TrafficLights3RimmedIconSet" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_PredefinedIconSetFormat_TrafficLights4IconSet" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_PredefinedIconSetFormat_Triangles3IconSet" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_PredefinedIconSetFormat_Description" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_PredefinedIconSetFormat_DirectionalGroup" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_PredefinedIconSetFormat_ShapesGroup" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_PredefinedIconSetFormat_IndicatorsGroup" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_PredefinedIconSetFormat_RatingsGroup" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_PredefinedFormat_LightGreenFill" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_PredefinedFormat_GreenText" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_PredefinedIconSetFormat_PositiveNegativeTrianglesIconSet" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_PredefinedIconSetFormat_PositiveNegativeArrowsGrayIconSet" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_PredefinedIconSetFormat_PositiveNegativeArrowsColoredIconSet" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_PredefinedIconSetFormat_PositiveNegativeGroup" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.MenuColumnConditionalFormatting_HighlightCellsRules_ADateOccurring" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_DateOccurringDialog_Title" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_DateOccurringDialog_Description" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_DateOccurringDialog_Connector" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_DateOccurringDialog_IntervalToday" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_DateOccurringDialog_IntervalYesterday" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_DateOccurringDialog_IntervalTomorrow" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_DateOccurringDialog_IntervalInTheLast7Days" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_DateOccurringDialog_IntervalLastWeek" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_DateOccurringDialog_IntervalThisWeek" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_DateOccurringDialog_IntervalNextWeek" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_DateOccurringDialog_IntervalLastMonth" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_DateOccurringDialog_IntervalThisMonth" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_DateOccurringDialog_IntervalNextMonth" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.MenuColumnConditionalFormatting_HighlightCellsRules_CustomCondition" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_CustomConditionDialog_Title" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_CustomConditionDialog_Description" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_CustomConditionDialog_Connector" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_CustomConditionEditor_Title" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_CustomConditionDialog_InvalidExpressionMessage" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_CustomConditionDialog_InvalidExpressionMessageEx" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_CustomConditionDialog_InvalidExpressionMessageTitle" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.MenuColumnConditionalFormatting_ManageRules" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_Title" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.DateFiltering_ShowAllFilterName" xml:space="preserve">
+    <value>Show all</value>
+  </data>
+  <data name="GridControlStringId.DateFiltering_FilterBySpecificDateFilterName" xml:space="preserve">
+    <value>Filter by a specific date</value>
+  </data>
+  <data name="GridControlStringId.DateFiltering_PriorToThisYearFilterName" xml:space="preserve">
+    <value>Prior to this year</value>
+  </data>
+  <data name="GridControlStringId.DateFiltering_EarlierThisYearFilterName" xml:space="preserve">
+    <value>Earlier this year</value>
+  </data>
+  <data name="GridControlStringId.DateFiltering_EarlierThisMonthFilterName" xml:space="preserve">
+    <value>Earlier this month</value>
+  </data>
+  <data name="GridControlStringId.DateFiltering_LastWeekFilterName" xml:space="preserve">
+    <value>Last week</value>
+  </data>
+  <data name="GridControlStringId.DateFiltering_EarlierThisWeekFilterName" xml:space="preserve">
+    <value>Earlier this week</value>
+  </data>
+  <data name="GridControlStringId.DateFiltering_YesterdayFilterName" xml:space="preserve">
+    <value>Yesterday</value>
+  </data>
+  <data name="GridControlStringId.DateFiltering_TodayFilterName" xml:space="preserve">
+    <value>Today</value>
+  </data>
+  <data name="GridControlStringId.DateFiltering_TomorrowFilterName" xml:space="preserve">
+    <value>Tomorrow</value>
+  </data>
+  <data name="GridControlStringId.DateFiltering_LaterThisWeekFilterName" xml:space="preserve">
+    <value>Later this week</value>
+  </data>
+  <data name="GridControlStringId.DateFiltering_NextWeekFilterName" xml:space="preserve">
+    <value>Next week</value>
+  </data>
+  <data name="GridControlStringId.DateFiltering_LaterThisMonthFilterName" xml:space="preserve">
+    <value>Later this month</value>
+  </data>
+  <data name="GridControlStringId.DateFiltering_LaterThisYearFilterName" xml:space="preserve">
+    <value>Later this year</value>
+  </data>
+  <data name="GridControlStringId.DateFiltering_BeyondThisYearFilterName" xml:space="preserve">
+    <value>Beyond this year</value>
+  </data>
+  <data name="GridControlStringId.DateFiltering_BeyondFilterName" xml:space="preserve">
+    <value>Beyond</value>
+  </data>
+  <data name="GridControlStringId.DateFiltering_ThisWeekFilterName" xml:space="preserve">
+    <value>This week</value>
+  </data>
+  <data name="GridControlStringId.DateFiltering_ThisMonthFilterName" xml:space="preserve">
+    <value>This month</value>
+  </data>
+  <data name="GridControlStringId.DateFiltering_EarlierFilterName" xml:space="preserve">
+    <value>Earlier</value>
+  </data>
+  <data name="GridControlStringId.DateFiltering_EmptyFilterName" xml:space="preserve">
+    <value>Empty</value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_2ColorScaleDescription" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_3ColorScaleDescription" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_Above" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_AboveBelowDescription" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_AboveBelowRangeDescription" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_AboveBelowTitle" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_ApplySameAppearance" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_BeginningWith" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_Below" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_Between" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_Blanks" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_Bottom" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_CellsContainDescription" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_CellValue" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_ClearButtonDescription" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_Containing" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_ContainTitle" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_DataBar" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_DataBarBorder" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_DataBarColor" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_DataBarFill" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_DataBarNegative" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_DataBarPositive" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_DatesOccurring" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_DeleteButtonDescription" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_EditButtonDescription" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_EditRuleDescription" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_EndingWith" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_EqualTo" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_Fill" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_Font" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_FormatBackgroundColor" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_FormatButtonDescription" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_FormatCells" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_FormatColor" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_FormatFontFamily" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_FormatFontSize" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_FormatFontStyle" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_FormatFontWeight" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_FormatStrikethrough" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_FormatUnderline" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_FormulaDescription" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_FormulaTitle" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_GradedColorScale" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_GreaterOrEqual" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_GreaterThan" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_IconDescription" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_IconDescriptionCondition" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_IconDescriptionConnector" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_IconDescriptionValueCondition" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_IconSet" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_IconSetRulesTitle" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_IconSetStyle" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_IconSetValueType" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_LessOrEqual" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_LessThan" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_Maximum" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_Midpoint" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_Minimum" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_NewButtonDescription" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_NewFormattingRule" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_NoBlanks" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_NoFormatSet" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_NotBetween" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_NotContaining" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_NotEqualTo" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_Preview" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_ReverseButtonDescription" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_SelectRuleType" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_ShowRulesFor" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_SpecificText" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_Top" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_TopBottomDescription" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_TopBottomRangeDescription" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_TopBottomTitle" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_ValueBasedDescription" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_ValueBasedExpression" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_ValueBasedStyle" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_ValueBasedTitle" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_ValueBasedType" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_ExpressionMode" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_FieldNameMode" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_ShowModeAll" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_ShowModeCurrent" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_AboveMode" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_BelowMode" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_DataBarNoBorder" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_FillModeGradient" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_FillModeSolid" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_NumberMode" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_PercentMode" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_AppliesTo" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_Apply" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_Format" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_Rule" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_EditFormattingRule" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_Auto" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_Date" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_MaxValue" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_MinMaxValueType" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_MinValue" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_Numeric" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_CustomIconGroup" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_FormatIconDescription" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_Icon" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_CustomFormat" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_Down" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.ConditionalFormatting_Manager_Up" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="GridControlStringId.GridCardExpandButtonTooltip" xml:space="preserve">
+    <value>Expand a card</value>
+  </data>
+  <data name="GridControlStringId.GridCardCollapseButtonTooltip" xml:space="preserve">
+    <value>Collapse a card</value>
+  </data>
+  <data name="GridControlStringId.NavigationMoveFirstRow" xml:space="preserve">
+    <value>First</value>
+  </data>
+  <data name="GridControlStringId.NavigationMovePrevPage" xml:space="preserve">
+    <value>Previous Page</value>
+  </data>
+  <data name="GridControlStringId.NavigationMovePrevRow" xml:space="preserve">
+    <value>Previous</value>
+  </data>
+  <data name="GridControlStringId.NavigationMoveNextRow" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="GridControlStringId.NavigationMoveNextPage" xml:space="preserve">
+    <value>Next Page</value>
+  </data>
+  <data name="GridControlStringId.NavigationMoveLastRow" xml:space="preserve">
+    <value>Last</value>
+  </data>
+  <data name="GridControlStringId.NavigationAddNewRow" xml:space="preserve">
+    <value>Append</value>
+  </data>
+  <data name="GridControlStringId.NavigationDeleteFocusedRow" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="GridControlStringId.NavigationEditFocusedRow" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="GridControlStringId.NavigationRecord" xml:space="preserve">
+    <value>Record {0} of {1}</value>
+  </data>
+  <data name="GridControlStringId.EditForm_CancelButton" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="GridControlStringId.EditForm_UpdateButton" xml:space="preserve">
+    <value>Update</value>
+  </data>
+  <data name="GridControlStringId.EditForm_Cancel" xml:space="preserve">
+    <value>Do you want to cancel editing?</value>
+  </data>
+  <data name="GridControlStringId.EditForm_Modified" xml:space="preserve">
+    <value>Your data is modified. Do you want to save the changes?</value>
+  </data>
+  <data name="GridControlStringId.EditForm_Warning" xml:space="preserve">
+    <value>Warning</value>
+  </data>
+  <data name="GridControlStringId.MenuRowFixedTop" xml:space="preserve">
+    <value>Top</value>
+  </data>
+  <data name="GridControlStringId.MenuRowFixedNone" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="GridControlStringId.MenuRowFixedBottom" xml:space="preserve">
+    <value>Bottom</value>
+  </data>
+  <data name="GridControlStringId.MenuCompactModeShowInGroups" xml:space="preserve">
+    <value>Show in Groups</value>
+  </data>
+  <data name="GridControlStringId.CompactModeNoneColumn" xml:space="preserve">
+    <value>None</value>
+  </data> 
+  <data name="GridControlStringId.CompactModeAscendingOrder" xml:space="preserve">
+    <value>Ascending</value>
+  </data>
+  <data name="GridControlStringId.CompactModeDescendingOrder" xml:space="preserve">
+    <value>Descending</value>
+  </data>
+  <data name="GridControlStringId.CompactModeBy" xml:space="preserve">
+    <value>By</value>
+  </data>
+  <data name="GridControlStringId.CompactModeFilter" xml:space="preserve">
+    <value>Filter</value>
+  </data>
+  <data name="GridControlStringId.MenuCompactModeArrangeBy" xml:space="preserve">
+    <value>Arrange By</value>
+  </data> 
+  <data name="GridControlStringId.MenuCompactModeReverseSort" xml:space="preserve">
+    <value>Reverse Sort</value>
+  </data>
+  <data name="GridControlStringId.LoadingRowRetry" xml:space="preserve">
+    <value>Retry</value>
+  </data>
+  <data name="GridControlStringId.LoadingRowRefresh" xml:space="preserve">
+	<value>Refresh data</value>
+  </data>
+  <data name="GridControlStringId.LoadingRowLoadMore" xml:space="preserve">
+    <value>Load More</value>
+  </data>
+  <data name="GridControlStringId.NoRecords" xml:space="preserve">
+    <value>No Records</value>
+  </data>
+  <data name="GridControlStringId.NoRecordsFound" xml:space="preserve">
+    <value>No Records Found</value>
+  </data>
+  <data name="GridControlStringId.LoadingRowRefreshMessage" xml:space="preserve">
+	<value>New rows were added</value>
+  </data>
+  <data name="GridControlStringId.DeletionErrorCaption" xml:space="preserve">
+	<value>Delete Operation Failed</value>
+  </data>
+  <data name="GridControlStringId.UpdateRowButtonsUpdate" xml:space="preserve">
+    <value>Update</value>
+  </data> 
+  <data name="GridControlStringId.UpdateRowButtonsCancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="GridControlStringId.UpdateRowButtonsAdd" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="GridControlStringId.FilterCriteriaDefault" xml:space="preserve">
+    <value>Default</value>
+  </data>
+  <data name="GridControlStringId.AutoFilterNullText" xml:space="preserve">
+    <value>Filter...</value>
+  </data> 
+  <data name="GridControlStringId.MergedGroupsSeparator" xml:space="preserve">
+    <value>; </value>
+  </data>
+  <data name="GridControlStringId.RefreshDataSourceFailed" xml:space="preserve">
+    <value>Failed to Refresh Data Source</value>
+  </data>
+</root>

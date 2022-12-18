@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AB45EDC8-E6BC-4378-99E9-5659DF707D80}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>DevExpress.XtraPdfViewer</RootNamespace>
+    <AssemblyName>DevExpress.XtraPdfViewer.v21.2</AssemblyName>
+    <AssemblyOriginatorKeyFile>..\DevExpress.Key\StrongKey.snk</AssemblyOriginatorKeyFile>
+    <SignAssembly>true</SignAssembly>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\DevExpress.Dll\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;DXWhidbey</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\DevExpress.Dll\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.XML">
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\AssemblyVersion.cs">
+      <Link>AssemblyVersion.cs</Link>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Controls\CommentTree\PdfCommentEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\PdfAttachmentsViewerControl.pt-BR.resx" />
+    <EmbeddedResource Include="Controls\PdfAttachmentsViewerControl.resx" />
+    <EmbeddedResource Include="Controls\PdfColorPickerControl.pt-BR.resx" />
+    <EmbeddedResource Include="Controls\PdfColorPickerControl.resx" />
+    <EmbeddedResource Include="Controls\CommentTree\PdfCommentEdit.pt-BR.resx">
+      <DependentUpon>PdfCommentEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CommentTree\PdfCommentEdit.resx">
+      <DependentUpon>PdfCommentEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PdfCommentTreeControl.pt-BR.resx" />
+    <EmbeddedResource Include="Controls\PdfCommentTreeControl.resx" />
+    <EmbeddedResource Include="Controls\PdfOutlineViewerControl.pt-BR.resx" />
+    <EmbeddedResource Include="Controls\PdfOutlineViewerControl.resx" />
+    <EmbeddedResource Include="Controls\PdfThumbnailsViewerControl.pt-BR.resx" />
+    <EmbeddedResource Include="Controls\PdfThumbnailsViewerControl.resx" />
+    <EmbeddedResource Include="FindControl\PdfFindControl.pt-BR.resx" />
+    <EmbeddedResource Include="FindControl\PdfFindControl.resx" />
+    <EmbeddedResource Include="Forms\PdfAnnotationPropertiesForm.pt-BR.resx" />
+    <EmbeddedResource Include="Forms\PdfAnnotationPropertiesForm.resx" />
+    <EmbeddedResource Include="Forms\PdfDocumentPropertiesForm.pt-BR.resx" />
+    <EmbeddedResource Include="Forms\PdfDocumentPropertiesForm.resx" />
+    <EmbeddedResource Include="Forms\PdfPasswordForm.pt-BR.resx" />
+    <EmbeddedResource Include="Forms\PdfPasswordForm.resx" />
+    <EmbeddedResource Include="Forms\PdfPageSetupDialog.pt-BR.resx" />
+    <EmbeddedResource Include="Forms\PdfPageSetupDialog.resx" />
+    <EmbeddedResource Include="Forms\PdfProgressForm.pt-BR.resx" />
+    <EmbeddedResource Include="Forms\PdfProgressForm.resx" />
+    <EmbeddedResource Include="Forms\PdfSearchProgressForm.pt-BR.resx" />
+    <EmbeddedResource Include="Forms\PdfSearchProgressForm.resx" />
+    <EmbeddedResource Include="LocalizationRes.pt-BR.resx" />
+    <EmbeddedResource Include="LocalizationRes.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+  </PropertyGroup>
+</Project>

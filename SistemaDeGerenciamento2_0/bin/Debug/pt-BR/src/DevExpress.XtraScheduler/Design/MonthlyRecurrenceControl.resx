@@ -1,0 +1,582 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="lblMonthlyMonthCount.AccessibleName" xml:space="preserve">
+    <value>month(s)</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"></assembly>
+  <data name="lblMonthlyMonthCount.Location" type="System.Drawing.Point, System.Drawing">
+    <value>218, 5</value>
+  </data>
+  <data name="lblMonthlyMonthCount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 13</value>
+  </data>
+  <data name="lblOfEveryWeekOfMonth.AccessibleName" xml:space="preserve">
+    <value>of every</value>
+  </data>
+  <data name="lblOfEveryWeekOfMonth.Location" type="System.Drawing.Point, System.Drawing">
+    <value>251, 39</value>
+  </data>
+  <data name="lblOfEveryWeekOfMonth.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 13</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"></assembly>
+  <data name="lblOfEveryWeekOfMonth.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="lblOfEveryWeekOfMonth.Text" xml:space="preserve">
+    <value>of every</value>
+  </data>
+  <data name="&gt;&gt;lblOfEveryWeekOfMonth.Name" xml:space="preserve">
+    <value>lblOfEveryWeekOfMonth</value>
+  </data>
+  <data name="&gt;&gt;lblOfEveryWeekOfMonth.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblOfEveryWeekOfMonth.Parent" xml:space="preserve">
+    <value>layoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblOfEveryWeekOfMonth.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="lblMonthlyOfEvery.AccessibleName" xml:space="preserve">
+    <value>of every</value>
+  </data>
+  <data name="lblMonthlyOfEvery.Location" type="System.Drawing.Point, System.Drawing">
+    <value>110, 5</value>
+  </data>
+  <data name="lblMonthlyOfEvery.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 13</value>
+  </data>
+  <data name="lblMonthlyOfEvery.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="lblMonthlyOfEvery.Text" xml:space="preserve">
+    <value>of every</value>
+  </data>
+  <data name="&gt;&gt;lblMonthlyOfEvery.Name" xml:space="preserve">
+    <value>lblMonthlyOfEvery</value>
+  </data>
+  <data name="&gt;&gt;lblMonthlyOfEvery.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblMonthlyOfEvery.Parent" xml:space="preserve">
+    <value>layoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblMonthlyOfEvery.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="spinMonthlyMonthCount1.EditValue" type="System.Decimal, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="spinMonthlyMonthCount1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>296, 36</value>
+  </data>
+  <data name="spinMonthlyMonthCount1.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>59, 0</value>
+  </data>
+  <data name="spinMonthlyMonthCount1.Properties.AccessibleName" xml:space="preserve">
+    <value>The Editable Text Editable Text of every Editable Text month(s)</value>
+  </data>
+  <data name="spinMonthlyMonthCount1.Properties.Mask.EditMask" xml:space="preserve">
+    <value>N00</value>
+  </data>
+  <data name="spinMonthlyMonthCount1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 20</value>
+  </data>
+  <data name="spinMonthlyMonthCount1.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;spinMonthlyMonthCount1.Name" xml:space="preserve">
+    <value>spinMonthlyMonthCount1</value>
+  </data>
+  <data name="&gt;&gt;spinMonthlyMonthCount1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SpinEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;spinMonthlyMonthCount1.Parent" xml:space="preserve">
+    <value>layoutControl</value>
+  </data>
+  <data name="&gt;&gt;spinMonthlyMonthCount1.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="spinMonthlyMonthCount.EditValue" type="System.Decimal, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="spinMonthlyMonthCount.Location" type="System.Drawing.Point, System.Drawing">
+    <value>155, 2</value>
+  </data>
+  <data name="spinMonthlyMonthCount.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>59, 0</value>
+  </data>
+  <data name="spinMonthlyMonthCount.Properties.AccessibleName" xml:space="preserve">
+    <value>Day Editable Text of every Editable Text month(s)</value>
+  </data>
+  <data name="spinMonthlyMonthCount.Properties.Mask.EditMask" xml:space="preserve">
+    <value>N00</value>
+  </data>
+  <data name="spinMonthlyMonthCount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 20</value>
+  </data>
+  <data name="spinMonthlyMonthCount.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;spinMonthlyMonthCount.Name" xml:space="preserve">
+    <value>spinMonthlyMonthCount</value>
+  </data>
+  <data name="&gt;&gt;spinMonthlyMonthCount.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SpinEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;spinMonthlyMonthCount.Parent" xml:space="preserve">
+    <value>layoutControl</value>
+  </data>
+  <data name="&gt;&gt;spinMonthlyMonthCount.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="chkDay.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 2</value>
+  </data>
+  <data name="chkDay.Properties.AccessibleName" xml:space="preserve">
+    <value>Day</value>
+  </data>
+  <data name="chkDay.Properties.Caption" xml:space="preserve">
+    <value>D&amp;ay</value>
+  </data>
+  <data name="chkDay.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 19</value>
+  </data>
+  <data name="chkDay.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;chkDay.Name" xml:space="preserve">
+    <value>chkDay</value>
+  </data>
+  <data name="&gt;&gt;chkDay.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;chkDay.Parent" xml:space="preserve">
+    <value>layoutControl</value>
+  </data>
+  <data name="&gt;&gt;chkDay.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="cbMonthlyWeekOfMonth.EditValue" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="cbMonthlyWeekOfMonth.Location" type="System.Drawing.Point, System.Drawing">
+    <value>46, 36</value>
+  </data>
+  <data name="cbMonthlyWeekOfMonth.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>64, 0</value>
+  </data>
+  <data name="cbMonthlyWeekOfMonth.Properties.AccessibleName" xml:space="preserve">
+    <value>The Editable Text Editable Text of every Editable Text month(s)</value>
+  </data>
+  <data name="cbMonthlyWeekOfMonth.Size" type="System.Drawing.Size, System.Drawing">
+    <value>81, 20</value>
+  </data>
+  <data name="cbMonthlyWeekOfMonth.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;cbMonthlyWeekOfMonth.Name" xml:space="preserve">
+    <value>cbMonthlyWeekOfMonth</value>
+  </data>
+  <data name="&gt;&gt;cbMonthlyWeekOfMonth.Type" xml:space="preserve">
+    <value>DevExpress.XtraScheduler.UI.WeekOfMonthEdit, DevExpress.XtraScheduler.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;cbMonthlyWeekOfMonth.Parent" xml:space="preserve">
+    <value>layoutControl</value>
+  </data>
+  <data name="&gt;&gt;cbMonthlyWeekOfMonth.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="lblMonthlyMonthCount1.AccessibleName" xml:space="preserve">
+    <value>month(s)</value>
+  </data>
+  <data name="lblMonthlyMonthCount1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>359, 39</value>
+  </data>
+  <data name="lblMonthlyMonthCount1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 13</value>
+  </data>
+  <data name="lblMonthlyMonthCount1.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="lblMonthlyMonthCount1.Text" xml:space="preserve">
+    <value>month(s)</value>
+  </data>
+  <data name="&gt;&gt;lblMonthlyMonthCount1.Name" xml:space="preserve">
+    <value>lblMonthlyMonthCount1</value>
+  </data>
+  <data name="&gt;&gt;lblMonthlyMonthCount1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblMonthlyMonthCount1.Parent" xml:space="preserve">
+    <value>layoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblMonthlyMonthCount1.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="cbMonthlyWeekDays.Location" type="System.Drawing.Point, System.Drawing">
+    <value>131, 36</value>
+  </data>
+  <data name="cbMonthlyWeekDays.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>96, 0</value>
+  </data>
+  <data name="cbMonthlyWeekDays.Properties.AccessibleName" xml:space="preserve">
+    <value>The Editable Text Editable Text of every Editable Text month(s)</value>
+  </data>
+  <data name="cbMonthlyWeekDays.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 20</value>
+  </data>
+  <data name="cbMonthlyWeekDays.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;cbMonthlyWeekDays.Name" xml:space="preserve">
+    <value>cbMonthlyWeekDays</value>
+  </data>
+  <data name="&gt;&gt;cbMonthlyWeekDays.Type" xml:space="preserve">
+    <value>DevExpress.XtraScheduler.UI.WeekDaysEdit, DevExpress.XtraScheduler.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;cbMonthlyWeekDays.Parent" xml:space="preserve">
+    <value>layoutControl</value>
+  </data>
+  <data name="&gt;&gt;cbMonthlyWeekDays.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="spinMonthlyDay.EditValue" type="System.Decimal, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="spinMonthlyDay.Location" type="System.Drawing.Point, System.Drawing">
+    <value>47, 2</value>
+  </data>
+  <data name="spinMonthlyDay.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>59, 0</value>
+  </data>
+  <data name="spinMonthlyDay.Properties.AccessibleName" xml:space="preserve">
+    <value>Day Editable Text of every Editable Text month(s)</value>
+  </data>
+  <data name="spinMonthlyDay.Properties.Mask.EditMask" xml:space="preserve">
+    <value>N00</value>
+  </data>
+  <data name="spinMonthlyDay.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 20</value>
+  </data>
+  <data name="spinMonthlyDay.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;spinMonthlyDay.Name" xml:space="preserve">
+    <value>spinMonthlyDay</value>
+  </data>
+  <data name="&gt;&gt;spinMonthlyDay.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SpinEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;spinMonthlyDay.Parent" xml:space="preserve">
+    <value>layoutControl</value>
+  </data>
+  <data name="&gt;&gt;spinMonthlyDay.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="chkWeekOfMonth.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 36</value>
+  </data>
+  <data name="chkWeekOfMonth.Properties.AccessibleName" xml:space="preserve">
+    <value>The</value>
+  </data>
+  <data name="chkWeekOfMonth.Properties.Caption" xml:space="preserve">
+    <value>Th&amp;e</value>
+  </data>
+  <data name="chkWeekOfMonth.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 19</value>
+  </data>
+  <data name="chkWeekOfMonth.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;chkWeekOfMonth.Name" xml:space="preserve">
+    <value>chkWeekOfMonth</value>
+  </data>
+  <data name="&gt;&gt;chkWeekOfMonth.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;chkWeekOfMonth.Parent" xml:space="preserve">
+    <value>layoutControl</value>
+  </data>
+  <data name="&gt;&gt;chkWeekOfMonth.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"></assembly>
+  <data name="layoutControl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="layoutControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="spinMonthlyMonthCount1item.Text" xml:space="preserve">
+    <value>of every</value>
+  </data>
+  <data name="spinMonthlyMonthCountitem.Text" xml:space="preserve">
+    <value>of every</value>
+  </data>
+  <data name="layoutControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>473, 72</value>
+  </data>
+  <data name="layoutControl.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;layoutControl.Name" xml:space="preserve">
+    <value>layoutControl</value>
+  </data>
+  <data name="&gt;&gt;layoutControl.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControl, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;layoutControl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;layoutControl.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblMonthlyMonthCount.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="lblMonthlyMonthCount.Text" xml:space="preserve">
+    <value>month(s)</value>
+  </data>
+  <data name="&gt;&gt;lblMonthlyMonthCount.Name" xml:space="preserve">
+    <value>lblMonthlyMonthCount</value>
+  </data>
+  <data name="&gt;&gt;lblMonthlyMonthCount.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblMonthlyMonthCount.Parent" xml:space="preserve">
+    <value>layoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblMonthlyMonthCount.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>473, 72</value>
+  </data>
+  <data name="&gt;&gt;layoutControlGroup1.Name" xml:space="preserve">
+    <value>layoutControlGroup1</value>
+  </data>
+  <data name="&gt;&gt;layoutControlGroup1.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;chkDayitem.Name" xml:space="preserve">
+    <value>chkDayitem</value>
+  </data>
+  <data name="&gt;&gt;chkDayitem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;spinMonthlyDayitem.Name" xml:space="preserve">
+    <value>spinMonthlyDayitem</value>
+  </data>
+  <data name="&gt;&gt;spinMonthlyDayitem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem2.Name" xml:space="preserve">
+    <value>emptySpaceItem2</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem2.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem1.Name" xml:space="preserve">
+    <value>emptySpaceItem1</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;spinMonthlyMonthCount1item.Name" xml:space="preserve">
+    <value>spinMonthlyMonthCount1item</value>
+  </data>
+  <data name="&gt;&gt;spinMonthlyMonthCount1item.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem1.Name" xml:space="preserve">
+    <value>layoutControlItem1</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;chkWeekOfMonthitem.Name" xml:space="preserve">
+    <value>chkWeekOfMonthitem</value>
+  </data>
+  <data name="&gt;&gt;chkWeekOfMonthitem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;spinMonthlyMonthCountitem.Name" xml:space="preserve">
+    <value>spinMonthlyMonthCountitem</value>
+  </data>
+  <data name="&gt;&gt;spinMonthlyMonthCountitem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;cbMonthlyWeekOfMonthitem.Name" xml:space="preserve">
+    <value>cbMonthlyWeekOfMonthitem</value>
+  </data>
+  <data name="&gt;&gt;cbMonthlyWeekOfMonthitem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblMonthlyMonthCountitem.Name" xml:space="preserve">
+    <value>lblMonthlyMonthCountitem</value>
+  </data>
+  <data name="&gt;&gt;lblMonthlyMonthCountitem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;cbMonthlyWeekDaysitem.Name" xml:space="preserve">
+    <value>cbMonthlyWeekDaysitem</value>
+  </data>
+  <data name="&gt;&gt;cbMonthlyWeekDaysitem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem2.Name" xml:space="preserve">
+    <value>layoutControlItem2</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem2.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblMonthlyMonthCount1item.Name" xml:space="preserve">
+    <value>lblMonthlyMonthCount1item</value>
+  </data>
+  <data name="&gt;&gt;lblMonthlyMonthCount1item.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem3.Name" xml:space="preserve">
+    <value>emptySpaceItem3</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem3.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem5.Name" xml:space="preserve">
+    <value>emptySpaceItem5</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem5.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>MonthlyRecurrenceControl</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>DevExpress.XtraScheduler.UI.RecurrenceControlBase, DevExpress.XtraScheduler.v21.2, Culture=neutral</value>
+  </data>
+</root>

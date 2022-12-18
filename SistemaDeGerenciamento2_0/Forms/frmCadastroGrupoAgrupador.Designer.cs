@@ -29,16 +29,17 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCadastroGrupoAgrupador));
+            DevExpress.XtraSplashScreen.SplashScreenManager splashScreenManager1 = new DevExpress.XtraSplashScreen.SplashScreenManager(this, null, true, true);
             this.btnAdicionarSubGrupo = new DevExpress.XtraEditors.SimpleButton();
             this.btnAdicionarGrupo = new DevExpress.XtraEditors.SimpleButton();
             this.btnFechar = new DevExpress.XtraEditors.SimpleButton();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.gdvGruposAgrupadores = new DevExpress.XtraGrid.GridControl();
-            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gdvGruposAgrupadores)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
             this.SuspendLayout();
             // 
             // btnAdicionarSubGrupo
@@ -141,19 +142,22 @@
             // 
             // gdvGruposAgrupadores
             // 
-            this.gdvGruposAgrupadores.Location = new System.Drawing.Point(32, 119);
-            this.gdvGruposAgrupadores.MainView = this.gridView1;
+            this.gdvGruposAgrupadores.Location = new System.Drawing.Point(30, 114);
+            this.gdvGruposAgrupadores.MainView = this.gridView2;
             this.gdvGruposAgrupadores.Name = "gdvGruposAgrupadores";
-            this.gdvGruposAgrupadores.Size = new System.Drawing.Size(524, 200);
-            this.gdvGruposAgrupadores.TabIndex = 81;
+            this.gdvGruposAgrupadores.Size = new System.Drawing.Size(527, 217);
+            this.gdvGruposAgrupadores.TabIndex = 82;
             this.gdvGruposAgrupadores.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridView1});
+            this.gridView2});
             // 
-            // gridView1
+            // gridView2
             // 
-            this.gridView1.GridControl = this.gdvGruposAgrupadores;
-            this.gridView1.Name = "gridView1";
-            this.gridView1.OptionsFind.FindNullPrompt = "Buscar...";
+            this.gridView2.GridControl = this.gdvGruposAgrupadores;
+            this.gridView2.Name = "gridView2";
+            // 
+            // splashScreenManager1
+            // 
+            splashScreenManager1.ClosingDelay = 500;
             // 
             // frmCadastroGrupoAgrupador
             // 
@@ -177,7 +181,7 @@
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.frmCadastroGrupoSubGrupo_MouseMove);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gdvGruposAgrupadores)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -190,6 +194,6 @@
         private System.Windows.Forms.PictureBox pictureBox6;
         private DevExpress.XtraEditors.LabelControl labelControl3;
         private DevExpress.XtraGrid.GridControl gdvGruposAgrupadores;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView2;
     }
 }

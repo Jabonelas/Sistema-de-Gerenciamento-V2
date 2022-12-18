@@ -1,0 +1,2276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="EditorStringId.Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="EditorStringId.Clear" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="EditorStringId.Today" xml:space="preserve">
+    <value>Today</value>
+  </data>
+  <data name="EditorStringId.OK" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="EditorStringId.Apply" xml:space="preserve">
+    <value>Apply</value>
+  </data>
+  <data name="EditorStringId.Yes" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="EditorStringId.No" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="EditorStringId.SelectAll" xml:space="preserve">
+    <value>(Select All)</value>
+  </data>
+  <data name="EditorStringId.EmptyItem" xml:space="preserve">
+    <value>(None)</value>
+  </data>
+  <data name="EditorStringId.FilterCriteriaToStringFunctionIsNullOrEmpty" xml:space="preserve">
+    <value>Is null or empty</value>
+  </data>
+  <data name="EditorStringId.FilterCriteriaToStringFunctionStartsWith" xml:space="preserve">
+    <value>Starts with</value>
+  </data>
+  <data name="EditorStringId.FilterCriteriaToStringFunctionEndsWith" xml:space="preserve">
+    <value>Ends with</value>
+  </data>
+  <data name="EditorStringId.FilterCriteriaToStringFunctionContains" xml:space="preserve">
+    <value>Contains</value>
+  </data>
+  <data name="EditorStringId.FilterCriteriaToStringBetween" xml:space="preserve">
+    <value>Between</value>
+  </data>
+  <data name="EditorStringId.FilterCriteriaToStringBetweenDates" xml:space="preserve">
+    <value>Between dates</value>
+  </data>
+  <data name="EditorStringId.FilterCriteriaToStringIn" xml:space="preserve">
+    <value>In</value>
+  </data>
+  <data name="EditorStringId.FilterCriteriaToStringIsOnDates" xml:space="preserve">
+    <value>Is on dates</value>
+  </data>
+  <data name="EditorStringId.FilterCriteriaToStringIsNotNull" xml:space="preserve">
+    <value>Is Not Null</value>
+  </data>
+  <data name="EditorStringId.FilterCriteriaToStringNotLike" xml:space="preserve">
+    <value>Not Like</value>
+  </data>
+  <data name="EditorStringId.FilterCriteriaToStringTopItems" xml:space="preserve">
+    <value>In Top {0} Items</value>
+  </data>
+  <data name="EditorStringId.FilterCriteriaToStringBottomItems" xml:space="preserve">
+    <value>In Bottom {0} Items</value>
+  </data>
+  <data name="EditorStringId.FilterCriteriaToStringTopPercent" xml:space="preserve">
+    <value>In Top {0}%</value>
+  </data>
+  <data name="EditorStringId.FilterCriteriaToStringBottomPercent" xml:space="preserve">
+    <value>In Bottom {0}%</value>
+  </data>
+  <data name="EditorStringId.FilterCriteriaToStringAboveAverage" xml:space="preserve">
+    <value>Above Average</value>
+  </data>
+  <data name="EditorStringId.FilterCriteriaToStringBelowAverage" xml:space="preserve">
+    <value>Below Average</value>
+  </data>
+  <data name="EditorStringId.FilterCriteriaToStringUnique" xml:space="preserve">
+    <value>Is Unique</value>
+  </data>
+  <data name="EditorStringId.FilterCriteriaToStringDuplicate" xml:space="preserve">
+    <value>Is Duplicate</value>
+  </data>
+  <data name="EditorStringId.TopBottomValueTypeItems" xml:space="preserve">
+    <value>Items</value>
+  </data>
+  <data name="EditorStringId.TopBottomValueTypePercent" xml:space="preserve">
+    <value>Percent</value>
+  </data>
+  <data name="EditorStringId.FilterCriteriaToStringBinaryOperatorBitwiseAnd" xml:space="preserve">
+    <value>&amp;</value>
+  </data>
+  <data name="EditorStringId.FilterCriteriaToStringBinaryOperatorBitwiseOr" xml:space="preserve">
+    <value>|</value>
+  </data>
+  <data name="EditorStringId.FilterCriteriaToStringBinaryOperatorBitwiseXor" xml:space="preserve">
+    <value>^</value>
+  </data>
+  <data name="EditorStringId.FilterCriteriaToStringBinaryOperatorDivide" xml:space="preserve">
+    <value>/</value>
+  </data>
+  <data name="EditorStringId.FilterCriteriaToStringBinaryOperatorEqual" xml:space="preserve">
+    <value>=</value>
+  </data>
+  <data name="EditorStringId.FilterCriteriaToStringBinaryOperatorGreater" xml:space="preserve">
+    <value>&gt;</value>
+  </data>
+  <data name="EditorStringId.FilterCriteriaToStringBinaryOperatorGreaterOrEqual" xml:space="preserve">
+    <value>&gt;=</value>
+  </data>
+  <data name="EditorStringId.FilterCriteriaToStringBinaryOperatorLess" xml:space="preserve">
+    <value>&lt;</value>
+  </data>
+  <data name="EditorStringId.FilterCriteriaToStringBinaryOperatorLessOrEqual" xml:space="preserve">
+    <value>&lt;=</value>
+  </data>
+  <data name="EditorStringId.FilterCriteriaToStringBinaryOperatorLike" xml:space="preserve">
+    <value>Like</value>
+  </data>
+  <data name="EditorStringId.FilterCriteriaToStringBinaryOperatorMinus" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="EditorStringId.FilterCriteriaToStringBinaryOperatorModulo" xml:space="preserve">
+    <value>%</value>
+  </data>
+  <data name="EditorStringId.FilterCriteriaToStringBinaryOperatorMultiply" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="EditorStringId.FilterCriteriaToStringBinaryOperatorNotEqual" xml:space="preserve">
+    <value>&lt;&gt;</value>
+  </data>
+  <data name="EditorStringId.FilterCriteriaToStringBinaryOperatorPlus" xml:space="preserve">
+    <value>+</value>
+  </data>
+  <data name="EditorStringId.FilterCriteriaToStringUnaryOperatorBitwiseNot" xml:space="preserve">
+    <value>~</value>
+  </data>
+  <data name="EditorStringId.FilterCriteriaToStringUnaryOperatorIsNull" xml:space="preserve">
+    <value>Is Null</value>
+  </data>
+  <data name="EditorStringId.FilterCriteriaToStringUnaryOperatorMinus" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="EditorStringId.FilterCriteriaToStringUnaryOperatorNot" xml:space="preserve">
+    <value>Not</value>
+  </data>
+  <data name="EditorStringId.FilterCriteriaToStringUnaryOperatorPlus" xml:space="preserve">
+    <value>+</value>
+  </data>
+  <data name="EditorStringId.FilterCriteriaToStringGroupOperatorAnd" xml:space="preserve">
+    <value>And</value>
+  </data>
+  <data name="EditorStringId.FilterCriteriaToStringGroupOperatorOr" xml:space="preserve">
+    <value>Or</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_Functions_Text" xml:space="preserve">
+    <value>Functions</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_Operators_Text" xml:space="preserve">
+    <value>Operators</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_Parameters_Text" xml:space="preserve">
+    <value>Parameters</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_Variables_Text" xml:space="preserve">
+    <value>Variables</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_Fields_Text" xml:space="preserve">
+    <value>Fields</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_Constants_Text" xml:space="preserve">
+    <value>Constants</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_Abs_Description" xml:space="preserve">
+    <value>Abs(Value)
+Returns the absolute, positive value of the given numeric expression.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_Acos_Description" xml:space="preserve">
+    <value>Acos(Value)
+Returns the arccosine of a number (the angle, in radians, whose cosine is the given float expression).</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_AddDays_Description" xml:space="preserve">
+    <value>AddDays(DateTime, DaysCount)
+Returns a date-time value that is the specified number of days away from the specified DateTime.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_AddHours_Description" xml:space="preserve">
+    <value>AddHours(DateTime, HoursCount)
+Returns a date-time value that is the specified number of hours away from the specified DateTime.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_AddMilliSeconds_Description" xml:space="preserve">
+    <value>AddMilliSeconds(DateTime, MilliSecondsCount)
+Returns a date-time value that is the specified number of milliseconds away from the specified DateTime.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_AddMinutes_Description" xml:space="preserve">
+    <value>AddMinutes(DateTime, MinutesCount)
+Returns a date-time value that is the specified number of minutes away from the specified DateTime.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_AddMonths_Description" xml:space="preserve">
+    <value>AddMonths(DateTime, MonthsCount)
+Returns a date-time value that is the specified number of months away from the specified DateTime.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_AddSeconds_Description" xml:space="preserve">
+    <value>AddSeconds(DateTime, SecondsCount)
+Returns a date-time value that is the specified number of seconds away from the specified DateTime.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_AddTicks_Description" xml:space="preserve">
+    <value>AddTicks(DateTime, TicksCount)
+Returns a date-time value that is the specified number of ticks away from the specified DateTime.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_AddTimeSpan_Description" xml:space="preserve">
+    <value>AddTimeSpan(DateTime, TimeSpan)
+Returns a date-time value that is away from the specified DateTime for the given TimeSpan.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_AddYears_Description" xml:space="preserve">
+    <value>AddYears(DateTime, YearsCount)
+Returns a date-time value that is the specified number of years away from the specieid DateTime.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_Ascii_Description" xml:space="preserve">
+    <value>Ascii(String)
+Returns the ASCII code value of the leftmost character in a character expression.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_Asin_Description" xml:space="preserve">
+    <value>Asin(Value)
+Returns the arcsine of a number (the angle, in radians, whose sine is the given float expression).</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_Atn_Description" xml:space="preserve">
+    <value>Atn(Value)
+Returns the arctangent of a number (the angle, in radians, whose tangent is the given float expression).</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_Atn2_Description" xml:space="preserve">
+    <value>Atn2(Value1, Value2)
+Returns the angle whose tangent is the quotient of two specified numbers, in radians.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_BigMul_Description" xml:space="preserve">
+    <value>BigMul(Value1, Value2)
+Returns an Int64 containing the full product of two specified 32-bit numbers.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_Ceiling_Description" xml:space="preserve">
+    <value>Ceiling(Value)
+Returns the smallest integer that is greater than or equal to the given numeric expression.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_Char_Description" xml:space="preserve">
+    <value>Char(Number)
+Converts an integerASCIICode to a character.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_CharIndex_Description" xml:space="preserve">
+    <value>CharIndex(String1, String2)
+Returns the starting position of String1 within String2, beginning from the zero character position to the end of a string.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_CharIndex3Param_Description" xml:space="preserve">
+    <value>CharIndex(String1, String2, StartLocation)
+Returns the starting position of String1 within String2, beginning from the StartLocation character position to the end of a string.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_Concat_Description" xml:space="preserve">
+    <value>Concat(String1, ... , StringN)
+Returns a string value containing the concatenation of the current string with any additional strings.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_Cos_Description" xml:space="preserve">
+    <value>Cos(Value)
+Returns the cosine of the angle defined in radians.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_Cosh_Description" xml:space="preserve">
+    <value>Cosh(Value)
+Returns the hyperbolic cosine of the angle defined in radians.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_DateDiffDay_Description" xml:space="preserve">
+    <value>DateDiffDay(startDate, endDate)
+Returns the number of day boundaries between two non-nullable dates.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_DateDiffHour_Description" xml:space="preserve">
+    <value>DateDiffHour(startDate, endDate)
+Returns the number of hour boundaries between two non-nullable dates.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_DateDiffMilliSecond_Description" xml:space="preserve">
+    <value>DateDiffMilliSecond(startDate, endDate)
+Returns the number of millisecond boundaries between two non-nullable dates.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_DateDiffMinute_Description" xml:space="preserve">
+    <value>DateDiffMinute(startDate, endDate)
+Returns the number of minute boundaries between two non-nullable dates.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_DateDiffMonth_Description" xml:space="preserve">
+    <value>DateDiffMonth(startDate, endDate)
+Returns the number of month boundaries between two non-nullable dates.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_DateDiffSecond_Description" xml:space="preserve">
+    <value>DateDiffSecond(startDate, endDate)
+Returns the number of second boundaries between two non-nullable dates.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_DateDiffTick_Description" xml:space="preserve">
+    <value>DateDiffTick(startDate, endDate)
+Returns the number of tick boundaries between two non-nullable dates.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_DateDiffYear_Description" xml:space="preserve">
+    <value>DateDiffYear(startDate, endDate)
+Returns the number of year boundaries between two non-nullable dates.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_Exp_Description" xml:space="preserve">
+    <value>Exp(Value)
+Returns the exponential value of the given float expression.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_Floor_Description" xml:space="preserve">
+    <value>Floor(Value)
+Returns the largest integer less than or equal to the given numeric expression.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_GetDate_Description" xml:space="preserve">
+    <value>GetDate(DateTime)
+Extracts a date from the defined DateTime.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_GetDay_Description" xml:space="preserve">
+    <value>GetDay(DateTime)
+Extracts a day from the defined DateTime.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_GetDayOfWeek_Description" xml:space="preserve">
+    <value>GetDayOfWeek(DateTime)
+Extracts a day of the week from the defined DateTime.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_GetDayOfYear_Description" xml:space="preserve">
+    <value>GetDayOfYear(DateTime)
+Extracts a day of the year from the defined DateTime.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_GetHour_Description" xml:space="preserve">
+    <value>GetHour(DateTime)
+Extracts an hour from the defined DateTime.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_GetMilliSecond_Description" xml:space="preserve">
+    <value>GetMilliSecond(DateTime)
+Extracts milliseconds from the defined DateTime.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_GetMinute_Description" xml:space="preserve">
+    <value>GetMinute(DateTime)
+Extracts minutes from the defined DateTime.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_GetMonth_Description" xml:space="preserve">
+    <value>GetMonth(DateTime)
+Extracts a month from the defined DateTime.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_GetSecond_Description" xml:space="preserve">
+    <value>GetSecond(DateTime)
+Extracts seconds from the defined DateTime.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_GetTimeOfDay_Description" xml:space="preserve">
+    <value>GetTimeOfDay(DateTime)
+Extracts the time of the day from the defined DateTime, in ticks.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_GetYear_Description" xml:space="preserve">
+    <value>GetYear(DateTime)
+Extracts a year from the defined DateTime.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_Iif_Description" xml:space="preserve">
+    <value>Iif(Expression, TruePart, FalsePart)
+Returns either TruePart or FalsePart, depending on the evaluation of the Boolean Expression.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_Insert_Description" xml:space="preserve">
+    <value>Insert(String1, StartPosition, String2)
+Inserts String2 into String1 at the position specified by StartPositon</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_IsNull_Description" xml:space="preserve">
+    <value>IsNull(Value)
+Returns True if the specified Value is NULL.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_IsNullOrEmpty_Description" xml:space="preserve">
+    <value>IsNullOrEmpty(String)
+Returns True if the specified String object is NULL or an empty string; otherwise, False is returned.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_Len_Description" xml:space="preserve">
+    <value>Len(Value)
+Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_Log_Description" xml:space="preserve">
+    <value>Log(Value)
+Returns the natural logarithm of a specified number.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_Log2Param_Description" xml:space="preserve">
+    <value>Log(Value, Base)
+Returns the logarithm of a specified number in a specified Base.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_Log10_Description" xml:space="preserve">
+    <value>Log10(Value)
+Returns the base 10 logarithm of a specified number.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_Lower_Description" xml:space="preserve">
+    <value>Lower(String)
+Returns the String in lowercase.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_Now_Description" xml:space="preserve">
+    <value>Now()
+Returns the current system date and time.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_PadLeft_Description" xml:space="preserve">
+    <value>PadLeft(String, Length)
+Left-aligns characters in the defined string, padding its left side with white space characters up to a specified total length.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_PadLeft3Param_Description" xml:space="preserve">
+    <value>PadLeft(String, Length, Char)
+Left-aligns characters in the defined string, padding its left side with the specified Char up to a specified total length.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_PadRight_Description" xml:space="preserve">
+    <value>PadRight(String, Length)
+Right-aligns characters in the defined string, padding its left side with white space characters up to a specified total length.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_PadRight3Param_Description" xml:space="preserve">
+    <value>PadRight(String, Length, Char)
+Right-aligns characters in the defined string, padding its left side with the specified Char up to a specified total length.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_Power_Description" xml:space="preserve">
+    <value>Power(Value, Power)
+Returns a specified number raised to a specified power.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_Remove2Param_Description" xml:space="preserve">
+    <value>Remove(String, StartPosition)
+Deletes all characters from this instance, beginning at a specified position.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_Remove3Param_Description" xml:space="preserve">
+    <value>Remove(String, StartPosition, Length)
+Deletes a specified number of characters from this instance, beginning at a specified position.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_Replace_Description" xml:space="preserve">
+    <value>Replace(String, SubString2, String3)
+Returns a copy of String1, in which SubString2 has been replaced with String3.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_Reverse_Description" xml:space="preserve">
+    <value>Reverse(String)
+Reverses the order of elements within a string.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_Rnd_Description" xml:space="preserve">
+    <value>Rnd()
+Returns a random number that is less than 1, but greater than or equal to zero.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_Round_Description" xml:space="preserve">
+    <value>Round(Value)
+Rounds the given value to the nearest integer.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_Round2Param_Description" xml:space="preserve">
+    <value>Round(Value, Precision)
+Rounds the given value to the nearest integer, or to a specified number of decimal places.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_Sign_Description" xml:space="preserve">
+    <value>Sign(Value)
+Returns the positive (+1), zero (0), or negative (-1) sign of the given expression.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_Sin_Description" xml:space="preserve">
+    <value>Sin(Value)
+Returns the sine of the angle, defined in radians.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_Sinh_Description" xml:space="preserve">
+    <value>Sinh(Value)
+Returns the hyperbolic sine of the angle defined in radians.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_Sqr_Description" xml:space="preserve">
+    <value>Sqr(Value)
+Returns the square root of a given number.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_Substring3param_Description" xml:space="preserve">
+    <value>Substring(String, StartPosition, Length)
+Retrieves a substring from String. The substring starts at StartPosition and has the specified Length.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_Substring2param_Description" xml:space="preserve">
+    <value>Substring(String, StartPosition)
+Retrieves a substring from String. The substring starts at StartPosition.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_Tan_Description" xml:space="preserve">
+    <value>Tan(Value)
+Returns the tangent of the angle defined in radians.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_Tanh_Description" xml:space="preserve">
+    <value>Tanh(Value)
+Returns the hyperbolic tangent of the angle defined in radians.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_Today_Description" xml:space="preserve">
+    <value>Today()
+Returns the current date. Regardless of the actual time, this function returns midnight of the current date.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_ToInt_Description" xml:space="preserve">
+    <value>ToInt(Value)
+Converts Value to an equivalent 32-bit signed integer.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_ToLong_Description" xml:space="preserve">
+    <value>ToLong(Value)
+Converts Value to an equivalent 64-bit signed integer.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_ToFloat_Description" xml:space="preserve">
+    <value>ToFloat(Value)
+Converts Value to an equivalent 32-bit single-precision floating-point number.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_ToDouble_Description" xml:space="preserve">
+    <value>ToDouble(Value)
+Converts Value to an equivalent 64-bit double-precision floating-point number.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_ToDecimal_Description" xml:space="preserve">
+    <value>ToDecimal(Value)
+Converts Value to an equivalent decimal number.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_ToStr_Description" xml:space="preserve">
+    <value>ToStr(Value)
+Returns a string representation of an object.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_Trim_Description" xml:space="preserve">
+    <value>Trim(String)
+Removes all leading and trailing SPACE characters from String.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_Upper_Description" xml:space="preserve">
+    <value>Upper(String)
+Returns String in uppercase.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_UtcNow_Description" xml:space="preserve">
+    <value>UtcNow()
+Returns the current system date and time, expressed as Coordinated Universal Time (UTC).</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_LocalDateTimeDayAfterTomorrow_Description" xml:space="preserve">
+    <value>LocalDateTimeDayAfterTomorrow()
+Returns a date-time value corresponding to the day after Tomorrow.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_LocalDateTimeLastWeek_Description" xml:space="preserve">
+    <value>LocalDateTimeLastWeek()
+Returns a date-time value corresponding to the first day of the previous week.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_LocalDateTimeNextMonth_Description" xml:space="preserve">
+    <value>LocalDateTimeNextMonth()
+Returns a date-time value corresponding to the first day of next month.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_LocalDateTimeNextWeek_Description" xml:space="preserve">
+    <value>LocalDateTimeNextWeek()
+Returns a date-time value corresponding to the first day of the following week.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_LocalDateTimeNextYear_Description" xml:space="preserve">
+    <value>LocalDateTimeNextYear()
+Returns a date-time value corresponding to the first day of the following year.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_LocalDateTimeNow_Description" xml:space="preserve">
+    <value>LocalDateTimeNow()
+Returns a date-time value corresponding to the current moment in time.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_LocalDateTimeThisMonth_Description" xml:space="preserve">
+    <value>LocalDateTimeThisMonth()
+Returns a date-time value corresponding to the first day of the current month.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_LocalDateTimeThisWeek_Description" xml:space="preserve">
+    <value>LocalDateTimeThisWeek()
+Returns a date-time value corresponding to the first day of the current week.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_LocalDateTimeThisYear_Description" xml:space="preserve">
+    <value>LocalDateTimeThisYear()
+Returns a date-time value corresponding to the first day of the current year.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_LocalDateTimeToday_Description" xml:space="preserve">
+    <value>LocalDateTimeToday()
+Returns a date-time value corresponding to Today.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_LocalDateTimeTomorrow_Description" xml:space="preserve">
+    <value>LocalDateTimeTomorrow()
+Returns a date-time value corresponding to Tomorrow.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_LocalDateTimeTwoWeeksAway_Description" xml:space="preserve">
+    <value>LocalDateTimeTwoWeeksAway()
+Returns a date-time value corresponding to the first day of the week that is after next week.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_LocalDateTimeYesterday_Description" xml:space="preserve">
+    <value>LocalDateTimeYesterday()
+Returns a date-time value corresponding to Yesterday.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_StartsWith_Description" xml:space="preserve">
+    <value>StartsWith(String, StartString)
+Returns True if the beginning of String matches StartString; otherwise, False is returned.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_EndsWith_Description" xml:space="preserve">
+    <value>EndsWith(String, EndString)
+Returns True if the end of String matches EndString; otherwise, False is returned.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_Contains_Description" xml:space="preserve">
+    <value>Contains(String, SubString)
+Returns True if SubString occurs within String; otherwise, False is returned.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_FunctionType_AllItems" xml:space="preserve">
+    <value>(All)</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_FunctionType_DateTimeItems" xml:space="preserve">
+    <value>Date-time</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_FunctionType_LogicalItems" xml:space="preserve">
+    <value>Logical</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_FunctionType_MathItems" xml:space="preserve">
+    <value>Math</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_FunctionType_StringItems" xml:space="preserve">
+    <value>String</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_Plus_Description" xml:space="preserve">
+    <value>Adds the value of one numeric expression to another, or concatenates two strings.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_Minus_Description" xml:space="preserve">
+    <value>Finds the difference between two numbers.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_Multiply_Description" xml:space="preserve">
+    <value>Multiplies the value of two expressions.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_Divide_Description" xml:space="preserve">
+    <value>Divides the first operand by the second.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_Modulo_Description" xml:space="preserve">
+    <value>Returns the remainder (modulus) obtained by dividing one numeric expression into another.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_BitwiseOr_Description" xml:space="preserve">
+    <value>Compares each bit of its first operand to the corresponding bit of its second operand. If either bit is 1, the corresponding result bit is set to 1. Otherwise, the corresponding result bit is set to 0.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_BitwiseAnd_Description" xml:space="preserve">
+    <value>Performs a bitwise logical AND operation between two integer values.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_BitwiseXor_Description" xml:space="preserve">
+    <value>Performs a logical exclusion on two Boolean expressions, or a bitwise exclusion on two numeric expressions.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_Equal_Description" xml:space="preserve">
+    <value>Returns true if both operands have the same value; otherwise, it returns false.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_NotEqual_Description" xml:space="preserve">
+    <value>Returns true if the operands do not have the same value; otherwise, it returns false.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_Less_Description" xml:space="preserve">
+    <value>Less than operator. Used to compare expressions.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_LessOrEqual_Description" xml:space="preserve">
+    <value>Less than or equal to operator. Used to compare expressions.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_GreaterOrEqual_Description" xml:space="preserve">
+    <value>Greater than or equal to operator. Used to compare expressions.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_Greater_Description" xml:space="preserve">
+    <value>Greater than operator. Used to compare expressions.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_In_Description" xml:space="preserve">
+    <value>In (,,,)
+Tests for the existence of a property in an object.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_Like_Description" xml:space="preserve">
+    <value>Compares a string against a pattern. If the value of the string matches the pattern, result is true. If the string does not match the pattern, result is false. If both string and pattern are empty strings, the result is true.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_Between_Description" xml:space="preserve">
+    <value>Between (,)
+Specifies a range to test. Returns true if a value is greater than or equal to the first operand and less than or equal to the second operand.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_And_Description" xml:space="preserve">
+    <value>Performs a logical conjunction on two expressions.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_Or_Description" xml:space="preserve">
+    <value>Performs a logical disjunction on two Boolean expressions.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_Not_Description" xml:space="preserve">
+    <value>Performs logical negation on an expression.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_GridFields_Description_Prefix" xml:space="preserve">
+    <value>Field Information
+Caption: {1}
+The type of this field is: {2}</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_Fields_Description_Prefix" xml:space="preserve">
+    <value>The type of this field is: {0}</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_Parameters_Description_Prefix" xml:space="preserve">
+    <value>The type of this parameter is: {0}</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_True_Description" xml:space="preserve">
+    <value>Represents the Boolean True value.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_False_Description" xml:space="preserve">
+    <value>Represents the Boolean False value.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_Null_Description" xml:space="preserve">
+    <value>Represents a null reference, one that does not refer to any object.</value>
+  </data>
+  <data name="EditorStringId.CaptionError" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="EditorStringId.CalculatorButtonMC" xml:space="preserve">
+    <value>MC</value>
+  </data>
+  <data name="EditorStringId.CalculatorButtonMR" xml:space="preserve">
+    <value>MR</value>
+  </data>
+  <data name="EditorStringId.CalculatorButtonMS" xml:space="preserve">
+    <value>MS</value>
+  </data>
+  <data name="EditorStringId.CalculatorButtonMAdd" xml:space="preserve">
+    <value>M+</value>
+  </data>
+  <data name="EditorStringId.CalculatorButtonMSub" xml:space="preserve">
+    <value>M-</value>
+  </data>
+  <data name="EditorStringId.CalculatorButtonBack" xml:space="preserve">
+    <value>←</value>
+  </data>
+  <data name="EditorStringId.CalculatorButtonCancel" xml:space="preserve">
+    <value>CE</value>
+  </data>
+  <data name="EditorStringId.CalculatorButtonClear" xml:space="preserve">
+    <value>C</value>
+  </data>
+  <data name="EditorStringId.CalculatorButtonZero" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="EditorStringId.CalculatorButtonOne" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="EditorStringId.CalculatorButtonTwo" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="EditorStringId.CalculatorButtonThree" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="EditorStringId.CalculatorButtonFour" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="EditorStringId.CalculatorButtonFive" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="EditorStringId.CalculatorButtonSix" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="EditorStringId.CalculatorButtonSeven" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="EditorStringId.CalculatorButtonEight" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="EditorStringId.CalculatorButtonNine" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="EditorStringId.CalculatorButtonSign" xml:space="preserve">
+    <value>±</value>
+  </data>
+  <data name="EditorStringId.CalculatorButtonAdd" xml:space="preserve">
+    <value>+</value>
+  </data>
+  <data name="EditorStringId.CalculatorButtonSub" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="EditorStringId.CalculatorButtonMul" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="EditorStringId.CalculatorButtonDiv" xml:space="preserve">
+    <value>/</value>
+  </data>
+  <data name="EditorStringId.CalculatorButtonFract" xml:space="preserve">
+    <value>1/x</value>
+  </data>
+  <data name="EditorStringId.CalculatorButtonPercent" xml:space="preserve">
+    <value>%</value>
+  </data>
+  <data name="EditorStringId.CalculatorButtonSqrt" xml:space="preserve">
+    <value>√</value>
+  </data>
+  <data name="EditorStringId.CalculatorButtonEqual" xml:space="preserve">
+    <value>=</value>
+  </data>
+  <data name="EditorStringId.CalculatorDivisionByZeroError" xml:space="preserve">
+    <value>Cannot divide by zero</value>
+  </data>
+  <data name="EditorStringId.CalculatorError" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="EditorStringId.CalculatorInvalidInputError" xml:space="preserve">
+    <value>Invalid input</value>
+  </data>
+  <data name="EditorStringId.FilterCriteriaInvalidExpression" xml:space="preserve">
+    <value>The specified expression contains invalid symbols (line {0}, character {1}).</value>
+  </data>
+  <data name="EditorStringId.FilterCriteriaInvalidExpressionEx" xml:space="preserve">
+    <value>The specified expression is invalid.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_Title" xml:space="preserve">
+    <value>Expression Editor</value>
+  </data>
+  <data name="EditorStringId.FilterGroupAnd" xml:space="preserve">
+    <value>And</value>
+  </data>
+  <data name="EditorStringId.FilterGroupOr" xml:space="preserve">
+    <value>Or</value>
+  </data>
+  <data name="EditorStringId.FilterGroupNotAnd" xml:space="preserve">
+    <value>NotAnd</value>
+  </data>
+  <data name="EditorStringId.FilterGroupNotOr" xml:space="preserve">
+    <value>NotOr</value>
+  </data>
+  <data name="EditorStringId.FilterGroupAddCondition" xml:space="preserve">
+    <value>Add Condition</value>
+  </data>
+  <data name="EditorStringId.FilterGroupAddGroup" xml:space="preserve">
+    <value>Add Group</value>
+  </data>
+  <data name="EditorStringId.FilterGroupAddCustomExpression" xml:space="preserve">
+    <value>Add Custom Expression</value>
+  </data>
+  <data name="EditorStringId.FilterGroupRemoveGroup" xml:space="preserve">
+    <value>Remove Group</value>
+  </data>
+  <data name="EditorStringId.FilterGroupClearAll" xml:space="preserve">
+    <value>Clear All</value>
+  </data>
+  <data name="EditorStringId.FilterClauseAnyOf" xml:space="preserve">
+    <value>Is any of</value>
+  </data>
+  <data name="EditorStringId.FilterClauseBeginsWith" xml:space="preserve">
+    <value>Begins with</value>
+  </data>
+  <data name="EditorStringId.FilterClauseBetween" xml:space="preserve">
+    <value>Is between</value>
+  </data>
+  <data name="EditorStringId.FilterClauseBetweenAnd" xml:space="preserve">
+    <value>and</value>
+  </data>
+  <data name="EditorStringId.FilterClauseContains" xml:space="preserve">
+    <value>Contains</value>
+  </data>
+  <data name="EditorStringId.FilterClauseEndsWith" xml:space="preserve">
+    <value>Ends with</value>
+  </data>
+  <data name="EditorStringId.FilterClauseEquals" xml:space="preserve">
+    <value>Equals</value>
+  </data>
+  <data name="EditorStringId.FilterClauseGreater" xml:space="preserve">
+    <value>Is greater than</value>
+  </data>
+  <data name="EditorStringId.FilterClauseGreaterOrEqual" xml:space="preserve">
+    <value>Is greater than or equal to</value>
+  </data>
+  <data name="EditorStringId.FilterClauseIsNotNull" xml:space="preserve">
+    <value>Is not null</value>
+  </data>
+  <data name="EditorStringId.FilterClauseIsNull" xml:space="preserve">
+    <value>Is null</value>
+  </data>
+  <data name="EditorStringId.FilterClauseLess" xml:space="preserve">
+    <value>Is less than</value>
+  </data>
+  <data name="EditorStringId.FilterClauseLessOrEqual" xml:space="preserve">
+    <value>Is less than or equal to</value>
+  </data>
+  <data name="EditorStringId.FilterClauseLike" xml:space="preserve">
+    <value>Is like</value>
+  </data>
+  <data name="EditorStringId.FilterClauseNoneOf" xml:space="preserve">
+    <value>Is none of</value>
+  </data>
+  <data name="EditorStringId.FilterClauseNotBetween" xml:space="preserve">
+    <value>Is not between</value>
+  </data>
+  <data name="EditorStringId.FilterClauseDoesNotContain" xml:space="preserve">
+    <value>Does not contain</value>
+  </data>
+  <data name="EditorStringId.FilterClauseDoesNotEqual" xml:space="preserve">
+    <value>Does not equal</value>
+  </data>
+  <data name="EditorStringId.FilterClauseNotLike" xml:space="preserve">
+    <value>Is not like</value>
+  </data>
+  <data name="EditorStringId.FilterEmptyValueText" xml:space="preserve">
+    <value>&lt;enter a value&gt;</value>
+  </data>
+  <data name="EditorStringId.FilterEmptyPropertyText" xml:space="preserve">
+    <value>&lt;select a property&gt;</value>
+  </data>
+  <data name="EditorStringId.FilterEmptyParameterText" xml:space="preserve">
+    <value>&lt;select a parameter&gt;</value>
+  </data>
+  <data name="EditorStringId.FilterEmptyDateTimeFunctionText" xml:space="preserve">
+    <value>&lt;select a DateTime function&gt;</value>
+  </data>
+  <data name="EditorStringId.FilterRulesEmptyValueText" xml:space="preserve">
+    <value>Enter a value...</value>
+  </data>
+  <data name="EditorStringId.FilterNoPropertiesFoundText" xml:space="preserve">
+    <value>No Properties Found</value>
+  </data>
+  <data name="EditorStringId.FilterClauseIsNullOrEmpty" xml:space="preserve">
+    <value>Is blank</value>
+  </data>
+  <data name="EditorStringId.FilterClauseIsNotNullOrEmpty" xml:space="preserve">
+    <value>Is not blank</value>
+  </data>
+  <data name="EditorStringId.FilterClauseIsBeyondThisYear" xml:space="preserve">
+    <value>Is Beyond This Year</value>
+  </data>
+  <data name="EditorStringId.FilterClauseIsLaterThisYear" xml:space="preserve">
+    <value>Is Later This Year</value>
+  </data>
+  <data name="EditorStringId.FilterClauseIsLaterThisMonth" xml:space="preserve">
+    <value>Is Later This Month</value>
+  </data>
+  <data name="EditorStringId.FilterClauseIsNextWeek" xml:space="preserve">
+    <value>Is Next Week</value>
+  </data>
+  <data name="EditorStringId.FilterClauseIsLaterThisWeek" xml:space="preserve">
+    <value>Is Later This Week</value>
+  </data>
+  <data name="EditorStringId.FilterClauseIsTomorrow" xml:space="preserve">
+    <value>Is Tomorrow</value>
+  </data>
+  <data name="EditorStringId.FilterClauseIsToday" xml:space="preserve">
+    <value>Is Today</value>
+  </data>
+  <data name="EditorStringId.FilterClauseIsYesterday" xml:space="preserve">
+    <value>Is Yesterday</value>
+  </data>
+  <data name="EditorStringId.FilterClauseIsEarlierThisWeek" xml:space="preserve">
+    <value>Is Earlier This Week</value>
+  </data>
+  <data name="EditorStringId.FilterClauseIsLastWeek" xml:space="preserve">
+    <value>Is Last Week</value>
+  </data>
+  <data name="EditorStringId.FilterClauseIsEarlierThisMonth" xml:space="preserve">
+    <value>Is Earlier This Month</value>
+  </data>
+  <data name="EditorStringId.FilterClauseIsEarlierThisYear" xml:space="preserve">
+    <value>Is Earlier This Year</value>
+  </data>
+  <data name="EditorStringId.FilterClauseIsPriorThisYear" xml:space="preserve">
+    <value>Is Prior This Year</value>
+  </data>
+  <data name="EditorStringId.FilterDateTimeOperatorMenuCaption" xml:space="preserve">
+    <value>DateTime operators</value>
+  </data>
+  <data name="EditorStringId.FilterClauseIsOutlookIntervalBeyondThisYear" xml:space="preserve">
+    <value>Beyond This Year</value>
+  </data>
+  <data name="EditorStringId.FilterClauseIsOutlookIntervalLaterThisYear" xml:space="preserve">
+    <value>Later This Year</value>
+  </data>
+  <data name="EditorStringId.FilterClauseIsOutlookIntervalLaterThisMonth" xml:space="preserve">
+    <value>Later This Month</value>
+  </data>
+  <data name="EditorStringId.FilterClauseIsOutlookIntervalNextWeek" xml:space="preserve">
+    <value>Next Week</value>
+  </data>
+  <data name="EditorStringId.FilterClauseIsOutlookIntervalLaterThisWeek" xml:space="preserve">
+    <value>Later This Week</value>
+  </data>
+  <data name="EditorStringId.FilterClauseIsOutlookIntervalTomorrow" xml:space="preserve">
+    <value>Tomorrow</value>
+  </data>
+  <data name="EditorStringId.FilterClauseIsOutlookIntervalToday" xml:space="preserve">
+    <value>Today</value>
+  </data>
+  <data name="EditorStringId.FilterClauseIsOutlookIntervalYesterday" xml:space="preserve">
+    <value>Yesterday</value>
+  </data>
+  <data name="EditorStringId.FilterClauseIsOutlookIntervalEarlierThisWeek" xml:space="preserve">
+    <value>Earlier This Week</value>
+  </data>
+  <data name="EditorStringId.FilterClauseIsOutlookIntervalLastWeek" xml:space="preserve">
+    <value>Last Week</value>
+  </data>
+  <data name="EditorStringId.FilterClauseIsOutlookIntervalEarlierThisMonth" xml:space="preserve">
+    <value>Earlier This Month</value>
+  </data>
+  <data name="EditorStringId.FilterClauseIsOutlookIntervalEarlierThisYear" xml:space="preserve">
+    <value>Earlier This Year</value>
+  </data>
+  <data name="EditorStringId.FilterClauseIsOutlookIntervalPriorThisYear" xml:space="preserve">
+    <value>Prior This Year</value>
+  </data>
+  <data name="EditorStringId.DateIntervalsMenuCaption" xml:space="preserve">
+    <value>Date intervals</value>
+  </data>
+  <data name="EditorStringId.FilterEditorChecked" xml:space="preserve">
+    <value>Checked</value>
+  </data>
+  <data name="EditorStringId.FilterEditorUnchecked" xml:space="preserve">
+    <value>Unchecked</value>
+  </data>
+  <data name="EditorStringId.FilterToolTipNodeAction" xml:space="preserve">
+    <value>Actions</value>
+  </data>
+  <data name="EditorStringId.FilterToolTipNodeAdd" xml:space="preserve">
+    <value>Adds a new condition to this group</value>
+  </data>
+  <data name="EditorStringId.FilterToolTipNodeRemove" xml:space="preserve">
+    <value>Removes this condition</value>
+  </data>
+  <data name="EditorStringId.FilterToolTipValueType" xml:space="preserve">
+    <value>Compare with a value / another field's value</value>
+  </data>
+  <data name="EditorStringId.FilterToolTipElementAdd" xml:space="preserve">
+    <value>Adds a new item to the list</value>
+  </data>
+  <data name="EditorStringId.FilterToolTipElementEdit" xml:space="preserve">
+    <value>Edits this condition in the Expression Editor</value>
+  </data>
+  <data name="EditorStringId.FilterToolTipKeysAdd" xml:space="preserve">
+    <value>(Use the Insert or Add key)</value>
+  </data>
+  <data name="EditorStringId.FilterToolTipKeysRemove" xml:space="preserve">
+    <value>(Use the Delete or Subtract key)</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_Max_Description" xml:space="preserve">
+    <value>Max(Value1, Value2)
+Returns the maximum value from the specified values.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_Min_Description" xml:space="preserve">
+    <value>Min(Value1, Value2)
+Returns the minimum value from the specified values.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_IsThisWeek_Description" xml:space="preserve">
+    <value>IsThisWeek(DateTime)
+Returns True if the specified date falls within the current week.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_IsThisMonth_Description" xml:space="preserve">
+    <value>IsThisMonth(DateTime)
+Returns True if the specified date falls within the current month.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_IsThisYear_Description" xml:space="preserve">
+    <value>IsThisYear(DateTime)
+Returns True if the specified date falls within the current year.</value>
+  </data>
+  <data name="EditorStringId.FilterPanelEditFilter" xml:space="preserve">
+    <value>Edit Filter</value>
+  </data>
+  <data name="EditorStringId.FilterPanelClearFilter" xml:space="preserve">
+    <value>Clear Filter</value>
+  </data>
+  <data name="EditorStringId.FilterPanelEnableFilter" xml:space="preserve">
+    <value>Enable Filter</value>
+  </data>
+  <data name="EditorStringId.FilterPanelDisableFilter" xml:space="preserve">
+    <value>Disable Filter</value>
+  </data>
+  <data name="EditorStringId.FilterPanelExpand" xml:space="preserve">
+    <value>Expand Panel</value>
+  </data>
+  <data name="EditorStringId.FilterPanelMRU" xml:space="preserve">
+    <value>Most Recently Used</value>
+  </data>
+  <data name="EditorStringId.FilterPanelCollapse" xml:space="preserve">
+    <value>Collapse Panel</value>
+  </data>
+  <data name="EditorStringId.ColorEdit_AutomaticButtonCaption" xml:space="preserve">
+    <value>Automatic</value>
+  </data>
+  <data name="EditorStringId.ColorEdit_ColorChooserWindowTitle" xml:space="preserve">
+    <value>Colors</value>
+  </data>
+  <data name="EditorStringId.ColorEdit_MoreColorsButtonCaption" xml:space="preserve">
+    <value>More Colors...</value>
+  </data>
+  <data name="EditorStringId.ColorEdit_NoColorButtonCaption" xml:space="preserve">
+    <value>No Color</value>
+  </data>
+  <data name="EditorStringId.ColorEdit_RecentColorsCaption" xml:space="preserve">
+    <value>Recent Colors</value>
+  </data>
+  <data name="EditorStringId.ColorEdit_ThemeColorsCaption" xml:space="preserve">
+    <value>Theme Colors</value>
+  </data>
+  <data name="EditorStringId.ColorEdit_StandardColorsCaption" xml:space="preserve">
+    <value>Standard Colors</value>
+  </data>
+  <data name="EditorStringId.Copy" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="EditorStringId.Cut" xml:space="preserve">
+    <value>Cut</value>
+  </data>
+  <data name="EditorStringId.ImageEdit_OpenFileFilter" xml:space="preserve">
+    <value>Image Files(*.BMP;*.JPG;*.GIF;*.PNG)|*.BMP;*.JPG;*.GIF;*.PNG|All files (*.*)|*.*</value>
+  </data>
+  <data name="EditorStringId.ImageEdit_OpenFileFilter_SL" xml:space="preserve">
+    <value>Image Files(*.JPG;*.PNG)|*.JPG;*.PNG|All files (*.*)|*.*</value>
+  </data>
+  <data name="EditorStringId.ImageEdit_SaveFileFilter" xml:space="preserve">
+    <value>PNG(*.png)|*.png|BMP(*.bmp)|*.BMP|JPG(*.jpg)|*.jpg|GIF(*.gif)|*.gif</value>
+  </data>
+  <data name="EditorStringId.ListBoxSelectAllSelectionMode" xml:space="preserve">
+    <value>Can only call SelectAll when SelectionMode is Multiple or Extended.</value>
+  </data>
+  <data name="EditorStringId.ImageEdit_InvalidFormatMessage" xml:space="preserve">
+    <value>Wrong image format</value>
+  </data>
+  <data name="EditorStringId.Open" xml:space="preserve">
+    <value>Open</value>
+  </data>
+  <data name="EditorStringId.Paste" xml:space="preserve">
+    <value>Paste</value>
+  </data>
+  <data name="EditorStringId.Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="EditorStringId.OutOfRange" xml:space="preserve">
+    <value>Value is out of range</value>
+  </data>
+  <data name="EditorStringId.MaskIncomplete" xml:space="preserve">
+    <value>Mask incomplete</value>
+  </data>
+  <data name="EditorStringId.DisplayFormatTextControlExample" xml:space="preserve">
+    <value>Example: </value>
+  </data>
+  <data name="EditorStringId.DisplayFormatTextControlPrefix" xml:space="preserve">
+    <value>Prefix:</value>
+  </data>
+  <data name="EditorStringId.DisplayFormatTextControlSuffix" xml:space="preserve">
+    <value>Suffix:</value>
+  </data>
+  <data name="EditorStringId.DisplayFormatTextControlDisplayFormatText" xml:space="preserve">
+    <value>Display format text:</value>
+  </data>
+  <data name="EditorStringId.DisplayFormatHelperWrongDisplayFormatValue" xml:space="preserve">
+    <value>Invalid display format text</value>
+  </data>
+  <data name="EditorStringId.DataTypeStringExample" xml:space="preserve">
+    <value>ABCXYZ</value>
+  </data>
+  <data name="EditorStringId.DataTypeCharExample" xml:space="preserve">
+    <value>A</value>
+  </data>
+  <data name="EditorStringId.DisplayFormatNullValue" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="EditorStringId.DisplayFormatGroupTypeDefault" xml:space="preserve">
+    <value>Default</value>
+  </data>
+  <data name="EditorStringId.DisplayFormatGroupTypeNumber" xml:space="preserve">
+    <value>Number</value>
+  </data>
+  <data name="EditorStringId.DisplayFormatGroupTypePercent" xml:space="preserve">
+    <value>Percent</value>
+  </data>
+  <data name="EditorStringId.DisplayFormatGroupTypeCurrency" xml:space="preserve">
+    <value>Currency</value>
+  </data>
+  <data name="EditorStringId.DisplayFormatGroupTypeSpecial" xml:space="preserve">
+    <value>Special</value>
+  </data>
+  <data name="EditorStringId.DisplayFormatGroupTypeDatetime" xml:space="preserve">
+    <value>Datetime</value>
+  </data>
+  <data name="EditorStringId.DisplayFormatGroupTypeCustom" xml:space="preserve">
+    <value>Custom</value>
+  </data>
+  <data name="EditorStringId.PasswordBoxEditToolTipHeader" xml:space="preserve">
+    <value>Caps Lock is On</value>
+  </data>
+  <data name="EditorStringId.PasswordBoxEditToolTipContent" xml:space="preserve">
+    <value>Enabling Caps Lock may result in entering password incorrectly.
+Disable Caps Lock before entering your password.</value>
+  </data>
+  <data name="EditorStringId.CantModifySelectedDates" xml:space="preserve">
+    <value>Can only change SelectedDates collection in multiple selection mode. Use FocusedDate in single select mode.</value>
+  </data>
+  <data name="EditorStringId.Page" xml:space="preserve">
+    <value>Page</value>
+  </data>
+  <data name="EditorStringId.Of" xml:space="preserve">
+    <value>of {0}</value>
+  </data>
+  <data name="EditorStringId.RefreshPage" xml:space="preserve">
+    <value>Refresh</value>
+  </data>
+  <data name="EditorStringId.FirstPage" xml:space="preserve">
+    <value>First Page</value>
+  </data>
+  <data name="EditorStringId.LastPage" xml:space="preserve">
+    <value>Last Page</value>
+  </data>
+  <data name="EditorStringId.NextPage" xml:space="preserve">
+    <value>Next Page</value>
+  </data>
+  <data name="EditorStringId.PrevPage" xml:space="preserve">
+    <value>Previous Page</value>
+  </data>
+  <data name="EditorStringId.WaitIndicatorText" xml:space="preserve">
+    <value>Loading...</value>
+  </data>
+  <data name="EditorStringId.LookUpFind" xml:space="preserve">
+    <value>Find</value>
+  </data>
+  <data name="EditorStringId.LookUpSearch" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="EditorStringId.LookUpClose" xml:space="preserve">
+    <value>Close Search Panel</value>
+  </data>
+  <data name="EditorStringId.LookUpShow" xml:space="preserve">
+    <value>Show Search Panel</value>
+  </data>
+  <data name="EditorStringId.LookUpAddNew" xml:space="preserve">
+    <value>Add New</value>
+  </data>
+  <data name="EditorStringId.LookUpNext" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="EditorStringId.LookUpPrevious" xml:space="preserve">
+    <value>Previous</value>
+  </data>
+  <data name="EditorStringId.LookUpResultInfo" xml:space="preserve">
+    <value>{0}/{1}</value>
+  </data>
+  <data name="EditorStringId.SetNullValue" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="EditorStringId.ColorEdit_DefaultColors_Black" xml:space="preserve">
+    <value>Black</value>
+  </data>
+  <data name="EditorStringId.ColorEdit_DefaultColors_Blue" xml:space="preserve">
+    <value>Blue</value>
+  </data>
+  <data name="EditorStringId.ColorEdit_DefaultColors_DarkBlue" xml:space="preserve">
+    <value>DarkBlue</value>
+  </data>
+  <data name="EditorStringId.ColorEdit_DefaultColors_DarkRed" xml:space="preserve">
+    <value>DarkRed</value>
+  </data>
+  <data name="EditorStringId.ColorEdit_DefaultColors_Green" xml:space="preserve">
+    <value>Green</value>
+  </data>
+  <data name="EditorStringId.ColorEdit_DefaultColors_LightBlue" xml:space="preserve">
+    <value>LightBlue</value>
+  </data>
+  <data name="EditorStringId.ColorEdit_DefaultColors_LightGreen" xml:space="preserve">
+    <value>LightGreen</value>
+  </data>
+  <data name="EditorStringId.ColorEdit_DefaultColors_Orange" xml:space="preserve">
+    <value>Orange</value>
+  </data>
+  <data name="EditorStringId.ColorEdit_DefaultColors_Purple" xml:space="preserve">
+    <value>Purple</value>
+  </data>
+  <data name="EditorStringId.ColorEdit_DefaultColors_Red" xml:space="preserve">
+    <value>Red</value>
+  </data>
+  <data name="EditorStringId.ColorEdit_DefaultColors_White" xml:space="preserve">
+    <value>White</value>
+  </data>
+  <data name="EditorStringId.ColorEdit_DefaultColors_Yellow" xml:space="preserve">
+    <value>Yellow</value>
+  </data>
+  <data name="EditorStringId.ConfirmationDialogCaption" xml:space="preserve">
+    <value>Confirmation</value>
+  </data>
+  <data name="EditorStringId.ConfirmationDialogMessage" xml:space="preserve">
+    <value>The font "{0}" is not available on your system. Do you want to use it anyway?</value>
+  </data>
+  <data name="EditorStringId.CheckChecked" xml:space="preserve">
+    <value>Checked</value>
+  </data>
+  <data name="EditorStringId.CheckUnchecked" xml:space="preserve">
+    <value>Unchecked</value>
+  </data>
+  <data name="EditorStringId.CheckIndeterminate" xml:space="preserve">
+    <value>Indeterminate</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_FunctionType_AggregateItems" xml:space="preserve">
+    <value>Aggregate</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_AvgAggregate_Description" xml:space="preserve">
+    <value>Avg(Value)
+Evaluates the average of the values in the collection.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_CountAggregate_Description" xml:space="preserve">
+    <value>Count()
+Returns the number of objects in a collection.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_ExistsAggregate_Description" xml:space="preserve">
+    <value>Exists()
+Determines whether the object exists in the collection.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_MaxAggregate_Description" xml:space="preserve">
+    <value>Max(Value)
+Returns the maximum expression value in a collection.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_MinAggregate_Description" xml:space="preserve">
+    <value>Min(Value)
+Returns the minimum expression value in a collection.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_SumAggregate_Description" xml:space="preserve">
+    <value>Sum(Value)
+Returns the sum of all the expression values in the collection.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_SingleAggregate_Description" xml:space="preserve">
+    <value>Single()
+Returns a single object from the collection.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_RowCount_Description" xml:space="preserve">
+    <value>Returns the total amount of data rows in a datasource.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_CurrentRowIndex_Description" xml:space="preserve">
+    <value>Returns the index of the current data row in a datasource. Note that this index is zero-based.</value>
+  </data>
+  <data name="EditorStringId.InvalidValueConversion" xml:space="preserve">
+    <value>Invalid value conversion</value>
+  </data>
+  <data name="EditorStringId.SparklineViewArea" xml:space="preserve">
+    <value>Area</value>
+  </data>
+  <data name="EditorStringId.SparklineViewBar" xml:space="preserve">
+    <value>Bar</value>
+  </data>
+  <data name="EditorStringId.SparklineViewLine" xml:space="preserve">
+    <value>Line</value>
+  </data>
+  <data name="EditorStringId.SparklineViewWinLoss" xml:space="preserve">
+    <value>WinLoss</value>
+  </data>
+  <data name="EditorStringId.CMYK" xml:space="preserve">
+    <value>CMYK</value>
+  </data>
+  <data name="EditorStringId.RGB" xml:space="preserve">
+    <value>RGB</value>
+  </data>
+  <data name="EditorStringId.HLS" xml:space="preserve">
+    <value>HLS</value>
+  </data>
+  <data name="EditorStringId.HSB" xml:space="preserve">
+    <value>HSB</value>
+  </data>
+  <data name="EditorStringId.ColorPickerAlpha" xml:space="preserve">
+    <value>Alpha</value>
+  </data>
+  <data name="EditorStringId.ColorPickerBlue" xml:space="preserve">
+    <value>Blue</value>
+  </data>
+  <data name="EditorStringId.ColorPickerBrightness" xml:space="preserve">
+    <value>Brightness</value>
+  </data>
+  <data name="EditorStringId.ColorPickerCyan" xml:space="preserve">
+    <value>Cyan</value>
+  </data>
+  <data name="EditorStringId.ColorPickerGreen" xml:space="preserve">
+    <value>Green</value>
+  </data>
+  <data name="EditorStringId.ColorPickerHue" xml:space="preserve">
+    <value>Hue</value>
+  </data>
+  <data name="EditorStringId.ColorPickerKeyColor" xml:space="preserve">
+    <value>Key color</value>
+  </data>
+  <data name="EditorStringId.ColorPickerLightness" xml:space="preserve">
+    <value>Lightness</value>
+  </data>
+  <data name="EditorStringId.ColorPickerMagenta" xml:space="preserve">
+    <value>Magenta</value>
+  </data>
+  <data name="EditorStringId.ColorPickerRed" xml:space="preserve">
+    <value>Red</value>
+  </data>
+  <data name="EditorStringId.ColorPickerSaturation" xml:space="preserve">
+    <value>Saturation</value>
+  </data>
+  <data name="EditorStringId.ColorPickerYellow" xml:space="preserve">
+    <value>Yellow</value>
+  </data>
+  <data name="EditorStringId.Caption_CommonCharactersToggleButton" xml:space="preserve">
+    <value>Common Characters</value>
+  </data>
+  <data name="EditorStringId.Caption_SpecialCharactersToggleButton" xml:space="preserve">
+    <value>Special Characters</value>
+  </data>
+  <data name="EditorStringId.Caption_SymbolFormSearchByCode" xml:space="preserve">
+    <value>Search by code:</value>
+  </data>
+  <data name="EditorStringId.Caption_SymbolFormFontName" xml:space="preserve">
+    <value>Font name:</value>
+  </data>
+  <data name="EditorStringId.Caption_SymbolFormCharacterSet" xml:space="preserve">
+    <value>Character set:</value>
+  </data>
+  <data name="EditorStringId.Caption_SymbolFormFilter" xml:space="preserve">
+    <value>Filter:</value>
+  </data>
+  <data name="EditorStringId.DatePickerHours" xml:space="preserve">
+    <value>hours</value>
+  </data>
+  <data name="EditorStringId.DatePickerMinutes" xml:space="preserve">
+    <value>mins</value>
+  </data>
+  <data name="EditorStringId.DatePickerSeconds" xml:space="preserve">
+    <value>secs</value>
+  </data>
+  <data name="EditorStringId.DatePickerMilliseconds" xml:space="preserve">
+    <value>msecs</value>
+  </data>
+  <data name="EditorStringId.FilterClauseLocalDateTimeThisYear" xml:space="preserve">
+    <value>This year</value>
+  </data>
+  <data name="EditorStringId.FilterClauseLocalDateTimeThisMonth" xml:space="preserve">
+    <value>This month</value>
+  </data>
+  <data name="EditorStringId.FilterClauseLocalDateTimeLastWeek" xml:space="preserve">
+    <value>Last week</value>
+  </data>
+  <data name="EditorStringId.FilterClauseLocalDateTimeThisWeek" xml:space="preserve">
+    <value>This week</value>
+  </data>
+  <data name="EditorStringId.FilterClauseLocalDateTimeYesterday" xml:space="preserve">
+    <value>Yesterday</value>
+  </data>
+  <data name="EditorStringId.FilterClauseLocalDateTimeToday" xml:space="preserve">
+    <value>Today</value>
+  </data>
+  <data name="EditorStringId.FilterClauseLocalDateTimeNow" xml:space="preserve">
+    <value>Now</value>
+  </data>
+  <data name="EditorStringId.FilterClauseLocalDateTimeTomorrow" xml:space="preserve">
+    <value>Tomorrow</value>
+  </data>
+  <data name="EditorStringId.FilterClauseLocalDateTimeDayAfterTomorrow" xml:space="preserve">
+    <value>Day after tomorrow</value>
+  </data>
+  <data name="EditorStringId.FilterClauseLocalDateTimeNextWeek" xml:space="preserve">
+    <value>Next week</value>
+  </data>
+  <data name="EditorStringId.FilterClauseLocalDateTimeTwoWeeksAway" xml:space="preserve">
+    <value>Two weeks away</value>
+  </data>
+  <data name="EditorStringId.FilterClauseLocalDateTimeNextMonth" xml:space="preserve">
+    <value>Next month</value>
+  </data>
+  <data name="EditorStringId.FilterClauseLocalDateTimeNextYear" xml:space="preserve">
+    <value>Next year</value>
+  </data>
+  <data name="EditorStringId.FilterClauseLocalDateTimeTwoMonthsAway" xml:space="preserve">
+    <value>Two months away</value>
+  </data>
+  <data name="EditorStringId.FilterClauseLocalDateTimeTwoYearsAway" xml:space="preserve">
+    <value>Two years away</value>
+  </data>
+  <data name="EditorStringId.FilterClauseLocalDateTimeLastMonth" xml:space="preserve">
+    <value>Last month</value>
+  </data>
+  <data name="EditorStringId.FilterClauseLocalDateTimeLastYear" xml:space="preserve">
+    <value>Last year</value>
+  </data>
+  <data name="EditorStringId.FilterClauseLocalDateTimeYearBeforeToday" xml:space="preserve">
+    <value>Before today</value>
+  </data>
+  <data name="EditorStringId.FilterElementClauseFrom" xml:space="preserve">
+    <value>From</value>
+  </data>
+  <data name="EditorStringId.FilterElementClauseTo" xml:space="preserve">
+    <value>To</value>
+  </data>
+  <data name="EditorStringId.FilterElementFilterRules" xml:space="preserve">
+    <value>Filter Rules</value>
+  </data>
+  <data name="EditorStringId.FilterElementFilterValues" xml:space="preserve">
+    <value>Filter Values</value>
+  </data>
+  <data name="EditorStringId.FilterElementAllItem" xml:space="preserve">
+    <value>(All)</value>
+  </data>
+  <data name="EditorStringId.FilterElementBlanksItem" xml:space="preserve">
+    <value>(Blanks)</value>
+  </data>
+  <data name="EditorStringId.FilterElementEmptyItem" xml:space="preserve">
+    <value>(Empty)</value>
+  </data>
+  <data name="EditorStringId.FilterElementRadioAllItem" xml:space="preserve">
+    <value>(All)</value>
+  </data>
+  <data name="EditorStringId.FilterElementDateRangeFrom" xml:space="preserve">
+    <value>From</value>
+  </data>
+  <data name="EditorStringId.FilterElementDateRangeTo" xml:space="preserve">
+    <value>To</value>
+  </data>
+  <data name="EditorStringId.BrushEditNone" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="EditorStringId.BrushEditSolid" xml:space="preserve">
+    <value>Solid</value>
+  </data>
+  <data name="EditorStringId.BrushEditLinear" xml:space="preserve">
+    <value>Linear</value>
+  </data>
+  <data name="EditorStringId.BrushEditRadial" xml:space="preserve">
+    <value>Radial</value>
+  </data>
+  <data name="EditorStringId.BrushEditStartPoint" xml:space="preserve">
+    <value>StartPoint</value>
+  </data>
+  <data name="EditorStringId.BrushEditStartPointDescription" xml:space="preserve">
+    <value>Gets or sets the two-dimensional coordinates for the start point of the linear gradient.</value>
+  </data>
+  <data name="EditorStringId.BrushEditEndPoint" xml:space="preserve">
+    <value>EndPoint</value>
+  </data>
+  <data name="EditorStringId.BrushEditEndPointDescription" xml:space="preserve">
+    <value>Gets or sets the two-dimensional coordinates for the end point of the linear gradient.</value>
+  </data>
+  <data name="EditorStringId.BrushEditMappingMode" xml:space="preserve">
+    <value>MappingMode</value>
+  </data>
+  <data name="EditorStringId.BrushEditMappingModeDescription" xml:space="preserve">
+    <value>Gets or sets a value that specifies whether the gradient brush positioning coordinates are absolute or relative to the output area.</value>
+  </data>
+  <data name="EditorStringId.BrushEditSpreadMethod" xml:space="preserve">
+    <value>SpreadMethod</value>
+  </data>
+  <data name="EditorStringId.BrushEditSpreadMethodDescription" xml:space="preserve">
+    <value>Gets or sets the type of spread method that specifies how to draw a gradient that starts or ends inside the bounds of the object to be painted.</value>
+  </data>
+  <data name="EditorStringId.BrushEditGradientOrigin" xml:space="preserve">
+    <value>GradientOrigin</value>
+  </data>
+  <data name="EditorStringId.BrushEditGradientOriginDescription" xml:space="preserve">
+    <value>Gets or sets the two-dimensional focal point that defines the beginning of a gradient.</value>
+  </data>
+  <data name="EditorStringId.BrushEditCenter" xml:space="preserve">
+    <value>Center</value>
+  </data>
+  <data name="EditorStringId.BrushEditCenterDescription" xml:space="preserve">
+    <value>Gets or sets the center of the outermost circle of the radial gradient.</value>
+  </data>
+  <data name="EditorStringId.BrushEditRadiusX" xml:space="preserve">
+    <value>RadiusX</value>
+  </data>
+  <data name="EditorStringId.BrushEditRadiusXDescription" xml:space="preserve">
+    <value>Gets or sets the horizontal radius of the outermost circle of the radial gradient.</value>
+  </data>
+  <data name="EditorStringId.BrushEditRadiusY" xml:space="preserve">
+    <value>RadiusY</value>
+  </data>
+  <data name="EditorStringId.BrushEditRadiusYDescription" xml:space="preserve">
+    <value>Gets or sets the vertical radius of the outermost circle of the radial gradient.</value>
+  </data>
+  <data name="EditorStringId.TrackBarEditRangeCaption" xml:space="preserve">
+    <value>{0} - {1}</value>
+  </data>
+  <data name="EditorStringId.TokenEditorNewTokenText" xml:space="preserve">
+    <value>New...</value>
+  </data>
+  <data name="EditorStringId.CameraAgainButtonCaption" xml:space="preserve">
+    <value>Try Again</value>
+  </data>
+  <data name="EditorStringId.CameraBrightnessCaption" xml:space="preserve">
+    <value>Brightness:</value>
+  </data>
+  <data name="EditorStringId.CameraCaptureButtonCaption" xml:space="preserve">
+    <value>Capture</value>
+  </data>
+  <data name="EditorStringId.CameraContrastCaption" xml:space="preserve">
+    <value>Contrast:</value>
+  </data>
+  <data name="EditorStringId.CameraDesaturateCaption" xml:space="preserve">
+    <value>Desaturate:</value>
+  </data>
+  <data name="EditorStringId.CameraDeviceCaption" xml:space="preserve">
+    <value>Device:</value>
+  </data>
+  <data name="EditorStringId.CameraResetButtonCaption" xml:space="preserve">
+    <value>Reset To Default</value>
+  </data>
+  <data name="EditorStringId.CameraResolutionCaption" xml:space="preserve">
+    <value>Resolution:</value>
+  </data>
+  <data name="EditorStringId.CameraSettingsCaption" xml:space="preserve">
+    <value>Camera Settings</value>
+  </data>
+  <data name="EditorStringId.CameraTakePictureCaption" xml:space="preserve">
+    <value>Take Picture</value>
+  </data>
+  <data name="EditorStringId.CameraTakePictureToolTip" xml:space="preserve">
+    <value>Take Picture From Camera</value>
+  </data>
+  <data name="EditorStringId.CameraErrorCaption" xml:space="preserve">
+    <value>The webcam is not available. Try closing other applications that might be using it.</value>
+  </data>
+  <data name="EditorStringId.CameraRefreshButtonCaption" xml:space="preserve">
+    <value>Refresh</value>
+  </data>
+  <data name="EditorStringId.CameraNoDevicesErrorCaption" xml:space="preserve">
+    <value>The application couldn't find a webcam.</value>
+  </data>
+  <data name="EditorStringId.Caption_EncodingUnicode" xml:space="preserve">
+    <value>Unicode</value>
+  </data>
+  <data name="EditorStringId.Caption_UnicodeCategoryAllSymbols" xml:space="preserve">
+    <value>All Symbols</value>
+  </data>
+  <data name="EditorStringId.Caption_UnicodeCategoryClosePunctuation" xml:space="preserve">
+    <value>Close Punctuation</value>
+  </data>
+  <data name="EditorStringId.Caption_UnicodeCategoryConnectorPunctuation" xml:space="preserve">
+    <value>Connector Punctuation</value>
+  </data>
+  <data name="EditorStringId.Caption_UnicodeCategoryControl" xml:space="preserve">
+    <value>Control</value>
+  </data>
+  <data name="EditorStringId.Caption_UnicodeCategoryCurrencySymbol" xml:space="preserve">
+    <value>Currency Symbol</value>
+  </data>
+  <data name="EditorStringId.Caption_UnicodeCategoryDashPunctuation" xml:space="preserve">
+    <value>Dash Punctuation</value>
+  </data>
+  <data name="EditorStringId.Caption_UnicodeCategoryDecimalDigitNumber" xml:space="preserve">
+    <value>Decimal Digit Number</value>
+  </data>
+  <data name="EditorStringId.Caption_UnicodeCategoryEnclosingMark" xml:space="preserve">
+    <value>Enclosing Mark</value>
+  </data>
+  <data name="EditorStringId.Caption_UnicodeCategoryFinalQuotePunctuation" xml:space="preserve">
+    <value>Final Quote Punctuation</value>
+  </data>
+  <data name="EditorStringId.Caption_UnicodeCategoryFormat" xml:space="preserve">
+    <value>Format</value>
+  </data>
+  <data name="EditorStringId.Caption_UnicodeCategoryInitialQuotePunctuation" xml:space="preserve">
+    <value>Initial Quote Punctuation</value>
+  </data>
+  <data name="EditorStringId.Caption_UnicodeCategoryLetterNumber" xml:space="preserve">
+    <value>Letter Number</value>
+  </data>
+  <data name="EditorStringId.Caption_UnicodeCategoryLineSeparator" xml:space="preserve">
+    <value>Line Separator</value>
+  </data>
+  <data name="EditorStringId.Caption_UnicodeCategoryLowercaseLetter" xml:space="preserve">
+    <value>Lowercase Letter</value>
+  </data>
+  <data name="EditorStringId.Caption_UnicodeCategoryMathSymbol" xml:space="preserve">
+    <value>Math Symbol</value>
+  </data>
+  <data name="EditorStringId.Caption_UnicodeCategoryModifierLetter" xml:space="preserve">
+    <value>Modifier Letter</value>
+  </data>
+  <data name="EditorStringId.Caption_UnicodeCategoryModifierSymbol" xml:space="preserve">
+    <value>Modifier Symbol</value>
+  </data>
+  <data name="EditorStringId.Caption_UnicodeCategoryNonSpacingMark" xml:space="preserve">
+    <value>Nonspacing Mark</value>
+  </data>
+  <data name="EditorStringId.Caption_UnicodeCategoryOpenPunctuation" xml:space="preserve">
+    <value>Open Punctuation</value>
+  </data>
+  <data name="EditorStringId.Caption_UnicodeCategoryOtherLetter" xml:space="preserve">
+    <value>Other Letter</value>
+  </data>
+  <data name="EditorStringId.Caption_UnicodeCategoryOtherNotAssigned" xml:space="preserve">
+    <value>Other Not Assigned</value>
+  </data>
+  <data name="EditorStringId.Caption_UnicodeCategoryOtherNumber" xml:space="preserve">
+    <value>Other Number</value>
+  </data>
+  <data name="EditorStringId.Caption_UnicodeCategoryOtherPunctuation" xml:space="preserve">
+    <value>Other Punctuation</value>
+  </data>
+  <data name="EditorStringId.Caption_UnicodeCategoryOtherSymbol" xml:space="preserve">
+    <value>Other Symbol</value>
+  </data>
+  <data name="EditorStringId.Caption_UnicodeCategoryParagraphSeparator" xml:space="preserve">
+    <value>Paragraph Separator</value>
+  </data>
+  <data name="EditorStringId.Caption_UnicodeCategoryPrivateUse" xml:space="preserve">
+    <value>Private-use</value>
+  </data>
+  <data name="EditorStringId.Caption_UnicodeCategorySpaceSeparator" xml:space="preserve">
+    <value>Space Separator</value>
+  </data>
+  <data name="EditorStringId.Caption_UnicodeCategorySpacingCombiningMark" xml:space="preserve">
+    <value>Spacing Combining Mark</value>
+  </data>
+  <data name="EditorStringId.Caption_UnicodeCategorySurrogate" xml:space="preserve">
+    <value>Surrogate</value>
+  </data>
+  <data name="EditorStringId.Caption_UnicodeCategoryTitlecaseLetter" xml:space="preserve">
+    <value>Titlecase Letter</value>
+  </data>
+  <data name="EditorStringId.Caption_UnicodeCategoryUppercaseLetter" xml:space="preserve">
+    <value>Uppercase Letter</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_LocalDateTimeLastMonth_Description" xml:space="preserve">
+    <value>LocalDateTimeLastMonth()
+Returns a date-time value corresponding to the first day of the previous month.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_LocalDateTimeLastYear_Description" xml:space="preserve">
+    <value>LocalDateTimeLastYear()
+Returns a date-time value corresponding to the first day of the previous year.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_LocalDateTimeTwoMonthsAway_Description" xml:space="preserve">
+    <value>LocalDateTimeTwoMonthsAway()
+Returns a date-time value corresponding to the first day of the month after next.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_LocalDateTimeTwoYearsAway_Description" xml:space="preserve">
+    <value>LocalDateTimeTwoYearsAway()
+Returns a date-time value corresponding to the first day of the year after next.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_LocalDateTimeYearBeforeToday_Description" xml:space="preserve">
+    <value>LocalDateTimeYearBeforeToday()
+Returns a date-time value corresponding to the day one year ago.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_IsApril_Description" xml:space="preserve">
+    <value>IsApril(DateTime)
+Returns True if the specified date falls within April.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_IsAugust_Description" xml:space="preserve">
+    <value>IsAugust(DateTime)
+Returns True if the specified date falls within August.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_IsDecember_Description" xml:space="preserve">
+    <value>IsDecember(DateTime)
+Returns True if the specified date falls within December.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_IsFebruary_Description" xml:space="preserve">
+    <value>IsFebruary(DateTime)
+Returns True if the specified date falls within February.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_IsJanuary_Description" xml:space="preserve">
+    <value>IsJanuary(DateTime)
+Returns True if the specified date falls within January.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_IsJuly_Description" xml:space="preserve">
+    <value>IsJuly(DateTime)
+Returns True if the specified date falls within July.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_IsJune_Description" xml:space="preserve">
+    <value>IsJune(DateTime)
+Returns True if the specified date falls within June.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_IsLastMonth_Description" xml:space="preserve">
+    <value>IsLastMonth(DateTime)
+Returns True if the specified date falls within the previous month.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_IsLastYear_Description" xml:space="preserve">
+    <value>IsLastYear(DateTime)
+Returns True if the specified date falls within the previous year.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_IsMarch_Description" xml:space="preserve">
+    <value>IsMarch(DateTime)
+Returns True if the specified date falls within March.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_IsMay_Description" xml:space="preserve">
+    <value>IsMay(DateTime)
+Returns True if the specified date falls within May.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_IsNextMonth_Description" xml:space="preserve">
+    <value>IsNextMonth(DateTime)
+Returns True if the specified date falls within the next month.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_IsNextYear_Description" xml:space="preserve">
+    <value>IsNextYear(DateTime)
+Returns True if the specified date falls within the next year.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_IsNovember_Description" xml:space="preserve">
+    <value>IsNovember(DateTime)
+Returns True if the specified date falls within November.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_IsOctober_Description" xml:space="preserve">
+    <value>IsOctober(DateTime)
+Returns True if the specified date falls within October.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_IsSeptember_Description" xml:space="preserve">
+    <value>IsSeptember(DateTime)
+Returns True if the specified date falls within September.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_IsYearToDate_Description" xml:space="preserve">
+    <value>IsYearToDate(DateTime)
+Returns True if the specified date falls within the year-to-date period (starting from the first day of the current year and continuing up to the current date).</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_IsSameDay_Description" xml:space="preserve">
+    <value>IsSameDay(DateTime, DateTime)
+Returns True if the specified date-time values fall within the same day.</value>
+  </data>
+  <data name="EditorStringId.ExpressionEditor_FunctionsSearch_NullText" xml:space="preserve">
+    <value>Enter text to search...</value>
+  </data>
+  <data name="EditorStringId.DragDropAddRecords" xml:space="preserve">
+    <value>Add records</value>
+  </data>
+  <data name="EditorStringId.DragDropCannotDrop" xml:space="preserve">
+    <value>Cannot drop here</value>
+  </data>
+  <data name="EditorStringId.DragDropInsertAfter" xml:space="preserve">
+    <value>Insert after record:</value>
+  </data>
+  <data name="EditorStringId.DragDropInsertBefore" xml:space="preserve">
+    <value>Insert before record:</value>
+  </data>
+  <data name="EditorStringId.DragDropMoveToChildren" xml:space="preserve">
+    <value>Move to children collection:</value>
+  </data>
+  <data name="EditorStringId.DragDropMultipleRecords" xml:space="preserve">
+    <value>Dragging {0} records</value>
+  </data>
+  <data name="EditorStringId.DragDropOneRecord" xml:space="preserve">
+    <value>Dragging 1 record:</value>
+  </data>
+  <data name="EditorStringId.FilterClauseIsOn" xml:space="preserve">
+    <value>Is on</value>
+  </data>
+  <data name="EditorStringId.FilterClauseIsNotOn" xml:space="preserve">
+    <value>Is not on</value>
+  </data>
+  <data name="EditorStringId.FilterClauseBetweenDates" xml:space="preserve">
+    <value>Is between dates</value>
+  </data>
+  <data name="EditorStringId.FilterClauseIsOnDates" xml:space="preserve">
+    <value>Is on dates</value>
+  </data>
+  <data name="EditorStringId.FilterClauseIsOnAnyOfTheFollowing" xml:space="preserve">
+    <value>Is on any of the following</value>
+  </data>
+  <data name="EditorStringId.FilterValuesSortModeAvailableFirst" xml:space="preserve">
+    <value>Sort: Availability</value>
+  </data>
+  <data name="EditorStringId.FilterValuesSortModeNoSort" xml:space="preserve">
+    <value>Sort: Value</value>
+  </data>
+  <data name="EditorStringId.FilterValuesSortModePopularFirst" xml:space="preserve">
+    <value>Sort: Quantity</value>
+  </data>
+  <data name="EditorStringId.FormatConditionFilters" xml:space="preserve">
+    <value>Format condition filters</value>
+  </data>
+  <data name="EditorStringId.PredefinedFormatConditionTop" xml:space="preserve">
+    <value>Top N</value>
+  </data>
+  <data name="EditorStringId.PredefinedFormatConditionBottom" xml:space="preserve">
+    <value>Bottom N</value>
+  </data>
+  <data name="EditorStringId.PredefinedFormatConditionAboveAverage" xml:space="preserve">
+    <value>Above average</value>
+  </data>
+  <data name="EditorStringId.PredefinedFormatConditionBelowAverage" xml:space="preserve">
+    <value>Below average</value>
+  </data>
+  <data name="EditorStringId.PredefinedFormatConditionUnique" xml:space="preserve">
+    <value>Unique</value>
+  </data>
+  <data name="EditorStringId.PredefinedFormatConditionDuplicate" xml:space="preserve">
+    <value>Duplicate</value>
+  </data>
+  <data name="EditorStringId.FilterOperandValue" xml:space="preserve">
+    <value>Value</value>
+  </data>
+  <data name="EditorStringId.FilterOperandProperty" xml:space="preserve">
+    <value>Property</value>
+  </data>
+  <data name="EditorStringId.FilterOperandDateTimeFunction" xml:space="preserve">
+    <value>DateTime function</value>
+  </data>
+  <data name="EditorStringId.FilterOperandParameter" xml:space="preserve">
+    <value>Parameter</value>
+  </data>
+  <data name="EditorStringId.PredefinedFilters" xml:space="preserve">
+    <value>Predefined filters</value>
+  </data>
+  <data name="EditorStringId.TimeSpanDays" xml:space="preserve">
+    <value>day</value>
+  </data>
+  <data name="EditorStringId.TimeSpanDaysPlural" xml:space="preserve">
+    <value>days</value>
+  </data>
+  <data name="EditorStringId.TimeSpanDaysShort" xml:space="preserve">
+    <value>d</value>
+  </data>
+  <data name="EditorStringId.TimeSpanHours" xml:space="preserve">
+    <value>hour</value>
+  </data>
+  <data name="EditorStringId.TimeSpanHoursPlural" xml:space="preserve">
+    <value>hours</value>
+  </data>
+  <data name="EditorStringId.TimeSpanHoursShort" xml:space="preserve">
+    <value>h</value>
+  </data>
+  <data name="EditorStringId.TimeSpanMinutes" xml:space="preserve">
+    <value>minute</value>
+  </data>
+  <data name="EditorStringId.TimeSpanMinutesPlural" xml:space="preserve">
+    <value>minutes</value>
+  </data>
+  <data name="EditorStringId.TimeSpanMinutesShort" xml:space="preserve">
+    <value>m</value>
+  </data>
+  <data name="EditorStringId.TimeSpanSeconds" xml:space="preserve">
+    <value>second</value>
+  </data>
+  <data name="EditorStringId.TimeSpanSecondsPlural" xml:space="preserve">
+    <value>seconds</value>
+  </data>
+  <data name="EditorStringId.TimeSpanSecondsShort" xml:space="preserve">
+    <value>s</value>
+  </data>
+  <data name="EditorStringId.TimeSpanMilliseconds" xml:space="preserve">
+    <value>millisecond</value>
+  </data>
+  <data name="EditorStringId.TimeSpanMillisecondsPlural" xml:space="preserve">
+    <value>milliseconds</value>
+  </data>
+  <data name="EditorStringId.TimeSpanMillisecondsShort" xml:space="preserve">
+    <value>ms</value>
+  </data>
+  <data name="EditorStringId.TimeSpanFractionalSeconds" xml:space="preserve">
+    <value>fractional</value>
+  </data>
+  <data name="EditorStringId.TimeSpanFractionalSecondsPlural" xml:space="preserve">
+    <value>fractional</value>
+  </data>
+  <data name="EditorStringId.TimeSpanFractionalSecondsShort" xml:space="preserve">
+    <value>f</value>
+  </data>
+  <data name="EditorStringId.FilterClauseIsApril" xml:space="preserve">
+    <value>Is April</value>
+  </data>
+  <data name="EditorStringId.FilterClauseIsAugust" xml:space="preserve">
+    <value>Is August</value>
+  </data>
+  <data name="EditorStringId.FilterClauseIsDecember" xml:space="preserve">
+    <value>Is December</value>
+  </data>
+  <data name="EditorStringId.FilterClauseIsFebruary" xml:space="preserve">
+    <value>Is February</value>
+  </data>
+  <data name="EditorStringId.FilterClauseIsJanuary" xml:space="preserve">
+    <value>Is January</value>
+  </data>
+  <data name="EditorStringId.FilterClauseIsJuly" xml:space="preserve">
+    <value>Is July</value>
+  </data>
+  <data name="EditorStringId.FilterClauseIsJune" xml:space="preserve">
+    <value>Is June</value>
+  </data>
+  <data name="EditorStringId.FilterClauseIsMarch" xml:space="preserve">
+    <value>Is March</value>
+  </data>
+  <data name="EditorStringId.FilterClauseIsMay" xml:space="preserve">
+    <value>Is May</value>
+  </data>
+  <data name="EditorStringId.FilterClauseIsNovember" xml:space="preserve">
+    <value>Is November</value>
+  </data>
+  <data name="EditorStringId.FilterClauseIsOctober" xml:space="preserve">
+    <value>Is October</value>
+  </data>
+  <data name="EditorStringId.FilterClauseIsSeptember" xml:space="preserve">
+    <value>Is September</value>
+  </data>
+  <data name="EditorStringId.FilterExpressionEmptyValueText" xml:space="preserve">
+    <value>Enter an expression...</value>
+  </data>
+  <data name="EditorStringId.FilterGroupNotAndMenuCaption" xml:space="preserve">
+    <value>Not And</value>
+  </data>
+  <data name="EditorStringId.FilterGroupNotOrMenuCaption" xml:space="preserve">
+    <value>Not Or</value>
+  </data>
+  <data name="EditorStringId.ThemedWindow_Minimize" xml:space="preserve">
+    <value>Minimize</value>
+  </data>
+  <data name="EditorStringId.ThemedWindow_Restore" xml:space="preserve">
+    <value>Restore</value>
+  </data>
+  <data name="EditorStringId.ThemedWindow_Maximize" xml:space="preserve">
+    <value>Maximize</value>
+  </data>
+  <data name="EditorStringId.ThemedWindow_Close" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="EditorStringId.TimePicker_ValidationErrorGreaterThan" xml:space="preserve">
+    <value>Value must be greater than {0:G}</value>
+  </data>
+  <data name="EditorStringId.TimePicker_ValidationErrorLessThan" xml:space="preserve">
+    <value>Value must be less than {0:G}</value>
+  </data>
+  <data name="EditorStringId.TimePicker_ValidationErrorInRange" xml:space="preserve">
+    <value>Value must be between {0:G} and {1:G}</value>
+  </data>
+  <data name="EditorStringId.FilterClauseIsNotApril" xml:space="preserve">
+    <value>Is not April</value>
+  </data>
+  <data name="EditorStringId.FilterClauseIsNotAugust" xml:space="preserve">
+    <value>Is not August</value>
+  </data>
+  <data name="EditorStringId.FilterClauseIsNotDecember" xml:space="preserve">
+    <value>Is not December</value>
+  </data>
+  <data name="EditorStringId.FilterClauseIsNotFebruary" xml:space="preserve">
+    <value>Is not February</value>
+  </data>
+  <data name="EditorStringId.FilterClauseIsNotJanuary" xml:space="preserve">
+    <value>Is not January</value>
+  </data>
+  <data name="EditorStringId.FilterClauseIsNotJuly" xml:space="preserve">
+    <value>Is not July</value>
+  </data>
+  <data name="EditorStringId.FilterClauseIsNotJune" xml:space="preserve">
+    <value>Is not June</value>
+  </data>
+  <data name="EditorStringId.FilterClauseIsNotMarch" xml:space="preserve">
+    <value>Is not March</value>
+  </data>
+  <data name="EditorStringId.FilterClauseIsNotMay" xml:space="preserve">
+    <value>Is not May</value>
+  </data>
+  <data name="EditorStringId.FilterClauseIsNotNovember" xml:space="preserve">
+    <value>Is not November</value>
+  </data>
+  <data name="EditorStringId.FilterClauseIsNotOctober" xml:space="preserve">
+    <value>Is not October</value>
+  </data>
+  <data name="EditorStringId.FilterClauseIsNotSeptember" xml:space="preserve">
+    <value>Is not September</value>
+  </data>
+  <data name="EditorStringId.FilterPanelClauseIsNotBeyondThisYear" xml:space="preserve">
+    <value>Is not beyond this year</value>
+  </data>
+  <data name="EditorStringId.FilterPanelClauseIsNotEarlierThisMonth" xml:space="preserve">
+    <value>Is not earlier this month</value>
+  </data>
+  <data name="EditorStringId.FilterPanelClauseIsNotEarlierThisWeek" xml:space="preserve">
+    <value>Is not earlier this week</value>
+  </data>
+  <data name="EditorStringId.FilterPanelClauseIsNotEarlierThisYear" xml:space="preserve">
+    <value>Is not earlier this year</value>
+  </data>
+  <data name="EditorStringId.FilterPanelClauseIsNotLastWeek" xml:space="preserve">
+    <value>Is not last week</value>
+  </data>
+  <data name="EditorStringId.FilterPanelClauseIsNotLaterThisMonth" xml:space="preserve">
+    <value>Is not later this month</value>
+  </data>
+  <data name="EditorStringId.FilterPanelClauseIsNotLaterThisWeek" xml:space="preserve">
+    <value>Is not later this week</value>
+  </data>
+  <data name="EditorStringId.FilterPanelClauseIsNotLaterThisYear" xml:space="preserve">
+    <value>Is not later this year</value>
+  </data>
+  <data name="EditorStringId.FilterPanelClauseIsNotNextWeek" xml:space="preserve">
+    <value>Is not next week</value>
+  </data>
+  <data name="EditorStringId.FilterPanelClauseIsNotPriorThisYear" xml:space="preserve">
+    <value>Is not prior this year</value>
+  </data>
+  <data name="EditorStringId.FilterPanelClauseIsNotToday" xml:space="preserve">
+    <value>Is not today</value>
+  </data>
+  <data name="EditorStringId.FilterPanelClauseIsNotTomorrow" xml:space="preserve">
+    <value>Is not tomorrow</value>
+  </data>
+  <data name="EditorStringId.FilterPanelClauseIsNotYesterday" xml:space="preserve">
+    <value>Is not yesterday</value>
+  </data>
+  <data name="EditorStringId.FilterPanelClauseIsLastMonth" xml:space="preserve">
+    <value>Is last month</value>
+  </data>
+  <data name="EditorStringId.FilterPanelClauseIsLastYear" xml:space="preserve">
+    <value>Is last year</value>
+  </data>
+  <data name="EditorStringId.FilterPanelClauseIsNextMonth" xml:space="preserve">
+    <value>Is next month</value>
+  </data>
+  <data name="EditorStringId.FilterPanelClauseIsNextYear" xml:space="preserve">
+    <value>Is next year</value>
+  </data>
+  <data name="EditorStringId.FilterPanelClauseIsNotLastMonth" xml:space="preserve">
+    <value>Is not last month</value>
+  </data>
+  <data name="EditorStringId.FilterPanelClauseIsNotLastYear" xml:space="preserve">
+    <value>Is not last year</value>
+  </data>
+  <data name="EditorStringId.FilterPanelClauseIsNotNextMonth" xml:space="preserve">
+    <value>Is not next month</value>
+  </data>
+  <data name="EditorStringId.FilterPanelClauseIsNotNextYear" xml:space="preserve">
+    <value>Is not next year</value>
+  </data>
+  <data name="EditorStringId.FilterPanelClauseIsNotThisMonth" xml:space="preserve">
+    <value>Is not this month</value>
+  </data>
+  <data name="EditorStringId.FilterPanelClauseIsNotThisWeek" xml:space="preserve">
+    <value>Is not this week</value>
+  </data>
+  <data name="EditorStringId.FilterPanelClauseIsNotThisYear" xml:space="preserve">
+    <value>Is not this year</value>
+  </data>
+  <data name="EditorStringId.FilterPanelClauseIsThisMonth" xml:space="preserve">
+    <value>Is this month</value>
+  </data>
+  <data name="EditorStringId.FilterPanelClauseIsThisWeek" xml:space="preserve">
+    <value>Is this week</value>
+  </data>
+  <data name="EditorStringId.FilterPanelClauseIsThisYear" xml:space="preserve">
+    <value>Is this year</value>
+  </data>
+  <data name="EditorStringId.FilterPanelClauseBetween" xml:space="preserve">
+    <value>Between</value>
+  </data>
+  <data name="EditorStringId.FilterPanelClauseIsBeyondThisYear" xml:space="preserve">
+    <value>Is beyond this year</value>
+  </data>
+  <data name="EditorStringId.FilterPanelClauseIsEarlierThisMonth" xml:space="preserve">
+    <value>Is earlier this month</value>
+  </data>
+  <data name="EditorStringId.FilterPanelClauseIsEarlierThisWeek" xml:space="preserve">
+    <value>Is earlier this week</value>
+  </data>
+  <data name="EditorStringId.FilterPanelClauseIsEarlierThisYear" xml:space="preserve">
+    <value>Is earlier this year</value>
+  </data>
+  <data name="EditorStringId.FilterPanelClauseIsLastWeek" xml:space="preserve">
+    <value>Is last week</value>
+  </data>
+  <data name="EditorStringId.FilterPanelClauseIsLaterThisMonth" xml:space="preserve">
+    <value>Is later this month</value>
+  </data>
+  <data name="EditorStringId.FilterPanelClauseIsLaterThisWeek" xml:space="preserve">
+    <value>Is later this week</value>
+  </data>
+  <data name="EditorStringId.FilterPanelClauseIsLaterThisYear" xml:space="preserve">
+    <value>Is later this year</value>
+  </data>
+  <data name="EditorStringId.FilterPanelClauseIsNextWeek" xml:space="preserve">
+    <value>Is next week</value>
+  </data>
+  <data name="EditorStringId.FilterPanelClauseIsPriorThisYear" xml:space="preserve">
+    <value>Is prior this year</value>
+  </data>
+  <data name="EditorStringId.FilterPanelClauseIsToday" xml:space="preserve">
+    <value>Is today</value>
+  </data>
+  <data name="EditorStringId.FilterPanelClauseIsTomorrow" xml:space="preserve">
+    <value>Is tomorrow</value>
+  </data>
+  <data name="EditorStringId.FilterPanelClauseIsYesterday" xml:space="preserve">
+    <value>Is yesterday</value>
+  </data>
+  <data name="EditorStringId.FilterPanelClauseNotBetween" xml:space="preserve">
+    <value>Not between</value>
+  </data>
+  <data name="EditorStringId.FilterPanelClauseNotContains" xml:space="preserve">
+    <value>Not contains</value>
+  </data>
+  <data name="EditorStringId.FilterPanelClauseNotEndsWith" xml:space="preserve">
+    <value>Not ends with</value>
+  </data>
+  <data name="EditorStringId.FilterPanelClauseNotIn" xml:space="preserve">
+    <value>Not in</value>
+  </data>
+  <data name="EditorStringId.FilterPanelClauseNotLike" xml:space="preserve">
+    <value>Not like</value>
+  </data>
+  <data name="EditorStringId.FilterPanelClauseNotStartsWith" xml:space="preserve">
+    <value>Not starts with</value>
+  </data>
+  <data name="EditorStringId.FilterPanelClauseBottom" xml:space="preserve">
+    <value>Bottom</value>
+  </data>
+  <data name="EditorStringId.FilterPanelClauseTop" xml:space="preserve">
+    <value>Top</value>
+  </data>
+  <data name="EditorStringId.ValidationErrorTag" xml:space="preserve">
+    <value>. Error. </value>
+  </data>
+  <data name="EditorStringId.ValidationServiceErrorsTag" xml:space="preserve">
+    <value> but the form still contains {0} errors.</value>
+  </data>
+  <data name="EditorStringId.ValidationSuccessTag" xml:space="preserve">
+    <value>. The value is now correct</value>
+  </data>
+  <data name="EditorStringId.ValidationRowErrorsTag" xml:space="preserve">
+    <value> but the row still contains {0} errors.</value>
+  </data>
+</root>

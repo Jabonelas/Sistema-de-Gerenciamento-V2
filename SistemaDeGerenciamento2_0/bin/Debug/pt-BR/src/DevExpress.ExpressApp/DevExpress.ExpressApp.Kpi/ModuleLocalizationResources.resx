@@ -1,0 +1,963 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Non-calculated\ActionDesign\Actions\RefreshKpi\Caption" xml:space="preserve">
+    <value>Refresh KPI</value>
+  </data>
+  <data name="ActionDesign\Actions\RefreshKpi\ShortCaption" xml:space="preserve">
+    <value>Refresh KPI</value>
+  </data>
+  <data name="ActionDesign\Actions\RefreshKpi\NullValuePrompt" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="ActionDesign\Actions\RefreshKpi\ConfirmationMessage" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="ActionDesign\Actions\RefreshKpi\ToolTip" xml:space="preserve">
+    <value>Refresh KPI</value>
+  </data>
+  <data name="Non-calculated\ActionDesign\Actions\ClearKpiCache\Caption" xml:space="preserve">
+    <value>Clear KPI Cache</value>
+  </data>
+  <data name="ActionDesign\Actions\ClearKpiCache\ShortCaption" xml:space="preserve">
+    <value>Clear KPI Cache</value>
+  </data>
+  <data name="ActionDesign\Actions\ClearKpiCache\NullValuePrompt" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="ActionDesign\Actions\ClearKpiCache\ConfirmationMessage" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="ActionDesign\Actions\ClearKpiCache\ToolTip" xml:space="preserve">
+    <value>Clear KPI Cache</value>
+  </data>
+  <data name="Non-calculated\ActionDesign\Actions\ShowChart\Caption" xml:space="preserve">
+    <value>Show Chart</value>
+  </data>
+  <data name="ActionDesign\Actions\ShowChart\ShortCaption" xml:space="preserve">
+    <value>Show Chart</value>
+  </data>
+  <data name="ActionDesign\Actions\ShowChart\NullValuePrompt" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="ActionDesign\Actions\ShowChart\ConfirmationMessage" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="ActionDesign\Actions\ShowChart\ToolTip" xml:space="preserve">
+    <value>Show Chart</value>
+  </data>
+  <data name="BOModel\DevExpress.ExpressApp.Kpi.KpiDashboardOrganizationItem\ObjectCaptionFormat" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Non-calculated\BOModel\DevExpress.ExpressApp.Kpi.KpiDashboardOrganizationItem\Caption" xml:space="preserve">
+    <value>KPI</value>
+  </data>
+  <data name="BOModel\DevExpress.ExpressApp.Kpi.KpiDashboardOrganizationItem\OwnMembers\Kpi\EditMask" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="BOModel\DevExpress.ExpressApp.Kpi.KpiDashboardOrganizationItem\OwnMembers\Kpi\DisplayFormat" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Non-calculated\BOModel\DevExpress.ExpressApp.Kpi.KpiDashboardOrganizationItem\OwnMembers\Kpi\Caption" xml:space="preserve">
+    <value>Kpi</value>
+  </data>
+  <data name="BOModel\DevExpress.ExpressApp.Kpi.KpiDashboardOrganizationItem\OwnMembers\Kpi\CaptionForTrue" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="BOModel\DevExpress.ExpressApp.Kpi.KpiDashboardOrganizationItem\OwnMembers\Kpi\CaptionForFalse" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Non-calculated\BOModel\DevExpress.ExpressApp.Kpi.KpiDashboardOrganizationItem\OwnMembers\Kpi\PredefinedValues" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="BOModel\DevExpress.ExpressApp.Kpi.KpiDashboardOrganizationItem\OwnMembers\Kpi\NullText" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Non-calculated\BOModel\DevExpress.ExpressApp.Kpi.KpiDashboardOrganizationItem\OwnMembers\Kpi\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="BOModel\DevExpress.ExpressApp.Kpi.KpiDashboardOrganizationItem\OwnMembers\ActionsToolbarVisibility\EditMask" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="BOModel\DevExpress.ExpressApp.Kpi.KpiDashboardOrganizationItem\OwnMembers\ActionsToolbarVisibility\DisplayFormat" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Non-calculated\BOModel\DevExpress.ExpressApp.Kpi.KpiDashboardOrganizationItem\OwnMembers\ActionsToolbarVisibility\Caption" xml:space="preserve">
+    <value>Actions Toolbar Visibility</value>
+  </data>
+  <data name="BOModel\DevExpress.ExpressApp.Kpi.KpiDashboardOrganizationItem\OwnMembers\ActionsToolbarVisibility\CaptionForTrue" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="BOModel\DevExpress.ExpressApp.Kpi.KpiDashboardOrganizationItem\OwnMembers\ActionsToolbarVisibility\CaptionForFalse" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Non-calculated\BOModel\DevExpress.ExpressApp.Kpi.KpiDashboardOrganizationItem\OwnMembers\ActionsToolbarVisibility\PredefinedValues" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="BOModel\DevExpress.ExpressApp.Kpi.KpiDashboardOrganizationItem\OwnMembers\ActionsToolbarVisibility\NullText" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Non-calculated\BOModel\DevExpress.ExpressApp.Kpi.KpiDashboardOrganizationItem\OwnMembers\ActionsToolbarVisibility\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="BOModel\DevExpress.ExpressApp.Kpi.KpiInstance\OwnMembers\Change\DisplayFormat" xml:space="preserve">
+    <value>{0:#0.00%}</value>
+  </data>
+  <data name="Non-calculated\Localization\DashboardOrganizationItems\Kpi\Value" xml:space="preserve">
+    <value>Kpi</value>
+  </data>
+  <data name="Non-calculated\Localization\DateRanges\Value" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Non-calculated\Localization\DateRanges\DayMonthAgo\Value" xml:space="preserve">
+    <value>Day Month Ago</value>
+  </data>
+  <data name="Non-calculated\Localization\DateRanges\DayWeekAgo\Value" xml:space="preserve">
+    <value>Day Week Ago</value>
+  </data>
+  <data name="Non-calculated\Localization\DateRanges\DayYearAgo\Value" xml:space="preserve">
+    <value>Day Year Ago</value>
+  </data>
+  <data name="Non-calculated\Localization\DateRanges\LastMonthToDate\Value" xml:space="preserve">
+    <value>Last Month To Date</value>
+  </data>
+  <data name="Non-calculated\Localization\DateRanges\LastQuarterToDate\Value" xml:space="preserve">
+    <value>Last Quarter To Date</value>
+  </data>
+  <data name="Non-calculated\Localization\DateRanges\LastTenDays\Value" xml:space="preserve">
+    <value>Last Ten Days</value>
+  </data>
+  <data name="Non-calculated\Localization\DateRanges\LastThirtyDays\Value" xml:space="preserve">
+    <value>Last Thirty Days</value>
+  </data>
+  <data name="Non-calculated\Localization\DateRanges\LastThreeDays\Value" xml:space="preserve">
+    <value>Last Three Days</value>
+  </data>
+  <data name="Non-calculated\Localization\DateRanges\LastWeekToDate\Value" xml:space="preserve">
+    <value>Last Week To Date</value>
+  </data>
+  <data name="Non-calculated\Localization\DateRanges\LastYearToDate\Value" xml:space="preserve">
+    <value>Last Year To Date</value>
+  </data>
+  <data name="Non-calculated\Localization\DateRanges\Now\Value" xml:space="preserve">
+    <value>Now</value>
+  </data>
+  <data name="Non-calculated\Localization\DateRanges\ThisMonthToDate\Value" xml:space="preserve">
+    <value>This Month To Date</value>
+  </data>
+  <data name="Non-calculated\Localization\DateRanges\ThisQuarterToDate\Value" xml:space="preserve">
+    <value>This Quarter To Date</value>
+  </data>
+  <data name="Non-calculated\Localization\DateRanges\ThisWeekToDate\Value" xml:space="preserve">
+    <value>This Week To Date</value>
+  </data>
+  <data name="Non-calculated\Localization\DateRanges\ThisYearToDate\Value" xml:space="preserve">
+    <value>This Year To Date</value>
+  </data>
+  <data name="Non-calculated\Localization\DateRanges\Today\Value" xml:space="preserve">
+    <value>Today</value>
+  </data>
+  <data name="Non-calculated\Localization\DateRanges\Yesterday\Value" xml:space="preserve">
+    <value>Yesterday</value>
+  </data>
+  <data name="Non-calculated\Localization\Enums\DevExpress.ExpressApp.Kpi.MeasurementType\Value" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Non-calculated\Localization\Enums\DevExpress.ExpressApp.Kpi.MeasurementType\Current\Value" xml:space="preserve">
+    <value>Current</value>
+  </data>
+  <data name="Non-calculated\Localization\Enums\DevExpress.ExpressApp.Kpi.MeasurementType\Previous\Value" xml:space="preserve">
+    <value>Previous</value>
+  </data>
+  <data name="Non-calculated\Localization\Exceptions\Value" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Non-calculated\Localization\Exceptions\RangeNotFound\Value" xml:space="preserve">
+    <value>The '{0}' range is not found.</value>
+  </data>
+  <data name="Non-calculated\Localization\Texts\VersusText\Value" xml:space="preserve">
+    <value>Vs</value>
+  </data>
+  <data name="Validation\Rules\IsValidKpiCriteriaCodeRule_IKpiDefinition\Name" xml:space="preserve">
+    <value>IsValidKpiCriteriaCodeRule_IKpiDefinition</value>
+  </data>
+  <data name="Non-calculated\Validation\Rules\IsValidKpiCriteriaCodeRule_IKpiDefinition\CustomMessageTemplate" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Validation\Rules\IsValidKpiCriteriaCodeRule_IKpiDefinition\MessageTemplateSkipNullOrEmptyValues" xml:space="preserve">
+    <value>The "{Id}" rule was not checked because one of the target properties is empty.</value>
+  </data>
+  <data name="Validation\Rules\IsValidKpiCriteriaCodeRule_IKpiDefinition\MessageTemplateTargetDoesNotSatisfyTargetCriteria" xml:space="preserve">
+    <value>The "{Id}" rule was not checked because the target object does not satisfy rule's target criteria.</value>
+  </data>
+  <data name="Views\KpiDashboardOrganizationItem_DetailView\ObjectCaptionFormat" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDashboardOrganizationItem_DetailView\Caption" xml:space="preserve">
+    <value>KPI</value>
+  </data>
+  <data name="Views\KpiDashboardOrganizationItem_DetailView\CaptionColon" xml:space="preserve">
+    <value>:</value>
+  </data>
+  <data name="Views\KpiDashboardOrganizationItem_DetailView\RequiredFieldMark" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDashboardOrganizationItem_DetailView\Items\ActionsToolbarVisibility\EditMask" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDashboardOrganizationItem_DetailView\Items\ActionsToolbarVisibility\DisplayFormat" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDashboardOrganizationItem_DetailView\Items\ActionsToolbarVisibility\Caption" xml:space="preserve">
+    <value>Actions Toolbar Visibility</value>
+  </data>
+  <data name="Views\KpiDashboardOrganizationItem_DetailView\Items\ActionsToolbarVisibility\CaptionForTrue" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDashboardOrganizationItem_DetailView\Items\ActionsToolbarVisibility\CaptionForFalse" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDashboardOrganizationItem_DetailView\Items\ActionsToolbarVisibility\PredefinedValues" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDashboardOrganizationItem_DetailView\Items\ActionsToolbarVisibility\NullText" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDashboardOrganizationItem_DetailView\Items\ActionsToolbarVisibility\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDashboardOrganizationItem_DetailView\Items\Kpi\EditMask" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDashboardOrganizationItem_DetailView\Items\Kpi\DisplayFormat" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDashboardOrganizationItem_DetailView\Items\Kpi\Caption" xml:space="preserve">
+    <value>Kpi</value>
+  </data>
+  <data name="Views\KpiDashboardOrganizationItem_DetailView\Items\Kpi\CaptionForTrue" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDashboardOrganizationItem_DetailView\Items\Kpi\CaptionForFalse" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDashboardOrganizationItem_DetailView\Items\Kpi\PredefinedValues" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDashboardOrganizationItem_DetailView\Items\Kpi\NullText" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDashboardOrganizationItem_DetailView\Items\Kpi\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDashboardOrganizationItem_DetailView\Layout\Main\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDashboardOrganizationItem_DetailView\Layout\Main\ToolTipTitle" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDashboardOrganizationItem_DetailView\Layout\Main\SimpleEditors\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDashboardOrganizationItem_DetailView\Layout\Main\SimpleEditors\ToolTipTitle" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDashboardOrganizationItem_DetailView\Layout\Main\SimpleEditors\KpiDashboardOrganizationItem\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDashboardOrganizationItem_DetailView\Layout\Main\SimpleEditors\KpiDashboardOrganizationItem\ToolTipTitle" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDashboardOrganizationItem_DetailView\Layout\Main\SimpleEditors\KpiDashboardOrganizationItem\Kpi\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDashboardOrganizationItem_DetailView\Layout\Main\SimpleEditors\KpiDashboardOrganizationItem\Kpi\ToolTipTitle" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDashboardOrganizationItem_DetailView\Layout\Main\SimpleEditors\KpiDashboardOrganizationItem\ActionsToolbarVisibility\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDashboardOrganizationItem_DetailView\Layout\Main\SimpleEditors\KpiDashboardOrganizationItem\ActionsToolbarVisibility\ToolTipTitle" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDashboardOrganizationItem_ListView\Caption" xml:space="preserve">
+    <value>KPI</value>
+  </data>
+  <data name="Views\KpiDashboardOrganizationItem_ListView\Columns\Kpi\EditMask" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDashboardOrganizationItem_ListView\Columns\Kpi\DisplayFormat" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDashboardOrganizationItem_ListView\Columns\Kpi\Caption" xml:space="preserve">
+    <value>Kpi</value>
+  </data>
+  <data name="Views\KpiDashboardOrganizationItem_ListView\Columns\Kpi\CaptionForTrue" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDashboardOrganizationItem_ListView\Columns\Kpi\CaptionForFalse" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDashboardOrganizationItem_ListView\Columns\Kpi\PredefinedValues" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDashboardOrganizationItem_ListView\Columns\Kpi\NullText" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDashboardOrganizationItem_ListView\Columns\Kpi\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDashboardOrganizationItem_ListView\Columns\ActionsToolbarVisibility\EditMask" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDashboardOrganizationItem_ListView\Columns\ActionsToolbarVisibility\DisplayFormat" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDashboardOrganizationItem_ListView\Columns\ActionsToolbarVisibility\Caption" xml:space="preserve">
+    <value>Actions Toolbar Visibility</value>
+  </data>
+  <data name="Views\KpiDashboardOrganizationItem_ListView\Columns\ActionsToolbarVisibility\CaptionForTrue" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDashboardOrganizationItem_ListView\Columns\ActionsToolbarVisibility\CaptionForFalse" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDashboardOrganizationItem_ListView\Columns\ActionsToolbarVisibility\PredefinedValues" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDashboardOrganizationItem_ListView\Columns\ActionsToolbarVisibility\NullText" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDashboardOrganizationItem_ListView\Columns\ActionsToolbarVisibility\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDashboardOrganizationItem_LookupListView\Caption" xml:space="preserve">
+    <value>KPI</value>
+  </data>
+  <data name="Views\KpiDashboardOrganizationItem_LookupListView\Columns\Kpi\EditMask" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDashboardOrganizationItem_LookupListView\Columns\Kpi\DisplayFormat" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDashboardOrganizationItem_LookupListView\Columns\Kpi\Caption" xml:space="preserve">
+    <value>Kpi</value>
+  </data>
+  <data name="Views\KpiDashboardOrganizationItem_LookupListView\Columns\Kpi\CaptionForTrue" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDashboardOrganizationItem_LookupListView\Columns\Kpi\CaptionForFalse" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDashboardOrganizationItem_LookupListView\Columns\Kpi\PredefinedValues" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDashboardOrganizationItem_LookupListView\Columns\Kpi\NullText" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDashboardOrganizationItem_LookupListView\Columns\Kpi\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDashboardOrganizationItem_LookupListView\Columns\ActionsToolbarVisibility\EditMask" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDashboardOrganizationItem_LookupListView\Columns\ActionsToolbarVisibility\DisplayFormat" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDashboardOrganizationItem_LookupListView\Columns\ActionsToolbarVisibility\Caption" xml:space="preserve">
+    <value>Actions Toolbar Visibility</value>
+  </data>
+  <data name="Views\KpiDashboardOrganizationItem_LookupListView\Columns\ActionsToolbarVisibility\CaptionForTrue" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDashboardOrganizationItem_LookupListView\Columns\ActionsToolbarVisibility\CaptionForFalse" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDashboardOrganizationItem_LookupListView\Columns\ActionsToolbarVisibility\PredefinedValues" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDashboardOrganizationItem_LookupListView\Columns\ActionsToolbarVisibility\NullText" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDashboardOrganizationItem_LookupListView\Columns\ActionsToolbarVisibility\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDefinition_DetailView\Layout\Tabs\Definition\Caption" xml:space="preserve">
+    <value>Definition</value>
+  </data>
+  <data name="Views\KpiDefinition_DetailView\Layout\Tabs\Definition\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDefinition_DetailView\Layout\Tabs\Definition\ToolTipTitle" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDefinition_DetailView\Layout\Tabs\Definition\SimpleEditors\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDefinition_DetailView\Layout\Tabs\Definition\SimpleEditors\ToolTipTitle" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDefinition_DetailView\Layout\Tabs\Definition\SimpleEditors\61434787-29f4-487b-927f-4e94cd82f4e7\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDefinition_DetailView\Layout\Tabs\Definition\SimpleEditors\61434787-29f4-487b-927f-4e94cd82f4e7\ToolTipTitle" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDefinition_DetailView\Layout\Tabs\Definition\SimpleEditors\61434787-29f4-487b-927f-4e94cd82f4e7\Name\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDefinition_DetailView\Layout\Tabs\Definition\SimpleEditors\61434787-29f4-487b-927f-4e94cd82f4e7\Name\ToolTipTitle" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDefinition_DetailView\Layout\Tabs\Definition\SimpleEditors\61434787-29f4-487b-927f-4e94cd82f4e7\Active\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDefinition_DetailView\Layout\Tabs\Definition\SimpleEditors\61434787-29f4-487b-927f-4e94cd82f4e7\Active\ToolTipTitle" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDefinition_DetailView\Layout\Tabs\Definition\SimpleEditors\TargetObjectType\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDefinition_DetailView\Layout\Tabs\Definition\SimpleEditors\TargetObjectType\ToolTipTitle" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDefinition_DetailView\Layout\Tabs\Definition\SimpleEditors\SizeableEditors\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDefinition_DetailView\Layout\Tabs\Definition\SimpleEditors\SizeableEditors\ToolTipTitle" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDefinition_DetailView\Layout\Tabs\Definition\SimpleEditors\SizeableEditors\Criteria\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDefinition_DetailView\Layout\Tabs\Definition\SimpleEditors\SizeableEditors\Criteria\ToolTipTitle" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDefinition_DetailView\Layout\Tabs\Definition\Direction\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDefinition_DetailView\Layout\Tabs\Definition\Direction\ToolTipTitle" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDefinition_DetailView\Layout\Tabs\Definition\Expression\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDefinition_DetailView\Layout\Tabs\Definition\Expression\ToolTipTitle" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDefinition_DetailView\Layout\Tabs\Definition\Options\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDefinition_DetailView\Layout\Tabs\Definition\Options\ToolTipTitle" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDefinition_DetailView\Layout\Tabs\Definition\Options\OptionsTabs\MeasurementOptions\Caption" xml:space="preserve">
+    <value>MeasurementOptions</value>
+  </data>
+  <data name="Views\KpiDefinition_DetailView\Layout\Tabs\Definition\Options\OptionsTabs\MeasurementOptions\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDefinition_DetailView\Layout\Tabs\Definition\Options\OptionsTabs\MeasurementOptions\ToolTipTitle" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDefinition_DetailView\Layout\Tabs\Definition\Options\OptionsTabs\MeasurementOptions\Range\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDefinition_DetailView\Layout\Tabs\Definition\Options\OptionsTabs\MeasurementOptions\Range\ToolTipTitle" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDefinition_DetailView\Layout\Tabs\Definition\Options\OptionsTabs\MeasurementOptions\0315973a-52e5-4f23-bf1c-e1786e7cb2f7\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDefinition_DetailView\Layout\Tabs\Definition\Options\OptionsTabs\MeasurementOptions\0315973a-52e5-4f23-bf1c-e1786e7cb2f7\ToolTipTitle" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDefinition_DetailView\Layout\Tabs\Definition\Options\OptionsTabs\MeasurementOptions\0315973a-52e5-4f23-bf1c-e1786e7cb2f7\Compare\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDefinition_DetailView\Layout\Tabs\Definition\Options\OptionsTabs\MeasurementOptions\0315973a-52e5-4f23-bf1c-e1786e7cb2f7\Compare\ToolTipTitle" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDefinition_DetailView\Layout\Tabs\Definition\Options\OptionsTabs\MeasurementOptions\0315973a-52e5-4f23-bf1c-e1786e7cb2f7\RangeToCompare\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDefinition_DetailView\Layout\Tabs\Definition\Options\OptionsTabs\MeasurementOptions\0315973a-52e5-4f23-bf1c-e1786e7cb2f7\RangeToCompare\ToolTipTitle" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDefinition_DetailView\Layout\Tabs\Definition\Options\OptionsTabs\MeasurementOptions\MeasurementFrequency\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDefinition_DetailView\Layout\Tabs\Definition\Options\OptionsTabs\MeasurementOptions\MeasurementFrequency\ToolTipTitle" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDefinition_DetailView\Layout\Tabs\Definition\Options\OptionsTabs\Zones\Caption" xml:space="preserve">
+    <value>Zones</value>
+  </data>
+  <data name="Views\KpiDefinition_DetailView\Layout\Tabs\Definition\Options\OptionsTabs\Zones\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDefinition_DetailView\Layout\Tabs\Definition\Options\OptionsTabs\Zones\ToolTipTitle" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDefinition_DetailView\Layout\Tabs\Definition\Options\OptionsTabs\Zones\GreenZone\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDefinition_DetailView\Layout\Tabs\Definition\Options\OptionsTabs\Zones\GreenZone\ToolTipTitle" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDefinition_DetailView\Layout\Tabs\Definition\Options\OptionsTabs\Zones\RedZone\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDefinition_DetailView\Layout\Tabs\Definition\Options\OptionsTabs\Zones\RedZone\ToolTipTitle" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDefinition_DetailView\Layout\Tabs\Preview\Caption" xml:space="preserve">
+    <value>Preview</value>
+  </data>
+  <data name="Views\KpiDefinition_DetailView\Layout\Tabs\Preview\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDefinition_DetailView\Layout\Tabs\Preview\ToolTipTitle" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDefinition_DetailView\Layout\Tabs\Preview\Current\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDefinition_DetailView\Layout\Tabs\Preview\Current\ToolTipTitle" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDefinition_DetailView\Layout\Tabs\Preview\Objects_Group\Caption" xml:space="preserve">
+    <value>Objects</value>
+  </data>
+  <data name="Views\KpiDefinition_DetailView\Layout\Tabs\Preview\Objects_Group\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDefinition_DetailView\Layout\Tabs\Preview\Objects_Group\ToolTipTitle" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDefinition_DetailView\Layout\Tabs\Preview\Objects_Group\Objects\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiDefinition_DetailView\Layout\Tabs\Preview\Objects_Group\Objects\ToolTipTitle" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\ObjectCaptionFormat" xml:space="preserve">
+    <value>{0:KpiName}</value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\Caption" xml:space="preserve">
+    <value>KPI</value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\CaptionColon" xml:space="preserve">
+    <value>:</value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\RequiredFieldMark" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\Items\Change\EditMask" xml:space="preserve">
+    <value>#,###,##0.##############################</value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\Items\Change\DisplayFormat" xml:space="preserve">
+    <value>{0:#0.00%}</value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\Items\Change\Caption" xml:space="preserve">
+    <value>Change</value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\Items\Change\CaptionForTrue" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\Items\Change\CaptionForFalse" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\Items\Change\PredefinedValues" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\Items\Change\NullText" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\Items\Change\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\Items\ChartDataSource\EditMask" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\Items\ChartDataSource\DisplayFormat" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\Items\ChartDataSource\Caption" xml:space="preserve">
+    <value>Chart Data Source</value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\Items\ChartDataSource\CaptionForTrue" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\Items\ChartDataSource\CaptionForFalse" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\Items\ChartDataSource\PredefinedValues" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\Items\ChartDataSource\NullText" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\Items\ChartDataSource\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\Items\Current\EditMask" xml:space="preserve">
+    <value>#,###,##0.##############################</value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\Items\Current\DisplayFormat" xml:space="preserve">
+    <value>{0:#,###,##0.##############################}</value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\Items\Current\Caption" xml:space="preserve">
+    <value>Current</value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\Items\Current\CaptionForTrue" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\Items\Current\CaptionForFalse" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\Items\Current\PredefinedValues" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\Items\Current\NullText" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\Items\Current\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\Items\GaugeDataSource\EditMask" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\Items\GaugeDataSource\DisplayFormat" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\Items\GaugeDataSource\Caption" xml:space="preserve">
+    <value>Gauge Data Source</value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\Items\GaugeDataSource\CaptionForTrue" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\Items\GaugeDataSource\CaptionForFalse" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\Items\GaugeDataSource\PredefinedValues" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\Items\GaugeDataSource\NullText" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\Items\GaugeDataSource\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\Items\HistoryItems\EditMask" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\Items\HistoryItems\DisplayFormat" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\Items\HistoryItems\Caption" xml:space="preserve">
+    <value>History Items</value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\Items\HistoryItems\CaptionForTrue" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\Items\HistoryItems\CaptionForFalse" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\Items\HistoryItems\PredefinedValues" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\Items\HistoryItems\NullText" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\Items\HistoryItems\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\Items\KpiName\EditMask" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\Items\KpiName\DisplayFormat" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\Items\KpiName\Caption" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\Items\KpiName\CaptionForTrue" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\Items\KpiName\CaptionForFalse" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\Items\KpiName\PredefinedValues" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\Items\KpiName\NullText" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\Items\KpiName\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\Items\Period\EditMask" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\Items\Period\DisplayFormat" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\Items\Period\Caption" xml:space="preserve">
+    <value>Period</value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\Items\Period\CaptionForTrue" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\Items\Period\CaptionForFalse" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\Items\Period\PredefinedValues" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\Items\Period\NullText" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\Items\Period\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\Items\Previous\EditMask" xml:space="preserve">
+    <value>#,###,##0.##############################</value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\Items\Previous\DisplayFormat" xml:space="preserve">
+    <value>{0:#,###,##0.##############################}</value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\Items\Previous\Caption" xml:space="preserve">
+    <value>Previous</value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\Items\Previous\CaptionForTrue" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\Items\Previous\CaptionForFalse" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\Items\Previous\PredefinedValues" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\Items\Previous\NullText" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\Items\Previous\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\Items\Scorecards\EditMask" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\Items\Scorecards\DisplayFormat" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\Items\Scorecards\Caption" xml:space="preserve">
+    <value>Scorecards</value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\Items\Scorecards\CaptionForTrue" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\Items\Scorecards\CaptionForFalse" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\Items\Scorecards\PredefinedValues" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\Items\Scorecards\NullText" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\Items\Scorecards\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\Items\Sparkline\EditMask" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\Items\Sparkline\DisplayFormat" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\Items\Sparkline\Caption" xml:space="preserve">
+    <value>Sparkline</value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\Items\Sparkline\CaptionForTrue" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\Items\Sparkline\CaptionForFalse" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\Items\Sparkline\PredefinedValues" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\Items\Sparkline\NullText" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\Items\Sparkline\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\Items\Trend\EditMask" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\Items\Trend\DisplayFormat" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\Items\Trend\Caption" xml:space="preserve">
+    <value>Trend</value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\Items\Trend\CaptionForTrue" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\Items\Trend\CaptionForFalse" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\Items\Trend\PredefinedValues" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\Items\Trend\NullText" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\Items\Trend\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\Layout\Main\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\Layout\Main\ToolTipTitle" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\Layout\Main\SimpleEditors\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\Layout\Main\SimpleEditors\ToolTipTitle" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\Layout\Main\SimpleEditors\ChartDataSource\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiInstance_Chart_DetailView\Layout\Main\SimpleEditors\ChartDataSource\ToolTipTitle" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\KpiInstance_DetailView\Items\Change\DisplayFormat" xml:space="preserve">
+    <value>{0:#0.00%}</value>
+  </data>
+  <data name="Views\KpiInstance_ListView\Columns\Change\DisplayFormat" xml:space="preserve">
+    <value>{0:#0.00%}</value>
+  </data>
+  <data name="Views\KpiScorecard_Indicators_ListView\Columns\Change\DisplayFormat" xml:space="preserve">
+    <value>{0:#0.00%}</value>
+  </data>
+</root>

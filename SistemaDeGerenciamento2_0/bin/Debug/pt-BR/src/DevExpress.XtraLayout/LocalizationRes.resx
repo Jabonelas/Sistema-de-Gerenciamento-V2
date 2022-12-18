@@ -1,0 +1,348 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="LayoutStringId.CustomizationParentName" xml:space="preserve">
+    <value>Customization</value>
+  </data>
+  <data name="LayoutStringId.DefaultItemText" xml:space="preserve">
+    <value>Item </value>
+  </data>
+  <data name="LayoutStringId.DefaultActionText" xml:space="preserve">
+    <value>DefaultAction</value>
+  </data>
+  <data name="LayoutStringId.BestFitMenuText" xml:space="preserve">
+    <value>Best Fit</value>
+  </data>
+  <data name="LayoutStringId.DefaultEmptyText" xml:space="preserve">
+    <value>none</value>
+  </data>
+  <data name="LayoutStringId.LayoutItemDescription" xml:space="preserve">
+    <value>Layout control item element</value>
+  </data>
+  <data name="LayoutStringId.LayoutGroupDescription" xml:space="preserve">
+    <value>Layout control group element</value>
+  </data>
+  <data name="LayoutStringId.TabbedGroupDescription" xml:space="preserve">
+    <value>Layout control tabbedGroup element</value>
+  </data>
+  <data name="LayoutStringId.LayoutControlDescription" xml:space="preserve">
+    <value>Layout control</value>
+  </data>
+  <data name="LayoutStringId.CustomizationFormTitle" xml:space="preserve">
+    <value>Customization</value>
+  </data>
+  <data name="LayoutStringId.TreeViewPageTitle" xml:space="preserve">
+    <value>Layout Tree View</value>
+  </data>
+  <data name="LayoutStringId.HiddenItemsPageTitle" xml:space="preserve">
+    <value>Hidden Items</value>
+  </data>
+  <data name="LayoutStringId.RenameSelected" xml:space="preserve">
+    <value>Rename</value>
+  </data>
+  <data name="LayoutStringId.HideItemMenutext" xml:space="preserve">
+    <value>Hide Item</value>
+  </data>
+  <data name="LayoutStringId.LockItemSizeMenuText" xml:space="preserve">
+    <value>Lock Item Size</value>
+  </data>
+  <data name="LayoutStringId.UnLockItemSizeMenuText" xml:space="preserve">
+    <value>UnLock Item Size</value>
+  </data>
+  <data name="LayoutStringId.GroupItemsMenuText" xml:space="preserve">
+    <value>Group</value>
+  </data>
+  <data name="LayoutStringId.UnGroupItemsMenuText" xml:space="preserve">
+    <value>Ungroup</value>
+  </data>
+  <data name="LayoutStringId.CreateTabbedGroupMenuText" xml:space="preserve">
+    <value>Create Tabbed Group</value>
+  </data>
+  <data name="LayoutStringId.AddTabMenuText" xml:space="preserve">
+    <value>Add Tab</value>
+  </data>
+  <data name="LayoutStringId.UnGroupTabbedGroupMenuText" xml:space="preserve">
+    <value>Ungroup Tabbed Group</value>
+  </data>
+  <data name="LayoutStringId.TreeViewRootNodeName" xml:space="preserve">
+    <value>Root</value>
+  </data>
+  <data name="LayoutStringId.ShowCustomizationFormMenuText" xml:space="preserve">
+    <value>Customize Layout</value>
+  </data>
+  <data name="LayoutStringId.HideCustomizationFormMenuText" xml:space="preserve">
+    <value>Hide Customization Form</value>
+  </data>
+  <data name="LayoutStringId.EmptySpaceItemDefaultText" xml:space="preserve">
+    <value>Empty Space Item</value>
+  </data>
+  <data name="LayoutStringId.SplitterItemDefaultText" xml:space="preserve">
+    <value>Splitter</value>
+  </data>
+  <data name="LayoutStringId.ControlGroupDefaultText" xml:space="preserve">
+    <value>Group </value>
+  </data>
+  <data name="LayoutStringId.EmptyRootGroupText" xml:space="preserve">
+    <value>Drop controls here</value>
+  </data>
+  <data name="LayoutStringId.EmptyTabbedGroupText" xml:space="preserve">
+    <value>Drag and drop groups into the TabbedGroup area</value>
+  </data>
+  <data name="LayoutStringId.ResetLayoutMenuText" xml:space="preserve">
+    <value>Reset Layout</value>
+  </data>
+  <data name="LayoutStringId.RenameMenuText" xml:space="preserve">
+    <value>Rename</value>
+  </data>
+  <data name="LayoutStringId.TextPositionMenuText" xml:space="preserve">
+    <value>Text Position</value>
+  </data>
+  <data name="LayoutStringId.TextPositionLeftMenuText" xml:space="preserve">
+    <value>Left</value>
+  </data>
+  <data name="LayoutStringId.TextPositionRightMenuText" xml:space="preserve">
+    <value>Right</value>
+  </data>
+  <data name="LayoutStringId.TextPositionTopMenuText" xml:space="preserve">
+    <value>Top</value>
+  </data>
+  <data name="LayoutStringId.TextPositionBottomMenuText" xml:space="preserve">
+    <value>Bottom</value>
+  </data>
+  <data name="LayoutStringId.ShowTextMenuItem" xml:space="preserve">
+    <value>Show Text</value>
+  </data>
+  <data name="LayoutStringId.HideTextMenuItem" xml:space="preserve">
+    <value>Hide Text</value>
+  </data>
+  <data name="LayoutStringId.LockSizeMenuItem" xml:space="preserve">
+    <value>Lock Size</value>
+  </data>
+  <data name="LayoutStringId.LockWidthMenuItem" xml:space="preserve">
+    <value>Lock Width</value>
+  </data>
+  <data name="LayoutStringId.CreateEmptySpaceItem" xml:space="preserve">
+    <value>Add Empty Space Item</value>
+  </data>
+  <data name="LayoutStringId.LockHeightMenuItem" xml:space="preserve">
+    <value>Lock Height</value>
+  </data>
+  <data name="LayoutStringId.LockMenuGroup" xml:space="preserve">
+    <value>Size Constraints</value>
+  </data>
+  <data name="LayoutStringId.FreeSizingMenuItem" xml:space="preserve">
+    <value>Free Sizing</value>
+  </data>
+  <data name="LayoutStringId.ResetConstraintsToDefaultsMenuItem" xml:space="preserve">
+    <value>Reset to Default</value>
+  </data>
+  <data name="LayoutStringId.UndoButtonHintText" xml:space="preserve">
+    <value>Undo last action</value>
+  </data>
+  <data name="LayoutStringId.RedoButtonHintText" xml:space="preserve">
+    <value>Redo last action</value>
+  </data>
+  <data name="LayoutStringId.SaveButtonHintText" xml:space="preserve">
+    <value>Save layout to XML file</value>
+  </data>
+  <data name="LayoutStringId.LoadButtonHintText" xml:space="preserve">
+    <value>Load layout from XML file</value>
+  </data>
+  <data name="LayoutStringId.LayoutResetConfirmationText" xml:space="preserve">
+    <value>You are about to reset your layout customizations. Do you want to proceed?</value>
+  </data>
+  <data name="LayoutStringId.LayoutResetConfirmationDialogCaption" xml:space="preserve">
+    <value>Layout reset confirmation</value>
+  </data>
+  <data name="LayoutStringId.UndoHintCaption" xml:space="preserve">
+    <value>Undo (Ctrl+Z)</value>
+  </data>
+  <data name="LayoutStringId.RedoHintCaption" xml:space="preserve">
+    <value>Redo (Ctrl+Y)</value>
+  </data>
+  <data name="LayoutStringId.LoadHintCaption" xml:space="preserve">
+    <value>Load (Ctrl+O)</value>
+  </data>
+  <data name="LayoutStringId.SaveHintCaption" xml:space="preserve">
+    <value>Save (Ctrl+S)</value>
+  </data>
+  <data name="LayoutStringId.SimpleLabelItemDefaultText" xml:space="preserve">
+    <value>Label</value>
+  </data>
+  <data name="LayoutStringId.SimpleSeparatorItemDefaultText" xml:space="preserve">
+    <value>Separator</value>
+  </data>
+  <data name="LayoutStringId.HiddenItemsNodeText" xml:space="preserve">
+    <value>Hidden Items</value>
+  </data>
+  <data name="LayoutStringId.HideSpaceMenuItem" xml:space="preserve">
+    <value>Collapse Text Placeholder</value>
+  </data>
+  <data name="LayoutStringId.ShowSpaceMenuItem" xml:space="preserve">
+    <value>Show Text Placeholder</value>
+  </data>
+  <data name="LayoutStringId.CreateTemplate" xml:space="preserve">
+    <value>Create Template</value>
+  </data>
+  <data name="LayoutStringId.ConvertToRegularLayoutText" xml:space="preserve">
+    <value>Convert to Regular Layout</value>
+  </data>
+  <data name="LayoutStringId.ConvertToTableLayoutText" xml:space="preserve">
+    <value>Convert to Table Layout</value>
+  </data>
+  <data name="LayoutStringId.ConvertToText" xml:space="preserve">
+    <value>Convert To</value>
+  </data>
+  <data name="LayoutStringId.FlowLayoutText" xml:space="preserve">
+    <value>Flow Layout</value>
+  </data>
+  <data name="LayoutStringId.RegularLayoutText" xml:space="preserve">
+    <value>Regular Layout</value>
+  </data>
+  <data name="LayoutStringId.TableLayoutText" xml:space="preserve">
+    <value>Table Layout</value>
+  </data>
+  <data name="LayoutStringId.DeleteTemplateText" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="LayoutStringId.EditRows" xml:space="preserve">
+    <value>Edit Rows</value>
+  </data>
+  <data name="LayoutStringId.EditColumns" xml:space="preserve">
+    <value>Edit Columns</value>
+  </data>
+  <data name="LayoutStringId.AddItem" xml:space="preserve">
+    <value>Add Item</value>
+  </data>  
+  <data name="LayoutStringId.GroupStyleMenuText" xml:space="preserve">
+    <value>Group Style</value>
+  </data>
+  <data name="LayoutStringId.GroupStyleInherited" xml:space="preserve">
+    <value>Inherited</value>
+  </data>
+  <data name="LayoutStringId.GroupStyleCard" xml:space="preserve">
+    <value>Card</value>
+  </data>
+  <data name="LayoutStringId.GroupStyleLight" xml:space="preserve">
+    <value>Light</value>
+  </data>
+  <data name="LayoutStringId.GroupStyleTitle" xml:space="preserve">
+    <value>Title</value>
+  </data>
+</root>

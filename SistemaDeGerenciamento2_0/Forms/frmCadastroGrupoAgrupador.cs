@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Windows.Forms;
+using DevExpress.XtraSplashScreen;
 
 namespace SistemaDeGerenciamento2_0.Forms
 {
@@ -11,11 +12,27 @@ namespace SistemaDeGerenciamento2_0.Forms
         private int X = 0;
         private int Y = 0;
 
-        public frmCadastroGrupoAgrupador()
+
+        private frmCadastroProduto frmCadastroProduto;
+        public frmCadastroGrupoAgrupador(frmCadastroProduto _frmCadastroProduto)
         {
+
             InitializeComponent();
 
-            PreencherGridView();
+            frmCadastroProduto = _frmCadastroProduto;
+
+
+            ReloadData();
+        }
+
+
+        private void ReloadData()
+        {
+            using (var handle = SplashScreenManager.ShowOverlayForm(frmCadastroProduto))
+            {
+
+                PreencherGridView();
+            }
         }
 
         private List<GrupoClass> ListaGrupoAgrupador = new List<GrupoClass>();

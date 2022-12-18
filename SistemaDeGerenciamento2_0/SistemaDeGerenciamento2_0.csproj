@@ -56,6 +56,9 @@
     <Reference Include="DevExpress.XtraPivotGrid.v21.2, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraPrinting.v21.2, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraRichEdit.v21.2, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v21.2, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v21.2.Core, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v21.2.Core.Desktop, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraVerticalGrid.v21.2, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
@@ -107,6 +110,12 @@
     </Compile>
     <Compile Include="Forms\frmCadastroUsuario.Designer.cs">
       <DependentUpon>frmCadastroUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmFiltrarProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmFiltrarProduto.Designer.cs">
+      <DependentUpon>frmFiltrarProduto.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\frmNovoUsuario.cs">
       <SubType>Form</SubType>
@@ -279,6 +288,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmCadastroUsuario.resx">
       <DependentUpon>frmCadastroUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmFiltrarProduto.resx">
+      <DependentUpon>frmFiltrarProduto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmNovoUsuario.resx">
       <DependentUpon>frmNovoUsuario.cs</DependentUpon>

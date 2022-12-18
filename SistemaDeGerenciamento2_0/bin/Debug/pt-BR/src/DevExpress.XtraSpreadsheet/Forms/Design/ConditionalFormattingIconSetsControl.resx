@@ -1,0 +1,1273 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="lblFormatStyle.AccessibleName" xml:space="preserve">
+    <value>Format style</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"></assembly>
+  <data name="lblFormatStyle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 25</value>
+  </data>
+  <data name="lblFormatStyle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 13</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"></assembly>
+  <data name="layoutControl1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblFifth.Location" type="System.Drawing.Point, System.Drawing">
+    <value>123, 107</value>
+  </data>
+  <data name="lblFifth.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>200, 0</value>
+  </data>
+  <data name="lblFifth.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>145, 20</value>
+  </data>
+  <data name="lblFifth.Size" type="System.Drawing.Size, System.Drawing">
+    <value>145, 20</value>
+  </data>
+  <data name="lblFifth.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;lblFifth.Name" xml:space="preserve">
+    <value>lblFifth</value>
+  </data>
+  <data name="&gt;&gt;lblFifth.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+							 
+  </data>
+  <data name="&gt;&gt;lblFifth.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;lblFifth.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="lblForth.Location" type="System.Drawing.Point, System.Drawing">
+    <value>123, 131</value>
+  </data>
+  <data name="lblForth.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>200, 0</value>
+  </data>
+  <data name="lblForth.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>145, 20</value>
+  </data>
+  <data name="lblForth.Size" type="System.Drawing.Size, System.Drawing">
+    <value>145, 20</value>
+  </data>
+  <data name="lblForth.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;lblForth.Name" xml:space="preserve">
+    <value>lblForth</value>
+  </data>
+  <data name="&gt;&gt;lblForth.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblForth.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;lblForth.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="lblThird.Location" type="System.Drawing.Point, System.Drawing">
+    <value>123, 155</value>
+  </data>
+  <data name="lblThird.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>200, 0</value>
+  </data>
+  <data name="lblThird.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>145, 20</value>
+  </data>
+  <data name="lblThird.Size" type="System.Drawing.Size, System.Drawing">
+    <value>145, 20</value>
+  </data>
+  <data name="lblThird.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;lblThird.Name" xml:space="preserve">
+    <value>lblThird</value>
+  </data>
+  <data name="&gt;&gt;lblThird.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblThird.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;lblThird.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="lblSecond.Location" type="System.Drawing.Point, System.Drawing">
+    <value>123, 179</value>
+  </data>
+  <data name="lblSecond.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>200, 0</value>
+  </data>
+  <data name="lblSecond.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>145, 20</value>
+  </data>
+  <data name="lblSecond.Size" type="System.Drawing.Size, System.Drawing">
+    <value>145, 20</value>
+  </data>
+  <data name="lblSecond.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="&gt;&gt;lblSecond.Name" xml:space="preserve">
+    <value>lblSecond</value>
+  </data>
+  <data name="&gt;&gt;lblSecond.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblSecond.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;lblSecond.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="lblFirst.Location" type="System.Drawing.Point, System.Drawing">
+    <value>123, 203</value>
+  </data>
+  <data name="lblFirst.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>200, 0</value>
+  </data>
+  <data name="lblFirst.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>145, 20</value>
+  </data>
+  <data name="lblFirst.Size" type="System.Drawing.Size, System.Drawing">
+    <value>145, 20</value>
+  </data>
+  <data name="lblFirst.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="&gt;&gt;lblFirst.Name" xml:space="preserve">
+    <value>lblFirst</value>
+  </data>
+  <data name="&gt;&gt;lblFirst.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblFirst.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;lblFirst.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="edtIconFirst.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 203</value>
+  </data>
+  <data name="edtIconFirst.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>115, 20</value>
+  </data>
+  <data name="edtIconFirst.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 20</value>
+  </data>
+  <data name="edtIconFirst.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="&gt;&gt;edtIconFirst.Name" xml:space="preserve">
+    <value>edtIconFirst</value>
+  </data>
+  <data name="&gt;&gt;edtIconFirst.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.Forms.Design.ConditionalFormattingIconSetsDropDownButton, DevExpress.XtraSpreadsheet.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtIconFirst.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;edtIconFirst.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="edtValueSecondIsGreaterOrEqual.Location" type="System.Drawing.Point, System.Drawing">
+    <value>272, 179</value>
+  </data>
+  <data name="edtValueSecondIsGreaterOrEqual.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>50, 20</value>
+  </data>
+  <data name="edtValueSecondIsGreaterOrEqual.Properties.AccessibleName" xml:space="preserve">
+    <value>Comparison</value>
+  </data>
+  <data name="edtValueSecondIsGreaterOrEqual.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 20</value>
+  </data>
+  <data name="edtValueSecondIsGreaterOrEqual.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="&gt;&gt;edtValueSecondIsGreaterOrEqual.Name" xml:space="preserve">
+    <value>edtValueSecondIsGreaterOrEqual</value>
+  </data>
+  <data name="&gt;&gt;edtValueSecondIsGreaterOrEqual.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.Forms.Design.SpreadsheetLookUpEdit, DevExpress.XtraSpreadsheet.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtValueSecondIsGreaterOrEqual.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;edtValueSecondIsGreaterOrEqual.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="edtValueTypeSecond.Location" type="System.Drawing.Point, System.Drawing">
+    <value>430, 179</value>
+  </data>
+  <data name="edtValueTypeSecond.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="edtValueTypeSecond.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="edtValueTypeSecond.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="&gt;&gt;edtValueTypeSecond.Name" xml:space="preserve">
+    <value>edtValueTypeSecond</value>
+  </data>
+  <data name="&gt;&gt;edtValueTypeSecond.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.Forms.Design.SpreadsheetLookUpEdit, DevExpress.XtraSpreadsheet.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtValueTypeSecond.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;edtValueTypeSecond.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="edtValueSecond.Location" type="System.Drawing.Point, System.Drawing">
+    <value>326, 179</value>
+  </data>
+  <data name="edtValueSecond.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="edtValueSecond.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="edtValueSecond.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="&gt;&gt;edtValueSecond.Name" xml:space="preserve">
+    <value>edtValueSecond</value>
+  </data>
+  <data name="&gt;&gt;edtValueSecond.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtValueSecond.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;edtValueSecond.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="edtValueThirdIsGreaterOrEqual.Location" type="System.Drawing.Point, System.Drawing">
+    <value>272, 155</value>
+  </data>
+  <data name="edtValueThirdIsGreaterOrEqual.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>50, 20</value>
+  </data>
+  <data name="edtValueThirdIsGreaterOrEqual.Properties.AccessibleName" xml:space="preserve">
+    <value>Comparison</value>
+  </data>
+  <data name="edtValueThirdIsGreaterOrEqual.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 20</value>
+  </data>
+  <data name="edtValueThirdIsGreaterOrEqual.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;edtValueThirdIsGreaterOrEqual.Name" xml:space="preserve">
+    <value>edtValueThirdIsGreaterOrEqual</value>
+  </data>
+  <data name="&gt;&gt;edtValueThirdIsGreaterOrEqual.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.Forms.Design.SpreadsheetLookUpEdit, DevExpress.XtraSpreadsheet.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtValueThirdIsGreaterOrEqual.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;edtValueThirdIsGreaterOrEqual.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="edtIconSecond.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 179</value>
+  </data>
+  <data name="edtIconSecond.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>115, 20</value>
+  </data>
+  <data name="edtIconSecond.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 20</value>
+  </data>
+  <data name="edtIconSecond.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="&gt;&gt;edtIconSecond.Name" xml:space="preserve">
+    <value>edtIconSecond</value>
+  </data>
+  <data name="&gt;&gt;edtIconSecond.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.Forms.Design.ConditionalFormattingIconSetsDropDownButton, DevExpress.XtraSpreadsheet.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtIconSecond.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;edtIconSecond.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="edtValueForthIsGreaterOrEqual.Location" type="System.Drawing.Point, System.Drawing">
+    <value>272, 131</value>
+  </data>
+  <data name="edtValueForthIsGreaterOrEqual.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>50, 20</value>
+  </data>
+  <data name="edtValueForthIsGreaterOrEqual.Properties.AccessibleName" xml:space="preserve">
+    <value>Comparison</value>
+  </data>
+  <data name="edtValueForthIsGreaterOrEqual.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 20</value>
+  </data>
+  <data name="edtValueForthIsGreaterOrEqual.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;edtValueForthIsGreaterOrEqual.Name" xml:space="preserve">
+    <value>edtValueForthIsGreaterOrEqual</value>
+		 
+																		
+						
+  </data>
+  <data name="&gt;&gt;edtValueForthIsGreaterOrEqual.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.Forms.Design.SpreadsheetLookUpEdit, DevExpress.XtraSpreadsheet.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtValueForthIsGreaterOrEqual.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;edtValueForthIsGreaterOrEqual.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="edtValueTypeThird.Location" type="System.Drawing.Point, System.Drawing">
+    <value>430, 155</value>
+  </data>
+  <data name="edtValueTypeThird.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="edtValueTypeThird.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="edtValueTypeThird.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;edtValueTypeThird.Name" xml:space="preserve">
+    <value>edtValueTypeThird</value>
+  </data>
+  <data name="&gt;&gt;edtValueTypeThird.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.Forms.Design.SpreadsheetLookUpEdit, DevExpress.XtraSpreadsheet.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtValueTypeThird.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;edtValueTypeThird.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="edtIconThird.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 155</value>
+  </data>
+  <data name="edtIconThird.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>115, 20</value>
+  </data>
+  <data name="edtIconThird.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 20</value>
+  </data>
+  <data name="edtIconThird.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;edtIconThird.Name" xml:space="preserve">
+    <value>edtIconThird</value>
+  </data>
+  <data name="&gt;&gt;edtIconThird.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.Forms.Design.ConditionalFormattingIconSetsDropDownButton, DevExpress.XtraSpreadsheet.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtIconThird.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;edtIconThird.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="edtValueThird.Location" type="System.Drawing.Point, System.Drawing">
+    <value>326, 155</value>
+  </data>
+  <data name="edtValueThird.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="edtValueThird.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="edtValueThird.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;edtValueThird.Name" xml:space="preserve">
+    <value>edtValueThird</value>
+  </data>
+  <data name="&gt;&gt;edtValueThird.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtValueThird.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;edtValueThird.ZOrder" xml:space="preserve">
+    <value>18</value>
+		 
+																				   
+						   
+  </data>
+  <data name="edtValueFifthIsGreaterOrEqual.Location" type="System.Drawing.Point, System.Drawing">
+    <value>272, 107</value>
+  </data>
+  <data name="edtValueFifthIsGreaterOrEqual.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>50, 20</value>
+  </data>
+  <data name="edtValueFifthIsGreaterOrEqual.Properties.AccessibleName" xml:space="preserve">
+    <value>Comparison</value>
+  </data>
+  <data name="edtValueFifthIsGreaterOrEqual.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 20</value>
+  </data>
+  <data name="edtValueFifthIsGreaterOrEqual.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;edtValueFifthIsGreaterOrEqual.Name" xml:space="preserve">
+    <value>edtValueFifthIsGreaterOrEqual</value>
+  </data>
+  <data name="&gt;&gt;edtValueFifthIsGreaterOrEqual.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.Forms.Design.SpreadsheetLookUpEdit, DevExpress.XtraSpreadsheet.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtValueFifthIsGreaterOrEqual.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;edtValueFifthIsGreaterOrEqual.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="lblFormatAllCellsBasedOnValues.AccessibleName" xml:space="preserve">
+    <value>Format all cells based on their values</value>
+  </data>
+  <data name="lblFormatAllCellsBasedOnValues.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="lblFormatAllCellsBasedOnValues.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 4</value>
+  </data>
+  <data name="lblFormatAllCellsBasedOnValues.Size" type="System.Drawing.Size, System.Drawing">
+    <value>212, 13</value>
+  </data>
+  <data name="lblFormatAllCellsBasedOnValues.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="lblFormatAllCellsBasedOnValues.Text" xml:space="preserve">
+    <value>Format all cells based on their values:</value>
+  </data>
+  <data name="&gt;&gt;lblFormatAllCellsBasedOnValues.Name" xml:space="preserve">
+    <value>lblFormatAllCellsBasedOnValues</value>
+  </data>
+  <data name="&gt;&gt;lblFormatAllCellsBasedOnValues.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblFormatAllCellsBasedOnValues.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;lblFormatAllCellsBasedOnValues.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="edtValueTypeForth.Location" type="System.Drawing.Point, System.Drawing">
+    <value>430, 131</value>
+  </data>
+  <data name="edtValueTypeForth.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="edtValueTypeForth.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="edtValueTypeForth.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;edtValueTypeForth.Name" xml:space="preserve">
+    <value>edtValueTypeForth</value>
+  </data>
+  <data name="&gt;&gt;edtValueTypeForth.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.Forms.Design.SpreadsheetLookUpEdit, DevExpress.XtraSpreadsheet.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtValueTypeForth.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;edtValueTypeForth.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="edtIconForth.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 131</value>
+  </data>
+  <data name="edtIconForth.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>115, 20</value>
+  </data>
+  <data name="edtIconForth.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 20</value>
+  </data>
+  <data name="edtIconForth.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;edtIconForth.Name" xml:space="preserve">
+    <value>edtIconForth</value>
+  </data>
+  <data name="&gt;&gt;edtIconForth.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.Forms.Design.ConditionalFormattingIconSetsDropDownButton, DevExpress.XtraSpreadsheet.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtIconForth.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;edtIconForth.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="edtFormatStyle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>72, 22</value>
+  </data>
+  <data name="edtFormatStyle.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>155, 20</value>
+  </data>
+  <data name="edtFormatStyle.Properties.AccessibleName" xml:space="preserve">
+    <value>Format Style</value>
+  </data>
+  <data name="edtFormatStyle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>155, 20</value>
+  </data>
+  <data name="edtFormatStyle.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;edtFormatStyle.Name" xml:space="preserve">
+    <value>edtFormatStyle</value>
+  </data>
+  <data name="&gt;&gt;edtFormatStyle.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.Forms.Design.SpreadsheetLookUpEdit, DevExpress.XtraSpreadsheet.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtFormatStyle.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;edtFormatStyle.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="btnReverseIconOrder.AccessibleName" xml:space="preserve">
+    <value>Reverse Icon Order</value>
+  </data>
+  <data name="btnReverseIconOrder.Location" type="System.Drawing.Point, System.Drawing">
+    <value>231, 21</value>
+  </data>
+  <data name="btnReverseIconOrder.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>115, 20</value>
+  </data>
+  <data name="btnReverseIconOrder.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 22</value>
+  </data>
+  <data name="btnReverseIconOrder.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="btnReverseIconOrder.Text" xml:space="preserve">
+    <value>Reverse Icon Or&amp;der</value>
+  </data>
+  <data name="&gt;&gt;btnReverseIconOrder.Name" xml:space="preserve">
+    <value>btnReverseIconOrder</value>
+  </data>
+  <data name="&gt;&gt;btnReverseIconOrder.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;btnReverseIconOrder.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;btnReverseIconOrder.ZOrder" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="edtValueForth.Location" type="System.Drawing.Point, System.Drawing">
+    <value>326, 131</value>
+  </data>
+  <data name="edtValueForth.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="edtValueForth.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="edtValueForth.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;edtValueForth.Name" xml:space="preserve">
+    <value>edtValueForth</value>
+  </data>
+  <data name="&gt;&gt;edtValueForth.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtValueForth.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;edtValueForth.ZOrder" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="lblIconStyle.AccessibleName" xml:space="preserve">
+    <value>Icon Style</value>
+  </data>
+  <data name="lblIconStyle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 51</value>
+  </data>
+  <data name="lblIconStyle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 13</value>
+  </data>
+  <data name="lblIconStyle.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="lblIconStyle.Text" xml:space="preserve">
+    <value>I&amp;con Style:</value>
+  </data>
+  <data name="&gt;&gt;lblIconStyle.Name" xml:space="preserve">
+    <value>lblIconStyle</value>
+  </data>
+  <data name="&gt;&gt;lblIconStyle.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblIconStyle.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;lblIconStyle.ZOrder" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="edtIconFifth.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 107</value>
+  </data>
+  <data name="edtIconFifth.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>115, 20</value>
+  </data>
+  <data name="edtIconFifth.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 20</value>
+  </data>
+  <data name="edtIconFifth.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;edtIconFifth.Name" xml:space="preserve">
+    <value>edtIconFifth</value>
+  </data>
+  <data name="&gt;&gt;edtIconFifth.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.Forms.Design.ConditionalFormattingIconSetsDropDownButton, DevExpress.XtraSpreadsheet.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtIconFifth.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;edtIconFifth.ZOrder" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="edtValueTypeFifth.Location" type="System.Drawing.Point, System.Drawing">
+    <value>430, 107</value>
+  </data>
+  <data name="edtValueTypeFifth.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="edtValueTypeFifth.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="edtValueTypeFifth.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;edtValueTypeFifth.Name" xml:space="preserve">
+    <value>edtValueTypeFifth</value>
+  </data>
+  <data name="&gt;&gt;edtValueTypeFifth.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.Forms.Design.SpreadsheetLookUpEdit, DevExpress.XtraSpreadsheet.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtValueTypeFifth.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;edtValueTypeFifth.ZOrder" xml:space="preserve">
+    <value>29</value>
+  </data>
+  <data name="edtIconSetsComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>72, 48</value>
+  </data>
+  <data name="edtIconSetsComboBox.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>155, 20</value>
+  </data>
+  <data name="edtIconSetsComboBox.Properties.AccessibleName" xml:space="preserve">
+    <value>Icon Style</value>
+  </data>
+  <data name="edtIconSetsComboBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>155, 20</value>
+  </data>
+  <data name="edtIconSetsComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;edtIconSetsComboBox.Name" xml:space="preserve">
+    <value>edtIconSetsComboBox</value>
+  </data>
+  <data name="&gt;&gt;edtIconSetsComboBox.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.Forms.Design.IconSetTypeImageComboBoxEdit, DevExpress.XtraSpreadsheet.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtIconSetsComboBox.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;edtIconSetsComboBox.ZOrder" xml:space="preserve">
+    <value>30</value>
+  </data>
+  <data name="chkShowIconOnly.Location" type="System.Drawing.Point, System.Drawing">
+    <value>231, 48</value>
+  </data>
+  <data name="chkShowIconOnly.Properties.AccessibleName" xml:space="preserve">
+    <value>Show Icon Only</value>
+  </data>
+  <data name="chkShowIconOnly.Properties.Caption" xml:space="preserve">
+    <value>Show &amp;Icon Only</value>
+  </data>
+  <data name="chkShowIconOnly.Size" type="System.Drawing.Size, System.Drawing">
+    <value>98, 20</value>
+  </data>
+  <data name="chkShowIconOnly.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;chkShowIconOnly.Name" xml:space="preserve">
+    <value>chkShowIconOnly</value>
+  </data>
+  <data name="&gt;&gt;chkShowIconOnly.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;chkShowIconOnly.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;chkShowIconOnly.ZOrder" xml:space="preserve">
+    <value>31</value>
+  </data>
+  <data name="lblDisplayEachIcon.AccessibleName" xml:space="preserve">
+    <value>Display each icon according to these rules</value>
+  </data>
+  <data name="lblDisplayEachIcon.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 73</value>
+  </data>
+  <data name="lblDisplayEachIcon.Size" type="System.Drawing.Size, System.Drawing">
+    <value>204, 13</value>
+  </data>
+  <data name="lblDisplayEachIcon.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="lblDisplayEachIcon.Text" xml:space="preserve">
+    <value>Display each icon according to these rules:</value>
+  </data>
+  <data name="&gt;&gt;lblDisplayEachIcon.Name" xml:space="preserve">
+    <value>lblDisplayEachIcon</value>
+  </data>
+  <data name="&gt;&gt;lblDisplayEachIcon.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblDisplayEachIcon.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;lblDisplayEachIcon.ZOrder" xml:space="preserve">
+    <value>32</value>
+  </data>
+  <data name="lblIcon.AccessibleName" xml:space="preserve">
+    <value>Icon</value>
+  </data>
+  <data name="lblIcon.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="lblIcon.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 90</value>
+  </data>
+  <data name="lblIcon.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>320, 0</value>
+  </data>
+  <data name="lblIcon.Size" type="System.Drawing.Size, System.Drawing">
+    <value>320, 13</value>
+  </data>
+  <data name="lblIcon.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="lblIcon.Text" xml:space="preserve">
+    <value>Ico&amp;n</value>
+  </data>
+  <data name="&gt;&gt;lblIcon.Name" xml:space="preserve">
+    <value>lblIcon</value>
+  </data>
+  <data name="&gt;&gt;lblIcon.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblIcon.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;lblIcon.ZOrder" xml:space="preserve">
+    <value>33</value>
+  </data>
+  <data name="edtValueFifth.Location" type="System.Drawing.Point, System.Drawing">
+    <value>326, 107</value>
+  </data>
+  <data name="edtValueFifth.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="edtValueFifth.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="edtValueFifth.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;edtValueFifth.Name" xml:space="preserve">
+    <value>edtValueFifth</value>
+  </data>
+  <data name="&gt;&gt;edtValueFifth.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtValueFifth.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;edtValueFifth.ZOrder" xml:space="preserve">
+    <value>34</value>
+  </data>
+  <data name="lblValue.AccessibleName" xml:space="preserve">
+    <value>Value</value>
+  </data>
+  <data name="lblValue.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="lblValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>328, 90</value>
+  </data>
+  <data name="lblValue.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>100, 0</value>
+  </data>
+  <data name="lblValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 13</value>
+  </data>
+  <data name="lblValue.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="lblValue.Text" xml:space="preserve">
+    <value>&amp;Value</value>
+  </data>
+  <data name="&gt;&gt;lblValue.Name" xml:space="preserve">
+    <value>lblValue</value>
+  </data>
+  <data name="&gt;&gt;lblValue.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblValue.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;lblValue.ZOrder" xml:space="preserve">
+    <value>35</value>
+  </data>
+  <data name="lblType.AccessibleName" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="lblType.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="lblType.Location" type="System.Drawing.Point, System.Drawing">
+    <value>432, 90</value>
+  </data>
+  <data name="lblType.Size" type="System.Drawing.Size, System.Drawing">
+    <value>28, 13</value>
+  </data>
+  <data name="lblType.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="lblType.Text" xml:space="preserve">
+    <value>&amp;Type</value>
+  </data>
+  <data name="&gt;&gt;lblType.Name" xml:space="preserve">
+    <value>lblType</value>
+  </data>
+  <data name="&gt;&gt;lblType.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblType.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;lblType.ZOrder" xml:space="preserve">
+    <value>36</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"></assembly>
+  <data name="layoutControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="layoutControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="layoutControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>534, 227</value>
+  </data>
+  <data name="layoutControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="layoutControl1.Text" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;layoutControl1.Name" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;layoutControl1.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControl, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;layoutControl1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;layoutControl1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblFormatStyle.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="lblFormatStyle.Text" xml:space="preserve">
+    <value>F&amp;ormat style:</value>
+  </data>
+  <data name="&gt;&gt;lblFormatStyle.Name" xml:space="preserve">
+    <value>lblFormatStyle</value>
+  </data>
+  <data name="&gt;&gt;lblFormatStyle.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblFormatStyle.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;lblFormatStyle.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>533, 0</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>534, 227</value>
+  </data>
+  <data name="&gt;&gt;Root.Name" xml:space="preserve">
+    <value>Root</value>
+  </data>
+  <data name="&gt;&gt;Root.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblFormatAllCellsBasedOnValuesLayoutControlItem.Name" xml:space="preserve">
+    <value>lblFormatAllCellsBasedOnValuesLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;lblFormatAllCellsBasedOnValuesLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblDisplayEachIconLayoutControlItem.Name" xml:space="preserve">
+    <value>lblDisplayEachIconLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;lblDisplayEachIconLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblIconLayoutControlItem.Name" xml:space="preserve">
+    <value>lblIconLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;lblIconLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblValueLayoutControlItem.Name" xml:space="preserve">
+    <value>lblValueLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;lblValueLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblTypeLayoutControlItem.Name" xml:space="preserve">
+    <value>lblTypeLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;lblTypeLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtValueFifthLayoutControlItem.Name" xml:space="preserve">
+    <value>edtValueFifthLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;edtValueFifthLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtValueForthLayoutControlItem.Name" xml:space="preserve">
+    <value>edtValueForthLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;edtValueForthLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtValueThirdLayoutControlItem.Name" xml:space="preserve">
+    <value>edtValueThirdLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;edtValueThirdLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtValueSecondLayoutControlItem.Name" xml:space="preserve">
+    <value>edtValueSecondLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;edtValueSecondLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;formatIconStylesLayoutControlGroup.Name" xml:space="preserve">
+    <value>formatIconStylesLayoutControlGroup</value>
+  </data>
+  <data name="&gt;&gt;formatIconStylesLayoutControlGroup.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblFormatStyleLayoutControlItem.Name" xml:space="preserve">
+    <value>lblFormatStyleLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;lblFormatStyleLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblIconStyleLayoutControlItem.Name" xml:space="preserve">
+    <value>lblIconStyleLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;lblIconStyleLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;btnReverseIconOrderLayoutControlItem.Name" xml:space="preserve">
+    <value>btnReverseIconOrderLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;btnReverseIconOrderLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;chkShowIconOnlyLayoutControlItem.Name" xml:space="preserve">
+    <value>chkShowIconOnlyLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;chkShowIconOnlyLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem1.Name" xml:space="preserve">
+    <value>emptySpaceItem1</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblFirstLayoutControlItem.Name" xml:space="preserve">
+    <value>lblFirstLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;lblFirstLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblSecondLayoutControlItem.Name" xml:space="preserve">
+    <value>lblSecondLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;lblSecondLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblThirdLayoutControlItem.Name" xml:space="preserve">
+    <value>lblThirdLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;lblThirdLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblForthLayoutControlItem.Name" xml:space="preserve">
+    <value>lblForthLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;lblForthLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblFifthLayoutControlItem.Name" xml:space="preserve">
+    <value>lblFifthLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;lblFifthLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtIconFifthLayoutControlItem.Name" xml:space="preserve">
+    <value>edtIconFifthLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;edtIconFifthLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtValueFifthIsGreaterOrEqualLayoutControlItem.Name" xml:space="preserve">
+    <value>edtValueFifthIsGreaterOrEqualLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;edtValueFifthIsGreaterOrEqualLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtValueTypeFifthLayoutControlItem.Name" xml:space="preserve">
+    <value>edtValueTypeFifthLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;edtValueTypeFifthLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtIconForthLayoutControlItem.Name" xml:space="preserve">
+    <value>edtIconForthLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;edtIconForthLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtValueForthIsGreaterOrEqualLayoutControlItem.Name" xml:space="preserve">
+    <value>edtValueForthIsGreaterOrEqualLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;edtValueForthIsGreaterOrEqualLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtValueTypeForthLayoutControlItem.Name" xml:space="preserve">
+    <value>edtValueTypeForthLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;edtValueTypeForthLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtIconThirdLayoutControlItem.Name" xml:space="preserve">
+    <value>edtIconThirdLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;edtIconThirdLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtValueThirdIsGreaterOrEqualLayoutControlItem.Name" xml:space="preserve">
+    <value>edtValueThirdIsGreaterOrEqualLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;edtValueThirdIsGreaterOrEqualLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtValueTypeThirdLayoutControlItem.Name" xml:space="preserve">
+    <value>edtValueTypeThirdLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;edtValueTypeThirdLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtIconSecondLayoutControlItem.Name" xml:space="preserve">
+    <value>edtIconSecondLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;edtIconSecondLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtValueSecondIsGreaterOrEqualLayoutControlItem.Name" xml:space="preserve">
+    <value>edtValueSecondIsGreaterOrEqualLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;edtValueSecondIsGreaterOrEqualLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtValueTypeSecondLayoutControlItem.Name" xml:space="preserve">
+    <value>edtValueTypeSecondLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;edtValueTypeSecondLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtIconFirstLayoutControlItem.Name" xml:space="preserve">
+    <value>edtIconFirstLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;edtIconFirstLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtFormatStyleLayoutControlItem.Name" xml:space="preserve">
+    <value>edtFormatStyleLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;edtFormatStyleLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtIconSetsComboBoxLayoutControlItem.Name" xml:space="preserve">
+    <value>edtIconSetsComboBoxLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;edtIconSetsComboBoxLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>ConditionalFormattingIconSetsControl</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.XtraUserControl, DevExpress.Utils.v21.2, Culture=neutral</value>
+  </data>
+</root>

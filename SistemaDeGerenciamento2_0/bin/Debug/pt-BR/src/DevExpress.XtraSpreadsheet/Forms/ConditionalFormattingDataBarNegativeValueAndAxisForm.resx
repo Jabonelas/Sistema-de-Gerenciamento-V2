@@ -1,0 +1,594 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="lblAxisSettings.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <data name="lblAxisSettings.AccessibleName" xml:space="preserve">
+    <value>Axis settings</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"></assembly>
+  <data name="lblAxisSettings.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 178</value>
+  </data>
+  <data name="lblAxisSettings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>400, 13</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"></assembly>
+  <data name="lblAxisSettings.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="lblAxisSettings.Text" xml:space="preserve">
+    <value>Axis settings</value>
+  </data>
+  <data name="&gt;&gt;lblAxisSettings.Name" xml:space="preserve">
+    <value>lblAxisSettings</value>
+  </data>
+  <data name="&gt;&gt;lblAxisSettings.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblAxisSettings.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblAxisSettings.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <metadata name="lblSelectAxisPosition.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <data name="lblSelectAxisPosition.AccessibleName" xml:space="preserve">
+    <value>Select axis position in cell to change the appearance of bars for negative values</value>
+  </data>
+  <data name="lblSelectAxisPosition.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 197</value>
+  </data>
+  <data name="lblSelectAxisPosition.Size" type="System.Drawing.Size, System.Drawing">
+    <value>383, 13</value>
+  </data>
+  <data name="lblSelectAxisPosition.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="lblSelectAxisPosition.Text" xml:space="preserve">
+    <value>Select axis position in cell to change the appearance of bars for negative values</value>
+  </data>
+  <data name="&gt;&gt;lblSelectAxisPosition.Name" xml:space="preserve">
+    <value>lblSelectAxisPosition</value>
+  </data>
+  <data name="&gt;&gt;lblSelectAxisPosition.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblSelectAxisPosition.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblSelectAxisPosition.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <metadata name="lblAxisColor.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <data name="lblAxisColor.AccessibleName" xml:space="preserve">
+    <value>Axis color</value>
+  </data>
+  <data name="lblAxisColor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>32, 294</value>
+  </data>
+  <data name="lblAxisColor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 13</value>
+  </data>
+  <data name="lblAxisColor.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="lblAxisColor.Text" xml:space="preserve">
+    <value>A&amp;xis color:</value>
+  </data>
+  <data name="&gt;&gt;lblAxisColor.Name" xml:space="preserve">
+    <value>lblAxisColor</value>
+  </data>
+  <data name="&gt;&gt;lblAxisColor.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblAxisColor.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblAxisColor.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="lblNegativeBarFillColor.AccessibleName" xml:space="preserve">
+    <value>Negative bar fill color</value>
+  </data>
+  <data name="lblNegativeBarFillColor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="lblNegativeBarFillColor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>400, 13</value>
+  </data>
+  <data name="lblNegativeBarFillColor.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="lblNegativeBarFillColor.Text" xml:space="preserve">
+    <value>Negative bar fill color</value>
+  </data>
+  <data name="&gt;&gt;lblNegativeBarFillColor.Name" xml:space="preserve">
+    <value>lblNegativeBarFillColor</value>
+  </data>
+  <data name="&gt;&gt;lblNegativeBarFillColor.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblNegativeBarFillColor.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblNegativeBarFillColor.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="lblNegativeBarBorderColor.AccessibleName" xml:space="preserve">
+    <value>Negative bar border color</value>
+  </data>
+  <data name="lblNegativeBarBorderColor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 95</value>
+  </data>
+  <data name="lblNegativeBarBorderColor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>400, 13</value>
+  </data>
+  <data name="lblNegativeBarBorderColor.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="lblNegativeBarBorderColor.Text" xml:space="preserve">
+    <value>Negative bar border color</value>
+  </data>
+  <data name="&gt;&gt;lblNegativeBarBorderColor.Name" xml:space="preserve">
+    <value>lblNegativeBarBorderColor</value>
+  </data>
+  <data name="&gt;&gt;lblNegativeBarBorderColor.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblNegativeBarBorderColor.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblNegativeBarBorderColor.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="rgrpFillColor.EditValue" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="rgrpFillColor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 31</value>
+  </data>
+  <data name="rgrpFillColor.Properties.AccessibleName" xml:space="preserve">
+    <value>Fill Color</value>
+  </data>
+  <data name="rgrpFillColor.Properties.Appearance.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>Transparent</value>
+  </data>
+  <data name="rgrpFillColor.Properties.Items" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="rgrpFillColor.Properties.Items1" xml:space="preserve">
+    <value>&amp;Fill color:</value>
+  </data>
+  <data name="rgrpFillColor.Properties.Items2" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="rgrpFillColor.Properties.Items3" xml:space="preserve">
+    <value>&amp;Apply same fill color as positive bar</value>
+  </data>
+  <data name="rgrpFillColor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>195, 58</value>
+  </data>
+  <data name="rgrpFillColor.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;rgrpFillColor.Name" xml:space="preserve">
+    <value>rgrpFillColor</value>
+  </data>
+  <data name="&gt;&gt;rgrpFillColor.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.RadioGroup, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;rgrpFillColor.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;rgrpFillColor.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="rgrpBorderColor.EditValue" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="rgrpBorderColor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 114</value>
+  </data>
+  <data name="rgrpBorderColor.Properties.AccessibleName" xml:space="preserve">
+    <value>Border Color</value>
+  </data>
+  <data name="rgrpBorderColor.Properties.Appearance.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>Transparent</value>
+  </data>
+  <data name="rgrpBorderColor.Properties.Items" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="rgrpBorderColor.Properties.Items1" xml:space="preserve">
+    <value>&amp;Border color:</value>
+  </data>
+  <data name="rgrpBorderColor.Properties.Items2" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="rgrpBorderColor.Properties.Items3" xml:space="preserve">
+    <value>A&amp;pply same border color as positive bar</value>
+  </data>
+  <data name="rgrpBorderColor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>221, 58</value>
+  </data>
+  <data name="rgrpBorderColor.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;rgrpBorderColor.Name" xml:space="preserve">
+    <value>rgrpBorderColor</value>
+  </data>
+  <data name="&gt;&gt;rgrpBorderColor.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.RadioGroup, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;rgrpBorderColor.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;rgrpBorderColor.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="edtFillColor.EditValue" type="System.Drawing.Color, System.Drawing">
+    <value></value>
+  </data>
+  <data name="edtFillColor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>103, 38</value>
+  </data>
+  <data name="edtFillColor.Properties.AccessibleName" xml:space="preserve">
+    <value>Fill Color</value>
+  </data>
+  <data name="edtFillColor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 20</value>
+  </data>
+  <data name="edtFillColor.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;edtFillColor.Name" xml:space="preserve">
+    <value>edtFillColor</value>
+  </data>
+  <data name="&gt;&gt;edtFillColor.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ColorPickEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtFillColor.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;edtFillColor.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="edtBorderColor.EditValue" type="System.Drawing.Color, System.Drawing">
+    <value></value>
+  </data>
+  <data name="edtBorderColor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>123, 121</value>
+  </data>
+  <data name="edtBorderColor.Properties.AccessibleName" xml:space="preserve">
+    <value>Border Color</value>
+  </data>
+  <data name="edtBorderColor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 20</value>
+  </data>
+  <data name="edtBorderColor.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;edtBorderColor.Name" xml:space="preserve">
+    <value>edtBorderColor</value>
+  </data>
+  <data name="&gt;&gt;edtBorderColor.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ColorPickEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtBorderColor.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;edtBorderColor.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="edtAxisColor.EditValue" type="System.Drawing.Color, System.Drawing">
+    <value></value>
+  </data>
+  <data name="edtAxisColor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>100, 291</value>
+  </data>
+  <data name="edtAxisColor.Properties.AccessibleName" xml:space="preserve">
+    <value>Axis color</value>
+  </data>
+  <data name="edtAxisColor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 20</value>
+  </data>
+  <data name="edtAxisColor.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;edtAxisColor.Name" xml:space="preserve">
+    <value>edtAxisColor</value>
+  </data>
+  <data name="&gt;&gt;edtAxisColor.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ColorPickEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtAxisColor.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;edtAxisColor.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="btnCancel.AccessibleName" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"></assembly>
+  <data name="btnCancel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="btnCancel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>337, 315</value>
+  </data>
+  <data name="btnCancel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btnCancel.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="btnCancel.Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.Name" xml:space="preserve">
+    <value>btnCancel</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="btnOk.AccessibleName" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="btnOk.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="btnOk.Location" type="System.Drawing.Point, System.Drawing">
+    <value>256, 315</value>
+  </data>
+  <data name="btnOk.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btnOk.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="btnOk.Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="&gt;&gt;btnOk.Name" xml:space="preserve">
+    <value>btnOk</value>
+  </data>
+  <data name="&gt;&gt;btnOk.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;btnOk.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnOk.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="chkAutomatic.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 216</value>
+  </data>
+  <data name="chkAutomatic.Properties.AccessibleName" xml:space="preserve">
+    <value>Automatic (display at variable position based on negative values)</value>
+  </data>
+  <data name="chkAutomatic.Properties.Caption" xml:space="preserve">
+    <value>A&amp;utomatic (display at variable position based on negative values)</value>
+  </data>
+  <data name="chkAutomatic.Size" type="System.Drawing.Size, System.Drawing">
+    <value>334, 19</value>
+  </data>
+  <data name="chkAutomatic.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;chkAutomatic.Name" xml:space="preserve">
+    <value>chkAutomatic</value>
+  </data>
+  <data name="&gt;&gt;chkAutomatic.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;chkAutomatic.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;chkAutomatic.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="chkCellMidpoint.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 241</value>
+  </data>
+  <data name="chkCellMidpoint.Properties.AccessibleName" xml:space="preserve">
+    <value>Cell midpoint</value>
+  </data>
+  <data name="chkCellMidpoint.Properties.Caption" xml:space="preserve">
+    <value>Cell &amp;midpoint</value>
+  </data>
+  <data name="chkCellMidpoint.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 19</value>
+  </data>
+  <data name="chkCellMidpoint.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;chkCellMidpoint.Name" xml:space="preserve">
+    <value>chkCellMidpoint</value>
+  </data>
+  <data name="&gt;&gt;chkCellMidpoint.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;chkCellMidpoint.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;chkCellMidpoint.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="chkNone.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 266</value>
+  </data>
+  <data name="chkNone.Properties.AccessibleName" xml:space="preserve">
+    <value>None (show negative value bars in same direction as positive)</value>
+  </data>
+  <data name="chkNone.Properties.Caption" xml:space="preserve">
+    <value>Non&amp;e (show negative value bars in same direction as positive)</value>
+  </data>
+  <data name="chkNone.Size" type="System.Drawing.Size, System.Drawing">
+    <value>318, 19</value>
+  </data>
+  <data name="chkNone.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;chkNone.Name" xml:space="preserve">
+    <value>chkNone</value>
+  </data>
+  <data name="&gt;&gt;chkNone.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;chkNone.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;chkNone.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>424, 350</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterParent</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Negative Value and Axis Settings</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>ConditionalFormattingDataBarNegativeValueAndAxisForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.XtraForm, DevExpress.Utils.v21.2, Culture=neutral</value>
+  </data>
+</root>

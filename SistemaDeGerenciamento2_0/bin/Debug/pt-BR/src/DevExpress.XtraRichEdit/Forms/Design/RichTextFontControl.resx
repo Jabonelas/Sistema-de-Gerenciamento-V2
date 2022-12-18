@@ -1,0 +1,660 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"></assembly>
+  <data name="fontLayoutControl.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblFont.AccessibleName" xml:space="preserve">
+    <value>Font</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"></assembly>
+  <data name="lblFont.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 2</value>
+  </data>
+  <data name="lblFont.Size" type="System.Drawing.Size, System.Drawing">
+    <value>26, 13</value>
+  </data>
+  <data name="lblFont.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="lblFont.Text" xml:space="preserve">
+    <value>&amp;Font:</value>
+  </data>
+  <data name="&gt;&gt;lblFont.Name" xml:space="preserve">
+    <value>lblFont</value>
+  </data>
+  <data name="&gt;&gt;lblFont.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblFont.Parent" xml:space="preserve">
+    <value>fontLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblFont.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="edtUnderlineStyle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>242, 60</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"></assembly>
+  <data name="edtUnderlineStyle.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="edtUnderlineStyle.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>120, 0</value>
+  </data>
+  <data name="edtUnderlineStyle.Properties.AccessibleName" xml:space="preserve">
+    <value>Underline style</value>
+  </data>
+  <data name="edtUnderlineStyle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 20</value>
+  </data>
+  <data name="edtUnderlineStyle.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="&gt;&gt;edtUnderlineStyle.Name" xml:space="preserve">
+    <value>edtUnderlineStyle</value>
+  </data>
+  <data name="&gt;&gt;edtUnderlineStyle.Type" xml:space="preserve">
+    <value>DevExpress.XtraRichEdit.Design.UnderlineStyleEdit, DevExpress.XtraRichEdit.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtUnderlineStyle.Parent" xml:space="preserve">
+    <value>fontLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;edtUnderlineStyle.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="cbForeColor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 60</value>
+  </data>
+  <data name="cbForeColor.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>230, 0</value>
+  </data>
+  <data name="cbForeColor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>230, 20</value>
+  </data>
+  <data name="cbForeColor.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;cbForeColor.Name" xml:space="preserve">
+    <value>cbForeColor</value>
+  </data>
+  <data name="&gt;&gt;cbForeColor.Type" xml:space="preserve">
+    <value>DevExpress.Office.UI.OfficeColorPickEdit, DevExpress.XtraBars.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;cbForeColor.Parent" xml:space="preserve">
+    <value>fontLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;cbForeColor.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="edtFontSize.EditValue" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="edtFontSize.Location" type="System.Drawing.Point, System.Drawing">
+    <value>372, 19</value>
+  </data>
+  <data name="edtFontSize.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>120, 0</value>
+  </data>
+  <data name="edtFontSize.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 20</value>
+  </data>
+  <data name="edtFontSize.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;edtFontSize.Name" xml:space="preserve">
+    <value>edtFontSize</value>
+  </data>
+  <data name="&gt;&gt;edtFontSize.Type" xml:space="preserve">
+    <value>DevExpress.XtraRichEdit.Design.RichEditFontSizeEdit, DevExpress.XtraRichEdit.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtFontSize.Parent" xml:space="preserve">
+    <value>fontLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;edtFontSize.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="edtFont.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 19</value>
+  </data>
+  <data name="edtFont.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>230, 0</value>
+  </data>
+  <data name="edtFont.Properties.AccessibleName" xml:space="preserve">
+    <value>Font</value>
+  </data>
+  <data name="edtFont.Size" type="System.Drawing.Size, System.Drawing">
+    <value>230, 20</value>
+  </data>
+  <data name="edtFont.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;edtFont.Name" xml:space="preserve">
+    <value>edtFont</value>
+  </data>
+  <data name="&gt;&gt;edtFont.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.FontEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtFont.Parent" xml:space="preserve">
+    <value>fontLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;edtFont.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="lblFontStyle.AccessibleName" xml:space="preserve">
+    <value>Font style</value>
+  </data>
+  <data name="lblFontStyle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>242, 2</value>
+  </data>
+  <data name="lblFontStyle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 13</value>
+  </data>
+  <data name="lblFontStyle.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="lblFontStyle.Text" xml:space="preserve">
+    <value>Font st&amp;yle:</value>
+  </data>
+  <data name="&gt;&gt;lblFontStyle.Name" xml:space="preserve">
+    <value>lblFontStyle</value>
+  </data>
+  <data name="&gt;&gt;lblFontStyle.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblFontStyle.Parent" xml:space="preserve">
+    <value>fontLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblFontStyle.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="lblFontSize.AccessibleName" xml:space="preserve">
+    <value>Size</value>
+  </data>
+  <data name="lblFontSize.Location" type="System.Drawing.Point, System.Drawing">
+    <value>372, 2</value>
+  </data>
+  <data name="lblFontSize.Size" type="System.Drawing.Size, System.Drawing">
+    <value>23, 13</value>
+  </data>
+  <data name="lblFontSize.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="lblFontSize.Text" xml:space="preserve">
+    <value>&amp;Size:</value>
+  </data>
+  <data name="&gt;&gt;lblFontSize.Name" xml:space="preserve">
+    <value>lblFontSize</value>
+  </data>
+  <data name="&gt;&gt;lblFontSize.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblFontSize.Parent" xml:space="preserve">
+    <value>fontLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblFontSize.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="lblFontColor.AccessibleName" xml:space="preserve">
+    <value>Font color</value>
+  </data>
+  <data name="lblFontColor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 43</value>
+  </data>
+  <data name="lblFontColor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 13</value>
+  </data>
+  <data name="lblFontColor.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="lblFontColor.Text" xml:space="preserve">
+    <value>Font &amp;color:</value>
+  </data>
+  <data name="&gt;&gt;lblFontColor.Name" xml:space="preserve">
+    <value>lblFontColor</value>
+  </data>
+  <data name="&gt;&gt;lblFontColor.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblFontColor.Parent" xml:space="preserve">
+    <value>fontLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblFontColor.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="fontEffects.AccessibleName" xml:space="preserve">
+    <value>FontEffects</value>
+  </data>
+  <data name="fontEffects.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="fontEffects.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 101</value>
+  </data>
+  <data name="fontEffects.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="fontEffects.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>379, 0</value>
+  </data>
+  <data name="fontEffects.Size" type="System.Drawing.Size, System.Drawing">
+    <value>491, 96</value>
+  </data>
+  <data name="fontEffects.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="&gt;&gt;fontEffects.Name" xml:space="preserve">
+    <value>fontEffects</value>
+  </data>
+  <data name="&gt;&gt;fontEffects.Type" xml:space="preserve">
+    <value>DevExpress.XtraRichEdit.Design.FontEffects, DevExpress.XtraRichEdit.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;fontEffects.Parent" xml:space="preserve">
+    <value>fontLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;fontEffects.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="lblUnderlineStyle.AccessibleName" xml:space="preserve">
+    <value>Underline style</value>
+  </data>
+  <data name="lblUnderlineStyle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>242, 43</value>
+  </data>
+  <data name="lblUnderlineStyle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 13</value>
+  </data>
+  <data name="lblUnderlineStyle.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="lblUnderlineStyle.Text" xml:space="preserve">
+    <value>&amp;Underline style:</value>
+  </data>
+  <data name="&gt;&gt;lblUnderlineStyle.Name" xml:space="preserve">
+    <value>lblUnderlineStyle</value>
+  </data>
+  <data name="&gt;&gt;lblUnderlineStyle.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblUnderlineStyle.Parent" xml:space="preserve">
+    <value>fontLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblUnderlineStyle.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="lblEffects.AccessibleName" xml:space="preserve">
+    <value>Effects</value>
+  </data>
+  <data name="lblEffects.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 84</value>
+  </data>
+  <data name="lblEffects.Size" type="System.Drawing.Size, System.Drawing">
+    <value>496, 13</value>
+  </data>
+  <data name="lblEffects.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="lblEffects.Text" xml:space="preserve">
+    <value>Effects</value>
+  </data>
+  <data name="&gt;&gt;lblEffects.Name" xml:space="preserve">
+    <value>lblEffects</value>
+  </data>
+  <data name="&gt;&gt;lblEffects.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblEffects.Parent" xml:space="preserve">
+    <value>fontLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblEffects.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="lblUnderlineColor.AccessibleName" xml:space="preserve">
+    <value>Underline color</value>
+  </data>
+  <data name="lblUnderlineColor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>372, 43</value>
+  </data>
+  <data name="lblUnderlineColor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 13</value>
+  </data>
+  <data name="lblUnderlineColor.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="lblUnderlineColor.Text" xml:space="preserve">
+    <value>Underl&amp;ine color:</value>
+  </data>
+  <data name="&gt;&gt;lblUnderlineColor.Name" xml:space="preserve">
+    <value>lblUnderlineColor</value>
+  </data>
+  <data name="&gt;&gt;lblUnderlineColor.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblUnderlineColor.Parent" xml:space="preserve">
+    <value>fontLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblUnderlineColor.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="cbUnderlineColor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>372, 60</value>
+  </data>
+  <data name="cbUnderlineColor.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="cbUnderlineColor.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>120, 0</value>
+  </data>
+  <data name="cbUnderlineColor.Properties.AccessibleName" xml:space="preserve">
+    <value>Underline color</value>
+  </data>
+  <data name="cbUnderlineColor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 20</value>
+  </data>
+  <data name="cbUnderlineColor.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;cbUnderlineColor.Name" xml:space="preserve">
+    <value>cbUnderlineColor</value>
+  </data>
+  <data name="&gt;&gt;cbUnderlineColor.Type" xml:space="preserve">
+    <value>DevExpress.Office.UI.OfficeColorPickEdit, DevExpress.XtraBars.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;cbUnderlineColor.Parent" xml:space="preserve">
+    <value>fontLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;cbUnderlineColor.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="edtFontStyle.EditValue" type="System.Drawing.FontStyle, System.Drawing">
+    <value>Regular</value>
+  </data>
+  <data name="edtFontStyle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>242, 19</value>
+  </data>
+  <data name="edtFontStyle.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="edtFontStyle.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>120, 0</value>
+  </data>
+  <data name="edtFontStyle.Properties.AccessibleName" xml:space="preserve">
+    <value>Font Style</value>
+  </data>
+  <data name="edtFontStyle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 20</value>
+  </data>
+  <data name="edtFontStyle.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;edtFontStyle.Name" xml:space="preserve">
+    <value>edtFontStyle</value>
+  </data>
+  <data name="&gt;&gt;edtFontStyle.Type" xml:space="preserve">
+    <value>DevExpress.XtraRichEdit.Design.FontStyleEdit, DevExpress.XtraRichEdit.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtFontStyle.Parent" xml:space="preserve">
+    <value>fontLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;edtFontStyle.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="fontLayoutControl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="fontLayoutControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="fontLayoutControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>500, 199</value>
+  </data>
+  <data name="fontLayoutControl.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="fontLayoutControl.Text" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;fontLayoutControl.Name" xml:space="preserve">
+    <value>fontLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;fontLayoutControl.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControl, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;fontLayoutControl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;fontLayoutControl.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AccessibleName" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>500, 199</value>
+  </data>
+  <data name="&gt;&gt;Root.Name" xml:space="preserve">
+    <value>Root</value>
+  </data>
+  <data name="&gt;&gt;Root.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblFontStyleLayoutControlItem.Name" xml:space="preserve">
+    <value>lblFontStyleLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;lblFontStyleLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblFontSizeLayoutControlItem.Name" xml:space="preserve">
+    <value>lblFontSizeLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;lblFontSizeLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblFontColorLayoutControlItem.Name" xml:space="preserve">
+    <value>lblFontColorLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;lblFontColorLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblUnderlineStyleLayoutControlItem.Name" xml:space="preserve">
+    <value>lblUnderlineStyleLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;lblUnderlineStyleLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblUnderlineColorLayoutControlItem.Name" xml:space="preserve">
+    <value>lblUnderlineColorLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;lblUnderlineColorLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;cbForeColorLayoutControlItem.Name" xml:space="preserve">
+    <value>cbForeColorLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;cbForeColorLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;cbUnderlineColorLayoutControlItem.Name" xml:space="preserve">
+    <value>cbUnderlineColorLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;cbUnderlineColorLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblEffectsLayoutControlItem.Name" xml:space="preserve">
+    <value>lblEffectsLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;lblEffectsLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtFontLayoutControlItem.Name" xml:space="preserve">
+    <value>edtFontLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;edtFontLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblFontLayoutControlItem.Name" xml:space="preserve">
+    <value>lblFontLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;lblFontLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtFontSizeLayoutControlItem.Name" xml:space="preserve">
+    <value>edtFontSizeLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;edtFontSizeLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;fontEffectsLayoutControlItem.Name" xml:space="preserve">
+    <value>fontEffectsLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;fontEffectsLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtFontStyleLayoutControlItem.Name" xml:space="preserve">
+    <value>edtFontStyleLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;edtFontStyleLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtUnderlineStyleLayoutControlItem.Name" xml:space="preserve">
+    <value>edtUnderlineStyleLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;edtUnderlineStyleLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>RichEditFontControl</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.XtraUserControl, DevExpress.Utils.v21.2, Culture=neutral</value>
+  </data>
+</root>

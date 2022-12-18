@@ -1,0 +1,793 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ASPxSpreadsheetStringId.InsertLink_Text" xml:space="preserve">
+    <value>Texto</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.ButtonCancel" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.ButtonOK" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.ButtonOpen" xml:space="preserve">
+    <value>Abrir</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.InsertLink_Subject" xml:space="preserve">
+    <value>Assunto</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.ButtonInsert" xml:space="preserve">
+    <value>Inserir</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.ButtonDownload" xml:space="preserve">
+    <value>Baixar</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.ButtonSaveAs" xml:space="preserve">
+    <value>Salvar como</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.InsertImage" xml:space="preserve">
+    <value>Inserir imagem</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.InsertImage_FromLocal" xml:space="preserve">
+    <value>Do seu computador</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.InsertImage_FromWeb" xml:space="preserve">
+    <value>Da web (URL)</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.InsertImage_ImagePreview" xml:space="preserve">
+    <value>Visualização da Imagem</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.InsertLink" xml:space="preserve">
+    <value>Inserir hiperlink</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.InsertLink_DisplayProperties" xml:space="preserve">
+    <value>Propriedades de Exibição</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.InsertLink_Email" xml:space="preserve">
+    <value>Endereço de email</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.InsertLink_URL" xml:space="preserve">
+    <value>URL</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.OpenFile" xml:space="preserve">
+    <value>Abrir planilha</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.OpenFile_FromComputer" xml:space="preserve">
+    <value>Do seu computador</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.ButtonSelect" xml:space="preserve">
+    <value>Selecionar</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.InsertLink_EmailTo" xml:space="preserve">
+    <value>E-mail para</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.OpenFile_ChooseInstruction" xml:space="preserve">
+    <value>Escolha o arquivo de planilha do servidor</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.OpenFile_FileManager_Header" xml:space="preserve">
+    <value>Selecione a planilha</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.OpenFile_FromServer" xml:space="preserve">
+    <value>Do servidor</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.RequiredFieldError" xml:space="preserve">
+    <value>Este campo é obrigatório</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.SaveFile_DownloadCopy" xml:space="preserve">
+    <value>Baixar uma cópia</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.SaveFile_FileAlreadyExists" xml:space="preserve">
+    <value>já existe. Você quer substituí-lo?</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.SaveFile_FileName" xml:space="preserve">
+    <value>Nome do arquivo</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.SaveFile_FileType" xml:space="preserve">
+    <value>Tipo de arquivo</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.SaveFile_FolderManager_Header" xml:space="preserve">
+    <value>Selecione a pasta de destino ou arquivo existente</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.SaveFile_FolderPath" xml:space="preserve">
+    <value>Caminho da pasta</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.RenameSheet" xml:space="preserve">
+    <value>Renomear a folha</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.ButtonChange" xml:space="preserve">
+    <value>Mudança</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.InsertImage_UploadInstructions" xml:space="preserve">
+    <value>Procurar o seu computador para o arquivo de imagem para carregar</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.InsertLink_ToolTip" xml:space="preserve">
+    <value>Dica de ferramenta</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.RenameSheet_SheetName" xml:space="preserve">
+    <value>Nome da folha</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.SaveFile" xml:space="preserve">
+    <value>Salve o arquivo de planilha, como</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.SaveFile_DownloadInstruction" xml:space="preserve">
+    <value>Escolha tipo de arquivo de download</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.SaveFile_SaveFileToServer" xml:space="preserve">
+    <value>Salvar o arquivo para o servidor</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.ChangeLink" xml:space="preserve">
+    <value>Hiperlink de mudança</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.InsertImage_EnterUrl" xml:space="preserve">
+    <value>Entre com o endereço da imagem</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.BorderLineStyle_Double" xml:space="preserve">
+    <value>Duplo</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.BorderLineStyle_Medium" xml:space="preserve">
+    <value>Médio</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.BorderLineStyle_Thick" xml:space="preserve">
+    <value>Espessura</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.OpenFile_UploadInstruction" xml:space="preserve">
+    <value>Procurar o seu computador para o arquivo de planilha para carregar</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.BorderLineStyle_Thin" xml:space="preserve">
+    <value>Fina</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.ExternalRibbonControl_NotFound" xml:space="preserve">
+    <value>o controle de fita externo '{0}' não é encontrado.</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.BorderLineStyle_Dashed" xml:space="preserve">
+    <value>Tracejada</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.BorderLineStyle_MediumDashed" xml:space="preserve">
+    <value>Médio tracejado</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.BorderLineStyle_Dotted" xml:space="preserve">
+    <value>Pontilhado</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.FindAndReplace_LookIn_Values" xml:space="preserve">
+    <value>Valores</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.FindAndReplace" xml:space="preserve">
+    <value>Procurar</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.FindAndReplace_FindTab_Caption" xml:space="preserve">
+    <value>Procurar</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.FindAndReplace_SearchResults_ValueHeader" xml:space="preserve">
+    <value>Valor</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.FindAndReplace_Search" xml:space="preserve">
+    <value>Pesquisar</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.FindAndReplace_SearchResults_CellHeader" xml:space="preserve">
+    <value>Célula</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.ViewGroup_Title" xml:space="preserve">
+    <value>Vista</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.ButtonFindAll" xml:space="preserve">
+    <value>Encontrar todos</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.ChangeChartType" xml:space="preserve">
+    <value>Alterar tipo de gráfico</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.ChartChangeHorizontalAxisTitle" xml:space="preserve">
+    <value>Alterar título do eixo horizontal</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.ChartChangeHorizontalAxisTitle_Caption" xml:space="preserve">
+    <value>Título do eixo horizontal</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.ChartChangeTitle_Caption" xml:space="preserve">
+    <value>Título do gráfico</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.ChartChangeVerticalAxisTitle_Caption" xml:space="preserve">
+    <value>Título do eixo vertical</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.ChartSelectData" xml:space="preserve">
+    <value>Selecione a fonte de dados</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.ChartSelectData_Caption" xml:space="preserve">
+    <value>Intervalo de dados do gráfico</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.ColumnWidth" xml:space="preserve">
+    <value>Largura da coluna</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.ColumnWidth_Caption" xml:space="preserve">
+    <value>Largura da coluna</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.DefaultColumnWidth" xml:space="preserve">
+    <value>Largura padrão</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.DefaultColumnWidth_Caption" xml:space="preserve">
+    <value>Largura padrão da coluna</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.FindAndReplace_FindWhat" xml:space="preserve">
+    <value>O que encontrar</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.FindAndReplace_LookIn_Formulas" xml:space="preserve">
+    <value>Fórmulas</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.FindAndReplace_MatchCase" xml:space="preserve">
+    <value>Coincidir maiúsculas/minúsculas</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.FindAndReplace_Search_ByColumns" xml:space="preserve">
+    <value>Por colunas</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.FindAndReplace_Search_ByRows" xml:space="preserve">
+    <value>Por linhas</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.FindAndReplace_SearchResults" xml:space="preserve">
+    <value>Resultados da pesquisa</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.FullScreenCommand_Text" xml:space="preserve">
+    <value>Tela cheia</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.InsertImage_ImageManager_Header" xml:space="preserve">
+    <value>Selecione a imagem</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.RowHeight" xml:space="preserve">
+    <value>Altura da linha</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.RowHeight_Caption" xml:space="preserve">
+    <value>Altura da linha</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.UnhideSheet" xml:space="preserve">
+    <value>Reexibir</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.ModifyChartLayout" xml:space="preserve">
+    <value>Layouts de gráfico</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.ModifyChartStyle" xml:space="preserve">
+    <value>Estilos de gráfico</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.UnhideSheet_Caption" xml:space="preserve">
+    <value>Reexibir folha</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.FindAndReplace_MatchCellContent" xml:space="preserve">
+    <value>Conteúdo da célula inteira correspondência</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.FullScreenCommand_Description" xml:space="preserve">
+    <value>Visualizar o documento no modo de tela cheia.</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.FindAndReplace_LookIn" xml:space="preserve">
+    <value>Olhe</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.ChartChangeTitle" xml:space="preserve">
+    <value>Título do gráfico de mudança</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.ChartChangeVerticalAxisTitle" xml:space="preserve">
+    <value>Título do eixo vertical de mudança</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.ConfirmOnLosingChanges" xml:space="preserve">
+    <value>? Todos os dados da folha não salvas serão perdidos.</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.Invalid_EMail" xml:space="preserve">
+    <value>E-mail inválido</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.Invalid_FileName" xml:space="preserve">
+    <value>Nome de arquivo inválido</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.Invalid_URL" xml:space="preserve">
+    <value>Endereço de link inválido</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.FormulaBar_CancelButtonTooltip" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PageSetup_MarginsTab_Bottom" xml:space="preserve">
+    <value>Fundo</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PageSetup_MarginsTab_Left" xml:space="preserve">
+    <value>Esquerda</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PageSetup_MarginsTab_Right" xml:space="preserve">
+    <value>Direita</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PageSetup_MarginsTab_Top" xml:space="preserve">
+    <value>Topo</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PageSetup_MarginsTab_Caption" xml:space="preserve">
+    <value>Margens</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.CustomFilter_OperatorAnd" xml:space="preserve">
+    <value>E</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.CustomFilter_OperatorOr" xml:space="preserve">
+    <value>Ou</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PageSetup_PageTab_OrientationLandscape" xml:space="preserve">
+    <value>Paisagem</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PageSetup_PageTab_OrientationPortrait" xml:space="preserve">
+    <value>Retrato</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PageSetup_PageTab_Caption" xml:space="preserve">
+    <value>Página</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.Caption_MediumTableStyleCategory" xml:space="preserve">
+    <value>Médio</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.Caption_MediumTableStyleNamePart" xml:space="preserve">
+    <value>Médio</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PageSetup_SheetTab_PrintGroup" xml:space="preserve">
+    <value>Imprimir</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PageSetup_HeaderFooterTab_Footer" xml:space="preserve">
+    <value>Rodapé</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PageSetup_MarginsTab_Footer" xml:space="preserve">
+    <value>Rodapé</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PageSetup_HeaderFooterTab_Header" xml:space="preserve">
+    <value>Cabeçalho</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PageSetup_MarginsTab_Header" xml:space="preserve">
+    <value>Cabeçalho</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PageSetup" xml:space="preserve">
+    <value>Configurar Página</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PageSetup_HeaderFooterTab_DifferentFirst" xml:space="preserve">
+    <value>Primeira página diferente</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.FilterTop10_Show" xml:space="preserve">
+    <value>Mostrar</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PageSetup_Print" xml:space="preserve">
+    <value>Imprimir...</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.FormulaBar_EnterButtonTooltip" xml:space="preserve">
+    <value>Digite</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.ModifyTableStyle" xml:space="preserve">
+    <value>Estilos de tabela</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.MoveOrCopySheet" xml:space="preserve">
+    <value>Mover ou copiar</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.Caption_DarkTableStyleCategory" xml:space="preserve">
+    <value>Escuro</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.Caption_DarkTableStyleNamePart" xml:space="preserve">
+    <value>Escuro</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.Caption_LightTableStyleCategory" xml:space="preserve">
+    <value>Luz</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.Caption_LightTableStyleNamePart" xml:space="preserve">
+    <value>Luz</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.Caption_PrefixTableStyleNamePart" xml:space="preserve">
+    <value>Estilo de tabela</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.CustomFilter_ShowRows" xml:space="preserve">
+    <value>Mostrar linhas onde</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.CustomFilter_StarSignDescription" xml:space="preserve">
+    <value>Uso * para representar qualquer série de caracteres</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.DataFilterSimple" xml:space="preserve">
+    <value>AutoFiltro</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.DataValidation" xml:space="preserve">
+    <value>Validação de dados</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.FilterSimple_CheckAll" xml:space="preserve">
+    <value>Verificar todos os</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.FilterSimple_UncheckAll" xml:space="preserve">
+    <value>Desmarcar tudo</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.TableSelectData_TableHasHeaders" xml:space="preserve">
+    <value>Minha tabela tem cabeçalhos</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.FileManager_OpenedFileDeleteErrorText" xml:space="preserve">
+    <value>O arquivo não pode ser excluído. Ele já está aberto por outro usuário.</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.MoveOrCopySheet_CreateCopy" xml:space="preserve">
+    <value>Criar uma cópia</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PageSetup_HeaderFooterTab_DifferentOddEven" xml:space="preserve">
+    <value>Páginas pares e ímpares diferentes</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PageSetup_HeaderFooterTab_ScaleWithDoc" xml:space="preserve">
+    <value>Escala com documento</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PageSetup_MarginsTab_CenterHorizontally" xml:space="preserve">
+    <value>Horizontalmente</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PageSetup_MarginsTab_CenterOnPageGroup" xml:space="preserve">
+    <value>Centralizar na página</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PageSetup_MarginsTab_CenterVertically" xml:space="preserve">
+    <value>Verticalmente</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PageSetup_PageTab_AdjustTo" xml:space="preserve">
+    <value>Ajustar para:</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PageSetup_PageTab_FirstPageNumber" xml:space="preserve">
+    <value>Primeiro o número de página:</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PageSetup_PageTab_PaperSize" xml:space="preserve">
+    <value>Tamanho do papel:</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PageSetup_PageTab_PrintQuality" xml:space="preserve">
+    <value>Qualidade de impressão:</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PageSetup_PageTab_Scale" xml:space="preserve">
+    <value>% de tamanho normal</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PageSetup_SheetTab_CellErrorAs" xml:space="preserve">
+    <value>Erro de célula como</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PageSetup_SheetTab_Comments" xml:space="preserve">
+    <value>Comentários</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PageSetup_SheetTab_PageOrder_DownThenOver" xml:space="preserve">
+    <value>Para baixo, depois sobre</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PageSetup_SheetTab_PageOrderGroup" xml:space="preserve">
+    <value>Ordem das páginas</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PageSetup_SheetTab_PrintArea" xml:space="preserve">
+    <value>Área de impressão</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PageSetup_SheetTab_PrintAreaErrorText" xml:space="preserve">
+    <value>A fórmula que você digitou contém um erro. A referência de intervalo ou nome definido está ausente.</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PageSetup_SheetTab_PrintHeadings" xml:space="preserve">
+    <value>Cabeçalhos de linha e coluna</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.CustomFilter_QuestionSignDescription" xml:space="preserve">
+    <value>Use ? para representar qualquer caractere único</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.TableSelectData_Caption" xml:space="preserve">
+    <value>Onde estão os dados para sua tabela?</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PageSetup_PageTab_FitTo" xml:space="preserve">
+    <value>Apto para:</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.MoveOrCopySheet_MoveSheetsCaption" xml:space="preserve">
+    <value>Mover folhas selecionadas antes de folha</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PageSetup_HeaderFooterTab_AlignWithMargins" xml:space="preserve">
+    <value>Alinhar com as margens de página</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PageSetup_SheetTab_PageOrder_OverThenDown" xml:space="preserve">
+    <value>Acabou, depois para baixo</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PageSetup_PageTab_FitToWidth" xml:space="preserve">
+    <value>largura por página (s)</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PageSetup_PageTab_OrientationGroup" xml:space="preserve">
+    <value>Orientaiton</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PageSetup_PageTab_ScalingGroup" xml:space="preserve">
+    <value>Dimensionamento de</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PageSetup_SheetTab_Caption" xml:space="preserve">
+    <value>Folha</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PageSetup_SheetTab_Draft" xml:space="preserve">
+    <value>Qualidade do projecto</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.InsertLink_WebPage" xml:space="preserve">
+    <value>Página da Web</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PageSetup_SheetTab_Gridlines" xml:space="preserve">
+    <value>Linhas de grade</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.TableSelectData" xml:space="preserve">
+    <value>Criar tabela</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PageSetup_HeaderFooterTab_Caption" xml:space="preserve">
+    <value>Cabeçalho/rodapé</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PageSetup_PageTab_FitToHeight" xml:space="preserve">
+    <value>Alto</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.DataValidation_NoButton" xml:space="preserve">
+    <value>Não</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.DataValidation_YesButton" xml:space="preserve">
+    <value>Sim</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.CustomHeaderFooter_CenterFooter" xml:space="preserve">
+    <value>Rodapé de centro</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.CustomHeaderFooter_CenterHeader" xml:space="preserve">
+    <value>Cabeçalho do centro</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.CustomHeaderFooter_EvenPageTab_Caption" xml:space="preserve">
+    <value>Até mesmo o cabeçalho/rodapé de página</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.CustomHeaderFooter_LeftFooter" xml:space="preserve">
+    <value>Esquerda rodapé</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.CustomHeaderFooter_LeftHeader" xml:space="preserve">
+    <value>Esquerda cabeçalho</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.SelectTableStyle" xml:space="preserve">
+    <value>Selecione o estilo de tabela</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.CustomAutoFilter" xml:space="preserve">
+    <value>AutoFiltro personalizado</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.InvalidFontSize" xml:space="preserve">
+    <value>Tamanho da fonte deve ser entre 1 e 409 pontos</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.MessageBox_ErrorTitle" xml:space="preserve">
+    <value>Erro</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.FormatAsTable" xml:space="preserve">
+    <value>Formatar como tabela</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.FormatCells" xml:space="preserve">
+    <value>Formatar células</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.FormatCells_NumberTab_Caption" xml:space="preserve">
+    <value>Número</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.FormatCells_NumberTab_Category" xml:space="preserve">
+    <value>Categoria</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.FormatCells_NumberTab_CurrencySymbol" xml:space="preserve">
+    <value>Símbolo</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.FormatCells_NumberTab_DecimalPlaces" xml:space="preserve">
+    <value>Casas decimais</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.FormatCells_NumberTab_Sample" xml:space="preserve">
+    <value>Amostra</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.FormatCells_NumberTab_Type" xml:space="preserve">
+    <value>Tipo</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.MessageBox_QuestionTitle" xml:space="preserve">
+    <value>Pergunta</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.MessageBox_WarningTitle" xml:space="preserve">
+    <value>Aviso</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.FormatCells_NumberTab_DecimalPlacesErrorText" xml:space="preserve">
+    <value>Sua entrada não pode ser usada. Um número inteiro ou decimal pode ser necessário.</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.FormatCells_NumberTab_Locate" xml:space="preserve">
+    <value>Locate (localização)</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.MessageBox_InformationTitle" xml:space="preserve">
+    <value>Informações</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.DataValidation_Settings_Data" xml:space="preserve">
+    <value>Dados</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.DataValidation_Alert_ErrorMessageTitle" xml:space="preserve">
+    <value>Título</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.DataValidation_Message_InputMessageTitle" xml:space="preserve">
+    <value>Título</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.DataValidation_ClearAll" xml:space="preserve">
+    <value>Limpar Tudo</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.DataValidation_Settings_Caption" xml:space="preserve">
+    <value>Configurações</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.DataValidation_Alert_Style" xml:space="preserve">
+    <value>Estilo</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.DataValidation_Failed_Caption" xml:space="preserve">
+    <value>Falhado de validação de dados</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.FormulaValidation_Failed_Caption" xml:space="preserve">
+    <value>Fórmula validação falhada</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.DataValidation_Settings_ApplyChanges" xml:space="preserve">
+    <value>Aplicar essas alterações a todas as outras células com as mesmas configurações</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.ButtonUpdate" xml:space="preserve">
+    <value>Atualizar</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PivotTable_ReportPlacedLocationCaption" xml:space="preserve">
+    <value>Localização</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.DownloadCopy_Text" xml:space="preserve">
+    <value>Baixar</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PivotTableDateFilter_BetweenSeparator" xml:space="preserve">
+    <value>e</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PivotTableLabelFilter_BetweenSeparator" xml:space="preserve">
+    <value>e</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.CustomFooter" xml:space="preserve">
+    <value>Rodapé</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.CustomHeaderFooter_AllPagesTab_Footer_Caption" xml:space="preserve">
+    <value>Rodapé</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.CustomHeader" xml:space="preserve">
+    <value>Cabeçalho</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.CustomHeaderFooter_AllPagesTab_Header_Caption" xml:space="preserve">
+    <value>Cabeçalho</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PivotTableTop10Filter_Description" xml:space="preserve">
+    <value>Mostrar</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.ChangeDataSourcePivotTable" xml:space="preserve">
+    <value>Alterar fonte de dados de tabela dinâmica</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.CustomHeaderFooter_EvenPageTab_Header_Caption" xml:space="preserve">
+    <value>Cabeçalho de página par</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.CustomHeaderFooter_OddPageTab_Footer_Caption" xml:space="preserve">
+    <value>Rodapé de página ímpar</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.CustomHeaderFooter_OddPageTab_Header_Caption" xml:space="preserve">
+    <value>Cabeçalho de página ímpar</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.MovePivotTable" xml:space="preserve">
+    <value>Mover a tabela dinâmica</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.SaveFile_PathDoesNotExist" xml:space="preserve">
+    <value>Caminho não existe.
+Verifique o caminho e tente novamente.</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PivotTable" xml:space="preserve">
+    <value>Criar tabela dinâmica</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PivotTable_DataRangeDescription" xml:space="preserve">
+    <value>Escolha os dados que você deseja analisar</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PivotTable_ReportPlacedDescription" xml:space="preserve">
+    <value>Escolha onde deseja que o relatório de tabela dinâmica seja colocado</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PivotTable_ReportPlacedNewWorksheetCaption" xml:space="preserve">
+    <value>Nova planilha</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PivotTableDateFilter" xml:space="preserve">
+    <value>Filtro de data</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PivotTableDateFilter_Description" xml:space="preserve">
+    <value>Mostrar itens para os quais a data</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PivotTableFieldList" xml:space="preserve">
+    <value>Campos de tabela dinâmica</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PivotTableFieldList_LayoutUpdateCaption" xml:space="preserve">
+    <value>Adiar a atualização do Layout</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PivotTableLabelFilter_Description" xml:space="preserve">
+    <value>Mostrar itens para os quais o rótulo</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PivotTableTop10Filter_BetweenSeparator" xml:space="preserve">
+    <value>Por</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.PivotTableValueFilter_Description" xml:space="preserve">
+    <value>Mostrar itens para os quais</value>
+  </data>
+  <data name="ASPxSpreadsheetStringId.FilterSimple_SelectAll" xml:space="preserve">
+    <value>Selecionar tudo</value>
+  </data>
+</root>

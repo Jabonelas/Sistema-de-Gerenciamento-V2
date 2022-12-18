@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AutoCompleteTypeDefault" xml:space="preserve">
+    <value>Padrão</value>
+  </data>
+  <data name="PropertiesCaption" xml:space="preserve">
+    <value>Propriedades</value>
+  </data>
+  <data name="AutoCompleteTypeNone" xml:space="preserve">
+    <value>Nenhum</value>
+  </data>
+  <data name="MaskTypeNone" xml:space="preserve">
+    <value>Nenhum</value>
+  </data>
+  <data name="AppearanceCaption" xml:space="preserve">
+    <value>Aparência</value>
+  </data>
+  <data name="ErrorCaption" xml:space="preserve">
+    <value>Erro</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>Data</value>
+  </data>
+  <data name="Number" xml:space="preserve">
+    <value>Número</value>
+  </data>
+  <data name="MaskTypeNumeric" xml:space="preserve">
+    <value>Numérico</value>
+  </data>
+  <data name="RuleCaption" xml:space="preserve">
+    <value>Regra</value>
+  </data>
+  <data name="ColumnsCaption" xml:space="preserve">
+    <value>Colunas</value>
+  </data>
+  <data name="ColorPickPopupMoreColorsItemCaption" xml:space="preserve">
+    <value>Mais cores...</value>
+  </data>
+  <data name="ColorPickBrightnessAxisName" xml:space="preserve">
+    <value>Brilho</value>
+  </data>
+  <data name="ColorPickHueAxisName" xml:space="preserve">
+    <value>Matiz</value>
+  </data>
+  <data name="ColorPickSaturationAxisName" xml:space="preserve">
+    <value>Saturação</value>
+  </data>
+  <data name="ConfirmationCaption" xml:space="preserve">
+    <value>Confirmação</value>
+  </data>
+  <data name="Currency" xml:space="preserve">
+    <value>Moeda</value>
+  </data>
+  <data name="ColorPickLuminanceAxisName" xml:space="preserve">
+    <value>Luminância</value>
+  </data>
+  <data name="ColorPickOpacityAxisName" xml:space="preserve">
+    <value>Opacidade</value>
+  </data>
+  <data name="MaskTypeRegular" xml:space="preserve">
+    <value>Regular</value>
+  </data>
+  <data name="Decimal" xml:space="preserve">
+    <value>Decimal</value>
+  </data>
+  <data name="MaskTypeDateTime" xml:space="preserve">
+    <value>DateTime</value>
+  </data>
+  <data name="TimeOfDateWithSecondsAMPMDescription" xml:space="preserve">
+    <value>a tempo do dia com segundos de 12 horas:
+10:03:10
+15:00:01</value>
+  </data>
+  <data name="TimeOfDateWithSecondsDescription" xml:space="preserve">
+    <value>as 24 horas do dia hora com segundos:
+12:45:10
+03:00:01</value>
+  </data>
+  <data name="UniversalSortableDateTime" xml:space="preserve">
+    <value>Data/hora classificável universal</value>
+  </data>
+  <data name="SortableDateTimeDescription" xml:space="preserve">
+    <value>Em conformidade com a ISO 8601</value>
+  </data>
+  <data name="DateDescription" xml:space="preserve">
+    <value>A dd/MM/AA ou dd/MM/aaaa data com ano, de 1000 a 3999:
+12/03/99
+25/06/1800</value>
+  </data>
+  <data name="YesNoDescription" xml:space="preserve">
+    <value>Sim
+Não</value>
+  </data>
+  <data name="EditAddressCaption" xml:space="preserve">
+    <value>Editar Endereço</value>
+  </data>
+  <data name="DeleteHistoryCaption" xml:space="preserve">
+    <value>Excluir o histórico</value>
+  </data>
+</root>

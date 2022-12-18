@@ -1,0 +1,667 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"></assembly>
+  <data name="btnCancel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"></assembly>
+  <data name="btnCancel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>403, 361</value>
+  </data>
+  <data name="btnCancel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="btnCancel.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>75, 0</value>
+  </data>
+  <data name="btnCancel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 22</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"></assembly>
+  <data name="layoutControl1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="btnReset.Location" type="System.Drawing.Point, System.Drawing">
+    <value>470, 313</value>
+  </data>
+  <data name="btnReset.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>75, 0</value>
+  </data>
+  <data name="btnReset.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 22</value>
+  </data>
+  <data name="btnReset.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="btnReset.Text" xml:space="preserve">
+    <value>Reset</value>
+  </data>
+  <data name="&gt;&gt;btnReset.Name" xml:space="preserve">
+    <value>btnReset</value>
+  </data>
+  <data name="&gt;&gt;btnReset.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;btnReset.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="panelControl1.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="deltaOptionsControl.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="deltaOptionsControl.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="deltaOptionsControl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="deltaOptionsControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="deltaOptionsControl.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="deltaOptionsControl.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>519, 112</value>
+  </data>
+  <data name="deltaOptionsControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>519, 131</value>
+  </data>
+  <data name="deltaOptionsControl.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;deltaOptionsControl.Name" xml:space="preserve">
+    <value>deltaOptionsControl</value>
+  </data>
+  <data name="&gt;&gt;deltaOptionsControl.Parent" xml:space="preserve">
+    <value>panelControl1</value>
+  </data>
+  <data name="&gt;&gt;deltaOptionsControl.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="panelControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>26, 48</value>
+  </data>
+  <data name="panelControl1.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>511, 112</value>
+  </data>
+  <data name="panelControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>519, 131</value>
+  </data>
+  <data name="panelControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;panelControl1.Name" xml:space="preserve">
+    <value>panelControl1</value>
+  </data>
+  <data name="&gt;&gt;panelControl1.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;panelControl1.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="ceAutoMaxWidth.Location" type="System.Drawing.Point, System.Drawing">
+    <value>488, 72</value>
+  </data>
+  <data name="ceAutoMaxWidth.Properties.Caption" xml:space="preserve">
+    <value>Auto</value>
+  </data>
+  <data name="ceAutoMaxWidth.Size" type="System.Drawing.Size, System.Drawing">
+    <value>57, 19</value>
+  </data>
+  <data name="ceAutoMaxWidth.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;ceAutoMaxWidth.Name" xml:space="preserve">
+    <value>ceAutoMaxWidth</value>
+  </data>
+  <data name="&gt;&gt;ceAutoMaxWidth.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;ceAutoMaxWidth.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="lbValueType.Location" type="System.Drawing.Point, System.Drawing">
+    <value>26, 64</value>
+  </data>
+  <data name="lbValueType.Size" type="System.Drawing.Size, System.Drawing">
+    <value>9, 271</value>
+  </data>
+  <data name="lbValueType.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;lbValueType.Name" xml:space="preserve">
+    <value>lbValueType</value>
+  </data>
+  <data name="&gt;&gt;lbValueType.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;lbValueType.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="seMaxContentWidth.EditValue" type="System.Decimal, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="seMaxContentWidth.Location" type="System.Drawing.Point, System.Drawing">
+    <value>272, 72</value>
+  </data>
+  <data name="seMaxContentWidth.Properties.Mask.EditMask" xml:space="preserve">
+    <value>N00</value>
+  </data>
+  <data name="seMaxContentWidth.Size" type="System.Drawing.Size, System.Drawing">
+    <value>204, 20</value>
+  </data>
+  <data name="seMaxContentWidth.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;seMaxContentWidth.Name" xml:space="preserve">
+    <value>seMaxContentWidth</value>
+  </data>
+  <data name="&gt;&gt;seMaxContentWidth.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;seMaxContentWidth.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="seMinWidth.EditValue" type="System.Decimal, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="seMinWidth.Location" type="System.Drawing.Point, System.Drawing">
+    <value>272, 48</value>
+  </data>
+  <data name="seMinWidth.Properties.Mask.EditMask" xml:space="preserve">
+    <value>N00</value>
+  </data>
+  <data name="seMinWidth.Size" type="System.Drawing.Size, System.Drawing">
+    <value>273, 20</value>
+  </data>
+  <data name="seMinWidth.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;seMinWidth.Name" xml:space="preserve">
+    <value>seMinWidth</value>
+  </data>
+  <data name="&gt;&gt;seMinWidth.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;seMinWidth.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="templatePropertiesGridControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>206, 96</value>
+  </data>
+  <data name="gcVisible.Caption" xml:space="preserve">
+    <value>Visible</value>
+  </data>
+  <data name="repItemVisibleOptions.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="gcVisible.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gcVisible.VisibleIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="gcVisible.Width" type="System.Int32, mscorlib">
+    <value>60</value>
+  </data>
+  <data name="gcProperties.Caption" xml:space="preserve">
+    <value>Value/Element</value>
+  </data>
+  <data name="repItemBaseElements.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="gcProperties.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gcProperties.VisibleIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="gcProperties.Width" type="System.Int32, mscorlib">
+    <value>221</value>
+  </data>
+  <data name="templatePropertiesGridControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>339, 203</value>
+  </data>
+  <data name="templatePropertiesGridControl.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;templatePropertiesGridControl.Name" xml:space="preserve">
+    <value>templatePropertiesGridControl</value>
+  </data>
+  <data name="&gt;&gt;templatePropertiesGridControl.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;templatePropertiesGridControl.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="optionsPanel.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="optionsPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>44, 46</value>
+  </data>
+  <data name="optionsPanel.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>356, 287</value>
+  </data>
+  <data name="optionsPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>503, 291</value>
+  </data>
+  <data name="optionsPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;optionsPanel.Name" xml:space="preserve">
+    <value>optionsPanel</value>
+  </data>
+  <data name="&gt;&gt;optionsPanel.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;optionsPanel.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="btnApply.Location" type="System.Drawing.Point, System.Drawing">
+    <value>482, 361</value>
+  </data>
+  <data name="btnApply.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>75, 0</value>
+  </data>
+  <data name="btnApply.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 22</value>
+  </data>
+  <data name="btnApply.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="btnApply.Text" xml:space="preserve">
+    <value>Apply</value>
+  </data>
+  <data name="&gt;&gt;btnApply.Name" xml:space="preserve">
+    <value>btnApply</value>
+  </data>
+  <data name="&gt;&gt;btnApply.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;btnApply.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="btnOK.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="btnOK.Location" type="System.Drawing.Point, System.Drawing">
+    <value>324, 361</value>
+  </data>
+  <data name="btnOK.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="btnOK.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>75, 0</value>
+  </data>
+  <data name="btnOK.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 22</value>
+  </data>
+  <data name="btnOK.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="btnOK.Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="&gt;&gt;btnOK.Name" xml:space="preserve">
+    <value>btnOK</value>
+  </data>
+  <data name="&gt;&gt;btnOK.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;btnOK.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="lbLayoutTemplateType.Location" type="System.Drawing.Point, System.Drawing">
+    <value>26, 64</value>
+  </data>
+  <data name="lbLayoutTemplateType.Size" type="System.Drawing.Size, System.Drawing">
+    <value>156, 271</value>
+  </data>
+  <data name="lbLayoutTemplateType.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;lbLayoutTemplateType.Name" xml:space="preserve">
+    <value>lbLayoutTemplateType</value>
+  </data>
+  <data name="&gt;&gt;lbLayoutTemplateType.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;lbLayoutTemplateType.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="sparklineOptionsControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>28, 74</value>
+  </data>
+  <data name="sparklineOptionsControl.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="sparklineOptionsControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>511, 86</value>
+  </data>
+  <data name="sparklineOptionsControl.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;sparklineOptionsControl.Name" xml:space="preserve">
+    <value>sparklineOptionsControl</value>
+  </data>
+  <data name="&gt;&gt;sparklineOptionsControl.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;sparklineOptionsControl.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="ceShowSparkline.EditValue" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ceShowSparkline.Location" type="System.Drawing.Point, System.Drawing">
+    <value>32, 51</value>
+  </data>
+  <data name="ceShowSparkline.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="ceShowSparkline.Properties.Caption" xml:space="preserve">
+    <value>Visible</value>
+  </data>
+  <data name="ceShowSparkline.Size" type="System.Drawing.Size, System.Drawing">
+    <value>507, 19</value>
+  </data>
+  <data name="ceShowSparkline.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;ceShowSparkline.Name" xml:space="preserve">
+    <value>ceShowSparkline</value>
+  </data>
+  <data name="&gt;&gt;ceShowSparkline.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;ceShowSparkline.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="btnApplyToAll.Location" type="System.Drawing.Point, System.Drawing">
+    <value>206, 313</value>
+  </data>
+  <data name="btnApplyToAll.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>75, 0</value>
+  </data>
+  <data name="btnApplyToAll.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 22</value>
+  </data>
+  <data name="btnApplyToAll.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="btnApplyToAll.Text" xml:space="preserve">
+    <value>Apply to All Cards</value>
+  </data>
+  <data name="&gt;&gt;btnApplyToAll.Name" xml:space="preserve">
+    <value>btnApplyToAll</value>
+  </data>
+  <data name="&gt;&gt;btnApplyToAll.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;btnApplyToAll.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="layoutControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="layoutControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="layoutControl1.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>571, 397</value>
+  </data>
+  <data name="liLayoutTemplateType.Text" xml:space="preserve">
+    <value>Select template:</value>
+  </data>
+  <data name="liMinWidth.Text" xml:space="preserve">
+    <value>Min width:</value>
+  </data>
+  <data name="liMaxContentWidth.Text" xml:space="preserve">
+    <value>Max width:</value>
+  </data>
+  <data name="layoutControlItem12.CustomizationFormText" xml:space="preserve">
+    <value>layoutControlItem1</value>
+  </data>
+  <data name="layoutControlItem12.Text" xml:space="preserve">
+    <value>layoutControlItem1</value>
+  </data>
+  <data name="templateOptionsGroup.Text" xml:space="preserve">
+    <value>Layout Options</value>
+  </data>
+  <data name="deltaOptionsContainer.Text" xml:space="preserve">
+    <value>Delta Options</value>
+  </data>
+  <data name="sparklineOptionsContainer.Text" xml:space="preserve">
+    <value>Sparkline Options</value>
+  </data>
+  <data name="liValueType.Text" xml:space="preserve">
+    <value>Select value type:</value>
+  </data>
+  <data name="formatOptionsGroup.Text" xml:space="preserve">
+    <value>Format Options</value>
+  </data>
+  <data name="layoutControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>571, 397</value>
+  </data>
+  <data name="layoutControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="layoutControl1.Text" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;layoutControl1.Name" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;layoutControl1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;layoutControl1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btnCancel.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="btnCancel.Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.Name" xml:space="preserve">
+    <value>btnCancel</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.Parent" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>566, 397</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>580, 430</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterParent</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Card Settings</value>
+  </data>
+  <data name="&gt;&gt;gridView1.Name" xml:space="preserve">
+    <value>gridView1</value>
+  </data>
+  <data name="&gt;&gt;gcVisible.Name" xml:space="preserve">
+    <value>gcVisible</value>
+  </data>
+  <data name="&gt;&gt;repItemVisibleOptions.Name" xml:space="preserve">
+    <value>repItemVisibleOptions</value>
+  </data>
+  <data name="&gt;&gt;gcProperties.Name" xml:space="preserve">
+    <value>gcProperties</value>
+  </data>
+  <data name="&gt;&gt;repItemBaseElements.Name" xml:space="preserve">
+    <value>repItemBaseElements</value>
+  </data>
+  <data name="&gt;&gt;layoutControlGroup1.Name" xml:space="preserve">
+    <value>layoutControlGroup1</value>
+  </data>
+  <data name="&gt;&gt;layoutControlGroup2.Name" xml:space="preserve">
+    <value>layoutControlGroup2</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem5.Name" xml:space="preserve">
+    <value>layoutControlItem5</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem4.Name" xml:space="preserve">
+    <value>layoutControlItem4</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem7.Name" xml:space="preserve">
+    <value>layoutControlItem7</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem1.Name" xml:space="preserve">
+    <value>emptySpaceItem1</value>
+  </data>
+  <data name="&gt;&gt;tabbedControlGroup1.Name" xml:space="preserve">
+    <value>tabbedControlGroup1</value>
+  </data>
+  <data name="&gt;&gt;templateOptionsGroup.Name" xml:space="preserve">
+    <value>templateOptionsGroup</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem8.Name" xml:space="preserve">
+    <value>layoutControlItem8</value>
+  </data>
+  <data name="&gt;&gt;liLayoutTemplateType.Name" xml:space="preserve">
+    <value>liLayoutTemplateType</value>
+  </data>
+  <data name="&gt;&gt;layoutControlGroup4.Name" xml:space="preserve">
+    <value>layoutControlGroup4</value>
+  </data>
+  <data name="&gt;&gt;liMinWidth.Name" xml:space="preserve">
+    <value>liMinWidth</value>
+  </data>
+  <data name="&gt;&gt;liMaxContentWidth.Name" xml:space="preserve">
+    <value>liMaxContentWidth</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem10.Name" xml:space="preserve">
+    <value>layoutControlItem10</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem4.Name" xml:space="preserve">
+    <value>emptySpaceItem4</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem1.Name" xml:space="preserve">
+    <value>layoutControlItem1</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem12.Name" xml:space="preserve">
+    <value>layoutControlItem12</value>
+  </data>
+  <data name="&gt;&gt;deltaOptionsContainer.Name" xml:space="preserve">
+    <value>deltaOptionsContainer</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem11.Name" xml:space="preserve">
+    <value>layoutControlItem11</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem2.Name" xml:space="preserve">
+    <value>emptySpaceItem2</value>
+  </data>
+  <data name="&gt;&gt;sparklineOptionsContainer.Name" xml:space="preserve">
+    <value>sparklineOptionsContainer</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem3.Name" xml:space="preserve">
+    <value>layoutControlItem3</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem3.Name" xml:space="preserve">
+    <value>emptySpaceItem3</value>
+  </data>
+  <data name="&gt;&gt;liShowSparkline.Name" xml:space="preserve">
+    <value>liShowSparkline</value>
+  </data>
+  <data name="&gt;&gt;formatOptionsGroup.Name" xml:space="preserve">
+    <value>formatOptionsGroup</value>
+  </data>
+  <data name="&gt;&gt;layoutControlGroup3.Name" xml:space="preserve">
+    <value>layoutControlGroup3</value>
+  </data>
+  <data name="&gt;&gt;liValueType.Name" xml:space="preserve">
+    <value>liValueType</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem9.Name" xml:space="preserve">
+    <value>layoutControlItem9</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>CardOptionsForm</value>
+  </data>
+</root>

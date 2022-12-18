@@ -30,47 +30,41 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmProdutos));
-            DevExpress.DataAccess.Sql.SelectQuery selectQuery1 = new DevExpress.DataAccess.Sql.SelectQuery();
-            DevExpress.DataAccess.Sql.Column column1 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression1 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Table table1 = new DevExpress.DataAccess.Sql.Table();
-            DevExpress.DataAccess.Sql.Column column2 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression2 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column3 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression3 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column4 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression4 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Table table2 = new DevExpress.DataAccess.Sql.Table();
-            DevExpress.DataAccess.Sql.Column column5 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression5 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column6 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression6 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column7 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression7 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column8 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression8 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column9 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression9 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Table table3 = new DevExpress.DataAccess.Sql.Table();
-            DevExpress.DataAccess.Sql.Column column10 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression10 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column11 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression11 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Join join1 = new DevExpress.DataAccess.Sql.Join();
-            DevExpress.DataAccess.Sql.RelationColumnInfo relationColumnInfo1 = new DevExpress.DataAccess.Sql.RelationColumnInfo();
-            DevExpress.DataAccess.Sql.Join join2 = new DevExpress.DataAccess.Sql.Join();
-            DevExpress.DataAccess.Sql.RelationColumnInfo relationColumnInfo2 = new DevExpress.DataAccess.Sql.RelationColumnInfo();
+            DevExpress.DataAccess.Sql.SelectQuery selectQuery4 = new DevExpress.DataAccess.Sql.SelectQuery();
+            DevExpress.DataAccess.Sql.Column column34 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression34 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Table table10 = new DevExpress.DataAccess.Sql.Table();
+            DevExpress.DataAccess.Sql.Column column35 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression35 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column36 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression36 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column37 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression37 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Table table11 = new DevExpress.DataAccess.Sql.Table();
+            DevExpress.DataAccess.Sql.Column column38 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression38 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column39 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression39 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column40 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression40 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column41 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression41 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column42 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression42 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Table table12 = new DevExpress.DataAccess.Sql.Table();
+            DevExpress.DataAccess.Sql.Column column43 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression43 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column44 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression44 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Join join7 = new DevExpress.DataAccess.Sql.Join();
+            DevExpress.DataAccess.Sql.RelationColumnInfo relationColumnInfo7 = new DevExpress.DataAccess.Sql.RelationColumnInfo();
+            DevExpress.DataAccess.Sql.Join join8 = new DevExpress.DataAccess.Sql.Join();
+            DevExpress.DataAccess.Sql.RelationColumnInfo relationColumnInfo8 = new DevExpress.DataAccess.Sql.RelationColumnInfo();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
             this.btnGerarExecel = new DevExpress.XtraEditors.SimpleButton();
-            this.btnBuscarProduto = new DevExpress.XtraEditors.SimpleButton();
-            this.btnLimparFiltro = new DevExpress.XtraEditors.SimpleButton();
             this.btnAdicionarGrupo = new DevExpress.XtraEditors.SimpleButton();
-            this.cmbFinalidade = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.txtBuscarProduto = new DevExpress.XtraEditors.TextEdit();
             this.btnFechar = new DevExpress.XtraEditors.SimpleButton();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.cmbMaisOpacoes = new DevExpress.XtraEditors.ComboBoxEdit();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -86,10 +80,7 @@
             this.colpd_estoque_minimo = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colep_data_entrada = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridSplitContainer1 = new DevExpress.XtraGrid.GridSplitContainer();
-            ((System.ComponentModel.ISupportInitialize)(this.cmbFinalidade.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtBuscarProduto.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cmbMaisOpacoes.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridSplitContainer1)).BeginInit();
@@ -109,16 +100,6 @@
             this.labelControl3.TabIndex = 98;
             this.labelControl3.Text = "Consultar Produtos";
             // 
-            // labelControl7
-            // 
-            this.labelControl7.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl7.Appearance.Options.UseFont = true;
-            this.labelControl7.Location = new System.Drawing.Point(514, 104);
-            this.labelControl7.Name = "labelControl7";
-            this.labelControl7.Size = new System.Drawing.Size(90, 20);
-            this.labelControl7.TabIndex = 99;
-            this.labelControl7.Text = "Tipo Produto:";
-            // 
             // btnGerarExecel
             // 
             this.btnGerarExecel.Appearance.BorderColor = System.Drawing.Color.Transparent;
@@ -128,42 +109,11 @@
             this.btnGerarExecel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnGerarExecel.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.tabela;
             this.btnGerarExecel.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
-            this.btnGerarExecel.Location = new System.Drawing.Point(1098, 82);
+            this.btnGerarExecel.Location = new System.Drawing.Point(1105, 73);
             this.btnGerarExecel.Name = "btnGerarExecel";
             this.btnGerarExecel.Size = new System.Drawing.Size(26, 26);
             this.btnGerarExecel.TabIndex = 105;
             this.btnGerarExecel.ToolTip = "Exportar para Execel";
-            // 
-            // btnBuscarProduto
-            // 
-            this.btnBuscarProduto.Appearance.BorderColor = System.Drawing.Color.Transparent;
-            this.btnBuscarProduto.Appearance.Options.UseBorderColor = true;
-            this.btnBuscarProduto.AppearanceDisabled.BorderColor = System.Drawing.Color.Transparent;
-            this.btnBuscarProduto.AppearanceDisabled.Options.UseBorderColor = true;
-            this.btnBuscarProduto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnBuscarProduto.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.lupa_preta;
-            this.btnBuscarProduto.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
-            this.btnBuscarProduto.Location = new System.Drawing.Point(316, 130);
-            this.btnBuscarProduto.Name = "btnBuscarProduto";
-            this.btnBuscarProduto.Size = new System.Drawing.Size(26, 26);
-            this.btnBuscarProduto.TabIndex = 104;
-            this.btnBuscarProduto.ToolTip = "Pesquisar";
-            // 
-            // btnLimparFiltro
-            // 
-            this.btnLimparFiltro.Appearance.BorderColor = System.Drawing.Color.Transparent;
-            this.btnLimparFiltro.Appearance.Options.UseBorderColor = true;
-            this.btnLimparFiltro.AppearanceDisabled.BorderColor = System.Drawing.Color.Transparent;
-            this.btnLimparFiltro.AppearanceDisabled.Options.UseBorderColor = true;
-            this.btnLimparFiltro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnLimparFiltro.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.limpar_preto;
-            this.btnLimparFiltro.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
-            this.btnLimparFiltro.Location = new System.Drawing.Point(348, 130);
-            this.btnLimparFiltro.Name = "btnLimparFiltro";
-            this.btnLimparFiltro.Size = new System.Drawing.Size(26, 26);
-            this.btnLimparFiltro.TabIndex = 103;
-            this.btnLimparFiltro.ToolTip = "Limpar Filtro";
-            this.btnLimparFiltro.Click += new System.EventHandler(this.simpleButton2_Click);
             // 
             // btnAdicionarGrupo
             // 
@@ -189,38 +139,12 @@
             this.btnAdicionarGrupo.ImageOptions.ImageToTextIndent = 10;
             this.btnAdicionarGrupo.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
             this.btnAdicionarGrupo.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnAdicionarGrupo.Location = new System.Drawing.Point(12, 77);
+            this.btnAdicionarGrupo.Location = new System.Drawing.Point(12, 68);
             this.btnAdicionarGrupo.Name = "btnAdicionarGrupo";
             this.btnAdicionarGrupo.Size = new System.Drawing.Size(217, 30);
             this.btnAdicionarGrupo.TabIndex = 100;
             this.btnAdicionarGrupo.Text = "Adicionar Novo Produto";
-            // 
-            // cmbFinalidade
-            // 
-            this.cmbFinalidade.Location = new System.Drawing.Point(432, 130);
-            this.cmbFinalidade.Name = "cmbFinalidade";
-            this.cmbFinalidade.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbFinalidade.Properties.Appearance.Options.UseFont = true;
-            this.cmbFinalidade.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cmbFinalidade.Properties.Items.AddRange(new object[] {
-            "Todos os produtos",
-            "Estoque positivo",
-            "Estoque baixo (menor que o mínimo)",
-            "Estoque zaro ou negativo"});
-            this.cmbFinalidade.Size = new System.Drawing.Size(259, 26);
-            this.cmbFinalidade.TabIndex = 97;
-            // 
-            // txtBuscarProduto
-            // 
-            this.txtBuscarProduto.EditValue = "Buscar Produto";
-            this.txtBuscarProduto.Location = new System.Drawing.Point(12, 130);
-            this.txtBuscarProduto.Name = "txtBuscarProduto";
-            this.txtBuscarProduto.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBuscarProduto.Properties.Appearance.Options.UseFont = true;
-            this.txtBuscarProduto.Properties.MaxLength = 20;
-            this.txtBuscarProduto.Size = new System.Drawing.Size(298, 26);
-            this.txtBuscarProduto.TabIndex = 96;
+            this.btnAdicionarGrupo.Click += new System.EventHandler(this.btnAdicionarGrupo_Click);
             // 
             // btnFechar
             // 
@@ -248,23 +172,6 @@
             this.pictureBox6.TabIndex = 95;
             this.pictureBox6.TabStop = false;
             // 
-            // cmbMaisOpacoes
-            // 
-            this.cmbMaisOpacoes.EditValue = "Mais Opções";
-            this.cmbMaisOpacoes.Location = new System.Drawing.Point(251, 74);
-            this.cmbMaisOpacoes.Name = "cmbMaisOpacoes";
-            this.cmbMaisOpacoes.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbMaisOpacoes.Properties.Appearance.Options.UseFont = true;
-            this.cmbMaisOpacoes.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cmbMaisOpacoes.Properties.Items.AddRange(new object[] {
-            "Todos os produtos",
-            "Estoque positivo",
-            "Estoque baixo (menor que o mínimo)",
-            "Estoque zaro ou negativo"});
-            this.cmbMaisOpacoes.Size = new System.Drawing.Size(247, 26);
-            this.cmbMaisOpacoes.TabIndex = 106;
-            // 
             // gridControl1
             // 
             this.gridControl1.DataMember = "tb_produto";
@@ -273,7 +180,7 @@
             this.gridControl1.Location = new System.Drawing.Point(0, 0);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(1137, 200);
+            this.gridControl1.Size = new System.Drawing.Size(1137, 288);
             this.gridControl1.TabIndex = 107;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -283,74 +190,74 @@
             this.sqlDataSource1.ConnectionName = "SistemaDeGerenciamento2_0.Properties.Settings.SistemaDeGerenciamento2_0Connection" +
     "String";
             this.sqlDataSource1.Name = "sqlDataSource1";
-            columnExpression1.ColumnName = "pd_nome";
-            table1.MetaSerializable = "<Meta X=\"30\" Y=\"30\" Width=\"125\" Height=\"363\" />";
-            table1.Name = "tb_produto";
-            columnExpression1.Table = table1;
-            column1.Expression = columnExpression1;
-            columnExpression2.ColumnName = "pd_codigo";
-            columnExpression2.Table = table1;
-            column2.Expression = columnExpression2;
-            columnExpression3.ColumnName = "pd_codigo_barras";
-            columnExpression3.Table = table1;
-            column3.Expression = columnExpression3;
-            columnExpression4.ColumnName = "gp_nome_grupo";
-            table2.MetaSerializable = "<Meta X=\"185\" Y=\"30\" Width=\"125\" Height=\"123\" />";
-            table2.Name = "tb_grupo";
-            columnExpression4.Table = table2;
-            column4.Expression = columnExpression4;
-            columnExpression5.ColumnName = "pd_tipo_unidade";
-            columnExpression5.Table = table1;
-            column5.Expression = columnExpression5;
-            columnExpression6.ColumnName = "pd_custo";
-            columnExpression6.Table = table1;
-            column6.Expression = columnExpression6;
-            columnExpression7.ColumnName = "pd_margem";
-            columnExpression7.Table = table1;
-            column7.Expression = columnExpression7;
-            columnExpression8.ColumnName = "pd_preco";
-            columnExpression8.Table = table1;
-            column8.Expression = columnExpression8;
-            columnExpression9.ColumnName = "ep_quantidade";
-            table3.MetaSerializable = "<Meta X=\"340\" Y=\"30\" Width=\"125\" Height=\"223\" />";
-            table3.Name = "tb_estoque";
-            columnExpression9.Table = table3;
-            column9.Expression = columnExpression9;
-            columnExpression10.ColumnName = "pd_estoque_minimo";
-            columnExpression10.Table = table1;
-            column10.Expression = columnExpression10;
-            columnExpression11.ColumnName = "ep_data_entrada";
-            columnExpression11.Table = table3;
-            column11.Expression = columnExpression11;
-            selectQuery1.Columns.Add(column1);
-            selectQuery1.Columns.Add(column2);
-            selectQuery1.Columns.Add(column3);
-            selectQuery1.Columns.Add(column4);
-            selectQuery1.Columns.Add(column5);
-            selectQuery1.Columns.Add(column6);
-            selectQuery1.Columns.Add(column7);
-            selectQuery1.Columns.Add(column8);
-            selectQuery1.Columns.Add(column9);
-            selectQuery1.Columns.Add(column10);
-            selectQuery1.Columns.Add(column11);
-            selectQuery1.Name = "tb_produto";
-            relationColumnInfo1.NestedKeyColumn = "id_grupo";
-            relationColumnInfo1.ParentKeyColumn = "fk_grupo";
-            join1.KeyColumns.Add(relationColumnInfo1);
-            join1.Nested = table2;
-            join1.Parent = table1;
-            relationColumnInfo2.NestedKeyColumn = "fk_produto";
-            relationColumnInfo2.ParentKeyColumn = "id_produto";
-            join2.KeyColumns.Add(relationColumnInfo2);
-            join2.Nested = table3;
-            join2.Parent = table1;
-            selectQuery1.Relations.Add(join1);
-            selectQuery1.Relations.Add(join2);
-            selectQuery1.Tables.Add(table1);
-            selectQuery1.Tables.Add(table2);
-            selectQuery1.Tables.Add(table3);
+            columnExpression34.ColumnName = "pd_nome";
+            table10.MetaSerializable = "<Meta X=\"30\" Y=\"30\" Width=\"125\" Height=\"363\" />";
+            table10.Name = "tb_produto";
+            columnExpression34.Table = table10;
+            column34.Expression = columnExpression34;
+            columnExpression35.ColumnName = "pd_codigo";
+            columnExpression35.Table = table10;
+            column35.Expression = columnExpression35;
+            columnExpression36.ColumnName = "pd_codigo_barras";
+            columnExpression36.Table = table10;
+            column36.Expression = columnExpression36;
+            columnExpression37.ColumnName = "gp_nome_grupo";
+            table11.MetaSerializable = "<Meta X=\"185\" Y=\"30\" Width=\"125\" Height=\"123\" />";
+            table11.Name = "tb_grupo";
+            columnExpression37.Table = table11;
+            column37.Expression = columnExpression37;
+            columnExpression38.ColumnName = "pd_tipo_unidade";
+            columnExpression38.Table = table10;
+            column38.Expression = columnExpression38;
+            columnExpression39.ColumnName = "pd_custo";
+            columnExpression39.Table = table10;
+            column39.Expression = columnExpression39;
+            columnExpression40.ColumnName = "pd_margem";
+            columnExpression40.Table = table10;
+            column40.Expression = columnExpression40;
+            columnExpression41.ColumnName = "pd_preco";
+            columnExpression41.Table = table10;
+            column41.Expression = columnExpression41;
+            columnExpression42.ColumnName = "ep_quantidade";
+            table12.MetaSerializable = "<Meta X=\"340\" Y=\"30\" Width=\"125\" Height=\"223\" />";
+            table12.Name = "tb_estoque";
+            columnExpression42.Table = table12;
+            column42.Expression = columnExpression42;
+            columnExpression43.ColumnName = "pd_estoque_minimo";
+            columnExpression43.Table = table10;
+            column43.Expression = columnExpression43;
+            columnExpression44.ColumnName = "ep_data_entrada";
+            columnExpression44.Table = table12;
+            column44.Expression = columnExpression44;
+            selectQuery4.Columns.Add(column34);
+            selectQuery4.Columns.Add(column35);
+            selectQuery4.Columns.Add(column36);
+            selectQuery4.Columns.Add(column37);
+            selectQuery4.Columns.Add(column38);
+            selectQuery4.Columns.Add(column39);
+            selectQuery4.Columns.Add(column40);
+            selectQuery4.Columns.Add(column41);
+            selectQuery4.Columns.Add(column42);
+            selectQuery4.Columns.Add(column43);
+            selectQuery4.Columns.Add(column44);
+            selectQuery4.Name = "tb_produto";
+            relationColumnInfo7.NestedKeyColumn = "id_grupo";
+            relationColumnInfo7.ParentKeyColumn = "fk_grupo";
+            join7.KeyColumns.Add(relationColumnInfo7);
+            join7.Nested = table11;
+            join7.Parent = table10;
+            relationColumnInfo8.NestedKeyColumn = "fk_produto";
+            relationColumnInfo8.ParentKeyColumn = "id_produto";
+            join8.KeyColumns.Add(relationColumnInfo8);
+            join8.Nested = table12;
+            join8.Parent = table10;
+            selectQuery4.Relations.Add(join7);
+            selectQuery4.Relations.Add(join8);
+            selectQuery4.Tables.Add(table10);
+            selectQuery4.Tables.Add(table11);
+            selectQuery4.Tables.Add(table12);
             this.sqlDataSource1.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
-            selectQuery1});
+            selectQuery4});
             this.sqlDataSource1.ResultSchemaSerializable = resources.GetString("sqlDataSource1.ResultSchemaSerializable");
             // 
             // gridView1
@@ -450,13 +357,13 @@
             // gridSplitContainer1
             // 
             this.gridSplitContainer1.Grid = this.gridControl1;
-            this.gridSplitContainer1.Location = new System.Drawing.Point(12, 186);
+            this.gridSplitContainer1.Location = new System.Drawing.Point(12, 114);
             this.gridSplitContainer1.Name = "gridSplitContainer1";
             // 
             // gridSplitContainer1.Panel1
             // 
             this.gridSplitContainer1.Panel1.Controls.Add(this.gridControl1);
-            this.gridSplitContainer1.Size = new System.Drawing.Size(1137, 200);
+            this.gridSplitContainer1.Size = new System.Drawing.Size(1137, 288);
             this.gridSplitContainer1.TabIndex = 107;
             // 
             // frmProdutos
@@ -465,15 +372,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1161, 414);
             this.Controls.Add(this.gridSplitContainer1);
-            this.Controls.Add(this.cmbMaisOpacoes);
             this.Controls.Add(this.btnGerarExecel);
-            this.Controls.Add(this.btnBuscarProduto);
-            this.Controls.Add(this.btnLimparFiltro);
             this.Controls.Add(this.btnAdicionarGrupo);
-            this.Controls.Add(this.labelControl7);
             this.Controls.Add(this.labelControl3);
-            this.Controls.Add(this.cmbFinalidade);
-            this.Controls.Add(this.txtBuscarProduto);
             this.Controls.Add(this.btnFechar);
             this.Controls.Add(this.pictureBox6);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -481,12 +382,8 @@
             this.Name = "frmProdutos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmProdutos";
-            this.Load += new System.EventHandler(this.frmProdutos_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmProdutos_KeyDown);
-            ((System.ComponentModel.ISupportInitialize)(this.cmbFinalidade.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtBuscarProduto.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cmbMaisOpacoes.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridSplitContainer1.Panel1)).EndInit();
@@ -503,15 +400,9 @@
 
         private DevExpress.XtraEditors.SimpleButton btnFechar;
         private System.Windows.Forms.PictureBox pictureBox6;
-        private DevExpress.XtraEditors.ComboBoxEdit cmbFinalidade;
-        private DevExpress.XtraEditors.TextEdit txtBuscarProduto;
         private DevExpress.XtraEditors.LabelControl labelControl3;
-        private DevExpress.XtraEditors.LabelControl labelControl7;
         private DevExpress.XtraEditors.SimpleButton btnAdicionarGrupo;
-        private DevExpress.XtraEditors.SimpleButton btnLimparFiltro;
-        private DevExpress.XtraEditors.SimpleButton btnBuscarProduto;
         private DevExpress.XtraEditors.SimpleButton btnGerarExecel;
-        private DevExpress.XtraEditors.ComboBoxEdit cmbMaisOpacoes;
         private DevExpress.XtraGrid.GridControl gridControl1;
         private DevExpress.DataAccess.Sql.SqlDataSource sqlDataSource1;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;

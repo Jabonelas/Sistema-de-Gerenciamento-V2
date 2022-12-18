@@ -1,0 +1,491 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="OfficeStringId.Msg_IsNotValid" xml:space="preserve">
+    <value>'{0}' não é um valor válido para '{1}'</value>
+  </data>
+  <data name="OfficeStringId.Msg_InternalError" xml:space="preserve">
+    <value>Ocorreu um erro interno</value>
+  </data>
+  <data name="OfficeStringId.Msg_InvalidBeginUpdate" xml:space="preserve">
+    <value>Erro: chamada para beginUpdate dentro BeginInit</value>
+  </data>
+  <data name="OfficeStringId.Msg_InvalidEndUpdate" xml:space="preserve">
+    <value>Erro: chamada para EndUpdate ou CancelUpate sem beginUpdate ou dentro BeginInit</value>
+  </data>
+  <data name="OfficeStringId.Msg_InvalidBeginInit" xml:space="preserve">
+    <value>Erro: chamada para BeginInit dentro beginUpdate</value>
+  </data>
+  <data name="OfficeStringId.Msg_InvalidEndInit" xml:space="preserve">
+    <value>Erro: a chamada à EndInit ou CancelInit sem BeginInit ou dentro beginUpdate</value>
+  </data>
+  <data name="OfficeStringId.Msg_InvalidCopyFromDocumentModel" xml:space="preserve">
+    <value>Erro: fonte e os modelos de documento de destino são diferentes</value>
+  </data>
+  <data name="OfficeStringId.Msg_Loading" xml:space="preserve">
+    <value>Carregando ...</value>
+  </data>
+  <data name="OfficeStringId.Msg_MagicNumberNotFound" xml:space="preserve">
+    <value>O arquivo que você está tentando abrir é em formato diferente do especificado pela extensão do arquivo.</value>
+  </data>
+  <data name="OfficeStringId.FileFilterDescription_AllFiles" xml:space="preserve">
+    <value>Todos arquivos</value>
+  </data>
+  <data name="OfficeStringId.FileFilterDescription_AllSupportedFiles" xml:space="preserve">
+    <value>Todos arquivos suportados</value>
+  </data>
+  <data name="OfficeStringId.Caption_UnitCentimeters" xml:space="preserve">
+    <value>Centímetros</value>
+  </data>
+  <data name="OfficeStringId.Caption_UnitInches" xml:space="preserve">
+    <value>Polegadas</value>
+  </data>
+  <data name="OfficeStringId.Caption_UnitMillimeters" xml:space="preserve">
+    <value>Milímetros</value>
+  </data>
+  <data name="OfficeStringId.Caption_UnitPoints" xml:space="preserve">
+    <value>Pontos</value>
+  </data>
+  <data name="OfficeStringId.FileFilterDescription_BitmapFiles" xml:space="preserve">
+    <value>Windows Bitmap</value>
+  </data>
+  <data name="OfficeStringId.FileFilterDescription_EmfFiles" xml:space="preserve">
+    <value>Microsoft Enhanced Metafile</value>
+  </data>
+  <data name="OfficeStringId.FileFilterDescription_JPEGFiles" xml:space="preserve">
+    <value>Formato de troca de arquivo JPEG</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_AlignmentRightDescription" xml:space="preserve">
+    <value>Alinhar o texto à direita.</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_ChangeFontColor" xml:space="preserve">
+    <value>Cor da fonte</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_ChangeFontColorDescription" xml:space="preserve">
+    <value>Mudar a cor do texto.</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_ChangeFontName" xml:space="preserve">
+    <value>Fonte</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_ChangeFontSize" xml:space="preserve">
+    <value>Tamanho da fonte</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_ChangeFontSizeDescription" xml:space="preserve">
+    <value>Alterar o tamanho da fonte.</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_CopySelection" xml:space="preserve">
+    <value>Cópia</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_Hyperlink" xml:space="preserve">
+    <value>Hiperlink</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_IncreaseFontSize" xml:space="preserve">
+    <value>Crescer fonte</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_IncreaseFontSizeDescription" xml:space="preserve">
+    <value>Aumentar o tamanho da fonte.</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_InsertComment" xml:space="preserve">
+    <value>Inserir Comentário</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_InsertCommentDescription" xml:space="preserve">
+    <value>Adicionar um comentário sobre a seleção.</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_InsertFloatingObjectPicture" xml:space="preserve">
+    <value>Imagens</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_InsertFloatingObjectPictureDescription" xml:space="preserve">
+    <value>Inserir uma imagem de um arquivo.</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_InsertHyperlink" xml:space="preserve">
+    <value>Hyperlink...</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_PageMarginsNormal" xml:space="preserve">
+    <value>Normal
+Superior: {1,10} inferior: {3,10}
+Esquerda: {0,10} direita:  {2,10}</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_PageOrientationCommandGroup" xml:space="preserve">
+    <value>Orientação</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_PageOrientationLandscape" xml:space="preserve">
+    <value>Paisagem</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_PageOrientationPortrait" xml:space="preserve">
+    <value>Retrato</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_QuickPrintDescription" xml:space="preserve">
+    <value>Enviar o documento diretamente para a impressora padrão, sem fazer alterações.</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_Redo" xml:space="preserve">
+    <value>Refazer</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_RedoDescription" xml:space="preserve">
+    <value>Refazer</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_RemoveHyperlink" xml:space="preserve">
+    <value>Remover hiperlink</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_RemoveHyperlinkDescription" xml:space="preserve">
+    <value>Remover hiperlink</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_RemoveHyperlinks" xml:space="preserve">
+    <value>Remover hiperlinks</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_RemoveHyperlinksDescription" xml:space="preserve">
+    <value>Remover hiperlinks</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_SaveDocument" xml:space="preserve">
+    <value>Salvar</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_SaveDocumentAs" xml:space="preserve">
+    <value>Salvar como</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_ToggleFontStrikeout" xml:space="preserve">
+    <value>Tachado</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_ToggleFontStrikeoutDescription" xml:space="preserve">
+    <value>Desenhar uma linha no meio do texto selecionado.</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_ToggleFontUnderline" xml:space="preserve">
+    <value>Sublinhar</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_ToggleFontUnderlineDescription" xml:space="preserve">
+    <value>Sublinhar o texto selecionado.</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_Undo" xml:space="preserve">
+    <value>Desfazer</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_UndoDescription" xml:space="preserve">
+    <value>Desfazer</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_Zoom100PercentDescription" xml:space="preserve">
+    <value>Zoom do documento para 100% do tamanho normal.</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_AlignmentCenter" xml:space="preserve">
+    <value>Centro</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_AlignmentCenterDescription" xml:space="preserve">
+    <value>Centralizar texto.</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_AlignmentJustify" xml:space="preserve">
+    <value>Justificar</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_AlignmentJustifyDescription" xml:space="preserve">
+    <value>Alinhar texto para as margens esquerdas e direita, adicionando espaço extra entre as palavras conforme necessário.
+
+Isto cria uma aparência limpa, ao longo da esquerda e o lado direito da página.</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_AlignmentLeft" xml:space="preserve">
+    <value>Alinhar Texto à Esquerda</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_AlignmentRight" xml:space="preserve">
+    <value>Alinhar Texto à Direita</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_LoadDocument" xml:space="preserve">
+    <value>Abrir</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_LoadDocumentDescription" xml:space="preserve">
+    <value>Abrir um documento.</value>
+  </data>
+  <data name="OfficeStringId.Caption_EditHyperlinkForm" xml:space="preserve">
+    <value>Editar hiperlink</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_CopySelectionDescription" xml:space="preserve">
+    <value>Copiar a seleção e colocá-lo na área de transferência.</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_CutSelection" xml:space="preserve">
+    <value>Cortar</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_CutSelectionDescription" xml:space="preserve">
+    <value>Recortar a seleção do documento e colocá-lo na área de transferência.</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_DecreaseFontSize" xml:space="preserve">
+    <value>Diminuir fonte</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_DecreaseFontSizeDescription" xml:space="preserve">
+    <value>Diminuir o tamanho da fonte.</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_DeleteComment" xml:space="preserve">
+    <value>Excluir Comentário</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_DeleteCommentDescription" xml:space="preserve">
+    <value>Excluir o comentário selecionado.</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_EditHyperlink" xml:space="preserve">
+    <value>Editar Hyperlink...</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_PageMarginsWide" xml:space="preserve">
+    <value>ampla
+Superior: {1,10} inferior: {3,10}
+Esquerda: {0,10} direita: {2,10}</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_Paste" xml:space="preserve">
+    <value>Colar</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_PasteDescription" xml:space="preserve">
+    <value>Cole o conteúdo da área de transferência.</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_SaveDocumentDescription" xml:space="preserve">
+    <value>Salvar o documento.</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_ShowPasteSpecialForm" xml:space="preserve">
+    <value>Colar especial</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_ToggleFontBoldDescription" xml:space="preserve">
+    <value>Colocar o texto selecionado em negrito.</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_ToggleFontDoubleUnderline" xml:space="preserve">
+    <value>Sublinhado duplo</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_ToggleFontDoubleUnderlineDescription" xml:space="preserve">
+    <value>Sublinhado duplo</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_ToggleFontItalic" xml:space="preserve">
+    <value>Itálico</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_ToggleFontItalicDescription" xml:space="preserve">
+    <value>Coloca em itálico o texto selecionado.</value>
+  </data>
+  <data name="OfficeStringId.UnitAbbreviation_Pica" xml:space="preserve">
+    <value>pc</value>
+  </data>
+  <data name="OfficeStringId.UnitAbbreviation_Point" xml:space="preserve">
+    <value>pt</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_PrintDescription" xml:space="preserve">
+    <value>Selecionar uma impressora, o número de cópias e outras opções de impressão antes de imprimir.</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_PrintPreviewDescription" xml:space="preserve">
+    <value>Visualizar páginas antes de imprimir.</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_SaveDocumentAsDescription" xml:space="preserve">
+    <value>Abrir a caixa de diálogo Salvar como, selecione um formato de arquivo e salvar o documento para um novo local.</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_ShowPasteSpecialFormDescription" xml:space="preserve">
+    <value>Mostrar caixa de diálogo colar especial.</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_ToggleFontBold" xml:space="preserve">
+    <value>Bold (realce)</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_Zoom100Percent" xml:space="preserve">
+    <value>100%</value>
+  </data>
+  <data name="OfficeStringId.Msg_InvalidFontSize" xml:space="preserve">
+    <value>o número deve estar entre {0} e {1}.</value>
+  </data>
+  <data name="OfficeStringId.Msg_InvalidNumber" xml:space="preserve">
+    <value>Este não é um número válido.</value>
+  </data>
+  <data name="OfficeStringId.UnitAbbreviation_Centimeter" xml:space="preserve">
+    <value>cm</value>
+  </data>
+  <data name="OfficeStringId.UnitAbbreviation_Millimeter" xml:space="preserve">
+    <value>mm</value>
+  </data>
+  <data name="OfficeStringId.UnitAbbreviation_Percent" xml:space="preserve">
+    <value>%</value>
+  </data>
+  <data name="OfficeStringId.Caption_InsertHyperlinkForm" xml:space="preserve">
+    <value>Inserir hiperlink</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_EditHyperlinkDescription" xml:space="preserve">
+    <value>Editar Hyperlink...</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_FloatingObjectBringForward" xml:space="preserve">
+    <value>Trazer para frente</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_FloatingObjectBringForwardCommandGroup" xml:space="preserve">
+    <value>Trazer para frente</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_FloatingObjectBringToFront" xml:space="preserve">
+    <value>Trazer para frente</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_FloatingObjectSendBackward" xml:space="preserve">
+    <value>Enviar para trás</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_FloatingObjectSendBackwardCommandGroup" xml:space="preserve">
+    <value>Enviar para trás</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_FloatingObjectSendToBack" xml:space="preserve">
+    <value>Enviar para trás</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_InsertHyperlinkDescription" xml:space="preserve">
+    <value>Adicionar um novo hiperlink.</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_NewEmptyDocument" xml:space="preserve">
+    <value>Novo</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_NewEmptyDocumentDescription" xml:space="preserve">
+    <value>Criar um novo documento.</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_OpenHyperlink" xml:space="preserve">
+    <value>Abrir hiperlink</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_OpenHyperlinkDescription" xml:space="preserve">
+    <value>Abrir hiperlink</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_PrintPreview" xml:space="preserve">
+    <value>&amp;Visualizar impressão</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_QuickPrint" xml:space="preserve">
+    <value>&amp;Impressão Rápida</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_ZoomIn" xml:space="preserve">
+    <value>Zoom</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_ZoomInDescription" xml:space="preserve">
+    <value>Zoom</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_ZoomOut" xml:space="preserve">
+    <value>Diminuir zoom</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_ZoomOutDescription" xml:space="preserve">
+    <value>Diminuir Zoom</value>
+  </data>
+  <data name="OfficeStringId.UnitAbbreviation_Inch" xml:space="preserve">
+    <value>"</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_AlignmentLeftDescription" xml:space="preserve">
+    <value>Alinhar o texto à esquerda.</value>
+  </data>
+  <data name="OfficeStringId.Caption_UnitPercent" xml:space="preserve">
+    <value>Percentual</value>
+  </data>
+  <data name="OfficeStringId.FileFilterDescription_PNGFiles" xml:space="preserve">
+    <value>Portable Network Graphics</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_InsertSymbol" xml:space="preserve">
+    <value>Símbolo</value>
+  </data>
+  <data name="OfficeStringId.FileFilterDescription_GifFiles" xml:space="preserve">
+    <value>Formato de gráfico Interchage</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_FloatingObjectBringForwardCommandGroupDescription" xml:space="preserve">
+    <value>Trazer o nível para a frente de um objeto selecionado, ou trazê-lo na frente de todos os outros objetos.</value>
+  </data>
+  <data name="OfficeStringId.FileFilterDescription_WmfFiles" xml:space="preserve">
+    <value>Metarquivo do Windows</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_FloatingObjectSendToBackDescription" xml:space="preserve">
+    <value>Enviar o objeto selecionado atrás de todos os outros objetos.</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_HyperlinkDescription" xml:space="preserve">
+    <value>Criar um link para uma página da Web, uma imagem, um endereço de email ou um programa.</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_PageMarginsModerate" xml:space="preserve">
+    <value>Moderada
+Superior: {1,10} inferior: {3,10}
+Esquerda: a direita {0,10}: {2,10}</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_PageMarginsNarrow" xml:space="preserve">
+    <value>estreito
+Superior: {1,10} inferior: {3,10}
+Esquerda: {0,10} direita:  {2,10}</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_ChangeFontNameDescription" xml:space="preserve">
+    <value>Mudar a fonte.</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_ClearUndoDescription" xml:space="preserve">
+    <value>Desfazer limpar Buffer</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_FloatingObjectBringForwardDescription" xml:space="preserve">
+    <value>Traz o objeto selecionado para frente de modo que é escondido pelo menos objetos que estão na frente de la</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_FloatingObjectBringToFrontDescription" xml:space="preserve">
+    <value>Traz o objeto selecionado na frente de todos os outros objetos, para que nenhuma parte do está escondido atrás de outros objetos.</value>
+  </data>
+  <data name="OfficeStringId.FileFilterDescription_TiffFiles" xml:space="preserve">
+    <value>Formato de arquivo de imagem de marca</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_InsertSymbolDescription" xml:space="preserve">
+    <value>Inserir símbolos que não estão no seu teclado, tais como símbolos de copyright, marca, símbolos, n. marcas e caracteres Unicode.</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_Print" xml:space="preserve">
+    <value>&amp; impressão</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_ClearUndo" xml:space="preserve">
+    <value>ClearUndo</value>
+  </data>
+  <data name="OfficeStringId.Msg_InvalidNumberConverterValue" xml:space="preserve">
+    <value>Valor deve estar entre {0} e {1}.</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_EditComment" xml:space="preserve">
+    <value>Editar comentário</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_EditCommentDescription" xml:space="preserve">
+    <value>Adicionar uma nota sobre esta parte do documento.</value>
+  </data>
+  <data name="OfficeStringId.Msg_InvalidRemoveDataSource" xml:space="preserve">
+    <value>Uma fonte de dados não pode ser excluída durante o processo de mala direta.</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_EncryptDescription" xml:space="preserve">
+    <value>Exigem uma senha para abrir esta pasta de trabalho.</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_Encrypt" xml:space="preserve">
+    <value>Criptografar com senha</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_StatusBarPopupMenuZoom" xml:space="preserve">
+    <value>Zoom</value>
+  </data>
+  <data name="OfficeStringId.MenuCmd_StatusBarZoomSliderDescription" xml:space="preserve">
+    <value>Zoom</value>
+  </data>
+</root>

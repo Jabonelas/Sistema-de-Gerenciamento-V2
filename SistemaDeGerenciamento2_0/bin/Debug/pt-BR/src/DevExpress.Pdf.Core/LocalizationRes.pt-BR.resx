@@ -1,0 +1,424 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="PdfCoreStringId.DefaultDocumentName" xml:space="preserve">
+    <value>Documento</value>
+  </data>
+  <data name="PdfCoreStringId.FileSize" xml:space="preserve">
+    <value>{1} {0:0.00} ({2} Bytes)</value>
+  </data>
+  <data name="PdfCoreStringId.FileSizeInBytes" xml:space="preserve">
+    <value>{0} Bytes</value>
+  </data>
+  <data name="PdfCoreStringId.MsgIncorrectColorSpaceComponentName" xml:space="preserve">
+    <value>o nome de componente de espaço de cor não pode ser vazio.</value>
+  </data>
+  <data name="PdfCoreStringId.MsgIncorrectColorSpaceName" xml:space="preserve">
+    <value>o nome de espaço de cor não pode ser vazio.</value>
+  </data>
+  <data name="PdfCoreStringId.MsgIncorrectPdfData" xml:space="preserve">
+    <value>Dados de entrada não são reconhecidos como um pdf válido.</value>
+  </data>
+  <data name="PdfCoreStringId.MsgIncorrectText" xml:space="preserve">
+    <value>O valor de texto não pode ser nulo.</value>
+  </data>
+  <data name="PdfCoreStringId.MsgInconsistentArrayLength" xml:space="preserve">
+    <value>o comprimento das listas c0 e c1 deve ser igual.</value>
+  </data>
+  <data name="PdfCoreStringId.MsgIncorrectBitsPerSample" xml:space="preserve">
+    <value>o número de bits deve ser 1, 2, 4, 8, 12, 24 e 32.</value>
+  </data>
+  <data name="PdfCoreStringId.MsgIncorrectCIEColorComponent" xml:space="preserve">
+    <value>Valor de componente de espaço de cor do CIE deve ser maior ou igual a 0.</value>
+  </data>
+  <data name="PdfCoreStringId.MsgIncorrectColorComponentsCount" xml:space="preserve">
+    <value>a cor deve ter 1, 3 ou 4 componentes.</value>
+  </data>
+  <data name="PdfCoreStringId.MsgIncorrectColorComponentValue" xml:space="preserve">
+    <value>o valor do componente de cor deve ser maior ou igual a 0 e menor ou igual a 1.</value>
+  </data>
+  <data name="PdfCoreStringId.MsgIncorrectDashLength" xml:space="preserve">
+    <value>o comprimento do traço deve ser maior ou igual a 0.</value>
+  </data>
+  <data name="PdfCoreStringId.MsgIncorrectGlyphPosition" xml:space="preserve">
+    <value>a posição de glifo deve ser menor ou igual do que o comprimento do texto.</value>
+  </data>
+  <data name="PdfCoreStringId.MsgIncorrectGrayLevel" xml:space="preserve">
+    <value>o nível de cinza deve ser maior ou igual a 0 e menor ou igual a 1.</value>
+  </data>
+  <data name="PdfCoreStringId.MsgIncorrectLineWidth" xml:space="preserve">
+    <value>a largura de linha deve ser maior ou igual a 0.</value>
+  </data>
+  <data name="PdfCoreStringId.MsgIncorrectListSize" xml:space="preserve">
+    <value>a lista deve conter pelo menos um valor.</value>
+  </data>
+  <data name="PdfCoreStringId.MsgIncorrectMarkedContentTag" xml:space="preserve">
+    <value>a tag conteúda marcada não pode ser vazia.</value>
+  </data>
+  <data name="PdfCoreStringId.MsgIncorrectMiterLimit" xml:space="preserve">
+    <value>o limite de Mitre deve ser maior que 0.</value>
+  </data>
+  <data name="PdfCoreStringId.MsgIncorrectSampleArraySize" xml:space="preserve">
+    <value>Tamanho de amostras a matriz deve ser igual à soma de todos os valores de contagem de amostra.</value>
+  </data>
+  <data name="PdfCoreStringId.MsgIncorrectSampleCount" xml:space="preserve">
+    <value>a contagem de amostra deve ser maior que 0.</value>
+  </data>
+  <data name="PdfCoreStringId.MsgIncorrectSampleCountListSize" xml:space="preserve">
+    <value>a contagem de amostra tamanho de lista deve ser igual ao tamanho do lista de domínio.</value>
+  </data>
+  <data name="PdfCoreStringId.MsgIncorrectColorLookupTableSize" xml:space="preserve">
+    <value>o tamanho da tabela de pesquisa cor deve ser um múltiplo do número de componentes de cor e conter maior que 0 e menor do que ou igual a 256 cores.</value>
+  </data>
+  <data name="PdfCoreStringId.MsgIncorrectCalculatorCode" xml:space="preserve">
+    <value>a função de calculadora código não pode ser vazia.</value>
+  </data>
+  <data name="PdfCoreStringId.MsgIncorrectDashPattern" xml:space="preserve">
+    <value>a soma dos comprimentos de traço e gap deve ser maior que 0.</value>
+  </data>
+  <data name="PdfCoreStringId.MsgIncorrectDashPatternArraySize" xml:space="preserve">
+    <value>Matriz de padrão de traço não deve estar vazio.</value>
+  </data>
+  <data name="PdfCoreStringId.MsgIncorrectDecodeArrayEntryValue" xml:space="preserve">
+    <value>o valor de entrada de matriz de decodificação deve ser maior ou igual a 0.</value>
+  </data>
+  <data name="PdfCoreStringId.MsgIncorrectDecodeListSize" xml:space="preserve">
+    <value>Decodificar o tamanho da lista deve ser igual ao tamanho do intervalo da lista.</value>
+  </data>
+  <data name="PdfCoreStringId.MsgIncorrectEncodeListSize" xml:space="preserve">
+    <value>Codificar o tamanho da lista deve ser igual ao tamanho da lista de domínio.</value>
+  </data>
+  <data name="PdfCoreStringId.MsgIncorrectFlatnessTolerance" xml:space="preserve">
+    <value>a tolerância de planeza deve ser maior ou igual a 0 e menor ou igual a 100.</value>
+  </data>
+  <data name="PdfCoreStringId.MsgIncorrectGamma" xml:space="preserve">
+    <value>o valor de gama deve ser maior que 0.</value>
+  </data>
+  <data name="PdfCoreStringId.MsgIncorrectGammaComponent" xml:space="preserve">
+    <value>o valor do componente de gama deve ser maior que 0.</value>
+  </data>
+  <data name="PdfCoreStringId.MsgIncorrectGapLength" xml:space="preserve">
+    <value>o comprimento de diferença deve ser maior ou igual a 0.</value>
+  </data>
+  <data name="PdfCoreStringId.MsgIncorrectPdfPassword" xml:space="preserve">
+    <value>A senha do documento aberto está vazio ou incorreto.</value>
+  </data>
+  <data name="PdfCoreStringId.MsgIncorrectSampleValue" xml:space="preserve">
+    <value>Valor de elemento de matriz a amostras deve ser maior ou igual a 0 e menor ou igual a 15.</value>
+  </data>
+  <data name="PdfCoreStringId.MsgIncorrectSeparationColorSpaceDomainSize" xml:space="preserve">
+    <value>Tamanho de domínio de função de transformação deve ser igual a 1.</value>
+  </data>
+  <data name="PdfCoreStringId.MsgIncorrectShadingPatternName" xml:space="preserve">
+    <value>O nome padrão de sombreamento não pode ser vazio.</value>
+  </data>
+  <data name="PdfCoreStringId.MsgIncorrectSpecialColorSpaceTintTransformRange" xml:space="preserve">
+    <value>Tamanho do intervalo da função de transformação deve ser igual à dimensão do espaço de cor alternativo.</value>
+  </data>
+  <data name="PdfCoreStringId.MsgIncorrectTextHorizontalScaling" xml:space="preserve">
+    <value>o texto horizontal dimensionamento valor deve ser maior que 0.</value>
+  </data>
+  <data name="PdfCoreStringId.MsgZeroColorComponentsCount" xml:space="preserve">
+    <value>a cor deve ter pelo menos um componente.</value>
+  </data>
+  <data name="PdfCoreStringId.MsgIncorrectFontSize" xml:space="preserve">
+    <value>O tamanho da fonte deve ser maior que 0.</value>
+  </data>
+  <data name="PdfCoreStringId.MsgDuplicateColorSpaceComponentName" xml:space="preserve">
+    <value>Matriz de nome de componente de espaço de cor contém nomes duplicados.</value>
+  </data>
+  <data name="PdfCoreStringId.MsgUnavailableOperation" xml:space="preserve">
+    <value>Esta operação não está disponível, enquanto nenhum documento está sendo carregado.</value>
+  </data>
+  <data name="PdfCoreStringId.MsgInconsistentColorComponentsCount" xml:space="preserve">
+    <value>o componente contar neste e espaços de cores alternativos devem ser iguais.</value>
+  </data>
+  <data name="PdfCoreStringId.MsgIncorrectHalftoneFrequency" xml:space="preserve">
+    <value>a freqüência de meio-tom deve ser maior que 0.</value>
+  </data>
+  <data name="PdfCoreStringId.MsgIncorrectLargestEdgeLength" xml:space="preserve">
+    <value>o maior comprimento de borda deve ser maior que 0.</value>
+  </data>
+  <data name="PdfCoreStringId.MsgIncorrectLuminositySoftMaskTransparencyGroupColorSpace" xml:space="preserve">
+    <value>o grupo de transparência para a máscara suave luminosidade requer uma definição de espaço de cor.</value>
+  </data>
+  <data name="PdfCoreStringId.MsgIncorrectPageArtBox" xml:space="preserve">
+    <value>Caixa de arte de página deve ser menor ou igual à caixa de mídia.</value>
+  </data>
+  <data name="PdfCoreStringId.MsgIncorrectPageBleedBox" xml:space="preserve">
+    <value>a página caixa de sangramento deve ser menor ou igual à caixa de mídia.</value>
+  </data>
+  <data name="PdfCoreStringId.MsgIncorrectPageCropBox" xml:space="preserve">
+    <value>Caixa de croppoing de página deve ser menor ou igual à caixa de mídia.</value>
+  </data>
+  <data name="PdfCoreStringId.MsgIncorrectPageNumber" xml:space="preserve">
+    <value>o número da página deve ser maior que 0.</value>
+  </data>
+  <data name="PdfCoreStringId.MsgIncorrectPageRotate" xml:space="preserve">
+    <value>o ângulo de rotação da página pode ter um dos seguintes valores: 0, 90, 180 ou 270 graus.</value>
+  </data>
+  <data name="PdfCoreStringId.MsgIncorrectPageTransparencyGroupColorSpace" xml:space="preserve">
+    <value>Grupo de transparência da página requer uma definição de espaço de cor.</value>
+  </data>
+  <data name="PdfCoreStringId.MsgIncorrectPageTrimBox" xml:space="preserve">
+    <value>Caixa de remoção de página deve ser menor ou igual à caixa de mídia.</value>
+  </data>
+  <data name="PdfCoreStringId.MsgIncorrectRangeListSize" xml:space="preserve">
+    <value>o intervalo lista tamanho deve ser igual à contagem de componentes.</value>
+  </data>
+  <data name="PdfCoreStringId.MsgIncorrectRectangleHeight" xml:space="preserve">
+    <value>a coordenada superior do retângulo deve ser maior ou igual ao fundo.</value>
+  </data>
+  <data name="PdfCoreStringId.MsgIncorrectRectangleWidth" xml:space="preserve">
+    <value>a direita coordenada do retângulo deve ser maior ou igual ao esquerdo.</value>
+  </data>
+  <data name="PdfCoreStringId.MsgIncorrectPrintableFilePath" xml:space="preserve">
+    <value>Não é possível criar um documento de impressão com o nome especificado: {0}.</value>
+  </data>
+  <data name="PdfCoreStringId.MsgIncorrectTextFormFieldValue" xml:space="preserve">
+    <value>o argumento deve ser um valor de seqüência de caracteres.</value>
+  </data>
+  <data name="PdfCoreStringId.MsgAttachmentHintDescription" xml:space="preserve">
+    <value>Descrição: {0}</value>
+  </data>
+  <data name="PdfCoreStringId.MsgAttachmentHintFileName" xml:space="preserve">
+    <value>Nome: {0}</value>
+  </data>
+  <data name="PdfCoreStringId.MsgAttachmentHintSize" xml:space="preserve">
+    <value>Tamanho: {0}</value>
+  </data>
+  <data name="PdfCoreStringId.UnitExaBytes" xml:space="preserve">
+    <value>EB</value>
+  </data>
+  <data name="PdfCoreStringId.UnitGigaBytes" xml:space="preserve">
+    <value>GB</value>
+  </data>
+  <data name="PdfCoreStringId.UnitKiloBytes" xml:space="preserve">
+    <value>KB</value>
+  </data>
+  <data name="PdfCoreStringId.UnitMegaBytes" xml:space="preserve">
+    <value>MB</value>
+  </data>
+  <data name="PdfCoreStringId.UnitPetaBytes" xml:space="preserve">
+    <value>PB</value>
+  </data>
+  <data name="PdfCoreStringId.UnitTeraBytes" xml:space="preserve">
+    <value>TB</value>
+  </data>
+  <data name="PdfCoreStringId.UnitZettaBytes" xml:space="preserve">
+    <value>ZB</value>
+  </data>
+  <data name="PdfCoreStringId.MsgIncorrectInsertingPageNumber" xml:space="preserve">
+    <value>O número de página deve ser maior do que 0 e menor que ou igual ao número de página seguinte disponível (ao lado do número de páginas do documento).</value>
+  </data>
+  <data name="PdfCoreStringId.MsgIncorrectDpi" xml:space="preserve">
+    <value>Resolução (em pontos por polegada) deve ser maior que 0.</value>
+  </data>
+  <data name="PdfCoreStringId.MsgUnsupportedBrushType" xml:space="preserve">
+    <value>Pincéis personalizados não são suportados.</value>
+  </data>
+  <data name="PdfCoreStringId.MsgUnsupportedGraphicsOperation" xml:space="preserve">
+    <value>Esta operação não é suportada, porque o objeto PdfGraphics não pertence ao documento atual.</value>
+  </data>
+  <data name="PdfCoreStringId.MsgIncorrectButtonFormFieldValue" xml:space="preserve">
+    <value>
+O valor da propriedade para um campo de formulário botão deve ser o nome aparência ou um valor a partir da lista de opções.</value>
+  </data>
+  <data name="PdfCoreStringId.MsgMissingPageNumbers" xml:space="preserve">
+    <value>Número de página pelo menos uma deve ser especificado.</value>
+  </data>
+  <data name="PdfCoreStringId.MsgPartialTrustEnvironmentLimitation" xml:space="preserve">
+    <value>Esta operação não pode ser executada no ambiente de confiança parcial.</value>
+  </data>
+  <data name="PdfCoreStringId.MsgUnsupportedStreamForSaveOperation" xml:space="preserve">
+    <value>Fluxo deve suportar gravação e operações para a economia de busca.</value>
+  </data>
+  <data name="PdfCoreStringId.MsgIncorrectDestinationPage" xml:space="preserve">
+    <value>o destino do indicador não estiver relacionado com a página em um documento diferente.</value>
+  </data>
+  <data name="PdfCoreStringId.MsgUnsupportedEncryption" xml:space="preserve">
+    <value>Criptografia não é suportada em um documento PDF/A.</value>
+  </data>
+  <data name="PdfCoreStringId.MsgUnsupportedStreamForLoadOperation" xml:space="preserve">
+    <value>Fluxo deve suportar leitura e operações de carregamento de busca.</value>
+  </data>
+  <data name="PdfCoreStringId.MsgUnsupportedGraphicsUnit" xml:space="preserve">
+    <value>Unidades da visualização e mundo não há suporte para o sistema de coordenadas de imagem fonte.</value>
+  </data>
+  <data name="PdfCoreStringId.MsgIncompatibleOperationWithCurrentDocumentFormat" xml:space="preserve">
+    <value>a operação não é suportado em PdfCompatibility. { 0} modo de compatibilidade. Por favor, crie um documento no modo de compatibilidade PdfCompatibility.Pdf.</value>
+  </data>
+  <data name="PdfCoreStringId.TextUnderlineDefaultSubject" xml:space="preserve">
+    <value>Sublinhado</value>
+  </data>
+  <data name="PdfCoreStringId.MsgAcroFormFieldNameDuplication" xml:space="preserve">
+    <value>Os irmãos não podem ter os mesmos nomes na hierarquia de campo de formulário.</value>
+  </data>
+  <data name="PdfCoreStringId.MsgUnsupportedAnnotationType" xml:space="preserve">
+    <value>Anotação de realce de texto não é suportada em um documento PDF/A-1.</value>
+  </data>
+  <data name="PdfCoreStringId.MsgStreamIsInUse" xml:space="preserve">
+    <value>O fluxo já é usado para um documento. Por favor use outro fluxo.</value>
+  </data>
+  <data name="PdfCoreStringId.TextHighlightDefaultSubject" xml:space="preserve">
+    <value>Destaque</value>
+  </data>
+  <data name="PdfCoreStringId.StickyNoteDefaultSubject" xml:space="preserve">
+    <value>Nota</value>
+  </data>
+  <data name="PdfCoreStringId.AnnotationFilterTypeCustom" xml:space="preserve">
+    <value>Personalizado</value>
+  </data>
+  <data name="PdfCoreStringId.AnnotationFilterTypeStrikethrough" xml:space="preserve">
+    <value>Tachado</value>
+  </data>
+  <data name="PdfCoreStringId.AnnotationFilterTypeUnderline" xml:space="preserve">
+    <value>Sublinhado</value>
+  </data>
+  <data name="PdfCoreStringId.AnnotationFilterTypeLine" xml:space="preserve">
+    <value>Linha</value>
+  </data>
+  <data name="PdfCoreStringId.AnnotationFilterTypeSquare" xml:space="preserve">
+    <value>Retângulo</value>
+  </data>
+  <data name="PdfCoreStringId.AnnotationFilterTypePolygon" xml:space="preserve">
+    <value>Polígono</value>
+  </data>
+  <data name="PdfCoreStringId.RubberStampForComment" xml:space="preserve">
+    <value>Comentário</value>
+  </data>
+  <data name="PdfCoreStringId.RubberStampDConfidentialCredentials" xml:space="preserve">
+    <value>{0}</value>
+  </data>
+  <data name="PdfCoreStringId.AnnotationFilterTypeFreeText" xml:space="preserve">
+    <value>Caixa de Texto</value>
+  </data>
+  <data name="PdfCoreStringId.RubberStampDApprovedCredentials" xml:space="preserve">
+    <value>{0} {1}</value>
+  </data>
+  <data name="PdfCoreStringId.RubberStampDReceivedCredentials" xml:space="preserve">
+    <value>{0} {1}</value>
+  </data>
+  <data name="PdfCoreStringId.RubberStampDReviewedCredentials" xml:space="preserve">
+    <value>{0} {1}</value>
+  </data>
+  <data name="PdfCoreStringId.RubberStampDRevisedCredentials" xml:space="preserve">
+    <value>{0} {1}</value>
+  </data>
+</root>

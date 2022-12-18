@@ -1,0 +1,699 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"></assembly>
+  <data name="edtSecondColor.EditValue" type="System.Drawing.Color, System.Drawing">
+    <value></value>
+  </data>
+  <data name="edtSecondColor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 140</value>
+  </data>
+  <data name="edtSecondColor.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>154, 20</value>
+  </data>
+  <data name="edtSecondColor.Properties.AccessibleName" xml:space="preserve">
+    <value>Color 2</value>
+  </data>
+  <data name="edtSecondColor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>154, 20</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"></assembly>
+  <data name="fillEffectsFormatCellsFormLayoutControl.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"></assembly>
+  <data name="btnCancel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="btnCancel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>261, 382</value>
+  </data>
+  <data name="btnCancel.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btnCancel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btnCancel.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="btnCancel.Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.Name" xml:space="preserve">
+    <value>btnCancel</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.Parent" xml:space="preserve">
+    <value>fillEffectsFormatCellsFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="previewPanel.AccessibleName" xml:space="preserve">
+    <value>Sample</value>
+  </data>
+  <data name="previewPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>179, 221</value>
+  </data>
+  <data name="previewPanel.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>154, 154</value>
+  </data>
+  <data name="previewPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>154, 154</value>
+  </data>
+  <data name="previewPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;previewPanel.Name" xml:space="preserve">
+    <value>previewPanel</value>
+  </data>
+  <data name="&gt;&gt;previewPanel.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;previewPanel.Parent" xml:space="preserve">
+    <value>fillEffectsFormatCellsFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;previewPanel.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="btnOk.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="btnOk.Location" type="System.Drawing.Point, System.Drawing">
+    <value>182, 382</value>
+  </data>
+  <data name="btnOk.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btnOk.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btnOk.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="btnOk.Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="&gt;&gt;btnOk.Name" xml:space="preserve">
+    <value>btnOk</value>
+  </data>
+  <data name="&gt;&gt;btnOk.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;btnOk.Parent" xml:space="preserve">
+    <value>fillEffectsFormatCellsFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;btnOk.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="btnFourthGradientVariant.AccessibleName" xml:space="preserve">
+    <value>Variant 4</value>
+  </data>
+  <data name="btnFourthGradientVariant.Location" type="System.Drawing.Point, System.Drawing">
+    <value>94, 300</value>
+  </data>
+  <data name="btnFourthGradientVariant.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>75, 75</value>
+  </data>
+  <data name="btnFourthGradientVariant.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 75</value>
+  </data>
+  <data name="btnFourthGradientVariant.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;btnFourthGradientVariant.Name" xml:space="preserve">
+    <value>btnFourthGradientVariant</value>
+  </data>
+  <data name="&gt;&gt;btnFourthGradientVariant.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;btnFourthGradientVariant.Parent" xml:space="preserve">
+    <value>fillEffectsFormatCellsFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;btnFourthGradientVariant.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="btnThirdGradientVariant.AccessibleName" xml:space="preserve">
+    <value>Variant 3</value>
+  </data>
+  <data name="btnThirdGradientVariant.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 300</value>
+  </data>
+  <data name="btnThirdGradientVariant.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>75, 75</value>
+  </data>
+  <data name="btnThirdGradientVariant.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 75</value>
+  </data>
+  <data name="btnThirdGradientVariant.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;btnThirdGradientVariant.Name" xml:space="preserve">
+    <value>btnThirdGradientVariant</value>
+  </data>
+  <data name="&gt;&gt;btnThirdGradientVariant.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;btnThirdGradientVariant.Parent" xml:space="preserve">
+    <value>fillEffectsFormatCellsFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;btnThirdGradientVariant.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="rgrpShadingStyles.Location" type="System.Drawing.Point, System.Drawing">
+    <value>179, 36</value>
+  </data>
+  <data name="rgrpShadingStyles.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>154, 154</value>
+  </data>
+  <data name="rgrpShadingStyles.Properties.AccessibleName" xml:space="preserve">
+    <value>Shading Styles</value>
+  </data>
+  <data name="rgrpShadingStyles.Properties.Items" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="rgrpShadingStyles.Properties.Items1" xml:space="preserve">
+    <value>Hori&amp;zontal</value>
+  </data>
+  <data name="rgrpShadingStyles.Properties.Items2" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="rgrpShadingStyles.Properties.Items3" xml:space="preserve">
+    <value>&amp;Vertical</value>
+  </data>
+  <data name="rgrpShadingStyles.Properties.Items4" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="rgrpShadingStyles.Properties.Items5" xml:space="preserve">
+    <value>Diagonal &amp;up</value>
+  </data>
+  <data name="rgrpShadingStyles.Properties.Items6" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="rgrpShadingStyles.Properties.Items7" xml:space="preserve">
+    <value>Diagonal &amp;down</value>
+  </data>
+  <data name="rgrpShadingStyles.Properties.Items8" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="rgrpShadingStyles.Properties.Items9" xml:space="preserve">
+    <value>&amp;From corner</value>
+  </data>
+  <data name="rgrpShadingStyles.Properties.Items10" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="rgrpShadingStyles.Properties.Items11" xml:space="preserve">
+    <value>Fro&amp;m center</value>
+  </data>
+  <data name="rgrpShadingStyles.Size" type="System.Drawing.Size, System.Drawing">
+    <value>154, 154</value>
+  </data>
+  <data name="rgrpShadingStyles.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;rgrpShadingStyles.Name" xml:space="preserve">
+    <value>rgrpShadingStyles</value>
+  </data>
+  <data name="&gt;&gt;rgrpShadingStyles.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.RadioGroup, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;rgrpShadingStyles.Parent" xml:space="preserve">
+    <value>fillEffectsFormatCellsFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;rgrpShadingStyles.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="btnSecondGradientVariant.AccessibleName" xml:space="preserve">
+    <value>Variant 2</value>
+  </data>
+  <data name="btnSecondGradientVariant.Location" type="System.Drawing.Point, System.Drawing">
+    <value>94, 221</value>
+  </data>
+  <data name="btnSecondGradientVariant.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>75, 75</value>
+  </data>
+  <data name="btnSecondGradientVariant.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 75</value>
+  </data>
+  <data name="btnSecondGradientVariant.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;btnSecondGradientVariant.Name" xml:space="preserve">
+    <value>btnSecondGradientVariant</value>
+  </data>
+  <data name="&gt;&gt;btnSecondGradientVariant.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;btnSecondGradientVariant.Parent" xml:space="preserve">
+    <value>fillEffectsFormatCellsFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;btnSecondGradientVariant.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="btnFirstGradientVariant.AccessibleName" xml:space="preserve">
+    <value>Variant 1</value>
+  </data>
+  <data name="btnFirstGradientVariant.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 221</value>
+  </data>
+  <data name="btnFirstGradientVariant.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>75, 75</value>
+  </data>
+  <data name="btnFirstGradientVariant.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 75</value>
+  </data>
+  <data name="btnFirstGradientVariant.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btnFirstGradientVariant.Name" xml:space="preserve">
+    <value>btnFirstGradientVariant</value>
+  </data>
+  <data name="&gt;&gt;btnFirstGradientVariant.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;btnFirstGradientVariant.Parent" xml:space="preserve">
+    <value>fillEffectsFormatCellsFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;btnFirstGradientVariant.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="lblSecondColor.AccessibleName" xml:space="preserve">
+    <value>Color 2</value>
+  </data>
+  <data name="lblSecondColor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 123</value>
+  </data>
+  <data name="lblSecondColor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>38, 13</value>
+  </data>
+  <data name="lblSecondColor.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="lblSecondColor.Text" xml:space="preserve">
+    <value>Color &amp;2:</value>
+  </data>
+  <data name="&gt;&gt;lblSecondColor.Name" xml:space="preserve">
+    <value>lblSecondColor</value>
+  </data>
+  <data name="&gt;&gt;lblSecondColor.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblSecondColor.Parent" xml:space="preserve">
+    <value>fillEffectsFormatCellsFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblSecondColor.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="edtFirstColor.EditValue" type="System.Drawing.Color, System.Drawing">
+    <value></value>
+  </data>
+  <data name="edtFirstColor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 83</value>
+  </data>
+  <data name="edtFirstColor.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>154, 20</value>
+  </data>
+  <data name="edtFirstColor.Properties.AccessibleName" xml:space="preserve">
+    <value>Color 1</value>
+  </data>
+  <data name="edtFirstColor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>154, 20</value>
+  </data>
+  <data name="edtFirstColor.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;edtFirstColor.Name" xml:space="preserve">
+    <value>edtFirstColor</value>
+  </data>
+  <data name="&gt;&gt;edtFirstColor.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ColorPickEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtFirstColor.Parent" xml:space="preserve">
+    <value>fillEffectsFormatCellsFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;edtFirstColor.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="lblFirstColor.AccessibleName" xml:space="preserve">
+    <value>Color 1</value>
+  </data>
+  <data name="lblFirstColor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 66</value>
+  </data>
+  <data name="lblFirstColor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>38, 13</value>
+  </data>
+  <data name="lblFirstColor.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblFirstColor.Text" xml:space="preserve">
+    <value>Color &amp;1:</value>
+  </data>
+  <data name="&gt;&gt;lblFirstColor.Name" xml:space="preserve">
+    <value>lblFirstColor</value>
+  </data>
+  <data name="&gt;&gt;lblFirstColor.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblFirstColor.Parent" xml:space="preserve">
+    <value>fillEffectsFormatCellsFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblFirstColor.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="fillEffectsFormatCellsFormLayoutControl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="fillEffectsFormatCellsFormLayoutControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="colorsLayoutControlGroup.Text" xml:space="preserve">
+    <value>Colors</value>
+  </data>
+  <data name="shadingStylesLayoutControlGroup.Text" xml:space="preserve">
+    <value>Shading styles</value>
+  </data>
+  <data name="variantsLayoutControlGroup.Text" xml:space="preserve">
+    <value>V&amp;ariants</value>
+  </data>
+  <data name="sampleLayoutControlGroup.Text" xml:space="preserve">
+    <value>Sample</value>
+  </data>
+  <data name="fillEffectsFormatCellsFormLayoutControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>348, 417</value>
+  </data>
+  <data name="fillEffectsFormatCellsFormLayoutControl.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="fillEffectsFormatCellsFormLayoutControl.Text" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;fillEffectsFormatCellsFormLayoutControl.Name" xml:space="preserve">
+    <value>fillEffectsFormatCellsFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;fillEffectsFormatCellsFormLayoutControl.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControl, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;fillEffectsFormatCellsFormLayoutControl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;fillEffectsFormatCellsFormLayoutControl.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="edtSecondColor.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;edtSecondColor.Name" xml:space="preserve">
+    <value>edtSecondColor</value>
+  </data>
+  <data name="&gt;&gt;edtSecondColor.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ColorPickEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtSecondColor.Parent" xml:space="preserve">
+    <value>fillEffectsFormatCellsFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;edtSecondColor.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>348, 417</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>350, 449</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterParent</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Fill Effects</value>
+  </data>
+  <data name="&gt;&gt;Root.Name" xml:space="preserve">
+    <value>Root</value>
+  </data>
+  <data name="&gt;&gt;Root.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;layoutControlGroup.Name" xml:space="preserve">
+    <value>layoutControlGroup</value>
+  </data>
+  <data name="&gt;&gt;layoutControlGroup.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;colorsLayoutControlGroup.Name" xml:space="preserve">
+    <value>colorsLayoutControlGroup</value>
+  </data>
+  <data name="&gt;&gt;colorsLayoutControlGroup.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblFirstColorLayoutControlItem.Name" xml:space="preserve">
+    <value>lblFirstColorLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;lblFirstColorLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtFirstColorLayoutControlItem.Name" xml:space="preserve">
+    <value>edtFirstColorLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;edtFirstColorLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblSecondColorLayoutControlItem.Name" xml:space="preserve">
+    <value>lblSecondColorLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;lblSecondColorLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtSecondColorLayoutControlItem.Name" xml:space="preserve">
+    <value>edtSecondColorLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;edtSecondColorLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem2.Name" xml:space="preserve">
+    <value>emptySpaceItem2</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem2.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem1.Name" xml:space="preserve">
+    <value>emptySpaceItem1</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem3.Name" xml:space="preserve">
+    <value>emptySpaceItem3</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem3.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;shadingStylesLayoutControlGroup.Name" xml:space="preserve">
+    <value>shadingStylesLayoutControlGroup</value>
+  </data>
+  <data name="&gt;&gt;shadingStylesLayoutControlGroup.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;rgrpShadingStylesLayoutControlItem.Name" xml:space="preserve">
+    <value>rgrpShadingStylesLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;rgrpShadingStylesLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;variantsLayoutControlGroup.Name" xml:space="preserve">
+    <value>variantsLayoutControlGroup</value>
+  </data>
+  <data name="&gt;&gt;variantsLayoutControlGroup.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;btnFirstGradientVariantLayoutControlItem.Name" xml:space="preserve">
+    <value>btnFirstGradientVariantLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;btnFirstGradientVariantLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;btnSecondGradientVariantLayoutControlItem.Name" xml:space="preserve">
+    <value>btnSecondGradientVariantLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;btnSecondGradientVariantLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;btnThirdGradientVariantLayoutControlItem.Name" xml:space="preserve">
+    <value>btnThirdGradientVariantLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;btnThirdGradientVariantLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;btnFourthGradientVariantLayoutControlItem.Name" xml:space="preserve">
+    <value>btnFourthGradientVariantLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;btnFourthGradientVariantLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;sampleLayoutControlGroup.Name" xml:space="preserve">
+    <value>sampleLayoutControlGroup</value>
+  </data>
+  <data name="&gt;&gt;sampleLayoutControlGroup.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;previewPanelLayoutControlItem.Name" xml:space="preserve">
+    <value>previewPanelLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;previewPanelLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem4.Name" xml:space="preserve">
+    <value>emptySpaceItem4</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem4.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;btnOkLayoutControlItem.Name" xml:space="preserve">
+    <value>btnOkLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;btnOkLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;btnCancelLayoutControlItem.Name" xml:space="preserve">
+    <value>btnCancelLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;btnCancelLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FillEffectsFormatCellsForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.XtraForm, DevExpress.Utils.v21.2, Culture=neutral</value>
+  </data>
+</root>

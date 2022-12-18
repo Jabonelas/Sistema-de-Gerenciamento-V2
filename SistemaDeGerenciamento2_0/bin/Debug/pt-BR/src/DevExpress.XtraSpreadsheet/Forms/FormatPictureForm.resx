@@ -1,0 +1,1632 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"></assembly>
+  <data name="edtWidthPercent.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"></assembly>
+  <data name="edtWidthPercent.EditValue" type="System.Decimal, mscorlib">
+    <value>0</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"></assembly>
+  <data name="edtWidthPercent.Location" type="System.Drawing.Point, System.Drawing">
+    <value>310, 129</value>
+  </data>
+  <data name="edtWidthPercent.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>80, 0</value>
+  </data>
+  <data name="edtWidthPercent.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="edtWidthPercent.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 20</value>
+  </data>
+  <data name="formatPictureFormLayoutControl.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="btnReset2.AccessibleName" xml:space="preserve">
+    <value>Reset</value>
+  </data>
+  <data name="btnReset2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="btnReset2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>315, 268</value>
+  </data>
+  <data name="btnReset2.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btnReset2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btnReset2.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="btnReset2.Text" xml:space="preserve">
+    <value>Reset</value>
+  </data>
+  <data name="&gt;&gt;btnReset2.Name" xml:space="preserve">
+    <value>btnReset2</value>
+  </data>
+  <data name="&gt;&gt;btnReset2.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;btnReset2.Parent" xml:space="preserve">
+    <value>formatPictureFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;btnReset2.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="edtContrast.EditValue" type="System.Decimal, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="edtContrast.Location" type="System.Drawing.Point, System.Drawing">
+    <value>245, 177</value>
+  </data>
+  <data name="edtContrast.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>100, 0</value>
+  </data>
+  <data name="edtContrast.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="edtContrast.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="edtContrast.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;edtContrast.Name" xml:space="preserve">
+    <value>edtContrast</value>
+  </data>
+  <data name="&gt;&gt;edtContrast.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SpinEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtContrast.Parent" xml:space="preserve">
+    <value>formatPictureFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;edtContrast.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="zoomTrackBarContrast.EditValue" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value></value>
+  </data>
+  <data name="zoomTrackBarContrast.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="zoomTrackBarContrast.Location" type="System.Drawing.Point, System.Drawing">
+    <value>99, 179</value>
+  </data>
+  <data name="zoomTrackBarContrast.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>150, 0</value>
+  </data>
+  <data name="zoomTrackBarContrast.Size" type="System.Drawing.Size, System.Drawing">
+    <value>142, 16</value>
+  </data>
+  <data name="zoomTrackBarContrast.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="&gt;&gt;zoomTrackBarContrast.Name" xml:space="preserve">
+    <value>zoomTrackBarContrast</value>
+  </data>
+  <data name="&gt;&gt;zoomTrackBarContrast.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ZoomTrackBarControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;zoomTrackBarContrast.Parent" xml:space="preserve">
+    <value>formatPictureFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;zoomTrackBarContrast.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="lblContrast.AccessibleName" xml:space="preserve">
+    <value>Contrast</value>
+  </data>
+  <data name="lblContrast.Location" type="System.Drawing.Point, System.Drawing">
+    <value>34, 180</value>
+  </data>
+  <data name="lblContrast.Size" type="System.Drawing.Size, System.Drawing">
+    <value>46, 13</value>
+  </data>
+  <data name="lblContrast.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="lblContrast.Text" xml:space="preserve">
+    <value>Co&amp;ntrast:</value>
+  </data>
+  <data name="&gt;&gt;lblContrast.Name" xml:space="preserve">
+    <value>lblContrast</value>
+  </data>
+  <data name="&gt;&gt;lblContrast.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblContrast.Parent" xml:space="preserve">
+    <value>formatPictureFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblContrast.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="edtBrightness.EditValue" type="System.Decimal, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="edtBrightness.Location" type="System.Drawing.Point, System.Drawing">
+    <value>245, 153</value>
+  </data>
+  <data name="edtBrightness.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>100, 0</value>
+  </data>
+  <data name="edtBrightness.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="edtBrightness.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="edtBrightness.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;edtBrightness.Name" xml:space="preserve">
+    <value>edtBrightness</value>
+  </data>
+  <data name="&gt;&gt;edtBrightness.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SpinEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtBrightness.Parent" xml:space="preserve">
+    <value>formatPictureFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;edtBrightness.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="zoomTrackBarBrigthness.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="zoomTrackBarBrigthness.EditValue" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value></value>
+  </data>
+  <data name="zoomTrackBarBrigthness.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="zoomTrackBarBrigthness.Location" type="System.Drawing.Point, System.Drawing">
+    <value>99, 155</value>
+  </data>
+  <data name="zoomTrackBarBrigthness.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>150, 0</value>
+  </data>
+  <data name="zoomTrackBarBrigthness.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>120, 0</value>
+  </data>
+  <data name="zoomTrackBarBrigthness.Size" type="System.Drawing.Size, System.Drawing">
+    <value>142, 16</value>
+  </data>
+  <data name="zoomTrackBarBrigthness.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;zoomTrackBarBrigthness.Name" xml:space="preserve">
+    <value>zoomTrackBarBrigthness</value>
+  </data>
+  <data name="&gt;&gt;zoomTrackBarBrigthness.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ZoomTrackBarControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;zoomTrackBarBrigthness.Parent" xml:space="preserve">
+    <value>formatPictureFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;zoomTrackBarBrigthness.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="edtCropBottom.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="edtCropBottom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>310, 88</value>
+  </data>
+  <data name="edtCropBottom.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>80, 0</value>
+  </data>
+  <data name="edtCropBottom.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>80, 0</value>
+  </data>
+  <data name="edtCropBottom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 20</value>
+  </data>
+  <data name="edtCropBottom.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;edtCropBottom.Name" xml:space="preserve">
+    <value>edtCropBottom</value>
+  </data>
+  <data name="&gt;&gt;edtCropBottom.Type" xml:space="preserve">
+    <value>DevExpress.XtraRichEdit.Design.RichTextIndentEdit, DevExpress.XtraRichEdit.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtCropBottom.Parent" xml:space="preserve">
+    <value>formatPictureFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;edtCropBottom.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="edtCropRight.Location" type="System.Drawing.Point, System.Drawing">
+    <value>99, 88</value>
+  </data>
+  <data name="edtCropRight.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>80, 0</value>
+  </data>
+  <data name="edtCropRight.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>80, 0</value>
+  </data>
+  <data name="edtCropRight.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 20</value>
+  </data>
+  <data name="edtCropRight.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;edtCropRight.Name" xml:space="preserve">
+    <value>edtCropRight</value>
+  </data>
+  <data name="&gt;&gt;edtCropRight.Type" xml:space="preserve">
+    <value>DevExpress.XtraRichEdit.Design.RichTextIndentEdit, DevExpress.XtraRichEdit.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtCropRight.Parent" xml:space="preserve">
+    <value>formatPictureFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;edtCropRight.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="lblBrightness.AccessibleName" xml:space="preserve">
+    <value>Brightness</value>
+  </data>
+  <data name="lblBrightness.Location" type="System.Drawing.Point, System.Drawing">
+    <value>34, 156</value>
+  </data>
+  <data name="lblBrightness.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 13</value>
+  </data>
+  <data name="lblBrightness.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="lblBrightness.Text" xml:space="preserve">
+    <value>Brig&amp;htness:</value>
+  </data>
+  <data name="&gt;&gt;lblBrightness.Name" xml:space="preserve">
+    <value>lblBrightness</value>
+  </data>
+  <data name="&gt;&gt;lblBrightness.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblBrightness.Parent" xml:space="preserve">
+    <value>formatPictureFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblBrightness.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="edtColorType.Location" type="System.Drawing.Point, System.Drawing">
+    <value>99, 129</value>
+  </data>
+  <data name="edtColorType.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>150, 0</value>
+  </data>
+  <data name="edtColorType.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>120, 0</value>
+  </data>
+  <data name="edtColorType.Properties.NullText" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="edtColorType.Size" type="System.Drawing.Size, System.Drawing">
+    <value>142, 20</value>
+  </data>
+  <data name="edtColorType.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;edtColorType.Name" xml:space="preserve">
+    <value>edtColorType</value>
+  </data>
+  <data name="&gt;&gt;edtColorType.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.Forms.Design.SpreadsheetLookUpEdit, DevExpress.XtraSpreadsheet.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtColorType.Parent" xml:space="preserve">
+    <value>formatPictureFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;edtColorType.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="edtCropTop.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="edtCropTop.Location" type="System.Drawing.Point, System.Drawing">
+    <value>310, 64</value>
+  </data>
+  <data name="edtCropTop.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>80, 0</value>
+  </data>
+  <data name="edtCropTop.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>80, 0</value>
+  </data>
+  <data name="edtCropTop.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 20</value>
+  </data>
+  <data name="edtCropTop.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;edtCropTop.Name" xml:space="preserve">
+    <value>edtCropTop</value>
+  </data>
+  <data name="&gt;&gt;edtCropTop.Type" xml:space="preserve">
+    <value>DevExpress.XtraRichEdit.Design.RichTextIndentEdit, DevExpress.XtraRichEdit.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtCropTop.Parent" xml:space="preserve">
+    <value>formatPictureFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;edtCropTop.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="lblColor.AccessibleName" xml:space="preserve">
+    <value>Color</value>
+  </data>
+  <data name="lblColor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>34, 132</value>
+  </data>
+  <data name="lblColor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 13</value>
+  </data>
+  <data name="lblColor.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="lblColor.Text" xml:space="preserve">
+    <value>&amp;Color:</value>
+  </data>
+  <data name="&gt;&gt;lblColor.Name" xml:space="preserve">
+    <value>lblColor</value>
+  </data>
+  <data name="&gt;&gt;lblColor.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblColor.Parent" xml:space="preserve">
+    <value>formatPictureFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblColor.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="btnCancel.AccessibleName" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="btnCancel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="btnCancel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>327, 307</value>
+  </data>
+  <data name="btnCancel.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btnCancel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btnCancel.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="btnCancel.Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.Name" xml:space="preserve">
+    <value>btnCancel</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.Parent" xml:space="preserve">
+    <value>formatPictureFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="edtCropLeft.Location" type="System.Drawing.Point, System.Drawing">
+    <value>99, 64</value>
+  </data>
+  <data name="edtCropLeft.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>80, 0</value>
+  </data>
+  <data name="edtCropLeft.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>80, 0</value>
+  </data>
+  <data name="edtCropLeft.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 20</value>
+  </data>
+  <data name="edtCropLeft.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;edtCropLeft.Name" xml:space="preserve">
+    <value>edtCropLeft</value>
+  </data>
+  <data name="&gt;&gt;edtCropLeft.Type" xml:space="preserve">
+    <value>DevExpress.XtraRichEdit.Design.RichTextIndentEdit, DevExpress.XtraRichEdit.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtCropLeft.Parent" xml:space="preserve">
+    <value>formatPictureFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;edtCropLeft.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="btnOk.AccessibleName" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="btnOk.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="btnOk.Location" type="System.Drawing.Point, System.Drawing">
+    <value>248, 307</value>
+  </data>
+  <data name="btnOk.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btnOk.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btnOk.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="btnOk.Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="&gt;&gt;btnOk.Name" xml:space="preserve">
+    <value>btnOk</value>
+  </data>
+  <data name="&gt;&gt;btnOk.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;btnOk.Parent" xml:space="preserve">
+    <value>formatPictureFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;btnOk.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="lblCropBottom.AccessibleName" xml:space="preserve">
+    <value>Bottom</value>
+  </data>
+  <data name="lblCropBottom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>245, 91</value>
+  </data>
+  <data name="lblCropBottom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>38, 13</value>
+  </data>
+  <data name="lblCropBottom.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="lblCropBottom.Text" xml:space="preserve">
+    <value>&amp;Bottom:</value>
+  </data>
+  <data name="&gt;&gt;lblCropBottom.Name" xml:space="preserve">
+    <value>lblCropBottom</value>
+  </data>
+  <data name="&gt;&gt;lblCropBottom.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblCropBottom.Parent" xml:space="preserve">
+    <value>formatPictureFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblCropBottom.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="btnReset.AccessibleName" xml:space="preserve">
+    <value>Reset</value>
+  </data>
+  <data name="btnReset.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="btnReset.Location" type="System.Drawing.Point, System.Drawing">
+    <value>310, 268</value>
+  </data>
+  <data name="btnReset.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btnReset.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 23</value>
+  </data>
+  <data name="btnReset.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="btnReset.Text" xml:space="preserve">
+    <value>Reset</value>
+  </data>
+  <data name="&gt;&gt;btnReset.Name" xml:space="preserve">
+    <value>btnReset</value>
+  </data>
+  <data name="&gt;&gt;btnReset.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;btnReset.Parent" xml:space="preserve">
+    <value>formatPictureFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;btnReset.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="lblOriginalWidthValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>310, 221</value>
+  </data>
+  <data name="lblOriginalWidthValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 13</value>
+  </data>
+  <data name="lblOriginalWidthValue.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="lblOriginalWidthValue.Text" xml:space="preserve">
+    <value>0"</value>
+  </data>
+  <data name="&gt;&gt;lblOriginalWidthValue.Name" xml:space="preserve">
+    <value>lblOriginalWidthValue</value>
+  </data>
+  <data name="&gt;&gt;lblOriginalWidthValue.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblOriginalWidthValue.Parent" xml:space="preserve">
+    <value>formatPictureFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblOriginalWidthValue.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="lblOriginalHeightValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>109, 221</value>
+  </data>
+  <data name="lblOriginalHeightValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 13</value>
+  </data>
+  <data name="lblOriginalHeightValue.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="lblOriginalHeightValue.Text" xml:space="preserve">
+    <value>0"</value>
+  </data>
+  <data name="&gt;&gt;lblOriginalHeightValue.Name" xml:space="preserve">
+    <value>lblOriginalHeightValue</value>
+  </data>
+  <data name="&gt;&gt;lblOriginalHeightValue.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblOriginalHeightValue.Parent" xml:space="preserve">
+    <value>formatPictureFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblOriginalHeightValue.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="lblCropRight.AccessibleName" xml:space="preserve">
+    <value>Right</value>
+  </data>
+  <data name="lblCropRight.Location" type="System.Drawing.Point, System.Drawing">
+    <value>34, 91</value>
+  </data>
+  <data name="lblCropRight.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 13</value>
+  </data>
+  <data name="lblCropRight.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="lblCropRight.Text" xml:space="preserve">
+    <value>&amp;Right:</value>
+  </data>
+  <data name="&gt;&gt;lblCropRight.Name" xml:space="preserve">
+    <value>lblCropRight</value>
+  </data>
+  <data name="&gt;&gt;lblCropRight.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblCropRight.Parent" xml:space="preserve">
+    <value>formatPictureFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblCropRight.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="lblOriginalWidth.AccessibleName" xml:space="preserve">
+    <value>Width</value>
+  </data>
+  <data name="lblOriginalWidth.Location" type="System.Drawing.Point, System.Drawing">
+    <value>235, 221</value>
+  </data>
+  <data name="lblOriginalWidth.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 13</value>
+  </data>
+  <data name="lblOriginalWidth.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="lblOriginalWidth.Text" xml:space="preserve">
+    <value>Width:</value>
+  </data>
+  <data name="&gt;&gt;lblOriginalWidth.Name" xml:space="preserve">
+    <value>lblOriginalWidth</value>
+  </data>
+  <data name="&gt;&gt;lblOriginalWidth.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblOriginalWidth.Parent" xml:space="preserve">
+    <value>formatPictureFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblOriginalWidth.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="edtHeightPercent.EditValue" type="System.Decimal, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="edtHeightPercent.Location" type="System.Drawing.Point, System.Drawing">
+    <value>109, 129</value>
+  </data>
+  <data name="edtHeightPercent.Properties.Mask.UseMaskAsDisplayFormat" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="edtHeightPercent.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 20</value>
+  </data>
+  <data name="edtHeightPercent.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;edtHeightPercent.Name" xml:space="preserve">
+    <value>edtHeightPercent</value>
+  </data>
+  <data name="&gt;&gt;edtHeightPercent.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SpinEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtHeightPercent.Parent" xml:space="preserve">
+    <value>formatPictureFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;edtHeightPercent.ZOrder" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="lblCropTop.AccessibleName" xml:space="preserve">
+    <value>Top</value>
+  </data>
+  <data name="lblCropTop.Location" type="System.Drawing.Point, System.Drawing">
+    <value>245, 67</value>
+  </data>
+  <data name="lblCropTop.Size" type="System.Drawing.Size, System.Drawing">
+    <value>22, 13</value>
+  </data>
+  <data name="lblCropTop.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="lblCropTop.Text" xml:space="preserve">
+    <value>&amp;Top:</value>
+  </data>
+  <data name="&gt;&gt;lblCropTop.Name" xml:space="preserve">
+    <value>lblCropTop</value>
+  </data>
+  <data name="&gt;&gt;lblCropTop.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblCropTop.Parent" xml:space="preserve">
+    <value>formatPictureFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblCropTop.ZOrder" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="lblImageControl.AccessibleName" xml:space="preserve">
+    <value>Image control</value>
+  </data>
+  <data name="lblImageControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 47</value>
+  </data>
+  <data name="lblImageControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>366, 13</value>
+  </data>
+  <data name="lblImageControl.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="lblImageControl.Text" xml:space="preserve">
+    <value>Image control</value>
+  </data>
+  <data name="&gt;&gt;lblImageControl.Name" xml:space="preserve">
+    <value>lblImageControl</value>
+  </data>
+  <data name="&gt;&gt;lblImageControl.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblImageControl.Parent" xml:space="preserve">
+    <value>formatPictureFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblImageControl.ZOrder" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="lblOriginalHeight.AccessibleName" xml:space="preserve">
+    <value>Height</value>
+  </data>
+  <data name="lblOriginalHeight.Location" type="System.Drawing.Point, System.Drawing">
+    <value>34, 218</value>
+  </data>
+  <data name="lblOriginalHeight.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>70, 0</value>
+  </data>
+  <data name="lblOriginalHeight.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 20</value>
+  </data>
+  <data name="lblOriginalHeight.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="lblOriginalHeight.Text" xml:space="preserve">
+    <value>Height:</value>
+  </data>
+  <data name="&gt;&gt;lblOriginalHeight.Name" xml:space="preserve">
+    <value>lblOriginalHeight</value>
+  </data>
+  <data name="&gt;&gt;lblOriginalHeight.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblOriginalHeight.Parent" xml:space="preserve">
+    <value>formatPictureFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblOriginalHeight.ZOrder" xml:space="preserve">
+    <value>29</value>
+  </data>
+  <data name="edtWidth.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="edtWidth.Location" type="System.Drawing.Point, System.Drawing">
+    <value>310, 64</value>
+  </data>
+  <data name="edtWidth.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>80, 20</value>
+  </data>
+  <data name="edtWidth.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 20</value>
+  </data>
+  <data name="edtWidth.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;edtWidth.Name" xml:space="preserve">
+    <value>edtWidth</value>
+  </data>
+  <data name="&gt;&gt;edtWidth.Type" xml:space="preserve">
+    <value>DevExpress.XtraRichEdit.Design.RichTextIndentEdit, DevExpress.XtraRichEdit.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtWidth.Parent" xml:space="preserve">
+    <value>formatPictureFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;edtWidth.ZOrder" xml:space="preserve">
+    <value>30</value>
+  </data>
+  <data name="lblCropLeft.AccessibleName" xml:space="preserve">
+    <value>Left</value>
+  </data>
+  <data name="lblCropLeft.Location" type="System.Drawing.Point, System.Drawing">
+    <value>34, 67</value>
+  </data>
+  <data name="lblCropLeft.Size" type="System.Drawing.Size, System.Drawing">
+    <value>23, 13</value>
+  </data>
+  <data name="lblCropLeft.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="lblCropLeft.Text" xml:space="preserve">
+    <value>&amp;Left:</value>
+  </data>
+  <data name="&gt;&gt;lblCropLeft.Name" xml:space="preserve">
+    <value>lblCropLeft</value>
+  </data>
+  <data name="&gt;&gt;lblCropLeft.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblCropLeft.Parent" xml:space="preserve">
+    <value>formatPictureFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblCropLeft.ZOrder" xml:space="preserve">
+    <value>31</value>
+  </data>
+  <data name="lblOriginalSize.AccessibleName" xml:space="preserve">
+    <value>Original size</value>
+  </data>
+  <data name="lblOriginalSize.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 201</value>
+  </data>
+  <data name="lblOriginalSize.Size" type="System.Drawing.Size, System.Drawing">
+    <value>366, 13</value>
+  </data>
+  <data name="lblOriginalSize.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="lblOriginalSize.Text" xml:space="preserve">
+    <value>Original size</value>
+  </data>
+  <data name="&gt;&gt;lblOriginalSize.Name" xml:space="preserve">
+    <value>lblOriginalSize</value>
+  </data>
+  <data name="&gt;&gt;lblOriginalSize.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblOriginalSize.Parent" xml:space="preserve">
+    <value>formatPictureFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblOriginalSize.ZOrder" xml:space="preserve">
+    <value>32</value>
+  </data>
+  <data name="edtHeight.Location" type="System.Drawing.Point, System.Drawing">
+    <value>109, 64</value>
+  </data>
+  <data name="edtHeight.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>80, 20</value>
+  </data>
+  <data name="edtHeight.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 20</value>
+  </data>
+  <data name="edtHeight.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;edtHeight.Name" xml:space="preserve">
+    <value>edtHeight</value>
+  </data>
+  <data name="&gt;&gt;edtHeight.Type" xml:space="preserve">
+    <value>DevExpress.XtraRichEdit.Design.RichTextIndentEdit, DevExpress.XtraRichEdit.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtHeight.Parent" xml:space="preserve">
+    <value>formatPictureFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;edtHeight.ZOrder" xml:space="preserve">
+    <value>33</value>
+  </data>
+  <data name="chkRelativeSize.EditValue" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkRelativeSize.Location" type="System.Drawing.Point, System.Drawing">
+    <value>34, 177</value>
+  </data>
+  <data name="chkRelativeSize.Properties.Caption" xml:space="preserve">
+    <value>&amp;Relative to original picture size</value>
+  </data>
+  <data name="chkRelativeSize.Size" type="System.Drawing.Size, System.Drawing">
+    <value>356, 20</value>
+  </data>
+  <data name="chkRelativeSize.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;chkRelativeSize.Name" xml:space="preserve">
+    <value>chkRelativeSize</value>
+  </data>
+  <data name="&gt;&gt;chkRelativeSize.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;chkRelativeSize.Parent" xml:space="preserve">
+    <value>formatPictureFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;chkRelativeSize.ZOrder" xml:space="preserve">
+    <value>34</value>
+  </data>
+  <data name="chkLockAspectRatio.EditValue" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkLockAspectRatio.Location" type="System.Drawing.Point, System.Drawing">
+    <value>34, 153</value>
+  </data>
+  <data name="chkLockAspectRatio.Properties.Caption" xml:space="preserve">
+    <value>Lock &amp;aspect ratio</value>
+  </data>
+  <data name="chkLockAspectRatio.Size" type="System.Drawing.Size, System.Drawing">
+    <value>356, 20</value>
+  </data>
+  <data name="chkLockAspectRatio.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;chkLockAspectRatio.Name" xml:space="preserve">
+    <value>chkLockAspectRatio</value>
+  </data>
+  <data name="&gt;&gt;chkLockAspectRatio.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;chkLockAspectRatio.Parent" xml:space="preserve">
+    <value>formatPictureFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;chkLockAspectRatio.ZOrder" xml:space="preserve">
+    <value>35</value>
+  </data>
+  <data name="lblSizeAndRotate.AccessibleName" xml:space="preserve">
+    <value>Size and rotate</value>
+  </data>
+  <data name="lblSizeAndRotate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 47</value>
+  </data>
+  <data name="lblSizeAndRotate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>366, 13</value>
+  </data>
+  <data name="lblSizeAndRotate.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="lblSizeAndRotate.Text" xml:space="preserve">
+    <value>Size and rotate</value>
+  </data>
+  <data name="&gt;&gt;lblSizeAndRotate.Name" xml:space="preserve">
+    <value>lblSizeAndRotate</value>
+  </data>
+  <data name="&gt;&gt;lblSizeAndRotate.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblSizeAndRotate.Parent" xml:space="preserve">
+    <value>formatPictureFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblSizeAndRotate.ZOrder" xml:space="preserve">
+    <value>36</value>
+  </data>
+  <data name="lblHeight.AccessibleName" xml:space="preserve">
+    <value>Height</value>
+  </data>
+  <data name="lblHeight.Location" type="System.Drawing.Point, System.Drawing">
+    <value>34, 67</value>
+  </data>
+  <data name="lblHeight.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 13</value>
+  </data>
+  <data name="lblHeight.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblHeight.Text" xml:space="preserve">
+    <value>H&amp;eight:</value>
+  </data>
+  <data name="&gt;&gt;lblHeight.Name" xml:space="preserve">
+    <value>lblHeight</value>
+  </data>
+  <data name="&gt;&gt;lblHeight.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblHeight.Parent" xml:space="preserve">
+    <value>formatPictureFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblHeight.ZOrder" xml:space="preserve">
+    <value>37</value>
+  </data>
+  <data name="lblScaleWidth.AccessibleName" xml:space="preserve">
+    <value>Width</value>
+  </data>
+  <data name="lblScaleWidth.Location" type="System.Drawing.Point, System.Drawing">
+    <value>235, 132</value>
+  </data>
+  <data name="lblScaleWidth.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 13</value>
+  </data>
+  <data name="lblScaleWidth.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="lblScaleWidth.Text" xml:space="preserve">
+    <value>&amp;Width:</value>
+  </data>
+  <data name="&gt;&gt;lblScaleWidth.Name" xml:space="preserve">
+    <value>lblScaleWidth</value>
+  </data>
+  <data name="&gt;&gt;lblScaleWidth.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblScaleWidth.Parent" xml:space="preserve">
+    <value>formatPictureFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblScaleWidth.ZOrder" xml:space="preserve">
+    <value>38</value>
+  </data>
+  <data name="lblWidth.AccessibleName" xml:space="preserve">
+    <value>Width</value>
+  </data>
+  <data name="lblWidth.Location" type="System.Drawing.Point, System.Drawing">
+    <value>235, 67</value>
+  </data>
+  <data name="lblWidth.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 13</value>
+  </data>
+  <data name="lblWidth.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="lblWidth.Text" xml:space="preserve">
+    <value>Wi&amp;dth:</value>
+  </data>
+  <data name="&gt;&gt;lblWidth.Name" xml:space="preserve">
+    <value>lblWidth</value>
+  </data>
+  <data name="&gt;&gt;lblWidth.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblWidth.Parent" xml:space="preserve">
+    <value>formatPictureFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblWidth.ZOrder" xml:space="preserve">
+    <value>39</value>
+  </data>
+  <data name="lblRotation.AccessibleName" xml:space="preserve">
+    <value>Rotation</value>
+  </data>
+  <data name="lblRotation.Location" type="System.Drawing.Point, System.Drawing">
+    <value>34, 91</value>
+  </data>
+  <data name="lblRotation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 13</value>
+  </data>
+  <data name="lblRotation.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="lblRotation.Text" xml:space="preserve">
+    <value>Rotation:</value>
+  </data>
+  <data name="&gt;&gt;lblRotation.Name" xml:space="preserve">
+    <value>lblRotation</value>
+  </data>
+  <data name="&gt;&gt;lblRotation.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblRotation.Parent" xml:space="preserve">
+    <value>formatPictureFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblRotation.ZOrder" xml:space="preserve">
+    <value>40</value>
+  </data>
+  <data name="edtRotation.EditValue" type="System.Decimal, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="edtRotation.Location" type="System.Drawing.Point, System.Drawing">
+    <value>109, 88</value>
+  </data>
+  <data name="edtRotation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 20</value>
+  </data>
+  <data name="edtRotation.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;edtRotation.Name" xml:space="preserve">
+    <value>edtRotation</value>
+  </data>
+  <data name="&gt;&gt;edtRotation.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SpinEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtRotation.Parent" xml:space="preserve">
+    <value>formatPictureFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;edtRotation.ZOrder" xml:space="preserve">
+    <value>41</value>
+  </data>
+  <data name="lblScaleHeight.AccessibleName" xml:space="preserve">
+    <value>Height</value>
+  </data>
+  <data name="lblScaleHeight.Location" type="System.Drawing.Point, System.Drawing">
+    <value>34, 132</value>
+  </data>
+  <data name="lblScaleHeight.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 13</value>
+  </data>
+  <data name="lblScaleHeight.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="lblScaleHeight.Text" xml:space="preserve">
+    <value>&amp;Height:</value>
+  </data>
+  <data name="&gt;&gt;lblScaleHeight.Name" xml:space="preserve">
+    <value>lblScaleHeight</value>
+  </data>
+  <data name="&gt;&gt;lblScaleHeight.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblScaleHeight.Parent" xml:space="preserve">
+    <value>formatPictureFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblScaleHeight.ZOrder" xml:space="preserve">
+    <value>42</value>
+  </data>
+  <data name="lblScale.AccessibleName" xml:space="preserve">
+    <value>Scale</value>
+  </data>
+  <data name="lblScale.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 112</value>
+  </data>
+  <data name="lblScale.Size" type="System.Drawing.Size, System.Drawing">
+    <value>366, 13</value>
+  </data>
+  <data name="lblScale.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="lblScale.Text" xml:space="preserve">
+    <value>Scale</value>
+  </data>
+  <data name="&gt;&gt;lblScale.Name" xml:space="preserve">
+    <value>lblScale</value>
+  </data>
+  <data name="&gt;&gt;lblScale.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblScale.Parent" xml:space="preserve">
+    <value>formatPictureFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblScale.ZOrder" xml:space="preserve">
+    <value>43</value>
+  </data>
+  <data name="lblImageControl1.AccessibleName" xml:space="preserve">
+    <value>Image control</value>
+  </data>
+  <data name="lblImageControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 112</value>
+  </data>
+  <data name="lblImageControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>366, 13</value>
+  </data>
+  <data name="lblImageControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="lblImageControl1.Text" xml:space="preserve">
+    <value>Image control</value>
+  </data>
+  <data name="&gt;&gt;lblImageControl1.Name" xml:space="preserve">
+    <value>lblImageControl1</value>
+  </data>
+  <data name="&gt;&gt;lblImageControl1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblImageControl1.Parent" xml:space="preserve">
+    <value>formatPictureFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblImageControl1.ZOrder" xml:space="preserve">
+    <value>44</value>
+  </data>
+  <data name="formatPictureFormLayoutControl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="formatPictureFormLayoutControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="lblImageControl1LayoutControlItem.ControlAlignment" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
+  <data name="lblImageControl1LayoutControlItem.CustomizationFormText" xml:space="preserve">
+    <value>layoutControlItem23</value>
+  </data>
+  <data name="lblImageControl1LayoutControlItem.Text" xml:space="preserve">
+    <value>layoutControlItem23</value>
+  </data>
+  <data name="pictureLayoutControlGroup.Text" xml:space="preserve">
+    <value>Picture</value>
+  </data>
+  <data name="sizeLayoutControlGroup.Text" xml:space="preserve">
+    <value>Size</value>
+  </data>
+  <data name="formatPictureFormLayoutControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>414, 342</value>
+  </data>
+  <data name="formatPictureFormLayoutControl.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="formatPictureFormLayoutControl.Text" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;formatPictureFormLayoutControl.Name" xml:space="preserve">
+    <value>formatPictureFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;formatPictureFormLayoutControl.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControl, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;formatPictureFormLayoutControl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;formatPictureFormLayoutControl.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="edtWidthPercent.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;edtWidthPercent.Name" xml:space="preserve">
+    <value>edtWidthPercent</value>
+  </data>
+  <data name="&gt;&gt;edtWidthPercent.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SpinEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtWidthPercent.Parent" xml:space="preserve">
+    <value>formatPictureFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;edtWidthPercent.ZOrder" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AccessibleName" xml:space="preserve">
+    <value>Format Picture</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>414, 342</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterParent</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Format Picture</value>
+  </data>
+  <data name="&gt;&gt;Root.Name" xml:space="preserve">
+    <value>Root</value>
+  </data>
+  <data name="&gt;&gt;Root.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;btnOkLayoutControlItem.Name" xml:space="preserve">
+    <value>btnOkLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;btnOkLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;btnCancelLayoutControlItem.Name" xml:space="preserve">
+    <value>btnCancelLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;btnCancelLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem1.Name" xml:space="preserve">
+    <value>emptySpaceItem1</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;tabbedGroup.Name" xml:space="preserve">
+    <value>tabbedGroup</value>
+  </data>
+  <data name="&gt;&gt;tabbedGroup.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.TabbedControlGroup, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;pictureLayoutControlGroup.Name" xml:space="preserve">
+    <value>pictureLayoutControlGroup</value>
+  </data>
+  <data name="&gt;&gt;pictureLayoutControlGroup.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblImageControlLayoutControlItem.Name" xml:space="preserve">
+    <value>lblImageControlLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;lblImageControlLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblImageControl1LayoutControlItem.Name" xml:space="preserve">
+    <value>lblImageControl1LayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;lblImageControl1LayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblCropLeftLayoutControlItem.Name" xml:space="preserve">
+    <value>lblCropLeftLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;lblCropLeftLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtCropLeftLayoutControlItem.Name" xml:space="preserve">
+    <value>edtCropLeftLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;edtCropLeftLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblCropRightLayoutControlItem.Name" xml:space="preserve">
+    <value>lblCropRightLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;lblCropRightLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtCropRightLayoutControlItem.Name" xml:space="preserve">
+    <value>edtCropRightLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;edtCropRightLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtCropTopLayoutControlItem.Name" xml:space="preserve">
+    <value>edtCropTopLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;edtCropTopLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtCropBottomLayoutControlItem.Name" xml:space="preserve">
+    <value>edtCropBottomLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;edtCropBottomLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblCropTopLayoutControlItem.Name" xml:space="preserve">
+    <value>lblCropTopLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;lblCropTopLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblCropBottomLayoutControlItem.Name" xml:space="preserve">
+    <value>lblCropBottomLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;lblCropBottomLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblColorLayoutControlItem.Name" xml:space="preserve">
+    <value>lblColorLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;lblColorLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtColorTypeLayoutControlItem.Name" xml:space="preserve">
+    <value>edtColorTypeLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;edtColorTypeLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblBrightnessLayoutControlItem.Name" xml:space="preserve">
+    <value>lblBrightnessLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;lblBrightnessLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblContrastLayoutControlItem.Name" xml:space="preserve">
+    <value>lblContrastLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;lblContrastLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;zoomTrackBarContrastLayoutControlItem.Name" xml:space="preserve">
+    <value>zoomTrackBarContrastLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;zoomTrackBarContrastLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;btnReset2LayoutControlItem.Name" xml:space="preserve">
+    <value>btnReset2LayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;btnReset2LayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;zoomTrackBarBrigthnessLayoutControlItem.Name" xml:space="preserve">
+    <value>zoomTrackBarBrigthnessLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;zoomTrackBarBrigthnessLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtBrightnessLayoutControlItem.Name" xml:space="preserve">
+    <value>edtBrightnessLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;edtBrightnessLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtContrastLayoutControlItem.Name" xml:space="preserve">
+    <value>edtContrastLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;edtContrastLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;sizeLayoutControlGroup.Name" xml:space="preserve">
+    <value>sizeLayoutControlGroup</value>
+  </data>
+  <data name="&gt;&gt;sizeLayoutControlGroup.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblSizeAndRotateLayoutControlItem.Name" xml:space="preserve">
+    <value>lblSizeAndRotateLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;lblSizeAndRotateLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblHeightLayoutControlItem.Name" xml:space="preserve">
+    <value>lblHeightLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;lblHeightLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtHeightLayoutControlItem.Name" xml:space="preserve">
+    <value>edtHeightLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;edtHeightLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblWidthLayoutControlItem.Name" xml:space="preserve">
+    <value>lblWidthLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;lblWidthLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtWidthLayoutControlItem.Name" xml:space="preserve">
+    <value>edtWidthLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;edtWidthLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblRotationLayoutControlItem.Name" xml:space="preserve">
+    <value>lblRotationLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;lblRotationLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtRotationLayoutControlItem.Name" xml:space="preserve">
+    <value>edtRotationLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;edtRotationLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblScaleLayoutControlItem.Name" xml:space="preserve">
+    <value>lblScaleLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;lblScaleLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblScaleHeightLayoutControlItem.Name" xml:space="preserve">
+    <value>lblScaleHeightLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;lblScaleHeightLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtHeightPercentLayoutControlItem.Name" xml:space="preserve">
+    <value>edtHeightPercentLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;edtHeightPercentLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblScaleWidthLayoutControlItem.Name" xml:space="preserve">
+    <value>lblScaleWidthLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;lblScaleWidthLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtWidthPercentLayoutControlItem.Name" xml:space="preserve">
+    <value>edtWidthPercentLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;edtWidthPercentLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;chkLockAspectRatioLayoutControlItem.Name" xml:space="preserve">
+    <value>chkLockAspectRatioLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;chkLockAspectRatioLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;chkRelativeSizeLayoutControlItem.Name" xml:space="preserve">
+    <value>chkRelativeSizeLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;chkRelativeSizeLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblOriginalHeightLayoutControlItem.Name" xml:space="preserve">
+    <value>lblOriginalHeightLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;lblOriginalHeightLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblOriginalHeightValueLayoutControlItem.Name" xml:space="preserve">
+    <value>lblOriginalHeightValueLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;lblOriginalHeightValueLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblOriginalSizeLayoutControlItem.Name" xml:space="preserve">
+    <value>lblOriginalSizeLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;lblOriginalSizeLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblOriginalWidthLayoutControlItem.Name" xml:space="preserve">
+    <value>lblOriginalWidthLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;lblOriginalWidthLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblOriginalWidthValueLayoutControlItem.Name" xml:space="preserve">
+    <value>lblOriginalWidthValueLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;lblOriginalWidthValueLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;btnResetLayoutControlItem.Name" xml:space="preserve">
+    <value>btnResetLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;btnResetLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;layoutControlGroup3.Name" xml:space="preserve">
+    <value>layoutControlGroup3</value>
+  </data>
+  <data name="&gt;&gt;layoutControlGroup3.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FormatPictureForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.XtraForm, DevExpress.Utils.v21.2, Culture=neutral</value>
+  </data>
+</root>

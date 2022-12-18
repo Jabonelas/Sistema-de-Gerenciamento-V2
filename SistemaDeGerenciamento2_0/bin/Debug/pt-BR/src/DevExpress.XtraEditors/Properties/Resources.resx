@@ -1,0 +1,606 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="HexadecimalNumber" xml:space="preserve">
+    <value>Hexadecimal number</value>
+  </data>
+  <data name="TimeOfDateWithSeconds" xml:space="preserve">
+    <value>Time of day with seconds</value>
+  </data>
+  <data name="TimeOfDateWithSecondsAMPM" xml:space="preserve">
+    <value>Time of day with seconds (AM/PM)</value>
+  </data>
+  <data name="ErrorCaption" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="AppearancePreviewText" xml:space="preserve">
+    <value>Appearance Preview:</value>
+  </data>
+  <data name="FixedPoint3DecimalPlaces" xml:space="preserve">
+    <value>Fixed-point (3 decimal places)</value>
+  </data>
+  <data name="UniversalSortableDateTime" xml:space="preserve">
+    <value>Universal sortable date/time</value>
+  </data>
+  <data name="SelectTableCaption" xml:space="preserve">
+    <value>Select table from {0}</value>
+  </data>
+  <data name="OctalNumber" xml:space="preserve">
+    <value>Octal number</value>
+  </data>
+  <data name="FullDateTimeLongTime" xml:space="preserve">
+    <value>Full date/time (long time)</value>
+  </data>
+  <data name="FixedPoint2DecimalPlaces" xml:space="preserve">
+    <value>Fixed-point (2 decimal places)</value>
+  </data>
+  <data name="MonthDay" xml:space="preserve">
+    <value>Month day</value>
+  </data>
+  <data name="ZeroRows" xml:space="preserve">
+    <value>0 Rows loaded...</value>
+  </data>
+  <data name="UppercaseLetters" xml:space="preserve">
+    <value>Uppercase letters</value>
+  </data>
+  <data name="RowCaption" xml:space="preserve">
+    <value>Row(s)</value>
+  </data>
+  <data name="PercentMode2Integer" xml:space="preserve">
+    <value>Percent (mode 2) (integer)</value>
+  </data>
+  <data name="ShortTime" xml:space="preserve">
+    <value>Short time</value>
+  </data>
+  <data name="EditAddressCaption" xml:space="preserve">
+    <value>Edit address</value>
+  </data>
+  <data name="HideColumnSelectorCaption" xml:space="preserve">
+    <value>Hide Column &amp;Selector</value>
+  </data>
+  <data name="MaskTypeRegularDescription" xml:space="preserve">
+    <value>Simplified regular expressions (no alternation, no auto-complete)</value>
+  </data>
+  <data name="OpenFileCaption" xml:space="preserve">
+    <value>Open file</value>
+  </data>
+  <data name="PercentMode1" xml:space="preserve">
+    <value>Percent (mode 1)</value>
+  </data>
+  <data name="Number3DecimalPlaces" xml:space="preserve">
+    <value>Number (3 decimal places)</value>
+  </data>
+  <data name="MaskTypeDateTimeDescription" xml:space="preserve">
+    <value>Masks for entering date/time values</value>
+  </data>
+  <data name="FixedPoint" xml:space="preserve">
+    <value>Fixed-point</value>
+  </data>
+  <data name="ShortDate" xml:space="preserve">
+    <value>Short date</value>
+  </data>
+  <data name="DeleteHistoryCaption" xml:space="preserve">
+    <value>Delete history</value>
+  </data>
+  <data name="FullDateTimeShortTime" xml:space="preserve">
+    <value>Full date/time (short time)</value>
+  </data>
+  <data name="MaskTypeSimpleDescription" xml:space="preserve">
+    <value>Masks for entering values of a fixed format (e.g. phone numbers)</value>
+  </data>
+  <data name="HideFieldListCaption" xml:space="preserve">
+    <value>Hide Field List</value>
+  </data>
+  <data name="Extension" xml:space="preserve">
+    <value>Extension</value>
+  </data>
+  <data name="PercentMode2" xml:space="preserve">
+    <value>Percent (mode 2)</value>
+  </data>
+  <data name="Number2DecimalPlaces" xml:space="preserve">
+    <value>Number (2 decimal places)</value>
+  </data>
+  <data name="LayoutCloseWarning" xml:space="preserve">
+    <value>The layout has been modified.
+Do you want to save the changes?</value>
+  </data>
+  <data name="AnySymbols" xml:space="preserve">
+    <value>Any symbols</value>
+  </data>
+  <data name="DataAdaptersCaption" xml:space="preserve">
+    <value>Data Adapters</value>
+  </data>
+  <data name="PercentMode1_2DecimalPlaces" xml:space="preserve">
+    <value>Percent (mode 1) (2 decimal places)</value>
+  </data>
+  <data name="LowercaseLetters" xml:space="preserve">
+    <value>Lowercase letters</value>
+  </data>
+  <data name="RangeControlWarning" xml:space="preserve">
+    <value>Please add client to RangeControl</value>
+  </data>
+  <data name="AppearanceObjectPreviewCaption" xml:space="preserve">
+    <value>Appearance Object Preview</value>
+  </data>
+  <data name="RetrieveColumnsConfirmation" xml:space="preserve">
+    <value>The collection will be cleared and then populated with entries, for each field in the bound data source.
+Do you wish to continue?</value>
+  </data>
+  <data name="MaskTypeNumericDescription" xml:space="preserve">
+    <value>Masks for entering numeric values</value>
+  </data>
+  <data name="Decimal" xml:space="preserve">
+    <value>Decimal</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>Phone</value>
+  </data>
+  <data name="TrueFalse" xml:space="preserve">
+    <value>True/False</value>
+  </data>
+  <data name="StyleFormatConditionsCaption" xml:space="preserve">
+    <value>Style Format Conditions</value>
+  </data>
+  <data name="DecimalNumber" xml:space="preserve">
+    <value>Decimal number</value>
+  </data>
+  <data name="SortableDateTime" xml:space="preserve">
+    <value>Sortable date/time</value>
+  </data>
+  <data name="PropertiesCaption" xml:space="preserve">
+    <value>Properties</value>
+  </data>
+  <data name="Currency" xml:space="preserve">
+    <value>Currency</value>
+  </data>
+  <data name="MaskTypeNoneDescription" xml:space="preserve">
+    <value>The mask functionality is disabled</value>
+  </data>
+  <data name="ShowColumnSelectorCaption" xml:space="preserve">
+    <value>Show Column &amp;Selector</value>
+  </data>
+  <data name="LettersOnly" xml:space="preserve">
+    <value>Letters only</value>
+  </data>
+  <data name="CurrencyInteger" xml:space="preserve">
+    <value>Currency (integer)</value>
+  </data>
+  <data name="Number" xml:space="preserve">
+    <value>Number</value>
+  </data>
+  <data name="LoadDatafromXMLCaption" xml:space="preserve">
+    <value>Load Data from XML</value>
+  </data>
+  <data name="LongTime" xml:space="preserve">
+    <value>Long time</value>
+  </data>
+  <data name="PercentMode1Explanation" xml:space="preserve">
+    <value>If Text is '12%' then EditValue=12</value>
+  </data>
+  <data name="FixedPointInteger" xml:space="preserve">
+    <value>Fixed-point (integer)</value>
+  </data>
+  <data name="PercentMode1Integer" xml:space="preserve">
+    <value>Percent (mode 1) (integer)</value>
+  </data>
+  <data name="CopyAddressCaption" xml:space="preserve">
+    <value>Copy address</value>
+  </data>
+  <data name="GeneralDateTimeLongTime" xml:space="preserve">
+    <value>General date/time (long time)</value>
+  </data>
+  <data name="ConfirmationCaption" xml:space="preserve">
+    <value>Confirmation</value>
+  </data>
+  <data name="Currency2DecimalPlaces" xml:space="preserve">
+    <value>Currency (2 decimal places)</value>
+  </data>
+  <data name="AppearanceCaption" xml:space="preserve">
+    <value>Appearance</value>
+  </data>
+  <data name="YesNo" xml:space="preserve">
+    <value>Yes/No</value>
+  </data>
+  <data name="AppearanceDesignerDescription" xml:space="preserve">
+    <value>Select one or more Appearance objects that correspond to the specific control elements, to access and modify their settings via the property grid. Note that specific appearances are ignored when the Skin, WindowsXP or Office2003 paint schemes are applied.</value>
+  </data>
+  <data name="MaskTypeRegExDescription" xml:space="preserve">
+    <value>Full-functional regular expressions</value>
+  </data>
+  <data name="Currency3DecimalPlaces" xml:space="preserve">
+    <value>Currency (3 decimal places)</value>
+  </data>
+  <data name="AppObjectEmptyCaption" xml:space="preserve">
+    <value>The appearance object is empty.</value>
+  </data>
+  <data name="PercentMode1_3DecimalPlaces" xml:space="preserve">
+    <value>Percent (mode 1) (3 decimal places)</value>
+  </data>
+  <data name="ShowFieldListCaption" xml:space="preserve">
+    <value>Show Field List</value>
+  </data>
+  <data name="LongDate" xml:space="preserve">
+    <value>Long date</value>
+  </data>
+  <data name="TimeOfDay" xml:space="preserve">
+    <value>Time of day</value>
+  </data>
+  <data name="SocialSecurity" xml:space="preserve">
+    <value>Social security</value>
+  </data>
+  <data name="TimeOfDayAMPM" xml:space="preserve">
+    <value>Time of day (AM/PM)</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="TelephoneNumber" xml:space="preserve">
+    <value>Telephone number</value>
+  </data>
+  <data name="SelectWarning1" xml:space="preserve">
+    <value>More than one object is selected.</value>
+  </data>
+  <data name="GridPreviewCaption" xml:space="preserve">
+    <value>Grid Preview</value>
+  </data>
+  <data name="SelectWarning2" xml:space="preserve">
+    <value>None selected.</value>
+  </data>
+  <data name="NumberInteger" xml:space="preserve">
+    <value>Number (integer)</value>
+  </data>
+  <data name="GeneralDateTimeShortTime" xml:space="preserve">
+    <value>General date/time (short time)</value>
+  </data>
+  <data name="PercentMode2_3DecimalPlaces" xml:space="preserve">
+    <value>Percent (mode 2) (3 decimal places)</value>
+  </data>
+  <data name="FormatConditionsCaption" xml:space="preserve">
+    <value>Format Conditions ({0})</value>
+  </data>
+  <data name="LatinLettersOnly" xml:space="preserve">
+    <value>Latin letters only</value>
+  </data>
+  <data name="BinaryNumber" xml:space="preserve">
+    <value>Binary number</value>
+  </data>
+  <data name="PercentMode2Explanation" xml:space="preserve">
+    <value>If Text is '12%' then EditValue=0.12</value>
+  </data>
+  <data name="PercentMode2_2DecimalPlaces" xml:space="preserve">
+    <value>Percent (mode 2) (2 decimal places)</value>
+  </data>
+  <data name="ColumnsCaption" xml:space="preserve">
+    <value>Columns</value>
+  </data>
+  <data name="AppearancesPreviewCaption" xml:space="preserve">
+    <value>Appearances Preview</value>
+  </data>
+  <data name="YearMonth" xml:space="preserve">
+    <value>Year month</value>
+  </data>
+  <data name="ShortZipCode" xml:space="preserve">
+    <value>Short zip code</value>
+  </data>
+  <data name="ConditionItemIndexCaption" xml:space="preserve">
+    <value>{1} - Index {0}</value>
+  </data>
+  <data name="LongZipCode" xml:space="preserve">
+    <value>Long zip code</value>
+  </data>
+  <data name="RFC1123" xml:space="preserve">
+    <value>RFC1123</value>
+  </data>
+  <data name="ColumnDesignerDescription2" xml:space="preserve">
+    <value>Select and drag a field from the Field List panel to the Columns panel to create a column.</value>
+  </data>
+  <data name="ColumnDesignerDescription1" xml:space="preserve">
+    <value>You can add and delete columns, modify their settings, assign in-place editors and enable total summaries.</value>
+  </data>
+  <data name="FormatRulesCaption" xml:space="preserve">
+    <value>Format Rules ({0})</value>
+  </data>
+  <data name="RuleCaption" xml:space="preserve">
+    <value>Rule</value>
+  </data>
+  <data name="StyleFormatRulesCaption" xml:space="preserve">
+    <value>Style Format Rules</value>
+  </data>
+  <data name="ColorPickPopupThemeColorsGroupCaption" xml:space="preserve">
+    <value>Theme Colors</value>
+  </data>
+  <data name="ColorPickPopupStandardColorsGroupCaption" xml:space="preserve">
+    <value>Standard Colors</value>
+  </data>
+  <data name="ColorPickPopupRecentColorsGroupCaption" xml:space="preserve">
+    <value>Recent Colors</value>
+  </data>
+  <data name="ColorPickPopupMoreColorsItemCaption" xml:space="preserve">
+    <value>More Colors...</value>
+  </data>
+  <data name="ColorPickHueAxisName" xml:space="preserve">
+    <value>Hue</value>
+  </data>
+  <data name="ColorPickSaturationAxisName" xml:space="preserve">
+    <value>Saturation</value>
+  </data>
+  <data name="ColorPickBrightnessAxisName" xml:space="preserve">
+    <value>Brightness</value>
+  </data>
+  <data name="ColorPickLuminanceAxisName" xml:space="preserve">
+    <value>Luminance</value>
+  </data>
+  <data name="ColorPickOpacityAxisName" xml:space="preserve">
+    <value>Opacity</value>
+  </data>
+  <data name="ColorPickBlueValidationMsg" xml:space="preserve">
+    <value>Blue component should be in range 0..255</value>
+  </data>
+  <data name="ColorPickGreenValidationMsg" xml:space="preserve">
+    <value>Green component should be in range 0..255</value>
+  </data>
+  <data name="ColorPickRedValidationMsg" xml:space="preserve">
+    <value>Red component should be in range 0..255</value>
+  </data>
+  <data name="ColorPickBrightValidationMsg" xml:space="preserve">
+    <value>Brightness component should be in range 0..100</value>
+  </data>
+  <data name="ColorPickColorHexValidationMsg" xml:space="preserve">
+    <value>Invalid hexadecimal value</value>
+  </data>
+  <data name="ColorPickHueValidationMsg" xml:space="preserve">
+    <value>Hue component should be in range 0..359</value>
+  </data>
+  <data name="ColorPickOpacityValidationMsg" xml:space="preserve">
+    <value>Opacity component should be in range 0..255</value>
+  </data>
+  <data name="ColorPickSaturationValidationMsg" xml:space="preserve">
+    <value>Saturation component should be in range 0..100</value>
+  </data>
+  <data name="ColorTabWebSafeColors" xml:space="preserve">
+    <value>Web-Safe</value>
+  </data>
+  <data name="HideColumnsSortIndex" xml:space="preserve">
+    <value>Hide Columns Sort  Indexes</value>
+  </data>
+  <data name="ShowColumnsSortIndex" xml:space="preserve">
+    <value>Show Columns Sort Indexes</value>
+  </data>
+  <data name="AutoCompleteTypeDefault" xml:space="preserve">
+    <value>Default</value>
+  </data>
+  <data name="AutoCompleteTypeNone" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="AutoCompleteTypeOptimistic" xml:space="preserve">
+    <value>Optimistic</value>
+  </data>
+  <data name="AutoCompleteTypeStrong" xml:space="preserve">
+    <value>Strong</value>
+  </data>
+  <data name="MaskTypeDateTime" xml:space="preserve">
+    <value>DateTime</value>
+  </data>
+  <data name="MaskTypeDateTimeAdvancingCaret" xml:space="preserve">
+    <value>DateTime Advancing Caret</value>
+  </data>
+  <data name="MaskTypeNone" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="MaskTypeNumeric" xml:space="preserve">
+    <value>Numeric</value>
+  </data>
+  <data name="MaskTypeRegEx" xml:space="preserve">
+    <value>RegEx</value>
+  </data>
+  <data name="MaskTypeRegular" xml:space="preserve">
+    <value>Regular</value>
+  </data>
+  <data name="MaskTypeSimple" xml:space="preserve">
+    <value>Simple</value>
+  </data>
+  <data name="TimeOfDayDescription" xml:space="preserve">
+    <value>The 24 hour day time:
+15:25
+2:05
+03:57</value>
+  </data>
+  <data name="TimeOfDateWithSecondsDescription" xml:space="preserve">
+    <value>The 24 hour day time with seconds:
+12:45:10
+3:00:01</value>
+  </data>
+  <data name="TimeOfDayAMPMDescription" xml:space="preserve">
+    <value>The 12 hour day time:
+1:35PM
+12:45AM</value>
+  </data>
+  <data name="DateDescription" xml:space="preserve">
+    <value>The MM/dd/yy or MM/dd/yyyy date with year from 1000 to 3999:
+3/12/99
+06/25/1800</value>
+  </data>
+  <data name="TimeOfDateWithSecondsAMPMDescription" xml:space="preserve">
+    <value>The 12 hour day time with seconds:
+10:03:10AM
+03:00:01PM</value>
+  </data>
+  <data name="TelephoneNumberDescription" xml:space="preserve">
+    <value>The telephone number with or without city code:
+(345) 234-12-07
+(210) 7-17-81
+26-32-22</value>
+  </data>
+  <data name="BinaryNumberDescription" xml:space="preserve">
+    <value>Any binary number</value>
+  </data>
+  <data name="DecimalNumberDescription" xml:space="preserve">
+    <value>Any decimal number</value>
+  </data>
+  <data name="HexadecimalNumberDescription" xml:space="preserve">
+    <value>Any hexadecimal number</value>
+  </data>
+  <data name="OctalNumberDescription" xml:space="preserve">
+    <value>Any octal number</value>
+  </data>
+  <data name="YesNoDescription" xml:space="preserve">
+    <value>Yes
+No</value>
+  </data>
+  <data name="TrueFalseDescription" xml:space="preserve">
+    <value>True
+False</value>
+  </data>
+  <data name="AnySymbolsDescription" xml:space="preserve">
+    <value>Any symbols</value>
+  </data>
+  <data name="LatinLettersOnlyDescription" xml:space="preserve">
+    <value>Any letters of the latin alphabet</value>
+  </data>
+  <data name="LettersOnlyDescription" xml:space="preserve">
+    <value>Any letters</value>
+  </data>
+  <data name="LowercaseLettersDescription" xml:space="preserve">
+    <value>Any lowercase letters</value>
+  </data>
+  <data name="SortableDateTimeDescription" xml:space="preserve">
+    <value>Conforms to ISO 8601</value>
+  </data>
+  <data name="UppercaseLettersDescription" xml:space="preserve">
+    <value>Any uppercase letters</value>
+  </data>
+  <data name="ChartRangeControlClientRangeValidationMsg" xml:space="preserve">
+    <value>Max should be greater than or equal to min</value>
+  </data>
+  <data name="ConstantFormat" xml:space="preserve">
+    <value>Constant Format</value>
+  </data>
+  <data name="GeneralTimeSpanLongFormat" xml:space="preserve">
+    <value>General Long Format</value>
+  </data>
+  <data name="GeneralTimeSpanShortFormat" xml:space="preserve">
+    <value>General Short Format</value>
+  </data>
+  <data name="CustomTimeSpanTimer" xml:space="preserve">
+    <value>Custom: Timer</value>
+  </data>
+  <data name="CustomTimeSpanTimerCountdown" xml:space="preserve">
+    <value>Custom: Countdown Timer</value>
+  </data>
+</root>

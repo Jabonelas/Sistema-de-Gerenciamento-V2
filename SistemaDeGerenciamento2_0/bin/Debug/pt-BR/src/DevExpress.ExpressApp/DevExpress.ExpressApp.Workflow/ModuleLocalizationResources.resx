@@ -1,0 +1,492 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Non-calculated\ActionDesign\Actions\Activate\Caption" xml:space="preserve">
+    <value>Activate</value>
+  </data>
+  <data name="ActionDesign\Actions\Activate\ShortCaption" xml:space="preserve">
+    <value>Activate</value>
+  </data>
+  <data name="ActionDesign\Actions\Activate\NullValuePrompt" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="ActionDesign\Actions\Activate\ConfirmationMessage" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="ActionDesign\Actions\Activate\ToolTip" xml:space="preserve">
+    <value>Activate</value>
+  </data>
+  <data name="Non-calculated\ActionDesign\Actions\Deactivate\Caption" xml:space="preserve">
+    <value>Deactivate</value>
+  </data>
+  <data name="ActionDesign\Actions\Deactivate\ShortCaption" xml:space="preserve">
+    <value>Deactivate</value>
+  </data>
+  <data name="ActionDesign\Actions\Deactivate\NullValuePrompt" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="ActionDesign\Actions\Deactivate\ConfirmationMessage" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="ActionDesign\Actions\Deactivate\ToolTip" xml:space="preserve">
+    <value>Deactivate</value>
+  </data>
+  <data name="Non-calculated\ActionDesign\Actions\ShowWorkflowInstances\Caption" xml:space="preserve">
+    <value>Show Workflow Instances</value>
+  </data>
+  <data name="ActionDesign\Actions\ShowWorkflowInstances\ShortCaption" xml:space="preserve">
+    <value>Show Workflow Instances</value>
+  </data>
+  <data name="ActionDesign\Actions\ShowWorkflowInstances\NullValuePrompt" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="ActionDesign\Actions\ShowWorkflowInstances\ConfirmationMessage" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="ActionDesign\Actions\ShowWorkflowInstances\ToolTip" xml:space="preserve">
+    <value>Show Workflow Instances</value>
+  </data>
+  <data name="Non-calculated\ActionDesign\Actions\CancelWorkflowInstance\Caption" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="ActionDesign\Actions\CancelWorkflowInstance\ShortCaption" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="ActionDesign\Actions\CancelWorkflowInstance\NullValuePrompt" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="ActionDesign\Actions\CancelWorkflowInstance\ConfirmationMessage" xml:space="preserve">
+    <value>You are about to cancel the selected item(s). Do you want to proceed?</value>
+  </data>
+  <data name="ActionDesign\Actions\CancelWorkflowInstance\ToolTip" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="Non-calculated\ActionDesign\Actions\TerminateWorkflowInstance\Caption" xml:space="preserve">
+    <value>Terminate</value>
+  </data>
+  <data name="ActionDesign\Actions\TerminateWorkflowInstance\ShortCaption" xml:space="preserve">
+    <value>Terminate</value>
+  </data>
+  <data name="ActionDesign\Actions\TerminateWorkflowInstance\NullValuePrompt" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="ActionDesign\Actions\TerminateWorkflowInstance\ConfirmationMessage" xml:space="preserve">
+    <value>You are about to terminate the selected item(s). Do you want to proceed?</value>
+  </data>
+  <data name="ActionDesign\Actions\TerminateWorkflowInstance\ToolTip" xml:space="preserve">
+    <value>Terminate</value>
+  </data>
+  <data name="Non-calculated\ActionDesign\Actions\SuspendWorkflowInstance\Caption" xml:space="preserve">
+    <value>Suspend</value>
+  </data>
+  <data name="ActionDesign\Actions\SuspendWorkflowInstance\ShortCaption" xml:space="preserve">
+    <value>Suspend</value>
+  </data>
+  <data name="ActionDesign\Actions\SuspendWorkflowInstance\NullValuePrompt" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="ActionDesign\Actions\SuspendWorkflowInstance\ConfirmationMessage" xml:space="preserve">
+    <value>You are about to suspend the selected item(s). Do you want to proceed?</value>
+  </data>
+  <data name="ActionDesign\Actions\SuspendWorkflowInstance\ToolTip" xml:space="preserve">
+    <value>Suspend</value>
+  </data>
+  <data name="Non-calculated\ActionDesign\Actions\ResumeWorkflowInstance\Caption" xml:space="preserve">
+    <value>Resume</value>
+  </data>
+  <data name="ActionDesign\Actions\ResumeWorkflowInstance\ShortCaption" xml:space="preserve">
+    <value>Resume</value>
+  </data>
+  <data name="ActionDesign\Actions\ResumeWorkflowInstance\NullValuePrompt" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="ActionDesign\Actions\ResumeWorkflowInstance\ConfirmationMessage" xml:space="preserve">
+    <value>You are about to resume the selected item(s). Do you want to proceed?</value>
+  </data>
+  <data name="ActionDesign\Actions\ResumeWorkflowInstance\ToolTip" xml:space="preserve">
+    <value>Resume</value>
+  </data>
+  <data name="BOModel\DevExpress.Workflow.Xpo.XpoTrackingRecord\OwnMembers\DateTime\DisplayFormat" xml:space="preserve">
+    <value>{0:G}</value>
+  </data>
+  <data name="Views\IDCWorkflowDefinition_DetailView\Items\AutoStartWhenObjectFitsCriteria\Caption" xml:space="preserve">
+    <value>Object Fits Criteria</value>
+  </data>
+  <data name="Views\IDCWorkflowDefinition_DetailView\Items\AutoStartWhenObjectIsCreated\Caption" xml:space="preserve">
+    <value>Object Is Created</value>
+  </data>
+  <data name="Views\IDCWorkflowDefinition_DetailView\Layout\Main_Copy\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\IDCWorkflowDefinition_DetailView\Layout\Main_Copy\ToolTipTitle" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\IDCWorkflowDefinition_DetailView\Layout\Main_Copy\SizeableEditors\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\IDCWorkflowDefinition_DetailView\Layout\Main_Copy\SizeableEditors\ToolTipTitle" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\IDCWorkflowDefinition_DetailView\Layout\Main_Copy\SizeableEditors\Item1\XpoWorkflowDefinition\Caption" xml:space="preserve">
+    <value>Properties</value>
+  </data>
+  <data name="Views\IDCWorkflowDefinition_DetailView\Layout\Main_Copy\SizeableEditors\Item1\XpoWorkflowDefinition\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\IDCWorkflowDefinition_DetailView\Layout\Main_Copy\SizeableEditors\Item1\XpoWorkflowDefinition\ToolTipTitle" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\IDCWorkflowDefinition_DetailView\Layout\Main_Copy\SizeableEditors\Item1\XpoWorkflowDefinition\Item4\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\IDCWorkflowDefinition_DetailView\Layout\Main_Copy\SizeableEditors\Item1\XpoWorkflowDefinition\Item4\ToolTipTitle" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\IDCWorkflowDefinition_DetailView\Layout\Main_Copy\SizeableEditors\Item1\XpoWorkflowDefinition\Item4\3a4ca40e-a05e-4539-a048-6948acb2783d\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\IDCWorkflowDefinition_DetailView\Layout\Main_Copy\SizeableEditors\Item1\XpoWorkflowDefinition\Item4\3a4ca40e-a05e-4539-a048-6948acb2783d\ToolTipTitle" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\IDCWorkflowDefinition_DetailView\Layout\Main_Copy\SizeableEditors\Item1\XpoWorkflowDefinition\Item4\3a4ca40e-a05e-4539-a048-6948acb2783d\Name\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\IDCWorkflowDefinition_DetailView\Layout\Main_Copy\SizeableEditors\Item1\XpoWorkflowDefinition\Item4\3a4ca40e-a05e-4539-a048-6948acb2783d\Name\ToolTipTitle" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\IDCWorkflowDefinition_DetailView\Layout\Main_Copy\SizeableEditors\Item1\XpoWorkflowDefinition\Item4\3a4ca40e-a05e-4539-a048-6948acb2783d\TargetObjectType\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\IDCWorkflowDefinition_DetailView\Layout\Main_Copy\SizeableEditors\Item1\XpoWorkflowDefinition\Item4\3a4ca40e-a05e-4539-a048-6948acb2783d\TargetObjectType\ToolTipTitle" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\IDCWorkflowDefinition_DetailView\Layout\Main_Copy\SizeableEditors\Item1\XpoWorkflowDefinition\Item2\Caption" xml:space="preserve">
+    <value>Automatically start when:</value>
+  </data>
+  <data name="Views\IDCWorkflowDefinition_DetailView\Layout\Main_Copy\SizeableEditors\Item1\XpoWorkflowDefinition\Item2\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\IDCWorkflowDefinition_DetailView\Layout\Main_Copy\SizeableEditors\Item1\XpoWorkflowDefinition\Item2\ToolTipTitle" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\IDCWorkflowDefinition_DetailView\Layout\Main_Copy\SizeableEditors\Item1\XpoWorkflowDefinition\Item2\AutoStartWhenObjectIsCreated\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\IDCWorkflowDefinition_DetailView\Layout\Main_Copy\SizeableEditors\Item1\XpoWorkflowDefinition\Item2\AutoStartWhenObjectIsCreated\ToolTipTitle" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\IDCWorkflowDefinition_DetailView\Layout\Main_Copy\SizeableEditors\Item1\XpoWorkflowDefinition\Item2\Item3\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\IDCWorkflowDefinition_DetailView\Layout\Main_Copy\SizeableEditors\Item1\XpoWorkflowDefinition\Item2\Item3\ToolTipTitle" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\IDCWorkflowDefinition_DetailView\Layout\Main_Copy\SizeableEditors\Item1\XpoWorkflowDefinition\Item2\Item3\Auto606a9a44-1d6c-4bbb-ac2b-f8ea565cd599\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\IDCWorkflowDefinition_DetailView\Layout\Main_Copy\SizeableEditors\Item1\XpoWorkflowDefinition\Item2\Item3\Auto606a9a44-1d6c-4bbb-ac2b-f8ea565cd599\ToolTipTitle" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\IDCWorkflowDefinition_DetailView\Layout\Main_Copy\SizeableEditors\Item1\XpoWorkflowDefinition\Item2\Item3\Auto606a9a44-1d6c-4bbb-ac2b-f8ea565cd599\Auto74c8d272-db93-48b2-a503-ab8ae7c8a56e\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\IDCWorkflowDefinition_DetailView\Layout\Main_Copy\SizeableEditors\Item1\XpoWorkflowDefinition\Item2\Item3\Auto606a9a44-1d6c-4bbb-ac2b-f8ea565cd599\Auto74c8d272-db93-48b2-a503-ab8ae7c8a56e\ToolTipTitle" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\IDCWorkflowDefinition_DetailView\Layout\Main_Copy\SizeableEditors\Item1\XpoWorkflowDefinition\Item2\Item3\Auto606a9a44-1d6c-4bbb-ac2b-f8ea565cd599\Auto74c8d272-db93-48b2-a503-ab8ae7c8a56e\AutoStartWhenObjectFitsCriteria\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\IDCWorkflowDefinition_DetailView\Layout\Main_Copy\SizeableEditors\Item1\XpoWorkflowDefinition\Item2\Item3\Auto606a9a44-1d6c-4bbb-ac2b-f8ea565cd599\Auto74c8d272-db93-48b2-a503-ab8ae7c8a56e\AutoStartWhenObjectFitsCriteria\ToolTipTitle" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\IDCWorkflowDefinition_DetailView\Layout\Main_Copy\SizeableEditors\Item1\XpoWorkflowDefinition\Item2\Item3\Auto606a9a44-1d6c-4bbb-ac2b-f8ea565cd599\Auto74c8d272-db93-48b2-a503-ab8ae7c8a56e\AllowMultipleRuns\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\IDCWorkflowDefinition_DetailView\Layout\Main_Copy\SizeableEditors\Item1\XpoWorkflowDefinition\Item2\Item3\Auto606a9a44-1d6c-4bbb-ac2b-f8ea565cd599\Auto74c8d272-db93-48b2-a503-ab8ae7c8a56e\AllowMultipleRuns\ToolTipTitle" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\IDCWorkflowDefinition_DetailView\Layout\Main_Copy\SizeableEditors\Item1\XpoWorkflowDefinition\Item2\Item3\Auto606a9a44-1d6c-4bbb-ac2b-f8ea565cd599\Criteria\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\IDCWorkflowDefinition_DetailView\Layout\Main_Copy\SizeableEditors\Item1\XpoWorkflowDefinition\Item2\Item3\Auto606a9a44-1d6c-4bbb-ac2b-f8ea565cd599\Criteria\ToolTipTitle" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\IDCWorkflowDefinition_DetailView\Layout\Main_Copy\SizeableEditors\Item1\Item2\Caption" xml:space="preserve">
+    <value>Designer</value>
+  </data>
+  <data name="Views\IDCWorkflowDefinition_DetailView\Layout\Main_Copy\SizeableEditors\Item1\Item2\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\IDCWorkflowDefinition_DetailView\Layout\Main_Copy\SizeableEditors\Item1\Item2\ToolTipTitle" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\IDCWorkflowDefinition_DetailView\Layout\Main_Copy\SizeableEditors\Item1\Item2\Xaml\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\IDCWorkflowDefinition_DetailView\Layout\Main_Copy\SizeableEditors\Item1\Item2\Xaml\ToolTipTitle" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\XpoRunningWorkflowInstanceInfo_DetailView\Layout\Main\SimpleEditors\State\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\XpoRunningWorkflowInstanceInfo_DetailView\Layout\Main\SimpleEditors\State\ToolTipTitle" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\XpoRunningWorkflowInstanceInfo_DetailView\Layout\Main\SimpleEditors\XpoRunningWorkflowInstanceInfo\XpoRunningWorkflowInstanceInfo_col2\TargetObjectHandle\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\XpoRunningWorkflowInstanceInfo_DetailView\Layout\Main\SimpleEditors\XpoRunningWorkflowInstanceInfo\XpoRunningWorkflowInstanceInfo_col2\TargetObjectHandle\ToolTipTitle" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\XpoRunningWorkflowInstanceInfo_DetailView\Layout\Main\TrackingRecords_Group\TrackingRecordVisualizationInfo\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\XpoRunningWorkflowInstanceInfo_DetailView\Layout\Main\TrackingRecords_Group\TrackingRecordVisualizationInfo\ToolTipTitle" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\XpoRunningWorkflowInstanceInfo_TrackingRecords_ListView\Columns\DateTime\DisplayFormat" xml:space="preserve">
+    <value>{0:G}</value>
+  </data>
+  <data name="Views\XpoTrackingRecord_DetailView\Items\DateTime\DisplayFormat" xml:space="preserve">
+    <value>{0:G}</value>
+  </data>
+  <data name="Views\XpoTrackingRecord_ListView\Columns\DateTime\DisplayFormat" xml:space="preserve">
+    <value>{0:G}</value>
+  </data>
+  <data name="Views\XpoTrackingRecord_LookupListView\Columns\DateTime\DisplayFormat" xml:space="preserve">
+    <value>{0:G}</value>
+  </data>
+  <data name="Views\XpoWorkflowDefinition_DetailView\Items\AutoStartWhenObjectFitsCriteria\Caption" xml:space="preserve">
+    <value>Object Fits Criteria</value>
+  </data>
+  <data name="Views\XpoWorkflowDefinition_DetailView\Items\AutoStartWhenObjectIsCreated\Caption" xml:space="preserve">
+    <value>Object Is Created</value>
+  </data>
+  <data name="Views\XpoWorkflowDefinition_DetailView\Layout\Main_Copy\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\XpoWorkflowDefinition_DetailView\Layout\Main_Copy\ToolTipTitle" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\XpoWorkflowDefinition_DetailView\Layout\Main_Copy\SizeableEditors\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\XpoWorkflowDefinition_DetailView\Layout\Main_Copy\SizeableEditors\ToolTipTitle" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\XpoWorkflowDefinition_DetailView\Layout\Main_Copy\SizeableEditors\Item1\XpoWorkflowDefinition\Caption" xml:space="preserve">
+    <value>Properties</value>
+  </data>
+  <data name="Views\XpoWorkflowDefinition_DetailView\Layout\Main_Copy\SizeableEditors\Item1\XpoWorkflowDefinition\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\XpoWorkflowDefinition_DetailView\Layout\Main_Copy\SizeableEditors\Item1\XpoWorkflowDefinition\ToolTipTitle" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\XpoWorkflowDefinition_DetailView\Layout\Main_Copy\SizeableEditors\Item1\XpoWorkflowDefinition\Item4\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\XpoWorkflowDefinition_DetailView\Layout\Main_Copy\SizeableEditors\Item1\XpoWorkflowDefinition\Item4\ToolTipTitle" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\XpoWorkflowDefinition_DetailView\Layout\Main_Copy\SizeableEditors\Item1\XpoWorkflowDefinition\Item4\3a4ca40e-a05e-4539-a048-6948acb2783d\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\XpoWorkflowDefinition_DetailView\Layout\Main_Copy\SizeableEditors\Item1\XpoWorkflowDefinition\Item4\3a4ca40e-a05e-4539-a048-6948acb2783d\ToolTipTitle" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\XpoWorkflowDefinition_DetailView\Layout\Main_Copy\SizeableEditors\Item1\XpoWorkflowDefinition\Item4\3a4ca40e-a05e-4539-a048-6948acb2783d\Name\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\XpoWorkflowDefinition_DetailView\Layout\Main_Copy\SizeableEditors\Item1\XpoWorkflowDefinition\Item4\3a4ca40e-a05e-4539-a048-6948acb2783d\Name\ToolTipTitle" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\XpoWorkflowDefinition_DetailView\Layout\Main_Copy\SizeableEditors\Item1\XpoWorkflowDefinition\Item4\3a4ca40e-a05e-4539-a048-6948acb2783d\TargetObjectType\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\XpoWorkflowDefinition_DetailView\Layout\Main_Copy\SizeableEditors\Item1\XpoWorkflowDefinition\Item4\3a4ca40e-a05e-4539-a048-6948acb2783d\TargetObjectType\ToolTipTitle" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\XpoWorkflowDefinition_DetailView\Layout\Main_Copy\SizeableEditors\Item1\XpoWorkflowDefinition\Item2\Caption" xml:space="preserve">
+    <value>Automatically start when:</value>
+  </data>
+  <data name="Views\XpoWorkflowDefinition_DetailView\Layout\Main_Copy\SizeableEditors\Item1\XpoWorkflowDefinition\Item2\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\XpoWorkflowDefinition_DetailView\Layout\Main_Copy\SizeableEditors\Item1\XpoWorkflowDefinition\Item2\ToolTipTitle" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\XpoWorkflowDefinition_DetailView\Layout\Main_Copy\SizeableEditors\Item1\XpoWorkflowDefinition\Item2\AutoStartWhenObjectIsCreated\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\XpoWorkflowDefinition_DetailView\Layout\Main_Copy\SizeableEditors\Item1\XpoWorkflowDefinition\Item2\AutoStartWhenObjectIsCreated\ToolTipTitle" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\XpoWorkflowDefinition_DetailView\Layout\Main_Copy\SizeableEditors\Item1\XpoWorkflowDefinition\Item2\Item3\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\XpoWorkflowDefinition_DetailView\Layout\Main_Copy\SizeableEditors\Item1\XpoWorkflowDefinition\Item2\Item3\ToolTipTitle" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\XpoWorkflowDefinition_DetailView\Layout\Main_Copy\SizeableEditors\Item1\XpoWorkflowDefinition\Item2\Item3\Auto606a9a44-1d6c-4bbb-ac2b-f8ea565cd599\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\XpoWorkflowDefinition_DetailView\Layout\Main_Copy\SizeableEditors\Item1\XpoWorkflowDefinition\Item2\Item3\Auto606a9a44-1d6c-4bbb-ac2b-f8ea565cd599\ToolTipTitle" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\XpoWorkflowDefinition_DetailView\Layout\Main_Copy\SizeableEditors\Item1\XpoWorkflowDefinition\Item2\Item3\Auto606a9a44-1d6c-4bbb-ac2b-f8ea565cd599\Auto74c8d272-db93-48b2-a503-ab8ae7c8a56e\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\XpoWorkflowDefinition_DetailView\Layout\Main_Copy\SizeableEditors\Item1\XpoWorkflowDefinition\Item2\Item3\Auto606a9a44-1d6c-4bbb-ac2b-f8ea565cd599\Auto74c8d272-db93-48b2-a503-ab8ae7c8a56e\ToolTipTitle" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\XpoWorkflowDefinition_DetailView\Layout\Main_Copy\SizeableEditors\Item1\XpoWorkflowDefinition\Item2\Item3\Auto606a9a44-1d6c-4bbb-ac2b-f8ea565cd599\Auto74c8d272-db93-48b2-a503-ab8ae7c8a56e\AutoStartWhenObjectFitsCriteria\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\XpoWorkflowDefinition_DetailView\Layout\Main_Copy\SizeableEditors\Item1\XpoWorkflowDefinition\Item2\Item3\Auto606a9a44-1d6c-4bbb-ac2b-f8ea565cd599\Auto74c8d272-db93-48b2-a503-ab8ae7c8a56e\AutoStartWhenObjectFitsCriteria\ToolTipTitle" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\XpoWorkflowDefinition_DetailView\Layout\Main_Copy\SizeableEditors\Item1\XpoWorkflowDefinition\Item2\Item3\Auto606a9a44-1d6c-4bbb-ac2b-f8ea565cd599\Auto74c8d272-db93-48b2-a503-ab8ae7c8a56e\AllowMultipleRuns\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\XpoWorkflowDefinition_DetailView\Layout\Main_Copy\SizeableEditors\Item1\XpoWorkflowDefinition\Item2\Item3\Auto606a9a44-1d6c-4bbb-ac2b-f8ea565cd599\Auto74c8d272-db93-48b2-a503-ab8ae7c8a56e\AllowMultipleRuns\ToolTipTitle" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\XpoWorkflowDefinition_DetailView\Layout\Main_Copy\SizeableEditors\Item1\XpoWorkflowDefinition\Item2\Item3\Auto606a9a44-1d6c-4bbb-ac2b-f8ea565cd599\Criteria\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\XpoWorkflowDefinition_DetailView\Layout\Main_Copy\SizeableEditors\Item1\XpoWorkflowDefinition\Item2\Item3\Auto606a9a44-1d6c-4bbb-ac2b-f8ea565cd599\Criteria\ToolTipTitle" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\XpoWorkflowDefinition_DetailView\Layout\Main_Copy\SizeableEditors\Item1\Item2\Caption" xml:space="preserve">
+    <value>Designer</value>
+  </data>
+  <data name="Views\XpoWorkflowDefinition_DetailView\Layout\Main_Copy\SizeableEditors\Item1\Item2\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\XpoWorkflowDefinition_DetailView\Layout\Main_Copy\SizeableEditors\Item1\Item2\ToolTipTitle" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\XpoWorkflowDefinition_DetailView\Layout\Main_Copy\SizeableEditors\Item1\Item2\Xaml\ToolTip" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Views\XpoWorkflowDefinition_DetailView\Layout\Main_Copy\SizeableEditors\Item1\Item2\Xaml\ToolTipTitle" xml:space="preserve">
+    <value></value>
+  </data>
+</root>

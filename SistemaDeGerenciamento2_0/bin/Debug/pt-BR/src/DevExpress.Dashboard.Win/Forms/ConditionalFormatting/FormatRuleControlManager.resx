@@ -1,0 +1,505 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="barManager.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>215, 17</value>
+  </metadata>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"></assembly>
+  <data name="barDockControlTop.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"></assembly>
+  <data name="barDockControlTop.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="barDockControlTop.Size" type="System.Drawing.Size, System.Drawing">
+    <value>561, 0</value>
+  </data>
+  <data name="&gt;&gt;barDockControlTop.Name" xml:space="preserve">
+    <value>barDockControlTop</value>
+  </data>
+  <data name="&gt;&gt;barDockControlTop.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;barDockControlTop.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="barDockControlBottom.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="barDockControlBottom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 267</value>
+  </data>
+  <data name="barDockControlBottom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>561, 0</value>
+  </data>
+  <data name="&gt;&gt;barDockControlBottom.Name" xml:space="preserve">
+    <value>barDockControlBottom</value>
+  </data>
+  <data name="&gt;&gt;barDockControlBottom.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;barDockControlBottom.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="barDockControlLeft.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="barDockControlLeft.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="barDockControlLeft.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 267</value>
+  </data>
+  <data name="&gt;&gt;barDockControlLeft.Name" xml:space="preserve">
+    <value>barDockControlLeft</value>
+  </data>
+  <data name="&gt;&gt;barDockControlLeft.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;barDockControlLeft.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="barDockControlRight.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="barDockControlRight.Location" type="System.Drawing.Point, System.Drawing">
+    <value>561, 0</value>
+  </data>
+  <data name="barDockControlRight.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 267</value>
+  </data>
+  <data name="&gt;&gt;barDockControlRight.Name" xml:space="preserve">
+    <value>barDockControlRight</value>
+  </data>
+  <data name="&gt;&gt;barDockControlRight.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;barDockControlRight.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"></assembly>
+  <data name="$this.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="layoutControl.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <metadata name="popupMenuAddRule.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>340, 17</value>
+  </metadata>
+  <data name="ddbAddRule.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 241</value>
+  </data>
+  <data name="ddbAddRule.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>70, 0</value>
+  </data>
+  <data name="ddbAddRule.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 22</value>
+  </data>
+  <data name="ddbAddRule.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="ddbAddRule.Text" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="&gt;&gt;ddbAddRule.Name" xml:space="preserve">
+    <value>ddbAddRule</value>
+  </data>
+  <data name="&gt;&gt;ddbAddRule.Parent" xml:space="preserve">
+    <value>layoutControl</value>
+  </data>
+  <data name="&gt;&gt;ddbAddRule.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="gridRules.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 31</value>
+  </data>
+  <data name="repItemEnabled.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="gridColumnEnabled.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumnEnabled.VisibleIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="gridColumnEnabled.Width" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="gridColumnCaption.Caption" xml:space="preserve">
+    <value>Caption</value>
+  </data>
+  <data name="gridColumnCaption.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumnCaption.VisibleIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="gridColumnCaption.Width" type="System.Int32, mscorlib">
+    <value>169</value>
+  </data>
+  <data name="gridColumnCalculateBy.Caption" xml:space="preserve">
+    <value>Calculated By</value>
+  </data>
+  <data name="gridColumnCalculateBy.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumnCalculateBy.VisibleIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="gridColumnCalculateBy.Width" type="System.Int32, mscorlib">
+    <value>169</value>
+  </data>
+  <data name="gridColumnApplyTo.Caption" xml:space="preserve">
+    <value>Applies To</value>
+  </data>
+  <data name="repItemApplyTo.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="gridColumnApplyTo.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gridColumnApplyTo.VisibleIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="gridColumnApplyTo.Width" type="System.Int32, mscorlib">
+    <value>171</value>
+  </data>
+  <data name="gridColumnStopIfTrue.Caption" xml:space="preserve">
+    <value>Stop If True</value>
+  </data>
+  <data name="repItemStopIfTrue.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="gridRules.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>300, 200</value>
+  </data>
+  <data name="gridRules.Size" type="System.Drawing.Size, System.Drawing">
+    <value>553, 200</value>
+  </data>
+  <data name="gridRules.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;gridRules.Name" xml:space="preserve">
+    <value>gridRules</value>
+  </data>
+  <data name="&gt;&gt;gridRules.Parent" xml:space="preserve">
+    <value>layoutControl</value>
+  </data>
+  <data name="&gt;&gt;gridRules.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="btnDown.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="btnDown.Location" type="System.Drawing.Point, System.Drawing">
+    <value>180, 5</value>
+  </data>
+  <data name="btnDown.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>24, 22</value>
+  </data>
+  <data name="btnDown.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 22</value>
+  </data>
+  <data name="btnDown.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;btnDown.Name" xml:space="preserve">
+    <value>btnDown</value>
+  </data>
+  <data name="&gt;&gt;btnDown.Parent" xml:space="preserve">
+    <value>layoutControl</value>
+  </data>
+  <data name="&gt;&gt;btnDown.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="btnUp.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="btnUp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>152, 5</value>
+  </data>
+  <data name="btnUp.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>24, 22</value>
+  </data>
+  <data name="btnUp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 22</value>
+  </data>
+  <data name="btnUp.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;btnUp.Name" xml:space="preserve">
+    <value>btnUp</value>
+  </data>
+  <data name="&gt;&gt;btnUp.Parent" xml:space="preserve">
+    <value>layoutControl</value>
+  </data>
+  <data name="&gt;&gt;btnUp.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="btnDelete.Location" type="System.Drawing.Point, System.Drawing">
+    <value>78, 5</value>
+  </data>
+  <data name="btnDelete.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>70, 22</value>
+  </data>
+  <data name="btnDelete.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 22</value>
+  </data>
+  <data name="btnDelete.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="btnDelete.Text" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="&gt;&gt;btnDelete.Name" xml:space="preserve">
+    <value>btnDelete</value>
+  </data>
+  <data name="&gt;&gt;btnDelete.Parent" xml:space="preserve">
+    <value>layoutControl</value>
+  </data>
+  <data name="&gt;&gt;btnDelete.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="btnEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 5</value>
+  </data>
+  <data name="btnEdit.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>70, 22</value>
+  </data>
+  <data name="btnEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 22</value>
+  </data>
+  <data name="btnEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="btnEdit.Text" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="&gt;&gt;btnEdit.Name" xml:space="preserve">
+    <value>btnEdit</value>
+  </data>
+  <data name="&gt;&gt;btnEdit.Parent" xml:space="preserve">
+    <value>layoutControl</value>
+  </data>
+  <data name="&gt;&gt;btnEdit.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="cbCalculateBy.Location" type="System.Drawing.Point, System.Drawing">
+    <value>144, 241</value>
+  </data>
+  <data name="cbCalculateBy.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>200, 0</value>
+  </data>
+  <data name="cbCalculateBy.Size" type="System.Drawing.Size, System.Drawing">
+    <value>413, 20</value>
+  </data>
+  <data name="cbCalculateBy.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;cbCalculateBy.Name" xml:space="preserve">
+    <value>cbCalculateBy</value>
+  </data>
+  <data name="&gt;&gt;cbCalculateBy.Parent" xml:space="preserve">
+    <value>layoutControl</value>
+  </data>
+  <data name="&gt;&gt;cbCalculateBy.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="cbFilterBy.Location" type="System.Drawing.Point, System.Drawing">
+    <value>357, 6</value>
+  </data>
+  <data name="cbFilterBy.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>200, 0</value>
+  </data>
+  <data name="cbFilterBy.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 20</value>
+  </data>
+  <data name="cbFilterBy.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;cbFilterBy.Name" xml:space="preserve">
+    <value>cbFilterBy</value>
+  </data>
+  <data name="&gt;&gt;cbFilterBy.Parent" xml:space="preserve">
+    <value>layoutControl</value>
+  </data>
+  <data name="&gt;&gt;cbFilterBy.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="layoutControl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="layoutControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="lciCalculateBy.CustomizationFormText" xml:space="preserve">
+    <value>lciCalculateBy</value>
+  </data>
+  <data name="lciCalculateBy.Text" xml:space="preserve">
+    <value>calculated by</value>
+  </data>
+  <data name="lciFilterBy.CustomizationFormText" xml:space="preserve">
+    <value>lciFilterBy</value>
+  </data>
+  <data name="lciFilterBy.Text" xml:space="preserve">
+    <value>Filter by:</value>
+  </data>
+  <data name="layoutControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>561, 267</value>
+  </data>
+  <data name="layoutControl.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="layoutControl.Text" xml:space="preserve">
+    <value>layoutControl</value>
+  </data>
+  <data name="&gt;&gt;layoutControl.Name" xml:space="preserve">
+    <value>layoutControl</value>
+  </data>
+  <data name="&gt;&gt;layoutControl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;layoutControl.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>561, 267</value>
+  </data>
+  <data name="&gt;&gt;barManager.Name" xml:space="preserve">
+    <value>barManager</value>
+  </data>
+  <data name="&gt;&gt;popupMenuAddRule.Name" xml:space="preserve">
+    <value>popupMenuAddRule</value>
+  </data>
+  <data name="&gt;&gt;gridViewRules.Name" xml:space="preserve">
+    <value>gridViewRules</value>
+  </data>
+  <data name="&gt;&gt;gridColumnEnabled.Name" xml:space="preserve">
+    <value>gridColumnEnabled</value>
+  </data>
+  <data name="&gt;&gt;repItemEnabled.Name" xml:space="preserve">
+    <value>repItemEnabled</value>
+  </data>
+  <data name="&gt;&gt;gridColumnCaption.Name" xml:space="preserve">
+    <value>gridColumnCaption</value>
+  </data>
+  <data name="&gt;&gt;gridColumnCalculateBy.Name" xml:space="preserve">
+    <value>gridColumnCalculateBy</value>
+  </data>
+  <data name="&gt;&gt;gridColumnApplyTo.Name" xml:space="preserve">
+    <value>gridColumnApplyTo</value>
+  </data>
+  <data name="&gt;&gt;repItemApplyTo.Name" xml:space="preserve">
+    <value>repItemApplyTo</value>
+  </data>
+  <data name="&gt;&gt;gridColumnStopIfTrue.Name" xml:space="preserve">
+    <value>gridColumnStopIfTrue</value>
+  </data>
+  <data name="&gt;&gt;repItemStopIfTrue.Name" xml:space="preserve">
+    <value>repItemStopIfTrue</value>
+  </data>
+  <data name="&gt;&gt;lcgRoot.Name" xml:space="preserve">
+    <value>lcgRoot</value>
+  </data>
+  <data name="&gt;&gt;lcgDescription.Name" xml:space="preserve">
+    <value>lcgDescription</value>
+  </data>
+  <data name="&gt;&gt;lcgNewRule.Name" xml:space="preserve">
+    <value>lcgNewRule</value>
+  </data>
+  <data name="&gt;&gt;lciAddRule.Name" xml:space="preserve">
+    <value>lciAddRule</value>
+  </data>
+  <data name="&gt;&gt;lciCalculateBy.Name" xml:space="preserve">
+    <value>lciCalculateBy</value>
+  </data>
+  <data name="&gt;&gt;lciButtonEdit.Name" xml:space="preserve">
+    <value>lciButtonEdit</value>
+  </data>
+  <data name="&gt;&gt;lciButtonDelete.Name" xml:space="preserve">
+    <value>lciButtonDelete</value>
+  </data>
+  <data name="&gt;&gt;lciFilterBy.Name" xml:space="preserve">
+    <value>lciFilterBy</value>
+  </data>
+  <data name="&gt;&gt;lciButtonUp.Name" xml:space="preserve">
+    <value>lciButtonUp</value>
+  </data>
+  <data name="&gt;&gt;lciButtonDown.Name" xml:space="preserve">
+    <value>lciButtonDown</value>
+  </data>
+  <data name="&gt;&gt;lciRules.Name" xml:space="preserve">
+    <value>lciRules</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FormatRuleControlManager</value>
+  </data>
+</root>

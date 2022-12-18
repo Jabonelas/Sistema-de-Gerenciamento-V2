@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8602A568-9A42-46BD-B7CA-57D7C15B8ECE}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>DevExpress.XtraPrinting.v21.2</AssemblyName>
+    <AssemblyOriginatorKeyFile>..\DevExpress.Key\StrongKey.snk</AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>DevExpress.XtraPrinting</RootNamespace>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SignAssembly>true</SignAssembly>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>..\DevExpress.Dll\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE;DEBUG;DXWhidbey</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>..\DevExpress.Dll\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE;DXWhidbey</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Design">
+      <Name>System.Design</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Drawing.Design">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\AssemblyVersion.cs">
+      <Link>AssemblyVersion.cs</Link>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CertificateSelector.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ComponentEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HeaderFooterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Native\Lines\LinesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Native\Navigation\GoToPageDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Preview\FindControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PasswordConfirmationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PdfPasswordSecurityEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PdfSignatureEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Preview\PageSetupEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Preview\PrintEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Preview\ReportServerCredentialsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Preview\PageSetupUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WatermarkEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Native\Navigation\GoToPageDialog.pt-BR.resx">
+      <DependentUpon>GoToPageDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Navigation\GoToPageDialog.resx">
+      <DependentUpon>GoToPageDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupEditorForm.pt-BR.resx">
+      <DependentUpon>PageSetupEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupEditorForm.resx">
+      <DependentUpon>PageSetupEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PrintEditorForm.pt-BR.resx">
+      <DependentUpon>PrintEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PrintEditorForm.resx">
+      <DependentUpon>PrintEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\ReportServerCredentialsForm.pt-BR.resx">
+      <DependentUpon>ReportServerCredentialsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\ReportServerCredentialsForm.resx">
+      <DependentUpon>ReportServerCredentialsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfSignatureEditorForm.pt-BR.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PdfSignatureEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfSignatureEditorForm.resx">
+      <DependentUpon>PdfSignatureEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PasswordConfirmationForm.pt-BR.resx">
+      <DependentUpon>PasswordConfirmationForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfPasswordSecurityEditorForm.pt-BR.resx">
+      <DependentUpon>PdfPasswordSecurityEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PasswordConfirmationForm.resx">
+      <DependentUpon>PasswordConfirmationForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfPasswordSecurityEditorForm.resx">
+      <DependentUpon>PdfPasswordSecurityEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Lines\LinesForm.pt-BR.resx">
+      <DependentUpon>LinesForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComponentEditorForm.pt-BR.resx">
+      <DependentUpon>ComponentEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComponentEditorForm.resx">
+      <DependentUpon>ComponentEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeaderFooterForm.pt-BR.resx">
+      <DependentUpon>HeaderFooterForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeaderFooterForm.resx">
+      <DependentUpon>HeaderFooterForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Lines\LinesForm.resx">
+      <DependentUpon>LinesForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\FindControl.pt-BR.resx">
+      <DependentUpon>FindControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\FindControl.resx">
+      <DependentUpon>FindControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupUserControl.pt-BR.resx">
+      <DependentUpon>PageSetupUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preview\PageSetupUserControl.resx">
+      <DependentUpon>PageSetupUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WatermarkEditorForm.pt-BR.resx">
+      <DependentUpon>WatermarkEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WatermarkEditorForm.resx">
+      <DependentUpon>WatermarkEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

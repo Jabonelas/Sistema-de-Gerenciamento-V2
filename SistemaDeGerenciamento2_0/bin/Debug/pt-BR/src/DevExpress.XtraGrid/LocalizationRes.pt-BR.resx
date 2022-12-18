@@ -1,0 +1,703 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="GridStringId.FileIsNotFoundError" xml:space="preserve">
+    <value>Pasta {0} não foi encontrada</value>
+  </data>
+  <data name="GridStringId.ColumnViewExceptionMessage" xml:space="preserve">
+    <value> Deseja corrigir o valor ?</value>
+  </data>
+  <data name="GridStringId.CustomizationCaption" xml:space="preserve">
+    <value>Personalização</value>
+  </data>
+  <data name="GridStringId.MenuColumnClearAllSorting" xml:space="preserve">
+    <value>Remover Ordenações</value>
+  </data>
+  <data name="GridStringId.CustomizationColumns" xml:space="preserve">
+    <value>Colunas</value>
+  </data>
+  <data name="GridStringId.CustomizationBands" xml:space="preserve">
+    <value>Faixas</value>
+  </data>
+  <data name="GridStringId.PopupFilterAll" xml:space="preserve">
+    <value>(Todos)</value>
+  </data>
+  <data name="GridStringId.PopupFilterCustom" xml:space="preserve">
+    <value>(Personalizar)</value>
+  </data>
+  <data name="GridStringId.PopupFilterBlanks" xml:space="preserve">
+    <value>(Em branco)</value>
+  </data>
+  <data name="GridStringId.PopupFilterNonBlanks" xml:space="preserve">
+    <value>(Não brancos)</value>
+  </data>
+  <data name="GridStringId.CustomFilterDialogFormCaption" xml:space="preserve">
+    <value>Filtro Automático Personalizado</value>
+  </data>
+  <data name="GridStringId.CustomFilterDialogCaption" xml:space="preserve">
+    <value>Mostrar registros onde:</value>
+  </data>
+  <data name="GridStringId.CustomFilterDialogRadioAnd" xml:space="preserve">
+    <value>&amp;E</value>
+  </data>
+  <data name="GridStringId.CustomFilterDialogRadioOr" xml:space="preserve">
+    <value>&amp;Ou</value>
+  </data>
+  <data name="GridStringId.CustomFilterDialogOkButton" xml:space="preserve">
+    <value>Co&amp;nfirmar</value>
+  </data>
+  <data name="GridStringId.CustomFilterDialogClearFilter" xml:space="preserve">
+    <value>&amp;Remover Filtro</value>
+  </data>
+  <data name="GridStringId.CustomFilterDialogCancelButton" xml:space="preserve">
+    <value>&amp;Cancelar</value>
+  </data>
+  <data name="GridStringId.CustomFilterDialog2FieldCheck" xml:space="preserve">
+    <value>Campo</value>
+  </data>
+  <data name="GridStringId.MenuFooterSum" xml:space="preserve">
+    <value>Soma</value>
+  </data>
+  <data name="GridStringId.MenuFooterMin" xml:space="preserve">
+    <value>Mín</value>
+  </data>
+  <data name="GridStringId.MenuFooterMax" xml:space="preserve">
+    <value>Máx</value>
+  </data>
+  <data name="GridStringId.MenuFooterCount" xml:space="preserve">
+    <value>Contagem</value>
+  </data>
+  <data name="GridStringId.MenuFooterAverage" xml:space="preserve">
+    <value>Média</value>
+  </data>
+  <data name="GridStringId.MenuFooterSumFormat" xml:space="preserve">
+    <value>Soma={0:#,#.##}</value>
+  </data>
+  <data name="GridStringId.MenuFooterMinFormat" xml:space="preserve">
+    <value>Mín={0}</value>
+  </data>
+  <data name="GridStringId.MenuFooterMaxFormat" xml:space="preserve">
+    <value>Máx={0}</value>
+  </data>
+  <data name="GridStringId.MenuFooterCountFormat" xml:space="preserve">
+    <value>{0:#,#.####}</value>
+  </data>
+  <data name="GridStringId.MenuFooterAverageFormat" xml:space="preserve">
+    <value>Méd={0:#,#.##}</value>
+  </data>
+  <data name="GridStringId.MenuColumnSortAscending" xml:space="preserve">
+    <value>Ordenar Ascendente</value>
+  </data>
+  <data name="GridStringId.MenuColumnSortDescending" xml:space="preserve">
+    <value>Ordenar Descendente</value>
+  </data>
+  <data name="GridStringId.MenuColumnGroup" xml:space="preserve">
+    <value>Agrupar por este Campo</value>
+  </data>
+  <data name="GridStringId.MenuColumnUnGroup" xml:space="preserve">
+    <value>Desagrupar</value>
+  </data>
+  <data name="GridStringId.MenuColumnColumnCustomization" xml:space="preserve">
+    <value>Lista de Colunas</value>
+  </data>
+  <data name="GridStringId.MenuColumnBestFit" xml:space="preserve">
+    <value>Melhor Ajuste</value>
+  </data>
+  <data name="GridStringId.MenuColumnFilter" xml:space="preserve">
+    <value>Pode Filtrar</value>
+  </data>
+  <data name="GridStringId.MenuColumnClearFilter" xml:space="preserve">
+    <value>Remover Filtro</value>
+  </data>
+  <data name="GridStringId.MenuColumnBestFitAllColumns" xml:space="preserve">
+    <value>Melhor Ajuste (Todas as Colunas)</value>
+  </data>
+  <data name="GridStringId.MenuGroupPanelFullExpand" xml:space="preserve">
+    <value>Expandir Todos</value>
+  </data>
+  <data name="GridStringId.MenuGroupPanelFullCollapse" xml:space="preserve">
+    <value>Fechar Todos</value>
+  </data>
+  <data name="GridStringId.MenuGroupPanelClearGrouping" xml:space="preserve">
+    <value>Remover Agrupamentos</value>
+  </data>
+  <data name="GridStringId.PrintDesignerBandedView" xml:space="preserve">
+    <value>Definições de Impressão (Faixas)</value>
+  </data>
+  <data name="GridStringId.PrintDesignerGridView" xml:space="preserve">
+    <value>Definições de Impressão (Grade)</value>
+  </data>
+  <data name="GridStringId.PrintDesignerCardView" xml:space="preserve">
+    <value>Definições de Impressão (Cartões)</value>
+  </data>
+  <data name="GridStringId.PrintDesignerBandHeader" xml:space="preserve">
+    <value>Faixa Cabeçalho</value>
+  </data>
+  <data name="GridStringId.PrintDesignerDescription" xml:space="preserve">
+    <value>Ajustar várias opções de impressão para o layout atual.</value>
+  </data>
+  <data name="GridStringId.MenuColumnGroupBox" xml:space="preserve">
+    <value>Caixa de Agrupamento</value>
+  </data>
+  <data name="GridStringId.CardViewNewCard" xml:space="preserve">
+    <value>Novo Cartão</value>
+  </data>
+  <data name="GridStringId.CardViewQuickCustomizationButton" xml:space="preserve">
+    <value>Personalização</value>
+  </data>
+  <data name="GridStringId.CardViewQuickCustomizationButtonFilter" xml:space="preserve">
+    <value>Filtro</value>
+  </data>
+  <data name="GridStringId.CardViewQuickCustomizationButtonSort" xml:space="preserve">
+    <value>Ordenar:</value>
+  </data>
+  <data name="GridStringId.GridGroupPanelText" xml:space="preserve">
+    <value>Arraste aqui o cabeçalho de uma coluna para agrupar</value>
+  </data>
+  <data name="GridStringId.GridNewRowText" xml:space="preserve">
+    <value>Clique aqui para adicionar um novo registro</value>
+  </data>
+  <data name="GridStringId.GridOutlookIntervals" xml:space="preserve">
+    <value>Anterior;Último Mês;Início deste Mês;Três Semanas atrás;Duas Semanas atrás;Última Semana;;;;;;;;Ontem;Hoje;Amanhã;;;;;;;;Próxima Semana;Daqui a duas Semanas;Daqui a três Semanas;Fim do Mês;Próximo Mês;Depois do Próximo Mês;</value>
+  </data>
+  <data name="GridStringId.MenuColumnClearSorting" xml:space="preserve">
+    <value>Limpar ordenação</value>
+  </data>
+  <data name="GridStringId.MenuFooterCountGroupFormat" xml:space="preserve">
+    <value>Contagem={0}</value>
+  </data>
+  <data name="GridStringId.MenuFooterCustomFormat" xml:space="preserve">
+    <value>Personalização={0}</value>
+  </data>
+  <data name="GridStringId.MenuFooterNone" xml:space="preserve">
+    <value>Nenhum</value>
+  </data>
+  <data name="GridStringId.CustomizationFormColumnHint" xml:space="preserve">
+    <value>Arraste colunas para esta área para personalizar o layout</value>
+  </data>
+  <data name="GridStringId.CustomizationFormBandHint" xml:space="preserve">
+    <value>Arraste faixas de cabecalho aqui para personalizar o layout</value>
+  </data>
+  <data name="GridStringId.FilterBuilderApplyButton" xml:space="preserve">
+    <value>&amp;Aplicar</value>
+  </data>
+  <data name="GridStringId.FilterBuilderCancelButton" xml:space="preserve">
+    <value>&amp;Cancelar</value>
+  </data>
+  <data name="GridStringId.FilterBuilderCaption" xml:space="preserve">
+    <value>Construtor de Filtro</value>
+  </data>
+  <data name="GridStringId.FilterBuilderOkButton" xml:space="preserve">
+    <value>&amp;OK</value>
+  </data>
+  <data name="GridStringId.FilterPanelCustomizeButton" xml:space="preserve">
+    <value>Editar Filtro</value>
+  </data>
+  <data name="GridStringId.LayoutModifiedWarning" xml:space="preserve">
+    <value>O layout foi modificado.
+Deseja salvar as modificações?</value>
+  </data>
+  <data name="GridStringId.LayoutViewButtonApply" xml:space="preserve">
+    <value>&amp;Aplicar</value>
+  </data>
+  <data name="GridStringId.LayoutViewButtonCancel" xml:space="preserve">
+    <value>&amp;Cancelar</value>
+  </data>
+  <data name="GridStringId.LayoutViewButtonCustomizeHide" xml:space="preserve">
+    <value>Esconder as &amp;Personalizações</value>
+  </data>
+  <data name="GridStringId.LayoutViewButtonCustomizeShow" xml:space="preserve">
+    <value>&amp;Exibir as Personalizações</value>
+  </data>
+  <data name="GridStringId.LayoutViewButtonLoadLayout" xml:space="preserve">
+    <value>Carregar &amp;Layout...</value>
+  </data>
+  <data name="GridStringId.LayoutViewButtonOk" xml:space="preserve">
+    <value>&amp;OK</value>
+  </data>
+  <data name="GridStringId.LayoutViewButtonPreview" xml:space="preserve">
+    <value>Exibir &amp;Mais Cartões</value>
+  </data>
+  <data name="GridStringId.LayoutViewButtonReset" xml:space="preserve">
+    <value>&amp;Reinicializar Cartão-Padrão</value>
+  </data>
+  <data name="GridStringId.LayoutViewButtonSaveLayout" xml:space="preserve">
+    <value>Sal&amp;var Layout...</value>
+  </data>
+  <data name="GridStringId.LayoutViewButtonShrinkToMinimum" xml:space="preserve">
+    <value>&amp;Encolher Cartão-Padrão</value>
+  </data>
+  <data name="GridStringId.LayoutViewCarouselModeBtnHint" xml:space="preserve">
+    <value>Modo Carossel</value>
+  </data>
+  <data name="GridStringId.LayoutViewCloseZoomBtnHintClose" xml:space="preserve">
+    <value>Recuperar Visão</value>
+  </data>
+  <data name="GridStringId.LayoutViewCloseZoomBtnHintZoom" xml:space="preserve">
+    <value>Maximizar Detalhe</value>
+  </data>
+  <data name="GridStringId.LayoutViewColumnModeBtnHint" xml:space="preserve">
+    <value>Uma Coluna</value>
+  </data>
+  <data name="GridStringId.LayoutViewCustomizationFormCaption" xml:space="preserve">
+    <value>Personalização da Visão de Layout</value>
+  </data>
+  <data name="GridStringId.LayoutViewCustomizationFormDescription" xml:space="preserve">
+    <value>Personalizar o layout de cartão usando arraste de objetos com o mouse e a página de layout da visão.</value>
+  </data>
+  <data name="GridStringId.LayoutViewCustomizeBtnHint" xml:space="preserve">
+    <value>Personalização</value>
+  </data>
+  <data name="GridStringId.LayoutViewGroupCaptions" xml:space="preserve">
+    <value>Títulos</value>
+  </data>
+  <data name="GridStringId.LayoutViewGroupCards" xml:space="preserve">
+    <value>Cartões</value>
+  </data>
+  <data name="GridStringId.LayoutViewGroupCustomization" xml:space="preserve">
+    <value>Personalização</value>
+  </data>
+  <data name="GridStringId.LayoutViewGroupFields" xml:space="preserve">
+    <value>Campos</value>
+  </data>
+  <data name="GridStringId.LayoutViewGroupHiddenItems" xml:space="preserve">
+    <value>Itens Escondidos</value>
+  </data>
+  <data name="GridStringId.LayoutViewGroupIndents" xml:space="preserve">
+    <value>Recuos</value>
+  </data>
+  <data name="GridStringId.LayoutViewGroupIntervals" xml:space="preserve">
+    <value>Intervalos</value>
+  </data>
+  <data name="GridStringId.LayoutViewGroupLayout" xml:space="preserve">
+    <value>Layout</value>
+  </data>
+  <data name="GridStringId.LayoutViewGroupPropertyGrid" xml:space="preserve">
+    <value>Grade de Propriedades</value>
+  </data>
+  <data name="GridStringId.LayoutViewGroupTreeStructure" xml:space="preserve">
+    <value>Árvore de Layout</value>
+  </data>
+  <data name="GridStringId.LayoutViewGroupView" xml:space="preserve">
+    <value>Visualização</value>
+  </data>
+  <data name="GridStringId.LayoutViewLabelAllowFieldHotTracking" xml:space="preserve">
+    <value>Permitir Hot-Tracking</value>
+  </data>
+  <data name="GridStringId.LayoutViewLabelCaptionLocation" xml:space="preserve">
+    <value>Localização do Campo de Título:</value>
+  </data>
+  <data name="GridStringId.LayoutViewLabelCardArrangeRule" xml:space="preserve">
+    <value>Aranjar Régua:</value>
+  </data>
+  <data name="GridStringId.LayoutViewLabelCardEdgeAlignment" xml:space="preserve">
+    <value>Alinhamento da Borda do Cartão:</value>
+  </data>
+  <data name="GridStringId.LayoutViewLabelGroupCaptionLocation" xml:space="preserve">
+    <value>Localização do Título do Grupo:</value>
+  </data>
+  <data name="GridStringId.LayoutViewLabelHorizontal" xml:space="preserve">
+    <value>Intervalo Horizontal</value>
+  </data>
+  <data name="GridStringId.LayoutViewLabelPadding" xml:space="preserve">
+    <value>Acolchoamento</value>
+  </data>
+  <data name="GridStringId.LayoutViewLabelScrollVisibility" xml:space="preserve">
+    <value>Visibilidade do Scroll:</value>
+  </data>
+  <data name="GridStringId.LayoutViewLabelShowCardBorder" xml:space="preserve">
+    <value>Mostrar Borda</value>
+  </data>
+  <data name="GridStringId.LayoutViewLabelShowCardCaption" xml:space="preserve">
+    <value>Mostrar Título</value>
+  </data>
+  <data name="GridStringId.LayoutViewLabelShowCardExpandButton" xml:space="preserve">
+    <value>Mostrar Botão de Expansão</value>
+  </data>
+  <data name="GridStringId.LayoutViewLabelShowFieldBorder" xml:space="preserve">
+    <value>Mostrar Borda</value>
+  </data>
+  <data name="GridStringId.LayoutViewLabelShowFieldHint" xml:space="preserve">
+    <value>Mostrar Dica</value>
+  </data>
+  <data name="GridStringId.LayoutViewLabelShowFilterPanel" xml:space="preserve">
+    <value>Mostrar Painel de Filtro:</value>
+  </data>
+  <data name="GridStringId.LayoutViewLabelShowHeaderPanel" xml:space="preserve">
+    <value>Mostrar Painel de Cabeçalho</value>
+  </data>
+  <data name="GridStringId.LayoutViewLabelShowLines" xml:space="preserve">
+    <value>Mostrar Linhas</value>
+  </data>
+  <data name="GridStringId.LayoutViewLabelSpacing" xml:space="preserve">
+    <value>Espaçamento</value>
+  </data>
+  <data name="GridStringId.LayoutViewLabelTextAlignment" xml:space="preserve">
+    <value>Alinhamento do Texto do Título do Campo:</value>
+  </data>
+  <data name="GridStringId.LayoutViewLabelTextIndent" xml:space="preserve">
+    <value>Indentação de Texto</value>
+  </data>
+  <data name="GridStringId.LayoutViewLabelVertical" xml:space="preserve">
+    <value>Intervalo Vertical</value>
+  </data>
+  <data name="GridStringId.LayoutViewLabelViewMode" xml:space="preserve">
+    <value>Modo de Visão:</value>
+  </data>
+  <data name="GridStringId.LayoutViewMultiColumnModeBtnHint" xml:space="preserve">
+    <value>Colunas Múltiplas</value>
+  </data>
+  <data name="GridStringId.LayoutViewMultiRowModeBtnHint" xml:space="preserve">
+    <value>Linhas Múltiplas</value>
+  </data>
+  <data name="GridStringId.LayoutViewPageTemplateCard" xml:space="preserve">
+    <value>Cartão-Padrão</value>
+  </data>
+  <data name="GridStringId.LayoutViewPageViewLayout" xml:space="preserve">
+    <value>Layout da Visão</value>
+  </data>
+  <data name="GridStringId.LayoutViewPanBtnHint" xml:space="preserve">
+    <value>Rotação</value>
+  </data>
+  <data name="GridStringId.LayoutViewRowModeBtnHint" xml:space="preserve">
+    <value>Uma Linha</value>
+  </data>
+  <data name="GridStringId.LayoutViewSingleModeBtnHint" xml:space="preserve">
+    <value>Um Cartão</value>
+  </data>
+  <data name="GridStringId.MenuColumnFilterEditor" xml:space="preserve">
+    <value>Editor de Filtro</value>
+  </data>
+  <data name="GridStringId.PrintDesignerLayoutView" xml:space="preserve">
+    <value>Configurações de Impressão (Visão de Layout)</value>
+  </data>
+  <data name="GridStringId.MenuColumnRemoveColumn" xml:space="preserve">
+    <value>Remover Esta Coluna</value>
+  </data>
+  <data name="GridStringId.MenuColumnShowColumn" xml:space="preserve">
+    <value>Exibir Esta Coluna</value>
+  </data>
+  <data name="GridStringId.GroupSummaryEditorFormOrderTabCaption" xml:space="preserve">
+    <value>Ordem</value>
+  </data>
+  <data name="GridStringId.GroupSummaryEditorFormCancelButton" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="GridStringId.GroupSummaryEditorFormItemsTabCaption" xml:space="preserve">
+    <value>Itens</value>
+  </data>
+  <data name="GridStringId.MenuColumnMaxSummaryTypeDescription" xml:space="preserve">
+    <value>Máx</value>
+  </data>
+  <data name="GridStringId.MenuColumnMinSummaryTypeDescription" xml:space="preserve">
+    <value>Mín</value>
+  </data>
+  <data name="GridStringId.GroupSummaryEditorSummaryMin" xml:space="preserve">
+    <value>Mín</value>
+  </data>
+  <data name="GridStringId.LayoutViewCardCaptionFormat" xml:space="preserve">
+    <value>Registro [{0} de {1}]</value>
+  </data>
+  <data name="GridStringId.CustomFilterDialogEmptyValue" xml:space="preserve">
+    <value>(Entre um valor)</value>
+  </data>
+  <data name="GridStringId.MenuColumnGroupIntervalMenu" xml:space="preserve">
+    <value>Agrupar por Intevalo</value>
+  </data>
+  <data name="GridStringId.MenuColumnGroupIntervalDay" xml:space="preserve">
+    <value>Dia</value>
+  </data>
+  <data name="GridStringId.MenuColumnGroupIntervalSmart" xml:space="preserve">
+    <value>Inteligente</value>
+  </data>
+  <data name="GridStringId.MenuColumnGroupSummaryEditor" xml:space="preserve">
+    <value>Editor do Sumário de Grupo</value>
+  </data>
+  <data name="GridStringId.CustomFilterDialogHint" xml:space="preserve">
+    <value>Use _ para representar cada caracter#Use % para representar qualquer série de caracteres</value>
+  </data>
+  <data name="GridStringId.CardViewCaptionFormat" xml:space="preserve">
+    <value>Registro N {0}</value>
+  </data>
+  <data name="GridStringId.GroupSummaryEditorSummaryMax" xml:space="preserve">
+    <value>Máx</value>
+  </data>
+  <data name="GridStringId.MenuColumnSortGroupBySummaryMenu" xml:space="preserve">
+    <value>Classificar por Sumário</value>
+  </data>
+  <data name="GridStringId.MenuColumnResetGroupSummarySort" xml:space="preserve">
+    <value>Remover Classificação do Sumário</value>
+  </data>
+  <data name="GridStringId.CustomFilterDialogEmptyOperator" xml:space="preserve">
+    <value>(Selecione um operador)</value>
+  </data>
+  <data name="GridStringId.MenuColumnGroupIntervalNone" xml:space="preserve">
+    <value>Nenhum</value>
+  </data>
+  <data name="GridStringId.MenuColumnGroupIntervalYear" xml:space="preserve">
+    <value>Ano</value>
+  </data>
+  <data name="GridStringId.MenuColumnCountSummaryTypeDescription" xml:space="preserve">
+    <value>Contagem</value>
+  </data>
+  <data name="GridStringId.MenuColumnGroupSummarySortFormat" xml:space="preserve">
+    <value>{1} por '{0}' - {2}</value>
+  </data>
+  <data name="GridStringId.GroupSummaryEditorSummaryCount" xml:space="preserve">
+    <value>Contagem</value>
+  </data>
+  <data name="GridStringId.GroupSummaryEditorSummaryAverage" xml:space="preserve">
+    <value>Média</value>
+  </data>
+  <data name="GridStringId.GroupSummaryEditorFormCaption" xml:space="preserve">
+    <value>Editor do Sumário de Grupo</value>
+  </data>
+  <data name="GridStringId.MenuColumnGroupIntervalMonth" xml:space="preserve">
+    <value>Mês</value>
+  </data>
+  <data name="GridStringId.GroupSummaryEditorSummarySum" xml:space="preserve">
+    <value>Soma</value>
+  </data>
+  <data name="GridStringId.MenuColumnAverageSummaryTypeDescription" xml:space="preserve">
+    <value>Média</value>
+  </data>
+  <data name="GridStringId.MenuColumnExpressionEditor" xml:space="preserve">
+    <value>Editor de Expressão...</value>
+  </data>
+  <data name="GridStringId.MenuColumnSumSummaryTypeDescription" xml:space="preserve">
+    <value>Soma</value>
+  </data>
+  <data name="GridStringId.LayoutViewFieldCaptionFormat" xml:space="preserve">
+    <value>{0}:</value>
+  </data>
+  <data name="GridStringId.GroupSummaryEditorFormOkButton" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="GridStringId.MenuGroupPanelShow" xml:space="preserve">
+    <value>Mostrar Grupo Em Caixa</value>
+  </data>
+  <data name="GridStringId.MenuGroupPanelHide" xml:space="preserve">
+    <value>Ocultar Grupo Em Caixa</value>
+  </data>
+  <data name="GridStringId.WindowErrorCaption" xml:space="preserve">
+    <value>Erro</value>
+  </data>
+  <data name="GridStringId.MenuColumnFilterModeDisplayText" xml:space="preserve">
+    <value>Mostrar texto</value>
+  </data>
+  <data name="GridStringId.FindControlClearButton" xml:space="preserve">
+    <value>Limpar</value>
+  </data>
+  <data name="GridStringId.MenuColumnFilterMode" xml:space="preserve">
+    <value>Modo filtro</value>
+  </data>
+  <data name="GridStringId.MenuColumnFindFilterHide" xml:space="preserve">
+    <value>Ocultar procurar painel</value>
+  </data>
+  <data name="GridStringId.FindControlFindButton" xml:space="preserve">
+    <value>Procurar</value>
+  </data>
+  <data name="GridStringId.MenuColumnAutoFilterRowHide" xml:space="preserve">
+    <value>Ocultar linha auto filtro</value>
+  </data>
+  <data name="GridStringId.MenuColumnFilterModeValue" xml:space="preserve">
+    <value>Valor</value>
+  </data>
+  <data name="GridStringId.SearchLookUpMissingRows" xml:space="preserve">
+    <value>Para mostrar todas as linhas, pressione ENTER ou clique em Procurar.</value>
+  </data>
+  <data name="GridStringId.MenuColumnAutoFilterRowShow" xml:space="preserve">
+    <value>Mostrar linha auto filtro</value>
+  </data>
+  <data name="GridStringId.MenuColumnFindFilterShow" xml:space="preserve">
+    <value>Mostrar procurar painel</value>
+  </data>
+  <data name="GridStringId.SearchLookUpAddNewButton" xml:space="preserve">
+    <value>Novo</value>
+  </data>
+  <data name="GridStringId.MenuFooterClearSummaryItems" xml:space="preserve">
+    <value>Excluir resumo itens</value>
+  </data>
+  <data name="GridStringId.MenuColumnBandCustomization" xml:space="preserve">
+    <value>Coluna/Escolhedor banda</value>
+  </data>
+  <data name="GridStringId.MenuFooterAddSummaryItem" xml:space="preserve">
+    <value>Adicionar novo resumo</value>
+  </data>
+  <data name="GridStringId.MenuColumnCustomSummaryTypeDescription" xml:space="preserve">
+    <value>Personalizado</value>
+  </data>
+  <data name="GridStringId.MenuShowSplitItem" xml:space="preserve">
+    <value>Dividir</value>
+  </data>
+  <data name="GridStringId.LayoutViewFormLoadLayoutCaption" xml:space="preserve">
+    <value>Carregar Layout</value>
+  </data>
+  <data name="GridStringId.LayoutViewFormSaveLayoutCaption" xml:space="preserve">
+    <value>Salvar Layout</value>
+  </data>
+  <data name="GridStringId.ServerRequestError" xml:space="preserve">
+    <value>Ocorreu um erro durante o processamento de solicitação de servidor ({0}...)</value>
+  </data>
+  <data name="GridStringId.EditFormCancelButton" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="GridStringId.EditFormCancelMessage" xml:space="preserve">
+    <value>Você quer cancelar a edição?</value>
+  </data>
+  <data name="GridStringId.EditFormSaveMessage" xml:space="preserve">
+    <value>Seus dados foram modificados. Você quer salvar as alterações?</value>
+  </data>
+  <data name="GridStringId.EditFormUpdateButton" xml:space="preserve">
+    <value>Atualização</value>
+  </data>
+  <data name="GridStringId.MenuHideSplitItem" xml:space="preserve">
+    <value>Remover Divisão</value>
+  </data>
+  <data name="GridStringId.WindowWarningCaption" xml:space="preserve">
+    <value>Aviso</value>
+  </data>
+  <data name="GridStringId.CheckboxSelectorColumnCaption" xml:space="preserve">
+    <value>Seleção</value>
+  </data>
+  <data name="GridStringId.FindNullPrompt" xml:space="preserve">
+    <value>Insira o texto para pesquisar...</value>
+  </data>
+  <data name="GridStringId.MenuColumnConditionalFormatting" xml:space="preserve">
+    <value>Formatação condicional</value>
+  </data>
+  <data name="GridStringId.SearchForBand" xml:space="preserve">
+    <value>Procurar por uma banda...</value>
+  </data>
+  <data name="GridStringId.FindControlNextButton" xml:space="preserve">
+    <value>Próximo</value>
+  </data>
+  <data name="GridStringId.FindControlPrevButton" xml:space="preserve">
+    <value>Anterior</value>
+  </data>
+  <data name="GridStringId.MenuGroupRowCollapse" xml:space="preserve">
+    <value>Recolher</value>
+  </data>
+  <data name="GridStringId.MenuGroupRowExpand" xml:space="preserve">
+    <value>Expandir</value>
+  </data>
+  <data name="GridStringId.MenuFooterSelection" xml:space="preserve">
+    <value>Seleção</value>
+  </data>
+</root>

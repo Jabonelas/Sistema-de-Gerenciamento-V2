@@ -1,0 +1,444 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="DocumentManagerStringId.CommandActivate" xml:space="preserve">
+    <value>Activate</value>
+  </data>
+  <data name="DocumentManagerStringId.CommandClose" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="DocumentManagerStringId.CommandCloseAll" xml:space="preserve">
+    <value>Close All Documents</value>
+  </data>
+  <data name="DocumentManagerStringId.CommandCloseAllButThis" xml:space="preserve">
+    <value>Close All But This</value>
+  </data>
+  <data name="DocumentManagerStringId.CommandFloat" xml:space="preserve">
+    <value>Float</value>
+  </data>
+  <data name="DocumentManagerStringId.CommandFloatAll" xml:space="preserve">
+    <value>Float All</value>
+  </data>
+  <data name="DocumentManagerStringId.CommandNewDocumentGroup" xml:space="preserve">
+    <value>New Tab Group</value>
+  </data>
+  <data name="DocumentManagerStringId.CommandNewHorizontalDocumentGroup" xml:space="preserve">
+    <value>New Horizontal Tab Group</value>
+  </data>
+  <data name="DocumentManagerStringId.CommandNewVerticalDocumentGroup" xml:space="preserve">
+    <value>New Vertical Tab Group</value>
+  </data>
+  <data name="DocumentManagerStringId.CommandMoveToNextDocumentGroup" xml:space="preserve">
+    <value>Move to Next Tab Group</value>
+  </data>
+  <data name="DocumentManagerStringId.CommandMoveToPrevDocumentGroup" xml:space="preserve">
+    <value>Move to Previous Tab Group</value>
+  </data>
+  <data name="DocumentManagerStringId.CommandMoveToMainDocumentGroup" xml:space="preserve">
+    <value>Move to Main Document Group</value>
+  </data>
+  <data name="DocumentManagerStringId.CommandVerticalOrientation" xml:space="preserve">
+    <value>Arrange Tab Groups Vertically</value>
+  </data>
+  <data name="DocumentManagerStringId.CommandHorizontalOrientation" xml:space="preserve">
+    <value>Arrange Tab Groups Horizontally</value>
+  </data>
+  <data name="DocumentManagerStringId.CommandDockAll" xml:space="preserve">
+    <value>Dock All</value>
+  </data>
+  <data name="DocumentManagerStringId.CommandCascade" xml:space="preserve">
+    <value>Cascade Windows</value>
+  </data>
+  <data name="DocumentManagerStringId.CommandTileVertical" xml:space="preserve">
+    <value>Show Windows Side by Side</value>
+  </data>
+  <data name="DocumentManagerStringId.CommandTileHorizontal" xml:space="preserve">
+    <value>Show Windows Stacked</value>
+  </data>
+  <data name="DocumentManagerStringId.CommandArrangeIcons" xml:space="preserve">
+    <value>Arrange Icons</value>
+  </data>
+  <data name="DocumentManagerStringId.CommandDock" xml:space="preserve">
+    <value>Dock as Tabbed Document</value>
+  </data>
+  <data name="DocumentManagerStringId.CommandDockWidget" xml:space="preserve">
+    <value>Dock</value>
+  </data>
+  <data name="DocumentManagerStringId.CommandMinimizeAll" xml:space="preserve">
+    <value>Minimize Windows</value>
+  </data>
+  <data name="DocumentManagerStringId.CommandRestoreAll" xml:space="preserve">
+    <value>Restore Windows</value>
+  </data>
+  <data name="DocumentManagerStringId.CommandMaximize" xml:space="preserve">
+    <value>Maximize</value>
+  </data>
+  <data name="DocumentManagerStringId.CommandRestore" xml:space="preserve">
+    <value>Restore</value>
+  </data>
+  <data name="DocumentManagerStringId.CommandRotate" xml:space="preserve">
+    <value>Rotate</value>
+  </data>
+  <data name="DocumentManagerStringId.CommandFlip" xml:space="preserve">
+    <value>Flip</value>
+  </data>
+  <data name="DocumentManagerStringId.CommandRotateDescription" xml:space="preserve">
+    <value>Rotate layout</value>
+  </data>
+  <data name="DocumentManagerStringId.CommandFlipDescription" xml:space="preserve">
+    <value>Flip documents</value>
+  </data>
+  <data name="DocumentManagerStringId.CommandBack" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="DocumentManagerStringId.CommandHome" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="DocumentManagerStringId.CommandBackDescription" xml:space="preserve">
+    <value>Navigate backwards</value>
+  </data>
+  <data name="DocumentManagerStringId.CommandHomeDescription" xml:space="preserve">
+    <value>Navigate to home screen</value>
+  </data>
+  <data name="DocumentManagerStringId.CommandDetail" xml:space="preserve">
+    <value>Detail</value>
+  </data>
+  <data name="DocumentManagerStringId.CommandDetailDescription" xml:space="preserve">
+    <value>Navigate to this document</value>
+  </data>
+  <data name="DocumentManagerStringId.CommandOverview" xml:space="preserve">
+    <value>Overview</value>
+  </data>
+  <data name="DocumentManagerStringId.CommandExit" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+  <data name="DocumentManagerStringId.CommandExitDescription" xml:space="preserve">
+    <value>Exit application</value>
+  </data>
+  <data name="DocumentManagerStringId.CommandTileLargeSize" xml:space="preserve">
+    <value>Large</value>
+  </data>
+  <data name="DocumentManagerStringId.CommandTileLargeSizeDescription" xml:space="preserve">
+    <value>Change the tile size to large</value>
+  </data>
+  <data name="DocumentManagerStringId.CommandTileSmallSize" xml:space="preserve">
+    <value>Small</value>
+  </data>
+  <data name="DocumentManagerStringId.CommandTileSmallSizeDescription" xml:space="preserve">
+    <value>Change the tile size to small</value>
+  </data>
+  <data name="DocumentManagerStringId.CommandTileWideSize" xml:space="preserve">
+    <value>Wide</value>
+  </data>
+  <data name="DocumentManagerStringId.CommandTileWideSizeDescription" xml:space="preserve">
+    <value>Change the tile size to wide</value>
+  </data>
+  <data name="DocumentManagerStringId.CommandTileMediumSize" xml:space="preserve">
+    <value>Medium</value>
+  </data>
+  <data name="DocumentManagerStringId.CommandTileMediumSizeDescription" xml:space="preserve">
+    <value>Change the tile size to medium</value>
+  </data>
+  <data name="DocumentManagerStringId.CommandTileSizeFlyoutPanel" xml:space="preserve">
+    <value>Tile size</value>
+  </data>
+  <data name="DocumentManagerStringId.CommandTileSizeFlyoutPanelDescription" xml:space="preserve">
+    <value>Change the tile size</value>
+  </data>
+  <data name="DocumentManagerStringId.CommandToggleTileSize" xml:space="preserve">
+    <value>Toggle size</value>
+  </data>
+  <data name="DocumentManagerStringId.CommandToggleTileSizeDescription" xml:space="preserve">
+    <value>Toggle tile size</value>
+  </data>
+  <data name="DocumentManagerStringId.CommandClearSelection" xml:space="preserve">
+    <value>Clear selection</value>
+  </data>
+  <data name="DocumentManagerStringId.CommandClearSelectionDescription" xml:space="preserve">
+    <value>Clear tiles selection</value>
+  </data>
+  <data name="DocumentManagerStringId.CommandOverviewDescription" xml:space="preserve">
+    <value>View documents as list</value>
+  </data>
+  <data name="DocumentManagerStringId.CommandEnableFullScreenMode" xml:space="preserve">
+    <value>Full screen</value>
+  </data>
+  <data name="DocumentManagerStringId.CommandEnableFullScreenModeDescription" xml:space="preserve">
+    <value>Switch to full screen</value>
+  </data>
+  <data name="DocumentManagerStringId.CommandDisableFullScreenMode" xml:space="preserve">
+    <value>Disable full screen</value>
+  </data>
+  <data name="DocumentManagerStringId.CommandDisableFullScreenModeDescription" xml:space="preserve">
+    <value>Switch to normal view</value>
+  </data>
+  <data name="DocumentManagerStringId.CommandOpenedWindowsDialog" xml:space="preserve">
+    <value>Windows...</value>
+  </data>
+  <data name="DocumentManagerStringId.CommandWorkspacesDialog" xml:space="preserve">
+    <value>Workspaces...</value>
+  </data>
+  <data name="DocumentManagerStringId.RemoveWorkspaceItemCaption" xml:space="preserve">
+    <value>Remove Workspace</value>
+  </data>
+  <data name="DocumentManagerStringId.CaptureWorkspaceItemCaption" xml:space="preserve">
+    <value>Capture Workspace</value>
+  </data>
+  <data name="DocumentManagerStringId.LoadWorkspaceItemCaption" xml:space="preserve">
+    <value>Load Workspace...</value>
+  </data>
+  <data name="DocumentManagerStringId.SaveWorkspaceItemCaption" xml:space="preserve">
+    <value>Save Workspace</value>
+  </data>
+  <data name="DocumentManagerStringId.SaveCurrentWorkspaceItemCaption" xml:space="preserve">
+    <value>Save Current Workspace...</value>
+  </data>
+  <data name="DocumentManagerStringId.SaveWorkspaceFormCaption" xml:space="preserve">
+    <value>Save Workspace</value>
+  </data>
+  <data name="DocumentManagerStringId.LoadWorkspaceFormCaption" xml:space="preserve">
+    <value>Load Workspace</value>
+  </data>
+  <data name="DocumentManagerStringId.WorkspaceNameFormErrorMessage" xml:space="preserve">
+    <value>The {0} workspace already exist. Do you want to replace it?</value>
+  </data>
+  <data name="DocumentManagerStringId.WorkspaceNameFormCaption" xml:space="preserve">
+    <value>Replace Workspace</value>
+  </data>
+  <data name="DocumentManagerStringId.WorkspaceNameWarningMessage" xml:space="preserve">
+    <value>Workspace name can't be empty.</value>
+  </data>
+  <data name="DocumentManagerStringId.WorkspaceRemoveWarningMessage" xml:space="preserve">
+    <value>Are you sure you want to remove the {0} workspace?</value>
+  </data>
+  <data name="DocumentManagerStringId.WorkspaceRemoveCaption" xml:space="preserve">
+    <value>Remove Workspace</value>
+  </data>
+  <data name="DocumentManagerStringId.OpenedWindowsDialogNameColumnCaption" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="DocumentManagerStringId.OpenedWindowsDialogPathColumnCaption" xml:space="preserve">
+    <value>Path</value>
+  </data>
+  <data name="DocumentManagerStringId.WorkspacesDialogNameColumnCaption" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="DocumentManagerStringId.WorkspacesDialogPathColumnCaption" xml:space="preserve">
+    <value>Path</value>
+  </data>
+  <data name="DocumentManagerStringId.OpenedWindowsDialogCaption" xml:space="preserve">
+    <value>Windows</value>
+  </data>
+  <data name="DocumentManagerStringId.WorkspacesDialogCaption" xml:space="preserve">
+    <value>Workspaces</value>
+  </data>
+  <data name="DocumentManagerStringId.ActivateDocumentButtonText" xml:space="preserve">
+    <value>Activate Document</value>
+  </data>
+  <data name="DocumentManagerStringId.CloseDocumentButtonText" xml:space="preserve">
+    <value>Close Document</value>
+  </data>
+  <data name="DocumentManagerStringId.CloseAllDocumentsButtonText" xml:space="preserve">
+    <value>Close All Documents</value>
+  </data>
+  <data name="DocumentManagerStringId.CloseDocumentWarningMessage" xml:space="preserve">
+    <value>Are you sure you want to close the {0} document?</value>
+  </data>
+  <data name="DocumentManagerStringId.CloseAllDocumentsWarningMessage" xml:space="preserve">
+    <value>Are you sure you want to close all documents?</value>
+  </data>
+  <data name="DocumentManagerStringId.ApplyWorkspaceButtonText" xml:space="preserve">
+    <value>Apply Workspace</value>
+  </data>
+  <data name="DocumentManagerStringId.RemoveWorkspaceButtonText" xml:space="preserve">
+    <value>Remove Workspace</value>
+  </data>
+  <data name="DocumentManagerStringId.RemoveAllWorkspacesButtonText" xml:space="preserve">
+    <value>Remove All Workspaces</value>
+  </data>
+  <data name="DocumentManagerStringId.LoadWorkspaceButtonText" xml:space="preserve">
+    <value>Load Workspace...</value>
+  </data>
+  <data name="DocumentManagerStringId.SaveWorkspaceButtonText" xml:space="preserve">
+    <value>Save Workspace</value>
+  </data>
+  <data name="DocumentManagerStringId.SaveWorkspaceAsButtonText" xml:space="preserve">
+    <value>Save Workspace As...</value>
+  </data>
+  <data name="DocumentManagerStringId.RemoveAllWorkspacesWarningMessage" xml:space="preserve">
+    <value>Are you sure you want to remove all workspaces?</value>
+  </data>
+  <data name="DocumentManagerStringId.DeferredLoadingExceptionMessage" xml:space="preserve">
+    <value>Deferred content load was not performed. To provide the content, subscribe to the View's QueryControl event.</value>
+  </data>
+  <data name="DocumentManagerStringId.DuplicateDocumentInTileExceptionMessage" xml:space="preserve">
+    <value>You can only have one Tile at a time that relates to each Document through the Document property. If you want to create multiple Tiles that refer to the same Document, place this Document into a Page container and set this container as an ActivationTarget for these Tiles.</value>
+  </data>
+  <data name="DocumentManagerStringId.NonDocumentModeInitializationExceptionMessage" xml:space="preserve">
+    <value>Non-Document mode initialization was not performed. To enable this mode, specify the DocumentManager's ClientControl property.</value>
+  </data>
+  <data name="DocumentManagerStringId.NonDocumentModeInappropriateViewExceptionMessage" xml:space="preserve">
+    <value>This type of View is not intended to be used in Non-Document mode.</value>
+  </data>
+  <data name="DocumentManagerStringId.DocumentModeInappropriateViewExceptionMessage" xml:space="preserve">
+    <value>This type of View is intended to be used in Non-Document mode only.</value>
+  </data>
+  <data name="DocumentManagerStringId.NullParentContainerExceptionMessage" xml:space="preserve">
+    <value>The DocumentManager must have a parent container. Ensure that one of the following properties is set: MdiParent, ClientControl or ContainerControl.</value>
+  </data>
+  <data name="DocumentManagerStringId.NonUniqueNameExceptionMessage" xml:space="preserve">
+    <value>Every View element (a document or a tile) must have a unique name.</value>
+  </data>
+  <data name="DocumentManagerStringId.OverlapAllControlsWarning" xml:space="preserve">
+    <value>The DocumentManager occupies all available space and may overlap other controls. To limit its size, place an XtraUserControl onto the form and assign it to the DocumentManager.ContainerControl property.</value>
+  </data>
+  <data name="DocumentManagerStringId.LoadingIndicatorCaption" xml:space="preserve">
+    <value>Please Wait</value>
+  </data>
+  <data name="DocumentManagerStringId.LoadingIndicatorDescription" xml:space="preserve">
+    <value>Loading...</value>
+  </data>
+  <data name="DocumentManagerStringId.SplashScreenCaption" xml:space="preserve">
+    <value>Loading...</value>
+  </data>
+  <data name="DocumentManagerStringId.CommandResetLayout" xml:space="preserve">
+    <value>Reset Window Layout</value>
+  </data>
+  <data name="DocumentManagerStringId.CommandPinTab" xml:space="preserve">
+    <value>Pin Tab</value>
+  </data>
+  <data name="DocumentManagerStringId.CommandUnpinTab" xml:space="preserve">
+    <value>Unpin Tab</value>
+  </data>
+  <data name="DocumentManagerStringId.CommandCloseAllButPinned" xml:space="preserve">
+    <value>Close All But Pinned</value>
+  </data>
+  <data name="DocumentManagerStringId.NoPreviewAvailableText" xml:space="preserve">
+    <value>No Preview Available</value>
+  </data>
+  <data name="DocumentManagerStringId.TabbedViewLayoutModeChangingDialogCaption" xml:space="preserve">
+    <value>Disable FreeLayoutMode</value>
+  </data>
+  <data name="DocumentManagerStringId.TabbedViewLayoutModeChangingDialogText" xml:space="preserve">
+    <value>Are you sure you want to apply the default Linear Layout mode?</value>
+  </data>
+  <data name="DocumentManagerStringId.InconsistentDocumentHostingExceptionMessage" xml:space="preserve">
+    <value>MdiParent, ClientControl and ContainerControl properties of a child DocumentManager must have same values as related properties of a parent container's Document Manager.</value>
+  </data>
+</root>

@@ -1,0 +1,582 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="DataAccessStringId.DefaultNameDataSource" xml:space="preserve">
+    <value>Fonte de dados</value>
+  </data>
+  <data name="DataAccessStringId.LoadingDataPanelText" xml:space="preserve">
+    <value>Carregando dados...</value>
+  </data>
+  <data name="DataAccessStringId.LoadingDataSourcePanelText" xml:space="preserve">
+    <value>Carregar a fonte de dados</value>
+  </data>
+  <data name="DataAccessStringId.MessageDuplicateItemName" xml:space="preserve">
+    <value>Esta coleção já contém um item com o nome ' {0}'</value>
+  </data>
+  <data name="DataAccessStringId.LoadingDataSourcePanelCounter" xml:space="preserve">
+    <value>{0} de {1}...</value>
+  </data>
+  <data name="DataAccessStringId.ConnectingToDatabaseCaption" xml:space="preserve">
+    <value>Aguarde</value>
+  </data>
+  <data name="DataAccessStringId.ConnectingToDatabaseMessage" xml:space="preserve">
+    <value>Conectando-se ao banco de dados...</value>
+  </data>
+  <data name="DataAccessStringId.MessageDuplicateItem" xml:space="preserve">
+    <value>A coleção já contém o item ' {0} '</value>
+  </data>
+  <data name="DataAccessStringId.EmptyColumnAliasPattern" xml:space="preserve">
+    <value>Coluna {0}</value>
+  </data>
+  <data name="DataAccessStringId.PropertyGridBehaviorCategoryName" xml:space="preserve">
+    <value>Comportamento</value>
+  </data>
+  <data name="DataAccessStringId.PropertyGridDataCategoryName" xml:space="preserve">
+    <value>Dados</value>
+  </data>
+  <data name="DataAccessStringId.MessageNullItem" xml:space="preserve">
+    <value>Não é possível adicionar um valor nulo para a coleção</value>
+  </data>
+  <data name="DataAccessStringId.RelationEditorRelationTypeLeftOuterJoin" xml:space="preserve">
+    <value>Junção externa esquerda</value>
+  </data>
+  <data name="DataAccessStringId.RelationEditorRelationTypeMasterDetail" xml:space="preserve">
+    <value>Relação Mestre-Detalhe</value>
+  </data>
+  <data name="DataAccessStringId.MessageInvalidItemName" xml:space="preserve">
+    <value>Nome do artigo não pode ser nulo ou uma seqüência vazia</value>
+  </data>
+  <data name="DataAccessStringId.MessageWrongCharacterItemName" xml:space="preserve">
+    <value>Nome do item ' {0} ' contém caracteres errados</value>
+  </data>
+  <data name="DataAccessStringId.MessageWrongCharacterParameterName" xml:space="preserve">
+    <value>Nome do parâmetro '{0}' contém caracteres errados</value>
+  </data>
+  <data name="DataAccessStringId.QueryDesignerJoinExpressionPattern" xml:space="preserve">
+    <value>{0} em {1}</value>
+  </data>
+  <data name="DataAccessStringId.RelationEditorRelationTypeInnerJoin" xml:space="preserve">
+    <value>Inner join</value>
+  </data>
+  <data name="DataAccessStringId.QueryPropertyGridCommonCategoryName" xml:space="preserve">
+    <value>Comum</value>
+  </data>
+  <data name="DataAccessStringId.DatabaseConnectionExceptionStringId" xml:space="preserve">
+    <value>Falha ao conectar ao banco de dados. Para saber mais, consulte os detalhes de exceção. 
+
+Detalhes da exceção:
+ {0}</value>
+  </data>
+  <data name="DataAccessStringId.DatabaseConnectionExceptionMessage" xml:space="preserve">
+    <value>Conexão nome: {0}
+Mensagem de erro: {1}</value>
+  </data>
+  <data name="DataAccessStringId.ParameterListEmpty" xml:space="preserve">
+    <value>nenhum</value>
+  </data>
+  <data name="DataAccessStringId.ProviderNotSupportedException" xml:space="preserve">
+    <value>O provedor de banco de dados a seguir não é suportado: {0}.</value>
+  </data>
+  <data name="DataAccessStringId.QueryDesignerJoinExpressionElementSeparator" xml:space="preserve">
+    <value>,</value>
+  </data>
+  <data name="DataAccessStringId.CircularRelationsValidationException" xml:space="preserve">
+    <value>Foram detectadas relações circulares.</value>
+  </data>
+  <data name="DataAccessStringId.ColumnNotInSchemaValidationException" xml:space="preserve">
+    <value>a esquema não contém a seguinte coluna: "{0}". "{1}".</value>
+  </data>
+  <data name="DataAccessStringId.ColumnNullValidationException" xml:space="preserve">
+    <value>Uma coluna não pode ser nula.</value>
+  </data>
+  <data name="DataAccessStringId.ConnectionStringPostfixAppConfig" xml:space="preserve">
+    <value>(em arquivo de configuração)</value>
+  </data>
+  <data name="DataAccessStringId.ConnectionStringPostfixServerExplorer" xml:space="preserve">
+    <value>(a partir do Gerenciador de servidores)</value>
+  </data>
+  <data name="DataAccessStringId.DuplicatingColumnNamesValidationException" xml:space="preserve">
+    <value>Uma coluna com o seguinte nome já existe: "{0}". "{1}".</value>
+  </data>
+  <data name="DataAccessStringId.DuplicatingTableNamesValidationException" xml:space="preserve">
+    <value>Já existe uma tabela com o seguinte nome: "{0}".</value>
+  </data>
+  <data name="DataAccessStringId.GatheringTypesPanelText" xml:space="preserve">
+    <value>Coleta de informações de tipos...</value>
+  </data>
+  <data name="DataAccessStringId.IncompleteRelationValidationException" xml:space="preserve">
+    <value>a relação especificada está incompleta: "{0}".</value>
+  </data>
+  <data name="DataAccessStringId.NoRelationColumnsValidationException" xml:space="preserve">
+    <value>a relação especificada não contém colunas de chave: "{0}".</value>
+  </data>
+  <data name="DataAccessStringId.NoTablesValidationException" xml:space="preserve">
+    <value>a coleção de tabelas não pode ser vazia.</value>
+  </data>
+  <data name="DataAccessStringId.ODSWizardErrorExceptionInCtor" xml:space="preserve">
+    <value>o construtor padrão de uma implementação de ITypedList acionou uma exceção.</value>
+  </data>
+  <data name="DataAccessStringId.ODSWizardErrorExceptionInGetItemProperties" xml:space="preserve">
+    <value>O GetItemPropertiesmétodo de um ITypedList acionou uma exceção.</value>
+  </data>
+  <data name="DataAccessStringId.ODSWizardErrorNoDefaultCtor" xml:space="preserve">
+    <value>Sem construtor padrão não consigo Propriedades de item de IListSource.</value>
+  </data>
+  <data name="DataAccessStringId.ODSWizardErrorStaticValue" xml:space="preserve">
+    <value>o tipo é estático e não tem qualquer Membros retornando IEnumerable.</value>
+  </data>
+  <data name="DataAccessStringId.ParameterlessConstructor" xml:space="preserve">
+    <value>padrão</value>
+  </data>
+  <data name="DataAccessStringId.ParameterListNull" xml:space="preserve">
+    <value>nula</value>
+  </data>
+  <data name="DataAccessStringId.PropertyGridConnectionCategoryName" xml:space="preserve">
+    <value>Conexão</value>
+  </data>
+  <data name="DataAccessStringId.QueryPropertyGridCustomSqlCategoryName" xml:space="preserve">
+    <value>Custom SQL</value>
+  </data>
+  <data name="DataAccessStringId.QueryPropertyGridStoredProcCategoryName" xml:space="preserve">
+    <value>Procedimento armazenado</value>
+  </data>
+  <data name="DataAccessStringId.QueryPropertyGridTableSelectionCategoryName" xml:space="preserve">
+    <value>Tabela de seleção</value>
+  </data>
+  <data name="DataAccessStringId.RebuildResultSchemaWaitFormText" xml:space="preserve">
+    <value>Ao preencher a lista de campos...</value>
+  </data>
+  <data name="DataAccessStringId.RelationColumnNotInSchemaValidationException" xml:space="preserve">
+    <value>a esquema não contém a coluna de relação a seguir: "{0}". "{1}".</value>
+  </data>
+  <data name="DataAccessStringId.RelationColumnNullValidationException" xml:space="preserve">
+    <value>a coluna relação não pode ser nula.</value>
+  </data>
+  <data name="DataAccessStringId.RelationException" xml:space="preserve">
+    <value>Não é possível definir a relação entre as colunas '{0}'.'{1}' do tipo {2} e '{3}'.'{4}' do tipo {5}.</value>
+  </data>
+  <data name="DataAccessStringId.RelationNullValidationException" xml:space="preserve">
+    <value>Uma relação não pode ser nula.</value>
+  </data>
+  <data name="DataAccessStringId.RelationTableNotSelectedValidationException" xml:space="preserve">
+    <value>a tabela de referência não foi seleccionada: "{0}".</value>
+  </data>
+  <data name="DataAccessStringId.SqlStringEmptyValidationException" xml:space="preserve">
+    <value>O SQL string é null ou vazio.</value>
+  </data>
+  <data name="DataAccessStringId.StoredProcNameNullValidationException" xml:space="preserve">
+    <value>o nome de um procedimento armazenado não pode ser nulo.</value>
+  </data>
+  <data name="DataAccessStringId.StoredProcNotInSchemaValidationException" xml:space="preserve">
+    <value>Não pode encontrar o procedimento armazenado especificado: "{0}".</value>
+  </data>
+  <data name="DataAccessStringId.StoredProcParamCountValidationException" xml:space="preserve">
+    <value>Incompatibilidade de contagem de parâmetro: &lt; {0} &gt;, &lt; {1} &gt; é esperado.</value>
+  </data>
+  <data name="DataAccessStringId.StoredProcParamNameValidationException" xml:space="preserve">
+    <value>Incompatibilidade de nome do parâmetro: &lt; {0} &gt;, &lt; {1} &gt; é esperado.</value>
+  </data>
+  <data name="DataAccessStringId.StoredProcParamNullValidationException" xml:space="preserve">
+    <value>Um parâmetro não pode ser nulo.</value>
+  </data>
+  <data name="DataAccessStringId.StoredProcParamTypeValidationException" xml:space="preserve">
+    <value>Incompatibilidade de tipo de parâmetro: &lt; {0} &gt;, &lt; {1} &gt; é esperado.</value>
+  </data>
+  <data name="DataAccessStringId.TableNotInSchemaValidationException" xml:space="preserve">
+    <value>a esquema não contém a tabela especificada: "{0}".</value>
+  </data>
+  <data name="DataAccessStringId.TableNullValidationException" xml:space="preserve">
+    <value>Uma tabela não pode ser nula.</value>
+  </data>
+  <data name="DataAccessStringId.TablesNotRelatedValidationException" xml:space="preserve">
+    <value>As tabelas a seguir não têm relações: "{0}".</value>
+  </data>
+  <data name="DataAccessStringId.UnnamedColumnValidationException" xml:space="preserve">
+    <value>o nome da coluna não for especificado.</value>
+  </data>
+  <data name="DataAccessStringId.UnnamedTableValidationException" xml:space="preserve">
+    <value>o nome da tabela não é especificado.</value>
+  </data>
+  <data name="DataAccessStringId.WizardDataConnectionNameExistsMessage" xml:space="preserve">
+    <value>Uma conexão de dados com o especificado nome já existe. Por favor, especifique um nome de conexão diferente.</value>
+  </data>
+  <data name="DataAccessStringId.WizardEmptyConnectionNameMessage" xml:space="preserve">
+    <value>o nome não pode ser nulo, vazio ou contém apenas espaços em branco.</value>
+  </data>
+  <data name="DataAccessStringId.QueryBuilderCanJoin" xml:space="preserve">
+    <value>Pode juntar-se a {0}</value>
+  </data>
+  <data name="DataAccessStringId.QueryBuilderJoinedOn" xml:space="preserve">
+    <value>Juntou-se em {0}</value>
+  </data>
+  <data name="DataAccessStringId.AggregationWithoutAliasValidationException" xml:space="preserve">
+    <value>Uma coluna agregada deve ter um alias.</value>
+  </data>
+  <data name="DataAccessStringId.FilterByAmbiguousColumnValidationException" xml:space="preserve">
+    <value>O nome da coluna [{0}], que é usado na seqüência de filtro, é ambíguo. Colunas com esse nome existir nas tabelas a seguir: {1}.</value>
+  </data>
+  <data name="DataAccessStringId.GroupByAggregateColumnValidationException" xml:space="preserve">
+    <value>Não pode agrupar por uma coluna agregada: "{0}". " {1}".</value>
+  </data>
+  <data name="DataAccessStringId.PartialAggregationValidationException" xml:space="preserve">
+    <value>Agregação deve ser aplicada para todas as colunas ou para nenhum deles.</value>
+  </data>
+  <data name="DataAccessStringId.QueryBuilderAliasAlreadyExists" xml:space="preserve">
+    <value>o especificado alias já existe.</value>
+  </data>
+  <data name="DataAccessStringId.QueryBuilderJoinEditorMissingData" xml:space="preserve">
+    <value>Nem todas as partes da expressão são especificadas.</value>
+  </data>
+  <data name="DataAccessStringId.QueryBuilderNothingSelected" xml:space="preserve">
+    <value>Nenhuma coluna foi seleccionada. Por favor, selecione pelo menos uma coluna proceder.</value>
+  </data>
+  <data name="DataAccessStringId.SortingBySameColumnTwiceValidationException" xml:space="preserve">
+    <value>A coluna a seguir é usada como critério de classificação, mais uma vez: "{0}". " {1}".</value>
+  </data>
+  <data name="DataAccessStringId.WizardNoEFDataContextsMessage" xml:space="preserve">
+    <value>O conjunto selecionado não contiver contextos de dados do Entity Framework.</value>
+  </data>
+  <data name="DataAccessStringId.WizardCustomConnectionString" xml:space="preserve">
+    <value>Seqüência de conexão personalizada</value>
+  </data>
+  <data name="DataAccessStringId.QueryBuilderNoTablesAndViews" xml:space="preserve">
+    <value>Um banco de dados não contiver tabelas ou exibições e não oferece suporte a edição de SQL. Para ser capaz de executar o construtor de consultas, certifique-se de que seu banco de dados contém pelo menos uma tabela ou oferecer suporte a edição de SQL.</value>
+  </data>
+  <data name="DataAccessStringId.FileNameFilter_CSV" xml:space="preserve">
+    <value>Arquivos CSV</value>
+  </data>
+  <data name="DataAccessStringId.NoColumnsValidationException" xml:space="preserve">
+    <value>Nenhuma das tabelas contém colunas.</value>
+  </data>
+  <data name="DataAccessStringId.ResultRelation_ColumnNotFoundError" xml:space="preserve">
+    <value>Coluna não encontrada: '{0}'.'{1}'.</value>
+  </data>
+  <data name="DataAccessStringId.XmlFileStrategy_FileNameFilter" xml:space="preserve">
+    <value>Arquivos XML</value>
+  </data>
+  <data name="DataAccessStringId.FilterByColumnOfMissingTableValidationException" xml:space="preserve">
+    <value>Não existem tabelas contendo a coluna [{0}], que é usada na seqüência de filtro.</value>
+  </data>
+  <data name="DataAccessStringId.GroupNullValidationException" xml:space="preserve">
+    <value>Um critério de agrupamento não pode ser nulo.</value>
+  </data>
+  <data name="DataAccessStringId.DefaultNameParameter" xml:space="preserve">
+    <value>Parâmetro</value>
+  </data>
+  <data name="DataAccessStringId.SqlExecutionException_WithParameters" xml:space="preserve">
+    <value>com parâmetros:</value>
+  </data>
+  <data name="DataAccessStringId.Type_Char" xml:space="preserve">
+    <value>Char</value>
+  </data>
+  <data name="DataAccessStringId.QueryBuilder_AllTables" xml:space="preserve">
+    <value>(Todas as tabelas)</value>
+  </data>
+  <data name="DataAccessStringId.SortByAggregateColumnValidationException" xml:space="preserve">
+    <value>Não pode classificar por uma coluna agregada: {0}({1}), porque a consulta não é agregada.</value>
+  </data>
+  <data name="DataAccessStringId.SortingNullValidationException" xml:space="preserve">
+    <value>Um critério de classificação não pode ser nulo.</value>
+  </data>
+  <data name="DataAccessStringId.SqlExecutionException" xml:space="preserve">
+    <value>Erro ao tentar executar uma consulta SQL {0} {1}.
+Erro: {2}</value>
+  </data>
+  <data name="DataAccessStringId.Type_Byte" xml:space="preserve">
+    <value>Número não negativo (inteiro de 8 bits)</value>
+  </data>
+  <data name="DataAccessStringId.Type_Object" xml:space="preserve">
+    <value>Objeto</value>
+  </data>
+  <data name="DataAccessStringId.Type_SByte" xml:space="preserve">
+    <value>Número (inteiro de 8 bits)</value>
+  </data>
+  <data name="DataAccessStringId.Type_UInt" xml:space="preserve">
+    <value>Número não negativo (número inteiro de 32 bits)</value>
+  </data>
+  <data name="DataAccessStringId.Type_ULong" xml:space="preserve">
+    <value>Número não negativo (inteiro de 64 bits)</value>
+  </data>
+  <data name="DataAccessStringId.Type_UShort" xml:space="preserve">
+    <value>Número não negativo (inteiro de 16 bits)</value>
+  </data>
+  <data name="DataAccessStringId.QueryBuilder_AllColumns" xml:space="preserve">
+    <value>* (Todas as colunas)</value>
+  </data>
+  <data name="DataAccessStringId.ExpressionNullValidationException" xml:space="preserve">
+    <value>Uma expressão não pode ser nula, ou coluna ou expressão personalizada esperado.</value>
+  </data>
+  <data name="DataAccessStringId.GroupByWithoutAggregateValidationException" xml:space="preserve">
+    <value>Agrupamento requer pelo menos uma coluna agregada.</value>
+  </data>
+  <data name="DataAccessStringId.AggregateQueryInvalidSortingValidationException" xml:space="preserve">
+    <value>Classificação coluna inválido "{0}"." {1}". Resultados de um quadroconsultar contendo funções de agregação só podem ser classificados por colunas usadas como critérios de agrupamento.</value>
+  </data>
+  <data name="DataAccessStringId.ConnectionPropertiesPage_ProviderNotSupported" xml:space="preserve">
+    <value>foram descartados porque o provedor {0} não é suportado. 
+Selecione um dos provedores de dados disponíveis e especificar parâmetros de conexão ou fechar o assistente usando o botão fechar para desfazer esta alteração.</value>
+  </data>
+  <data name="DataAccessStringId.SqlQueryExecutionException" xml:space="preserve">
+    <value>A consulta {0} falhou ao executar.</value>
+  </data>
+  <data name="DataAccessStringId.CustomExpressionWithColumnOfMissingTableValidationException" xml:space="preserve">
+    <value>Não tem mesas contendo a coluna [{0}], que é usada na expressão personalizada.</value>
+  </data>
+  <data name="DataAccessStringId.XmlProviderNotSupportedLabel" xml:space="preserve">
+    <value>Algumas das características da consulta não há suporte para arquivos XML.</value>
+  </data>
+  <data name="DataAccessStringId.PositiveIntegerError" xml:space="preserve">
+    <value>São permitidos somente valores numéricos negativos.</value>
+  </data>
+  <data name="DataAccessStringId.QueriesFailedToExecute_ExceptionMessage" xml:space="preserve">
+    <value>Uma ou mais consultas não conseguiram executar.</value>
+  </data>
+  <data name="DataAccessStringId.QueriesFailedToValidate_ExceptionMessage" xml:space="preserve">
+    <value>Uma ou mais consultas não conseguiram validar.</value>
+  </data>
+  <data name="DataAccessStringId.ConnectionNotSpecified_ExceptionMessage" xml:space="preserve">
+    <value>Nenhuma conexão foi especificada.</value>
+  </data>
+  <data name="DataAccessStringId.InvalidExpressionStringValidationException" xml:space="preserve">
+    <value>Não é possível analisar a seguinte expressão: "{0}".</value>
+  </data>
+  <data name="DataAccessStringId.MessageEmptyQueryName" xml:space="preserve">
+    <value>O nome de consulta não pode ser vazio.</value>
+  </data>
+  <data name="DataAccessStringId.ExpressionEditor_DocumentationCategory_Operators" xml:space="preserve">
+    <value>Operadores</value>
+  </data>
+  <data name="DataAccessStringId.ExpressionEditor_FunctionCategory_Logical" xml:space="preserve">
+    <value>Lógico</value>
+  </data>
+  <data name="DataAccessStringId.ConfigureMultiQueryPage_QueryCategory" xml:space="preserve">
+    <value>Consultas</value>
+  </data>
+  <data name="DataAccessStringId.ConfigureMultiQueryPage_SpCategory" xml:space="preserve">
+    <value>Procedimentos armazenados</value>
+  </data>
+  <data name="DataAccessStringId.ConfigureMultiQueryPage_ValidateRelationError" xml:space="preserve">
+    <value>Uma ou mais relações são inválidas. 
+Para saber mais sobre os detalhes do erro, clique em gerenciar relações.</value>
+  </data>
+  <data name="DataAccessStringId.ExcelWizard_ValueSeparator_Comma" xml:space="preserve">
+    <value>Vírgula</value>
+  </data>
+  <data name="DataAccessStringId.ExcelWizard_ValueSeparator_Semicolon" xml:space="preserve">
+    <value>Ponto e vírgula</value>
+  </data>
+  <data name="DataAccessStringId.ExcelWizard_ValueSeparator_Space" xml:space="preserve">
+    <value>Espaço</value>
+  </data>
+  <data name="DataAccessStringId.UnknownType" xml:space="preserve">
+    <value>Desconhecido</value>
+  </data>
+  <data name="DataAccessStringId.ExcelWizard_ValueSeparator_Tab" xml:space="preserve">
+    <value>Guia</value>
+  </data>
+  <data name="DataAccessStringId.ExpressionEditor_DocumentationCategory_ColumnDescriptionFormat" xml:space="preserve">
+    <value>Tipo: {0}</value>
+  </data>
+  <data name="DataAccessStringId.ExpressionEditor_FunctionCategory_DateTime" xml:space="preserve">
+    <value>DateTime</value>
+  </data>
+  <data name="DataAccessStringId.ExpressionEditor_FunctionCategory_Math" xml:space="preserve">
+    <value>Matemática</value>
+  </data>
+  <data name="DataAccessStringId.ConfigureMultiQueryPage_ViewCategory" xml:space="preserve">
+    <value>Views</value>
+  </data>
+  <data name="DataAccessStringId.ConfigureQueryPage_CustomSqlWillBeLost" xml:space="preserve">
+    <value>Manual de edição de costume SQL não é permitido. A consulta atual é representada por uma seqüência de consulta SQL personalizada, que serão perdida se você prosseguir com a consulta usando a caixa de diálogo Construtor de consultas de edição. 
+
+Você quer descartar o SQL personalizada e prosseguir com o construtor de consultas?</value>
+  </data>
+  <data name="DataAccessStringId.MessageDuplicateQueryName" xml:space="preserve">
+    <value>Uma consulta com o nome especificado já existe: {0}.</value>
+  </data>
+  <data name="DataAccessStringId.FilterByMissingInSchemaColumnValidationException" xml:space="preserve">
+    <value>Coluna [{0}]. [{1}] é usado na seqüência de filtro, mas está faltando no esquema de banco de dados.</value>
+  </data>
+  <data name="DataAccessStringId.HavingWithoutGroupByValidationException" xml:space="preserve">
+    <value>são definidos enquanto dados não são agrupados. Por favor, aplicar agrupamento de dados ou remover critérios de filtragem de grupo na guia da caixa de diálogo Editor de filtro filtro de grupo.</value>
+  </data>
+  <data name="DataAccessStringId.InvalidPortErrorMessage" xml:space="preserve">
+    <value>inválido. Um número da porta deve estar entre 0 e 65535, inclusive.</value>
+  </data>
+  <data name="DataAccessStringId.NegativeTopSkipValidationException" xml:space="preserve">
+    <value>Top e Skip Propriedades devem ser inteiro não-negativo.</value>
+  </data>
+  <data name="DataAccessStringId.SkipWithoutSortingPropertyGridError" xml:space="preserve">
+    <value>SKIP the configuração é definida enquanto registros não são classificados. Por favor, aplicar classificação para ser capaz de ignorar os primeiros registros de N.</value>
+  </data>
+  <data name="DataAccessStringId.SkipWithoutSortingValidationException" xml:space="preserve">
+    <value>SKIP the configuração é definida enquanto registros não são classificados. Dirija-se para ser capaz de ignorar os primeiros N registros ou redefinir a ignorar a configuração na caixa de diálogo Editor de filtro de classificação.</value>
+  </data>
+  <data name="DataAccessStringId.QueryBuilderNoTablesSelected" xml:space="preserve">
+    <value>Nenhuma mesa tiver sido seleccionada. Por favor, selecione pelo menos uma tabela proceder.</value>
+  </data>
+  <data name="DataAccessStringId.QueryDesignerJoinTooltipPattern" xml:space="preserve">
+    <value>[{0}] {1} junção [{2}] na {3}</value>
+  </data>
+  <data name="DataAccessStringId.ConfigureMultiQueryPage_TableCategory" xml:space="preserve">
+    <value>Tabelas</value>
+  </data>
+  <data name="DataAccessStringId.ExpressionEditor_FunctionCategory_Aggregate" xml:space="preserve">
+    <value>Agregado</value>
+  </data>
+  <data name="DataAccessStringId.ExpressionEditor_DocumentationCategory_Constants" xml:space="preserve">
+    <value>Constantes</value>
+  </data>
+  <data name="DataAccessStringId.ExpressionEditor_DocumentationCategory_Functions" xml:space="preserve">
+    <value>Funções</value>
+  </data>
+  <data name="DataAccessStringId.ExpressionEditor_DocumentationCategory_Parameters" xml:space="preserve">
+    <value>Parâmetros</value>
+  </data>
+  <data name="DataAccessStringId.ExpressionEditor_FunctionCategory_Text" xml:space="preserve">
+    <value>String</value>
+  </data>
+  <data name="DataAccessStringId.ExpressionEditor_DocumentationCategory_Columns" xml:space="preserve">
+    <value>Colunas</value>
+  </data>
+  <data name="DataAccessStringId.ExpressionEditor_DocumentationCategory_Custom" xml:space="preserve">
+    <value>Personalizado</value>
+  </data>
+  <data name="DataAccessStringId.CustomExpressionWithMissingParameterValidationException" xml:space="preserve">
+    <value>Parâmetro [{0}] é usado na expressão personalizada, mas está faltando na consulta.</value>
+  </data>
+  <data name="DataAccessStringId.WizardPageChooseJsonSchema_EmptySelection" xml:space="preserve">
+    <value>Selecione pelo menos um campo de dados.</value>
+  </data>
+  <data name="DataAccessStringId.FilterByMissingParameterValidationException" xml:space="preserve">
+    <value>Parâmetro [{0}] é usado na sequência de filtro, mas está faltando na consulta.</value>
+  </data>
+  <data name="DataAccessStringId.ExpressionEditor_Caption" xml:space="preserve">
+    <value>Editor de Expressões</value>
+  </data>
+  <data name="DataAccessStringId.LoadingPanelText" xml:space="preserve">
+    <value>Carregando...</value>
+  </data>
+  <data name="DataAccessStringId.QueryBuilderNoRules" xml:space="preserve">
+    <value>Nenhuma regra foi adicionada. Por favor, adicione pelo menos uma regra para prosseguir.</value>
+  </data>
+  <data name="DataAccessStringId.MongoDB_InvalidCollectionName" xml:space="preserve">
+    <value>Nome de coleção inválido: '{0}'.</value>
+  </data>
+</root>

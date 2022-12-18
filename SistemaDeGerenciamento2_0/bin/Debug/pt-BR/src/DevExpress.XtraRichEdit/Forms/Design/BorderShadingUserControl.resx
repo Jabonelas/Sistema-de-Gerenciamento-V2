@@ -1,0 +1,648 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"></assembly>
+  <data name="labelControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="labelControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>219, 13</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"></assembly>
+  <data name="borderShadingUserControlLayoutControl.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="btnOptions.Location" type="System.Drawing.Point, System.Drawing">
+    <value>113, 238</value>
+  </data>
+  <data name="btnOptions.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btnOptions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btnOptions.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="btnOptions.Text" xml:space="preserve">
+    <value>Options...</value>
+  </data>
+  <data name="btnOptions.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;btnOptions.Name" xml:space="preserve">
+    <value>btnOptions</value>
+  </data>
+  <data name="&gt;&gt;btnOptions.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;btnOptions.Parent" xml:space="preserve">
+    <value>borderShadingUserControlLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;btnOptions.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"></assembly>
+  <data name="columnsPresetControlRightBorder.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="columnsPresetControlRightBorder.Location" type="System.Drawing.Point, System.Drawing">
+    <value>147, 165</value>
+  </data>
+  <data name="columnsPresetControlRightBorder.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>28, 28</value>
+  </data>
+  <data name="columnsPresetControlRightBorder.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 28</value>
+  </data>
+  <data name="columnsPresetControlRightBorder.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;columnsPresetControlRightBorder.Name" xml:space="preserve">
+    <value>columnsPresetControlRightBorder</value>
+  </data>
+  <data name="&gt;&gt;columnsPresetControlRightBorder.Type" xml:space="preserve">
+    <value>DevExpress.XtraRichEdit.Forms.Design.ColumnsPresetControl, DevExpress.XtraRichEdit.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;columnsPresetControlRightBorder.Parent" xml:space="preserve">
+    <value>borderShadingUserControlLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;columnsPresetControlRightBorder.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="columnsPresetControlInsideVBorder.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="columnsPresetControlInsideVBorder.Location" type="System.Drawing.Point, System.Drawing">
+    <value>102, 165</value>
+  </data>
+  <data name="columnsPresetControlInsideVBorder.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>28, 28</value>
+  </data>
+  <data name="columnsPresetControlInsideVBorder.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 28</value>
+  </data>
+  <data name="columnsPresetControlInsideVBorder.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;columnsPresetControlInsideVBorder.Name" xml:space="preserve">
+    <value>columnsPresetControlInsideVBorder</value>
+  </data>
+  <data name="&gt;&gt;columnsPresetControlInsideVBorder.Type" xml:space="preserve">
+    <value>DevExpress.XtraRichEdit.Forms.Design.ColumnsPresetControl, DevExpress.XtraRichEdit.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;columnsPresetControlInsideVBorder.Parent" xml:space="preserve">
+    <value>borderShadingUserControlLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;columnsPresetControlInsideVBorder.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="CBoxApplyTo.EditValue" xml:space="preserve">
+    <value>Table</value>
+  </data>
+  <data name="CBoxApplyTo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 214</value>
+  </data>
+  <data name="CBoxApplyTo.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>177, 20</value>
+  </data>
+  <data name="CBoxApplyTo.Properties.Items" xml:space="preserve">
+    <value>Cell</value>
+  </data>
+  <data name="CBoxApplyTo.Properties.Items1" xml:space="preserve">
+    <value>Table</value>
+  </data>
+  <data name="CBoxApplyTo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>177, 20</value>
+  </data>
+  <data name="CBoxApplyTo.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="CBoxApplyTo.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;CBoxApplyTo.Name" xml:space="preserve">
+    <value>CBoxApplyTo</value>
+  </data>
+  <data name="&gt;&gt;CBoxApplyTo.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ComboBoxEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;CBoxApplyTo.Parent" xml:space="preserve">
+    <value>borderShadingUserControlLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;CBoxApplyTo.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="lblHint.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 29</value>
+  </data>
+  <data name="lblHint.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>214, 26</value>
+  </data>
+  <data name="lblHint.Size" type="System.Drawing.Size, System.Drawing">
+    <value>214, 26</value>
+  </data>
+  <data name="lblHint.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="lblHint.Text" xml:space="preserve">
+    <value>Click on diagram below or use buttons to apply  borders</value>
+  </data>
+  <data name="&gt;&gt;lblHint.Name" xml:space="preserve">
+    <value>lblHint</value>
+  </data>
+  <data name="&gt;&gt;lblHint.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblHint.Parent" xml:space="preserve">
+    <value>borderShadingUserControlLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblHint.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="labelControl3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 197</value>
+  </data>
+  <data name="labelControl3.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>44, 13</value>
+  </data>
+  <data name="labelControl3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 13</value>
+  </data>
+  <data name="labelControl3.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="labelControl3.Text" xml:space="preserve">
+    <value>Apply to:</value>
+  </data>
+  <data name="labelControl3.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;labelControl3.Name" xml:space="preserve">
+    <value>labelControl3</value>
+  </data>
+  <data name="&gt;&gt;labelControl3.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;labelControl3.Parent" xml:space="preserve">
+    <value>borderShadingUserControlLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;labelControl3.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="columnsPresetControlLeftBorder.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="columnsPresetControlLeftBorder.Location" type="System.Drawing.Point, System.Drawing">
+    <value>57, 165</value>
+  </data>
+  <data name="columnsPresetControlLeftBorder.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>28, 28</value>
+  </data>
+  <data name="columnsPresetControlLeftBorder.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 28</value>
+  </data>
+  <data name="columnsPresetControlLeftBorder.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;columnsPresetControlLeftBorder.Name" xml:space="preserve">
+    <value>columnsPresetControlLeftBorder</value>
+  </data>
+  <data name="&gt;&gt;columnsPresetControlLeftBorder.Type" xml:space="preserve">
+    <value>DevExpress.XtraRichEdit.Forms.Design.ColumnsPresetControl, DevExpress.XtraRichEdit.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;columnsPresetControlLeftBorder.Parent" xml:space="preserve">
+    <value>borderShadingUserControlLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;columnsPresetControlLeftBorder.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="columnsPresetControlBottomBorder.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="columnsPresetControlBottomBorder.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 133</value>
+  </data>
+  <data name="columnsPresetControlBottomBorder.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>28, 28</value>
+  </data>
+  <data name="columnsPresetControlBottomBorder.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 28</value>
+  </data>
+  <data name="columnsPresetControlBottomBorder.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;columnsPresetControlBottomBorder.Name" xml:space="preserve">
+    <value>columnsPresetControlBottomBorder</value>
+  </data>
+  <data name="&gt;&gt;columnsPresetControlBottomBorder.Type" xml:space="preserve">
+    <value>DevExpress.XtraRichEdit.Forms.Design.ColumnsPresetControl, DevExpress.XtraRichEdit.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;columnsPresetControlBottomBorder.Parent" xml:space="preserve">
+    <value>borderShadingUserControlLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;columnsPresetControlBottomBorder.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="columnsPresetControlInsideHBorder.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="columnsPresetControlInsideHBorder.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 101</value>
+  </data>
+  <data name="columnsPresetControlInsideHBorder.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>28, 28</value>
+  </data>
+  <data name="columnsPresetControlInsideHBorder.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 28</value>
+  </data>
+  <data name="columnsPresetControlInsideHBorder.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;columnsPresetControlInsideHBorder.Name" xml:space="preserve">
+    <value>columnsPresetControlInsideHBorder</value>
+  </data>
+  <data name="&gt;&gt;columnsPresetControlInsideHBorder.Type" xml:space="preserve">
+    <value>DevExpress.XtraRichEdit.Forms.Design.ColumnsPresetControl, DevExpress.XtraRichEdit.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;columnsPresetControlInsideHBorder.Parent" xml:space="preserve">
+    <value>borderShadingUserControlLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;columnsPresetControlInsideHBorder.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="columnsPresetControlTopBorder.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="columnsPresetControlTopBorder.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 69</value>
+  </data>
+  <data name="columnsPresetControlTopBorder.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>28, 28</value>
+  </data>
+  <data name="columnsPresetControlTopBorder.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 28</value>
+  </data>
+  <data name="columnsPresetControlTopBorder.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;columnsPresetControlTopBorder.Name" xml:space="preserve">
+    <value>columnsPresetControlTopBorder</value>
+  </data>
+  <data name="&gt;&gt;columnsPresetControlTopBorder.Type" xml:space="preserve">
+    <value>DevExpress.XtraRichEdit.Forms.Design.ColumnsPresetControl, DevExpress.XtraRichEdit.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;columnsPresetControlTopBorder.Parent" xml:space="preserve">
+    <value>borderShadingUserControlLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;columnsPresetControlTopBorder.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="previewBSUserControl.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="previewBSUserControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>57, 69</value>
+  </data>
+  <data name="previewBSUserControl.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>91, 91</value>
+  </data>
+  <data name="previewBSUserControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>131, 92</value>
+  </data>
+  <data name="previewBSUserControl.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;previewBSUserControl.Name" xml:space="preserve">
+    <value>previewBSUserControl</value>
+  </data>
+  <data name="&gt;&gt;previewBSUserControl.Type" xml:space="preserve">
+    <value>DevExpress.XtraRichEdit.Forms.Design.PreviewBSUserControl, DevExpress.XtraRichEdit.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;previewBSUserControl.Parent" xml:space="preserve">
+    <value>borderShadingUserControlLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;previewBSUserControl.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="borderShadingUserControlLayoutControl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="borderShadingUserControlLayoutControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="borderShadingUserControlLayoutControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>243, 273</value>
+  </data>
+  <data name="borderShadingUserControlLayoutControl.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="borderShadingUserControlLayoutControl.Text" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;borderShadingUserControlLayoutControl.Name" xml:space="preserve">
+    <value>borderShadingUserControlLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;borderShadingUserControlLayoutControl.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControl, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;borderShadingUserControlLayoutControl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;borderShadingUserControlLayoutControl.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="labelControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="labelControl1.Text" xml:space="preserve">
+    <value>Preview</value>
+  </data>
+  <data name="&gt;&gt;labelControl1.Name" xml:space="preserve">
+    <value>labelControl1</value>
+  </data>
+  <data name="&gt;&gt;labelControl1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;labelControl1.Parent" xml:space="preserve">
+    <value>borderShadingUserControlLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;labelControl1.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="labelControl2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="labelControl2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="labelControl2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>144, 13</value>
+  </data>
+  <data name="labelControl2.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="labelControl2.Text" xml:space="preserve">
+    <value>Click on diagram below or use </value>
+  </data>
+  <data name="labelControl2.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;labelControl2.Name" xml:space="preserve">
+    <value>labelControl2</value>
+  </data>
+  <data name="&gt;&gt;labelControl2.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;labelControl2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;labelControl2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="labelControl4.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="labelControl4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 41</value>
+  </data>
+  <data name="labelControl4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>122, 13</value>
+  </data>
+  <data name="labelControl4.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="labelControl4.Text" xml:space="preserve">
+    <value>buttons to apply  borders</value>
+  </data>
+  <data name="labelControl4.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;labelControl4.Name" xml:space="preserve">
+    <value>labelControl4</value>
+  </data>
+  <data name="&gt;&gt;labelControl4.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;labelControl4.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;labelControl4.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>243, 273</value>
+  </data>
+  <data name="&gt;&gt;Root.Name" xml:space="preserve">
+    <value>Root</value>
+  </data>
+  <data name="&gt;&gt;Root.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;labelControl1LayoutControlItem.Name" xml:space="preserve">
+    <value>labelControl1LayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;labelControl1LayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;btnOptionsLayoutControlItem.Name" xml:space="preserve">
+    <value>btnOptionsLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;btnOptionsLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;CBoxApplyToLayoutControlItem.Name" xml:space="preserve">
+    <value>CBoxApplyToLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;CBoxApplyToLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;labelControl3LayoutControlItem.Name" xml:space="preserve">
+    <value>labelControl3LayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;labelControl3LayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblHintLayoutControlItem.Name" xml:space="preserve">
+    <value>lblHintLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;lblHintLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;columnsPresetControlRightBorderLayoutControlItem.Name" xml:space="preserve">
+    <value>columnsPresetControlRightBorderLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;columnsPresetControlRightBorderLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;columnsPresetControlInsideVBorderLayoutControlItem.Name" xml:space="preserve">
+    <value>columnsPresetControlInsideVBorderLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;columnsPresetControlInsideVBorderLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;columnsPresetControlLeftBorderLayoutControlItem.Name" xml:space="preserve">
+    <value>columnsPresetControlLeftBorderLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;columnsPresetControlLeftBorderLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;columnsPresetControlBottomBorderLayoutControlItem.Name" xml:space="preserve">
+    <value>columnsPresetControlBottomBorderLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;columnsPresetControlBottomBorderLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;columnsPresetControlInsideHBorderLayoutControlItem.Name" xml:space="preserve">
+    <value>columnsPresetControlInsideHBorderLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;columnsPresetControlInsideHBorderLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;columnsPresetControlTopBorderLayoutControlItem.Name" xml:space="preserve">
+    <value>columnsPresetControlTopBorderLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;columnsPresetControlTopBorderLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;previewBSUserControlLayoutControlItem.Name" xml:space="preserve">
+    <value>previewBSUserControlLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;previewBSUserControlLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>BorderShadingUserControl</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.XtraUserControl, DevExpress.Utils.v21.2, Culture=neutral</value>
+  </data>
+</root>

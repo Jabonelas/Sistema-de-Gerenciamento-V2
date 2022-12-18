@@ -26,6 +26,7 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private void btnNovoProduto_Click(object sender, EventArgs e)
         {
+
             frmCadastroProduto frmCadastroProduto = new frmCadastroProduto();
             frmCadastroProduto.ShowDialog();
         }

@@ -1,0 +1,516 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="DockingStringId.MenuItemShowCaption" xml:space="preserve">
+    <value>Show caption</value>
+  </data>
+  <data name="DockingStringId.MenuItemShowControl" xml:space="preserve">
+    <value>Show control</value>
+  </data>
+  <data name="DockingStringId.MenuItemCaptionImageLocation" xml:space="preserve">
+    <value>Caption image location</value>
+  </data>
+  <data name="DockingStringId.MenuItemBeforeText" xml:space="preserve">
+    <value>Before text</value>
+  </data>
+  <data name="DockingStringId.MenuItemAfterText" xml:space="preserve">
+    <value>After text</value>
+  </data>
+  <data name="DockingStringId.MenuItemCaptionLocation" xml:space="preserve">
+    <value>Caption location</value>
+  </data>
+  <data name="DockingStringId.MenuItemLeft" xml:space="preserve">
+    <value>Left</value>
+  </data>
+  <data name="DockingStringId.MenuItemRight" xml:space="preserve">
+    <value>Right</value>
+  </data>
+  <data name="DockingStringId.MenuItemTop" xml:space="preserve">
+    <value>Top</value>
+  </data>
+  <data name="DockingStringId.MenuItemBottom" xml:space="preserve">
+    <value>Bottom</value>
+  </data>
+  <data name="DockingStringId.MenuItemHideCustomizationWindow" xml:space="preserve">
+    <value>Hide customization window</value>
+  </data>
+  <data name="DockingStringId.MenuItemShowCustomizationWindow" xml:space="preserve">
+    <value>Show customization window</value>
+  </data>
+  <data name="DockingStringId.MenuItemBeginCustomization" xml:space="preserve">
+    <value>Begin customization</value>
+  </data>
+  <data name="DockingStringId.MenuItemEndCustomization" xml:space="preserve">
+    <value>End customization</value>
+  </data>
+  <data name="DockingStringId.MenuItemDock" xml:space="preserve">
+    <value>Dock</value>
+  </data>
+  <data name="DockingStringId.MenuItemFloat" xml:space="preserve">
+    <value>Float</value>
+  </data>
+  <data name="DockingStringId.MenuItemAutoHide" xml:space="preserve">
+    <value>Auto Hide</value>
+  </data>
+  <data name="DockingStringId.MenuItemHide" xml:space="preserve">
+    <value>Hide</value>
+  </data>
+  <data name="DockingStringId.MenuItemClosedPanels" xml:space="preserve">
+    <value>Closed panels</value>
+  </data>
+  <data name="DockingStringId.MenuItemExpandGroup" xml:space="preserve">
+    <value>Expand</value>
+  </data>
+  <data name="DockingStringId.MenuItemHideItem" xml:space="preserve">
+    <value>Hide item</value>
+  </data>
+  <data name="DockingStringId.MenuItemRestoreItem" xml:space="preserve">
+    <value>Restore item</value>
+  </data>
+  <data name="DockingStringId.TitleCustomizationForm" xml:space="preserve">
+    <value>Customization</value>
+  </data>
+  <data name="DockingStringId.TitleHiddenItemsList" xml:space="preserve">
+    <value>Hidden Items</value>
+  </data>
+  <data name="DockingStringId.TitleLayoutTreeView" xml:space="preserve">
+    <value>Layout Tree</value>
+  </data>
+  <data name="DockingStringId.ButtonSave" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="DockingStringId.ButtonRestore" xml:space="preserve">
+    <value>Restore</value>
+  </data>
+  <data name="DockingStringId.LayoutPanelCaptionFormat" xml:space="preserve">
+    <value>{0}</value>
+  </data>
+  <data name="DockingStringId.LayoutGroupCaptionFormat" xml:space="preserve">
+    <value>{0}</value>
+  </data>
+  <data name="DockingStringId.LayoutControlItemCaptionFormat" xml:space="preserve">
+    <value>{0}:</value>
+  </data>
+  <data name="DockingStringId.MenuItemGroupItems" xml:space="preserve">
+    <value>Group</value>
+  </data>
+  <data name="DockingStringId.MenuItemGroupOrientation" xml:space="preserve">
+    <value>Group orientation</value>
+  </data>
+  <data name="DockingStringId.MenuItemHorizontal" xml:space="preserve">
+    <value>Horizontal</value>
+  </data>
+  <data name="DockingStringId.MenuItemRename" xml:space="preserve">
+    <value>Rename</value>
+  </data>
+  <data name="DockingStringId.MenuItemVertical" xml:space="preserve">
+    <value>Vertical</value>
+  </data>
+  <data name="DockingStringId.MenuItemShowCaptionImage" xml:space="preserve">
+    <value>Show caption image</value>
+  </data>
+  <data name="DockingStringId.MenuItemStyle" xml:space="preserve">
+    <value>Group style</value>
+  </data>
+  <data name="DockingStringId.MenuItemStyleGroup" xml:space="preserve">
+    <value>Group</value>
+  </data>
+  <data name="DockingStringId.MenuItemStyleGroupBox" xml:space="preserve">
+    <value>GroupBox</value>
+  </data>
+  <data name="DockingStringId.MenuItemStyleNoBorder" xml:space="preserve">
+    <value>No border</value>
+  </data>
+  <data name="DockingStringId.MenuItemStyleTabbed" xml:space="preserve">
+    <value>Tabbed</value>
+  </data>
+  <data name="DockingStringId.MenuItemUngroup" xml:space="preserve">
+    <value>Ungroup</value>
+  </data>
+  <data name="DockingStringId.DefaultLabelContent" xml:space="preserve">
+    <value>Label</value>
+  </data>
+  <data name="DockingStringId.MenuItemHorizontalAlignment" xml:space="preserve">
+    <value>Horizontal alignment</value>
+  </data>
+  <data name="DockingStringId.MenuItemHorizontalAlignmentCenter" xml:space="preserve">
+    <value>Center</value>
+  </data>
+  <data name="DockingStringId.MenuItemHorizontalAlignmentLeft" xml:space="preserve">
+    <value>Left</value>
+  </data>
+  <data name="DockingStringId.MenuItemHorizontalAlignmentRight" xml:space="preserve">
+    <value>Right</value>
+  </data>
+  <data name="DockingStringId.MenuItemHorizontalAlignmentStretch" xml:space="preserve">
+    <value>Stretch</value>
+  </data>
+  <data name="DockingStringId.MenuItemVerticalAlignment" xml:space="preserve">
+    <value>Vertical alignment</value>
+  </data>
+  <data name="DockingStringId.MenuItemVerticalAlignmentBottom" xml:space="preserve">
+    <value>Bottom</value>
+  </data>
+  <data name="DockingStringId.MenuItemVerticalAlignmentCenter" xml:space="preserve">
+    <value>Center</value>
+  </data>
+  <data name="DockingStringId.MenuItemVerticalAlignmentStretch" xml:space="preserve">
+    <value>Stretch</value>
+  </data>
+  <data name="DockingStringId.MenuItemVerticalAlignmentTop" xml:space="preserve">
+    <value>Top</value>
+  </data>
+  <data name="DockingStringId.CheckBoxShowInvisibleItems" xml:space="preserve">
+    <value>Show invisible items</value>
+  </data>
+  <data name="DockingStringId.ControlButtonAutoHide" xml:space="preserve">
+    <value>Auto Hide</value>
+  </data>
+  <data name="DockingStringId.ControlButtonClose" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="DockingStringId.ControlButtonMaximize" xml:space="preserve">
+    <value>Maximize</value>
+  </data>
+  <data name="DockingStringId.ControlButtonMinimize" xml:space="preserve">
+    <value>Minimize</value>
+  </data>
+  <data name="DockingStringId.ControlButtonRestore" xml:space="preserve">
+    <value>Restore</value>
+  </data>
+  <data name="DockingStringId.ControlButtonScrollNext" xml:space="preserve">
+    <value>Scroll next</value>
+  </data>
+  <data name="DockingStringId.ControlButtonScrollPrev" xml:space="preserve">
+    <value>Scroll previous</value>
+  </data>
+  <data name="DockingStringId.MenuItemNewHorizontalTabGroup" xml:space="preserve">
+    <value>New horizontal tab group</value>
+  </data>
+  <data name="DockingStringId.MenuItemNewVerticalTabGroup" xml:space="preserve">
+    <value>New vertical tab group</value>
+  </data>
+  <data name="DockingStringId.DocumentSelectorPanels" xml:space="preserve">
+    <value>Active Panels</value>
+  </data>
+  <data name="DockingStringId.DocumentSelectorDocuments" xml:space="preserve">
+    <value>Active Documents</value>
+  </data>
+  <data name="DockingStringId.MenuItemMoveToNextTabGroup" xml:space="preserve">
+    <value>Move to next tab group</value>
+  </data>
+  <data name="DockingStringId.MenuItemMoveToPreviousTabGroup" xml:space="preserve">
+    <value>Move to previous tab group</value>
+  </data>
+  <data name="DockingStringId.NewGroupCaption" xml:space="preserve">
+    <value>Group</value>
+  </data>
+  <data name="DockingStringId.DefaultEmptySpaceContent" xml:space="preserve">
+    <value>Empty Space Item</value>
+  </data>
+  <data name="DockingStringId.DefaultSeparatorContent" xml:space="preserve">
+    <value>Separator</value>
+  </data>
+  <data name="DockingStringId.ReplaceDialogText" xml:space="preserve">
+    <value>Choose an action:</value>
+  </data>
+  <data name="DockingStringId.MenuItemAddDocument" xml:space="preserve">
+    <value>Add Document</value>
+  </data>
+  <data name="DockingStringId.MenuItemAddPanel" xml:space="preserve">
+    <value>Add Panel</value>
+  </data>
+  <data name="DockingStringId.MenuItemCaptionHorizontalAlignment" xml:space="preserve">
+    <value>Caption Horizontal Alignment</value>
+  </data>
+  <data name="DockingStringId.MenuItemCaptionVerticalAlignment" xml:space="preserve">
+    <value>Caption Vertical Alignment</value>
+  </data>
+  <data name="DockingStringId.MenuItemControlHorizontalAlignment" xml:space="preserve">
+    <value>Control Horizontal Alignment</value>
+  </data>
+  <data name="DockingStringId.MenuItemControlVerticalAlignment" xml:space="preserve">
+    <value>Control Vertical Alignment</value>
+  </data>
+  <data name="DockingStringId.MenuItemCreateDefaultLayout" xml:space="preserve">
+    <value>Create Default Layout</value>
+  </data>
+  <data name="DockingStringId.MenuItemHideDocument" xml:space="preserve">
+    <value>Close Document</value>
+  </data>
+  <data name="DockingStringId.MenuItemHidePanel" xml:space="preserve">
+    <value>Close Panel</value>
+  </data>
+  <data name="DockingStringId.MenuItemRemoveDocument" xml:space="preserve">
+    <value>Remove Document</value>
+  </data>
+  <data name="DockingStringId.MenuItemRemovePanel" xml:space="preserve">
+    <value>Remove Panel</value>
+  </data>
+  <data name="DockingStringId.MenuItemResetLayout" xml:space="preserve">
+    <value>Reset Layout</value>
+  </data>
+  <data name="DockingStringId.MenuItemContentHorizontalAlignment" xml:space="preserve">
+    <value>Content Horizontal Alignment</value>
+  </data>
+  <data name="DockingStringId.MenuItemContentVerticalAlignment" xml:space="preserve">
+    <value>Content Vertical Alignment</value>
+  </data>
+  <data name="DockingStringId.MenuItemRemoveItem" xml:space="preserve">
+    <value>Remove Item</value>
+  </data>
+  <data name="DockingStringId.MenuItemRemoveAll" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="DockingStringId.MenuItemDTCaptionLocation" xml:space="preserve">
+    <value>Caption Location</value>
+  </data>
+  <data name="DockingStringId.MenuItemDTGroupStyle" xml:space="preserve">
+    <value>Group Style</value>
+  </data>
+  <data name="DockingStringId.MenuItemDTGroupOrientation" xml:space="preserve">
+    <value>Group Orientation</value>
+  </data>
+  <data name="DockingStringId.NoItemSelected" xml:space="preserve">
+    <value>(No item selected)</value>
+  </data>
+  <data name="DockingStringId.ShowCustomizationPanel" xml:space="preserve">
+    <value>Show Customization Panel</value>
+  </data>
+  <data name="DockingStringId.ToolTipChangeItemType" xml:space="preserve">
+    <value>Click here to change item type</value>
+  </data>
+  <data name="DockingStringId.ToolTipCreateItem" xml:space="preserve">
+    <value>Click here to create new item</value>
+  </data>
+  <data name="DockingStringId.ToolTipDeleteItem" xml:space="preserve">
+    <value>Click here to delete selected item</value>
+  </data>
+  <data name="DockingStringId.ToolTipEditCaption" xml:space="preserve">
+    <value>Click here to edit item's caption</value>
+  </data>
+  <data name="DockingStringId.AutoHideOperations" xml:space="preserve">
+    <value>Auto-hide operations</value>
+  </data>
+  <data name="DockingStringId.ButtonCreateLayoutItem" xml:space="preserve">
+    <value>Append the control to the panel</value>
+  </data>
+  <data name="DockingStringId.ButtonDoNothing" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="DockingStringId.ButtonReplaceControl" xml:space="preserve">
+    <value>Replace the existing control</value>
+  </data>
+  <data name="DockingStringId.CheckBoxAskNextTime" xml:space="preserve">
+    <value>Ask next time</value>
+  </data>
+  <data name="DockingStringId.CloseOperations" xml:space="preserve">
+    <value>Close operations</value>
+  </data>
+  <data name="DockingStringId.DockingOperations" xml:space="preserve">
+    <value>Docking operations</value>
+  </data>
+  <data name="DockingStringId.FloatingOperations" xml:space="preserve">
+    <value>Floating operations</value>
+  </data>
+  <data name="DockingStringId.LoadLayoutOperation" xml:space="preserve">
+    <value>Load layout</value>
+  </data>
+  <data name="DockingStringId.MenuItemResetCustomization" xml:space="preserve">
+    <value>Reset Customization Settings</value>
+  </data>
+  <data name="DockingStringId.ResetLayoutOperation" xml:space="preserve">
+    <value>Reset layout</value>
+  </data>
+  <data name="DockingStringId.ReplaceDialogTitle" xml:space="preserve">
+    <value>Add new control</value>
+  </data>
+  <data name="DockingStringId.ButtonNewLayoutItemFormat" xml:space="preserve">
+    <value>New ({0})</value>
+  </data>
+  <data name="DockingStringId.ButtonCreateLayoutItemDetails" xml:space="preserve">
+    <value>Choosing the option creates a new LayoutGroup and assigns it to the panel's Content. The new and existing controls will be moved to the created LayoutGroup.</value>
+  </data>
+  <data name="DockingStringId.ButtonDoNothingDetails" xml:space="preserve">
+    <value>Do not add the control to the panel</value>
+  </data>
+  <data name="DockingStringId.ButtonReplaceControlDetails" xml:space="preserve">
+    <value>Choose this option to replace the existing control with the new one.</value>
+  </data>
+  <data name="DockingStringId.DefaultSplitterContent" xml:space="preserve">
+    <value>Splitter</value>
+  </data>
+  <data name="DockingStringId.DTEmptyPanelText" xml:space="preserve">
+    <value>Drag and drop controls here to build your layout.</value>
+  </data>
+  <data name="DockingStringId.DTEmptyGroupText" xml:space="preserve">
+    <value>Right-click here to create panels via a context menu.</value>
+  </data>
+  <data name="DockingStringId.DTLoadLayoutWarning" xml:space="preserve">
+    <value>The current layout will be cleared. Do you want to continue?</value>
+  </data>
+  <data name="DockingStringId.DTLoadLayoutWarningCaption" xml:space="preserve">
+    <value>Loading Layout</value>
+  </data>
+  <data name="DockingStringId.TabCaptionFormat" xml:space="preserve">
+    <value>{0}</value>
+  </data>
+  <data name="DockingStringId.WindowTitleFormat" xml:space="preserve">
+    <value>{0} - [{1}]</value>
+  </data>
+  <data name="DockingStringId.DTDocumentPanelCaption" xml:space="preserve">
+    <value>Document</value>
+  </data>
+  <data name="DockingStringId.DTLayoutControlItemCaption" xml:space="preserve">
+    <value>Layout Item</value>
+  </data>
+  <data name="DockingStringId.DTLayoutPanelCaption" xml:space="preserve">
+    <value>Panel</value>
+  </data>
+  <data name="DockingStringId.MenuItemCloseAllButThis" xml:space="preserve">
+    <value>Close all but this</value>
+  </data>
+  <data name="DockingStringId.MenuItemMDIStyle" xml:space="preserve">
+    <value>MDI Style</value>
+  </data>
+  <data name="DockingStringId.MenuItemClose" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="DockingStringId.ClosedPanelsCategory" xml:space="preserve">
+    <value>Closed Panels</value>
+  </data>
+  <data name="DockingStringId.MenuItemCollapseGroup" xml:space="preserve">
+    <value>Collapse</value>
+  </data>
+  <data name="DockingStringId.ControlButtonCollapse" xml:space="preserve">
+    <value>Collapse</value>
+  </data>
+  <data name="DockingStringId.ControlButtonExpand" xml:space="preserve">
+    <value>Expand</value>
+  </data>
+  <data name="DockingStringId.ControlButtonHide" xml:space="preserve">
+    <value>Hide</value>
+  </data>
+  <data name="DockingStringId.ControlButtonTogglePinStatus" xml:space="preserve">
+    <value>Toggle pin status</value>
+  </data>
+  <data name="DockingStringId.MenuItemPinTab" xml:space="preserve">
+    <value>Pin Tab</value>
+  </data>
+</root>

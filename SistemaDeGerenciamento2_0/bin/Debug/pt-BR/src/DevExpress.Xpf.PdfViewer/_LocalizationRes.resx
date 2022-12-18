@@ -1,0 +1,555 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="PdfViewerStringId.BarCaption" xml:space="preserve">
+    <value>PDF Viewer</value>
+  </data>
+  <data name="PdfViewerStringId.BarFormDataCaption" xml:space="preserve">
+    <value>Form Data</value>
+  </data>
+  <data name="PdfViewerStringId.CancelButtonCaption" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="PdfViewerStringId.CommandClockwiseRotateCaption" xml:space="preserve">
+    <value>Clockwise rotate</value>
+  </data>
+  <data name="PdfViewerStringId.CommandCloseFileCaption" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="PdfViewerStringId.CommandCloseFileDescription" xml:space="preserve">
+    <value>Close a PDF file.</value>
+  </data>
+  <data name="PdfViewerStringId.CommandCopyCaption" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="PdfViewerStringId.CommandCounterclockwiseRotateCaption" xml:space="preserve">
+    <value>Counterclockwise rotate</value>
+  </data>
+  <data name="PdfViewerStringId.CommandCursorModeHandToolCaption" xml:space="preserve">
+    <value>Hand tool</value>
+  </data>
+  <data name="PdfViewerStringId.CommandCursorModeMarqueeZoomCaption" xml:space="preserve">
+    <value>Marquee zoom</value>
+  </data>
+  <data name="PdfViewerStringId.CommandCursorModeSelectToolCaption" xml:space="preserve">
+    <value>Select tool</value>
+  </data>
+  <data name="PdfViewerStringId.CommandExportCaption" xml:space="preserve">
+    <value>Export</value>
+  </data>
+  <data name="PdfViewerStringId.CommandExportDescription" xml:space="preserve">
+    <value>Export form data to the file.</value>
+  </data>
+  <data name="PdfViewerStringId.CommandImportCaption" xml:space="preserve">
+    <value>Import</value>
+  </data>
+  <data name="PdfViewerStringId.CommandImportDescription" xml:space="preserve">
+    <value>Import form data from the file.</value>
+  </data>
+  <data name="PdfViewerStringId.CommandNextPageCaption" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="PdfViewerStringId.CommandNextPageDescription" xml:space="preserve">
+    <value>Show next page.</value>
+  </data>
+  <data name="PdfViewerStringId.CommandNextViewCaption" xml:space="preserve">
+    <value>Next view</value>
+  </data>
+  <data name="PdfViewerStringId.CommandOneColumnView" xml:space="preserve">
+    <value>Enable Scrolling</value>
+  </data>
+  <data name="PdfViewerStringId.CommandOpenFileCaption" xml:space="preserve">
+    <value>Open</value>
+  </data>
+  <data name="PdfViewerStringId.CommandOpenFileDescription" xml:space="preserve">
+    <value>Open a PDF file.</value>
+  </data>
+  <data name="PdfViewerStringId.CommandOpenFileFromWebCaption" xml:space="preserve">
+    <value>Open from web</value>
+  </data>
+  <data name="PdfViewerStringId.CommandOpenFileFromWebDescription" xml:space="preserve">
+    <value>Open a PDF file from web.</value>
+  </data>
+  <data name="PdfViewerStringId.CommandPageLayoutCaption" xml:space="preserve">
+    <value>Page Display</value>
+  </data>
+  <data name="PdfViewerStringId.CommandPageLayoutDescription" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="PdfViewerStringId.CommandPreviousPageCaption" xml:space="preserve">
+    <value>Previous</value>
+  </data>
+  <data name="PdfViewerStringId.CommandPreviousPageDescription" xml:space="preserve">
+    <value>Show previous page.</value>
+  </data>
+  <data name="PdfViewerStringId.CommandPreviousViewCaption" xml:space="preserve">
+    <value>Previous view</value>
+  </data>
+  <data name="PdfViewerStringId.CommandPrintFileCaption" xml:space="preserve">
+    <value>Print</value>
+  </data>
+  <data name="PdfViewerStringId.CommandPrintFileDescription" xml:space="preserve">
+    <value>Print file.</value>
+  </data>
+  <data name="PdfViewerStringId.CommandSaveAsCaption" xml:space="preserve">
+    <value>Save As</value>
+  </data>
+  <data name="PdfViewerStringId.CommandSelectAllCaption" xml:space="preserve">
+    <value>Select All</value>
+  </data>
+  <data name="PdfViewerStringId.CommandSetActualSizeZoomModeCaption" xml:space="preserve">
+    <value>Actual Size</value>
+  </data>
+  <data name="PdfViewerStringId.CommandSetFitVisibleZoomModeCaption" xml:space="preserve">
+    <value>Fit Visible</value>
+  </data>
+  <data name="PdfViewerStringId.CommandSetFitWidthZoomModeCaption" xml:space="preserve">
+    <value>Fit Width</value>
+  </data>
+  <data name="PdfViewerStringId.CommandSetPageLevelZoomModeCaption" xml:space="preserve">
+    <value>Zoom to Page Level</value>
+  </data>
+  <data name="PdfViewerStringId.CommandShowCoverPage" xml:space="preserve">
+    <value>Show Cover Page</value>
+  </data>
+  <data name="PdfViewerStringId.CommandShowDocumentProperties" xml:space="preserve">
+    <value>Document properties...</value>
+  </data>
+  <data name="PdfViewerStringId.CommandSinglePageView" xml:space="preserve">
+    <value>Single Page View</value>
+  </data>
+  <data name="PdfViewerStringId.CommandTwoColumnView" xml:space="preserve">
+    <value>Two Page Scrolling</value>
+  </data>
+  <data name="PdfViewerStringId.CommandTwoPageView" xml:space="preserve">
+    <value>Two Page View</value>
+  </data>
+  <data name="PdfViewerStringId.CommandViewCursorModeListGroupCaption" xml:space="preserve">
+    <value>Cursor mode</value>
+  </data>
+  <data name="PdfViewerStringId.CommandViewExactZoomListCaption" xml:space="preserve">
+    <value>Zoom</value>
+  </data>
+  <data name="PdfViewerStringId.CommandViewExactZoomListDescription" xml:space="preserve">
+    <value>Change the zoom level of the PDF document.</value>
+  </data>
+  <data name="PdfViewerStringId.CommandZoom100Caption" xml:space="preserve">
+    <value>100%</value>
+  </data>
+  <data name="PdfViewerStringId.CommandZoom10Caption" xml:space="preserve">
+    <value>10%</value>
+  </data>
+  <data name="PdfViewerStringId.CommandZoom125Caption" xml:space="preserve">
+    <value>125%</value>
+  </data>
+  <data name="PdfViewerStringId.CommandZoom150Caption" xml:space="preserve">
+    <value>150%</value>
+  </data>
+  <data name="PdfViewerStringId.CommandZoom200Caption" xml:space="preserve">
+    <value>200%</value>
+  </data>
+  <data name="PdfViewerStringId.CommandZoom25Caption" xml:space="preserve">
+    <value>25%</value>
+  </data>
+  <data name="PdfViewerStringId.CommandZoom400Caption" xml:space="preserve">
+    <value>400%</value>
+  </data>
+  <data name="PdfViewerStringId.CommandZoom500Caption" xml:space="preserve">
+    <value>500%</value>
+  </data>
+  <data name="PdfViewerStringId.CommandZoom50Caption" xml:space="preserve">
+    <value>50%</value>
+  </data>
+  <data name="PdfViewerStringId.CommandZoom75Caption" xml:space="preserve">
+    <value>75%</value>
+  </data>
+  <data name="PdfViewerStringId.CommandZoomInCaption" xml:space="preserve">
+    <value>Zoom In</value>
+  </data>
+  <data name="PdfViewerStringId.CommandZoomInDescription" xml:space="preserve">
+    <value>Zoom in to get a close-up view of the PDF document.</value>
+  </data>
+  <data name="PdfViewerStringId.CommandZoomInShortcutCaption" xml:space="preserve">
+    <value> (Ctrl + Plus)</value>
+  </data>
+  <data name="PdfViewerStringId.CommandZoomOutCaption" xml:space="preserve">
+    <value>Zoom Out</value>
+  </data>
+  <data name="PdfViewerStringId.CommandZoomOutDescription" xml:space="preserve">
+    <value>Zoom out to see more of the page at a reduces size.</value>
+  </data>
+  <data name="PdfViewerStringId.CommandZoomOutShortcutCaption" xml:space="preserve">
+    <value> (Ctrl + Minus)</value>
+  </data>
+  <data name="PdfViewerStringId.FileRibbonGroupCaption" xml:space="preserve">
+    <value>File</value>
+  </data>
+  <data name="PdfViewerStringId.FileSize" xml:space="preserve">
+    <value>{0:0.00} {1} ({2} Bytes)</value>
+  </data>
+  <data name="PdfViewerStringId.FileSizeInBytes" xml:space="preserve">
+    <value>{0} Bytes</value>
+  </data>
+  <data name="PdfViewerStringId.FormDataFileFilter" xml:space="preserve">
+    <value>FDF Files (.fdf)|*.fdf|XML Files (.xml)|*.xml</value>
+  </data>
+  <data name="PdfViewerStringId.FormDataRibbonGroupCaption" xml:space="preserve">
+    <value>Form Data</value>
+  </data>
+  <data name="PdfViewerStringId.LoadingDocumentCaption" xml:space="preserve">
+    <value>Loading... Please wait.</value>
+  </data>
+  <data name="PdfViewerStringId.MessageAddCommandConstructorError" xml:space="preserve">
+    <value>Cannot find a constructor with a PdfViewer type parameter in the {0} class</value>
+  </data>
+  <data name="PdfViewerStringId.MessageCantLoadDocument" xml:space="preserve">
+    <value>There was an error loading a document.</value>
+  </data>
+  <data name="PdfViewerStringId.MessageDocumentHasNoPages" xml:space="preserve">
+    <value>The document does not contain any pages.</value>
+  </data>
+  <data name="PdfViewerStringId.MessageDocumentIsProtected" xml:space="preserve">
+    <value>{0} is protected</value>
+  </data>
+  <data name="PdfViewerStringId.MessageEnterPasswordLabel" xml:space="preserve">
+    <value>Please enter a Document Open password</value>
+  </data>
+  <data name="PdfViewerStringId.MessageEnterUrlLabel" xml:space="preserve">
+    <value>Please enter a Document url address</value>
+  </data>
+  <data name="PdfViewerStringId.MessageErrorCaption" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="PdfViewerStringId.MessageErrorCurrentPageNumberOutOfRange" xml:space="preserve">
+    <value>The current page number value should be greater than 0.</value>
+  </data>
+  <data name="PdfViewerStringId.MessageErrorZoomFactorOutOfRange" xml:space="preserve">
+    <value>The zoom factor should be greater than or equal to {0} and less than or equal to {1}.</value>
+  </data>
+  <data name="PdfViewerStringId.MessageExportError" xml:space="preserve">
+    <value>An error occurred while exporting the document's form data.</value>
+  </data>
+  <data name="PdfViewerStringId.MessageImportError" xml:space="preserve">
+    <value>Unable to import the specified data into the document form.
+{0}
+Please ensure that the provided data meets the {1} specification.</value>
+  </data>
+  <data name="PdfViewerStringId.MessageIncorrectPassword" xml:space="preserve">
+    <value>The password is incorrect. Please make sure that Caps Lock is not enabled.</value>
+  </data>
+  <data name="PdfViewerStringId.MessageIncorrectUrl" xml:space="preserve">
+    <value>{0} is not valid url address.</value>
+  </data>
+  <data name="PdfViewerStringId.MessageLoadingError" xml:space="preserve">
+    <value>Unable to load the PDF document because the following file is not available or it is not a valid PDF document.
+{0}
+Please ensure that the application can access this file and that it is valid, or specify a different file.</value>
+  </data>
+  <data name="PdfViewerStringId.MessageSaveAsError" xml:space="preserve">
+    <value>Cannot save the PDF with the following name: {0}.</value>
+  </data>
+  <data name="PdfViewerStringId.MessageSearchCaption" xml:space="preserve">
+    <value>Find</value>
+  </data>
+  <data name="PdfViewerStringId.MessageSearchFinished" xml:space="preserve">
+    <value>Finished searching throughout the document. No more matches were found.</value>
+  </data>
+  <data name="PdfViewerStringId.MessageSearchFinishedNoMatchesFound" xml:space="preserve">
+    <value>Finished searching throughout the document. No matches were found.</value>
+  </data>
+  <data name="PdfViewerStringId.MessageSecurityWarningCaption" xml:space="preserve">
+    <value>Security Warning</value>
+  </data>
+  <data name="PdfViewerStringId.MessageSecurityWarningUriOpening" xml:space="preserve">
+    <value>The document is trying to access an external resource by using the following URI (uniform resource identifier): '{0}'
+Do you want to open it?</value>
+  </data>
+  <data name="PdfViewerStringId.NavigationRibbonGroupCaption" xml:space="preserve">
+    <value>Navigation</value>
+  </data>
+  <data name="PdfViewerStringId.OpenDocumentCaption" xml:space="preserve">
+    <value>Open...</value>
+  </data>
+  <data name="PdfViewerStringId.OpenDocumentFromWebCaption" xml:space="preserve">
+    <value>Open from web</value>
+  </data>
+  <data name="PdfViewerStringId.OutlinesViewerCollapseTopLevelCaption" xml:space="preserve">
+    <value>Collapse top level bookmark</value>
+  </data>
+  <data name="PdfViewerStringId.OutlinesViewerExpandCurrentCaption" xml:space="preserve">
+    <value>Expand current bookmark</value>
+  </data>
+  <data name="PdfViewerStringId.OutlinesViewerExpandTopLevelCaption" xml:space="preserve">
+    <value>Expand top level bookmark</value>
+  </data>
+  <data name="PdfViewerStringId.OutlinesViewerGoToCaption" xml:space="preserve">
+    <value>Go to bookmark</value>
+  </data>
+  <data name="PdfViewerStringId.OutlinesViewerHideAfterUseCaption" xml:space="preserve">
+    <value>Hide after use</value>
+  </data>
+  <data name="PdfViewerStringId.OutlinesViewerPanelCaption" xml:space="preserve">
+    <value>Bookmarks</value>
+  </data>
+  <data name="PdfViewerStringId.OutlinesViewerPrintCaption" xml:space="preserve">
+    <value>Print page(s)</value>
+  </data>
+  <data name="PdfViewerStringId.OutlinesViewerPrintSectionCaption" xml:space="preserve">
+    <value>Print section(s)</value>
+  </data>
+  <data name="PdfViewerStringId.OutlinesViewerWrapLongItemsCaption" xml:space="preserve">
+    <value>Wrap long bookmarks</value>
+  </data>
+  <data name="PdfViewerStringId.PageSize" xml:space="preserve">
+    <value>{0:0.00} x {1:0.00} in</value>
+  </data>
+  <data name="PdfViewerStringId.PdfFileExtension" xml:space="preserve">
+    <value>.pdf</value>
+  </data>
+  <data name="PdfViewerStringId.PdfFileFilter" xml:space="preserve">
+    <value>PDF Files (.pdf)|*.pdf</value>
+  </data>
+  <data name="PdfViewerStringId.PrintDialogCollate" xml:space="preserve">
+    <value>Collate</value>
+  </data>
+  <data name="PdfViewerStringId.PrintDialogComment" xml:space="preserve">
+    <value>Comment</value>
+  </data>
+  <data name="PdfViewerStringId.PrintDialogDocumentsInQueue" xml:space="preserve">
+    <value>Document(s) in queue</value>
+  </data>
+  <data name="PdfViewerStringId.PrintDialogFilePath" xml:space="preserve">
+    <value>File path</value>
+  </data>
+  <data name="PdfViewerStringId.PrintDialogLocation" xml:space="preserve">
+    <value>Location</value>
+  </data>
+  <data name="PdfViewerStringId.PrintDialogNumberOfCopies" xml:space="preserve">
+    <value>Number of copies</value>
+  </data>
+  <data name="PdfViewerStringId.PrintDialogOrientation" xml:space="preserve">
+    <value>Orientation</value>
+  </data>
+  <data name="PdfViewerStringId.PrintDialogPageRange" xml:space="preserve">
+    <value>Page range</value>
+  </data>
+  <data name="PdfViewerStringId.PrintDialogPageRangeAll" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="PdfViewerStringId.PrintDialogPageRangeCurrent" xml:space="preserve">
+    <value>Current page</value>
+  </data>
+  <data name="PdfViewerStringId.PrintDialogPageRangePages" xml:space="preserve">
+    <value>Pages:</value>
+  </data>
+  <data name="PdfViewerStringId.PrintDialogPageRangePagesExample" xml:space="preserve">
+    <value>For example, 5-12</value>
+  </data>
+  <data name="PdfViewerStringId.PrintDialogPageSizing" xml:space="preserve">
+    <value>Page sizing</value>
+  </data>
+  <data name="PdfViewerStringId.PrintDialogPageSizingActualSize" xml:space="preserve">
+    <value>Actual size</value>
+  </data>
+  <data name="PdfViewerStringId.PrintDialogPageSizingCustomScale" xml:space="preserve">
+    <value>Custom scale:</value>
+  </data>
+  <data name="PdfViewerStringId.PrintDialogPageSizingFit" xml:space="preserve">
+    <value>Fit</value>
+  </data>
+  <data name="PdfViewerStringId.PrintDialogPaginationOf" xml:space="preserve">
+    <value> ({0})</value>
+  </data>
+  <data name="PdfViewerStringId.PrintDialogPaperSource" xml:space="preserve">
+    <value>Paper source</value>
+  </data>
+  <data name="PdfViewerStringId.PrintDialogPrintButtonCaption" xml:space="preserve">
+    <value>Print</value>
+  </data>
+  <data name="PdfViewerStringId.PrintDialogPrinterName" xml:space="preserve">
+    <value>Printer name</value>
+  </data>
+  <data name="PdfViewerStringId.PrintDialogPrinterPreferences" xml:space="preserve">
+    <value>Preferences</value>
+  </data>
+  <data name="PdfViewerStringId.PrintDialogPrintingDpi" xml:space="preserve">
+    <value>Printing DPI</value>
+  </data>
+  <data name="PdfViewerStringId.PrintDialogPrintOrientationAuto" xml:space="preserve">
+    <value>Auto</value>
+  </data>
+  <data name="PdfViewerStringId.PrintDialogPrintOrientationLandscape" xml:space="preserve">
+    <value>Landscape</value>
+  </data>
+  <data name="PdfViewerStringId.PrintDialogPrintOrientationPortrait" xml:space="preserve">
+    <value>Portrait</value>
+  </data>
+  <data name="PdfViewerStringId.PrintDialogPrintToFile" xml:space="preserve">
+    <value>Print to file</value>
+  </data>
+  <data name="PdfViewerStringId.PrintDialogStatus" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="PdfViewerStringId.PrintDialogTitle" xml:space="preserve">
+    <value>Print</value>
+  </data>
+  <data name="PdfViewerStringId.PrintFileExtension" xml:space="preserve">
+    <value>.prn</value>
+  </data>
+  <data name="PdfViewerStringId.PrintFileFilter" xml:space="preserve">
+    <value>Printable files (.prn)|*.prn</value>
+  </data>
+  <data name="PdfViewerStringId.PropertiesAdvancedCaption" xml:space="preserve">
+    <value>Advanced</value>
+  </data>
+  <data name="PdfViewerStringId.PropertiesApplication" xml:space="preserve">
+    <value>Application</value>
+  </data>
+  <data name="PdfViewerStringId.PropertiesAuthor" xml:space="preserve">
+    <value>Author</value>
+  </data>
+  <data name="PdfViewerStringId.PropertiesCaption" xml:space="preserve">
+    <value>Properties</value>
+  </data>
+  <data name="PdfViewerStringId.PropertiesCreated" xml:space="preserve">
+    <value>Created</value>
+  </data>
+  <data name="PdfViewerStringId.PropertiesDescriptionCaption" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="PdfViewerStringId.PropertiesFile" xml:space="preserve">
+    <value>File</value>
+  </data>
+  <data name="PdfViewerStringId.PropertiesFileSize" xml:space="preserve">
+    <value>File Size</value>
+  </data>
+  <data name="PdfViewerStringId.PropertiesKeywords" xml:space="preserve">
+    <value>Keywords</value>
+  </data>
+  <data name="PdfViewerStringId.PropertiesLocation" xml:space="preserve">
+    <value>Location</value>
+  </data>
+  <data name="PdfViewerStringId.PropertiesModified" xml:space="preserve">
+    <value>Modified</value>
+  </data>
+  <data name="PdfViewerStringId.PropertiesNumberOfPages" xml:space="preserve">
+    <value>Number of Pages</value>
+  </data>
+  <data name="PdfViewerStringId.PropertiesPageSize" xml:space="preserve">
+    <value>Page Size</value>
+  </data>
+  <data name="PdfViewerStringId.PropertiesProducer" xml:space="preserve">
+    <value>Producer</value>
+  </data>
+  <data name="PdfViewerStringId.PropertiesRevisionCaption" xml:space="preserve">
+    <value>Revision</value>
+  </data>
+  <data name="PdfViewerStringId.PropertiesSubject" xml:space="preserve">
+    <value>Subject</value>
+  </data>
+  <data name="PdfViewerStringId.PropertiesTitle" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="PdfViewerStringId.PropertiesVersion" xml:space="preserve">
+    <value>Version</value>
+  </data>
+  <data name="PdfViewerStringId.RecentDocumentsCaption" xml:space="preserve">
+    <value>Recent documents</value>
+  </data>
+  <data name="PdfViewerStringId.RotateRibbonGroupCaption" xml:space="preserve">
+    <value>Rotate view</value>
+  </data>
+  <data name="PdfViewerStringId.SaveChangesCaption" xml:space="preserve">
+    <value>PDF Viewer</value>
+  </data>
+  <data name="PdfViewerStringId.SaveChangesMessage" xml:space="preserve">
+    <value>Do you want to save the changes to the document before closing it?</value>
+  </data>
+  <data name="PdfViewerStringId.SavingDocumentCaption" xml:space="preserve">
+    <value>Saving</value>
+  </data>
+  <data name="PdfViewerStringId.SavingDocumentMessage" xml:space="preserve">
+    <value>Saving... Please wait.</value>
+  </data>
+  <data name="PdfViewerStringId.UnitExaBytes" xml:space="preserve">
+    <value>EB</value>
+  </data>
+  <data name="PdfViewerStringId.UnitGigaBytes" xml:space="preserve">
+    <value>GB</value>
+  </data>
+  <data name="PdfViewerStringId.UnitKiloBytes" xml:space="preserve">
+    <value>KB</value>
+  </data>
+  <data name="PdfViewerStringId.UnitMegaBytes" xml:space="preserve">
+    <value>MB</value>
+  </data>
+  <data name="PdfViewerStringId.UnitPetaBytes" xml:space="preserve">
+    <value>PB</value>
+  </data>
+  <data name="PdfViewerStringId.UnitTeraBytes" xml:space="preserve">
+    <value>TB</value>
+  </data>
+  <data name="PdfViewerStringId.UnitZettaBytes" xml:space="preserve">
+    <value>ZB</value>
+  </data>
+  <data name="PdfViewerStringId.ZoomRibbonGroupCaption" xml:space="preserve">
+    <value>Zoom</value>
+  </data>
+</root>

@@ -1,0 +1,857 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4C0BA46F-2FCC-498B-7740-EC27E6944F8C}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>DevExpress.XtraReports.v21.2.Extensions</AssemblyName>
+    <AssemblyOriginatorKeyFile>..\DevExpress.Key\StrongKey.snk</AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>DevExpress.XtraReports</RootNamespace>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SignAssembly>true</SignAssembly>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>..\DevExpress.Dll\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE;DEBUG;DXWhidbey</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>..\DevExpress.Dll\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE;DXWhidbey</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Design">
+      <Name>System.Design</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\AssemblyVersion.cs">
+      <Link>AssemblyVersion.cs</Link>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Design\FavoritePropertyEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Design\ReportFilterStringEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Design\SplitCellsEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Design\XRSummaryExpressionEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserDesigner\XRDesignForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserDesigner\XRDesignToolBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserDesigner\XRDesignFormExBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserDesigner\XRDesignRibbonForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Design\BandCollectionEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Design\BordersEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Design\BindingMapper\BindingMapperForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Design\CalculatedFieldCollectionEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Design\FormattingRuleSheetEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Design\ParameterBindingEditorContentControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Design\StyleSheetEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Design\TableOfContentsLevelCollectionEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Design\SubBandCollectionEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Design\ParameterCollectionEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Design\ParameterBindingCollectionEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Design\GroupFieldCollectionEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Design\NewParameterEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Design\FormattingRulesEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Design\GroupSortingSummaryEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Design\LookUpValuesEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Native\Templates\GalleryUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Native\Templates\ProgressUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Native\Templates\TemplateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportGeneration\Wizard\Views\WizardEndPageView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ReportGeneration\Wizard\Views\WizardLayoutSettingsPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ReportGeneration\Wizard\Views\WizardPageView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ReportGeneration\Wizard\Views\WizardStartPageView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ReportGeneration\Wizard\Views\WizardViewOptions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ReportGeneration\Wizard\Views\WizardViewOptionsGeneral.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ReportGeneration\Wizard\Views\WizardViewOptionsGrouping.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ReportGeneration\Wizard\Views\WizardViewOptionsStyles.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizards\Views\AddGroupingLevelPageView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizards\Views\ChooseReportColorSchemePageView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizards\Views\ConfigureReportPageSettingsPageView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizards\Views\ChooseReportLayoutPageView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizards\Views\ChooseReportStylePageView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizards\Views\ChooseReportTypePageView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizards\Views\ChooseSummaryOptionsPageView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizards\Views\ConfigureCrossTabPageView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizards\Views\CustomizeLabelPageView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizards\Views\MultiQuerySelectFieldsPageView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizards\Views\SelectColumnsPageView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizards\Views\SelectLabelTypePageView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizards\Views\SetReportTitlePageView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizards\Views\MasterDetailChooseSummaryOptionsPageView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizards\Views\MasterDetailAddGroupingLevelPageView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizards\Views\MasterDetailSelectDataMembersPageView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LegacyWizards\WizPageChooseFields.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LegacyWizards\WizPageConnection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LegacyWizards\WizPageDataset.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LegacyWizards\WizPageGroupedLayout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LegacyWizards\WizPageGrouping.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LegacyWizards\WizPageLabelOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LegacyWizards\WizPageLabelType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LegacyWizards\WizPageLayoutBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LegacyWizards\WizPageReportTitle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LegacyWizards\WizPageStyle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LegacyWizards\WizPageSummary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LegacyWizards\WizPageTables.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LegacyWizards\WizPageUngroupedLayout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LegacyWizards\WizPageWelcome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LegacyWizards\WizPreviewControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LegacyWizards\XtraReportWizardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wizards\Views\ChooseReportTemplatePageView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizards\Views\ConfigureReportTemplateQueryPageView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizards\Views\MapReportTemplateFieldsPageView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizards\Views\SelectReportTemplateDataMemberPageView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizards\Views\SpecifyReportTemplateOptionsPageView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Design\ParameterEditor\ParameterEditorContentControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Design\ParameterEditor\ParameterEditorDynamicListSettingsControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Design\ParameterEditor\ParameterEditorRangeSettingsControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Design\ParameterEditor\ParameterEditorStaticLookUpValuesControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Design\ParameterEditor\ReportParameterCollectionEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Design\ParameterEditor\ReportParameterEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Design\ParameterEditor\ParameterEditorStaticListSettingsControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ReportGeneration\Views\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Design\CalculatedFieldCollectionEditorForm.resx">
+      <DependentUpon>CalculatedFieldCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\FavoritePropertyEditorForm.pt-BR.resx">
+      <DependentUpon>FavoritePropertyEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\FavoritePropertyEditorForm.resx">
+      <DependentUpon>FavoritePropertyEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\FormattingRuleSheetEditorForm.resx">
+      <DependentUpon>FormattingRuleSheetEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\FormattingRuleSheetEditorForm.pt-BR.resx">
+      <DependentUpon>FormattingRuleSheetEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterBindingEditorContentControl.resx">
+      <DependentUpon>ParameterBindingEditorContentControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\GroupFieldCollectionEditorForm.resx">
+      <DependentUpon>GroupFieldCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterBindingCollectionEditorForm.resx">
+      <DependentUpon>ParameterBindingCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterCollectionEditorForm.resx">
+      <DependentUpon>ParameterCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ReportFilterStringEditorForm.pt-BR.resx">
+      <DependentUpon>ReportFilterStringEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ReportFilterStringEditorForm.resx">
+      <DependentUpon>ReportFilterStringEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\SplitCellsEditorForm.pt-BR.resx">
+      <DependentUpon>SplitCellsEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\SplitCellsEditorForm.resx">
+      <DependentUpon>SplitCellsEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\StyleSheetEditorForm.pt-BR.resx">
+      <DependentUpon>StyleSheetEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\StyleSheetEditorForm.resx">
+      <DependentUpon>StyleSheetEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\SubBandCollectionEditorForm.resx">
+      <DependentUpon>SubBandCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\TableOfContentsLevelCollectionEditorForm.pt-BR.resx">
+      <DependentUpon>TableOfContentsLevelCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\TableOfContentsLevelCollectionEditorForm.resx">
+      <DependentUpon>TableOfContentsLevelCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\XRSummaryExpressionEditorForm.pt-BR.resx">
+      <DependentUpon>XRSummaryExpressionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\XRSummaryExpressionEditorForm.resx">
+      <DependentUpon>XRSummaryExpressionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportGeneration\Wizard\Views\WizardEndPageView.pt-BR.resx">
+      <DependentUpon>WizardEndPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportGeneration\Wizard\Views\WizardEndPageView.resx">
+      <DependentUpon>WizardEndPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportGeneration\Wizard\Views\WizardLayoutSettingsPage.pt-BR.resx">
+      <DependentUpon>WizardLayoutSettingsPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportGeneration\Wizard\Views\WizardLayoutSettingsPage.resx">
+      <DependentUpon>WizardLayoutSettingsPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportGeneration\Wizard\Views\WizardPageView.pt-BR.resx">
+      <DependentUpon>WizardPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportGeneration\Wizard\Views\WizardPageView.resx">
+      <DependentUpon>WizardPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportGeneration\Wizard\Views\WizardStartPageView.pt-BR.resx">
+      <DependentUpon>WizardStartPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportGeneration\Wizard\Views\WizardStartPageView.resx">
+      <DependentUpon>WizardStartPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportGeneration\Wizard\Views\WizardViewOptions.pt-BR.resx">
+      <DependentUpon>WizardViewOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportGeneration\Wizard\Views\WizardViewOptions.resx">
+      <DependentUpon>WizardViewOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportGeneration\Wizard\Views\WizardViewOptionsGeneral.pt-BR.resx">
+      <DependentUpon>WizardViewOptionsGeneral.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportGeneration\Wizard\Views\WizardViewOptionsGeneral.resx">
+      <DependentUpon>WizardViewOptionsGeneral.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportGeneration\Wizard\Views\WizardViewOptionsGrouping.pt-BR.resx">
+      <DependentUpon>WizardViewOptionsGrouping.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportGeneration\Wizard\Views\WizardViewOptionsGrouping.resx">
+      <DependentUpon>WizardViewOptionsGrouping.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportGeneration\Wizard\Views\WizardViewOptionsStyles.pt-BR.resx">
+      <DependentUpon>WizardViewOptionsStyles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportGeneration\Wizard\Views\WizardViewOptionsStyles.resx">
+      <DependentUpon>WizardViewOptionsStyles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserDesigner\XRDesignFormExBase.pt-BR.resx">
+      <DependentUpon>XRDesignFormExBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Localization\LocalizationRes.pt-BR.resx" />
+    <EmbeddedResource Include="Wizards\Localization\LocalizationRes.resx" />
+    <EmbeddedResource Include="Wizards\Views\AddGroupingLevelPageView.pt-BR.resx">
+      <DependentUpon>AddGroupingLevelPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\AddGroupingLevelPageView.resx">
+      <DependentUpon>AddGroupingLevelPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\ChooseReportColorSchemePageView.resx">
+      <DependentUpon>ChooseReportColorSchemePageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\ConfigureCrossTabPageView.pt-BR.resx">
+      <DependentUpon>ConfigureCrossTabPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\ConfigureReportPageSettingsPageView.pt-BR.resx">
+      <DependentUpon>ConfigureReportPageSettingsPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\ConfigureReportPageSettingsPageView.resx">
+      <DependentUpon>ConfigureReportPageSettingsPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\ChooseReportLayoutPageView.pt-BR.resx">
+      <DependentUpon>ChooseReportLayoutPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\ChooseReportLayoutPageView.resx">
+      <DependentUpon>ChooseReportLayoutPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\ChooseReportStylePageView.pt-BR.resx">
+      <DependentUpon>ChooseReportStylePageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\ChooseReportStylePageView.resx">
+      <DependentUpon>ChooseReportStylePageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\ChooseReportTemplatePageView.resx">
+      <DependentUpon>ChooseReportTemplatePageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\ChooseReportTypePageView.pt-BR.resx">
+      <DependentUpon>ChooseReportTypePageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\ChooseReportTypePageView.resx">
+      <DependentUpon>ChooseReportTypePageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\ChooseSummaryOptionsPageView.pt-BR.resx">
+      <DependentUpon>ChooseSummaryOptionsPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\ChooseSummaryOptionsPageView.resx">
+      <DependentUpon>ChooseSummaryOptionsPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\ConfigureCrossTabPageView.resx">
+      <DependentUpon>ConfigureCrossTabPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\ConfigureReportTemplateQueryPageView.pt-BR.resx">
+      <DependentUpon>ConfigureReportTemplateQueryPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\ConfigureReportTemplateQueryPageView.resx">
+      <DependentUpon>ConfigureReportTemplateQueryPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\CustomizeLabelPageView.pt-BR.resx">
+      <DependentUpon>CustomizeLabelPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\CustomizeLabelPageView.resx">
+      <DependentUpon>CustomizeLabelPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\MapReportTemplateFieldsPageView.pt-BR.resx">
+      <DependentUpon>MapReportTemplateFieldsPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\MapReportTemplateFieldsPageView.resx">
+      <DependentUpon>MapReportTemplateFieldsPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\MasterDetailAddGroupingLevelPageView.pt-BR.resx">
+      <DependentUpon>MasterDetailAddGroupingLevelPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\MasterDetailChooseSummaryOptionsPageView.pt-BR.resx">
+      <DependentUpon>MasterDetailChooseSummaryOptionsPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\MasterDetailSelectDataMembersPageView.pt-BR.resx">
+      <DependentUpon>MasterDetailSelectDataMembersPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\MultiQuerySelectFieldsPageView.pt-BR.resx">
+      <DependentUpon>MultiQuerySelectFieldsPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\MultiQuerySelectFieldsPageView.resx">
+      <DependentUpon>MultiQuerySelectFieldsPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\SelectColumnsPageView.pt-BR.resx">
+      <DependentUpon>SelectColumnsPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\SelectColumnsPageView.resx">
+      <DependentUpon>SelectColumnsPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\SelectLabelTypePageView.pt-BR.resx">
+      <DependentUpon>SelectLabelTypePageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\SelectLabelTypePageView.resx">
+      <DependentUpon>SelectLabelTypePageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\SelectReportTemplateDataMemberPageView.pt-BR.resx">
+      <DependentUpon>SelectReportTemplateDataMemberPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\SelectReportTemplateDataMemberPageView.resx">
+      <DependentUpon>SelectReportTemplateDataMemberPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\SetReportTitlePageView.pt-BR.resx">
+      <DependentUpon>SetReportTitlePageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\SetReportTitlePageView.resx">
+      <DependentUpon>SetReportTitlePageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\MasterDetailChooseSummaryOptionsPageView.resx">
+      <DependentUpon>MasterDetailChooseSummaryOptionsPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\MasterDetailAddGroupingLevelPageView.resx">
+      <DependentUpon>MasterDetailAddGroupingLevelPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\MasterDetailSelectDataMembersPageView.resx">
+      <DependentUpon>MasterDetailSelectDataMembersPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Templates\ProgressUserControl.pt-BR.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ProgressUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Templates\GalleryUserControl.pt-BR.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>GalleryUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Templates\GalleryUserControl.resx">
+      <DependentUpon>GalleryUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Templates\ProgressUserControl.resx">
+      <DependentUpon>ProgressUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Templates\TemplateForm.pt-BR.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TemplateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserDesigner\XRDesignForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>XRDesignForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserDesigner\XRDesignFormExBase.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>XRDesignFormExBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserDesigner\XRDesignToolBox.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>XRDesignToolBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserDesigner\XRDesignRibbonForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>XRDesignRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\BindingMapper\BindingMapperForm.pt-BR.resx">
+      <DependentUpon>BindingMapperForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\BindingMapper\BindingMapperForm.resx">
+      <DependentUpon>BindingMapperForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\NewParameterEditorForm.pt-BR.resx">
+      <DependentUpon>NewParameterEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\NewParameterEditorForm.resx">
+      <DependentUpon>NewParameterEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\LookUpValuesEditorForm.pt-BR.resx">
+      <DependentUpon>LookUpValuesEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\LookUpValuesEditorForm.resx">
+      <DependentUpon>LookUpValuesEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Native\Templates\TemplateForm.resx">
+      <DependentUpon>TemplateForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\GroupSortingSummaryEditorForm.resx">
+      <DependentUpon>GroupSortingSummaryEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserDesigner\XRDesignForm.pt-BR.resx">
+      <DependentUpon>XRDesignForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserDesigner\XRDesignRibbonForm.pt-BR.resx">
+      <DependentUpon>XRDesignRibbonForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\GroupSortingSummaryEditorForm.pt-BR.resx">
+      <DependentUpon>GroupSortingSummaryEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\BandCollectionEditorForm.pt-BR.resx">
+      <DependentUpon>BandCollectionEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\BandCollectionEditorForm.resx">
+      <DependentUpon>BandCollectionEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\BordersEditor.pt-BR.resx">
+      <DependentUpon>BordersEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\BordersEditor.resx">
+      <DependentUpon>BordersEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\FormattingRulesEditorForm.pt-BR.resx">
+      <DependentUpon>FormattingRulesEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\FormattingRulesEditorForm.resx">
+      <DependentUpon>FormattingRulesEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LegacyWizards\WizPageChooseFields.pt-BR.resx">
+      <DependentUpon>WizPageChooseFields.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LegacyWizards\WizPageChooseFields.resx">
+      <DependentUpon>WizPageChooseFields.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LegacyWizards\WizPageConnection.pt-BR.resx">
+      <DependentUpon>WizPageConnection.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LegacyWizards\WizPageConnection.resx">
+      <DependentUpon>WizPageConnection.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LegacyWizards\WizPageDataset.pt-BR.resx">
+      <DependentUpon>WizPageDataset.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LegacyWizards\WizPageDataset.resx">
+      <DependentUpon>WizPageDataset.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LegacyWizards\WizPageGroupedLayout.pt-BR.resx">
+      <DependentUpon>WizPageGroupedLayout.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LegacyWizards\WizPageGroupedLayout.resx">
+      <DependentUpon>WizPageGroupedLayout.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LegacyWizards\WizPageGrouping.pt-BR.resx">
+      <DependentUpon>WizPageGrouping.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LegacyWizards\WizPageGrouping.resx">
+      <DependentUpon>WizPageGrouping.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LegacyWizards\WizPageLabelOptions.pt-BR.resx">
+      <DependentUpon>WizPageLabelOptions.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LegacyWizards\WizPageLabelOptions.resx">
+      <DependentUpon>WizPageLabelOptions.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LegacyWizards\WizPageLabelType.pt-BR.resx">
+      <DependentUpon>WizPageLabelType.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LegacyWizards\WizPageLabelType.resx">
+      <DependentUpon>WizPageLabelType.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LegacyWizards\WizPageLayoutBase.pt-BR.resx">
+      <DependentUpon>WizPageLayoutBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LegacyWizards\WizPageLayoutBase.resx">
+      <DependentUpon>WizPageLayoutBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LegacyWizards\WizPageReportTitle.pt-BR.resx">
+      <DependentUpon>WizPageReportTitle.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LegacyWizards\WizPageReportTitle.resx">
+      <DependentUpon>WizPageReportTitle.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LegacyWizards\WizPageStyle.pt-BR.resx">
+      <DependentUpon>WizPageStyle.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LegacyWizards\WizPageStyle.resx">
+      <DependentUpon>WizPageStyle.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LegacyWizards\WizPageSummary.pt-BR.resx">
+      <DependentUpon>WizPageSummary.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LegacyWizards\WizPageSummary.resx">
+      <DependentUpon>WizPageSummary.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LegacyWizards\WizPageTables.pt-BR.resx">
+      <DependentUpon>WizPageTables.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LegacyWizards\WizPageTables.resx">
+      <DependentUpon>WizPageTables.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LegacyWizards\WizPageUngroupedLayout.pt-BR.resx">
+      <DependentUpon>WizPageUngroupedLayout.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LegacyWizards\WizPageUngroupedLayout.resx">
+      <DependentUpon>WizPageUngroupedLayout.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LegacyWizards\WizPageWelcome.pt-BR.resx">
+      <DependentUpon>WizPageWelcome.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LegacyWizards\WizPageWelcome.resx">
+      <DependentUpon>WizPageWelcome.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LegacyWizards\WizPreviewControl.pt-BR.resx">
+      <DependentUpon>WizPreviewControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LegacyWizards\WizPreviewControl.resx">
+      <DependentUpon>WizPreviewControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LegacyWizards\XtraReportWizardForm.pt-BR.resx">
+      <DependentUpon>XtraReportWizardForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LegacyWizards\XtraReportWizardForm.resx">
+      <DependentUpon>XtraReportWizardForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\SpecifyReportTemplateOptionsPageView.pt-BR.resx">
+      <DependentUpon>SpecifyReportTemplateOptionsPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\Views\SpecifyReportTemplateOptionsPageView.resx">
+      <DependentUpon>SpecifyReportTemplateOptionsPageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterEditor\ParameterEditorContentControl.resx">
+      <DependentUpon>ParameterEditorContentControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterEditor\ParameterEditorContentControl.pt-BR.resx">
+      <DependentUpon>ParameterEditorContentControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterEditor\ParameterEditorDynamicListSettingsControl.resx">
+      <DependentUpon>ParameterEditorDynamicListSettingsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterEditor\ParameterEditorDynamicListSettingsControl.pt-BR.resx">
+      <DependentUpon>ParameterEditorDynamicListSettingsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterEditor\ParameterEditorRangeSettingsControl.resx">
+      <DependentUpon>ParameterEditorRangeSettingsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterEditor\ParameterEditorRangeSettingsControl.pt-BR.resx">
+      <DependentUpon>ParameterEditorRangeSettingsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterEditor\ParameterEditorStaticLookUpValuesControl.resx">
+      <DependentUpon>ParameterEditorStaticLookUpValuesControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterEditor\ParameterEditorStaticLookUpValuesControl.pt-BR.resx">
+      <DependentUpon>ParameterEditorStaticLookUpValuesControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterEditor\ReportParameterCollectionEditorForm.resx">
+      <DependentUpon>ReportParameterCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterEditor\ReportParameterCollectionEditorForm.pt-BR.resx">
+      <DependentUpon>ReportParameterCollectionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterEditor\ReportParameterEditorForm.resx">
+      <DependentUpon>ReportParameterEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterEditor\ReportParameterEditorForm.pt-BR.resx">
+      <DependentUpon>ReportParameterEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ParameterEditor\ParameterEditorStaticListSettingsControl.resx">
+      <DependentUpon>ParameterEditorStaticListSettingsControl.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+  </PropertyGroup>
+</Project>

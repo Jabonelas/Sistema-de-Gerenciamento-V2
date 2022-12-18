@@ -1,0 +1,669 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AccessType_Create" xml:space="preserve">
+    <value>Criar</value>
+  </data>
+  <data name="AccessType_Delete" xml:space="preserve">
+    <value>Apagar</value>
+  </data>
+  <data name="DataModel_Delete" xml:space="preserve">
+    <value>Apagar</value>
+  </data>
+  <data name="Document_Delete" xml:space="preserve">
+    <value>Apagar</value>
+  </data>
+  <data name="Group_Delete" xml:space="preserve">
+    <value>Apagar</value>
+  </data>
+  <data name="Job_Delete" xml:space="preserve">
+    <value>Apagar</value>
+  </data>
+  <data name="Permissions_Delete" xml:space="preserve">
+    <value>Apagar</value>
+  </data>
+  <data name="SharedStrings_Table_DeleteButton" xml:space="preserve">
+    <value>Apagar</value>
+  </data>
+  <data name="User_Delete" xml:space="preserve">
+    <value>Apagar</value>
+  </data>
+  <data name="AccessType_Read" xml:space="preserve">
+    <value>Read</value>
+  </data>
+  <data name="AppSection_Users" xml:space="preserve">
+    <value>Usuários</value>
+  </data>
+  <data name="Branding_CustomTitle" xml:space="preserve">
+    <value>Título</value>
+  </data>
+  <data name="Categories_Name" xml:space="preserve">
+    <value>Nome</value>
+  </data>
+  <data name="DataModel_Name" xml:space="preserve">
+    <value>Nome</value>
+  </data>
+  <data name="Document_List_Name" xml:space="preserve">
+    <value>Nome</value>
+  </data>
+  <data name="Document_Rename_Name" xml:space="preserve">
+    <value>Nome</value>
+  </data>
+  <data name="Entity_Selector_Name" xml:space="preserve">
+    <value>Nome</value>
+  </data>
+  <data name="Job_List_Name" xml:space="preserve">
+    <value>Nome</value>
+  </data>
+  <data name="JobWizard_EmailRecepientsPage_InternalSubscribers_Username" xml:space="preserve">
+    <value>Nome</value>
+  </data>
+  <data name="JobWizard_GeneralPage_Name" xml:space="preserve">
+    <value>Nome</value>
+  </data>
+  <data name="ServerSettings_OpenIDConnect_Name" xml:space="preserve">
+    <value>Nome</value>
+  </data>
+  <data name="ServerSettings_WsFederation_Name" xml:space="preserve">
+    <value>Nome</value>
+  </data>
+  <data name="ChangePassword_NewPassword" xml:space="preserve">
+    <value>Nova senha</value>
+  </data>
+  <data name="DataModel_Columns" xml:space="preserve">
+    <value>Colunas</value>
+  </data>
+  <data name="DataModel_Database" xml:space="preserve">
+    <value>Banco de dados</value>
+  </data>
+  <data name="DataModel_Description" xml:space="preserve">
+    <value>Descrição</value>
+  </data>
+  <data name="Document_Rename_Description" xml:space="preserve">
+    <value>Descrição</value>
+  </data>
+  <data name="DataModel_Edit" xml:space="preserve">
+    <value>Editar</value>
+  </data>
+  <data name="Job_Edit" xml:space="preserve">
+    <value>Editar</value>
+  </data>
+  <data name="SharedStrings_Table_EditButton" xml:space="preserve">
+    <value>Editar</value>
+  </data>
+  <data name="User_Edit" xml:space="preserve">
+    <value>Editar</value>
+  </data>
+  <data name="DataModel_Fields" xml:space="preserve">
+    <value>Campos</value>
+  </data>
+  <data name="DataModel_Password" xml:space="preserve">
+    <value>Senha</value>
+  </data>
+  <data name="ServerSettings_Email_Password" xml:space="preserve">
+    <value>Senha</value>
+  </data>
+  <data name="DataModel_Tables" xml:space="preserve">
+    <value>Tabelas</value>
+  </data>
+  <data name="DataModel_WindowsAuthentication" xml:space="preserve">
+    <value>Janela</value>
+  </data>
+  <data name="ServerSettings_AuthenticationType_Windows" xml:space="preserve">
+    <value>Janela</value>
+  </data>
+  <data name="Dialog_Apply" xml:space="preserve">
+    <value>Aplicar</value>
+  </data>
+  <data name="Dialog_Cancel" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="SharedStrings_Table_CancelButton" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="Dialog_Close" xml:space="preserve">
+    <value>Fechar</value>
+  </data>
+  <data name="Permissions_Close" xml:space="preserve">
+    <value>Fechar</value>
+  </data>
+  <data name="Dialog_OK" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="Dialog_Save" xml:space="preserve">
+    <value>Salvar</value>
+  </data>
+  <data name="SharedStrings_Table_SaveButton" xml:space="preserve">
+    <value>Salvar</value>
+  </data>
+  <data name="Document_Category" xml:space="preserve">
+    <value>Categoria</value>
+  </data>
+  <data name="Document_List_Category" xml:space="preserve">
+    <value>Categoria</value>
+  </data>
+  <data name="Document_Selector_DocumentCategory" xml:space="preserve">
+    <value>Categoria</value>
+  </data>
+  <data name="Document_Filter_Reports" xml:space="preserve">
+    <value>Relatórios</value>
+  </data>
+  <data name="Document_List_Dashboard" xml:space="preserve">
+    <value>Dashboard</value>
+  </data>
+  <data name="Document_List_Report" xml:space="preserve">
+    <value>Relatório</value>
+  </data>
+  <data name="Document_Preview" xml:space="preserve">
+    <value>Prever</value>
+  </data>
+  <data name="JobWizard_GeneralPage_Document_Preview" xml:space="preserve">
+    <value>Prever</value>
+  </data>
+  <data name="Document_Rename" xml:space="preserve">
+    <value>Renomear</value>
+  </data>
+  <data name="Group_Permissions" xml:space="preserve">
+    <value>Permissões</value>
+  </data>
+  <data name="Permissions_Title" xml:space="preserve">
+    <value>Permissões</value>
+  </data>
+  <data name="User_Permissions" xml:space="preserve">
+    <value>Permissões</value>
+  </data>
+  <data name="Job_List_Document" xml:space="preserve">
+    <value>Documento</value>
+  </data>
+  <data name="JobWizard_GeneralPage_Document" xml:space="preserve">
+    <value>Documento</value>
+  </data>
+  <data name="Job_Recurrence" xml:space="preserve">
+    <value>Recorrência</value>
+  </data>
+  <data name="JobWizard_EmailRecepientsPage_InternalSubscribers_Email" xml:space="preserve">
+    <value>E-mail</value>
+  </data>
+  <data name="JobWizard_GeneralPage_DataMember" xml:space="preserve">
+    <value>Membro de Dados</value>
+  </data>
+  <data name="JobWizard_Next" xml:space="preserve">
+    <value>Próximo</value>
+  </data>
+  <data name="JobWizard_Previous" xml:space="preserve">
+    <value>Anterior</value>
+  </data>
+  <data name="JobWizard_SchedulePage_StartDate" xml:space="preserve">
+    <value>Data de início</value>
+  </data>
+  <data name="Permissions_Group" xml:space="preserve">
+    <value>Grupo</value>
+  </data>
+  <data name="Permissions_New" xml:space="preserve">
+    <value>Novo</value>
+  </data>
+  <data name="Revision_Comment" xml:space="preserve">
+    <value>Comentário</value>
+  </data>
+  <data name="ServerSettings_EmailTemplates_Format_Text" xml:space="preserve">
+    <value>Texto</value>
+  </data>
+  <data name="ThemeSettings_TextColor" xml:space="preserve">
+    <value>Texto</value>
+  </data>
+  <data name="ServerSettings_General_Language" xml:space="preserve">
+    <value>Idioma</value>
+  </data>
+  <data name="SharedStrings_DateFrom" xml:space="preserve">
+    <value>De</value>
+  </data>
+  <data name="SharedStrings_FirstName" xml:space="preserve">
+    <value>Primeiro nome</value>
+  </data>
+  <data name="SharedStrings_LastName" xml:space="preserve">
+    <value>Último nome</value>
+  </data>
+  <data name="SharedStrings_Loading" xml:space="preserve">
+    <value>Carregando...</value>
+  </data>
+  <data name="SharedStrings_SelectAll" xml:space="preserve">
+    <value>Selecionar tudo</value>
+  </data>
+  <data name="SharedStrings_YesNoValues_No" xml:space="preserve">
+    <value>Não</value>
+  </data>
+  <data name="SharedStrings_YesNoValues_Yes" xml:space="preserve">
+    <value>Sim</value>
+  </data>
+  <data name="ThemeSettings_ResetButton" xml:space="preserve">
+    <value>Redefinir</value>
+  </data>
+  <data name="User_AccountStatus_Activate" xml:space="preserve">
+    <value>Ativar</value>
+  </data>
+  <data name="User_AccountStatus_Deactivate" xml:space="preserve">
+    <value>Desativar</value>
+  </data>
+  <data name="User_Edit_Groups" xml:space="preserve">
+    <value>Grupos</value>
+  </data>
+  <data name="User_Edit_NewGroupButton" xml:space="preserve">
+    <value>Novo Grupo</value>
+  </data>
+  <data name="User_Edit_UpdateButton" xml:space="preserve">
+    <value>Atualizar</value>
+  </data>
+  <data name="User_List_FullName" xml:space="preserve">
+    <value>Nome Completo</value>
+  </data>
+  <data name="Dialog_No" xml:space="preserve">
+    <value>Não</value>
+  </data>
+  <data name="Dialog_Yes" xml:space="preserve">
+    <value>Sim</value>
+  </data>
+  <data name="JobWizard_EmailRecepientsPage_InternalSubscribers_FirstName" xml:space="preserve">
+    <value>Primeiro nome</value>
+  </data>
+  <data name="JobWizard_EmailRecepientsPage_InternalSubscribers_LastName" xml:space="preserve">
+    <value>Último nome</value>
+  </data>
+  <data name="AccessType_Modify" xml:space="preserve">
+    <value>Modificar</value>
+  </data>
+  <data name="AppSection_Documents" xml:space="preserve">
+    <value>Documentos</value>
+  </data>
+  <data name="AppSection_Scheduling" xml:space="preserve">
+    <value>Agendamento</value>
+  </data>
+  <data name="Branding_CustomLogo" xml:space="preserve">
+    <value>Logotipo</value>
+  </data>
+  <data name="Branding_DeleteImage" xml:space="preserve">
+    <value>Excluir imagem</value>
+  </data>
+  <data name="Branding_SiteURL" xml:space="preserve">
+    <value>URL do site</value>
+  </data>
+  <data name="Branding_SiteURL_Placeholder" xml:space="preserve">
+    <value>http://www.suaempresa.com</value>
+  </data>
+  <data name="Categories_Delete_DialogContent" xml:space="preserve">
+    <value>Tem certeza que deseja excluir permanentemente esta categoria?</value>
+  </data>
+  <data name="Categories_DialogTitle" xml:space="preserve">
+    <value>Categorias</value>
+  </data>
+  <data name="Categories_NewButton" xml:space="preserve">
+    <value>Nova categoria</value>
+  </data>
+  <data name="ChangePassword_CurrentPassword" xml:space="preserve">
+    <value>Senha atual</value>
+  </data>
+  <data name="ChangePassword_Title" xml:space="preserve">
+    <value>Alterar senha</value>
+  </data>
+  <data name="DataModel_Authentication" xml:space="preserve">
+    <value>Autenticação</value>
+  </data>
+  <data name="DataModel_Delete_DialogContent" xml:space="preserve">
+    <value>Tem certeza que deseja excluir permanentemente este modelo de dados?</value>
+  </data>
+  <data name="DataModel_NoColumns_Placeholder" xml:space="preserve">
+    <value>Selecione uma tabela para ver suas colunas</value>
+  </data>
+  <data name="DataModel_NoFields_Placeholder" xml:space="preserve">
+    <value>Selecione um procedimento para ver seus campos</value>
+  </data>
+  <data name="DataModel_NoQueriesExist" xml:space="preserve">
+    <value>O modelo de dados não contém nenhuma consulta</value>
+  </data>
+  <data name="DataModel_Port" xml:space="preserve">
+    <value>Porta</value>
+  </data>
+  <data name="DataModel_Queries" xml:space="preserve">
+    <value>Consultas</value>
+  </data>
+  <data name="DataModel_Server" xml:space="preserve">
+    <value>Servidor</value>
+  </data>
+  <data name="DataModel_ServerAuthentication" xml:space="preserve">
+    <value>Servidor</value>
+  </data>
+  <data name="Document_Delete_DialogContent" xml:space="preserve">
+    <value>Tem certeza que deseja excluir este documento?</value>
+  </data>
+  <data name="Document_DeleteMultiple_DialogTitle" xml:space="preserve">
+    <value>Excluir documentos</value>
+  </data>
+  <data name="Document_Edit" xml:space="preserve">
+    <value>Editar no Designer</value>
+  </data>
+  <data name="Document_Filter_ByAllCategories" xml:space="preserve">
+    <value>Mostrar todas as categorias</value>
+  </data>
+  <data name="Document_Filter_Dashboards" xml:space="preserve">
+    <value>Dashboards</value>
+  </data>
+  <data name="Document_NumberSelected" xml:space="preserve">
+    <value>{0} documentos selecionados</value>
+  </data>
+  <data name="Document_SortType_ByCategory" xml:space="preserve">
+    <value>Ordenar por Categoria</value>
+  </data>
+  <data name="FileUpload_ExceedsMaximumSize" xml:space="preserve">
+    <value>O arquivo excede {0} bytes.</value>
+  </data>
+  <data name="FileUpload_GeneralError" xml:space="preserve">
+    <value>Ocorreu um erro ao ler o arquivo.</value>
+  </data>
+  <data name="FileUpload_WrongImageFormat" xml:space="preserve">
+    <value>Formato de imagem não suportado.</value>
+  </data>
+  <data name="GeneratedDocuments_InProgress" xml:space="preserve">
+    <value>Em andamento...</value>
+  </data>
+  <data name="GeneratedDocuments_NoDocuments" xml:space="preserve">
+    <value>Sem documentos para exibir.</value>
+  </data>
+  <data name="GeneratedDocuments_NoRecipients" xml:space="preserve">
+    <value>nenhum destinatário</value>
+  </data>
+  <data name="GeneratedDocuments_Open" xml:space="preserve">
+    <value>Abrir Documento</value>
+  </data>
+  <data name="GeneratedDocuments_Recipients" xml:space="preserve">
+    <value>Destinatários</value>
+  </data>
+  <data name="GeneratedDocuments_Suspended" xml:space="preserve">
+    <value>Suspenso...</value>
+  </data>
+  <data name="Group_Delete_DialogContent" xml:space="preserve">
+    <value>Tem certeza que deseja excluir este grupo?</value>
+  </data>
+  <data name="Group_Delete_DialogTitle" xml:space="preserve">
+    <value>Excluir grupo</value>
+  </data>
+  <data name="Job_AddOperation" xml:space="preserve">
+    <value>Adicionar Tarefa</value>
+  </data>
+  <data name="DataModel_Username" xml:space="preserve">
+    <value>Nome de usuário</value>
+  </data>
+  <data name="DataModel_SaveSelection_DialogContent" xml:space="preserve">
+    <value>Você quer salvar sua seleção?</value>
+  </data>
+  <data name="DataModel_EditSchema_DialogTitle" xml:space="preserve">
+    <value>Edite o esquema do modelo de dados</value>
+  </data>
+  <data name="DataModel_Edit_DialogTitle" xml:space="preserve">
+    <value>Editar o modelo de dados</value>
+  </data>
+  <data name="DataModel_DeleteMultiple_DialogContent" xml:space="preserve">
+    <value>Tem certeza que deseja excluir permanentemente dados selecionados modelos?</value>
+  </data>
+  <data name="DataModel_DeleteMultiple_DialogTitle" xml:space="preserve">
+    <value>Excluir modelos de dados</value>
+  </data>
+  <data name="DataModel_ConnectionString" xml:space="preserve">
+    <value>Seqüência de caracteres de conexão</value>
+  </data>
+  <data name="Dashboard_ExportToXml" xml:space="preserve">
+    <value>Exportar para XML</value>
+  </data>
+  <data name="Branding_SelectImage" xml:space="preserve">
+    <value>Selecione a imagem</value>
+  </data>
+  <data name="Categories_Delete_DialogTitle" xml:space="preserve">
+    <value>Excluir a categoria</value>
+  </data>
+  <data name="AppSection_LogOut" xml:space="preserve">
+    <value>Efetuar logout</value>
+  </data>
+  <data name="DataModel_SortType_ByDateModified" xml:space="preserve">
+    <value>Ordenar por data de modificação</value>
+  </data>
+  <data name="Document_SortType_ByDateModified" xml:space="preserve">
+    <value>Ordenar por data de modificação</value>
+  </data>
+  <data name="Document_Filter_ByCategory" xml:space="preserve">
+    <value>Mostrar somente nesta categoria</value>
+  </data>
+  <data name="Document_History" xml:space="preserve">
+    <value>História</value>
+  </data>
+  <data name="Document_List_DocumentType" xml:space="preserve">
+    <value>Tipo de documento</value>
+  </data>
+  <data name="Document_List_Preview" xml:space="preserve">
+    <value>Visualização {0}</value>
+  </data>
+  <data name="Document_DeleteMultiple_DialogContent" xml:space="preserve">
+    <value>Tem certeza que deseja excluir os documentos selecionados?</value>
+  </data>
+  <data name="Document_ChangeCategory" xml:space="preserve">
+    <value>Mudança de categoria</value>
+  </data>
+  <data name="GeneratedDocuments_ResultLimitReached" xml:space="preserve">
+    <value>São exibidos primeiro {0} de {1} documentos.</value>
+  </data>
+  <data name="Job_AddOperation_AddBillingStatement" xml:space="preserve">
+    <value>Adicionar a declaração de faturamento</value>
+  </data>
+  <data name="Job_Enable" xml:space="preserve">
+    <value>Habilitar</value>
+  </data>
+  <data name="Job_SortType_ByDateModified" xml:space="preserve">
+    <value>Ordenar por data de modificação</value>
+  </data>
+  <data name="Job_SortType_ByDocumentName" xml:space="preserve">
+    <value>ordenar por nome do documento</value>
+  </data>
+  <data name="JobWizard_GeneralPage_SelectDocument" xml:space="preserve">
+    <value>Selecione um documento...</value>
+  </data>
+  <data name="Permissions_Delete_DialogContent" xml:space="preserve">
+    <value>Tem certeza que deseja excluir permissões selecionadas?</value>
+  </data>
+  <data name="PermissionScope_DataModel" xml:space="preserve">
+    <value>Modelos de dados específicos</value>
+  </data>
+  <data name="ServerSettings_SelfSignUp_UserGroup" xml:space="preserve">
+    <value>Selecione um grupo de usuários...</value>
+  </data>
+  <data name="User_NumberSelected" xml:space="preserve">
+    <value>{0} usuários selecionados</value>
+  </data>
+  <data name="DataModel_DisabledProcedure_Tooltip" xml:space="preserve">
+    <value>Não é possível selecionar esse procedimento armazenado porque uma consulta com o mesmo nome já existe.</value>
+  </data>
+  <data name="DataModel_DisabledTable_Tooltip" xml:space="preserve">
+    <value>Você não pode selecionar esta tabela porque uma consulta com o mesmo nome já existe.</value>
+  </data>
+  <data name="DataModel_NumberSelected" xml:space="preserve">
+    <value>modelos de dados {0} selecionados</value>
+  </data>
+  <data name="DataModel_ProcedureHasNoFields" xml:space="preserve">
+    <value>procedimento não tem nenhum conjunto de resultados</value>
+  </data>
+  <data name="DataModel_SaveSelection_DialogTitle" xml:space="preserve">
+    <value>Salve a seleção</value>
+  </data>
+  <data name="DataModel_SecurityWarning" xml:space="preserve">
+    <value>Aviso de segurança: configurações de modelo de dados (incluindo credenciais de conexão) não criptografa o relatório e o painel de controle do servidor de banco de dados</value>
+  </data>
+  <data name="Document_AddOperation_AddReport" xml:space="preserve">
+    <value>Adicionar Relatório</value>
+  </data>
+  <data name="Document_AddOperation_AddDashboard" xml:space="preserve">
+    <value>Adicionar o painel de controle</value>
+  </data>
+  <data name="JobWizard_ExportToFileSystemPage_FilesToExport" xml:space="preserve">
+    <value>Arquivos para exportar</value>
+  </data>
+  <data name="JobWizard_ExportToFileSystemPage_FilesToExport_Placeholder" xml:space="preserve">
+    <value>Enter de caminhos de arquivo separados por vírgulas...</value>
+  </data>
+  <data name="JobWizard_ExportToFileSystemPage_ShowLess" xml:space="preserve">
+    <value>Mostrar menos</value>
+  </data>
+  <data name="JobWizard_ExportToFileSystemPage_ShowMore" xml:space="preserve">
+    <value>Mostrar mais</value>
+  </data>
+  <data name="JobWizard_PageTitle_DocumentParameters" xml:space="preserve">
+    <value>Documento parâmetros</value>
+  </data>
+  <data name="JobWizard_PageTitle_ExportToFileSystem" xml:space="preserve">
+    <value>Exportar para o arquivo de sistema</value>
+  </data>
+  <data name="UserProfile_DialogTitle" xml:space="preserve">
+    <value>Meu perfil</value>
+  </data>
+  <data name="UserProfile_SelectPhoto" xml:space="preserve">
+    <value>Selecione foto</value>
+  </data>
+  <data name="ServerSettings_AuthenticationType_ReportServer" xml:space="preserve">
+    <value>Servidor</value>
+  </data>
+  <data name="ServerSettings_General_ReportScriptExecutionMode_Deny" xml:space="preserve">
+    <value>Negar</value>
+  </data>
+  <data name="ThemeSettings_DesignerColorScheme_Dark" xml:space="preserve">
+    <value>Escuro</value>
+  </data>
+  <data name="ThemeSettings_ReportDesigner" xml:space="preserve">
+    <value>Gerador de Relatórios</value>
+  </data>
+  <data name="ServerSettings_General_CustomSqlExecutionMode_Deny" xml:space="preserve">
+    <value>Negar</value>
+  </data>
+  <data name="DataModel_Queries_WriteCustomSqlQuery_Name" xml:space="preserve">
+    <value>Nome</value>
+  </data>
+  <data name="DataModel_Queries_WriteCustomSqlQuery_Query" xml:space="preserve">
+    <value>Consulta</value>
+  </data>
+  <data name="ServerSettings_General_UnsafeExecutionModes_DialogContent" xml:space="preserve">
+    <value>Scripts de relatório e consultas SQL personalizadas não são seguras. Use o modo de execução de script ' restrito '/' irrestrito ' e ' executar somente instruções SELECT '/' executar tudo ' somente se você confiar em seus usuários e ambiente.</value>
+  </data>
+  <data name="SharedStrings_Group_Mode" xml:space="preserve">
+    <value>Grupo</value>
+  </data>
+</root>

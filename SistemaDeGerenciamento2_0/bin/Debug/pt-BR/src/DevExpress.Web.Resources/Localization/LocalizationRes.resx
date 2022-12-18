@@ -1,0 +1,547 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="DxDesignerStringId.CodeCompletion_List" xml:space="preserve">
+    <value>list</value>
+  </data>
+  <data name="DxDesignerStringId.CodeCompletion_Field" xml:space="preserve">
+    <value>field</value>
+  </data>
+  <data name="DxDesignerStringId.CodeCompletion_Operator" xml:space="preserve">
+    <value>operator</value>
+  </data>
+  <data name="DxDesignerStringId.CodeCompletion_Function" xml:space="preserve">
+    <value>function</value>
+  </data>
+  <data name="DxDesignerStringId.Error_SchemaLoadingFailed" xml:space="preserve">
+    <value>Schema loading failed. {0}</value>
+  </data>
+  <data name="DataAccessWebStringId.QueryBuilder_ColumnsLoading" xml:space="preserve">
+    <value>Loading...</value>
+  </data>
+  <data name="DataAccessWebStringId.QueryBuilder_ResultType" xml:space="preserve">
+    <value>Result Type</value>
+  </data>
+  <data name="DxDesignerStringId.None" xml:space="preserve">
+    <value>(none)</value>
+  </data>
+  <data name="AnalyticsCoreStringId.Parameter_Type_String" xml:space="preserve">
+    <value>String</value>
+  </data>
+  <data name="AnalyticsCoreStringId.Parameter_Type_DateTime" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="AnalyticsCoreStringId.Parameter_Type_Int16" xml:space="preserve">
+    <value>Number (16 bit integer)</value>
+  </data>
+  <data name="AnalyticsCoreStringId.Parameter_Type_Int32" xml:space="preserve">
+    <value>Number (32 bit integer)</value>
+  </data>
+  <data name="AnalyticsCoreStringId.Parameter_Type_Int64" xml:space="preserve">
+    <value>Number (64 bit integer)</value>
+  </data>
+  <data name="AnalyticsCoreStringId.Parameter_Type_Float" xml:space="preserve">
+    <value>Number (floating-point)</value>
+  </data>
+  <data name="AnalyticsCoreStringId.Parameter_Type_Double" xml:space="preserve">
+    <value>Number (double-precision floating-point)</value>
+  </data>
+  <data name="AnalyticsCoreStringId.Parameter_Type_Decimal" xml:space="preserve">
+    <value>Number (decimal)</value>
+  </data>
+  <data name="AnalyticsCoreStringId.Parameter_Type_Boolean" xml:space="preserve">
+    <value>Boolean</value>
+  </data>
+  <data name="AnalyticsCoreStringId.Parameter_Type_Guid" xml:space="preserve">
+    <value>Guid</value>
+  </data>
+  <data name="AnalyticsCoreStringId.SearchDialog_Cancel">
+    <value>Cancel</value>
+  </data>
+  <data name="AnalyticsCoreStringId.ParametersPanel_True">
+    <value>Yes</value>
+  </data>
+  <data name="AnalyticsCoreStringId.ParametersPanel_False">
+    <value>No</value>
+  </data>
+  <data name="AnalyticsCoreStringId.ParametersPanel_DateTimeValueValidationError">
+    <value>The value cannot be empty.</value>
+  </data>
+  <data name="AnalyticsCoreStringId.SelectAll">
+    <value>(Select All)</value>
+  </data>
+  <data name="AnalyticsCoreStringId.FilePicker_Placeholder">
+    <value>File</value>
+  </data>
+  <data name="AnalyticsCoreStringId.ImagePicker_Placeholder">
+    <value>Image</value>
+  </data>
+  <data name="AnalyticsCoreStringId.Loading">
+    <value>Loading...</value>
+  </data>
+  <data name="AnalyticsCoreStringId.Validation">
+    <value>Validation...</value>
+  </data>
+  <data name="AnalyticsCoreStringId.ValueIsRequiredOrInvalidFormat_Error">
+    <value>The value cannot be empty and should have a valid format.</value>
+  </data>
+  <data name="AnalyticsCoreStringId.UploadJsonFile_Title">
+    <value>Upload JSON File</value>
+  </data>
+  <data name="AnalyticsCoreStringId.UploadFile">
+    <value>Load File</value>
+  </data>
+  <data name="AnalyticsCoreStringId.CollectionEditor_Name_Placeholder">
+    <value>Name</value>
+  </data>
+  <data name="AnalyticsCoreStringId.CollectionEditor_Value_Placeholder">
+    <value>Value</value>
+  </data>
+  <data name="AnalyticsCoreStringId.TooltipButtons_Preview">
+    <value>Preview</value>
+  </data>
+  <data name="AnalyticsCoreStringId.MenuButtons_Save">
+    <value>Save</value>
+  </data>
+  <data name="AnalyticsCoreStringId.FieldListActions_AddParameter">
+    <value>Add parameter</value>
+  </data>
+  <data name="AnalyticsCoreStringId.Wizard_ChooseDataSource_Description">
+    <value>Choose a Data Source to use in your report.</value>
+  </data>
+  <data name="AnalyticsCoreStringId.Wizard_UseExisting_DataSource">
+    <value>Do you want to use an existing data source?</value>
+  </data>
+  <data name="AnalyticsCoreStringId.Wizard_ChooseDataSourceFromList">
+    <value>Yes, let me choose an existing data source from the list</value>
+  </data>
+  <data name="AnalyticsCoreStringId.Wizard_CreateNewDataSource">
+    <value>No, I'd like to create a new data source</value>
+  </data>
+  <data name="AnalyticsCoreStringId.Wizard_Next">
+    <value>Next</value>
+  </data>
+  <data name="AnalyticsCoreStringId.Wizard_Previous">
+    <value>Previous</value>
+  </data>
+  <data name="AnalyticsCoreStringId.Wizard_Finish">
+    <value>Finish</value>
+  </data>
+  <data name="AnalyticsCoreStringId.Wizard_Inch">
+    <value>Inch</value>
+  </data>
+  <data name="AnalyticsCoreStringId.Wizard_Millimeter">
+    <value>Millimeter</value>
+  </data>
+  <data name="AnalyticsCoreStringId.SqlDSWizard_PageConfigureMultiQuery">
+    <value>Columns selected from specific tables and/or views will be automatically included into a separate query.</value>
+  </data>
+  <data name="AnalyticsCoreStringId.SqlDSWizard_Title">
+    <value>Data Source Wizard</value>
+  </data>
+  <data name="AnalyticsCoreStringId.DSWizard_Title">
+    <value>Data Source Wizard</value>
+  </data>
+  <data name="AnalyticsCoreStringId.SqlDSWizard_PageChooseConnection">
+    <value>Choose a data connection.</value>
+  </data>
+  <data name="AnalyticsCoreStringId.SqlDSWizard_CreateNewQuery">
+    <value>Create New Query...</value>
+  </data>
+  <data name="AnalyticsCoreStringId.SqlDSWizard_WriteCustomSQL">
+    <value>Write Custom SQL</value>
+  </data>
+  <data name="AnalyticsCoreStringId.SqlDSWizard_CustomSqlEditor">
+    <value>Custom SQL Editor</value>
+  </data>
+  <data name="AnalyticsCoreStringId.SqlDSWizard_PageConfigureParameters">
+    <value>Configure query parameters.</value>
+  </data>
+  <data name="AnalyticsCoreStringId.SqlDSWizard_PageConfigureParametersEmpty">
+    <value>To create an item click the Add button.</value>
+  </data>
+  <data name="AnalyticsCoreStringId.SqlDSWizard_PageConfigureMasterDetailRelations">
+    <value>Configure master-detail relationships.</value>
+  </data>
+  <data name="AnalyticsCoreStringId.SqlDSWizard_AddQuery">
+    <value>Add query</value>
+  </data>
+  <data name="AnalyticsCoreStringId.SqlDSWizard_EditQuery">
+    <value>Edit query</value>
+  </data>
+  <data name="AnalyticsCoreStringId.SqlDSWizard_RemoveQuery">
+    <value>Remove query</value>
+  </data>
+  <data name="AnalyticsCoreStringId.SqlDSWizard_QueryName">
+    <value>Query Name</value>
+  </data>
+  <data name="AnalyticsCoreStringId.SqlDSWizard_QueryNamePlaceholder">
+    <value>Type custom query name (current name: {0})</value>
+  </data>
+  <data name="AnalyticsCoreStringId.QueryBuilder_SelectionProperties">
+    <value>Selection Properties</value>
+  </data>
+  <data name="AnalyticsCoreStringId.QueryBuilder_QueryProperties">
+    <value>Query Properties</value>
+  </data>
+  <data name="AnalyticsCoreStringId.QueryBuilder_TableProperties">
+    <value>Table Properties</value>
+  </data>
+  <data name="AnalyticsCoreStringId.QueryBuilder_ColumnProperties">
+    <value>Column Properties</value>
+  </data>
+  <data name="AnalyticsCoreStringId.QueryBuilder_RelationProperties">
+    <value>Relation Properties</value>
+  </data>
+  <data name="AnalyticsCoreStringId.QueryBuilder_Parameters">
+    <value>Parameters</value>
+  </data>
+  <data name="AnalyticsCoreStringId.QueryBuilder_SelectAll">
+    <value>Select All (*)</value>
+  </data>
+  <data name="AnalyticsCoreStringId.QueryBuilder_SelectTop">
+    <value>Select Top</value>
+  </data>
+  <data name="AnalyticsCoreStringId.QueryBuilder_Offset">
+    <value>Offset</value>
+  </data>
+  <data name="AnalyticsCoreStringId.QueryBuilder_SelectDistinct">
+    <value>Select distinct</value>
+  </data>
+  <data name="AnalyticsCoreStringId.QueryBuilder_AvailableTables">
+    <value>Available tables and views</value>
+  </data>
+  <data name="AnalyticsCoreStringId.QueryBuilder_SortType">
+    <value>Sort Type</value>
+  </data>
+  <data name="AnalyticsCoreStringId.QueryBuilder_Operator">
+    <value>Operator</value>
+  </data>
+  <data name="AnalyticsCoreStringId.QueryBuilder_JoinType">
+    <value>Join Type</value>
+  </data>
+  <data name="AnalyticsCoreStringId.QueryBuilder_PageConfigureParametersEmpty">
+    <value>Click the Add button to create a parameter.</value>
+  </data>
+  <data name="AnalyticsCoreStringId.Actions">
+    <value>Actions</value>
+  </data>
+  <data name="AnalyticsCoreStringId.DataPreview_Title">
+    <value>Data Preview (First 100 Rows Displayed)</value>
+  </data>
+  <data name="AnalyticsCoreStringId.DataPreview_Empty">
+    <value>No data to display</value>
+  </data>
+  <data name="AnalyticsCoreStringId.QueryBuilder_PreviewSelectStatement_Tooltip">
+    <value>Preview Select Statement...</value>
+  </data>
+  <data name="AnalyticsCoreStringId.QueryBuilder_SelectStatementPreview_Title">
+    <value>Select Statement Preview</value>
+  </data>
+  <data name="AnalyticsCoreStringId.QueryBuilder_LeftOperand">
+    <value>Left Operand</value>
+  </data>
+  <data name="AnalyticsCoreStringId.QueryBuilder_RightOperand">
+    <value>Right Operand</value>
+  </data>
+  <data name="AnalyticsCoreStringId.PropertyGrid_PopupMenu_Reset">
+    <value>Reset</value>
+  </data>
+  <data name="AnalyticsCoreStringId.FormatStringEditor_Title">
+    <value>Format String Editor</value>
+  </data>
+  <data name="AnalyticsCoreStringId.FormatStringEditor_Types">
+    <value>Types</value>
+  </data>
+  <data name="AnalyticsCoreStringId.FormatStringEditor_Suffix">
+    <value>Suffix</value>
+  </data>
+  <data name="AnalyticsCoreStringId.FormatStringEditor_PreviewNotAvailable_Text">
+    <value>Preview is not available</value>
+  </data>
+  <data name="AnalyticsCoreStringId.FontOptions_Unit_World">
+    <value>World</value>
+  </data>
+  <data name="AnalyticsCoreStringId.FontOptions_Unit_Pixel">
+    <value>Pixel</value>
+  </data>
+  <data name="AnalyticsCoreStringId.PropertyGrid_Editor_EmptyText">
+    <value>Select...</value>
+  </data>
+  <data name="AnalyticsCoreStringId.FilterEditor_AdvancedMode">
+    <value>Advanced Mode</value>
+  </data>
+  <data name="AnalyticsCoreStringId.FilterEditor_Operand_Type_Value">
+    <value>Value</value>
+  </data>
+  <data name="AnalyticsCoreStringId.FilterEditor_Operand_Type_Parameter">
+    <value>Parameter</value>
+  </data>
+  <data name="AnalyticsCoreStringId.FilterEditor_Operand_Type_Property">
+    <value>Property</value>
+  </data>
+  <data name="AnalyticsCoreStringId.FilterEditor_Operand_CreateNewParameter">
+    <value>Create new parameter</value>
+  </data>
+  <data name="AnalyticsCoreStringId.FilterEditor_TreeCreationError">
+    <value>Cannot create a tree for this expression</value>
+  </data>
+  <data name="AnalyticsCoreStringId.QueryBuilder_SearchBox_EmptyText">
+    <value>Enter text to search...</value>
+  </data>
+  <data name="AnalyticsCoreStringId.NameIsRequired_Error">
+    <value>Name is required and should be a valid identifier.</value>
+  </data>
+  <data name="AnalyticsCoreStringId.GuidIsRequired_Error">
+    <value>Guid is required and should have a valid format.</value>
+  </data>
+  <data name="AnalyticsCoreStringId.QueryBuilder_SurfacePlaceholder">
+    <value>Drop a table or view here to create a query.</value>
+  </data>
+  <data name="AnalyticsCoreStringId.Cmd_Copy" xml:space="preserve">
+    <value>Cop&amp;y</value>
+  </data>
+  <data name="AnalyticsCoreStringId.Cmd_Paste" xml:space="preserve">
+    <value>&amp;Paste</value>
+  </data>
+  <data name="AnalyticsCoreStringId.Cmd_Delete" xml:space="preserve">
+    <value>&amp;Delete</value>
+  </data>
+  <data name="AnalyticsCoreStringId.Cmd_Properties" xml:space="preserve">
+    <value>P&amp;roperties</value>
+  </data>
+  <data name="AnalyticsCoreStringId.Cmd_MoveUp" xml:space="preserve">
+    <value>Move Up</value>
+  </data>
+  <data name="AnalyticsCoreStringId.Cmd_MoveDown" xml:space="preserve">
+    <value>Move Down</value>
+  </data>
+  <data name="AnalyticsCoreStringId.EditCut" xml:space="preserve">
+    <value>Cut</value>
+  </data>
+  <data name="AnalyticsCoreStringId.FormatFontName" xml:space="preserve">
+    <value>Font Name</value>
+  </data>
+  <data name="AnalyticsCoreStringId.Group_Edit" xml:space="preserve">
+    <value>&amp;Edit</value>
+  </data>
+  <data name="AnalyticsCoreStringId.Undo" xml:space="preserve">
+    <value>&amp;Undo</value>
+  </data>
+  <data name="AnalyticsCoreStringId.Redo" xml:space="preserve">
+    <value>&amp;Redo</value>
+  </data>
+  <data name="AnalyticsCoreStringId.Zoom" xml:space="preserve">
+    <value>Zoom</value>
+  </data>
+  <data name="AnalyticsCoreStringId.ZoomIn" xml:space="preserve">
+    <value>Zoom In</value>
+  </data>
+  <data name="AnalyticsCoreStringId.ZoomOut" xml:space="preserve">
+    <value>Zoom Out</value>
+  </data>
+  <data name="AnalyticsCoreStringId.ExpressionEditor_ItemInfo_Fields" xml:space="preserve">
+    <value>Fields</value>
+  </data>
+  <data name="AnalyticsCoreStringId.ExpressionEditor_ExpressionCaption" xml:space="preserve">
+    <value>Expression Editor</value>
+  </data>
+  <data name="AnalyticsCoreStringId.Prefix" xml:space="preserve">
+    <value>Prefix</value>
+  </data>
+  <data name="AnalyticsCoreStringId.Category" xml:space="preserve">
+    <value>Category</value>
+  </data>
+  <data name="AnalyticsCoreStringId.Font.Size" xml:space="preserve">
+    <value>Size</value>
+  </data>
+  <data name="AnalyticsCoreStringId.Font.Unit" xml:space="preserve">
+    <value>Unit</value>
+  </data>
+  <data name="AnalyticsCoreStringId.PaddingInfo.Left" xml:space="preserve">
+    <value>Left</value>
+  </data>
+  <data name="AnalyticsCoreStringId.PaddingInfo.Right" xml:space="preserve">
+    <value>Right</value>
+  </data>
+  <data name="AnalyticsCoreStringId.PaddingInfo.Top" xml:space="preserve">
+    <value>Top</value>
+  </data>
+  <data name="AnalyticsCoreStringId.PaddingInfo.Bottom" xml:space="preserve">
+    <value>Bottom</value>
+  </data>
+  <data name="AnalyticsCoreStringId.SizeF.Width" xml:space="preserve">
+    <value>Width</value>
+  </data>
+  <data name="AnalyticsCoreStringId.SizeF.Height" xml:space="preserve">
+    <value>Height</value>
+  </data>
+  <data name="AnalyticsCoreStringId.PaddingInfo.All" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="AnalyticsCoreStringId.Wizard_SelectDataSourceType" xml:space="preserve">
+    <value>Select Data Source Type</value>
+  </data>
+  <data name="AnalyticsCoreStringId.Wizard_SpecifyDataSourceSettingsPage" xml:space="preserve">
+    <value>Specify Data Source Settings</value>
+  </data>
+  <data name="AnalyticsCoreStringId.Wizard_SelectDataSourceType_Placeholder" xml:space="preserve">
+    <value>To specify a data source, select "No, I'd like to create a new data source".</value>
+  </data>
+  <data name="AnalyticsCoreStringId.Wizard_Queries_Description" xml:space="preserve">
+    <value>Choose predefined queries and/or create custom queries.</value>
+  </data>
+  <data name="AnalyticsCoreStringId.Wizard_MasterDetailRelationship_Placeholder" xml:space="preserve">
+    <value>To create a master-detail relationship, select two or more queries.</value>
+  </data>
+  <data name="AnalyticsCoreStringId.Wizard_ConfigureQueryParameters_Placeholder" xml:space="preserve">
+    <value>To specify query parameters, select a parameterized stored procedure or create a custom query.</value>
+  </data>
+  <data name="AnalyticsCoreStringId.JsonDSWizard_ChooseConnection_Description" xml:space="preserve">
+    <value>Do you want to use an existing data connection?</value>
+  </data>
+  
+  <data name="AnalyticsCoreStringId.ObjectDSWizard_ChooseType_Description" xml:space="preserve">
+    <value>Choose the type and its constructor.</value>
+  </data>
+
+  <data name="AnalyticsCoreStringId.ObjectDSWizard_ChooseDataMember_Description" xml:space="preserve">
+    <value>Choose the entire object or a data member to bind.</value>
+  </data>
+
+  <data name="AnalyticsCoreStringId.ObjectDSWizard_ChooseDataMember_Disabled_Description" xml:space="preserve">
+    <value>To select a data member, choose a type that contains at least one data member.</value>
+  </data>
+
+  <data name="AnalyticsCoreStringId.ObjectDSWizard_ConfigureParameters_Disabled_Description" xml:space="preserve">
+    <value>To specify parameters, select a parameterized constructor or method.</value>
+  </data>
+  
+  <data name="AnalyticsCoreStringId.ObjectDSWizard_ConfigureParameters_Description" xml:space="preserve">
+    <value>Configure constructor parameters and/or method parameters.</value>
+  </data>
+
+  <data name="AnalyticsCoreStringId.ObjectDSWizard_EditParameters" xml:space="preserve">
+    <value>Edit Parameters...</value>
+  </data>
+
+  <data name="AnalyticsCoreStringId.Wizard_SpecifyObjectDataSourceSettingsPage_Description" xml:space="preserve">
+    <value>Specify Object Data Source Settings</value>
+  </data>
+
+  <data name="AnalyticsCoreStringId.ObjectDSWizard_ConfigureParameters_EntireObject" xml:space="preserve">
+    <value>Entire Object</value>
+  </data>
+
+  <data name="AnalyticsCoreStringId.JsonDSWizard_ChooseJsonSchemaPage_Placeholder" xml:space="preserve">
+    <value>To select data fields, choose or create a data connection.</value>
+  </data>
+  <data name="AnalyticsCoreStringId.JsonDSWizard_CreateNewConnection" xml:space="preserve">
+    <value>No, I'd like to create a new data connection</value>
+  </data>
+  <data name="AnalyticsCoreStringId.JsonDSWizard_CreateNewConnectionPage_Description" xml:space="preserve">
+    <value>Create a data connection.</value>
+  </data>
+  <data name="AnalyticsCoreStringId.JsonDSWizard_CreateNewConnectionPage_Placeholder" xml:space="preserve">
+    <value>To create a data connection, select "No, I'd like to create a new data connection".</value>
+  </data>
+  <data name="AnalyticsCoreStringId.JsonDSWizard_UseExistingConnection" xml:space="preserve">
+    <value>Yes, let me choose an existing data connection from the list</value>
+  </data>
+  <data name="AnalyticsCoreStringId.QueryBuilder_Tables_ShowMore" xml:space="preserve">
+    <value>Show more...</value>
+  </data>
+  <data name="AnalyticsCoreStringId.Wizard_MasterDetailRelationship_DetailQuery" xml:space="preserve">
+    <value>Detail Query</value>
+  </data>
+  <data name="AnalyticsCoreStringId.Wizard_MasterDetailRelationship_MasterQuery" xml:space="preserve">
+    <value>Master Query</value>
+  </data>  
+  <data name="AnalyticsCoreStringId.Mobile_DateRange_Title" xml:space="preserve">
+    <value>Date Range Parameter</value>
+  </data>
+  <data name="AnalyticsCoreStringId.Mobile_DateRange_SelectPeriod" xml:space="preserve">
+    <value>Select Period</value>
+  </data>
+  <data name="AnalyticsCoreStringId.Mobile_DateRange_StartDate" xml:space="preserve">
+    <value>Start Date</value>
+  </data>
+  <data name="AnalyticsCoreStringId.Mobile_DateRange_EndDate" xml:space="preserve">
+    <value>End Date</value>
+  </data>
+  <data name="AnalyticsCoreStringId.Mobile_DateRange_From" xml:space="preserve">
+    <value>From</value>
+  </data>
+  <data name="AnalyticsCoreStringId.Mobile_DateRange_Until" xml:space="preserve">
+    <value>Until</value>
+  </data>
+  <data name="AnalyticsCoreStringId.JsonDSWizard_ChooseJsonSourcePage_PathParameter" xml:space="preserve">
+    <value>Path Parameter</value>
+  </data>
+  <data name="AnalyticsCoreStringId.JsonDSWizard_ChooseJsonSourcePage_QueryParameter" xml:space="preserve">
+    <value>Query Parameter</value>
+  </data>
+  <data name="AnalyticsCoreStringId.JsonDSWizard_ChooseJsonSourcePage_Header" xml:space="preserve">
+    <value>Header</value>
+  </data>
+  <data name="AnalyticsCoreStringId.WarningMessage_FieldNotFound">
+    <value>{0} is not found</value>
+  </data>
+</root>

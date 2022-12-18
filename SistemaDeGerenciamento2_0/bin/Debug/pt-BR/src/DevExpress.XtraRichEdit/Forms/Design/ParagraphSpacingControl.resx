@@ -1,0 +1,504 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="lblBefore.AccessibleName" xml:space="preserve">
+    <value>Before</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"></assembly>
+  <data name="lblBefore.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 5</value>
+  </data>
+  <data name="lblBefore.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>88, 13</value>
+  </data>
+  <data name="lblBefore.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 13</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"></assembly>
+  <data name="paragraphSpacingLayoutControl.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="spnAtFloatSpacing.EditValue" type="System.Decimal, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="spnAtFloatSpacing.Location" type="System.Drawing.Point, System.Drawing">
+    <value>446, 26</value>
+  </data>
+  <data name="spnAtFloatSpacing.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>80, 20</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"></assembly>
+  <data name="spnAtFloatSpacing.Properties.Mask.EditMask" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value></value>
+  </data>
+  <data name="spnAtFloatSpacing.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 20</value>
+  </data>
+  <data name="spnAtFloatSpacing.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;spnAtFloatSpacing.Name" xml:space="preserve">
+    <value>spnAtFloatSpacing</value>
+  </data>
+  <data name="&gt;&gt;spnAtFloatSpacing.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SpinEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;spnAtFloatSpacing.Parent" xml:space="preserve">
+    <value>paragraphSpacingLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;spnAtFloatSpacing.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="spnAtSpacing.Location" type="System.Drawing.Point, System.Drawing">
+    <value>362, 26</value>
+  </data>
+  <data name="spnAtSpacing.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>80, 20</value>
+  </data>
+  <data name="spnAtSpacing.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 20</value>
+  </data>
+  <data name="spnAtSpacing.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;spnAtSpacing.Name" xml:space="preserve">
+    <value>spnAtSpacing</value>
+  </data>
+  <data name="&gt;&gt;spnAtSpacing.Type" xml:space="preserve">
+    <value>DevExpress.XtraRichEdit.Design.RichTextIndentEdit, DevExpress.XtraRichEdit.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;spnAtSpacing.Parent" xml:space="preserve">
+    <value>paragraphSpacingLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;spnAtSpacing.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="lblAt.AccessibleName" xml:space="preserve">
+    <value>At</value>
+  </data>
+  <data name="lblAt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>362, 5</value>
+  </data>
+  <data name="lblAt.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>80, 13</value>
+  </data>
+  <data name="lblAt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 13</value>
+  </data>
+  <data name="lblAt.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="lblAt.Text" xml:space="preserve">
+    <value>&amp;At:</value>
+  </data>
+  <data name="&gt;&gt;lblAt.Name" xml:space="preserve">
+    <value>lblAt</value>
+  </data>
+  <data name="&gt;&gt;lblAt.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblAt.Parent" xml:space="preserve">
+    <value>paragraphSpacingLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblAt.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="edtLineSpacing.Location" type="System.Drawing.Point, System.Drawing">
+    <value>229, 26</value>
+  </data>
+  <data name="edtLineSpacing.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>121, 20</value>
+  </data>
+  <data name="edtLineSpacing.Properties.AccessibleName" xml:space="preserve">
+    <value>Line spacing</value>
+  </data>
+  <data name="edtLineSpacing.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 20</value>
+  </data>
+  <data name="edtLineSpacing.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;edtLineSpacing.Name" xml:space="preserve">
+    <value>edtLineSpacing</value>
+  </data>
+  <data name="&gt;&gt;edtLineSpacing.Type" xml:space="preserve">
+    <value>DevExpress.XtraRichEdit.Design.LineSpacingEdit, DevExpress.XtraRichEdit.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtLineSpacing.Parent" xml:space="preserve">
+    <value>paragraphSpacingLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;edtLineSpacing.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="spnSpacingBefore.Location" type="System.Drawing.Point, System.Drawing">
+    <value>107, 2</value>
+  </data>
+  <data name="spnSpacingBefore.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="spnSpacingBefore.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="spnSpacingBefore.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;spnSpacingBefore.Name" xml:space="preserve">
+    <value>spnSpacingBefore</value>
+  </data>
+  <data name="&gt;&gt;spnSpacingBefore.Type" xml:space="preserve">
+    <value>DevExpress.XtraRichEdit.Design.RichTextIndentEdit, DevExpress.XtraRichEdit.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;spnSpacingBefore.Parent" xml:space="preserve">
+    <value>paragraphSpacingLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;spnSpacingBefore.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="spnSpacingAfter.Location" type="System.Drawing.Point, System.Drawing">
+    <value>107, 26</value>
+  </data>
+  <data name="spnSpacingAfter.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="spnSpacingAfter.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="spnSpacingAfter.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;spnSpacingAfter.Name" xml:space="preserve">
+    <value>spnSpacingAfter</value>
+  </data>
+  <data name="&gt;&gt;spnSpacingAfter.Type" xml:space="preserve">
+    <value>DevExpress.XtraRichEdit.Design.RichTextIndentEdit, DevExpress.XtraRichEdit.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;spnSpacingAfter.Parent" xml:space="preserve">
+    <value>paragraphSpacingLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;spnSpacingAfter.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="lblLineSpacing.AccessibleName" xml:space="preserve">
+    <value>LineSpacing</value>
+  </data>
+  <data name="lblLineSpacing.Location" type="System.Drawing.Point, System.Drawing">
+    <value>229, 5</value>
+  </data>
+  <data name="lblLineSpacing.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>121, 13</value>
+  </data>
+  <data name="lblLineSpacing.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 13</value>
+  </data>
+  <data name="lblLineSpacing.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="lblLineSpacing.Text" xml:space="preserve">
+    <value>Li&amp;ne spacing:</value>
+  </data>
+  <data name="&gt;&gt;lblLineSpacing.Name" xml:space="preserve">
+    <value>lblLineSpacing</value>
+  </data>
+  <data name="&gt;&gt;lblLineSpacing.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblLineSpacing.Parent" xml:space="preserve">
+    <value>paragraphSpacingLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblLineSpacing.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="lblAfter.AccessibleName" xml:space="preserve">
+    <value>After</value>
+  </data>
+  <data name="lblAfter.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 29</value>
+  </data>
+  <data name="lblAfter.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>88, 13</value>
+  </data>
+  <data name="lblAfter.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 13</value>
+  </data>
+  <data name="lblAfter.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="lblAfter.Text" xml:space="preserve">
+    <value>Aft&amp;er:</value>
+  </data>
+  <data name="&gt;&gt;lblAfter.Name" xml:space="preserve">
+    <value>lblAfter</value>
+  </data>
+  <data name="&gt;&gt;lblAfter.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblAfter.Parent" xml:space="preserve">
+    <value>paragraphSpacingLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblAfter.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="paragraphSpacingLayoutControl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="paragraphSpacingLayoutControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="paragraphSpacingLayoutControl.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="paragraphSpacingLayoutControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>528, 48</value>
+  </data>
+  <data name="paragraphSpacingLayoutControl.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="paragraphSpacingLayoutControl.Text" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;paragraphSpacingLayoutControl.Name" xml:space="preserve">
+    <value>paragraphSpacingLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;paragraphSpacingLayoutControl.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControl, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;paragraphSpacingLayoutControl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;paragraphSpacingLayoutControl.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblBefore.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblBefore.Text" xml:space="preserve">
+    <value>&amp;Before:</value>
+  </data>
+  <data name="&gt;&gt;lblBefore.Name" xml:space="preserve">
+    <value>lblBefore</value>
+  </data>
+  <data name="&gt;&gt;lblBefore.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblBefore.Parent" xml:space="preserve">
+    <value>paragraphSpacingLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblBefore.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>454, 48</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>528, 48</value>
+  </data>
+  <data name="&gt;&gt;Root.Name" xml:space="preserve">
+    <value>Root</value>
+  </data>
+  <data name="&gt;&gt;Root.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;paragraphSpacingLayoutGroup.Name" xml:space="preserve">
+    <value>paragraphSpacingLayoutGroup</value>
+  </data>
+  <data name="&gt;&gt;paragraphSpacingLayoutGroup.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;beforeLabelLayoutControl.Name" xml:space="preserve">
+    <value>beforeLabelLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;beforeLabelLayoutControl.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;afterLabelLayoutControl.Name" xml:space="preserve">
+    <value>afterLabelLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;afterLabelLayoutControl.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lineSpacingLabelLayoutControl.Name" xml:space="preserve">
+    <value>lineSpacingLabelLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;lineSpacingLabelLayoutControl.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;atLabelLayoutControl.Name" xml:space="preserve">
+    <value>atLabelLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;atLabelLayoutControl.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;spacingLayoutControlGroup.Name" xml:space="preserve">
+    <value>spacingLayoutControlGroup</value>
+  </data>
+  <data name="&gt;&gt;spacingLayoutControlGroup.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;atFloatSpacingLayoutControl.Name" xml:space="preserve">
+    <value>atFloatSpacingLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;atFloatSpacingLayoutControl.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;spacingBeforeSpinEditLayoutControl.Name" xml:space="preserve">
+    <value>spacingBeforeSpinEditLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;spacingBeforeSpinEditLayoutControl.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;spacingAfterSpinEditLayoutControl.Name" xml:space="preserve">
+    <value>spacingAfterSpinEditLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;spacingAfterSpinEditLayoutControl.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lineSpacingEditLayoutControl.Name" xml:space="preserve">
+    <value>lineSpacingEditLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;lineSpacingEditLayoutControl.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;atSpacingLayoutControl.Name" xml:space="preserve">
+    <value>atSpacingLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;atSpacingLayoutControl.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>ParagraphSpacingControl</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.XtraUserControl, DevExpress.Utils.v21.2, Culture=neutral</value>
+  </data>
+</root>

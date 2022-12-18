@@ -1,0 +1,516 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"></assembly>
+  <data name="topSeparator.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"></assembly>
+  <data name="topSeparator.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 54</value>
+  </data>
+  <data name="topSeparator.Size" type="System.Drawing.Size, System.Drawing">
+    <value>550, 2</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"></assembly>
+  <data name="topSeparator.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;topSeparator.Name" xml:space="preserve">
+    <value>topSeparator</value>
+  </data>
+  <data name="&gt;&gt;topSeparator.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;topSeparator.Parent" xml:space="preserve">
+    <value>viewSiteInfoPanel</value>
+  </data>
+  <data name="&gt;&gt;topSeparator.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="buttonsContainersPanel.AutoScroll" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="PopupActionsContainer.AutoScroll" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="PopupActionsContainer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>482, 9</value>
+  </data>
+  <data name="layoutControlGroup5.CustomizationFormText" xml:space="preserve">
+    <value>layoutControlGroup5</value>
+  </data>
+  <data name="layoutControlGroup5.Text" xml:space="preserve">
+    <value>layoutControlGroup5</value>
+  </data>
+  <data name="PopupActionsContainer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>81, 37</value>
+  </data>
+  <data name="PopupActionsContainer.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="PopupActionsContainer.Text" xml:space="preserve">
+    <value>buttonsContainer2</value>
+  </data>
+  <data name="&gt;&gt;PopupActionsContainer.Name" xml:space="preserve">
+    <value>PopupActionsContainer</value>
+  </data>
+  <data name="&gt;&gt;PopupActionsContainer.Parent" xml:space="preserve">
+    <value>buttonsContainersPanel</value>
+  </data>
+  <data name="&gt;&gt;PopupActionsContainer.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="ObjectsCreationContainer.AutoScroll" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ObjectsCreationContainer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>394, 9</value>
+  </data>
+  <data name="layoutControlGroup4.CustomizationFormText" xml:space="preserve">
+    <value>layoutControlGroup4</value>
+  </data>
+  <data name="layoutControlGroup4.Text" xml:space="preserve">
+    <value>layoutControlGroup4</value>
+  </data>
+  <data name="ObjectsCreationContainer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 37</value>
+  </data>
+  <data name="ObjectsCreationContainer.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="ObjectsCreationContainer.Text" xml:space="preserve">
+    <value>buttonsContainer1</value>
+  </data>
+  <data name="&gt;&gt;ObjectsCreationContainer.Name" xml:space="preserve">
+    <value>ObjectsCreationContainer</value>
+  </data>
+  <data name="&gt;&gt;ObjectsCreationContainer.Parent" xml:space="preserve">
+    <value>buttonsContainersPanel</value>
+  </data>
+  <data name="&gt;&gt;ObjectsCreationContainer.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="buttonsContainersPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="buttonsContainersPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 384</value>
+  </data>
+  <data name="Root.CustomizationFormText" xml:space="preserve">
+    <value>Root</value>
+  </data>
+  <data name="emptySpaceItem1.CustomizationFormText" xml:space="preserve">
+    <value>emptySpaceItem1</value>
+  </data>
+  <data name="emptySpaceItem1.Text" xml:space="preserve">
+    <value>emptySpaceItem1</value>
+  </data>
+  <data name="layoutControlItem1.CustomizationFormText" xml:space="preserve">
+    <value>layoutControlItem1</value>
+  </data>
+  <data name="layoutControlItem1.Text" xml:space="preserve">
+    <value>layoutControlItem1</value>
+  </data>
+  <data name="layoutControlItem2.CustomizationFormText" xml:space="preserve">
+    <value>layoutControlItem2</value>
+  </data>
+  <data name="layoutControlItem2.Text" xml:space="preserve">
+    <value>layoutControlItem2</value>
+  </data>
+  <data name="Root.Text" xml:space="preserve">
+    <value>Root</value>
+  </data>
+  <data name="buttonsContainersPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>574, 48</value>
+  </data>
+  <data name="buttonsContainersPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;buttonsContainersPanel.Name" xml:space="preserve">
+    <value>buttonsContainersPanel</value>
+  </data>
+  <data name="&gt;&gt;buttonsContainersPanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;buttonsContainersPanel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="bottomSeparator.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="bottomSeparator.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 0</value>
+  </data>
+  <data name="bottomSeparator.Size" type="System.Drawing.Size, System.Drawing">
+    <value>550, 2</value>
+  </data>
+  <data name="bottomSeparator.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;bottomSeparator.Name" xml:space="preserve">
+    <value>bottomSeparator</value>
+  </data>
+  <data name="&gt;&gt;bottomSeparator.Parent" xml:space="preserve">
+    <value>bottomSeparatorPanel</value>
+  </data>
+  <data name="&gt;&gt;bottomSeparator.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="bottomSeparatorPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="bottomSeparatorPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 382</value>
+  </data>
+  <data name="bottomSeparatorPanel.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>12, 0, 12, 0</value>
+  </data>
+  <data name="bottomSeparatorPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>574, 2</value>
+  </data>
+  <data name="bottomSeparatorPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;bottomSeparatorPanel.Name" xml:space="preserve">
+    <value>bottomSeparatorPanel</value>
+  </data>
+  <data name="&gt;&gt;bottomSeparatorPanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;bottomSeparatorPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="viewSitePanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="viewSitePanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 71</value>
+  </data>
+  <data name="viewSitePanel.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 10, 10, 10</value>
+  </data>
+  <data name="viewSitePanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>574, 361</value>
+  </data>
+  <data name="viewSitePanel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;viewSitePanel.Name" xml:space="preserve">
+    <value>viewSitePanel</value>
+  </data>
+  <data name="&gt;&gt;viewSitePanel.Parent" xml:space="preserve">
+    <value>conrolsPanel</value>
+  </data>
+  <data name="&gt;&gt;viewSitePanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="viewSiteInfoPanel.Appearance.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>Transparent</value>
+  </data>
+  <data name="viewSiteInfoPanel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="searchActionContainer.AutoScroll" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="searchActionContainer.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="searchActionContainer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 19</value>
+  </data>
+  <data name="searchActionContainer.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="layoutControlGroup3.CustomizationFormText" xml:space="preserve">
+    <value>layoutControlGroup3</value>
+  </data>
+  <data name="layoutControlGroup3.Text" xml:space="preserve">
+    <value>layoutControlGroup3</value>
+  </data>
+  <data name="searchActionContainer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>505, 22</value>
+  </data>
+  <data name="searchActionContainer.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="searchActionContainer.Text" xml:space="preserve">
+    <value>searchActionContainer</value>
+  </data>
+  <data name="&gt;&gt;searchActionContainer.Name" xml:space="preserve">
+    <value>searchActionContainer</value>
+  </data>
+  <data name="&gt;&gt;searchActionContainer.Parent" xml:space="preserve">
+    <value>TypeAndFindEditorPanel</value>
+  </data>
+  <data name="&gt;&gt;searchActionContainer.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;AvailableRecords.Name" xml:space="preserve">
+    <value>AvailableRecords</value>
+  </data>
+  <data name="&gt;&gt;AvailableRecords.Parent" xml:space="preserve">
+    <value>availableRecordsPanel</value>
+  </data>
+  <data name="&gt;&gt;AvailableRecords.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="availableRecordsPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="availableRecordsPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 56</value>
+  </data>
+  <data name="availableRecordsPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>550, 15</value>
+  </data>
+  <data name="availableRecordsPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;availableRecordsPanel.Name" xml:space="preserve">
+    <value>availableRecordsPanel</value>
+  </data>
+  <data name="&gt;&gt;availableRecordsPanel.Parent" xml:space="preserve">
+    <value>viewSiteInfoPanel</value>
+  </data>
+  <data name="&gt;&gt;availableRecordsPanel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="viewSiteInfoPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="viewSiteInfoPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="viewSiteInfoPanel.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>12, 10, 12, 0</value>
+  </data>
+  <data name="viewSiteInfoPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>574, 71</value>
+  </data>
+  <data name="viewSiteInfoPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;viewSiteInfoPanel.Name" xml:space="preserve">
+    <value>viewSiteInfoPanel</value>
+  </data>
+  <data name="&gt;&gt;viewSiteInfoPanel.Parent" xml:space="preserve">
+    <value>conrolsPanel</value>
+  </data>
+  <data name="&gt;&gt;viewSiteInfoPanel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="conrolsPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="conrolsPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="conrolsPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>574, 432</value>
+  </data>
+  <data name="conrolsPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;conrolsPanel.Name" xml:space="preserve">
+    <value>conrolsPanel</value>
+  </data>
+  <data name="&gt;&gt;conrolsPanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;conrolsPanel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="typeValueLayoutItem.CustomizationFormText" xml:space="preserve">
+    <value>typeValueLayoutItem</value>
+  </data>
+  <data name="typeValueLayoutItem.Text" xml:space="preserve">
+    <value>Type:</value>
+  </data>
+  <data name="searchActionContainerLayoutItem.CustomizationFormText" xml:space="preserve">
+    <value>searchActionContainerLayoutItem</value>
+  </data>
+  <data name="searchActionContainerLayoutItem.Text" xml:space="preserve">
+    <value>Find:</value>
+  </data>
+  <data name="AvailableRecords.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 1</value>
+  </data>
+  <data name="AvailableRecords.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 13</value>
+  </data>
+  <data name="AvailableRecords.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="AvailableRecords.Text" xml:space="preserve">
+    <value>Available records:</value>
+  </data>
+  <data name="actionContainersManager.TrayLocation" type="System.Drawing.Point, System.Drawing">
+    <value>17, 54</value>
+  </data>
+  <data name="$this.Localizable" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>574, 432</value>
+  </data>
+  <data name="&gt;&gt;layoutControlGroup5.Name" xml:space="preserve">
+    <value>layoutControlGroup5</value>
+  </data>
+  <data name="&gt;&gt;layoutControlGroup4.Name" xml:space="preserve">
+    <value>layoutControlGroup4</value>
+  </data>
+  <data name="&gt;&gt;Root.Name" xml:space="preserve">
+    <value>Root</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem1.Name" xml:space="preserve">
+    <value>emptySpaceItem1</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem1.Name" xml:space="preserve">
+    <value>layoutControlItem1</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem2.Name" xml:space="preserve">
+    <value>layoutControlItem2</value>
+  </data>
+  <data name="&gt;&gt;layoutControlGroup3.Name" xml:space="preserve">
+    <value>layoutControlGroup3</value>
+  </data>
+  <data name="&gt;&gt;layoutControlGroup1.Name" xml:space="preserve">
+    <value>layoutControlGroup1</value>
+  </data>
+  <data name="&gt;&gt;layoutControlGroup2.Name" xml:space="preserve">
+    <value>layoutControlGroup2</value>
+  </data>
+  <data name="&gt;&gt;actionContainersManager.Name" xml:space="preserve">
+    <value>actionContainersManager</value>
+  </data>
+  <data name="&gt;&gt;viewSiteManager.Name" xml:space="preserve">
+    <value>viewSiteManager</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="viewSiteManager.TrayLocation" type="System.Drawing.Point, System.Drawing">
+    <value>17, 17</value>
+  </data>
+</root>

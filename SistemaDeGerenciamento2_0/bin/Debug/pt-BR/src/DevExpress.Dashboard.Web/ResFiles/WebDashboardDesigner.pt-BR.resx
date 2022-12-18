@@ -1,0 +1,1786 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="DashboardWebStringId.DataItem" xml:space="preserve">
+    <value>Item de dados</value>
+  </data>
+  <data name="DashboardWebStringId.DataItem.Precision" xml:space="preserve">
+    <value>Precisão</value>
+  </data>
+  <data name="DashboardWebStringId.DataSources.AddDataSource" xml:space="preserve">
+    <value>Adicionar fonte de dados</value>
+  </data>
+  <data name="DashboardWebStringId.DataSources.AddQuery" xml:space="preserve">
+    <value>Adicionar consulta</value>
+  </data>
+  <data name="DashboardWebStringId.DataSources.CalculatedField.Name" xml:space="preserve">
+    <value>Nome</value>
+  </data>
+  <data name="DashboardWebStringId.DataSources.Cancel" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="DashboardWebStringId.DataSources.CreateDataSource" xml:space="preserve">
+    <value>Criar</value>
+  </data>
+  <data name="DashboardWebStringId.DataSources.CreateDataSource.Tooltip" xml:space="preserve">
+    <value>Criar uma nova fonte de dados...</value>
+  </data>
+  <data name="DashboardWebStringId.DataSources.CreateNewDataSource" xml:space="preserve">
+    <value>Criar fonte de dados...</value>
+  </data>
+  <data name="DashboardWebStringId.DataSources.Filter" xml:space="preserve">
+    <value>Filtro</value>
+  </data>
+  <data name="DashboardWebStringId.DataSources.IncludeToTheDashboard" xml:space="preserve">
+    <value>Adicionar</value>
+  </data>
+  <data name="DashboardWebStringId.DataSources.OK" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="DashboardWebStringId.DataSources.Save" xml:space="preserve">
+    <value>Salvar</value>
+  </data>
+  <data name="DashboardWebStringId.Delta.ResultIndication" xml:space="preserve">
+    <value>Indicação do resultado</value>
+  </data>
+  <data name="DashboardWebStringId.Delta.ThresholdType" xml:space="preserve">
+    <value>Tipo de limite</value>
+  </data>
+  <data name="DashboardWebStringId.Delta.ThresholdValue" xml:space="preserve">
+    <value>Valor limite</value>
+  </data>
+  <data name="DashboardWebStringId.Dialog.ArgumentMode" xml:space="preserve">
+    <value>Tipo de eixo</value>
+  </data>
+  <data name="DashboardWebStringId.Dialog.DoNotSave" xml:space="preserve">
+    <value>Não salvar</value>
+  </data>
+  <data name="DashboardWebStringId.Dialog.Save" xml:space="preserve">
+    <value>Salvar</value>
+  </data>
+  <data name="DashboardWebStringId.Duplicate" xml:space="preserve">
+    <value>Duplicar item atual</value>
+  </data>
+  <data name="DashboardWebStringId.FilterItem.Type" xml:space="preserve">
+    <value>Tipo</value>
+  </data>
+  <data name="DashboardWebStringId.FilterItem.Type.Checked" xml:space="preserve">
+    <value>Verificado</value>
+  </data>
+  <data name="DashboardWebStringId.FilterItem.Type.Radio" xml:space="preserve">
+    <value>Rádio</value>
+  </data>
+  <data name="DashboardWebStringId.FilterItem.Type.Standard" xml:space="preserve">
+    <value>Padrão</value>
+  </data>
+  <data name="DashboardWebStringId.FormatRules" xml:space="preserve">
+    <value>Regras de formato</value>
+  </data>
+  <data name="DashboardWebStringId.Gauge.Max" xml:space="preserve">
+    <value>Valor máximo</value>
+  </data>
+  <data name="DashboardWebStringId.Gauge.Min" xml:space="preserve">
+    <value>Valor mínimo</value>
+  </data>
+  <data name="DashboardWebStringId.Gauge.ScaleOptions" xml:space="preserve">
+    <value>Opções de escala</value>
+  </data>
+  <data name="DashboardWebStringId.Gauge.Type" xml:space="preserve">
+    <value>Tipo de indicador</value>
+  </data>
+  <data name="DashboardWebStringId.Gauge.Type.HalfCircular" xml:space="preserve">
+    <value>Meio Circular</value>
+  </data>
+  <data name="DashboardWebStringId.Gauge.Type.LeftQuarterCircular" xml:space="preserve">
+    <value>Circular de esquerda-trimestre</value>
+  </data>
+  <data name="DashboardWebStringId.Gauge.Type.LinearVertical" xml:space="preserve">
+    <value>Linear Vertical</value>
+  </data>
+  <data name="DashboardWebStringId.Gauge.Type.ThreeFourthCircular" xml:space="preserve">
+    <value>Circular de três quartos</value>
+  </data>
+  <data name="DashboardWebStringId.Grid.Delta" xml:space="preserve">
+    <value>Delta</value>
+  </data>
+  <data name="DashboardWebStringId.Grid.Dimension" xml:space="preserve">
+    <value>Dimensão</value>
+  </data>
+  <data name="DashboardWebStringId.Grid.DisplayMode.Image" xml:space="preserve">
+    <value>Imagem</value>
+  </data>
+  <data name="DashboardWebStringId.Grid.DisplayMode.Text" xml:space="preserve">
+    <value>Texto</value>
+  </data>
+  <data name="DashboardWebStringId.Grid.DisplayMode.Value" xml:space="preserve">
+    <value>Valor</value>
+  </data>
+  <data name="DashboardWebStringId.Grid.Measure" xml:space="preserve">
+    <value>Medida</value>
+  </data>
+  <data name="DashboardWebStringId.Grid.Options" xml:space="preserve">
+    <value>Opções de grade</value>
+  </data>
+  <data name="DashboardWebStringId.Grid.Sparkline" xml:space="preserve">
+    <value>Minigráfico</value>
+  </data>
+  <data name="DashboardWebStringId.Grid.WidthType.Weight" xml:space="preserve">
+    <value>Peso</value>
+  </data>
+  <data name="DashboardWebStringId.Image.Alignment.Center" xml:space="preserve">
+    <value>Centro</value>
+  </data>
+  <data name="DashboardWebStringId.Image.Alignment.Left" xml:space="preserve">
+    <value>Esquerda</value>
+  </data>
+  <data name="DashboardWebStringId.Image.Alignment.Right" xml:space="preserve">
+    <value>Direito</value>
+  </data>
+  <data name="DashboardWebStringId.Image.BindingMode.Uri" xml:space="preserve">
+    <value>URI</value>
+  </data>
+  <data name="DashboardWebStringId.Image.SizeMode.Zoom" xml:space="preserve">
+    <value>Zoom</value>
+  </data>
+  <data name="DashboardWebStringId.Interactivity" xml:space="preserve">
+    <value>Interatividade</value>
+  </data>
+  <data name="DashboardWebStringId.InteractivityOptions.IsMasterFilter" xml:space="preserve">
+    <value>Filtro Mestre</value>
+  </data>
+  <data name="DashboardWebStringId.InteractivityOptions.MasterFilterMode.Multiple" xml:space="preserve">
+    <value>Múltiplas</value>
+  </data>
+  <data name="DashboardWebStringId.InteractivityOptions.MasterFilterMode.None" xml:space="preserve">
+    <value>Nenhum</value>
+  </data>
+  <data name="DashboardWebStringId.InteractivityOptions.MasterFilterMode.Single" xml:space="preserve">
+    <value>Único</value>
+  </data>
+  <data name="DashboardWebStringId.InteractivityOptions.TargetDimensions.Arguments" xml:space="preserve">
+    <value>Argumentos</value>
+  </data>
+  <data name="DashboardWebStringId.InteractivityOptions.TargetDimensions.Points" xml:space="preserve">
+    <value>Pontos</value>
+  </data>
+  <data name="DashboardWebStringId.InteractivityOptions.TargetDimensions.Series" xml:space="preserve">
+    <value>Série</value>
+  </data>
+  <data name="DashboardWebStringId.Map.Area.Africa" xml:space="preserve">
+    <value>África</value>
+  </data>
+  <data name="DashboardWebStringId.Map.Area.Asia" xml:space="preserve">
+    <value>Ásia</value>
+  </data>
+  <data name="DashboardWebStringId.Map.Area.Canada" xml:space="preserve">
+    <value>Canadá</value>
+  </data>
+  <data name="DashboardWebStringId.Map.Area.Europe" xml:space="preserve">
+    <value>Europa</value>
+  </data>
+  <data name="DashboardWebStringId.Map.Area.NorthAmerica" xml:space="preserve">
+    <value>América do Norte</value>
+  </data>
+  <data name="DashboardWebStringId.Map.Area.SouthAmerica" xml:space="preserve">
+    <value>América do Sul</value>
+  </data>
+  <data name="DashboardWebStringId.Map.Area.USA" xml:space="preserve">
+    <value>Estados Unidos da América</value>
+  </data>
+  <data name="DashboardWebStringId.Map.Area.WorldCountries" xml:space="preserve">
+    <value>Países do mundo</value>
+  </data>
+  <data name="DashboardWebStringId.Map.Orientation.Horizontal" xml:space="preserve">
+    <value>Horizontal</value>
+  </data>
+  <data name="DashboardWebStringId.Map.Orientation.Vertical" xml:space="preserve">
+    <value>Vertical</value>
+  </data>
+  <data name="DashboardWebStringId.Map.Viewport.TopLatitude" xml:space="preserve">
+    <value>Latitude superior</value>
+  </data>
+  <data name="DashboardWebStringId.Map.WeightedLegendType" xml:space="preserve">
+    <value>Tipo</value>
+  </data>
+  <data name="DashboardWebStringId.Map.WeightedLegendType.Linear" xml:space="preserve">
+    <value>Linear</value>
+  </data>
+  <data name="DashboardWebStringId.Map.WeightedLegendType.Nested" xml:space="preserve">
+    <value>Aninhados</value>
+  </data>
+  <data name="DashboardWebStringId.MapLockNavigationUnlocked" xml:space="preserve">
+    <value>Desbloqueado</value>
+  </data>
+  <data name="DashboardWebStringId.MasterFilterMode" xml:space="preserve">
+    <value>Modo de filtro mestre</value>
+  </data>
+  <data name="DashboardWebStringId.Options" xml:space="preserve">
+    <value>Opções</value>
+  </data>
+  <data name="DashboardWebStringId.Parameters.AddParameter" xml:space="preserve">
+    <value>Adicionar novo parâmetro</value>
+  </data>
+  <data name="DashboardWebStringId.Parameters.DynamicListLookUpSettings" xml:space="preserve">
+    <value>Configurações de pesquisa de lista dinâmica</value>
+  </data>
+  <data name="DashboardWebStringId.Parameters.LookUpSettingsType.DynamicList" xml:space="preserve">
+    <value>Lista dinâmica</value>
+  </data>
+  <data name="DashboardWebStringId.Parameters.LookUpSettingsType.NoLookUp" xml:space="preserve">
+    <value>Nenhuma consulta</value>
+  </data>
+  <data name="DashboardWebStringId.Parameters.ParameterList" xml:space="preserve">
+    <value>Lista de parâmetros</value>
+  </data>
+  <data name="DashboardWebStringId.Parameters.SortByMember" xml:space="preserve">
+    <value>Ordenar por</value>
+  </data>
+  <data name="DashboardWebStringId.Parameters.Values" xml:space="preserve">
+    <value>Valores</value>
+  </data>
+  <data name="DashboardWebStringId.Pie.Donut" xml:space="preserve">
+    <value>Donut</value>
+  </data>
+  <data name="DashboardWebStringId.Pie.LabelContentType.Argument" xml:space="preserve">
+    <value>Argumento</value>
+  </data>
+  <data name="DashboardWebStringId.Pie.LabelContentType.None" xml:space="preserve">
+    <value>Nenhum</value>
+  </data>
+  <data name="DashboardWebStringId.Pie.LabelContentType.Value" xml:space="preserve">
+    <value>Valor</value>
+  </data>
+  <data name="DashboardWebStringId.PivotGrid.AutoExpandColumnGroups" xml:space="preserve">
+    <value>Autoexpandir grupos de colunas</value>
+  </data>
+  <data name="DashboardWebStringId.PivotGrid.AutoExpandRowGroups" xml:space="preserve">
+    <value>Autoexpandir grupos de linhas</value>
+  </data>
+  <data name="DashboardWebStringId.PivotGrid.ColumnGrandTotals" xml:space="preserve">
+    <value>Totais de coluna</value>
+  </data>
+  <data name="DashboardWebStringId.PivotGrid.ColumnTotals" xml:space="preserve">
+    <value>Totais de coluna</value>
+  </data>
+  <data name="DashboardWebStringId.PivotGrid.RowTotals" xml:space="preserve">
+    <value>Totais de linha</value>
+  </data>
+  <data name="DashboardWebStringId.Preview" xml:space="preserve">
+    <value>Preview</value>
+  </data>
+  <data name="DashboardWebStringId.RangeFilter.EndDate" xml:space="preserve">
+    <value>Data de término</value>
+  </data>
+  <data name="DashboardWebStringId.RangeFilter.Fixed" xml:space="preserve">
+    <value>fixa</value>
+  </data>
+  <data name="DashboardWebStringId.RangeFilter.Flow" xml:space="preserve">
+    <value>Fluxo</value>
+  </data>
+  <data name="DashboardWebStringId.RangeFilter.None" xml:space="preserve">
+    <value>Nenhum</value>
+  </data>
+  <data name="DashboardWebStringId.RangeFilter.StartDate" xml:space="preserve">
+    <value>Data de início</value>
+  </data>
+  <data name="DashboardWebStringId.SaveConfirmationDialogMessage" xml:space="preserve">
+    <value>Se sair antes de salvar, suas alterações serão perdidas.</value>
+  </data>
+  <data name="DashboardWebStringId.Sparkline.ViewType" xml:space="preserve">
+    <value>Tipo de exibição</value>
+  </data>
+  <data name="DashboardWebStringId.Tabs.Binding" xml:space="preserve">
+    <value>Vinculação</value>
+  </data>
+  <data name="DashboardWebStringId.Tabs.DataShaping" xml:space="preserve">
+    <value>Modelagem de dados</value>
+  </data>
+  <data name="DashboardWebStringId.Tabs.Format" xml:space="preserve">
+    <value>Formato</value>
+  </data>
+  <data name="DashboardWebStringId.TextBox.Text" xml:space="preserve">
+    <value>Texto</value>
+  </data>
+  <data name="DashboardWebStringId.Title.Aligment" xml:space="preserve">
+    <value>Alinhamento</value>
+  </data>
+  <data name="DashboardWebStringId.Title.Aligment.Center" xml:space="preserve">
+    <value>Centro</value>
+  </data>
+  <data name="DashboardWebStringId.Title.Aligment.Left" xml:space="preserve">
+    <value>Esquerda</value>
+  </data>
+  <data name="DashboardWebStringId.Title.Image" xml:space="preserve">
+    <value>Imagem</value>
+  </data>
+  <data name="DashboardWebStringId.Title.IncludeMasterFilter" xml:space="preserve">
+    <value>Incluir o filtro mestre</value>
+  </data>
+  <data name="DashboardWebStringId.Title.Text" xml:space="preserve">
+    <value>Texto</value>
+  </data>
+  <data name="DashboardWebStringId.Title.Visible" xml:space="preserve">
+    <value>Visível</value>
+  </data>
+  <data name="DashboardWebStringId.TopNEnabled" xml:space="preserve">
+    <value>Habilitado</value>
+  </data>
+  <data name="DashboardWebStringId.TreemapLayoutAlgorithm" xml:space="preserve">
+    <value>Algoritmo de layout</value>
+  </data>
+  <data name="DashboardWebStringId.Add" xml:space="preserve">
+    <value>Adicionar</value>
+  </data>
+  <data name="DashboardWebStringId.AddItemInvitation" xml:space="preserve">
+    <value>Arrastar um item da caixa de ferramentas ou clique no botão abaixo para criar um novo item.</value>
+  </data>
+  <data name="DashboardWebStringId.BindDataInvitation" xml:space="preserve">
+    <value>para ligar este item de dados</value>
+  </data>
+  <data name="DashboardWebStringId.Binding.AddGauge" xml:space="preserve">
+    <value>Adicionar indicador</value>
+  </data>
+  <data name="DashboardWebStringId.Binding.Argument" xml:space="preserve">
+    <value>Argumento</value>
+  </data>
+  <data name="DashboardWebStringId.Binding.Cards" xml:space="preserve">
+    <value>Cartões</value>
+  </data>
+  <data name="DashboardWebStringId.Binding.Columns" xml:space="preserve">
+    <value>Colunas</value>
+  </data>
+  <data name="DashboardWebStringId.Binding.ConfigureLatitude" xml:space="preserve">
+    <value>Configurar a Latitude</value>
+  </data>
+  <data name="DashboardWebStringId.Binding.ConfigureLongitude" xml:space="preserve">
+    <value>Configurar a Longitude</value>
+  </data>
+  <data name="DashboardWebStringId.Binding.Maps" xml:space="preserve">
+    <value>Mapas</value>
+  </data>
+  <data name="DashboardWebStringId.Binding.Sparkline" xml:space="preserve">
+    <value>Minigráfico</value>
+  </data>
+  <data name="DashboardWebStringId.Binding.Values" xml:space="preserve">
+    <value>Valores</value>
+  </data>
+  <data name="DashboardWebStringId.Bindings" xml:space="preserve">
+    <value>Ligações</value>
+  </data>
+  <data name="DashboardWebStringId.ButtonConfirm" xml:space="preserve">
+    <value>Confirmar</value>
+  </data>
+  <data name="DashboardWebStringId.ButtonContinuous" xml:space="preserve">
+    <value>Contínua</value>
+  </data>
+  <data name="DashboardWebStringId.ButtonDiscrete" xml:space="preserve">
+    <value>Discretos</value>
+  </data>
+  <data name="DashboardWebStringId.ButtonVisible" xml:space="preserve">
+    <value>Visível</value>
+  </data>
+  <data name="DashboardWebStringId.Calculations.NextValuesCount" xml:space="preserve">
+    <value>Deslocamento final</value>
+  </data>
+  <data name="DashboardWebStringId.Cards.ArrangementMode.Auto" xml:space="preserve">
+    <value>Auto</value>
+  </data>
+  <data name="DashboardWebStringId.Cards.LineCount" xml:space="preserve">
+    <value>Contagem de linha</value>
+  </data>
+  <data name="DashboardWebStringId.Chart.Content" xml:space="preserve">
+    <value>Conteúdo</value>
+  </data>
+  <data name="DashboardWebStringId.Chart.EnableZooming" xml:space="preserve">
+    <value>Ativar zoom</value>
+  </data>
+  <data name="DashboardWebStringId.Chart.GridLines" xml:space="preserve">
+    <value>Linhas de grade</value>
+  </data>
+  <data name="DashboardWebStringId.Chart.IgnoreEmptyPoints" xml:space="preserve">
+    <value>Ignorar pontos vazios</value>
+  </data>
+  <data name="DashboardWebStringId.Chart.IsInsideOfDiagram" xml:space="preserve">
+    <value>Dentro do diagrama</value>
+  </data>
+  <data name="DashboardWebStringId.Chart.LabelContent" xml:space="preserve">
+    <value>Rótulos de dados</value>
+  </data>
+  <data name="DashboardWebStringId.Chart.LimitVisiblePoints" xml:space="preserve">
+    <value>Pontos de limite visíveis</value>
+  </data>
+  <data name="DashboardWebStringId.Chart.LogarithmicScale" xml:space="preserve">
+    <value>Escala logarítmica</value>
+  </data>
+  <data name="DashboardWebStringId.Chart.LogarithmicScaleBase" xml:space="preserve">
+    <value>Escala logarítmica de Base</value>
+  </data>
+  <data name="DashboardWebStringId.Chart.Name" xml:space="preserve">
+    <value>Nome</value>
+  </data>
+  <data name="DashboardWebStringId.Chart.Orientation.Default" xml:space="preserve">
+    <value>Padrão</value>
+  </data>
+  <data name="DashboardWebStringId.Chart.Orientation.RotateLeft" xml:space="preserve">
+    <value>Rodar para a esquerda</value>
+  </data>
+  <data name="DashboardWebStringId.Chart.OverlappingMode" xml:space="preserve">
+    <value>Modo de sobreposição</value>
+  </data>
+  <data name="DashboardWebStringId.Chart.OverlappingMode.None" xml:space="preserve">
+    <value>Nenhum</value>
+  </data>
+  <data name="DashboardWebStringId.Chart.Panes" xml:space="preserve">
+    <value>Painéis</value>
+  </data>
+  <data name="DashboardWebStringId.Chart.PlotOnSecondaryAxis" xml:space="preserve">
+    <value>Plotar no eixo secundário</value>
+  </data>
+  <data name="DashboardWebStringId.Chart.Position" xml:space="preserve">
+    <value>Posição</value>
+  </data>
+  <data name="DashboardWebStringId.Chart.Position.BottomCenterHorizontal" xml:space="preserve">
+    <value>Horizontal inferior central</value>
+  </data>
+  <data name="DashboardWebStringId.Chart.Position.Inside" xml:space="preserve">
+    <value>Dentro</value>
+  </data>
+  <data name="DashboardWebStringId.Chart.PrimaryAxisY" xml:space="preserve">
+    <value>Eixo principal Y</value>
+  </data>
+  <data name="DashboardWebStringId.Chart.Reverse" xml:space="preserve">
+    <value>Inverter</value>
+  </data>
+  <data name="DashboardWebStringId.Chart.SecondaryAxisY" xml:space="preserve">
+    <value>Eixo secundário Y</value>
+  </data>
+  <data name="DashboardWebStringId.Chart.Title" xml:space="preserve">
+    <value>Título</value>
+  </data>
+  <data name="DashboardWebStringId.Chart.Value" xml:space="preserve">
+    <value>Valor</value>
+  </data>
+  <data name="DashboardWebStringId.Chart.Visible" xml:space="preserve">
+    <value>Visível</value>
+  </data>
+  <data name="DashboardWebStringId.Chart.VisiblePointsCount" xml:space="preserve">
+    <value>Contagem de pontos visíveis</value>
+  </data>
+  <data name="DashboardWebStringId.Chart.Weight" xml:space="preserve">
+    <value>Peso</value>
+  </data>
+  <data name="DashboardWebStringId.ClickHereInvitation" xml:space="preserve">
+    <value>Clique aqui</value>
+  </data>
+  <data name="DashboardWebStringId.ClickToSetFilterCriteria" xml:space="preserve">
+    <value>Clique para definir critérios de filtro</value>
+  </data>
+  <data name="DashboardWebStringId.CollectionEditor.NoItems" xml:space="preserve">
+    <value>Clique em + para adicionar um novo item.</value>
+  </data>
+  <data name="DashboardWebStringId.CollectionEditor.Parameters.NoItems" xml:space="preserve">
+    <value>Clique em + para adicionar um novo parâmetro.</value>
+  </data>
+  <data name="DashboardWebStringId.CollectionEditor.Totals.NoItems" xml:space="preserve">
+    <value>Clique em + para adicionar um novo total.</value>
+  </data>
+  <data name="DashboardWebStringId.Coloring.Global" xml:space="preserve">
+    <value>Global</value>
+  </data>
+  <data name="DashboardWebStringId.Coloring.Local" xml:space="preserve">
+    <value>Local</value>
+  </data>
+  <data name="DashboardWebStringId.ColoringModeAuto" xml:space="preserve">
+    <value>Auto</value>
+  </data>
+  <data name="DashboardWebStringId.ColoringOptions" xml:space="preserve">
+    <value>Colorir</value>
+  </data>
+  <data name="DashboardWebStringId.Colorization.ValidationSelectMeasure" xml:space="preserve">
+    <value>Selecione pelo menos uma medida</value>
+  </data>
+  <data name="DashboardWebStringId.ConditionalFormatting" xml:space="preserve">
+    <value>Formatação condicional</value>
+  </data>
+  <data name="DashboardWebStringId.ConditionalFormatting.Above" xml:space="preserve">
+    <value>Acima</value>
+  </data>
+  <data name="DashboardWebStringId.ConditionalFormatting.AboveOrEqual" xml:space="preserve">
+    <value>Acima ou igual</value>
+  </data>
+  <data name="DashboardWebStringId.ConditionalFormatting.Below" xml:space="preserve">
+    <value>Abaixo</value>
+  </data>
+  <data name="DashboardWebStringId.ConditionalFormatting.BelowOrEqual" xml:space="preserve">
+    <value>Abaixo ou igual</value>
+  </data>
+  <data name="DashboardWebStringId.ConditionalFormatting.CalculatedBy" xml:space="preserve">
+    <value>Calculado por</value>
+  </data>
+  <data name="DashboardWebStringId.ConditionalFormatting.FontRegular" xml:space="preserve">
+    <value>Regular</value>
+  </data>
+  <data name="DashboardWebStringId.ConditionalFormatting.FontStyle" xml:space="preserve">
+    <value>Estilo da fonte</value>
+  </data>
+  <data name="DashboardWebStringId.ConditionalFormatting.IconType.IndicatorCircledYellowExclamation" xml:space="preserve">
+    <value>Indicador de um círculo amarelo de exclamação</value>
+  </data>
+  <data name="DashboardWebStringId.ConditionalFormatting.IconType.IndicatorYellowExclamation" xml:space="preserve">
+    <value>Indicador amarelo de exclamação</value>
+  </data>
+  <data name="DashboardWebStringId.ConditionalFormatting.IconType.None" xml:space="preserve">
+    <value>Nenhum</value>
+  </data>
+  <data name="DashboardWebStringId.ConditionalFormatting.IconType.Rating0Bars" xml:space="preserve">
+    <value>Classificação 0 barras</value>
+  </data>
+  <data name="DashboardWebStringId.ConditionalFormatting.IconType.Rating0FilledBoxes" xml:space="preserve">
+    <value>Classificação 0 caixas cheias</value>
+  </data>
+  <data name="DashboardWebStringId.ConditionalFormatting.IconType.Rating2QuartersGrayCircle" xml:space="preserve">
+    <value>Classificação círculo cinza de 2 quartos</value>
+  </data>
+  <data name="DashboardWebStringId.ConditionalFormatting.IconType.RatingEmptyGrayCircle" xml:space="preserve">
+    <value>Classificação círculo cinza vazio</value>
+  </data>
+  <data name="DashboardWebStringId.ConditionalFormatting.IconType.RatingFullGrayCircle" xml:space="preserve">
+    <value>Classificação círculo cinza completo</value>
+  </data>
+  <data name="DashboardWebStringId.ConditionalFormatting.IconType.RatingHalfGrayStar" xml:space="preserve">
+    <value>Classificação meia estrela cinza</value>
+  </data>
+  <data name="DashboardWebStringId.ConditionalFormatting.IntersectionLevelMode" xml:space="preserve">
+    <value>Modo de nível de interseção</value>
+  </data>
+  <data name="DashboardWebStringId.ConditionalFormatting.Negative" xml:space="preserve">
+    <value>Negativo</value>
+  </data>
+  <data name="DashboardWebStringId.ConditionalFormatting.Positive" xml:space="preserve">
+    <value>Positivo</value>
+  </data>
+  <data name="DashboardWebStringId.ConditionalFormatting.StyleSettingsType" xml:space="preserve">
+    <value>Tipo de configurações de estilo</value>
+  </data>
+  <data name="DashboardWebStringId.ConditionalFormatting.ValueComparison" xml:space="preserve">
+    <value>Comparação de valor</value>
+  </data>
+  <data name="DashboardWebStringId.ConvertTo" xml:space="preserve">
+    <value>Converter para</value>
+  </data>
+  <data name="DashboardWebStringId.Currency.Currency" xml:space="preserve">
+    <value>Moeda</value>
+  </data>
+  <data name="DashboardWebStringId.Dashboard.ComponentName" xml:space="preserve">
+    <value>Nome do componente</value>
+  </data>
+  <data name="DashboardWebStringId.Dashboard.Groups" xml:space="preserve">
+    <value>Grupos</value>
+  </data>
+  <data name="DashboardWebStringId.Dashboard.Items" xml:space="preserve">
+    <value>Itens</value>
+  </data>
+  <data name="DashboardWebStringId.Dashboard.LayoutItems" xml:space="preserve">
+    <value>Itens de layout</value>
+  </data>
+  <data name="DashboardWebStringId.DashboardItemMenu.Bindings.SelectDataSourceButton" xml:space="preserve">
+    <value>Selecione uma fonte de dados</value>
+  </data>
+  <data name="DashboardWebStringId.DashboardMenuColorScheme" xml:space="preserve">
+    <value>Esquema de cores</value>
+  </data>
+  <data name="DashboardWebStringId.DashboardMenuCurrency" xml:space="preserve">
+    <value>Moeda</value>
+  </data>
+  <data name="DashboardWebStringId.DashboardMenuDataSources" xml:space="preserve">
+    <value>Fontes de dados</value>
+  </data>
+  <data name="DashboardWebStringId.DashboardMenuNew" xml:space="preserve">
+    <value>Novo...</value>
+  </data>
+  <data name="DashboardWebStringId.DashboardMenuOpen" xml:space="preserve">
+    <value>Abrir...</value>
+  </data>
+  <data name="DashboardWebStringId.DashboardMenuSave" xml:space="preserve">
+    <value>Salvar</value>
+  </data>
+  <data name="DashboardWebStringId.Pie" xml:space="preserve">
+    <value>Pizza</value>
+  </data>
+  <data name="DashboardWebStringId.RangeFilter.UriPattern" xml:space="preserve">
+    <value>Padrão Uri</value>
+  </data>
+  <data name="DashboardWebStringId.Map.DeltaMap" xml:space="preserve">
+    <value>Mapa do Delta</value>
+  </data>
+  <data name="DashboardWebStringId.Binding.AddArgument" xml:space="preserve">
+    <value>Adicionar o argumento</value>
+  </data>
+  <data name="DashboardWebStringId.Binding.AddDimension" xml:space="preserve">
+    <value>Adicionar a dimensão</value>
+  </data>
+  <data name="DashboardWebStringId.Binding.AddMeasure" xml:space="preserve">
+    <value>Adicione a medida</value>
+  </data>
+  <data name="DashboardWebStringId.ConditionalFormatting.IconType.DirectionalGraySideArrow" xml:space="preserve">
+    <value>Seta direcional lateral cinza</value>
+  </data>
+  <data name="DashboardWebStringId.ConditionalFormatting.IconType.DirectionalGreenArrowUp" xml:space="preserve">
+    <value>Seta direcional para cima verde</value>
+  </data>
+  <data name="DashboardWebStringId.ConditionalFormatting.IconType.DirectionalRedDownArrow" xml:space="preserve">
+    <value>Seta direcional para baixo vermelha</value>
+  </data>
+  <data name="DashboardWebStringId.ConditionalFormatting.IconType.DirectionalYellowDash" xml:space="preserve">
+    <value>Traço direcional amarelo</value>
+  </data>
+  <data name="DashboardWebStringId.ConditionalFormatting.IconType.DirectionalYellowSideArrow" xml:space="preserve">
+    <value>Seta direcional lateral amarela</value>
+  </data>
+  <data name="DashboardWebStringId.ConditionalFormatting.IconType.ShapeGreenCircle" xml:space="preserve">
+    <value>Círculo Verde</value>
+  </data>
+  <data name="DashboardWebStringId.ConditionalFormatting.IconType.ShapeGreenTrafficLight" xml:space="preserve">
+    <value>Semáforo verde</value>
+  </data>
+  <data name="DashboardWebStringId.ConditionalFormatting.FontFamily" xml:space="preserve">
+    <value>Família de fontes</value>
+  </data>
+  <data name="DashboardWebStringId.Colorization.MeasureNames" xml:space="preserve">
+    <value>Nomes de medida</value>
+  </data>
+  <data name="DashboardWebStringId.ColorScheme.Empty" xml:space="preserve">
+    <value>O painel atual não contém esquemas de cores</value>
+  </data>
+  <data name="DashboardWebStringId.Chart.AlwaysShowZeroLevel" xml:space="preserve">
+    <value>Sempre mostrar nível Zero</value>
+  </data>
+  <data name="DashboardWebStringId.Calculations.PreviousValuesCount" xml:space="preserve">
+    <value>Iniciar deslocamento</value>
+  </data>
+  <data name="DashboardWebStringId.Calculations.Types.Moving" xml:space="preserve">
+    <value>Movendo-se</value>
+  </data>
+  <data name="DashboardWebStringId.Card.SparklineOptions" xml:space="preserve">
+    <value>Opções de Minigráfico</value>
+  </data>
+  <data name="DashboardWebStringId.Chart.SeriesType.Weighted" xml:space="preserve">
+    <value>A ponderação</value>
+  </data>
+  <data name="DashboardWebStringId.Chart.ShowPointMarkers" xml:space="preserve">
+    <value>Mostrar marcadores de ponto</value>
+  </data>
+  <data name="DashboardWebStringId.Chart.TitleText" xml:space="preserve">
+    <value>Texto de título</value>
+  </data>
+  <data name="DashboardWebStringId.Coloring.MeasuresColoringMode" xml:space="preserve">
+    <value>Colorir Medidas</value>
+  </data>
+  <data name="DashboardWebStringId.Colorization.AddColor" xml:space="preserve">
+    <value>Adicionar a cor</value>
+  </data>
+  <data name="DashboardWebStringId.Chart.AxisXMeasure" xml:space="preserve">
+    <value>Medida do eixo X</value>
+  </data>
+  <data name="DashboardWebStringId.Chart.AxisYMeasure" xml:space="preserve">
+    <value>Eixo Y medida</value>
+  </data>
+  <data name="DashboardWebStringId.Chart.Orientation.RotateRight" xml:space="preserve">
+    <value>Gire a direita</value>
+  </data>
+  <data name="DashboardWebStringId.Chart.PointLabelOptions" xml:space="preserve">
+    <value>Opções de rótulo de ponto</value>
+  </data>
+  <data name="DashboardWebStringId.Chart.Position.BottomCenterVertical" xml:space="preserve">
+    <value>Parte inferior central Vertical</value>
+  </data>
+  <data name="DashboardWebStringId.Chart.Position.BottomLeftHorizontal" xml:space="preserve">
+    <value>Inferior esquerdo Horizontal</value>
+  </data>
+  <data name="DashboardWebStringId.Chart.Position.BottomLeftVertical" xml:space="preserve">
+    <value>Inferior esquerda Vertical</value>
+  </data>
+  <data name="DashboardWebStringId.Chart.Position.BottomRightHorizontal" xml:space="preserve">
+    <value>Inferior direito Horizontal</value>
+  </data>
+  <data name="DashboardWebStringId.Chart.Position.BottomRightVertical" xml:space="preserve">
+    <value>Vertical direita inferior</value>
+  </data>
+  <data name="DashboardWebStringId.Chart.Position.TopCenterHorizontal" xml:space="preserve">
+    <value>Top Center Horizontal</value>
+  </data>
+  <data name="DashboardWebStringId.Chart.Position.TopCenterVertical" xml:space="preserve">
+    <value>Top Center Vertical</value>
+  </data>
+  <data name="DashboardWebStringId.Chart.Position.TopLeftHorizontal" xml:space="preserve">
+    <value>Superior esquerdo Horizontal</value>
+  </data>
+  <data name="DashboardWebStringId.Chart.Position.TopLeftVertical" xml:space="preserve">
+    <value>Parte superior esquerda Vertical</value>
+  </data>
+  <data name="DashboardWebStringId.Chart.Position.TopRightHorizontal" xml:space="preserve">
+    <value>Superior direito Horizontal</value>
+  </data>
+  <data name="DashboardWebStringId.Chart.Position.TopRightVertical" xml:space="preserve">
+    <value>Superior direito Vertical</value>
+  </data>
+  <data name="DashboardWebStringId.Chart.Rotated" xml:space="preserve">
+    <value>Girado</value>
+  </data>
+  <data name="DashboardWebStringId.Binding.ConfigureGauge" xml:space="preserve">
+    <value>Configurar o Indicador</value>
+  </data>
+  <data name="DashboardWebStringId.Binding.XAxis" xml:space="preserve">
+    <value>Eixo x</value>
+  </data>
+  <data name="DashboardWebStringId.Binding.YAxis" xml:space="preserve">
+    <value>Eixo y</value>
+  </data>
+  <data name="DashboardWebStringId.Binding.SetArgument" xml:space="preserve">
+    <value>Defina o argumento</value>
+  </data>
+  <data name="DashboardWebStringId.Binding.SetAttribute" xml:space="preserve">
+    <value>Defina o atributo</value>
+  </data>
+  <data name="DashboardWebStringId.Binding.SetColor" xml:space="preserve">
+    <value>Definir cor</value>
+  </data>
+  <data name="DashboardWebStringId.Binding.SetLatitude" xml:space="preserve">
+    <value>Definir Latitude</value>
+  </data>
+  <data name="DashboardWebStringId.Binding.SetLongitude" xml:space="preserve">
+    <value>Definir Longitude</value>
+  </data>
+  <data name="DashboardWebStringId.Binding.ConfigureCard" xml:space="preserve">
+    <value>Configurar o Cartão</value>
+  </data>
+  <data name="DashboardWebStringId.Binding.AddSeries" xml:space="preserve">
+    <value>Adicionar a série</value>
+  </data>
+  <data name="DashboardWebStringId.Binding.AddValue" xml:space="preserve">
+    <value>Agregar valor</value>
+  </data>
+  <data name="DashboardWebStringId.Map.ValueMap" xml:space="preserve">
+    <value>Mapa de valor</value>
+  </data>
+  <data name="DashboardWebStringId.Map.Viewport.LeftLongitude" xml:space="preserve">
+    <value>Longitude esquerda</value>
+  </data>
+  <data name="DashboardWebStringId.Map.Viewport.RightLongitude" xml:space="preserve">
+    <value>Longitude direita</value>
+  </data>
+  <data name="DashboardWebStringId.MapLockNavigationLocked" xml:space="preserve">
+    <value>Bloqueado</value>
+  </data>
+  <data name="DashboardWebStringId.New.DashboardName" xml:space="preserve">
+    <value>Nome do painel de controle:</value>
+  </data>
+  <data name="DashboardWebStringId.Parameters.AddParameter.Tooltip" xml:space="preserve">
+    <value>Adicionar novo parâmetro para o painel de controle</value>
+  </data>
+  <data name="DashboardWebStringId.Map.Area" xml:space="preserve">
+    <value>Mapa Padrão</value>
+  </data>
+  <data name="DashboardWebStringId.Map.AttributeDimension" xml:space="preserve">
+    <value>Atributo de dimensão</value>
+  </data>
+  <data name="DashboardWebStringId.Image.SizeMode.Clip" xml:space="preserve">
+    <value>Clip</value>
+  </data>
+  <data name="DashboardWebStringId.GroupsLabelContentType" xml:space="preserve">
+    <value>Rótulo de grupo</value>
+  </data>
+  <data name="DashboardWebStringId.Image.BindingMode" xml:space="preserve">
+    <value>Modo de vinculação</value>
+  </data>
+  <data name="DashboardWebStringId.Grid.DeltaOptions" xml:space="preserve">
+    <value>Opções de Delta</value>
+  </data>
+  <data name="DashboardWebStringId.ConditionalFormatting.IntersectionRowDimension" xml:space="preserve">
+    <value>Dimensão da linha de interseção</value>
+  </data>
+  <data name="DashboardWebStringId.Gauge.Type.LinearHorizontal" xml:space="preserve">
+    <value>Linear Horizontal</value>
+  </data>
+  <data name="DashboardWebStringId.DataSources.UsedDataSources" xml:space="preserve">
+    <value>Fontes de dados utilizadas</value>
+  </data>
+  <data name="DashboardWebStringId.DataSourceWizard" xml:space="preserve">
+    <value>Assistente de fonte de dados do painel de controle</value>
+  </data>
+  <data name="DashboardWebStringId.DataSources.ChooseDataSource" xml:space="preserve">
+    <value>Escolha a fonte de dados para o painel de controle</value>
+  </data>
+  <data name="DashboardWebStringId.DataSources.DashboardDataSourceWizard" xml:space="preserve">
+    <value>Assistente de fonte de dados do painel de controle</value>
+  </data>
+  <data name="DashboardWebStringId.DashboardItemMenu.Bindings.SelectDataSourceButtonTooltip" xml:space="preserve">
+    <value>Para adicionar uma fonte de dados para o painel de controle atual, vá para Menu | Fontes de dados.</value>
+  </data>
+  <data name="DashboardWebStringId.ConditionalFormatting.AverageType" xml:space="preserve">
+    <value>Tipo de média</value>
+  </data>
+  <data name="DashboardWebStringId.Cards.ArrangementMode" xml:space="preserve">
+    <value>Modo de arranjo de conteúdo</value>
+  </data>
+  <data name="DashboardWebStringId.DataItem.IncludeGroupSeparator" xml:space="preserve">
+    <value>Incluir o separador de grupo</value>
+  </data>
+  <data name="DashboardWebStringId.DataSources.AddCalculatedField" xml:space="preserve">
+    <value>Adiciona campo calculado</value>
+  </data>
+  <data name="DashboardWebStringId.DataSources.AvailableDataSourcesError" xml:space="preserve">
+    <value>Ocorreu um erro na tentativa de carregar a lista de fontes de dados disponíveis</value>
+  </data>
+  <data name="DashboardWebStringId.SeriesItem.SeriesDimensions" xml:space="preserve">
+    <value>Dimensões das séries</value>
+  </data>
+  <data name="DashboardWebStringId.Viewer" xml:space="preserve">
+    <value>Visualizador</value>
+  </data>
+  <data name="DashboardWebStringId.ColoringModeOn" xml:space="preserve">
+    <value>On</value>
+  </data>
+  <data name="DashboardWebStringId.Calculations.RankOrder" xml:space="preserve">
+    <value>Classificado em ordem</value>
+  </data>
+  <data name="DashboardWebStringId.Calculations.RankType" xml:space="preserve">
+    <value>Classificado em tipo</value>
+  </data>
+  <data name="DashboardWebStringId.Calculations.WindowDefinitionModePredefined" xml:space="preserve">
+    <value>Predefinidos</value>
+  </data>
+  <data name="DashboardWebStringId.Binding.TooltipDimensions" xml:space="preserve">
+    <value>Dimensões de dica de ferramenta</value>
+  </data>
+  <data name="DashboardWebStringId.Binding.TooltipMeasures" xml:space="preserve">
+    <value>Medidas de dica de ferramenta</value>
+  </data>
+  <data name="DashboardWebStringId.RangeFilter.StartMode" xml:space="preserve">
+    <value>Iniciar modo</value>
+  </data>
+  <data name="DashboardWebStringId.ShowOthersValue" xml:space="preserve">
+    <value>Mostrar "Os outros" valor</value>
+  </data>
+  <data name="DashboardWebStringId.DataSources.NoUsedDataSources" xml:space="preserve">
+    <value>Não há nenhuma fonte de dados usada neste painel.</value>
+  </data>
+  <data name="DashboardWebStringId.Image.SizeMode.Squeeze" xml:space="preserve">
+    <value>Squeeze</value>
+  </data>
+  <data name="DashboardWebStringId.Chart.AxisYSecondary" xml:space="preserve">
+    <value>Eixo Y secundário</value>
+  </data>
+  <data name="DashboardWebStringId.ConditionalFormatting.Miscellaneous" xml:space="preserve">
+    <value>Diversos</value>
+  </data>
+  <data name="DashboardWebStringId.RangeFilter.StartIntervalAndOffset" xml:space="preserve">
+    <value>começar o intervalo e o deslocamento</value>
+  </data>
+  <data name="DashboardWebStringId.Map.Viewport.CreateViewerPaddings" xml:space="preserve">
+    <value>Criar preenchimentos Viewer</value>
+  </data>
+  <data name="DashboardWebStringId.Map.Position.TopCenter" xml:space="preserve">
+    <value>Top Center</value>
+  </data>
+  <data name="DashboardWebStringId.Map.AttributeFileLoaded" xml:space="preserve">
+    <value>(Arquivo. DBF)</value>
+  </data>
+  <data name="DashboardWebStringId.RangeFilter.EndIntervalAndOffset" xml:space="preserve">
+    <value>fim intervalo e o deslocamento</value>
+  </data>
+  <data name="DashboardWebStringId.RangeFilter.EndMode" xml:space="preserve">
+    <value>Modo Final</value>
+  </data>
+  <data name="DashboardWebStringId.Map.Viewport" xml:space="preserve">
+    <value>Viewport</value>
+  </data>
+  <data name="DashboardWebStringId.Map.ShapeFileLoaded" xml:space="preserve">
+    <value>(Arquivo. SHP)</value>
+  </data>
+  <data name="DashboardWebStringId.Parameters.LookUpSettingsTypeCaption" xml:space="preserve">
+    <value>Look-up configurações tipo</value>
+  </data>
+  <data name="DashboardWebStringId.Parameters.NoSelectedParameter" xml:space="preserve">
+    <value>Sem qualquer parâmetro é selecionado.</value>
+  </data>
+  <data name="DashboardWebStringId.Parameters.StaticListLookUpSettings" xml:space="preserve">
+    <value>Configurações de pesquisa lista estática</value>
+  </data>
+  <data name="DashboardWebStringId.Parameters.LookUpSettingsType" xml:space="preserve">
+    <value>Look-up configurações</value>
+  </data>
+  <data name="DashboardWebStringId.TileOptions" xml:space="preserve">
+    <value>Opções de telha</value>
+  </data>
+  <data name="DashboardWebStringId.TilesLabelContentType" xml:space="preserve">
+    <value>Rótulo de telha</value>
+  </data>
+  <data name="DashboardWebStringId.TilesTooltipContentType" xml:space="preserve">
+    <value>Dica de ferramenta da telha</value>
+  </data>
+  <data name="DashboardWebStringId.ConditionalFormatting.IconType.Rating1QuarterGrayCircle" xml:space="preserve">
+    <value>Classificação 1 trimestre cinza círculo</value>
+  </data>
+  <data name="DashboardWebStringId.ConditionalFormatting.IconType.Rating2FilledBoxes" xml:space="preserve">
+    <value>2 caixas cheias de classificação</value>
+  </data>
+  <data name="DashboardWebStringId.ConditionalFormatting.IconType.Rating3FilledBoxes" xml:space="preserve">
+    <value>3 caixas cheias de classificação</value>
+  </data>
+  <data name="DashboardWebStringId.ConditionalFormatting.IconType.Rating3QuartersGrayCircle" xml:space="preserve">
+    <value>Classificação 3 trimestres cinza círculo</value>
+  </data>
+  <data name="DashboardWebStringId.ConditionalFormatting.IconType.Rating4FilledBoxes" xml:space="preserve">
+    <value>4 caixas cheias de classificação</value>
+  </data>
+  <data name="DashboardWebStringId.ConditionalFormatting.IconType.RatingEmptyGrayStar" xml:space="preserve">
+    <value>Classificação Star cinza vazio</value>
+  </data>
+  <data name="DashboardWebStringId.ConditionalFormatting.IconType.RatingFullGrayStar" xml:space="preserve">
+    <value>Avaliação completa cinza estrela</value>
+  </data>
+  <data name="DashboardWebStringId.ConditionalFormatting.IconType.ShapeLightGrayCircle" xml:space="preserve">
+    <value>Forma leve cinza círculo</value>
+  </data>
+  <data name="DashboardWebStringId.ConditionalFormatting.IconType.ShapeLightRedCircle" xml:space="preserve">
+    <value>Forma leve Red Circle</value>
+  </data>
+  <data name="DashboardWebStringId.ConditionalFormatting.IconType.ShapeRedCircle" xml:space="preserve">
+    <value>Círculo vermelho de forma</value>
+  </data>
+  <data name="DashboardWebStringId.ConditionalFormatting.IconType.ShapeYellowCircle" xml:space="preserve">
+    <value>Círculo amarelo de forma</value>
+  </data>
+  <data name="DashboardWebStringId.ConditionalFormatting.IntersectionColumnDimension" xml:space="preserve">
+    <value>Dimensão de coluna interseção</value>
+  </data>
+  <data name="DashboardWebStringId.ConditionalFormatting.IconType.DirectionalRedTriangleDown" xml:space="preserve">
+    <value>Triângulo vermelho direcional para baixo</value>
+  </data>
+  <data name="DashboardWebStringId.ConditionalFormatting.IconType.DirectionalYellowDownInclineArrow" xml:space="preserve">
+    <value>Seta do declive amarelo direcional para baixo</value>
+  </data>
+  <data name="DashboardWebStringId.ConditionalFormatting.IconType.IndicatorCircledGreenCheck" xml:space="preserve">
+    <value>Indicador de um círculo verde Check</value>
+  </data>
+  <data name="DashboardWebStringId.ConditionalFormatting.IconType.IndicatorCircledRedCross" xml:space="preserve">
+    <value>Indicador de um círculo cruz vermelha</value>
+  </data>
+  <data name="DashboardWebStringId.ConditionalFormatting.IconType.IndicatorGreenCheck" xml:space="preserve">
+    <value>Verifique o indicador verde</value>
+  </data>
+  <data name="DashboardWebStringId.ConditionalFormatting.IconType.IndicatorRedCross" xml:space="preserve">
+    <value>Cruz Vermelha de indicador</value>
+  </data>
+  <data name="DashboardWebStringId.Colorization.NoSelectedSchema" xml:space="preserve">
+    <value>Selecione uma cor sсheme para editar</value>
+  </data>
+  <data name="DashboardWebStringId.Chart.ShowPointLablels" xml:space="preserve">
+    <value>Rótulos de ponto de show</value>
+  </data>
+  <data name="DashboardWebStringId.DashboardMenuNewDashboardNamePlaceholder" xml:space="preserve">
+    <value>Digite um nome de painel</value>
+  </data>
+  <data name="DashboardWebStringId.ConditionalFormatting.RangeGradient" xml:space="preserve">
+    <value>Gradiente de gama</value>
+  </data>
+  <data name="DashboardWebStringId.ConditionalFormatting.Ranges" xml:space="preserve">
+    <value>Varia</value>
+  </data>
+  <data name="DashboardWebStringId.DataSources.NoAvailableDataSources" xml:space="preserve">
+    <value>Não há nenhuma datasources avalible.</value>
+  </data>
+  <data name="DashboardWebStringId.DataSources.CalculatedField.UniqueNameError" xml:space="preserve">
+    <value>Campo calculado deve ter um nome exclusivo.</value>
+  </data>
+  <data name="DashboardWebStringId.Gauge.Captions" xml:space="preserve">
+    <value>Mostrar legendas de calibre</value>
+  </data>
+  <data name="DashboardWebStringId.Gauge.Type.FullQuarterGauge" xml:space="preserve">
+    <value>Calibre de quarto completo</value>
+  </data>
+  <data name="DashboardWebStringId.Gauge.Type.RightQuarterCircular" xml:space="preserve">
+    <value>Direito-quarto Circular</value>
+  </data>
+  <data name="DashboardWebStringId.ConditionalFormatting.IconType.DirectionalGrayUpInclineArrow" xml:space="preserve">
+    <value>Gray direcional cima seta do declive</value>
+  </data>
+  <data name="DashboardWebStringId.ConditionalFormatting.IconType.DirectionalGrayArrowUp" xml:space="preserve">
+    <value>Seta cinza direcional cima</value>
+  </data>
+  <data name="DashboardWebStringId.ConditionalFormatting.IconType.DirectionalGrayDownArrow" xml:space="preserve">
+    <value>Gray direcional seta para baixo</value>
+  </data>
+  <data name="DashboardWebStringId.ConditionalFormatting.IconType.DirectionalGrayDownInclineArrow" xml:space="preserve">
+    <value>Seta do declive cinza direcional para baixo</value>
+  </data>
+  <data name="DashboardWebStringId.ConditionalFormatting.IconType.DirectionalGreenTriangleUp" xml:space="preserve">
+    <value>Triângulo verde direcional cima</value>
+  </data>
+  <data name="DashboardWebStringId.ConditionalFormatting.IconType.DirectionalYellowUpInclineArrow" xml:space="preserve">
+    <value>Amarelo direcional cima seta do declive</value>
+  </data>
+  <data name="DashboardWebStringId.Notification.AttemptToLoadParameterValues" xml:space="preserve">
+    <value>Ocorreu um erro na tentativa de carregar valores de parâmetro para a fonte de dados</value>
+  </data>
+  <data name="DashboardWebStringId.Notification.DashboardSavingIsNotAvailable" xml:space="preserve">
+    <value>Salvar não está disponível</value>
+  </data>
+  <data name="DashboardWebStringId.EditInDesigner" xml:space="preserve">
+    <value>Editar no Designer</value>
+  </data>
+  <data name="DashboardWebStringId.ColorScheme.Color" xml:space="preserve">
+    <value>Cor</value>
+  </data>
+  <data name="DashboardWebStringId.ColorScheme.Colors" xml:space="preserve">
+    <value>Cores</value>
+  </data>
+  <data name="DashboardWebStringId.Notification.AttemptToLoadFieldListForDataSource" xml:space="preserve">
+    <value>Ocorreu um erro na tentativa de carregar a lista de campos da fonte de dados</value>
+  </data>
+  <data name="DashboardWebStringId.Notification.AttemptToGetUnderlyingData" xml:space="preserve">
+    <value>Ocorreu um erro na tentativa de obter dados subjacentes para o item</value>
+  </data>
+  <data name="DashboardWebStringId.Binding.ValuesPattern" xml:space="preserve">
+    <value>Valores {0}</value>
+  </data>
+  <data name="DashboardWebStringId.Map.Area.Custom" xml:space="preserve">
+    <value>Personalizado</value>
+  </data>
+  <data name="DashboardWebStringId.Binding.Gauges" xml:space="preserve">
+    <value>Indicadores</value>
+  </data>
+  <data name="DashboardWebStringId.Chart.AxisY" xml:space="preserve">
+    <value>Eixo Y</value>
+  </data>
+  <data name="DashboardWebStringId.Chart.Position.Outside" xml:space="preserve">
+    <value>Fora</value>
+  </data>
+  <data name="DashboardWebStringId.ConditionalFormatting.Condition" xml:space="preserve">
+    <value>Condições</value>
+  </data>
+  <data name="DashboardWebStringId.DashboardMenuNewDashboardCreate" xml:space="preserve">
+    <value>Criar</value>
+  </data>
+  <data name="DashboardWebStringId.Pie.LabelContentType.ArgumentValueAndPercent" xml:space="preserve">
+    <value>Descrição, Valor e Percentual</value>
+  </data>
+  <data name="DashboardWebStringId.Image.SizeMode.Stretch" xml:space="preserve">
+    <value>Estendido</value>
+  </data>
+  <data name="DashboardWebStringId.Image.Alignment.Bottom" xml:space="preserve">
+    <value>Fundo</value>
+  </data>
+  <data name="DashboardWebStringId.Pie.LabelContentType.ValueAndPercent" xml:space="preserve">
+    <value>Valor e Percentual</value>
+  </data>
+  <data name="DashboardWebStringId.ButtonHidden" xml:space="preserve">
+    <value>Oculto</value>
+  </data>
+  <data name="DashboardWebStringId.Options.Caption" xml:space="preserve">
+    <value>Título</value>
+  </data>
+  <data name="DashboardWebStringId.Grid.DisplayMode.Bar" xml:space="preserve">
+    <value>Barra</value>
+  </data>
+  <data name="DashboardWebStringId.Pie.LabelContentType.Percent" xml:space="preserve">
+    <value>Percentual</value>
+  </data>
+  <data name="DashboardWebStringId.Chart.OverlappingMode.Hide" xml:space="preserve">
+    <value>Ocultar</value>
+  </data>
+  <data name="DashboardWebStringId.Chart.AxisX" xml:space="preserve">
+    <value>Eixo X</value>
+  </data>
+  <data name="DashboardWebStringId.Pie.LabelContentType.ArgumentAndValue" xml:space="preserve">
+    <value>Descrição e Valor</value>
+  </data>
+  <data name="DashboardWebStringId.Pie.LabelContentType.ArgumentAndPercent" xml:space="preserve">
+    <value>Descrição e Percentual</value>
+  </data>
+  <data name="DashboardWebStringId.Chart.Orientation" xml:space="preserve">
+    <value>Orientação</value>
+  </data>
+  <data name="DashboardWebStringId.Chart.Legend" xml:space="preserve">
+    <value>Legenda</value>
+  </data>
+  <data name="DashboardWebStringId.Image.Alignment.Top" xml:space="preserve">
+    <value>Topo</value>
+  </data>
+  <data name="DashboardWebStringId.Remove" xml:space="preserve">
+    <value>Remover</value>
+  </data>
+  <data name="DashboardWebStringId.PivotGrid.ValuesPositionColumns" xml:space="preserve">
+    <value>Colunas</value>
+  </data>
+  <data name="DashboardWebStringId.PivotGrid.ValuesPositionRows" xml:space="preserve">
+    <value>Linhas</value>
+  </data>
+  <data name="DashboardWebStringId.PivotGrid.LayoutType" xml:space="preserve">
+    <value>Layout</value>
+  </data>
+  <data name="DashboardWebStringId.PivotGrid.LayoutTypeTabular" xml:space="preserve">
+    <value>Tabular</value>
+  </data>
+  <data name="DashboardWebStringId.CardLayout.TemplateElementsEditor" xml:space="preserve">
+    <value>Valor/Elemento</value>
+  </data>
+  <data name="DashboardWebStringId.Dashboards" xml:space="preserve">
+    <value>Dashboards</value>
+  </data>
+  <data name="DashboardWebStringId.NoDashboards" xml:space="preserve">
+    <value>Não há nenhuma dashboard para exibir.</value>
+  </data>
+  <data name="DashboardWebStringId.Notification.DashboardSaved" xml:space="preserve">
+    <value>Painel de controle está salvo</value>
+  </data>
+  <data name="DashboardWebStringId.DataItem.ShowGrandTotals" xml:space="preserve">
+    <value>Mostrar totais gerais</value>
+  </data>
+  <data name="DashboardWebStringId.DataItem.ShowTotals" xml:space="preserve">
+    <value>Mostrar os totais</value>
+  </data>
+  <data name="DashboardWebStringId.DataItem.ShowValues" xml:space="preserve">
+    <value>Mostrar valores</value>
+  </data>
+  <data name="DashboardWebStringId.Binding.Searching" xml:space="preserve">
+    <value>Comece a digitar para pesquisar...</value>
+  </data>
+  <data name="DashboardWebStringId.Notification.AttemptToConvertItemToType" xml:space="preserve">
+    <value>Ocorreu um erro na tentativa de converter o item para o tipo</value>
+  </data>
+  <data name="DashboardWebStringId.Notification.AttemptToGetColorScheme" xml:space="preserve">
+    <value>Ocorreu um erro na tentativa de obter o esquema de cores</value>
+  </data>
+  <data name="DashboardWebStringId.Notification.AttemptToLoadDashboard" xml:space="preserve">
+    <value>Ocorreu um erro na tentativa de carregar o painel de controle</value>
+  </data>
+  <data name="DashboardWebStringId.Notification.AttemptToLoadDashboards" xml:space="preserve">
+    <value>Ocorreu um erro na tentativa de carregar a lista de painéis de controle disponíveis</value>
+  </data>
+  <data name="DashboardWebStringId.Notification.AttemptToLoadDimensionUniqueValues" xml:space="preserve">
+    <value>Ocorreu um erro na tentativa de carregar os valores exclusivos de dimensão para a fonte de dados</value>
+  </data>
+  <data name="DashboardWebStringId.Notification.DashboardCanNotBeSaved" xml:space="preserve">
+    <value>O painel de controle não pode ser salvo.</value>
+  </data>
+  <data name="DashboardWebStringId.Notification.MethodIsNotAllowedInViewerMode" xml:space="preserve">
+    <value>Este método não é permitido no modo visualizador</value>
+  </data>
+  <data name="DashboardWebStringId.Parameters.ParameterNameShouldBeUnique" xml:space="preserve">
+    <value>Um nome do parâmetro deve ser exclusivo</value>
+  </data>
+  <data name="DashboardWebStringId.Errors.AttemptToLoadData" xml:space="preserve">
+    <value>Ocorreu um erro na tentativa de carregar os dados</value>
+  </data>
+  <data name="DashboardWebStringId.LimitVisibleData.DisplayAllDataTooltip" xml:space="preserve">
+    <value>Este item do painel de controle está vinculado a um grande conjunto de dados e atualmente não exibe todos os dados para manter o desempenho. Clique neste botão para exibir todos os dados.</value>
+  </data>
+  <data name="DashboardWebStringId.LimitVisibleData.IncreasePerformanceTooltip" xml:space="preserve">
+    <value>Este item Painel de controle é vinculado a um grande conjunto de dados. Para aumentar o desempenho, clique nesse ícone para limitar os dados visíveis.</value>
+  </data>
+  <data name="DashboardWebStringId.PivotGrid.RowTotalsPosition" xml:space="preserve">
+    <value>Posição da linha totais</value>
+  </data>
+  <data name="DashboardWebStringId.PivotGrid.ValuesPosition" xml:space="preserve">
+    <value>Posição de valores</value>
+  </data>
+  <data name="DashboardWebStringId.Title.ImageEmbedded" xml:space="preserve">
+    <value>Incorporado</value>
+  </data>
+  <data name="DashboardWebStringId.Title.ImageLinked" xml:space="preserve">
+    <value>Vinculado</value>
+  </data>
+  <data name="DashboardWebStringId.Map.CustomMapOptionsUrl" xml:space="preserve">
+    <value>URL</value>
+  </data>
+  <data name="DashboardWebStringId.Binding.DefaultEmptyPlaceholder" xml:space="preserve">
+    <value>Conjunto {0}</value>
+  </data>
+  <data name="DashboardWebStringId.Calculations" xml:space="preserve">
+    <value>Cálculos</value>
+  </data>
+  <data name="DashboardWebStringId.Calculations.DifferenceCalculation" xml:space="preserve">
+    <value>Diferença de</value>
+  </data>
+  <data name="DashboardWebStringId.CardLayout.ApplyToAllCards" xml:space="preserve">
+    <value>Se aplicam a todos os cartões</value>
+  </data>
+  <data name="DashboardWebStringId.PivotGrid.ColumnTotalsPositionFar" xml:space="preserve">
+    <value>Distante</value>
+  </data>
+  <data name="DashboardWebStringId.PivotGrid.ColumnTotalsPositionNear" xml:space="preserve">
+    <value>Próximo</value>
+  </data>
+  <data name="DashboardWebStringId.CardLayout.ResetTemplate" xml:space="preserve">
+    <value>Redefinir</value>
+  </data>
+  <data name="DashboardWebStringId.PivotGrid.RowTotalsPositionBottom" xml:space="preserve">
+    <value>Fundo</value>
+  </data>
+  <data name="DashboardWebStringId.PivotGrid.RowTotalsPositionTop" xml:space="preserve">
+    <value>Topo</value>
+  </data>
+  <data name="DashboardWebStringId.Title.ImageNone" xml:space="preserve">
+    <value>Nenhum</value>
+  </data>
+  <data name="DashboardWebStringId.Map.CustomMapOptionsFile" xml:space="preserve">
+    <value>Arquivo</value>
+  </data>
+  <data name="DashboardWebStringId.Dialog.ButtonYes" xml:space="preserve">
+    <value>Sim</value>
+  </data>
+  <data name="DashboardWebStringId.Grid.Hyperlink" xml:space="preserve">
+    <value>Hiperlink</value>
+  </data>
+  <data name="DashboardWebStringId.PivotGrid.LayoutTypeCompact" xml:space="preserve">
+    <value>Compacto</value>
+  </data>
+  <data name="DashboardWebStringId.Calculations.Expression" xml:space="preserve">
+    <value>Cálculo</value>
+  </data>
+  <data name="DashboardWebStringId.PivotGrid.ColumnTotalsPosition" xml:space="preserve">
+    <value>Posição de totais de coluna</value>
+  </data>
+  <data name="DashboardWebStringId.Map.CustomMapOptionsSource" xml:space="preserve">
+    <value>Fonte</value>
+  </data>
+  <data name="DashboardWebStringId.ConditionalFormatting.UnsupportedDataType" xml:space="preserve">
+    <value>Este tipo de dados não é suportado</value>
+  </data>
+  <data name="DashboardWebStringId.Binding.DefaultSelectedPlaceholder" xml:space="preserve">
+    <value>Configurar o {0}</value>
+  </data>
+  <data name="DashboardWebStringId.Binding.EmptySearchResult" xml:space="preserve">
+    <value>Nada foi encontrado.</value>
+  </data>
+  <data name="DashboardWebStringId.Calculations.Moving" xml:space="preserve">
+    <value>Movendo-se de</value>
+  </data>
+  <data name="DashboardWebStringId.Binding.ShowAll" xml:space="preserve">
+    <value>Mostrar todos</value>
+  </data>
+  <data name="DashboardWebStringId.Calculations.Rank" xml:space="preserve">
+    <value>Rank de</value>
+  </data>
+  <data name="DashboardWebStringId.Calculations.RunningTotal" xml:space="preserve">
+    <value>Execução Total de</value>
+  </data>
+  <data name="DashboardWebStringId.AddNewDashboard" xml:space="preserve">
+    <value>Para adicionar um novo painel de controle, clique em</value>
+  </data>
+  <data name="DashboardWebStringId.Notification.NewDashboardCannotBeCreated" xml:space="preserve">
+    <value>Não é possível criar um novo painel de instrumentos</value>
+  </data>
+  <data name="DashboardWebStringId.Notification.ErrorHasOccuredOn" xml:space="preserve">
+    <value>Um erro em um</value>
+  </data>
+  <data name="DashboardWebStringId.Calculations.PercentOfTotal" xml:space="preserve">
+    <value>Por cento do Total de</value>
+  </data>
+  <data name="DashboardWebStringId.MobileLayout.Back" xml:space="preserve">
+    <value>Voltar</value>
+  </data>
+  <data name="DashboardWebStringId.Delta.ValueType" xml:space="preserve">
+    <value>Tipo de valor</value>
+  </data>
+  <data name="DashboardWebStringId.SummaryType" xml:space="preserve">
+    <value>Resumo Tipo</value>
+  </data>
+  <data name="DashboardWebStringId.Dimension.SortMode" xml:space="preserve">
+    <value>Classificar Modo</value>
+  </data>
+  <data name="DashboardWebStringId.Gauge.Scale.Custom" xml:space="preserve">
+    <value>Personalizado</value>
+  </data>
+  <data name="DashboardWebStringId.Gauge.Scale.Auto" xml:space="preserve">
+    <value>Auto</value>
+  </data>
+  <data name="DashboardWebStringId.TopN.Bottom" xml:space="preserve">
+    <value>Inferior</value>
+  </data>
+  <data name="DashboardWebStringId.TopN.Top" xml:space="preserve">
+    <value>Topo</value>
+  </data>
+  <data name="DashboardWebStringId.FormatType" xml:space="preserve">
+    <value>Formato de Tipo</value>
+  </data>
+  <data name="DashboardWebStringId.ConditionalFormatting.ConditionMaximum" xml:space="preserve">
+    <value>Máxima</value>
+  </data>
+  <data name="DashboardWebStringId.ConditionalFormatting.ConditionMinimum" xml:space="preserve">
+    <value>Mínimo</value>
+  </data>
+  <data name="DashboardWebStringId.ConditionalFormatting.Appearance.ForeColor" xml:space="preserve">
+    <value>Cor anterior</value>
+  </data>
+  <data name="DashboardWebStringId.ConditionalFormatting.Appearance.BackColor" xml:space="preserve">
+    <value>Cor de Fundo</value>
+  </data>
+  <data name="DashboardWebStringId.Type" xml:space="preserve">
+    <value>Tipo</value>
+  </data>
+  <data name="DashboardWebStringId.TopNMode" xml:space="preserve">
+    <value>Modo
+</value>
+  </data>
+  <data name="DevExpressWebStringId.CalculatedFieldDataType" xml:space="preserve">
+    <value>Tipo de Dado</value>
+  </data>
+  <data name="DashboardWebStringId.Grid.WordWrap" xml:space="preserve">
+    <value>Quebra de linha</value>
+  </data>
+  <data name="DashboardWebStringId.Grid.VerticalLines" xml:space="preserve">
+    <value>Linhas Verticais</value>
+  </data>
+  <data name="DashboardWebStringId.Grid.MergeCells" xml:space="preserve">
+    <value>Mesclar células</value>
+  </data>
+  <data name="DashboardWebStringId.Grid.HorizontalLines" xml:space="preserve">
+    <value>Linhas Horizontais</value>
+  </data>
+  <data name="DashboardWebStringId.Grid.ManualGridColumnWidthMode" xml:space="preserve">
+    <value>Manual</value>
+  </data>
+  <data name="DashboardWebStringId.Grid.BandedRows" xml:space="preserve">
+    <value>Pintar Linhas</value>
+  </data>
+  <data name="DashboardWebStringId.Grid.ColumnHeaders" xml:space="preserve">
+    <value>Cabeçalhos das Colunas</value>
+  </data>
+  <data name="DashboardWebStringId.Grid.AutoFitToContentsColumnWidthMode" xml:space="preserve">
+    <value>AutoAjuste para conteúdo</value>
+  </data>
+  <data name="DashboardWebStringId.Grid.AutoFitToGridColumnWidthMode" xml:space="preserve">
+    <value>AutoAjuste para grade</value>
+  </data>
+  <data name="DashboardWebStringId.Treemap.BottomLeftToTopRightLayoutDirection" xml:space="preserve">
+    <value>Canto inferior esquerdo - canto superior direito</value>
+  </data>
+  <data name="DashboardWebStringId.Treemap.BottomRightToTopLeftLayoutDirection" xml:space="preserve">
+    <value>Inferior direito - superior esquerdo</value>
+  </data>
+  <data name="DashboardWebStringId.Treemap.SquarifiedLayoutAlgorithm" xml:space="preserve">
+    <value>Squarified</value>
+  </data>
+  <data name="DashboardWebStringId.Treemap.TopLeftToBottomRightLayoutDirection" xml:space="preserve">
+    <value>Superior esquerda - inferior direito</value>
+  </data>
+  <data name="DashboardWebStringId.Treemap.TopRightToBottomLeftLayoutDirection" xml:space="preserve">
+    <value>Superior direito - inferior esquerdo</value>
+  </data>
+  <data name="DashboardWebStringId.Treemap.TileLabelsValue" xml:space="preserve">
+    <value>Valor</value>
+  </data>
+  <data name="DashboardWebStringId.Treemap.TileTooltipsArgument" xml:space="preserve">
+    <value>Argumento</value>
+  </data>
+  <data name="DashboardWebStringId.Treemap.TileLabelsArgument" xml:space="preserve">
+    <value>Argumento</value>
+  </data>
+  <data name="DashboardWebStringId.Treemap.TileLabelsNone" xml:space="preserve">
+    <value>Nenhum</value>
+  </data>
+  <data name="DashboardWebStringId.Treemap.TileTooltipsNone" xml:space="preserve">
+    <value>Nenhum</value>
+  </data>
+  <data name="DashboardWebStringId.Treemap.TileTooltipsValue" xml:space="preserve">
+    <value>Valor</value>
+  </data>
+  <data name="DashboardWebStringId.Treemap.LayoutDirection" xml:space="preserve">
+    <value>Direção de layout</value>
+  </data>
+  <data name="DashboardWebStringId.Treemap.SliceAndDiceLayoutAlgorithm" xml:space="preserve">
+    <value>Despedaçar</value>
+  </data>
+  <data name="DashboardWebStringId.Treemap.StripedLayoutAlgorithm" xml:space="preserve">
+    <value>Listrado</value>
+  </data>
+  <data name="DashboardWebStringId.Treemap.GroupLabelsArgument" xml:space="preserve">
+    <value>Argumento</value>
+  </data>
+  <data name="DashboardWebStringId.Treemap.GroupLabelsNone" xml:space="preserve">
+    <value>Nenhum</value>
+  </data>
+  <data name="DashboardWebStringId.Treemap.GroupLabelsValue" xml:space="preserve">
+    <value>Valor</value>
+  </data>
+  <data name="DashboardWebStringId.Treemap.GroupTooltipsArgument" xml:space="preserve">
+    <value>Argumento</value>
+  </data>
+  <data name="DashboardWebStringId.Treemap.GroupTooltipsNone" xml:space="preserve">
+    <value>Nenhum</value>
+  </data>
+  <data name="DashboardWebStringId.Treemap.GroupTooltipsValue" xml:space="preserve">
+    <value>Valor</value>
+  </data>
+  <data name="DashboardWebStringId.Pie.LabelPositionOutside" xml:space="preserve">
+    <value>Fora</value>
+  </data>
+  <data name="DashboardWebStringId.Pie.LabelPositionInside" xml:space="preserve">
+    <value>Dentro</value>
+  </data>
+  <data name="DashboardWebStringId.InteractivityOptions.DrillDown" xml:space="preserve">
+    <value>Expandir</value>
+  </data>
+  <data name="DashboardWebStringId.InteractivityOptions.IgnoreMasterFilters" xml:space="preserve">
+    <value>Ignorar Filtro Principal</value>
+  </data>
+  <data name="DashboardWebStringId.Pie.ShowCaptions" xml:space="preserve">
+    <value>Mostrar legendas de torta</value>
+  </data>
+  <data name="DashboardWebStringId.AccordionTab.ImageOptions" xml:space="preserve">
+    <value>Opções</value>
+  </data>
+  <data name="DashboardWebStringId.AccordionTab.Common" xml:space="preserve">
+    <value>Comum</value>
+  </data>
+  <data name="DashboardWebStringId.AccordionTab.ChartLegend" xml:space="preserve">
+    <value>Legenda</value>
+  </data>
+  <data name="DashboardWebStringId.AccordionTab.Layout" xml:space="preserve">
+    <value>Layout</value>
+  </data>
+  <data name="DashboardWebStringId.AccordionTab.Labels" xml:space="preserve">
+    <value>Rótulos</value>
+  </data>
+  <data name="DashboardWebStringId.AccordionTab.MapLegend" xml:space="preserve">
+    <value>Legenda</value>
+  </data>
+  <data name="DashboardWebStringId.AccordionTab.WeightedLegend" xml:space="preserve">
+    <value>Legenda Ponderada</value>
+  </data>
+  <data name="DashboardWebStringId.Grid.ColumnWidthMode" xml:space="preserve">
+    <value>Modo de largura de coluna</value>
+  </data>
+  <data name="DashboardWebStringId.AccordionTab.PivotInitialState" xml:space="preserve">
+    <value>Estado inicial</value>
+  </data>
+  <data name="DashboardWebStringId.Chart.ShowLegend" xml:space="preserve">
+    <value>Apresentar Legenda</value>
+  </data>
+  <data name="DashboardWebStringId.Chart.AddPane" xml:space="preserve">
+    <value>Adicionar Painel</value>
+  </data>
+  <data name="DashboardWebStringId.Chart.SeriesType" xml:space="preserve">
+    <value>Tipo de Série</value>
+  </data>
+  <data name="DashboardWebStringId.TreeView.AutoExpand" xml:space="preserve">
+    <value>Auto Expandir</value>
+  </data>
+  <data name="DashboardWebStringId.Map.ShowLegend" xml:space="preserve">
+    <value>Mostrar Legenda</value>
+  </data>
+  <data name="DashboardWebStringId.CrossDataSourceFiltering" xml:space="preserve">
+    <value>Filtro entre Fonte de Dados</value>
+  </data>
+  <data name="DashboardWebStringId.AccordionTab.ShowTotals" xml:space="preserve">
+    <value>Totais</value>
+  </data>
+  <data name="DashboardWebStringId.WeightedLegendGalleryGroup" xml:space="preserve">
+    <value>Posição</value>
+  </data>
+  <data name="DashboardWebStringId.DashboardParameters" xml:space="preserve">
+    <value>Parâmetros</value>
+  </data>
+  <data name="DashboardWebStringId.ShowCaptionText" xml:space="preserve">
+    <value>Apresentar Descrição</value>
+  </data>
+  <data name="DashboardWebStringId.DefaultNameBubbleMapItem" xml:space="preserve">
+    <value>Mapa de bolha</value>
+  </data>
+  <data name="DashboardWebStringId.DefaultNamePieMapItem" xml:space="preserve">
+    <value>Mapa de Pizza</value>
+  </data>
+  <data name="DashboardWebStringId.DefaultNameGeoPointMapItem" xml:space="preserve">
+    <value>Mapa de pontos geográficos</value>
+  </data>
+  <data name="DashboardWebStringId.MapLockNavigation" xml:space="preserve">
+    <value>Bloquear navegação</value>
+  </data>
+  <data name="DashboardWebStringId.AccordionTab.ChoroplethMapShapeLabelsAttribute" xml:space="preserve">
+    <value>Rótulos de forma</value>
+  </data>
+  <data name="DashboardWebStringId.TextBoxFormatText" xml:space="preserve">
+    <value>Formato</value>
+  </data>
+  <data name="DashboardWebStringId.StyleSettings" xml:space="preserve">
+    <value>Estilo</value>
+  </data>
+  <data name="DashboardWebStringId.DimensionSortBy" xml:space="preserve">
+    <value>Ordenar por</value>
+  </data>
+  <data name="DashboardWebStringId.DateFilter.ArrangementModeHorizontal" xml:space="preserve">
+    <value>Horizontal</value>
+  </data>
+  <data name="DashboardWebStringId.DateFilter.ArrangementModeVertical" xml:space="preserve">
+    <value>Vertical</value>
+  </data>
+  <data name="DashboardWebStringId.DateFilter.FilterTypeBetween" xml:space="preserve">
+    <value>Entre</value>
+  </data>
+  <data name="DashboardWebStringId.DisplayItemAsPage" xml:space="preserve">
+    <value>Item de exibição como página</value>
+  </data>
+  <data name="DashboardWebStringId.DateFilter.DatePickerLocationFar" xml:space="preserve">
+    <value>Distante</value>
+  </data>
+  <data name="DashboardWebStringId.DateFilter.DatePickerLocationNear" xml:space="preserve">
+    <value>Próximo</value>
+  </data>
+  <data name="DashboardWebStringId.DateFilter.DatePickerLocationHidden" xml:space="preserve">
+    <value>Oculto</value>
+  </data>
+  <data name="DashboardWebStringId.Grid.FilterClause.ResetOperation" xml:space="preserve">
+    <value>Redefinir</value>
+  </data>
+  <data name="DashboardWebStringId.Grid.FilterClause.Between" xml:space="preserve">
+    <value>Entre</value>
+  </data>
+  <data name="DashboardWebStringId.Grid.FilterClause.Contains" xml:space="preserve">
+    <value>Contém</value>
+  </data>
+  <data name="DashboardWebStringId.Grid.FilterClause.DoesNotContain" xml:space="preserve">
+    <value>Não contém</value>
+  </data>
+  <data name="DashboardWebStringId.Grid.FilterClause.EndsWith" xml:space="preserve">
+    <value>Termina com</value>
+  </data>
+  <data name="DashboardWebStringId.Grid.FilterClause.Equals" xml:space="preserve">
+    <value>Igual</value>
+  </data>
+  <data name="DashboardWebStringId.Grid.FilterClause.BetweenStart" xml:space="preserve">
+    <value>Início:</value>
+  </data>
+  <data name="DashboardWebStringId.TextBoxItemEditor.DialogClose" xml:space="preserve">
+    <value>Fechar</value>
+  </data>
+  <data name="DashboardWebStringId.AccordionTab.Content" xml:space="preserve">
+    <value>Conteúdo</value>
+  </data>
+  <data name="DashboardWebStringId.Chart.LogarithmicScaleBase5" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="DashboardWebStringId.Chart.LogarithmicScaleBase2" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="DashboardWebStringId.AccordionTab.MeasureFilter" xml:space="preserve">
+    <value>Filtro</value>
+  </data>
+  <data name="DashboardWebStringId.ConditionalFormatting.DatesOccurringToday" xml:space="preserve">
+    <value>Hoje</value>
+  </data>
+  <data name="DashboardWebStringId.ConditionalFormatting.DatesOccurringTomorrow" xml:space="preserve">
+    <value>Amanhã</value>
+  </data>
+  <data name="DashboardWebStringId.ConditionalFormatting.DatesOccurringYesterday" xml:space="preserve">
+    <value>Ontem</value>
+  </data>
+  <data name="DashboardWebStringId.ConditionalFormatting.DatesOccurringEarlierThisYear" xml:space="preserve">
+    <value>Este ano, antes deste mês</value>
+  </data>
+  <data name="DashboardWebStringId.ConditionalFormatting.DatesOccurringMonthAgo2" xml:space="preserve">
+    <value>Durante o mês, 2 meses atrás</value>
+  </data>
+  <data name="DashboardWebStringId.ConditionalFormatting.DatesOccurringMonthAgo3" xml:space="preserve">
+    <value>Durante o mês, 3 meses atrás</value>
+  </data>
+  <data name="DashboardWebStringId.ConditionalFormatting.DatesOccurringMonthAgo4" xml:space="preserve">
+    <value>Durante o mês, 4 meses atrás</value>
+  </data>
+  <data name="DashboardWebStringId.ConditionalFormatting.DatesOccurringMonthAgo6" xml:space="preserve">
+    <value>Durante o mês, 6 meses atrás</value>
+  </data>
+  <data name="DashboardWebStringId.ConditionalFormatting.DatesOccurringNextWeek" xml:space="preserve">
+    <value>Na próxima semana</value>
+  </data>
+  <data name="DashboardWebStringId.ConditionalFormatting.DatesOccurringPriorThisYear" xml:space="preserve">
+    <value>Antes deste ano</value>
+  </data>
+  <data name="DashboardWebStringId.ConditionalFormatting.DatesOccurringThisMonth" xml:space="preserve">
+    <value>Este Mês</value>
+  </data>
+  <data name="DashboardWebStringId.ConditionalFormatting.DatesOccurringThisWeek" xml:space="preserve">
+    <value>Esta Semana</value>
+  </data>
+  <data name="DashboardWebStringId.ConditionalFormatting.DatesOccurringMonthAfter1" xml:space="preserve">
+    <value>No próximo mês</value>
+  </data>
+  <data name="DashboardWebStringId.ConditionalFormatting.DatesOccurringMonthAgo1" xml:space="preserve">
+    <value>No mês Passado</value>
+  </data>
+  <data name="DashboardWebStringId.ConditionalFormatting.DatesOccurringLastWeek" xml:space="preserve">
+    <value>Na semana passada</value>
+  </data>
+  <data name="DashboardWebStringId.ConditionalFormatting.DatesOccurringBeyondThisYear" xml:space="preserve">
+    <value>Na sequência deste ano</value>
+  </data>
+  <data name="DashboardWebStringId.ConditionalFormatting.DatesOccurringNone" xml:space="preserve">
+    <value>Nenhum</value>
+  </data>
+  <data name="DashboardWebStringId.ConditionalFormatting.DatesOccurringEmpty" xml:space="preserve">
+    <value>Vazio</value>
+  </data>
+  <data name="DashboardWebStringId.DataSources.Rename" xml:space="preserve">
+    <value>Renomear</value>
+  </data>
+  <data name="DashboardWebStringId.Binding.DataSource" xml:space="preserve">
+    <value>Fonte de Dados</value>
+  </data>
+  <data name="DashboardWebStringId.Filters" xml:space="preserve">
+    <value>Filtros</value>
+  </data>
+  <data name="DashboardWebStringId.AccordionTab.VisibleDataFilter" xml:space="preserve">
+    <value>Filtro de Dados Visíveis</value>
+  </data>
+  <data name="DashboardWebStringId.FormatRuleApplyToTextElement" xml:space="preserve">
+    <value>Texto</value>
+  </data>
+  <data name="DashboardWebStringId.FormatRuleApplyToDimensionElement" xml:space="preserve">
+    <value>Dimensão</value>
+  </data>
+  <data name="DashboardWebStringId.Dialog.Warning" xml:space="preserve">
+    <value>Aviso</value>
+  </data>
+  <data name="DashboardWebStringId.DateFilter.FilterTypeAfter" xml:space="preserve">
+    <value>Após</value>
+  </data>
+  <data name="DashboardWebStringId.DateFilter.FilterTypeBefore" xml:space="preserve">
+    <value>Antes</value>
+  </data>
+  <data name="DashboardWebStringId.Map.Position.TopLeft" xml:space="preserve">
+    <value>Topo Esquerda</value>
+  </data>
+  <data name="DashboardWebStringId.Map.Position.TopRight" xml:space="preserve">
+    <value>Topo Direita</value>
+  </data>
+  <data name="DashboardWebStringId.DesignerToolbar.Pixels" xml:space="preserve">
+    <value>px</value>
+  </data>
+  <data name="DashboardWebStringId.DesignerToolbar.Height" xml:space="preserve">
+    <value>A:</value>
+  </data>
+  <data name="DashboardWebStringId.DesignerToolbar.Width" xml:space="preserve">
+    <value>L:</value>
+  </data>
+  <data name="DashboardWebStringId.FilterElementCheckedComboBoxSelected" xml:space="preserve">
+    <value>{0} selecionado</value>
+  </data>
+</root>

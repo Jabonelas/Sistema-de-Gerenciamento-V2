@@ -1,0 +1,803 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="SnapStringId.ChangeEditorRowLimitCommand_MenuCaption" xml:space="preserve">
+    <value>Limite de Linha do Editor</value>
+  </data>
+  <data name="SnapStringId.FilterListCommand_MenuCaption" xml:space="preserve">
+    <value>Filtro</value>
+  </data>
+  <data name="SnapStringId.GroupFieldsCollectionCommand_Description" xml:space="preserve">
+    <value>Clique para gerenciar grupos do documento</value>
+  </data>
+  <data name="SnapStringId.GroupFieldsCollectionCommand_MenuCaption" xml:space="preserve">
+    <value>Campos de Grupo</value>
+  </data>
+  <data name="SnapStringId.GroupFooterCommand_Description" xml:space="preserve">
+    <value>Clique para adicionar ou remover um rodapé de grupo</value>
+  </data>
+  <data name="SnapStringId.GroupFooterCommand_MenuCaption" xml:space="preserve">
+    <value>Rodapé</value>
+  </data>
+  <data name="SnapStringId.GroupHeaderCommand_Description" xml:space="preserve">
+    <value>Clique para adicionar ou remover um cabeçalho de grupo</value>
+  </data>
+  <data name="SnapStringId.GroupHeaderCommand_MenuCaption" xml:space="preserve">
+    <value>Cabeçalho</value>
+  </data>
+  <data name="SnapStringId.HighlightActiveElementCommand_Description" xml:space="preserve">
+    <value>Clique para visualizar as informações sobre os limites e o tipo do elemento atual</value>
+  </data>
+  <data name="SnapStringId.InsertEmptyRowDataRowSeparatorCommand_Description" xml:space="preserve">
+    <value>Linha Vazia</value>
+  </data>
+  <data name="SnapStringId.InsertEmptyRowDataRowSeparatorCommand_MenuCaption" xml:space="preserve">
+    <value>Linha Vazia</value>
+  </data>
+  <data name="SnapStringId.InsertEmptyRowGroupSeparatorCommand_Description" xml:space="preserve">
+    <value>Linha Vazia</value>
+  </data>
+  <data name="SnapStringId.InsertEmptyRowGroupSeparatorCommand_MenuCaption" xml:space="preserve">
+    <value>Linha Vazia</value>
+  </data>
+  <data name="SnapStringId.InsertGroupFooterCommand_Description" xml:space="preserve">
+    <value>Adiciona Rodapé</value>
+  </data>
+  <data name="SnapStringId.InsertNoneGroupSeparatorCommand_MenuCaption" xml:space="preserve">
+    <value>Nenhum</value>
+  </data>
+  <data name="SnapStringId.ListFooterCommand_Description" xml:space="preserve">
+    <value>Clique para adicionar ou remover um rodapé da lista</value>
+  </data>
+  <data name="SnapStringId.ListFooterCommand_MenuCaption" xml:space="preserve">
+    <value>Rodapé</value>
+  </data>
+  <data name="SnapStringId.ListHeaderCommand_MenuCaption" xml:space="preserve">
+    <value>Cabeçalho</value>
+  </data>
+  <data name="SnapStringId.PropertiesCommand_MenuCaption" xml:space="preserve">
+    <value>Propriedades</value>
+  </data>
+  <data name="SnapStringId.SummaryCountCommand_MenuCaption" xml:space="preserve">
+    <value>Contagem</value>
+  </data>
+  <data name="SnapStringId.SummarySumCommand_Description" xml:space="preserve">
+    <value>Soma</value>
+  </data>
+  <data name="SnapStringId.SummarySumCommand_MenuCaption" xml:space="preserve">
+    <value>Soma</value>
+  </data>
+  <data name="SnapStringId.EditorRowLimitShowAll" xml:space="preserve">
+    <value>(Mostrar Todos)</value>
+  </data>
+  <data name="SnapStringId.FilterFieldCommand_MenuCaption" xml:space="preserve">
+    <value>Filtro</value>
+  </data>
+  <data name="SnapStringId.FilterListCommand_Description" xml:space="preserve">
+    <value>Clique para definir um critério de filtro para a lista</value>
+  </data>
+  <data name="SnapStringId.HighlightActiveElementCommand_MenuCaption" xml:space="preserve">
+    <value>Destaque</value>
+  </data>
+  <data name="SnapStringId.InsertChartCommand_Description" xml:space="preserve">
+    <value>Inserir Gráfico</value>
+  </data>
+  <data name="SnapStringId.InsertChartCommand_MenuCaption" xml:space="preserve">
+    <value>Gráfico</value>
+  </data>
+  <data name="SnapStringId.InsertCheckBoxCommand_Description" xml:space="preserve">
+    <value>Inserir Caixa de Seleção</value>
+  </data>
+  <data name="SnapStringId.InsertCheckBoxCommand_MenuCaption" xml:space="preserve">
+    <value>Caixa de Seleção</value>
+  </data>
+  <data name="SnapStringId.InsertDataRowSeparatorCommand_MenuCaption" xml:space="preserve">
+    <value>Separador</value>
+  </data>
+  <data name="SnapStringId.InsertEmptyParagraphDataRowSeparatorCommand_Description" xml:space="preserve">
+    <value>Parágrafo Vazio</value>
+  </data>
+  <data name="SnapStringId.InsertEmptyParagraphDataRowSeparatorCommand_MenuCaption" xml:space="preserve">
+    <value>Parágrafo Vazio</value>
+  </data>
+  <data name="SnapStringId.InsertEmptyParagraphGroupSeparatorCommand_Description" xml:space="preserve">
+    <value>Parágrafo Vazio</value>
+  </data>
+  <data name="SnapStringId.InsertEmptyParagraphGroupSeparatorCommand_MenuCaption" xml:space="preserve">
+    <value>Parágrafo Vazio</value>
+  </data>
+  <data name="SnapStringId.InsertGroupFooterCommand_MenuCaption" xml:space="preserve">
+    <value>Adicionar Rodapé</value>
+  </data>
+  <data name="SnapStringId.InsertGroupHeaderCommand_MenuCaption" xml:space="preserve">
+    <value>Adicionar Cabeçalho</value>
+  </data>
+  <data name="SnapStringId.InsertGroupSeparatorCommand_MenuCaption" xml:space="preserve">
+    <value>Separador</value>
+  </data>
+  <data name="SnapStringId.InsertListFooterCommand_MenuCaption" xml:space="preserve">
+    <value>Adicionar Rodapé</value>
+  </data>
+  <data name="SnapStringId.InsertListHeaderCommand_MenuCaption" xml:space="preserve">
+    <value>Adicionar Cabeçalho</value>
+  </data>
+  <data name="SnapStringId.InsertNoneDataRowSeparatorCommand_Description" xml:space="preserve">
+    <value>Nenhum</value>
+  </data>
+  <data name="SnapStringId.InsertNoneDataRowSeparatorCommand_MenuCaption" xml:space="preserve">
+    <value>Nenhum</value>
+  </data>
+  <data name="SnapStringId.InsertNoneGroupSeparatorCommand_Description" xml:space="preserve">
+    <value>Nenhum</value>
+  </data>
+  <data name="SnapStringId.InsertPageBreakDataRowSeparatorCommand_Description" xml:space="preserve">
+    <value>Quebra de Página</value>
+  </data>
+  <data name="SnapStringId.InsertPageBreakDataRowSeparatorCommand_MenuCaption" xml:space="preserve">
+    <value>Quebra de Página</value>
+  </data>
+  <data name="SnapStringId.InsertPageBreakGroupSeparatorCommand_Description" xml:space="preserve">
+    <value>Quebra de Página</value>
+  </data>
+  <data name="SnapStringId.InsertPageBreakGroupSeparatorCommand_MenuCaption" xml:space="preserve">
+    <value>Quebra de Página</value>
+  </data>
+  <data name="SnapStringId.InsertSectionBreakNextPageDataRowSeparatorCommand_Description" xml:space="preserve">
+    <value>Seção (Próxima Página)</value>
+  </data>
+  <data name="SnapStringId.InsertSectionBreakNextPageDataRowSeparatorCommand_MenuCaption" xml:space="preserve">
+    <value>Seção (Próxima Página)</value>
+  </data>
+  <data name="SnapStringId.InsertSectionBreakNextPageGroupSeparatorCommand_Description" xml:space="preserve">
+    <value>Seção (Próxima Página)</value>
+  </data>
+  <data name="SnapStringId.InsertSectionBreakNextPageGroupSeparatorCommand_MenuCaption" xml:space="preserve">
+    <value>Seção (Próxima Página)</value>
+  </data>
+  <data name="SnapStringId.InsertSectionBreakOddPageDataRowSeparatorCommand_Description" xml:space="preserve">
+    <value>Seção (Página Ímpar)</value>
+  </data>
+  <data name="SnapStringId.InsertSectionBreakOddPageDataRowSeparatorCommand_MenuCaption" xml:space="preserve">
+    <value>Seção (Página Ímpar)</value>
+  </data>
+  <data name="SnapStringId.InsertSectionBreakOddPageGroupSeparatorCommand_Description" xml:space="preserve">
+    <value>Seção (Página Ímpar)</value>
+  </data>
+  <data name="SnapStringId.InsertSectionBreakOddPageGroupSeparatorCommand_MenuCaption" xml:space="preserve">
+    <value>Seção (Página Ímpar)</value>
+  </data>
+  <data name="SnapStringId.Msg_DataSourceNameExists" xml:space="preserve">
+    <value>Uma fonte de dados com o mesmo nome já existe</value>
+  </data>
+  <data name="SnapStringId.Msg_InvalidEditorRowLimit" xml:space="preserve">
+    <value>Valor inválido</value>
+  </data>
+  <data name="SnapStringId.PropertiesCommand_Description" xml:space="preserve">
+    <value>Clique para navegar e personalizar as propriedades do campo</value>
+  </data>
+  <data name="SnapStringId.RemoveGroupFooterCommand_Description" xml:space="preserve">
+    <value>Remover Rodapé</value>
+  </data>
+  <data name="SnapStringId.RemoveGroupFooterCommand_MenuCaption" xml:space="preserve">
+    <value>Remover Rodapé</value>
+  </data>
+  <data name="SnapStringId.RemoveGroupHeaderCommand_Description" xml:space="preserve">
+    <value>Remover Cabeçalho</value>
+  </data>
+  <data name="SnapStringId.RemoveGroupHeaderCommand_MenuCaption" xml:space="preserve">
+    <value>Remover Cabeçalho</value>
+  </data>
+  <data name="SnapStringId.RemoveListFooterCommand_Description" xml:space="preserve">
+    <value>Remover Rodapé</value>
+  </data>
+  <data name="SnapStringId.RemoveListFooterCommand_MenuCaption" xml:space="preserve">
+    <value>Remover Rodapé</value>
+  </data>
+  <data name="SnapStringId.RemoveListHeaderCommand_Description" xml:space="preserve">
+    <value>Remover Cabeçalho</value>
+  </data>
+  <data name="SnapStringId.RemoveListHeaderCommand_MenuCaption" xml:space="preserve">
+    <value>Remover Cabeçalho</value>
+  </data>
+  <data name="SnapStringId.RunChartWizardCommand_Description" xml:space="preserve">
+    <value>Executar assistente...</value>
+  </data>
+  <data name="SnapStringId.RunChartWizardCommand_MenuCaption" xml:space="preserve">
+    <value>Executar assistente...</value>
+  </data>
+  <data name="SnapStringId.SummaryAverageCommand_Description" xml:space="preserve">
+    <value>Média</value>
+  </data>
+  <data name="SnapStringId.SummaryAverageCommand_MenuCaption" xml:space="preserve">
+    <value>Média</value>
+  </data>
+  <data name="SnapStringId.SummaryCountCommand_Description" xml:space="preserve">
+    <value>Contagem</value>
+  </data>
+  <data name="SnapStringId.ChangeThemeCommand_MenuCaption" xml:space="preserve">
+    <value>Mudar Tema</value>
+  </data>
+  <data name="SnapStringId.SummaryMaxCommand_Description" xml:space="preserve">
+    <value>Máximo</value>
+  </data>
+  <data name="SnapStringId.SummaryMaxCommand_MenuCaption" xml:space="preserve">
+    <value>Máximo</value>
+  </data>
+  <data name="SnapStringId.ArraysLengthsMismatchException" xml:space="preserve">
+    <value>Matrizes devem ter o mesmo comprimento</value>
+  </data>
+  <data name="SnapStringId.CalculatedField_Expression" xml:space="preserve">
+    <value>Expressão</value>
+  </data>
+  <data name="SnapStringId.CalculatedField_Name" xml:space="preserve">
+    <value>Nome</value>
+  </data>
+  <data name="SnapStringId.ConvertToParagraphsCommand_MenuCaption" xml:space="preserve">
+    <value>Converter para parágrafos</value>
+  </data>
+  <data name="SnapStringId.DeleteListCommand_MenuCaption" xml:space="preserve">
+    <value>Apagar lista</value>
+  </data>
+  <data name="SnapStringId.FileFilterDescription_SnapFiles" xml:space="preserve">
+    <value>Encaixe o documento</value>
+  </data>
+  <data name="SnapStringId.HotZonePainter_DropValues" xml:space="preserve">
+    <value>Soltar valores</value>
+  </data>
+  <data name="SnapStringId.HotZonePainter_SecondLine" xml:space="preserve">
+    <value>aqui</value>
+  </data>
+  <data name="SnapStringId.InsertBarCodeCommand_MenuCaption" xml:space="preserve">
+    <value>Código de barras</value>
+  </data>
+  <data name="SnapStringId.InsertGroupHeaderCommand_Description" xml:space="preserve">
+    <value>Adicionar cabeçalho</value>
+  </data>
+  <data name="SnapStringId.InsertListFooterCommand_Description" xml:space="preserve">
+    <value>Adiciona Rodapé</value>
+  </data>
+  <data name="SnapStringId.InsertListHeaderCommand_Description" xml:space="preserve">
+    <value>Adicionar cabeçalho</value>
+  </data>
+  <data name="SnapStringId.MenuCmd_DeleteTableCellStyle" xml:space="preserve">
+    <value>Excluir a tabela de estilo de célula</value>
+  </data>
+  <data name="SnapStringId.MoveDown_Description" xml:space="preserve">
+    <value>Mover para baixo</value>
+  </data>
+  <data name="SnapStringId.MoveDown_MenuCaption" xml:space="preserve">
+    <value>Mover para baixo</value>
+  </data>
+  <data name="SnapStringId.MoveUp_Description" xml:space="preserve">
+    <value>Mover para cima</value>
+  </data>
+  <data name="SnapStringId.MoveUp_MenuCaption" xml:space="preserve">
+    <value>Mover para cima</value>
+  </data>
+  <data name="SnapStringId.Msg_FieldAlreadyDefinedAsGroupingCriterion" xml:space="preserve">
+    <value>o campo {0} já foi definido como um critério de agrupamento.</value>
+  </data>
+  <data name="SnapStringId.Msg_FieldDefinedAsSortingCriterionMoreThanOnce" xml:space="preserve">
+    <value>o campo {0} pode ser definido como um critério de classificação uma única vez.</value>
+  </data>
+  <data name="SnapStringId.NewDataSourceCommand_Description" xml:space="preserve">
+    <value>Adiciona nova fonte de dados</value>
+  </data>
+  <data name="SnapStringId.NewDataSourceCommand_MenuCaption" xml:space="preserve">
+    <value>Adiciona nova fonte de dados</value>
+  </data>
+  <data name="SnapStringId.ReorderReportStructureForm_Text" xml:space="preserve">
+    <value>Editor de ordem de grupos</value>
+  </data>
+  <data name="SnapStringId.ReportExplorer_GroupNode" xml:space="preserve">
+    <value>Grupo</value>
+  </data>
+  <data name="SnapStringId.ReportExplorer_ListNode" xml:space="preserve">
+    <value>Lista</value>
+  </data>
+  <data name="SnapStringId.ShowReportStructureEditorForm_Description" xml:space="preserve">
+    <value>Organizar grupos</value>
+  </data>
+  <data name="SnapStringId.ShowReportStructureEditorForm_MenuCaption" xml:space="preserve">
+    <value>Organizar grupos</value>
+  </data>
+  <data name="SnapStringId.SnapEntityAddLock" xml:space="preserve">
+    <value>Não é possível adicionar novos {0} ao atualizar outro campo</value>
+  </data>
+  <data name="SnapStringId.SnapEntityRemoveLock" xml:space="preserve">
+    <value>Não é possível remover o campo durante a atualização de outro</value>
+  </data>
+  <data name="SnapStringId.SnapListSecondBeginUpdateException" xml:space="preserve">
+    <value>Atualização anterior deve ser concluída antes de iniciar um novo</value>
+  </data>
+  <data name="SnapStringId.SummaryCommand_MenuCaption" xml:space="preserve">
+    <value>Resumo</value>
+  </data>
+  <data name="SnapStringId.SummaryMinCommand_Description" xml:space="preserve">
+    <value>Mínimo</value>
+  </data>
+  <data name="SnapStringId.SummaryMinCommand_MenuCaption" xml:space="preserve">
+    <value>Mínimo</value>
+  </data>
+  <data name="SnapStringId.TemplateDecoratorType_Separator" xml:space="preserve">
+    <value>Separador</value>
+  </data>
+  <data name="SnapStringId.ToggleFieldHighlighting_Description" xml:space="preserve">
+    <value>Clique para realçar todos os campos de dados no documento</value>
+  </data>
+  <data name="SnapStringId.ToggleFieldHighlighting_MenuCaption" xml:space="preserve">
+    <value>Realçar campos</value>
+  </data>
+  <data name="SnapStringId.ChangeThemeCommand_Description" xml:space="preserve">
+    <value>Mudar tema</value>
+  </data>
+  <data name="SnapStringId.CustomSortForm_Text" xml:space="preserve">
+    <value>Classificar</value>
+  </data>
+  <data name="SnapStringId.GroupByFieldCommand_MenuCaption" xml:space="preserve">
+    <value>Agrupar pelo Campo</value>
+  </data>
+  <data name="SnapStringId.MailMergeCurrentRecord_MenuCaption" xml:space="preserve">
+    <value>Registro atual</value>
+  </data>
+  <data name="SnapStringId.MailMergeDataSource_MenuCaption" xml:space="preserve">
+    <value>Fonte de dados</value>
+  </data>
+  <data name="SnapStringId.MailMergeFilters_Description" xml:space="preserve">
+    <value>Filtrar os dados fornecidos por uma fonte de dados de mala direta.</value>
+  </data>
+  <data name="SnapStringId.MailMergeFilters_MenuCaption" xml:space="preserve">
+    <value>Filtro</value>
+  </data>
+  <data name="SnapStringId.MailMergeSorting_Description" xml:space="preserve">
+    <value>Classificar os dados fornecidos por uma fonte de dados de mala direta e organizar a sucessão em que são aplicados os níveis de classificação.</value>
+  </data>
+  <data name="SnapStringId.Msg_CannotChangeDataSourceName" xml:space="preserve">
+    <value>Não é possível alterar o nome de fonte de dados.</value>
+  </data>
+  <data name="SnapStringId.Msg_CannotDeleteDefaultTheme" xml:space="preserve">
+    <value>Não é possível excluir o tema padrão.</value>
+  </data>
+  <data name="SnapStringId.Msg_CannotPerformAsynchronousOperation" xml:space="preserve">
+    <value>Não é possível executar a mesma operação assíncrona em vários threads simultâneos.</value>
+  </data>
+  <data name="SnapStringId.Msg_CollectionAlreadyContainsTheme" xml:space="preserve">
+    <value>A coleção já contém um tema chamado {0}.</value>
+  </data>
+  <data name="SnapStringId.Msg_InvalidMailMergeCurrentRecord" xml:space="preserve">
+    <value>Valor inválido</value>
+  </data>
+  <data name="SnapStringId.Msg_StopMailMerge" xml:space="preserve">
+    <value>Interromper a execução do relatório?</value>
+  </data>
+  <data name="SnapStringId.RecordSeparator_None" xml:space="preserve">
+    <value>Nenhum</value>
+  </data>
+  <data name="SnapStringId.RecordSeparator_PageBreak" xml:space="preserve">
+    <value>Quebra de página</value>
+  </data>
+  <data name="SnapStringId.ShowCustomSortForm_Description" xml:space="preserve">
+    <value>Classificar</value>
+  </data>
+  <data name="SnapStringId.ShowCustomSortForm_MenuCaption" xml:space="preserve">
+    <value>Classificar</value>
+  </data>
+  <data name="SnapStringId.SnapPrintCommand_Description" xml:space="preserve">
+    <value>Selecionar uma impressora, o número de cópias e outras opções de impressão antes de imprimir.</value>
+  </data>
+  <data name="SnapStringId.SnapPrintPreviewCommand_Description" xml:space="preserve">
+    <value>Visualizar páginas antes de imprimir.</value>
+  </data>
+  <data name="SnapStringId.SnapQuickPrintCommand_Description" xml:space="preserve">
+    <value>Enviar o documento diretamente para a impressora padrão, sem fazer alterações.</value>
+  </data>
+  <data name="SnapStringId.SortFieldAscendingCommand_Description" xml:space="preserve">
+    <value>Clique para classificar (em ordem crescente) pelo campo.</value>
+  </data>
+  <data name="SnapStringId.SortFieldDescendingCommand_MenuCaption" xml:space="preserve">
+    <value>Classificação decrescente</value>
+  </data>
+  <data name="SnapStringId.ThemeName_Casual" xml:space="preserve">
+    <value>Casual</value>
+  </data>
+  <data name="SnapStringId.ExportDocumentCommand_MenuCaption" xml:space="preserve">
+    <value>Exportar...</value>
+  </data>
+  <data name="SnapStringId.InsertSectionBreakEvenPageDataRowSeparatorCommand_Description" xml:space="preserve">
+    <value>Seção (Página Par)</value>
+  </data>
+  <data name="SnapStringId.InsertSectionBreakEvenPageDataRowSeparatorCommand_MenuCaption" xml:space="preserve">
+    <value>Seção (Página Par)</value>
+  </data>
+  <data name="SnapStringId.InsertSectionBreakEvenPageGroupSeparatorCommand_Description" xml:space="preserve">
+    <value>Seção (Página Par)</value>
+  </data>
+  <data name="SnapStringId.InsertSectionBreakEvenPageGroupSeparatorCommand_MenuCaption" xml:space="preserve">
+    <value>Seção (Página Par)</value>
+  </data>
+  <data name="SnapStringId.InsertSparklineCommand_MenuCaption" xml:space="preserve">
+    <value>Minigráfico</value>
+  </data>
+  <data name="SnapStringId.RecordSeparator_Paragraph" xml:space="preserve">
+    <value>Parágrafo</value>
+  </data>
+  <data name="SnapStringId.RecordSeparator_SectionNextPage" xml:space="preserve">
+    <value>Seção (próxima página)</value>
+  </data>
+  <data name="SnapStringId.RecordSeparator_SectionOddPage" xml:space="preserve">
+    <value>Seção (Página Ímpar)</value>
+  </data>
+  <data name="SnapStringId.SnapPrintCommand_MenuCaption" xml:space="preserve">
+    <value>&amp;Imprimir...</value>
+  </data>
+  <data name="SnapStringId.MailMergeSorting_MenuCaption" xml:space="preserve">
+    <value>Classificar</value>
+  </data>
+  <data name="SnapStringId.RecordSeparator_SectionEvenPage" xml:space="preserve">
+    <value>Seção (Página Par)</value>
+  </data>
+  <data name="SnapStringId.IserntIndexCommand_MenuCaption" xml:space="preserve">
+    <value>Índice de linha</value>
+  </data>
+  <data name="SnapStringId.SortFieldAscendingCommand_MenuCaption" xml:space="preserve">
+    <value>Classificação crescente</value>
+  </data>
+  <data name="SnapStringId.SortFieldDescendingCommand_Description" xml:space="preserve">
+    <value>Clique para classificar (em ordem decrescente) pelo campo.</value>
+  </data>
+  <data name="SnapStringId.InsertSparklineCommand_Description" xml:space="preserve">
+    <value>Insere um gráfico embutido em miniatura que é o mais adequado para ilustrar a variação geral de um valor ao longo de um período de tempo.
+
+Para personalizar o minigráfico atualmente selecionado, clique no botão Propriedades na guia de campo</value>
+  </data>
+  <data name="SnapStringId.MailMergeCurrentRecord_Description" xml:space="preserve">
+    <value>Registro de fonte de dados de mala direta visível.</value>
+  </data>
+  <data name="SnapStringId.MailMergeDataSource_Description" xml:space="preserve">
+    <value>Selecionar os dados de origem para usar com mala direta.
+
+Certifique-se de salvar a versão atual do documento antes de fazer quaisquer alterações com essa opção. Uma vez que a mala direta é atribuída a uma fonte de dados, o documento atual é recriado, resultando em uma possível perda do layout anterior.</value>
+  </data>
+  <data name="SnapStringId.SnapListPropertyOutOfDataException" xml:space="preserve">
+    <value>Valor é de dados, propriedade da lista deve ser reler depois de chamar de EndUpdate()</value>
+  </data>
+  <data name="SnapStringId.MenuCmd_ModifyTableCellStyle" xml:space="preserve">
+    <value>Modificar o estilo de célula...</value>
+  </data>
+  <data name="SnapStringId.MenuCmd_NewTableCellStyle" xml:space="preserve">
+    <value>Novo estilo de célula...</value>
+  </data>
+  <data name="SnapStringId.ThemeName_ContrastCyan" xml:space="preserve">
+    <value>Contraste ciano</value>
+  </data>
+  <data name="SnapStringId.ThemeName_ContrastOrange" xml:space="preserve">
+    <value>Contraste laranja</value>
+  </data>
+  <data name="SnapStringId.ThemeName_ContrastRed" xml:space="preserve">
+    <value>Contraste vermelho</value>
+  </data>
+  <data name="SnapStringId.ThemeName_ContrastSalmon" xml:space="preserve">
+    <value>Contraste Salmão</value>
+  </data>
+  <data name="SnapStringId.ThemeName_ContrastYellow" xml:space="preserve">
+    <value>Contraste amarelo</value>
+  </data>
+  <data name="SnapStringId.CalculatedField_DataMember" xml:space="preserve">
+    <value>DataMember</value>
+  </data>
+  <data name="SnapStringId.ChangeEditorRowLimitCommand_Description" xml:space="preserve">
+    <value>Define o número máximo de linhas indicado no documento de listas e grupos durante sua sessão de edição.
+
+Esta opção permite que você economize tempo ao trabalhar com fontes de dados grandes. Ela não afeta os dados do documento na visualização de impressão.</value>
+  </data>
+  <data name="SnapStringId.ConvertToParagraphsCommand_Description" xml:space="preserve">
+    <value>Clique para converter as tabelas dos n º s.
+
+Cada campo será então apresentado em um parágrafo separado, e você pode destacar campos usando a opção de destaque na guia Exibir desta barra de ferramentas.</value>
+  </data>
+  <data name="SnapStringId.FinishAndMergeCommand_Description" xml:space="preserve">
+    <value>Exportação, Visualizar ou imprimir o documento.
+
+O documento pode incluir todos os registros de dados disponíveis, ou apenas parte deles (ou seja, o intervalo de linha de dados especificado, ou apenas a única linha que atualmente é exibida). Registros de dados podem ser divididos fora usando um separador de um tipo selecionado.</value>
+  </data>
+  <data name="SnapStringId.HotZonePainter_DropArguments" xml:space="preserve">
+    <value>Drop argumentos</value>
+  </data>
+  <data name="SnapStringId.InsertGroupSeparatorCommand_Descritpion" xml:space="preserve">
+    <value>Escolher um separador para delimitar grupos no documento.</value>
+  </data>
+  <data name="SnapStringId.Msg_UnsupportedDocumentVersion" xml:space="preserve">
+    <value>Versão do documento sem suporte de encaixe</value>
+  </data>
+  <data name="SnapStringId.ShowGroupSortingsCheckBox_Text" xml:space="preserve">
+    <value>Show grupo ordenações</value>
+  </data>
+  <data name="SnapStringId.SnapListLockException" xml:space="preserve">
+    <value>Tentativa de modificar antes BeginUpdate() chamar</value>
+  </data>
+  <data name="SnapStringId.SnapQuickPrintCommand_MenuCaption" xml:space="preserve">
+    <value>&amp; impressão rápida</value>
+  </data>
+  <data name="SnapStringId.SummaryTooltip" xml:space="preserve">
+    <value>Calcula a função de Resumo de {0} pelo campo {1} para o {2}</value>
+  </data>
+  <data name="SnapStringId.TemplateDecoratorType_ListFooter" xml:space="preserve">
+    <value>ListFooter</value>
+  </data>
+  <data name="SnapStringId.TemplateDecoratorType_ListHeader" xml:space="preserve">
+    <value>ListHeader</value>
+  </data>
+  <data name="SnapStringId.ThemeName_MildBlue" xml:space="preserve">
+    <value>Azul suave</value>
+  </data>
+  <data name="SnapStringId.ThemeName_MildBrown" xml:space="preserve">
+    <value>Marrom suave</value>
+  </data>
+  <data name="SnapStringId.ThemeName_MildCyan" xml:space="preserve">
+    <value>Leve ciano</value>
+  </data>
+  <data name="SnapStringId.ThemeName_MildViolet" xml:space="preserve">
+    <value>Violeta suave</value>
+  </data>
+  <data name="SnapStringId.ThemeName_SoftLilac" xml:space="preserve">
+    <value>Lilás suave</value>
+  </data>
+  <data name="SnapStringId.CalculatedField_FieldType" xml:space="preserve">
+    <value>FieldType</value>
+  </data>
+  <data name="SnapStringId.GroupByFieldCommand_Description" xml:space="preserve">
+    <value>Clique para ativar/desativar o agrupamento pelo campo.
+
+Isso vai quebrar a lista em grupos com o campo selecionado, sendo usado como um critério de agrupamento.</value>
+  </data>
+  <data name="SnapStringId.InsertBarCodeCommand_Description" xml:space="preserve">
+    <value>Insere um código de barras que pode codificar uma variedade de simbologias populares.
+
+Para personalizar o código de barras atualmente selecionado, clique no botão Propriedades na guia de campo</value>
+  </data>
+  <data name="SnapStringId.InsertDataRowSeparatorCommand_Descritpion" xml:space="preserve">
+    <value>Dividir o documento em seções, inserindo um separador apropriado na posição de transporte atual.</value>
+  </data>
+  <data name="SnapStringId.InsertIndexCommand_Description" xml:space="preserve">
+    <value>Enumerates registros de dados de um coluna dentro do documento de origem.
+
+Para especificar a seqüência de caracteres de formato de índice selecionado e definir seu comportamento quando dentro de grupos, clique no botão Propriedades na guia de campo</value>
+  </data>
+  <data name="SnapStringId.ListHeaderCommand_Description" xml:space="preserve">
+    <value>Clique para adicionar ou remover um cabeçalho de lista.
+
+Ele contém legendas colunas por padrão.</value>
+  </data>
+  <data name="SnapStringId.ProgressIndicationForm_Text" xml:space="preserve">
+    <value>Performing mala direta...</value>
+  </data>
+  <data name="SnapStringId.SnapPrintPreviewCommand_MenuCaption" xml:space="preserve">
+    <value>Impressão &amp; Visualizar...</value>
+  </data>
+  <data name="SnapStringId.Sorting_MenuCaption" xml:space="preserve">
+    <value>Classificação</value>
+  </data>
+  <data name="SnapStringId.SummaryCommand_Description" xml:space="preserve">
+    <value>Escolha a função de resumo para calcular para o campo.
+
+O resultado da função de resumo será mostrado no rodapé da lista que é tornado visível se anteriormente não foi.</value>
+  </data>
+  <data name="SnapStringId.TemplateDecoratorType_DataRow" xml:space="preserve">
+    <value>DataRow</value>
+  </data>
+  <data name="SnapStringId.TemplateDecoratorType_GroupFooter" xml:space="preserve">
+    <value>GroupFooter</value>
+  </data>
+  <data name="SnapStringId.TemplateDecoratorType_GroupHeader" xml:space="preserve">
+    <value>GroupHeader</value>
+  </data>
+  <data name="SnapStringId.TemplateDecoratorType_GroupSeparator" xml:space="preserve">
+    <value>GroupSeparator</value>
+  </data>
+  <data name="SnapStringId.TemplateDecoratorType_WholeGroup" xml:space="preserve">
+    <value>WholeGroup</value>
+  </data>
+  <data name="SnapStringId.TemplateDecoratorType_WholeList" xml:space="preserve">
+    <value>WholeList</value>
+  </data>
+  <data name="SnapStringId.ThemeName_DodgerBlue" xml:space="preserve">
+    <value>Dodger azul</value>
+  </data>
+  <data name="SnapStringId.ThemeName_FormalBlue" xml:space="preserve">
+    <value>Formal azul</value>
+  </data>
+  <data name="SnapStringId.DeleteListCommand_Description" xml:space="preserve">
+    <value>Remover a lista juntamente com seus dados do documento.</value>
+  </data>
+  <data name="SnapStringId.ExportDocumentCommand_Description" xml:space="preserve">
+    <value>Processar uma cópia do documento em um formato de terceiros.</value>
+  </data>
+  <data name="SnapStringId.FileFilterDescription_SnapThemeFiles" xml:space="preserve">
+    <value>Encaixe o tema</value>
+  </data>
+  <data name="SnapStringId.FilterFieldCommand_Description" xml:space="preserve">
+    <value>Selecione qual dos dados do campo registra a excluir do documento.
+
+Para filtragem avançada, use a opção de filtro na guia lista</value>
+  </data>
+  <data name="SnapStringId.ParameterService_CreateParameter" xml:space="preserve">
+    <value>Parâmetro de consulta</value>
+  </data>
+  <data name="SnapStringId.RemoveDataSourceCommand_Description" xml:space="preserve">
+    <value>Remova a fonte de dados especificado.</value>
+  </data>
+  <data name="SnapStringId.RemoveDataSourceCommand_MenuCaption" xml:space="preserve">
+    <value>Remover a fonte de dados</value>
+  </data>
+  <data name="SnapStringId.Msg_ThemeIsNotLoaded" xml:space="preserve">
+    <value>O tema não é carregado. Não é possível usar o tema {0}.</value>
+  </data>
+  <data name="SnapStringId.SortForm_Text" xml:space="preserve">
+    <value>Classificar</value>
+  </data>
+  <data name="SnapStringId.SortingForm_OrderColumnCaption" xml:space="preserve">
+    <value>Ordem</value>
+  </data>
+  <data name="SnapStringId.CalculatedField_DataSourceName" xml:space="preserve">
+    <value>Nome da fonte de dados</value>
+  </data>
+  <data name="SnapStringId.ParametersErrorInvalidCharacters" xml:space="preserve">
+    <value>Não é possível criar um parâmetro com o nome inválido:</value>
+  </data>
+  <data name="SnapStringId.ParametersErrorNoName" xml:space="preserve">
+    <value>Não é possível criar um parâmetro sem especificar seu nome.</value>
+  </data>
+  <data name="SnapStringId.InsertDataRowSeparatorCommand_Description" xml:space="preserve">
+    <value>Dividir o documento em seções, inserindo um separador apropriado na posição de transporte atual.</value>
+  </data>
+  <data name="SnapStringId.InsertGroupSeparatorCommand_Description" xml:space="preserve">
+    <value>Escolher um separador para delimitar grupos no documento.</value>
+  </data>
+  <data name="SnapStringId.InsertIndexCommand_MenuCaption" xml:space="preserve">
+    <value>Índice de linha</value>
+  </data>
+  <data name="SnapStringId.RunChartDesignerCommand_Description" xml:space="preserve">
+    <value>Executar designer...</value>
+  </data>
+  <data name="SnapStringId.RunChartDesignerCommand_MenuCaption" xml:space="preserve">
+    <value>Executar designer...</value>
+  </data>
+  <data name="SnapStringId.GroupField_SortOrder" xml:space="preserve">
+    <value>Ordem de classificação</value>
+  </data>
+  <data name="SnapStringId.Msg_AssignChartDataSourceError" xml:space="preserve">
+    <value>Não é possível vincular um gráfico para a fonte de dados. A seguinte exceção é lançada:
+{0}</value>
+  </data>
+  <data name="SnapStringId.MessageBoxWarningTitle" xml:space="preserve">
+    <value>Aviso</value>
+  </data>
+  <data name="SnapStringId.Msg_FilterCriteriaInvalidExpressionEx" xml:space="preserve">
+    <value>A expressão especificada é inválida.</value>
+  </data>
+  <data name="SnapStringId.GroupField_FieldName" xml:space="preserve">
+    <value>Nome campo</value>
+  </data>
+  <data name="SnapStringId.DataExplorer_Text" xml:space="preserve">
+    <value>Dados Explorer</value>
+  </data>
+  <data name="SnapStringId.SortingForm_SortByColumnCaption" xml:space="preserve">
+    <value>Ordenar por</value>
+  </data>
+</root>

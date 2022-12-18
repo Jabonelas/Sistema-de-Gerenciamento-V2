@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ActionIsNotSingleChoiceAction" xml:space="preserve">
+    <value>Não é possível registrar a ação '{0}' no Container Ação '{1}'. A ação '{0}' não é do tipo '{2}'.</value>
+  </data>
+  <data name="ApplicationUpdateError" xml:space="preserve">
+    <value>A atualização foi concluída com êxito. No entanto, a versão do banco de dados é ainda maior do que a versão do aplicativo. Por favor, contate o administrador do sistema.</value>
+  </data>
+  <data name="CircularReference" xml:space="preserve">
+    <value>Esta operação não pode ser concluída, pois leva a uma referência circular.</value>
+  </data>
+  <data name="CriteriaEditorsDataTypeIsNull" xml:space="preserve">
+    <value>Por favor, especifique o tipo de objeto para o qual você quer construir um critério.</value>
+  </data>
+  <data name="FieldValueSizeExceedsMaxLength" xml:space="preserve">
+    <value>O comprimento deste valor do campo não pode exceder {0}</value>
+  </data>
+  <data name="LogonAttemptsAmountedToLimitWin" xml:space="preserve">
+    <value>Depois de três tentativas de login sem sucesso, o aplicação será fechado. Por favor, entrar em contato com um administrador sobre os detalhes de login. </value>
+  </data>
+  <data name="MaskValidationErrorMessage" xml:space="preserve">
+    <value>Símbolos de entrada em falta</value>
+  </data>
+  <data name="ObjectAccessPermissionCannotBeEmpty" xml:space="preserve">
+    <value>O campo 'Tipo de objeto' não deve ser vazio e pelo menos um campo de acesso deve ter um valor que difere de nenhum.</value>
+  </data>
+  <data name="ObjectToSaveWasChanged" xml:space="preserve">
+    <value>O objeto que você está tentando salvar foi alterado por outro usuário. Por favor, atualizar dados.</value>
+  </data>
+  <data name="RequestedObjectHasBeenDeleted" xml:space="preserve">
+    <value>Os dados são exibidos no modo de somente leitura porque ele foi excluído.</value>
+  </data>
+  <data name="RequestedObjectIsNotFound" xml:space="preserve">
+    <value>Objeto solicitado não foi encontrado e não pode ser processado.</value>
+  </data>
+  <data name="SimultaneousChangeDataMessage" xml:space="preserve">
+    <value>Atenção: modificações simultâneas da mesma informação em diferentes janelas/vista são detectados:\n{0}\n É possível salvar modificações em uma janela/vista só.</value>
+  </data>
+  <data name="SimultaneousChangeDataMessageItem" xml:space="preserve">
+    <value> - '{0}' janela/visão ({1}), '{2}' objeto ({3})</value>
+  </data>
+  <data name="SystemExceptionMessageFormat" xml:space="preserve">
+    <value>Um erro com o número {0} ocorreu.\r\nErro mensagem: {1}</value>
+  </data>
+  <data name="TheFollowingErrorOccurred" xml:space="preserve">
+    <value>Ocorreu o seguinte erro:</value>
+  </data>
+  <data name="UserFriendlyConnectionFailedException" xml:space="preserve">
+    <value>A conexão para o banco de dados falhou. Por favor, contate o administrador do sistema.</value>
+  </data>
+  <data name="UserFriendlySqlException" xml:space="preserve">
+    <value>Ocorreu um erro de conexão ao banco de dados. Por favor, contate o administrador do sistema.</value>
+  </data>
+</root>

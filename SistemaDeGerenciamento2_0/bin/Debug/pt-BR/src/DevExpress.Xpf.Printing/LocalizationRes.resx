@@ -1,0 +1,1341 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="PrintingStringId.OK" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="PrintingStringId.Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="PrintingStringId.ToolBarCaption" xml:space="preserve">
+    <value>Print Preview</value>
+  </data>
+  <data name="PrintingStringId.StatusBarCaption" xml:space="preserve">
+    <value>Status Bar</value>
+  </data>
+  <data name="PrintingStringId.Print" xml:space="preserve">
+    <value>Print...</value>
+  </data>
+  <data name="PrintingStringId.Print_Hint" xml:space="preserve">
+    <value>Specify page settings and print the document.</value>
+  </data>
+  <data name="PrintingStringId.PrintPdf" xml:space="preserve">
+    <value>Print via Pdf...</value>
+  </data>
+  <data name="PrintingStringId.PrintPdf_Hint" xml:space="preserve">
+    <value>Prints the current document via PDF.</value>
+  </data>
+  <data name="PrintingStringId.PrintDirect" xml:space="preserve">
+    <value>Quick Print</value>
+  </data>
+  <data name="PrintingStringId.PrintDirect_Hint" xml:space="preserve">
+    <value>Print the document with default page settings using the system's default printer.</value>
+  </data>
+  <data name="PrintingStringId.Zoom" xml:space="preserve">
+    <value>Zoom</value>
+  </data>
+  <data name="PrintingStringId.Zoom_Hint" xml:space="preserve">
+    <value>Change the current zoom factor of the document preview.</value>
+  </data>
+  <data name="PrintingStringId.DecreaseZoom" xml:space="preserve">
+    <value>Zoom Out</value>
+  </data>
+  <data name="PrintingStringId.DecreaseZoom_Hint" xml:space="preserve">
+    <value>Zoom out to see more of the page at a reduced size.</value>
+  </data>
+  <data name="PrintingStringId.IncreaseZoom" xml:space="preserve">
+    <value>Zoom In</value>
+  </data>
+  <data name="PrintingStringId.IncreaseZoom_Hint" xml:space="preserve">
+    <value>Zoom in to get a close-up view of the document.</value>
+  </data>
+  <data name="PrintingStringId.ZoomToPageWidth" xml:space="preserve">
+    <value>Page Width</value>
+  </data>
+  <data name="PrintingStringId.ZoomToPageHeight" xml:space="preserve">
+    <value>Page Height</value>
+  </data>
+  <data name="PrintingStringId.ZoomToWholePage" xml:space="preserve">
+    <value>Whole Page</value>
+  </data>
+  <data name="PrintingStringId.ZoomToTwoPages" xml:space="preserve">
+    <value>Two Pages</value>
+  </data>
+  <data name="PrintingStringId.FirstPage" xml:space="preserve">
+    <value>First Page</value>
+  </data>
+  <data name="PrintingStringId.FirstPage_Hint" xml:space="preserve">
+    <value>Navigate to the document first page.</value>
+  </data>
+  <data name="PrintingStringId.PreviousPage" xml:space="preserve">
+    <value>Previous Page</value>
+  </data>
+  <data name="PrintingStringId.PreviousPage_Hint" xml:space="preserve">
+    <value>Navigate to the document previous page.</value>
+  </data>
+  <data name="PrintingStringId.NextPage" xml:space="preserve">
+    <value>Next Page</value>
+  </data>
+  <data name="PrintingStringId.NextPage_Hint" xml:space="preserve">
+    <value>Navigate to the document next page.</value>
+  </data>
+  <data name="PrintingStringId.LastPage" xml:space="preserve">
+    <value>Last Page</value>
+  </data>
+  <data name="PrintingStringId.LastPage_Hint" xml:space="preserve">
+    <value>Navigate to the document last page.</value>
+  </data>
+  <data name="PrintingStringId.Watermark" xml:space="preserve">
+    <value>Watermark</value>
+  </data>
+  <data name="PrintingStringId.Watermark_Hint" xml:space="preserve">
+    <value>Insert ghosted text and/or image behind the page content.</value>
+  </data>
+  <data name="PrintingStringId.WatermarkTitle" xml:space="preserve">
+    <value>Watermark</value>
+  </data>
+  <data name="PrintingStringId.TextWatermarkTitle" xml:space="preserve">
+    <value>Text Watermark</value>
+  </data>
+  <data name="PrintingStringId.PictureWatermarkTitle" xml:space="preserve">
+    <value>Picture Watermark</value>
+  </data>
+  <data name="PrintingStringId.WatermarkText" xml:space="preserve">
+    <value>Text:</value>
+  </data>
+  <data name="PrintingStringId.WatermarkTextDirection" xml:space="preserve">
+    <value>Direction:</value>
+  </data>
+  <data name="PrintingStringId.WatermarkTextColor" xml:space="preserve">
+    <value>Color:</value>
+  </data>
+  <data name="PrintingStringId.WatermarkFontName" xml:space="preserve">
+    <value>Font:</value>
+  </data>
+  <data name="PrintingStringId.WatermarkFontSize" xml:space="preserve">
+    <value>Size:</value>
+  </data>
+  <data name="PrintingStringId.WatermarkFontBold" xml:space="preserve">
+    <value>Bold</value>
+  </data>
+  <data name="PrintingStringId.WatermarkFontItalic" xml:space="preserve">
+    <value>Italic</value>
+  </data>
+  <data name="PrintingStringId.WatermarkPosition" xml:space="preserve">
+    <value>Position</value>
+  </data>
+  <data name="PrintingStringId.WatermarkPositionInFront" xml:space="preserve">
+    <value>In front</value>
+  </data>
+  <data name="PrintingStringId.WatermarkPositionBehind" xml:space="preserve">
+    <value>Behind</value>
+  </data>
+  <data name="PrintingStringId.WatermarkPageRange" xml:space="preserve">
+    <value>Page Range</value>
+  </data>
+  <data name="PrintingStringId.WatermarkPageRangeAllPages" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="PrintingStringId.WatermarkPageRangePages" xml:space="preserve">
+    <value>Pages</value>
+  </data>
+  <data name="PrintingStringId.WatermarkPageRangeHint" xml:space="preserve">
+    <value>For example: 1,3,5-12</value>
+  </data>
+  <data name="PrintingStringId.WatermarkLoadImage" xml:space="preserve">
+    <value>Image:</value>
+  </data>
+  <data name="PrintingStringId.WatermarkImageSizeMode" xml:space="preserve">
+    <value>Size mode:</value>
+  </data>
+  <data name="PrintingStringId.WatermarkImageHorizontalAlignment" xml:space="preserve">
+    <value>Horizontal alignment:</value>
+  </data>
+  <data name="PrintingStringId.WatermarkImageVerticalAlignment" xml:space="preserve">
+    <value>Vertical alignment:</value>
+  </data>
+  <data name="PrintingStringId.WatermarkImageTiling" xml:space="preserve">
+    <value>Tiling</value>
+  </data>
+  <data name="PrintingStringId.WatermarkTransparency" xml:space="preserve">
+    <value>Transparency:</value>
+  </data>
+  <data name="PrintingStringId.WatermarkClearAll" xml:space="preserve">
+    <value>Clear All</value>
+  </data>
+  <data name="PrintingStringId.WatermarkImageLoadError" xml:space="preserve">
+    <value>File is corrupted</value>
+  </data>
+  <data name="PrintingStringId.ExportPdf" xml:space="preserve">
+    <value>PDF File</value>
+  </data>
+  <data name="PrintingStringId.ExportHtm" xml:space="preserve">
+    <value>HTML File</value>
+  </data>
+  <data name="PrintingStringId.ExportMht" xml:space="preserve">
+    <value>MHT File</value>
+  </data>
+  <data name="PrintingStringId.ExportRtf" xml:space="preserve">
+    <value>RTF File</value>
+  </data>
+  <data name="PrintingStringId.ExportXls" xml:space="preserve">
+    <value>XLS File</value>
+  </data>
+  <data name="PrintingStringId.ExportXlsx" xml:space="preserve">
+    <value>XLSX File</value>
+  </data>
+  <data name="PrintingStringId.ExportCsv" xml:space="preserve">
+    <value>CSV File</value>
+  </data>
+  <data name="PrintingStringId.ExportTxt" xml:space="preserve">
+    <value>Text File</value>
+  </data>
+  <data name="PrintingStringId.ExportImage" xml:space="preserve">
+    <value>Image File</value>
+  </data>
+  <data name="PrintingStringId.ExportXps" xml:space="preserve">
+    <value>XPS File</value>
+  </data>
+  <data name="PrintingStringId.ExportDocx" xml:space="preserve">
+    <value>DOCX File</value>
+  </data>
+  <data name="PrintingStringId.ExportFile" xml:space="preserve">
+    <value>Export...</value>
+  </data>
+  <data name="PrintingStringId.ExportFile_Hint" xml:space="preserve">
+    <value>Export the document in one of the available formats and save it to a file on the disk.</value>
+  </data>
+  <data name="PrintingStringId.Scaling" xml:space="preserve">
+    <value>Scale</value>
+  </data>
+  <data name="PrintingStringId.Scaling_Hint" xml:space="preserve">
+    <value>Stretch or shrink the document's content to a percentage of its actual size.</value>
+  </data>
+  <data name="PrintingStringId.Scaling_Adjust_Start_Label" xml:space="preserve">
+    <value>Adjust to</value>
+  </data>
+  <data name="PrintingStringId.Scaling_Adjust_End_Label" xml:space="preserve">
+    <value>normal size</value>
+  </data>
+  <data name="PrintingStringId.Scaling_Fit_Start_Label" xml:space="preserve">
+    <value>Fit to</value>
+  </data>
+  <data name="PrintingStringId.Scaling_Fit_End_Label" xml:space="preserve">
+    <value>page(s) wide</value>
+  </data>
+  <data name="PrintingStringId.Scaling_ComboBoxEdit_Validation_Error" xml:space="preserve">
+    <value>The value is not valid</value>
+  </data>
+  <data name="PrintingStringId.Scaling_ComboBoxEdit_Validation_OutOfRange_Error" xml:space="preserve">
+    <value>The value is out of range</value>
+  </data>
+  <data name="PrintingStringId.Search" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="PrintingStringId.Search_Hint" xml:space="preserve">
+    <value>Shows the Find dialog to search for an occurrence of a specified text throughout the document.</value>
+  </data>
+  <data name="PrintingStringId.SendPdf" xml:space="preserve">
+    <value>PDF File</value>
+  </data>
+  <data name="PrintingStringId.SendMht" xml:space="preserve">
+    <value>MHT File</value>
+  </data>
+  <data name="PrintingStringId.SendRtf" xml:space="preserve">
+    <value>RTF File</value>
+  </data>
+  <data name="PrintingStringId.SendXls" xml:space="preserve">
+    <value>XLS File</value>
+  </data>
+  <data name="PrintingStringId.SendXlsx" xml:space="preserve">
+    <value>XLSX File</value>
+  </data>
+  <data name="PrintingStringId.SendDocx" xml:space="preserve">
+    <value>DOCX File</value>
+  </data>
+  <data name="PrintingStringId.SendCsv" xml:space="preserve">
+    <value>CSV File</value>
+  </data>
+  <data name="PrintingStringId.SendTxt" xml:space="preserve">
+    <value>Text File</value>
+  </data>
+  <data name="PrintingStringId.SendImage" xml:space="preserve">
+    <value>Image File</value>
+  </data>
+  <data name="PrintingStringId.SendXps" xml:space="preserve">
+    <value>XPS File</value>
+  </data>
+  <data name="PrintingStringId.SendFile" xml:space="preserve">
+    <value>Send...</value>
+  </data>
+  <data name="PrintingStringId.SendFile_Hint" xml:space="preserve">
+    <value>Export the document in one of the available formats and attach it to an e-mail.</value>
+  </data>
+  <data name="PrintingStringId.StopPageBuilding" xml:space="preserve">
+    <value>Stop</value>
+  </data>
+  <data name="PrintingStringId.CurrentPageDisplayFormat" xml:space="preserve">
+    <value>Page {0} of {1}</value>
+  </data>
+  <data name="PrintingStringId.ZoomDisplayFormat" xml:space="preserve">
+    <value>Zoom: {0:0}%</value>
+  </data>
+  <data name="PrintingStringId.MsgCaption" xml:space="preserve">
+    <value>DXPrinting</value>
+  </data>
+  <data name="PrintingStringId.PageSetup" xml:space="preserve">
+    <value>Page Setup...</value>
+  </data>
+  <data name="PrintingStringId.PageSetup_Hint" xml:space="preserve">
+    <value>Adjust the document's page settings.</value>
+  </data>
+  <data name="PrintingStringId.GoToPage" xml:space="preserve">
+    <value>Page:</value>
+  </data>
+  <data name="PrintingStringId.PrintPreviewWindowCaption" xml:space="preserve">
+    <value>Print Preview</value>
+  </data>
+  <data name="PrintingStringId.DefaultPrintJobDescription" xml:space="preserve">
+    <value>Document</value>
+  </data>
+  <data name="PrintingStringId.PdfPasswordSecurityOptions_Title" xml:space="preserve">
+    <value>PDF Password Security</value>
+  </data>
+  <data name="PrintingStringId.PdfPasswordSecurityOptions_RequireOpenPassword" xml:space="preserve">
+    <value>Require a password to open the document</value>
+  </data>
+  <data name="PrintingStringId.PdfPasswordSecurityOptions_OpenPassword" xml:space="preserve">
+    <value>Document open password:</value>
+  </data>
+  <data name="PrintingStringId.PdfPasswordSecurityOptions_RestrictPermissions" xml:space="preserve">
+    <value>Restrict editing and printing of the document</value>
+  </data>
+  <data name="PrintingStringId.PdfPasswordSecurityOptions_PermissionsPassword" xml:space="preserve">
+    <value>Change permissions password:</value>
+  </data>
+  <data name="PrintingStringId.PdfPasswordSecurityOptions_PrintingPermissions" xml:space="preserve">
+    <value>Printing allowed:</value>
+  </data>
+  <data name="PrintingStringId.PdfPasswordSecurityOptions_ChangingPermissions" xml:space="preserve">
+    <value>Changes allowed:</value>
+  </data>
+  <data name="PrintingStringId.PdfPasswordSecurityOptions_EnableCopying" xml:space="preserve">
+    <value>Enable copying of text, images and other content</value>
+  </data>
+  <data name="PrintingStringId.PdfPasswordSecurityOptions_EnableScreenReaders" xml:space="preserve">
+    <value>Enable text access for screen reader devices for the visually impaired</value>
+  </data>
+  <data name="PrintingStringId.PdfPasswordSecurityEncryptionLevel" xml:space="preserve">
+    <value>Encryption Level</value>
+  </data>
+  <data name="PrintingStringId.RepeatPassword_OpenPassword_Title" xml:space="preserve">
+    <value>Confirm Document Open Password</value>
+  </data>
+  <data name="PrintingStringId.RepeatPassword_OpenPassword_Note" xml:space="preserve">
+    <value>Please confirm the Document Open Password. Be sure to make a note of the password. It will be required to open the document.</value>
+  </data>
+  <data name="PrintingStringId.RepeatPassword_OpenPassword" xml:space="preserve">
+    <value>Document open password:</value>
+  </data>
+  <data name="PrintingStringId.RepeatPassword_PermissionsPassword_Title" xml:space="preserve">
+    <value>Confirm Permissions Password</value>
+  </data>
+  <data name="PrintingStringId.RepeatPassword_PermissionsPassword_Note" xml:space="preserve">
+    <value>Please confirm the Permissions Password. Be sure to make a note of the password. You will need it to change these settings in the future.</value>
+  </data>
+  <data name="PrintingStringId.RepeatPassword_PermissionsPassword" xml:space="preserve">
+    <value>Permissions password:</value>
+  </data>
+  <data name="PrintingStringId.RepeatPassword_ConfirmationPasswordDoesNotMatch" xml:space="preserve">
+    <value>Confirmation password does not match. Please start over and enter the password again.</value>
+  </data>
+  <data name="PrintingStringId.PageSetupWindowTitle" xml:space="preserve">
+    <value>Page Setup</value>
+  </data>
+  <data name="PrintingStringId.PageSetupMarginsCaptionFormat" xml:space="preserve">
+    <value>Margins in {0}</value>
+  </data>
+  <data name="PrintingStringId.PageSetupPrinterCaption" xml:space="preserve">
+    <value>Printer</value>
+  </data>
+  <data name="PrintingStringId.PageSetupPrinter" xml:space="preserve">
+    <value>Printer:</value>
+  </data>
+  <data name="PrintingStringId.PageSetupPrinterType" xml:space="preserve">
+    <value>Type:</value>
+  </data>
+  <data name="PrintingStringId.PageSetupPrinterPort" xml:space="preserve">
+    <value>Port:</value>
+  </data>
+  <data name="PrintingStringId.PageSetupPrinterComment" xml:space="preserve">
+    <value>Comment:</value>
+  </data>
+  <data name="PrintingStringId.PageSetupPaperCaption" xml:space="preserve">
+    <value>Paper</value>
+  </data>
+  <data name="PrintingStringId.PageSetupPaperSize" xml:space="preserve">
+    <value>Paper size:</value>
+  </data>
+  <data name="PrintingStringId.PageSetupOrientationCaption" xml:space="preserve">
+    <value>Orientation:</value>
+  </data>
+  <data name="PrintingStringId.PageSetupOrientationPortrait" xml:space="preserve">
+    <value>Portrait</value>
+  </data>
+  <data name="PrintingStringId.PageSetupOrientationLandscape" xml:space="preserve">
+    <value>Landscape</value>
+  </data>
+  <data name="PrintingStringId.PageSetupMarginsLeft" xml:space="preserve">
+    <value>Left:</value>
+  </data>
+  <data name="PrintingStringId.PageSetupMarginsTop" xml:space="preserve">
+    <value>Top:</value>
+  </data>
+  <data name="PrintingStringId.PageSetupMarginsRight" xml:space="preserve">
+    <value>Right:</value>
+  </data>
+  <data name="PrintingStringId.PageSetupMarginsBottom" xml:space="preserve">
+    <value>Bottom:</value>
+  </data>
+  <data name="PrintingStringId.PageSetupMillimeters" xml:space="preserve">
+    <value>Millimeters</value>
+  </data>
+  <data name="PrintingStringId.PageSetupInches" xml:space="preserve">
+    <value>Inches</value>
+  </data>
+  <data name="PrintingStringId.ZoomValueItemFormat" xml:space="preserve">
+    <value>{0}%</value>
+  </data>
+  <data name="PrintingStringId.Open" xml:space="preserve">
+    <value>Open</value>
+  </data>
+  <data name="PrintingStringId.Open_Hint" xml:space="preserve">
+    <value>Open a report document.</value>
+  </data>
+  <data name="PrintingStringId.Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="PrintingStringId.Save_Hint" xml:space="preserve">
+    <value>Save the report document.</value>
+  </data>
+  <data name="PrintingStringId.Error" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="PrintingStringId.DocumentMap" xml:space="preserve">
+    <value>Document Map</value>
+  </data>
+  <data name="PrintingStringId.DocumentMap_Hint" xml:space="preserve">
+    <value>Shows the Document Map panel, which reflects the document's structure, and where you can navigate through the report's bookmarks.</value>
+  </data>
+  <data name="PrintingStringId.Refresh" xml:space="preserve">
+    <value>Refresh</value>
+  </data>
+  <data name="PrintingStringId.Information" xml:space="preserve">
+    <value>Information</value>
+  </data>
+  <data name="PrintingStringId.Parameters" xml:space="preserve">
+    <value>Parameters</value>
+  </data>
+  <data name="PrintingStringId.Parameters_Hint" xml:space="preserve">
+    <value>Shows or hides the Parameters panel, where you can customize the values of report parameters.</value>
+  </data>
+  <data name="PrintingStringId.ParametersReset" xml:space="preserve">
+    <value>Reset</value>
+  </data>
+  <data name="PrintingStringId.ParametersSubmit" xml:space="preserve">
+    <value>Submit</value>
+  </data>
+  <data name="PrintingStringId.PdfPasswordSecurityOptions_Permissions" xml:space="preserve">
+    <value>Permissions</value>
+  </data>
+  <data name="PrintingStringId.PdfPasswordSecurityOptions_OpenPasswordHeader" xml:space="preserve">
+    <value>Document Open Password</value>
+  </data>
+  <data name="PrintingStringId.Search_EmptyResult" xml:space="preserve">
+    <value>Your search did not match any text.</value>
+  </data>
+  <data name="PrintingStringId.PreparingPages" xml:space="preserve">
+    <value>Preparing pages...</value>
+  </data>
+  <data name="PrintingStringId.PagesArePrepared" xml:space="preserve">
+    <value>Pages are ready. Continue printing?</value>
+  </data>
+  <data name="PrintingStringId.ExportPdfToWindow" xml:space="preserve">
+    <value>PDF File</value>
+  </data>
+  <data name="PrintingStringId.ExportHtmToWindow" xml:space="preserve">
+    <value>HTML File</value>
+  </data>
+  <data name="PrintingStringId.ExportMhtToWindow" xml:space="preserve">
+    <value>MHT File</value>
+  </data>
+  <data name="PrintingStringId.ExportRtfToWindow" xml:space="preserve">
+    <value>RTF File</value>
+  </data>
+  <data name="PrintingStringId.ExportXlsToWindow" xml:space="preserve">
+    <value>XLS File</value>
+  </data>
+  <data name="PrintingStringId.ExportXlsxToWindow" xml:space="preserve">
+    <value>XLSX File</value>
+  </data>
+  <data name="PrintingStringId.ExportCsvToWindow" xml:space="preserve">
+    <value>CSV File</value>
+  </data>
+  <data name="PrintingStringId.ExportTxtToWindow" xml:space="preserve">
+    <value>Text File</value>
+  </data>
+  <data name="PrintingStringId.ExportImageToWindow" xml:space="preserve">
+    <value>Image File</value>
+  </data>
+  <data name="PrintingStringId.ExportXpsToWindow" xml:space="preserve">
+    <value>XPS File</value>
+  </data>
+  <data name="PrintingStringId.ExportFileToWindow" xml:space="preserve">
+    <value>Export Document to Window...</value>
+  </data>
+  <data name="PrintingStringId.ExportFileToWindow_Hint" xml:space="preserve">
+    <value>Exports the current document, and shows the result in a new browser window.</value>
+  </data>
+  <data name="PrintingStringId.ClosePreview" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="PrintingStringId.Exception_NoPrinterFound" xml:space="preserve">
+    <value>No printer has been found on the machine</value>
+  </data>
+  <data name="PrintingStringId.Msg_EmptyDocument" xml:space="preserve">
+    <value>The document does not contain any pages.</value>
+  </data>
+  <data name="PrintingStringId.PdfSignatureEditorWindow_Certificate" xml:space="preserve">
+    <value>Certificate:</value>
+  </data>
+  <data name="PrintingStringId.PdfSignatureEditorWindow_Reason" xml:space="preserve">
+    <value>Reason:</value>
+  </data>
+  <data name="PrintingStringId.PdfSignatureEditorWindow_Location" xml:space="preserve">
+    <value>Location:</value>
+  </data>
+  <data name="PrintingStringId.PdfSignatureEditorWindow_ContactInformation" xml:space="preserve">
+    <value>Contact Information:</value>
+  </data>
+  <data name="PrintingStringId.PdfSignatureEditorWindow_Title" xml:space="preserve">
+    <value>Signature Options</value>
+  </data>
+  <data name="PrintingStringId.PdfSignatureEditorWindow_Image" xml:space="preserve">
+    <value>Image:</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_Custom" xml:space="preserve">
+    <value>Custom</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_Letter" xml:space="preserve">
+    <value>Letter</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_LetterSmall" xml:space="preserve">
+    <value>Letter Small</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_Tabloid" xml:space="preserve">
+    <value>Tabloid</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_Ledger" xml:space="preserve">
+    <value>Ledger</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_Legal" xml:space="preserve">
+    <value>Legal</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_Statement" xml:space="preserve">
+    <value>Statement</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_Executive" xml:space="preserve">
+    <value>Executive</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_A3" xml:space="preserve">
+    <value>A3</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_A4" xml:space="preserve">
+    <value>A4</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_A4Small" xml:space="preserve">
+    <value>A4 Small</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_A5" xml:space="preserve">
+    <value>A5</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_B4" xml:space="preserve">
+    <value>B4</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_B5" xml:space="preserve">
+    <value>B5</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_Folio" xml:space="preserve">
+    <value>Folio</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_Quarto" xml:space="preserve">
+    <value>Quarto</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_Standard10x14" xml:space="preserve">
+    <value>Standard 10x14</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_Standard11x17" xml:space="preserve">
+    <value>Standard 11x17</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_Note" xml:space="preserve">
+    <value>Note</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_Number9Envelope" xml:space="preserve">
+    <value>Number 9 Envelope</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_Number10Envelope" xml:space="preserve">
+    <value>Number 10 Envelope</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_Number11Envelope" xml:space="preserve">
+    <value>Number 11 Envelope</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_Number12Envelope" xml:space="preserve">
+    <value>Number 12 Envelope</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_Number14Envelope" xml:space="preserve">
+    <value>Number 14 Envelope</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_CSheet" xml:space="preserve">
+    <value>C Sheet</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_DSheet" xml:space="preserve">
+    <value>D Sheet</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_ESheet" xml:space="preserve">
+    <value>E Sheet</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_DLEnvelope" xml:space="preserve">
+    <value>DL Envelope</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_C5Envelope" xml:space="preserve">
+    <value>C5 Envelope</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_C3Envelope" xml:space="preserve">
+    <value>C3 Envelope</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_C4Envelope" xml:space="preserve">
+    <value>C4 Envelope</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_C6Envelope" xml:space="preserve">
+    <value>C6 Envelope</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_C65Envelope" xml:space="preserve">
+    <value>C65 Envelope</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_B4Envelope" xml:space="preserve">
+    <value>B4 Envelope</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_B5Envelope" xml:space="preserve">
+    <value>B5 Envelope</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_B6Envelope" xml:space="preserve">
+    <value>B6 Envelope</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_ItalyEnvelope" xml:space="preserve">
+    <value>Italy Envelope</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_MonarchEnvelope" xml:space="preserve">
+    <value>Monarch Envelope</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_PersonalEnvelope" xml:space="preserve">
+    <value>Personal Envelope (6 3/4)</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_USStandardFanfold" xml:space="preserve">
+    <value>US Standard Fanfold</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_GermanStandardFanfold" xml:space="preserve">
+    <value>German Standard Fanfold</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_GermanLegalFanfold" xml:space="preserve">
+    <value>German Legal Fanfold</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_IsoB4" xml:space="preserve">
+    <value>Iso B4</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_JapanesePostcard" xml:space="preserve">
+    <value>Japanese Postcard</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_Standard9x11" xml:space="preserve">
+    <value>Standard 9x11</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_Standard10x11" xml:space="preserve">
+    <value>Standard 10x11</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_Standard15x11" xml:space="preserve">
+    <value>Standard 15x11</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_InviteEnvelope" xml:space="preserve">
+    <value>Invite Envelope</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_LetterExtra" xml:space="preserve">
+    <value>Letter Extra</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_LegalExtra" xml:space="preserve">
+    <value>Legal Extra</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_TabloidExtra" xml:space="preserve">
+    <value>Tabloid Extra</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_A4Extra" xml:space="preserve">
+    <value>A4 Extra</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_LetterTransverse" xml:space="preserve">
+    <value>Letter Transverse</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_A4Transverse" xml:space="preserve">
+    <value>A4 Transverse</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_LetterExtraTransverse" xml:space="preserve">
+    <value>Letter Extra Transverse</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_APlus" xml:space="preserve">
+    <value>SuperA/SuperA/A4</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_BPlus" xml:space="preserve">
+    <value>SuperB/SuperB/A3</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_LetterPlus" xml:space="preserve">
+    <value>Letter Plus</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_A4Plus" xml:space="preserve">
+    <value>A4 Plus</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_A5Transverse" xml:space="preserve">
+    <value>A5 Transverse</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_B5Transverse" xml:space="preserve">
+    <value>JIS B5 Transverse</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_A3Extra" xml:space="preserve">
+    <value>A3 Extra</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_A5Extra" xml:space="preserve">
+    <value>A5 Extra</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_B5Extra" xml:space="preserve">
+    <value>ISO B5 Extra</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_A2" xml:space="preserve">
+    <value>A2</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_A3Transverse" xml:space="preserve">
+    <value>A3 Transverse</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_A3ExtraTransverse" xml:space="preserve">
+    <value>A3 Extra Transverse</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_JapaneseDoublePostcard" xml:space="preserve">
+    <value>Japanese Double Postcard</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_A6" xml:space="preserve">
+    <value>A6</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_JapaneseEnvelopeKakuNumber2" xml:space="preserve">
+    <value>Japanese Envelope Kaku Number 2</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_JapaneseEnvelopeKakuNumber3" xml:space="preserve">
+    <value>Japanese Envelope Kaku Number 3</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_JapaneseEnvelopeChouNumber3" xml:space="preserve">
+    <value>Japanese Envelope Chou Number 3</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_JapaneseEnvelopeChouNumber4" xml:space="preserve">
+    <value>Japanese Envelope Chou Number 4</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_LetterRotated" xml:space="preserve">
+    <value>Letter Rotated</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_A3Rotated" xml:space="preserve">
+    <value>A3 Rotated</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_A4Rotated" xml:space="preserve">
+    <value>A4 Rotated</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_A5Rotated" xml:space="preserve">
+    <value>A5 Rotated</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_B4JisRotated" xml:space="preserve">
+    <value>JIS B4 Rotated </value>
+  </data>
+  <data name="PrintingStringId.PaperKind_B5JisRotated" xml:space="preserve">
+    <value>JIS B5 Rotated</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_JapanesePostcardRotated" xml:space="preserve">
+    <value>Japanese Postcard Rotated</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_JapaneseDoublePostcardRotated" xml:space="preserve">
+    <value>Japanese Double Postcard Rotated</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_A6Rotated" xml:space="preserve">
+    <value>A6 Rotated</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_JapaneseEnvelopeKakuNumber2Rotated" xml:space="preserve">
+    <value>Japanese Envelope Kaku Number 2 Rotated</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_JapaneseEnvelopeKakuNumber3Rotated" xml:space="preserve">
+    <value>Japanese Envelope Kaku Number 3 Rotated</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_JapaneseEnvelopeChouNumber3Rotated" xml:space="preserve">
+    <value>Japanese Envelope Chou Number 3 Rotated</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_JapaneseEnvelopeChouNumber4Rotated" xml:space="preserve">
+    <value>Japanese Envelope Chou Number 4 Rotated</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_B6Jis" xml:space="preserve">
+    <value>JIS B6</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_B6JisRotated" xml:space="preserve">
+    <value>JIS B6 Rotated</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_Standard12x11" xml:space="preserve">
+    <value>Standard 12x11</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_JapaneseEnvelopeYouNumber4" xml:space="preserve">
+    <value>Japanese Envelope You Number 4</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_JapaneseEnvelopeYouNumber4Rotated" xml:space="preserve">
+    <value>Japanese Envelope You Number 4 Rotated</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_Prc16K" xml:space="preserve">
+    <value>Prc 16K</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_Prc32K" xml:space="preserve">
+    <value>Prc 32K</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_Prc32KBig" xml:space="preserve">
+    <value>Prc 32K Big</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_PrcEnvelopeNumber1" xml:space="preserve">
+    <value>Prc Envelope Number 1</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_PrcEnvelopeNumber2" xml:space="preserve">
+    <value>Prc Envelope Number 2</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_PrcEnvelopeNumber3" xml:space="preserve">
+    <value>Prc Envelope Number 3</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_PrcEnvelopeNumber4" xml:space="preserve">
+    <value>Prc Envelope Number 4</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_PrcEnvelopeNumber5" xml:space="preserve">
+    <value>Prc Envelope Number 5</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_PrcEnvelopeNumber6" xml:space="preserve">
+    <value>Prc Envelope Number 6</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_PrcEnvelopeNumber7" xml:space="preserve">
+    <value>Prc Envelope Number 7</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_PrcEnvelopeNumber8" xml:space="preserve">
+    <value>Prc Envelope Number 8</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_PrcEnvelopeNumber9" xml:space="preserve">
+    <value>Prc Envelope Number 9</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_PrcEnvelopeNumber10" xml:space="preserve">
+    <value>Prc Envelope Number 10</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_Prc16KRotated" xml:space="preserve">
+    <value>Prc 16K Rotated</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_Prc32KRotated" xml:space="preserve">
+    <value>Prc 32K Rotated</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_Prc32KBigRotated" xml:space="preserve">
+    <value>Prc 32K Big Rotated</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_PrcEnvelopeNumber1Rotated" xml:space="preserve">
+    <value>Prc Envelope Number 1 Rotated</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_PrcEnvelopeNumber2Rotated" xml:space="preserve">
+    <value>Prc Envelope Number 2 Rotated</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_PrcEnvelopeNumber3Rotated" xml:space="preserve">
+    <value>Prc Envelope Number 3 Rotated</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_PrcEnvelopeNumber4Rotated" xml:space="preserve">
+    <value>Prc Envelope Number 4 Rotated</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_PrcEnvelopeNumber5Rotated" xml:space="preserve">
+    <value>Prc Envelope Number 5 Rotated</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_PrcEnvelopeNumber6Rotated" xml:space="preserve">
+    <value>Prc Envelope Number 6 Rotated</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_PrcEnvelopeNumber7Rotated" xml:space="preserve">
+    <value>Prc Envelope Number 7 Rotated</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_PrcEnvelopeNumber8Rotated" xml:space="preserve">
+    <value>Prc Envelope Number 8 Rotated</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_PrcEnvelopeNumber9Rotated" xml:space="preserve">
+    <value>Prc Envelope Number 9 Rotated</value>
+  </data>
+  <data name="PrintingStringId.PaperKind_PrcEnvelopeNumber10Rotated" xml:space="preserve">
+    <value>Prc Envelope Number 10 Rotated</value>
+  </data>
+  <data name="PrintingStringId.RibbonPageGroup_File" xml:space="preserve">
+    <value>File</value>
+  </data>
+  <data name="PrintingStringId.RibbonPageGroup_Print" xml:space="preserve">
+    <value>Print</value>
+  </data>
+  <data name="PrintingStringId.RibbonPageGroup_Navigation" xml:space="preserve">
+    <value>Navigation</value>
+  </data>
+  <data name="PrintingStringId.RibbonPageGroup_Zoom" xml:space="preserve">
+    <value>Zoom</value>
+  </data>
+  <data name="PrintingStringId.RibbonPageGroup_Export" xml:space="preserve">
+    <value>Export</value>
+  </data>
+  <data name="PrintingStringId.RibbonPageGroup_Document" xml:space="preserve">
+    <value>Document</value>
+  </data>
+  <data name="PrintingStringId.RibbonPageGroup_Tools" xml:space="preserve">
+    <value>Tools</value>
+  </data>
+  <data name="PrintingStringId.RibbonPageGroup_Watermark" xml:space="preserve">
+    <value>Watermark</value>
+  </data>
+  <data name="PrintingStringId.RibbonPageCaption" xml:space="preserve">
+    <value>Preview</value>
+  </data>
+  <data name="PrintingStringId.True" xml:space="preserve">
+    <value>True</value>
+  </data>
+  <data name="PrintingStringId.False" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="PrintingStringId.Copy" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="PrintingStringId.HandTool" xml:space="preserve">
+    <value>Hand Tool</value>
+  </data>
+  <data name="PrintingStringId.SelectTool" xml:space="preserve">
+    <value>Select Tool</value>
+  </data>
+  <data name="PrintingStringId.FilePath" xml:space="preserve">
+    <value>File path</value>
+  </data>
+  <data name="PrintingStringId.MoreOptions" xml:space="preserve">
+    <value>More Options</value>
+  </data>
+  <data name="PrintingStringId.OpenFileAfterExport" xml:space="preserve">
+    <value>Open file after exporting</value>
+  </data>
+  <data name="PrintingStringId.ExportFormat" xml:space="preserve">
+    <value>Export format</value>
+  </data>
+  <data name="PrintingStringId.Printer" xml:space="preserve">
+    <value>Printer</value>
+  </data>
+  <data name="PrintingStringId.Preferences" xml:space="preserve">
+    <value>Preferences</value>
+  </data>
+  <data name="PrintingStringId.PrinterStatus" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="PrintingStringId.PrinterLocation" xml:space="preserve">
+    <value>Location</value>
+  </data>
+  <data name="PrintingStringId.PrinterComment" xml:space="preserve">
+    <value>Comment</value>
+  </data>
+  <data name="PrintingStringId.PrinterQueue" xml:space="preserve">
+    <value>Document(s) in Queue</value>
+  </data>
+  <data name="PrintingStringId.Copies" xml:space="preserve">
+    <value>Number of copies</value>
+  </data>
+  <data name="PrintingStringId.Collate" xml:space="preserve">
+    <value>Collate</value>
+  </data>
+  <data name="PrintingStringId.PageRange" xml:space="preserve">
+    <value>Page range</value>
+  </data>
+  <data name="PrintingStringId.AllPages" xml:space="preserve">
+    <value>All pages</value>
+  </data>
+  <data name="PrintingStringId.CurrentPage" xml:space="preserve">
+    <value>Current</value>
+  </data>
+  <data name="PrintingStringId.SomePages" xml:space="preserve">
+    <value>Some pages</value>
+  </data>
+  <data name="PrintingStringId.PageRangeHint" xml:space="preserve">
+    <value>For example: 1,3,5-12</value>
+  </data>
+  <data name="PrintingStringId.PaperSource" xml:space="preserve">
+    <value>Paper source</value>
+  </data>
+  <data name="PrintingStringId.PrintFilePath" xml:space="preserve">
+    <value>File path</value>
+  </data>
+  <data name="PrintingStringId.PrintToFile" xml:space="preserve">
+    <value>Print to file</value>
+  </data>
+  <data name="PrintingStringId.DocumentSourceNotSupported" xml:space="preserve">
+    <value>This type of document source is not supported.</value>
+  </data>
+  <data name="PrintingStringId.SearchFinished_NoMatchesFound" xml:space="preserve">
+    <value>Finished searching throughout the document. No matches were found.</value>
+  </data>
+  <data name="PrintingStringId.Thumbnails" xml:space="preserve">
+    <value>Thumbnails</value>
+  </data>
+  <data name="PrintingStringId.Thumbnails_Hint" xml:space="preserve">
+    <value>Open the Thumbnails, which allows you to navigate through the document.</value>
+  </data>
+  <data name="PrintingStringId.EditingFields" xml:space="preserve">
+    <value>Editing Fields</value>
+  </data>
+  <data name="PrintingStringId.EditingFields_Hint" xml:space="preserve">
+    <value>Highlight all editing fields to quickly discover which of the document elements are editable.</value>
+  </data>
+  <data name="PrintingStringId.RibbonPageGroup_View" xml:space="preserve">
+    <value>View</value>
+  </data>
+  <data name="PrintingStringId.PageLayout" xml:space="preserve">
+    <value>Page Layout</value>
+  </data>
+  <data name="PrintingStringId.PageLayout_Hint" xml:space="preserve">
+    <value>Select how many pages to show side-by-side.</value>
+  </data>
+  <data name="PrintingStringId.PageLayout_SinglePage" xml:space="preserve">
+    <value>Single Page</value>
+  </data>
+  <data name="PrintingStringId.PageLayout_SinglePage_Hint" xml:space="preserve">
+    <value>Show only one page at a time.</value>
+  </data>
+  <data name="PrintingStringId.PageLayout_TwoPages" xml:space="preserve">
+    <value>Two Pages</value>
+  </data>
+  <data name="PrintingStringId.PageLayout_TwoPages_Hint" xml:space="preserve">
+    <value>Show two pages side by side.</value>
+  </data>
+  <data name="PrintingStringId.PageLayout_WrapPages" xml:space="preserve">
+    <value>Wrap Pages</value>
+  </data>
+  <data name="PrintingStringId.PageLayout_WrapPages_Hint" xml:space="preserve">
+    <value>Show as many pages side by side, as the current zoom factor allows.</value>
+  </data>
+  <data name="PrintingStringId.EnableContinuousScrolling" xml:space="preserve">
+    <value>Enable Continuous Scrolling</value>
+  </data>
+  <data name="PrintingStringId.EnableContinuousScrolling_Hint" xml:space="preserve">
+    <value>Enable continuous scrolling between pages in a single or two pages view.</value>
+  </data>
+  <data name="PrintingStringId.ShowCoverPage" xml:space="preserve">
+    <value>Show Cover Page</value>
+  </data>
+  <data name="PrintingStringId.ShowCoverPage_Hint" xml:space="preserve">
+    <value>Show the document's first page separately or alongside the next page in the two pages view.</value>
+  </data>
+
+
+  <data name="PrintingStringId.ReportBehavior_RibbonReportsCaption" xml:space="preserve">
+    <value>Reports</value>
+  </data>
+  <data name="PrintingStringId.ReportBehavior_MenuPrintPreview" xml:space="preserve">
+    <value>Print Preview...</value>
+  </data>
+  <data name="PrintingStringId.ReportBehavior_MenuDesignReport" xml:space="preserve">
+    <value>Design Report...</value>
+  </data>
+  <data name="PrintingStringId.ReportBehavior_MenuPrint" xml:space="preserve">
+    <value>Print...</value>
+  </data>
+  <data name="PrintingStringId.ReportBehavior_MenuEdit" xml:space="preserve">
+    <value>Edit...</value>
+  </data>
+  <data name="PrintingStringId.ReportBehavior_MenuRename" xml:space="preserve">
+    <value>Rename...</value>
+  </data>
+  <data name="PrintingStringId.ReportBehavior_MenuDelete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="PrintingStringId.ReportBehavior_DeleteDialogCaption" xml:space="preserve">
+    <value>Delete Report</value>
+  </data>
+  <data name="PrintingStringId.ReportBehavior_DeleteDialogMessage" xml:space="preserve">
+    <value>Are you sure you want to delete report {0}?</value>
+  </data>
+  <data name="PrintingStringId.ReportBehavior_RenameDialogCaption" xml:space="preserve">
+    <value>Rename Report</value>
+  </data>
+  <data name="PrintingStringId.ReportBehavior_RenameDialogNameLabel" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="PrintingStringId.ReportBehavior_SaveDialogCaption" xml:space="preserve">
+    <value>Save Report</value>
+  </data>  
+  
+  <data name="PrintingStringId.ReportManagerServiceWizard_SelectTheme" xml:space="preserve">
+    <value>Select Theme</value>
+  </data>
+  <data name="PrintingStringId.ReportManagerServiceWizard_WindowTitle" xml:space="preserve">
+    <value>Report Wizard</value>
+  </data>
+  <data name="PrintingStringId.ReportManagerServiceWizard_SelectPageOptions" xml:space="preserve">
+    <value>Select Page Options</value>
+  </data>
+  <data name="PrintingStringId.ReportManagerServiceWizard_Paper" xml:space="preserve">
+    <value>Paper</value>
+  </data>
+  <data name="PrintingStringId.ReportManagerServiceWizard_PaperSize" xml:space="preserve">
+    <value>Size</value>
+  </data>
+  <data name="PrintingStringId.ReportManagerServiceWizard_ReportUnits" xml:space="preserve">
+    <value>Units</value>
+  </data>
+  <data name="PrintingStringId.ReportManagerServiceWizard_PageOrientation" xml:space="preserve">
+    <value>Orientation</value>
+  </data>
+  <data name="PrintingStringId.ReportManagerServiceWizard_PageSetup" xml:space="preserve">
+    <value>Page Setup</value>
+  </data>
+  <data name="PrintingStringId.DuplexMode" xml:space="preserve">
+    <value>Print on both sides</value>
+  </data>
+  <data name="PrintingStringId.DuplexMode_Simplex" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="PrintingStringId.DuplexMode_Horizontal" xml:space="preserve">
+    <value>Flip on Short Edge</value>
+  </data>
+  <data name="PrintingStringId.DuplexMode_Vertical" xml:space="preserve">
+    <value>Flip on Long Edge</value>
+  </data>
+  <data name="PrintingStringId.PrintAllPages" xml:space="preserve">
+    <value>Print All Pages</value>
+  </data>
+  <data name="PrintingStringId.PrintAllPagesDescription" xml:space="preserve">
+    <value>The whole document</value>
+  </data>
+  <data name="PrintingStringId.PrintCurrentPage" xml:space="preserve">
+    <value>Print Current Page</value>
+  </data>
+  <data name="PrintingStringId.PrintCurrentPageDescription" xml:space="preserve">
+    <value>Just this page</value>
+  </data>
+  <data name="PrintingStringId.PrintCustomPages" xml:space="preserve">
+    <value>Custom Print</value>
+  </data>
+  <data name="PrintingStringId.PrintCustomPagesDescription" xml:space="preserve">
+    <value>Enter page numbers and/or page ranges</value>
+  </data>
+  <data name="PrintingStringId.PrintOneSided" xml:space="preserve">
+    <value>Print One Sided</value>
+  </data>
+  <data name="PrintingStringId.PrintOneSidedDescription" xml:space="preserve">
+    <value>Only print one side of the page</value>
+  </data>
+  <data name="PrintingStringId.PrintOnBothSides" xml:space="preserve">
+    <value>Print on Both Sides</value>
+  </data>
+  <data name="PrintingStringId.PrintCopies" xml:space="preserve">
+    <value>Copies</value>
+  </data>
+  <data name="PrintingStringId.Collated" xml:space="preserve">
+    <value>Collated</value>
+  </data>
+  <data name="PrintingStringId.Uncollated" xml:space="preserve">
+    <value>Uncollated</value>
+  </data>
+  <data name="PrintingStringId.PrintPreviewSettings" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="PrintingStringId.PrintPreviewTitle" xml:space="preserve">
+    <value>Print</value>
+  </data>
+  <data name="PrintingStringId.NavigationPane_ButtonCaption" xml:space="preserve">
+    <value>Navigation Pane</value>
+  </data>
+  <data name="PrintingStringId.NavigationPane_ButtonHint" xml:space="preserve">
+    <value>Show the Navigation Pane, which allows you to search for a specified text and navigate through the document.</value>
+  </data>
+  <data name="PrintingStringId.NavigationPane_Title" xml:space="preserve">
+    <value>Navigation</value>
+  </data>
+  <data name="PrintingStringId.NavigationPane_SearchBoxPlaceholder" xml:space="preserve">
+    <value>Enter text to search...</value>
+  </data>
+  <data name="PrintingStringId.NavigationPane_Searching" xml:space="preserve">
+    <value>Searching...</value>
+  </data>
+  <data name="PrintingStringId.NavigationPane_NoMatches" xml:space="preserve">
+    <value>No matches</value>
+  </data>
+  <data name="PrintingStringId.NavigationPane_ResultIndex" xml:space="preserve">
+    <value>Result {0} of {1}</value>
+  </data>
+  <data name="PrintingStringId.NavigationPane_NoMatchesFound" xml:space="preserve">
+    <value>No matches were found for the specified search. Try to enter another text to search.</value>
+  </data>
+  <data name="PrintingStringId.NavigationPane_EnterTextToSearch" xml:space="preserve">
+    <value>Enter text in the search box above to start your search.</value>
+  </data>
+  <data name="PrintingStringId.NavigationPane_DocumentMapTabCaption" xml:space="preserve">
+    <value>Document Map</value>
+  </data>
+  <data name="PrintingStringId.NavigationPane_PagesTabCaption" xml:space="preserve">
+    <value>Pages</value>
+  </data>
+  <data name="PrintingStringId.NavigationPane_SearchResultsTabCaption" xml:space="preserve">
+    <value>Search Results</value>
+  </data>
+  <data name="PrintingStringId.NavigationPane_NoBookmarks" xml:space="preserve">
+    <value>No bookmarks to display</value>
+  </data>
+  <data name="PrintingStringId.NavigationPane_SearchResultHint" xml:space="preserve">
+    <value>[Page {0}] {1}</value>
+  </data>
+  <data name="PrintingStringId.NavigationPane_ResultCount" xml:space="preserve">
+    <value>{0} results</value>
+  </data>
+  <data name="PrintingStringId.PageSetupSize" xml:space="preserve">
+    <value>Size</value>
+  </data>
+  <data name="PrintingStringId.PageSetupWidth" xml:space="preserve">
+    <value>Width</value>
+  </data>
+  <data name="PrintingStringId.PageSetupHeight" xml:space="preserve">
+    <value>Height</value>
+  </data>
+  <data name="PrintingStringId.PageSetupUnits" xml:space="preserve">
+    <value>Units</value>
+  </data>
+  <data name="PrintingStringId.PageSetupPageMargins" xml:space="preserve">
+    <value>Page Margins</value>
+  </data>
+  <data name="PrintingStringId.Msg_DocumentIsPrinting" xml:space="preserve">
+    <value>Document is printing.</value>
+  </data>
+  <data name="PrintingStringId.Msg_Waiting_ForParameterValues" xml:space="preserve">
+    <value>Waiting for parameter values.</value>
+  </data>
+  <data name="PrintingStringId.CustomPaperSize" xml:space="preserve">
+    <value>Custom Paper Size</value>
+  </data>
+  <data name="PrintingStringId.CustomPageMargins" xml:space="preserve">
+    <value>Custom Page Margins</value>
+  </data>
+</root>

@@ -1,5 +1,7 @@
 ﻿using SistemaDeGerenciamento2_0.Forms;
 using System;
+using System.Globalization;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace SistemaDeGerenciamento2_0
@@ -12,10 +14,14 @@ namespace SistemaDeGerenciamento2_0
         [STAThread]
         private static void Main()
         {
+            Thread.CurrentThread.CurrentUICulture
+                = CultureInfo.CreateSpecificCulture("pt-BR");
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new frmTelaPrincipal());
             //Application.Run(new frmProdutos());
+            //Application.Run(new frmFiltrarProduto());
         }
     }
 }

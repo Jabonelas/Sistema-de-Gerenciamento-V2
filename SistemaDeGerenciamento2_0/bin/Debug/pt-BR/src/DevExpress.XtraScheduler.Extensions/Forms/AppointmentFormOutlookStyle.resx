@@ -1,0 +1,849 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace">
+    </xsd:import>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0">
+                </xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string">
+              </xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string">
+              </xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string">
+              </xsd:attribute>
+              <xsd:attribute ref="xml:space">
+              </xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string">
+              </xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string">
+              </xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1">
+                </xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2">
+                </xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1">
+              </xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3">
+              </xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4">
+              </xsd:attribute>
+              <xsd:attribute ref="xml:space">
+              </xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1">
+                </xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required">
+              </xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="barManager.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="btnSaveAndClose.Caption" xml:space="preserve">
+    <value>&amp;Save and Close</value>
+  </data>
+  <data name="toolTipTitleItem1.Text" xml:space="preserve">
+    <value>Save &amp;&amp; Close</value>
+  </data>
+  <data name="toolTipItem1.Text" xml:space="preserve">
+    <value>Save this item and close the window.</value>
+  </data>
+  <data name="btnRecurrence.Caption" xml:space="preserve">
+    <value>Rec&amp;urrence...</value>
+  </data>
+  <data name="toolTipTitleItem2.Text" xml:space="preserve">
+    <value>Recurrence (Ctrl+G)</value>
+  </data>
+  <data name="toolTipItem2.Text" xml:space="preserve">
+    <value>Make this item recurring, or edit the recurrence pattern.
+
+A recurring item is one which repeats on a regular schedule.</value>
+  </data>
+  <data name="btnDelete.Caption" xml:space="preserve">
+    <value>&amp;Delete</value>
+  </data>
+  <data name="toolTipTitleItem3.Text" xml:space="preserve">
+    <value>Delete (Ctrl+D)</value>
+  </data>
+  <data name="toolTipItem3.Text" xml:space="preserve">
+    <value>Delete this item.</value>
+  </data>
+  <data name="btnSpelling.Caption" xml:space="preserve">
+    <value>S&amp;pelling...</value>
+  </data>
+  <data name="toolTipTitleItem4.Text" xml:space="preserve">
+    <value>Spelling &amp;&amp; Grammar (F7)</value>
+  </data>
+  <data name="toolTipItem4.Text" xml:space="preserve">
+    <value>Check the spelling and grammar of text in the document.</value>
+  </data>
+  <data name="brTools.Text" xml:space="preserve">
+    <value>Tools</value>
+  </data>
+  <data name="mActions.Caption" xml:space="preserve">
+    <value>&amp;Actions</value>
+  </data>
+  <data name="btnSave.Caption" xml:space="preserve">
+    <value>&amp;Save</value>
+  </data>
+  <data name="btnClose.Caption" xml:space="preserve">
+    <value>&amp;Close</value>
+  </data>
+  <data name="brMainMenu.Text" xml:space="preserve">
+    <value>Main menu</value>
+  </data>
+  <metadata name="barAndDockingController.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>242, 17</value>
+  </metadata>
+  <data name="&gt;&gt;barDockControlTop.Name" xml:space="preserve">
+    <value>barDockControlTop</value>
+  </data>
+  <data name="&gt;&gt;barDockControlTop.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;barDockControlTop.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;barDockControlBottom.Name" xml:space="preserve">
+    <value>barDockControlBottom</value>
+  </data>
+  <data name="&gt;&gt;barDockControlBottom.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;barDockControlBottom.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;barDockControlLeft.Name" xml:space="preserve">
+    <value>barDockControlLeft</value>
+  </data>
+  <data name="&gt;&gt;barDockControlLeft.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;barDockControlLeft.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;barDockControlRight.Name" xml:space="preserve">
+    <value>barDockControlRight</value>
+  </data>
+  <data name="&gt;&gt;barDockControlRight.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;barDockControlRight.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>41</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  </assembly>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>552, 420</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  </assembly>
+  <data name="tabControl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tabControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 49</value>
+  </data>
+  <data name="edtResources.Location" type="System.Drawing.Point, System.Drawing">
+    <value>390, 114</value>
+  </data>
+  <data name="edtResources.Size" type="System.Drawing.Size, System.Drawing">
+    <value>145, 20</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  </assembly>
+  <data name="edtResources.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;edtResources.Name" xml:space="preserve">
+    <value>edtResources</value>
+  </data>
+  <data name="&gt;&gt;edtResources.Parent" xml:space="preserve">
+    <value>layoutCtrl</value>
+  </data>
+  <data name="&gt;&gt;edtResources.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="tbLocation.Location" type="System.Drawing.Point, System.Drawing">
+    <value>81, 59</value>
+  </data>
+  <metadata name="spellChecker.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>128, 17</value>
+  </metadata>
+  <data name="tbLocation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>226, 20</value>
+  </data>
+  <data name="tbLocation.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;tbLocation.Name" xml:space="preserve">
+    <value>tbLocation</value>
+  </data>
+  <data name="&gt;&gt;tbLocation.Parent" xml:space="preserve">
+    <value>layoutCtrl</value>
+  </data>
+  <data name="&gt;&gt;tbLocation.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="lblHorzSeparator1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 90</value>
+  </data>
+  <data name="lblHorzSeparator1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>526, 13</value>
+  </data>
+  <data name="lblHorzSeparator1.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;lblHorzSeparator1.Name" xml:space="preserve">
+    <value>lblHorzSeparator1</value>
+  </data>
+  <data name="&gt;&gt;lblHorzSeparator1.Parent" xml:space="preserve">
+    <value>layoutCtrl</value>
+  </data>
+  <data name="&gt;&gt;lblHorzSeparator1.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="lblInfo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 9</value>
+  </data>
+  <data name="lblInfo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>526, 8</value>
+  </data>
+  <data name="lblInfo.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;lblInfo.Name" xml:space="preserve">
+    <value>lblInfo</value>
+  </data>
+  <data name="&gt;&gt;lblInfo.Parent" xml:space="preserve">
+    <value>layoutCtrl</value>
+  </data>
+  <data name="&gt;&gt;lblInfo.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="lblHorzSeparator2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 207</value>
+  </data>
+  <data name="lblHorzSeparator2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>526, 13</value>
+  </data>
+  <data name="lblHorzSeparator2.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;lblHorzSeparator2.Name" xml:space="preserve">
+    <value>lblHorzSeparator2</value>
+  </data>
+  <data name="&gt;&gt;lblHorzSeparator2.Parent" xml:space="preserve">
+    <value>layoutCtrl</value>
+  </data>
+  <data name="&gt;&gt;lblHorzSeparator2.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="tbSubject.Location" type="System.Drawing.Point, System.Drawing">
+    <value>81, 28</value>
+  </data>
+  <data name="tbSubject.Size" type="System.Drawing.Size, System.Drawing">
+    <value>454, 20</value>
+  </data>
+  <data name="tbSubject.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;tbSubject.Name" xml:space="preserve">
+    <value>tbSubject</value>
+  </data>
+  <data name="&gt;&gt;tbSubject.Parent" xml:space="preserve">
+    <value>layoutCtrl</value>
+  </data>
+  <data name="&gt;&gt;tbSubject.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="edtLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>390, 59</value>
+  </data>
+  <data name="edtLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>145, 20</value>
+  </data>
+  <data name="edtLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;edtLabel.Name" xml:space="preserve">
+    <value>edtLabel</value>
+  </data>
+  <data name="&gt;&gt;edtLabel.Parent" xml:space="preserve">
+    <value>layoutCtrl</value>
+  </data>
+  <data name="&gt;&gt;edtLabel.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="edtStartDate.EditValue" type="System.DateTime, mscorlib">
+    <value>2007-09-12</value>
+  </data>
+  <data name="edtStartDate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>81, 114</value>
+  </data>
+  <data name="edtStartDate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>127, 20</value>
+  </data>
+  <data name="edtStartDate.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;edtStartDate.Name" xml:space="preserve">
+    <value>edtStartDate</value>
+  </data>
+  <data name="&gt;&gt;edtStartDate.Parent" xml:space="preserve">
+    <value>layoutCtrl</value>
+  </data>
+  <data name="&gt;&gt;edtStartDate.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="cbReminder.Location" type="System.Drawing.Point, System.Drawing">
+    <value>404, 231</value>
+  </data>
+  <data name="cbReminder.Size" type="System.Drawing.Size, System.Drawing">
+    <value>131, 20</value>
+  </data>
+  <data name="cbReminder.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;cbReminder.Name" xml:space="preserve">
+    <value>cbReminder</value>
+  </data>
+  <data name="&gt;&gt;cbReminder.Parent" xml:space="preserve">
+    <value>layoutCtrl</value>
+  </data>
+  <data name="&gt;&gt;cbReminder.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="edtResource.Location" type="System.Drawing.Point, System.Drawing">
+    <value>390, 145</value>
+  </data>
+  <data name="edtResource.Size" type="System.Drawing.Size, System.Drawing">
+    <value>145, 20</value>
+  </data>
+  <data name="edtResource.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;edtResource.Name" xml:space="preserve">
+    <value>edtResource</value>
+  </data>
+  <data name="&gt;&gt;edtResource.Parent" xml:space="preserve">
+    <value>layoutCtrl</value>
+  </data>
+  <data name="&gt;&gt;edtResource.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="edtShowTimeAs.Location" type="System.Drawing.Point, System.Drawing">
+    <value>81, 231</value>
+  </data>
+  <data name="edtShowTimeAs.Size" type="System.Drawing.Size, System.Drawing">
+    <value>226, 20</value>
+  </data>
+  <data name="edtShowTimeAs.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;edtShowTimeAs.Name" xml:space="preserve">
+    <value>edtShowTimeAs</value>
+  </data>
+  <data name="&gt;&gt;edtShowTimeAs.Parent" xml:space="preserve">
+    <value>layoutCtrl</value>
+  </data>
+  <data name="&gt;&gt;edtShowTimeAs.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="edtEndDate.EditValue" type="System.DateTime, mscorlib">
+    <value>2007-09-12</value>
+  </data>
+  <data name="edtEndDate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>81, 176</value>
+  </data>
+  <data name="edtEndDate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>127, 20</value>
+  </data>
+  <data name="edtEndDate.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;edtEndDate.Name" xml:space="preserve">
+    <value>edtEndDate</value>
+  </data>
+  <data name="&gt;&gt;edtEndDate.Parent" xml:space="preserve">
+    <value>layoutCtrl</value>
+  </data>
+  <data name="&gt;&gt;edtEndDate.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="tbDescription.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 262</value>
+  </data>
+  <data name="tbDescription.Size" type="System.Drawing.Size, System.Drawing">
+    <value>526, 70</value>
+  </data>
+  <data name="tbDescription.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;tbDescription.Name" xml:space="preserve">
+    <value>tbDescription</value>
+  </data>
+  <data name="&gt;&gt;tbDescription.Parent" xml:space="preserve">
+    <value>layoutCtrl</value>
+  </data>
+  <data name="&gt;&gt;tbDescription.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="edtStartTime.EditValue" type="System.DateTime, mscorlib">
+    <value>2007-09-12</value>
+  </data>
+  <data name="edtStartTime.Location" type="System.Drawing.Point, System.Drawing">
+    <value>219, 114</value>
+  </data>
+  <data name="edtStartTime.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 20</value>
+  </data>
+  <data name="edtStartTime.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;edtStartTime.Name" xml:space="preserve">
+    <value>edtStartTime</value>
+  </data>
+  <data name="&gt;&gt;edtStartTime.Parent" xml:space="preserve">
+    <value>layoutCtrl</value>
+  </data>
+  <data name="&gt;&gt;edtStartTime.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="edtEndTime.EditValue" type="System.DateTime, mscorlib">
+    <value>2007-09-12</value>
+  </data>
+  <data name="edtEndTime.Location" type="System.Drawing.Point, System.Drawing">
+    <value>219, 176</value>
+  </data>
+  <data name="edtEndTime.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 20</value>
+  </data>
+  <data name="edtEndTime.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;edtEndTime.Name" xml:space="preserve">
+    <value>edtEndTime</value>
+  </data>
+  <data name="&gt;&gt;edtEndTime.Parent" xml:space="preserve">
+    <value>layoutCtrl</value>
+  </data>
+  <data name="&gt;&gt;edtEndTime.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="chkAllDay.Location" type="System.Drawing.Point, System.Drawing">
+    <value>318, 176</value>
+  </data>
+  <data name="chkAllDay.Properties.Caption" xml:space="preserve">
+    <value>All da&amp;y event</value>
+  </data>
+  <data name="chkAllDay.Size" type="System.Drawing.Size, System.Drawing">
+    <value>93, 19</value>
+  </data>
+  <data name="chkAllDay.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;chkAllDay.Name" xml:space="preserve">
+    <value>chkAllDay</value>
+  </data>
+  <data name="&gt;&gt;chkAllDay.Parent" xml:space="preserve">
+    <value>layoutCtrl</value>
+  </data>
+  <data name="&gt;&gt;chkAllDay.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="chkReminder.Location" type="System.Drawing.Point, System.Drawing">
+    <value>318, 231</value>
+  </data>
+  <data name="chkReminder.Properties.Caption" xml:space="preserve">
+    <value>&amp;Reminder</value>
+  </data>
+  <data name="chkReminder.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 19</value>
+  </data>
+  <data name="chkReminder.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;chkReminder.Name" xml:space="preserve">
+    <value>chkReminder</value>
+  </data>
+  <data name="&gt;&gt;chkReminder.Parent" xml:space="preserve">
+    <value>layoutCtrl</value>
+  </data>
+  <data name="&gt;&gt;chkReminder.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="layoutCtrl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="layoutCtrl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="layoutControlGroup.CustomizationFormText" xml:space="preserve">
+    <value>layoutControlGroup</value>
+  </data>
+  <data name="layoutLocation.CustomizationFormText" xml:space="preserve">
+    <value>layoutLocation</value>
+  </data>
+  <data name="layoutLocation.Text" xml:space="preserve">
+    <value>&amp;Location:</value>
+  </data>
+  <data name="layoutSubject.CustomizationFormText" xml:space="preserve">
+    <value>layoutSubject</value>
+  </data>
+  <data name="layoutSubject.Text" xml:space="preserve">
+    <value>Sub&amp;ject:</value>
+  </data>
+  <data name="layoutLabel.CustomizationFormText" xml:space="preserve">
+    <value>layoutLabel</value>
+  </data>
+  <data name="layoutLabel.Text" xml:space="preserve">
+    <value>La&amp;bel:</value>
+  </data>
+  <data name="layoutDescription.CustomizationFormText" xml:space="preserve">
+    <value>layoutDescription</value>
+  </data>
+  <data name="layoutShowTimeAs.CustomizationFormText" xml:space="preserve">
+    <value>layoutShowTimeAs</value>
+  </data>
+  <data name="layoutShowTimeAs.Text" xml:space="preserve">
+    <value>Sho&amp;w time as:</value>
+  </data>
+  <data name="layoutAllDay.CustomizationFormText" xml:space="preserve">
+    <value>layoutAllDay</value>
+  </data>
+  <data name="layoutInfo.CustomizationFormText" xml:space="preserve">
+    <value>layoutInfo</value>
+  </data>
+  <data name="layoutReminderGroup.CustomizationFormText" xml:space="preserve">
+    <value>layoutReminderGroup</value>
+  </data>
+  <data name="layoutChkReminder.CustomizationFormText" xml:space="preserve">
+    <value>layoutChkReminder</value>
+  </data>
+  <data name="layoutReminder.CustomizationFormText" xml:space="preserve">
+    <value>layoutReminder</value>
+  </data>
+  <data name="layoutStartGroup.CustomizationFormText" xml:space="preserve">
+    <value>layoutStartGroup</value>
+  </data>
+  <data name="layoutStartDate.CustomizationFormText" xml:space="preserve">
+    <value>layoutStartDate</value>
+  </data>
+  <data name="layoutStartDate.Text" xml:space="preserve">
+    <value>S&amp;tart time:</value>
+  </data>
+  <data name="layoutStartTime.CustomizationFormText" xml:space="preserve">
+    <value>layoutStartTime</value>
+  </data>
+  <data name="layoutEndGroup.CustomizationFormText" xml:space="preserve">
+    <value>layoutEndGroup</value>
+  </data>
+  <data name="layoutEndDate.CustomizationFormText" xml:space="preserve">
+    <value>layoutEndDate</value>
+  </data>
+  <data name="layoutEndDate.Text" xml:space="preserve">
+    <value>&amp;End time:</value>
+  </data>
+  <data name="layoutEndTime.CustomizationFormText" xml:space="preserve">
+    <value>layoutEndTime</value>
+  </data>
+  <data name="layoutEndGroup.Text" xml:space="preserve">
+    <value>layoutEndGroup</value>
+  </data>
+  <data name="layoutResourcesGroup.CustomizationFormText" xml:space="preserve">
+    <value>layoutResourcesGroup</value>
+  </data>
+  <data name="layoutResources.CustomizationFormText" xml:space="preserve">
+    <value>layoutResources</value>
+  </data>
+  <data name="layoutResources.Text" xml:space="preserve">
+    <value>Res&amp;ource:</value>
+  </data>
+  <data name="layoutResource.CustomizationFormText" xml:space="preserve">
+    <value>layoutResource</value>
+  </data>
+  <data name="layoutResource.Text" xml:space="preserve">
+    <value>Res&amp;ource:</value>
+  </data>
+  <data name="layoutResourcesGroup.Text" xml:space="preserve">
+    <value>layoutResourcesGroup</value>
+  </data>
+  <data name="layoutHorzSeparator1.CustomizationFormText" xml:space="preserve">
+    <value>layoutHorzSeparator1</value>
+  </data>
+  <data name="layoutHorzSeparator2.CustomizationFormText" xml:space="preserve">
+    <value>layoutHorzSeparator2</value>
+  </data>
+  <data name="emptySpaceItem1.CustomizationFormText" xml:space="preserve">
+    <value>emptySpaceItem1</value>
+  </data>
+  <data name="layoutControlGroup.Text" xml:space="preserve">
+    <value>layoutControlGroup</value>
+  </data>
+  <data name="layoutCtrl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>543, 340</value>
+  </data>
+  <data name="layoutCtrl.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;layoutCtrl.Name" xml:space="preserve">
+    <value>layoutCtrl</value>
+  </data>
+  <data name="&gt;&gt;layoutCtrl.Parent" xml:space="preserve">
+    <value>tpAppointment</value>
+  </data>
+  <data name="&gt;&gt;layoutCtrl.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tpAppointment.Size" type="System.Drawing.Size, System.Drawing">
+    <value>543, 340</value>
+  </data>
+  <data name="tpAppointment.Text" xml:space="preserve">
+    <value>Appointment</value>
+  </data>
+  <data name="&gt;&gt;tpAppointment.Name" xml:space="preserve">
+    <value>tpAppointment</value>
+  </data>
+  <data name="&gt;&gt;tpAppointment.Parent" xml:space="preserve">
+    <value>tabControl</value>
+  </data>
+  <data name="&gt;&gt;tpAppointment.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tabControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>552, 371</value>
+  </data>
+  <data name="tabControl.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tabControl.Name" xml:space="preserve">
+    <value>tabControl</value>
+  </data>
+  <data name="&gt;&gt;tabControl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;tabControl.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>560, 454</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterParent</value>
+  </data>
+  <data name="&gt;&gt;barManager.Name" xml:space="preserve">
+    <value>barManager</value>
+  </data>
+  <data name="&gt;&gt;brTools.Name" xml:space="preserve">
+    <value>brTools</value>
+  </data>
+  <data name="&gt;&gt;btnSaveAndClose.Name" xml:space="preserve">
+    <value>btnSaveAndClose</value>
+  </data>
+  <data name="&gt;&gt;btnRecurrence.Name" xml:space="preserve">
+    <value>btnRecurrence</value>
+  </data>
+  <data name="&gt;&gt;btnDelete.Name" xml:space="preserve">
+    <value>btnDelete</value>
+  </data>
+  <data name="&gt;&gt;btnSpelling.Name" xml:space="preserve">
+    <value>btnSpelling</value>
+  </data>
+  <data name="&gt;&gt;brMainMenu.Name" xml:space="preserve">
+    <value>brMainMenu</value>
+  </data>
+  <data name="&gt;&gt;mActions.Name" xml:space="preserve">
+    <value>mActions</value>
+  </data>
+  <data name="&gt;&gt;btnSave.Name" xml:space="preserve">
+    <value>btnSave</value>
+  </data>
+  <data name="&gt;&gt;btnClose.Name" xml:space="preserve">
+    <value>btnClose</value>
+  </data>
+  <data name="&gt;&gt;barAndDockingController.Name" xml:space="preserve">
+    <value>barAndDockingController</value>
+  </data>
+  <data name="&gt;&gt;spellChecker.Name" xml:space="preserve">
+    <value>spellChecker</value>
+  </data>
+  <data name="&gt;&gt;layoutControlGroup.Name" xml:space="preserve">
+    <value>layoutControlGroup</value>
+  </data>
+  <data name="&gt;&gt;layoutLocation.Name" xml:space="preserve">
+    <value>layoutLocation</value>
+  </data>
+  <data name="&gt;&gt;layoutSubject.Name" xml:space="preserve">
+    <value>layoutSubject</value>
+  </data>
+  <data name="&gt;&gt;layoutLabel.Name" xml:space="preserve">
+    <value>layoutLabel</value>
+  </data>
+  <data name="&gt;&gt;layoutDescription.Name" xml:space="preserve">
+    <value>layoutDescription</value>
+  </data>
+  <data name="&gt;&gt;layoutShowTimeAs.Name" xml:space="preserve">
+    <value>layoutShowTimeAs</value>
+  </data>
+  <data name="&gt;&gt;layoutAllDay.Name" xml:space="preserve">
+    <value>layoutAllDay</value>
+  </data>
+  <data name="&gt;&gt;layoutInfo.Name" xml:space="preserve">
+    <value>layoutInfo</value>
+  </data>
+  <data name="&gt;&gt;layoutReminderGroup.Name" xml:space="preserve">
+    <value>layoutReminderGroup</value>
+  </data>
+  <data name="&gt;&gt;layoutChkReminder.Name" xml:space="preserve">
+    <value>layoutChkReminder</value>
+  </data>
+  <data name="&gt;&gt;layoutReminder.Name" xml:space="preserve">
+    <value>layoutReminder</value>
+  </data>
+  <data name="&gt;&gt;layoutStartGroup.Name" xml:space="preserve">
+    <value>layoutStartGroup</value>
+  </data>
+  <data name="&gt;&gt;layoutStartDate.Name" xml:space="preserve">
+    <value>layoutStartDate</value>
+  </data>
+  <data name="&gt;&gt;layoutStartTime.Name" xml:space="preserve">
+    <value>layoutStartTime</value>
+  </data>
+  <data name="&gt;&gt;layoutEndGroup.Name" xml:space="preserve">
+    <value>layoutEndGroup</value>
+  </data>
+  <data name="&gt;&gt;layoutEndDate.Name" xml:space="preserve">
+    <value>layoutEndDate</value>
+  </data>
+  <data name="&gt;&gt;layoutEndTime.Name" xml:space="preserve">
+    <value>layoutEndTime</value>
+  </data>
+  <data name="&gt;&gt;layoutResourcesGroup.Name" xml:space="preserve">
+    <value>layoutResourcesGroup</value>
+  </data>
+  <data name="&gt;&gt;layoutResources.Name" xml:space="preserve">
+    <value>layoutResources</value>
+  </data>
+  <data name="&gt;&gt;layoutResource.Name" xml:space="preserve">
+    <value>layoutResource</value>
+  </data>
+  <data name="&gt;&gt;layoutHorzSeparator1.Name" xml:space="preserve">
+    <value>layoutHorzSeparator1</value>
+  </data>
+  <data name="&gt;&gt;layoutHorzSeparator2.Name" xml:space="preserve">
+    <value>layoutHorzSeparator2</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem1.Name" xml:space="preserve">
+    <value>emptySpaceItem1</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>AppointmentFormOutlookStyle</value>
+  </data>
+</root>

@@ -1,0 +1,939 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"></assembly>
+  <data name="tablePanel1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"></assembly>
+  <data name="tablePanel1.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="defaultValueEditor.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"></assembly>
+  <data name="defaultValueEditor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="defaultValueEditor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>165, 16</value>
+  </data>
+  <data name="defaultValueEditor.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;defaultValueEditor.Name" xml:space="preserve">
+    <value>defaultValueEditor</value>
+  </data>
+  <data name="&gt;&gt;defaultValueEditor.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.BaseEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;defaultValueEditor.Parent" xml:space="preserve">
+    <value>tablePanel3</value>
+  </data>
+  <data name="&gt;&gt;defaultValueEditor.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="cbDefaultValueExpressionMode.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="cbDefaultValueExpressionMode.Location" type="System.Drawing.Point, System.Drawing">
+    <value>172, 3</value>
+  </data>
+  <data name="cbDefaultValueExpressionMode.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 3, 3, 3</value>
+  </data>
+  <data name="cbDefaultValueExpressionMode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="cbDefaultValueExpressionMode.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;cbDefaultValueExpressionMode.Name" xml:space="preserve">
+    <value>cbDefaultValueExpressionMode</value>
+  </data>
+  <data name="&gt;&gt;cbDefaultValueExpressionMode.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckButton, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;cbDefaultValueExpressionMode.Parent" xml:space="preserve">
+    <value>tablePanel3</value>
+  </data>
+  <data name="&gt;&gt;cbDefaultValueExpressionMode.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tablePanel3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tablePanel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>88, 140</value>
+  </data>
+  <data name="tablePanel3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="tablePanel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>195, 26</value>
+  </data>
+  <data name="tablePanel3.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;tablePanel3.Name" xml:space="preserve">
+    <value>tablePanel3</value>
+  </data>
+  <data name="&gt;&gt;tablePanel3.Type" xml:space="preserve">
+    <value>DevExpress.Utils.Layout.TablePanel, DevExpress.Utils.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;tablePanel3.Parent" xml:space="preserve">
+    <value>tablePanel1</value>
+  </data>
+  <data name="&gt;&gt;tablePanel3.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="labelControl5.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="labelControl5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 55</value>
+  </data>
+  <data name="labelControl5.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 3, 0, 4</value>
+  </data>
+  <data name="labelControl5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 20</value>
+  </data>
+  <data name="labelControl5.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="labelControl5.Text" xml:space="preserve">
+    <value>Visible:</value>
+  </data>
+  <data name="&gt;&gt;labelControl5.Name" xml:space="preserve">
+    <value>labelControl5</value>
+  </data>
+  <data name="&gt;&gt;labelControl5.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;labelControl5.Parent" xml:space="preserve">
+    <value>tablePanel1</value>
+  </data>
+  <data name="&gt;&gt;labelControl5.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="labelControl6.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="labelControl6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 81</value>
+  </data>
+  <data name="labelControl6.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 3, 0, 4</value>
+  </data>
+  <data name="labelControl6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 20</value>
+  </data>
+  <data name="labelControl6.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="labelControl6.Text" xml:space="preserve">
+    <value>Enabled:</value>
+  </data>
+  <data name="&gt;&gt;labelControl6.Name" xml:space="preserve">
+    <value>labelControl6</value>
+  </data>
+  <data name="&gt;&gt;labelControl6.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;labelControl6.Parent" xml:space="preserve">
+    <value>tablePanel1</value>
+  </data>
+  <data name="&gt;&gt;labelControl6.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="cbEnabledExpressionMode.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="cbEnabledExpressionMode.Location" type="System.Drawing.Point, System.Drawing">
+    <value>172, 29</value>
+  </data>
+  <data name="cbEnabledExpressionMode.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 3, 3, 3</value>
+  </data>
+  <data name="cbEnabledExpressionMode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="cbEnabledExpressionMode.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;cbEnabledExpressionMode.Name" xml:space="preserve">
+    <value>cbEnabledExpressionMode</value>
+  </data>
+  <data name="&gt;&gt;cbEnabledExpressionMode.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckButton, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;cbEnabledExpressionMode.Parent" xml:space="preserve">
+    <value>tablePanel2</value>
+  </data>
+  <data name="&gt;&gt;cbEnabledExpressionMode.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="cbVisibleExpressionMode.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="cbVisibleExpressionMode.Location" type="System.Drawing.Point, System.Drawing">
+    <value>172, 3</value>
+  </data>
+  <data name="cbVisibleExpressionMode.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 3, 3, 3</value>
+  </data>
+  <data name="cbVisibleExpressionMode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="cbVisibleExpressionMode.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;cbVisibleExpressionMode.Name" xml:space="preserve">
+    <value>cbVisibleExpressionMode</value>
+  </data>
+  <data name="&gt;&gt;cbVisibleExpressionMode.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckButton, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;cbVisibleExpressionMode.Parent" xml:space="preserve">
+    <value>tablePanel2</value>
+  </data>
+  <data name="&gt;&gt;cbVisibleExpressionMode.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="cbeEnabledEditor.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="cbeEnabledEditor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 29</value>
+  </data>
+  <data name="cbeEnabledEditor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>165, 20</value>
+  </data>
+  <data name="cbeEnabledEditor.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;cbeEnabledEditor.Name" xml:space="preserve">
+    <value>cbeEnabledEditor</value>
+  </data>
+  <data name="&gt;&gt;cbeEnabledEditor.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ComboBoxEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;cbeEnabledEditor.Parent" xml:space="preserve">
+    <value>tablePanel2</value>
+  </data>
+  <data name="&gt;&gt;cbeEnabledEditor.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="cbeVisibleEditor.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="cbeVisibleEditor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="cbeVisibleEditor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>165, 20</value>
+  </data>
+  <data name="cbeVisibleEditor.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;cbeVisibleEditor.Name" xml:space="preserve">
+    <value>cbeVisibleEditor</value>
+  </data>
+  <data name="&gt;&gt;cbeVisibleEditor.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ComboBoxEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;cbeVisibleEditor.Parent" xml:space="preserve">
+    <value>tablePanel2</value>
+  </data>
+  <data name="&gt;&gt;cbeVisibleEditor.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="tablePanel2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tablePanel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>88, 52</value>
+  </data>
+  <data name="tablePanel2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="tablePanel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>195, 52</value>
+  </data>
+  <data name="tablePanel2.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;tablePanel2.Name" xml:space="preserve">
+    <value>tablePanel2</value>
+  </data>
+  <data name="&gt;&gt;tablePanel2.Type" xml:space="preserve">
+    <value>DevExpress.Utils.Layout.TablePanel, DevExpress.Utils.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;tablePanel2.Parent" xml:space="preserve">
+    <value>tablePanel1</value>
+  </data>
+  <data name="&gt;&gt;tablePanel2.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="ceSelectAll.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="ceSelectAll.Location" type="System.Drawing.Point, System.Drawing">
+    <value>91, 221</value>
+  </data>
+  <data name="ceSelectAll.Properties.Caption" xml:space="preserve">
+    <value>Select all values</value>
+  </data>
+  <data name="ceSelectAll.Size" type="System.Drawing.Size, System.Drawing">
+    <value>189, 20</value>
+  </data>
+  <data name="ceSelectAll.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;ceSelectAll.Name" xml:space="preserve">
+    <value>ceSelectAll</value>
+  </data>
+  <data name="&gt;&gt;ceSelectAll.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;ceSelectAll.Parent" xml:space="preserve">
+    <value>tablePanel1</value>
+  </data>
+  <data name="&gt;&gt;ceSelectAll.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="dynamicListSettingsPage.Caption" xml:space="preserve">
+    <value>dynamicListSettingsPage</value>
+  </data>
+  <data name="parameterEditorDynamicListSettingsControl.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="parameterEditorDynamicListSettingsControl.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="parameterEditorDynamicListSettingsControl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="parameterEditorDynamicListSettingsControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="parameterEditorDynamicListSettingsControl.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="parameterEditorDynamicListSettingsControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>283, 218</value>
+  </data>
+  <data name="parameterEditorDynamicListSettingsControl.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;parameterEditorDynamicListSettingsControl.Name" xml:space="preserve">
+    <value>parameterEditorDynamicListSettingsControl</value>
+  </data>
+  <data name="&gt;&gt;parameterEditorDynamicListSettingsControl.Type" xml:space="preserve">
+    <value>DevExpress.XtraReports.Design.ParameterEditor.ParameterEditorDynamicListSettingsControl, DevExpress.XtraReports.v21.2.Extensions, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;parameterEditorDynamicListSettingsControl.Parent" xml:space="preserve">
+    <value>dynamicListSettingsPage</value>
+  </data>
+  <data name="&gt;&gt;parameterEditorDynamicListSettingsControl.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="dynamicListSettingsPage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>283, 218</value>
+  </data>
+  <data name="&gt;&gt;dynamicListSettingsPage.Name" xml:space="preserve">
+    <value>dynamicListSettingsPage</value>
+  </data>
+  <data name="&gt;&gt;dynamicListSettingsPage.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Navigation.NavigationPage, DevExpress.XtraBars.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;dynamicListSettingsPage.Parent" xml:space="preserve">
+    <value>navigationFrame1</value>
+  </data>
+  <data name="&gt;&gt;dynamicListSettingsPage.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="staticListSettingsPage.Caption" xml:space="preserve">
+    <value>staticListSettingsPage</value>
+  </data>
+  <data name="parameterEditorStaticListSettingsControl.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="parameterEditorStaticListSettingsControl.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="parameterEditorStaticListSettingsControl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="parameterEditorStaticListSettingsControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="parameterEditorStaticListSettingsControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>283, 218</value>
+  </data>
+  <data name="parameterEditorStaticListSettingsControl.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;parameterEditorStaticListSettingsControl.Name" xml:space="preserve">
+    <value>parameterEditorStaticListSettingsControl</value>
+  </data>
+  <data name="&gt;&gt;parameterEditorStaticListSettingsControl.Type" xml:space="preserve">
+    <value>DevExpress.XtraReports.Design.ParameterEditor.ParameterEditorStaticListSettingsControl, DevExpress.XtraReports.v21.2.Extensions, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;parameterEditorStaticListSettingsControl.Parent" xml:space="preserve">
+    <value>staticListSettingsPage</value>
+  </data>
+  <data name="&gt;&gt;parameterEditorStaticListSettingsControl.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="staticListSettingsPage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>283, 218</value>
+  </data>
+  <data name="&gt;&gt;staticListSettingsPage.Name" xml:space="preserve">
+    <value>staticListSettingsPage</value>
+  </data>
+  <data name="&gt;&gt;staticListSettingsPage.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Navigation.NavigationPage, DevExpress.XtraBars.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;staticListSettingsPage.Parent" xml:space="preserve">
+    <value>navigationFrame1</value>
+  </data>
+  <data name="&gt;&gt;staticListSettingsPage.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="rangeSettingsPage.Caption" xml:space="preserve">
+    <value>rangeSettingsPage</value>
+  </data>
+  <data name="parameterEditorRangeSettingsControl.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="parameterEditorRangeSettingsControl.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="parameterEditorRangeSettingsControl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="parameterEditorRangeSettingsControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="parameterEditorRangeSettingsControl.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="parameterEditorRangeSettingsControl.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 3, 0, 0</value>
+  </data>
+  <data name="parameterEditorRangeSettingsControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>283, 218</value>
+  </data>
+  <data name="parameterEditorRangeSettingsControl.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;parameterEditorRangeSettingsControl.Name" xml:space="preserve">
+    <value>parameterEditorRangeSettingsControl</value>
+  </data>
+  <data name="&gt;&gt;parameterEditorRangeSettingsControl.Type" xml:space="preserve">
+    <value>DevExpress.XtraReports.Design.ParameterEditor.ParameterEditorRangeSettingsControl, DevExpress.XtraReports.v21.2.Extensions, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;parameterEditorRangeSettingsControl.Parent" xml:space="preserve">
+    <value>rangeSettingsPage</value>
+  </data>
+  <data name="&gt;&gt;parameterEditorRangeSettingsControl.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="rangeSettingsPage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>283, 218</value>
+  </data>
+  <data name="&gt;&gt;rangeSettingsPage.Name" xml:space="preserve">
+    <value>rangeSettingsPage</value>
+  </data>
+  <data name="&gt;&gt;rangeSettingsPage.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Navigation.NavigationPage, DevExpress.XtraBars.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;rangeSettingsPage.Parent" xml:space="preserve">
+    <value>navigationFrame1</value>
+  </data>
+  <data name="&gt;&gt;rangeSettingsPage.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="navigationFrame1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="navigationFrame1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>303, 26</value>
+  </data>
+  <data name="navigationFrame1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="navigationFrame1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>283, 218</value>
+  </data>
+  <data name="navigationFrame1.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="navigationFrame1.Text" xml:space="preserve">
+    <value>navigationFrame1</value>
+  </data>
+  <data name="&gt;&gt;navigationFrame1.Name" xml:space="preserve">
+    <value>navigationFrame1</value>
+  </data>
+  <data name="&gt;&gt;navigationFrame1.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Navigation.NavigationFrame, DevExpress.XtraBars.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;navigationFrame1.Parent" xml:space="preserve">
+    <value>tablePanel1</value>
+  </data>
+  <data name="&gt;&gt;navigationFrame1.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="cbeValueSource.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="cbeValueSource.Location" type="System.Drawing.Point, System.Drawing">
+    <value>394, 3</value>
+  </data>
+  <data name="cbeValueSource.Size" type="System.Drawing.Size, System.Drawing">
+    <value>189, 20</value>
+  </data>
+  <data name="cbeValueSource.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;cbeValueSource.Name" xml:space="preserve">
+    <value>cbeValueSource</value>
+  </data>
+  <data name="&gt;&gt;cbeValueSource.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ComboBoxEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;cbeValueSource.Parent" xml:space="preserve">
+    <value>tablePanel1</value>
+  </data>
+  <data name="&gt;&gt;cbeValueSource.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="cbeType.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="cbeType.Location" type="System.Drawing.Point, System.Drawing">
+    <value>91, 117</value>
+  </data>
+  <data name="cbeType.Size" type="System.Drawing.Size, System.Drawing">
+    <value>189, 20</value>
+  </data>
+  <data name="cbeType.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;cbeType.Name" xml:space="preserve">
+    <value>cbeType</value>
+  </data>
+  <data name="&gt;&gt;cbeType.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ComboBoxEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;cbeType.Parent" xml:space="preserve">
+    <value>tablePanel1</value>
+  </data>
+  <data name="&gt;&gt;cbeType.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="ceAllowNull.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="ceAllowNull.Location" type="System.Drawing.Point, System.Drawing">
+    <value>91, 169</value>
+  </data>
+  <data name="ceAllowNull.Properties.Caption" xml:space="preserve">
+    <value>Allow null value</value>
+  </data>
+  <data name="ceAllowNull.Size" type="System.Drawing.Size, System.Drawing">
+    <value>189, 20</value>
+  </data>
+  <data name="ceAllowNull.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;ceAllowNull.Name" xml:space="preserve">
+    <value>ceAllowNull</value>
+  </data>
+  <data name="&gt;&gt;ceAllowNull.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;ceAllowNull.Parent" xml:space="preserve">
+    <value>tablePanel1</value>
+  </data>
+  <data name="&gt;&gt;ceAllowNull.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="ceAllowMultiple.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="ceAllowMultiple.Location" type="System.Drawing.Point, System.Drawing">
+    <value>91, 195</value>
+  </data>
+  <data name="ceAllowMultiple.Properties.Caption" xml:space="preserve">
+    <value>Allow multiple values</value>
+  </data>
+  <data name="ceAllowMultiple.Size" type="System.Drawing.Size, System.Drawing">
+    <value>189, 20</value>
+  </data>
+  <data name="ceAllowMultiple.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;ceAllowMultiple.Name" xml:space="preserve">
+    <value>ceAllowMultiple</value>
+  </data>
+  <data name="&gt;&gt;ceAllowMultiple.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;ceAllowMultiple.Parent" xml:space="preserve">
+    <value>tablePanel1</value>
+  </data>
+  <data name="&gt;&gt;ceAllowMultiple.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="teDescription.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="teDescription.Location" type="System.Drawing.Point, System.Drawing">
+    <value>91, 29</value>
+  </data>
+  <data name="teDescription.Size" type="System.Drawing.Size, System.Drawing">
+    <value>189, 20</value>
+  </data>
+  <data name="teDescription.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;teDescription.Name" xml:space="preserve">
+    <value>teDescription</value>
+  </data>
+  <data name="&gt;&gt;teDescription.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;teDescription.Parent" xml:space="preserve">
+    <value>tablePanel1</value>
+  </data>
+  <data name="&gt;&gt;teDescription.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="teName.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="teName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>91, 3</value>
+  </data>
+  <data name="teName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>189, 20</value>
+  </data>
+  <data name="teName.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;teName.Name" xml:space="preserve">
+    <value>teName</value>
+  </data>
+  <data name="&gt;&gt;teName.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;teName.Parent" xml:space="preserve">
+    <value>tablePanel1</value>
+  </data>
+  <data name="&gt;&gt;teName.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="labelControl7.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="labelControl7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>306, 3</value>
+  </data>
+  <data name="labelControl7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 20</value>
+  </data>
+  <data name="labelControl7.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="labelControl7.Text" xml:space="preserve">
+    <value>Value Source:</value>
+  </data>
+  <data name="&gt;&gt;labelControl7.Name" xml:space="preserve">
+    <value>labelControl7</value>
+  </data>
+  <data name="&gt;&gt;labelControl7.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;labelControl7.Parent" xml:space="preserve">
+    <value>tablePanel1</value>
+  </data>
+  <data name="&gt;&gt;labelControl7.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="labelControl4.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="labelControl4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 143</value>
+  </data>
+  <data name="labelControl4.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 3, 0, 4</value>
+  </data>
+  <data name="labelControl4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 20</value>
+  </data>
+  <data name="labelControl4.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="labelControl4.Text" xml:space="preserve">
+    <value>Default Value:</value>
+  </data>
+  <data name="&gt;&gt;labelControl4.Name" xml:space="preserve">
+    <value>labelControl4</value>
+  </data>
+  <data name="&gt;&gt;labelControl4.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;labelControl4.Parent" xml:space="preserve">
+    <value>tablePanel1</value>
+  </data>
+  <data name="&gt;&gt;labelControl4.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="labelControl3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="labelControl3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 117</value>
+  </data>
+  <data name="labelControl3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 20</value>
+  </data>
+  <data name="labelControl3.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="labelControl3.Text" xml:space="preserve">
+    <value>Type:</value>
+  </data>
+  <data name="&gt;&gt;labelControl3.Name" xml:space="preserve">
+    <value>labelControl3</value>
+  </data>
+  <data name="&gt;&gt;labelControl3.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;labelControl3.Parent" xml:space="preserve">
+    <value>tablePanel1</value>
+  </data>
+  <data name="&gt;&gt;labelControl3.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="labelControl2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="labelControl2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 29</value>
+  </data>
+  <data name="labelControl2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 20</value>
+  </data>
+  <data name="labelControl2.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="labelControl2.Text" xml:space="preserve">
+    <value>Description:</value>
+  </data>
+  <data name="&gt;&gt;labelControl2.Name" xml:space="preserve">
+    <value>labelControl2</value>
+  </data>
+  <data name="&gt;&gt;labelControl2.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;labelControl2.Parent" xml:space="preserve">
+    <value>tablePanel1</value>
+  </data>
+  <data name="&gt;&gt;labelControl2.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="tablePanel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tablePanel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="tablePanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>586, 244</value>
+  </data>
+  <data name="tablePanel1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tablePanel1.Name" xml:space="preserve">
+    <value>tablePanel1</value>
+  </data>
+  <data name="&gt;&gt;tablePanel1.Type" xml:space="preserve">
+    <value>DevExpress.Utils.Layout.TablePanel, DevExpress.Utils.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;tablePanel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;tablePanel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="labelControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="labelControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="labelControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 20</value>
+  </data>
+  <data name="labelControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="labelControl1.Text" xml:space="preserve">
+    <value>Name:</value>
+  </data>
+  <data name="&gt;&gt;labelControl1.Name" xml:space="preserve">
+    <value>labelControl1</value>
+  </data>
+  <data name="&gt;&gt;labelControl1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;labelControl1.Parent" xml:space="preserve">
+    <value>tablePanel1</value>
+  </data>
+  <data name="&gt;&gt;labelControl1.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>586, 244</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>ParameterEditorContentControl</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.XtraUserControl, DevExpress.Utils.v21.2, Culture=neutral</value>
+  </data>
+</root>

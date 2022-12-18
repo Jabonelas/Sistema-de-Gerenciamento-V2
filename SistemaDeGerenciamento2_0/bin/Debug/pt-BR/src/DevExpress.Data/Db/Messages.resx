@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string"></xsd:attribute>
+							<xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+							<xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="ConnectionProvider_TypeMappingMissing">
+		<value>Database provider cannot process the '{0}' type because it is not mapped to the types of an underlayed database. Please use another type.</value>
+	</data>
+	<data name="ConnectionProvider_UnableToCreateDBObject">
+		<value>Unable to create '{0}' '{1}'. Parent: '{2}'. Error: {3}</value>
+	</data>
+	<data name="ConnectionProvider_UnableToFillRefType">
+		<value>Could not ensure database schema for the '{1}' member of the '{0}' type. Error: {2}</value>
+	</data>
+	<data name="ConnectionProvider_SqlExecutionError">
+		<value>Executing Sql '{0}' with parameters '{1}' exception '{2}'</value>
+	</data>
+	<data name="ConnectionProvider_SchemaCorrectionNeeded">
+		<value>Schema needs to be updated. Contact your system administrator. Sql text: {0}</value>
+	</data>
+	<data name="ConnectionProvider_KeysAutogenerationNonSupportedTypeException">
+		<value>Keys autogeneration supported only for Int32 and Guid datatypes. Class Type: '{0}'</value>
+	</data>
+	<data name="ConnectionProvider_TableNameTooLong">
+		<value>Unable to create database table '{0}'. The name of the table is too long (exceed 64 characters)</value>
+	</data>
+	<data name="ConnectionProvider_ColumnNameTooLong">
+		<value>Unable to create table column '{1}' of table '{0}'. The name of the column is too long (exceed 64 characters)</value>
+	</data>
+	<data name="ConnectionProvider_AtLeastOneColumnExpected">
+		<value>At least one column expected</value>
+	</data>
+	<data name="ConnectionProvider_Locking">
+		<value>Cannot persist the object. It was modified or deleted (purged) by another application.</value>
+	</data>
+	<data name="ConnectionProvider_UnableToOpenDatabase">
+		<value>Unable to open database. Connection string: '{0}'; Error: '{1}'</value>
+	</data>
+  <!-- data name="Async_CommandChannelDoesNotImplementICommandChannelAsync" xml:space="preserve">
+		<value>Your '{0}' Command Channel does not support the 'DevExpress.Xpo.Helpers.ICommandChannelAsync' interface. Please implement this interface, or use another compatible Command Channel.</value>
+	</data>
+	<data name="Async_ConnectionProviderDoesNotImplementIDataStoreAsync" xml:space="preserve">
+		<value>Your '{0}' Connection Provider does not support the 'DevExpress.Xpo.DB.IDataStoreAsync' interface. Please implement this interface, or use another compatible Connection Provider.</value>
+	</data>
+  <data name="ConnectionProviderSql_DbCommandAsyncOperationsNotSupported" xml:space="preserve">
+    <value>The '{0}' DB Command of your ADO.NET provider does not inherit System.Data.Common.DbCommand. Please update your ADO.NET provider library to the latest version, or override the '{1}' method in your custom connection provider.</value>
+  </data>
+  <data name="ConnectionProviderSql_DbDataReaderAsyncOperationsNotSupported" xml:space="preserve">
+    <value>The '{0}' Data Reader of your ADO.NET provider does not inherit System.Data.Common.DbDataReader. Please update your ADO.NET provider library to the latest version, or override the '{1}' method in your custom connection provider.</value>
+  </data -->
+  <data name="CommandChannelHelper_CannotDeserializeResponse" xml:space="preserve">
+    <value>Cannot deserialize the '{0}' operation response due to limitations of the XmlSerializer implementation under the Mono runtime. If you need to deserealize small amounts of data, to set the DevExpress.Xpo.Helpers.CommandChannelHelper.EnableMonoDeserializationFixForSmallAmountsOfData property to 'true' and retry.</value>
+  </data>
+  <data name="ConnectionProviderSql_ParameterValueSizeExceedsMaximumSize" xml:space="preserve">
+    <value>Could not create parameter '{1}'. SQL: {0}. The value length ({2}) exceeds parameter size ({3}).</value>
+  </data>
+</root>

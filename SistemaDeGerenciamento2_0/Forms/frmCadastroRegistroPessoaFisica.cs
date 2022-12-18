@@ -185,9 +185,6 @@ namespace SistemaDeGerenciamento2_0.Forms
             ManipulacaoTextBox.DigitarApenasLetrasOuNumeros(e, txtNumero);
         }
 
-        private void txtComplemento_KeyPress(object sender, KeyPressEventArgs e)
-        {
-        }
 
         private void txtCidade_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -584,25 +581,6 @@ namespace SistemaDeGerenciamento2_0.Forms
             }
         }
 
-        private void labelControl11_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void labelControl13_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void labelControl12_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void pictureEdit3_EditValueChanged(object sender, EventArgs e)
-        {
-        }
-
-        private void frmCadastroRegistroPessoaFisica_Load(object sender, EventArgs e)
-        {
-        }
 
         private void frmCadastroRegistroPessoaFisica_Shown(object sender, EventArgs e)
         {

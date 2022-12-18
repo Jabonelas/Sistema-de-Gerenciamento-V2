@@ -1,0 +1,837 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ASPxReportsStringId.SearchDialog_Header" xml:space="preserve">
+    <value>Localizar</value>
+  </data>
+  <data name="ASPxReportsStringId.SearchDialog_FindWhat" xml:space="preserve">
+    <value>Procurar&amp;nbsp;por</value>
+  </data>
+  <data name="ASPxReportsStringId.SearchDialog_FindWhat_AccessKey" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="ASPxReportsStringId.SearchDialog_FindNext" xml:space="preserve">
+    <value>Localizar próximo</value>
+  </data>
+  <data name="ASPxReportsStringId.SearchDialog_WholeWord" xml:space="preserve">
+    <value>Coincidir só palavra inteira</value>
+  </data>
+  <data name="ASPxReportsStringId.SearchDialog_WholeWord_AccessKey" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="ASPxReportsStringId.SearchDialog_Case" xml:space="preserve">
+    <value>Diferenciar maiúsculas/minúsculas</value>
+  </data>
+  <data name="ASPxReportsStringId.SearchDialog_Case_AccessKey" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="ASPxReportsStringId.SearchDialog_Up" xml:space="preserve">
+    <value>Para cima</value>
+  </data>
+  <data name="ASPxReportsStringId.SearchDialog_Up_AccessKey" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="ASPxReportsStringId.SearchDialog_Down" xml:space="preserve">
+    <value>Para baixo</value>
+  </data>
+  <data name="ASPxReportsStringId.SearchDialog_Down_AccessKey" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="ASPxReportsStringId.SearchDialog_Finished" xml:space="preserve">
+    <value>Terminada a busca no documento.</value>
+  </data>
+  <data name="ASPxReportsStringId.ToolBarItemText_Search" xml:space="preserve">
+    <value>Mostrar a janela de busca </value>
+  </data>
+  <data name="ASPxReportsStringId.ToolBarItemText_PrintReport" xml:space="preserve">
+    <value>Imprimir relatório</value>
+  </data>
+  <data name="ASPxReportsStringId.ToolBarItemText_PrintPage" xml:space="preserve">
+    <value>Imprimir página atual</value>
+  </data>
+  <data name="ASPxReportsStringId.ToolBarItemText_FirstPage" xml:space="preserve">
+    <value>Primeira página</value>
+  </data>
+  <data name="ASPxReportsStringId.ToolBarItemText_PreviousPage" xml:space="preserve">
+    <value>Página anterior</value>
+  </data>
+  <data name="ASPxReportsStringId.ToolBarItemText_NextPage" xml:space="preserve">
+    <value>Próxima página</value>
+  </data>
+  <data name="ASPxReportsStringId.ToolBarItemText_LastPage" xml:space="preserve">
+    <value>Última página</value>
+  </data>
+  <data name="ASPxReportsStringId.ToolBarItemText_SaveToWindow" xml:space="preserve">
+    <value>Exportar um relatório e o mostrar em uma nova janela</value>
+  </data>
+  <data name="ASPxReportsStringId.ToolBarItemText_SaveToDisk" xml:space="preserve">
+    <value>Exportar um relatório e o salvar no disco</value>
+  </data>
+  <data name="ASPxReportsStringId.ToolBarItemText_PageLabel" xml:space="preserve">
+    <value>Página</value>
+  </data>
+  <data name="ASPxReportsStringId.ToolBarItemText_OfLabel" xml:space="preserve">
+    <value>de</value>
+  </data>
+  <data name="ASPxReportsStringId.ParametersPanel_Reset" xml:space="preserve">
+    <value>Redefinir</value>
+  </data>
+  <data name="ASPxReportsStringId.ParametersPanel_Submit" xml:space="preserve">
+    <value>Enviar</value>
+  </data>
+  <data name="ASPxReportsStringId.ExportName_pdf" xml:space="preserve">
+    <value>PDF</value>
+  </data>
+  <data name="ASPxReportsStringId.ExportName_xls" xml:space="preserve">
+    <value>XLS</value>
+  </data>
+  <data name="ASPxReportsStringId.ExportName_xlsx" xml:space="preserve">
+    <value>XLSX</value>
+  </data>
+  <data name="ASPxReportsStringId.ExportName_rtf" xml:space="preserve">
+    <value>RTF</value>
+  </data>
+  <data name="ASPxReportsStringId.ExportName_mht" xml:space="preserve">
+    <value>MHT</value>
+  </data>
+  <data name="ASPxReportsStringId.ExportName_html" xml:space="preserve">
+    <value>HTML</value>
+  </data>
+  <data name="ASPxReportsStringId.ExportName_txt" xml:space="preserve">
+    <value>Texto</value>
+  </data>
+  <data name="ASPxReportsStringId.ExportName_csv" xml:space="preserve">
+    <value>CSV</value>
+  </data>
+  <data name="ASPxReportsStringId.ExportName_png" xml:space="preserve">
+    <value>Imagem</value>
+  </data>
+  <data name="ASPxReportsStringId.DocumentViewer_RemoteAuthenticatorLogin_Error" xml:space="preserve">
+    <value>Falhou ao iniciar sessão com as credenciais do usuário especificado.</value>
+  </data>
+  <data name="ASPxReportsStringId.DocumentViewer_RemoteAuthenticatorCredential_Error" xml:space="preserve">
+    <value>As credenciais do usuário não podem ser vazias.</value>
+  </data>
+  <data name="ASPxReportsStringId.DocumentViewer_RemotePageByPage_Error" xml:space="preserve">
+    <value>Para exibir um relatório remoto, habilitar a propriedade de PageByPage do SettingsReportViewer.</value>
+  </data>
+  <data name="ASPxReportsStringId.DocumentViewer_RemoteAuthenticatorCredentialHandled_Error" xml:space="preserve">
+    <value>Para iniciar a sessão no servidor de relatório, manipular o evento RequestCredentials.</value>
+  </data>
+  <data name="ASPxReportsStringId.DocumentViewer_RemoteRequestCredentials_Error" xml:space="preserve">
+    <value>O evento RequestCredentials não foi inscrito para.</value>
+  </data>
+  <data name="ASPxReportsStringId.DocumentViewer_RemoteSourceConnection_Error" xml:space="preserve">
+    <value>o serviço de relatório especificado não foi encontrado.</value>
+  </data>
+  <data name="ASPxReportsStringId.DocumentViewer_RibbonCommandText_FindText" xml:space="preserve">
+    <value>Localizar texto</value>
+  </data>
+  <data name="ASPxReportsStringId.DocumentViewer_RibbonCommandText_FirstPage" xml:space="preserve">
+    <value>Primeira página</value>
+  </data>
+  <data name="ASPxReportsStringId.DocumentViewer_RibbonCommandText_LastPage" xml:space="preserve">
+    <value>Última página</value>
+  </data>
+  <data name="ASPxReportsStringId.DocumentViewer_RibbonCommandText_NextPage" xml:space="preserve">
+    <value>Próxima página</value>
+  </data>
+  <data name="ASPxReportsStringId.DocumentViewer_RibbonCommandText_PreviousPage" xml:space="preserve">
+    <value>Página anterior</value>
+  </data>
+  <data name="ASPxReportsStringId.DocumentViewer_RibbonCommandText_PrintPage" xml:space="preserve">
+    <value>Imprimir página...</value>
+  </data>
+  <data name="ASPxReportsStringId.DocumentViewer_RibbonCommandText_PrintReport" xml:space="preserve">
+    <value>Imprimir relatório...</value>
+  </data>
+  <data name="ASPxReportsStringId.DocumentViewer_RibbonCommandToolTip_PrintReport" xml:space="preserve">
+    <value>Especificar as configurações de impressão e imprimir o documento.</value>
+  </data>
+  <data name="ASPxReportsStringId.DocumentViewer_RibbonCommandToolTip_SaveToFile" xml:space="preserve">
+    <value>Salvar o documento para um arquivo em um formato especificado.</value>
+  </data>
+  <data name="ASPxReportsStringId.DocumentViewer_RibbonCommandToolTip_SaveToWindow" xml:space="preserve">
+    <value>Salvar o documento em um formato especificado e exibir o resultado em uma nova janela.</value>
+  </data>
+  <data name="ASPxReportsStringId.DocumentViewer_RibbonCurrentPageText" xml:space="preserve">
+    <value>Página atual</value>
+  </data>
+  <data name="ASPxReportsStringId.DocumentViewer_RibbonCurrentPageToolTip" xml:space="preserve">
+    <value>Exibir a página especificada.</value>
+  </data>
+  <data name="ASPxReportsStringId.DocumentViewer_RibbonExportGroupText" xml:space="preserve">
+    <value>Exportação</value>
+  </data>
+  <data name="ASPxReportsStringId.DocumentViewer_RibbonHomeTabText" xml:space="preserve">
+    <value>Página principal</value>
+  </data>
+  <data name="ASPxReportsStringId.DocumentViewer_RibbonNavigationGroupText" xml:space="preserve">
+    <value>Navegação</value>
+  </data>
+  <data name="ASPxReportsStringId.DocumentViewer_RibbonPageCountText" xml:space="preserve">
+    <value>Contagem de página:</value>
+  </data>
+  <data name="ASPxReportsStringId.DocumentViewer_RibbonPrintGroupText" xml:space="preserve">
+    <value>Print</value>
+  </data>
+  <data name="ASPxReportsStringId.DocumentViewer_NoRemoteDocumentInformation_Error" xml:space="preserve">
+    <value>Este comando não pode ser executado porque um documento ainda não foi gerado.</value>
+  </data>
+  <data name="ASPxReportsStringId.DocumentViewer_RemoteSourceSettings_Error" xml:space="preserve">
+    <value>Para exibir o relatório remoto, especifique a propriedade ServerUri ou EndpointConfigurationName do ASPxDocumentViewer.SettingsRemoteSource.</value>
+  </data>
+  <data name="ASPxReportsStringId.DocumentViewer_RemoteSourceSettingsAndConfiguration_Error" xml:space="preserve">
+    <value>Só é possível atribuir Propriedade SettingsRemoteSource ou do ConfigurationRemoteSource de ASPxDocumentViewer de cada vez.</value>
+  </data>
+  <data name="ASPxReportsStringId.DocumentViewer_RibbonCommandToolTip_FindText" xml:space="preserve">
+    <value>Encontrar o texto no documento.</value>
+  </data>
+  <data name="ASPxReportsStringId.DocumentViewer_RibbonCommandToolTip_FirstPage" xml:space="preserve">
+    <value>Exibir a primeira página do documento.</value>
+  </data>
+  <data name="ASPxReportsStringId.DocumentViewer_RibbonCommandToolTip_LastPage" xml:space="preserve">
+    <value>Exibir a última página do documento.</value>
+  </data>
+  <data name="ASPxReportsStringId.DocumentViewer_RibbonCommandToolTip_NextPage" xml:space="preserve">
+    <value>Exibir a próxima página do documento.</value>
+  </data>
+  <data name="ASPxReportsStringId.DocumentViewer_RibbonCommandToolTip_PrintPage" xml:space="preserve">
+    <value>Especificar as configurações de impressão e imprimir a página atual.</value>
+  </data>
+  <data name="ASPxReportsStringId.SearchDialog_EnterText" xml:space="preserve">
+    <value>Digite o texto para localizar o documento.</value>
+  </data>
+  <data name="ASPxReportsStringId.DocumentViewer_RibbonCommandToolTip_ParametersPanel" xml:space="preserve">
+    <value>Acesso e modificar os valores de parâmetro de relatório.</value>
+  </data>
+  <data name="ASPxReportsStringId.DocumentViewer_RibbonCommandToolTip_PreviousPage" xml:space="preserve">
+    <value>Exibir a página anterior do documento.</value>
+  </data>
+  <data name="ASPxReportsStringId.DocumentViewer_ExternalRibbonNotFound_Error" xml:space="preserve">
+    <value>Não consigo encontrar um controle de barra de ferramentas com o nome especificado: '{0}'.</value>
+  </data>
+  <data name="ASPxReportsStringId.DocumentViewer_RibbonCommandText_DocumentMap" xml:space="preserve">
+    <value>Mapa do Documento</value>
+  </data>
+  <data name="ASPxReportsStringId.DocumentViewer_RibbonReportGroupText" xml:space="preserve">
+    <value>Relatório</value>
+  </data>
+  <data name="ASPxReportsStringId.DocumentViewer_RibbonCommandText_ParametersPanel" xml:space="preserve">
+    <value>Painel de parâmetros</value>
+  </data>
+  <data name="ASPxReportsStringId.DocumentViewer_RibbonCommandText_SaveToFile" xml:space="preserve">
+    <value>Salvar arquivo</value>
+  </data>
+  <data name="ASPxReportsStringId.DocumentViewer_RibbonCommandText_SaveToWindow" xml:space="preserve">
+    <value>Salvar a janela</value>
+  </data>
+  <data name="ASPxReportsStringId.DocumentViewer_RibbonCommandToolTip_DocumentMap" xml:space="preserve">
+    <value>Navigate através da hierarquia do relatório de indicadores.</value>
+  </data>
+  <data name="ASPxReportsStringId.DocumentViewer_LocalAndRemoteSource_Error" xml:space="preserve">
+    <value>Só é possível atribuir o relatório Local ou remoto fonte de ASPxDocumentViewer de cada vez.</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_Tables" xml:space="preserve">
+    <value>Tabelas</value>
+  </data>
+  <data name="ASPxReportsStringId.DocumentViewer_RemoteSourceSettings_CustomTokenStorage_Error" xml:space="preserve">
+    <value>O DocumentViewerRemoteSourceSettings.CustomTokenStorage propriedade não está atribuída.</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_Accordion_Collapsed" xml:space="preserve">
+    <value>Entrou em colapso</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_ElementsAction_SizeToControl" xml:space="preserve">
+    <value>Tamanho de controle</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_ElementsAction_SizeToControlHeight" xml:space="preserve">
+    <value>Tamanho para controlar a altura</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_ElementsAction_SizeToControlWidth" xml:space="preserve">
+    <value>Tamanho para controlar a largura</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_FieldList_Parameters" xml:space="preserve">
+    <value>Não há nenhum parâmetro disponível ainda.</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_FieldListActions_AddCalculatedField" xml:space="preserve">
+    <value>Adicionar campo calculado</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_FieldListActions_RemoveCalculatedField" xml:space="preserve">
+    <value>Remover campo calculado</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_FieldListActions_RemoveParameter" xml:space="preserve">
+    <value>Remova o parâmetro</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_GroupFields_Empty" xml:space="preserve">
+    <value>Para criar um novo item, clique em Adicionar.</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_Groups" xml:space="preserve">
+    <value>Grupos</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_MenuButtons_RunWizard" xml:space="preserve">
+    <value>Execute o assistente de</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_Parameters_CreateParameters" xml:space="preserve">
+    <value>o relatório ainda não tem quaisquer parâmetros. Para criar um novo parâmetro, clique em Adicionar parâmetro.</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_Pivot_AddColumnFields" xml:space="preserve">
+    <value>Adicionar campos de coluna aqui</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_Pivot_AddDataItems" xml:space="preserve">
+    <value>Adicionar itens de dados aqui</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_Pivot_AddFilterFields" xml:space="preserve">
+    <value>Adicionar campos de filtro aqui</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_PivotActions_InsertFieldInTheColumnArea" xml:space="preserve">
+    <value>Inserir campo na área de coluna</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_PivotActions_InsertFieldInTheDataArea" xml:space="preserve">
+    <value>Inserir campo na área de dados</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_PivotActions_InsertFieldInTheFilterArea" xml:space="preserve">
+    <value>Inserir campo na área do filtro</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_PivotActions_InsertFieldInTheRowArea" xml:space="preserve">
+    <value>Inserir campo na área de linha</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_PlatformNotSupported_Error" xml:space="preserve">
+    <value>Para ser capaz de executar o Report Designer, o navegador cliente deve oferecer suporte a HTML5.</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_Preview_ParametersTitle" xml:space="preserve">
+    <value>Parâmetros de visualização</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_ReportActions_InsertBottomMarginBand" xml:space="preserve">
+    <value>Inserir a banda de margem inferior</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_ReportActions_InsertDetailBand" xml:space="preserve">
+    <value>Inserir a banda de detalhes</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_ReportActions_InsertDetailReportBand" xml:space="preserve">
+    <value>Inserir detalhes relatório banda</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_ReportActions_InsertGroupFooterBand" xml:space="preserve">
+    <value>Banda de rodapé de grupo de inserção</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_ReportActions_InsertGroupHeaderBand" xml:space="preserve">
+    <value>Banda de cabeçalho de grupo de inserção</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_ReportActions_InsertPageHeaderBand" xml:space="preserve">
+    <value>Inserir a banda de cabeçalho de página</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_ReportActions_InsertReportFooterBand" xml:space="preserve">
+    <value>Inserir a banda de rodapé de relatório</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_ReportActions_InsertReportHeaderBand" xml:space="preserve">
+    <value>Inserir a banda de cabeçalho de relatório</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_ReportActions_InsertSubBand" xml:space="preserve">
+    <value>Inserir sub banda</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_ReportActions_InsertTopMarginBand" xml:space="preserve">
+    <value>Inserir margem superior Band</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_StylesEditor_CreateNew" xml:space="preserve">
+    <value>Criar um novo estilo</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_TableActions_DeleteCell" xml:space="preserve">
+    <value>Excluir células</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_TableActions_DeleteColumn" xml:space="preserve">
+    <value>Excluir coluna</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_TableActions_DeleteRow" xml:space="preserve">
+    <value>Apagar linha</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_TableActions_InsertCell" xml:space="preserve">
+    <value>Inserir célula</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_TableActions_InsertColumnToLeft" xml:space="preserve">
+    <value>Inserir coluna à esquerda</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_TableActions_InsertColumnToRight" xml:space="preserve">
+    <value>Inserir coluna à direita</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_TableActions_InsertRowAbove" xml:space="preserve">
+    <value>Inserir linha acima</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_TableActions_InsertRowBelow" xml:space="preserve">
+    <value>Inserir linha abaixo</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_Wizard_AvailableFields" xml:space="preserve">
+    <value>Campos disponíveis</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_Wizard_CreateGroups" xml:space="preserve">
+    <value>Criar grupos em seu relatório</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_Wizard_CreateMultipleGroups" xml:space="preserve">
+    <value>Criar vários grupos, cada um com um único critério, ou definir vários critérios para um único grupo.</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_Wizard_DataColumnMessage" xml:space="preserve">
+    <value>As colunas de dados disponíveis em um relatório dependem de qual tabela ou exibição for selecionada.</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_Wizard_FieldsMessage" xml:space="preserve">
+    <value>Ajustar a largura de campo para fazer com que todos os campos caber em uma página.</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_Wizard_IgnoreNullValues" xml:space="preserve">
+    <value>Ignorar valores nulos</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_Wizard_OrderAppear" xml:space="preserve">
+    <value>Especifica a ordem na qual os dados aparecerão campos seleccionados no relatório.</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_Wizard_ReportStylesDetermineReportAppearance" xml:space="preserve">
+    <value>Relatório estilos determinam a aparência do relatório.</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_Wizard_SelectColumnsToDisplay" xml:space="preserve">
+    <value>Selecionar colunas para exibir em seu relatório</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_Wizard_SelectDataColumn" xml:space="preserve">
+    <value>Selecionar colunas de dados a incluir no relatório.</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_Wizard_SelectDataSource_Message" xml:space="preserve">
+    <value>Selecionar uma fonte de dados para se conectar ao relatório.</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_Wizard_SelectDataSource_Title" xml:space="preserve">
+    <value>Selecione uma fonte de dados</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_Wizard_SelectedFields" xml:space="preserve">
+    <value>Campos selecionados</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_Wizard_SelectReportLayout" xml:space="preserve">
+    <value>Selecione um Layout de relatório</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_Wizard_SelectReportStyle_Title" xml:space="preserve">
+    <value>Selecione um estilo de relatório</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_Wizard_SelectReportType_Message" xml:space="preserve">
+    <value>Selecione o tipo de relatório que você deseja criar.</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_Wizard_SelectReportType_Title" xml:space="preserve">
+    <value>Selecione um tipo de relatório</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_Wizard_SelectTableOrView" xml:space="preserve">
+    <value>Selecione uma tabela ou exibição</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_Wizard_SpecifyReportTitle" xml:space="preserve">
+    <value>Especificar o título do relatório</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_Wizard_SpecifyReportTitleAndCreate" xml:space="preserve">
+    <value>Especificar o título do relatório e criar o relatório.</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_Wizard_SummaryOptions_Message" xml:space="preserve">
+    <value>o resumo funções para calcular no relatório.</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_Wizard_SummaryOptions_Title" xml:space="preserve">
+    <value>Escolher opções de resumo</value>
+  </data>
+  <data name="ASPxReportsStringId.WebDocumentViewer_PlatformNotSupported_Error" xml:space="preserve">
+    <value>Para ser capaz de executar o Visualizador de documentos, navegador de web do cliente deve oferecer suporte a HTML5.</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_Wizard_ReportComplete" xml:space="preserve">
+    <value>O relatório está concluído</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_Wizard_ReportStyle_Title" xml:space="preserve">
+    <value>Título</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_Wizard_ReportStyle_Caption" xml:space="preserve">
+    <value>Título</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_Wizard_ReportStyle_Bold" xml:space="preserve">
+    <value>Negrito</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_Wizard_ReportLayout_Landscape" xml:space="preserve">
+    <value>Paisagem</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_Wizard_ReportLayout_Portrait" xml:space="preserve">
+    <value>Retrato</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_Wizard_SummaryOptions_Average" xml:space="preserve">
+    <value>Média</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_Wizard_SummaryOptions_Count" xml:space="preserve">
+    <value>Contagem</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_Wizard_SummaryOptions_Max" xml:space="preserve">
+    <value>Max</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_Wizard_SummaryOptions_Min" xml:space="preserve">
+    <value>Min</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_Wizard_SummaryOptions_Sum" xml:space="preserve">
+    <value>Soma</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_Wizard_ReportStyle_Data" xml:space="preserve">
+    <value>Dados</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_Wizard_ReportStyle_Formal" xml:space="preserve">
+    <value>Formal</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_Pivot_AddRowFields" xml:space="preserve">
+    <value>Adicionar campos de linha aqui</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_ReportActions_InsertPageFooterBand" xml:space="preserve">
+    <value>Inserir a banda de rodapé de página</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_Wizard_ChooseColumns_Description" xml:space="preserve">
+    <value>Selecione as colunas que você deseja exibir no seu relatório.</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_Wizard_ChooseColumns_Title" xml:space="preserve">
+    <value>Escolher colunas para exibir em seu relatório</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_Wizard_ChooseDataSource_Title" xml:space="preserve">
+    <value>Escolha uma fonte de dados</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_Wizard_CreateGroups_Title" xml:space="preserve">
+    <value>Criar grupos</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_Wizard_DataSourceHeader" xml:space="preserve">
+    <value>Assistente de fonte de dados</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_Wizard_Report_Style" xml:space="preserve">
+    <value>Escolha um estilo de relatório</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_Wizard_ReportComplete_Description" xml:space="preserve">
+    <value>Temos todas as informações necessárias para processar o relatório.</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_Wizard_ReportComplete_SpecifyTitle" xml:space="preserve">
+    <value>Especificar o título do relatório</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_Wizard_ReportLayout_AdjustFieldWidth" xml:space="preserve">
+    <value>Ajustar a largura do campo para que todos os campos caibam em uma página</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_Wizard_ReportLayout_Columnar" xml:space="preserve">
+    <value>Colunar</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_Wizard_ReportLayout_Outline1" xml:space="preserve">
+    <value>Contorno 1</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_Wizard_ReportLayout_Outline2" xml:space="preserve">
+    <value>Contorno 2</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_Wizard_ReportLayout_Tabular" xml:space="preserve">
+    <value>Tabular</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_Wizard_ReportLayout_Title" xml:space="preserve">
+    <value>Escolher um Layout de relatório</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_Wizard_ReportStyle_Casual" xml:space="preserve">
+    <value>Casual</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_Wizard_ReportStyle_Description" xml:space="preserve">
+    <value>o estilo do relatório especifica a aparência do seu relatório.</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_Wizard_SummaryOptions_IgnoreNullValues" xml:space="preserve">
+    <value>Ignorar valores nulos</value>
+  </data>
+  <data name="ASPxReportsStringId.WebDocumentViewer_ExportToText" xml:space="preserve">
+    <value>Exportar Para</value>
+  </data>
+  <data name="ASPxReportsStringId.WebDocumentViewer_GetLookUpValuesError" xml:space="preserve">
+    <value>Não é possível fornecer valores de pesquisa filtrada para um editor de parâmetro de relatório</value>
+  </data>
+  <data name="ASPxReportsStringId.WebDocumentViewer_InitializationError" xml:space="preserve">
+    <value>Falhou a inicialização de visualização de relatório</value>
+  </data>
+  <data name="ASPxReportsStringId.WebDocumentViewer_GetBuildStatusError" xml:space="preserve">
+    <value>Erro de obtenção de um status de compilação</value>
+  </data>
+  <data name="ASPxReportsStringId.WebDocumentViewer_GetDocumentDataError" xml:space="preserve">
+    <value>Não é possível obter dados adicionais do documento para o documento atual</value>
+  </data>
+  <data name="ASPxReportsStringId.WebDocumentViewer_ToggleMultipageMode" xml:space="preserve">
+    <value>Alternar modo de várias páginas</value>
+  </data>
+  <data name="ASPxReportsStringId.WebDocumentViewer_DocumentNotFound_Error" xml:space="preserve">
+    <value>o documento não foi encontrado. Por favor, tente abrir o documento novamente.</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_Wizard_Height" xml:space="preserve">
+    <value>Altura:</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_Wizard_Width" xml:space="preserve">
+    <value>Largura:</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_GaugeViewType_Linear" xml:space="preserve">
+    <value>Linear</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_SortFields_SortBy" xml:space="preserve">
+    <value>Ordenar por</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_Wizard_ReportStyle_Compact" xml:space="preserve">
+    <value>Compacto</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_FontOptions_Unit_Document" xml:space="preserve">
+    <value>Documento</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_GaugeViewType_Circular" xml:space="preserve">
+    <value>Circular</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_Wizard_CreateGroups_Description" xml:space="preserve">
+    <value>Criar vários grupos, cada um com um valor de campo único, ou definir vários domínios no mesmo grupo.</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_Wizard_SummaryOptions_Description" xml:space="preserve">
+    <value>Que funções de resumo que você gostaria de calcular?</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_Wizard_ReportLayout_AlignLeft1" xml:space="preserve">
+    <value>Alinhar à esquerda 1</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_Wizard_ReportLayout_AlignLeft2" xml:space="preserve">
+    <value>Alinhar à esquerda 2</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_Wizard_ReportLayout_Description" xml:space="preserve">
+    <value>O layout do relatório especifica a maneira na qual os campos de dados selecionados são organizados em páginas individuais.</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_FieldListActions_RemoveDataSource" xml:space="preserve">
+    <value>Remover a fonte de dados</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_FontOptions_Unit_Point" xml:space="preserve">
+    <value>Ponto</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_Wizard_CustomizeLabelPage_LabelCountText" xml:space="preserve">
+    <value>Rótulos na página</value>
+  </data>
+  <data name="ASPxReportsStringId.SidePanel_Collapse" xml:space="preserve">
+    <value>Recolher</value>
+  </data>
+  <data name="ASPxReportsStringId.SidePanel_Open" xml:space="preserve">
+    <value>Abrir</value>
+  </data>
+  <data name="ASPxReportsStringId.WebDocumentViewer_NoParameters" xml:space="preserve">
+    <value>O relatório não contém quaisquer parâmetros.</value>
+  </data>
+  <data name="ASPxReportsStringId.WebDocumentViewer_DrillThroughError" xml:space="preserve">
+    <value>Detalhamento do operação falhado</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_Wizard_PageSetup_Size" xml:space="preserve">
+    <value>Tamanho:</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_Wizard_PageSetup_Paper" xml:space="preserve">
+    <value>Papel</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_Wizard_PageSetup_BottomMargin" xml:space="preserve">
+    <value>Inferior:</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_Wizard_PageSetup_LeftMargin" xml:space="preserve">
+    <value>Esquerda:</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_Wizard_PageSetup_RightMargin" xml:space="preserve">
+    <value>Direita:</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_Wizard_PageSetup_TopMargin" xml:space="preserve">
+    <value>Em cima:</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_Wizard_Pixel" xml:space="preserve">
+    <value>Pixel</value>
+  </data>
+  <data name="ASPxReportsStringId.SearchDialog_Cancel" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="ASPxReportsStringId.ParametersPanel_False" xml:space="preserve">
+    <value>Não</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_MenuButtons_Save" xml:space="preserve">
+    <value>Salvar</value>
+  </data>
+  <data name="ASPxReportsStringId.ParametersPanel_True" xml:space="preserve">
+    <value>Sim</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_TooltipButtons_Preview" xml:space="preserve">
+    <value>Prever</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_Wizard_Next" xml:space="preserve">
+    <value>Próximo</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_Wizard_Previous" xml:space="preserve">
+    <value>Anterior</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_PropertyGrid_PopupMenu_Reset" xml:space="preserve">
+    <value>Redefinir</value>
+  </data>
+  <data name="ASPxReportsStringId.FilterEditor_Operand_Type_Value" xml:space="preserve">
+    <value>Valor</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_QueryBuilder_Parameters" xml:space="preserve">
+    <value>Parâmetros</value>
+  </data>
+  <data name="ASPxReportsStringId.WebDocumentViewer_Loading" xml:space="preserve">
+    <value>Carregando...</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_Wizard_PageSetup_Orientation" xml:space="preserve">
+    <value>Orientação:</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_QueryBuilder_SearchBox_EmptyText" xml:space="preserve">
+    <value>Insira o texto para pesquisar...</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_Actions" xml:space="preserve">
+    <value>Ações</value>
+  </data>
+  <data name="ASPxReportsStringId.WebDocumentViewer_SelectAll" xml:space="preserve">
+    <value>(Selecionar tudo)</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_QueryBuilder_TableProperties" xml:space="preserve">
+    <value>Propriedades da tabela</value>
+  </data>
+  <data name="ASPxReportsStringId.FilterEditor_Operand_Type_Parameter" xml:space="preserve">
+    <value>Parâmetro</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_FontOptions_Unit_Pixel" xml:space="preserve">
+    <value>Pixel</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_PropertyGrid_Editor_EmptyText" xml:space="preserve">
+    <value>Selecione...</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_QueryBuilder_RightOperand" xml:space="preserve">
+    <value>Operando à direita</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_Wizard_Millimeter" xml:space="preserve">
+    <value>Milímetros</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_Wizard_AddGroup_Text" xml:space="preserve">
+    <value>Adicionar Grupo</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_Menu_Text" xml:space="preserve">
+    <value>Menu</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_Wizard_SummaryFields_Text" xml:space="preserve">
+    <value>Campo</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_SummaryEditor_Weight" xml:space="preserve">
+    <value>Peso</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_TextAlignment_Horizontal" xml:space="preserve">
+    <value>Horizontal</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_TextAlignment_Vertical" xml:space="preserve">
+    <value>Vertical</value>
+  </data>
+  <data name="ASPxReportsStringId.WebDocumentViewer_AriaLabelZoomCombobox" xml:space="preserve">
+    <value>Zoom</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_Wizard_ReportLayout_Justified" xml:space="preserve">
+    <value>Justificado</value>
+  </data>
+  <data name="ASPxReportsStringId.ToolBarItemText_Preview" xml:space="preserve">
+    <value>Prever</value>
+  </data>
+  <data name="ASPxReportsStringId.ToolBarItemText_Design" xml:space="preserve">
+    <value>Design</value>
+  </data>
+  <data name="ASPxReportsStringId.ReportDesigner_DataSources" xml:space="preserve">
+    <value>Fontes de dados</value>
+  </data>
+</root>

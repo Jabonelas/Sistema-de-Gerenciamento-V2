@@ -15,6 +15,10 @@ namespace SistemaDeGerenciamento2_0.Class
                 else if (item.GetType() == typeof(DevExpress.XtraEditors.ComboBoxEdit))
                 {
                     item.Text = string.Empty;
+
+                }else if ((item.GetType() == typeof(DevExpress.XtraEditors.LookUpEdit)))
+                {
+                    item.Text = string.Empty;
                 }
             }
         }

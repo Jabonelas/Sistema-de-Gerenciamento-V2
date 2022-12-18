@@ -1,0 +1,621 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFiltersNumericName" xml:space="preserve">
+    <value>Numeric Filters</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFiltersNumericDescription" xml:space="preserve">
+    <value>Numeric Filters Description</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFiltersDateTimeName" xml:space="preserve">
+    <value>Date Filters</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFiltersDateTimeDescription" xml:space="preserve">
+    <value>Date Filters Description</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFiltersDurationName" xml:space="preserve">
+    <value>Filters</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFiltersDurationDescription" xml:space="preserve">
+    <value>Filters Description</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFiltersTextName" xml:space="preserve">
+    <value>Text Filters</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFiltersTextDescription" xml:space="preserve">
+    <value>Text Filters Description</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFiltersBooleanName" xml:space="preserve">
+    <value>Filters</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFiltersBooleanDescription" xml:space="preserve">
+    <value>Filters Description</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFiltersEnumName" xml:space="preserve">
+    <value>Filters</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFiltersEnumDescription" xml:space="preserve">
+    <value>Filters Description</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterCustomName" xml:space="preserve">
+    <value>Custom Filter</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterCustomDescription" xml:space="preserve">
+    <value>Two conditions combined by the AND or OR operator</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterUserName" xml:space="preserve">
+    <value>Predefined Filters</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterUserDescription" xml:space="preserve">
+    <value>Predefined Filters</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterNoneName" xml:space="preserve">
+    <value>Choose One</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterNoneDescription" xml:space="preserve">
+    <value>Choose One Description</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterEqualsName" xml:space="preserve">
+ <value>Equals</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterEqualsDescription" xml:space="preserve">
+   <value>Equals a value</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterDoesNotEqualName" xml:space="preserve">
+   <value>Does Not Equal</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterDoesNotEqualDescription" xml:space="preserve">
+   <value>Does not equal a value</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterBetweenName" xml:space="preserve">
+   <value>Between</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterBetweenDescription" xml:space="preserve">
+   <value>Values within a range</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterIsNullName" xml:space="preserve">
+    <value>Is Null</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterIsNullDescription" xml:space="preserve">
+    <value>Is empty</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterIsNotNullName" xml:space="preserve">
+    <value>Is Not Null</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterIsNotNullDescription" xml:space="preserve">
+    <value>Not empty</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterIsBlankName" xml:space="preserve">
+    <value>Is Blank</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterIsBlankDescription" xml:space="preserve">
+    <value>Empty or not specified</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterIsNotBlankName" xml:space="preserve">
+    <value>Is Not Blank</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterIsNotBlankDescription" xml:space="preserve">
+    <value>Not empty</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterLikeName" xml:space="preserve">
+    <value>Is Like</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterLikeDescription" xml:space="preserve">
+    <value>Match a specific pattern</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterNotLikeName" xml:space="preserve">
+    <value>Is Not Like</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterNotLikeDescription" xml:space="preserve">
+    <value>Does not match a specific pattern</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterGreaterThanName" xml:space="preserve">
+   <value>Greater Than</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterGreaterThanDescription" xml:space="preserve">
+   <value>Greater than a value</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterGreaterThanOrEqualToName" xml:space="preserve">
+   <value>Greater Than Or Equal To</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterGreaterThanOrEqualToDescription" xml:space="preserve">
+   <value>Greater than or equal to a value</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterLessThanName" xml:space="preserve">
+   <value>Less Than</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterLessThanDescription" xml:space="preserve">
+   <value>Less than a value</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterLessThanOrEqualToName" xml:space="preserve">
+   <value>Less Than Or Equal To</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterLessThanOrEqualToDescription" xml:space="preserve">
+   <value>Less than or equal to a value</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterTopNName" xml:space="preserve">
+   <value>Top N</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterTopNDescription" xml:space="preserve">
+   <value>The highest values</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterBottomNName" xml:space="preserve">
+   <value>Bottom N</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterBottomNDescription" xml:space="preserve">
+   <value>The lowest values</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterSequenceQualifierItemsName" xml:space="preserve">
+   <value>Items</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterSequenceQualifierItemsDescription" xml:space="preserve">
+   <value>Items Description</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterSequenceQualifierPercentsName" xml:space="preserve">
+   <value>Percents</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterSequenceQualifierPercentsDescription" xml:space="preserve">
+   <value>Percents Description</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterAboveAverageName" xml:space="preserve">
+   <value>Above Average</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterAboveAverageDescription" xml:space="preserve">
+   <value>Values above the average</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterBelowAverageName" xml:space="preserve">
+   <value>Below Average</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterBelowAverageDescription" xml:space="preserve">
+   <value>Values below the average</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterBeginsWithName" xml:space="preserve">
+   <value>Begins With</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterBeginsWithDescription" xml:space="preserve">
+   <value>Starts with a specific text</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterEndsWithName" xml:space="preserve">
+   <value>Ends With</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterEndsWithDescription" xml:space="preserve">
+   <value>Ends with a specific text</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterDoesNotBeginWithName" xml:space="preserve">
+    <value>Does Not Begin With</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterDoesNotBeginWithDescription" xml:space="preserve">
+    <value>Does not start with a specific text</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterDoesNotEndWithName" xml:space="preserve">
+    <value>Does Not End With</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterDoesNotEndWithDescription" xml:space="preserve">
+    <value>Does not end with a specific text</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterDoesNotBeginsWithName" xml:space="preserve">
+    <value>Does Not Begin With</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterDoesNotBeginsWithDescription" xml:space="preserve">
+    <value>Does not start with a specific text</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterDoesNotEndsWithName" xml:space="preserve">
+    <value>Does Not End With</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterDoesNotEndsWithDescription" xml:space="preserve">
+    <value>Does not end with a specific text</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterContainsName" xml:space="preserve">
+   <value>Contains</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterContainsDescription" xml:space="preserve">
+   <value>Contains a specific text</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterDoesNotContainName" xml:space="preserve">
+   <value>Does Not Contain</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterDoesNotContainDescription" xml:space="preserve">
+   <value>Does not contain a specific text</value>
+  </data>
+    <data name="FilterUIElementLocalizerStringId.CustomUIFilterIsSameDayName" xml:space="preserve">
+    <value>Is Same Day</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterIsSameDayDescription" xml:space="preserve">
+    <value>The same date</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterBeforeName" xml:space="preserve">
+   <value>Before</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterBeforeDescription" xml:space="preserve">
+   <value>Prior to a date</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterAfterName" xml:space="preserve">
+   <value>After</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterAfterDescription" xml:space="preserve">
+   <value>After a date</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterTomorrowName" xml:space="preserve">
+   <value>Tomorrow</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterTomorrowDescription" xml:space="preserve">
+   <value>Tomorrow</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterTodayName" xml:space="preserve">
+   <value>Today</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterTodayDescription" xml:space="preserve">
+   <value>Today</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterYesterdayName" xml:space="preserve">
+   <value>Yesterday</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterYesterdayDescription" xml:space="preserve">
+   <value>Yesterday</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterNextWeekName" xml:space="preserve">
+   <value>Next Week</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterNextWeekDescription" xml:space="preserve">
+   <value>Next week</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterThisWeekName" xml:space="preserve">
+   <value>This Week</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterThisWeekDescription" xml:space="preserve">
+   <value>This week</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterLastWeekName" xml:space="preserve">
+   <value>Last Week</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterLastWeekDescription" xml:space="preserve">
+   <value>Last week</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterNextMonthName" xml:space="preserve">
+   <value>Next Month</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterNextMonthDescription" xml:space="preserve">
+   <value>Next month</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterThisMonthName" xml:space="preserve">
+   <value>This Month</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterThisMonthDescription" xml:space="preserve">
+   <value>This month</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterLastMonthName" xml:space="preserve">
+   <value>Last Month</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterLastMonthDescription" xml:space="preserve">
+   <value>Last month</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterNextQuarterName" xml:space="preserve">
+   <value>Next Quarter</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterNextQuarterDescription" xml:space="preserve">
+   <value>Next quarter</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterThisQuarterName" xml:space="preserve">
+   <value>This Quarter</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterThisQuarterDescription" xml:space="preserve">
+   <value>This quarter</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterLastQuarterName" xml:space="preserve">
+   <value>Last Quarter</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterLastQuarterDescription" xml:space="preserve">
+   <value>Last quarter</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterNextYearName" xml:space="preserve">
+   <value>Next Year</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterNextYearDescription" xml:space="preserve">
+   <value>Next year</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterThisYearName" xml:space="preserve">
+   <value>This Year</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterThisYearDescription" xml:space="preserve">
+   <value>This year</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterLastYearName" xml:space="preserve">
+   <value>Last Year</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterLastYearDescription" xml:space="preserve">
+   <value>Last year</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterYearToDateName" xml:space="preserve">
+   <value>Year to Date</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterYearToDateDescription" xml:space="preserve">
+   <value>From the beginning of the year to the present</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterAllDatesInThePeriodName" xml:space="preserve">
+   <value>All Dates in the Period</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterAllDatesInThePeriodDescription" xml:space="preserve">
+   <value>Dates within a range</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterQuarter1Name" xml:space="preserve">
+   <value>Quarter 1</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterQuarter1Description" xml:space="preserve">
+   <value>First quarter</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterQuarter2Name" xml:space="preserve">
+   <value>Quarter 2</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterQuarter2Description" xml:space="preserve">
+   <value>Second quarter</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterQuarter3Name" xml:space="preserve">
+   <value>Quarter 3</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterQuarter3Description" xml:space="preserve">
+   <value>Third quarter</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterQuarter4Name" xml:space="preserve">
+   <value>Quarter 4</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterQuarter4Description" xml:space="preserve">
+   <value>Fourth quarter</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterJanuaryName" xml:space="preserve">
+   <value>January</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterJanuaryDescription" xml:space="preserve">
+   <value>January</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterFebruaryName" xml:space="preserve">
+   <value>February</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterFebruaryDescription" xml:space="preserve">
+   <value>February</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterMarchName" xml:space="preserve">
+   <value>March</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterMarchDescription" xml:space="preserve">
+   <value>March</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterAprilName" xml:space="preserve">
+   <value>April</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterAprilDescription" xml:space="preserve">
+   <value>April</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterMayName" xml:space="preserve">
+   <value>May</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterMayDescription" xml:space="preserve">
+   <value>May</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterJuneName" xml:space="preserve">
+   <value>June</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterJuneDescription" xml:space="preserve">
+   <value>June</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterJulyName" xml:space="preserve">
+   <value>July</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterJulyDescription" xml:space="preserve">
+   <value>July</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterAugustName" xml:space="preserve">
+   <value>August</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterAugustDescription" xml:space="preserve">
+   <value>August</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterSeptemberName" xml:space="preserve">
+   <value>September</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterSeptemberDescription" xml:space="preserve">
+   <value>September</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterOctoberName" xml:space="preserve">
+   <value>October</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterOctoberDescription" xml:space="preserve">
+   <value>October</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterNovemberName" xml:space="preserve">
+   <value>November</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterNovemberDescription" xml:space="preserve">
+   <value>November</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterDecemberName" xml:space="preserve">
+   <value>December</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterDecemberDescription" xml:space="preserve">
+   <value>December</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterDatePeriodsName" xml:space="preserve">
+   <value>Specific Date Periods</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterDatePeriodsDescription" xml:space="preserve">
+   <value>Common date ranges</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUINullValuePromptChooseOne" xml:space="preserve">
+    <value>Choose one...</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUINullValuePromptEnterADate" xml:space="preserve">
+    <value>Enter a date...</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUINullValuePromptEnterADuration" xml:space="preserve">
+    <value>Enter a duration...</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUINullValuePromptSelectAValue" xml:space="preserve">
+    <value>Select a value...</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUINullValuePromptEnterAValue" xml:space="preserve">
+    <value>Enter a value...</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUINullValuePromptSelectADate" xml:space="preserve">
+    <value>Select a date...</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUINullValuePromptSelectADuration" xml:space="preserve">
+    <value>Select a duration...</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUINullValuePromptSearchControl" xml:space="preserve">
+    <value>Enter text to search...</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFirstLabel" xml:space="preserve">
+    <value>First</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUISecondLabel" xml:space="preserve">
+    <value>Second</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.FilteringUITabValues" xml:space="preserve">
+    <value>Values</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.FilteringUITabGroups" xml:space="preserve">
+    <value>Groups</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.FilteringUIClearFilter" xml:space="preserve">
+    <value>Clear Filter</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.FilteringUIClose" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.FilteringUISearchByYearCaption" xml:space="preserve">
+    <value>Year</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.FilteringUISearchByMonthCaption" xml:space="preserve">
+    <value>Month</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.FilteringUISearchByDayCaption" xml:space="preserve">
+    <value>Day</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.FilteringUIMoreButtonCaption" xml:space="preserve">
+    <value>More...</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.FilteringUIFewerButtonCaption" xml:space="preserve">
+    <value>Fewer...</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIValueLabel" xml:space="preserve">
+    <value>Value</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUITypeLabel" xml:space="preserve">
+    <value>Type</value>
+  </data>
+</root>

@@ -1,0 +1,2242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="StringId.CaptionError" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="StringId.InvalidValueText" xml:space="preserve">
+    <value>Invalid Value</value>
+  </data>
+  <data name="StringId.CheckChecked" xml:space="preserve">
+    <value>Checked</value>
+  </data>
+  <data name="StringId.CheckUnchecked" xml:space="preserve">
+    <value>Unchecked</value>
+  </data>
+  <data name="StringId.CheckIndeterminate" xml:space="preserve">
+    <value>Indeterminate</value>
+  </data>
+  <data name="StringId.DateEditToday" xml:space="preserve">
+    <value>Today</value>
+  </data>
+  <data name="StringId.DateEditClear" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="StringId.OK" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="StringId.Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="StringId.NavigatorFirstButtonHint" xml:space="preserve">
+    <value>First</value>
+  </data>
+  <data name="StringId.NavigatorPreviousButtonHint" xml:space="preserve">
+    <value>Previous</value>
+  </data>
+  <data name="StringId.NavigatorPreviousPageButtonHint" xml:space="preserve">
+    <value>Previous Page</value>
+  </data>
+  <data name="StringId.NavigatorNextButtonHint" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="StringId.NavigatorNextPageButtonHint" xml:space="preserve">
+    <value>Next Page</value>
+  </data>
+  <data name="StringId.NavigatorLastButtonHint" xml:space="preserve">
+    <value>Last</value>
+  </data>
+  <data name="StringId.NavigatorAppendButtonHint" xml:space="preserve">
+    <value>Append</value>
+  </data>
+  <data name="StringId.NavigatorRemoveButtonHint" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="StringId.NavigatorEditButtonHint" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="StringId.NavigatorEndEditButtonHint" xml:space="preserve">
+    <value>End Edit</value>
+  </data>
+  <data name="StringId.NavigatorCancelEditButtonHint" xml:space="preserve">
+    <value>Cancel Edit</value>
+  </data>
+  <data name="StringId.NavigatorTextStringFormat" xml:space="preserve">
+    <value>Record {0} of {1}</value>
+  </data>
+  <data name="StringId.PictureEditMenuCut" xml:space="preserve">
+    <value>Cut</value>
+  </data>
+  <data name="StringId.PictureEditMenuCopy" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="StringId.PictureEditMenuPaste" xml:space="preserve">
+    <value>Paste</value>
+  </data>
+  <data name="StringId.PictureEditMenuDelete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="StringId.PictureEditMenuLoad" xml:space="preserve">
+    <value>Load</value>
+  </data>
+  <data name="StringId.PictureEditMenuSave" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="StringId.PictureEditMenuEdit" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="StringId.ImageEditorDialogCaption" xml:space="preserve">
+    <value>Image Editor</value>
+  </data>
+  <data name="StringId.PictureEditOpenFileTitle" xml:space="preserve">
+    <value>Open</value>
+  </data>
+  <data name="StringId.PictureEditSaveFileTitle" xml:space="preserve">
+    <value>Save As</value>
+  </data>
+  <data name="StringId.PictureEditOpenFileError" xml:space="preserve">
+    <value>Wrong picture format</value>
+  </data>
+  <data name="StringId.PictureEditOpenFileErrorCaption" xml:space="preserve">
+    <value>Open error</value>
+  </data>
+  <data name="StringId.PictureEditCopyImageError" xml:space="preserve">
+    <value>Could not copy image</value>
+  </data>
+  <data name="StringId.LookUpEditValueIsNull" xml:space="preserve">
+    <value>[EditValue is null]</value>
+  </data>
+  <data name="StringId.LookUpInvalidEditValueType" xml:space="preserve">
+    <value>Invalid LookUpEdit EditValue type.</value>
+  </data>
+  <data name="StringId.LookUpColumnDefaultName" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="StringId.PictureEditOpenFileFilter" xml:space="preserve">
+    <value>Bitmap Files (*.bmp)|*.bmp|Graphics Interchange Format (*.gif)|*.gif|JPEG File Interchange Format (*.jpg;*.jpeg)|*.jpg;*.jpeg|Icon Files (*.ico)|*.ico|Portable Network Graphics Format (*.png)|*.png|Scalable Vector Graphics Format (*.svg)|*.svg|All Picture Files |*.bmp;*.gif;*.jpg;*.jpeg;*.ico;*.png;*.tif;*.svg|All Files |*.*</value>
+  </data>
+  <data name="StringId.PictureEditSaveFileFilter" xml:space="preserve">
+    <value>Bitmap Files (*.bmp)|*.bmp|Graphics Interchange Format (*.gif)|*.gif|JPEG File Interchange Format (*.jpg)|*.jpg|Portable Network Graphics Format (*.png)|*.png|Scalable Vector Graphics Format (*.svg)|*.svg</value>
+  </data>
+  <data name="StringId.MaskBoxValidateError" xml:space="preserve">
+    <value>The entered value is incomplete.  Do you want to correct it?
+
+	Yes - return to the editor and correct the value.
+	No - leave the value as is.
+	Cancel - reset to the previous value.
+</value>
+  </data>
+  <data name="StringId.UnknownPictureFormat" xml:space="preserve">
+    <value>Unknown picture format</value>
+  </data>
+  <data name="StringId.DataEmpty" xml:space="preserve">
+    <value>No image data</value>
+  </data>
+  <data name="StringId.FilterCriteriaInvalidExpression" xml:space="preserve">
+    <value>The specified expression contains invalid symbols (line {0}, character {1}).</value>
+  </data>
+  <data name="StringId.FilterCriteriaInvalidExpressionEx" xml:space="preserve">
+    <value>The specified expression is invalid. {0}</value>
+  </data>
+  <data name="StringId.NotValidArrayLength" xml:space="preserve">
+    <value>Not valid array length.</value>
+  </data>
+  <data name="StringId.ImagePopupEmpty" xml:space="preserve">
+    <value>(Empty)</value>
+  </data>
+  <data name="StringId.ImagePopupPicture" xml:space="preserve">
+    <value>(Picture)</value>
+  </data>
+  <data name="StringId.ColorTabCustom" xml:space="preserve">
+    <value>Custom</value>
+  </data>
+  <data name="StringId.ColorTabWeb" xml:space="preserve">
+    <value>Web</value>
+  </data>
+  <data name="StringId.ColorTabSystem" xml:space="preserve">
+    <value>System</value>
+  </data>
+  <data name="StringId.CalcButtonMC" xml:space="preserve">
+    <value>MC</value>
+  </data>
+  <data name="StringId.CalcButtonMR" xml:space="preserve">
+    <value>MR</value>
+  </data>
+  <data name="StringId.CalcButtonMS" xml:space="preserve">
+    <value>MS</value>
+  </data>
+  <data name="StringId.CalcButtonMx" xml:space="preserve">
+    <value>M+</value>
+  </data>
+  <data name="StringId.CalcButtonSqrt" xml:space="preserve">
+    <value>sqrt</value>
+  </data>
+  <data name="StringId.CalcButtonBack" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="StringId.CalcButtonCE" xml:space="preserve">
+    <value>CE</value>
+  </data>
+  <data name="StringId.CalcButtonC" xml:space="preserve">
+    <value>C</value>
+  </data>
+  <data name="StringId.CalcError" xml:space="preserve">
+    <value>Calculation Error</value>
+  </data>
+  <data name="StringId.TabHeaderButtonPrev" xml:space="preserve">
+    <value>Scroll Left</value>
+  </data>
+  <data name="StringId.TabHeaderButtonNext" xml:space="preserve">
+    <value>Scroll Right</value>
+  </data>
+  <data name="StringId.TabHeaderButtonUp" xml:space="preserve">
+    <value>Scroll Up</value>
+  </data>
+  <data name="StringId.TabHeaderButtonDown" xml:space="preserve">
+    <value>Scroll Down</value>
+  </data>
+  <data name="StringId.TabHeaderButtonClose" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="StringId.TabHeaderButtonPin" xml:space="preserve">
+    <value>Pin</value>
+  </data>
+  <data name="StringId.TabHeaderButtonUnpin" xml:space="preserve">
+    <value>Unpin</value>
+  </data>
+  <data name="StringId.TabHeaderSelectorButton" xml:space="preserve">
+    <value>Show Window List</value>
+  </data>
+  <data name="StringId.XtraMessageBoxOkButtonText" xml:space="preserve">
+    <value>&amp;OK</value>
+  </data>
+  <data name="StringId.XtraMessageBoxCancelButtonText" xml:space="preserve">
+    <value>&amp;Cancel</value>
+  </data>
+  <data name="StringId.XtraMessageBoxYesButtonText" xml:space="preserve">
+    <value>&amp;Yes</value>
+  </data>
+  <data name="StringId.XtraMessageBoxNoButtonText" xml:space="preserve">
+    <value>&amp;No</value>
+  </data>
+  <data name="StringId.XtraMessageBoxAbortButtonText" xml:space="preserve">
+    <value>&amp;Abort</value>
+  </data>
+  <data name="StringId.XtraMessageBoxRetryButtonText" xml:space="preserve">
+    <value>&amp;Retry</value>
+  </data>
+  <data name="StringId.XtraMessageBoxIgnoreButtonText" xml:space="preserve">
+    <value>&amp;Ignore</value>
+  </data>
+  <data name="StringId.XtraMessageBoxDoNotShowThisMessageAgain" xml:space="preserve">
+    <value>Do not show this message again</value>
+  </data>
+  <data name="StringId.TextEditMenuUndo" xml:space="preserve">
+    <value>&amp;Undo</value>
+  </data>
+  <data name="StringId.TextEditMenuCut" xml:space="preserve">
+    <value>Cu&amp;t</value>
+  </data>
+  <data name="StringId.TextEditMenuCopy" xml:space="preserve">
+    <value>&amp;Copy</value>
+  </data>
+  <data name="StringId.TextEditMenuPaste" xml:space="preserve">
+    <value>&amp;Paste</value>
+  </data>
+  <data name="StringId.TextEditMenuDelete" xml:space="preserve">
+    <value>&amp;Delete</value>
+  </data>
+  <data name="StringId.TextEditMenuSelectAll" xml:space="preserve">
+    <value>Select &amp;All</value>
+  </data>
+  <data name="StringId.FilterEditorTabText" xml:space="preserve">
+    <value>Text</value>
+  </data>
+  <data name="StringId.FilterEditorTabVisual" xml:space="preserve">
+    <value>Visual</value>
+  </data>
+  <data name="StringId.FilterShowAll" xml:space="preserve">
+    <value>(Select All)</value>
+  </data>
+  <data name="StringId.FilterGroupAnd" xml:space="preserve">
+    <value>And</value>
+  </data>
+  <data name="StringId.FilterGroupNotAnd" xml:space="preserve">
+    <value>Not And</value>
+  </data>
+  <data name="StringId.FilterGroupNotOr" xml:space="preserve">
+    <value>Not Or</value>
+  </data>
+  <data name="StringId.FilterGroupOr" xml:space="preserve">
+    <value>Or</value>
+  </data>
+  <data name="StringId.FilterClauseAnyOf" xml:space="preserve">
+    <value>Is any of</value>
+  </data>
+  <data name="StringId.FilterClauseBeginsWith" xml:space="preserve">
+    <value>Begins with</value>
+  </data>
+  <data name="StringId.FilterClauseBetween" xml:space="preserve">
+    <value>Is between</value>
+  </data>
+  <data name="StringId.FilterClauseBetweenAnd" xml:space="preserve">
+    <value>and</value>
+  </data>
+  <data name="StringId.FilterClauseContains" xml:space="preserve">
+    <value>Contains</value>
+  </data>
+  <data name="StringId.FilterClauseEndsWith" xml:space="preserve">
+    <value>Ends with</value>
+  </data>
+  <data name="StringId.FilterClauseEquals" xml:space="preserve">
+    <value>Equals</value>
+  </data>
+  <data name="StringId.FilterClauseGreater" xml:space="preserve">
+    <value>Is greater than</value>
+  </data>
+  <data name="StringId.FilterClauseGreaterOrEqual" xml:space="preserve">
+    <value>Is greater than or equal to</value>
+  </data>
+  <data name="StringId.FilterClauseIsNotNull" xml:space="preserve">
+    <value>Is not null</value>
+  </data>
+  <data name="StringId.FilterClauseIsNull" xml:space="preserve">
+    <value>Is null</value>
+  </data>
+  <data name="StringId.FilterClauseIsNotNullOrEmpty" xml:space="preserve">
+    <value>Is not blank</value>
+  </data>
+  <data name="StringId.FilterClauseIsNullOrEmpty" xml:space="preserve">
+    <value>Is blank</value>
+  </data>
+  <data name="StringId.FilterClauseLess" xml:space="preserve">
+    <value>Is less than</value>
+  </data>
+  <data name="StringId.FilterClauseLessOrEqual" xml:space="preserve">
+    <value>Is less than or equal to</value>
+  </data>
+  <data name="StringId.FilterClauseLike" xml:space="preserve">
+    <value>Is like</value>
+  </data>
+  <data name="StringId.FilterClauseNoneOf" xml:space="preserve">
+    <value>Is none of</value>
+  </data>
+  <data name="StringId.FilterClauseNotBetween" xml:space="preserve">
+    <value>Is not between</value>
+  </data>
+  <data name="StringId.FilterClauseDoesNotContain" xml:space="preserve">
+    <value>Does not contain</value>
+  </data>
+  <data name="StringId.FilterClauseDoesNotEqual" xml:space="preserve">
+    <value>Does not equal</value>
+  </data>
+  <data name="StringId.FilterClauseNotLike" xml:space="preserve">
+    <value>Is not like</value>
+  </data>
+  <data name="StringId.FilterEmptyEnter" xml:space="preserve">
+    <value>&lt;enter a value&gt;</value>
+  </data>
+  <data name="StringId.FilterEmptyValue" xml:space="preserve">
+    <value>&lt;empty&gt;</value>
+  </data>
+  <data name="StringId.FilterMenuConditionAdd" xml:space="preserve">
+    <value>Add Condition</value>
+  </data>
+  <data name="StringId.FilterMenuGroupAdd" xml:space="preserve">
+    <value>Add Group</value>
+  </data>
+  <data name="StringId.FilterMenuExpressionAdd" xml:space="preserve">
+    <value>Add Custom Expression</value>
+  </data>
+  <data name="StringId.FilterMenuClearAll" xml:space="preserve">
+    <value>Clear All</value>
+  </data>
+  <data name="StringId.FilterMenuRowRemove" xml:space="preserve">
+    <value>Remove Group</value>
+  </data>
+  <data name="StringId.FilterToolTipNodeAdd" xml:space="preserve">
+    <value>Adds a new condition to this group</value>
+  </data>
+  <data name="StringId.FilterToolTipNodeRemove" xml:space="preserve">
+    <value>Removes this condition</value>
+  </data>
+  <data name="StringId.FilterToolTipNodeAction" xml:space="preserve">
+    <value>Actions</value>
+  </data>
+  <data name="StringId.FilterToolTipValueType" xml:space="preserve">
+    <value>Compare with a value / another field's value</value>
+  </data>
+  <data name="StringId.FilterToolTipElementAdd" xml:space="preserve">
+    <value>Adds a new item to the list</value>
+  </data>
+  <data name="StringId.FilterToolTipKeysAdd" xml:space="preserve">
+    <value>(Use the Insert or Add key)</value>
+  </data>
+  <data name="StringId.FilterToolTipKeysRemove" xml:space="preserve">
+    <value>(Use the Delete or Subtract key)</value>
+  </data>
+  <data name="StringId.ContainerAccessibleEditName" xml:space="preserve">
+    <value>Editing control</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringGroupOperatorAnd" xml:space="preserve">
+    <value>And</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringGroupOperatorOr" xml:space="preserve">
+    <value>Or</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringUnaryOperatorBitwiseNot" xml:space="preserve">
+    <value>~</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringUnaryOperatorIsNull" xml:space="preserve">
+    <value>Is Null</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringUnaryOperatorMinus" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringUnaryOperatorNot" xml:space="preserve">
+    <value>Not</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringUnaryOperatorPlus" xml:space="preserve">
+    <value>+</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringBinaryOperatorBitwiseAnd" xml:space="preserve">
+    <value>&amp;</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringBinaryOperatorBitwiseOr" xml:space="preserve">
+    <value>|</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringBinaryOperatorBitwiseXor" xml:space="preserve">
+    <value>^</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringBinaryOperatorDivide" xml:space="preserve">
+    <value>/</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringBinaryOperatorEqual" xml:space="preserve">
+    <value>=</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringBinaryOperatorGreater" xml:space="preserve">
+    <value>&gt;</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringBinaryOperatorGreaterOrEqual" xml:space="preserve">
+    <value>&gt;=</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringBinaryOperatorLess" xml:space="preserve">
+    <value>&lt;</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringBinaryOperatorLessOrEqual" xml:space="preserve">
+    <value>&lt;=</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringBinaryOperatorLike" xml:space="preserve">
+    <value>Like</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringBinaryOperatorMinus" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringBinaryOperatorModulo" xml:space="preserve">
+    <value>%</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringBinaryOperatorMultiply" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringBinaryOperatorNotEqual" xml:space="preserve">
+    <value>&lt;&gt;</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringBinaryOperatorPlus" xml:space="preserve">
+    <value>+</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringBetween" xml:space="preserve">
+    <value>Between</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringIn" xml:space="preserve">
+    <value>In</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringIsNotNull" xml:space="preserve">
+    <value>Is Not Null</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringNotLike" xml:space="preserve">
+    <value>Not Like</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionNone" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionCustom" xml:space="preserve">
+    <value>Custom</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionIif" xml:space="preserve">
+    <value>Iif</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionIsNull" xml:space="preserve">
+    <value>IsNull</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionTrim" xml:space="preserve">
+    <value>Trim</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionLen" xml:space="preserve">
+    <value>Len</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionSubstring" xml:space="preserve">
+    <value>Substring</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionUpper" xml:space="preserve">
+    <value>Upper</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionLower" xml:space="preserve">
+    <value>Lower</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionConcat" xml:space="preserve">
+    <value>Concat</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionLocalDateTimeThisYear" xml:space="preserve">
+    <value>This year</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionLocalDateTimeThisMonth" xml:space="preserve">
+    <value>This month</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionLocalDateTimeLastWeek" xml:space="preserve">
+    <value>Last week</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionLocalDateTimeThisWeek" xml:space="preserve">
+    <value>This week</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionLocalDateTimeYesterday" xml:space="preserve">
+    <value>Yesterday</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionLocalDateTimeToday" xml:space="preserve">
+    <value>Today</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionLocalDateTimeNow" xml:space="preserve">
+    <value>Now</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionLocalDateTimeTomorrow" xml:space="preserve">
+    <value>Tomorrow</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionLocalDateTimeDayAfterTomorrow" xml:space="preserve">
+    <value>Day after tomorrow</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionLocalDateTimeNextWeek" xml:space="preserve">
+    <value>Next week</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionLocalDateTimeTwoWeeksAway" xml:space="preserve">
+    <value>Two weeks away</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionLocalDateTimeNextMonth" xml:space="preserve">
+    <value>Next month</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionLocalDateTimeNextYear" xml:space="preserve">
+    <value>Next year</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionIsOutlookIntervalBeyondThisYear" xml:space="preserve">
+    <value>Is beyond this year</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionIsOutlookIntervalLaterThisYear" xml:space="preserve">
+    <value>Is later this year</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionIsOutlookIntervalLaterThisMonth" xml:space="preserve">
+    <value>Is later this month</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionIsOutlookIntervalNextWeek" xml:space="preserve">
+    <value>Is next week</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionIsOutlookIntervalLaterThisWeek" xml:space="preserve">
+    <value>Is later this week</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionIsOutlookIntervalTomorrow" xml:space="preserve">
+    <value>Is tomorrow</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionIsOutlookIntervalToday" xml:space="preserve">
+    <value>Is today</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionIsOutlookIntervalYesterday" xml:space="preserve">
+    <value>Is yesterday</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionIsOutlookIntervalEarlierThisWeek" xml:space="preserve">
+    <value>Is earlier this week</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionIsOutlookIntervalLastWeek" xml:space="preserve">
+    <value>Is last week</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionIsOutlookIntervalEarlierThisMonth" xml:space="preserve">
+    <value>Is earlier this month</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionIsOutlookIntervalEarlierThisYear" xml:space="preserve">
+    <value>Is earlier this year</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionIsOutlookIntervalPriorThisYear" xml:space="preserve">
+    <value>Is prior to this year</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionCustomNonDeterministic" xml:space="preserve">
+    <value>Custom non deterministic</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionIsNullOrEmpty" xml:space="preserve">
+    <value>Is null or empty</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionAscii" xml:space="preserve">
+    <value>Ascii</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionChar" xml:space="preserve">
+    <value>Char</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionToInt" xml:space="preserve">
+    <value>To int</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionToLong" xml:space="preserve">
+    <value>To long</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionToFloat" xml:space="preserve">
+    <value>To float</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionToDouble" xml:space="preserve">
+    <value>To double</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionToDecimal" xml:space="preserve">
+    <value>To decimal</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionToStr" xml:space="preserve">
+    <value>To str</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionReplace" xml:space="preserve">
+    <value>Replace</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionReverse" xml:space="preserve">
+    <value>Reverse</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionInsert" xml:space="preserve">
+    <value>Insert</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionCharIndex" xml:space="preserve">
+    <value>Char index</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionRemove" xml:space="preserve">
+    <value>Remove</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionAbs" xml:space="preserve">
+    <value>Abs</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionSqr" xml:space="preserve">
+    <value>Sqr</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionCos" xml:space="preserve">
+    <value>Cos</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionSin" xml:space="preserve">
+    <value>Sin</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionAtn" xml:space="preserve">
+    <value>Atn</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionExp" xml:space="preserve">
+    <value>Exp</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionLog" xml:space="preserve">
+    <value>Log</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionRnd" xml:space="preserve">
+    <value>Rnd</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionTan" xml:space="preserve">
+    <value>Tan</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionPower" xml:space="preserve">
+    <value>Power</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionSign" xml:space="preserve">
+    <value>Sign</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionRound" xml:space="preserve">
+    <value>Round</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionCeiling" xml:space="preserve">
+    <value>Ceiling</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionFloor" xml:space="preserve">
+    <value>Floor</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionMax" xml:space="preserve">
+    <value>Max</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionMin" xml:space="preserve">
+    <value>Min</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionAcos" xml:space="preserve">
+    <value>Acos</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionAsin" xml:space="preserve">
+    <value>Asin</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionAtn2" xml:space="preserve">
+    <value>Atn2</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionBigMul" xml:space="preserve">
+    <value>Big mul</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionCosh" xml:space="preserve">
+    <value>Cosh</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionLog10" xml:space="preserve">
+    <value>Log10</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionSinh" xml:space="preserve">
+    <value>Sinh</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionTanh" xml:space="preserve">
+    <value>Tanh</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionPadLeft" xml:space="preserve">
+    <value>Pad left</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionPadRight" xml:space="preserve">
+    <value>Pad right</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionDateDiffTick" xml:space="preserve">
+    <value>Date diff tick</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionDateDiffSecond" xml:space="preserve">
+    <value>Date diff second</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionDateDiffMilliSecond" xml:space="preserve">
+    <value>Date diff millisecond</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionDateDiffMinute" xml:space="preserve">
+    <value>Date diff minute</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionDateDiffHour" xml:space="preserve">
+    <value>Date diff hour</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionDateDiffDay" xml:space="preserve">
+    <value>Date diff day</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionDateDiffMonth" xml:space="preserve">
+    <value>Date diff month</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionDateDiffYear" xml:space="preserve">
+    <value>Date diff year</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionGetDate" xml:space="preserve">
+    <value>Get date</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionGetMilliSecond" xml:space="preserve">
+    <value>Get millisecond</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionGetSecond" xml:space="preserve">
+    <value>Get second</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionGetMinute" xml:space="preserve">
+    <value>Get minute</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionGetHour" xml:space="preserve">
+    <value>Get hour</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionGetDay" xml:space="preserve">
+    <value>Get day</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionGetMonth" xml:space="preserve">
+    <value>Get month</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionGetYear" xml:space="preserve">
+    <value>Get year</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionGetDayOfWeek" xml:space="preserve">
+    <value>Get day of week</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionGetDayOfYear" xml:space="preserve">
+    <value>Get day of year</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionGetTimeOfDay" xml:space="preserve">
+    <value>Get time of day</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionNow" xml:space="preserve">
+    <value>Now</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionUtcNow" xml:space="preserve">
+    <value>Utc now</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionToday" xml:space="preserve">
+    <value>Today</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionAddTimeSpan" xml:space="preserve">
+    <value>Add time span</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionAddTicks" xml:space="preserve">
+    <value>Add ticks</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionAddMilliSeconds" xml:space="preserve">
+    <value>Add milliseconds</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionAddSeconds" xml:space="preserve">
+    <value>Add seconds</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionAddMinutes" xml:space="preserve">
+    <value>Add minutes</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionAddHours" xml:space="preserve">
+    <value>Add hours</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionAddDays" xml:space="preserve">
+    <value>Add days</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionAddMonths" xml:space="preserve">
+    <value>Add months</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionAddYears" xml:space="preserve">
+    <value>Add years</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionStartsWith" xml:space="preserve">
+    <value>Starts with</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionEndsWith" xml:space="preserve">
+    <value>Ends with</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionContains" xml:space="preserve">
+    <value>Contains</value>
+  </data>
+  <data name="StringId.Apply" xml:space="preserve">
+    <value>Apply</value>
+  </data>
+  <data name="StringId.PreviewPanelText" xml:space="preserve">
+    <value>Preview:</value>
+  </data>
+  <data name="StringId.TransparentBackColorNotSupported" xml:space="preserve">
+    <value>This control does not support transparent background colors</value>
+  </data>
+  <data name="StringId.FilterOutlookDateText" xml:space="preserve">
+    <value>Show all|Show Empty|Filter by a specific date:|Beyond this year|Later this year|Later this month|Next week|Later this week|Tomorrow|Today|Yesterday|Earlier this week|Last week|Earlier this month|Earlier this year|Prior to this year</value>
+  </data>
+  <data name="StringId.FilterDateTimeConstantMenuCaption" xml:space="preserve">
+    <value>Date and time constants</value>
+  </data>
+  <data name="StringId.FilterDateTimeOperatorMenuCaption" xml:space="preserve">
+    <value>Date and time operators</value>
+  </data>
+  <data name="StringId.FilterAdvancedDateTimeOperatorMenuCaption" xml:space="preserve">
+    <value>Advanced date and time operators</value>
+  </data>
+  <data name="StringId.FilterCustomFunctionsMenuCaption" xml:space="preserve">
+    <value>Custom functions</value>
+  </data>
+  <data name="StringId.FilterEmptyParameter" xml:space="preserve">
+    <value>&lt;enter a parameter name&gt;</value>
+  </data>
+  <data name="StringId.FilterMenuAddNewParameter" xml:space="preserve">
+    <value>Add Parameter...</value>
+  </data>
+  <data name="StringId.FilterDateTextAlt" xml:space="preserve">
+    <value>Show all|Show Empty|Filter by a specific date:|Beyond|||Next week|Today|This week|This month|Earlier|{0:yyyy}, {0:MMMM}</value>
+  </data>
+  <data name="StringId.FilterFunctionsMenuCaption" xml:space="preserve">
+    <value>Functions</value>
+  </data>
+  <data name="StringId.DefaultBooleanTrue" xml:space="preserve">
+    <value>True</value>
+  </data>
+  <data name="StringId.DefaultBooleanFalse" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="StringId.DefaultBooleanDefault" xml:space="preserve">
+    <value>Default</value>
+  </data>
+  <data name="StringId.ProgressExport" xml:space="preserve">
+    <value>Exporting</value>
+  </data>
+  <data name="StringId.ProgressPrinting" xml:space="preserve">
+    <value>Printing</value>
+  </data>
+  <data name="StringId.ProgressCreateDocument" xml:space="preserve">
+    <value>Creating document</value>
+  </data>
+  <data name="StringId.ProgressCancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="StringId.ProgressCancelPending" xml:space="preserve">
+    <value>Cancel pending</value>
+  </data>
+  <data name="StringId.ProgressLoadingData" xml:space="preserve">
+    <value>Loading data</value>
+  </data>
+  <data name="StringId.FilterAggregateAvg" xml:space="preserve">
+    <value>Avg</value>
+  </data>
+  <data name="StringId.FilterAggregateCount" xml:space="preserve">
+    <value>Count</value>
+  </data>
+  <data name="StringId.FilterAggregateExists" xml:space="preserve">
+    <value>Exists</value>
+  </data>
+  <data name="StringId.FilterAggregateMax" xml:space="preserve">
+    <value>Max</value>
+  </data>
+  <data name="StringId.FilterAggregateMin" xml:space="preserve">
+    <value>Min</value>
+  </data>
+  <data name="StringId.FilterAggregateSum" xml:space="preserve">
+    <value>Sum</value>
+  </data>
+  <data name="StringId.FieldListName" xml:space="preserve">
+    <value>Field List ({0})</value>
+  </data>
+  <data name="StringId.RestoreLayoutDialogFileFilter" xml:space="preserve">
+    <value>XML files (*.xml)|*.xml|All files|*.*</value>
+  </data>
+  <data name="StringId.SaveLayoutDialogFileFilter" xml:space="preserve">
+    <value>XML files (*.xml)|*.xml</value>
+  </data>
+  <data name="StringId.RestoreLayoutDialogTitle" xml:space="preserve">
+    <value>Restore Layout</value>
+  </data>
+  <data name="StringId.SaveLayoutDialogTitle" xml:space="preserve">
+    <value>Save Layout</value>
+  </data>
+  <data name="StringId.None" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="StringId.PictureEditMenuFitImage" xml:space="preserve">
+    <value>Fit Image</value>
+  </data>
+  <data name="StringId.PictureEditMenuFullSize" xml:space="preserve">
+    <value>Full Size</value>
+  </data>
+  <data name="StringId.PictureEditMenuZoom" xml:space="preserve">
+    <value>Zoom</value>
+  </data>
+  <data name="StringId.PictureEditMenuZoomIn" xml:space="preserve">
+    <value>Zoom In</value>
+  </data>
+  <data name="StringId.PictureEditMenuZoomOut" xml:space="preserve">
+    <value>Zoom Out</value>
+  </data>
+  <data name="StringId.PictureEditMenuZoomTo" xml:space="preserve">
+    <value>Zoom to:</value>
+  </data>
+  <data name="StringId.PictureEditMenuZoomToolTip" xml:space="preserve">
+    <value>{0}%</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionIsThisMonth" xml:space="preserve">
+    <value>Is this month</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionIsThisWeek" xml:space="preserve">
+    <value>Is this week</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionIsThisYear" xml:space="preserve">
+    <value>Is this year</value>
+  </data>
+  <data name="StringId.ColorPickPopupAutomaticItemCaption" xml:space="preserve">
+    <value>Automatic</value>
+  </data>
+  <data name="StringId.FilterPopupToolbarShowOnlyAvailableItems" xml:space="preserve">
+    <value>Show Only Available Items</value>
+  </data>
+  <data name="StringId.FilterPopupToolbarShowNewValues" xml:space="preserve">
+    <value>Show New Field Values</value>
+  </data>
+  <data name="StringId.FilterPopupToolbarIncrementalSearch" xml:space="preserve">
+    <value>Incremental Search</value>
+  </data>
+  <data name="StringId.FilterPopupToolbarInvertFilter" xml:space="preserve">
+    <value>Invert Filter</value>
+  </data>
+  <data name="StringId.FilterPopupToolbarMultiSelection" xml:space="preserve">
+    <value>Multi-Selection</value>
+  </data>
+  <data name="StringId.FilterPopupToolbarRadioMode" xml:space="preserve">
+    <value>Radio Mode</value>
+  </data>
+  <data name="StringId.Days" xml:space="preserve">
+    <value>days</value>
+  </data>
+  <data name="StringId.Secs" xml:space="preserve">
+    <value>sec</value>
+  </data>
+  <data name="StringId.Millisecs" xml:space="preserve">
+    <value>ms</value>
+  </data>
+  <data name="StringId.Mins" xml:space="preserve">
+    <value>min</value>
+  </data>
+  <data name="StringId.Hours" xml:space="preserve">
+    <value>hours</value>
+  </data>
+  <data name="StringId.TimeSpanDays" xml:space="preserve">
+    <value>day</value>
+  </data>
+  <data name="StringId.TimeSpanDaysPlural" xml:space="preserve">
+    <value>days</value>
+  </data>
+  <data name="StringId.TimeSpanDaysShort" xml:space="preserve">
+    <value>d</value>
+  </data>
+  <data name="StringId.TimeSpanHours" xml:space="preserve">
+    <value>hour</value>
+  </data>
+  <data name="StringId.TimeSpanHoursPlural" xml:space="preserve">
+    <value>hours</value>
+  </data>
+  <data name="StringId.TimeSpanHoursShort" xml:space="preserve">
+    <value>h</value>
+  </data>
+  <data name="StringId.TimeSpanMinutes" xml:space="preserve">
+    <value>minute</value>
+  </data>
+  <data name="StringId.TimeSpanMinutesPlural" xml:space="preserve">
+    <value>minutes</value>
+  </data>
+  <data name="StringId.TimeSpanMinutesShort" xml:space="preserve">
+    <value>m</value>
+  </data>
+  <data name="StringId.TimeSpanSeconds" xml:space="preserve">
+    <value>second</value>
+  </data>
+  <data name="StringId.TimeSpanSecondsPlural" xml:space="preserve">
+    <value>seconds</value>
+  </data>
+  <data name="StringId.TimeSpanSecondsShort" xml:space="preserve">
+    <value>s</value>
+  </data>
+  <data name="StringId.TimeSpanFractionalSeconds" xml:space="preserve">
+    <value>fractional</value>
+  </data>
+  <data name="StringId.TimeSpanFractionalSecondsPlural" xml:space="preserve">
+    <value>fractional</value>
+  </data>
+  <data name="StringId.TimeSpanFractionalSecondsShort" xml:space="preserve">
+    <value>f</value>
+  </data>
+  <data name="StringId.TimeSpanMilliseconds" xml:space="preserve">
+    <value>millisecond</value>
+  </data>
+  <data name="StringId.TimeSpanMillisecondsPlural" xml:space="preserve">
+    <value>milliseconds</value>
+  </data>
+  <data name="StringId.TimeSpanMillisecondsShort" xml:space="preserve">
+    <value>ms</value>
+  </data>
+  <data name="StringId.ChartRangeControlClientInvalidGrid" xml:space="preserve">
+    <value>The interval  between grid lines is too small to be represented in the range control.</value>
+  </data>
+  <data name="StringId.ChartRangeControlClientNoData" xml:space="preserve">
+    <value>There is no data to represent in a range control.</value>
+  </data>
+  <data name="StringId.IncorrectNumberCopies" xml:space="preserve">
+    <value>The number must be between 1 and 32767.</value>
+  </data>
+  <data name="StringId.DataBarBlue" xml:space="preserve">
+    <value>Blue Data Bar</value>
+  </data>
+  <data name="StringId.DataBarLightBlue" xml:space="preserve">
+    <value>Light Blue Data Bar</value>
+  </data>
+  <data name="StringId.DataBarGreen" xml:space="preserve">
+    <value>Green Data Bar</value>
+  </data>
+  <data name="StringId.DataBarYellow" xml:space="preserve">
+    <value>Yellow Data Bar</value>
+  </data>
+  <data name="StringId.DataBarOrange" xml:space="preserve">
+    <value>Orange Data Bar</value>
+  </data>
+  <data name="StringId.DataBarMint" xml:space="preserve">
+    <value>Mint Data Bar</value>
+  </data>
+  <data name="StringId.DataBarViolet" xml:space="preserve">
+    <value>Violet Data Bar</value>
+  </data>
+  <data name="StringId.DataBarRaspberry" xml:space="preserve">
+    <value>Raspberry Data Bar</value>
+  </data>
+  <data name="StringId.DataBarCoral" xml:space="preserve">
+    <value>Coral Data Bar</value>
+  </data>
+  <data name="StringId.DataBarBlueGradient" xml:space="preserve">
+    <value>Blue Data Bar Gradient</value>
+  </data>
+  <data name="StringId.DataBarLightBlueGradient" xml:space="preserve">
+    <value>Light Blue Data Bar Gradient</value>
+  </data>
+  <data name="StringId.DataBarGreenGradient" xml:space="preserve">
+    <value>Green Data Bar Gradient</value>
+  </data>
+  <data name="StringId.DataBarYellowGradient" xml:space="preserve">
+    <value>Yellow Data Bar Gradient</value>
+  </data>
+  <data name="StringId.DataBarOrangeGradient" xml:space="preserve">
+    <value>Orange Data Bar Gradient</value>
+  </data>
+  <data name="StringId.DataBarMintGradient" xml:space="preserve">
+    <value>Mint Data Bar Gradient</value>
+  </data>
+  <data name="StringId.DataBarVioletGradient" xml:space="preserve">
+    <value>Violet Data Bar Gradient</value>
+  </data>
+  <data name="StringId.DataBarRaspberryGradient" xml:space="preserve">
+    <value>Raspberry Data Bar Gradient</value>
+  </data>
+  <data name="StringId.DataBarCoralGradient" xml:space="preserve">
+    <value>Coral Data Bar Gradient</value>
+  </data>
+  <data name="StringId.FormatRuleMenuItemDataUpdateRules" xml:space="preserve">
+    <value>Data Update Rules</value>
+  </data>
+  <data name="StringId.FormatRuleMenuItemClearColumnRules" xml:space="preserve">
+    <value>Clear Rules from This Column</value>
+  </data>
+  <data name="StringId.FormatRuleMenuItemClearAllRules" xml:space="preserve">
+    <value>Clear Rules from All Columns</value>
+  </data>
+  <data name="StringId.FormatRuleMenuItemHighlightCellRules" xml:space="preserve">
+    <value>Highlight Cell Rules</value>
+  </data>
+  <data name="StringId.FormatRuleMenuItemTopBottomRules" xml:space="preserve">
+    <value>Top/Bottom Rules</value>
+  </data>
+  <data name="StringId.FormatRuleMenuItemDataBars" xml:space="preserve">
+    <value>Data Bars</value>
+  </data>
+  <data name="StringId.FormatRuleMenuItemColorScales" xml:space="preserve">
+    <value>Color Scales</value>
+  </data>
+  <data name="StringId.FormatRuleMenuItemIconSets" xml:space="preserve">
+    <value>Icon Sets</value>
+  </data>
+  <data name="StringId.FormatRuleMenuItemClearRules" xml:space="preserve">
+    <value>Clear Rules</value>
+  </data>
+  <data name="StringId.FormatRuleMenuItemUniqueDuplicateRules" xml:space="preserve">
+    <value>Unique/Duplicate Rules</value>
+  </data>
+  <data name="StringId.FormatRuleMenuItemGradientFill" xml:space="preserve">
+    <value>Gradient Fill</value>
+  </data>
+  <data name="StringId.FormatRuleMenuItemSolidFill" xml:space="preserve">
+    <value>Solid Fill</value>
+  </data>
+  <data name="StringId.FormatRuleMenuItemDataBarDescription" xml:space="preserve">
+    <value>Add a colored data bar to represent
+the value in a cell. The higher the
+value, the longer the bar.</value>
+  </data>
+  <data name="StringId.IconSetCategoryRatings" xml:space="preserve">
+    <value>Ratings</value>
+  </data>
+  <data name="StringId.IconSetCategoryIndicators" xml:space="preserve">
+    <value>Indicators</value>
+  </data>
+  <data name="StringId.IconSetCategorySymbols" xml:space="preserve">
+    <value>Symbols</value>
+  </data>
+  <data name="StringId.IconSetCategoryShapes" xml:space="preserve">
+    <value>Shapes</value>
+  </data>
+  <data name="StringId.IconSetCategoryDirectional" xml:space="preserve">
+    <value>Directional</value>
+  </data>
+  <data name="StringId.IconSetCategoryPositiveNegative" xml:space="preserve">
+    <value>Positive/Negative</value>
+  </data>
+  <data name="StringId.FormatRuleMenuItemIconSetDescription" xml:space="preserve">
+    <value>Use this icon set to classify column
+values into the following ranges:</value>
+  </data>
+  <data name="StringId.ColorScaleGreenYellowRed" xml:space="preserve">
+    <value>Green - Yellow - Red</value>
+  </data>
+  <data name="StringId.ColorScalePurpleWhiteAzure" xml:space="preserve">
+    <value>Purple - White - Azure</value>
+  </data>
+  <data name="StringId.ColorScaleYellowOrangeCoral" xml:space="preserve">
+    <value>Yellow - Orange - Coral</value>
+  </data>
+  <data name="StringId.ColorScaleGreenWhiteRed" xml:space="preserve">
+    <value>Green - White - Red</value>
+  </data>
+  <data name="StringId.ColorScaleEmeraldAzureBlue" xml:space="preserve">
+    <value>Emerald - Azure - Blue</value>
+  </data>
+  <data name="StringId.ColorScaleWhiteRed" xml:space="preserve">
+    <value>White - Red</value>
+  </data>
+  <data name="StringId.ColorScaleWhiteGreen" xml:space="preserve">
+    <value>White - Green</value>
+  </data>
+  <data name="StringId.ColorScaleWhiteAzure" xml:space="preserve">
+    <value>White - Azure</value>
+  </data>
+  <data name="StringId.ColorScaleYellowGreen" xml:space="preserve">
+    <value>Yellow - Green</value>
+  </data>
+  <data name="StringId.ColorScaleBlueWhiteRed" xml:space="preserve">
+    <value>Blue - White - Red</value>
+  </data>
+  <data name="StringId.FormatRuleMenuItemColorScaleDescription" xml:space="preserve">
+    <value>Apply a color gradient to a range of
+cells in this column. The color indicates
+where each cell falls within that range.</value>
+  </data>
+  <data name="StringId.FormatRuleMenuItemUnique" xml:space="preserve">
+    <value>Unique Values</value>
+  </data>
+  <data name="StringId.FormatRuleMenuItemDuplicate" xml:space="preserve">
+    <value>Duplicate Values</value>
+  </data>
+  <data name="StringId.FormatRuleApplyFormatProperty" xml:space="preserve">
+    <value>Apply formatting to an entire row</value>
+  </data>
+  <data name="StringId.FormatRuleUniqueText" xml:space="preserve">
+    <value>Format cells that are UNIQUE VALUES</value>
+  </data>
+  <data name="StringId.FormatRuleDuplicateText" xml:space="preserve">
+    <value>Format cells that are DUPLICATE VALUES</value>
+  </data>
+  <data name="StringId.FormatRuleWith" xml:space="preserve">
+    <value>with</value>
+  </data>
+  <data name="StringId.FormatRuleForThisColumnWith" xml:space="preserve">
+    <value>for this column with</value>
+  </data>
+  <data name="StringId.IconSetTitleStars3" xml:space="preserve">
+    <value>3 Stars</value>
+  </data>
+  <data name="StringId.IconSetTitleRatings4" xml:space="preserve">
+    <value>4 Ratings</value>
+  </data>
+  <data name="StringId.IconSetTitleRatings5" xml:space="preserve">
+    <value>5 Ratings</value>
+  </data>
+  <data name="StringId.IconSetTitleQuarters5" xml:space="preserve">
+    <value>5 Quarters</value>
+  </data>
+  <data name="StringId.IconSetTitleBoxes5" xml:space="preserve">
+    <value>5 Boxes</value>
+  </data>
+  <data name="StringId.IconSetTitleArrows3Colored" xml:space="preserve">
+    <value>3 Arrows (Colored)</value>
+  </data>
+  <data name="StringId.IconSetTitleArrows3Gray" xml:space="preserve">
+    <value>3 Arrows (Gray)</value>
+  </data>
+  <data name="StringId.IconSetTitleTriangles3" xml:space="preserve">
+    <value>3 Triangles</value>
+  </data>
+  <data name="StringId.IconSetTitleArrows4Colored" xml:space="preserve">
+    <value>4 Arrows (Colored)</value>
+  </data>
+  <data name="StringId.IconSetTitleArrows4Gray" xml:space="preserve">
+    <value>4 Arrows (Gray)</value>
+  </data>
+  <data name="StringId.IconSetTitleArrows5Colored" xml:space="preserve">
+    <value>5 Arrows (Colored)</value>
+  </data>
+  <data name="StringId.IconSetTitleArrows5Gray" xml:space="preserve">
+    <value>5 Arrows (Gray)</value>
+  </data>
+  <data name="StringId.IconSetTitleTrafficLights3Unrimmed" xml:space="preserve">
+    <value>3 Traffic Lights (Unrimmed)</value>
+  </data>
+  <data name="StringId.IconSetTitleTrafficLights3Rimmed" xml:space="preserve">
+    <value>3 Traffic Lights (Rimmed)</value>
+  </data>
+  <data name="StringId.IconSetTitleSigns3" xml:space="preserve">
+    <value>3 Signs</value>
+  </data>
+  <data name="StringId.IconSetTitleTrafficLights4" xml:space="preserve">
+    <value>4 Traffic Lights</value>
+  </data>
+  <data name="StringId.IconSetTitleRedToBlack" xml:space="preserve">
+    <value>Red To Black</value>
+  </data>
+  <data name="StringId.IconSetTitleSymbols3Circled" xml:space="preserve">
+    <value>3 Symbols (Circled)</value>
+  </data>
+  <data name="StringId.IconSetTitleSymbols3Uncircled" xml:space="preserve">
+    <value>3 Symbols (Uncircled)</value>
+  </data>
+  <data name="StringId.IconSetTitleFlags3" xml:space="preserve">
+    <value>3 Flags</value>
+  </data>
+  <data name="StringId.IconSetTitlePositiveNegativeArrows" xml:space="preserve">
+    <value>Arrows (Colored)</value>
+  </data>
+  <data name="StringId.IconSetTitlePositiveNegativeArrowsGray" xml:space="preserve">
+    <value>Arrows (Gray)</value>
+  </data>
+  <data name="StringId.IconSetTitlePositiveNegativeTriangles" xml:space="preserve">
+    <value>Triangles</value>
+  </data>
+  <data name="StringId.FormatRuleMenuItemTop10Items" xml:space="preserve">
+    <value>Top 10 Items</value>
+  </data>
+  <data name="StringId.FormatRuleMenuItemTop10Percent" xml:space="preserve">
+    <value>Top 10 %</value>
+  </data>
+  <data name="StringId.FormatRuleMenuItemBottom10Items" xml:space="preserve">
+    <value>Bottom 10 Items</value>
+  </data>
+  <data name="StringId.FormatRuleMenuItemBottom10Percent" xml:space="preserve">
+    <value>Bottom 10 %</value>
+  </data>
+  <data name="StringId.FormatRuleMenuItemAboveAverage" xml:space="preserve">
+    <value>Above Average</value>
+  </data>
+  <data name="StringId.FormatRuleMenuItemBelowAverage" xml:space="preserve">
+    <value>Below Average</value>
+  </data>
+  <data name="StringId.FormatRuleTopText" xml:space="preserve">
+    <value>Format cells that rank in the TOP</value>
+  </data>
+  <data name="StringId.FormatRuleBottomText" xml:space="preserve">
+    <value>Format cells that rank in the BOTTOM</value>
+  </data>
+  <data name="StringId.FormatRuleAboveAverageText" xml:space="preserve">
+    <value>Format cells that are ABOVE AVERAGE</value>
+  </data>
+  <data name="StringId.FormatRuleBelowAverageText" xml:space="preserve">
+    <value>Format cells that are BELOW AVERAGE</value>
+  </data>
+  <data name="StringId.FormatRuleMenuItemGreaterThan" xml:space="preserve">
+    <value>Greater Than</value>
+  </data>
+  <data name="StringId.FormatRuleMenuItemLessThan" xml:space="preserve">
+    <value>Less Than</value>
+  </data>
+  <data name="StringId.FormatRuleMenuItemBetween" xml:space="preserve">
+    <value>Between</value>
+  </data>
+  <data name="StringId.FormatRuleMenuItemEqualTo" xml:space="preserve">
+    <value>Equal To</value>
+  </data>
+  <data name="StringId.FormatRuleMenuItemTextThatContains" xml:space="preserve">
+    <value>Text that Contains</value>
+  </data>
+  <data name="StringId.FormatRuleMenuItemCustomCondition" xml:space="preserve">
+    <value>Custom Condition</value>
+  </data>
+  <data name="StringId.FormatRuleGreaterThanText" xml:space="preserve">
+    <value>Format cells that are GREATER THAN</value>
+  </data>
+  <data name="StringId.FormatRuleLessThanText" xml:space="preserve">
+    <value>Format cells that are LESS THAN</value>
+  </data>
+  <data name="StringId.FormatRuleBetweenText" xml:space="preserve">
+    <value>Format cells that are BETWEEN</value>
+  </data>
+  <data name="StringId.FormatRuleEqualToText" xml:space="preserve">
+    <value>Format cells that are EQUAL TO</value>
+  </data>
+  <data name="StringId.FormatRuleTextThatContainsText" xml:space="preserve">
+    <value>Format cells that contain the text</value>
+  </data>
+  <data name="StringId.FormatRuleCustomConditionText" xml:space="preserve">
+    <value>Format cells that match the following condition</value>
+  </data>
+  <data name="StringId.FormatRuleDataUpdateText" xml:space="preserve">
+    <value>Format cell whose values</value>
+  </data>
+  <data name="StringId.FormatRuleExpressionEmptyEnter" xml:space="preserve">
+    <value>&lt;enter an expression&gt;</value>
+  </data>
+  <data name="StringId.FormatRuleMenuItemDateOccurring" xml:space="preserve">
+    <value>A Date Occurring</value>
+  </data>
+  <data name="StringId.FormatRuleDateOccurring" xml:space="preserve">
+    <value>Format cells that contain a date matching these conditions</value>
+  </data>
+  <data name="StringId.FormatPredefinedAppearanceRedFillRedText" xml:space="preserve">
+    <value>Red Fill with Red Text</value>
+  </data>
+  <data name="StringId.FormatPredefinedAppearanceYellowFillYellowText" xml:space="preserve">
+    <value>Yellow Fill with Yellow Text</value>
+  </data>
+  <data name="StringId.FormatPredefinedAppearanceGreenFillGreenText" xml:space="preserve">
+    <value>Green Fill with Green Text</value>
+  </data>
+  <data name="StringId.FormatPredefinedAppearanceRedFill" xml:space="preserve">
+    <value>Red Fill</value>
+  </data>
+  <data name="StringId.FormatPredefinedAppearanceRedText" xml:space="preserve">
+    <value>Red Text</value>
+  </data>
+  <data name="StringId.FormatPredefinedAppearanceGreenFill" xml:space="preserve">
+    <value>Green Fill</value>
+  </data>
+  <data name="StringId.FormatPredefinedAppearanceGreenText" xml:space="preserve">
+    <value>Green Text</value>
+  </data>
+  <data name="StringId.FormatPredefinedAppearanceBoldText" xml:space="preserve">
+    <value>Bold Text</value>
+  </data>
+  <data name="StringId.FormatPredefinedAppearanceItalicText" xml:space="preserve">
+    <value>Italic Text</value>
+  </data>
+  <data name="StringId.FormatPredefinedAppearanceStrikeoutText" xml:space="preserve">
+    <value>Strikeout Text</value>
+  </data>
+  <data name="StringId.FormatPredefinedAppearanceRedBoldText" xml:space="preserve">
+    <value>Red Bold Text</value>
+  </data>
+  <data name="StringId.FormatPredefinedAppearanceGreenBoldText" xml:space="preserve">
+    <value>Green Bold Text</value>
+  </data>
+  <data name="StringId.SearchForColumn" xml:space="preserve">
+    <value>Search for a column...</value>
+  </data>
+  <data name="StringId.SearchForField" xml:space="preserve">
+    <value>Search for a field...</value>
+  </data>
+  <data name="StringId.ManageRuleCaption" xml:space="preserve">
+    <value>Conditional Formatting Rules Manager</value>
+  </data>
+  <data name="StringId.ManageRuleShowFormattingRules" xml:space="preserve">
+    <value>Show rules for:</value>
+  </data>
+  <data name="StringId.ManageRuleUp" xml:space="preserve">
+    <value>Up</value>
+  </data>
+  <data name="StringId.ManageRuleDown" xml:space="preserve">
+    <value>Down</value>
+  </data>
+  <data name="StringId.ManageRuleNewRule" xml:space="preserve">
+    <value>New Rule...</value>
+  </data>
+  <data name="StringId.ManageRuleEditRule" xml:space="preserve">
+    <value>Edit Rule...</value>
+  </data>
+  <data name="StringId.ManageRuleDeleteRule" xml:space="preserve">
+    <value>Delete Rule</value>
+  </data>
+  <data name="StringId.ManageRuleGridCaptionRule" xml:space="preserve">
+    <value>Rule</value>
+  </data>
+  <data name="StringId.ManageRuleGridCaptionFormat" xml:space="preserve">
+    <value>Format</value>
+  </data>
+  <data name="StringId.ManageRuleGridCaptionApplyToTheRow" xml:space="preserve">
+    <value>Apply to the row</value>
+  </data>
+  <data name="StringId.ManageRuleGridCaptionColumn" xml:space="preserve">
+    <value>Column</value>
+  </data>
+  <data name="StringId.ManageRuleGridCaptionStopIfTrue" xml:space="preserve">
+    <value>Stop If True</value>
+  </data>
+  <data name="StringId.ManageRuleGridCaptionColumnApplyTo" xml:space="preserve">
+    <value>Column Apply To</value>
+  </data>
+  <data name="StringId.ManageRuleAllColumns" xml:space="preserve">
+    <value>(All)</value>
+  </data>
+  <data name="StringId.NewFormattingRule" xml:space="preserve">
+    <value>New Formatting Rule</value>
+  </data>
+  <data name="StringId.EditFormattingRule" xml:space="preserve">
+    <value>Edit Formatting Rule</value>
+  </data>
+  <data name="StringId.NewEditFormattingRuleSelectARuleType" xml:space="preserve">
+    <value>Select a Rule Type:</value>
+  </data>
+  <data name="StringId.NewEditFormattingRuleEditTheRuleDescription" xml:space="preserve">
+    <value>Edit the Rule Description:</value>
+  </data>
+  <data name="StringId.NewEditFormattingRuleFormatAllCellsBasedOnTheirValues" xml:space="preserve">
+    <value>Format all cells based on their values</value>
+  </data>
+  <data name="StringId.NewEditFormattingRuleFormatOnlyCellsThatContain" xml:space="preserve">
+    <value>Format only cells that contain</value>
+  </data>
+  <data name="StringId.NewEditFormattingRuleFormatOnlyTopOrBottomRankedValues" xml:space="preserve">
+    <value>Format only top or bottom ranked values</value>
+  </data>
+  <data name="StringId.NewEditFormattingRuleFormatOnlyValuesThatAreAboveOrBelowAverage" xml:space="preserve">
+    <value>Format only values that are above or below average</value>
+  </data>
+  <data name="StringId.NewEditFormattingRuleFormatOnlyUniqueOrDuplicateValues" xml:space="preserve">
+    <value>Format only unique or duplicate values</value>
+  </data>
+  <data name="StringId.NewEditFormattingRuleFormatOnlyChangingValues" xml:space="preserve">
+    <value>Format only changing values</value>
+  </data>
+  <data name="StringId.NewEditFormattingRuleUseAFormulaToDetermineWhichCellsToFormat" xml:space="preserve">
+    <value>Use a formula to determine which cells to format</value>
+  </data>
+  <data name="StringId.ManageRuleComplexRuleBaseFormatStyle" xml:space="preserve">
+    <value>Format Style:</value>
+  </data>
+  <data name="StringId.ManageRuleColorScale2" xml:space="preserve">
+    <value>2-Color Scale</value>
+  </data>
+  <data name="StringId.ManageRuleColorScale3" xml:space="preserve">
+    <value>3-Color Scale</value>
+  </data>
+  <data name="StringId.ManageRuleDataBar" xml:space="preserve">
+    <value>Data Bar</value>
+  </data>
+  <data name="StringId.ManageRuleIconSets" xml:space="preserve">
+    <value>Icon Sets</value>
+  </data>
+  <data name="StringId.ManageRuleCommonMinimum" xml:space="preserve">
+    <value>Minimum</value>
+  </data>
+  <data name="StringId.ManageRuleCommonMaximum" xml:space="preserve">
+    <value>Maximum</value>
+  </data>
+  <data name="StringId.ManageRuleCommonType" xml:space="preserve">
+    <value>Type:</value>
+  </data>
+  <data name="StringId.ManageRuleCommonAutomatic" xml:space="preserve">
+    <value>Automatic</value>
+  </data>
+  <data name="StringId.ManageRuleCommonPercent" xml:space="preserve">
+    <value>Percent</value>
+  </data>
+  <data name="StringId.ManageRuleCommonNumber" xml:space="preserve">
+    <value>Number</value>
+  </data>
+  <data name="StringId.ManageRuleCommonValue" xml:space="preserve">
+    <value>Value:</value>
+  </data>
+  <data name="StringId.ManageRuleCommonColor" xml:space="preserve">
+    <value>Color:</value>
+  </data>
+  <data name="StringId.ManageRuleCommonPreview" xml:space="preserve">
+    <value>Preview:</value>
+  </data>
+  <data name="StringId.ManageRuleNoFormatSet" xml:space="preserve">
+    <value>No Format Set</value>
+  </data>
+  <data name="StringId.ManageRuleColorScaleMidpoint" xml:space="preserve">
+    <value>Midpoint</value>
+  </data>
+  <data name="StringId.ManageRuleDataBarBarAppearance" xml:space="preserve">
+    <value>Bar Appearance:</value>
+  </data>
+  <data name="StringId.ManageRuleDataBarFill" xml:space="preserve">
+    <value>Fill:</value>
+  </data>
+  <data name="StringId.ManageRuleDataBarBorder" xml:space="preserve">
+    <value>Border:</value>
+  </data>
+  <data name="StringId.ManageRuleDataBarDrawAxis" xml:space="preserve">
+    <value>Draw Axis</value>
+  </data>
+  <data name="StringId.ManageRuleDataBarUseNegativeBar" xml:space="preserve">
+    <value>Use Negative Bar</value>
+  </data>
+  <data name="StringId.ManageRuleDataBarAxisColor" xml:space="preserve">
+    <value>Axis Color:</value>
+  </data>
+  <data name="StringId.ManageRuleDataBarBarDirection" xml:space="preserve">
+    <value>Bar Direction</value>
+  </data>
+  <data name="StringId.ManageRuleDataBarSolidFill" xml:space="preserve">
+    <value>Solid Fill</value>
+  </data>
+  <data name="StringId.ManageRuleDataBarGradientFill" xml:space="preserve">
+    <value>Gradient Fill</value>
+  </data>
+  <data name="StringId.ManageRuleDataBarNoBorder" xml:space="preserve">
+    <value>No Border</value>
+  </data>
+  <data name="StringId.ManageRuleDataBarSolidBorder" xml:space="preserve">
+    <value>Solid Border</value>
+  </data>
+  <data name="StringId.ManageRuleDataBarContext" xml:space="preserve">
+    <value>Context</value>
+  </data>
+  <data name="StringId.ManageRuleDataBarLTR" xml:space="preserve">
+    <value>Left-to-Right</value>
+  </data>
+  <data name="StringId.ManageRuleDataBarRTL" xml:space="preserve">
+    <value>Right-to-Left</value>
+  </data>
+  <data name="StringId.ManageRuleIconSetsDisplayEachIconAccordingToTheseRules" xml:space="preserve">
+    <value>Display each icon according to these rules:</value>
+  </data>
+  <data name="StringId.ManageRuleIconSetsReverseIconOrder" xml:space="preserve">
+    <value>Reverse Icon Order</value>
+  </data>
+  <data name="StringId.ManageRuleIconSetsWhen" xml:space="preserve">
+    <value>when</value>
+  </data>
+  <data name="StringId.ManageRuleIconSetsValueIs" xml:space="preserve">
+    <value>value is</value>
+  </data>
+  <data name="StringId.ManageRuleSimpleRuleBaseFormat" xml:space="preserve">
+    <value>Format...</value>
+  </data>
+  <data name="StringId.ManageRuleAverageFormatValuesThatAre" xml:space="preserve">
+    <value>Format values that are:</value>
+  </data>
+  <data name="StringId.ManageRuleAverageTheAverageForTheSelectedRange" xml:space="preserve">
+    <value>the average of column values</value>
+  </data>
+  <data name="StringId.ManageRuleAverageAbove" xml:space="preserve">
+    <value>Above</value>
+  </data>
+  <data name="StringId.ManageRuleAverageBelow" xml:space="preserve">
+    <value>Below</value>
+  </data>
+  <data name="StringId.ManageRuleAverageEqualOrAbove" xml:space="preserve">
+    <value>Equal Or Above</value>
+  </data>
+  <data name="StringId.ManageRuleAverageEqualOrBelow" xml:space="preserve">
+    <value>Equal Or Below</value>
+  </data>
+  <data name="StringId.ManageRuleFormulaFormatValuesWhereThisFormulaIsTrue" xml:space="preserve">
+    <value>Format values where this formula is true:</value>
+  </data>
+  <data name="StringId.ManageRuleRankedValuesFormatValuesThatRankInThe" xml:space="preserve">
+    <value>Format values that rank in the:</value>
+  </data>
+  <data name="StringId.ManageRuleRankedValuesOfTheColumnsCellValues" xml:space="preserve">
+    <value>% of column values</value>
+  </data>
+  <data name="StringId.ManageRuleRankedValuesTop" xml:space="preserve">
+    <value>Top</value>
+  </data>
+  <data name="StringId.ManageRuleRankedValuesBottom" xml:space="preserve">
+    <value>Bottom</value>
+  </data>
+  <data name="StringId.ManageRuleThatContainFormatOnlyCellsWith" xml:space="preserve">
+    <value>Format only cells with:</value>
+  </data>
+  <data name="StringId.ManageRuleThatContainCellValue" xml:space="preserve">
+    <value>Cell Value</value>
+  </data>
+  <data name="StringId.ManageRuleThatContainDatesOccurring" xml:space="preserve">
+    <value>Dates Occurring</value>
+  </data>
+  <data name="StringId.ManageRuleThatContainSpecificText" xml:space="preserve">
+    <value>Specific Text</value>
+  </data>
+  <data name="StringId.ManageRuleThatContainBlanks" xml:space="preserve">
+    <value>Blanks</value>
+  </data>
+  <data name="StringId.ManageRuleThatContainNoBlanks" xml:space="preserve">
+    <value>No Blanks</value>
+  </data>
+  <data name="StringId.ManageRuleThatContainErrors" xml:space="preserve">
+    <value>Errors</value>
+  </data>
+  <data name="StringId.ManageRuleThatContainNoErrors" xml:space="preserve">
+    <value>No Errors</value>
+  </data>
+  <data name="StringId.ManageRuleCellValueBetween" xml:space="preserve">
+    <value>Between</value>
+  </data>
+  <data name="StringId.ManageRuleCellValueNotBetween" xml:space="preserve">
+    <value>Not Between</value>
+  </data>
+  <data name="StringId.ManageRuleCellValueEqualTo" xml:space="preserve">
+    <value>Equal To</value>
+  </data>
+  <data name="StringId.ManageRuleCellValueNotEqualTo" xml:space="preserve">
+    <value>Not Equal To</value>
+  </data>
+  <data name="StringId.ManageRuleCellValueGreaterThan" xml:space="preserve">
+    <value>Greater Than</value>
+  </data>
+  <data name="StringId.ManageRuleCellValueLessThan" xml:space="preserve">
+    <value>Less Than</value>
+  </data>
+  <data name="StringId.ManageRuleCellValueGreaterThanOrEqualTo" xml:space="preserve">
+    <value>Greater Than Or Equal To</value>
+  </data>
+  <data name="StringId.ManageRuleCellValueLessThanOrEqualTo" xml:space="preserve">
+    <value>Less Than Or Equal To</value>
+  </data>
+  <data name="StringId.ManageRuleDatesOccurringYesterday" xml:space="preserve">
+    <value>Yesterday</value>
+  </data>
+  <data name="StringId.ManageRuleDatesOccurringToday" xml:space="preserve">
+    <value>Today</value>
+  </data>
+  <data name="StringId.ManageRuleDatesOccurringTomorrow" xml:space="preserve">
+    <value>Tomorrow</value>
+  </data>
+  <data name="StringId.ManageRuleDatesOccurringLastWeek" xml:space="preserve">
+    <value>Last Week</value>
+  </data>
+  <data name="StringId.ManageRuleDatesOccurringThisWeek" xml:space="preserve">
+    <value>This Week</value>
+  </data>
+  <data name="StringId.ManageRuleDatesOccurringNextWeek" xml:space="preserve">
+    <value>Next Week</value>
+  </data>
+  <data name="StringId.ManageRuleDatesOccurringMonthAgo1" xml:space="preserve">
+    <value>Last Month</value>
+  </data>
+  <data name="StringId.ManageRuleDatesOccurringThisMonth" xml:space="preserve">
+    <value>This Month</value>
+  </data>
+  <data name="StringId.ManageRuleDatesOccurringMonthAfter1" xml:space="preserve">
+    <value>Next Month</value>
+  </data>
+  <data name="StringId.ManageRuleDatesOccurringEarlierThisWeek" xml:space="preserve">
+    <value>This week, prior to yesterday</value>
+  </data>
+  <data name="StringId.ManageRuleDatesOccurringEarlierThisMonth" xml:space="preserve">
+    <value>This month, prior to previous week</value>
+  </data>
+  <data name="StringId.ManageRuleDatesOccurringEarlierThisYear" xml:space="preserve">
+    <value>This year, prior to this month</value>
+  </data>
+  <data name="StringId.ManageRuleDatesOccurringMonthAgo2" xml:space="preserve">
+    <value>During the month 2 months ago</value>
+  </data>
+  <data name="StringId.ManageRuleDatesOccurringMonthAgo3" xml:space="preserve">
+    <value>During the month 3 months ago</value>
+  </data>
+  <data name="StringId.ManageRuleDatesOccurringMonthAgo4" xml:space="preserve">
+    <value>During the month 4 months ago</value>
+  </data>
+  <data name="StringId.ManageRuleDatesOccurringMonthAgo5" xml:space="preserve">
+    <value>During the month 5 months ago</value>
+  </data>
+  <data name="StringId.ManageRuleDatesOccurringMonthAgo6" xml:space="preserve">
+    <value>During the month 6 months ago</value>
+  </data>
+  <data name="StringId.ManageRuleDatesOccurringEarlier" xml:space="preserve">
+    <value>Prior to the month 6 months ago</value>
+  </data>
+  <data name="StringId.ManageRuleDatesOccurringPriorThisYear" xml:space="preserve">
+    <value>Prior to this year</value>
+  </data>
+  <data name="StringId.ManageRuleDatesOccurringLaterThisWeek" xml:space="preserve">
+    <value>This week, beyond tomorrow</value>
+  </data>
+  <data name="StringId.ManageRuleDatesOccurringLaterThisMonth" xml:space="preserve">
+    <value>This month, beyond next week</value>
+  </data>
+  <data name="StringId.ManageRuleDatesOccurringLaterThisYear" xml:space="preserve">
+    <value>This year, beyond this month</value>
+  </data>
+  <data name="StringId.ManageRuleDatesOccurringMonthAfter2" xml:space="preserve">
+    <value>During the month in 2 months time</value>
+  </data>
+  <data name="StringId.ManageRuleDatesOccurringBeyond" xml:space="preserve">
+    <value>Following the month in 2 months time</value>
+  </data>
+  <data name="StringId.ManageRuleDatesOccurringBeyondThisYear" xml:space="preserve">
+    <value>Following this year</value>
+  </data>
+  <data name="StringId.ManageRuleSpecificTextContaining" xml:space="preserve">
+    <value>Containing</value>
+  </data>
+  <data name="StringId.ManageRuleSpecificTextNotContaining" xml:space="preserve">
+    <value>Not Containing</value>
+  </data>
+  <data name="StringId.ManageRuleSpecificTextBeginningWith" xml:space="preserve">
+    <value>Beginning With</value>
+  </data>
+  <data name="StringId.ManageRuleSpecificTextEndingWith" xml:space="preserve">
+    <value>Ending With</value>
+  </data>
+  <data name="StringId.ManageRuleUniqueOrDuplicateFormatAll" xml:space="preserve">
+    <value>Format all:</value>
+  </data>
+  <data name="StringId.ManageRuleUniqueOrDuplicateValuesInTheSelectedRange" xml:space="preserve">
+    <value>column values</value>
+  </data>
+  <data name="StringId.ManageRuleUniqueOrDuplicateUnique" xml:space="preserve">
+    <value>Unique</value>
+  </data>
+  <data name="StringId.ManageRuleUniqueOrDuplicateDuplicate" xml:space="preserve">
+    <value>Duplicate</value>
+  </data>
+  <data name="StringId.ManageRuleDataUpdate" xml:space="preserve">
+    <value>Data Update</value>
+  </data>
+  <data name="StringId.ManageRuleColorScale" xml:space="preserve">
+    <value>Graded Color Scale</value>
+  </data>
+  <data name="StringId.ManageRuleIconSet" xml:space="preserve">
+    <value>Icon Set</value>
+  </data>
+  <data name="StringId.ManageRuleFormula" xml:space="preserve">
+    <value>Formula</value>
+  </data>
+  <data name="StringId.ManageRuleAboveAverage" xml:space="preserve">
+    <value>Above Average</value>
+  </data>
+  <data name="StringId.ManageRuleBelowAverage" xml:space="preserve">
+    <value>Below Average</value>
+  </data>
+  <data name="StringId.ManageRuleEqualOrAboveAverage" xml:space="preserve">
+    <value>Equal to or Above Average</value>
+  </data>
+  <data name="StringId.ManageRuleEqualOrBelowAverage" xml:space="preserve">
+    <value>Equal to or Below Average</value>
+  </data>
+  <data name="StringId.ManageRuleFormatCellsCaption" xml:space="preserve">
+    <value>Format Cells</value>
+  </data>
+  <data name="StringId.ManageRuleFormatCellsFont" xml:space="preserve">
+    <value>Font</value>
+  </data>
+  <data name="StringId.ManageRuleFormatCellsFill" xml:space="preserve">
+    <value>Fill</value>
+  </data>
+  <data name="StringId.ManageRuleFormatCellsPredefinedAppearance" xml:space="preserve">
+    <value>Predefined Appearance</value>
+  </data>
+  <data name="StringId.ManageRuleFormatCellsFontStyle" xml:space="preserve">
+    <value>Font style</value>
+  </data>
+  <data name="StringId.ManageRuleFormatCellsFontColor" xml:space="preserve">
+    <value>Font color</value>
+  </data>
+  <data name="StringId.ManageRuleFormatCellsEffects" xml:space="preserve">
+    <value>Effects:</value>
+  </data>
+  <data name="StringId.ManageRuleFormatCellsUnderline" xml:space="preserve">
+    <value>Underline</value>
+  </data>
+  <data name="StringId.ManageRuleFormatCellsStrikethrough" xml:space="preserve">
+    <value>Strikethrough</value>
+  </data>
+  <data name="StringId.ManageRuleFormatCellsClear" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="StringId.ManageRuleFormatCellsBackgroundColor" xml:space="preserve">
+    <value>Background Color:</value>
+  </data>
+  <data name="StringId.ManageRuleFormatCellsNone" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="StringId.ManageRuleFormatCellsRegular" xml:space="preserve">
+    <value>Regular</value>
+  </data>
+  <data name="StringId.ManageRuleFormatCellsBold" xml:space="preserve">
+    <value>Bold</value>
+  </data>
+  <data name="StringId.ManageRuleFormatCellsItalic" xml:space="preserve">
+    <value>Italic</value>
+  </data>
+  <data name="StringId.ManageRuleValuesFor" xml:space="preserve">
+    <value>values for</value>
+  </data>
+  <data name="StringId.ManageRuleMillisecond" xml:space="preserve">
+    <value>ms</value>
+  </data>
+  <data name="StringId.TakePictureDialogTitle" xml:space="preserve">
+    <value>Take Picture</value>
+  </data>
+  <data name="StringId.TakePictureMenuItem" xml:space="preserve">
+    <value>Take Picture from Camera</value>
+  </data>
+  <data name="StringId.TakePictureDialogCapture" xml:space="preserve">
+    <value>Capture</value>
+  </data>
+  <data name="StringId.TakePictureDialogTryAgain" xml:space="preserve">
+    <value>Try Again</value>
+  </data>
+  <data name="StringId.TakePictureDialogSave" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="StringId.CameraSettingsActiveDevice" xml:space="preserve">
+    <value>Active device:</value>
+  </data>
+  <data name="StringId.CameraSettingsBrightness" xml:space="preserve">
+    <value>Brightness:</value>
+  </data>
+  <data name="StringId.CameraSettingsContrast" xml:space="preserve">
+    <value>Contrast:</value>
+  </data>
+  <data name="StringId.CameraSettingsDesaturate" xml:space="preserve">
+    <value>Desaturate:</value>
+  </data>
+  <data name="StringId.CameraSettingsResolution" xml:space="preserve">
+    <value>Resolution:</value>
+  </data>
+  <data name="StringId.CameraSettingsDefaults" xml:space="preserve">
+    <value>Reset to defaults</value>
+  </data>
+  <data name="StringId.CameraSettingsCaption" xml:space="preserve">
+    <value>Camera Settings</value>
+  </data>
+  <data name="StringId.CameraDeviceNotFound" xml:space="preserve">
+    <value>No webcam found. Check the webcam connection or the device settings.</value>
+  </data>
+  <data name="StringId.CameraDeviceIsBusy" xml:space="preserve">
+    <value>Cannot use the device, as it is already in use in another application.</value>
+  </data>
+  <data name="StringId.CameraDesignTimeInfo" xml:space="preserve">
+    <value>Rendering is disabled at design time.</value>
+  </data>
+  <data name="StringId.ColorPickPopupThemeColorsGroupCaption" xml:space="preserve">
+    <value>Theme Colors</value>
+  </data>
+  <data name="StringId.ColorPickPopupStandardColorsGroupCaption" xml:space="preserve">
+    <value>Standard Colors</value>
+  </data>
+  <data name="StringId.ColorPickPopupRecentColorsGroupCaption" xml:space="preserve">
+    <value>Recent Colors</value>
+  </data>
+  <data name="StringId.ColorPickPopupMoreColorsItemCaption" xml:space="preserve">
+    <value>More Colors...</value>
+  </data>
+  <data name="StringId.ColorPickHueAxisName" xml:space="preserve">
+    <value>Hue</value>
+  </data>
+  <data name="StringId.ColorPickSaturationAxisName" xml:space="preserve">
+    <value>Saturation</value>
+  </data>
+  <data name="StringId.ColorPickBrightnessAxisName" xml:space="preserve">
+    <value>Brightness</value>
+  </data>
+  <data name="StringId.ColorPickLuminanceAxisName" xml:space="preserve">
+    <value>Luminance</value>
+  </data>
+  <data name="StringId.ColorPickOpacityAxisName" xml:space="preserve">
+    <value>Opacity</value>
+  </data>
+  <data name="StringId.ColorPickBlueValidationMsg" xml:space="preserve">
+    <value>Blue component should be in range 0..255</value>
+  </data>
+  <data name="StringId.ColorPickGreenValidationMsg" xml:space="preserve">
+    <value>Green component should be in range 0..255</value>
+  </data>
+  <data name="StringId.ColorPickRedValidationMsg" xml:space="preserve">
+    <value>Red component should be in range 0..255</value>
+  </data>
+  <data name="StringId.ColorPickBrightValidationMsg" xml:space="preserve">
+    <value>Brightness component should be in range 0..100</value>
+  </data>
+  <data name="StringId.ColorPickColorHexValidationMsg" xml:space="preserve">
+    <value>Invalid hexadecimal value</value>
+  </data>
+  <data name="StringId.ColorPickHueValidationMsg" xml:space="preserve">
+    <value>Hue component should be in range 0..359</value>
+  </data>
+  <data name="StringId.ColorPickOpacityValidationMsg" xml:space="preserve">
+    <value>Opacity component should be in range 0..255</value>
+  </data>
+  <data name="StringId.ColorPickSaturationValidationMsg" xml:space="preserve">
+    <value>Saturation component should be in range 0..100</value>
+  </data>
+  <data name="StringId.ColorTabWebSafeColors" xml:space="preserve">
+    <value>Web-Safe</value>
+  </data>
+  <data name="StringId.FormatRuleMenuItemManageRules" xml:space="preserve">
+    <value>Manage Rules...</value>
+  </data>
+  <data name="StringId.OfficeNavigationOptions" xml:space="preserve">
+    <value>Navigation Options</value>
+  </data>
+  <data name="StringId.SearchControlNullValuePrompt" xml:space="preserve">
+    <value>Enter text to search...</value>
+  </data>
+  <data name="StringId.SearchControlSearchByMemberAny" xml:space="preserve">
+    <value>Any</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionLocalDateTimeTwoMonthsAway" xml:space="preserve">
+    <value>Two months away</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionLocalDateTimeTwoYearsAway" xml:space="preserve">
+    <value>Two years away</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionLocalDateTimeLastMonth" xml:space="preserve">
+    <value>Last month</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionLocalDateTimeLastYear" xml:space="preserve">
+    <value>Last year</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionLocalDateTimeYearBeforeToday" xml:space="preserve">
+    <value>One year ago</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionIsNextMonth" xml:space="preserve">
+    <value>Is next month</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionIsNextYear" xml:space="preserve">
+    <value>Is next year</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionIsLastMonth" xml:space="preserve">
+    <value>Is last month</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionIsLastYear" xml:space="preserve">
+    <value>Is last year</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionIsYearToDate" xml:space="preserve">
+    <value>Is the year-to-date period</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionIsJanuary" xml:space="preserve">
+    <value>Is January</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionIsFebruary" xml:space="preserve">
+    <value>Is February</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionIsMarch" xml:space="preserve">
+    <value>Is March</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionIsApril" xml:space="preserve">
+    <value>Is April</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionIsMay" xml:space="preserve">
+    <value>Is May</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionIsJune" xml:space="preserve">
+    <value>Is June</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionIsJuly" xml:space="preserve">
+    <value>Is July</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionIsAugust" xml:space="preserve">
+    <value>Is August</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionIsSeptember" xml:space="preserve">
+    <value>Is September</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionIsOctober" xml:space="preserve">
+    <value>Is October</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionIsNovember" xml:space="preserve">
+    <value>Is November</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionIsDecember" xml:space="preserve">
+    <value>Is December</value>
+  </data>
+  <data name="StringId.FilterCriteriaToStringFunctionIsSameDay" xml:space="preserve">
+    <value>Is same day</value>
+  </data>
+  <data name="StringId.NoneItemText" xml:space="preserve">
+    <value>(None)</value>
+  </data>
+  <data name="StringId.ProgressPanelDefaultCaption" xml:space="preserve">
+    <value>Please Wait</value>
+  </data>
+  <data name="StringId.ProgressPanelDefaultDescription" xml:space="preserve">
+    <value>Loading ...</value>
+  </data>
+  <data name="StringId.FormatRuleNoCellIcon" xml:space="preserve">
+    <value>No Cell Icon</value>
+  </data>
+  <data name="StringId.DataUpdateTriggerChanged" xml:space="preserve">
+    <value>Changed</value>
+  </data>
+  <data name="StringId.DataUpdateTriggerIncreased" xml:space="preserve">
+    <value>Increased</value>
+  </data>
+  <data name="StringId.DataUpdateTriggerDecreased" xml:space="preserve">
+    <value>Decreased</value>
+  </data>
+  <data name="StringId.FilterNewEmptyEnter" xml:space="preserve">
+    <value>Enter a value...</value>
+  </data>
+  <data name="StringId.FilterExpressionEmptyText" xml:space="preserve">
+    <value>Edit Expression...</value>
+  </data>
+  <data name="StringId.FilterEmptyField" xml:space="preserve">
+    <value>Field name</value>
+  </data>
+  <data name="StringId.FilterNewEmptyParameter" xml:space="preserve">
+    <value>Enter a parameter name...</value>
+  </data>
+  <data name="StringId.ChartRangeControlClientRangeValidationMsg" xml:space="preserve">
+    <value>Max should be greater than or equal to min</value>
+  </data>
+  <data name="StringId.AllRightsReserved" xml:space="preserve">
+    <value>All Rights Reserved.</value>
+  </data>
+  <data name="StringId.Version" xml:space="preserve">
+    <value>Version</value>
+  </data>
+  <data name="StringId.ProgressCopyingData" xml:space="preserve">
+    <value>Copying</value>
+  </data>
+  <data name="StringId.ProgressPastingData" xml:space="preserve">
+    <value>Pasting</value>
+  </data>
+  <data name="StringId.ManageRuleGridCaptionApplyToTheRecord" xml:space="preserve">
+    <value>Apply to the record</value>
+  </data>
+  <data name="StringId.ManageRuleGridCaptionRow" xml:space="preserve">
+    <value>Row</value>
+  </data>
+  <data name="StringId.ManageRuleGridCaptionRowApplyTo" xml:space="preserve">
+    <value>Row Apply To</value>
+  </data>
+  <data name="StringId.ManageRuleRankedValuesOfTheRowCellValues" xml:space="preserve">
+    <value>% of row values</value>
+  </data>
+  <data name="StringId.ManageRuleUniqueOrDuplicateValuesInTheSelectedRangeRow" xml:space="preserve">
+    <value>row values</value>
+  </data>
+  <data name="StringId.ManageRuleAverageTheAverageForTheSelectedRangeRow" xml:space="preserve">
+    <value>the average of row values</value>
+  </data>
+  <data name="StringId.FormatRuleApplyFormatPropertyRecord" xml:space="preserve">
+    <value>Apply formatting to an entire record</value>
+  </data>
+  <data name="StringId.FormatRuleForThisRowWith" xml:space="preserve">
+    <value>for this row with</value>
+  </data>
+  <data name="StringId.ManageRuleFormatCellsFontSizeDelta" xml:space="preserve">
+    <value>Font Size Delta:</value>
+  </data>
+  <data name="StringId.DXCollectionEditorAddItemButtonText" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="StringId.DXCollectionEditorCancelButtonText" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="StringId.DXCollectionEditorItemPropertiesGroupCaption" xml:space="preserve">
+    <value>Properties</value>
+  </data>
+  <data name="StringId.DXCollectionEditorItemsListGroupCaptionStringFormat" xml:space="preserve">
+    <value>Items({0})</value>
+  </data>
+  <data name="StringId.DXCollectionEditorOKButtonText" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="StringId.DXCollectionEditorPreviewGroupCaption" xml:space="preserve">
+    <value>Preview</value>
+  </data>
+  <data name="StringId.DXCollectionEditorRemoveItemButtonText" xml:space="preserve">
+    <value>Remove</value>
+  </data>
+  <data name="StringId.DXCollectionEditorSomeItemsTypeAddItemButtonStringFormat" xml:space="preserve">
+    <value>Add {0}</value>
+  </data>
+  <data name="StringId.SyntaxEditFindPanelFindCaption" xml:space="preserve">
+    <value>Find...</value>
+  </data>
+  <data name="StringId.SyntaxEditFindPanelReplaceCaption" xml:space="preserve">
+    <value>Replace...</value>
+  </data>
+  <data name="StringId.SyntaxEditClearButtonCaption" xml:space="preserve">
+    <value>Clear search</value>
+  </data>
+  <data name="StringId.SyntaxEditShowDropdownButtonCaption" xml:space="preserve">
+    <value>Show dropdown</value>
+  </data>
+  <data name="StringId.SyntaxEditReplaceButtonTooltip" xml:space="preserve">
+    <value>Replace</value>
+  </data>
+  <data name="StringId.SyntaxEditReplaceAllButtonTooltip" xml:space="preserve">
+    <value>Replace All</value>
+  </data>
+  <data name="StringId.SyntaxEditFindPanelFindNextButtonTooltip" xml:space="preserve">
+    <value>Find Next</value>
+  </data>
+  <data name="StringId.SyntaxEditFindPanelFindPreviousButtonTooltip" xml:space="preserve">
+    <value>Find Previous</value>
+  </data>
+  <data name="StringId.SyntaxEditFindPanelCloseButtonTooltip" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="StringId.SyntaxEditFindPanelExpandButtonTooltip" xml:space="preserve">
+    <value>Toggle to switch between find and replace modes</value>
+  </data>
+</root>
