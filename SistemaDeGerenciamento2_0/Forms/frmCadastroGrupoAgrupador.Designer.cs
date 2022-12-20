@@ -28,19 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCadastroGrupoAgrupador));
+            this.components = new System.ComponentModel.Container();
             DevExpress.XtraSplashScreen.SplashScreenManager splashScreenManager1 = new DevExpress.XtraSplashScreen.SplashScreenManager(this, null, true, true);
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCadastroGrupoAgrupador));
+            DevExpress.DataAccess.Sql.CustomSqlQuery customSqlQuery2 = new DevExpress.DataAccess.Sql.CustomSqlQuery();
             this.btnAdicionarSubGrupo = new DevExpress.XtraEditors.SimpleButton();
             this.btnAdicionarGrupo = new DevExpress.XtraEditors.SimpleButton();
             this.btnFechar = new DevExpress.XtraEditors.SimpleButton();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.gdvGruposAgrupadores = new DevExpress.XtraGrid.GridControl();
-            this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
+            this.colgp_nome_grupo = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colgp_nome_agrupador = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gdvGruposAgrupadores)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // splashScreenManager1
+            // 
+            splashScreenManager1.ClosingDelay = 500;
             // 
             // btnAdicionarSubGrupo
             // 
@@ -142,22 +151,61 @@
             // 
             // gdvGruposAgrupadores
             // 
-            this.gdvGruposAgrupadores.Location = new System.Drawing.Point(30, 114);
-            this.gdvGruposAgrupadores.MainView = this.gridView2;
+            this.gdvGruposAgrupadores.DataMember = "Query";
+            this.gdvGruposAgrupadores.DataSource = this.sqlDataSource1;
+            this.gdvGruposAgrupadores.Location = new System.Drawing.Point(30, 119);
+            this.gdvGruposAgrupadores.MainView = this.gridView1;
             this.gdvGruposAgrupadores.Name = "gdvGruposAgrupadores";
             this.gdvGruposAgrupadores.Size = new System.Drawing.Size(527, 217);
-            this.gdvGruposAgrupadores.TabIndex = 82;
+            this.gdvGruposAgrupadores.TabIndex = 295;
             this.gdvGruposAgrupadores.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridView2});
+            this.gridView1});
             // 
-            // gridView2
+            // gridView1
             // 
-            this.gridView2.GridControl = this.gdvGruposAgrupadores;
-            this.gridView2.Name = "gridView2";
+            this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colgp_nome_grupo,
+            this.colgp_nome_agrupador});
+            this.gridView1.GridControl = this.gdvGruposAgrupadores;
+            this.gridView1.Name = "gridView1";
+            this.gridView1.OptionsBehavior.Editable = false;
+            this.gridView1.OptionsView.ShowFooter = true;
             // 
-            // splashScreenManager1
+            // sqlDataSource1
             // 
-            splashScreenManager1.ClosingDelay = 500;
+            this.sqlDataSource1.ConnectionName = "SistemaDeGerenciamento2_0.Properties.Settings.SistemaDeGerenciamento2_0Connection" +
+    "String";
+            this.sqlDataSource1.Name = "sqlDataSource1";
+            customSqlQuery2.Name = "Query";
+            customSqlQuery2.Sql = "select \"tb_grupo\".\"gp_nome_grupo\",\r\n       \"tb_grupo\".\"gp_nome_agrupador\"\r\n  from" +
+    " \"dbo\".\"tb_grupo\" \"tb_grupo\"\r\nwhere \"tb_grupo\".\"gp_nome_grupo\" is not null";
+            this.sqlDataSource1.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
+            customSqlQuery2});
+            this.sqlDataSource1.ResultSchemaSerializable = resources.GetString("sqlDataSource1.ResultSchemaSerializable");
+            // 
+            // colgp_nome_grupo
+            // 
+            this.colgp_nome_grupo.AppearanceCell.Options.UseTextOptions = true;
+            this.colgp_nome_grupo.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.colgp_nome_grupo.AppearanceHeader.Options.UseTextOptions = true;
+            this.colgp_nome_grupo.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.colgp_nome_grupo.Caption = "Grupo";
+            this.colgp_nome_grupo.FieldName = "gp_nome_grupo";
+            this.colgp_nome_grupo.Name = "colgp_nome_grupo";
+            this.colgp_nome_grupo.Visible = true;
+            this.colgp_nome_grupo.VisibleIndex = 0;
+            // 
+            // colgp_nome_agrupador
+            // 
+            this.colgp_nome_agrupador.AppearanceCell.Options.UseTextOptions = true;
+            this.colgp_nome_agrupador.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.colgp_nome_agrupador.AppearanceHeader.Options.UseTextOptions = true;
+            this.colgp_nome_agrupador.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.colgp_nome_agrupador.Caption = "Agrupador";
+            this.colgp_nome_agrupador.FieldName = "gp_nome_agrupador";
+            this.colgp_nome_agrupador.Name = "colgp_nome_agrupador";
+            this.colgp_nome_agrupador.Visible = true;
+            this.colgp_nome_agrupador.VisibleIndex = 1;
             // 
             // frmCadastroGrupoAgrupador
             // 
@@ -175,13 +223,12 @@
             this.Name = "frmCadastroGrupoAgrupador";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "XtraForm1";
-            this.Activated += new System.EventHandler(this.frmCadastroGrupoAgrupador_Activated);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmCadastroGrupoSubGrupo_KeyDown);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.frmCadastroGrupoSubGrupo_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.frmCadastroGrupoSubGrupo_MouseMove);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gdvGruposAgrupadores)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -194,6 +241,9 @@
         private System.Windows.Forms.PictureBox pictureBox6;
         private DevExpress.XtraEditors.LabelControl labelControl3;
         private DevExpress.XtraGrid.GridControl gdvGruposAgrupadores;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridView2;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
+        private DevExpress.DataAccess.Sql.SqlDataSource sqlDataSource1;
+        private DevExpress.XtraGrid.Columns.GridColumn colgp_nome_grupo;
+        private DevExpress.XtraGrid.Columns.GridColumn colgp_nome_agrupador;
     }
 }

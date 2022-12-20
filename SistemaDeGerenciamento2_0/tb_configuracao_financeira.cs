@@ -17,7 +17,7 @@ namespace SistemaDeGerenciamento2_0
         public int id_configuracao_financeira { get; set; }
         public decimal cf_juros_dia { get; set; }
         public decimal cf_multa_porcentagem { get; set; }
-        public decimal cf_multa_fixa { get; set; }
+        public decimal cf_parcela_juros { get; set; }
         public decimal cf_carencia { get; set; }
         public decimal cf_desconto { get; set; }
     }

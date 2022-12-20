@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DevExpress.XtraSplashScreen;
+using System;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -6,6 +7,9 @@ namespace SistemaDeGerenciamento2_0.Forms
 {
     public partial class frmCadastroRegistros : DevExpress.XtraEditors.XtraForm
     {
+        private int X = 0;
+        private int Y = 0;
+
         private string tipoCadastro = string.Empty;
 
         public frmCadastroRegistros(string _tipoCadastro)
@@ -19,9 +23,31 @@ namespace SistemaDeGerenciamento2_0.Forms
             TipoCadastro(tipoCadastro);
         }
 
+        private frmTelaPrincipal frmTelaPrincipal;
+
+        public frmCadastroRegistros(string _tipoCadastro, frmTelaPrincipal _frmTelaPrincipal)
+        {
+            InitializeComponent();
+
+            cmbTipoPessoa.Text = "Pessoa Fisica";
+
+            tipoCadastro = _tipoCadastro;
+
+            frmTelaPrincipal = _frmTelaPrincipal;
+
+            ReloadData();
+        }
+
+        private void ReloadData()
+        {
+            using (var handle = SplashScreenManager.ShowOverlayForm(frmTelaPrincipal))
+            {
+                TipoCadastro(tipoCadastro);
+            }
+        }
+
         private void btnCliente_Click(object sender, EventArgs e)
         {
-            TipoCliente();
             TipoCliente();
         }
 
@@ -132,6 +158,20 @@ namespace SistemaDeGerenciamento2_0.Forms
             tipoCadastro = "Funcionario";
 
             TipoPessoa();
+        }
+
+        private void frmCadastroRegistros_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button != MouseButtons.Left) return;
+            X = this.Left - MousePosition.X;
+            Y = this.Top - MousePosition.Y;
+        }
+
+        private void frmCadastroRegistros_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (e.Button != MouseButtons.Left) return;
+            this.Left = X + MousePosition.X;
+            this.Top = Y + MousePosition.Y;
         }
     }
 }

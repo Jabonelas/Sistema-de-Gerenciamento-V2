@@ -358,6 +358,7 @@
             this.btnIrParaCadastro.Size = new System.Drawing.Size(179, 30);
             this.btnIrParaCadastro.TabIndex = 17;
             this.btnIrParaCadastro.Text = "Ir para Cadastros";
+            this.btnIrParaCadastro.Click += new System.EventHandler(this.btnIrParaCadastro_Click);
             // 
             // btnNovoFuncionario
             // 
@@ -441,6 +442,7 @@
             this.btnIrParaProdutos.Size = new System.Drawing.Size(179, 30);
             this.btnIrParaProdutos.TabIndex = 17;
             this.btnIrParaProdutos.Text = "Ir para Produtos";
+            this.btnIrParaProdutos.Click += new System.EventHandler(this.btnIrParaProdutos_Click);
             // 
             // btnNovoProduto
             // 

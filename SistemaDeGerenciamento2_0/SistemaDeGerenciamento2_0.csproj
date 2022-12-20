@@ -105,17 +105,23 @@
     <Compile Include="Forms\frmAcessoRapido.Designer.cs">
       <DependentUpon>frmAcessoRapido.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\frmCadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmCadastro.Designer.cs">
+      <DependentUpon>frmCadastro.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\frmCadastroUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\frmCadastroUsuario.Designer.cs">
       <DependentUpon>frmCadastroUsuario.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\frmFiltrarProduto.cs">
+    <Compile Include="Forms\frmConfiguracaoFinanceira.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\frmFiltrarProduto.Designer.cs">
-      <DependentUpon>frmFiltrarProduto.cs</DependentUpon>
+    <Compile Include="Forms\frmConfiguracaoFinanceira.Designer.cs">
+      <DependentUpon>frmConfiguracaoFinanceira.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\frmNovoUsuario.cs">
       <SubType>Form</SubType>
@@ -286,11 +292,14 @@
       <DependentUpon>frmAcessoRapido.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmCadastro.resx">
+      <DependentUpon>frmCadastro.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmCadastroUsuario.resx">
       <DependentUpon>frmCadastroUsuario.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frmFiltrarProduto.resx">
-      <DependentUpon>frmFiltrarProduto.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\frmConfiguracaoFinanceira.resx">
+      <DependentUpon>frmConfiguracaoFinanceira.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmNovoUsuario.resx">
       <DependentUpon>frmNovoUsuario.cs</DependentUpon>
@@ -455,6 +464,7 @@
     <None Include="Resources\usuario_100.png" />
     <None Include="Resources\lapis_15.png" />
     <None Include="Resources\lapis_20.png" />
+    <None Include="Resources\configuracao_financeira_20.png" />
     <Content Include="SistemaDeGerenciamento2_0.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>SistemaDeGerenciamento2_0.edmx</DependentUpon>

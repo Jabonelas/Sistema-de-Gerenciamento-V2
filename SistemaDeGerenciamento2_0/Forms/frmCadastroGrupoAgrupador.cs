@@ -12,35 +12,25 @@ namespace SistemaDeGerenciamento2_0.Forms
         private int X = 0;
         private int Y = 0;
 
-
         private frmCadastroProduto frmCadastroProduto;
+
         public frmCadastroGrupoAgrupador(frmCadastroProduto _frmCadastroProduto)
         {
-
             InitializeComponent();
 
             frmCadastroProduto = _frmCadastroProduto;
 
-
             ReloadData();
-        }
 
+            //sqlDataSource1.FillAsync();
+        }
 
         private void ReloadData()
         {
             using (var handle = SplashScreenManager.ShowOverlayForm(frmCadastroProduto))
             {
-
-                PreencherGridView();
+                sqlDataSource1.FillAsync();
             }
-        }
-
-        private List<GrupoClass> ListaGrupoAgrupador = new List<GrupoClass>();
-
-        private class GrupoClass
-        {
-            public string nomeGrupo { get; set; }
-            public string nomeAgrupador { get; set; }
         }
 
         private void btnFechar_Click(object sender, EventArgs e)
@@ -80,32 +70,6 @@ namespace SistemaDeGerenciamento2_0.Forms
             if (e.Button != MouseButtons.Left) return;
             this.Left = X + MousePosition.X;
             this.Top = Y + MousePosition.Y;
-        }
-
-        private void frmCadastroGrupoAgrupador_Activated(object sender, EventArgs e)
-        {
-            PreencherGridView();
-        }
-
-        private void PreencherGridView()
-        {
-            DataTable dt = new DataTable();
-            dt.Columns.Add("Grupo");
-            dt.Columns.Add("Agrupador");
-
-            SistemaDeGerenciamento2_0Entities7 db = new SistemaDeGerenciamento2_0Entities7();
-
-            ListaGrupoAgrupador = db.tb_grupo.Where(x => !string.IsNullOrEmpty(x.gp_nome_grupo))
-                .Select(x => new GrupoClass { nomeGrupo = x.gp_nome_grupo, nomeAgrupador = x.gp_nome_agrupador })
-                .ToList();
-
-            foreach (var item in ListaGrupoAgrupador)
-            {
-                dt.Rows.Add(item.nomeGrupo, item.nomeAgrupador);
-            }
-
-            gdvGruposAgrupadores.DataSource = dt;
-            gdvGruposAgrupadores.Refresh();
         }
     }
 }

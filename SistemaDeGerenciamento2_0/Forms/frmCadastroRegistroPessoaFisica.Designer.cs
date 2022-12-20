@@ -813,7 +813,6 @@
             this.KeyPreview = true;
             this.Name = "frmCadastroRegistroPessoaFisica";
             this.Text = "frmCadastroRegistroPessoaFisica";
-            this.Shown += new System.EventHandler(this.frmCadastroRegistroPessoaFisica_Shown);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmCadastroRegistroPessoaFisica_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit3.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtLimiteCredito.Properties)).EndInit();

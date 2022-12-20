@@ -253,6 +253,16 @@ namespace SistemaDeGerenciamento2_0.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap configuracao_financeira_20 {
+            get {
+                object obj = ResourceManager.GetObject("configuracao_financeira_20", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap configuracao_preta {
             get {
                 object obj = ResourceManager.GetObject("configuracao-preta", resourceCulture);

@@ -133,7 +133,31 @@
   <metadata name="sqlDataSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <data name="customSqlQuery2.Sql" xml:space="preserve">
+    <value>select "tb_produto"."pd_nome",
+       "tb_produto"."pd_codigo",
+       "tb_produto"."pd_codigo_barras",
+       "tb_grupo"."gp_nome_grupo",
+       "tb_produto"."pd_custo",
+       "tb_produto"."pd_margem",
+       "tb_produto"."pd_preco",
+       "tb_estoque"."ep_quantidade",
+"tb_produto"."pd_tipo_unidade",
+       "tb_produto"."pd_estoque_minimo",
+       
+       "tb_estoque"."ep_data_entrada",
+       "tb_nota_fiscal_entrada"."nfe_quantidade"
+  from ((("dbo"."tb_produto" "tb_produto"
+  inner join "dbo"."tb_grupo" "tb_grupo"
+       on ("tb_grupo"."id_grupo" = "tb_produto"."fk_grupo"))
+  inner join "dbo"."tb_estoque" "tb_estoque"
+       on ("tb_estoque"."fk_produto" = "tb_produto"."id_produto"))
+  inner join "dbo"."tb_nota_fiscal_entrada"
+       "tb_nota_fiscal_entrada"
+       on ("tb_nota_fiscal_entrada"."id_nota_fiscal_entrada" = "tb_estoque"."fk_nota_fiscal_entrada"))
+where "tb_estoque"."ep_quantidade" &gt; 0</value>
+  </data>
   <data name="sqlDataSource1.ResultSchemaSerializable" xml:space="preserve">
-    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxWaWV3IE5hbWU9InRiX3Byb2R1dG8iPjxGaWVsZCBOYW1lPSJwZF9ub21lIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9InBkX2NvZGlnbyIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJwZF9jb2RpZ29fYmFycmFzIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9ImdwX25vbWVfZ3J1cG8iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0icGRfdGlwb191bmlkYWRlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9InBkX2N1c3RvIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJwZF9tYXJnZW0iIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9InBkX3ByZWNvIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJlcF9xdWFudGlkYWRlIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJwZF9lc3RvcXVlX21pbmltbyIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iZXBfZGF0YV9lbnRyYWRhIiBUeXBlPSJEYXRlVGltZSIgLz48L1ZpZXc+PC9EYXRhU2V0Pg==</value>
+    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxWaWV3IE5hbWU9IlF1ZXJ5Ij48RmllbGQgTmFtZT0icGRfbm9tZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJwZF9jb2RpZ28iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0icGRfY29kaWdvX2JhcnJhcyIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJncF9ub21lX2dydXBvIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9InBkX2N1c3RvIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJwZF9tYXJnZW0iIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9InBkX3ByZWNvIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJlcF9xdWFudGlkYWRlIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJwZF90aXBvX3VuaWRhZGUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0icGRfZXN0b3F1ZV9taW5pbW8iIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9ImVwX2RhdGFfZW50cmFkYSIgVHlwZT0iRGF0ZVRpbWUiIC8+PEZpZWxkIE5hbWU9Im5mZV9xdWFudGlkYWRlIiBUeXBlPSJEZWNpbWFsIiAvPjwvVmlldz48L0RhdGFTZXQ+</value>
   </data>
 </root>

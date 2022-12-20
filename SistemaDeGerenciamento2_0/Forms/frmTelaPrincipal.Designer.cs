@@ -206,7 +206,7 @@
             this.pnlTelaPrincipal.AutoScroll = true;
             this.pnlTelaPrincipal.Location = new System.Drawing.Point(260, 31);
             this.pnlTelaPrincipal.Name = "pnlTelaPrincipal";
-            this.pnlTelaPrincipal.Size = new System.Drawing.Size(977, 447);
+            this.pnlTelaPrincipal.Size = new System.Drawing.Size(974, 444);
             this.pnlTelaPrincipal.TabIndex = 3;
             // 
             // frmTelaPrincipal
@@ -218,6 +218,7 @@
             this.Controls.Add(this.accordionControl1);
             this.Controls.Add(this.fluentDesignFormControl1);
             this.FluentDesignFormControl = this.fluentDesignFormControl1;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.KeyPreview = true;
             this.Name = "frmTelaPrincipal";
             this.NavigationControl = this.accordionControl1;

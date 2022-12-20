@@ -33,7 +33,7 @@ namespace SistemaDeGerenciamento2_0
 
         private void Produtos_Click(object sender, EventArgs e)
         {
-            frmProdutos frmProdutos = new frmProdutos();
+            frmProdutos frmProdutos = new frmProdutos(this);
             frmProdutos.ShowDialog();
         }
 
@@ -45,7 +45,7 @@ namespace SistemaDeGerenciamento2_0
 
         private void Cadastro_Click(object sender, EventArgs e)
         {
-            frmCadastroRegistros frmCadastroRegistros = new frmCadastroRegistros("Cliente");
+            frmCadastroRegistros frmCadastroRegistros = new frmCadastroRegistros("Cliente", this);
             frmCadastroRegistros.ShowDialog();
         }
 

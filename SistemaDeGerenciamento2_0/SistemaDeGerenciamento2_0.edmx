@@ -463,7 +463,7 @@
           <Property Name="id_configuracao_financeira" Type="Int32" Nullable="false" />
           <Property Name="cf_juros_dia" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
           <Property Name="cf_multa_porcentagem" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
-          <Property Name="cf_multa_fixa" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
+          <Property Name="cf_parcela_juros" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
           <Property Name="cf_carencia" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
           <Property Name="cf_desconto" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
         </EntityType>
@@ -931,7 +931,7 @@
                 <ScalarProperty Name="id_configuracao_financeira" ColumnName="id_configuracao_financeira" />
                 <ScalarProperty Name="cf_juros_dia" ColumnName="cf_juros_dia" />
                 <ScalarProperty Name="cf_multa_porcentagem" ColumnName="cf_multa_porcentagem" />
-                <ScalarProperty Name="cf_multa_fixa" ColumnName="cf_multa_fixa" />
+                <ScalarProperty Name="cf_parcela_juros" ColumnName="cf_multa_fixa" />
                 <ScalarProperty Name="cf_carencia" ColumnName="cf_carencia" />
                 <ScalarProperty Name="cf_desconto" ColumnName="cf_desconto" />
               </MappingFragment>

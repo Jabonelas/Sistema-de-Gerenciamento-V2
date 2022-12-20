@@ -1,4 +1,5 @@
 ﻿using DevExpress.XtraEditors;
+using DevExpress.XtraSplashScreen;
 using SistemaDeGerenciamento2_0.Class;
 using SistemaDeGerenciamento2_0.Properties;
 using System;
@@ -30,9 +31,17 @@ namespace SistemaDeGerenciamento2_0.Forms
 
             tipoCadastro = _tipoCadastro;
 
-            telaRegistro = _telaRegistro;
+            ReloadData();
 
-            SetandoDados();
+            //SetandoDados();
+        }
+
+        private void ReloadData()
+        {
+            //using (var handle = SplashScreenManager.ShowOverlayForm(frmTelaPrincipal))
+            //{
+            //    SetandoDados();
+            //}
         }
 
         private void btnSalvar_Click(object sender, EventArgs e)
@@ -185,7 +194,6 @@ namespace SistemaDeGerenciamento2_0.Forms
             ManipulacaoTextBox.DigitarApenasLetrasOuNumeros(e, txtNumero);
         }
 
-
         private void txtCidade_KeyPress(object sender, KeyPressEventArgs e)
         {
             ManipulacaoTextBox.DigitarApenasLetrasOuNumeros(e, txtCidade);
@@ -300,6 +308,8 @@ namespace SistemaDeGerenciamento2_0.Forms
                     ChamandoAlertaSucessoNoCantoInferiorDireito();
 
                     LimparCampos.LimpaCampos(this.Controls);
+
+                    txtLimiteCredito.Text = "R$ 0,00";
 
                     txtObservacoes.Text = string.Empty;
                 }
@@ -578,15 +588,6 @@ namespace SistemaDeGerenciamento2_0.Forms
                 LogErros.EscreverArquivoDeLog($"{DateTime.Now} - Erro ao Cadastrar Registro | {x.Message} | {x.StackTrace}");
 
                 MensagemErros.ErroAoCadastroRegistroPessoaFisica(x);
-            }
-        }
-
-
-        private void frmCadastroRegistroPessoaFisica_Shown(object sender, EventArgs e)
-        {
-            if (Estados.listaEstados.Count > 0)
-            {
-                cmbEstado.EditValue = Estados.listaEstados[3].NomeEstado;
             }
         }
     }

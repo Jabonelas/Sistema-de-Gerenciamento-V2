@@ -13,10 +13,13 @@ namespace SistemaDeGerenciamento2_0.Forms
 {
     public partial class frmDadosEmpresa : DevExpress.XtraEditors.XtraForm
     {
-        private bool IsEmpresaJaCadastrada = false;
+        private int X = 0;
+        private int Y = 0;
 
         private int FK_Endereco = 0;
         private int IDEndereco = 0;
+
+        private bool IsEmpresaJaCadastrada = false;
 
         private ApiCorreios Api = new ApiCorreios();
 
@@ -33,8 +36,9 @@ namespace SistemaDeGerenciamento2_0.Forms
 
             var tarefa = Task.Run(async () =>
             {
-                await BuscaPreencherTextBoxDadosEmpresa();
-                await BuscaPreencherTextBoxEnderecoEmpresa();
+                ReloadData();
+                //await BuscaPreencherTextBoxDadosEmpresa();
+                //await BuscaPreencherTextBoxEnderecoEmpresa();
             });
 
             var esperador = tarefa.GetAwaiter();
@@ -563,6 +567,20 @@ namespace SistemaDeGerenciamento2_0.Forms
         private void btnFechar_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void frmDadosEmpresa_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button != MouseButtons.Left) return;
+            X = this.Left - MousePosition.X;
+            Y = this.Top - MousePosition.Y;
+        }
+
+        private void frmDadosEmpresa_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (e.Button != MouseButtons.Left) return;
+            this.Left = X + MousePosition.X;
+            this.Top = Y + MousePosition.Y;
         }
     }
 }

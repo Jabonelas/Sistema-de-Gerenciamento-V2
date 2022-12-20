@@ -254,6 +254,8 @@ namespace SistemaDeGerenciamento2_0.Forms
 
                     LimparCampos.LimpaCampos(this.Controls);
 
+                    txtLimiteCredito.Text = "R$ 0,00";
+
                     txtObservacoes.Text = string.Empty;
                 }
             }

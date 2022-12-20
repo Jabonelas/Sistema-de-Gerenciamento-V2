@@ -47,7 +47,7 @@
             // 
             this.labelControl3.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl3.Appearance.Options.UseFont = true;
-            this.labelControl3.Location = new System.Drawing.Point(29, 46);
+            this.labelControl3.Location = new System.Drawing.Point(29, 69);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Size = new System.Drawing.Size(82, 20);
             this.labelControl3.TabIndex = 87;
@@ -57,7 +57,7 @@
             // 
             this.labelControl1.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl1.Appearance.Options.UseFont = true;
-            this.labelControl1.Location = new System.Drawing.Point(767, 46);
+            this.labelControl1.Location = new System.Drawing.Point(767, 69);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(181, 20);
             this.labelControl1.TabIndex = 88;
@@ -67,12 +67,12 @@
             // 
             this.labelControl13.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl13.Appearance.Options.UseFont = true;
-            this.labelControl13.Location = new System.Drawing.Point(29, 3);
+            this.labelControl13.Location = new System.Drawing.Point(30, 11);
             this.labelControl13.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.labelControl13.Name = "labelControl13";
-            this.labelControl13.Size = new System.Drawing.Size(167, 20);
+            this.labelControl13.Size = new System.Drawing.Size(104, 20);
             this.labelControl13.TabIndex = 122;
-            this.labelControl13.Text = "Cadastro Novo Registro";
+            this.labelControl13.Text = "Novo Cadastro";
             // 
             // btnFechar
             // 
@@ -95,7 +95,7 @@
             this.btnFuncionario.Appearance.Options.UseFont = true;
             this.btnFuncionario.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.funcionario_20;
             this.btnFuncionario.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
-            this.btnFuncionario.Location = new System.Drawing.Point(967, 72);
+            this.btnFuncionario.Location = new System.Drawing.Point(967, 95);
             this.btnFuncionario.Name = "btnFuncionario";
             this.btnFuncionario.Size = new System.Drawing.Size(80, 43);
             this.btnFuncionario.TabIndex = 3;
@@ -109,7 +109,7 @@
             this.btnFornecedor.Appearance.Options.UseFont = true;
             this.btnFornecedor.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.fornecedor_20px;
             this.btnFornecedor.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
-            this.btnFornecedor.Location = new System.Drawing.Point(868, 72);
+            this.btnFornecedor.Location = new System.Drawing.Point(868, 95);
             this.btnFornecedor.Name = "btnFornecedor";
             this.btnFornecedor.Size = new System.Drawing.Size(80, 43);
             this.btnFornecedor.TabIndex = 2;
@@ -121,7 +121,7 @@
             // 
             this.btnCliente.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.cliente;
             this.btnCliente.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
-            this.btnCliente.Location = new System.Drawing.Point(767, 72);
+            this.btnCliente.Location = new System.Drawing.Point(767, 95);
             this.btnCliente.Name = "btnCliente";
             this.btnCliente.Size = new System.Drawing.Size(80, 43);
             this.btnCliente.TabIndex = 1;
@@ -131,7 +131,7 @@
             // 
             // cmbTipoPessoa
             // 
-            this.cmbTipoPessoa.Location = new System.Drawing.Point(29, 72);
+            this.cmbTipoPessoa.Location = new System.Drawing.Point(29, 95);
             this.cmbTipoPessoa.Name = "cmbTipoPessoa";
             this.cmbTipoPessoa.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbTipoPessoa.Properties.Appearance.Options.UseFont = true;
@@ -149,7 +149,7 @@
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox6.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.separador;
-            this.pictureBox6.Location = new System.Drawing.Point(-158, 18);
+            this.pictureBox6.Location = new System.Drawing.Point(-159, 37);
             this.pictureBox6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(1389, 38);
@@ -160,7 +160,7 @@
             // pnlCadastroRegistro
             // 
             this.pnlCadastroRegistro.AutoScroll = true;
-            this.pnlCadastroRegistro.Location = new System.Drawing.Point(15, 136);
+            this.pnlCadastroRegistro.Location = new System.Drawing.Point(15, 151);
             this.pnlCadastroRegistro.Name = "pnlCadastroRegistro";
             this.pnlCadastroRegistro.Size = new System.Drawing.Size(1041, 582);
             this.pnlCadastroRegistro.TabIndex = 138;
@@ -169,7 +169,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1072, 723);
+            this.ClientSize = new System.Drawing.Size(1072, 748);
             this.Controls.Add(this.pnlCadastroRegistro);
             this.Controls.Add(this.labelControl13);
             this.Controls.Add(this.btnFechar);
@@ -186,6 +186,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmCadastroRegistros";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmCadastroRegistros_KeyDown);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.frmCadastroRegistros_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.frmCadastroRegistros_MouseMove);
             ((System.ComponentModel.ISupportInitialize)(this.cmbTipoPessoa.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.ResumeLayout(false);

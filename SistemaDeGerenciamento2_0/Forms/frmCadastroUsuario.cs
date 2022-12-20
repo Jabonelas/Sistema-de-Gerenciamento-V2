@@ -17,6 +17,9 @@ namespace SistemaDeGerenciamento2_0.Forms
 {
     public partial class frmCadastroUsuario : DevExpress.XtraEditors.XtraForm
     {
+        private int X = 0;
+        private int Y = 0;
+
         public int? FK_Permissoes = 0;
 
         private int? IDCadastro = 0;
@@ -41,7 +44,6 @@ namespace SistemaDeGerenciamento2_0.Forms
             IDCadastro = _IDCadastro;
 
             nomeFuncionario = _nomeFuncionario;
-
 
             ReloadData();
 
@@ -163,7 +165,6 @@ namespace SistemaDeGerenciamento2_0.Forms
             cmbFuncionario2.Properties.ValueMember = "ID";
         }
 
-
         private void TelaPermissoes()
         {
             pnlPermissoes.Controls.Clear();
@@ -216,6 +217,20 @@ namespace SistemaDeGerenciamento2_0.Forms
 
                 MensagemErros.ErroAoBuscarDadosNovoUsuario(x);
             }
+        }
+
+        private void frmCadastroUsuario_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (e.Button != MouseButtons.Left) return;
+            this.Left = X + MousePosition.X;
+            this.Top = Y + MousePosition.Y;
+        }
+
+        private void frmCadastroUsuario_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button != MouseButtons.Left) return;
+            X = this.Left - MousePosition.X;
+            Y = this.Top - MousePosition.Y;
         }
     }
 }

@@ -26,26 +26,25 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private void btnNovoProduto_Click(object sender, EventArgs e)
         {
-
             frmCadastroProduto frmCadastroProduto = new frmCadastroProduto();
             frmCadastroProduto.ShowDialog();
         }
 
         private void btnNovoCliente_Click(object sender, EventArgs e)
         {
-            frmCadastroRegistros frmCadastroRegistros = new frmCadastroRegistros("Cliente");
+            frmCadastroRegistros frmCadastroRegistros = new frmCadastroRegistros("Cliente", frmTelaPrincipal);
             frmCadastroRegistros.ShowDialog();
         }
 
         private void btnNovoFornecedor_Click(object sender, EventArgs e)
         {
-            frmCadastroRegistros frmCadastroRegistros = new frmCadastroRegistros("Fornecedor");
+            frmCadastroRegistros frmCadastroRegistros = new frmCadastroRegistros("Fornecedor", frmTelaPrincipal);
             frmCadastroRegistros.ShowDialog();
         }
 
         private void btnNovoTransporte_Click(object sender, EventArgs e)
         {
-            frmCadastroRegistros frmCadastroRegistros = new frmCadastroRegistros("Funcionario");
+            frmCadastroRegistros frmCadastroRegistros = new frmCadastroRegistros("Funcionario", frmTelaPrincipal);
             frmCadastroRegistros.ShowDialog();
         }
 
@@ -65,9 +64,24 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private void btnIrParaConfiguracoes_Click(object sender, EventArgs e)
         {
+
             frmConfiguracoes frmConfiguracoes = new frmConfiguracoes(frmTelaPrincipal);
+            frmConfiguracoes.AutoScroll = false;
+
             frmConfiguracoes.btnFechar.Visible = true;
             frmConfiguracoes.ShowDialog();
+        }
+
+        private void btnIrParaProdutos_Click(object sender, EventArgs e)
+        {
+            frmProdutos frmProdutos = new frmProdutos(frmTelaPrincipal);
+            frmProdutos.ShowDialog();
+        }
+
+        private void btnIrParaCadastro_Click(object sender, EventArgs e)
+        {
+            frmCadastro frmCadastro = new frmCadastro(frmTelaPrincipal);
+            frmCadastro.ShowDialog();
         }
     }
 }

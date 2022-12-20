@@ -39,8 +39,8 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private void btnEmpresa_Click(object sender, EventArgs e)
         {
-            this.Size = new Size(953, 622);
-            pnlConfiguracoes.Size = new Size(944, 542);
+            this.Size = new Size(953, 670);
+            pnlConfiguracoes.Size = new Size(944, 600);
 
             TelaCadastrarEmpresa();
         }
@@ -105,6 +105,24 @@ namespace SistemaDeGerenciamento2_0.Forms
         private void frmConfiguracoes_KeyDown(object sender, KeyEventArgs e)
         {
             MensagemAtencao.MensagemCancelar(this);
+        }
+
+        private void btnConfiguracaoFinanceira_Click(object sender, EventArgs e)
+        {
+            //this.Size = new Size(953, 400);
+            //pnlConfiguracoes.Size = new Size(923, 300);
+
+            TelaConfiguracoesFinanceiras();
+        }
+
+        private void TelaConfiguracoesFinanceiras()
+        {
+            pnlConfiguracoes.Controls.Clear();
+            frmConfiguracaoFinanceira frmConfiguracaoFinanceira = new frmConfiguracaoFinanceira();
+            frmConfiguracaoFinanceira.TopLevel = false;
+            pnlConfiguracoes.Controls.Add(frmConfiguracaoFinanceira);
+            pnlConfiguracoes.Tag = frmConfiguracaoFinanceira;
+            frmConfiguracaoFinanceira.Show();
         }
     }
 }
