@@ -22,11 +22,11 @@ namespace SistemaDeGerenciamento2_0
         public decimal dp_valor_lancamento { get; set; }
         public string dp_forma_pagamento { get; set; }
         public string dp_pagamento_em { get; set; }
-        public System.DateTime dp_vencimentod { get; set; }
+        public System.DateTime dp_vencimento { get; set; }
         public int fk_registro { get; set; }
-        public int fk_grupo { get; set; }
+        public int fk_repeticao_despesa { get; set; }
     
         public virtual tb_registro tb_registro { get; set; }
-        public virtual tb_grupo tb_grupo { get; set; }
+        public virtual tb_repeticao_despesa tb_repeticao_despesa { get; set; }
     }
 }

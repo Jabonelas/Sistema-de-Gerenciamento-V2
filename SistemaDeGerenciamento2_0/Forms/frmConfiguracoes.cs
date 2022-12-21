@@ -18,15 +18,22 @@ namespace SistemaDeGerenciamento2_0.Forms
         private int X = 0;
         private int Y = 0;
 
-        private frmTelaPrincipal frmTelaPrincipal;
+        private Form frmTelaPrincipal = null;
 
-        public frmConfiguracoes(frmTelaPrincipal _frmTelaPrincipal)
+        public frmConfiguracoes(Form _frmTelaPrincipal)
         {
             InitializeComponent();
 
             frmTelaPrincipal = _frmTelaPrincipal;
 
-            TelaNovoUsuario();
+            TelaNovoUsuario(frmTelaPrincipal);
+        }
+
+        public frmConfiguracoes()
+        {
+            InitializeComponent();
+
+            TelaNovoUsuario(frmTelaPrincipal);
         }
 
         private void btnNovoUsuario_Click(object sender, EventArgs e)
@@ -34,7 +41,14 @@ namespace SistemaDeGerenciamento2_0.Forms
             this.Size = new Size(953, 622);
             pnlConfiguracoes.Size = new Size(944, 542);
 
-            TelaNovoUsuario();
+            if (frmTelaPrincipal == null)
+            {
+                TelaNovoUsuario(this);
+            }
+            else
+            {
+                TelaNovoUsuario(frmTelaPrincipal);
+            }
         }
 
         private void btnEmpresa_Click(object sender, EventArgs e)
@@ -42,18 +56,23 @@ namespace SistemaDeGerenciamento2_0.Forms
             this.Size = new Size(953, 670);
             pnlConfiguracoes.Size = new Size(944, 600);
 
-            TelaCadastrarEmpresa();
+            if (frmTelaPrincipal == null)
+            {
+                TelaCadastrarEmpresa(this);
+            }
+            else
+            {
+                TelaCadastrarEmpresa(frmTelaPrincipal);
+            }
         }
 
         private void btnPerfil_Click(object sender, EventArgs e)
         {
             this.Size = new Size(953, 432);
             pnlConfiguracoes.Size = new Size(923, 341);
-
-            TelaPerfilUsuario();
         }
 
-        private void TelaNovoUsuario()
+        private void TelaNovoUsuario(Form frmTelaPrincipal)
         {
             pnlConfiguracoes.Controls.Clear();
             frmNovoUsuario frmCadastroUsuario = new frmNovoUsuario(frmTelaPrincipal);
@@ -63,7 +82,7 @@ namespace SistemaDeGerenciamento2_0.Forms
             frmCadastroUsuario.Show();
         }
 
-        private void TelaCadastrarEmpresa()
+        private void TelaCadastrarEmpresa(Form frmTelaPrincipal)
         {
             pnlConfiguracoes.Controls.Clear();
             frmDadosEmpresa frmNovoUsuario = new frmDadosEmpresa(frmTelaPrincipal);
@@ -75,12 +94,12 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private void TelaPerfilUsuario()
         {
-            pnlConfiguracoes.Controls.Clear();
-            frmPerfilUsuario frmPerfilUsuario = new frmPerfilUsuario(frmTelaPrincipal);
-            frmPerfilUsuario.TopLevel = false;
-            pnlConfiguracoes.Controls.Add(frmPerfilUsuario);
-            pnlConfiguracoes.Tag = frmPerfilUsuario;
-            frmPerfilUsuario.Show();
+            //pnlConfiguracoes.Controls.Clear();
+            //frmPerfilUsuario frmPerfilUsuario = new frmPerfilUsuario(frmTelaPrincipal);
+            //frmPerfilUsuario.TopLevel = false;
+            //pnlConfiguracoes.Controls.Add(frmPerfilUsuario);
+            //pnlConfiguracoes.Tag = frmPerfilUsuario;
+            //frmPerfilUsuario.Show();
         }
 
         private void btnFechar_Click(object sender, EventArgs e)
@@ -104,21 +123,31 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private void frmConfiguracoes_KeyDown(object sender, KeyEventArgs e)
         {
-            MensagemAtencao.MensagemCancelar(this);
+            if (e.KeyCode == Keys.Escape)
+            {
+                MensagemAtencao.MensagemCancelar(this);
+            }
         }
 
         private void btnConfiguracaoFinanceira_Click(object sender, EventArgs e)
         {
-            //this.Size = new Size(953, 400);
-            //pnlConfiguracoes.Size = new Size(923, 300);
+            this.Size = new Size(953, 670);
+            pnlConfiguracoes.Size = new Size(944, 600);
 
-            TelaConfiguracoesFinanceiras();
+            if (frmTelaPrincipal == null)
+            {
+                TelaConfiguracoesFinanceiras(this);
+            }
+            else
+            {
+                TelaConfiguracoesFinanceiras(frmTelaPrincipal);
+            }
         }
 
-        private void TelaConfiguracoesFinanceiras()
+        private void TelaConfiguracoesFinanceiras(Form frmTelaPrincipal)
         {
             pnlConfiguracoes.Controls.Clear();
-            frmConfiguracaoFinanceira frmConfiguracaoFinanceira = new frmConfiguracaoFinanceira();
+            frmConfiguracaoFinanceira frmConfiguracaoFinanceira = new frmConfiguracaoFinanceira(frmTelaPrincipal);
             frmConfiguracaoFinanceira.TopLevel = false;
             pnlConfiguracoes.Controls.Add(frmConfiguracaoFinanceira);
             pnlConfiguracoes.Tag = frmConfiguracaoFinanceira;

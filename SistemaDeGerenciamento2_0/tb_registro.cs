@@ -20,7 +20,6 @@ namespace SistemaDeGerenciamento2_0
             this.tb_despesa = new HashSet<tb_despesa>();
             this.tb_nota_fiscal_saida = new HashSet<tb_nota_fiscal_saida>();
             this.tb_produto = new HashSet<tb_produto>();
-            this.tb_repeticao_despesa = new HashSet<tb_repeticao_despesa>();
         }
     
         public int id_registro { get; set; }
@@ -46,18 +45,16 @@ namespace SistemaDeGerenciamento2_0
         public string rg_telefone_fixo { get; set; }
         public Nullable<int> fk_permissoes { get; set; }
         public Nullable<int> fk_informacao_comercial { get; set; }
-        public Nullable<int> fk_endereco { get; set; }
+        public int fk_endereco { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<tb_despesa> tb_despesa { get; set; }
         public virtual tb_enderecos tb_enderecos { get; set; }
-        public virtual tb_informacoes_comeciais tb_informacoes_comeciais { get; set; }
+        public virtual tb_informacoes_comerciais tb_informacoes_comerciais { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<tb_nota_fiscal_saida> tb_nota_fiscal_saida { get; set; }
         public virtual tb_permissoes tb_permissoes { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<tb_produto> tb_produto { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<tb_repeticao_despesa> tb_repeticao_despesa { get; set; }
     }
 }

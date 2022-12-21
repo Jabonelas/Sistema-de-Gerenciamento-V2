@@ -22,7 +22,7 @@ namespace SistemaDeGerenciamento2_0
     
         public int id_estoque { get; set; }
         public decimal ep_quantidade { get; set; }
-        public Nullable<System.DateTime> ep_data_entrada { get; set; }
+        public System.DateTime ep_data_entrada { get; set; }
         public Nullable<System.DateTime> ep_data_exclusao { get; set; }
         public string ep_codigo_barras { get; set; }
         public string ep_status_situacao { get; set; }

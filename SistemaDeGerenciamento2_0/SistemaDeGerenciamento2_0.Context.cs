@@ -31,7 +31,7 @@ namespace SistemaDeGerenciamento2_0
         public virtual DbSet<tb_enderecos> tb_enderecos { get; set; }
         public virtual DbSet<tb_estoque> tb_estoque { get; set; }
         public virtual DbSet<tb_grupo> tb_grupo { get; set; }
-        public virtual DbSet<tb_informacoes_comeciais> tb_informacoes_comeciais { get; set; }
+        public virtual DbSet<tb_informacoes_comerciais> tb_informacoes_comerciais { get; set; }
         public virtual DbSet<tb_nota_fiscal_entrada> tb_nota_fiscal_entrada { get; set; }
         public virtual DbSet<tb_nota_fiscal_saida> tb_nota_fiscal_saida { get; set; }
         public virtual DbSet<tb_permissoes> tb_permissoes { get; set; }

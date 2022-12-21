@@ -21,7 +21,6 @@ namespace SistemaDeGerenciamento2_0
         }
     
         public int id_permissoes { get; set; }
-        public bool pm_acesso_pdv { get; set; }
         public bool pm_vendas_do_dias { get; set; }
         public bool pm_receber_conta { get; set; }
         public bool pm_todas_vendas { get; set; }
@@ -54,6 +53,7 @@ namespace SistemaDeGerenciamento2_0
         public bool pm_remover_cadastro { get; set; }
         public bool pm_visualizar_cadastro_completo { get; set; }
         public bool pm_editar_cretido_cadastro { get; set; }
+        public bool pm_acesso_pdv { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<tb_registro> tb_registro { get; set; }

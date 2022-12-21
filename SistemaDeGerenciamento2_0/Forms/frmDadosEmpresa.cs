@@ -26,9 +26,9 @@ namespace SistemaDeGerenciamento2_0.Forms
         private List<tb_registro> listaDadosEmpresa = new List<tb_registro>();
         private List<tb_enderecos> listaEnderecoEmpresa = new List<tb_enderecos>();
 
-        private frmTelaPrincipal frmTelaPrincipal;
+        private Form frmTelaPrincipal;
 
-        public frmDadosEmpresa(frmTelaPrincipal _frmTelaPrincipal)
+        public frmDadosEmpresa(Form _frmTelaPrincipal)
         {
             InitializeComponent();
 
@@ -36,16 +36,14 @@ namespace SistemaDeGerenciamento2_0.Forms
 
             var tarefa = Task.Run(async () =>
             {
-                ReloadData();
-                //await BuscaPreencherTextBoxDadosEmpresa();
-                //await BuscaPreencherTextBoxEnderecoEmpresa();
+                await BuscaPreencherTextBoxDadosEmpresa();
+                await BuscaPreencherTextBoxEnderecoEmpresa();
             });
 
             var esperador = tarefa.GetAwaiter();
             esperador.OnCompleted(() =>
             {
                 PreenchendoTextBoxDadosEmpresa();
-
                 PreenchendoTextBoxEnderecoEmpresa();
             });
 

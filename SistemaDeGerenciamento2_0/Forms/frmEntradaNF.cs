@@ -665,7 +665,8 @@ namespace SistemaDeGerenciamento2_0.Forms
                     {
                         MensagemAtencao.MensagemNaoCadastrado("Destinatário");
                     }
-                    return false;
+
+                    return verificarCnpjRecepitor;
                 }
             }
             catch (Exception x)

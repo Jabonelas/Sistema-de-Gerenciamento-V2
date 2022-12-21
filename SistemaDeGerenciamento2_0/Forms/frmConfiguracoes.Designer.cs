@@ -126,7 +126,6 @@
             this.Controls.Add(this.btnEmpresa);
             this.Controls.Add(this.btnNovoUsuario);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.KeyPreview = true;
             this.Name = "frmConfiguracoes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmConfiguracoes";

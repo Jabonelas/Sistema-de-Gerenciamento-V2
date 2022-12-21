@@ -64,10 +64,9 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private void btnIrParaConfiguracoes_Click(object sender, EventArgs e)
         {
-
-            frmConfiguracoes frmConfiguracoes = new frmConfiguracoes(frmTelaPrincipal);
+            frmConfiguracoes frmConfiguracoes = new frmConfiguracoes(this);
             frmConfiguracoes.AutoScroll = false;
-
+            frmConfiguracoes.KeyPreview = true;
             frmConfiguracoes.btnFechar.Visible = true;
             frmConfiguracoes.ShowDialog();
         }

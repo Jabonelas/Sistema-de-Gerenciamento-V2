@@ -23,12 +23,12 @@ namespace SistemaDeGerenciamento2_0
         public int id_endereco { get; set; }
         public string ed_tipo { get; set; }
         public string ed_cep { get; set; }
+        public string ed_estado { get; set; }
         public string ed_locgradouro { get; set; }
         public string ed_numero { get; set; }
         public string ed_complemento { get; set; }
         public string ed_bairro { get; set; }
         public string ed_cidade { get; set; }
-        public string ed_estado { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<tb_registro> tb_registro { get; set; }

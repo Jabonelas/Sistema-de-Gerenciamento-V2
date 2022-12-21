@@ -19,11 +19,9 @@ namespace SistemaDeGerenciamento2_0.Forms
         public string usuario { get => lblUsuario.Text; set => lblUsuario.Text = value; }
         public string id { get => lblId.Text; set => lblId.Text = value; }
 
-        //public int? IDCadastro = 0;
+        private Form frmTelaPrincipal;
 
-        private frmTelaPrincipal frmTelaPrincipal;
-
-        public uscUsuarios(frmTelaPrincipal _frmTelaPrincipal)
+        public uscUsuarios(Form _frmTelaPrincipal)
         {
             InitializeComponent();
 

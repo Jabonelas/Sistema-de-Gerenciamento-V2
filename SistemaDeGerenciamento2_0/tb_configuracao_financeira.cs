@@ -15,10 +15,12 @@ namespace SistemaDeGerenciamento2_0
     public partial class tb_configuracao_financeira
     {
         public int id_configuracao_financeira { get; set; }
-        public decimal cf_juros_dia { get; set; }
-        public decimal cf_multa_porcentagem { get; set; }
-        public decimal cf_parcela_juros { get; set; }
-        public decimal cf_carencia { get; set; }
-        public decimal cf_desconto { get; set; }
+        public Nullable<decimal> cf_juros_dia { get; set; }
+        public Nullable<decimal> cf_parcela_juros { get; set; }
+        public Nullable<decimal> cf_desconto_pagamento { get; set; }
+        public Nullable<decimal> cf_desconto_grupo_produto { get; set; }
+        public Nullable<int> fk_grupo { get; set; }
+    
+        public virtual tb_grupo tb_grupo { get; set; }
     }
 }

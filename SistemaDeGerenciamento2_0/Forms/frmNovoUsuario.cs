@@ -13,9 +13,9 @@ namespace SistemaDeGerenciamento2_0.Forms
     {
         private List<tb_registro> listaFuncionarios = new List<tb_registro>();
 
-        private frmTelaPrincipal frmTelaPrincipal;
+        private Form frmTelaPrincipal;
 
-        public frmNovoUsuario(frmTelaPrincipal _frmTelaPrincipal)
+        public frmNovoUsuario(Form _frmTelaPrincipal)
         {
             InitializeComponent();
 

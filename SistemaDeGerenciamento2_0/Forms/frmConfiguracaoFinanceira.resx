@@ -123,10 +123,27 @@
   <metadata name="sqlDataSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <metadata name="queryBindingSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>450, 17</value>
-  </metadata>
+  <data name="sqlDataSource1.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxWaWV3IE5hbWU9IlF1ZXJ5Ij48RmllbGQgTmFtZT0iaWRfZ3J1cG8iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJncF9ub21lX2dydXBvIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9ImdwX25vbWVfYWdydXBhZG9yIiBUeXBlPSJTdHJpbmciIC8+PC9WaWV3PjwvRGF0YVNldD4=</value>
+  </data>
   <metadata name="sqlDataSource2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>314, 17</value>
+  </metadata>
+  <data name="customSqlQuery2.Sql" xml:space="preserve">
+    <value>select "tb_configuracao_financeira"."cf_desconto_grupo_produto",
+       "tb_grupo"."gp_nome_grupo",
+       "tb_grupo"."gp_nome_agrupador"
+  from ("dbo"."tb_configuracao_financeira"
+       "tb_configuracao_financeira"
+  inner join "dbo"."tb_grupo" "tb_grupo"
+       on ("tb_grupo"."id_grupo" = "tb_configuracao_financeira"."fk_grupo"))
+where "tb_configuracao_financeira"."cf_desconto_grupo_produto" &gt; 0 and 
+ "tb_grupo"."gp_nome_agrupador" is not null</value>
+  </data>
+  <data name="sqlDataSource2.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTIiPjxWaWV3IE5hbWU9InRiX2NvbmZpZ3VyYWNhb19maW5hbmNlaXJhIj48RmllbGQgTmFtZT0iY2ZfZGVzY29udG9fZ3J1cG9fcHJvZHV0byIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iZ3Bfbm9tZV9ncnVwbyIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJncF9ub21lX2FncnVwYWRvciIgVHlwZT0iU3RyaW5nIiAvPjwvVmlldz48L0RhdGFTZXQ+</value>
+  </data>
+  <metadata name="AlertaSalvar.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>450, 17</value>
   </metadata>
 </root>

@@ -17,7 +17,7 @@ namespace SistemaDeGerenciamento2_0
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public tb_grupo()
         {
-            this.tb_despesa = new HashSet<tb_despesa>();
+            this.tb_configuracao_financeira = new HashSet<tb_configuracao_financeira>();
             this.tb_produto = new HashSet<tb_produto>();
         }
     
@@ -26,7 +26,7 @@ namespace SistemaDeGerenciamento2_0
         public string gp_nome_agrupador { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<tb_despesa> tb_despesa { get; set; }
+        public virtual ICollection<tb_configuracao_financeira> tb_configuracao_financeira { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<tb_produto> tb_produto { get; set; }
     }

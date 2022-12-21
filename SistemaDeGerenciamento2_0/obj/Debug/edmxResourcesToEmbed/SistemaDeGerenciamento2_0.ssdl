@@ -13,12 +13,12 @@
     <Key>
       <PropertyRef Name="id_configuracao_financeira" />
     </Key>
-    <Property Name="id_configuracao_financeira" Type="int" Nullable="false" />
-    <Property Name="cf_juros_dia" Type="decimal" Precision="10" Scale="2" Nullable="false" />
-    <Property Name="cf_multa_porcentagem" Type="decimal" Precision="10" Scale="2" Nullable="false" />
-    <Property Name="cf_multa_fixa" Type="decimal" Precision="10" Scale="2" Nullable="false" />
-    <Property Name="cf_carencia" Type="decimal" Precision="10" Scale="2" Nullable="false" />
-    <Property Name="cf_desconto" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="id_configuracao_financeira" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="cf_juros_dia" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="cf_parcela_juros" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="cf_desconto_pagamento" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="cf_desconto_grupo_produto" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="fk_grupo" Type="int" />
   </EntityType>
   <EntityType Name="tb_despesa">
     <Key>
@@ -32,9 +32,9 @@
     <Property Name="dp_valor_lancamento" Type="decimal" Precision="10" Scale="2" Nullable="false" />
     <Property Name="dp_forma_pagamento" Type="varchar" MaxLength="255" Nullable="false" />
     <Property Name="dp_pagamento_em" Type="varchar" MaxLength="255" Nullable="false" />
-    <Property Name="dp_vencimentod" Type="date" Nullable="false" />
+    <Property Name="dp_vencimento" Type="date" Nullable="false" />
     <Property Name="fk_registro" Type="int" Nullable="false" />
-    <Property Name="fk_grupo" Type="int" Nullable="false" />
+    <Property Name="fk_repeticao_despesa" Type="int" Nullable="false" />
   </EntityType>
   <EntityType Name="tb_enderecos">
     <Key>
@@ -42,13 +42,13 @@
     </Key>
     <Property Name="id_endereco" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="ed_tipo" Type="varchar" MaxLength="255" Nullable="false" />
-    <Property Name="ed_cep" Type="varchar" MaxLength="255" />
+    <Property Name="ed_cep" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="ed_estado" Type="varchar" MaxLength="255" Nullable="false" />
     <Property Name="ed_locgradouro" Type="varchar" MaxLength="255" Nullable="false" />
     <Property Name="ed_numero" Type="varchar" MaxLength="255" Nullable="false" />
     <Property Name="ed_complemento" Type="varchar" MaxLength="255" />
     <Property Name="ed_bairro" Type="varchar" MaxLength="255" Nullable="false" />
     <Property Name="ed_cidade" Type="varchar" MaxLength="255" Nullable="false" />
-    <Property Name="ed_estado" Type="varchar" MaxLength="255" Nullable="false" />
   </EntityType>
   <EntityType Name="tb_estoque">
     <Key>
@@ -56,7 +56,7 @@
     </Key>
     <Property Name="id_estoque" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="ep_quantidade" Type="decimal" Precision="10" Scale="2" Nullable="false" />
-    <Property Name="ep_data_entrada" Type="date" />
+    <Property Name="ep_data_entrada" Type="date" Nullable="false" />
     <Property Name="ep_data_exclusao" Type="date" />
     <Property Name="ep_codigo_barras" Type="varchar" MaxLength="255" Nullable="false" />
     <Property Name="ep_status_situacao" Type="varchar" MaxLength="255" />
@@ -71,15 +71,15 @@
     <Property Name="gp_nome_grupo" Type="varchar" MaxLength="255" />
     <Property Name="gp_nome_agrupador" Type="varchar" MaxLength="255" Nullable="false" />
   </EntityType>
-  <EntityType Name="tb_informacoes_comeciais">
+  <EntityType Name="tb_informacoes_comerciais">
     <Key>
       <PropertyRef Name="id_informacao_comercial" />
     </Key>
     <Property Name="id_informacao_comercial" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="ic_situacao" Type="varchar" MaxLength="255" />
-    <Property Name="ic_prioridade" Type="varchar" MaxLength="255" />
-    <Property Name="ic_vendedor" Type="varchar" MaxLength="255" />
-    <Property Name="ic_limite_credito" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="ic_situacao" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="ic_prioridade" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="ic_vendedor" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="ic_limite_credito" Type="decimal" Precision="10" Scale="2" Nullable="false" />
   </EntityType>
   <EntityType Name="tb_nota_fiscal_entrada">
     <Key>
@@ -120,7 +120,6 @@
       <PropertyRef Name="id_permissoes" />
     </Key>
     <Property Name="id_permissoes" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="pm_acesso_pdv" Type="bit" Nullable="false" />
     <Property Name="pm_vendas_do_dias" Type="bit" Nullable="false" />
     <Property Name="pm_receber_conta" Type="bit" Nullable="false" />
     <Property Name="pm_todas_vendas" Type="bit" Nullable="false" />
@@ -153,6 +152,7 @@
     <Property Name="pm_remover_cadastro" Type="bit" Nullable="false" />
     <Property Name="pm_visualizar_cadastro_completo" Type="bit" Nullable="false" />
     <Property Name="pm_editar_cretido_cadastro" Type="bit" Nullable="false" />
+    <Property Name="pm_acesso_pdv" Type="bit" Nullable="false" />
   </EntityType>
   <EntityType Name="tb_produto">
     <Key>
@@ -201,7 +201,7 @@
     <Property Name="rg_telefone_fixo" Type="varchar" MaxLength="255" />
     <Property Name="fk_permissoes" Type="int" />
     <Property Name="fk_informacao_comercial" Type="int" />
-    <Property Name="fk_endereco" Type="int" />
+    <Property Name="fk_endereco" Type="int" Nullable="false" />
   </EntityType>
   <EntityType Name="tb_repeticao_despesa">
     <Key>
@@ -211,9 +211,20 @@
     <Property Name="rp_data_inicial" Type="date" Nullable="false" />
     <Property Name="rp_data_final" Type="date" Nullable="false" />
     <Property Name="rp_observacao" Type="varchar" MaxLength="255" Nullable="false" />
-    <Property Name="fk_registro" Type="int" Nullable="false" />
     <Property Name="fk_cadastro_despesa" Type="int" Nullable="false" />
   </EntityType>
+  <Association Name="tb_configuracao_financeira_fk0">
+    <End Role="tb_grupo" Type="Self.tb_grupo" Multiplicity="0..1" />
+    <End Role="tb_configuracao_financeira" Type="Self.tb_configuracao_financeira" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_grupo">
+        <PropertyRef Name="id_grupo" />
+      </Principal>
+      <Dependent Role="tb_configuracao_financeira">
+        <PropertyRef Name="fk_grupo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="tb_despesa_fk0">
     <End Role="tb_registro" Type="Self.tb_registro" Multiplicity="1" />
     <End Role="tb_despesa" Type="Self.tb_despesa" Multiplicity="*" />
@@ -227,14 +238,14 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="tb_despesa_fk1">
-    <End Role="tb_grupo" Type="Self.tb_grupo" Multiplicity="1" />
+    <End Role="tb_repeticao_despesa" Type="Self.tb_repeticao_despesa" Multiplicity="1" />
     <End Role="tb_despesa" Type="Self.tb_despesa" Multiplicity="*" />
     <ReferentialConstraint>
-      <Principal Role="tb_grupo">
-        <PropertyRef Name="id_grupo" />
+      <Principal Role="tb_repeticao_despesa">
+        <PropertyRef Name="id_repeticao_despesas" />
       </Principal>
       <Dependent Role="tb_despesa">
-        <PropertyRef Name="fk_grupo" />
+        <PropertyRef Name="fk_repeticao_despesa" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -323,10 +334,10 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="tb_registro_fk1">
-    <End Role="tb_informacoes_comeciais" Type="Self.tb_informacoes_comeciais" Multiplicity="0..1" />
+    <End Role="tb_informacoes_comerciais" Type="Self.tb_informacoes_comerciais" Multiplicity="0..1" />
     <End Role="tb_registro" Type="Self.tb_registro" Multiplicity="*" />
     <ReferentialConstraint>
-      <Principal Role="tb_informacoes_comeciais">
+      <Principal Role="tb_informacoes_comerciais">
         <PropertyRef Name="id_informacao_comercial" />
       </Principal>
       <Dependent Role="tb_registro">
@@ -335,7 +346,7 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="tb_registro_fk2">
-    <End Role="tb_enderecos" Type="Self.tb_enderecos" Multiplicity="0..1" />
+    <End Role="tb_enderecos" Type="Self.tb_enderecos" Multiplicity="1" />
     <End Role="tb_registro" Type="Self.tb_registro" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="tb_enderecos">
@@ -347,18 +358,6 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="tb_repeticao_despesa_fk0">
-    <End Role="tb_registro" Type="Self.tb_registro" Multiplicity="1" />
-    <End Role="tb_repeticao_despesa" Type="Self.tb_repeticao_despesa" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="tb_registro">
-        <PropertyRef Name="id_registro" />
-      </Principal>
-      <Dependent Role="tb_repeticao_despesa">
-        <PropertyRef Name="fk_registro" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="tb_repeticao_despesa_fk1">
     <End Role="tb_cadastro_despesa" Type="Self.tb_cadastro_despesa" Multiplicity="1" />
     <End Role="tb_repeticao_despesa" Type="Self.tb_repeticao_despesa" Multiplicity="*" />
     <ReferentialConstraint>
@@ -377,19 +376,23 @@
     <EntitySet Name="tb_enderecos" EntityType="Self.tb_enderecos" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="tb_estoque" EntityType="Self.tb_estoque" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="tb_grupo" EntityType="Self.tb_grupo" Schema="dbo" store:Type="Tables" />
-    <EntitySet Name="tb_informacoes_comeciais" EntityType="Self.tb_informacoes_comeciais" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_informacoes_comerciais" EntityType="Self.tb_informacoes_comerciais" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="tb_nota_fiscal_entrada" EntityType="Self.tb_nota_fiscal_entrada" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="tb_nota_fiscal_saida" EntityType="Self.tb_nota_fiscal_saida" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="tb_permissoes" EntityType="Self.tb_permissoes" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="tb_produto" EntityType="Self.tb_produto" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="tb_registro" EntityType="Self.tb_registro" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="tb_repeticao_despesa" EntityType="Self.tb_repeticao_despesa" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="tb_configuracao_financeira_fk0" Association="Self.tb_configuracao_financeira_fk0">
+      <End Role="tb_grupo" EntitySet="tb_grupo" />
+      <End Role="tb_configuracao_financeira" EntitySet="tb_configuracao_financeira" />
+    </AssociationSet>
     <AssociationSet Name="tb_despesa_fk0" Association="Self.tb_despesa_fk0">
       <End Role="tb_registro" EntitySet="tb_registro" />
       <End Role="tb_despesa" EntitySet="tb_despesa" />
     </AssociationSet>
     <AssociationSet Name="tb_despesa_fk1" Association="Self.tb_despesa_fk1">
-      <End Role="tb_grupo" EntitySet="tb_grupo" />
+      <End Role="tb_repeticao_despesa" EntitySet="tb_repeticao_despesa" />
       <End Role="tb_despesa" EntitySet="tb_despesa" />
     </AssociationSet>
     <AssociationSet Name="tb_estoque_fk0" Association="Self.tb_estoque_fk0">
@@ -421,7 +424,7 @@
       <End Role="tb_registro" EntitySet="tb_registro" />
     </AssociationSet>
     <AssociationSet Name="tb_registro_fk1" Association="Self.tb_registro_fk1">
-      <End Role="tb_informacoes_comeciais" EntitySet="tb_informacoes_comeciais" />
+      <End Role="tb_informacoes_comerciais" EntitySet="tb_informacoes_comerciais" />
       <End Role="tb_registro" EntitySet="tb_registro" />
     </AssociationSet>
     <AssociationSet Name="tb_registro_fk2" Association="Self.tb_registro_fk2">
@@ -429,10 +432,6 @@
       <End Role="tb_registro" EntitySet="tb_registro" />
     </AssociationSet>
     <AssociationSet Name="tb_repeticao_despesa_fk0" Association="Self.tb_repeticao_despesa_fk0">
-      <End Role="tb_registro" EntitySet="tb_registro" />
-      <End Role="tb_repeticao_despesa" EntitySet="tb_repeticao_despesa" />
-    </AssociationSet>
-    <AssociationSet Name="tb_repeticao_despesa_fk1" Association="Self.tb_repeticao_despesa_fk1">
       <End Role="tb_cadastro_despesa" EntitySet="tb_cadastro_despesa" />
       <End Role="tb_repeticao_despesa" EntitySet="tb_repeticao_despesa" />
     </AssociationSet>

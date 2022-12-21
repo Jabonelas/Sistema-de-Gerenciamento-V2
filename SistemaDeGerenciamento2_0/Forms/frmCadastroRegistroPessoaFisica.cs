@@ -19,8 +19,6 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private string tipoCadastro = string.Empty;
 
-        //private bool isCPFJaExistente = false;
-
         private ApiCorreios Api = new ApiCorreios();
 
         private Form telaRegistro = null;
@@ -31,17 +29,7 @@ namespace SistemaDeGerenciamento2_0.Forms
 
             tipoCadastro = _tipoCadastro;
 
-            ReloadData();
-
-            //SetandoDados();
-        }
-
-        private void ReloadData()
-        {
-            //using (var handle = SplashScreenManager.ShowOverlayForm(frmTelaPrincipal))
-            //{
-            //    SetandoDados();
-            //}
+            SetandoDados();
         }
 
         private void btnSalvar_Click(object sender, EventArgs e)
@@ -502,7 +490,7 @@ namespace SistemaDeGerenciamento2_0.Forms
             {
                 using (SistemaDeGerenciamento2_0Entities7 db = new SistemaDeGerenciamento2_0Entities7())
                 {
-                    var informacaoComercialPessoaFisica = new tb_informacoes_comeciais()
+                    var informacaoComercialPessoaFisica = new tb_informacoes_comerciais()
                     {
                         ic_limite_credito = Convert.ToDecimal(txtLimiteCredito.Text.Replace("R$ ", "")),
                         ic_prioridade = cmbPrioridade.Text,
@@ -510,7 +498,7 @@ namespace SistemaDeGerenciamento2_0.Forms
                         ic_vendedor = "Nome Usuario que esta cadastrando"
                     };
 
-                    db.tb_informacoes_comeciais.Add(informacaoComercialPessoaFisica);
+                    db.tb_informacoes_comerciais.Add(informacaoComercialPessoaFisica);
                     db.SaveChanges();
 
                     FK_InformacoesComerciais = informacaoComercialPessoaFisica.id_informacao_comercial;

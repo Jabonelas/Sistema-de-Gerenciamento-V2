@@ -14,14 +14,20 @@ namespace SistemaDeGerenciamento2_0
     
     public partial class tb_repeticao_despesa
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public tb_repeticao_despesa()
+        {
+            this.tb_despesa = new HashSet<tb_despesa>();
+        }
+    
         public int id_repeticao_despesas { get; set; }
         public System.DateTime rp_data_inicial { get; set; }
         public System.DateTime rp_data_final { get; set; }
         public string rp_observacao { get; set; }
-        public int fk_registro { get; set; }
         public int fk_cadastro_despesa { get; set; }
     
         public virtual tb_cadastro_despesa tb_cadastro_despesa { get; set; }
-        public virtual tb_registro tb_registro { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<tb_despesa> tb_despesa { get; set; }
     }
 }
