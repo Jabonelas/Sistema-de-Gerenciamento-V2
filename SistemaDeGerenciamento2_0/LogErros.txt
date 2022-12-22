@@ -1,4 +1,5 @@
-20/12/2022 15:29:03 - Erro ao Cadastrar Estoque - | An error occurred while updating the entries. See the inner exception for details. |    em System.Data.Entity.Internal.InternalContext.SaveChanges()
-   em System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
-   em System.Data.Entity.DbContext.SaveChanges()
-   em SistemaDeGerenciamento2_0.Forms.frmEntradaNF.SalvarEstoque() na C:\Users\israe\source\repos\SistemaDeGerenciamento2_0\SistemaDeGerenciamento2_0\Forms\frmEntradaNF.cs:linha 643
+21/12/2022 22:46:33 - Erro ao Buscar Lista de Funcionarios Cadastrados - | O inicializador de tipo de 'System.Data.Entity.Internal.AppConfig' acionou uma exceção. |    em System.Data.Entity.Internal.AppConfig.get_DefaultInstance()
+   em System.Data.Entity.Internal.LazyInternalConnection..ctor(DbContext context, String nameOrConnectionString)
+   em System.Data.Entity.DbContext..ctor(String nameOrConnectionString)
+   em SistemaDeGerenciamento2_0.SistemaDeGerenciamento2_0Entities..ctor() na C:\Users\israe\source\repos\SistemaDeGerenciamento2_0\SistemaDeGerenciamento2_0\Forms\ModelPrincipal.Context.cs:linha 20
+   em SistemaDeGerenciamento2_0.Forms.frmNovoUsuario.ListaFuncionarios() na C:\Users\israe\source\repos\SistemaDeGerenciamento2_0\SistemaDeGerenciamento2_0\Forms\frmNovoUsuario.cs:linha 47

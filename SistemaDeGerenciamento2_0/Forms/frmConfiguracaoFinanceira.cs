@@ -1,18 +1,21 @@
 ﻿using DevExpress.Data.Linq.Helpers;
-using DevExpress.Utils.Extensions;
+using DevExpress.Utils;
+using DevExpress.Utils.Menu;
+using DevExpress.XtraBars.Docking;
 using DevExpress.XtraEditors;
+using DevExpress.XtraGrid.Views.Grid;
 using DevExpress.XtraSplashScreen;
 using SistemaDeGerenciamento2_0.Class;
 using SistemaDeGerenciamento2_0.Properties;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
+using System.Data.SqlClient;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Runtime.Remoting.Contexts;
+using System.Security.Cryptography;
 using System.Windows.Forms;
+using static System.Windows.Forms.ImageList;
+using System.Data.Entity;
 
 namespace SistemaDeGerenciamento2_0.Forms
 {
@@ -35,23 +38,6 @@ namespace SistemaDeGerenciamento2_0.Forms
             sqlDataSource2.FillAsync();
 
             ReloadData();
-
-            //VerificarExistencia();
-        }
-
-        public frmConfiguracaoFinanceira(frmConfiguracoes _frmConfiguracoes)
-        {
-            InitializeComponent();
-
-            frmConfiguracoes = _frmConfiguracoes;
-
-            sqlDataSource1.FillAsync();
-
-            sqlDataSource2.FillAsync();
-
-            ReloadData();
-
-            //VerificarExistencia();
         }
 
         private void ReloadData()
@@ -73,7 +59,10 @@ namespace SistemaDeGerenciamento2_0.Forms
                 AtualizarValores();
             }
 
-            SalvarDescontoPorGrupo();
+            if (cmbGrupoAgrupador.Text != string.Empty && txtPorcentagemDescontoGrupo.Text != string.Empty)
+            {
+                SalvarDescontoPorGrupo();
+            }
         }
 
         private bool IsExiteDados = false;
@@ -82,7 +71,7 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             try
             {
-                using (SistemaDeGerenciamento2_0Entities7 db = new SistemaDeGerenciamento2_0Entities7())
+                using (SistemaDeGerenciamento2_0Entities db = new SistemaDeGerenciamento2_0Entities())
                 {
                     IsExiteDados = db.tb_configuracao_financeira.Select(x => x.id_configuracao_financeira).Any();
 
@@ -102,7 +91,7 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             try
             {
-                using (SistemaDeGerenciamento2_0Entities7 db = new SistemaDeGerenciamento2_0Entities7())
+                using (SistemaDeGerenciamento2_0Entities db = new SistemaDeGerenciamento2_0Entities())
                 {
                     var IsExitecadastro = db.tb_configuracao_financeira.Select(x => x.id_configuracao_financeira).Any();
 
@@ -137,15 +126,15 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             try
             {
-                using (SistemaDeGerenciamento2_0Entities7 db = new SistemaDeGerenciamento2_0Entities7())
+                using (SistemaDeGerenciamento2_0Entities db = new SistemaDeGerenciamento2_0Entities())
                 {
                     var dadosFinaneiros = db.tb_configuracao_financeira.Where(x => x.id_configuracao_financeira.Equals(1)).ToList();
 
                     foreach (var item in dadosFinaneiros)
                     {
-                        item.cf_desconto_pagamento = Convert.ToDecimal(txtPorcentagemDesconto.Text.Replace("%", ""));
-                        item.cf_juros_dia = Convert.ToDecimal(txtPorcentagemJuros.Text.Replace("%", ""));
-                        item.cf_parcela_juros = Convert.ToDecimal(cmbQtdParcelas.Text.Replace("x", ""));
+                        item.cf_desconto_pagamento = Convert.ToDecimal(txtPorcentagemDesconto.Text.Replace("%", string.Empty));
+                        item.cf_juros_dia = Convert.ToDecimal(txtPorcentagemJuros.Text.Replace("%", string.Empty));
+                        item.cf_parcela_juros = Convert.ToDecimal(cmbQtdParcelas.Text.Replace("x", string.Empty));
                     }
 
                     db.SaveChanges();
@@ -163,13 +152,13 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             try
             {
-                using (SistemaDeGerenciamento2_0Entities7 db = new SistemaDeGerenciamento2_0Entities7())
+                using (SistemaDeGerenciamento2_0Entities db = new SistemaDeGerenciamento2_0Entities())
                 {
                     var dadosFinaneiros = new tb_configuracao_financeira
                     {
-                        cf_desconto_pagamento = Convert.ToDecimal(txtPorcentagemDescontoGrupo.Text.Replace("%", "")),
-                        cf_juros_dia = Convert.ToDecimal(txtPorcentagemDescontoGrupo.Text.Replace("%", "")),
-                        cf_parcela_juros = Convert.ToDecimal(cmbQtdParcelas.Text.Replace("x", "")),
+                        cf_desconto_pagamento = Convert.ToDecimal(txtPorcentagemDescontoGrupo.Text.Replace("%", string.Empty)),
+                        cf_juros_dia = Convert.ToDecimal(txtPorcentagemDescontoGrupo.Text.Replace("%", string.Empty)),
+                        cf_parcela_juros = Convert.ToDecimal(cmbQtdParcelas.Text.Replace("x", string.Empty)),
                     };
 
                     db.tb_configuracao_financeira.Add(dadosFinaneiros);
@@ -188,13 +177,13 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             try
             {
-                using (SistemaDeGerenciamento2_0Entities7 db = new SistemaDeGerenciamento2_0Entities7())
+                using (SistemaDeGerenciamento2_0Entities db = new SistemaDeGerenciamento2_0Entities())
                 {
                     int fk_grupo = Convert.ToInt32(cmbGrupoAgrupador.Properties.GetKeyValueByDisplayValue(cmbGrupoAgrupador.Text));
 
                     var dadosFinaneiros = new tb_configuracao_financeira
                     {
-                        cf_desconto_grupo_produto = Convert.ToDecimal(txtPorcentagemDescontoGrupo.Text.Replace("%", "")),
+                        cf_desconto_grupo_produto = Convert.ToDecimal(txtPorcentagemDescontoGrupo.Text.Replace("%", string.Empty)),
                         fk_grupo = fk_grupo
                     };
 
@@ -214,6 +203,122 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             DadosMensagemAlerta msg = new DadosMensagemAlerta("\n   Sucesso!", Resources.salvar_verde50);
             AlertaSalvar.Show(this, $"{msg.titulo}", msg.texto, string.Empty, msg.image, msg);
+        }
+
+        private void simpleButton1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                using (SistemaDeGerenciamento2_0Entities db = new SistemaDeGerenciamento2_0Entities())
+                {
+                    int[] SelectedRowHandles = gridView1.GetSelectedRows();
+
+                    int idConfiguracaoFinanceira = Convert.ToInt32(gridView1.GetRowCellValue(SelectedRowHandles[0], gridView1.Columns[0]));
+
+                    var dadosConfiguracaoFinanceira = db.tb_configuracao_financeira.Where(x => x.id_configuracao_financeira == idConfiguracaoFinanceira).First();
+
+                    db.Entry(dadosConfiguracaoFinanceira).State = System.Data.Entity.EntityState.Deleted;
+
+                    db.tb_configuracao_financeira.Remove(dadosConfiguracaoFinanceira);
+                    db.SaveChanges();
+                }
+            }
+            catch (Exception x)
+            {
+                MessageBox.Show(x.ToString());
+            }
+        }
+
+        private void gridView1_PopupMenuShowing(object sender, DevExpress.XtraGrid.Views.Grid.PopupMenuShowingEventArgs e)
+        {
+            GridView view = sender as GridView;
+            if (e.MenuType == GridMenuType.Row)
+            {
+                int rowHandle = e.HitInfo.RowHandle;
+                // Delete existing menu items, if any.
+                e.Menu.Items.Clear();
+                // Add the Rows submenu with the 'Delete Row' command
+                e.Menu.Items.Add(CreateSubMenuRows(view, rowHandle));
+                // Add the 'Cell Merging' check menu item.
+                DXMenuItem item = CreateMenuItemCellMerging(view, rowHandle);
+                item.BeginGroup = true;
+                e.Menu.Items.Add(item);
+            }
+        }
+
+        private DXMenuItem CreateSubMenuRows(GridView view, int rowHandle)
+        {
+            DXSubMenuItem subMenu = new DXSubMenuItem("Rows");
+            string deleteRowsCommandCaption;
+            if (view.IsGroupRow(rowHandle))
+                deleteRowsCommandCaption = "&Delete rows in this group";
+            else
+                deleteRowsCommandCaption = "&Delete this row";
+            DXMenuItem menuItemDeleteRow = new DXMenuItem(deleteRowsCommandCaption, new EventHandler(OnDeleteRowClick), Resources.empresa_20);
+            menuItemDeleteRow.Tag = new RowInfo(view, rowHandle);
+            menuItemDeleteRow.Enabled = view.IsDataRow(rowHandle) || view.IsGroupRow(rowHandle);
+            subMenu.Items.Add(menuItemDeleteRow);
+            return subMenu;
+        }
+
+        private DXMenuCheckItem CreateMenuItemCellMerging(GridView view, int rowHandle)
+        {
+            DXMenuCheckItem checkItem = new DXMenuCheckItem("Cell &Merging",
+              view.OptionsView.AllowCellMerge, null, new EventHandler(OnCellMergingClick));
+            checkItem.Tag = new RowInfo(view, rowHandle);
+            checkItem.ImageOptions.Image = Resources.cadastro_15;
+            return checkItem;
+        }
+
+        private void OnDeleteRowClick(object sender, EventArgs e)
+        {
+            DXMenuItem menuItem = sender as DXMenuItem;
+            RowInfo ri = menuItem.Tag as RowInfo;
+            if (ri != null)
+            {
+                string message = menuItem.Caption.Replace("&", string.Empty);
+                if (XtraMessageBox.Show(message + " ?", "Confirm operation", MessageBoxButtons.YesNo) != DialogResult.Yes)
+                    return;
+                ri.View.DeleteRow(ri.RowHandle);
+            }
+        }
+
+        private void OnCellMergingClick(object sender, EventArgs e)
+        {
+            DXMenuCheckItem item = sender as DXMenuCheckItem;
+            RowInfo info = item.Tag as RowInfo;
+            info.View.OptionsView.AllowCellMerge = item.Checked;
+        }
+
+        private class RowInfo
+        {
+            public RowInfo(GridView view, int rowHandle)
+            {
+                this.RowHandle = rowHandle;
+                this.View = view;
+            }
+
+            public GridView View;
+            public int RowHandle;
+        }
+
+        private void gridView1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Delete)
+            {
+                if (MessageBox.Show("Delete row?", "Confirmation", MessageBoxButtons.YesNo) == DialogResult.Yes)
+
+                {
+                    GridView view = sender as GridView;
+                    view.DeleteRow(view.FocusedRowHandle);
+                    gdvGruposAgrupadores.RefreshDataSource();
+                    gridView1.RefreshData();
+                }
+                else
+                {
+                    return;
+                }
+            }
         }
     }
 }

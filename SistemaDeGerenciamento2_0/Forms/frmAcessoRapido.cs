@@ -4,11 +4,11 @@ using System.Windows.Forms;
 
 namespace SistemaDeGerenciamento2_0.Forms
 {
-    public partial class frmPemissaoCadastro : Form
+    public partial class frmAcessoRapido : Form
     {
         private frmTelaPrincipal frmTelaPrincipal;
 
-        public frmPemissaoCadastro(frmTelaPrincipal _frmTelaPrincipal)
+        public frmAcessoRapido(frmTelaPrincipal _frmTelaPrincipal)
         {
             InitializeComponent();
 

@@ -317,7 +317,7 @@
             // 
             // pictureEdit26
             // 
-            this.pictureEdit26.EditValue = global::SistemaDeGerenciamento2_0.Properties.Resources.informacao20;
+            this.pictureEdit26.EditValue = ((object)(resources.GetObject("pictureEdit26.EditValue")));
             this.pictureEdit26.Location = new System.Drawing.Point(200, 520);
             this.pictureEdit26.Name = "pictureEdit26";
             this.pictureEdit26.Properties.Appearance.BackColor = System.Drawing.Color.Silver;
@@ -332,7 +332,7 @@
             // 
             // pictureEdit30
             // 
-            this.pictureEdit30.EditValue = global::SistemaDeGerenciamento2_0.Properties.Resources.acesso_20px;
+            this.pictureEdit30.EditValue = ((object)(resources.GetObject("pictureEdit30.EditValue")));
             this.pictureEdit30.Location = new System.Drawing.Point(4, 474);
             this.pictureEdit30.Name = "pictureEdit30";
             this.pictureEdit30.Properties.Appearance.BackColor = System.Drawing.Color.Silver;
@@ -358,7 +358,7 @@
             // 
             // pictureEdit27
             // 
-            this.pictureEdit27.EditValue = global::SistemaDeGerenciamento2_0.Properties.Resources.informacao20;
+            this.pictureEdit27.EditValue = ((object)(resources.GetObject("pictureEdit27.EditValue")));
             this.pictureEdit27.Location = new System.Drawing.Point(575, 179);
             this.pictureEdit27.Name = "pictureEdit27";
             this.pictureEdit27.Properties.Appearance.BackColor = System.Drawing.Color.Silver;
@@ -384,7 +384,7 @@
             // 
             // pictureEdit28
             // 
-            this.pictureEdit28.EditValue = global::SistemaDeGerenciamento2_0.Properties.Resources.informacao20;
+            this.pictureEdit28.EditValue = ((object)(resources.GetObject("pictureEdit28.EditValue")));
             this.pictureEdit28.Location = new System.Drawing.Point(575, 149);
             this.pictureEdit28.Name = "pictureEdit28";
             this.pictureEdit28.Properties.Appearance.BackColor = System.Drawing.Color.Silver;
@@ -410,7 +410,7 @@
             // 
             // pictureEdit29
             // 
-            this.pictureEdit29.EditValue = global::SistemaDeGerenciamento2_0.Properties.Resources.informacao20;
+            this.pictureEdit29.EditValue = ((object)(resources.GetObject("pictureEdit29.EditValue")));
             this.pictureEdit29.Location = new System.Drawing.Point(557, 119);
             this.pictureEdit29.Name = "pictureEdit29";
             this.pictureEdit29.Properties.Appearance.BackColor = System.Drawing.Color.Silver;
@@ -437,7 +437,7 @@
             // 
             // pictureEdit31
             // 
-            this.pictureEdit31.EditValue = global::SistemaDeGerenciamento2_0.Properties.Resources.informacao20;
+            this.pictureEdit31.EditValue = ((object)(resources.GetObject("pictureEdit31.EditValue")));
             this.pictureEdit31.Location = new System.Drawing.Point(608, 89);
             this.pictureEdit31.Name = "pictureEdit31";
             this.pictureEdit31.Properties.Appearance.BackColor = System.Drawing.Color.Silver;
@@ -463,7 +463,7 @@
             // 
             // pictureEdit32
             // 
-            this.pictureEdit32.EditValue = global::SistemaDeGerenciamento2_0.Properties.Resources.informacao20;
+            this.pictureEdit32.EditValue = ((object)(resources.GetObject("pictureEdit32.EditValue")));
             this.pictureEdit32.Location = new System.Drawing.Point(560, 59);
             this.pictureEdit32.Name = "pictureEdit32";
             this.pictureEdit32.Properties.Appearance.BackColor = System.Drawing.Color.Silver;
@@ -477,7 +477,8 @@
             // 
             // pictureEdit33
             // 
-            this.pictureEdit33.EditValue = global::SistemaDeGerenciamento2_0.Properties.Resources.acesso_20px;
+            this.pictureEdit33.EditValue = ((object)(resources.GetObject("pictureEdit33.EditValue")));
+            this.pictureEdit33.Enabled = false;
             this.pictureEdit33.Location = new System.Drawing.Point(385, 13);
             this.pictureEdit33.Name = "pictureEdit33";
             this.pictureEdit33.Properties.Appearance.BackColor = System.Drawing.Color.Silver;
@@ -486,6 +487,7 @@
             this.pictureEdit33.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
             this.pictureEdit33.Properties.PictureAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.pictureEdit33.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit33.Properties.ShowMenu = false;
             this.pictureEdit33.Size = new System.Drawing.Size(368, 205);
             this.pictureEdit33.TabIndex = 254;
             // 
@@ -503,7 +505,7 @@
             // 
             // pictureEdit3
             // 
-            this.pictureEdit3.EditValue = global::SistemaDeGerenciamento2_0.Properties.Resources.informacao20;
+            this.pictureEdit3.EditValue = ((object)(resources.GetObject("pictureEdit3.EditValue")));
             this.pictureEdit3.Location = new System.Drawing.Point(639, 369);
             this.pictureEdit3.Name = "pictureEdit3";
             this.pictureEdit3.Properties.Appearance.BackColor = System.Drawing.Color.Silver;
@@ -529,7 +531,7 @@
             // 
             // pictureEdit2
             // 
-            this.pictureEdit2.EditValue = global::SistemaDeGerenciamento2_0.Properties.Resources.informacao20;
+            this.pictureEdit2.EditValue = ((object)(resources.GetObject("pictureEdit2.EditValue")));
             this.pictureEdit2.Location = new System.Drawing.Point(568, 337);
             this.pictureEdit2.Name = "pictureEdit2";
             this.pictureEdit2.Properties.Appearance.BackColor = System.Drawing.Color.Silver;
@@ -555,7 +557,7 @@
             // 
             // pictureEdit1
             // 
-            this.pictureEdit1.EditValue = global::SistemaDeGerenciamento2_0.Properties.Resources.informacao20;
+            this.pictureEdit1.EditValue = ((object)(resources.GetObject("pictureEdit1.EditValue")));
             this.pictureEdit1.Location = new System.Drawing.Point(546, 305);
             this.pictureEdit1.Name = "pictureEdit1";
             this.pictureEdit1.Properties.Appearance.BackColor = System.Drawing.Color.Silver;
@@ -581,7 +583,7 @@
             // 
             // pcbRequesitosCodigoDeBarras
             // 
-            this.pcbRequesitosCodigoDeBarras.EditValue = global::SistemaDeGerenciamento2_0.Properties.Resources.informacao20;
+            this.pcbRequesitosCodigoDeBarras.EditValue = ((object)(resources.GetObject("pcbRequesitosCodigoDeBarras.EditValue")));
             this.pcbRequesitosCodigoDeBarras.Location = new System.Drawing.Point(557, 275);
             this.pcbRequesitosCodigoDeBarras.Name = "pcbRequesitosCodigoDeBarras";
             this.pcbRequesitosCodigoDeBarras.Properties.Appearance.BackColor = System.Drawing.Color.Silver;
@@ -595,7 +597,8 @@
             // 
             // pictureEdit20
             // 
-            this.pictureEdit20.EditValue = global::SistemaDeGerenciamento2_0.Properties.Resources.acesso_20px;
+            this.pictureEdit20.EditValue = ((object)(resources.GetObject("pictureEdit20.EditValue")));
+            this.pictureEdit20.Enabled = false;
             this.pictureEdit20.Location = new System.Drawing.Point(385, 224);
             this.pictureEdit20.Name = "pictureEdit20";
             this.pictureEdit20.Properties.Appearance.BackColor = System.Drawing.Color.Silver;
@@ -604,6 +607,7 @@
             this.pictureEdit20.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
             this.pictureEdit20.Properties.PictureAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.pictureEdit20.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit20.Properties.ShowMenu = false;
             this.pictureEdit20.Size = new System.Drawing.Size(368, 183);
             this.pictureEdit20.TabIndex = 243;
             // 
@@ -621,7 +625,7 @@
             // 
             // pictureEdit36
             // 
-            this.pictureEdit36.EditValue = global::SistemaDeGerenciamento2_0.Properties.Resources.informacao20;
+            this.pictureEdit36.EditValue = ((object)(resources.GetObject("pictureEdit36.EditValue")));
             this.pictureEdit36.Location = new System.Drawing.Point(618, 521);
             this.pictureEdit36.Name = "pictureEdit36";
             this.pictureEdit36.Properties.Appearance.BackColor = System.Drawing.Color.Silver;
@@ -647,7 +651,7 @@
             // 
             // pictureEdit37
             // 
-            this.pictureEdit37.EditValue = global::SistemaDeGerenciamento2_0.Properties.Resources.informacao20;
+            this.pictureEdit37.EditValue = ((object)(resources.GetObject("pictureEdit37.EditValue")));
             this.pictureEdit37.Location = new System.Drawing.Point(534, 491);
             this.pictureEdit37.Name = "pictureEdit37";
             this.pictureEdit37.Properties.Appearance.BackColor = System.Drawing.Color.Silver;
@@ -673,7 +677,7 @@
             // 
             // pictureEdit38
             // 
-            this.pictureEdit38.EditValue = global::SistemaDeGerenciamento2_0.Properties.Resources.informacao20;
+            this.pictureEdit38.EditValue = ((object)(resources.GetObject("pictureEdit38.EditValue")));
             this.pictureEdit38.Location = new System.Drawing.Point(581, 461);
             this.pictureEdit38.Name = "pictureEdit38";
             this.pictureEdit38.Properties.Appearance.BackColor = System.Drawing.Color.Silver;
@@ -687,7 +691,8 @@
             // 
             // pictureEdit39
             // 
-            this.pictureEdit39.EditValue = global::SistemaDeGerenciamento2_0.Properties.Resources.acesso_20px;
+            this.pictureEdit39.EditValue = ((object)(resources.GetObject("pictureEdit39.EditValue")));
+            this.pictureEdit39.Enabled = false;
             this.pictureEdit39.Location = new System.Drawing.Point(385, 413);
             this.pictureEdit39.Name = "pictureEdit39";
             this.pictureEdit39.Properties.Appearance.BackColor = System.Drawing.Color.Silver;
@@ -696,6 +701,7 @@
             this.pictureEdit39.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
             this.pictureEdit39.Properties.PictureAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.pictureEdit39.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit39.Properties.ShowMenu = false;
             this.pictureEdit39.Size = new System.Drawing.Size(368, 148);
             this.pictureEdit39.TabIndex = 232;
             // 
@@ -713,7 +719,7 @@
             // 
             // pictureEdit24
             // 
-            this.pictureEdit24.EditValue = global::SistemaDeGerenciamento2_0.Properties.Resources.informacao20;
+            this.pictureEdit24.EditValue = ((object)(resources.GetObject("pictureEdit24.EditValue")));
             this.pictureEdit24.Location = new System.Drawing.Point(187, 238);
             this.pictureEdit24.Name = "pictureEdit24";
             this.pictureEdit24.Properties.Appearance.BackColor = System.Drawing.Color.Silver;
@@ -739,7 +745,7 @@
             // 
             // pictureEdit23
             // 
-            this.pictureEdit23.EditValue = global::SistemaDeGerenciamento2_0.Properties.Resources.informacao20;
+            this.pictureEdit23.EditValue = ((object)(resources.GetObject("pictureEdit23.EditValue")));
             this.pictureEdit23.Location = new System.Drawing.Point(162, 208);
             this.pictureEdit23.Name = "pictureEdit23";
             this.pictureEdit23.Properties.Appearance.BackColor = System.Drawing.Color.Silver;
@@ -765,7 +771,7 @@
             // 
             // pictureEdit22
             // 
-            this.pictureEdit22.EditValue = global::SistemaDeGerenciamento2_0.Properties.Resources.informacao20;
+            this.pictureEdit22.EditValue = ((object)(resources.GetObject("pictureEdit22.EditValue")));
             this.pictureEdit22.Location = new System.Drawing.Point(161, 178);
             this.pictureEdit22.Name = "pictureEdit22";
             this.pictureEdit22.Properties.Appearance.BackColor = System.Drawing.Color.Silver;
@@ -789,7 +795,7 @@
             // 
             // pictureEdit12
             // 
-            this.pictureEdit12.EditValue = global::SistemaDeGerenciamento2_0.Properties.Resources.informacao20;
+            this.pictureEdit12.EditValue = ((object)(resources.GetObject("pictureEdit12.EditValue")));
             this.pictureEdit12.Location = new System.Drawing.Point(182, 907);
             this.pictureEdit12.Name = "pictureEdit12";
             this.pictureEdit12.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
@@ -813,7 +819,7 @@
             // 
             // pictureEdit13
             // 
-            this.pictureEdit13.EditValue = global::SistemaDeGerenciamento2_0.Properties.Resources.informacao20;
+            this.pictureEdit13.EditValue = ((object)(resources.GetObject("pictureEdit13.EditValue")));
             this.pictureEdit13.Location = new System.Drawing.Point(223, 866);
             this.pictureEdit13.Name = "pictureEdit13";
             this.pictureEdit13.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
@@ -837,7 +843,7 @@
             // 
             // pictureEdit14
             // 
-            this.pictureEdit14.EditValue = global::SistemaDeGerenciamento2_0.Properties.Resources.informacao20;
+            this.pictureEdit14.EditValue = ((object)(resources.GetObject("pictureEdit14.EditValue")));
             this.pictureEdit14.Location = new System.Drawing.Point(208, 829);
             this.pictureEdit14.Name = "pictureEdit14";
             this.pictureEdit14.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
@@ -861,7 +867,7 @@
             // 
             // pictureEdit15
             // 
-            this.pictureEdit15.EditValue = global::SistemaDeGerenciamento2_0.Properties.Resources.informacao20;
+            this.pictureEdit15.EditValue = ((object)(resources.GetObject("pictureEdit15.EditValue")));
             this.pictureEdit15.Location = new System.Drawing.Point(133, 790);
             this.pictureEdit15.Name = "pictureEdit15";
             this.pictureEdit15.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
@@ -887,7 +893,7 @@
             // 
             // pictureEdit16
             // 
-            this.pictureEdit16.EditValue = global::SistemaDeGerenciamento2_0.Properties.Resources.informacao20;
+            this.pictureEdit16.EditValue = ((object)(resources.GetObject("pictureEdit16.EditValue")));
             this.pictureEdit16.Location = new System.Drawing.Point(149, 148);
             this.pictureEdit16.Name = "pictureEdit16";
             this.pictureEdit16.Properties.Appearance.BackColor = System.Drawing.Color.Silver;
@@ -913,7 +919,7 @@
             // 
             // pictureEdit17
             // 
-            this.pictureEdit17.EditValue = global::SistemaDeGerenciamento2_0.Properties.Resources.informacao20;
+            this.pictureEdit17.EditValue = ((object)(resources.GetObject("pictureEdit17.EditValue")));
             this.pictureEdit17.Location = new System.Drawing.Point(155, 118);
             this.pictureEdit17.Name = "pictureEdit17";
             this.pictureEdit17.Properties.Appearance.BackColor = System.Drawing.Color.Silver;
@@ -939,7 +945,7 @@
             // 
             // pictureEdit18
             // 
-            this.pictureEdit18.EditValue = global::SistemaDeGerenciamento2_0.Properties.Resources.informacao20;
+            this.pictureEdit18.EditValue = ((object)(resources.GetObject("pictureEdit18.EditValue")));
             this.pictureEdit18.Location = new System.Drawing.Point(156, 88);
             this.pictureEdit18.Name = "pictureEdit18";
             this.pictureEdit18.Properties.Appearance.BackColor = System.Drawing.Color.Silver;
@@ -965,7 +971,7 @@
             // 
             // pictureEdit19
             // 
-            this.pictureEdit19.EditValue = global::SistemaDeGerenciamento2_0.Properties.Resources.informacao20;
+            this.pictureEdit19.EditValue = ((object)(resources.GetObject("pictureEdit19.EditValue")));
             this.pictureEdit19.Location = new System.Drawing.Point(156, 58);
             this.pictureEdit19.Name = "pictureEdit19";
             this.pictureEdit19.Properties.Appearance.BackColor = System.Drawing.Color.Silver;
@@ -979,7 +985,7 @@
             // 
             // pictureEdit10
             // 
-            this.pictureEdit10.EditValue = global::SistemaDeGerenciamento2_0.Properties.Resources.informacao20;
+            this.pictureEdit10.EditValue = ((object)(resources.GetObject("pictureEdit10.EditValue")));
             this.pictureEdit10.Location = new System.Drawing.Point(223, 417);
             this.pictureEdit10.Name = "pictureEdit10";
             this.pictureEdit10.Properties.Appearance.BackColor = System.Drawing.Color.Silver;
@@ -1005,7 +1011,7 @@
             // 
             // pictureEdit5
             // 
-            this.pictureEdit5.EditValue = global::SistemaDeGerenciamento2_0.Properties.Resources.informacao20;
+            this.pictureEdit5.EditValue = ((object)(resources.GetObject("pictureEdit5.EditValue")));
             this.pictureEdit5.Location = new System.Drawing.Point(279, 387);
             this.pictureEdit5.Name = "pictureEdit5";
             this.pictureEdit5.Properties.Appearance.BackColor = System.Drawing.Color.Silver;
@@ -1043,7 +1049,7 @@
             // 
             // pictureEdit8
             // 
-            this.pictureEdit8.EditValue = global::SistemaDeGerenciamento2_0.Properties.Resources.informacao20;
+            this.pictureEdit8.EditValue = ((object)(resources.GetObject("pictureEdit8.EditValue")));
             this.pictureEdit8.Location = new System.Drawing.Point(304, 357);
             this.pictureEdit8.Name = "pictureEdit8";
             this.pictureEdit8.Properties.Appearance.BackColor = System.Drawing.Color.Silver;
@@ -1069,7 +1075,7 @@
             // 
             // pictureEdit9
             // 
-            this.pictureEdit9.EditValue = global::SistemaDeGerenciamento2_0.Properties.Resources.informacao20;
+            this.pictureEdit9.EditValue = ((object)(resources.GetObject("pictureEdit9.EditValue")));
             this.pictureEdit9.Location = new System.Drawing.Point(217, 327);
             this.pictureEdit9.Name = "pictureEdit9";
             this.pictureEdit9.Properties.Appearance.BackColor = System.Drawing.Color.Silver;
@@ -1102,7 +1108,7 @@
             // 
             this.btnSalvar.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalvar.Appearance.Options.UseFont = true;
-            this.btnSalvar.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.salvar;
+            this.btnSalvar.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnSalvar.ImageOptions.Image")));
             this.btnSalvar.ImageOptions.ImageIndex = 5;
             this.btnSalvar.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftBottom;
             this.btnSalvar.ImageOptions.ImageToTextIndent = 10;
@@ -1117,7 +1123,8 @@
             // 
             // pictureEdit25
             // 
-            this.pictureEdit25.EditValue = global::SistemaDeGerenciamento2_0.Properties.Resources.acesso_20px;
+            this.pictureEdit25.EditValue = ((object)(resources.GetObject("pictureEdit25.EditValue")));
+            this.pictureEdit25.Enabled = false;
             this.pictureEdit25.Location = new System.Drawing.Point(4, 282);
             this.pictureEdit25.Name = "pictureEdit25";
             this.pictureEdit25.Properties.Appearance.BackColor = System.Drawing.Color.Silver;
@@ -1126,12 +1133,14 @@
             this.pictureEdit25.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
             this.pictureEdit25.Properties.PictureAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.pictureEdit25.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit25.Properties.ShowMenu = false;
             this.pictureEdit25.Size = new System.Drawing.Size(368, 186);
             this.pictureEdit25.TabIndex = 176;
             // 
             // pictureEdit21
             // 
-            this.pictureEdit21.EditValue = global::SistemaDeGerenciamento2_0.Properties.Resources.acesso_20px;
+            this.pictureEdit21.EditValue = ((object)(resources.GetObject("pictureEdit21.EditValue")));
+            this.pictureEdit21.Enabled = false;
             this.pictureEdit21.Location = new System.Drawing.Point(4, 13);
             this.pictureEdit21.Name = "pictureEdit21";
             this.pictureEdit21.Properties.Appearance.BackColor = System.Drawing.Color.Silver;
@@ -1140,6 +1149,7 @@
             this.pictureEdit21.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
             this.pictureEdit21.Properties.PictureAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.pictureEdit21.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit21.Properties.ShowMenu = false;
             this.pictureEdit21.Size = new System.Drawing.Size(368, 263);
             this.pictureEdit21.TabIndex = 167;
             // 

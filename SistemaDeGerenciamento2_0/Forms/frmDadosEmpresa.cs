@@ -315,7 +315,7 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             try
             {
-                using (SistemaDeGerenciamento2_0Entities7 db = new SistemaDeGerenciamento2_0Entities7())
+                using (SistemaDeGerenciamento2_0Entities db = new SistemaDeGerenciamento2_0Entities())
                 {
                     var enderecoEmpresa = db.tb_enderecos.Where(x => x.id_endereco.Equals(IDEndereco)).ToList();
 
@@ -345,7 +345,7 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             try
             {
-                using (SistemaDeGerenciamento2_0Entities7 db = new SistemaDeGerenciamento2_0Entities7())
+                using (SistemaDeGerenciamento2_0Entities db = new SistemaDeGerenciamento2_0Entities())
                 {
                     var dadosEmpresa = db.tb_registro.Where(x => x.rg_categoria.Equals("Empresa")).ToList();
 
@@ -376,7 +376,7 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             try
             {
-                using (SistemaDeGerenciamento2_0Entities7 db = new SistemaDeGerenciamento2_0Entities7())
+                using (SistemaDeGerenciamento2_0Entities db = new SistemaDeGerenciamento2_0Entities())
                 {
                     listaEnderecoEmpresa = db.tb_enderecos.Where(x => x.id_endereco.Equals(IDEndereco)).ToList();
                 }
@@ -393,7 +393,7 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             try
             {
-                using (SistemaDeGerenciamento2_0Entities7 db = new SistemaDeGerenciamento2_0Entities7())
+                using (SistemaDeGerenciamento2_0Entities db = new SistemaDeGerenciamento2_0Entities())
                 {
                     listaDadosEmpresa = db.tb_registro.Where(x => x.rg_categoria.Equals("Empresa")).ToList();
 
@@ -415,7 +415,7 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             try
             {
-                using (SistemaDeGerenciamento2_0Entities7 db = new SistemaDeGerenciamento2_0Entities7())
+                using (SistemaDeGerenciamento2_0Entities db = new SistemaDeGerenciamento2_0Entities())
                 {
                     var enderecoEmpresa = new tb_enderecos()
                     {
@@ -448,7 +448,7 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             try
             {
-                using (SistemaDeGerenciamento2_0Entities7 db = new SistemaDeGerenciamento2_0Entities7())
+                using (SistemaDeGerenciamento2_0Entities db = new SistemaDeGerenciamento2_0Entities())
                 {
                     var dadosEmpresa = new tb_registro()
                     {

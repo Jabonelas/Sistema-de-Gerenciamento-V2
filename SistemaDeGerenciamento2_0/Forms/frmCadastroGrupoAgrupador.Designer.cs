@@ -163,8 +163,7 @@
             // 
             // sqlDataSource1
             // 
-            this.sqlDataSource1.ConnectionName = "SistemaDeGerenciamento2_0.Properties.Settings.SistemaDeGerenciamento2_0Connection" +
-    "String";
+            this.sqlDataSource1.ConnectionName = "SistemaDeGerenciamento2_0ConnectionString";
             this.sqlDataSource1.Name = "sqlDataSource1";
             customSqlQuery1.Name = "Query";
             customSqlQuery1.Sql = "select \"tb_grupo\".\"gp_nome_grupo\",\r\n       \"tb_grupo\".\"gp_nome_agrupador\"\r\n  from" +

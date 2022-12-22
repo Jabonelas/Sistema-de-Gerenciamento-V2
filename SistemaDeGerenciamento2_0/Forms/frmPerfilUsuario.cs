@@ -15,32 +15,12 @@ namespace SistemaDeGerenciamento2_0.Forms
 {
     public partial class frmPerfilUsuario : DevExpress.XtraEditors.XtraForm
     {
-        private frmTelaPrincipal telaPrincipal;
-
-        public frmPerfilUsuario(frmTelaPrincipal _telaPrincipal)
+        public frmPerfilUsuario()
         {
             InitializeComponent();
 
-            telaPrincipal = _telaPrincipal;
-
             txtNovaSenha.Properties.UseSystemPasswordChar = true;
             txtConfirmarSenha.Properties.UseSystemPasswordChar = true;
-        }
-
-        private void ReloadData()
-        {
-            try
-            {
-                using (var handle = SplashScreenManager.ShowOverlayForm(telaPrincipal))
-                {
-                    //BuscaPreencherTextBoxDadosEmpresa();
-                    //BuscaPreencherTextBoxEnderecoEmpresa();
-                }
-            }
-            catch (Exception x)
-            {
-                MessageBox.Show(x.ToString());
-            }
         }
 
         private void txtConfirmarSenha_KeyPress(object sender, KeyPressEventArgs e)

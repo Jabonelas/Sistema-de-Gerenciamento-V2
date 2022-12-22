@@ -1,6 +1,6 @@
 ﻿namespace SistemaDeGerenciamento2_0.Forms
 {
-    partial class frmPemissaoCadastro
+    partial class frmAcessoRapido
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPemissaoCadastro));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAcessoRapido));
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.panelControl5 = new DevExpress.XtraEditors.PanelControl();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
@@ -522,7 +522,6 @@
         }
 
         #endregion
-        private DevExpress.XtraEditors.PanelControl panelControl1;
         private DevExpress.XtraEditors.PanelControl panelControl3;
         private DevExpress.XtraEditors.SimpleButton btnIrParaCadastro;
         private DevExpress.XtraEditors.SimpleButton btnNovoFuncionario;
@@ -551,5 +550,6 @@
         private DevExpress.XtraEditors.SimpleButton btnIrParaProdutos;
         private DevExpress.XtraEditors.SimpleButton btnNovoProduto;
         private System.Windows.Forms.PictureBox pictureBox5;
+        private DevExpress.XtraEditors.PanelControl panelControl1;
     }
 }

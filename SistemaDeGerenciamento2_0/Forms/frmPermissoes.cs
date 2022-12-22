@@ -79,7 +79,7 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             try
             {
-                using (SistemaDeGerenciamento2_0Entities7 db = new SistemaDeGerenciamento2_0Entities7())
+                using (SistemaDeGerenciamento2_0Entities db = new SistemaDeGerenciamento2_0Entities())
                 {
                     var checkBoxPreenchidas = new tb_permissoes()
                     {
@@ -137,7 +137,7 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             try
             {
-                using (SistemaDeGerenciamento2_0Entities7 db = new SistemaDeGerenciamento2_0Entities7())
+                using (SistemaDeGerenciamento2_0Entities db = new SistemaDeGerenciamento2_0Entities())
                 {
                     var dadosUsuario = db.tb_registro.Where(x => x.id_registro.Equals(IDRegistro));
 
@@ -167,7 +167,7 @@ namespace SistemaDeGerenciamento2_0.Forms
 
                 if (fk_permissoes != 0)
                 {
-                    using (SistemaDeGerenciamento2_0Entities7 db = new SistemaDeGerenciamento2_0Entities7())
+                    using (SistemaDeGerenciamento2_0Entities db = new SistemaDeGerenciamento2_0Entities())
                     {
                         var dadosConfiguracoes = db.tb_permissoes.Where(x => x.id_permissoes == fk_permissoes).ToList();
 
@@ -227,7 +227,7 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             try
             {
-                using (SistemaDeGerenciamento2_0Entities7 db = new SistemaDeGerenciamento2_0Entities7())
+                using (SistemaDeGerenciamento2_0Entities db = new SistemaDeGerenciamento2_0Entities())
                 {
                     int? fk_permissoes = Convert.ToInt32(form.FK_Permissoes);
 
@@ -344,7 +344,5 @@ namespace SistemaDeGerenciamento2_0.Forms
                 Salvar();
             }
         }
-
-     
     }
 }

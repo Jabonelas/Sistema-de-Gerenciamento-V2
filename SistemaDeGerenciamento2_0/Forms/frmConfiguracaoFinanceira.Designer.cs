@@ -29,9 +29,21 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            DevExpress.DataAccess.Sql.CustomSqlQuery customSqlQuery1 = new DevExpress.DataAccess.Sql.CustomSqlQuery();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmConfiguracaoFinanceira));
             DevExpress.DataAccess.Sql.CustomSqlQuery customSqlQuery2 = new DevExpress.DataAccess.Sql.CustomSqlQuery();
+            DevExpress.DataAccess.Sql.SelectQuery selectQuery2 = new DevExpress.DataAccess.Sql.SelectQuery();
+            DevExpress.DataAccess.Sql.Column column5 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression5 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Table table3 = new DevExpress.DataAccess.Sql.Table();
+            DevExpress.DataAccess.Sql.Column column6 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression6 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column7 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression7 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Table table4 = new DevExpress.DataAccess.Sql.Table();
+            DevExpress.DataAccess.Sql.Column column8 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression8 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Join join2 = new DevExpress.DataAccess.Sql.Join();
+            DevExpress.DataAccess.Sql.RelationColumnInfo relationColumnInfo2 = new DevExpress.DataAccess.Sql.RelationColumnInfo();
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
             this.btnSalvar = new DevExpress.XtraEditors.SimpleButton();
             this.pcbRequesitosCodigoDeBarras = new DevExpress.XtraEditors.PictureEdit();
@@ -58,12 +70,14 @@
             this.queryBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             this.gdvGruposAgrupadores = new DevExpress.XtraGrid.GridControl();
-            this.sqlDataSource2 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.cf_desconto_grupo_produto = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colgp_nome_grupo = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colgp_nome_agrupador = new DevExpress.XtraGrid.Columns.GridColumn();
             this.AlertaSalvar = new DevExpress.XtraBars.Alerter.AlertControl(this.components);
+            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            this.id_configuracao_financeira = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.sqlDataSource2 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pcbRequesitosCodigoDeBarras.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit3.Properties)).BeginInit();
@@ -100,7 +114,7 @@
             // 
             this.btnSalvar.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalvar.Appearance.Options.UseFont = true;
-            this.btnSalvar.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.salvar;
+            this.btnSalvar.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnSalvar.ImageOptions.Image")));
             this.btnSalvar.ImageOptions.ImageIndex = 5;
             this.btnSalvar.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftBottom;
             this.btnSalvar.ImageOptions.ImageToTextIndent = 10;
@@ -115,7 +129,7 @@
             // 
             // pcbRequesitosCodigoDeBarras
             // 
-            this.pcbRequesitosCodigoDeBarras.EditValue = global::SistemaDeGerenciamento2_0.Properties.Resources.informacao20;
+            this.pcbRequesitosCodigoDeBarras.EditValue = ((object)(resources.GetObject("pcbRequesitosCodigoDeBarras.EditValue")));
             this.pcbRequesitosCodigoDeBarras.Location = new System.Drawing.Point(164, 84);
             this.pcbRequesitosCodigoDeBarras.Name = "pcbRequesitosCodigoDeBarras";
             this.pcbRequesitosCodigoDeBarras.Properties.Appearance.BackColor = System.Drawing.Color.Silver;
@@ -140,7 +154,7 @@
             // pictureBox6
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox6.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.separador;
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
             this.pictureBox6.Location = new System.Drawing.Point(-11, 25);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(265, 25);
@@ -150,7 +164,7 @@
             // 
             // pictureEdit3
             // 
-            this.pictureEdit3.EditValue = global::SistemaDeGerenciamento2_0.Properties.Resources.informacao20;
+            this.pictureEdit3.EditValue = ((object)(resources.GetObject("pictureEdit3.EditValue")));
             this.pictureEdit3.Location = new System.Drawing.Point(820, 84);
             this.pictureEdit3.Name = "pictureEdit3";
             this.pictureEdit3.Properties.Appearance.BackColor = System.Drawing.Color.Silver;
@@ -176,7 +190,7 @@
             // 
             // pictureEdit4
             // 
-            this.pictureEdit4.EditValue = global::SistemaDeGerenciamento2_0.Properties.Resources.informacao20;
+            this.pictureEdit4.EditValue = ((object)(resources.GetObject("pictureEdit4.EditValue")));
             this.pictureEdit4.Location = new System.Drawing.Point(500, 84);
             this.pictureEdit4.Name = "pictureEdit4";
             this.pictureEdit4.Properties.Appearance.BackColor = System.Drawing.Color.Silver;
@@ -202,7 +216,7 @@
             // 
             // pictureEdit1
             // 
-            this.pictureEdit1.EditValue = global::SistemaDeGerenciamento2_0.Properties.Resources.informacao20;
+            this.pictureEdit1.EditValue = ((object)(resources.GetObject("pictureEdit1.EditValue")));
             this.pictureEdit1.Location = new System.Drawing.Point(198, 198);
             this.pictureEdit1.Name = "pictureEdit1";
             this.pictureEdit1.Properties.Appearance.BackColor = System.Drawing.Color.Silver;
@@ -228,7 +242,8 @@
             // 
             // pictureEdit33
             // 
-            this.pictureEdit33.EditValue = global::SistemaDeGerenciamento2_0.Properties.Resources.acesso_20px;
+            this.pictureEdit33.EditValue = ((object)(resources.GetObject("pictureEdit33.EditValue")));
+            this.pictureEdit33.Enabled = false;
             this.pictureEdit33.Location = new System.Drawing.Point(30, 56);
             this.pictureEdit33.Name = "pictureEdit33";
             this.pictureEdit33.Properties.Appearance.BackColor = System.Drawing.Color.Silver;
@@ -237,12 +252,13 @@
             this.pictureEdit33.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
             this.pictureEdit33.Properties.PictureAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.pictureEdit33.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit33.Properties.ShowMenu = false;
             this.pictureEdit33.Size = new System.Drawing.Size(190, 99);
             this.pictureEdit33.TabIndex = 324;
             // 
             // pictureEdit6
             // 
-            this.pictureEdit6.EditValue = global::SistemaDeGerenciamento2_0.Properties.Resources.acesso_20px;
+            this.pictureEdit6.EditValue = ((object)(resources.GetObject("pictureEdit6.EditValue")));
             this.pictureEdit6.Location = new System.Drawing.Point(366, 56);
             this.pictureEdit6.Name = "pictureEdit6";
             this.pictureEdit6.Properties.Appearance.BackColor = System.Drawing.Color.Silver;
@@ -256,7 +272,8 @@
             // 
             // pictureEdit7
             // 
-            this.pictureEdit7.EditValue = global::SistemaDeGerenciamento2_0.Properties.Resources.acesso_20px;
+            this.pictureEdit7.EditValue = ((object)(resources.GetObject("pictureEdit7.EditValue")));
+            this.pictureEdit7.Enabled = false;
             this.pictureEdit7.Location = new System.Drawing.Point(702, 56);
             this.pictureEdit7.Name = "pictureEdit7";
             this.pictureEdit7.Properties.Appearance.BackColor = System.Drawing.Color.Silver;
@@ -265,12 +282,14 @@
             this.pictureEdit7.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
             this.pictureEdit7.Properties.PictureAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.pictureEdit7.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit7.Properties.ShowMenu = false;
             this.pictureEdit7.Size = new System.Drawing.Size(190, 99);
             this.pictureEdit7.TabIndex = 333;
             // 
             // pictureEdit8
             // 
-            this.pictureEdit8.EditValue = global::SistemaDeGerenciamento2_0.Properties.Resources.acesso_20px;
+            this.pictureEdit8.EditValue = ((object)(resources.GetObject("pictureEdit8.EditValue")));
+            this.pictureEdit8.Enabled = false;
             this.pictureEdit8.Location = new System.Drawing.Point(30, 165);
             this.pictureEdit8.Name = "pictureEdit8";
             this.pictureEdit8.Properties.Appearance.BackColor = System.Drawing.Color.Silver;
@@ -279,6 +298,7 @@
             this.pictureEdit8.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
             this.pictureEdit8.Properties.PictureAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.pictureEdit8.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit8.Properties.ShowMenu = false;
             this.pictureEdit8.Size = new System.Drawing.Size(862, 361);
             this.pictureEdit8.TabIndex = 336;
             // 
@@ -416,15 +436,14 @@
             // 
             // sqlDataSource1
             // 
-            this.sqlDataSource1.ConnectionName = "SistemaDeGerenciamento2_0.Properties.Settings.SistemaDeGerenciamento2_0Connection" +
-    "String";
+            this.sqlDataSource1.ConnectionName = "SistemaDeGerenciamento2_0ConnectionString";
             this.sqlDataSource1.Name = "sqlDataSource1";
-            customSqlQuery1.Name = "Query";
-            customSqlQuery1.Sql = "select \"tb_grupo\".\"id_grupo\",\r\n       \"tb_grupo\".\"gp_nome_grupo\",\r\n       \"tb_gru" +
+            customSqlQuery2.Name = "Query";
+            customSqlQuery2.Sql = "select \"tb_grupo\".\"id_grupo\",\r\n       \"tb_grupo\".\"gp_nome_grupo\",\r\n       \"tb_gru" +
     "po\".\"gp_nome_agrupador\"\r\n  from \"dbo\".\"tb_grupo\" \"tb_grupo\"\r\nwhere \"tb_grupo\".\"g" +
     "p_nome_grupo\" is not null";
             this.sqlDataSource1.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
-            customSqlQuery1});
+            customSqlQuery2});
             this.sqlDataSource1.ResultSchemaSerializable = resources.GetString("sqlDataSource1.ResultSchemaSerializable");
             // 
             // gdvGruposAgrupadores
@@ -439,27 +458,21 @@
             this.gdvGruposAgrupadores.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
             // 
-            // sqlDataSource2
-            // 
-            this.sqlDataSource2.ConnectionName = "SistemaDeGerenciamento2_0.Properties.Settings.SistemaDeGerenciamento2_0Connection" +
-    "String";
-            this.sqlDataSource2.Name = "sqlDataSource2";
-            customSqlQuery2.Name = "tb_configuracao_financeira";
-            customSqlQuery2.Sql = resources.GetString("customSqlQuery2.Sql");
-            this.sqlDataSource2.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
-            customSqlQuery2});
-            this.sqlDataSource2.ResultSchemaSerializable = resources.GetString("sqlDataSource2.ResultSchemaSerializable");
-            // 
             // gridView1
             // 
             this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.id_configuracao_financeira,
             this.cf_desconto_grupo_produto,
             this.colgp_nome_grupo,
             this.colgp_nome_agrupador});
             this.gridView1.GridControl = this.gdvGruposAgrupadores;
             this.gridView1.Name = "gridView1";
+            this.gridView1.OptionsBehavior.AllowAddRows = DevExpress.Utils.DefaultBoolean.False;
+            this.gridView1.OptionsBehavior.AllowDeleteRows = DevExpress.Utils.DefaultBoolean.True;
             this.gridView1.OptionsBehavior.Editable = false;
             this.gridView1.OptionsView.ShowFooter = true;
+            this.gridView1.PopupMenuShowing += new DevExpress.XtraGrid.Views.Grid.PopupMenuShowingEventHandler(this.gridView1_PopupMenuShowing);
+            this.gridView1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.gridView1_KeyDown);
             // 
             // cf_desconto_grupo_produto
             // 
@@ -473,7 +486,7 @@
             this.cf_desconto_grupo_produto.FieldName = "cf_desconto_grupo_produto";
             this.cf_desconto_grupo_produto.Name = "cf_desconto_grupo_produto";
             this.cf_desconto_grupo_produto.Visible = true;
-            this.cf_desconto_grupo_produto.VisibleIndex = 0;
+            this.cf_desconto_grupo_produto.VisibleIndex = 1;
             // 
             // colgp_nome_grupo
             // 
@@ -485,7 +498,7 @@
             this.colgp_nome_grupo.FieldName = "gp_nome_grupo";
             this.colgp_nome_grupo.Name = "colgp_nome_grupo";
             this.colgp_nome_grupo.Visible = true;
-            this.colgp_nome_grupo.VisibleIndex = 1;
+            this.colgp_nome_grupo.VisibleIndex = 2;
             // 
             // colgp_nome_agrupador
             // 
@@ -497,7 +510,7 @@
             this.colgp_nome_agrupador.FieldName = "gp_nome_agrupador";
             this.colgp_nome_agrupador.Name = "colgp_nome_agrupador";
             this.colgp_nome_agrupador.Visible = true;
-            this.colgp_nome_agrupador.VisibleIndex = 2;
+            this.colgp_nome_agrupador.VisibleIndex = 3;
             // 
             // AlertaSalvar
             // 
@@ -519,11 +532,70 @@
             this.AlertaSalvar.ShowPinButton = false;
             this.AlertaSalvar.ShowToolTips = false;
             // 
+            // simpleButton1
+            // 
+            this.simpleButton1.Location = new System.Drawing.Point(241, 81);
+            this.simpleButton1.Name = "simpleButton1";
+            this.simpleButton1.Size = new System.Drawing.Size(75, 23);
+            this.simpleButton1.TabIndex = 352;
+            this.simpleButton1.Text = "simpleButton1";
+            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
+            // 
+            // id_configuracao_financeira
+            // 
+            this.id_configuracao_financeira.AppearanceCell.Options.UseTextOptions = true;
+            this.id_configuracao_financeira.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.id_configuracao_financeira.AppearanceHeader.Options.UseTextOptions = true;
+            this.id_configuracao_financeira.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.id_configuracao_financeira.Caption = "ID";
+            this.id_configuracao_financeira.FieldName = "id_configuracao_financeira";
+            this.id_configuracao_financeira.Name = "id_configuracao_financeira";
+            this.id_configuracao_financeira.Visible = true;
+            this.id_configuracao_financeira.VisibleIndex = 0;
+            // 
+            // sqlDataSource2
+            // 
+            this.sqlDataSource2.ConnectionName = "SistemaDeGerenciamento2_0ConnectionString";
+            this.sqlDataSource2.Name = "sqlDataSource2";
+            columnExpression5.ColumnName = "id_configuracao_financeira";
+            table3.MetaSerializable = "<Meta X=\"30\" Y=\"30\" Width=\"125\" Height=\"183\" />";
+            table3.Name = "tb_configuracao_financeira";
+            columnExpression5.Table = table3;
+            column5.Expression = columnExpression5;
+            columnExpression6.ColumnName = "cf_desconto_grupo_produto";
+            columnExpression6.Table = table3;
+            column6.Expression = columnExpression6;
+            columnExpression7.ColumnName = "gp_nome_grupo";
+            table4.MetaSerializable = "<Meta X=\"185\" Y=\"30\" Width=\"125\" Height=\"123\" />";
+            table4.Name = "tb_grupo";
+            columnExpression7.Table = table4;
+            column7.Expression = columnExpression7;
+            columnExpression8.ColumnName = "gp_nome_agrupador";
+            columnExpression8.Table = table4;
+            column8.Expression = columnExpression8;
+            selectQuery2.Columns.Add(column5);
+            selectQuery2.Columns.Add(column6);
+            selectQuery2.Columns.Add(column7);
+            selectQuery2.Columns.Add(column8);
+            selectQuery2.Name = "tb_configuracao_financeira";
+            relationColumnInfo2.NestedKeyColumn = "id_grupo";
+            relationColumnInfo2.ParentKeyColumn = "fk_grupo";
+            join2.KeyColumns.Add(relationColumnInfo2);
+            join2.Nested = table4;
+            join2.Parent = table3;
+            selectQuery2.Relations.Add(join2);
+            selectQuery2.Tables.Add(table3);
+            selectQuery2.Tables.Add(table4);
+            this.sqlDataSource2.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
+            selectQuery2});
+            this.sqlDataSource2.ResultSchemaSerializable = resources.GetString("sqlDataSource2.ResultSchemaSerializable");
+            // 
             // frmConfiguracaoFinanceira
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(921, 599);
+            this.Controls.Add(this.simpleButton1);
             this.Controls.Add(this.gdvGruposAgrupadores);
             this.Controls.Add(this.cmbGrupoAgrupador);
             this.Controls.Add(this.txtPorcentagemDescontoGrupo);
@@ -605,8 +677,10 @@
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private DevExpress.XtraGrid.Columns.GridColumn colgp_nome_grupo;
         private DevExpress.XtraGrid.Columns.GridColumn colgp_nome_agrupador;
-        private DevExpress.DataAccess.Sql.SqlDataSource sqlDataSource2;
         private DevExpress.XtraGrid.Columns.GridColumn cf_desconto_grupo_produto;
         private DevExpress.XtraBars.Alerter.AlertControl AlertaSalvar;
+        private DevExpress.XtraEditors.SimpleButton simpleButton1;
+        private DevExpress.DataAccess.Sql.SqlDataSource sqlDataSource2;
+        private DevExpress.XtraGrid.Columns.GridColumn id_configuracao_financeira;
     }
 }

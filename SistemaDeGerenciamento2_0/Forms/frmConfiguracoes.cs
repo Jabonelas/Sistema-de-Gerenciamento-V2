@@ -20,7 +20,7 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private Form frmTelaPrincipal = null;
 
-        public frmConfiguracoes(Form _frmTelaPrincipal)
+        public frmConfiguracoes(frmTelaPrincipal _frmTelaPrincipal)
         {
             InitializeComponent();
 
@@ -29,11 +29,11 @@ namespace SistemaDeGerenciamento2_0.Forms
             TelaNovoUsuario(frmTelaPrincipal);
         }
 
-        public frmConfiguracoes()
+        public frmConfiguracoes(frmAcessoRapido frmAcessoRapido)
         {
             InitializeComponent();
 
-            TelaNovoUsuario(frmTelaPrincipal);
+            TelaNovoUsuario(frmAcessoRapido);
         }
 
         private void btnNovoUsuario_Click(object sender, EventArgs e)
@@ -70,6 +70,8 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             this.Size = new Size(953, 432);
             pnlConfiguracoes.Size = new Size(923, 341);
+
+            TelaPerfilUsuario();
         }
 
         private void TelaNovoUsuario(Form frmTelaPrincipal)
@@ -94,12 +96,12 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private void TelaPerfilUsuario()
         {
-            //pnlConfiguracoes.Controls.Clear();
-            //frmPerfilUsuario frmPerfilUsuario = new frmPerfilUsuario(frmTelaPrincipal);
-            //frmPerfilUsuario.TopLevel = false;
-            //pnlConfiguracoes.Controls.Add(frmPerfilUsuario);
-            //pnlConfiguracoes.Tag = frmPerfilUsuario;
-            //frmPerfilUsuario.Show();
+            pnlConfiguracoes.Controls.Clear();
+            frmPerfilUsuario frmPerfilUsuario = new frmPerfilUsuario();
+            frmPerfilUsuario.TopLevel = false;
+            pnlConfiguracoes.Controls.Add(frmPerfilUsuario);
+            pnlConfiguracoes.Tag = frmPerfilUsuario;
+            frmPerfilUsuario.Show();
         }
 
         private void btnFechar_Click(object sender, EventArgs e)

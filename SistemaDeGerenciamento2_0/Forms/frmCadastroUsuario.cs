@@ -197,7 +197,7 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             try
             {
-                using (SistemaDeGerenciamento2_0Entities7 db = new SistemaDeGerenciamento2_0Entities7())
+                using (SistemaDeGerenciamento2_0Entities db = new SistemaDeGerenciamento2_0Entities())
                 {
                     var FKPermissoes = db.tb_registro.Where(x => x.id_registro == IDCadastro)
                     .Select(x => new { x.fk_permissoes, x.rg_login, x.rg_senha }).ToList();
