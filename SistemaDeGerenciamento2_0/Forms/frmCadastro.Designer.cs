@@ -185,8 +185,7 @@
             // 
             // sqlDataSource1
             // 
-            this.sqlDataSource1.ConnectionName = "SistemaDeGerenciamento2_0.Properties.Settings.SistemaDeGerenciamento2_0Connection" +
-    "String";
+            this.sqlDataSource1.ConnectionName = "SistemaDeGerenciamento2_0ConnectionString";
             this.sqlDataSource1.Name = "sqlDataSource1";
             customSqlQuery1.Name = "tb_registro";
             customSqlQuery1.Sql = resources.GetString("customSqlQuery1.Sql");

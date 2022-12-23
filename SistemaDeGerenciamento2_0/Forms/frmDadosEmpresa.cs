@@ -580,5 +580,10 @@ namespace SistemaDeGerenciamento2_0.Forms
             this.Left = X + MousePosition.X;
             this.Top = Y + MousePosition.Y;
         }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            MensagemAtencao.MensagemCancelar(this);
+        }
     }
 }

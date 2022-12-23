@@ -20,13 +20,36 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private Form frmTelaPrincipal = null;
 
-        public frmConfiguracoes(frmTelaPrincipal _frmTelaPrincipal)
+        public frmConfiguracoes(frmTelaPrincipal _frmTelaPrincipal, string _telaSolicitada)
         {
             InitializeComponent();
 
             frmTelaPrincipal = _frmTelaPrincipal;
 
-            TelaNovoUsuario(frmTelaPrincipal);
+            VerificarTela(_telaSolicitada);
+        }
+
+        private void VerificarTela(string _tela)
+        {
+            if (_tela == "ConfigUsuario")
+            {
+                //TelaNovoUsuario(frmTelaPrincipal);
+
+                ExibindoTelaUsuario();
+            }
+            else if (_tela == "ConfigEmpresa")
+
+            {
+                TelaExibindoEmpresa();
+            }
+            else if (_tela == "ConfigPerfil")
+            {
+                ExibindoTelaPerfil();
+            }
+            else if (_tela == "ConfigFinanceiro")
+            {
+                ExibindoTelaConfiguracaoFinanceira();
+            }
         }
 
         public frmConfiguracoes(frmAcessoRapido frmAcessoRapido)
@@ -36,7 +59,7 @@ namespace SistemaDeGerenciamento2_0.Forms
             TelaNovoUsuario(frmAcessoRapido);
         }
 
-        private void btnNovoUsuario_Click(object sender, EventArgs e)
+        private void ExibindoTelaUsuario()
         {
             this.Size = new Size(953, 622);
             pnlConfiguracoes.Size = new Size(944, 542);
@@ -51,7 +74,7 @@ namespace SistemaDeGerenciamento2_0.Forms
             }
         }
 
-        private void btnEmpresa_Click(object sender, EventArgs e)
+        private void TelaExibindoEmpresa()
         {
             this.Size = new Size(953, 670);
             pnlConfiguracoes.Size = new Size(944, 600);
@@ -66,7 +89,7 @@ namespace SistemaDeGerenciamento2_0.Forms
             }
         }
 
-        private void btnPerfil_Click(object sender, EventArgs e)
+        private void ExibindoTelaPerfil()
         {
             this.Size = new Size(953, 432);
             pnlConfiguracoes.Size = new Size(923, 341);
@@ -87,11 +110,13 @@ namespace SistemaDeGerenciamento2_0.Forms
         private void TelaCadastrarEmpresa(Form frmTelaPrincipal)
         {
             pnlConfiguracoes.Controls.Clear();
-            frmDadosEmpresa frmNovoUsuario = new frmDadosEmpresa(frmTelaPrincipal);
-            frmNovoUsuario.TopLevel = false;
-            pnlConfiguracoes.Controls.Add(frmNovoUsuario);
-            pnlConfiguracoes.Tag = frmNovoUsuario;
-            frmNovoUsuario.Show();
+            frmDadosEmpresa frmDadosEmpresa = new frmDadosEmpresa(frmTelaPrincipal);
+            frmDadosEmpresa.TopLevel = false;
+            frmDadosEmpresa.btnCancelar.Visible = false;
+            frmDadosEmpresa.btnSalvar.Location = new Point(784, 539);
+            pnlConfiguracoes.Controls.Add(frmDadosEmpresa);
+            pnlConfiguracoes.Tag = frmDadosEmpresa;
+            frmDadosEmpresa.Show();
         }
 
         private void TelaPerfilUsuario()
@@ -131,7 +156,7 @@ namespace SistemaDeGerenciamento2_0.Forms
             }
         }
 
-        private void btnConfiguracaoFinanceira_Click(object sender, EventArgs e)
+        private void ExibindoTelaConfiguracaoFinanceira()
         {
             this.Size = new Size(953, 670);
             pnlConfiguracoes.Size = new Size(944, 600);
@@ -151,6 +176,9 @@ namespace SistemaDeGerenciamento2_0.Forms
             pnlConfiguracoes.Controls.Clear();
             frmConfiguracaoFinanceira frmConfiguracaoFinanceira = new frmConfiguracaoFinanceira(frmTelaPrincipal);
             frmConfiguracaoFinanceira.TopLevel = false;
+            frmConfiguracaoFinanceira.KeyPreview = false;
+            frmConfiguracaoFinanceira.btnCancelar.Visible = false;
+            frmConfiguracaoFinanceira.btnSalvar.Location = new Point(779, 546);
             pnlConfiguracoes.Controls.Add(frmConfiguracaoFinanceira);
             pnlConfiguracoes.Tag = frmConfiguracaoFinanceira;
             frmConfiguracaoFinanceira.Show();

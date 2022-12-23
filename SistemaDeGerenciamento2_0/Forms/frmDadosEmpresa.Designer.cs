@@ -76,6 +76,7 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.btnFechar = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl16 = new DevExpress.XtraEditors.LabelControl();
+            this.btnCancelar = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.txtInscricaoMunicipal.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtInscricaoEstadual.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).BeginInit();
@@ -543,7 +544,7 @@
             this.btnSalvar.ImageOptions.ImageToTextIndent = 10;
             this.btnSalvar.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
             this.btnSalvar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnSalvar.Location = new System.Drawing.Point(784, 539);
+            this.btnSalvar.Location = new System.Drawing.Point(642, 539);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(113, 30);
             this.btnSalvar.TabIndex = 290;
@@ -629,11 +630,29 @@
             this.labelControl16.TabIndex = 289;
             this.labelControl16.Text = "Dados Empresa:";
             // 
+            // btnCancelar
+            // 
+            this.btnCancelar.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelar.Appearance.Options.UseFont = true;
+            this.btnCancelar.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.cancelar;
+            this.btnCancelar.ImageOptions.ImageIndex = 5;
+            this.btnCancelar.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftBottom;
+            this.btnCancelar.ImageOptions.ImageToTextIndent = 10;
+            this.btnCancelar.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
+            this.btnCancelar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnCancelar.Location = new System.Drawing.Point(784, 539);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(113, 30);
+            this.btnCancelar.TabIndex = 294;
+            this.btnCancelar.Text = "Cancelar (Esc)";
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            // 
             // frmDadosEmpresa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(923, 590);
+            this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnFechar);
             this.Controls.Add(this.labelControl9);
             this.Controls.Add(this.pictureBox3);
@@ -760,5 +779,6 @@
         public DevExpress.XtraEditors.SimpleButton btnFechar;
         public DevExpress.XtraEditors.SimpleButton btnSalvar;
         private DevExpress.XtraEditors.LabelControl labelControl16;
+        public DevExpress.XtraEditors.SimpleButton btnCancelar;
     }
 }

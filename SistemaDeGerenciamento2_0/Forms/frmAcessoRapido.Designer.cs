@@ -157,7 +157,7 @@
             // 
             this.btnIrParaConfiguracoes.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIrParaConfiguracoes.Appearance.Options.UseFont = true;
-            this.btnIrParaConfiguracoes.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.configuracao_preta;
+            this.btnIrParaConfiguracoes.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.configuracao_financeira_15px;
             this.btnIrParaConfiguracoes.ImageOptions.ImageIndex = 5;
             this.btnIrParaConfiguracoes.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftBottom;
             this.btnIrParaConfiguracoes.ImageOptions.ImageToTextIndent = 10;
@@ -167,7 +167,7 @@
             this.btnIrParaConfiguracoes.Name = "btnIrParaConfiguracoes";
             this.btnIrParaConfiguracoes.Size = new System.Drawing.Size(179, 30);
             this.btnIrParaConfiguracoes.TabIndex = 16;
-            this.btnIrParaConfiguracoes.Text = "Ir para Configurações";
+            this.btnIrParaConfiguracoes.Text = "Configurações Financeiras";
             this.btnIrParaConfiguracoes.Click += new System.EventHandler(this.btnIrParaConfiguracoes_Click);
             // 
             // btnNovoUsuario
@@ -486,14 +486,14 @@
             this.pictureBox5.TabIndex = 23;
             this.pictureBox5.TabStop = false;
             // 
-            // frmPemissaoCadastro
+            // frmAcessoRapido
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(968, 563);
             this.Controls.Add(this.panelControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "frmPemissaoCadastro";
+            this.Name = "frmAcessoRapido";
             this.Text = "frmAcessoRapido";
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);

@@ -31,19 +31,33 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTelaPrincipal));
             this.accordionControl1 = new DevExpress.XtraBars.Navigation.AccordionControl();
+            this.accordionContentContainer1 = new DevExpress.XtraBars.Navigation.AccordionContentContainer();
+            this.accordionContentContainer2 = new DevExpress.XtraBars.Navigation.AccordionContentContainer();
             this.btnAcessoRapido = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.VisaoGeral = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.PDV = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.Financeiro = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.Cadastro = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.btnNovoCliente = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.btnNovoFornecedor = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.btnNovoFuncionario = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.btnTodosOsCadastro = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.Produtos = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.btnNovoProduto = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.btnTodosOsProdutos = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.Relatorios = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.Configuracao = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.btnConfigUsuario = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.btnConfigEmpresa = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.btnConfigPerfil = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.btnConfigFinanceiro = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.btnConfigDesepsa = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.fluentDesignFormControl1 = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormControl();
             this.skinBarSubItem1 = new DevExpress.XtraBars.SkinBarSubItem();
             this.fluentFormDefaultManager1 = new DevExpress.XtraBars.FluentDesignSystem.FluentFormDefaultManager(this.components);
             this.pnlTelaPrincipal = new System.Windows.Forms.FlowLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).BeginInit();
+            this.accordionControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fluentDesignFormControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fluentFormDefaultManager1)).BeginInit();
             this.SuspendLayout();
@@ -54,6 +68,8 @@
             this.accordionControl1.Appearance.AccordionControl.Options.UseFont = true;
             this.accordionControl1.Appearance.Item.Default.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.accordionControl1.Appearance.Item.Default.Options.UseFont = true;
+            this.accordionControl1.Controls.Add(this.accordionContentContainer1);
+            this.accordionControl1.Controls.Add(this.accordionContentContainer2);
             this.accordionControl1.Dock = System.Windows.Forms.DockStyle.Left;
             this.accordionControl1.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.btnAcessoRapido,
@@ -71,9 +87,21 @@
             this.accordionControl1.TabIndex = 1;
             this.accordionControl1.ViewType = DevExpress.XtraBars.Navigation.AccordionControlViewType.HamburgerMenu;
             // 
+            // accordionContentContainer1
+            // 
+            this.accordionContentContainer1.Name = "accordionContentContainer1";
+            this.accordionContentContainer1.Size = new System.Drawing.Size(241, 76);
+            this.accordionContentContainer1.TabIndex = 2;
+            // 
+            // accordionContentContainer2
+            // 
+            this.accordionContentContainer2.Name = "accordionContentContainer2";
+            this.accordionContentContainer2.Size = new System.Drawing.Size(241, 76);
+            this.accordionContentContainer2.TabIndex = 5;
+            // 
             // btnAcessoRapido
             // 
-            this.btnAcessoRapido.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.foguete_preto2;
+            this.btnAcessoRapido.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.rocket_30px;
             this.btnAcessoRapido.Name = "btnAcessoRapido";
             this.btnAcessoRapido.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.btnAcessoRapido.Text = "Acesso Rápido";
@@ -91,7 +119,7 @@
             this.VisaoGeral.Appearance.Normal.Options.UseFont = true;
             this.VisaoGeral.Appearance.Pressed.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.VisaoGeral.Appearance.Pressed.Options.UseFont = true;
-            this.VisaoGeral.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.olhos_preto;
+            this.VisaoGeral.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.vision_30px;
             this.VisaoGeral.Name = "VisaoGeral";
             this.VisaoGeral.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.VisaoGeral.Text = "Visão Geral";
@@ -108,7 +136,7 @@
             this.PDV.Appearance.Normal.Options.UseFont = true;
             this.PDV.Appearance.Pressed.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
             this.PDV.Appearance.Pressed.Options.UseFont = true;
-            this.PDV.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.computer_preto;
+            this.PDV.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.computer_30px;
             this.PDV.Name = "PDV";
             this.PDV.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.PDV.Text = "PDV";
@@ -125,7 +153,7 @@
             this.Financeiro.Appearance.Normal.Options.UseFont = true;
             this.Financeiro.Appearance.Pressed.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
             this.Financeiro.Appearance.Pressed.Options.UseFont = true;
-            this.Financeiro.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.dinheiro_preto3;
+            this.Financeiro.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.dollar_place_marker_30px;
             this.Financeiro.Name = "Financeiro";
             this.Financeiro.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.Financeiro.Text = "Financeiro";
@@ -133,44 +161,137 @@
             // 
             // Cadastro
             // 
-            this.Cadastro.Appearance.Default.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
+            this.Cadastro.Appearance.Default.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Cadastro.Appearance.Default.Options.UseFont = true;
-            this.Cadastro.Appearance.Disabled.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
+            this.Cadastro.Appearance.Disabled.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Cadastro.Appearance.Disabled.Options.UseFont = true;
-            this.Cadastro.Appearance.Hovered.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
+            this.Cadastro.Appearance.Hovered.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Cadastro.Appearance.Hovered.Options.UseFont = true;
-            this.Cadastro.Appearance.Normal.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
+            this.Cadastro.Appearance.Normal.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Cadastro.Appearance.Normal.Options.UseFont = true;
-            this.Cadastro.Appearance.Pressed.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
+            this.Cadastro.Appearance.Pressed.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Cadastro.Appearance.Pressed.Options.UseFont = true;
-            this.Cadastro.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.cadastros_preto_1;
+            this.Cadastro.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
+            this.btnNovoCliente,
+            this.btnNovoFornecedor,
+            this.btnNovoFuncionario,
+            this.btnTodosOsCadastro});
+            this.Cadastro.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.add_user_male_30px;
             this.Cadastro.Name = "Cadastro";
-            this.Cadastro.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.Cadastro.Text = "Cadastros";
             this.Cadastro.Click += new System.EventHandler(this.Cadastro_Click);
             // 
+            // btnNovoCliente
+            // 
+            this.btnNovoCliente.Name = "btnNovoCliente";
+            this.btnNovoCliente.Text = "Novo Cliente";
+            this.btnNovoCliente.Click += new System.EventHandler(this.btnNovoCliente_Click);
+            // 
+            // btnNovoFornecedor
+            // 
+            this.btnNovoFornecedor.Name = "btnNovoFornecedor";
+            this.btnNovoFornecedor.Text = "Novo Fornecedor";
+            this.btnNovoFornecedor.Click += new System.EventHandler(this.btnNovoFornecedor_Click);
+            // 
+            // btnNovoFuncionario
+            // 
+            this.btnNovoFuncionario.Name = "btnNovoFuncionario";
+            this.btnNovoFuncionario.Text = "Novo Funcionário";
+            this.btnNovoFuncionario.Click += new System.EventHandler(this.btnNovoFuncionario_Click);
+            // 
+            // btnTodosOsCadastro
+            // 
+            this.btnTodosOsCadastro.Name = "btnTodosOsCadastro";
+            this.btnTodosOsCadastro.Text = "Todos os Cadastros";
+            this.btnTodosOsCadastro.Click += new System.EventHandler(this.btnTodosOsCadastro_Click);
+            // 
             // Produtos
             // 
-            this.Produtos.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.produto_preto2;
+            this.Produtos.Appearance.Default.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Produtos.Appearance.Default.Options.UseFont = true;
+            this.Produtos.ContentContainer = this.accordionContentContainer2;
+            this.Produtos.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
+            this.btnNovoProduto,
+            this.btnTodosOsProdutos});
+            this.Produtos.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.tags_30px;
             this.Produtos.Name = "Produtos";
-            this.Produtos.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.Produtos.Text = "Produtos";
             this.Produtos.Click += new System.EventHandler(this.Produtos_Click);
             // 
+            // btnNovoProduto
+            // 
+            this.btnNovoProduto.Name = "btnNovoProduto";
+            this.btnNovoProduto.Text = "Novo Produto";
+            this.btnNovoProduto.Click += new System.EventHandler(this.btnNovoProduto_Click);
+            // 
+            // btnTodosOsProdutos
+            // 
+            this.btnTodosOsProdutos.Name = "btnTodosOsProdutos";
+            this.btnTodosOsProdutos.Text = "Todos os Produtos";
+            this.btnTodosOsProdutos.Click += new System.EventHandler(this.btnTodosOsProdutos_Click);
+            // 
             // Relatorios
             // 
-            this.Relatorios.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.relatorio_preto;
+            this.Relatorios.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.check_30px;
             this.Relatorios.Name = "Relatorios";
             this.Relatorios.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.Relatorios.Text = "Relatórios";
             // 
             // Configuracao
             // 
-            this.Configuracao.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.configuracao_preta1;
+            this.Configuracao.Appearance.Default.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Configuracao.Appearance.Default.Options.UseFont = true;
+            this.Configuracao.ContentContainer = this.accordionContentContainer1;
+            this.Configuracao.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
+            this.btnConfigUsuario,
+            this.btnConfigEmpresa,
+            this.btnConfigPerfil,
+            this.btnConfigFinanceiro,
+            this.btnConfigDesepsa});
+            this.Configuracao.Expanded = true;
+            this.Configuracao.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.services_30px;
             this.Configuracao.Name = "Configuracao";
-            this.Configuracao.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.Configuracao.Text = "Configurações";
-            this.Configuracao.Click += new System.EventHandler(this.Configuracao_Click);
+            // 
+            // btnConfigUsuario
+            // 
+            this.btnConfigUsuario.HeaderTemplate.AddRange(new DevExpress.XtraBars.Navigation.HeaderElementInfo[] {
+            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.Image),
+            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.HeaderControl, DevExpress.XtraBars.Navigation.HeaderElementAlignment.Left),
+            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.Text),
+            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.ContextButtons, DevExpress.XtraBars.Navigation.HeaderElementAlignment.Left)});
+            this.btnConfigUsuario.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.cadastro_15;
+            this.btnConfigUsuario.Name = "btnConfigUsuario";
+            this.btnConfigUsuario.Text = "Config. Usuários";
+            this.btnConfigUsuario.Click += new System.EventHandler(this.btnConfigUsuario_Click);
+            // 
+            // btnConfigEmpresa
+            // 
+            this.btnConfigEmpresa.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.empresa_15;
+            this.btnConfigEmpresa.Name = "btnConfigEmpresa";
+            this.btnConfigEmpresa.Text = "Config. Empresa";
+            this.btnConfigEmpresa.Click += new System.EventHandler(this.btnConfigEmpresa_Click);
+            // 
+            // btnConfigPerfil
+            // 
+            this.btnConfigPerfil.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.perfil_15;
+            this.btnConfigPerfil.Name = "btnConfigPerfil";
+            this.btnConfigPerfil.Text = "Config. Perfil";
+            this.btnConfigPerfil.Click += new System.EventHandler(this.btnConfigPerfil_Click);
+            // 
+            // btnConfigFinanceiro
+            // 
+            this.btnConfigFinanceiro.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.configuracao_financeira_15px;
+            this.btnConfigFinanceiro.Name = "btnConfigFinanceiro";
+            this.btnConfigFinanceiro.Text = "Config. Financeira";
+            this.btnConfigFinanceiro.Click += new System.EventHandler(this.btnConfigFinanceiro_Click);
+            // 
+            // btnConfigDesepsa
+            // 
+            this.btnConfigDesepsa.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.reserve_15px;
+            this.btnConfigDesepsa.Name = "btnConfigDesepsa";
+            this.btnConfigDesepsa.Text = "Config. Despesa";
+            this.btnConfigDesepsa.Click += new System.EventHandler(this.btnConfigDesepsa_Click);
             // 
             // fluentDesignFormControl1
             // 
@@ -225,6 +346,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmTelaPrincipal_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).EndInit();
+            this.accordionControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.fluentDesignFormControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fluentFormDefaultManager1)).EndInit();
             this.ResumeLayout(false);
@@ -245,6 +367,19 @@
         private DevExpress.XtraBars.SkinBarSubItem skinBarSubItem1;
         private DevExpress.XtraBars.Navigation.AccordionControlElement btnAcessoRapido;
         private System.Windows.Forms.FlowLayoutPanel pnlTelaPrincipal;
+        private DevExpress.XtraBars.Navigation.AccordionContentContainer accordionContentContainer1;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement btnConfigUsuario;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement btnConfigEmpresa;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement btnConfigPerfil;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement btnConfigFinanceiro;
+        private DevExpress.XtraBars.Navigation.AccordionContentContainer accordionContentContainer2;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement btnNovoProduto;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement btnTodosOsProdutos;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement btnNovoCliente;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement btnNovoFornecedor;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement btnNovoFuncionario;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement btnTodosOsCadastro;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement btnConfigDesepsa;
     }
 }
 

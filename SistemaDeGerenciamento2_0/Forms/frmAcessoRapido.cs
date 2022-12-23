@@ -17,13 +17,6 @@ namespace SistemaDeGerenciamento2_0.Forms
             frmTelaPrincipal = _frmTelaPrincipal;
         }
 
-        //public frmPemissaoCadastro()
-        //{
-        //    InitializeComponent();
-
-        //    this.Size = new Size(973, 447);
-        //}
-
         private void btnNovoProduto_Click(object sender, EventArgs e)
         {
             frmCadastroProduto frmCadastroProduto = new frmCadastroProduto();
@@ -64,16 +57,17 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private void btnIrParaConfiguracoes_Click(object sender, EventArgs e)
         {
-            frmConfiguracoes frmConfiguracoes = new frmConfiguracoes(this);
-            frmConfiguracoes.AutoScroll = false;
-            frmConfiguracoes.KeyPreview = true;
-            frmConfiguracoes.btnFechar.Visible = true;
-            frmConfiguracoes.ShowDialog();
+            frmConfiguracaoFinanceira frmConfiguracaoFinanceira = new frmConfiguracaoFinanceira(this);
+            frmConfiguracaoFinanceira.AutoScroll = false;
+            frmConfiguracaoFinanceira.btnCancelar.Visible = true;
+            frmConfiguracaoFinanceira.KeyPreview = true;
+            frmConfiguracaoFinanceira.btnFechar.Visible = true;
+            frmConfiguracaoFinanceira.ShowDialog();
         }
 
         private void btnIrParaProdutos_Click(object sender, EventArgs e)
         {
-            frmProdutos frmProdutos = new frmProdutos(frmTelaPrincipal);
+            frmProdutos frmProdutos = new frmProdutos();
             frmProdutos.ShowDialog();
         }
 

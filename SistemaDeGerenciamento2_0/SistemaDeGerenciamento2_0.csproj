@@ -111,6 +111,12 @@
     <Compile Include="Forms\frmCadastro.Designer.cs">
       <DependentUpon>frmCadastro.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\frmCadastroCategoriaDespesa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmCadastroCategoriaDespesa.Designer.cs">
+      <DependentUpon>frmCadastroCategoriaDespesa.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\frmCadastroUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,6 +128,12 @@
     </Compile>
     <Compile Include="Forms\frmConfiguracaoFinanceira.Designer.cs">
       <DependentUpon>frmConfiguracaoFinanceira.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmDespesas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmDespesas.Designer.cs">
+      <DependentUpon>frmDespesas.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\frmNovoUsuario.cs">
       <SubType>Form</SubType>
@@ -295,11 +307,17 @@
     <EmbeddedResource Include="Forms\frmCadastro.resx">
       <DependentUpon>frmCadastro.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmCadastroCategoriaDespesa.resx">
+      <DependentUpon>frmCadastroCategoriaDespesa.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmCadastroUsuario.resx">
       <DependentUpon>frmCadastroUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmConfiguracaoFinanceira.resx">
       <DependentUpon>frmConfiguracaoFinanceira.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmDespesas.resx">
+      <DependentUpon>frmDespesas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmNovoUsuario.resx">
       <DependentUpon>frmNovoUsuario.cs</DependentUpon>
@@ -455,6 +473,20 @@
     <None Include="Resources\perfil.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\reserve_15px.png" />
+    <None Include="Resources\dollar_place_marker_30px.png" />
+    <None Include="Resources\add_user_male_30px.png" />
+    <None Include="Resources\check_30px.png" />
+    <None Include="Resources\services_30px.png" />
+    <None Include="Resources\tags_30px.png" />
+    <None Include="Resources\computer_30px.png" />
+    <None Include="Resources\vision_30px.png" />
+    <None Include="Resources\rocket_30px.png" />
+    <None Include="Resources\empresa_15.png" />
+    <None Include="Resources\perfil_15.png" />
+    <None Include="Resources\configuracao_financeira_15px.png" />
+    <None Include="Resources\deletar_20.png" />
+    <None Include="Resources\agrupar_20.png" />
     <None Include="Resources\olho_aberto_20.png" />
     <None Include="Resources\olho_20.png" />
     <None Include="Resources\olhos_15.png" />

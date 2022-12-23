@@ -30,33 +30,15 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmConfiguracoes));
             this.pnlConfiguracoes = new System.Windows.Forms.FlowLayoutPanel();
-            this.btnConfiguracaoFinanceira = new DevExpress.XtraEditors.SimpleButton();
             this.btnFechar = new DevExpress.XtraEditors.SimpleButton();
-            this.btnPerfil = new DevExpress.XtraEditors.SimpleButton();
-            this.btnEmpresa = new DevExpress.XtraEditors.SimpleButton();
-            this.btnNovoUsuario = new DevExpress.XtraEditors.SimpleButton();
             this.SuspendLayout();
             // 
             // pnlConfiguracoes
             // 
-            this.pnlConfiguracoes.Location = new System.Drawing.Point(5, 80);
+            this.pnlConfiguracoes.Location = new System.Drawing.Point(5, 30);
             this.pnlConfiguracoes.Name = "pnlConfiguracoes";
-            this.pnlConfiguracoes.Size = new System.Drawing.Size(944, 520);
+            this.pnlConfiguracoes.Size = new System.Drawing.Size(944, 570);
             this.pnlConfiguracoes.TabIndex = 128;
-            // 
-            // btnConfiguracaoFinanceira
-            // 
-            this.btnConfiguracaoFinanceira.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConfiguracaoFinanceira.Appearance.Options.UseFont = true;
-            this.btnConfiguracaoFinanceira.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.configuracao_financeira_20;
-            this.btnConfiguracaoFinanceira.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
-            this.btnConfiguracaoFinanceira.Location = new System.Drawing.Point(628, 12);
-            this.btnConfiguracaoFinanceira.Name = "btnConfiguracaoFinanceira";
-            this.btnConfiguracaoFinanceira.Size = new System.Drawing.Size(112, 43);
-            this.btnConfiguracaoFinanceira.TabIndex = 130;
-            this.btnConfiguracaoFinanceira.Text = "Config. Financeira";
-            this.btnConfiguracaoFinanceira.ToolTip = "Configurações Financeiras";
-            this.btnConfiguracaoFinanceira.Click += new System.EventHandler(this.btnConfiguracaoFinanceira_Click);
             // 
             // btnFechar
             // 
@@ -74,57 +56,13 @@
             this.btnFechar.Visible = false;
             this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
             // 
-            // btnPerfil
-            // 
-            this.btnPerfil.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPerfil.Appearance.Options.UseFont = true;
-            this.btnPerfil.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.perfil;
-            this.btnPerfil.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
-            this.btnPerfil.Location = new System.Drawing.Point(494, 12);
-            this.btnPerfil.Name = "btnPerfil";
-            this.btnPerfil.Size = new System.Drawing.Size(112, 43);
-            this.btnPerfil.TabIndex = 126;
-            this.btnPerfil.Text = "Perfil";
-            this.btnPerfil.ToolTip = "Dados do Perfil Logado";
-            this.btnPerfil.Click += new System.EventHandler(this.btnPerfil_Click);
-            // 
-            // btnEmpresa
-            // 
-            this.btnEmpresa.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEmpresa.Appearance.Options.UseFont = true;
-            this.btnEmpresa.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.empresa_20;
-            this.btnEmpresa.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
-            this.btnEmpresa.Location = new System.Drawing.Point(360, 13);
-            this.btnEmpresa.Name = "btnEmpresa";
-            this.btnEmpresa.Size = new System.Drawing.Size(112, 43);
-            this.btnEmpresa.TabIndex = 125;
-            this.btnEmpresa.Text = "Empresa";
-            this.btnEmpresa.ToolTip = "Cadastrar Dados da Empresa";
-            this.btnEmpresa.Click += new System.EventHandler(this.btnEmpresa_Click);
-            // 
-            // btnNovoUsuario
-            // 
-            this.btnNovoUsuario.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.cadastro_20;
-            this.btnNovoUsuario.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
-            this.btnNovoUsuario.Location = new System.Drawing.Point(226, 13);
-            this.btnNovoUsuario.Name = "btnNovoUsuario";
-            this.btnNovoUsuario.Size = new System.Drawing.Size(112, 43);
-            this.btnNovoUsuario.TabIndex = 124;
-            this.btnNovoUsuario.Text = "Novo Usuário";
-            this.btnNovoUsuario.ToolTip = "Cadastrar Novo Usuário";
-            this.btnNovoUsuario.Click += new System.EventHandler(this.btnNovoUsuario_Click);
-            // 
             // frmConfiguracoes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(953, 622);
-            this.Controls.Add(this.btnConfiguracaoFinanceira);
             this.Controls.Add(this.btnFechar);
             this.Controls.Add(this.pnlConfiguracoes);
-            this.Controls.Add(this.btnPerfil);
-            this.Controls.Add(this.btnEmpresa);
-            this.Controls.Add(this.btnNovoUsuario);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmConfiguracoes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -137,11 +75,7 @@
         }
 
         #endregion
-        private DevExpress.XtraEditors.SimpleButton btnPerfil;
-        private DevExpress.XtraEditors.SimpleButton btnEmpresa;
-        private DevExpress.XtraEditors.SimpleButton btnNovoUsuario;
         private System.Windows.Forms.FlowLayoutPanel pnlConfiguracoes;
         public DevExpress.XtraEditors.SimpleButton btnFechar;
-        private DevExpress.XtraEditors.SimpleButton btnConfiguracaoFinanceira;
     }
 }

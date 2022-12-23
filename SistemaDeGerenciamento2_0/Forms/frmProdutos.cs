@@ -15,20 +15,9 @@ namespace SistemaDeGerenciamento2_0.Forms
         private int X = 0;
         private int Y = 0;
 
-        private frmTelaPrincipal frmTelaPrincipal;
-
         public frmProdutos()
         {
             InitializeComponent();
-
-            sqlDataSource1.FillAsync();
-        }
-
-        public frmProdutos(frmTelaPrincipal _frmTelaPrincipal)
-        {
-            InitializeComponent();
-
-            frmTelaPrincipal = _frmTelaPrincipal;
 
             sqlDataSource1.FillAsync();
         }

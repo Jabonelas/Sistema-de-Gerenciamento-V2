@@ -21,12 +21,8 @@ namespace SistemaDeGerenciamento2_0.Forms
 {
     public partial class frmConfiguracaoFinanceira : DevExpress.XtraEditors.XtraForm
     {
-        //private frmTelaPrincipal frmTelaPrincipal;
         private Form frmTelaPrincipal;
 
-        private frmConfiguracoes frmConfiguracoes;
-
-        //public frmConfiguracaoFinanceira(frmTelaPrincipal _frmTelaPrincipal)
         public frmConfiguracaoFinanceira(Form _frmTelaPrincipal)
         {
             InitializeComponent();
@@ -50,6 +46,11 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
+            SalvandoDados();
+        }
+
+        private void SalvandoDados()
+        {
             if (IsExiteDados == false)
             {
                 SalvarValores();
@@ -62,6 +63,8 @@ namespace SistemaDeGerenciamento2_0.Forms
             if (cmbGrupoAgrupador.Text != string.Empty && txtPorcentagemDescontoGrupo.Text != string.Empty)
             {
                 SalvarDescontoPorGrupo();
+
+                sqlDataSource2.FillAsync();
             }
         }
 
@@ -205,7 +208,7 @@ namespace SistemaDeGerenciamento2_0.Forms
             AlertaSalvar.Show(this, $"{msg.titulo}", msg.texto, string.Empty, msg.image, msg);
         }
 
-        private void simpleButton1_Click(object sender, EventArgs e)
+        private void ApagarGrupoComDesconto()
         {
             try
             {
@@ -221,6 +224,8 @@ namespace SistemaDeGerenciamento2_0.Forms
 
                     db.tb_configuracao_financeira.Remove(dadosConfiguracaoFinanceira);
                     db.SaveChanges();
+
+                    sqlDataSource2.FillAsync();
                 }
             }
             catch (Exception x)
@@ -248,13 +253,15 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private DXMenuItem CreateSubMenuRows(GridView view, int rowHandle)
         {
-            DXSubMenuItem subMenu = new DXSubMenuItem("Rows");
+            DXSubMenuItem subMenu = new DXSubMenuItem("Propriedade");
             string deleteRowsCommandCaption;
             if (view.IsGroupRow(rowHandle))
+            {
                 deleteRowsCommandCaption = "&Delete rows in this group";
+            }
             else
-                deleteRowsCommandCaption = "&Delete this row";
-            DXMenuItem menuItemDeleteRow = new DXMenuItem(deleteRowsCommandCaption, new EventHandler(OnDeleteRowClick), Resources.empresa_20);
+                deleteRowsCommandCaption = "&Deletar Linha";
+            DXMenuItem menuItemDeleteRow = new DXMenuItem(deleteRowsCommandCaption, new EventHandler(OnDeleteRowClick), Resources.deletar_20);
             menuItemDeleteRow.Tag = new RowInfo(view, rowHandle);
             menuItemDeleteRow.Enabled = view.IsDataRow(rowHandle) || view.IsGroupRow(rowHandle);
             subMenu.Items.Add(menuItemDeleteRow);
@@ -263,10 +270,10 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private DXMenuCheckItem CreateMenuItemCellMerging(GridView view, int rowHandle)
         {
-            DXMenuCheckItem checkItem = new DXMenuCheckItem("Cell &Merging",
+            DXMenuCheckItem checkItem = new DXMenuCheckItem("Juntar &Celulas",
               view.OptionsView.AllowCellMerge, null, new EventHandler(OnCellMergingClick));
             checkItem.Tag = new RowInfo(view, rowHandle);
-            checkItem.ImageOptions.Image = Resources.cadastro_15;
+            checkItem.ImageOptions.Image = Resources.agrupar_20;
             return checkItem;
         }
 
@@ -277,8 +284,14 @@ namespace SistemaDeGerenciamento2_0.Forms
             if (ri != null)
             {
                 string message = menuItem.Caption.Replace("&", string.Empty);
-                if (XtraMessageBox.Show(message + " ?", "Confirm operation", MessageBoxButtons.YesNo) != DialogResult.Yes)
+                if (XtraMessageBox.Show("Deseja Deletar Esta Linha?", "Deletar Dados", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                {
+                    ApagarGrupoComDesconto();
+                }
+                else
+                {
                     return;
+                }
                 ri.View.DeleteRow(ri.RowHandle);
             }
         }
@@ -318,6 +331,28 @@ namespace SistemaDeGerenciamento2_0.Forms
                 {
                     return;
                 }
+            }
+        }
+
+        private void btnFechar_Click(object sender, EventArgs e)
+        {
+            MensagemAtencao.MensagemCancelar(this);
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            MensagemAtencao.MensagemCancelar(this);
+        }
+
+        private void frmConfiguracaoFinanceira_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+            {
+                MensagemAtencao.MensagemCancelar(this);
+            }
+            else if (e.KeyCode == Keys.F10)
+            {
+                SalvandoDados();
             }
         }
     }
