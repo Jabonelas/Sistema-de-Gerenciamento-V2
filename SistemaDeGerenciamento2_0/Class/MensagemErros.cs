@@ -111,6 +111,15 @@ namespace SistemaDeGerenciamento2_0.Class
 
         #endregion Configuracoes
 
+        #region Despesa
+
+        public static void ErroAoCadastroDespesa(Exception _e)
+        {
+            MessageBox.Show($"(CAD-DE01) Erro ao Cadastrar Despesa\n\nErro: {_e.Message}", "Erro Cadastrar Despesa!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        #endregion Despesa
+
         #endregion Cadastrar
 
         #region Buscar
@@ -219,6 +228,15 @@ namespace SistemaDeGerenciamento2_0.Class
 
         #endregion NF Entrada
 
+        #region Despesa
+
+        public static void ErroAoBuscarDadosDespesa(Exception _e)
+        {
+            MessageBox.Show($"(BUS-DE01) Erro ao Bucar Dados Despesa \n\nErro: {_e}", "Erro Buscar Dados Despesa!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        #endregion Despesa
+
         #region Configuracoes
 
         public static void ErroAoBuscarDadosNovoUsuario(Exception _e)
@@ -273,6 +291,15 @@ namespace SistemaDeGerenciamento2_0.Class
         }
 
         #endregion Configuracoes
+
+        #region Despesa
+
+        public static void ErroAoAtualizarDespesa(Exception _e)
+        {
+            MessageBox.Show($"(ATU-DE01) Erro ao Atualizar Despesa \n\nErro: {_e}", "Erro Atualizar Despesa!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        #endregion Despesa
 
         #endregion Atualizar
 

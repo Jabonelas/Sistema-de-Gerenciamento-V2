@@ -60,5 +60,10 @@ namespace SistemaDeGerenciamento2_0.Forms
             X = this.Left - MousePosition.X;
             Y = this.Top - MousePosition.Y;
         }
+
+        private void btnSair_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -101,6 +101,26 @@
             // 
             // btnAcessoRapido
             // 
+            this.btnAcessoRapido.Appearance.Default.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAcessoRapido.Appearance.Default.ForeColor = System.Drawing.Color.White;
+            this.btnAcessoRapido.Appearance.Default.Options.UseFont = true;
+            this.btnAcessoRapido.Appearance.Default.Options.UseForeColor = true;
+            this.btnAcessoRapido.Appearance.Disabled.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAcessoRapido.Appearance.Disabled.ForeColor = System.Drawing.Color.White;
+            this.btnAcessoRapido.Appearance.Disabled.Options.UseFont = true;
+            this.btnAcessoRapido.Appearance.Disabled.Options.UseForeColor = true;
+            this.btnAcessoRapido.Appearance.Hovered.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.btnAcessoRapido.Appearance.Hovered.ForeColor = System.Drawing.Color.LightGray;
+            this.btnAcessoRapido.Appearance.Hovered.Options.UseFont = true;
+            this.btnAcessoRapido.Appearance.Hovered.Options.UseForeColor = true;
+            this.btnAcessoRapido.Appearance.Normal.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.btnAcessoRapido.Appearance.Normal.ForeColor = System.Drawing.Color.White;
+            this.btnAcessoRapido.Appearance.Normal.Options.UseFont = true;
+            this.btnAcessoRapido.Appearance.Normal.Options.UseForeColor = true;
+            this.btnAcessoRapido.Appearance.Pressed.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.btnAcessoRapido.Appearance.Pressed.ForeColor = System.Drawing.Color.Silver;
+            this.btnAcessoRapido.Appearance.Pressed.Options.UseFont = true;
+            this.btnAcessoRapido.Appearance.Pressed.Options.UseForeColor = true;
             this.btnAcessoRapido.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.rocket_30px;
             this.btnAcessoRapido.Name = "btnAcessoRapido";
             this.btnAcessoRapido.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
@@ -109,16 +129,26 @@
             // 
             // VisaoGeral
             // 
-            this.VisaoGeral.Appearance.Default.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
+            this.VisaoGeral.Appearance.Default.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.VisaoGeral.Appearance.Default.ForeColor = System.Drawing.Color.White;
             this.VisaoGeral.Appearance.Default.Options.UseFont = true;
-            this.VisaoGeral.Appearance.Disabled.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
+            this.VisaoGeral.Appearance.Default.Options.UseForeColor = true;
+            this.VisaoGeral.Appearance.Disabled.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.VisaoGeral.Appearance.Disabled.ForeColor = System.Drawing.Color.White;
             this.VisaoGeral.Appearance.Disabled.Options.UseFont = true;
-            this.VisaoGeral.Appearance.Hovered.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
+            this.VisaoGeral.Appearance.Disabled.Options.UseForeColor = true;
+            this.VisaoGeral.Appearance.Hovered.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.VisaoGeral.Appearance.Hovered.ForeColor = System.Drawing.Color.LightGray;
             this.VisaoGeral.Appearance.Hovered.Options.UseFont = true;
-            this.VisaoGeral.Appearance.Normal.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
+            this.VisaoGeral.Appearance.Hovered.Options.UseForeColor = true;
+            this.VisaoGeral.Appearance.Normal.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.VisaoGeral.Appearance.Normal.ForeColor = System.Drawing.Color.White;
             this.VisaoGeral.Appearance.Normal.Options.UseFont = true;
-            this.VisaoGeral.Appearance.Pressed.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.VisaoGeral.Appearance.Normal.Options.UseForeColor = true;
+            this.VisaoGeral.Appearance.Pressed.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.VisaoGeral.Appearance.Pressed.ForeColor = System.Drawing.Color.Silver;
             this.VisaoGeral.Appearance.Pressed.Options.UseFont = true;
+            this.VisaoGeral.Appearance.Pressed.Options.UseForeColor = true;
             this.VisaoGeral.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.vision_30px;
             this.VisaoGeral.Name = "VisaoGeral";
             this.VisaoGeral.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
@@ -126,16 +156,26 @@
             // 
             // PDV
             // 
-            this.PDV.Appearance.Default.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
+            this.PDV.Appearance.Default.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.PDV.Appearance.Default.ForeColor = System.Drawing.Color.White;
             this.PDV.Appearance.Default.Options.UseFont = true;
-            this.PDV.Appearance.Disabled.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
+            this.PDV.Appearance.Default.Options.UseForeColor = true;
+            this.PDV.Appearance.Disabled.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.PDV.Appearance.Disabled.ForeColor = System.Drawing.Color.White;
             this.PDV.Appearance.Disabled.Options.UseFont = true;
-            this.PDV.Appearance.Hovered.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
+            this.PDV.Appearance.Disabled.Options.UseForeColor = true;
+            this.PDV.Appearance.Hovered.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.PDV.Appearance.Hovered.ForeColor = System.Drawing.Color.LightGray;
             this.PDV.Appearance.Hovered.Options.UseFont = true;
-            this.PDV.Appearance.Normal.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
+            this.PDV.Appearance.Hovered.Options.UseForeColor = true;
+            this.PDV.Appearance.Normal.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.PDV.Appearance.Normal.ForeColor = System.Drawing.Color.White;
             this.PDV.Appearance.Normal.Options.UseFont = true;
-            this.PDV.Appearance.Pressed.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
+            this.PDV.Appearance.Normal.Options.UseForeColor = true;
+            this.PDV.Appearance.Pressed.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.PDV.Appearance.Pressed.ForeColor = System.Drawing.Color.Silver;
             this.PDV.Appearance.Pressed.Options.UseFont = true;
+            this.PDV.Appearance.Pressed.Options.UseForeColor = true;
             this.PDV.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.computer_30px;
             this.PDV.Name = "PDV";
             this.PDV.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
@@ -143,16 +183,26 @@
             // 
             // Financeiro
             // 
-            this.Financeiro.Appearance.Default.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
+            this.Financeiro.Appearance.Default.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.Financeiro.Appearance.Default.ForeColor = System.Drawing.Color.White;
             this.Financeiro.Appearance.Default.Options.UseFont = true;
-            this.Financeiro.Appearance.Disabled.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
+            this.Financeiro.Appearance.Default.Options.UseForeColor = true;
+            this.Financeiro.Appearance.Disabled.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.Financeiro.Appearance.Disabled.ForeColor = System.Drawing.Color.White;
             this.Financeiro.Appearance.Disabled.Options.UseFont = true;
-            this.Financeiro.Appearance.Hovered.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
+            this.Financeiro.Appearance.Disabled.Options.UseForeColor = true;
+            this.Financeiro.Appearance.Hovered.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.Financeiro.Appearance.Hovered.ForeColor = System.Drawing.Color.LightGray;
             this.Financeiro.Appearance.Hovered.Options.UseFont = true;
-            this.Financeiro.Appearance.Normal.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
+            this.Financeiro.Appearance.Hovered.Options.UseForeColor = true;
+            this.Financeiro.Appearance.Normal.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.Financeiro.Appearance.Normal.ForeColor = System.Drawing.Color.White;
             this.Financeiro.Appearance.Normal.Options.UseFont = true;
-            this.Financeiro.Appearance.Pressed.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
+            this.Financeiro.Appearance.Normal.Options.UseForeColor = true;
+            this.Financeiro.Appearance.Pressed.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.Financeiro.Appearance.Pressed.ForeColor = System.Drawing.Color.Silver;
             this.Financeiro.Appearance.Pressed.Options.UseFont = true;
+            this.Financeiro.Appearance.Pressed.Options.UseForeColor = true;
             this.Financeiro.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.dollar_place_marker_30px;
             this.Financeiro.Name = "Financeiro";
             this.Financeiro.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
@@ -162,15 +212,25 @@
             // Cadastro
             // 
             this.Cadastro.Appearance.Default.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Cadastro.Appearance.Default.ForeColor = System.Drawing.Color.White;
             this.Cadastro.Appearance.Default.Options.UseFont = true;
+            this.Cadastro.Appearance.Default.Options.UseForeColor = true;
             this.Cadastro.Appearance.Disabled.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Cadastro.Appearance.Disabled.ForeColor = System.Drawing.Color.White;
             this.Cadastro.Appearance.Disabled.Options.UseFont = true;
+            this.Cadastro.Appearance.Disabled.Options.UseForeColor = true;
             this.Cadastro.Appearance.Hovered.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Cadastro.Appearance.Hovered.ForeColor = System.Drawing.Color.LightGray;
             this.Cadastro.Appearance.Hovered.Options.UseFont = true;
+            this.Cadastro.Appearance.Hovered.Options.UseForeColor = true;
             this.Cadastro.Appearance.Normal.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Cadastro.Appearance.Normal.ForeColor = System.Drawing.Color.White;
             this.Cadastro.Appearance.Normal.Options.UseFont = true;
+            this.Cadastro.Appearance.Normal.Options.UseForeColor = true;
             this.Cadastro.Appearance.Pressed.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Cadastro.Appearance.Pressed.ForeColor = System.Drawing.Color.Silver;
             this.Cadastro.Appearance.Pressed.Options.UseFont = true;
+            this.Cadastro.Appearance.Pressed.Options.UseForeColor = true;
             this.Cadastro.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.btnNovoCliente,
             this.btnNovoFornecedor,
@@ -208,7 +268,25 @@
             // Produtos
             // 
             this.Produtos.Appearance.Default.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Produtos.Appearance.Default.ForeColor = System.Drawing.Color.White;
             this.Produtos.Appearance.Default.Options.UseFont = true;
+            this.Produtos.Appearance.Default.Options.UseForeColor = true;
+            this.Produtos.Appearance.Disabled.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.Produtos.Appearance.Disabled.ForeColor = System.Drawing.Color.White;
+            this.Produtos.Appearance.Disabled.Options.UseFont = true;
+            this.Produtos.Appearance.Disabled.Options.UseForeColor = true;
+            this.Produtos.Appearance.Hovered.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.Produtos.Appearance.Hovered.ForeColor = System.Drawing.Color.LightGray;
+            this.Produtos.Appearance.Hovered.Options.UseFont = true;
+            this.Produtos.Appearance.Hovered.Options.UseForeColor = true;
+            this.Produtos.Appearance.Normal.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.Produtos.Appearance.Normal.ForeColor = System.Drawing.Color.White;
+            this.Produtos.Appearance.Normal.Options.UseFont = true;
+            this.Produtos.Appearance.Normal.Options.UseForeColor = true;
+            this.Produtos.Appearance.Pressed.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Produtos.Appearance.Pressed.ForeColor = System.Drawing.Color.Silver;
+            this.Produtos.Appearance.Pressed.Options.UseFont = true;
+            this.Produtos.Appearance.Pressed.Options.UseForeColor = true;
             this.Produtos.ContentContainer = this.accordionContentContainer2;
             this.Produtos.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.btnNovoProduto,
@@ -232,6 +310,26 @@
             // 
             // Relatorios
             // 
+            this.Relatorios.Appearance.Default.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.Relatorios.Appearance.Default.ForeColor = System.Drawing.Color.White;
+            this.Relatorios.Appearance.Default.Options.UseFont = true;
+            this.Relatorios.Appearance.Default.Options.UseForeColor = true;
+            this.Relatorios.Appearance.Disabled.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.Relatorios.Appearance.Disabled.ForeColor = System.Drawing.Color.White;
+            this.Relatorios.Appearance.Disabled.Options.UseFont = true;
+            this.Relatorios.Appearance.Disabled.Options.UseForeColor = true;
+            this.Relatorios.Appearance.Hovered.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.Relatorios.Appearance.Hovered.ForeColor = System.Drawing.Color.LightGray;
+            this.Relatorios.Appearance.Hovered.Options.UseFont = true;
+            this.Relatorios.Appearance.Hovered.Options.UseForeColor = true;
+            this.Relatorios.Appearance.Normal.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.Relatorios.Appearance.Normal.ForeColor = System.Drawing.Color.White;
+            this.Relatorios.Appearance.Normal.Options.UseFont = true;
+            this.Relatorios.Appearance.Normal.Options.UseForeColor = true;
+            this.Relatorios.Appearance.Pressed.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.Relatorios.Appearance.Pressed.ForeColor = System.Drawing.Color.Silver;
+            this.Relatorios.Appearance.Pressed.Options.UseFont = true;
+            this.Relatorios.Appearance.Pressed.Options.UseForeColor = true;
             this.Relatorios.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.check_30px;
             this.Relatorios.Name = "Relatorios";
             this.Relatorios.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
@@ -240,7 +338,25 @@
             // Configuracao
             // 
             this.Configuracao.Appearance.Default.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Configuracao.Appearance.Default.ForeColor = System.Drawing.Color.White;
             this.Configuracao.Appearance.Default.Options.UseFont = true;
+            this.Configuracao.Appearance.Default.Options.UseForeColor = true;
+            this.Configuracao.Appearance.Disabled.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.Configuracao.Appearance.Disabled.ForeColor = System.Drawing.Color.White;
+            this.Configuracao.Appearance.Disabled.Options.UseFont = true;
+            this.Configuracao.Appearance.Disabled.Options.UseForeColor = true;
+            this.Configuracao.Appearance.Hovered.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.Configuracao.Appearance.Hovered.ForeColor = System.Drawing.Color.LightGray;
+            this.Configuracao.Appearance.Hovered.Options.UseFont = true;
+            this.Configuracao.Appearance.Hovered.Options.UseForeColor = true;
+            this.Configuracao.Appearance.Normal.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.Configuracao.Appearance.Normal.ForeColor = System.Drawing.Color.White;
+            this.Configuracao.Appearance.Normal.Options.UseFont = true;
+            this.Configuracao.Appearance.Normal.Options.UseForeColor = true;
+            this.Configuracao.Appearance.Pressed.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.Configuracao.Appearance.Pressed.ForeColor = System.Drawing.Color.Silver;
+            this.Configuracao.Appearance.Pressed.Options.UseFont = true;
+            this.Configuracao.Appearance.Pressed.Options.UseForeColor = true;
             this.Configuracao.ContentContainer = this.accordionContentContainer1;
             this.Configuracao.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.btnConfigUsuario,
@@ -248,47 +364,42 @@
             this.btnConfigPerfil,
             this.btnConfigFinanceiro,
             this.btnConfigDesepsa});
-            this.Configuracao.Expanded = true;
             this.Configuracao.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.services_30px;
             this.Configuracao.Name = "Configuracao";
             this.Configuracao.Text = "Configurações";
             // 
             // btnConfigUsuario
             // 
+            this.btnConfigUsuario.Expanded = true;
             this.btnConfigUsuario.HeaderTemplate.AddRange(new DevExpress.XtraBars.Navigation.HeaderElementInfo[] {
             new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.Image),
             new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.HeaderControl, DevExpress.XtraBars.Navigation.HeaderElementAlignment.Left),
             new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.Text),
             new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.ContextButtons, DevExpress.XtraBars.Navigation.HeaderElementAlignment.Left)});
-            this.btnConfigUsuario.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.cadastro_15;
             this.btnConfigUsuario.Name = "btnConfigUsuario";
             this.btnConfigUsuario.Text = "Config. Usuários";
             this.btnConfigUsuario.Click += new System.EventHandler(this.btnConfigUsuario_Click);
             // 
             // btnConfigEmpresa
             // 
-            this.btnConfigEmpresa.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.empresa_15;
             this.btnConfigEmpresa.Name = "btnConfigEmpresa";
             this.btnConfigEmpresa.Text = "Config. Empresa";
             this.btnConfigEmpresa.Click += new System.EventHandler(this.btnConfigEmpresa_Click);
             // 
             // btnConfigPerfil
             // 
-            this.btnConfigPerfil.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.perfil_15;
             this.btnConfigPerfil.Name = "btnConfigPerfil";
             this.btnConfigPerfil.Text = "Config. Perfil";
             this.btnConfigPerfil.Click += new System.EventHandler(this.btnConfigPerfil_Click);
             // 
             // btnConfigFinanceiro
             // 
-            this.btnConfigFinanceiro.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.configuracao_financeira_15px;
             this.btnConfigFinanceiro.Name = "btnConfigFinanceiro";
             this.btnConfigFinanceiro.Text = "Config. Financeira";
             this.btnConfigFinanceiro.Click += new System.EventHandler(this.btnConfigFinanceiro_Click);
             // 
             // btnConfigDesepsa
             // 
-            this.btnConfigDesepsa.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.reserve_15px;
             this.btnConfigDesepsa.Name = "btnConfigDesepsa";
             this.btnConfigDesepsa.Text = "Config. Despesa";
             this.btnConfigDesepsa.Click += new System.EventHandler(this.btnConfigDesepsa_Click);

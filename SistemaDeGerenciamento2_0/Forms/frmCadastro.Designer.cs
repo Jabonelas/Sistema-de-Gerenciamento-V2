@@ -55,6 +55,7 @@
             this.coled_locgradouro = new DevExpress.XtraGrid.Columns.GridColumn();
             this.coled_bairro = new DevExpress.XtraGrid.Columns.GridColumn();
             this.coled_cidade = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.btnSair = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -368,11 +369,29 @@
             this.coled_cidade.Visible = true;
             this.coled_cidade.VisibleIndex = 12;
             // 
+            // btnSair
+            // 
+            this.btnSair.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSair.Appearance.Options.UseFont = true;
+            this.btnSair.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.exit_20px;
+            this.btnSair.ImageOptions.ImageIndex = 5;
+            this.btnSair.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftBottom;
+            this.btnSair.ImageOptions.ImageToTextIndent = 10;
+            this.btnSair.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
+            this.btnSair.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnSair.Location = new System.Drawing.Point(1026, 479);
+            this.btnSair.Name = "btnSair";
+            this.btnSair.Size = new System.Drawing.Size(113, 30);
+            this.btnSair.TabIndex = 300;
+            this.btnSair.Text = "Sair (Esc)";
+            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
+            // 
             // frmCadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1159, 489);
+            this.ClientSize = new System.Drawing.Size(1159, 519);
+            this.Controls.Add(this.btnSair);
             this.Controls.Add(this.gridControl1);
             this.Controls.Add(this.labelControl1);
             this.Controls.Add(this.labelControl16);
@@ -426,5 +445,6 @@
         private DevExpress.XtraGrid.Columns.GridColumn coled_locgradouro;
         private DevExpress.XtraGrid.Columns.GridColumn coled_bairro;
         private DevExpress.XtraGrid.Columns.GridColumn coled_cidade;
+        private DevExpress.XtraEditors.SimpleButton btnSair;
     }
 }

@@ -37,13 +37,6 @@
             this.btnDadosEmpresa = new DevExpress.XtraEditors.SimpleButton();
             this.btnIrParaConfiguracoes = new DevExpress.XtraEditors.SimpleButton();
             this.btnNovoUsuario = new DevExpress.XtraEditors.SimpleButton();
-            this.panelControl4 = new DevExpress.XtraEditors.PanelControl();
-            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.btnNovaVenda = new DevExpress.XtraEditors.SimpleButton();
-            this.btnIrParaFinanceiro = new DevExpress.XtraEditors.SimpleButton();
-            this.btnNovaCompra = new DevExpress.XtraEditors.SimpleButton();
             this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
@@ -58,16 +51,19 @@
             this.btnIrParaProdutos = new DevExpress.XtraEditors.SimpleButton();
             this.btnNovoProduto = new DevExpress.XtraEditors.SimpleButton();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.panelControl4 = new DevExpress.XtraEditors.PanelControl();
+            this.btnNovaCompra = new DevExpress.XtraEditors.SimpleButton();
+            this.btnIrParaFinanceiro = new DevExpress.XtraEditors.SimpleButton();
+            this.btnNovaVenda = new DevExpress.XtraEditors.SimpleButton();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl5)).BeginInit();
             this.panelControl5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).BeginInit();
-            this.panelControl4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).BeginInit();
             this.panelControl3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -76,6 +72,10 @@
             this.panelControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).BeginInit();
+            this.panelControl4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.SuspendLayout();
             // 
             // panelControl1
@@ -93,6 +93,9 @@
             // 
             // panelControl5
             // 
+            this.panelControl5.Appearance.BackColor = System.Drawing.Color.Gray;
+            this.panelControl5.Appearance.Options.UseBackColor = true;
+            this.panelControl5.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
             this.panelControl5.Controls.Add(this.labelControl4);
             this.panelControl5.Controls.Add(this.pictureBox8);
             this.panelControl5.Controls.Add(this.pictureBox4);
@@ -187,101 +190,11 @@
             this.btnNovoUsuario.Text = "Novo Usuário";
             this.btnNovoUsuario.Click += new System.EventHandler(this.btnNovoUsuario_Click);
             // 
-            // panelControl4
-            // 
-            this.panelControl4.Controls.Add(this.labelControl3);
-            this.panelControl4.Controls.Add(this.pictureBox7);
-            this.panelControl4.Controls.Add(this.pictureBox3);
-            this.panelControl4.Controls.Add(this.btnNovaVenda);
-            this.panelControl4.Controls.Add(this.btnIrParaFinanceiro);
-            this.panelControl4.Controls.Add(this.btnNovaCompra);
-            this.panelControl4.Location = new System.Drawing.Point(504, 26);
-            this.panelControl4.Name = "panelControl4";
-            this.panelControl4.Size = new System.Drawing.Size(203, 355);
-            this.panelControl4.TabIndex = 18;
-            // 
-            // labelControl3
-            // 
-            this.labelControl3.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl3.Appearance.Options.UseFont = true;
-            this.labelControl3.Location = new System.Drawing.Point(39, 118);
-            this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(130, 21);
-            this.labelControl3.TabIndex = 26;
-            this.labelControl3.Text = "Vendas e Compras";
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox7.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.separador;
-            this.pictureBox7.Location = new System.Drawing.Point(3, 150);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(198, 25);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox7.TabIndex = 25;
-            this.pictureBox7.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.carrinho_preto_grande;
-            this.pictureBox3.Location = new System.Drawing.Point(52, 9);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(98, 94);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 23;
-            this.pictureBox3.TabStop = false;
-            // 
-            // btnNovaVenda
-            // 
-            this.btnNovaVenda.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNovaVenda.Appearance.Options.UseFont = true;
-            this.btnNovaVenda.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.entrada_preta;
-            this.btnNovaVenda.ImageOptions.ImageIndex = 5;
-            this.btnNovaVenda.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftBottom;
-            this.btnNovaVenda.ImageOptions.ImageToTextIndent = 10;
-            this.btnNovaVenda.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-            this.btnNovaVenda.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnNovaVenda.Location = new System.Drawing.Point(12, 181);
-            this.btnNovaVenda.Name = "btnNovaVenda";
-            this.btnNovaVenda.Size = new System.Drawing.Size(179, 30);
-            this.btnNovaVenda.TabIndex = 18;
-            this.btnNovaVenda.Text = "Nova Venda / Receita";
-            // 
-            // btnIrParaFinanceiro
-            // 
-            this.btnIrParaFinanceiro.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIrParaFinanceiro.Appearance.Options.UseFont = true;
-            this.btnIrParaFinanceiro.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.dinheiro_preto;
-            this.btnIrParaFinanceiro.ImageOptions.ImageIndex = 5;
-            this.btnIrParaFinanceiro.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftBottom;
-            this.btnIrParaFinanceiro.ImageOptions.ImageToTextIndent = 10;
-            this.btnIrParaFinanceiro.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-            this.btnIrParaFinanceiro.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnIrParaFinanceiro.Location = new System.Drawing.Point(12, 268);
-            this.btnIrParaFinanceiro.Name = "btnIrParaFinanceiro";
-            this.btnIrParaFinanceiro.Size = new System.Drawing.Size(179, 30);
-            this.btnIrParaFinanceiro.TabIndex = 16;
-            this.btnIrParaFinanceiro.Text = "Ir para Financeiro";
-            // 
-            // btnNovaCompra
-            // 
-            this.btnNovaCompra.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNovaCompra.Appearance.Options.UseFont = true;
-            this.btnNovaCompra.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.saida_preto;
-            this.btnNovaCompra.ImageOptions.ImageIndex = 5;
-            this.btnNovaCompra.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftBottom;
-            this.btnNovaCompra.ImageOptions.ImageToTextIndent = 10;
-            this.btnNovaCompra.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-            this.btnNovaCompra.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnNovaCompra.Location = new System.Drawing.Point(12, 225);
-            this.btnNovaCompra.Name = "btnNovaCompra";
-            this.btnNovaCompra.Size = new System.Drawing.Size(179, 30);
-            this.btnNovaCompra.TabIndex = 15;
-            this.btnNovaCompra.Text = "Nova Compra / Despesa";
-            // 
             // panelControl3
             // 
+            this.panelControl3.Appearance.BackColor = System.Drawing.Color.Gray;
+            this.panelControl3.Appearance.Options.UseBackColor = true;
+            this.panelControl3.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
             this.panelControl3.Controls.Add(this.labelControl2);
             this.panelControl3.Controls.Add(this.pictureBox6);
             this.panelControl3.Controls.Add(this.pictureBox2);
@@ -396,6 +309,9 @@
             // 
             // panelControl2
             // 
+            this.panelControl2.Appearance.BackColor = System.Drawing.Color.Gray;
+            this.panelControl2.Appearance.Options.UseBackColor = true;
+            this.panelControl2.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
             this.panelControl2.Controls.Add(this.labelControl1);
             this.panelControl2.Controls.Add(this.pictureBox1);
             this.panelControl2.Controls.Add(this.btnIrParaProdutos);
@@ -486,6 +402,102 @@
             this.pictureBox5.TabIndex = 23;
             this.pictureBox5.TabStop = false;
             // 
+            // panelControl4
+            // 
+            this.panelControl4.Appearance.BackColor = System.Drawing.Color.Gray;
+            this.panelControl4.Appearance.Options.UseBackColor = true;
+            this.panelControl4.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            this.panelControl4.Controls.Add(this.labelControl3);
+            this.panelControl4.Controls.Add(this.pictureBox7);
+            this.panelControl4.Controls.Add(this.pictureBox3);
+            this.panelControl4.Controls.Add(this.btnNovaVenda);
+            this.panelControl4.Controls.Add(this.btnIrParaFinanceiro);
+            this.panelControl4.Controls.Add(this.btnNovaCompra);
+            this.panelControl4.Location = new System.Drawing.Point(504, 26);
+            this.panelControl4.Name = "panelControl4";
+            this.panelControl4.Size = new System.Drawing.Size(203, 355);
+            this.panelControl4.TabIndex = 18;
+            // 
+            // btnNovaCompra
+            // 
+            this.btnNovaCompra.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNovaCompra.Appearance.Options.UseFont = true;
+            this.btnNovaCompra.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.saida_preto;
+            this.btnNovaCompra.ImageOptions.ImageIndex = 5;
+            this.btnNovaCompra.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftBottom;
+            this.btnNovaCompra.ImageOptions.ImageToTextIndent = 10;
+            this.btnNovaCompra.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
+            this.btnNovaCompra.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnNovaCompra.Location = new System.Drawing.Point(12, 225);
+            this.btnNovaCompra.Name = "btnNovaCompra";
+            this.btnNovaCompra.Size = new System.Drawing.Size(179, 30);
+            this.btnNovaCompra.TabIndex = 15;
+            this.btnNovaCompra.Text = "Nova Compra / Despesa";
+            // 
+            // btnIrParaFinanceiro
+            // 
+            this.btnIrParaFinanceiro.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIrParaFinanceiro.Appearance.Options.UseFont = true;
+            this.btnIrParaFinanceiro.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.dinheiro_preto;
+            this.btnIrParaFinanceiro.ImageOptions.ImageIndex = 5;
+            this.btnIrParaFinanceiro.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftBottom;
+            this.btnIrParaFinanceiro.ImageOptions.ImageToTextIndent = 10;
+            this.btnIrParaFinanceiro.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
+            this.btnIrParaFinanceiro.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnIrParaFinanceiro.Location = new System.Drawing.Point(12, 268);
+            this.btnIrParaFinanceiro.Name = "btnIrParaFinanceiro";
+            this.btnIrParaFinanceiro.Size = new System.Drawing.Size(179, 30);
+            this.btnIrParaFinanceiro.TabIndex = 16;
+            this.btnIrParaFinanceiro.Text = "Ir para Financeiro";
+            // 
+            // btnNovaVenda
+            // 
+            this.btnNovaVenda.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNovaVenda.Appearance.Options.UseFont = true;
+            this.btnNovaVenda.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.entrada_preta;
+            this.btnNovaVenda.ImageOptions.ImageIndex = 5;
+            this.btnNovaVenda.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftBottom;
+            this.btnNovaVenda.ImageOptions.ImageToTextIndent = 10;
+            this.btnNovaVenda.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
+            this.btnNovaVenda.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnNovaVenda.Location = new System.Drawing.Point(12, 181);
+            this.btnNovaVenda.Name = "btnNovaVenda";
+            this.btnNovaVenda.Size = new System.Drawing.Size(179, 30);
+            this.btnNovaVenda.TabIndex = 18;
+            this.btnNovaVenda.Text = "Nova Venda / Receita";
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox3.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.carrinho_preto_grande;
+            this.pictureBox3.Location = new System.Drawing.Point(52, 9);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(98, 94);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 23;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox7.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.separador;
+            this.pictureBox7.Location = new System.Drawing.Point(3, 150);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(198, 25);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox7.TabIndex = 25;
+            this.pictureBox7.TabStop = false;
+            // 
+            // labelControl3
+            // 
+            this.labelControl3.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl3.Appearance.Options.UseFont = true;
+            this.labelControl3.Location = new System.Drawing.Point(39, 118);
+            this.labelControl3.Name = "labelControl3";
+            this.labelControl3.Size = new System.Drawing.Size(130, 21);
+            this.labelControl3.TabIndex = 26;
+            this.labelControl3.Text = "Vendas e Compras";
+            // 
             // frmAcessoRapido
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -502,11 +514,6 @@
             this.panelControl5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).EndInit();
-            this.panelControl4.ResumeLayout(false);
-            this.panelControl4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).EndInit();
             this.panelControl3.ResumeLayout(false);
             this.panelControl3.PerformLayout();
@@ -517,6 +524,11 @@
             this.panelControl2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).EndInit();
+            this.panelControl4.ResumeLayout(false);
+            this.panelControl4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -531,19 +543,12 @@
         private DevExpress.XtraEditors.SimpleButton btnDadosEmpresa;
         private DevExpress.XtraEditors.SimpleButton btnIrParaConfiguracoes;
         private DevExpress.XtraEditors.SimpleButton btnNovoUsuario;
-        private DevExpress.XtraEditors.PanelControl panelControl4;
-        private DevExpress.XtraEditors.SimpleButton btnNovaVenda;
-        private DevExpress.XtraEditors.SimpleButton btnIrParaFinanceiro;
-        private DevExpress.XtraEditors.SimpleButton btnNovaCompra;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox8;
-        private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox pictureBox6;
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.LabelControl labelControl4;
-        private DevExpress.XtraEditors.LabelControl labelControl3;
         private DevExpress.XtraEditors.PanelControl panelControl2;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private System.Windows.Forms.PictureBox pictureBox1;
@@ -551,5 +556,12 @@
         private DevExpress.XtraEditors.SimpleButton btnNovoProduto;
         private System.Windows.Forms.PictureBox pictureBox5;
         private DevExpress.XtraEditors.PanelControl panelControl1;
+        private DevExpress.XtraEditors.PanelControl panelControl4;
+        private DevExpress.XtraEditors.LabelControl labelControl3;
+        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private DevExpress.XtraEditors.SimpleButton btnNovaVenda;
+        private DevExpress.XtraEditors.SimpleButton btnIrParaFinanceiro;
+        private DevExpress.XtraEditors.SimpleButton btnNovaCompra;
     }
 }

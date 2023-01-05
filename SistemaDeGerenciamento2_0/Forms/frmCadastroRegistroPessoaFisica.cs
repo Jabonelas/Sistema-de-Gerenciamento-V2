@@ -29,6 +29,8 @@ namespace SistemaDeGerenciamento2_0.Forms
 
             tipoCadastro = _tipoCadastro;
 
+            telaRegistro = _telaRegistro;
+
             SetandoDados();
         }
 

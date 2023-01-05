@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            DevExpress.XtraSplashScreen.SplashScreenManager splashScreenManager1 = new DevExpress.XtraSplashScreen.SplashScreenManager(this, null, true, true);
             DevExpress.DataAccess.Sql.SelectQuery selectQuery1 = new DevExpress.DataAccess.Sql.SelectQuery();
             DevExpress.DataAccess.Sql.Column column1 = new DevExpress.DataAccess.Sql.Column();
             DevExpress.DataAccess.Sql.ColumnExpression columnExpression1 = new DevExpress.DataAccess.Sql.ColumnExpression();
@@ -42,24 +43,28 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDespesas));
             this.btnNovaDespesa = new DevExpress.XtraEditors.SimpleButton();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
+            this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.id_categoria_despesa = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.cd_categoria_agrupadora = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.cd_categoria = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.cd_tipo_custo = new DevExpress.XtraGrid.Columns.GridColumn();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.labelControl16 = new DevExpress.XtraEditors.LabelControl();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
-            this.id_categoria_despesa = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.cd_categoria_agrupadora = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.cd_categoria = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.cd_tipo_custo = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // splashScreenManager1
+            // 
+            splashScreenManager1.ClosingDelay = 500;
             // 
             // btnNovaDespesa
             // 
@@ -90,6 +95,34 @@
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
             // 
+            // sqlDataSource1
+            // 
+            this.sqlDataSource1.ConnectionName = "SistemaDeGerenciamento2_0ConnectionString";
+            this.sqlDataSource1.Name = "sqlDataSource1";
+            columnExpression1.ColumnName = "id_categoria_despesa";
+            table1.MetaSerializable = "<Meta X=\"30\" Y=\"30\" Width=\"125\" Height=\"143\" />";
+            table1.Name = "tb_cadastro_despesa";
+            columnExpression1.Table = table1;
+            column1.Expression = columnExpression1;
+            columnExpression2.ColumnName = "cd_categoria_agrupadora";
+            columnExpression2.Table = table1;
+            column2.Expression = columnExpression2;
+            columnExpression3.ColumnName = "cd_tipo_custo";
+            columnExpression3.Table = table1;
+            column3.Expression = columnExpression3;
+            columnExpression4.ColumnName = "cd_categoria";
+            columnExpression4.Table = table1;
+            column4.Expression = columnExpression4;
+            selectQuery1.Columns.Add(column1);
+            selectQuery1.Columns.Add(column2);
+            selectQuery1.Columns.Add(column3);
+            selectQuery1.Columns.Add(column4);
+            selectQuery1.Name = "tb_cadastro_despesa";
+            selectQuery1.Tables.Add(table1);
+            this.sqlDataSource1.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
+            selectQuery1});
+            this.sqlDataSource1.ResultSchemaSerializable = resources.GetString("sqlDataSource1.ResultSchemaSerializable");
+            // 
             // gridView1
             // 
             this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
@@ -101,6 +134,55 @@
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsBehavior.Editable = false;
             this.gridView1.OptionsView.ShowFooter = true;
+            this.gridView1.PopupMenuShowing += new DevExpress.XtraGrid.Views.Grid.PopupMenuShowingEventHandler(this.gridView1_PopupMenuShowing);
+            // 
+            // id_categoria_despesa
+            // 
+            this.id_categoria_despesa.AppearanceCell.Options.UseTextOptions = true;
+            this.id_categoria_despesa.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.id_categoria_despesa.AppearanceHeader.Options.UseTextOptions = true;
+            this.id_categoria_despesa.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.id_categoria_despesa.Caption = "ID";
+            this.id_categoria_despesa.FieldName = "id_categoria_despesa";
+            this.id_categoria_despesa.Name = "id_categoria_despesa";
+            this.id_categoria_despesa.Visible = true;
+            this.id_categoria_despesa.VisibleIndex = 0;
+            // 
+            // cd_categoria_agrupadora
+            // 
+            this.cd_categoria_agrupadora.AppearanceCell.Options.UseTextOptions = true;
+            this.cd_categoria_agrupadora.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.cd_categoria_agrupadora.AppearanceHeader.Options.UseTextOptions = true;
+            this.cd_categoria_agrupadora.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.cd_categoria_agrupadora.Caption = "Categoria Agrupadora";
+            this.cd_categoria_agrupadora.FieldName = "cd_categoria_agrupadora";
+            this.cd_categoria_agrupadora.Name = "cd_categoria_agrupadora";
+            this.cd_categoria_agrupadora.Visible = true;
+            this.cd_categoria_agrupadora.VisibleIndex = 1;
+            // 
+            // cd_categoria
+            // 
+            this.cd_categoria.AppearanceCell.Options.UseTextOptions = true;
+            this.cd_categoria.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.cd_categoria.AppearanceHeader.Options.UseTextOptions = true;
+            this.cd_categoria.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.cd_categoria.Caption = "Categoria";
+            this.cd_categoria.FieldName = "cd_categoria";
+            this.cd_categoria.Name = "cd_categoria";
+            this.cd_categoria.Visible = true;
+            this.cd_categoria.VisibleIndex = 2;
+            // 
+            // cd_tipo_custo
+            // 
+            this.cd_tipo_custo.AppearanceCell.Options.UseTextOptions = true;
+            this.cd_tipo_custo.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.cd_tipo_custo.AppearanceHeader.Options.UseTextOptions = true;
+            this.cd_tipo_custo.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.cd_tipo_custo.Caption = "Custo";
+            this.cd_tipo_custo.FieldName = "cd_tipo_custo";
+            this.cd_tipo_custo.Name = "cd_tipo_custo";
+            this.cd_tipo_custo.Visible = true;
+            this.cd_tipo_custo.VisibleIndex = 3;
             // 
             // labelControl3
             // 
@@ -164,82 +246,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 301;
             this.pictureBox1.TabStop = false;
-            // 
-            // sqlDataSource1
-            // 
-            this.sqlDataSource1.ConnectionName = "SistemaDeGerenciamento2_0ConnectionString";
-            this.sqlDataSource1.Name = "sqlDataSource1";
-            columnExpression1.ColumnName = "id_categoria_despesa";
-            table1.MetaSerializable = "<Meta X=\"30\" Y=\"30\" Width=\"125\" Height=\"143\" />";
-            table1.Name = "tb_cadastro_despesa";
-            columnExpression1.Table = table1;
-            column1.Expression = columnExpression1;
-            columnExpression2.ColumnName = "cd_categoria_agrupadora";
-            columnExpression2.Table = table1;
-            column2.Expression = columnExpression2;
-            columnExpression3.ColumnName = "cd_tipo_custo";
-            columnExpression3.Table = table1;
-            column3.Expression = columnExpression3;
-            columnExpression4.ColumnName = "cd_categoria";
-            columnExpression4.Table = table1;
-            column4.Expression = columnExpression4;
-            selectQuery1.Columns.Add(column1);
-            selectQuery1.Columns.Add(column2);
-            selectQuery1.Columns.Add(column3);
-            selectQuery1.Columns.Add(column4);
-            selectQuery1.Name = "tb_cadastro_despesa";
-            selectQuery1.Tables.Add(table1);
-            this.sqlDataSource1.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
-            selectQuery1});
-            this.sqlDataSource1.ResultSchemaSerializable = resources.GetString("sqlDataSource1.ResultSchemaSerializable");
-            // 
-            // id_categoria_despesa
-            // 
-            this.id_categoria_despesa.AppearanceCell.Options.UseTextOptions = true;
-            this.id_categoria_despesa.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.id_categoria_despesa.AppearanceHeader.Options.UseTextOptions = true;
-            this.id_categoria_despesa.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.id_categoria_despesa.Caption = "ID";
-            this.id_categoria_despesa.FieldName = "id_categoria_despesa";
-            this.id_categoria_despesa.Name = "id_categoria_despesa";
-            this.id_categoria_despesa.Visible = true;
-            this.id_categoria_despesa.VisibleIndex = 0;
-            // 
-            // cd_categoria_agrupadora
-            // 
-            this.cd_categoria_agrupadora.AppearanceCell.Options.UseTextOptions = true;
-            this.cd_categoria_agrupadora.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.cd_categoria_agrupadora.AppearanceHeader.Options.UseTextOptions = true;
-            this.cd_categoria_agrupadora.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.cd_categoria_agrupadora.Caption = "Categoria Agrupadora";
-            this.cd_categoria_agrupadora.FieldName = "cd_categoria_agrupadora";
-            this.cd_categoria_agrupadora.Name = "cd_categoria_agrupadora";
-            this.cd_categoria_agrupadora.Visible = true;
-            this.cd_categoria_agrupadora.VisibleIndex = 1;
-            // 
-            // cd_categoria
-            // 
-            this.cd_categoria.AppearanceCell.Options.UseTextOptions = true;
-            this.cd_categoria.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.cd_categoria.AppearanceHeader.Options.UseTextOptions = true;
-            this.cd_categoria.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.cd_categoria.Caption = "Categoria";
-            this.cd_categoria.FieldName = "cd_categoria";
-            this.cd_categoria.Name = "cd_categoria";
-            this.cd_categoria.Visible = true;
-            this.cd_categoria.VisibleIndex = 2;
-            // 
-            // cd_tipo_custo
-            // 
-            this.cd_tipo_custo.AppearanceCell.Options.UseTextOptions = true;
-            this.cd_tipo_custo.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.cd_tipo_custo.AppearanceHeader.Options.UseTextOptions = true;
-            this.cd_tipo_custo.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.cd_tipo_custo.Caption = "Custo";
-            this.cd_tipo_custo.FieldName = "cd_tipo_custo";
-            this.cd_tipo_custo.Name = "cd_tipo_custo";
-            this.cd_tipo_custo.Visible = true;
-            this.cd_tipo_custo.VisibleIndex = 3;
             // 
             // frmDespesas
             // 

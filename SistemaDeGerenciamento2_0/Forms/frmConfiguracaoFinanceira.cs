@@ -214,9 +214,7 @@ namespace SistemaDeGerenciamento2_0.Forms
             {
                 using (SistemaDeGerenciamento2_0Entities db = new SistemaDeGerenciamento2_0Entities())
                 {
-                    int[] SelectedRowHandles = gridView1.GetSelectedRows();
-
-                    int idConfiguracaoFinanceira = Convert.ToInt32(gridView1.GetRowCellValue(SelectedRowHandles[0], gridView1.Columns[0]));
+                    int idConfiguracaoFinanceira = PegandoDadosDaLinha();
 
                     var dadosConfiguracaoFinanceira = db.tb_configuracao_financeira.Where(x => x.id_configuracao_financeira == idConfiguracaoFinanceira).First();
 
@@ -232,6 +230,15 @@ namespace SistemaDeGerenciamento2_0.Forms
             {
                 MessageBox.Show(x.ToString());
             }
+        }
+
+        private int PegandoDadosDaLinha()
+        {
+            int[] SelectedRowHandles = gridView1.GetSelectedRows();
+
+            int idConfiguracaoFinanceira = Convert.ToInt32(gridView1.GetRowCellValue(SelectedRowHandles[0], gridView1.Columns[0]));
+
+            return idConfiguracaoFinanceira;
         }
 
         private void gridView1_PopupMenuShowing(object sender, DevExpress.XtraGrid.Views.Grid.PopupMenuShowingEventArgs e)

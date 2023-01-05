@@ -1,4 +1,6 @@
-﻿using DevExpress.XtraEditors;
+﻿using DevExpress.Utils.Extensions;
+using DevExpress.XtraEditors;
+using DevExpress.XtraSplashScreen;
 using SistemaDeGerenciamento2_0.Class;
 using SistemaDeGerenciamento2_0.Properties;
 using System;
@@ -18,9 +20,56 @@ namespace SistemaDeGerenciamento2_0.Forms
         private int X = 0;
         private int Y = 0;
 
+        private int idDespesa = 0;
+
         public frmCadastroCategoriaDespesa()
         {
             InitializeComponent();
+        }
+
+        private frmTelaPrincipal frmTelaPrincipal;
+
+        public frmCadastroCategoriaDespesa(int _idDespesa, frmTelaPrincipal _frmTelaPrincipal)
+        {
+            InitializeComponent();
+
+            idDespesa = _idDespesa;
+
+            frmTelaPrincipal = _frmTelaPrincipal;
+
+            ReloadData();
+        }
+
+        private void ReloadData()
+        {
+            using (var handle = SplashScreenManager.ShowOverlayForm(frmTelaPrincipal))
+            {
+                PreencherCampos();
+            }
+        }
+
+        private void PreencherCampos()
+        {
+            try
+            {
+                using (SistemaDeGerenciamento2_0Entities db = new SistemaDeGerenciamento2_0Entities())
+                {
+                    var dadosDespesa = db.tb_cadastro_despesa.Where(x => x.id_categoria_despesa == idDespesa).ToList();
+
+                    foreach (var item in dadosDespesa)
+                    {
+                        cmbCategoriaAgrupadora.Text = item.cd_categoria_agrupadora;
+                        txtCategoria.Text = item.cd_categoria;
+                        cmbCusto.Text = item.cd_tipo_custo;
+                    }
+                }
+            }
+            catch (Exception x)
+            {
+                LogErros.EscreverArquivoDeLog($"{DateTime.Now} - Erro ao Buscar Dados Despesa | {x.Message} | {x.StackTrace}");
+
+                MensagemErros.ErroAoBuscarDadosDespesa(x);
+            }
         }
 
         private void btnFechar_Click(object sender, EventArgs e)
@@ -35,7 +84,40 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
-            Salvar();
+            if (idDespesa != 0)
+            {
+                AlterarDadosDespesa();
+            }
+            else
+            {
+                Salvar();
+            }
+        }
+
+        private void AlterarDadosDespesa()
+        {
+            try
+            {
+                using (SistemaDeGerenciamento2_0Entities db = new SistemaDeGerenciamento2_0Entities())
+                {
+                    var dadosDespesa = db.tb_cadastro_despesa.Where(x => x.id_categoria_despesa.Equals(idDespesa)).ToList();
+
+                    foreach (var item in dadosDespesa)
+                    {
+                        item.cd_categoria_agrupadora = cmbCategoriaAgrupadora.Text;
+                        item.cd_categoria = txtCategoria.Text;
+                        item.cd_tipo_custo = cmbCusto.Text;
+                    }
+
+                    db.SaveChanges();
+
+                    ChamandoAlertaSucessoNoCantoInferiorDireito();
+                }
+            }
+            catch (Exception x)
+            {
+                MessageBox.Show(x.ToString());
+            }
         }
 
         private void Salvar()
@@ -61,7 +143,9 @@ namespace SistemaDeGerenciamento2_0.Forms
             }
             catch (Exception x)
             {
-                MessageBox.Show(x.ToString());
+                LogErros.EscreverArquivoDeLog($"{DateTime.Now} - Erro ao Cadastrar Despesa | {x.Message} | {x.StackTrace}");
+
+                MensagemErros.ErroAoAtualizarDespesa(x);
             }
         }
 
