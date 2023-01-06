@@ -1,6 +1,8 @@
 ﻿using DevExpress.XtraEditors;
 using DevExpress.XtraSplashScreen;
 using SistemaDeGerenciamento2_0.Class;
+using SistemaDeGerenciamento2_0.Context;
+using SistemaDeGerenciamento2_0.Models;
 using SistemaDeGerenciamento2_0.Properties;
 using System;
 using System.Data;
@@ -314,7 +316,7 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             try
             {
-                using (SistemaDeGerenciamento2_0Entities db = new SistemaDeGerenciamento2_0Entities())
+                using (SistemaDeGerenciamento2_0Context db = new SistemaDeGerenciamento2_0Context())
                 {
                     var IsExisteCPFCadastrado = db.tb_registro.Where(x => x.rg_cpf == txtCPF.Text).Any();
 
@@ -490,7 +492,7 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             try
             {
-                using (SistemaDeGerenciamento2_0Entities db = new SistemaDeGerenciamento2_0Entities())
+                using (SistemaDeGerenciamento2_0Context db = new SistemaDeGerenciamento2_0Context())
                 {
                     var informacaoComercialPessoaFisica = new tb_informacoes_comerciais()
                     {
@@ -518,7 +520,7 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             try
             {
-                using (SistemaDeGerenciamento2_0Entities db = new SistemaDeGerenciamento2_0Entities())
+                using (SistemaDeGerenciamento2_0Context db = new SistemaDeGerenciamento2_0Context())
                 {
                     var enderecoPessoaFisica = new tb_enderecos()
                     {
@@ -550,7 +552,7 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             try
             {
-                using (SistemaDeGerenciamento2_0Entities db = new SistemaDeGerenciamento2_0Entities())
+                using (SistemaDeGerenciamento2_0Context db = new SistemaDeGerenciamento2_0Context())
                 {
                     var pessoaFisica = new tb_registro()
                     {

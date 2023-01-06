@@ -40,6 +40,7 @@
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
+            this.queryBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colpd_nome = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -59,6 +60,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.queryBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -112,7 +114,7 @@
             this.btnFechar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnFechar.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnFechar.ImageOptions.Image")));
             this.btnFechar.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
-            this.btnFechar.Location = new System.Drawing.Point(1137, -2);
+            this.btnFechar.Location = new System.Drawing.Point(1124, -2);
             this.btnFechar.Name = "btnFechar";
             this.btnFechar.Size = new System.Drawing.Size(24, 24);
             this.btnFechar.TabIndex = 94;
@@ -143,9 +145,9 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.separador;
-            this.pictureBox1.Location = new System.Drawing.Point(-191, 143);
+            this.pictureBox1.Location = new System.Drawing.Point(-184, 141);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1533, 25);
+            this.pictureBox1.Size = new System.Drawing.Size(1512, 25);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 291;
             this.pictureBox1.TabStop = false;
@@ -173,15 +175,19 @@
             // 
             // gridControl1
             // 
-            this.gridControl1.DataMember = "Query";
-            this.gridControl1.DataSource = this.sqlDataSource1;
+            this.gridControl1.DataSource = this.queryBindingSource;
             this.gridControl1.Location = new System.Drawing.Point(25, 172);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(1109, 324);
+            this.gridControl1.Size = new System.Drawing.Size(1101, 324);
             this.gridControl1.TabIndex = 294;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
+            // 
+            // queryBindingSource
+            // 
+            this.queryBindingSource.DataMember = "Query";
+            this.queryBindingSource.DataSource = this.sqlDataSource1;
             // 
             // sqlDataSource1
             // 
@@ -373,7 +379,7 @@
             this.btnSair.ImageOptions.ImageToTextIndent = 10;
             this.btnSair.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
             this.btnSair.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnSair.Location = new System.Drawing.Point(1021, 506);
+            this.btnSair.Location = new System.Drawing.Point(1013, 506);
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(113, 30);
             this.btnSair.TabIndex = 295;
@@ -384,7 +390,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1161, 546);
+            this.ClientSize = new System.Drawing.Size(1147, 546);
             this.Controls.Add(this.btnSair);
             this.Controls.Add(this.gridControl1);
             this.Controls.Add(this.labelControl1);
@@ -407,6 +413,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.queryBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -439,5 +446,6 @@
         private DevExpress.XtraGrid.Columns.GridColumn colep_data_entrada;
         private DevExpress.XtraGrid.Columns.GridColumn colnfe_quantidade;
         private DevExpress.XtraEditors.SimpleButton btnSair;
+        private System.Windows.Forms.BindingSource queryBindingSource;
     }
 }

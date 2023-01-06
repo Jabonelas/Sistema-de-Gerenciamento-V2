@@ -1,4 +1,6 @@
 ﻿using SistemaDeGerenciamento2_0.Class;
+using SistemaDeGerenciamento2_0.Context;
+using SistemaDeGerenciamento2_0.Models;
 using SistemaDeGerenciamento2_0.Properties;
 using System;
 using System.Data;
@@ -108,7 +110,7 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             try
             {
-                using (SistemaDeGerenciamento2_0Entities db = new SistemaDeGerenciamento2_0Entities())
+                using (SistemaDeGerenciamento2_0Context db = new SistemaDeGerenciamento2_0Context())
                 {
                     var IsExisteAgrupador = db.tb_grupo.Where(x => x.gp_nome_agrupador.Equals(txtAgrupador.Text)).Any();
 
@@ -129,7 +131,7 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             try
             {
-                using (SistemaDeGerenciamento2_0Entities db = new SistemaDeGerenciamento2_0Entities())
+                using (SistemaDeGerenciamento2_0Context db = new SistemaDeGerenciamento2_0Context())
                 {
                     var subGrupo = new tb_grupo() { gp_nome_agrupador = txtAgrupador.Text };
                     db.tb_grupo.Add(subGrupo);

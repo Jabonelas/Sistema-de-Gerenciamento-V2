@@ -97,6 +97,20 @@ namespace SistemaDeGerenciamento2_0.Class
 
         #endregion Estoque
 
+        #region Financeiro
+
+        public static void ErroAoCadastroFinanceiro(Exception _e)
+        {
+            MessageBox.Show($"(CAD-FI01) Erro ao Cadastro Financeiro \n\nErro: {_e.Message}", "Erro Cadastro Financeiro!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        public static void ErroAoCadastroFinanceiroDescontoPorGrupo(Exception _e)
+        {
+            MessageBox.Show($"(CAD-FI02) Erro ao Cadastro Financeiro Desconto Por Grupo \n\nErro: {_e.Message}", "Erro Cadastro Financeiro!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        #endregion Financeiro
+
         #region Configuracoes
 
         public static void ErroAoCadastroPermissoes(Exception _e)
@@ -217,6 +231,16 @@ namespace SistemaDeGerenciamento2_0.Class
             MessageBox.Show($"(BUS-FI01) Erro ao Buscar CNPJ para verificação de existencia de cadastro \n\nErro: {_e}", "Erro Buscar CNPJ para verificação de existencia!", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
+        public static void ErroAoBuscarExistenciaConfiguracaoFinanceiras(Exception _e)
+        {
+            MessageBox.Show($"(BUS-FI02) Erro ao Buscar Existencia de Configurações financeiras \n\nErro: {_e}", "Erro Buscar Existencia de Configurações financeiras!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        public static void ErroAoBuscarDadosConfiguracaoFinanceiras(Exception _e)
+        {
+            MessageBox.Show($"(BUS-FI03) Erro ao Buscar Dados Configurações financeiras \n\nErro: {_e}", "Erro Buscar Dados Configurações financeiras!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
         #endregion Financeiro
 
         #region NF Entrada
@@ -264,7 +288,7 @@ namespace SistemaDeGerenciamento2_0.Class
 
         public static void ErroAoAtualizarProduto(Exception _e)
         {
-            MessageBox.Show($"(CAD-AT01) Erro ao Atualizar Codigo de Barras do Produto \n\nErro: {_e}", "Erro Atuazliar Produto!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            MessageBox.Show($"(ATU-AT01) Erro ao Atualizar Codigo de Barras do Produto \n\nErro: {_e}", "Erro Atualizar Produto!", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
         #endregion Produto
@@ -273,15 +297,24 @@ namespace SistemaDeGerenciamento2_0.Class
 
         public static void ErroAoAtualizarEnderecoEmpresa(Exception _e)
         {
-            MessageBox.Show($"(CAD-RG01) Erro ao Atualizar Endereço da Empresa \n\nErro: {_e}", "Erro Atuazliar Endereço da Empresa!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            MessageBox.Show($"(ATU-RG01) Erro ao Atualizar Endereço da Empresa \n\nErro: {_e}", "Erro Atualizar Endereço da Empresa!", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
         public static void ErroAoAtualizarDadosEmpresa(Exception _e)
         {
-            MessageBox.Show($"(CAD-RG02) Erro ao Atualizar Dados da Empresa \n\nErro: {_e}", "Erro Atuazliar Dados da Empresa!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            MessageBox.Show($"(ATU-RG02) Erro ao Atualizar Dados da Empresa \n\nErro: {_e}", "Erro Atualizar Dados da Empresa!", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
         #endregion Registro
+
+        #region Financeiro
+
+        public static void ErroAoAtualizarDadosFinanceiros(Exception _e)
+        {
+            MessageBox.Show($"(ATU-FI01) Erro ao Atualizar Dados Financeiros \n\nErro: {_e}", "Erro Atualizar Dados Financieros!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        #endregion Financeiro
 
         #region Configuracoes
 
@@ -302,6 +335,15 @@ namespace SistemaDeGerenciamento2_0.Class
         #endregion Despesa
 
         #endregion Atualizar
+
+        #region Deletar
+
+        public static void ErroAoDeletarGrupoComDesconto(Exception _e)
+        {
+            MessageBox.Show($"(DEL-FI01) Erro ao Deletar Grupo com Desconto \n\nErro: {_e}", "Erro Deletar Grupo com Desconto!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        #endregion Deletar
 
         #region Ler Arquivos
 

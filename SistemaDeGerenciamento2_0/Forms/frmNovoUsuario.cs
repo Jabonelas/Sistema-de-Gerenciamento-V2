@@ -1,6 +1,8 @@
 ﻿using DevExpress.Utils.Extensions;
 using DevExpress.XtraSplashScreen;
 using SistemaDeGerenciamento2_0.Class;
+using SistemaDeGerenciamento2_0.Context;
+using SistemaDeGerenciamento2_0.Models;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -44,7 +46,7 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             try
             {
-                using (SistemaDeGerenciamento2_0Entities db = new SistemaDeGerenciamento2_0Entities())
+                using (SistemaDeGerenciamento2_0Context db = new SistemaDeGerenciamento2_0Context())
                 {
                     var funcionarios = db.tb_registro.Where(x => x.rg_tipo_cadastro == "Funcionario");
 

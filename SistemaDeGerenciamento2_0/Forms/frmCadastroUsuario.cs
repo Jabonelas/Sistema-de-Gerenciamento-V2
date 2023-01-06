@@ -1,6 +1,7 @@
 ﻿using DevExpress.XtraGrid;
 using DevExpress.XtraSplashScreen;
 using SistemaDeGerenciamento2_0.Class;
+using SistemaDeGerenciamento2_0.Context;
 using SistemaDeGerenciamento2_0.Properties;
 using System;
 using System.Collections.Generic;
@@ -197,7 +198,7 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             try
             {
-                using (SistemaDeGerenciamento2_0Entities db = new SistemaDeGerenciamento2_0Entities())
+                using (SistemaDeGerenciamento2_0Context db = new SistemaDeGerenciamento2_0Context())
                 {
                     var FKPermissoes = db.tb_registro.Where(x => x.id_registro == IDCadastro)
                     .Select(x => new { x.fk_permissoes, x.rg_login, x.rg_senha }).ToList();

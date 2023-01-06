@@ -7,6 +7,8 @@ using System.Linq;
 using System.Windows.Forms;
 using DevExpress.XtraSplashScreen;
 using System.Diagnostics;
+using SistemaDeGerenciamento2_0.Context;
+using SistemaDeGerenciamento2_0.Models;
 
 namespace SistemaDeGerenciamento2_0.Forms
 {
@@ -151,7 +153,7 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             try
             {
-                using (SistemaDeGerenciamento2_0Entities db = new SistemaDeGerenciamento2_0Entities())
+                using (SistemaDeGerenciamento2_0Context db = new SistemaDeGerenciamento2_0Context())
                 {
                     var IsExisteCodigoDeBarrasProduto = db.tb_produto.Where(x => x.pd_codigo_barras.Equals(txtCodigoDeBarras.Text)).Any();
 
@@ -208,7 +210,7 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             try
             {
-                using (SistemaDeGerenciamento2_0Entities db = new SistemaDeGerenciamento2_0Entities())
+                using (SistemaDeGerenciamento2_0Context db = new SistemaDeGerenciamento2_0Context())
                 {
                     var codigoDeBarrasProduto = db.tb_produto.FirstOrDefault(x => x.id_produto.Equals(idProduto));
 
@@ -229,7 +231,7 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             try
             {
-                using (SistemaDeGerenciamento2_0Entities db = new SistemaDeGerenciamento2_0Entities())
+                using (SistemaDeGerenciamento2_0Context db = new SistemaDeGerenciamento2_0Context())
                 {
                     int valor = Convert.ToInt32(cmbFornecedor.Properties.GetKeyValueByDisplayValue(cmbFornecedor.Text));
 
@@ -315,7 +317,7 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             try
             {
-                using (SistemaDeGerenciamento2_0Entities db = new SistemaDeGerenciamento2_0Entities())
+                using (SistemaDeGerenciamento2_0Context db = new SistemaDeGerenciamento2_0Context())
                 {
                     var IsExistecodigoProduto = db.tb_produto.Where(x => x.pd_codigo.Equals(txtCodigo.Text)).Any();
 
@@ -355,7 +357,7 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             try
             {
-                using (SistemaDeGerenciamento2_0Entities db = new SistemaDeGerenciamento2_0Entities())
+                using (SistemaDeGerenciamento2_0Context db = new SistemaDeGerenciamento2_0Context())
                 {
                     var CadastroProduto = new tb_produto()
                     {

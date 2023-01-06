@@ -16,12 +16,17 @@ using System.Security.Cryptography;
 using System.Windows.Forms;
 using static System.Windows.Forms.ImageList;
 using System.Data.Entity;
+using SistemaDeGerenciamento2_0.Context;
+using SistemaDeGerenciamento2_0.Models;
+using DevExpress.XtraScheduler.iCalendar.Components;
 
 namespace SistemaDeGerenciamento2_0.Forms
 {
     public partial class frmConfiguracaoFinanceira : DevExpress.XtraEditors.XtraForm
     {
         private Form frmTelaPrincipal;
+
+        private bool IsExiteDados = false;
 
         public frmConfiguracaoFinanceira(Form _frmTelaPrincipal)
         {
@@ -68,13 +73,11 @@ namespace SistemaDeGerenciamento2_0.Forms
             }
         }
 
-        private bool IsExiteDados = false;
-
         private void VerificarExistencia()
         {
             try
             {
-                using (SistemaDeGerenciamento2_0Entities db = new SistemaDeGerenciamento2_0Entities())
+                using (SistemaDeGerenciamento2_0Context db = new SistemaDeGerenciamento2_0Context())
                 {
                     IsExiteDados = db.tb_configuracao_financeira.Select(x => x.id_configuracao_financeira).Any();
 
@@ -86,7 +89,9 @@ namespace SistemaDeGerenciamento2_0.Forms
             }
             catch (Exception x)
             {
-                MessageBox.Show(x.ToString());
+                LogErros.EscreverArquivoDeLog($"{DateTime.Now} - Erro ao Verificar Existencia de Configurações Financeiras - | {x.Message} | {x.StackTrace}");
+
+                MensagemErros.ErroAoBuscarExistenciaConfiguracaoFinanceiras(x);
             }
         }
 
@@ -94,10 +99,8 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             try
             {
-                using (SistemaDeGerenciamento2_0Entities db = new SistemaDeGerenciamento2_0Entities())
+                using (SistemaDeGerenciamento2_0Context db = new SistemaDeGerenciamento2_0Context())
                 {
-                    var IsExitecadastro = db.tb_configuracao_financeira.Select(x => x.id_configuracao_financeira).Any();
-
                     var dadosFinanceiros = db.tb_configuracao_financeira
                           .Select(x => new
                           {
@@ -105,8 +108,7 @@ namespace SistemaDeGerenciamento2_0.Forms
                               x.cf_juros_dia,
                               x.cf_parcela_juros,
                               x.id_configuracao_financeira,
-                          })
-                          .Where(x => x.id_configuracao_financeira == 1).ToList();
+                          }).Where(x => x.id_configuracao_financeira == 1).ToList();
 
                     if (dadosFinanceiros.Count() > 0)
                     {
@@ -121,7 +123,9 @@ namespace SistemaDeGerenciamento2_0.Forms
             }
             catch (Exception x)
             {
-                MessageBox.Show(x.ToString());
+                LogErros.EscreverArquivoDeLog($"{DateTime.Now} - Erro ao Buscar dados da Configurações Financeiras - | {x.Message} | {x.StackTrace}");
+
+                MensagemErros.ErroAoBuscarDadosConfiguracaoFinanceiras(x);
             }
         }
 
@@ -129,7 +133,7 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             try
             {
-                using (SistemaDeGerenciamento2_0Entities db = new SistemaDeGerenciamento2_0Entities())
+                using (SistemaDeGerenciamento2_0Context db = new SistemaDeGerenciamento2_0Context())
                 {
                     var dadosFinaneiros = db.tb_configuracao_financeira.Where(x => x.id_configuracao_financeira.Equals(1)).ToList();
 
@@ -147,7 +151,9 @@ namespace SistemaDeGerenciamento2_0.Forms
             }
             catch (Exception x)
             {
-                MessageBox.Show(x.ToString());
+                LogErros.EscreverArquivoDeLog($"{DateTime.Now} - Erro ao Atualizar Configurações Financeiras - | {x.Message} | {x.StackTrace}");
+
+                MensagemErros.ErroAoAtualizarDadosFinanceiros(x);
             }
         }
 
@@ -155,7 +161,7 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             try
             {
-                using (SistemaDeGerenciamento2_0Entities db = new SistemaDeGerenciamento2_0Entities())
+                using (SistemaDeGerenciamento2_0Context db = new SistemaDeGerenciamento2_0Context())
                 {
                     var dadosFinaneiros = new tb_configuracao_financeira
                     {
@@ -172,7 +178,9 @@ namespace SistemaDeGerenciamento2_0.Forms
             }
             catch (Exception x)
             {
-                MessageBox.Show(x.ToString());
+                LogErros.EscreverArquivoDeLog($"{DateTime.Now} - Erro ao Cadastrar Configurações Financeiras - | {x.Message} | {x.StackTrace}");
+
+                MensagemErros.ErroAoCadastroFinanceiro(x);
             }
         }
 
@@ -180,7 +188,7 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             try
             {
-                using (SistemaDeGerenciamento2_0Entities db = new SistemaDeGerenciamento2_0Entities())
+                using (SistemaDeGerenciamento2_0Context db = new SistemaDeGerenciamento2_0Context())
                 {
                     int fk_grupo = Convert.ToInt32(cmbGrupoAgrupador.Properties.GetKeyValueByDisplayValue(cmbGrupoAgrupador.Text));
 
@@ -198,7 +206,9 @@ namespace SistemaDeGerenciamento2_0.Forms
             }
             catch (Exception x)
             {
-                MessageBox.Show(x.ToString());
+                LogErros.EscreverArquivoDeLog($"{DateTime.Now} - Erro ao Cadastrar Configurações Financeiras Desconto Por Grupo - | {x.Message} | {x.StackTrace}");
+
+                MensagemErros.ErroAoCadastroFinanceiroDescontoPorGrupo(x);
             }
         }
 
@@ -212,13 +222,13 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             try
             {
-                using (SistemaDeGerenciamento2_0Entities db = new SistemaDeGerenciamento2_0Entities())
+                using (SistemaDeGerenciamento2_0Context db = new SistemaDeGerenciamento2_0Context())
                 {
                     int idConfiguracaoFinanceira = PegandoDadosDaLinha();
 
                     var dadosConfiguracaoFinanceira = db.tb_configuracao_financeira.Where(x => x.id_configuracao_financeira == idConfiguracaoFinanceira).First();
 
-                    db.Entry(dadosConfiguracaoFinanceira).State = System.Data.Entity.EntityState.Deleted;
+                    db.Entry(dadosConfiguracaoFinanceira).State = Microsoft.EntityFrameworkCore.EntityState.Deleted;
 
                     db.tb_configuracao_financeira.Remove(dadosConfiguracaoFinanceira);
                     db.SaveChanges();
@@ -228,7 +238,9 @@ namespace SistemaDeGerenciamento2_0.Forms
             }
             catch (Exception x)
             {
-                MessageBox.Show(x.ToString());
+                LogErros.EscreverArquivoDeLog($"{DateTime.Now} - Erro ao Deletar Configurações Financeiras Desconto Por Grupo - | {x.Message} | {x.StackTrace}");
+
+                MensagemErros.ErroAoDeletarGrupoComDesconto(x);
             }
         }
 

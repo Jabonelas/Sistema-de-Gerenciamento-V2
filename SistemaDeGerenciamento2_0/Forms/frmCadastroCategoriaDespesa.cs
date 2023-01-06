@@ -2,6 +2,8 @@
 using DevExpress.XtraEditors;
 using DevExpress.XtraSplashScreen;
 using SistemaDeGerenciamento2_0.Class;
+using SistemaDeGerenciamento2_0.Context;
+using SistemaDeGerenciamento2_0.Models;
 using SistemaDeGerenciamento2_0.Properties;
 using System;
 using System.Collections.Generic;
@@ -52,7 +54,7 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             try
             {
-                using (SistemaDeGerenciamento2_0Entities db = new SistemaDeGerenciamento2_0Entities())
+                using (SistemaDeGerenciamento2_0Context db = new SistemaDeGerenciamento2_0Context())
                 {
                     var dadosDespesa = db.tb_cadastro_despesa.Where(x => x.id_categoria_despesa == idDespesa).ToList();
 
@@ -74,7 +76,7 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private void btnFechar_Click(object sender, EventArgs e)
         {
-            MensagemAtencao.MensagemCancelar(this);
+            this.Close();
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
@@ -98,7 +100,7 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             try
             {
-                using (SistemaDeGerenciamento2_0Entities db = new SistemaDeGerenciamento2_0Entities())
+                using (SistemaDeGerenciamento2_0Context db = new SistemaDeGerenciamento2_0Context())
                 {
                     var dadosDespesa = db.tb_cadastro_despesa.Where(x => x.id_categoria_despesa.Equals(idDespesa)).ToList();
 
@@ -124,7 +126,7 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             try
             {
-                using (SistemaDeGerenciamento2_0Entities db = new SistemaDeGerenciamento2_0Entities())
+                using (SistemaDeGerenciamento2_0Context db = new SistemaDeGerenciamento2_0Context())
                 {
                     var dadosCadastroDespesa = new tb_cadastro_despesa
                     {

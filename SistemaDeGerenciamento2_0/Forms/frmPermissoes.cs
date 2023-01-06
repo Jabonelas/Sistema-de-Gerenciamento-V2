@@ -2,6 +2,8 @@
 using DevExpress.Utils.Extensions;
 using DevExpress.XtraSplashScreen;
 using SistemaDeGerenciamento2_0.Class;
+using SistemaDeGerenciamento2_0.Context;
+using SistemaDeGerenciamento2_0.Models;
 using SistemaDeGerenciamento2_0.Properties;
 using System;
 using System.ComponentModel;
@@ -79,7 +81,7 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             try
             {
-                using (SistemaDeGerenciamento2_0Entities db = new SistemaDeGerenciamento2_0Entities())
+                using (SistemaDeGerenciamento2_0Context db = new SistemaDeGerenciamento2_0Context())
                 {
                     var checkBoxPreenchidas = new tb_permissoes()
                     {
@@ -137,7 +139,7 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             try
             {
-                using (SistemaDeGerenciamento2_0Entities db = new SistemaDeGerenciamento2_0Entities())
+                using (SistemaDeGerenciamento2_0Context db = new SistemaDeGerenciamento2_0Context())
                 {
                     var dadosUsuario = db.tb_registro.Where(x => x.id_registro.Equals(IDRegistro));
 
@@ -167,7 +169,7 @@ namespace SistemaDeGerenciamento2_0.Forms
 
                 if (fk_permissoes != 0)
                 {
-                    using (SistemaDeGerenciamento2_0Entities db = new SistemaDeGerenciamento2_0Entities())
+                    using (SistemaDeGerenciamento2_0Context db = new SistemaDeGerenciamento2_0Context())
                     {
                         var dadosConfiguracoes = db.tb_permissoes.Where(x => x.id_permissoes == fk_permissoes).ToList();
 
@@ -227,7 +229,7 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             try
             {
-                using (SistemaDeGerenciamento2_0Entities db = new SistemaDeGerenciamento2_0Entities())
+                using (SistemaDeGerenciamento2_0Context db = new SistemaDeGerenciamento2_0Context())
                 {
                     int? fk_permissoes = Convert.ToInt32(form.FK_Permissoes);
 
