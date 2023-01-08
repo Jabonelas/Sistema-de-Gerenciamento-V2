@@ -323,11 +323,23 @@
     <Compile Include="Forms\frmConfiguracaoFinanceira.Designer.cs">
       <DependentUpon>frmConfiguracaoFinanceira.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\frmConfirmarAcesso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmConfirmarAcesso.Designer.cs">
+      <DependentUpon>frmConfirmarAcesso.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\frmDespesas.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\frmDespesas.Designer.cs">
       <DependentUpon>frmDespesas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\frmNovoUsuario.cs">
       <SubType>Form</SubType>
@@ -469,8 +481,14 @@
     <EmbeddedResource Include="Forms\frmConfiguracaoFinanceira.resx">
       <DependentUpon>frmConfiguracaoFinanceira.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmConfirmarAcesso.resx">
+      <DependentUpon>frmConfirmarAcesso.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmDespesas.resx">
       <DependentUpon>frmDespesas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmNovoUsuario.resx">
       <DependentUpon>frmNovoUsuario.cs</DependentUpon>
@@ -646,6 +664,63 @@
     <None Include="Resources\lapis_15.png" />
     <None Include="Resources\lapis_20.png" />
     <None Include="Resources\configuracao_financeira_20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_group_200px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enter_200px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\entrada=preta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enter_20px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info_20px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dinheiro-preto4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dollar_place_marker_20px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save_20px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\supplier_20px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\automation_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\computer1_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search_20px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\supplier11_20px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cost_20px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cost_20px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search1_20px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\padlock_200px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\padlock1_200px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock_error_200px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

@@ -394,7 +394,7 @@
             // 
             // pictureEdit3
             // 
-            this.pictureEdit3.EditValue = global::SistemaDeGerenciamento2_0.Properties.Resources.informacao20;
+            this.pictureEdit3.EditValue = global::SistemaDeGerenciamento2_0.Properties.Resources.info_20px;
             this.pictureEdit3.Location = new System.Drawing.Point(815, 358);
             this.pictureEdit3.Name = "pictureEdit3";
             this.pictureEdit3.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
@@ -459,7 +459,7 @@
             // 
             this.btnSalvar.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalvar.Appearance.Options.UseFont = true;
-            this.btnSalvar.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.salvar;
+            this.btnSalvar.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.save_20px;
             this.btnSalvar.ImageOptions.ImageIndex = 5;
             this.btnSalvar.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftBottom;
             this.btnSalvar.ImageOptions.ImageToTextIndent = 10;
@@ -496,7 +496,7 @@
             // 
             // btnBuscarPorCEP
             // 
-            this.btnBuscarPorCEP.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.lupa_preta;
+            this.btnBuscarPorCEP.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.search_20px;
             this.btnBuscarPorCEP.Location = new System.Drawing.Point(345, 320);
             this.btnBuscarPorCEP.Name = "btnBuscarPorCEP";
             this.btnBuscarPorCEP.Size = new System.Drawing.Size(31, 26);

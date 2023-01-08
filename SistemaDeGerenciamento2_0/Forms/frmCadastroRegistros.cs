@@ -12,15 +12,15 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private string tipoCadastro = string.Empty;
 
-        public frmCadastroRegistros(string _tipoCadastro)
+        public frmCadastroRegistros(string _tipoCadastro, frmTelaPrincipal _frmTelaPrincipal, string _mudar)
         {
             InitializeComponent();
 
-            cmbTipoPessoa.Text = "Pessoa Fisica";
-
             tipoCadastro = _tipoCadastro;
 
-            TipoCadastro(tipoCadastro);
+            cmbTipoPessoa.Text = tipoCadastro;
+
+            TipoPessoa();
         }
 
         private frmTelaPrincipal frmTelaPrincipal;
@@ -56,7 +56,7 @@ namespace SistemaDeGerenciamento2_0.Forms
             TipoFuncionario();
         }
 
-        private void btnFornecedor_Click(object sender, EventArgs e)
+        private void btnFornecedor_Click_1(object sender, EventArgs e)
         {
             TipoFornecedor();
         }

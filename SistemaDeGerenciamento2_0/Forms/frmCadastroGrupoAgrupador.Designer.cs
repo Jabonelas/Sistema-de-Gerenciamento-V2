@@ -69,7 +69,6 @@
             this.btnAdicionarSubGrupo.AppearancePressed.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(218)))), ((int)(((byte)(153)))));
             this.btnAdicionarSubGrupo.AppearancePressed.Options.UseBackColor = true;
             this.btnAdicionarSubGrupo.AppearancePressed.Options.UseBorderColor = true;
-            this.btnAdicionarSubGrupo.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.adcao9;
             this.btnAdicionarSubGrupo.ImageOptions.ImageIndex = 5;
             this.btnAdicionarSubGrupo.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftBottom;
             this.btnAdicionarSubGrupo.ImageOptions.ImageToTextIndent = 10;
@@ -100,7 +99,6 @@
             this.btnAdicionarGrupo.AppearancePressed.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(218)))), ((int)(((byte)(153)))));
             this.btnAdicionarGrupo.AppearancePressed.Options.UseBackColor = true;
             this.btnAdicionarGrupo.AppearancePressed.Options.UseBorderColor = true;
-            this.btnAdicionarGrupo.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.adcao9;
             this.btnAdicionarGrupo.ImageOptions.ImageIndex = 5;
             this.btnAdicionarGrupo.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftBottom;
             this.btnAdicionarGrupo.ImageOptions.ImageToTextIndent = 10;

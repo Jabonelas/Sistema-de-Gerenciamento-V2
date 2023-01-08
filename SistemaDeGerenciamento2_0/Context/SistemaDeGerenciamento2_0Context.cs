@@ -36,7 +36,7 @@ namespace SistemaDeGerenciamento2_0.Context
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-                optionsBuilder.UseSqlServer("Data Source=ISRAEL\\SQLEXPRESS;Initial Catalog=SistemaDeGerenciamento2_0;Persist Security Info=True;User ID=sa;Password=12345;TrustServerCertificate=True");
+                optionsBuilder.UseSqlServer("Data Source=ISRAEL\\SQLEXPRESS;Initial Catalog=SistemaDeGerenciamento2_0;Persist Security Info=True;User ID=sa;Password=12345");
             }
         }
 

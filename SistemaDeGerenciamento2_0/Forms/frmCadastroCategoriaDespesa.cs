@@ -118,7 +118,9 @@ namespace SistemaDeGerenciamento2_0.Forms
             }
             catch (Exception x)
             {
-                MessageBox.Show(x.ToString());
+                LogErros.EscreverArquivoDeLog($"{DateTime.Now} - Erro ao Atualizar Dados Despesa | {x.Message} | {x.StackTrace}");
+
+                MensagemErros.ErroAoAtualizarDespesa(x);
             }
         }
 
@@ -147,7 +149,7 @@ namespace SistemaDeGerenciamento2_0.Forms
             {
                 LogErros.EscreverArquivoDeLog($"{DateTime.Now} - Erro ao Cadastrar Despesa | {x.Message} | {x.StackTrace}");
 
-                MensagemErros.ErroAoAtualizarDespesa(x);
+                MensagemErros.ErroAoCadastroDespesa(x);
             }
         }
 

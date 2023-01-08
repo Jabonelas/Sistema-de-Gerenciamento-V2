@@ -58,5 +58,15 @@ namespace SistemaDeGerenciamento2_0
         {
             MessageBox.Show("Desculpe, Senhas Divergentes Por Favor Verique!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
+
+        public static void MensagemUsuarioSenhasNaoEncontrados()
+        {
+            MessageBox.Show("Usuário/Senhas Divergentes Por Favor Verique!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        }
+
+        public static void MensagemUsuarioSemPermissao()
+        {
+            MessageBox.Show("Desculpe, Usuário Sem Permissão!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        }
     }
 }

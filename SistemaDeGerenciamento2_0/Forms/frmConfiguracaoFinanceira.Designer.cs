@@ -30,20 +30,20 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmConfiguracaoFinanceira));
-            DevExpress.DataAccess.Sql.CustomSqlQuery customSqlQuery3 = new DevExpress.DataAccess.Sql.CustomSqlQuery();
-            DevExpress.DataAccess.Sql.SelectQuery selectQuery3 = new DevExpress.DataAccess.Sql.SelectQuery();
-            DevExpress.DataAccess.Sql.Column column9 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression9 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Table table5 = new DevExpress.DataAccess.Sql.Table();
-            DevExpress.DataAccess.Sql.Column column10 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression10 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column11 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression11 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Table table6 = new DevExpress.DataAccess.Sql.Table();
-            DevExpress.DataAccess.Sql.Column column12 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression12 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Join join3 = new DevExpress.DataAccess.Sql.Join();
-            DevExpress.DataAccess.Sql.RelationColumnInfo relationColumnInfo3 = new DevExpress.DataAccess.Sql.RelationColumnInfo();
+            DevExpress.DataAccess.Sql.CustomSqlQuery customSqlQuery1 = new DevExpress.DataAccess.Sql.CustomSqlQuery();
+            DevExpress.DataAccess.Sql.SelectQuery selectQuery1 = new DevExpress.DataAccess.Sql.SelectQuery();
+            DevExpress.DataAccess.Sql.Column column1 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression1 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Table table1 = new DevExpress.DataAccess.Sql.Table();
+            DevExpress.DataAccess.Sql.Column column2 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression2 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column3 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression3 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Table table2 = new DevExpress.DataAccess.Sql.Table();
+            DevExpress.DataAccess.Sql.Column column4 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression4 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Join join1 = new DevExpress.DataAccess.Sql.Join();
+            DevExpress.DataAccess.Sql.RelationColumnInfo relationColumnInfo1 = new DevExpress.DataAccess.Sql.RelationColumnInfo();
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
             this.btnSalvar = new DevExpress.XtraEditors.SimpleButton();
             this.pcbRequesitosCodigoDeBarras = new DevExpress.XtraEditors.PictureEdit();
@@ -115,7 +115,6 @@
             // 
             this.btnSalvar.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalvar.Appearance.Options.UseFont = true;
-            this.btnSalvar.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.salvar;
             this.btnSalvar.ImageOptions.ImageIndex = 5;
             this.btnSalvar.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftBottom;
             this.btnSalvar.ImageOptions.ImageToTextIndent = 10;
@@ -441,12 +440,12 @@
             // 
             this.sqlDataSource1.ConnectionName = "SistemaDeGerenciamento2_0ConnectionString";
             this.sqlDataSource1.Name = "sqlDataSource1";
-            customSqlQuery3.Name = "Query";
-            customSqlQuery3.Sql = "select \"tb_grupo\".\"id_grupo\",\r\n       \"tb_grupo\".\"gp_nome_grupo\",\r\n       \"tb_gru" +
+            customSqlQuery1.Name = "Query";
+            customSqlQuery1.Sql = "select \"tb_grupo\".\"id_grupo\",\r\n       \"tb_grupo\".\"gp_nome_grupo\",\r\n       \"tb_gru" +
     "po\".\"gp_nome_agrupador\"\r\n  from \"dbo\".\"tb_grupo\" \"tb_grupo\"\r\nwhere \"tb_grupo\".\"g" +
     "p_nome_grupo\" is not null";
             this.sqlDataSource1.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
-            customSqlQuery3});
+            customSqlQuery1});
             this.sqlDataSource1.ResultSchemaSerializable = resources.GetString("sqlDataSource1.ResultSchemaSerializable");
             // 
             // gdvGruposAgrupadores
@@ -465,37 +464,37 @@
             // 
             this.sqlDataSource2.ConnectionName = "SistemaDeGerenciamento2_0ConnectionString";
             this.sqlDataSource2.Name = "sqlDataSource2";
-            columnExpression9.ColumnName = "id_configuracao_financeira";
-            table5.MetaSerializable = "<Meta X=\"30\" Y=\"30\" Width=\"125\" Height=\"183\" />";
-            table5.Name = "tb_configuracao_financeira";
-            columnExpression9.Table = table5;
-            column9.Expression = columnExpression9;
-            columnExpression10.ColumnName = "cf_desconto_grupo_produto";
-            columnExpression10.Table = table5;
-            column10.Expression = columnExpression10;
-            columnExpression11.ColumnName = "gp_nome_grupo";
-            table6.MetaSerializable = "<Meta X=\"185\" Y=\"30\" Width=\"125\" Height=\"123\" />";
-            table6.Name = "tb_grupo";
-            columnExpression11.Table = table6;
-            column11.Expression = columnExpression11;
-            columnExpression12.ColumnName = "gp_nome_agrupador";
-            columnExpression12.Table = table6;
-            column12.Expression = columnExpression12;
-            selectQuery3.Columns.Add(column9);
-            selectQuery3.Columns.Add(column10);
-            selectQuery3.Columns.Add(column11);
-            selectQuery3.Columns.Add(column12);
-            selectQuery3.Name = "tb_configuracao_financeira";
-            relationColumnInfo3.NestedKeyColumn = "id_grupo";
-            relationColumnInfo3.ParentKeyColumn = "fk_grupo";
-            join3.KeyColumns.Add(relationColumnInfo3);
-            join3.Nested = table6;
-            join3.Parent = table5;
-            selectQuery3.Relations.Add(join3);
-            selectQuery3.Tables.Add(table5);
-            selectQuery3.Tables.Add(table6);
+            columnExpression1.ColumnName = "id_configuracao_financeira";
+            table1.MetaSerializable = "<Meta X=\"30\" Y=\"30\" Width=\"125\" Height=\"183\" />";
+            table1.Name = "tb_configuracao_financeira";
+            columnExpression1.Table = table1;
+            column1.Expression = columnExpression1;
+            columnExpression2.ColumnName = "cf_desconto_grupo_produto";
+            columnExpression2.Table = table1;
+            column2.Expression = columnExpression2;
+            columnExpression3.ColumnName = "gp_nome_grupo";
+            table2.MetaSerializable = "<Meta X=\"185\" Y=\"30\" Width=\"125\" Height=\"123\" />";
+            table2.Name = "tb_grupo";
+            columnExpression3.Table = table2;
+            column3.Expression = columnExpression3;
+            columnExpression4.ColumnName = "gp_nome_agrupador";
+            columnExpression4.Table = table2;
+            column4.Expression = columnExpression4;
+            selectQuery1.Columns.Add(column1);
+            selectQuery1.Columns.Add(column2);
+            selectQuery1.Columns.Add(column3);
+            selectQuery1.Columns.Add(column4);
+            selectQuery1.Name = "tb_configuracao_financeira";
+            relationColumnInfo1.NestedKeyColumn = "id_grupo";
+            relationColumnInfo1.ParentKeyColumn = "fk_grupo";
+            join1.KeyColumns.Add(relationColumnInfo1);
+            join1.Nested = table2;
+            join1.Parent = table1;
+            selectQuery1.Relations.Add(join1);
+            selectQuery1.Tables.Add(table1);
+            selectQuery1.Tables.Add(table2);
             this.sqlDataSource2.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
-            selectQuery3});
+            selectQuery1});
             this.sqlDataSource2.ResultSchemaSerializable = resources.GetString("sqlDataSource2.ResultSchemaSerializable");
             // 
             // gridView1

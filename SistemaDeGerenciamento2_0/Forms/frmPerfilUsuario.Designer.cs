@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.labelControl13 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
@@ -42,20 +43,21 @@
             this.txtConfirmarSenha = new DevExpress.XtraEditors.TextEdit();
             this.txtNovaSenha = new DevExpress.XtraEditors.TextEdit();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
-            this.txtCodigo = new DevExpress.XtraEditors.TextEdit();
+            this.txtUsuario = new DevExpress.XtraEditors.TextEdit();
+            this.txtNome = new DevExpress.XtraEditors.TextEdit();
+            this.txtEmail = new DevExpress.XtraEditors.TextEdit();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.btnSalvar = new DevExpress.XtraEditors.SimpleButton();
+            this.AlertaSalvar = new DevExpress.XtraBars.Alerter.AlertControl(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pcbExibirSenha.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbRequesitosCodigoDeBarras.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtConfirmarSenha.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNovaSenha.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtCodigo.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtUsuario.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtNome.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtEmail.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.SuspendLayout();
             // 
@@ -113,7 +115,7 @@
             // 
             this.labelControl4.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl4.Appearance.Options.UseFont = true;
-            this.labelControl4.Location = new System.Drawing.Point(19, 155);
+            this.labelControl4.Location = new System.Drawing.Point(19, 157);
             this.labelControl4.Name = "labelControl4";
             this.labelControl4.Size = new System.Drawing.Size(79, 15);
             this.labelControl4.TabIndex = 297;
@@ -156,7 +158,7 @@
             // 
             // pcbRequesitosCodigoDeBarras
             // 
-            this.pcbRequesitosCodigoDeBarras.EditValue = global::SistemaDeGerenciamento2_0.Properties.Resources.informacao20;
+            this.pcbRequesitosCodigoDeBarras.EditValue = global::SistemaDeGerenciamento2_0.Properties.Resources.info_20px;
             this.pcbRequesitosCodigoDeBarras.Location = new System.Drawing.Point(107, 187);
             this.pcbRequesitosCodigoDeBarras.Name = "pcbRequesitosCodigoDeBarras";
             this.pcbRequesitosCodigoDeBarras.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
@@ -166,7 +168,8 @@
             this.pcbRequesitosCodigoDeBarras.Properties.ZoomAcceleration = 5D;
             this.pcbRequesitosCodigoDeBarras.Size = new System.Drawing.Size(23, 20);
             this.pcbRequesitosCodigoDeBarras.TabIndex = 299;
-            this.pcbRequesitosCodigoDeBarras.ToolTip = "Password: Caracteres Permitidos \r\n(!,@,#,$,%,¨,& ,*,_ ,-,+,=)";
+            this.pcbRequesitosCodigoDeBarras.ToolTip = "Password: Caracteres Permitidos \r\n(!,@,#,$,%,¨,& ,*,_ ,-,+,=)\r\nMáximo 20 caracter" +
+    "es";
             // 
             // pictureBox2
             // 
@@ -186,6 +189,7 @@
             this.txtConfirmarSenha.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtConfirmarSenha.Properties.Appearance.Options.UseFont = true;
             this.txtConfirmarSenha.Properties.MaxLength = 20;
+            this.txtConfirmarSenha.Properties.UseSystemPasswordChar = true;
             this.txtConfirmarSenha.Size = new System.Drawing.Size(243, 26);
             this.txtConfirmarSenha.TabIndex = 292;
             this.txtConfirmarSenha.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtConfirmarSenha_KeyPress);
@@ -198,6 +202,7 @@
             this.txtNovaSenha.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNovaSenha.Properties.Appearance.Options.UseFont = true;
             this.txtNovaSenha.Properties.MaxLength = 20;
+            this.txtNovaSenha.Properties.UseSystemPasswordChar = true;
             this.txtNovaSenha.Size = new System.Drawing.Size(243, 26);
             this.txtNovaSenha.TabIndex = 291;
             this.txtNovaSenha.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNovaSenha_KeyPress);
@@ -213,38 +218,38 @@
             this.pictureBox1.TabIndex = 110;
             this.pictureBox1.TabStop = false;
             // 
-            // textEdit2
+            // txtUsuario
             // 
-            this.textEdit2.Location = new System.Drawing.Point(657, 113);
-            this.textEdit2.Name = "textEdit2";
-            this.textEdit2.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textEdit2.Properties.Appearance.Options.UseFont = true;
-            this.textEdit2.Properties.MaxLength = 20;
-            this.textEdit2.Properties.ReadOnly = true;
-            this.textEdit2.Size = new System.Drawing.Size(243, 26);
-            this.textEdit2.TabIndex = 108;
+            this.txtUsuario.Location = new System.Drawing.Point(657, 113);
+            this.txtUsuario.Name = "txtUsuario";
+            this.txtUsuario.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsuario.Properties.Appearance.Options.UseFont = true;
+            this.txtUsuario.Properties.MaxLength = 20;
+            this.txtUsuario.Properties.ReadOnly = true;
+            this.txtUsuario.Size = new System.Drawing.Size(243, 26);
+            this.txtUsuario.TabIndex = 108;
             // 
-            // textEdit1
+            // txtNome
             // 
-            this.textEdit1.Location = new System.Drawing.Point(338, 113);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textEdit1.Properties.Appearance.Options.UseFont = true;
-            this.textEdit1.Properties.MaxLength = 20;
-            this.textEdit1.Properties.ReadOnly = true;
-            this.textEdit1.Size = new System.Drawing.Size(311, 26);
-            this.textEdit1.TabIndex = 106;
+            this.txtNome.Location = new System.Drawing.Point(338, 113);
+            this.txtNome.Name = "txtNome";
+            this.txtNome.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNome.Properties.Appearance.Options.UseFont = true;
+            this.txtNome.Properties.MaxLength = 20;
+            this.txtNome.Properties.ReadOnly = true;
+            this.txtNome.Size = new System.Drawing.Size(311, 26);
+            this.txtNome.TabIndex = 106;
             // 
-            // txtCodigo
+            // txtEmail
             // 
-            this.txtCodigo.Location = new System.Drawing.Point(19, 113);
-            this.txtCodigo.Name = "txtCodigo";
-            this.txtCodigo.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCodigo.Properties.Appearance.Options.UseFont = true;
-            this.txtCodigo.Properties.MaxLength = 20;
-            this.txtCodigo.Properties.ReadOnly = true;
-            this.txtCodigo.Size = new System.Drawing.Size(311, 26);
-            this.txtCodigo.TabIndex = 104;
+            this.txtEmail.Location = new System.Drawing.Point(19, 113);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmail.Properties.Appearance.Options.UseFont = true;
+            this.txtEmail.Properties.MaxLength = 20;
+            this.txtEmail.Properties.ReadOnly = true;
+            this.txtEmail.Size = new System.Drawing.Size(311, 26);
+            this.txtEmail.TabIndex = 104;
             // 
             // pictureBox6
             // 
@@ -261,7 +266,7 @@
             // 
             this.btnSalvar.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalvar.Appearance.Options.UseFont = true;
-            this.btnSalvar.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.salvar;
+            this.btnSalvar.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.save_20px;
             this.btnSalvar.ImageOptions.ImageIndex = 5;
             this.btnSalvar.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftBottom;
             this.btnSalvar.ImageOptions.ImageToTextIndent = 10;
@@ -272,6 +277,27 @@
             this.btnSalvar.Size = new System.Drawing.Size(113, 30);
             this.btnSalvar.TabIndex = 301;
             this.btnSalvar.Text = "Salvar (F10)";
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
+            // 
+            // AlertaSalvar
+            // 
+            this.AlertaSalvar.AppearanceCaption.BackColor = System.Drawing.Color.Red;
+            this.AlertaSalvar.AppearanceCaption.BackColor2 = System.Drawing.Color.Yellow;
+            this.AlertaSalvar.AppearanceCaption.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AlertaSalvar.AppearanceCaption.ForeColor = System.Drawing.Color.White;
+            this.AlertaSalvar.AppearanceCaption.Options.UseBackColor = true;
+            this.AlertaSalvar.AppearanceCaption.Options.UseFont = true;
+            this.AlertaSalvar.AppearanceCaption.Options.UseForeColor = true;
+            this.AlertaSalvar.AppearanceHotTrackedText.BackColor = System.Drawing.Color.Lime;
+            this.AlertaSalvar.AppearanceHotTrackedText.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AlertaSalvar.AppearanceHotTrackedText.Options.UseBackColor = true;
+            this.AlertaSalvar.AppearanceHotTrackedText.Options.UseFont = true;
+            this.AlertaSalvar.AppearanceText.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AlertaSalvar.AppearanceText.Options.UseFont = true;
+            this.AlertaSalvar.AutoFormDelay = 2000;
+            this.AlertaSalvar.ShowCloseButton = false;
+            this.AlertaSalvar.ShowPinButton = false;
+            this.AlertaSalvar.ShowToolTips = false;
             // 
             // frmPerfilUsuario
             // 
@@ -290,11 +316,11 @@
             this.Controls.Add(this.labelControl16);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.labelControl3);
-            this.Controls.Add(this.textEdit2);
+            this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.labelControl2);
-            this.Controls.Add(this.textEdit1);
+            this.Controls.Add(this.txtNome);
             this.Controls.Add(this.labelControl1);
-            this.Controls.Add(this.txtCodigo);
+            this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.labelControl13);
             this.Controls.Add(this.pictureBox6);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -306,9 +332,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtConfirmarSenha.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNovaSenha.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtCodigo.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtUsuario.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtNome.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtEmail.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -320,11 +346,11 @@
         private DevExpress.XtraEditors.LabelControl labelControl13;
         private System.Windows.Forms.PictureBox pictureBox6;
         private DevExpress.XtraEditors.LabelControl labelControl1;
-        private DevExpress.XtraEditors.TextEdit txtCodigo;
+        private DevExpress.XtraEditors.TextEdit txtEmail;
         private DevExpress.XtraEditors.LabelControl labelControl2;
-        private DevExpress.XtraEditors.TextEdit textEdit1;
+        private DevExpress.XtraEditors.TextEdit txtNome;
         private DevExpress.XtraEditors.LabelControl labelControl3;
-        private DevExpress.XtraEditors.TextEdit textEdit2;
+        private DevExpress.XtraEditors.TextEdit txtUsuario;
         private System.Windows.Forms.PictureBox pictureBox1;
         private DevExpress.XtraEditors.LabelControl labelControl16;
         private DevExpress.XtraEditors.LabelControl labelControl4;
@@ -336,5 +362,6 @@
         private DevExpress.XtraEditors.PictureEdit pcbRequesitosCodigoDeBarras;
         private DevExpress.XtraEditors.PictureEdit pcbExibirSenha;
         private DevExpress.XtraEditors.SimpleButton btnSalvar;
+        private DevExpress.XtraBars.Alerter.AlertControl AlertaSalvar;
     }
 }

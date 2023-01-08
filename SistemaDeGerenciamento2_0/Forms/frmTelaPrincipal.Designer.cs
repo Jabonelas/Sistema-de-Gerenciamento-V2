@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            DevExpress.XtraSplashScreen.SplashScreenManager splashScreenManager1 = new DevExpress.XtraSplashScreen.SplashScreenManager(this, null, true, true);
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTelaPrincipal));
             this.accordionControl1 = new DevExpress.XtraBars.Navigation.AccordionControl();
             this.accordionContentContainer1 = new DevExpress.XtraBars.Navigation.AccordionContentContainer();
@@ -61,6 +62,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.fluentDesignFormControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fluentFormDefaultManager1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // splashScreenManager1
+            // 
+            splashScreenManager1.ClosingDelay = 500;
             // 
             // accordionControl1
             // 
@@ -176,7 +181,7 @@
             this.PDV.Appearance.Pressed.ForeColor = System.Drawing.Color.Silver;
             this.PDV.Appearance.Pressed.Options.UseFont = true;
             this.PDV.Appearance.Pressed.Options.UseForeColor = true;
-            this.PDV.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.computer_30px;
+            this.PDV.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.computer1_30px;
             this.PDV.Name = "PDV";
             this.PDV.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.PDV.Text = "PDV";
@@ -236,6 +241,7 @@
             this.btnNovoFornecedor,
             this.btnNovoFuncionario,
             this.btnTodosOsCadastro});
+            this.Cadastro.Expanded = true;
             this.Cadastro.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.add_user_male_30px;
             this.Cadastro.Name = "Cadastro";
             this.Cadastro.Text = "Cadastros";
@@ -291,7 +297,6 @@
             this.Produtos.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.btnNovoProduto,
             this.btnTodosOsProdutos});
-            this.Produtos.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.tags_30px;
             this.Produtos.Name = "Produtos";
             this.Produtos.Text = "Produtos";
             this.Produtos.Click += new System.EventHandler(this.Produtos_Click);
@@ -364,7 +369,8 @@
             this.btnConfigPerfil,
             this.btnConfigFinanceiro,
             this.btnConfigDesepsa});
-            this.Configuracao.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.services_30px;
+            this.Configuracao.Expanded = true;
+            this.Configuracao.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.automation_30px;
             this.Configuracao.Name = "Configuracao";
             this.Configuracao.Text = "Configurações";
             // 

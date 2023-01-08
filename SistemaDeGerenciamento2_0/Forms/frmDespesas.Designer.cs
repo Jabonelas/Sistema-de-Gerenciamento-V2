@@ -30,16 +30,16 @@
         {
             this.components = new System.ComponentModel.Container();
             DevExpress.XtraSplashScreen.SplashScreenManager splashScreenManager1 = new DevExpress.XtraSplashScreen.SplashScreenManager(this, null, true, true);
-            DevExpress.DataAccess.Sql.SelectQuery selectQuery2 = new DevExpress.DataAccess.Sql.SelectQuery();
-            DevExpress.DataAccess.Sql.Column column5 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression5 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Table table2 = new DevExpress.DataAccess.Sql.Table();
-            DevExpress.DataAccess.Sql.Column column6 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression6 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column7 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression7 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column8 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression8 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.SelectQuery selectQuery1 = new DevExpress.DataAccess.Sql.SelectQuery();
+            DevExpress.DataAccess.Sql.Column column1 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression1 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Table table1 = new DevExpress.DataAccess.Sql.Table();
+            DevExpress.DataAccess.Sql.Column column2 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression2 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column3 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression3 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column4 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression4 = new DevExpress.DataAccess.Sql.ColumnExpression();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDespesas));
             this.btnNovaDespesa = new DevExpress.XtraEditors.SimpleButton();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
@@ -80,7 +80,7 @@
             // 
             this.btnNovaDespesa.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNovaDespesa.Appearance.Options.UseFont = true;
-            this.btnNovaDespesa.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.reserve_15px;
+            this.btnNovaDespesa.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.adcao9;
             this.btnNovaDespesa.ImageOptions.ImageIndex = 5;
             this.btnNovaDespesa.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftBottom;
             this.btnNovaDespesa.ImageOptions.ImageToTextIndent = 10;
@@ -109,28 +109,28 @@
             // 
             this.sqlDataSource1.ConnectionName = "SistemaDeGerenciamento2_0ConnectionString";
             this.sqlDataSource1.Name = "sqlDataSource1";
-            columnExpression5.ColumnName = "id_categoria_despesa";
-            table2.MetaSerializable = "<Meta X=\"30\" Y=\"30\" Width=\"125\" Height=\"143\" />";
-            table2.Name = "tb_cadastro_despesa";
-            columnExpression5.Table = table2;
-            column5.Expression = columnExpression5;
-            columnExpression6.ColumnName = "cd_categoria_agrupadora";
-            columnExpression6.Table = table2;
-            column6.Expression = columnExpression6;
-            columnExpression7.ColumnName = "cd_tipo_custo";
-            columnExpression7.Table = table2;
-            column7.Expression = columnExpression7;
-            columnExpression8.ColumnName = "cd_categoria";
-            columnExpression8.Table = table2;
-            column8.Expression = columnExpression8;
-            selectQuery2.Columns.Add(column5);
-            selectQuery2.Columns.Add(column6);
-            selectQuery2.Columns.Add(column7);
-            selectQuery2.Columns.Add(column8);
-            selectQuery2.Name = "tb_cadastro_despesa";
-            selectQuery2.Tables.Add(table2);
+            columnExpression1.ColumnName = "id_categoria_despesa";
+            table1.MetaSerializable = "<Meta X=\"30\" Y=\"30\" Width=\"125\" Height=\"143\" />";
+            table1.Name = "tb_cadastro_despesa";
+            columnExpression1.Table = table1;
+            column1.Expression = columnExpression1;
+            columnExpression2.ColumnName = "cd_categoria_agrupadora";
+            columnExpression2.Table = table1;
+            column2.Expression = columnExpression2;
+            columnExpression3.ColumnName = "cd_tipo_custo";
+            columnExpression3.Table = table1;
+            column3.Expression = columnExpression3;
+            columnExpression4.ColumnName = "cd_categoria";
+            columnExpression4.Table = table1;
+            column4.Expression = columnExpression4;
+            selectQuery1.Columns.Add(column1);
+            selectQuery1.Columns.Add(column2);
+            selectQuery1.Columns.Add(column3);
+            selectQuery1.Columns.Add(column4);
+            selectQuery1.Name = "tb_cadastro_despesa";
+            selectQuery1.Tables.Add(table1);
             this.sqlDataSource1.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
-            selectQuery2});
+            selectQuery1});
             this.sqlDataSource1.ResultSchemaSerializable = resources.GetString("sqlDataSource1.ResultSchemaSerializable");
             // 
             // gridView1
@@ -200,9 +200,9 @@
             this.labelControl3.Appearance.Options.UseFont = true;
             this.labelControl3.Location = new System.Drawing.Point(19, 12);
             this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(135, 20);
+            this.labelControl3.Size = new System.Drawing.Size(136, 20);
             this.labelControl3.TabIndex = 297;
-            this.labelControl3.Text = "Consultar Produtos";
+            this.labelControl3.Text = "Consultar Despesas";
             // 
             // pictureBox6
             // 
@@ -221,9 +221,9 @@
             this.labelControl1.Appearance.Options.UseFont = true;
             this.labelControl1.Location = new System.Drawing.Point(19, 60);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(103, 15);
+            this.labelControl1.Size = new System.Drawing.Size(104, 15);
             this.labelControl1.TabIndex = 298;
-            this.labelControl1.Text = "Adicionar Produto:";
+            this.labelControl1.Text = "Adicionar Despesa:";
             // 
             // pictureBox2
             // 
@@ -242,9 +242,9 @@
             this.labelControl16.Appearance.Options.UseFont = true;
             this.labelControl16.Location = new System.Drawing.Point(19, 137);
             this.labelControl16.Name = "labelControl16";
-            this.labelControl16.Size = new System.Drawing.Size(104, 15);
+            this.labelControl16.Size = new System.Drawing.Size(103, 15);
             this.labelControl16.TabIndex = 300;
-            this.labelControl16.Text = "Todos os Produtos:";
+            this.labelControl16.Text = "Todas as Despesas:";
             // 
             // pictureBox1
             // 
@@ -269,7 +269,6 @@
             // 
             this.btnAlterar.Caption = "Alterar";
             this.btnAlterar.Id = 0;
-            this.btnAlterar.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.update_left_rotation_20px;
             this.btnAlterar.Name = "btnAlterar";
             this.btnAlterar.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnAlterar_ItemClick);
             // 
@@ -277,7 +276,6 @@
             // 
             this.btnDeletar.Caption = "Deletar";
             this.btnDeletar.Id = 1;
-            this.btnDeletar.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.deletar_20;
             this.btnDeletar.Name = "btnDeletar";
             this.btnDeletar.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDeletar_ItemClick);
             // 

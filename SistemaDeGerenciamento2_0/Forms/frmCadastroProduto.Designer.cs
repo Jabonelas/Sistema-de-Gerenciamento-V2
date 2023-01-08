@@ -240,7 +240,6 @@
             // 
             // pcbRequesitosCodigo
             // 
-            this.pcbRequesitosCodigo.EditValue = global::SistemaDeGerenciamento2_0.Properties.Resources.informacao20;
             this.pcbRequesitosCodigo.Location = new System.Drawing.Point(86, 62);
             this.pcbRequesitosCodigo.Name = "pcbRequesitosCodigo";
             this.pcbRequesitosCodigo.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
@@ -274,7 +273,7 @@
             // 
             this.btnSalvar.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalvar.Appearance.Options.UseFont = true;
-            this.btnSalvar.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.salvar;
+            this.btnSalvar.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.save_20px;
             this.btnSalvar.ImageOptions.ImageIndex = 5;
             this.btnSalvar.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftBottom;
             this.btnSalvar.ImageOptions.ImageToTextIndent = 10;
@@ -476,7 +475,6 @@
             // 
             // pcbRequesitosCodigoDeBarras
             // 
-            this.pcbRequesitosCodigoDeBarras.EditValue = global::SistemaDeGerenciamento2_0.Properties.Resources.informacao20;
             this.pcbRequesitosCodigoDeBarras.Location = new System.Drawing.Point(457, 62);
             this.pcbRequesitosCodigoDeBarras.Name = "pcbRequesitosCodigoDeBarras";
             this.pcbRequesitosCodigoDeBarras.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
@@ -518,8 +516,7 @@
             // 
             // sqlFornecedor
             // 
-            this.sqlFornecedor.ConnectionName = "SistemaDeGerenciamento2_0.Properties.Settings.SistemaDeGerenciamento2_0Connection" +
-    "String";
+            this.sqlFornecedor.ConnectionName = "update";
             this.sqlFornecedor.Name = "sqlFornecedor";
             customSqlQuery1.Name = "Query";
             customSqlQuery1.Sql = resources.GetString("customSqlQuery1.Sql");
@@ -587,8 +584,7 @@
             // 
             // sqlGrupo
             // 
-            this.sqlGrupo.ConnectionName = "SistemaDeGerenciamento2_0.Properties.Settings.SistemaDeGerenciamento2_0Connection" +
-    "String";
+            this.sqlGrupo.ConnectionName = "update";
             this.sqlGrupo.Name = "sqlGrupo";
             customSqlQuery2.Name = "Query";
             customSqlQuery2.Sql = "select \"tb_grupo\".\"id_grupo\",\r\n       \"tb_grupo\".\"gp_nome_grupo\",\r\n       \"tb_gru" +

@@ -1,33 +1,29 @@
-05/01/2023 21:21:40 - Erro ao Buscar Dados Empresa | A connection was successfully established with the server, but then an error occurred during the login process. (provider: SSL Provider, error: 0 - A cadeia de certificação foi emitida por uma autoridade que não é de confiança.) |    em Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction) na D:\a\_work\1\s\src\Microsoft.Data.SqlClient\netfx\src\Microsoft\Data\SqlClient\SqlInternalConnection.cs:linha 768
-   em Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose) na D:\a\_work\1\s\src\Microsoft.Data.SqlClient\netfx\src\Microsoft\Data\SqlClient\TdsParser.cs:linha 1775
-   em Microsoft.Data.SqlClient.TdsParserStateObject.SNIWritePacket(SNIHandle handle, SNIPacket packet, UInt32& sniError, Boolean canAccumulate, Boolean callerHasConnectionLock, Boolean asyncClose) na D:\a\_work\1\s\src\Microsoft.Data.SqlClient\netfx\src\Microsoft\Data\SqlClient\TdsParserStateObject.cs:linha 3607
-   em Microsoft.Data.SqlClient.TdsParserStateObject.WriteSni(Boolean canAccumulate) na D:\a\_work\1\s\src\Microsoft.Data.SqlClient\netfx\src\Microsoft\Data\SqlClient\TdsParserStateObject.cs:linha 3699
-   em Microsoft.Data.SqlClient.TdsParserStateObject.WritePacket(Byte flushMode, Boolean canAccumulate) na D:\a\_work\1\s\src\Microsoft.Data.SqlClient\netfx\src\Microsoft\Data\SqlClient\TdsParserStateObject.cs:linha 3445
-   em Microsoft.Data.SqlClient.TdsParser.TdsLogin(SqlLogin rec, FeatureExtension requestedFeatures, SessionData recoverySessionData, FederatedAuthenticationFeatureExtensionData fedAuthFeatureExtensionData, SqlClientOriginalNetworkAddressInfo originalNetworkAddressInfo, SqlConnectionEncryptOption encrypt) na D:\a\_work\1\s\src\Microsoft.Data.SqlClient\netfx\src\Microsoft\Data\SqlClient\TdsParser.cs:linha 9286
-   em Microsoft.Data.SqlClient.SqlInternalConnectionTds.Login(ServerInfo server, TimeoutTimer timeout, String newPassword, SecureString newSecurePassword, SqlConnectionEncryptOption encrypt) na D:\a\_work\1\s\src\Microsoft.Data.SqlClient\netfx\src\Microsoft\Data\SqlClient\SqlInternalConnectionTds.cs:linha 1633
-   em Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover, Boolean isFirstTransparentAttempt, Boolean disableTnir) na D:\a\_work\1\s\src\Microsoft.Data.SqlClient\netfx\src\Microsoft\Data\SqlClient\SqlInternalConnectionTds.cs:linha 2312
-   em Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout) na D:\a\_work\1\s\src\Microsoft.Data.SqlClient\netfx\src\Microsoft\Data\SqlClient\SqlInternalConnectionTds.cs:linha 1915
-   em Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance) na D:\a\_work\1\s\src\Microsoft.Data.SqlClient\netfx\src\Microsoft\Data\SqlClient\SqlInternalConnectionTds.cs:linha 1727
-   em Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, ServerCertificateValidationCallback serverCallback, ClientCertificateRetrievalCallback clientCallback, DbConnectionPool pool, String accessToken, SqlClientOriginalNetworkAddressInfo originalNetworkAddressInfo, Boolean applyTransientFaultHandling) na D:\a\_work\1\s\src\Microsoft.Data.SqlClient\netfx\src\Microsoft\Data\SqlClient\SqlInternalConnectionTds.cs:linha 550
-   em Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions) na D:\a\_work\1\s\src\Microsoft.Data.SqlClient\netfx\src\Microsoft\Data\SqlClient\SqlConnectionFactory.cs:linha 143
-   em Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions) na D:\a\_work\1\s\src\Microsoft.Data.SqlClient\netfx\src\Microsoft\Data\ProviderBase\DbConnectionFactory.cs:linha 148
-   em Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection) na D:\a\_work\1\s\src\Microsoft.Data.SqlClient\netfx\src\Microsoft\Data\ProviderBase\DbConnectionPool.cs:linha 950
-   em Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection) na D:\a\_work\1\s\src\Microsoft.Data.SqlClient\netfx\src\Microsoft\Data\ProviderBase\DbConnectionPool.cs:linha 2014
-   em Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection) na D:\a\_work\1\s\src\Microsoft.Data.SqlClient\netfx\src\Microsoft\Data\ProviderBase\DbConnectionPool.cs:linha 1419
-   em Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection) na D:\a\_work\1\s\src\Microsoft.Data.SqlClient\netfx\src\Microsoft\Data\ProviderBase\DbConnectionPool.cs:linha 1303
-   em Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection) na D:\a\_work\1\s\src\Microsoft.Data.SqlClient\netfx\src\Microsoft\Data\ProviderBase\DbConnectionFactory.cs:linha 339
-   em Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions) na D:\a\_work\1\s\src\Microsoft.Data.SqlClient\netfx\src\Microsoft\Data\ProviderBase\DbConnectionInternal.cs:linha 770
-   em Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions) na D:\a\_work\1\s\src\Microsoft.Data.SqlClient\netfx\src\Microsoft\Data\ProviderBase\DbConnectionClosed.cs:linha 71
-   em Microsoft.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry) na D:\a\_work\1\s\src\Microsoft.Data.SqlClient\netfx\src\Microsoft\Data\SqlClient\SqlConnection.cs:linha 2113
-   em Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides) na D:\a\_work\1\s\src\Microsoft.Data.SqlClient\netfx\src\Microsoft\Data\SqlClient\SqlConnection.cs:linha 2101
-   em Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides) na D:\a\_work\1\s\src\Microsoft.Data.SqlClient\netfx\src\Microsoft\Data\SqlClient\SqlConnection.cs:linha 1658
-   em Microsoft.Data.SqlClient.SqlConnection.Open() na D:\a\_work\1\s\src\Microsoft.Data.SqlClient\netfx\src\Microsoft\Data\SqlClient\SqlConnection.cs:linha 1627
-   em Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
-   em Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
-   em Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
-   em Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.InitializeReader(DbContext _, Boolean result)
-   em Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
-   em Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
-   em System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
-   em System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
-   em SistemaDeGerenciamento2_0.Forms.frmDadosEmpresa.<BuscaPreencherTextBoxEnderecoEmpresa>d__38.MoveNext() na C:\Users\israe\source\repos\SistemaDeGerenciamento2_0\SistemaDeGerenciamento2_0\Forms\frmDadosEmpresa.cs:linha 383
+07/01/2023 17:15:29 - Erro ao Buscar Permissões Usuários | The LINQ expression 'DbSet<tb_permissoes>
+    .Join(
+        outer: DbSet<tb_registro>, 
+        inner: t => (Nullable<int>)t.id_permissoes, 
+        outerKeySelector: t0 => t0.fk_permissoes, 
+        innerKeySelector: (t, t0) => new TransparentIdentifier<tb_permissoes, tb_registro>(
+            Outer = t, 
+            Inner = t0
+        ))
+    .Where(ti => (Nullable<int>)ti.Outer.id_permissoes == ti.Inner.fk_permissoes && ti.Inner.ToString() == __UsuarioLogado_0)' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information. |    em Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.<VisitMethodCall>g__CheckTranslated|8_0(ShapedQueryExpression translated, <>c__DisplayClass8_0& )
+   em Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   em Microsoft.EntityFrameworkCore.Query.RelationalQueryableMethodTranslatingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   em System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
+   em System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   em Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   em Microsoft.EntityFrameworkCore.Query.RelationalQueryableMethodTranslatingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   em System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
+   em System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   em Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   em Microsoft.EntityFrameworkCore.Storage.Database.CompileQuery[TResult](Expression query, Boolean async)
+   em Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileQueryCore[TResult](IDatabase database, Expression query, IModel model, Boolean async)
+   em Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass9_0`1.<Execute>b__0()
+   em Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQueryCore[TFunc](Object cacheKey, Func`1 compiler)
+   em Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   em Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   em Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   em Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1.GetEnumerator()
+   em DevExpress.Utils.Extensions.EnumerableExtensions.ForEach[T](IEnumerable`1 this, Action`1 action)
+   em SistemaDeGerenciamento2_0.frmTelaPrincipal.BuscarPermissoesUsuario() na C:\Users\israe\source\repos\SistemaDeGerenciamento2_0\SistemaDeGerenciamento2_0\Forms\frmTelaPrincipal.cs:linha 106

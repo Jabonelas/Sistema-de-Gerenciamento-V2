@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             DevExpress.XtraSplashScreen.SplashScreenManager splashScreenManager1 = new DevExpress.XtraSplashScreen.SplashScreenManager(this, null, true, true);
-            DevExpress.DataAccess.Sql.CustomSqlQuery customSqlQuery2 = new DevExpress.DataAccess.Sql.CustomSqlQuery();
+            DevExpress.DataAccess.Sql.CustomSqlQuery customSqlQuery1 = new DevExpress.DataAccess.Sql.CustomSqlQuery();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCadastroUsuario));
             this.queryBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.sqlDataSource2 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
@@ -41,7 +41,6 @@
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.pnlPermissoes = new System.Windows.Forms.FlowLayoutPanel();
             this.pcbExibirSenha = new DevExpress.XtraEditors.PictureEdit();
-            this.pcbRequesitosCodigoDeBarras = new DevExpress.XtraEditors.PictureEdit();
             this.txtSenha = new DevExpress.XtraEditors.TextEdit();
             this.txtConfirmacaoSenha = new DevExpress.XtraEditors.TextEdit();
             this.txtNomeUsuario = new DevExpress.XtraEditors.TextEdit();
@@ -49,15 +48,16 @@
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.cmbFuncionario = new DevExpress.XtraEditors.LookUpEdit();
             this.cmbFuncionario2 = new DevExpress.XtraEditors.LookUpEdit();
+            this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
             ((System.ComponentModel.ISupportInitialize)(this.queryBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbExibirSenha.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbRequesitosCodigoDeBarras.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSenha.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtConfirmacaoSenha.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNomeUsuario.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbFuncionario.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbFuncionario2.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // splashScreenManager1
@@ -73,12 +73,12 @@
             // 
             this.sqlDataSource2.ConnectionName = "SistemaDeGerenciamento2_0ConnectionString";
             this.sqlDataSource2.Name = "sqlDataSource2";
-            customSqlQuery2.Name = "Query";
-            customSqlQuery2.Sql = "select \"tb_registro\".\"id_registro\",\r\n       \"tb_registro\".\"rg_nome\"\r\n  from \"dbo\"" +
+            customSqlQuery1.Name = "Query";
+            customSqlQuery1.Sql = "select \"tb_registro\".\"id_registro\",\r\n       \"tb_registro\".\"rg_nome\"\r\n  from \"dbo\"" +
     ".\"tb_registro\" \"tb_registro\"\r\nwhere \"tb_registro\".\"rg_tipo_cadastro\" = \'Funciona" +
     "rio\'";
             this.sqlDataSource2.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
-            customSqlQuery2});
+            customSqlQuery1});
             this.sqlDataSource2.ResultSchemaSerializable = "PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTIiPjxWaWV3IE5hbWU9IlF1ZXJ5Ij48RmllbGQgTmFtZ" +
     "T0iaWRfcmVnaXN0cm8iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJyZ19ub21lIiBUeXBlPSJTd" +
     "HJpbmciIC8+PC9WaWV3PjwvRGF0YVNldD4=";
@@ -156,26 +156,13 @@
             this.pcbExibirSenha.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pcbExibirSenha_MouseDown);
             this.pcbExibirSenha.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pcbExibirSenha_MouseUp);
             // 
-            // pcbRequesitosCodigoDeBarras
-            // 
-            this.pcbRequesitosCodigoDeBarras.EditValue = global::SistemaDeGerenciamento2_0.Properties.Resources.informacao20;
-            this.pcbRequesitosCodigoDeBarras.Location = new System.Drawing.Point(366, 121);
-            this.pcbRequesitosCodigoDeBarras.Name = "pcbRequesitosCodigoDeBarras";
-            this.pcbRequesitosCodigoDeBarras.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.pcbRequesitosCodigoDeBarras.Properties.Appearance.Options.UseBackColor = true;
-            this.pcbRequesitosCodigoDeBarras.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.pcbRequesitosCodigoDeBarras.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pcbRequesitosCodigoDeBarras.Properties.ZoomAcceleration = 5D;
-            this.pcbRequesitosCodigoDeBarras.Size = new System.Drawing.Size(23, 20);
-            this.pcbRequesitosCodigoDeBarras.TabIndex = 114;
-            this.pcbRequesitosCodigoDeBarras.ToolTip = "Password: Caracteres Permitidos \r\n(!,@,#,$,%,¨,& ,*,_ ,-,+,=)";
-            // 
             // txtSenha
             // 
             this.txtSenha.Location = new System.Drawing.Point(317, 147);
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSenha.Properties.Appearance.Options.UseFont = true;
+            this.txtSenha.Properties.MaxLength = 20;
             this.txtSenha.Size = new System.Drawing.Size(231, 26);
             this.txtSenha.TabIndex = 105;
             this.txtSenha.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSenha_KeyPress);
@@ -186,6 +173,7 @@
             this.txtConfirmacaoSenha.Name = "txtConfirmacaoSenha";
             this.txtConfirmacaoSenha.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtConfirmacaoSenha.Properties.Appearance.Options.UseFont = true;
+            this.txtConfirmacaoSenha.Properties.MaxLength = 20;
             this.txtConfirmacaoSenha.Size = new System.Drawing.Size(231, 26);
             this.txtConfirmacaoSenha.TabIndex = 104;
             this.txtConfirmacaoSenha.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtConfirmacaoSenha_KeyPress);
@@ -261,15 +249,30 @@
             this.cmbFuncionario2.TabIndex = 117;
             this.cmbFuncionario2.Visible = false;
             // 
+            // pictureEdit1
+            // 
+            this.pictureEdit1.EditValue = global::SistemaDeGerenciamento2_0.Properties.Resources.info_20px;
+            this.pictureEdit1.Location = new System.Drawing.Point(366, 121);
+            this.pictureEdit1.Name = "pictureEdit1";
+            this.pictureEdit1.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.pictureEdit1.Properties.Appearance.Options.UseBackColor = true;
+            this.pictureEdit1.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.pictureEdit1.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit1.Properties.ZoomAcceleration = 5D;
+            this.pictureEdit1.Size = new System.Drawing.Size(26, 20);
+            this.pictureEdit1.TabIndex = 118;
+            this.pictureEdit1.ToolTip = "Password: Caracteres Permitidos \r\n(!,@,#,$,%,¨,& ,*,_ ,-,+,=) \r\nMáximo 20 caracte" +
+    "res";
+            // 
             // frmCadastroUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(847, 577);
+            this.Controls.Add(this.pictureEdit1);
             this.Controls.Add(this.cmbFuncionario2);
             this.Controls.Add(this.cmbFuncionario);
             this.Controls.Add(this.pcbExibirSenha);
-            this.Controls.Add(this.pcbRequesitosCodigoDeBarras);
             this.Controls.Add(this.pnlPermissoes);
             this.Controls.Add(this.labelControl5);
             this.Controls.Add(this.labelControl4);
@@ -292,13 +295,13 @@
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.frmCadastroUsuario_MouseMove);
             ((System.ComponentModel.ISupportInitialize)(this.queryBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbExibirSenha.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbRequesitosCodigoDeBarras.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSenha.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtConfirmacaoSenha.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNomeUsuario.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbFuncionario.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbFuncionario2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -314,7 +317,6 @@
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.LabelControl labelControl4;
         private DevExpress.XtraEditors.LabelControl labelControl5;
-        private DevExpress.XtraEditors.PictureEdit pcbRequesitosCodigoDeBarras;
         private DevExpress.XtraEditors.PictureEdit pcbExibirSenha;
         public DevExpress.XtraEditors.TextEdit txtConfirmacaoSenha;
         public DevExpress.XtraEditors.TextEdit txtSenha;
@@ -322,5 +324,6 @@
         public System.Windows.Forms.FlowLayoutPanel pnlPermissoes;
         public DevExpress.XtraEditors.LookUpEdit cmbFuncionario;
         public DevExpress.XtraEditors.LookUpEdit cmbFuncionario2;
+        private DevExpress.XtraEditors.PictureEdit pictureEdit1;
     }
 }

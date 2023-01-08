@@ -1,4 +1,14 @@
-﻿using DevExpress.XtraEditors;
+﻿using DevExpress.Utils.Extensions;
+using DevExpress.Utils.Menu;
+using DevExpress.XtraEditors;
+using DevExpress.XtraGrid.Columns;
+using DevExpress.XtraGrid.Views.Grid;
+using DevExpress.XtraGrid.Views.Grid.ViewInfo;
+using DevExpress.XtraSplashScreen;
+using SistemaDeGerenciamento2_0.Class;
+using SistemaDeGerenciamento2_0.Context;
+using SistemaDeGerenciamento2_0.Models;
+using SistemaDeGerenciamento2_0.Properties;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -18,6 +28,8 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private frmTelaPrincipal frmTelaPrincipal;
 
+        private List<tb_permissoes> listaPermissoes = new List<tb_permissoes>();
+
         public frmCadastro(frmTelaPrincipal _frmTelaPrincipal)
         {
             InitializeComponent();
@@ -30,8 +42,60 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private void btnAdicionarCadastro_Click(object sender, EventArgs e)
         {
-            frmCadastroRegistros frmCadastroRegistros = new frmCadastroRegistros("Cliente", frmTelaPrincipal);
-            frmCadastroRegistros.ShowDialog();
+            ReloadDataConfigUsuario();
+
+            string Cadastro = "Cliente";
+
+            VerificarAcessoCadastro(Cadastro);
+        }
+
+        private void ReloadDataConfigUsuario()
+        {
+            using (var handle = SplashScreenManager.ShowOverlayForm(frmTelaPrincipal))
+            {
+                BuscarPermissoesUsuario();
+            }
+        }
+
+        private void BuscarPermissoesUsuario()
+        {
+            try
+            {
+                using (SistemaDeGerenciamento2_0Context db = new SistemaDeGerenciamento2_0Context())
+                {
+                    var acessosUsuario = db.tb_permissoes.Join(db.tb_registro, permissao => permissao.id_permissoes, registro => registro.fk_permissoes, (permissao, registro) => new
+                    {
+                        Permissao = permissao,
+                        Registro = registro,
+                    }).Where(x => x.Permissao.id_permissoes == x.Registro.fk_permissoes && x.Registro.rg_login == frmLogin.UsuarioLogado);
+
+                    acessosUsuario.ForEach(x => listaPermissoes.Add(x.Permissao));
+                }
+            }
+            catch (Exception x)
+            {
+                LogErros.EscreverArquivoDeLog($"{DateTime.Now} - Erro ao Buscar Permissões Usuários Na Tela Exibir Todos Os Cadastros| {x.Message} | {x.StackTrace}");
+
+                MensagemErros.ErroAoBuscarPermissoesTelaTodosCadastro(x);
+            }
+        }
+
+        private void VerificarAcessoCadastro(string _Cadastro)
+        {
+            bool IsUsuarioPossuiAcesso = false;
+
+            listaPermissoes.ForEach(x => IsUsuarioPossuiAcesso = x.pm_efetuar_cadastro);
+
+            if (IsUsuarioPossuiAcesso == true)
+            {
+                frmCadastroRegistros frmCadastroRegistros = new frmCadastroRegistros(_Cadastro, frmTelaPrincipal, string.Empty);
+                frmCadastroRegistros.ShowDialog();
+            }
+            else
+            {
+                frmConfirmarAcesso frmConfirmarAcesso = new frmConfirmarAcesso(frmTelaPrincipal, _Cadastro);
+                frmConfirmarAcesso.ShowDialog();
+            }
         }
 
         private void btnFechar_Click(object sender, EventArgs e)
@@ -64,6 +128,58 @@ namespace SistemaDeGerenciamento2_0.Forms
         private void btnSair_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private int rowHandle = 0;
+
+        private GridColumn column;
+
+        private void gridView1_PopupMenuShowing(object sender, DevExpress.XtraGrid.Views.Grid.PopupMenuShowingEventArgs e)
+        {
+            GridView view = sender as GridView;
+            GridHitInfo hitInfo = view.CalcHitInfo(e.Point);
+            if (hitInfo.InRowCell)
+            {
+                view.FocusedRowHandle = rowHandle = hitInfo.RowHandle;
+                column = hitInfo.Column;
+                popupMenu1.ShowPopup(barManager1, view.GridControl.PointToScreen(e.Point));
+            }
+        }
+
+        //private string PegandoDadosDaLinha()
+        //{
+        //    int[] SelectedRowHandles = gridView1.GetSelectedRows();
+
+        //    string tipoCadastro = gridView1.GetRowCellValue(SelectedRowHandles[0], gridView1.Columns[1]).ToString();
+
+        //    return tipoCadastro;
+        //}
+
+        private Dictionary<int, string> Dicionario = new Dictionary<int, string>();
+
+        private void PegandoDadosDaLinha()
+        {
+            int[] SelectedRowHandles = gridView1.GetSelectedRows();
+
+            int idConfiguracaoFinanceira = Convert.ToInt32(gridView1.GetRowCellValue(SelectedRowHandles[0], gridView1.Columns[0]));
+
+            string tipoCadastro = gridView1.GetRowCellValue(SelectedRowHandles[0], gridView1.Columns[1]).ToString();
+
+            Dicionario.Add(idConfiguracaoFinanceira, tipoCadastro);
+
+            //return idConfiguracaoFinanceira;
+        }
+
+        private void Alterar_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            //ReloadDataConfigUsuario();
+
+            PegandoDadosDaLinha();
+
+            //TipoCadastro = PegandoDadosDaLinha();
+
+            VerificarAcessoCadastro(Dicionario.Values.ToString());
+            //VerificarAcessoCadastro(TipoCadastro);
         }
     }
 }

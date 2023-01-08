@@ -222,6 +222,11 @@ namespace SistemaDeGerenciamento2_0.Class
             MessageBox.Show($"(BUS-RE03) Erro ao Buscar CNPJ da Empresa \n\nErro: {_e}", "Erro Buscar CNPJ da Empresa!", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
+        public static void ErroAoBuscarDadosUsuario(Exception _e)
+        {
+            MessageBox.Show($"(BUS-RE04) Erro ao Buscar Dados Usuário \n\nErro: {_e}", "Erro Buscar Dados Usuário!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
         #endregion Registro
 
         #region Financeiro
@@ -280,6 +285,39 @@ namespace SistemaDeGerenciamento2_0.Class
 
         #endregion Configuracoes
 
+        #region Login
+
+        public static void ErroAoBuscarUsuarioSenha(Exception _e)
+        {
+            MessageBox.Show($"(BUS-LO01) Erro ao Bucar Usuário e Senha \n\nErro: {_e}", "Erro Buscar Usuário/Senha!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        public static void ErroAoBuscarUsuarioSenhaAcessoRestrito(Exception _e)
+        {
+            MessageBox.Show($"(BUS-LO02) Erro ao Bucar Usuário e Senha Para Acesso Restrito \n\nErro: {_e}", "Erro Buscar Usuário/Senha Acesso Restrito!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        #endregion Login
+
+        #region Permissoes
+
+        public static void ErroAoBuscarPermissoes(Exception _e)
+        {
+            MessageBox.Show($"(BUS-PE01) Erro ao Bucar Permissões Usuário \n\nErro: {_e}", "Erro Buscar Permissões Usuário!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        public static void ErroAoBuscarPermissoesAcessoRestrito(Exception _e)
+        {
+            MessageBox.Show($"(BUS-PE02) Erro ao Bucar Permissões Usuário Para Acesso Restrito \n\nErro: {_e}", "Erro Buscar Permissões Usuário Acesso Restrito!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        public static void ErroAoBuscarPermissoesTelaTodosCadastro(Exception _e)
+        {
+            MessageBox.Show($"(BUS-PE03) Erro ao Bucar Permissões Usuário Tela Todos Cadastro \n\nErro: {_e}", "Erro Buscar Permissões Usuário Tela Todos Cadastros!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        #endregion Permissoes
+
         #endregion Buscar
 
         #region Atualizar
@@ -303,6 +341,11 @@ namespace SistemaDeGerenciamento2_0.Class
         public static void ErroAoAtualizarDadosEmpresa(Exception _e)
         {
             MessageBox.Show($"(ATU-RG02) Erro ao Atualizar Dados da Empresa \n\nErro: {_e}", "Erro Atualizar Dados da Empresa!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        public static void ErroAoAtualizarSenhaUsuario(Exception _e)
+        {
+            MessageBox.Show($"(ATU-RG03) Erro ao Atualizar Senha Usuario \n\nErro: {_e}", "Erro Atualizar Senha Usuário!", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
         #endregion Registro
