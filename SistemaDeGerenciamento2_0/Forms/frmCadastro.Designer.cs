@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCadastro));
-            DevExpress.DataAccess.Sql.CustomSqlQuery customSqlQuery4 = new DevExpress.DataAccess.Sql.CustomSqlQuery();
             DevExpress.XtraSplashScreen.SplashScreenManager splashScreenManager1 = new DevExpress.XtraSplashScreen.SplashScreenManager(this, null, true, true);
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCadastro));
+            DevExpress.DataAccess.Sql.CustomSqlQuery customSqlQuery2 = new DevExpress.DataAccess.Sql.CustomSqlQuery();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.btnFechar = new DevExpress.XtraEditors.SimpleButton();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
@@ -58,13 +58,14 @@
             this.coled_cidade = new DevExpress.XtraGrid.Columns.GridColumn();
             this.btnSair = new DevExpress.XtraEditors.SimpleButton();
             this.popupMenu1 = new DevExpress.XtraBars.PopupMenu(this.components);
+            this.Alterar = new DevExpress.XtraBars.BarButtonItem();
+            this.Deletar = new DevExpress.XtraBars.BarButtonItem();
             this.barManager1 = new DevExpress.XtraBars.BarManager(this.components);
             this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
-            this.Alterar = new DevExpress.XtraBars.BarButtonItem();
-            this.Deletar = new DevExpress.XtraBars.BarButtonItem();
+            this.AlertaSalvar = new DevExpress.XtraBars.Alerter.AlertControl(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -73,6 +74,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.popupMenu1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // splashScreenManager1
+            // 
+            splashScreenManager1.ClosingDelay = 500;
             // 
             // labelControl3
             // 
@@ -199,10 +204,10 @@
             // 
             this.sqlDataSource1.ConnectionName = "SistemaDeGerenciamento2_0ConnectionString";
             this.sqlDataSource1.Name = "sqlDataSource1";
-            customSqlQuery4.Name = "tb_registro";
-            customSqlQuery4.Sql = resources.GetString("customSqlQuery4.Sql");
+            customSqlQuery2.Name = "tb_registro";
+            customSqlQuery2.Sql = resources.GetString("customSqlQuery2.Sql");
             this.sqlDataSource1.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
-            customSqlQuery4});
+            customSqlQuery2});
             this.sqlDataSource1.ResultSchemaSerializable = resources.GetString("sqlDataSource1.ResultSchemaSerializable");
             // 
             // gridView1
@@ -406,6 +411,22 @@
             this.popupMenu1.Manager = this.barManager1;
             this.popupMenu1.Name = "popupMenu1";
             // 
+            // Alterar
+            // 
+            this.Alterar.Caption = "Alterar";
+            this.Alterar.Id = 0;
+            this.Alterar.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.update_left_rotation_20px;
+            this.Alterar.Name = "Alterar";
+            this.Alterar.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.Alterar_ItemClick);
+            // 
+            // Deletar
+            // 
+            this.Deletar.Caption = "Deletar";
+            this.Deletar.Id = 1;
+            this.Deletar.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.deletar_20;
+            this.Deletar.Name = "Deletar";
+            this.Deletar.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.Deletar_ItemClick);
+            // 
             // barManager1
             // 
             this.barManager1.DockControls.Add(this.barDockControlTop);
@@ -450,22 +471,25 @@
             this.barDockControlRight.Manager = this.barManager1;
             this.barDockControlRight.Size = new System.Drawing.Size(0, 519);
             // 
-            // Alterar
+            // AlertaSalvar
             // 
-            this.Alterar.Caption = "Alterar";
-            this.Alterar.Id = 0;
-            this.Alterar.Name = "Alterar";
-            this.Alterar.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.Alterar_ItemClick);
-            // 
-            // Deletar
-            // 
-            this.Deletar.Caption = "Deletar";
-            this.Deletar.Id = 1;
-            this.Deletar.Name = "Deletar";
-            // 
-            // splashScreenManager1
-            // 
-            splashScreenManager1.ClosingDelay = 500;
+            this.AlertaSalvar.AppearanceCaption.BackColor = System.Drawing.Color.Red;
+            this.AlertaSalvar.AppearanceCaption.BackColor2 = System.Drawing.Color.Yellow;
+            this.AlertaSalvar.AppearanceCaption.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AlertaSalvar.AppearanceCaption.ForeColor = System.Drawing.Color.White;
+            this.AlertaSalvar.AppearanceCaption.Options.UseBackColor = true;
+            this.AlertaSalvar.AppearanceCaption.Options.UseFont = true;
+            this.AlertaSalvar.AppearanceCaption.Options.UseForeColor = true;
+            this.AlertaSalvar.AppearanceHotTrackedText.BackColor = System.Drawing.Color.Lime;
+            this.AlertaSalvar.AppearanceHotTrackedText.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AlertaSalvar.AppearanceHotTrackedText.Options.UseBackColor = true;
+            this.AlertaSalvar.AppearanceHotTrackedText.Options.UseFont = true;
+            this.AlertaSalvar.AppearanceText.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AlertaSalvar.AppearanceText.Options.UseFont = true;
+            this.AlertaSalvar.AutoFormDelay = 2000;
+            this.AlertaSalvar.ShowCloseButton = false;
+            this.AlertaSalvar.ShowPinButton = false;
+            this.AlertaSalvar.ShowToolTips = false;
             // 
             // frmCadastro
             // 
@@ -541,5 +565,6 @@
         private DevExpress.XtraBars.BarDockControl barDockControlBottom;
         private DevExpress.XtraBars.BarDockControl barDockControlLeft;
         private DevExpress.XtraBars.BarDockControl barDockControlRight;
+        private DevExpress.XtraBars.Alerter.AlertControl AlertaSalvar;
     }
 }

@@ -1,0 +1,417 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnCancel.AccessibleName" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"></assembly>
+  <data name="btnCancel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>579, 340</value>
+  </data>
+  <data name="btnCancel.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btnCancel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"></assembly>
+  <data name="headerFooterFormLayoutControl.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="evenHeaderFooterControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 45</value>
+  </data>
+  <data name="evenHeaderFooterControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>622, 281</value>
+  </data>
+  <data name="evenHeaderFooterControl.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;evenHeaderFooterControl.Name" xml:space="preserve">
+    <value>evenHeaderFooterControl</value>
+  </data>
+  <data name="&gt;&gt;evenHeaderFooterControl.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.Forms.Design.HeaderFooterEditControl, DevExpress.XtraSpreadsheet.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;evenHeaderFooterControl.Parent" xml:space="preserve">
+    <value>headerFooterFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;evenHeaderFooterControl.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="oddHeaderFooterControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 45</value>
+  </data>
+  <data name="oddHeaderFooterControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>622, 281</value>
+  </data>
+  <data name="oddHeaderFooterControl.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;oddHeaderFooterControl.Name" xml:space="preserve">
+    <value>oddHeaderFooterControl</value>
+  </data>
+  <data name="&gt;&gt;oddHeaderFooterControl.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.Forms.Design.HeaderFooterEditControl, DevExpress.XtraSpreadsheet.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;oddHeaderFooterControl.Parent" xml:space="preserve">
+    <value>headerFooterFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;oddHeaderFooterControl.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="btnOk.AccessibleName" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="btnOk.Location" type="System.Drawing.Point, System.Drawing">
+    <value>500, 340</value>
+  </data>
+  <data name="btnOk.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btnOk.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btnOk.TabIndex" type="System.Int32, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="btnOk.Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="&gt;&gt;btnOk.Name" xml:space="preserve">
+    <value>btnOk</value>
+  </data>
+  <data name="&gt;&gt;btnOk.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;btnOk.Parent" xml:space="preserve">
+    <value>headerFooterFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;btnOk.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="firstHeaderFooterControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 45</value>
+  </data>
+  <data name="firstHeaderFooterControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>622, 281</value>
+  </data>
+  <data name="firstHeaderFooterControl.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;firstHeaderFooterControl.Name" xml:space="preserve">
+    <value>firstHeaderFooterControl</value>
+  </data>
+  <data name="&gt;&gt;firstHeaderFooterControl.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.Forms.Design.HeaderFooterEditControl, DevExpress.XtraSpreadsheet.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;firstHeaderFooterControl.Parent" xml:space="preserve">
+    <value>headerFooterFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;firstHeaderFooterControl.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="headerFooterControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 45</value>
+  </data>
+  <data name="headerFooterControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>622, 281</value>
+  </data>
+  <data name="headerFooterControl.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;headerFooterControl.Name" xml:space="preserve">
+    <value>headerFooterControl</value>
+  </data>
+  <data name="&gt;&gt;headerFooterControl.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.Forms.Design.HeaderFooterEditControl, DevExpress.XtraSpreadsheet.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;headerFooterControl.Parent" xml:space="preserve">
+    <value>headerFooterFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;headerFooterControl.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="headerFooterFormLayoutControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="headerFooterFormLayoutControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>666, 375</value>
+  </data>
+  <data name="headerFooterFormLayoutControl.TabIndex" type="System.Int32, mscorlib">
+    <value>102</value>
+  </data>
+  <data name="headerFooterFormLayoutControl.Text" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;headerFooterFormLayoutControl.Name" xml:space="preserve">
+    <value>headerFooterFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;headerFooterFormLayoutControl.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControl, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;headerFooterFormLayoutControl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;headerFooterFormLayoutControl.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btnCancel.TabIndex" type="System.Int32, mscorlib">
+    <value>101</value>
+  </data>
+  <data name="btnCancel.Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.Name" xml:space="preserve">
+    <value>btnCancel</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.Parent" xml:space="preserve">
+    <value>headerFooterFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="tabHeaderFooter.Text" xml:space="preserve">
+    <value>Header/Footer</value>
+  </data>
+  <data name="tabFirstHeaderFooter.Text" xml:space="preserve">
+    <value>First Page Header/Footer</value>
+  </data>
+  <data name="tabOddHeaderFooter.Text" xml:space="preserve">
+    <value>Odd Page Header/Footer</value>
+  </data>
+  <data name="tabEvenHeaderFooter.Text" xml:space="preserve">
+    <value>Even Page Header/Footer</value>
+  </data>
+  <data name="headerFooterControlLayoutControlItem.CustomizationFormText" xml:space="preserve">
+    <value>headerFooterControlLayoutControlItem</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"></assembly>
+  <data name="$this.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>664, 372</value>
+  </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterParent</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Header/Footer</value>
+  </data>
+  <data name="&gt;&gt;Root.Name" xml:space="preserve">
+    <value>Root</value>
+  </data>
+  <data name="&gt;&gt;Root.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;tabControl.Name" xml:space="preserve">
+    <value>tabControl</value>
+  </data>
+  <data name="&gt;&gt;tabControl.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.TabbedControlGroup, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;tabHeaderFooter.Name" xml:space="preserve">
+    <value>tabHeaderFooter</value>
+  </data>
+  <data name="&gt;&gt;tabHeaderFooter.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;tabFirstHeaderFooter.Name" xml:space="preserve">
+    <value>tabFirstHeaderFooter</value>
+  </data>
+  <data name="&gt;&gt;tabFirstHeaderFooter.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;tabOddHeaderFooter.Name" xml:space="preserve">
+    <value>tabOddHeaderFooter</value>
+  </data>
+  <data name="&gt;&gt;tabOddHeaderFooter.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;tabEvenHeaderFooter.Name" xml:space="preserve">
+    <value>tabEvenHeaderFooter</value>
+  </data>
+  <data name="&gt;&gt;tabEvenHeaderFooter.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;btnOkLayoutControlItem.Name" xml:space="preserve">
+    <value>btnOkLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;btnOkLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;btnCancelLayoutControlItem.Name" xml:space="preserve">
+    <value>btnCancelLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;btnCancelLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem1.Name" xml:space="preserve">
+    <value>emptySpaceItem1</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;headerFooterControlLayoutControlItem.Name" xml:space="preserve">
+    <value>headerFooterControlLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;headerFooterControlLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;firstHeaderFooterControlLayoutControlItem.Name" xml:space="preserve">
+    <value>firstHeaderFooterControlLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;firstHeaderFooterControlLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;oddHeaderFooterControlLayoutControlItem.Name" xml:space="preserve">
+    <value>oddHeaderFooterControlLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;oddHeaderFooterControlLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;evenHeaderFooterControlLayoutControlItem.Name" xml:space="preserve">
+    <value>evenHeaderFooterControlLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;evenHeaderFooterControlLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>HeaderFooterForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.XtraForm, DevExpress.Utils.v21.2, Culture=neutral</value>
+  </data>
+</root>

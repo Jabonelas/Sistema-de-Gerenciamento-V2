@@ -57,9 +57,12 @@
             this.skinBarSubItem1 = new DevExpress.XtraBars.SkinBarSubItem();
             this.fluentFormDefaultManager1 = new DevExpress.XtraBars.FluentDesignSystem.FluentFormDefaultManager(this.components);
             this.pnlTelaPrincipal = new System.Windows.Forms.FlowLayoutPanel();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.lblUsuarioLogado = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).BeginInit();
             this.accordionControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fluentDesignFormControl1)).BeginInit();
+            this.fluentDesignFormControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fluentFormDefaultManager1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -412,6 +415,8 @@
             // 
             // fluentDesignFormControl1
             // 
+            this.fluentDesignFormControl1.Controls.Add(this.lblUsuarioLogado);
+            this.fluentDesignFormControl1.Controls.Add(this.labelControl1);
             this.fluentDesignFormControl1.FluentDesignForm = this;
             this.fluentDesignFormControl1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.skinBarSubItem1});
@@ -447,6 +452,22 @@
             this.pnlTelaPrincipal.Size = new System.Drawing.Size(974, 444);
             this.pnlTelaPrincipal.TabIndex = 3;
             // 
+            // labelControl1
+            // 
+            this.labelControl1.Location = new System.Drawing.Point(536, 13);
+            this.labelControl1.Name = "labelControl1";
+            this.labelControl1.Size = new System.Drawing.Size(40, 13);
+            this.labelControl1.TabIndex = 4;
+            this.labelControl1.Text = "Usuário:";
+            // 
+            // lblUsuarioLogado
+            // 
+            this.lblUsuarioLogado.Location = new System.Drawing.Point(582, 13);
+            this.lblUsuarioLogado.Name = "lblUsuarioLogado";
+            this.lblUsuarioLogado.Size = new System.Drawing.Size(63, 13);
+            this.lblUsuarioLogado.TabIndex = 5;
+            this.lblUsuarioLogado.Text = "labelControl2";
+            // 
             // frmTelaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -465,6 +486,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).EndInit();
             this.accordionControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.fluentDesignFormControl1)).EndInit();
+            this.fluentDesignFormControl1.ResumeLayout(false);
+            this.fluentDesignFormControl1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fluentFormDefaultManager1)).EndInit();
             this.ResumeLayout(false);
 
@@ -497,6 +520,8 @@
         private DevExpress.XtraBars.Navigation.AccordionControlElement btnNovoFuncionario;
         private DevExpress.XtraBars.Navigation.AccordionControlElement btnTodosOsCadastro;
         private DevExpress.XtraBars.Navigation.AccordionControlElement btnConfigDesepsa;
+        private DevExpress.XtraEditors.LabelControl lblUsuarioLogado;
+        private DevExpress.XtraEditors.LabelControl labelControl1;
     }
 }
 

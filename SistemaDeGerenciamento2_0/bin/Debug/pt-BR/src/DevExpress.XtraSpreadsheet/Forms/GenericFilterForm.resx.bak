@@ -1,0 +1,754 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"></assembly>
+  <data name="btnCancel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"></assembly>
+  <data name="btnCancel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>525, 172</value>
+  </data>
+  <data name="btnCancel.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btnCancel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"></assembly>
+  <data name="genericFilterFormLayoutControl.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="btnOk.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="btnOk.Location" type="System.Drawing.Point, System.Drawing">
+    <value>446, 172</value>
+  </data>
+  <data name="btnOk.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btnOk.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btnOk.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="btnOk.Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="&gt;&gt;btnOk.Name" xml:space="preserve">
+    <value>btnOk</value>
+  </data>
+  <data name="&gt;&gt;btnOk.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;btnOk.Parent" xml:space="preserve">
+    <value>genericFilterFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;btnOk.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="lblStarSignDescription.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 155</value>
+  </data>
+  <data name="lblStarSignDescription.Size" type="System.Drawing.Size, System.Drawing">
+    <value>209, 13</value>
+  </data>
+  <data name="lblStarSignDescription.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="lblStarSignDescription.Text" xml:space="preserve">
+    <value>Use * to represent any series of characters</value>
+  </data>
+  <data name="&gt;&gt;lblStarSignDescription.Name" xml:space="preserve">
+    <value>lblStarSignDescription</value>
+  </data>
+  <data name="&gt;&gt;lblStarSignDescription.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblStarSignDescription.Parent" xml:space="preserve">
+    <value>genericFilterFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblStarSignDescription.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="edtSecondaryValueDatePicker.EditValue" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value></value>
+  </data>
+  <data name="edtSecondaryValueDatePicker.Location" type="System.Drawing.Point, System.Drawing">
+    <value>570, 110</value>
+  </data>
+  <data name="edtSecondaryValueDatePicker.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>30, 24</value>
+  </data>
+  <data name="edtSecondaryValueDatePicker.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>30, 24</value>
+  </data>
+  <data name="edtSecondaryValueDatePicker.Properties.Buttons1" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="edtSecondaryValueDatePicker.Properties.Buttons2" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="edtSecondaryValueDatePicker.Properties.Buttons3" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="edtSecondaryValueDatePicker.Properties.Buttons4" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="edtSecondaryValueDatePicker.Properties.Buttons5" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="editorButtonImageOptions1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAB10RVh0VGl0
+        bGUAQ2FsZW5kYXI7U2NoZWR1bGVyO1ZpZXeFqTJSAAACmElEQVQ4T32S+0tTYRyHT1R20e5/SkgaIhUi
+        lY2I0uhipa2lomWGqamZYl7ykuU0Rby0TEu7eAORTHOaZSgGYaTuotvOdtzcVpLu4uzT+75brV/0wMPz
+        PYfzfTiHczhybCD4/MemNdjsgc4bCes4ebho4EO4CIMnwzBw4ij6jx9GnygUb8NCGD1HDqE79AC6QoLR
+        eTAIbcH78TooEM8D/OUk4MMNR4hgba6EtakC5sZymGVlMNc/gKmmiGGsKoCx4h4MD3NgKMkCX5gJPj8N
+        LwP9QQJbuKHwY7CQRf3deOjuxEGXHgNNqgSzyZcZM0lRUF2/AGX8eShiz2JKchrKJDFaA1hgK0cffb6u
+        BNoMz+ItMVtSJ15kqOIjyeI5TEvOYEocgcnoU1AkRKFl314a8OWkz8bhcv2Gw7HyD7uT4LHN4fJi956X
+        yUZpwI8rezLGAk/bv0CttULWNs7c8Mbt+ldjzELBTZj0czDk3cCibRlFtSM0sI0rJoPLtQKFxrImRr0A
+        Iy9gTidgYcmJvKphdyC/6iOcyyuobR3F9IwFNS8+M1c3jzBXNn5i5rMTIGgF6DLj8OOXE9nlQzSwncuR
+        DsLpdGFSbcZ3wmrWa/QMnmBZcCCj9D0N7OAyyeAgAalsGN9UZjxqGGIurZMzF9cMMM+mXIFuhidfKBqm
+        n3akFPbSwE4ulQx2EphQmjChmF/VWjUPDUXFY85iR1JujztAhyX7Mu5X9+PrlAkFj/uY8yreMedKe5mV
+        CZGYVerYz2Qw23Atq5sGdnF0WCQBWqUIVhsEixd6s56xBP28G54Qm97lDoiTW+SxGV3kQidiKLf/0uEm
+        jcxpHbhKSaW0Q0K4lNg0SAK+BPI/03ehNS+7V2GPBzr7cRy3/g8l/5oAmDOKEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="edtSecondaryValueDatePicker.Properties.Buttons6" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="edtSecondaryValueDatePicker.Properties.Buttons7" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value></value>
+  </data>
+  <data name="edtSecondaryValueDatePicker.Properties.Buttons8" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value></value>
+  </data>
+  <data name="edtSecondaryValueDatePicker.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 24</value>
+  </data>
+  <data name="edtSecondaryValueDatePicker.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;edtSecondaryValueDatePicker.Name" xml:space="preserve">
+    <value>edtSecondaryValueDatePicker</value>
+  </data>
+  <data name="&gt;&gt;edtSecondaryValueDatePicker.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.DateEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtSecondaryValueDatePicker.Parent" xml:space="preserve">
+    <value>genericFilterFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;edtSecondaryValueDatePicker.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="lblQuestionSignDescription.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 138</value>
+  </data>
+  <data name="lblQuestionSignDescription.Size" type="System.Drawing.Size, System.Drawing">
+    <value>189, 13</value>
+  </data>
+  <data name="lblQuestionSignDescription.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="lblQuestionSignDescription.Text" xml:space="preserve">
+    <value>Use ? to represent any single character</value>
+  </data>
+  <data name="&gt;&gt;lblQuestionSignDescription.Name" xml:space="preserve">
+    <value>lblQuestionSignDescription</value>
+  </data>
+  <data name="&gt;&gt;lblQuestionSignDescription.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblQuestionSignDescription.Parent" xml:space="preserve">
+    <value>genericFilterFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblQuestionSignDescription.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="cbSecondaryFilterValue.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="cbSecondaryFilterValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>246, 112</value>
+  </data>
+  <data name="cbSecondaryFilterValue.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>320, 20</value>
+  </data>
+  <data name="cbSecondaryFilterValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>320, 20</value>
+  </data>
+  <data name="cbSecondaryFilterValue.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;cbSecondaryFilterValue.Name" xml:space="preserve">
+    <value>cbSecondaryFilterValue</value>
+  </data>
+  <data name="&gt;&gt;cbSecondaryFilterValue.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ComboBoxEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;cbSecondaryFilterValue.Parent" xml:space="preserve">
+    <value>genericFilterFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;cbSecondaryFilterValue.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="edtValueDatePicker.EditValue" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value></value>
+  </data>
+  <data name="edtValueDatePicker.Location" type="System.Drawing.Point, System.Drawing">
+    <value>570, 46</value>
+  </data>
+  <data name="edtValueDatePicker.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>30, 24</value>
+  </data>
+  <data name="edtValueDatePicker.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>30, 24</value>
+  </data>
+  <data name="edtValueDatePicker.Properties.Buttons1" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="edtValueDatePicker.Properties.Buttons2" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="edtValueDatePicker.Properties.Buttons3" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="edtValueDatePicker.Properties.Buttons4" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="edtValueDatePicker.Properties.Buttons5" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="editorButtonImageOptions2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAB10RVh0VGl0
+        bGUAQ2FsZW5kYXI7U2NoZWR1bGVyO1ZpZXeFqTJSAAACmElEQVQ4T32S+0tTYRyHT1R20e5/SkgaIhUi
+        lY2I0uhipa2lomWGqamZYl7ykuU0Rby0TEu7eAORTHOaZSgGYaTuotvOdtzcVpLu4uzT+75brV/0wMPz
+        PYfzfTiHczhybCD4/MemNdjsgc4bCes4ebho4EO4CIMnwzBw4ij6jx9GnygUb8NCGD1HDqE79AC6QoLR
+        eTAIbcH78TooEM8D/OUk4MMNR4hgba6EtakC5sZymGVlMNc/gKmmiGGsKoCx4h4MD3NgKMkCX5gJPj8N
+        LwP9QQJbuKHwY7CQRf3deOjuxEGXHgNNqgSzyZcZM0lRUF2/AGX8eShiz2JKchrKJDFaA1hgK0cffb6u
+        BNoMz+ItMVtSJ15kqOIjyeI5TEvOYEocgcnoU1AkRKFl314a8OWkz8bhcv2Gw7HyD7uT4LHN4fJi956X
+        yUZpwI8rezLGAk/bv0CttULWNs7c8Mbt+ldjzELBTZj0czDk3cCibRlFtSM0sI0rJoPLtQKFxrImRr0A
+        Iy9gTidgYcmJvKphdyC/6iOcyyuobR3F9IwFNS8+M1c3jzBXNn5i5rMTIGgF6DLj8OOXE9nlQzSwncuR
+        DsLpdGFSbcZ3wmrWa/QMnmBZcCCj9D0N7OAyyeAgAalsGN9UZjxqGGIurZMzF9cMMM+mXIFuhidfKBqm
+        n3akFPbSwE4ulQx2EphQmjChmF/VWjUPDUXFY85iR1JujztAhyX7Mu5X9+PrlAkFj/uY8yreMedKe5mV
+        CZGYVerYz2Qw23Atq5sGdnF0WCQBWqUIVhsEixd6s56xBP28G54Qm97lDoiTW+SxGV3kQidiKLf/0uEm
+        jcxpHbhKSaW0Q0K4lNg0SAK+BPI/03ehNS+7V2GPBzr7cRy3/g8l/5oAmDOKEAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="edtValueDatePicker.Properties.Buttons6" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="edtValueDatePicker.Properties.Buttons7" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value></value>
+  </data>
+  <data name="edtValueDatePicker.Properties.Buttons8" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value></value>
+  </data>
+  <data name="edtValueDatePicker.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 24</value>
+  </data>
+  <data name="edtValueDatePicker.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;edtValueDatePicker.Name" xml:space="preserve">
+    <value>edtValueDatePicker</value>
+  </data>
+  <data name="&gt;&gt;edtValueDatePicker.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.DateEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtValueDatePicker.Parent" xml:space="preserve">
+    <value>genericFilterFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;edtValueDatePicker.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="cbSecondaryFilterOperator.Location" type="System.Drawing.Point, System.Drawing">
+    <value>42, 112</value>
+  </data>
+  <data name="cbSecondaryFilterOperator.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>200, 20</value>
+  </data>
+  <data name="cbSecondaryFilterOperator.Properties.NullText" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="cbSecondaryFilterOperator.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 20</value>
+  </data>
+  <data name="cbSecondaryFilterOperator.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;cbSecondaryFilterOperator.Name" xml:space="preserve">
+    <value>cbSecondaryFilterOperator</value>
+  </data>
+  <data name="&gt;&gt;cbSecondaryFilterOperator.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.Forms.Design.SpreadsheetLookUpEdit, DevExpress.XtraSpreadsheet.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;cbSecondaryFilterOperator.Parent" xml:space="preserve">
+    <value>genericFilterFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;cbSecondaryFilterOperator.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="lblShowRows.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="lblShowRows.Size" type="System.Drawing.Size, System.Drawing">
+    <value>89, 13</value>
+  </data>
+  <data name="lblShowRows.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="lblShowRows.Text" xml:space="preserve">
+    <value>Show rows where:</value>
+  </data>
+  <data name="&gt;&gt;lblShowRows.Name" xml:space="preserve">
+    <value>lblShowRows</value>
+  </data>
+  <data name="&gt;&gt;lblShowRows.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblShowRows.Parent" xml:space="preserve">
+    <value>genericFilterFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblShowRows.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="rgrpAndOr.EditValue" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="rgrpAndOr.Location" type="System.Drawing.Point, System.Drawing">
+    <value>82, 74</value>
+  </data>
+  <data name="rgrpAndOr.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>122, 32</value>
+  </data>
+  <data name="rgrpAndOr.Properties.Items" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="rgrpAndOr.Properties.Items1" xml:space="preserve">
+    <value>&amp;And</value>
+  </data>
+  <data name="rgrpAndOr.Properties.Items2" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="rgrpAndOr.Properties.Items3" xml:space="preserve">
+    <value>&amp;Or</value>
+  </data>
+  <data name="rgrpAndOr.Size" type="System.Drawing.Size, System.Drawing">
+    <value>122, 32</value>
+  </data>
+  <data name="rgrpAndOr.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;rgrpAndOr.Name" xml:space="preserve">
+    <value>rgrpAndOr</value>
+  </data>
+  <data name="&gt;&gt;rgrpAndOr.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.RadioGroup, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;rgrpAndOr.Parent" xml:space="preserve">
+    <value>genericFilterFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;rgrpAndOr.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="lblColumnName.AccessibleName" xml:space="preserve">
+    <value>Permissions</value>
+  </data>
+  <data name="lblColumnName.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="lblColumnName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 29</value>
+  </data>
+  <data name="lblColumnName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>588, 13</value>
+  </data>
+  <data name="lblColumnName.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="lblColumnName.Text" xml:space="preserve">
+    <value> </value>
+  </data>
+  <data name="&gt;&gt;lblColumnName.Name" xml:space="preserve">
+    <value>lblColumnName</value>
+  </data>
+  <data name="&gt;&gt;lblColumnName.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblColumnName.Parent" xml:space="preserve">
+    <value>genericFilterFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblColumnName.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="cbFilterOperator.Location" type="System.Drawing.Point, System.Drawing">
+    <value>42, 48</value>
+  </data>
+  <data name="cbFilterOperator.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>200, 20</value>
+  </data>
+  <data name="cbFilterOperator.Properties.NullText" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="cbFilterOperator.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 20</value>
+  </data>
+  <data name="cbFilterOperator.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;cbFilterOperator.Name" xml:space="preserve">
+    <value>cbFilterOperator</value>
+  </data>
+  <data name="&gt;&gt;cbFilterOperator.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.Forms.Design.SpreadsheetLookUpEdit, DevExpress.XtraSpreadsheet.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;cbFilterOperator.Parent" xml:space="preserve">
+    <value>genericFilterFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;cbFilterOperator.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="cbFilterValue.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="cbFilterValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>246, 48</value>
+  </data>
+  <data name="cbFilterValue.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>320, 20</value>
+  </data>
+  <data name="cbFilterValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>320, 20</value>
+  </data>
+  <data name="cbFilterValue.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;cbFilterValue.Name" xml:space="preserve">
+    <value>cbFilterValue</value>
+  </data>
+  <data name="&gt;&gt;cbFilterValue.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ComboBoxEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;cbFilterValue.Parent" xml:space="preserve">
+    <value>genericFilterFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;cbFilterValue.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="genericFilterFormLayoutControl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="genericFilterFormLayoutControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="genericFilterFormLayoutControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>612, 207</value>
+  </data>
+  <data name="genericFilterFormLayoutControl.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="genericFilterFormLayoutControl.Text" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;genericFilterFormLayoutControl.Name" xml:space="preserve">
+    <value>genericFilterFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;genericFilterFormLayoutControl.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControl, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;genericFilterFormLayoutControl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;genericFilterFormLayoutControl.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btnCancel.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="btnCancel.Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.Name" xml:space="preserve">
+    <value>btnCancel</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.Parent" xml:space="preserve">
+    <value>genericFilterFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>612, 213</value>
+  </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterParent</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Custom AutoFilter</value>
+  </data>
+  <data name="&gt;&gt;Root.Name" xml:space="preserve">
+    <value>Root</value>
+  </data>
+  <data name="&gt;&gt;Root.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblShowRowsLayoutControlItem.Name" xml:space="preserve">
+    <value>lblShowRowsLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;lblShowRowsLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblColumnNameLayoutControlItem.Name" xml:space="preserve">
+    <value>lblColumnNameLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;lblColumnNameLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;filterLayoutGroup.Name" xml:space="preserve">
+    <value>filterLayoutGroup</value>
+  </data>
+  <data name="&gt;&gt;filterLayoutGroup.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;cbFilterValueLayoutControlItem.Name" xml:space="preserve">
+    <value>cbFilterValueLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;cbFilterValueLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;rgrpAndOrLayoutControlItem.Name" xml:space="preserve">
+    <value>rgrpAndOrLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;rgrpAndOrLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblQuestionSignDescriptionLayoutControlItem.Name" xml:space="preserve">
+    <value>lblQuestionSignDescriptionLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;lblQuestionSignDescriptionLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblStarSignDescriptionLayoutControlItem.Name" xml:space="preserve">
+    <value>lblStarSignDescriptionLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;lblStarSignDescriptionLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;btnOkLayoutControlItem.Name" xml:space="preserve">
+    <value>btnOkLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;btnOkLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;btnCancelLayoutControlItem.Name" xml:space="preserve">
+    <value>btnCancelLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;btnCancelLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem4.Name" xml:space="preserve">
+    <value>emptySpaceItem4</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem4.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtSecondaryValueDatePickerLayoutControlItem.Name" xml:space="preserve">
+    <value>edtSecondaryValueDatePickerLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;edtSecondaryValueDatePickerLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;secondaryFilterLayoutGroup.Name" xml:space="preserve">
+    <value>secondaryFilterLayoutGroup</value>
+  </data>
+  <data name="&gt;&gt;secondaryFilterLayoutGroup.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;cbSecondaryFilterValueLayoutControlItem.Name" xml:space="preserve">
+    <value>cbSecondaryFilterValueLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;cbSecondaryFilterValueLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtValueDatePickerLayoutControlItem.Name" xml:space="preserve">
+    <value>edtValueDatePickerLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;edtValueDatePickerLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem2.Name" xml:space="preserve">
+    <value>emptySpaceItem2</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem2.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem1.Name" xml:space="preserve">
+    <value>emptySpaceItem1</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem3.Name" xml:space="preserve">
+    <value>emptySpaceItem3</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem3.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;cbFilterOperatorLayoutControlItem.Name" xml:space="preserve">
+    <value>cbFilterOperatorLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;cbFilterOperatorLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;cbSecondaryFilterOperatorLayoutControlItem.Name" xml:space="preserve">
+    <value>cbSecondaryFilterOperatorLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;cbSecondaryFilterOperatorLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>GenericFilterForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.XtraForm, DevExpress.Utils.v21.2, Culture=neutral</value>
+  </data>
+</root>

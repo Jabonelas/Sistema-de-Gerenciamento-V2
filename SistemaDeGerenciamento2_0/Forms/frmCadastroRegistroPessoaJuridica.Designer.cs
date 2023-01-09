@@ -77,7 +77,6 @@
             this.cmbEstado = new DevExpress.XtraEditors.LookUpEdit();
             this.labelControl23 = new DevExpress.XtraEditors.LabelControl();
             this.AlertaSalvar = new DevExpress.XtraBars.Alerter.AlertControl(this.components);
-            this.lblDataCadastro = new DevExpress.XtraEditors.LabelControl();
             this.pictureEdit3 = new DevExpress.XtraEditors.PictureEdit();
             this.txtLimiteCredito = new DevExpress.XtraEditors.TextEdit();
             this.labelControl24 = new DevExpress.XtraEditors.LabelControl();
@@ -676,16 +675,6 @@
             this.AlertaSalvar.ShowPinButton = false;
             this.AlertaSalvar.ShowToolTips = false;
             // 
-            // lblDataCadastro
-            // 
-            this.lblDataCadastro.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDataCadastro.Appearance.Options.UseFont = true;
-            this.lblDataCadastro.Location = new System.Drawing.Point(855, 30);
-            this.lblDataCadastro.Name = "lblDataCadastro";
-            this.lblDataCadastro.Size = new System.Drawing.Size(98, 20);
-            this.lblDataCadastro.TabIndex = 245;
-            this.lblDataCadastro.Text = "Data Cadastro:";
-            // 
             // pictureEdit3
             // 
             this.pictureEdit3.EditValue = global::SistemaDeGerenciamento2_0.Properties.Resources.info_20px;
@@ -817,7 +806,6 @@
             this.Controls.Add(this.labelControl25);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureEdit3);
-            this.Controls.Add(this.lblDataCadastro);
             this.Controls.Add(this.cmbEstado);
             this.Controls.Add(this.labelControl23);
             this.Controls.Add(this.btnCancelar);
@@ -951,7 +939,6 @@
         private DevExpress.XtraEditors.LookUpEdit cmbEstado;
         private DevExpress.XtraEditors.LabelControl labelControl23;
         private DevExpress.XtraBars.Alerter.AlertControl AlertaSalvar;
-        private DevExpress.XtraEditors.LabelControl lblDataCadastro;
         private DevExpress.XtraEditors.PictureEdit pictureEdit3;
         private DevExpress.XtraEditors.TextEdit txtLimiteCredito;
         private DevExpress.XtraEditors.LabelControl labelControl24;

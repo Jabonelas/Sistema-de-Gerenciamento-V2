@@ -1,0 +1,813 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"></assembly>
+  <data name="mainTablePanel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"></assembly>
+  <data name="commitCommentButton.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"></assembly>
+  <data name="commitCommentButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 136</value>
+  </data>
+  <data name="commitCommentButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 4, 0, 0</value>
+  </data>
+  <data name="commitCommentButton.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>0, 26</value>
+  </data>
+  <data name="commitCommentButton.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>0, 26</value>
+  </data>
+  <data name="commitCommentButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>277, 26</value>
+  </data>
+  <data name="commitCommentButton.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="commitCommentButton.Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="&gt;&gt;commitCommentButton.Name" xml:space="preserve">
+    <value>commitCommentButton</value>
+  </data>
+  <data name="&gt;&gt;commitCommentButton.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;commitCommentButton.Parent" xml:space="preserve">
+    <value>mainTablePanel</value>
+  </data>
+  <data name="&gt;&gt;commitCommentButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="reviewsTableLayoutPanel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="reviewDropDownButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="reviewDropDownButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>156, 0</value>
+  </data>
+  <data name="reviewDropDownButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="reviewDropDownButton.Properties.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="reviewDropDownButton.Properties.Buttons" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value></value>
+  </data>
+  <data name="reviewDropDownButton.Properties.Buttons2" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="reviewDropDownButton.Properties.Buttons3" type="System.Int32, mscorlib">
+    <value>-1</value>
+  </data>
+  <data name="reviewDropDownButton.Properties.Buttons4" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="reviewDropDownButton.Properties.Buttons5" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="reviewDropDownButton.Properties.Buttons6" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="reviewDropDownButton.Properties.Buttons7" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="reviewDropDownButton.Properties.Buttons8" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value></value>
+  </data>
+  <data name="reviewDropDownButton.Properties.Buttons9" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value></value>
+  </data>
+  <data name="reviewDropDownButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>18, 16</value>
+  </data>
+  <data name="reviewDropDownButton.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="reviewDropDownButton.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;reviewDropDownButton.Name" xml:space="preserve">
+    <value>reviewDropDownButton</value>
+  </data>
+  <data name="&gt;&gt;reviewDropDownButton.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ButtonEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;reviewDropDownButton.Parent" xml:space="preserve">
+    <value>reviewsTableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;reviewDropDownButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="noStatusSelectLabel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="noStatusSelectLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>108, 0</value>
+  </data>
+  <data name="noStatusSelectLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 2, 0</value>
+  </data>
+  <data name="noStatusSelectLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>46, 16</value>
+  </data>
+  <data name="noStatusSelectLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="noStatusSelectLabel.Text" xml:space="preserve">
+    <value>No status</value>
+  </data>
+  <data name="&gt;&gt;noStatusSelectLabel.Name" xml:space="preserve">
+    <value>noStatusSelectLabel</value>
+  </data>
+  <data name="&gt;&gt;noStatusSelectLabel.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;noStatusSelectLabel.Parent" xml:space="preserve">
+    <value>reviewsTableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;noStatusSelectLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="completedCountLabel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="completedCountLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>100, 0</value>
+  </data>
+  <data name="completedCountLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 8, 0</value>
+  </data>
+  <data name="completedCountLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 16</value>
+  </data>
+  <data name="completedCountLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;completedCountLabel.Name" xml:space="preserve">
+    <value>completedCountLabel</value>
+  </data>
+  <data name="&gt;&gt;completedCountLabel.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;completedCountLabel.Parent" xml:space="preserve">
+    <value>reviewsTableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;completedCountLabel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="cancelledCountLabel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="cancelledCountLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>73, 0</value>
+  </data>
+  <data name="cancelledCountLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 8, 0</value>
+  </data>
+  <data name="cancelledCountLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 16</value>
+  </data>
+  <data name="cancelledCountLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;cancelledCountLabel.Name" xml:space="preserve">
+    <value>cancelledCountLabel</value>
+  </data>
+  <data name="&gt;&gt;cancelledCountLabel.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;cancelledCountLabel.Parent" xml:space="preserve">
+    <value>reviewsTableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;cancelledCountLabel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="cancelledPictureEdit.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="cancelledPictureEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>54, 0</value>
+  </data>
+  <data name="cancelledPictureEdit.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 3, 0</value>
+  </data>
+  <data name="cancelledPictureEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>16, 16</value>
+  </data>
+  <data name="cancelledPictureEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;cancelledPictureEdit.Name" xml:space="preserve">
+    <value>cancelledPictureEdit</value>
+  </data>
+  <data name="&gt;&gt;cancelledPictureEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraPdfViewer.Native.PdfPictureEdit, DevExpress.XtraPdfViewer.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;cancelledPictureEdit.Parent" xml:space="preserve">
+    <value>reviewsTableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;cancelledPictureEdit.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="completedPictureEdit.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="completedPictureEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>81, 0</value>
+  </data>
+  <data name="completedPictureEdit.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 3, 0</value>
+  </data>
+  <data name="completedPictureEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>16, 16</value>
+  </data>
+  <data name="completedPictureEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;completedPictureEdit.Name" xml:space="preserve">
+    <value>completedPictureEdit</value>
+  </data>
+  <data name="&gt;&gt;completedPictureEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraPdfViewer.Native.PdfPictureEdit, DevExpress.XtraPdfViewer.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;completedPictureEdit.Parent" xml:space="preserve">
+    <value>reviewsTableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;completedPictureEdit.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="rejectedCountLabel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="rejectedCountLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>46, 0</value>
+  </data>
+  <data name="rejectedCountLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 8, 0</value>
+  </data>
+  <data name="rejectedCountLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 16</value>
+  </data>
+  <data name="rejectedCountLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;rejectedCountLabel.Name" xml:space="preserve">
+    <value>rejectedCountLabel</value>
+  </data>
+  <data name="&gt;&gt;rejectedCountLabel.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;rejectedCountLabel.Parent" xml:space="preserve">
+    <value>reviewsTableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;rejectedCountLabel.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="rejectedPictureEdit.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="rejectedPictureEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>27, 0</value>
+  </data>
+  <data name="rejectedPictureEdit.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 3, 0</value>
+  </data>
+  <data name="rejectedPictureEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>16, 16</value>
+  </data>
+  <data name="rejectedPictureEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;rejectedPictureEdit.Name" xml:space="preserve">
+    <value>rejectedPictureEdit</value>
+  </data>
+  <data name="&gt;&gt;rejectedPictureEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraPdfViewer.Native.PdfPictureEdit, DevExpress.XtraPdfViewer.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;rejectedPictureEdit.Parent" xml:space="preserve">
+    <value>reviewsTableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;rejectedPictureEdit.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="acceptedCountLabel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="acceptedCountLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 0</value>
+  </data>
+  <data name="acceptedCountLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 8, 0</value>
+  </data>
+  <data name="acceptedCountLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 16</value>
+  </data>
+  <data name="acceptedCountLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;acceptedCountLabel.Name" xml:space="preserve">
+    <value>acceptedCountLabel</value>
+  </data>
+  <data name="&gt;&gt;acceptedCountLabel.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;acceptedCountLabel.Parent" xml:space="preserve">
+    <value>reviewsTableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;acceptedCountLabel.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="acceptedPictureEdit.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="acceptedPictureEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="acceptedPictureEdit.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 3, 0</value>
+  </data>
+  <data name="acceptedPictureEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>16, 16</value>
+  </data>
+  <data name="acceptedPictureEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;acceptedPictureEdit.Name" xml:space="preserve">
+    <value>acceptedPictureEdit</value>
+  </data>
+  <data name="&gt;&gt;acceptedPictureEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraPdfViewer.Native.PdfPictureEdit, DevExpress.XtraPdfViewer.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;acceptedPictureEdit.Parent" xml:space="preserve">
+    <value>reviewsTableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;acceptedPictureEdit.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="reviewsTableLayoutPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="reviewsTableLayoutPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 280</value>
+  </data>
+  <data name="reviewsTableLayoutPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 12, 0, 0</value>
+  </data>
+  <data name="reviewsTableLayoutPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>277, 16</value>
+  </data>
+  <data name="reviewsTableLayoutPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;reviewsTableLayoutPanel.Name" xml:space="preserve">
+    <value>reviewsTableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;reviewsTableLayoutPanel.Type" xml:space="preserve">
+    <value>DevExpress.Utils.Layout.TablePanel, DevExpress.Utils.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;reviewsTableLayoutPanel.Parent" xml:space="preserve">
+    <value>mainTablePanel</value>
+  </data>
+  <data name="&gt;&gt;reviewsTableLayoutPanel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="replyButton.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="replyButton.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="replyButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 242</value>
+  </data>
+  <data name="replyButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 4, 0, 0</value>
+  </data>
+  <data name="replyButton.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>0, 26</value>
+  </data>
+  <data name="replyButton.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>0, 26</value>
+  </data>
+  <data name="replyButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>277, 26</value>
+  </data>
+  <data name="replyButton.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="replyButton.Text" xml:space="preserve">
+    <value>Reply</value>
+  </data>
+  <data name="&gt;&gt;replyButton.Name" xml:space="preserve">
+    <value>replyButton</value>
+  </data>
+  <data name="&gt;&gt;replyButton.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;replyButton.Parent" xml:space="preserve">
+    <value>mainTablePanel</value>
+  </data>
+  <data name="&gt;&gt;replyButton.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="replyTextEdit.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="replyTextEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 177</value>
+  </data>
+  <data name="replyTextEdit.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 15, 0, 0</value>
+  </data>
+  <data name="replyTextEdit.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>0, 61</value>
+  </data>
+  <data name="replyTextEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>277, 61</value>
+  </data>
+  <data name="replyTextEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;replyTextEdit.Name" xml:space="preserve">
+    <value>replyTextEdit</value>
+  </data>
+  <data name="&gt;&gt;replyTextEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.MemoEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;replyTextEdit.Parent" xml:space="preserve">
+    <value>mainTablePanel</value>
+  </data>
+  <data name="&gt;&gt;replyTextEdit.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="contentsTextEdit.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="contentsTextEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 71</value>
+  </data>
+  <data name="contentsTextEdit.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 9, 0, 0</value>
+  </data>
+  <data name="contentsTextEdit.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>0, 61</value>
+  </data>
+  <data name="contentsTextEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>277, 61</value>
+  </data>
+  <data name="contentsTextEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;contentsTextEdit.Name" xml:space="preserve">
+    <value>contentsTextEdit</value>
+  </data>
+  <data name="&gt;&gt;contentsTextEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.MemoEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;contentsTextEdit.Parent" xml:space="preserve">
+    <value>mainTablePanel</value>
+  </data>
+  <data name="&gt;&gt;contentsTextEdit.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="headerPanel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="markedEdit.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="markedEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>252, 0</value>
+  </data>
+  <data name="markedEdit.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="markedEdit.Properties.Caption" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="markedEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>25, 20</value>
+  </data>
+  <data name="markedEdit.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;markedEdit.Name" xml:space="preserve">
+    <value>markedEdit</value>
+  </data>
+  <data name="&gt;&gt;markedEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;markedEdit.Parent" xml:space="preserve">
+    <value>headerPanel</value>
+  </data>
+  <data name="&gt;&gt;markedEdit.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="authorLabel.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9.75pt, style=Bold</value>
+  </data>
+  <data name="authorLabel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="authorLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="authorLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 16, 0</value>
+  </data>
+  <data name="authorLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>236, 20</value>
+  </data>
+  <data name="authorLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;authorLabel.Name" xml:space="preserve">
+    <value>authorLabel</value>
+  </data>
+  <data name="&gt;&gt;authorLabel.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;authorLabel.Parent" xml:space="preserve">
+    <value>headerPanel</value>
+  </data>
+  <data name="&gt;&gt;authorLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="headerPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="headerPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 8</value>
+  </data>
+  <data name="headerPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 1</value>
+  </data>
+  <data name="headerPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>277, 20</value>
+  </data>
+  <data name="headerPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;headerPanel.Name" xml:space="preserve">
+    <value>headerPanel</value>
+  </data>
+  <data name="&gt;&gt;headerPanel.Type" xml:space="preserve">
+    <value>DevExpress.Utils.Layout.TablePanel, DevExpress.Utils.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;headerPanel.Parent" xml:space="preserve">
+    <value>mainTablePanel</value>
+  </data>
+  <data name="&gt;&gt;headerPanel.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="modificationDateLabel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="modificationDateLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 32</value>
+  </data>
+  <data name="modificationDateLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="modificationDateLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>277, 20</value>
+  </data>
+  <data name="modificationDateLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;modificationDateLabel.Name" xml:space="preserve">
+    <value>modificationDateLabel</value>
+  </data>
+  <data name="&gt;&gt;modificationDateLabel.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;modificationDateLabel.Parent" xml:space="preserve">
+    <value>mainTablePanel</value>
+  </data>
+  <data name="&gt;&gt;modificationDateLabel.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="contentLabel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="contentLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 62</value>
+  </data>
+  <data name="contentLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 10, 0, 0</value>
+  </data>
+  <data name="contentLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>277, 0</value>
+  </data>
+  <data name="contentLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;contentLabel.Name" xml:space="preserve">
+    <value>contentLabel</value>
+  </data>
+  <data name="&gt;&gt;contentLabel.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;contentLabel.Parent" xml:space="preserve">
+    <value>mainTablePanel</value>
+  </data>
+  <data name="&gt;&gt;contentLabel.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="mainTablePanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="mainTablePanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="mainTablePanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="mainTablePanel.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>8, 8, 9, 12</value>
+  </data>
+  <data name="mainTablePanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>294, 308</value>
+  </data>
+  <data name="mainTablePanel.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;mainTablePanel.Name" xml:space="preserve">
+    <value>mainTablePanel</value>
+  </data>
+  <data name="&gt;&gt;mainTablePanel.Type" xml:space="preserve">
+    <value>DevExpress.Utils.Layout.TablePanel, DevExpress.Utils.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;mainTablePanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;mainTablePanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="subjectLabel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="subjectLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 29</value>
+  </data>
+  <data name="subjectLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 3</value>
+  </data>
+  <data name="subjectLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>277, 0</value>
+  </data>
+  <data name="subjectLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;subjectLabel.Name" xml:space="preserve">
+    <value>subjectLabel</value>
+  </data>
+  <data name="&gt;&gt;subjectLabel.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;subjectLabel.Parent" xml:space="preserve">
+    <value>mainTablePanel</value>
+  </data>
+  <data name="&gt;&gt;subjectLabel.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>294, 308</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>PdfCommentEdit</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.XtraUserControl, DevExpress.Utils.v21.2, Culture=neutral</value>
+  </data>
+</root>

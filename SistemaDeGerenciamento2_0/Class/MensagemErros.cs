@@ -227,6 +227,11 @@ namespace SistemaDeGerenciamento2_0.Class
             MessageBox.Show($"(BUS-RE04) Erro ao Buscar Dados Usuário \n\nErro: {_e}", "Erro Buscar Dados Usuário!", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
+        public static void ErroAoBuscarDadosRegistroPessoaJuridica(Exception _e)
+        {
+            MessageBox.Show($"(BUS-RE05) Erro ao Buscar Dados Registro Pessoa Juridica \n\nErro: {_e}", "Erro Buscar Dados Registro Pessoa Juridica!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
         #endregion Registro
 
         #region Financeiro
@@ -316,6 +321,11 @@ namespace SistemaDeGerenciamento2_0.Class
             MessageBox.Show($"(BUS-PE03) Erro ao Bucar Permissões Usuário Tela Todos Cadastro \n\nErro: {_e}", "Erro Buscar Permissões Usuário Tela Todos Cadastros!", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
+        public static void ErroAoBuscarPermissoesTelaAcessoRapido(Exception _e)
+        {
+            MessageBox.Show($"(BUS-PE04) Erro ao Bucar Permissões Usuário Tela de Acesso Rapido \n\nErro: {_e}", "Erro Buscar Permissões Usuário Tela de Acesso Rapido!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
         #endregion Permissoes
 
         #endregion Buscar
@@ -346,6 +356,11 @@ namespace SistemaDeGerenciamento2_0.Class
         public static void ErroAoAtualizarSenhaUsuario(Exception _e)
         {
             MessageBox.Show($"(ATU-RG03) Erro ao Atualizar Senha Usuario \n\nErro: {_e}", "Erro Atualizar Senha Usuário!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        public static void ErroAoAtualizarCadastroPessoaJuridica(Exception _e)
+        {
+            MessageBox.Show($"(ATU-RG04) Erro ao Atualizar Cadastro Pessoa Juridica \n\nErro: {_e}", "Erro Atualizar Cadastro Pessoa Juridica!", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
         #endregion Registro
@@ -381,10 +396,23 @@ namespace SistemaDeGerenciamento2_0.Class
 
         #region Deletar
 
+        #region Configurações Financeiras
+
         public static void ErroAoDeletarGrupoComDesconto(Exception _e)
         {
             MessageBox.Show($"(DEL-FI01) Erro ao Deletar Grupo com Desconto \n\nErro: {_e}", "Erro Deletar Grupo com Desconto!", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
+
+        #endregion Configurações Financeiras
+
+        #region Cadastro
+
+        public static void ErroAoDeletarCadastro(Exception _e)
+        {
+            MessageBox.Show($"(DEL-CA01) Erro ao Deletar Cadastro \n\nErro: {_e}", "Erro Deletar Cadastro!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        #endregion Cadastro
 
         #endregion Deletar
 

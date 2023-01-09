@@ -24,6 +24,8 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private string tela;
 
+        private frmCadastro frmCadastro;
+
         private frmTelaPrincipal frmTelaPrincipal = new frmTelaPrincipal();
 
         private List<tb_permissoes> listaPermissoes = new List<tb_permissoes>();
@@ -35,6 +37,23 @@ namespace SistemaDeGerenciamento2_0.Forms
             frmTelaPrincipal = _frmTelaPrincipal;
 
             tela = _tela;
+        }
+
+        private string tipoCadastro = string.Empty;
+
+        private string CPFouCNPJCadastrado = string.Empty;
+
+        public frmConfirmarAcesso(string _tipoCadastro, frmTelaPrincipal _frmTelaPrincipal, string _CPFouCNPJCadastrado, string _tela)
+        {
+            InitializeComponent();
+
+            frmTelaPrincipal = _frmTelaPrincipal;
+
+            tela = _tela;
+
+            tipoCadastro = _tipoCadastro;
+
+            CPFouCNPJCadastrado = _CPFouCNPJCadastrado;
         }
 
         private void btnLogar_Click(object sender, EventArgs e)
@@ -54,13 +73,21 @@ namespace SistemaDeGerenciamento2_0.Forms
                 {
                     VerificarAcessoConfigUsuario();
                 }
-                else if (tela == "Cliente" || tela == "Funcionario" || tela == "Fornecedor")
+                else if (tela == "Cliente" || tela == "Funcionario" || tela == "Fornecedor" && CPFouCNPJCadastrado == string.Empty)
                 {
                     VerificarAcessoNovoCadastro(tela);
                 }
                 else if (tela == "Todos Os Cadastros")
                 {
                     VerificarAcessoTodosCadastros();
+                }
+                else if (tela == "Cliente" || tela == "Funcionario" || tela == "Fornecedor" && CPFouCNPJCadastrado != string.Empty)
+                {
+                    VerificarAcessoAlterarCadastro();
+                }
+                else if (tela == "Apagar Cadastro")
+                {
+                    VerificarAcessoDeletarCadastro();
                 }
             }
             else
@@ -71,9 +98,45 @@ namespace SistemaDeGerenciamento2_0.Forms
             }
         }
 
-        private void VerificarAcessoTodosCadastros()
+        private void VerificarAcessoDeletarCadastro()
+        {
+            listaPermissoes.ForEach(x => IsUsuarioPossuiAcesso = x.pm_remover_cadastro);
+
+            if (IsUsuarioPossuiAcesso == true)
+            {
+                this.Hide();
+
+                frmCadastro.DeletarCadastro();
+
+                this.Close();
+            }
+            else
+            {
+                MenssagemUsuarioSemPermissao();
+            }
+        }
+
+        private void VerificarAcessoAlterarCadastro()
         {
             listaPermissoes.ForEach(x => IsUsuarioPossuiAcesso = x.pm_editar_cadastro);
+
+            if (IsUsuarioPossuiAcesso == true)
+            {
+                this.Hide();
+                frmCadastroRegistros frmCadastroRegistros = new frmCadastroRegistros(tipoCadastro, frmTelaPrincipal, CPFouCNPJCadastrado, tela);
+                frmCadastroRegistros.ShowDialog();
+
+                this.Close();
+            }
+            else
+            {
+                MenssagemUsuarioSemPermissao();
+            }
+        }
+
+        private void VerificarAcessoTodosCadastros()
+        {
+            listaPermissoes.ForEach(x => IsUsuarioPossuiAcesso = x.pm_visualizar_cadastro_completo);
 
             if (IsUsuarioPossuiAcesso == true)
             {

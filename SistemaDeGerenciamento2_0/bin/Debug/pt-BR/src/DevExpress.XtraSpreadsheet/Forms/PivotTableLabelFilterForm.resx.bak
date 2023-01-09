@@ -1,0 +1,525 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnCancel.AccessibleName" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"></assembly>
+  <data name="btnCancel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>631, 87</value>
+  </data>
+  <data name="btnCancel.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btnCancel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"></assembly>
+  <data name="pivotTableLabelFilterFormLayoutControl.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="btnOk.AccessibleName" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="btnOk.Location" type="System.Drawing.Point, System.Drawing">
+    <value>552, 87</value>
+  </data>
+  <data name="btnOk.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btnOk.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btnOk.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="btnOk.Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="&gt;&gt;btnOk.Name" xml:space="preserve">
+    <value>btnOk</value>
+  </data>
+  <data name="&gt;&gt;btnOk.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;btnOk.Parent" xml:space="preserve">
+    <value>pivotTableLabelFilterFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;btnOk.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="lblAsterisk.AccessibleName" xml:space="preserve">
+    <value>Use * to represent any series of characters</value>
+  </data>
+  <data name="lblAsterisk.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 70</value>
+  </data>
+  <data name="lblAsterisk.Size" type="System.Drawing.Size, System.Drawing">
+    <value>209, 13</value>
+  </data>
+  <data name="lblAsterisk.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="lblAsterisk.Text" xml:space="preserve">
+    <value>Use * to represent any series of characters</value>
+  </data>
+  <data name="&gt;&gt;lblAsterisk.Name" xml:space="preserve">
+    <value>lblAsterisk</value>
+  </data>
+  <data name="&gt;&gt;lblAsterisk.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblAsterisk.Parent" xml:space="preserve">
+    <value>pivotTableLabelFilterFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblAsterisk.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="lblQuestion.AccessibleName" xml:space="preserve">
+    <value>Use ? to represent any single character</value>
+  </data>
+  <data name="lblQuestion.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 53</value>
+  </data>
+  <data name="lblQuestion.Size" type="System.Drawing.Size, System.Drawing">
+    <value>189, 13</value>
+  </data>
+  <data name="lblQuestion.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="lblQuestion.Text" xml:space="preserve">
+    <value>Use ? to represent any single character</value>
+  </data>
+  <data name="&gt;&gt;lblQuestion.Name" xml:space="preserve">
+    <value>lblQuestion</value>
+  </data>
+  <data name="&gt;&gt;lblQuestion.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblQuestion.Parent" xml:space="preserve">
+    <value>pivotTableLabelFilterFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblQuestion.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="edtFilterValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>448, 29</value>
+  </data>
+  <data name="edtFilterValue.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>258, 20</value>
+  </data>
+  <data name="edtFilterValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>258, 20</value>
+  </data>
+  <data name="edtFilterValue.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;edtFilterValue.Name" xml:space="preserve">
+    <value>edtFilterValue</value>
+  </data>
+  <data name="&gt;&gt;edtFilterValue.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtFilterValue.Parent" xml:space="preserve">
+    <value>pivotTableLabelFilterFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;edtFilterValue.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="edtFilterValue2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>334, 29</value>
+  </data>
+  <data name="edtFilterValue2.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>110, 20</value>
+  </data>
+  <data name="edtFilterValue2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 20</value>
+  </data>
+  <data name="edtFilterValue2.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;edtFilterValue2.Name" xml:space="preserve">
+    <value>edtFilterValue2</value>
+  </data>
+  <data name="&gt;&gt;edtFilterValue2.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtFilterValue2.Parent" xml:space="preserve">
+    <value>pivotTableLabelFilterFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;edtFilterValue2.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="lblAnd.AccessibleName" xml:space="preserve">
+    <value>and</value>
+  </data>
+  <data name="lblAnd.Location" type="System.Drawing.Point, System.Drawing">
+    <value>300, 32</value>
+  </data>
+  <data name="lblAnd.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>30, 0</value>
+  </data>
+  <data name="lblAnd.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 13</value>
+  </data>
+  <data name="lblAnd.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="lblAnd.Text" xml:space="preserve">
+    <value>and</value>
+  </data>
+  <data name="&gt;&gt;lblAnd.Name" xml:space="preserve">
+    <value>lblAnd</value>
+  </data>
+  <data name="&gt;&gt;lblAnd.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblAnd.Parent" xml:space="preserve">
+    <value>pivotTableLabelFilterFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblAnd.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="edtFilterOperator.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 29</value>
+  </data>
+  <data name="edtFilterOperator.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>170, 20</value>
+  </data>
+  <data name="edtFilterOperator.Properties.NullText" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="edtFilterOperator.Size" type="System.Drawing.Size, System.Drawing">
+    <value>170, 20</value>
+  </data>
+  <data name="edtFilterOperator.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;edtFilterOperator.Name" xml:space="preserve">
+    <value>edtFilterOperator</value>
+  </data>
+  <data name="&gt;&gt;edtFilterOperator.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.Forms.Design.SpreadsheetLookUpEdit, DevExpress.XtraSpreadsheet.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtFilterOperator.Parent" xml:space="preserve">
+    <value>pivotTableLabelFilterFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;edtFilterOperator.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="edtFilterValue1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>186, 29</value>
+  </data>
+  <data name="edtFilterValue1.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>110, 20</value>
+  </data>
+  <data name="edtFilterValue1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 20</value>
+  </data>
+  <data name="edtFilterValue1.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;edtFilterValue1.Name" xml:space="preserve">
+    <value>edtFilterValue1</value>
+  </data>
+  <data name="&gt;&gt;edtFilterValue1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtFilterValue1.Parent" xml:space="preserve">
+    <value>pivotTableLabelFilterFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;edtFilterValue1.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="lblShowItems.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="lblShowItems.Size" type="System.Drawing.Size, System.Drawing">
+    <value>694, 13</value>
+  </data>
+  <data name="lblShowItems.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblShowItems.Text" xml:space="preserve">
+    <value>Show items for which the label</value>
+  </data>
+  <data name="&gt;&gt;lblShowItems.Name" xml:space="preserve">
+    <value>lblShowItems</value>
+  </data>
+  <data name="&gt;&gt;lblShowItems.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblShowItems.Parent" xml:space="preserve">
+    <value>pivotTableLabelFilterFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblShowItems.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"></assembly>
+  <data name="pivotTableLabelFilterFormLayoutControl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="pivotTableLabelFilterFormLayoutControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="pivotTableLabelFilterFormLayoutControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>718, 122</value>
+  </data>
+  <data name="pivotTableLabelFilterFormLayoutControl.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="pivotTableLabelFilterFormLayoutControl.Text" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;pivotTableLabelFilterFormLayoutControl.Name" xml:space="preserve">
+    <value>pivotTableLabelFilterFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;pivotTableLabelFilterFormLayoutControl.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControl, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;pivotTableLabelFilterFormLayoutControl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pivotTableLabelFilterFormLayoutControl.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btnCancel.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="btnCancel.Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.Name" xml:space="preserve">
+    <value>btnCancel</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.Parent" xml:space="preserve">
+    <value>pivotTableLabelFilterFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>718, 122</value>
+  </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>400, 100</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterParent</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Label Filter</value>
+  </data>
+  <data name="&gt;&gt;Root.Name" xml:space="preserve">
+    <value>Root</value>
+  </data>
+  <data name="&gt;&gt;Root.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblShowItemsLayoutControlItem.Name" xml:space="preserve">
+    <value>lblShowItemsLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;lblShowItemsLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem1.Name" xml:space="preserve">
+    <value>emptySpaceItem1</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtFilterValue1LayoutControlItem.Name" xml:space="preserve">
+    <value>edtFilterValue1LayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;edtFilterValue1LayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblAndLayoutControlItem.Name" xml:space="preserve">
+    <value>lblAndLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;lblAndLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtFilterValue2LayoutControlItem.Name" xml:space="preserve">
+    <value>edtFilterValue2LayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;edtFilterValue2LayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtFilterValueLayoutControlItem.Name" xml:space="preserve">
+    <value>edtFilterValueLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;edtFilterValueLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblQuestionLayoutControlItem.Name" xml:space="preserve">
+    <value>lblQuestionLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;lblQuestionLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblAsteriskLayoutControlItem.Name" xml:space="preserve">
+    <value>lblAsteriskLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;lblAsteriskLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;btnOkLayoutControlItem.Name" xml:space="preserve">
+    <value>btnOkLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;btnOkLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;btnCancelLayoutControlItem.Name" xml:space="preserve">
+    <value>btnCancelLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;btnCancelLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtFilterOperatorLayoutControlItem.Name" xml:space="preserve">
+    <value>edtFilterOperatorLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;edtFilterOperatorLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>PivotTableLabelFilterForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.XtraForm, DevExpress.Utils.v21.2, Culture=neutral</value>
+  </data>
+</root>

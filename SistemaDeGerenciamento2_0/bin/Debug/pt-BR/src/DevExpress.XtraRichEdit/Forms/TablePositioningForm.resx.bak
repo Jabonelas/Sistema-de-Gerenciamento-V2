@@ -1,0 +1,915 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"></assembly>
+  <data name="cbHorizontalPosition.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 46</value>
+  </data>
+  <data name="cbHorizontalPosition.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>121, 20</value>
+  </data>
+  <data name="cbHorizontalPosition.Size" type="System.Drawing.Size, System.Drawing">
+    <value>129, 20</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"></assembly>
+  <data name="tablePositioningFormLayoutControl.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="btnCancel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="btnCancel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>234, 234</value>
+  </data>
+  <data name="btnCancel.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>73, 23</value>
+  </data>
+  <data name="btnCancel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 23</value>
+  </data>
+  <data name="btnCancel.TabIndex" type="System.Int32, mscorlib">
+    <value>74</value>
+  </data>
+  <data name="btnCancel.Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.Name" xml:space="preserve">
+    <value>btnCancel</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.Parent" xml:space="preserve">
+    <value>tablePositioningFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="btnOk.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="btnOk.Location" type="System.Drawing.Point, System.Drawing">
+    <value>157, 234</value>
+  </data>
+  <data name="btnOk.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>73, 23</value>
+  </data>
+  <data name="btnOk.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 23</value>
+  </data>
+  <data name="btnOk.TabIndex" type="System.Int32, mscorlib">
+    <value>73</value>
+  </data>
+  <data name="btnOk.Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="&gt;&gt;btnOk.Name" xml:space="preserve">
+    <value>btnOk</value>
+  </data>
+  <data name="&gt;&gt;btnOk.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;btnOk.Parent" xml:space="preserve">
+    <value>tablePositioningFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;btnOk.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="chkMoveWithText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 210</value>
+  </data>
+  <data name="chkMoveWithText.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>95, 20</value>
+  </data>
+  <data name="chkMoveWithText.Properties.Caption" xml:space="preserve">
+    <value>&amp;Move with text</value>
+  </data>
+  <data name="chkMoveWithText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 20</value>
+  </data>
+  <data name="chkMoveWithText.TabIndex" type="System.Int32, mscorlib">
+    <value>72</value>
+  </data>
+  <data name="&gt;&gt;chkMoveWithText.Name" xml:space="preserve">
+    <value>chkMoveWithText</value>
+  </data>
+  <data name="&gt;&gt;chkMoveWithText.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;chkMoveWithText.Parent" xml:space="preserve">
+    <value>tablePositioningFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;chkMoveWithText.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="lblOptions.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 193</value>
+  </data>
+  <data name="lblOptions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>295, 13</value>
+  </data>
+  <data name="lblOptions.TabIndex" type="System.Int32, mscorlib">
+    <value>71</value>
+  </data>
+  <data name="lblOptions.Text" xml:space="preserve">
+    <value>Options</value>
+  </data>
+  <data name="&gt;&gt;lblOptions.Name" xml:space="preserve">
+    <value>lblOptions</value>
+  </data>
+  <data name="&gt;&gt;lblOptions.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblOptions.Parent" xml:space="preserve">
+    <value>tablePositioningFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblOptions.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="lblHorizontal.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="lblHorizontal.Size" type="System.Drawing.Size, System.Drawing">
+    <value>295, 13</value>
+  </data>
+  <data name="lblHorizontal.TabIndex" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="lblHorizontal.Text" xml:space="preserve">
+    <value>Horizontal</value>
+  </data>
+  <data name="&gt;&gt;lblHorizontal.Name" xml:space="preserve">
+    <value>lblHorizontal</value>
+  </data>
+  <data name="&gt;&gt;lblHorizontal.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblHorizontal.Parent" xml:space="preserve">
+    <value>tablePositioningFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblHorizontal.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="spnRight.Location" type="System.Drawing.Point, System.Drawing">
+    <value>234, 169</value>
+  </data>
+  <data name="spnRight.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>73, 20</value>
+  </data>
+  <data name="spnRight.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 20</value>
+  </data>
+  <data name="spnRight.TabIndex" type="System.Int32, mscorlib">
+    <value>66</value>
+  </data>
+  <data name="&gt;&gt;spnRight.Name" xml:space="preserve">
+    <value>spnRight</value>
+  </data>
+  <data name="&gt;&gt;spnRight.Type" xml:space="preserve">
+    <value>DevExpress.XtraRichEdit.Design.RichTextIndentEdit, DevExpress.XtraRichEdit.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;spnRight.Parent" xml:space="preserve">
+    <value>tablePositioningFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;spnRight.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="lbHorizontalPosition.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 29</value>
+  </data>
+  <data name="lbHorizontalPosition.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>41, 13</value>
+  </data>
+  <data name="lbHorizontalPosition.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 13</value>
+  </data>
+  <data name="lbHorizontalPosition.TabIndex" type="System.Int32, mscorlib">
+    <value>53</value>
+  </data>
+  <data name="lbHorizontalPosition.Text" xml:space="preserve">
+    <value>Po&amp;sition:</value>
+  </data>
+  <data name="&gt;&gt;lbHorizontalPosition.Name" xml:space="preserve">
+    <value>lbHorizontalPosition</value>
+  </data>
+  <data name="&gt;&gt;lbHorizontalPosition.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lbHorizontalPosition.Parent" xml:space="preserve">
+    <value>tablePositioningFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;lbHorizontalPosition.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="lblRight.Location" type="System.Drawing.Point, System.Drawing">
+    <value>169, 172</value>
+  </data>
+  <data name="lblRight.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>29, 13</value>
+  </data>
+  <data name="lblRight.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 13</value>
+  </data>
+  <data name="lblRight.TabIndex" type="System.Int32, mscorlib">
+    <value>70</value>
+  </data>
+  <data name="lblRight.Text" xml:space="preserve">
+    <value>&amp;Right:</value>
+  </data>
+  <data name="&gt;&gt;lblRight.Name" xml:space="preserve">
+    <value>lblRight</value>
+  </data>
+  <data name="&gt;&gt;lblRight.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblRight.Parent" xml:space="preserve">
+    <value>tablePositioningFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblRight.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="spnLeft.Location" type="System.Drawing.Point, System.Drawing">
+    <value>234, 145</value>
+  </data>
+  <data name="spnLeft.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>73, 20</value>
+  </data>
+  <data name="spnLeft.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 20</value>
+  </data>
+  <data name="spnLeft.TabIndex" type="System.Int32, mscorlib">
+    <value>65</value>
+  </data>
+  <data name="&gt;&gt;spnLeft.Name" xml:space="preserve">
+    <value>spnLeft</value>
+  </data>
+  <data name="&gt;&gt;spnLeft.Type" xml:space="preserve">
+    <value>DevExpress.XtraRichEdit.Design.RichTextIndentEdit, DevExpress.XtraRichEdit.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;spnLeft.Parent" xml:space="preserve">
+    <value>tablePositioningFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;spnLeft.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="spnBottom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>80, 169</value>
+  </data>
+  <data name="spnBottom.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>73, 20</value>
+  </data>
+  <data name="spnBottom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 20</value>
+  </data>
+  <data name="spnBottom.TabIndex" type="System.Int32, mscorlib">
+    <value>64</value>
+  </data>
+  <data name="&gt;&gt;spnBottom.Name" xml:space="preserve">
+    <value>spnBottom</value>
+  </data>
+  <data name="&gt;&gt;spnBottom.Type" xml:space="preserve">
+    <value>DevExpress.XtraRichEdit.Design.RichTextIndentEdit, DevExpress.XtraRichEdit.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;spnBottom.Parent" xml:space="preserve">
+    <value>tablePositioningFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;spnBottom.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="lblLeft.Location" type="System.Drawing.Point, System.Drawing">
+    <value>169, 148</value>
+  </data>
+  <data name="lblLeft.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>23, 13</value>
+  </data>
+  <data name="lblLeft.Size" type="System.Drawing.Size, System.Drawing">
+    <value>23, 13</value>
+  </data>
+  <data name="lblLeft.TabIndex" type="System.Int32, mscorlib">
+    <value>69</value>
+  </data>
+  <data name="lblLeft.Text" xml:space="preserve">
+    <value>&amp;Left:</value>
+  </data>
+  <data name="&gt;&gt;lblLeft.Name" xml:space="preserve">
+    <value>lblLeft</value>
+  </data>
+  <data name="&gt;&gt;lblLeft.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblLeft.Parent" xml:space="preserve">
+    <value>tablePositioningFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblLeft.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="lblHorizontalPositionType.Location" type="System.Drawing.Point, System.Drawing">
+    <value>169, 29</value>
+  </data>
+  <data name="lblHorizontalPositionType.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>52, 13</value>
+  </data>
+  <data name="lblHorizontalPositionType.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 13</value>
+  </data>
+  <data name="lblHorizontalPositionType.TabIndex" type="System.Int32, mscorlib">
+    <value>52</value>
+  </data>
+  <data name="lblHorizontalPositionType.Text" xml:space="preserve">
+    <value>Relati&amp;ve to</value>
+  </data>
+  <data name="&gt;&gt;lblHorizontalPositionType.Name" xml:space="preserve">
+    <value>lblHorizontalPositionType</value>
+  </data>
+  <data name="&gt;&gt;lblHorizontalPositionType.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblHorizontalPositionType.Parent" xml:space="preserve">
+    <value>tablePositioningFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblHorizontalPositionType.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="spnTop.Location" type="System.Drawing.Point, System.Drawing">
+    <value>80, 145</value>
+  </data>
+  <data name="spnTop.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>73, 20</value>
+  </data>
+  <data name="spnTop.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 20</value>
+  </data>
+  <data name="spnTop.TabIndex" type="System.Int32, mscorlib">
+    <value>63</value>
+  </data>
+  <data name="&gt;&gt;spnTop.Name" xml:space="preserve">
+    <value>spnTop</value>
+  </data>
+  <data name="&gt;&gt;spnTop.Type" xml:space="preserve">
+    <value>DevExpress.XtraRichEdit.Design.RichTextIndentEdit, DevExpress.XtraRichEdit.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;spnTop.Parent" xml:space="preserve">
+    <value>tablePositioningFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;spnTop.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="cbHorizontalPositionType.Location" type="System.Drawing.Point, System.Drawing">
+    <value>169, 46</value>
+  </data>
+  <data name="cbHorizontalPositionType.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>121, 20</value>
+  </data>
+  <data name="cbHorizontalPositionType.Size" type="System.Drawing.Size, System.Drawing">
+    <value>138, 20</value>
+  </data>
+  <data name="cbHorizontalPositionType.TabIndex" type="System.Int32, mscorlib">
+    <value>54</value>
+  </data>
+  <data name="&gt;&gt;cbHorizontalPositionType.Name" xml:space="preserve">
+    <value>cbHorizontalPositionType</value>
+  </data>
+  <data name="&gt;&gt;cbHorizontalPositionType.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ImageComboBoxEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;cbHorizontalPositionType.Parent" xml:space="preserve">
+    <value>tablePositioningFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;cbHorizontalPositionType.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="lblBottom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 172</value>
+  </data>
+  <data name="lblBottom.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>38, 13</value>
+  </data>
+  <data name="lblBottom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>38, 13</value>
+  </data>
+  <data name="lblBottom.TabIndex" type="System.Int32, mscorlib">
+    <value>68</value>
+  </data>
+  <data name="lblBottom.Text" xml:space="preserve">
+    <value>&amp;Bottom:</value>
+  </data>
+  <data name="&gt;&gt;lblBottom.Name" xml:space="preserve">
+    <value>lblBottom</value>
+  </data>
+  <data name="&gt;&gt;lblBottom.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblBottom.Parent" xml:space="preserve">
+    <value>tablePositioningFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblBottom.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="lblVertical.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 70</value>
+  </data>
+  <data name="lblVertical.Size" type="System.Drawing.Size, System.Drawing">
+    <value>295, 13</value>
+  </data>
+  <data name="lblVertical.TabIndex" type="System.Int32, mscorlib">
+    <value>56</value>
+  </data>
+  <data name="lblVertical.Text" xml:space="preserve">
+    <value>Vertical</value>
+  </data>
+  <data name="&gt;&gt;lblVertical.Name" xml:space="preserve">
+    <value>lblVertical</value>
+  </data>
+  <data name="&gt;&gt;lblVertical.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblVertical.Parent" xml:space="preserve">
+    <value>tablePositioningFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblVertical.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="lblVerticalPosition.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 87</value>
+  </data>
+  <data name="lblVerticalPosition.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>41, 13</value>
+  </data>
+  <data name="lblVerticalPosition.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 13</value>
+  </data>
+  <data name="lblVerticalPosition.TabIndex" type="System.Int32, mscorlib">
+    <value>58</value>
+  </data>
+  <data name="lblVerticalPosition.Text" xml:space="preserve">
+    <value>Pos&amp;ition:</value>
+  </data>
+  <data name="&gt;&gt;lblVerticalPosition.Name" xml:space="preserve">
+    <value>lblVerticalPosition</value>
+  </data>
+  <data name="&gt;&gt;lblVerticalPosition.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblVerticalPosition.Parent" xml:space="preserve">
+    <value>tablePositioningFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblVerticalPosition.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="cbVerticalPosition.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 104</value>
+  </data>
+  <data name="cbVerticalPosition.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>121, 20</value>
+  </data>
+  <data name="cbVerticalPosition.Size" type="System.Drawing.Size, System.Drawing">
+    <value>129, 20</value>
+  </data>
+  <data name="cbVerticalPosition.TabIndex" type="System.Int32, mscorlib">
+    <value>55</value>
+  </data>
+  <data name="&gt;&gt;cbVerticalPosition.Name" xml:space="preserve">
+    <value>cbVerticalPosition</value>
+  </data>
+  <data name="&gt;&gt;cbVerticalPosition.Type" xml:space="preserve">
+    <value>DevExpress.XtraRichEdit.Design.TableRelativePositionComboBoxEdit, DevExpress.XtraRichEdit.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;cbVerticalPosition.Parent" xml:space="preserve">
+    <value>tablePositioningFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;cbVerticalPosition.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="lblTop.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 148</value>
+  </data>
+  <data name="lblTop.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>22, 13</value>
+  </data>
+  <data name="lblTop.Size" type="System.Drawing.Size, System.Drawing">
+    <value>22, 13</value>
+  </data>
+  <data name="lblTop.TabIndex" type="System.Int32, mscorlib">
+    <value>67</value>
+  </data>
+  <data name="lblTop.Text" xml:space="preserve">
+    <value>&amp;Top:</value>
+  </data>
+  <data name="&gt;&gt;lblTop.Name" xml:space="preserve">
+    <value>lblTop</value>
+  </data>
+  <data name="&gt;&gt;lblTop.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblTop.Parent" xml:space="preserve">
+    <value>tablePositioningFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblTop.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="lblVerticalPositionType.Location" type="System.Drawing.Point, System.Drawing">
+    <value>169, 87</value>
+  </data>
+  <data name="lblVerticalPositionType.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>52, 13</value>
+  </data>
+  <data name="lblVerticalPositionType.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 13</value>
+  </data>
+  <data name="lblVerticalPositionType.TabIndex" type="System.Int32, mscorlib">
+    <value>57</value>
+  </data>
+  <data name="lblVerticalPositionType.Text" xml:space="preserve">
+    <value>R&amp;elative to</value>
+  </data>
+  <data name="&gt;&gt;lblVerticalPositionType.Name" xml:space="preserve">
+    <value>lblVerticalPositionType</value>
+  </data>
+  <data name="&gt;&gt;lblVerticalPositionType.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblVerticalPositionType.Parent" xml:space="preserve">
+    <value>tablePositioningFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblVerticalPositionType.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="lblDistancesFromText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 128</value>
+  </data>
+  <data name="lblDistancesFromText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>295, 13</value>
+  </data>
+  <data name="lblDistancesFromText.TabIndex" type="System.Int32, mscorlib">
+    <value>60</value>
+  </data>
+  <data name="lblDistancesFromText.Text" xml:space="preserve">
+    <value>Distance from surrounding text</value>
+  </data>
+  <data name="&gt;&gt;lblDistancesFromText.Name" xml:space="preserve">
+    <value>lblDistancesFromText</value>
+  </data>
+  <data name="&gt;&gt;lblDistancesFromText.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblDistancesFromText.Parent" xml:space="preserve">
+    <value>tablePositioningFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblDistancesFromText.ZOrder" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="cbVerticalPositionType.Location" type="System.Drawing.Point, System.Drawing">
+    <value>169, 104</value>
+  </data>
+  <data name="cbVerticalPositionType.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>121, 20</value>
+  </data>
+  <data name="cbVerticalPositionType.Size" type="System.Drawing.Size, System.Drawing">
+    <value>138, 20</value>
+  </data>
+  <data name="cbVerticalPositionType.TabIndex" type="System.Int32, mscorlib">
+    <value>59</value>
+  </data>
+  <data name="&gt;&gt;cbVerticalPositionType.Name" xml:space="preserve">
+    <value>cbVerticalPositionType</value>
+  </data>
+  <data name="&gt;&gt;cbVerticalPositionType.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ImageComboBoxEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;cbVerticalPositionType.Parent" xml:space="preserve">
+    <value>tablePositioningFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;cbVerticalPositionType.ZOrder" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="tablePositioningFormLayoutControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="tablePositioningFormLayoutControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>319, 269</value>
+  </data>
+  <data name="tablePositioningFormLayoutControl.TabIndex" type="System.Int32, mscorlib">
+    <value>75</value>
+  </data>
+  <data name="tablePositioningFormLayoutControl.Text" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;tablePositioningFormLayoutControl.Name" xml:space="preserve">
+    <value>tablePositioningFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;tablePositioningFormLayoutControl.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControl, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;tablePositioningFormLayoutControl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;tablePositioningFormLayoutControl.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="cbHorizontalPosition.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;cbHorizontalPosition.Name" xml:space="preserve">
+    <value>cbHorizontalPosition</value>
+  </data>
+  <data name="&gt;&gt;cbHorizontalPosition.Type" xml:space="preserve">
+    <value>DevExpress.XtraRichEdit.Design.TableRelativePositionComboBoxEdit, DevExpress.XtraRichEdit.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;cbHorizontalPosition.Parent" xml:space="preserve">
+    <value>tablePositioningFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;cbHorizontalPosition.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"></assembly>
+  <data name="$this.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>379, 315</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterParent</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Table Positioning</value>
+  </data>
+  <data name="&gt;&gt;Root.Name" xml:space="preserve">
+    <value>Root</value>
+  </data>
+  <data name="&gt;&gt;Root.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblHorizontalLayoutControlItem.Name" xml:space="preserve">
+    <value>lblHorizontalLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;lblHorizontalLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lbHorizontalPositionLayoutControlItem.Name" xml:space="preserve">
+    <value>lbHorizontalPositionLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;lbHorizontalPositionLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;cbHorizontalPositionLayoutControlItem.Name" xml:space="preserve">
+    <value>cbHorizontalPositionLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;cbHorizontalPositionLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblHorizontalPositionTypeLayoutControlItem.Name" xml:space="preserve">
+    <value>lblHorizontalPositionTypeLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;lblHorizontalPositionTypeLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;cbHorizontalPositionTypeLayoutControlItem.Name" xml:space="preserve">
+    <value>cbHorizontalPositionTypeLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;cbHorizontalPositionTypeLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblVerticalLayoutControlItem.Name" xml:space="preserve">
+    <value>lblVerticalLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;lblVerticalLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblVerticalPositionLayoutControlItem.Name" xml:space="preserve">
+    <value>lblVerticalPositionLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;lblVerticalPositionLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;cbVerticalPositionLayoutControlItem.Name" xml:space="preserve">
+    <value>cbVerticalPositionLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;cbVerticalPositionLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblVerticalPositionTypeLayoutControlItem.Name" xml:space="preserve">
+    <value>lblVerticalPositionTypeLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;lblVerticalPositionTypeLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;cbVerticalPositionTypeLayoutControlItem.Name" xml:space="preserve">
+    <value>cbVerticalPositionTypeLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;cbVerticalPositionTypeLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblDistancesFromTextLayoutControlItem.Name" xml:space="preserve">
+    <value>lblDistancesFromTextLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;lblDistancesFromTextLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblTopLayoutControlItem.Name" xml:space="preserve">
+    <value>lblTopLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;lblTopLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;spnTopLayoutControlItem.Name" xml:space="preserve">
+    <value>spnTopLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;spnTopLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblBottomLayoutControlItem.Name" xml:space="preserve">
+    <value>lblBottomLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;lblBottomLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;spnBottomLayoutControlItem.Name" xml:space="preserve">
+    <value>spnBottomLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;spnBottomLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblLeftLayoutControlItem.Name" xml:space="preserve">
+    <value>lblLeftLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;lblLeftLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;spnLeftLayoutControlItem.Name" xml:space="preserve">
+    <value>spnLeftLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;spnLeftLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblRightLayoutControlItem.Name" xml:space="preserve">
+    <value>lblRightLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;lblRightLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;spnRightLayoutControlItem.Name" xml:space="preserve">
+    <value>spnRightLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;spnRightLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblOptionsLayoutControlItem.Name" xml:space="preserve">
+    <value>lblOptionsLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;lblOptionsLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;chkMoveWithTextLayoutControlItem.Name" xml:space="preserve">
+    <value>chkMoveWithTextLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;chkMoveWithTextLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;btnOkLayoutControlItem.Name" xml:space="preserve">
+    <value>btnOkLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;btnOkLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;btnCancelLayoutControlItem.Name" xml:space="preserve">
+    <value>btnCancelLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;btnCancelLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>TablePositioningForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.XtraForm, DevExpress.Utils.v21.2, Culture=neutral</value>
+  </data>
+</root>

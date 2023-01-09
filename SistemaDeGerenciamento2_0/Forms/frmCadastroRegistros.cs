@@ -1,6 +1,9 @@
-﻿using DevExpress.XtraSplashScreen;
+﻿using DevExpress.Data.ODataLinq.Helpers;
+using DevExpress.XtraSplashScreen;
+using SistemaDeGerenciamento2_0.Context;
 using System;
 using System.Drawing;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace SistemaDeGerenciamento2_0.Forms
@@ -12,26 +15,36 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private string tipoCadastro = string.Empty;
 
-        public frmCadastroRegistros(string _tipoCadastro, frmTelaPrincipal _frmTelaPrincipal, string _mudar)
-        {
-            InitializeComponent();
-
-            tipoCadastro = _tipoCadastro;
-
-            cmbTipoPessoa.Text = tipoCadastro;
-
-            TipoPessoa();
-        }
+        private string CPFouCNPJCadastrado = string.Empty;
 
         private frmTelaPrincipal frmTelaPrincipal;
 
-        public frmCadastroRegistros(string _tipoCadastro, frmTelaPrincipal _frmTelaPrincipal)
+        private string tipoPessoa = string.Empty;
+
+        public frmCadastroRegistros(string _tipoCadastro, frmTelaPrincipal _frmTelaPrincipal, string _CPFouCNPJCadastrado, string _tipoPessoa)
         {
             InitializeComponent();
 
-            cmbTipoPessoa.Text = "Pessoa Fisica";
-
             tipoCadastro = _tipoCadastro;
+
+            frmTelaPrincipal = _frmTelaPrincipal;
+
+            CPFouCNPJCadastrado = _CPFouCNPJCadastrado;
+
+            tipoPessoa = _tipoPessoa;
+
+            cmbTipoPessoa.Text = tipoCadastro;
+
+            ReloadData();
+        }
+
+        public frmCadastroRegistros(string _tipoPessoa, frmTelaPrincipal _frmTelaPrincipal)
+        {
+            InitializeComponent();
+
+            tipoPessoa = _tipoPessoa;
+
+            cmbTipoPessoa.Text = "Pessoa Fisica";
 
             frmTelaPrincipal = _frmTelaPrincipal;
 
@@ -42,7 +55,7 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             using (var handle = SplashScreenManager.ShowOverlayForm(frmTelaPrincipal))
             {
-                TipoCadastro(tipoCadastro);
+                TipoCadastro(tipoPessoa);
             }
         }
 
@@ -99,28 +112,62 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             if (cmbTipoPessoa.Text == "Pessoa Fisica")
             {
-                TelaAcessoCadastroPessoaFisica();
+                if (CPFouCNPJCadastrado == string.Empty)
+                {
+                    TelaAcessoCadastroPessoaFisicaCadastrar();
+                }
+                else
+                {
+                    TelaAcessoCadastroPessoaFisicaAlterar();
+                }
             }
-            else
+            else if (cmbTipoPessoa.Text == "Pessoa Juridica")
             {
-                TelaAcessoCadastroPessoaJuridica();
+                if (CPFouCNPJCadastrado == string.Empty)
+                {
+                    TelaAcessoCadastroPessoaJuridicaCadastrar();
+                }
+                else
+                {
+                    TelaAcessoCadastroPessoaJuridicaAlterar();
+                }
             }
         }
 
-        private void TelaAcessoCadastroPessoaFisica()
+        private void TelaAcessoCadastroPessoaFisicaCadastrar()
         {
             pnlCadastroRegistro.Controls.Clear();
-            frmCadastroRegistroPessoaFisica frm = new frmCadastroRegistroPessoaFisica(tipoCadastro, this);
+            frmCadastroRegistroPessoaFisica frm = new frmCadastroRegistroPessoaFisica(tipoPessoa, this);
             frm.TopLevel = false;
             pnlCadastroRegistro.Controls.Add(frm);
             pnlCadastroRegistro.Tag = frm;
             frm.Show();
         }
 
-        private void TelaAcessoCadastroPessoaJuridica()
+        private void TelaAcessoCadastroPessoaFisicaAlterar()
         {
             pnlCadastroRegistro.Controls.Clear();
-            frmCadastroRegistroPessoaJuridica frm = new frmCadastroRegistroPessoaJuridica(tipoCadastro, this);
+            frmCadastroRegistroPessoaFisica frm = new frmCadastroRegistroPessoaFisica(tipoCadastro, this, CPFouCNPJCadastrado);
+            frm.TopLevel = false;
+            pnlCadastroRegistro.Controls.Add(frm);
+            pnlCadastroRegistro.Tag = frm;
+            frm.Show();
+        }
+
+        private void TelaAcessoCadastroPessoaJuridicaCadastrar()
+        {
+            pnlCadastroRegistro.Controls.Clear();
+            frmCadastroRegistroPessoaJuridica frm = new frmCadastroRegistroPessoaJuridica(tipoPessoa, this);
+            frm.TopLevel = false;
+            pnlCadastroRegistro.Controls.Add(frm);
+            pnlCadastroRegistro.Tag = frm;
+            frm.Show();
+        }
+
+        private void TelaAcessoCadastroPessoaJuridicaAlterar()
+        {
+            pnlCadastroRegistro.Controls.Clear();
+            frmCadastroRegistroPessoaJuridica frm = new frmCadastroRegistroPessoaJuridica(tipoPessoa, this, CPFouCNPJCadastrado);
             frm.TopLevel = false;
             pnlCadastroRegistro.Controls.Add(frm);
             pnlCadastroRegistro.Tag = frm;
@@ -133,7 +180,7 @@ namespace SistemaDeGerenciamento2_0.Forms
             btnFuncionario.Appearance.BackColor = Color.Transparent;
             btnFornecedor.Appearance.BackColor = Color.Transparent;
 
-            tipoCadastro = "Cliente";
+            tipoPessoa = "Cliente";
 
             TipoPessoa();
         }
@@ -144,7 +191,7 @@ namespace SistemaDeGerenciamento2_0.Forms
             btnFuncionario.Appearance.BackColor = Color.Transparent;
             btnFornecedor.Appearance.BackColor = Color.LightGray;
 
-            tipoCadastro = "Fornecedor";
+            tipoPessoa = "Fornecedor";
 
             TipoPessoa();
         }
@@ -155,7 +202,7 @@ namespace SistemaDeGerenciamento2_0.Forms
             btnFuncionario.Appearance.BackColor = Color.LightGray;
             btnFornecedor.Appearance.BackColor = Color.Transparent;
 
-            tipoCadastro = "Funcionario";
+            tipoPessoa = "Funcionario";
 
             TipoPessoa();
         }

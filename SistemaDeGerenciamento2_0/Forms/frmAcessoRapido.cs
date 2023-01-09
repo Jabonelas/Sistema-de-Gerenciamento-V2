@@ -1,12 +1,22 @@
-﻿using System;
+﻿using DevExpress.XtraSplashScreen;
+using SistemaDeGerenciamento2_0.Class;
+using SistemaDeGerenciamento2_0.Context;
+using SistemaDeGerenciamento2_0.Models;
+using System;
+using System.Collections.Generic;
 using System.Drawing;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace SistemaDeGerenciamento2_0.Forms
 {
     public partial class frmAcessoRapido : Form
     {
+        private PermissoesCadastro permissoesCadastro = new PermissoesCadastro();
+
         private frmTelaPrincipal frmTelaPrincipal;
+
+        private List<tb_permissoes> listaPermissoes = new List<tb_permissoes>();
 
         public frmAcessoRapido(frmTelaPrincipal _frmTelaPrincipal)
         {
@@ -25,20 +35,20 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private void btnNovoCliente_Click(object sender, EventArgs e)
         {
-            frmCadastroRegistros frmCadastroRegistros = new frmCadastroRegistros("Cliente", frmTelaPrincipal);
-            frmCadastroRegistros.ShowDialog();
+            permissoesCadastro.ReloadData(frmTelaPrincipal);
+            permissoesCadastro.VerificarAcessoCadastro("Cliente");
         }
 
         private void btnNovoFornecedor_Click(object sender, EventArgs e)
         {
-            frmCadastroRegistros frmCadastroRegistros = new frmCadastroRegistros("Fornecedor", frmTelaPrincipal);
-            frmCadastroRegistros.ShowDialog();
+            permissoesCadastro.ReloadData(frmTelaPrincipal);
+            permissoesCadastro.VerificarAcessoCadastro("Fornecedor");
         }
 
         private void btnNovoTransporte_Click(object sender, EventArgs e)
         {
-            frmCadastroRegistros frmCadastroRegistros = new frmCadastroRegistros("Funcionario", frmTelaPrincipal);
-            frmCadastroRegistros.ShowDialog();
+            permissoesCadastro.ReloadData(frmTelaPrincipal);
+            permissoesCadastro.VerificarAcessoCadastro("Funcionario");
         }
 
         private void btnNovoUsuario_Click(object sender, EventArgs e)
@@ -73,8 +83,8 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private void btnIrParaCadastro_Click(object sender, EventArgs e)
         {
-            frmCadastro frmCadastro = new frmCadastro(frmTelaPrincipal);
-            frmCadastro.ShowDialog();
+            permissoesCadastro.ReloadData(frmTelaPrincipal);
+            permissoesCadastro.VerificarAcessoTodosCadastro("Todos Os Cadastros");
         }
     }
 }

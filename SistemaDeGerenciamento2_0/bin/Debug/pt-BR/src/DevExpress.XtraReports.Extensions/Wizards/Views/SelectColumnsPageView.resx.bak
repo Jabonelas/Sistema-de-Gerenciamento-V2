@@ -1,0 +1,583 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="&gt;&gt;layoutControlBase.Name" xml:space="preserve">
+    <value>layoutControlBase</value>
+  </data>
+  <data name="&gt;&gt;layoutControlBase.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControl, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;layoutControlBase.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;layoutControlBase.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;panelAdditionalButtons.Name" xml:space="preserve">
+    <value>panelAdditionalButtons</value>
+  </data>
+  <data name="&gt;&gt;panelAdditionalButtons.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v20.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;panelAdditionalButtons.Parent" xml:space="preserve">
+    <value>layoutControlBase</value>
+  </data>
+  <data name="&gt;&gt;panelAdditionalButtons.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;buttonPrevious.Name" xml:space="preserve">
+    <value>buttonPrevious</value>
+  </data>
+  <data name="&gt;&gt;buttonPrevious.Type" xml:space="preserve">
+    <value>DevExpress.DataAccess.UI.Wizard.BackButton, DevExpress.DataAccess.v21.2.UI, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;buttonPrevious.Parent" xml:space="preserve">
+    <value>layoutControlBase</value>
+  </data>
+  <data name="&gt;&gt;buttonPrevious.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;separatorTop.Name" xml:space="preserve">
+    <value>separatorTop</value>
+  </data>
+  <data name="&gt;&gt;separatorTop.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;separatorTop.Parent" xml:space="preserve">
+    <value>layoutControlBase</value>
+  </data>
+  <data name="&gt;&gt;separatorTop.ZOrder" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;buttonFinish.Name" xml:space="preserve">
+    <value>buttonFinish</value>
+  </data>
+  <data name="&gt;&gt;buttonFinish.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;buttonFinish.Parent" xml:space="preserve">
+    <value>layoutControlBase</value>
+  </data>
+  <data name="&gt;&gt;buttonFinish.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;buttonNext.Name" xml:space="preserve">
+    <value>buttonNext</value>
+  </data>
+  <data name="&gt;&gt;buttonNext.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;buttonNext.Parent" xml:space="preserve">
+    <value>layoutControlBase</value>
+  </data>
+  <data name="&gt;&gt;buttonNext.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"></assembly>
+  <data name="layoutPanel.ColumnCount" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="availableLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"></assembly>
+  <data name="availableLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11pt</value>
+  </data>
+  <data name="availableLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"></assembly>
+  <data name="availableLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 6</value>
+  </data>
+  <data name="availableLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 18</value>
+  </data>
+  <data name="availableLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="availableLabel.Text" xml:space="preserve">
+    <value>Available fields:</value>
+  </data>
+  <data name="&gt;&gt;availableLabel.Name" xml:space="preserve">
+    <value>availableLabel</value>
+  </data>
+  <data name="&gt;&gt;availableLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;availableLabel.Parent" xml:space="preserve">
+    <value>layoutPanel</value>
+  </data>
+  <data name="&gt;&gt;availableLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="selectedLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="selectedLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11pt</value>
+  </data>
+  <data name="selectedLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>381, 0</value>
+  </data>
+  <data name="selectedLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 6</value>
+  </data>
+  <data name="selectedLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>187, 18</value>
+  </data>
+  <data name="selectedLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="selectedLabel.Text" xml:space="preserve">
+    <value>Fields to display in a report:</value>
+  </data>
+  <data name="&gt;&gt;selectedLabel.Name" xml:space="preserve">
+    <value>selectedLabel</value>
+  </data>
+  <data name="&gt;&gt;selectedLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;selectedLabel.Parent" xml:space="preserve">
+    <value>layoutPanel</value>
+  </data>
+  <data name="&gt;&gt;selectedLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="selectedColumnsListBox.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="selectedColumnsListBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>381, 24</value>
+  </data>
+  <data name="selectedColumnsListBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="selectedColumnsListBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>347, 348</value>
+  </data>
+  <data name="selectedColumnsListBox.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;selectedColumnsListBox.Name" xml:space="preserve">
+    <value>selectedColumnsListBox</value>
+  </data>
+  <data name="&gt;&gt;selectedColumnsListBox.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ListBoxControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;selectedColumnsListBox.Parent" xml:space="preserve">
+    <value>layoutPanel</value>
+  </data>
+  <data name="&gt;&gt;selectedColumnsListBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="availableColumnsListBox.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="availableColumnsListBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="availableColumnsListBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="availableColumnsListBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>346, 348</value>
+  </data>
+  <data name="availableColumnsListBox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;availableColumnsListBox.Name" xml:space="preserve">
+    <value>availableColumnsListBox</value>
+  </data>
+  <data name="&gt;&gt;availableColumnsListBox.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ListBoxControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;availableColumnsListBox.Parent" xml:space="preserve">
+    <value>contentPanel</value>
+  </data>
+  <data name="&gt;&gt;availableColumnsListBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="contentPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="contentPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 24</value>
+  </data>
+  <data name="contentPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="contentPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>346, 348</value>
+  </data>
+  <data name="contentPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;contentPanel.Name" xml:space="preserve">
+    <value>contentPanel</value>
+  </data>
+  <data name="&gt;&gt;contentPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;contentPanel.Parent" xml:space="preserve">
+    <value>layoutPanel</value>
+  </data>
+  <data name="&gt;&gt;contentPanel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="addButton.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="addButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>352, 104</value>
+  </data>
+  <data name="addButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 3, 6, 3</value>
+  </data>
+  <data name="addButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>23, 23</value>
+  </data>
+  <data name="addButton.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;addButton.Name" xml:space="preserve">
+    <value>addButton</value>
+  </data>
+  <data name="&gt;&gt;addButton.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;addButton.Parent" xml:space="preserve">
+    <value>layoutPanel</value>
+  </data>
+  <data name="&gt;&gt;addButton.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="addAllButton.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="addAllButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>352, 133</value>
+  </data>
+  <data name="addAllButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 3, 6, 3</value>
+  </data>
+  <data name="addAllButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>23, 23</value>
+  </data>
+  <data name="addAllButton.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;addAllButton.Name" xml:space="preserve">
+    <value>addAllButton</value>
+  </data>
+  <data name="&gt;&gt;addAllButton.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;addAllButton.Parent" xml:space="preserve">
+    <value>layoutPanel</value>
+  </data>
+  <data name="&gt;&gt;addAllButton.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="removeButton.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="removeButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>352, 239</value>
+  </data>
+  <data name="removeButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 3, 6, 3</value>
+  </data>
+  <data name="removeButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>23, 23</value>
+  </data>
+  <data name="removeButton.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;removeButton.Name" xml:space="preserve">
+    <value>removeButton</value>
+  </data>
+  <data name="&gt;&gt;removeButton.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;removeButton.Parent" xml:space="preserve">
+    <value>layoutPanel</value>
+  </data>
+  <data name="&gt;&gt;removeButton.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="removeAllButton.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="removeAllButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>352, 268</value>
+  </data>
+  <data name="removeAllButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 3, 6, 3</value>
+  </data>
+  <data name="removeAllButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>23, 23</value>
+  </data>
+  <data name="removeAllButton.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;removeAllButton.Name" xml:space="preserve">
+    <value>removeAllButton</value>
+  </data>
+  <data name="&gt;&gt;removeAllButton.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;removeAllButton.Parent" xml:space="preserve">
+    <value>layoutPanel</value>
+  </data>
+  <data name="&gt;&gt;removeAllButton.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="layoutPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="layoutPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 24</value>
+  </data>
+  <data name="layoutPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="layoutPanel.RowCount" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="layoutPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>728, 372</value>
+  </data>
+  <data name="layoutPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;layoutPanel.Name" xml:space="preserve">
+    <value>layoutPanel</value>
+  </data>
+  <data name="&gt;&gt;layoutPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;layoutPanel.Parent" xml:space="preserve">
+    <value>panelBaseContent</value>
+  </data>
+  <data name="&gt;&gt;layoutPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="layoutPanel.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="availableLabel" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="selectedLabel" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="selectedColumnsListBox" Row="1" RowSpan="7" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="contentPanel" Row="1" RowSpan="7" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="addButton" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="addAllButton" Row="3" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="removeButton" Row="5" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="removeAllButton" Row="6" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Absolute,35,Percent,50" /&gt;&lt;Rows Styles="AutoSize,0,Percent,33.33333,Absolute,29,Absolute,29,Percent,33.33333,Absolute,29,Absolute,29,Percent,33.33333" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="panelBaseContent.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>24, 24, 24, 24</value>
+  </data>
+  <data name="&gt;&gt;panelBaseContent.Name" xml:space="preserve">
+    <value>panelBaseContent</value>
+  </data>
+  <data name="&gt;&gt;panelBaseContent.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;panelBaseContent.Parent" xml:space="preserve">
+    <value>layoutControlBase</value>
+  </data>
+  <data name="&gt;&gt;panelBaseContent.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;labelHeader.Name" xml:space="preserve">
+    <value>labelHeader</value>
+  </data>
+  <data name="&gt;&gt;labelHeader.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;labelHeader.Parent" xml:space="preserve">
+    <value>layoutControlBase</value>
+  </data>
+  <data name="&gt;&gt;labelHeader.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>480, 250</value>
+  </data>
+  <data name="&gt;&gt;layoutGroupBase.Name" xml:space="preserve">
+    <value>layoutGroupBase</value>
+  </data>
+  <data name="&gt;&gt;layoutGroupBase.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;layoutItemFinishButton.Name" xml:space="preserve">
+    <value>layoutItemFinishButton</value>
+  </data>
+  <data name="&gt;&gt;layoutItemFinishButton.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;layoutItemNextButton.Name" xml:space="preserve">
+    <value>layoutItemNextButton</value>
+  </data>
+  <data name="&gt;&gt;layoutItemNextButton.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  <data name="&gt;&gt;layoutItemHeaderLabel.Name" xml:space="preserve">
+    <value>layoutItemHeaderLabel</value>
+  </data>
+  <data name="&gt;&gt;layoutItemHeaderLabel.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;layoutItemSeparatorTop.Name" xml:space="preserve">
+    <value>layoutItemSeparatorTop</value>
+  </data>
+  <data name="&gt;&gt;layoutItemSeparatorTop.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  <data name="&gt;&gt;layoutItemPreviousButton.Name" xml:space="preserve">
+    <value>layoutItemPreviousButton</value>
+  </data>
+  <data name="&gt;&gt;layoutItemPreviousButton.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;layoutItemBaseContentPanel.Name" xml:space="preserve">
+    <value>layoutItemBaseContentPanel</value>
+  </data>
+  <data name="&gt;&gt;layoutItemBaseContentPanel.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;layoutItemAdditionalButtons.Name" xml:space="preserve">
+    <value>layoutItemAdditionalButtons</value>
+  </data>
+  <data name="&gt;&gt;layoutItemAdditionalButtons.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>SelectColumnsPageView</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>DevExpress.DataAccess.UI.Wizard.Views.WizardViewBase, DevExpress.DataAccess.v21.2.UI, Culture=neutral</value>
+  </data>
+</root>

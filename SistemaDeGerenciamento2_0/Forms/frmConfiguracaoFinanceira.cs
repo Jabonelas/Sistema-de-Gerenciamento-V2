@@ -49,21 +49,6 @@ namespace SistemaDeGerenciamento2_0.Forms
             }
         }
 
-        private void BuscarDadosUsuario()
-        {
-            try
-            {
-                using (SistemaDeGerenciamento2_0Context db = new SistemaDeGerenciamento2_0Context())
-                {
-                    //var dadosUsuariop = db.tb_registro.
-                }
-            }
-            catch (Exception x)
-            {
-                MessageBox.Show(x.ToString());
-            }
-        }
-
         private void btnSalvar_Click(object sender, EventArgs e)
         {
             SalvandoDados();

@@ -1,0 +1,507 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="lblFormatOnlyCellsWith.AccessibleName" xml:space="preserve">
+    <value>Format only cells with</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"></assembly>
+  <data name="lblFormatOnlyCellsWith.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="lblFormatOnlyCellsWith.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 4</value>
+  </data>
+  <data name="lblFormatOnlyCellsWith.Size" type="System.Drawing.Size, System.Drawing">
+    <value>126, 13</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"></assembly>
+  <data name="conditionalFormattingFormatCellsThatContainControlLayoutControl.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="edtSecondValueRangeOperators.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1137, 21</value>
+  </data>
+  <data name="edtSecondValueRangeOperators.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>92, 20</value>
+  </data>
+  <data name="edtSecondValueRangeOperators.Properties.AccessibleName" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="edtSecondValueRangeOperators.Size" type="System.Drawing.Size, System.Drawing">
+    <value>92, 20</value>
+  </data>
+  <data name="edtSecondValueRangeOperators.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;edtSecondValueRangeOperators.Name" xml:space="preserve">
+    <value>edtSecondValueRangeOperators</value>
+  </data>
+  <data name="&gt;&gt;edtSecondValueRangeOperators.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.ReferenceEditControl, DevExpress.XtraSpreadsheet.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtSecondValueRangeOperators.Parent" xml:space="preserve">
+    <value>conditionalFormattingFormatCellsThatContainControlLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;edtSecondValueRangeOperators.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="lblAnd.AccessibleName" xml:space="preserve">
+    <value>and</value>
+  </data>
+  <data name="lblAnd.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1103, 24</value>
+  </data>
+  <data name="lblAnd.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>30, 0</value>
+  </data>
+  <data name="lblAnd.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 13</value>
+  </data>
+  <data name="lblAnd.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="lblAnd.Text" xml:space="preserve">
+    <value>and</value>
+  </data>
+  <data name="&gt;&gt;lblAnd.Name" xml:space="preserve">
+    <value>lblAnd</value>
+  </data>
+  <data name="&gt;&gt;lblAnd.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblAnd.Parent" xml:space="preserve">
+    <value>conditionalFormattingFormatCellsThatContainControlLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblAnd.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="edtFirstValueRangeOperators.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1008, 21</value>
+  </data>
+  <data name="edtFirstValueRangeOperators.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>91, 20</value>
+  </data>
+  <data name="edtFirstValueRangeOperators.Properties.AccessibleName" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="edtFirstValueRangeOperators.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 20</value>
+  </data>
+  <data name="edtFirstValueRangeOperators.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;edtFirstValueRangeOperators.Name" xml:space="preserve">
+    <value>edtFirstValueRangeOperators</value>
+  </data>
+  <data name="&gt;&gt;edtFirstValueRangeOperators.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.ReferenceEditControl, DevExpress.XtraSpreadsheet.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtFirstValueRangeOperators.Parent" xml:space="preserve">
+    <value>conditionalFormattingFormatCellsThatContainControlLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;edtFirstValueRangeOperators.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="edtValueCompareOperators.Location" type="System.Drawing.Point, System.Drawing">
+    <value>560, 21</value>
+  </data>
+  <data name="edtValueCompareOperators.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>220, 20</value>
+  </data>
+  <data name="edtValueCompareOperators.Properties.AccessibleName" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="edtValueCompareOperators.Size" type="System.Drawing.Size, System.Drawing">
+    <value>220, 20</value>
+  </data>
+  <data name="edtValueCompareOperators.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;edtValueCompareOperators.Name" xml:space="preserve">
+    <value>edtValueCompareOperators</value>
+  </data>
+  <data name="&gt;&gt;edtValueCompareOperators.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.ReferenceEditControl, DevExpress.XtraSpreadsheet.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtValueCompareOperators.Parent" xml:space="preserve">
+    <value>conditionalFormattingFormatCellsThatContainControlLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;edtValueCompareOperators.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="edtSpecificTextValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>784, 21</value>
+  </data>
+  <data name="edtSpecificTextValue.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>220, 20</value>
+  </data>
+  <data name="edtSpecificTextValue.Properties.AccessibleName" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="edtSpecificTextValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>220, 20</value>
+  </data>
+  <data name="edtSpecificTextValue.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;edtSpecificTextValue.Name" xml:space="preserve">
+    <value>edtSpecificTextValue</value>
+  </data>
+  <data name="&gt;&gt;edtSpecificTextValue.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.ReferenceEditControl, DevExpress.XtraSpreadsheet.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtSpecificTextValue.Parent" xml:space="preserve">
+    <value>conditionalFormattingFormatCellsThatContainControlLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;edtSpecificTextValue.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="edtCellValueOperations.Location" type="System.Drawing.Point, System.Drawing">
+    <value>113, 21</value>
+  </data>
+  <data name="edtCellValueOperations.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>145, 20</value>
+  </data>
+  <data name="edtCellValueOperations.Size" type="System.Drawing.Size, System.Drawing">
+    <value>145, 20</value>
+  </data>
+  <data name="edtCellValueOperations.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;edtCellValueOperations.Name" xml:space="preserve">
+    <value>edtCellValueOperations</value>
+  </data>
+  <data name="&gt;&gt;edtCellValueOperations.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.Forms.Design.SpreadsheetLookUpEdit, DevExpress.XtraSpreadsheet.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtCellValueOperations.Parent" xml:space="preserve">
+    <value>conditionalFormattingFormatCellsThatContainControlLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;edtCellValueOperations.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="edtSpecificText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>411, 21</value>
+  </data>
+  <data name="edtSpecificText.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>145, 20</value>
+  </data>
+  <data name="edtSpecificText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>145, 20</value>
+  </data>
+  <data name="edtSpecificText.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;edtSpecificText.Name" xml:space="preserve">
+    <value>edtSpecificText</value>
+  </data>
+  <data name="&gt;&gt;edtSpecificText.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.Forms.Design.SpreadsheetLookUpEdit, DevExpress.XtraSpreadsheet.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtSpecificText.Parent" xml:space="preserve">
+    <value>conditionalFormattingFormatCellsThatContainControlLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;edtSpecificText.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="edtDatesOccurring.Location" type="System.Drawing.Point, System.Drawing">
+    <value>262, 21</value>
+  </data>
+  <data name="edtDatesOccurring.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>145, 20</value>
+  </data>
+  <data name="edtDatesOccurring.Size" type="System.Drawing.Size, System.Drawing">
+    <value>145, 20</value>
+  </data>
+  <data name="edtDatesOccurring.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;edtDatesOccurring.Name" xml:space="preserve">
+    <value>edtDatesOccurring</value>
+  </data>
+  <data name="&gt;&gt;edtDatesOccurring.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.Forms.Design.SpreadsheetLookUpEdit, DevExpress.XtraSpreadsheet.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtDatesOccurring.Parent" xml:space="preserve">
+    <value>conditionalFormattingFormatCellsThatContainControlLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;edtDatesOccurring.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="edtValuesConditionalFormatting.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 21</value>
+  </data>
+  <data name="edtValuesConditionalFormatting.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>105, 20</value>
+  </data>
+  <data name="edtValuesConditionalFormatting.Properties.AccessibleName" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="edtValuesConditionalFormatting.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 20</value>
+  </data>
+  <data name="edtValuesConditionalFormatting.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;edtValuesConditionalFormatting.Name" xml:space="preserve">
+    <value>edtValuesConditionalFormatting</value>
+  </data>
+  <data name="&gt;&gt;edtValuesConditionalFormatting.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.Forms.Design.SpreadsheetLookUpEdit, DevExpress.XtraSpreadsheet.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtValuesConditionalFormatting.Parent" xml:space="preserve">
+    <value>conditionalFormattingFormatCellsThatContainControlLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;edtValuesConditionalFormatting.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"></assembly>
+  <data name="conditionalFormattingFormatCellsThatContainControlLayoutControl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="conditionalFormattingFormatCellsThatContainControlLayoutControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="conditionalFormattingFormatCellsThatContainControlLayoutControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1233, 45</value>
+  </data>
+  <data name="conditionalFormattingFormatCellsThatContainControlLayoutControl.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="conditionalFormattingFormatCellsThatContainControlLayoutControl.Text" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;conditionalFormattingFormatCellsThatContainControlLayoutControl.Name" xml:space="preserve">
+    <value>conditionalFormattingFormatCellsThatContainControlLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;conditionalFormattingFormatCellsThatContainControlLayoutControl.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControl, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;conditionalFormattingFormatCellsThatContainControlLayoutControl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;conditionalFormattingFormatCellsThatContainControlLayoutControl.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblFormatOnlyCellsWith.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="lblFormatOnlyCellsWith.Text" xml:space="preserve">
+    <value>F&amp;ormat only cells with:</value>
+  </data>
+  <data name="&gt;&gt;lblFormatOnlyCellsWith.Name" xml:space="preserve">
+    <value>lblFormatOnlyCellsWith</value>
+  </data>
+  <data name="&gt;&gt;lblFormatOnlyCellsWith.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblFormatOnlyCellsWith.Parent" xml:space="preserve">
+    <value>conditionalFormattingFormatCellsThatContainControlLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblFormatOnlyCellsWith.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1233, 45</value>
+  </data>
+  <data name="&gt;&gt;Root.Name" xml:space="preserve">
+    <value>Root</value>
+  </data>
+  <data name="&gt;&gt;Root.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblFormatOnlyCellsWithLayoutControlItem.Name" xml:space="preserve">
+    <value>lblFormatOnlyCellsWithLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;lblFormatOnlyCellsWithLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtValuesConditionalFormattingLayoutControlItem.Name" xml:space="preserve">
+    <value>edtValuesConditionalFormattingLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;edtValuesConditionalFormattingLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtCellValueOperationsLayoutControlItem.Name" xml:space="preserve">
+    <value>edtCellValueOperationsLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;edtCellValueOperationsLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtDatesOccurringLayoutControlItem.Name" xml:space="preserve">
+    <value>edtDatesOccurringLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;edtDatesOccurringLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtSpecificTextLayoutControlItem.Name" xml:space="preserve">
+    <value>edtSpecificTextLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;edtSpecificTextLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtValueCompareOperatorsLayoutControlItem.Name" xml:space="preserve">
+    <value>edtValueCompareOperatorsLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;edtValueCompareOperatorsLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtSpecificTextValueLayoutControlItem.Name" xml:space="preserve">
+    <value>edtSpecificTextValueLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;edtSpecificTextValueLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtFirstValueRangeOperatorsLayoutControlItem.Name" xml:space="preserve">
+    <value>edtFirstValueRangeOperatorsLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;edtFirstValueRangeOperatorsLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblAndLayoutControlItem.Name" xml:space="preserve">
+    <value>lblAndLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;lblAndLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtSecondValueRangeOperatorsLayoutControlItem.Name" xml:space="preserve">
+    <value>edtSecondValueRangeOperatorsLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;edtSecondValueRangeOperatorsLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>ConditionalFormattingFormatCellsThatContainControl</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.XtraUserControl, DevExpress.Utils.v21.2, Culture=neutral</value>
+  </data>
+</root>

@@ -1,0 +1,519 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnOk.AccessibleName" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"></assembly>
+  <data name="btnOk.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"></assembly>
+  <data name="btnOk.Location" type="System.Drawing.Point, System.Drawing">
+    <value>451, 249</value>
+  </data>
+  <data name="btnOk.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>76, 23</value>
+  </data>
+  <data name="btnOk.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 23</value>
+  </data>
+  <data name="lblNoArgumentsMessage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>30, 214</value>
+  </data>
+  <data name="lblNoArgumentsMessage.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>300, 0</value>
+  </data>
+  <data name="lblNoArgumentsMessage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>300, 1</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"></assembly>
+  <data name="lblNoArgumentsMessage.TabIndex" type="System.Int32, mscorlib">
+    <value>506</value>
+  </data>
+  <data name="&gt;&gt;lblNoArgumentsMessage.Name" xml:space="preserve">
+    <value>lblNoArgumentsMessage</value>
+  </data>
+  <data name="&gt;&gt;lblNoArgumentsMessage.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblNoArgumentsMessage.Parent" xml:space="preserve">
+    <value>layoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblNoArgumentsMessage.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="lblEqualSign.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="lblEqualSign.Location" type="System.Drawing.Point, System.Drawing">
+    <value>362, 192</value>
+  </data>
+  <data name="lblEqualSign.Size" type="System.Drawing.Size, System.Drawing">
+    <value>8, 13</value>
+  </data>
+  <data name="lblEqualSign.TabIndex" type="System.Int32, mscorlib">
+    <value>503</value>
+  </data>
+  <data name="lblEqualSign.Text" xml:space="preserve">
+    <value>=</value>
+  </data>
+  <data name="&gt;&gt;lblEqualSign.Name" xml:space="preserve">
+    <value>lblEqualSign</value>
+  </data>
+  <data name="&gt;&gt;lblEqualSign.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblEqualSign.Parent" xml:space="preserve">
+    <value>layoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblEqualSign.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="grpFunctionParameters.AccessibleName" xml:space="preserve">
+    <value>Function Parameters</value>
+  </data>
+  <data name="xtraScrollableControl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="xtraScrollableControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 20</value>
+  </data>
+  <data name="xtraScrollableControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>597, 154</value>
+  </data>
+  <data name="xtraScrollableControl.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;xtraScrollableControl.Name" xml:space="preserve">
+    <value>xtraScrollableControl</value>
+  </data>
+  <data name="&gt;&gt;xtraScrollableControl.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.Forms.Design.VerticalScrollableItemsControl, DevExpress.XtraSpreadsheet.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;xtraScrollableControl.Parent" xml:space="preserve">
+    <value>grpFunctionParameters</value>
+  </data>
+  <data name="&gt;&gt;xtraScrollableControl.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="grpFunctionParameters.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="grpFunctionParameters.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>570, 176</value>
+  </data>
+  <data name="grpFunctionParameters.Size" type="System.Drawing.Size, System.Drawing">
+    <value>601, 176</value>
+  </data>
+  <data name="grpFunctionParameters.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;grpFunctionParameters.Name" xml:space="preserve">
+    <value>grpFunctionParameters</value>
+  </data>
+  <data name="&gt;&gt;grpFunctionParameters.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.GroupControl, DevExpress.Utils.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;grpFunctionParameters.Parent" xml:space="preserve">
+    <value>layoutControl</value>
+  </data>
+  <data name="&gt;&gt;grpFunctionParameters.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="lblCurrentArgumentName.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="lblCurrentArgumentName.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="lblCurrentArgumentName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>209, 219</value>
+  </data>
+  <data name="lblCurrentArgumentName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 13</value>
+  </data>
+  <data name="lblCurrentArgumentName.TabIndex" type="System.Int32, mscorlib">
+    <value>504</value>
+  </data>
+  <data name="&gt;&gt;lblCurrentArgumentName.Name" xml:space="preserve">
+    <value>lblCurrentArgumentName</value>
+  </data>
+  <data name="&gt;&gt;lblCurrentArgumentName.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblCurrentArgumentName.Parent" xml:space="preserve">
+    <value>layoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblCurrentArgumentName.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="lblCurrentArgumentDescription.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="lblCurrentArgumentDescription.Location" type="System.Drawing.Point, System.Drawing">
+    <value>298, 219</value>
+  </data>
+  <data name="lblCurrentArgumentDescription.Size" type="System.Drawing.Size, System.Drawing">
+    <value>315, 1</value>
+  </data>
+  <data name="lblCurrentArgumentDescription.TabIndex" type="System.Int32, mscorlib">
+    <value>505</value>
+  </data>
+  <data name="&gt;&gt;lblCurrentArgumentDescription.Name" xml:space="preserve">
+    <value>lblCurrentArgumentDescription</value>
+  </data>
+  <data name="&gt;&gt;lblCurrentArgumentDescription.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblCurrentArgumentDescription.Parent" xml:space="preserve">
+    <value>layoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblCurrentArgumentDescription.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="btnCancel.AccessibleName" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="btnCancel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="btnCancel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>537, 249</value>
+  </data>
+  <data name="btnCancel.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>76, 23</value>
+  </data>
+  <data name="btnCancel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 23</value>
+  </data>
+  <data name="btnCancel.TabIndex" type="System.Int32, mscorlib">
+    <value>501</value>
+  </data>
+  <data name="btnCancel.Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.Name" xml:space="preserve">
+    <value>btnCancel</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.Parent" xml:space="preserve">
+    <value>layoutControl</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="lblFunctionDescription.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
+  </data>
+  <data name="lblFunctionDescription.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 209</value>
+  </data>
+  <data name="lblFunctionDescription.Size" type="System.Drawing.Size, System.Drawing">
+    <value>601, 1</value>
+  </data>
+  <data name="lblFunctionDescription.TabIndex" type="System.Int32, mscorlib">
+    <value>502</value>
+  </data>
+  <data name="&gt;&gt;lblFunctionDescription.Name" xml:space="preserve">
+    <value>lblFunctionDescription</value>
+  </data>
+  <data name="&gt;&gt;lblFunctionDescription.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblFunctionDescription.Parent" xml:space="preserve">
+    <value>layoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblFunctionDescription.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="lblResult.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="lblResult.Location" type="System.Drawing.Point, System.Drawing">
+    <value>385, 192</value>
+  </data>
+  <data name="lblResult.Size" type="System.Drawing.Size, System.Drawing">
+    <value>228, 13</value>
+  </data>
+  <data name="lblResult.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;lblResult.Name" xml:space="preserve">
+    <value>lblResult</value>
+  </data>
+  <data name="&gt;&gt;lblResult.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblResult.Parent" xml:space="preserve">
+    <value>layoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblResult.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="layoutControl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="layoutControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="layoutControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>642, 281</value>
+  </data>
+  <data name="layoutControl.TabIndex" type="System.Int32, mscorlib">
+    <value>506</value>
+  </data>
+  <data name="layoutControl.Text" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;layoutControl.Name" xml:space="preserve">
+    <value>layoutControl</value>
+  </data>
+  <data name="&gt;&gt;layoutControl.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControl, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;layoutControl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;layoutControl.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btnOk.TabIndex" type="System.Int32, mscorlib">
+    <value>500</value>
+  </data>
+  <data name="btnOk.Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="&gt;&gt;btnOk.Name" xml:space="preserve">
+    <value>btnOk</value>
+  </data>
+  <data name="&gt;&gt;btnOk.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;btnOk.Parent" xml:space="preserve">
+    <value>layoutControl</value>
+  </data>
+  <data name="&gt;&gt;btnOk.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>642, 281</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Function Arguments</value>
+  </data>
+  <data name="&gt;&gt;layoutControlGroup.Name" xml:space="preserve">
+    <value>layoutControlGroup</value>
+  </data>
+  <data name="&gt;&gt;layoutControlGroup.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;itmResult.Name" xml:space="preserve">
+    <value>itmResult</value>
+  </data>
+  <data name="&gt;&gt;itmResult.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;itmEqualSign.Name" xml:space="preserve">
+    <value>itmEqualSign</value>
+  </data>
+  <data name="&gt;&gt;itmEqualSign.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;eItmResult.Name" xml:space="preserve">
+    <value>eItmResult</value>
+  </data>
+  <data name="&gt;&gt;eItmResult.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;itmFunctionDescription.Name" xml:space="preserve">
+    <value>itmFunctionDescription</value>
+  </data>
+  <data name="&gt;&gt;itmFunctionDescription.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;itmCurrentArgumentDescription.Name" xml:space="preserve">
+    <value>itmCurrentArgumentDescription</value>
+  </data>
+  <data name="&gt;&gt;itmCurrentArgumentDescription.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;itmCurrentArgumentName.Name" xml:space="preserve">
+    <value>itmCurrentArgumentName</value>
+  </data>
+  <data name="&gt;&gt;itmCurrentArgumentName.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;ItmBtnCancel.Name" xml:space="preserve">
+    <value>ItmBtnCancel</value>
+  </data>
+  <data name="&gt;&gt;ItmBtnCancel.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;itmBtnOk.Name" xml:space="preserve">
+    <value>itmBtnOk</value>
+  </data>
+  <data name="&gt;&gt;itmBtnOk.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;eItmButtons.Name" xml:space="preserve">
+    <value>eItmButtons</value>
+  </data>
+  <data name="&gt;&gt;eItmButtons.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;itmGrp.Name" xml:space="preserve">
+    <value>itmGrp</value>
+  </data>
+  <data name="&gt;&gt;itmGrp.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;itmNoArgumentsMessage.Name" xml:space="preserve">
+    <value>itmNoArgumentsMessage</value>
+  </data>
+  <data name="&gt;&gt;itmNoArgumentsMessage.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem1.Name" xml:space="preserve">
+    <value>emptySpaceItem1</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FunctionArgumentsForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.Forms.ReferenceEditForm, DevExpress.XtraSpreadsheet.v21.2, Culture=neutral</value>
+  </data>
+</root>

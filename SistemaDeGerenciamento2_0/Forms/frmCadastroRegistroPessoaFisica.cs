@@ -25,6 +25,21 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private Form telaRegistro = null;
 
+        private string CPFouCNPJCadastrado = string.Empty;
+
+        public frmCadastroRegistroPessoaFisica(string _tipoCadastro, Form _telaRegistro, string _CPFouCNPJCadastrado)
+        {
+            InitializeComponent();
+
+            tipoCadastro = _tipoCadastro;
+
+            telaRegistro = _telaRegistro;
+
+            CPFouCNPJCadastrado = _CPFouCNPJCadastrado;
+
+            SetandoDados();
+        }
+
         public frmCadastroRegistroPessoaFisica(string _tipoCadastro, Form _telaRegistro)
         {
             InitializeComponent();

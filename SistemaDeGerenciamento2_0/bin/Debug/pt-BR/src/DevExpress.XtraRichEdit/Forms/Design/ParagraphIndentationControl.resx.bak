@@ -1,0 +1,459 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="lblLeft.AccessibleName" xml:space="preserve">
+    <value>Left</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"></assembly>
+  <data name="lblLeft.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 5</value>
+  </data>
+  <data name="lblLeft.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>88, 13</value>
+  </data>
+  <data name="lblLeft.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 13</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"></assembly>
+  <data name="paragraphIndentationLayoutControl.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="spnSpecial.Location" type="System.Drawing.Point, System.Drawing">
+    <value>362, 26</value>
+  </data>
+  <data name="spnSpecial.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>80, 20</value>
+  </data>
+  <data name="spnSpecial.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 20</value>
+  </data>
+  <data name="spnSpecial.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;spnSpecial.Name" xml:space="preserve">
+    <value>spnSpecial</value>
+  </data>
+  <data name="&gt;&gt;spnSpecial.Type" xml:space="preserve">
+    <value>DevExpress.XtraRichEdit.Design.RichTextIndentEdit, DevExpress.XtraRichEdit.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;spnSpecial.Parent" xml:space="preserve">
+    <value>paragraphIndentationLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;spnSpecial.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="lblBy.AccessibleName" xml:space="preserve">
+    <value>By</value>
+  </data>
+  <data name="lblBy.Location" type="System.Drawing.Point, System.Drawing">
+    <value>362, 2</value>
+  </data>
+  <data name="lblBy.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>80, 13</value>
+  </data>
+  <data name="lblBy.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 13</value>
+  </data>
+  <data name="lblBy.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="lblBy.Text" xml:space="preserve">
+    <value>B&amp;y:</value>
+  </data>
+  <data name="&gt;&gt;lblBy.Name" xml:space="preserve">
+    <value>lblBy</value>
+  </data>
+  <data name="&gt;&gt;lblBy.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblBy.Parent" xml:space="preserve">
+    <value>paragraphIndentationLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblBy.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="edtFirstLineIndent.Location" type="System.Drawing.Point, System.Drawing">
+    <value>229, 26</value>
+  </data>
+  <data name="edtFirstLineIndent.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>121, 20</value>
+  </data>
+  <data name="edtFirstLineIndent.Properties.AccessibleName" xml:space="preserve">
+    <value>Special</value>
+  </data>
+  <data name="edtFirstLineIndent.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 20</value>
+  </data>
+  <data name="edtFirstLineIndent.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;edtFirstLineIndent.Name" xml:space="preserve">
+    <value>edtFirstLineIndent</value>
+  </data>
+  <data name="&gt;&gt;edtFirstLineIndent.Type" xml:space="preserve">
+    <value>DevExpress.XtraRichEdit.Design.FirstLineIndentTypeEdit, DevExpress.XtraRichEdit.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtFirstLineIndent.Parent" xml:space="preserve">
+    <value>paragraphIndentationLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;edtFirstLineIndent.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="spnRightIndent.Location" type="System.Drawing.Point, System.Drawing">
+    <value>107, 26</value>
+  </data>
+  <data name="spnRightIndent.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="spnRightIndent.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="spnRightIndent.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;spnRightIndent.Name" xml:space="preserve">
+    <value>spnRightIndent</value>
+  </data>
+  <data name="&gt;&gt;spnRightIndent.Type" xml:space="preserve">
+    <value>DevExpress.XtraRichEdit.Design.RichTextIndentEdit, DevExpress.XtraRichEdit.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;spnRightIndent.Parent" xml:space="preserve">
+    <value>paragraphIndentationLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;spnRightIndent.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="lblSpecial.AccessibleName" xml:space="preserve">
+    <value>Special</value>
+  </data>
+  <data name="lblSpecial.Location" type="System.Drawing.Point, System.Drawing">
+    <value>229, 5</value>
+  </data>
+  <data name="lblSpecial.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>121, 13</value>
+  </data>
+  <data name="lblSpecial.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 13</value>
+  </data>
+  <data name="lblSpecial.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="lblSpecial.Text" xml:space="preserve">
+    <value>&amp;Special:</value>
+  </data>
+  <data name="&gt;&gt;lblSpecial.Name" xml:space="preserve">
+    <value>lblSpecial</value>
+  </data>
+  <data name="&gt;&gt;lblSpecial.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblSpecial.Parent" xml:space="preserve">
+    <value>paragraphIndentationLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblSpecial.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="spnLeftIndent.Location" type="System.Drawing.Point, System.Drawing">
+    <value>107, 2</value>
+  </data>
+  <data name="spnLeftIndent.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="spnLeftIndent.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="spnLeftIndent.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;spnLeftIndent.Name" xml:space="preserve">
+    <value>spnLeftIndent</value>
+  </data>
+  <data name="&gt;&gt;spnLeftIndent.Type" xml:space="preserve">
+    <value>DevExpress.XtraRichEdit.Design.RichTextIndentEdit, DevExpress.XtraRichEdit.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;spnLeftIndent.Parent" xml:space="preserve">
+    <value>paragraphIndentationLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;spnLeftIndent.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="lblRight.AccessibleName" xml:space="preserve">
+    <value>Right</value>
+  </data>
+  <data name="lblRight.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 29</value>
+  </data>
+  <data name="lblRight.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>88, 13</value>
+  </data>
+  <data name="lblRight.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 13</value>
+  </data>
+  <data name="lblRight.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="lblRight.Text" xml:space="preserve">
+    <value>After te&amp;xt:</value>
+  </data>
+  <data name="&gt;&gt;lblRight.Name" xml:space="preserve">
+    <value>lblRight</value>
+  </data>
+  <data name="&gt;&gt;lblRight.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblRight.Parent" xml:space="preserve">
+    <value>paragraphIndentationLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblRight.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"></assembly>
+  <data name="paragraphIndentationLayoutControl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="paragraphIndentationLayoutControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="paragraphIndentationLayoutControl.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="paragraphIndentationLayoutControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>444, 48</value>
+  </data>
+  <data name="paragraphIndentationLayoutControl.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="paragraphIndentationLayoutControl.Text" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;paragraphIndentationLayoutControl.Name" xml:space="preserve">
+    <value>paragraphIndentationLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;paragraphIndentationLayoutControl.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControl, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;paragraphIndentationLayoutControl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;paragraphIndentationLayoutControl.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblLeft.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblLeft.Text" xml:space="preserve">
+    <value>Befor&amp;e text:</value>
+  </data>
+  <data name="&gt;&gt;lblLeft.Name" xml:space="preserve">
+    <value>lblLeft</value>
+  </data>
+  <data name="&gt;&gt;lblLeft.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblLeft.Parent" xml:space="preserve">
+    <value>paragraphIndentationLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblLeft.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>444, 48</value>
+  </data>
+  <data name="&gt;&gt;Root.Name" xml:space="preserve">
+    <value>Root</value>
+  </data>
+  <data name="&gt;&gt;Root.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;paragraphIndentationLayoutGroup.Name" xml:space="preserve">
+    <value>paragraphIndentationLayoutGroup</value>
+  </data>
+  <data name="&gt;&gt;paragraphIndentationLayoutGroup.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;beforeTextLableLayoutControl.Name" xml:space="preserve">
+    <value>beforeTextLableLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;beforeTextLableLayoutControl.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;afterTextLabelLayoutControl.Name" xml:space="preserve">
+    <value>afterTextLabelLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;afterTextLabelLayoutControl.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;specialLabelLayoutControl.Name" xml:space="preserve">
+    <value>specialLabelLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;specialLabelLayoutControl.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;byLabelLayoutControl.Name" xml:space="preserve">
+    <value>byLabelLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;byLabelLayoutControl.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;leftIndentSpinEditLayoutControl.Name" xml:space="preserve">
+    <value>leftIndentSpinEditLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;leftIndentSpinEditLayoutControl.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;roghtIndentSpinEditLayoutControl.Name" xml:space="preserve">
+    <value>roghtIndentSpinEditLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;roghtIndentSpinEditLayoutControl.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;firstLineIndentEditLayoutControl.Name" xml:space="preserve">
+    <value>firstLineIndentEditLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;firstLineIndentEditLayoutControl.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;specialSpinEditLayoutControl.Name" xml:space="preserve">
+    <value>specialSpinEditLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;specialSpinEditLayoutControl.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>ParagraphIndentationControl</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.XtraUserControl, DevExpress.Utils.v21.2, Culture=neutral</value>
+  </data>
+</root>

@@ -1,0 +1,1518 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"></assembly>
+  <data name="edtName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>172, 70</value>
+  </data>
+  <data name="edtName.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>350, 20</value>
+  </data>
+  <data name="edtName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>350, 20</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"></assembly>
+  <data name="tableStyleFormLayoutControl.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="btnCancel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="btnCancel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>447, 401</value>
+  </data>
+  <data name="btnCancel.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btnCancel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btnCancel.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="btnCancel.Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.Name" xml:space="preserve">
+    <value>btnCancel</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.Parent" xml:space="preserve">
+    <value>tableStyleFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="btnFormat.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <metadata name="popupMenuFormat.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="barFontButtonItem1.Caption" xml:space="preserve">
+    <value>Font...</value>
+  </data>
+  <data name="barParagraphButtonItem1.Caption" xml:space="preserve">
+    <value>Paragraph...</value>
+  </data>
+  <data name="barTabsButtonItem1.Caption" xml:space="preserve">
+    <value>Tabs...</value>
+  </data>
+  <metadata name="barManager1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>143, 17</value>
+  </metadata>
+  <data name="repositoryItemFontEdit2.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="fontEditItem1.EditWidth" type="System.Int32, mscorlib">
+    <value>130</value>
+  </data>
+  <data name="repositoryItemRichEditFontSizeEdit5.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"></assembly>
+  <data name="barDockControlLeft.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="barDockControlLeft.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="barDockControlLeft.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 149</value>
+  </data>
+  <data name="&gt;&gt;barDockControlLeft.Name" xml:space="preserve">
+    <value>barDockControlLeft</value>
+  </data>
+  <data name="&gt;&gt;barDockControlLeft.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;barDockControlLeft.Parent" xml:space="preserve">
+    <value>previewRichEditControl</value>
+  </data>
+  <data name="&gt;&gt;barDockControlLeft.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="barDockControlRight.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="barDockControlRight.Location" type="System.Drawing.Point, System.Drawing">
+    <value>500, 0</value>
+  </data>
+  <data name="barDockControlRight.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 149</value>
+  </data>
+  <data name="&gt;&gt;barDockControlRight.Name" xml:space="preserve">
+    <value>barDockControlRight</value>
+  </data>
+  <data name="&gt;&gt;barDockControlRight.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;barDockControlRight.Parent" xml:space="preserve">
+    <value>previewRichEditControl</value>
+  </data>
+  <data name="&gt;&gt;barDockControlRight.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="barDockControlBottom.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="barDockControlBottom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 149</value>
+  </data>
+  <data name="barDockControlBottom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>500, 0</value>
+  </data>
+  <data name="&gt;&gt;barDockControlBottom.Name" xml:space="preserve">
+    <value>barDockControlBottom</value>
+  </data>
+  <data name="&gt;&gt;barDockControlBottom.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;barDockControlBottom.Parent" xml:space="preserve">
+    <value>previewRichEditControl</value>
+  </data>
+  <data name="&gt;&gt;barDockControlBottom.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="barDockControlTop.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="barDockControlTop.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="barDockControlTop.Size" type="System.Drawing.Size, System.Drawing">
+    <value>500, 0</value>
+  </data>
+  <data name="&gt;&gt;barDockControlTop.Name" xml:space="preserve">
+    <value>barDockControlTop</value>
+  </data>
+  <data name="&gt;&gt;barDockControlTop.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;barDockControlTop.Parent" xml:space="preserve">
+    <value>previewRichEditControl</value>
+  </data>
+  <data name="&gt;&gt;barDockControlTop.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="previewRichEditControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 248</value>
+  </data>
+  <data name="previewRichEditControl.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>500, 149</value>
+  </data>
+  <data name="previewRichEditControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>500, 149</value>
+  </data>
+  <data name="previewRichEditControl.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="previewRichEditControl.Text" xml:space="preserve">
+    <value> </value>
+  </data>
+  <data name="&gt;&gt;previewRichEditControl.Name" xml:space="preserve">
+    <value>previewRichEditControl</value>
+  </data>
+  <data name="&gt;&gt;previewRichEditControl.Type" xml:space="preserve">
+    <value>DevExpress.XtraRichEdit.Native.PreviewRichEditControl, DevExpress.XtraRichEdit.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;previewRichEditControl.Parent" xml:space="preserve">
+    <value>tableStyleFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;previewRichEditControl.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="colorEditItem1.Caption" xml:space="preserve">
+    <value>Font Color</value>
+  </data>
+  <data name="repositoryItemOfficeColorPickEdit3.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="colorEditItem1.EditWidth" type="System.Int32, mscorlib">
+    <value>130</value>
+  </data>
+  <data name="toggleFontBoldItem1.Caption" xml:space="preserve">
+    <value>Bold</value>
+  </data>
+  <data name="toggleFontItalicItem1.Caption" xml:space="preserve">
+    <value>Italic</value>
+  </data>
+  <data name="toggleFontUnderlineItem1.Caption" xml:space="preserve">
+    <value>Underline</value>
+  </data>
+  <data name="standaloneBarDockControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 159</value>
+  </data>
+  <data name="standaloneBarDockControl1.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>500, 32</value>
+  </data>
+  <data name="standaloneBarDockControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>500, 32</value>
+  </data>
+  <data name="standaloneBarDockControl1.Text" xml:space="preserve">
+    <value>standaloneBarDockControl3</value>
+  </data>
+  <data name="&gt;&gt;standaloneBarDockControl1.Name" xml:space="preserve">
+    <value>standaloneBarDockControl1</value>
+  </data>
+  <data name="&gt;&gt;standaloneBarDockControl1.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.StandaloneBarDockControl, DevExpress.XtraBars.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;standaloneBarDockControl1.Parent" xml:space="preserve">
+    <value>tableStyleFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;standaloneBarDockControl1.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="barFontFormatting.Text" xml:space="preserve">
+    <value>Custom 4</value>
+  </data>
+  <data name="repositoryItemBorderLineStyle4.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="changeTableBorderLineStyleItem1.EditWidth" type="System.Int32, mscorlib">
+    <value>130</value>
+  </data>
+  <data name="repositoryItemBorderLineWeight1.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="changeTableBorderLineWeightItem1.EditWidth" type="System.Int32, mscorlib">
+    <value>130</value>
+  </data>
+  <data name="changeTableAlignmentItem.Caption" xml:space="preserve">
+    <value>Alignment</value>
+  </data>
+  <data name="changeTableAlignmentItem.Description" xml:space="preserve">
+    <value>Customize the alignment of the selected cells.</value>
+  </data>
+  <data name="toggleTableCellsTopLeftAlignmentItem1.Caption" xml:space="preserve">
+    <value>Align Top Left</value>
+  </data>
+  <data name="toggleTableCellsMiddleLeftAlignmentItem1.Caption" xml:space="preserve">
+    <value>Align Center Left</value>
+  </data>
+  <data name="toggleTableCellsBottomLeftAlignmentItem1.Caption" xml:space="preserve">
+    <value>Align Bottom Left</value>
+  </data>
+  <data name="toggleTableCellsTopCenterAlignmentItem1.Caption" xml:space="preserve">
+    <value>Align Top Center</value>
+  </data>
+  <data name="toggleTableCellsMiddleCenterAlignmentItem1.Caption" xml:space="preserve">
+    <value>Align Center</value>
+  </data>
+  <data name="toggleTableCellsBottomCenterAlignmentItem1.Caption" xml:space="preserve">
+    <value>Align Bottom Center</value>
+  </data>
+  <data name="toggleTableCellsTopRightAlignmentItem1.Caption" xml:space="preserve">
+    <value>Align Top Right</value>
+  </data>
+  <data name="toggleTableCellsMiddleRightAlignmentItem1.Caption" xml:space="preserve">
+    <value>Align Center Right</value>
+  </data>
+  <data name="toggleTableCellsBottomRightAlignmentItem1.Caption" xml:space="preserve">
+    <value>Align Bottom Right</value>
+  </data>
+  <data name="standaloneBarDockControl2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 212</value>
+  </data>
+  <data name="standaloneBarDockControl2.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>500, 32</value>
+  </data>
+  <data name="standaloneBarDockControl2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>500, 32</value>
+  </data>
+  <data name="standaloneBarDockControl2.Text" xml:space="preserve">
+    <value>standaloneBarDockControl2</value>
+  </data>
+  <data name="&gt;&gt;standaloneBarDockControl2.Name" xml:space="preserve">
+    <value>standaloneBarDockControl2</value>
+  </data>
+  <data name="&gt;&gt;standaloneBarDockControl2.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.StandaloneBarDockControl, DevExpress.XtraBars.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;standaloneBarDockControl2.Parent" xml:space="preserve">
+    <value>tableStyleFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;standaloneBarDockControl2.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="barParagraphFormatting.Text" xml:space="preserve">
+    <value>Paragraph</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="btnOk.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="btnOk.Location" type="System.Drawing.Point, System.Drawing">
+    <value>368, 401</value>
+  </data>
+  <data name="btnOk.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btnOk.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btnOk.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="btnOk.Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="&gt;&gt;btnOk.Name" xml:space="preserve">
+    <value>btnOk</value>
+  </data>
+  <data name="&gt;&gt;btnOk.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;btnOk.Parent" xml:space="preserve">
+    <value>tableStyleFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;btnOk.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>551, 442</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterParent</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Modify Style</value>
+  </data>
+  <data name="&gt;&gt;popupMenuFormat.Name" xml:space="preserve">
+    <value>popupMenuFormat</value>
+  </data>
+  <data name="&gt;&gt;popupMenuFormat.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.PopupMenu, DevExpress.XtraBars.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;barFontButtonItem1.Name" xml:space="preserve">
+    <value>barFontButtonItem1</value>
+  </data>
+  <data name="&gt;&gt;barFontButtonItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;barParagraphButtonItem1.Name" xml:space="preserve">
+    <value>barParagraphButtonItem1</value>
+  </data>
+  <data name="&gt;&gt;barParagraphButtonItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;barTabsButtonItem1.Name" xml:space="preserve">
+    <value>barTabsButtonItem1</value>
+  </data>
+  <data name="&gt;&gt;barTabsButtonItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;barManager1.Name" xml:space="preserve">
+    <value>barManager1</value>
+  </data>
+  <data name="&gt;&gt;barManager1.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarManager, DevExpress.XtraBars.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;barFontFormatting.Name" xml:space="preserve">
+    <value>barFontFormatting</value>
+  </data>
+  <data name="&gt;&gt;barFontFormatting.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Bar, DevExpress.XtraBars.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;fontEditItem1.Name" xml:space="preserve">
+    <value>fontEditItem1</value>
+  </data>
+  <data name="&gt;&gt;fontEditItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarEditItem, DevExpress.XtraBars.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemFontEdit2.Name" xml:space="preserve">
+    <value>repositoryItemFontEdit2</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemFontEdit2.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemFontEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;fontSizeEditItem1.Name" xml:space="preserve">
+    <value>fontSizeEditItem1</value>
+  </data>
+  <data name="&gt;&gt;fontSizeEditItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarEditItem, DevExpress.XtraBars.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemRichEditFontSizeEdit5.Name" xml:space="preserve">
+    <value>repositoryItemRichEditFontSizeEdit5</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemRichEditFontSizeEdit5.Type" xml:space="preserve">
+    <value>DevExpress.XtraRichEdit.Design.RepositoryItemRichEditFontSizeEdit, DevExpress.XtraRichEdit.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;colorEditItem1.Name" xml:space="preserve">
+    <value>colorEditItem1</value>
+  </data>
+  <data name="&gt;&gt;colorEditItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarEditItem, DevExpress.XtraBars.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemOfficeColorPickEdit3.Name" xml:space="preserve">
+    <value>repositoryItemOfficeColorPickEdit3</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemOfficeColorPickEdit3.Type" xml:space="preserve">
+    <value>DevExpress.Office.UI.RepositoryItemOfficeColorPickEdit, DevExpress.XtraBars.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;toggleFontBoldItem1.Name" xml:space="preserve">
+    <value>toggleFontBoldItem1</value>
+  </data>
+  <data name="&gt;&gt;toggleFontBoldItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarCheckItem, DevExpress.XtraBars.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;toggleFontItalicItem1.Name" xml:space="preserve">
+    <value>toggleFontItalicItem1</value>
+  </data>
+  <data name="&gt;&gt;toggleFontItalicItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarCheckItem, DevExpress.XtraBars.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;toggleFontUnderlineItem1.Name" xml:space="preserve">
+    <value>toggleFontUnderlineItem1</value>
+  </data>
+  <data name="&gt;&gt;toggleFontUnderlineItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarCheckItem, DevExpress.XtraBars.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;barParagraphFormatting.Name" xml:space="preserve">
+    <value>barParagraphFormatting</value>
+  </data>
+  <data name="&gt;&gt;barParagraphFormatting.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Bar, DevExpress.XtraBars.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;changeTableBorderLineStyleItem1.Name" xml:space="preserve">
+    <value>changeTableBorderLineStyleItem1</value>
+  </data>
+  <data name="&gt;&gt;changeTableBorderLineStyleItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraRichEdit.UI.ChangeTableBorderLineStyleItem, DevExpress.XtraRichEdit.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemBorderLineStyle4.Name" xml:space="preserve">
+    <value>repositoryItemBorderLineStyle4</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemBorderLineStyle4.Type" xml:space="preserve">
+    <value>DevExpress.XtraRichEdit.Forms.Design.RepositoryItemBorderLineStyle, DevExpress.XtraRichEdit.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;changeTableBorderLineWeightItem1.Name" xml:space="preserve">
+    <value>changeTableBorderLineWeightItem1</value>
+  </data>
+  <data name="&gt;&gt;changeTableBorderLineWeightItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraRichEdit.UI.ChangeTableBorderLineWeightItem, DevExpress.XtraRichEdit.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemBorderLineWeight1.Name" xml:space="preserve">
+    <value>repositoryItemBorderLineWeight1</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemBorderLineWeight1.Type" xml:space="preserve">
+    <value>DevExpress.XtraRichEdit.Forms.Design.RepositoryItemBorderLineWeight, DevExpress.XtraRichEdit.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;changeTableBorderColorItem1.Name" xml:space="preserve">
+    <value>changeTableBorderColorItem1</value>
+  </data>
+  <data name="&gt;&gt;changeTableBorderColorItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraRichEdit.UI.ChangeTableBorderColorItem, DevExpress.XtraRichEdit.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;changeTableBordersItem1.Name" xml:space="preserve">
+    <value>changeTableBordersItem1</value>
+  </data>
+  <data name="&gt;&gt;changeTableBordersItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraRichEdit.UI.ChangeTableBordersItem, DevExpress.XtraRichEdit.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;toggleTableCellsBottomBorderItem1.Name" xml:space="preserve">
+    <value>toggleTableCellsBottomBorderItem1</value>
+  </data>
+  <data name="&gt;&gt;toggleTableCellsBottomBorderItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraRichEdit.Native.ToggleConditionalTableCellsBottomBorderItem, DevExpress.XtraRichEdit.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;toggleTableCellsTopBorderItem1.Name" xml:space="preserve">
+    <value>toggleTableCellsTopBorderItem1</value>
+  </data>
+  <data name="&gt;&gt;toggleTableCellsTopBorderItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraRichEdit.Native.ToggleConditionalTableCellsTopBorderItem, DevExpress.XtraRichEdit.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;toggleTableCellsLeftBorderItem1.Name" xml:space="preserve">
+    <value>toggleTableCellsLeftBorderItem1</value>
+  </data>
+  <data name="&gt;&gt;toggleTableCellsLeftBorderItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraRichEdit.Native.ToggleConditionalTableCellsLeftBorderItem, DevExpress.XtraRichEdit.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;toggleTableCellsRightBorderItem1.Name" xml:space="preserve">
+    <value>toggleTableCellsRightBorderItem1</value>
+  </data>
+  <data name="&gt;&gt;toggleTableCellsRightBorderItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraRichEdit.Native.ToggleConditionalTableCellsRightBorderItem, DevExpress.XtraRichEdit.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;resetTableCellsAllBordersItem1.Name" xml:space="preserve">
+    <value>resetTableCellsAllBordersItem1</value>
+  </data>
+  <data name="&gt;&gt;resetTableCellsAllBordersItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraRichEdit.Native.ResetConditionalTableCellsAllBordersItem, DevExpress.XtraRichEdit.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;toggleTableCellsAllBordersItem1.Name" xml:space="preserve">
+    <value>toggleTableCellsAllBordersItem1</value>
+  </data>
+  <data name="&gt;&gt;toggleTableCellsAllBordersItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraRichEdit.Native.ToggleConditionalTableCellsAllBordersItem, DevExpress.XtraRichEdit.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;toggleTableCellsOutsideBorderItem1.Name" xml:space="preserve">
+    <value>toggleTableCellsOutsideBorderItem1</value>
+  </data>
+  <data name="&gt;&gt;toggleTableCellsOutsideBorderItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraRichEdit.Native.ToggleConditionalTableCellsOutsideBorderItem, DevExpress.XtraRichEdit.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;toggleTableCellsInsideBorderItem1.Name" xml:space="preserve">
+    <value>toggleTableCellsInsideBorderItem1</value>
+  </data>
+  <data name="&gt;&gt;toggleTableCellsInsideBorderItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraRichEdit.Native.ToggleConditionalTableCellsInsideBorderItem, DevExpress.XtraRichEdit.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;toggleTableCellsInsideHorizontalBorderItem1.Name" xml:space="preserve">
+    <value>toggleTableCellsInsideHorizontalBorderItem1</value>
+  </data>
+  <data name="&gt;&gt;toggleTableCellsInsideHorizontalBorderItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraRichEdit.Native.ToggleConditionalTableCellsInsideHorizontalBorderItem, DevExpress.XtraRichEdit.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;toggleTableCellsInsideVerticalBorderItem1.Name" xml:space="preserve">
+    <value>toggleTableCellsInsideVerticalBorderItem1</value>
+  </data>
+  <data name="&gt;&gt;toggleTableCellsInsideVerticalBorderItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraRichEdit.Native.ToggleConditionalTableCellsInsideVerticalBorderItem, DevExpress.XtraRichEdit.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;changeTableCellsShadingItem1.Name" xml:space="preserve">
+    <value>changeTableCellsShadingItem1</value>
+  </data>
+  <data name="&gt;&gt;changeTableCellsShadingItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraRichEdit.Native.ChangeConditionalStyleShadingItem, DevExpress.XtraRichEdit.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;changeTableAlignmentItem.Name" xml:space="preserve">
+    <value>changeTableAlignmentItem</value>
+  </data>
+  <data name="&gt;&gt;changeTableAlignmentItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarSubItem, DevExpress.XtraBars.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;toggleTableCellsTopLeftAlignmentItem1.Name" xml:space="preserve">
+    <value>toggleTableCellsTopLeftAlignmentItem1</value>
+  </data>
+  <data name="&gt;&gt;toggleTableCellsTopLeftAlignmentItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;toggleTableCellsMiddleLeftAlignmentItem1.Name" xml:space="preserve">
+    <value>toggleTableCellsMiddleLeftAlignmentItem1</value>
+  </data>
+  <data name="&gt;&gt;toggleTableCellsMiddleLeftAlignmentItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;toggleTableCellsBottomLeftAlignmentItem1.Name" xml:space="preserve">
+    <value>toggleTableCellsBottomLeftAlignmentItem1</value>
+  </data>
+  <data name="&gt;&gt;toggleTableCellsBottomLeftAlignmentItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;toggleTableCellsTopCenterAlignmentItem1.Name" xml:space="preserve">
+    <value>toggleTableCellsTopCenterAlignmentItem1</value>
+  </data>
+  <data name="&gt;&gt;toggleTableCellsTopCenterAlignmentItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;toggleTableCellsMiddleCenterAlignmentItem1.Name" xml:space="preserve">
+    <value>toggleTableCellsMiddleCenterAlignmentItem1</value>
+  </data>
+  <data name="&gt;&gt;toggleTableCellsMiddleCenterAlignmentItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;toggleTableCellsBottomCenterAlignmentItem1.Name" xml:space="preserve">
+    <value>toggleTableCellsBottomCenterAlignmentItem1</value>
+  </data>
+  <data name="&gt;&gt;toggleTableCellsBottomCenterAlignmentItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;toggleTableCellsTopRightAlignmentItem1.Name" xml:space="preserve">
+    <value>toggleTableCellsTopRightAlignmentItem1</value>
+  </data>
+  <data name="&gt;&gt;toggleTableCellsTopRightAlignmentItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;toggleTableCellsMiddleRightAlignmentItem1.Name" xml:space="preserve">
+    <value>toggleTableCellsMiddleRightAlignmentItem1</value>
+  </data>
+  <data name="&gt;&gt;toggleTableCellsMiddleRightAlignmentItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;toggleTableCellsBottomRightAlignmentItem1.Name" xml:space="preserve">
+    <value>toggleTableCellsBottomRightAlignmentItem1</value>
+  </data>
+  <data name="&gt;&gt;toggleTableCellsBottomRightAlignmentItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemRichEditColorEdit1.Name" xml:space="preserve">
+    <value>repositoryItemRichEditColorEdit1</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemRichEditColorEdit1.Type" xml:space="preserve">
+    <value>DevExpress.Office.UI.RepositoryItemOfficeColorEdit, DevExpress.XtraBars.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemOfficeColorPickEdit1.Name" xml:space="preserve">
+    <value>repositoryItemOfficeColorPickEdit1</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemOfficeColorPickEdit1.Type" xml:space="preserve">
+    <value>DevExpress.Office.UI.RepositoryItemOfficeColorPickEdit, DevExpress.XtraBars.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemOfficeColorPickEdit2.Name" xml:space="preserve">
+    <value>repositoryItemOfficeColorPickEdit2</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemOfficeColorPickEdit2.Type" xml:space="preserve">
+    <value>DevExpress.Office.UI.RepositoryItemOfficeColorPickEdit, DevExpress.XtraBars.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemColorEdit3.Name" xml:space="preserve">
+    <value>repositoryItemColorEdit3</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemColorEdit3.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemColorEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemOfficeColorEdit1.Name" xml:space="preserve">
+    <value>repositoryItemOfficeColorEdit1</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemOfficeColorEdit1.Type" xml:space="preserve">
+    <value>DevExpress.Office.UI.RepositoryItemOfficeColorEdit, DevExpress.XtraBars.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemFontEdit6.Name" xml:space="preserve">
+    <value>repositoryItemFontEdit6</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemFontEdit6.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemFontEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemColorPickEdit3.Name" xml:space="preserve">
+    <value>repositoryItemColorPickEdit3</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemColorPickEdit3.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemColorPickEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;Root.Name" xml:space="preserve">
+    <value>Root</value>
+  </data>
+  <data name="&gt;&gt;Root.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblSelectedStyleLayoutControlItem.Name" xml:space="preserve">
+    <value>lblSelectedStyleLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;lblSelectedStyleLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblCurrentStyleLayoutControlItem.Name" xml:space="preserve">
+    <value>lblCurrentStyleLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;lblCurrentStyleLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;cbCurrentStyleLayoutControlItem.Name" xml:space="preserve">
+    <value>cbCurrentStyleLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;cbCurrentStyleLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblPropertiesLayoutControlItem.Name" xml:space="preserve">
+    <value>lblPropertiesLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;lblPropertiesLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblNameLayoutControlItem.Name" xml:space="preserve">
+    <value>lblNameLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;lblNameLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtNameLayoutControlItem.Name" xml:space="preserve">
+    <value>edtNameLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;edtNameLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem1.Name" xml:space="preserve">
+    <value>emptySpaceItem1</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem2.Name" xml:space="preserve">
+    <value>emptySpaceItem2</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem2.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblStyleBasedOnLayoutControlItem.Name" xml:space="preserve">
+    <value>lblStyleBasedOnLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;lblStyleBasedOnLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;cbParentLayoutControlItem.Name" xml:space="preserve">
+    <value>cbParentLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;cbParentLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem3.Name" xml:space="preserve">
+    <value>emptySpaceItem3</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem3.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblFormattingLayoutControlItem.Name" xml:space="preserve">
+    <value>lblFormattingLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;lblFormattingLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblApplyFormattingToLayoutControlItem.Name" xml:space="preserve">
+    <value>lblApplyFormattingToLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;lblApplyFormattingToLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;cbApplyToLayoutControlItem.Name" xml:space="preserve">
+    <value>cbApplyToLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;cbApplyToLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem4.Name" xml:space="preserve">
+    <value>emptySpaceItem4</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem4.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;standaloneBarDockControl1LayoutControlItem.Name" xml:space="preserve">
+    <value>standaloneBarDockControl1LayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;standaloneBarDockControl1LayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblSeparatorLayoutControlItem.Name" xml:space="preserve">
+    <value>lblSeparatorLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;lblSeparatorLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;standaloneBarDockControl2LayoutControlItem.Name" xml:space="preserve">
+    <value>standaloneBarDockControl2LayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;standaloneBarDockControl2LayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;previewRichEditControlLayoutControlItem.Name" xml:space="preserve">
+    <value>previewRichEditControlLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;previewRichEditControlLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;btnFormatLayoutControlItem.Name" xml:space="preserve">
+    <value>btnFormatLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;btnFormatLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;btnOkLayoutControlItem.Name" xml:space="preserve">
+    <value>btnOkLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;btnOkLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;btnCancelLayoutControlItem.Name" xml:space="preserve">
+    <value>btnCancelLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;btnCancelLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem5.Name" xml:space="preserve">
+    <value>emptySpaceItem5</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem5.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemColorPickEdit2.Name" xml:space="preserve">
+    <value>repositoryItemColorPickEdit2</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemColorPickEdit2.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemColorPickEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemColorEdit2.Name" xml:space="preserve">
+    <value>repositoryItemColorEdit2</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemColorEdit2.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemColorEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemBorderLineStyle3.Name" xml:space="preserve">
+    <value>repositoryItemBorderLineStyle3</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemBorderLineStyle3.Type" xml:space="preserve">
+    <value>DevExpress.XtraRichEdit.Forms.Design.RepositoryItemBorderLineStyle, DevExpress.XtraRichEdit.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemBorderLineStyle2.Name" xml:space="preserve">
+    <value>repositoryItemBorderLineStyle2</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemBorderLineStyle2.Type" xml:space="preserve">
+    <value>DevExpress.XtraRichEdit.Forms.Design.RepositoryItemBorderLineStyle, DevExpress.XtraRichEdit.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemFontEdit1.Name" xml:space="preserve">
+    <value>repositoryItemFontEdit1</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemFontEdit1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemFontEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemRichEditFontSizeEdit1.Name" xml:space="preserve">
+    <value>repositoryItemRichEditFontSizeEdit1</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemRichEditFontSizeEdit1.Type" xml:space="preserve">
+    <value>DevExpress.XtraRichEdit.Design.RepositoryItemRichEditFontSizeEdit, DevExpress.XtraRichEdit.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemRichEditStyleEdit1.Name" xml:space="preserve">
+    <value>repositoryItemRichEditStyleEdit1</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemRichEditStyleEdit1.Type" xml:space="preserve">
+    <value>DevExpress.XtraRichEdit.Design.RepositoryItemRichEditStyleEdit, DevExpress.XtraRichEdit.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemComboBox1.Name" xml:space="preserve">
+    <value>repositoryItemComboBox1</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemComboBox1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemComboBox, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemColorEdit1.Name" xml:space="preserve">
+    <value>repositoryItemColorEdit1</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemColorEdit1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemColorEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemRichEditFontSizeEdit2.Name" xml:space="preserve">
+    <value>repositoryItemRichEditFontSizeEdit2</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemRichEditFontSizeEdit2.Type" xml:space="preserve">
+    <value>DevExpress.XtraRichEdit.Design.RepositoryItemRichEditFontSizeEdit, DevExpress.XtraRichEdit.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemRichEditFontSizeEdit3.Name" xml:space="preserve">
+    <value>repositoryItemRichEditFontSizeEdit3</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemRichEditFontSizeEdit3.Type" xml:space="preserve">
+    <value>DevExpress.XtraRichEdit.Design.RepositoryItemRichEditFontSizeEdit, DevExpress.XtraRichEdit.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemRichEditFontSizeEdit4.Name" xml:space="preserve">
+    <value>repositoryItemRichEditFontSizeEdit4</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemRichEditFontSizeEdit4.Type" xml:space="preserve">
+    <value>DevExpress.XtraRichEdit.Design.RepositoryItemRichEditFontSizeEdit, DevExpress.XtraRichEdit.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemCheckEdit1.Name" xml:space="preserve">
+    <value>repositoryItemCheckEdit1</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemCheckEdit1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemFontEdit3.Name" xml:space="preserve">
+    <value>repositoryItemFontEdit3</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemFontEdit3.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemFontEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemRichEditFontSizeEdit6.Name" xml:space="preserve">
+    <value>repositoryItemRichEditFontSizeEdit6</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemRichEditFontSizeEdit6.Type" xml:space="preserve">
+    <value>DevExpress.XtraRichEdit.Design.RepositoryItemRichEditFontSizeEdit, DevExpress.XtraRichEdit.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemFontEdit4.Name" xml:space="preserve">
+    <value>repositoryItemFontEdit4</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemFontEdit4.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemFontEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemRichEditFontSizeEdit7.Name" xml:space="preserve">
+    <value>repositoryItemRichEditFontSizeEdit7</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemRichEditFontSizeEdit7.Type" xml:space="preserve">
+    <value>DevExpress.XtraRichEdit.Design.RepositoryItemRichEditFontSizeEdit, DevExpress.XtraRichEdit.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemRichEditStyleEdit2.Name" xml:space="preserve">
+    <value>repositoryItemRichEditStyleEdit2</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemRichEditStyleEdit2.Type" xml:space="preserve">
+    <value>DevExpress.XtraRichEdit.Design.RepositoryItemRichEditStyleEdit, DevExpress.XtraRichEdit.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemFontEdit5.Name" xml:space="preserve">
+    <value>repositoryItemFontEdit5</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemFontEdit5.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemFontEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemRichEditFontSizeEdit8.Name" xml:space="preserve">
+    <value>repositoryItemRichEditFontSizeEdit8</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemRichEditFontSizeEdit8.Type" xml:space="preserve">
+    <value>DevExpress.XtraRichEdit.Design.RepositoryItemRichEditFontSizeEdit, DevExpress.XtraRichEdit.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemRichEditStyleEdit3.Name" xml:space="preserve">
+    <value>repositoryItemRichEditStyleEdit3</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemRichEditStyleEdit3.Type" xml:space="preserve">
+    <value>DevExpress.XtraRichEdit.Design.RepositoryItemRichEditStyleEdit, DevExpress.XtraRichEdit.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemRichEditStyleEdit4.Name" xml:space="preserve">
+    <value>repositoryItemRichEditStyleEdit4</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemRichEditStyleEdit4.Type" xml:space="preserve">
+    <value>DevExpress.XtraRichEdit.Design.RepositoryItemRichEditStyleEdit, DevExpress.XtraRichEdit.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemRichEditStyleEdit5.Name" xml:space="preserve">
+    <value>repositoryItemRichEditStyleEdit5</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemRichEditStyleEdit5.Type" xml:space="preserve">
+    <value>DevExpress.XtraRichEdit.Design.RepositoryItemRichEditStyleEdit, DevExpress.XtraRichEdit.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemColorPickEdit1.Name" xml:space="preserve">
+    <value>repositoryItemColorPickEdit1</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemColorPickEdit1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemColorPickEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemBorderLineStyle1.Name" xml:space="preserve">
+    <value>repositoryItemBorderLineStyle1</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemBorderLineStyle1.Type" xml:space="preserve">
+    <value>DevExpress.XtraRichEdit.Forms.Design.RepositoryItemBorderLineStyle, DevExpress.XtraRichEdit.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;richEditBarController1.Name" xml:space="preserve">
+    <value>richEditBarController1</value>
+  </data>
+  <data name="&gt;&gt;richEditBarController1.Type" xml:space="preserve">
+    <value>DevExpress.XtraRichEdit.UI.RichEditBarController, DevExpress.XtraRichEdit.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>TableStyleForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.XtraForm, DevExpress.Utils.v21.2, Culture=neutral</value>
+  </data>
+  <data name="repositoryItemOfficeColorPickEdit1.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="repositoryItemOfficeColorPickEdit2.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="repositoryItemColorEdit3.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="repositoryItemOfficeColorEdit1.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="repositoryItemFontEdit6.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="repositoryItemColorPickEdit3.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="btnFormat.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 401</value>
+  </data>
+  <data name="btnFormat.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btnFormat.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btnFormat.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="btnFormat.Text" xml:space="preserve">
+    <value>F&amp;ormat</value>
+  </data>
+  <data name="&gt;&gt;btnFormat.Name" xml:space="preserve">
+    <value>btnFormat</value>
+  </data>
+  <data name="&gt;&gt;btnFormat.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.DropDownButton, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;btnFormat.Parent" xml:space="preserve">
+    <value>tableStyleFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;btnFormat.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="lblApplyFormattingTo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 138</value>
+  </data>
+  <data name="lblApplyFormattingTo.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>97, 13</value>
+  </data>
+  <data name="lblApplyFormattingTo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 13</value>
+  </data>
+  <data name="lblApplyFormattingTo.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="lblApplyFormattingTo.Text" xml:space="preserve">
+    <value>&amp;Apply formatting to:</value>
+  </data>
+  <data name="&gt;&gt;lblApplyFormattingTo.Name" xml:space="preserve">
+    <value>lblApplyFormattingTo</value>
+  </data>
+  <data name="&gt;&gt;lblApplyFormattingTo.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblApplyFormattingTo.Parent" xml:space="preserve">
+    <value>tableStyleFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblApplyFormattingTo.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="lblSeparator.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 195</value>
+  </data>
+  <data name="lblSeparator.Size" type="System.Drawing.Size, System.Drawing">
+    <value>510, 13</value>
+  </data>
+  <data name="lblSeparator.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;lblSeparator.Name" xml:space="preserve">
+    <value>lblSeparator</value>
+  </data>
+  <data name="&gt;&gt;lblSeparator.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblSeparator.Parent" xml:space="preserve">
+    <value>tableStyleFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblSeparator.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="lblCurrentStyle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 32</value>
+  </data>
+  <data name="lblCurrentStyle.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>67, 13</value>
+  </data>
+  <data name="lblCurrentStyle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 13</value>
+  </data>
+  <data name="lblCurrentStyle.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="lblCurrentStyle.Text" xml:space="preserve">
+    <value>Current style:</value>
+  </data>
+  <data name="&gt;&gt;lblCurrentStyle.Name" xml:space="preserve">
+    <value>lblCurrentStyle</value>
+  </data>
+  <data name="&gt;&gt;lblCurrentStyle.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblCurrentStyle.Parent" xml:space="preserve">
+    <value>tableStyleFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblCurrentStyle.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="lblStyleBasedOn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 97</value>
+  </data>
+  <data name="lblStyleBasedOn.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>75, 13</value>
+  </data>
+  <data name="lblStyleBasedOn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 13</value>
+  </data>
+  <data name="lblStyleBasedOn.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="lblStyleBasedOn.Text" xml:space="preserve">
+    <value>Style &amp;based on:</value>
+  </data>
+  <data name="&gt;&gt;lblStyleBasedOn.Name" xml:space="preserve">
+    <value>lblStyleBasedOn</value>
+  </data>
+  <data name="&gt;&gt;lblStyleBasedOn.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblStyleBasedOn.Parent" xml:space="preserve">
+    <value>tableStyleFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblStyleBasedOn.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="lblSelectedStyle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="lblSelectedStyle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>510, 13</value>
+  </data>
+  <data name="lblSelectedStyle.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="lblSelectedStyle.Text" xml:space="preserve">
+    <value>Select Style</value>
+  </data>
+  <data name="&gt;&gt;lblSelectedStyle.Name" xml:space="preserve">
+    <value>lblSelectedStyle</value>
+  </data>
+  <data name="&gt;&gt;lblSelectedStyle.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblSelectedStyle.Parent" xml:space="preserve">
+    <value>tableStyleFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblSelectedStyle.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="lblFormatting.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 118</value>
+  </data>
+  <data name="lblFormatting.Size" type="System.Drawing.Size, System.Drawing">
+    <value>510, 13</value>
+  </data>
+  <data name="lblFormatting.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="lblFormatting.Text" xml:space="preserve">
+    <value>Formatting</value>
+  </data>
+  <data name="&gt;&gt;lblFormatting.Name" xml:space="preserve">
+    <value>lblFormatting</value>
+  </data>
+  <data name="&gt;&gt;lblFormatting.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblFormatting.Parent" xml:space="preserve">
+    <value>tableStyleFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblFormatting.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="lblName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 73</value>
+  </data>
+  <data name="lblName.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>31, 13</value>
+  </data>
+  <data name="lblName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 13</value>
+  </data>
+  <data name="lblName.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="lblName.Text" xml:space="preserve">
+    <value>&amp;Name:</value>
+  </data>
+  <data name="&gt;&gt;lblName.Name" xml:space="preserve">
+    <value>lblName</value>
+  </data>
+  <data name="&gt;&gt;lblName.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblName.Parent" xml:space="preserve">
+    <value>tableStyleFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblName.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="cbApplyTo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>172, 135</value>
+  </data>
+  <data name="cbApplyTo.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>350, 20</value>
+  </data>
+  <data name="cbApplyTo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>350, 20</value>
+  </data>
+  <data name="cbApplyTo.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;cbApplyTo.Name" xml:space="preserve">
+    <value>cbApplyTo</value>
+  </data>
+  <data name="&gt;&gt;cbApplyTo.Type" xml:space="preserve">
+    <value>DevExpress.XtraRichEdit.Design.ConditionalTypeEdit, DevExpress.XtraRichEdit.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;cbApplyTo.Parent" xml:space="preserve">
+    <value>tableStyleFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;cbApplyTo.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="cbCurrentStyle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>172, 29</value>
+  </data>
+  <data name="cbCurrentStyle.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>350, 20</value>
+  </data>
+  <data name="cbCurrentStyle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>350, 20</value>
+  </data>
+  <data name="cbCurrentStyle.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;cbCurrentStyle.Name" xml:space="preserve">
+    <value>cbCurrentStyle</value>
+  </data>
+  <data name="&gt;&gt;cbCurrentStyle.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ComboBoxEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;cbCurrentStyle.Parent" xml:space="preserve">
+    <value>tableStyleFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;cbCurrentStyle.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="lblProperties.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 53</value>
+  </data>
+  <data name="lblProperties.Size" type="System.Drawing.Size, System.Drawing">
+    <value>510, 13</value>
+  </data>
+  <data name="lblProperties.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="lblProperties.Text" xml:space="preserve">
+    <value>Properties</value>
+  </data>
+  <data name="&gt;&gt;lblProperties.Name" xml:space="preserve">
+    <value>lblProperties</value>
+  </data>
+  <data name="&gt;&gt;lblProperties.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblProperties.Parent" xml:space="preserve">
+    <value>tableStyleFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblProperties.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="cbParent.Location" type="System.Drawing.Point, System.Drawing">
+    <value>172, 94</value>
+  </data>
+  <data name="cbParent.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>350, 20</value>
+  </data>
+  <data name="cbParent.Size" type="System.Drawing.Size, System.Drawing">
+    <value>350, 20</value>
+  </data>
+  <data name="cbParent.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;cbParent.Name" xml:space="preserve">
+    <value>cbParent</value>
+  </data>
+  <data name="&gt;&gt;cbParent.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ComboBoxEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;cbParent.Parent" xml:space="preserve">
+    <value>tableStyleFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;cbParent.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="tableStyleFormLayoutControl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tableStyleFormLayoutControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="tableStyleFormLayoutControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>534, 436</value>
+  </data>
+  <data name="tableStyleFormLayoutControl.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="tableStyleFormLayoutControl.Text" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;tableStyleFormLayoutControl.Name" xml:space="preserve">
+    <value>tableStyleFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;tableStyleFormLayoutControl.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControl, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;tableStyleFormLayoutControl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;tableStyleFormLayoutControl.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="edtName.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;edtName.Name" xml:space="preserve">
+    <value>edtName</value>
+  </data>
+  <data name="&gt;&gt;edtName.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtName.Parent" xml:space="preserve">
+    <value>tableStyleFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;edtName.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="repositoryItemColorPickEdit2.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="repositoryItemColorEdit2.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="repositoryItemBorderLineStyle3.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="repositoryItemBorderLineStyle2.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="repositoryItemFontEdit1.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="repositoryItemRichEditFontSizeEdit1.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="repositoryItemRichEditStyleEdit1.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="repositoryItemComboBox1.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="repositoryItemColorEdit1.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="repositoryItemRichEditFontSizeEdit2.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="repositoryItemRichEditFontSizeEdit3.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="repositoryItemRichEditFontSizeEdit4.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="repositoryItemCheckEdit1.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="repositoryItemCheckEdit1.Caption" xml:space="preserve">
+    <value>Check</value>
+  </data>
+  <data name="repositoryItemFontEdit3.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="repositoryItemRichEditFontSizeEdit6.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="repositoryItemFontEdit4.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="repositoryItemRichEditFontSizeEdit7.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="repositoryItemRichEditStyleEdit2.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="repositoryItemFontEdit5.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="repositoryItemRichEditFontSizeEdit8.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="repositoryItemRichEditStyleEdit3.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="repositoryItemRichEditStyleEdit4.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="repositoryItemRichEditStyleEdit5.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="repositoryItemColorPickEdit1.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="repositoryItemBorderLineStyle1.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <metadata name="richEditBarController1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>268, 17</value>
+  </metadata>
+</root>

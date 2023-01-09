@@ -154,7 +154,7 @@
             // pcbExibirSenha
             // 
             this.pcbExibirSenha.EditValue = global::SistemaDeGerenciamento2_0.Properties.Resources.olho_20;
-            this.pcbExibirSenha.Location = new System.Drawing.Point(115, 252);
+            this.pcbExibirSenha.Location = new System.Drawing.Point(111, 252);
             this.pcbExibirSenha.Name = "pcbExibirSenha";
             this.pcbExibirSenha.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.pcbExibirSenha.Properties.Appearance.Options.UseBackColor = true;

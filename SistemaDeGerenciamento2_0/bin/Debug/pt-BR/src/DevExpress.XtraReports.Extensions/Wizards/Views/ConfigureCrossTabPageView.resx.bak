@@ -1,0 +1,711 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="&gt;&gt;layoutControlBase.Name" xml:space="preserve">
+    <value>layoutControlBase</value>
+  </data>
+  <data name="&gt;&gt;layoutControlBase.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControl, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;layoutControlBase.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;layoutControlBase.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;buttonFinish.Name" xml:space="preserve">
+    <value>buttonFinish</value>
+  </data>
+  <data name="&gt;&gt;buttonFinish.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;buttonFinish.Parent" xml:space="preserve">
+    <value>layoutControlBase</value>
+  </data>
+  <data name="&gt;&gt;buttonFinish.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;buttonNext.Name" xml:space="preserve">
+    <value>buttonNext</value>
+  </data>
+  <data name="&gt;&gt;buttonNext.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;buttonNext.Parent" xml:space="preserve">
+    <value>layoutControlBase</value>
+  </data>
+  <data name="&gt;&gt;buttonNext.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;buttonPrevious.Name" xml:space="preserve">
+    <value>buttonPrevious</value>
+  </data>
+  <data name="&gt;&gt;buttonPrevious.Type" xml:space="preserve">
+    <value>DevExpress.DataAccess.UI.Native.BackButton, DevExpress.DataAccess.v21.2.UI, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;buttonPrevious.Parent" xml:space="preserve">
+    <value>layoutControlBase</value>
+  </data>
+  <data name="&gt;&gt;buttonPrevious.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"></assembly>
+  <data name="fieldList.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 33</value>
+  </data>
+  <data name="fieldList.Size" type="System.Drawing.Size, System.Drawing">
+    <value>370, 170</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"></assembly>
+  <data name="fieldList.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;fieldList.Name" xml:space="preserve">
+    <value>fieldList</value>
+  </data>
+  <data name="&gt;&gt;fieldList.Type" xml:space="preserve">
+    <value>DevExpress.XtraReports.Wizards.Native.SingleDataMemberFieldListTreeView, DevExpress.XtraReports.v21.2.Extensions, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;fieldList.Parent" xml:space="preserve">
+    <value>layoutControl</value>
+  </data>
+  <data name="&gt;&gt;fieldList.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="rowFieldInfoGridControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 238</value>
+  </data>
+  <data name="rowFieldName.Caption" xml:space="preserve">
+    <value>Field Name</value>
+  </data>
+  <data name="repositoryItemRowFieldName.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="rowFieldName.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="rowFieldName.VisibleIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="rowFieldName.Width" type="System.Int32, mscorlib">
+    <value>217</value>
+  </data>
+  <data name="rowFieldSortOrder.Caption" xml:space="preserve">
+    <value>Sort Order</value>
+  </data>
+  <data name="repositoryItemRowSortOrder.NullText" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="rowFieldSortOrder.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="rowFieldSortOrder.VisibleIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="rowFieldSortOrder.Width" type="System.Int32, mscorlib">
+    <value>125</value>
+  </data>
+  <data name="rowFieldDeleteButton.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="rowFieldDeleteButton.VisibleIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="rowFieldDeleteButton.Width" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="repositoryItemButtonEdit2.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="rowFieldInfoGridControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>370, 171</value>
+  </data>
+  <data name="rowFieldInfoGridControl.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;rowFieldInfoGridControl.Name" xml:space="preserve">
+    <value>rowFieldInfoGridControl</value>
+  </data>
+  <data name="&gt;&gt;rowFieldInfoGridControl.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;rowFieldInfoGridControl.Parent" xml:space="preserve">
+    <value>layoutControl</value>
+  </data>
+  <data name="&gt;&gt;rowFieldInfoGridControl.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="columnFieldInfoGridControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>395, 33</value>
+  </data>
+  <data name="columnFieldName.Caption" xml:space="preserve">
+    <value>Field Name</value>
+  </data>
+  <data name="repositoryItemColumnFieldName.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="columnFieldName.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="columnFieldName.VisibleIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="columnFieldName.Width" type="System.Int32, mscorlib">
+    <value>218</value>
+  </data>
+  <data name="columnFieldSortOrder.Caption" xml:space="preserve">
+    <value>Sort Order</value>
+  </data>
+  <data name="repositoryItemColumnSortOrder.NullText" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="columnFieldSortOrder.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="columnFieldSortOrder.VisibleIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="columnFieldSortOrder.Width" type="System.Int32, mscorlib">
+    <value>125</value>
+  </data>
+  <data name="columnFieldDeleteButton.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="columnFieldDeleteButton.VisibleIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="columnFieldDeleteButton.Width" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="repositoryItemButtonEdit1.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="columnFieldInfoGridControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>370, 170</value>
+  </data>
+  <data name="columnFieldInfoGridControl.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;columnFieldInfoGridControl.Name" xml:space="preserve">
+    <value>columnFieldInfoGridControl</value>
+  </data>
+  <data name="&gt;&gt;columnFieldInfoGridControl.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;columnFieldInfoGridControl.Parent" xml:space="preserve">
+    <value>layoutControl</value>
+  </data>
+  <data name="&gt;&gt;columnFieldInfoGridControl.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="dataFieldInfoGridControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>395, 238</value>
+  </data>
+  <data name="dataFieldName.Caption" xml:space="preserve">
+    <value>Field Name</value>
+  </data>
+  <data name="repositoryItemDataFieldName.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="dataFieldName.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="dataFieldName.VisibleIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="dataFieldName.Width" type="System.Int32, mscorlib">
+    <value>209</value>
+  </data>
+  <data name="dataFieldSummaryType.Caption" xml:space="preserve">
+    <value>Summary Type</value>
+  </data>
+  <data name="repositoryItemDataSummaryType.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="repositoryItemDataSummaryType.NullText" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="dataFieldSummaryType.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="dataFieldSummaryType.VisibleIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="dataFieldSummaryType.Width" type="System.Int32, mscorlib">
+    <value>121</value>
+  </data>
+  <data name="dataFieldDeleteButton.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="dataFieldDeleteButton.VisibleIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="dataFieldDeleteButton.Width" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="repositoryItemButtonEdit3.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="dataFieldInfoGridControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>370, 171</value>
+  </data>
+  <data name="dataFieldInfoGridControl.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;dataFieldInfoGridControl.Name" xml:space="preserve">
+    <value>dataFieldInfoGridControl</value>
+  </data>
+  <data name="&gt;&gt;dataFieldInfoGridControl.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;dataFieldInfoGridControl.Parent" xml:space="preserve">
+    <value>layoutControl</value>
+  </data>
+  <data name="&gt;&gt;dataFieldInfoGridControl.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"></assembly>
+  <data name="layoutControl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="layoutControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="lcGroupAvailableFields.Text" xml:space="preserve">
+    <value>Available Fields</value>
+  </data>
+  <data name="lcGroupColumns.Text" xml:space="preserve">
+    <value>Columns</value>
+  </data>
+  <data name="lcGroupRows.Text" xml:space="preserve">
+    <value>Rows</value>
+  </data>
+  <data name="lcGroupData.Text" xml:space="preserve">
+    <value>Data</value>
+  </data>
+  <data name="layoutControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>776, 420</value>
+  </data>
+  <data name="layoutControl.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;layoutControl.Name" xml:space="preserve">
+    <value>layoutControl</value>
+  </data>
+  <data name="&gt;&gt;layoutControl.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControl, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;layoutControl.Parent" xml:space="preserve">
+    <value>panelBaseContent</value>
+  </data>
+  <data name="&gt;&gt;layoutControl.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;panelBaseContent.Name" xml:space="preserve">
+    <value>panelBaseContent</value>
+  </data>
+  <data name="&gt;&gt;panelBaseContent.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;panelBaseContent.Parent" xml:space="preserve">
+    <value>layoutControlBase</value>
+  </data>
+  <data name="&gt;&gt;panelBaseContent.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;labelHeader.Name" xml:space="preserve">
+    <value>labelHeader</value>
+  </data>
+  <data name="&gt;&gt;labelHeader.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;labelHeader.Parent" xml:space="preserve">
+    <value>layoutControlBase</value>
+  </data>
+  <data name="&gt;&gt;labelHeader.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;separatorTop.Name" xml:space="preserve">
+    <value>separatorTop</value>
+  </data>
+  <data name="&gt;&gt;separatorTop.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;separatorTop.Parent" xml:space="preserve">
+    <value>layoutControlBase</value>
+  </data>
+  <data name="&gt;&gt;separatorTop.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;panelAdditionalButtons.Name" xml:space="preserve">
+    <value>panelAdditionalButtons</value>
+  </data>
+  <data name="&gt;&gt;panelAdditionalButtons.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;panelAdditionalButtons.Parent" xml:space="preserve">
+    <value>layoutControlBase</value>
+  </data>
+  <data name="&gt;&gt;panelAdditionalButtons.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="&gt;&gt;layoutGroupBase.Name" xml:space="preserve">
+    <value>layoutGroupBase</value>
+  </data>
+  <data name="&gt;&gt;layoutGroupBase.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;layoutItemFinishButton.Name" xml:space="preserve">
+    <value>layoutItemFinishButton</value>
+  </data>
+  <data name="&gt;&gt;layoutItemFinishButton.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;layoutItemNextButton.Name" xml:space="preserve">
+    <value>layoutItemNextButton</value>
+  </data>
+  <data name="&gt;&gt;layoutItemNextButton.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;layoutItemHeaderLabel.Name" xml:space="preserve">
+    <value>layoutItemHeaderLabel</value>
+  </data>
+  <data name="&gt;&gt;layoutItemHeaderLabel.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;layoutItemSeparatorTop.Name" xml:space="preserve">
+    <value>layoutItemSeparatorTop</value>
+  </data>
+  <data name="&gt;&gt;layoutItemSeparatorTop.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;layoutItemPreviousButton.Name" xml:space="preserve">
+    <value>layoutItemPreviousButton</value>
+  </data>
+  <data name="&gt;&gt;layoutItemPreviousButton.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;layoutItemBaseContentPanel.Name" xml:space="preserve">
+    <value>layoutItemBaseContentPanel</value>
+  </data>
+  <data name="&gt;&gt;layoutItemBaseContentPanel.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;layoutItemAdditionalButtons.Name" xml:space="preserve">
+    <value>layoutItemAdditionalButtons</value>
+  </data>
+  <data name="&gt;&gt;layoutItemAdditionalButtons.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;gridViewRows.Name" xml:space="preserve">
+    <value>gridViewRows</value>
+  </data>
+  <data name="&gt;&gt;gridViewRows.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;rowFieldName.Name" xml:space="preserve">
+    <value>rowFieldName</value>
+  </data>
+  <data name="&gt;&gt;rowFieldName.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemRowFieldName.Name" xml:space="preserve">
+    <value>repositoryItemRowFieldName</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemRowFieldName.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemPopupContainerEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;rowFieldSortOrder.Name" xml:space="preserve">
+    <value>rowFieldSortOrder</value>
+  </data>
+  <data name="&gt;&gt;rowFieldSortOrder.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemRowSortOrder.Name" xml:space="preserve">
+    <value>repositoryItemRowSortOrder</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemRowSortOrder.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;rowFieldDeleteButton.Name" xml:space="preserve">
+    <value>rowFieldDeleteButton</value>
+  </data>
+  <data name="&gt;&gt;rowFieldDeleteButton.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemButtonEdit2.Name" xml:space="preserve">
+    <value>repositoryItemButtonEdit2</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemButtonEdit2.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;gridViewColumns.Name" xml:space="preserve">
+    <value>gridViewColumns</value>
+  </data>
+  <data name="&gt;&gt;gridViewColumns.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;columnFieldName.Name" xml:space="preserve">
+    <value>columnFieldName</value>
+  </data>
+  <data name="&gt;&gt;columnFieldName.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemColumnFieldName.Name" xml:space="preserve">
+    <value>repositoryItemColumnFieldName</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemColumnFieldName.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemPopupContainerEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;columnFieldSortOrder.Name" xml:space="preserve">
+    <value>columnFieldSortOrder</value>
+  </data>
+  <data name="&gt;&gt;columnFieldSortOrder.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemColumnSortOrder.Name" xml:space="preserve">
+    <value>repositoryItemColumnSortOrder</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemColumnSortOrder.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;columnFieldDeleteButton.Name" xml:space="preserve">
+    <value>columnFieldDeleteButton</value>
+  </data>
+  <data name="&gt;&gt;columnFieldDeleteButton.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemButtonEdit1.Name" xml:space="preserve">
+    <value>repositoryItemButtonEdit1</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemButtonEdit1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;gridViewData.Name" xml:space="preserve">
+    <value>gridViewData</value>
+  </data>
+  <data name="&gt;&gt;gridViewData.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;dataFieldName.Name" xml:space="preserve">
+    <value>dataFieldName</value>
+  </data>
+  <data name="&gt;&gt;dataFieldName.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemDataFieldName.Name" xml:space="preserve">
+    <value>repositoryItemDataFieldName</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemDataFieldName.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemPopupContainerEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;dataFieldSummaryType.Name" xml:space="preserve">
+    <value>dataFieldSummaryType</value>
+  </data>
+  <data name="&gt;&gt;dataFieldSummaryType.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemDataSummaryType.Name" xml:space="preserve">
+    <value>repositoryItemDataSummaryType</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemDataSummaryType.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;dataFieldDeleteButton.Name" xml:space="preserve">
+    <value>dataFieldDeleteButton</value>
+  </data>
+  <data name="&gt;&gt;dataFieldDeleteButton.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemButtonEdit3.Name" xml:space="preserve">
+    <value>repositoryItemButtonEdit3</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemButtonEdit3.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;Root.Name" xml:space="preserve">
+    <value>Root</value>
+  </data>
+  <data name="&gt;&gt;Root.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lcGroupAvailableFields.Name" xml:space="preserve">
+    <value>lcGroupAvailableFields</value>
+  </data>
+  <data name="&gt;&gt;lcGroupAvailableFields.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem4.Name" xml:space="preserve">
+    <value>layoutControlItem4</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem4.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lcGroupColumns.Name" xml:space="preserve">
+    <value>lcGroupColumns</value>
+  </data>
+  <data name="&gt;&gt;lcGroupColumns.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem2.Name" xml:space="preserve">
+    <value>layoutControlItem2</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem2.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lcGroupRows.Name" xml:space="preserve">
+    <value>lcGroupRows</value>
+  </data>
+  <data name="&gt;&gt;lcGroupRows.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem3.Name" xml:space="preserve">
+    <value>layoutControlItem3</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem3.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lcGroupData.Name" xml:space="preserve">
+    <value>lcGroupData</value>
+  </data>
+  <data name="&gt;&gt;lcGroupData.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem1.Name" xml:space="preserve">
+    <value>layoutControlItem1</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>ConfigureCrossTabPageView</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>DevExpress.DataAccess.UI.Wizard.Views.WizardViewBase, DevExpress.DataAccess.v21.2.UI, Culture=neutral</value>
+  </data>
+</root>

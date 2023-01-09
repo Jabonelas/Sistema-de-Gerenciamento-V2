@@ -1,4 +1,5 @@
-﻿using SistemaDeGerenciamento2_0.Class;
+﻿using Microsoft.Win32;
+using SistemaDeGerenciamento2_0.Class;
 using SistemaDeGerenciamento2_0.Context;
 using SistemaDeGerenciamento2_0.Models;
 using SistemaDeGerenciamento2_0.Properties;
@@ -16,6 +17,9 @@ namespace SistemaDeGerenciamento2_0.Forms
         private int FK_InformacoesComerciais = 0;
 
         private string tipoCadastro = string.Empty;
+        private string CPFouCNPJCadastrado = string.Empty;
+
+        private bool IsAlteracaoCadastro = false;
 
         private ApiCorreios Api = new ApiCorreios();
 
@@ -32,9 +36,149 @@ namespace SistemaDeGerenciamento2_0.Forms
             SetandoDados();
         }
 
+        public frmCadastroRegistroPessoaJuridica(string _tipoCadastro, Form _telaRegistro, string _CPFouCNPJCadastrado)
+        {
+            InitializeComponent();
+
+            telaRegistro = _telaRegistro;
+
+            tipoCadastro = _tipoCadastro;
+
+            CPFouCNPJCadastrado = _CPFouCNPJCadastrado;
+
+            ExibirDadosCadastro();
+
+            IsAlteracaoCadastro = true;
+        }
+
+        private void AlterarDadosCadastro()
+        {
+            try
+            {
+                using (SistemaDeGerenciamento2_0Context db = new SistemaDeGerenciamento2_0Context())
+                {
+                    var dadosCadastroParaAlterar = (from registro in db.tb_registro
+                                                    join endereco in db.tb_enderecos
+                                                    on registro.fk_endereco equals endereco.id_endereco
+                                                    join informacoes in db.tb_informacoes_comerciais
+                                                    on registro.fk_informacao_comercial equals informacoes.id_informacao_comercial
+                                                    where registro.rg_cnpj == CPFouCNPJCadastrado
+                                                    select new
+                                                    {
+                                                        Registro = registro,
+                                                        Endereco = endereco,
+                                                        Informacoes = informacoes
+                                                    }).ToList();
+
+                    foreach (var item in dadosCadastroParaAlterar)
+                    {
+                        //Registro
+                        item.Registro.rg_cnpj = txtCNPJ.Text;
+                        item.Registro.rg_data_cadastro = Convert.ToDateTime(txtDataCadastro.Text);
+                        item.Registro.rg_nome_fantasia = txtNomeFantasia.Text;
+                        item.Registro.rg_razao_social = txtRazaoSocial.Text;
+                        item.Registro.rg_email_xml = txtEmailXML.Text;
+                        item.Registro.rg_inscricao_estadual = txtInscricaoEstadual.Text;
+                        item.Registro.rg_inscricao_municipal = txtInscricaoMunicipal.Text;
+                        item.Registro.rg_email = txtEmail.Text;
+                        item.Registro.rg_celular = txtCelular.Text;
+                        item.Registro.rg_telefone_fixo = txtTelefoneFixo.Text;
+                        item.Registro.rg_observacoes = txtObservacoes.Text;
+                        //Endereço
+                        item.Endereco.ed_tipo = cmbTipoEndereco.Text;
+                        item.Endereco.ed_cep = txtCEP.Text;
+                        item.Endereco.ed_estado = cmbEstado.Text;
+                        item.Endereco.ed_cidade = txtCidade.Text;
+                        item.Endereco.ed_bairro = txtBairro.Text;
+                        item.Endereco.ed_locgradouro = txtLogradouro.Text;
+                        item.Endereco.ed_numero = txtNumero.Text;
+                        item.Endereco.ed_complemento = txtComplemento.Text;
+                        //Informações Comerciais
+                        item.Informacoes.ic_prioridade = cmbPrioridade.Text;
+                        item.Informacoes.ic_situacao = cmbSituacao.Text;
+                        item.Informacoes.ic_limite_credito = Convert.ToDecimal(txtLimiteCredito.Text.Replace("R$", ""));
+                    }
+
+                    db.SaveChanges();
+
+                    ChamandoAlertaSucessoNoCantoInferiorDireito();
+                }
+            }
+            catch (Exception x)
+            {
+                LogErros.EscreverArquivoDeLog($"{DateTime.Now} - Erro ao Alterar Dados Registro Pessoa Juridica | {x.Message} | {x.StackTrace}");
+
+                MensagemErros.ErroAoAtualizarCadastroPessoaJuridica(x);
+            }
+        }
+
+        private void ExibirDadosCadastro()
+        {
+            try
+            {
+                using (SistemaDeGerenciamento2_0Context db = new SistemaDeGerenciamento2_0Context())
+                {
+                    var dadosCadastro = (from registro in db.tb_registro
+                                         join endereco in db.tb_enderecos
+                                         on registro.fk_endereco equals endereco.id_endereco
+                                         join informacoes in db.tb_informacoes_comerciais
+                                         on registro.fk_informacao_comercial equals informacoes.id_informacao_comercial
+                                         where registro.rg_cnpj == CPFouCNPJCadastrado
+                                         select new
+                                         {
+                                             Registro = registro,
+                                             Endereco = endereco,
+                                             Informacoes = informacoes
+                                         }).ToList();
+
+                    foreach (var item in dadosCadastro)
+                    {
+                        //Registro
+                        txtCNPJ.Text = item.Registro.rg_cnpj;
+                        txtDataCadastro.Text = item.Registro.rg_data_cadastro.ToShortDateString();
+                        txtNomeFantasia.Text = item.Registro.rg_nome_fantasia;
+                        txtRazaoSocial.Text = item.Registro.rg_razao_social;
+                        txtEmailXML.Text = item.Registro.rg_email_xml;
+                        txtInscricaoEstadual.Text = item.Registro.rg_inscricao_estadual;
+                        txtInscricaoMunicipal.Text = item.Registro.rg_inscricao_municipal;
+                        txtEmail.Text = item.Registro.rg_email;
+                        txtCelular.Text = item.Registro.rg_celular;
+                        txtTelefoneFixo.Text = item.Registro.rg_telefone_fixo;
+                        txtObservacoes.Text = item.Registro.rg_observacoes;
+                        //Endereço
+                        cmbTipoEndereco.Text = item.Endereco.ed_tipo;
+                        txtCEP.Text = item.Endereco.ed_cep;
+                        cmbEstado.Text = item.Endereco.ed_estado;
+                        txtCidade.Text = item.Endereco.ed_cidade;
+                        txtBairro.Text = item.Endereco.ed_bairro;
+                        txtLogradouro.Text = item.Endereco.ed_locgradouro;
+                        txtNumero.Text = item.Endereco.ed_numero;
+                        txtComplemento.Text = item.Endereco.ed_complemento;
+                        //Informações Comerciais
+                        cmbPrioridade.Text = item.Informacoes.ic_prioridade;
+                        cmbSituacao.Text = item.Informacoes.ic_situacao;
+                        txtLimiteCredito.Text = item.Informacoes.ic_limite_credito.ToString();
+                    }
+                }
+            }
+            catch (Exception x)
+            {
+                LogErros.EscreverArquivoDeLog($"{DateTime.Now} - Erro ao Buscar Dados Registro Pessoa Juridica | {x.Message} | {x.StackTrace}");
+
+                MensagemErros.ErroAoBuscarDadosRegistroPessoaJuridica(x);
+            }
+        }
+
         private void btnSalvar_Click(object sender, EventArgs e)
         {
-            Salvar();
+            if (IsAlteracaoCadastro == false)
+            {
+                SalvarCadastro();
+            }
+            else
+            {
+                AlterarDadosCadastro();
+            }
         }
 
         private void btnBuscarPorCEP_Click(object sender, EventArgs e)
@@ -220,13 +364,13 @@ namespace SistemaDeGerenciamento2_0.Forms
             }
             else if (e.KeyCode == Keys.F10)
             {
-                Salvar();
+                SalvarCadastro();
             }
         }
 
         private void SetandoDados()
         {
-            lblDataCadastro.Text = DateTime.Now.ToString();
+            txtDataCadastro.Text = DateTime.Now.ToString();
 
             PreenchimentoComboBoxEstado();
         }
@@ -240,7 +384,7 @@ namespace SistemaDeGerenciamento2_0.Forms
             cmbEstado.Properties.ValueMember = "NomeEstado";
         }
 
-        private void Salvar()
+        private void SalvarCadastro()
         {
             if (IsCampoEnderecoPreenchido() == true && IsCampoBasicoPreenchido() == true)
             {
@@ -418,7 +562,7 @@ namespace SistemaDeGerenciamento2_0.Forms
                     var pessoaFisica = new tb_registro()
                     {
                         rg_tipo_cadastro = tipoCadastro,
-                        rg_data_cadastro = Convert.ToDateTime(lblDataCadastro.Text),
+                        rg_data_cadastro = Convert.ToDateTime(txtDataCadastro.Text),
                         rg_categoria = "Pessoa Juridica",
                         rg_cnpj = txtCNPJ.Text,
                         rg_nome_fantasia = txtNomeFantasia.Text,

@@ -1,0 +1,1031 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Power.Description" xml:space="preserve">
+    <value>Elevar(Value, Potência)
+Retorna o número especificado elevado à potência especificada.</value>
+  </data>
+  <data name="ToStr.Description" xml:space="preserve">
+    <value>ParaStr(Valor)
+Retorna uma string que representa o objeto.</value>
+  </data>
+  <data name="Plus.Description" xml:space="preserve">
+    <value>Adiciona o valor de uma expressão numérica a outra, ou concatena duas strings.</value>
+  </data>
+  <data name="Parameters Description Prefix" xml:space="preserve">
+    <value>O tipo do parâmetro é: </value>
+  </data>
+  <data name="Substring3param.Description" xml:space="preserve">
+    <value>Substring(String, PosiçãoInicial, Comprimento)
+Extrai uma substring de uma string. A substring começa na PosiçãoInicial e tem o Comprimento especificado.</value>
+  </data>
+  <data name="Tan.Description" xml:space="preserve">
+    <value>Tan(Valor)
+Retorna a tangente do ângulo representado em radianos.</value>
+  </data>
+  <data name="Trim.Description" xml:space="preserve">
+    <value>Trim(String)
+Remove todos os ESPAÇOS do início e do final da string.</value>
+  </data>
+  <data name="Tanh.Description" xml:space="preserve">
+    <value>Tanh(Valor)
+Retorna a tangente hiperbólica do ângulo representado em radianos.</value>
+  </data>
+  <data name="Today.Description" xml:space="preserve">
+    <value>Hoje()
+Retorna a data de hoje, sempre com o horário de meia noite, independentemente do horário real.</value>
+  </data>
+  <data name="Upper.Description" xml:space="preserve">
+    <value>Maiúscula(String)Retorna a String em letras maiúsculas.</value>
+  </data>
+  <data name="Replace.Description" xml:space="preserve">
+    <value>Substituir(String, SubString2, String3)
+Returna uma cópia da String1, na qual SubString2 foi substituída pela String3.</value>
+  </data>
+  <data name="Sign.Description" xml:space="preserve">
+    <value>Sign(Valor)
+Retorna sinal da expressão dada, sendo positivo (+1), zero (0), ou negativo (-1).</value>
+  </data>
+  <data name="Reverse.Description" xml:space="preserve">
+    <value>Reverter(String)
+Reverte a ordem dos caracteres de uma string.</value>
+  </data>
+  <data name="True.Description" xml:space="preserve">
+    <value>Representa o valor booleano Verdadeiro.</value>
+  </data>
+  <data name="UtcNow.Description" xml:space="preserve">
+    <value>UtcNow()
+Retorna a data e a hora presentes do sistema, expressas como Coordenadas Universais de Tempo (UTC).</value>
+  </data>
+  <data name="Variables.Text" xml:space="preserve">
+    <value>Variáveis</value>
+  </data>
+  <data name="Parameters.Text" xml:space="preserve">
+    <value>Parâmetros</value>
+  </data>
+  <data name="UnboundColumn.Caption" xml:space="preserve">
+    <value>Editor de expressão</value>
+  </data>
+  <data name="Round.Description" xml:space="preserve">
+    <value>Arredondar(Valor)
+Arredonda o número dado para o inteiro mais próximo.</value>
+  </data>
+  <data name="Remove.Description" xml:space="preserve">
+    <value>Remover(String, PosiçãoInicial, Comprimento)
+Remove o número especificado de caracteres desta instânica, a partir da posição especificada.</value>
+  </data>
+  <data name="Substring2param.Description" xml:space="preserve">
+    <value>Substring(String, PosiçãoInicial)
+Extrai uma substring de uma string. A substring começa na PosiçãoInicial.</value>
+  </data>
+  <data name="Sinh.Description" xml:space="preserve">
+    <value>Sinh(Valor)
+Retorna o seno hiperbólico do ângulo representado em radianos.</value>
+  </data>
+  <data name="RowCount.Description" xml:space="preserve">
+    <value>Retorna o número total de registros na fonte de dados (datasource).</value>
+  </data>
+  <data name="Sqr.Description" xml:space="preserve">
+    <value>Sqr(Valor)
+Retorna a raíz quadrada de um númeror.</value>
+  </data>
+  <data name="Sin.Description" xml:space="preserve">
+    <value>Sin(Valor)
+Retorna o seno do ângulo representado em radianos.</value>
+  </data>
+  <data name="Rnd.Description" xml:space="preserve">
+    <value>Aleatório()
+Retorna um número aleatório maior ou igual a zero e igual a um.</value>
+  </data>
+  <data name="Modulo.Description" xml:space="preserve">
+    <value>Retorna o módulo obtido pela divisão de uma expressão numérica pela outra.</value>
+  </data>
+  <data name="Condition.Text" xml:space="preserve">
+    <value>Editor de Condições</value>
+  </data>
+  <data name="Exp.Description" xml:space="preserve">
+    <value>Exp(Valor)
+Retorna o valor exponencial de uma expressão real.</value>
+  </data>
+  <data name="GetMinute.Description" xml:space="preserve">
+    <value>GetMinute(DataHora)
+Obtem os minutos a partir da DataHora informada.</value>
+  </data>
+  <data name="GetSecond.Description" xml:space="preserve">
+    <value>GetSecond(DataHora)
+Obtem os segundos a partir da DataHora informada.</value>
+  </data>
+  <data name="Now.Description" xml:space="preserve">
+    <value>Now()
+Retorna a data e hora atuais.</value>
+  </data>
+  <data name="Log.Description" xml:space="preserve">
+    <value>Log(Valor)
+Retorna o logarítmo natural do número especificado.</value>
+  </data>
+  <data name="Atn.Description" xml:space="preserve">
+    <value>Atn(Valor)
+Retorna o arcotangente do valor informado em radianos.
+</value>
+  </data>
+  <data name="GetDay.Description" xml:space="preserve">
+    <value>GetDay(DataHora)
+Obtem o dia a partir da DataHora informada.</value>
+  </data>
+  <data name="PadRight3Param.Description" xml:space="preserve">
+    <value>PadRight(String, Comprimento, Caracter)
+Alinha à direita os caracteres da string informada, preenchendo o lado direito com o caracter informado até o comprimento total.</value>
+  </data>
+  <data name="Minus.Description" xml:space="preserve">
+    <value>Encontra a diferença entre dois números.</value>
+  </data>
+  <data name="functionsTypes.Properties.AllItems" xml:space="preserve">
+    <value>(Todos)</value>
+  </data>
+  <data name="Atn2.Description" xml:space="preserve">
+    <value>Atn2(Valor1, Valor2)
+Retorna o ângulo cuja tangente é o cociente dos valores informados em radianos.</value>
+  </data>
+  <data name="GetYear.Description" xml:space="preserve">
+    <value>GetYear(DataHora)
+Obtem o ano a partir da DataHora informada.</value>
+  </data>
+  <data name="GetHour.Description" xml:space="preserve">
+    <value>GetHour(DataHora)
+Obtem a hora a partir da DataHora informada.</value>
+  </data>
+  <data name="buttonCancel.Text" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="Constants.Text" xml:space="preserve">
+    <value>Constantes</value>
+  </data>
+  <data name="IsNull.Description" xml:space="preserve">
+    <value>IsNull(Valor)
+Retorna Verdadeiro se o valor especificado é NULO.</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Editor de Expressões</value>
+  </data>
+  <data name="Lower.Description" xml:space="preserve">
+    <value>Lower(String)
+Retorna a string em minúsculas.</value>
+  </data>
+  <data name="NotEqual.Description" xml:space="preserve">
+    <value>Retorna verdadeiro se os operandos não tem o mesmo valor, caso contrário, retorna falso.</value>
+  </data>
+  <data name="PadRight.Description" xml:space="preserve">
+    <value>PadRight(String, Comprimento)
+Alinha à direita os caracteres da string informada, preenchendo o lado direito com espaços até o comprimento total.</value>
+  </data>
+  <data name="Greater.Description" xml:space="preserve">
+    <value>Operador maior que.</value>
+  </data>
+  <data name="AddYears.Description" xml:space="preserve">
+    <value>AddYears(DataHora, NumeroDeAnos)
+Retorna um valor do tipo DataHora que representa a data final após transcorridos o número de anos informado a partir da data inicial.</value>
+  </data>
+  <data name="GetTimeOfDay.Description" xml:space="preserve">
+    <value>GetTimeOfDay(DataHora)
+Obtem a hora a partir da DataHora informada.</value>
+  </data>
+  <data name="Char.Description" xml:space="preserve">
+    <value>Char(Numero) 
+Converte um código inteiro ASCII em um caracter.</value>
+  </data>
+  <data name="And.Description" xml:space="preserve">
+    <value>Executa uma junção lógica de duas expressões.</value>
+  </data>
+  <data name="Cosh.Description" xml:space="preserve">
+    <value>Cosh(Valor)
+Retorna o coseno hiperbólico do ângulo definido em radianos.
+</value>
+  </data>
+  <data name="Between.Description" xml:space="preserve">
+    <value>Between (,)
+Especifica uma faixa para testar. Retorna verdadeiro se o valor é maior ou igual ao primeiro operando e menor ou igual ao segundo operando.</value>
+  </data>
+  <data name="Acos.Description" xml:space="preserve">
+    <value>Acos(Valor)
+Retorna o arcocoseno do valor informado em radianos.</value>
+  </data>
+  <data name="Ceiling.Description" xml:space="preserve">
+    <value>Ceiling(Valor)
+Retorna o menor número inteiro que é maior ou igual ao valor informado.</value>
+  </data>
+  <data name="Ascii.Description" xml:space="preserve">
+    <value>Ascii(String)
+Retorna o código ASCII do caracter mais a esquerda da string informada.</value>
+  </data>
+  <data name="Abs.Description" xml:space="preserve">
+    <value>Abs(Valor)
+Retorna o valor positivo do valor informado.</value>
+  </data>
+  <data name="BitwiseAnd.Description" xml:space="preserve">
+    <value>Executa uma comparação lógica bit a bit AND de dois valores inteiros.</value>
+  </data>
+  <data name="In.Description" xml:space="preserve">
+    <value>In (,,,)
+Testa a existência de uma propriedade em um objeto.
+</value>
+  </data>
+  <data name="GridFields Description Prefix" xml:space="preserve">
+    <value>Informações do Campo
+Nome: {1}
+Tipo: {2}</value>
+  </data>
+  <data name="Null.Description" xml:space="preserve">
+    <value>Representa uma referência nula.</value>
+  </data>
+  <data name="BitwiseOr.Description" xml:space="preserve">
+    <value>Executa uma comparação lógica bit a bit OR de dois valores inteiros.</value>
+  </data>
+  <data name="GreaterOrEqual.Description" xml:space="preserve">
+    <value>Operador maior que ou igual.</value>
+  </data>
+  <data name="AddTimeSpan.Description" xml:space="preserve">
+    <value>AddTimeSpan(DataHora, TempoTranscorrido)
+Retorna um valor do tipo DataHora que representa a data final após o TempoTranscorrido a partir da data inicial.</value>
+  </data>
+  <data name="BigMul.Description" xml:space="preserve">
+    <value>BigMul(Valor1, Valor2)
+Retorna um Int64 contendo o produto dos dois valores Int32 especificados.</value>
+  </data>
+  <data name="Multiply.Description" xml:space="preserve">
+    <value>Multiplica o valor de duas expressões.</value>
+  </data>
+  <data name="Iif.Description" xml:space="preserve">
+    <value>Iif(Expressão, ParteVerdadeira, ParteFalsa)
+Retorna a parte verdadeira ou a parte falsa, dependendo do resultado lógico da expressão.</value>
+  </data>
+  <data name="GetDayOfWeek.Description" xml:space="preserve">
+    <value>GetDayOfWeek(DataHora)
+Obtem o dia da semana a partir da DataHora informada.</value>
+  </data>
+  <data name="Equal.Description" xml:space="preserve">
+    <value>Retorna verdadeiro se ambos operandos tem o mesmo valor, caso contrário, retorna falso.</value>
+  </data>
+  <data name="CharIndex3Param.Description" xml:space="preserve">
+    <value>CharIndex(String1, String2, PosicaoInicial)
+Retorna a posição inicial da String1 dentro da String2, começando da PosicaoInicial até o final da string.
+</value>
+  </data>
+  <data name="Log10.Description" xml:space="preserve">
+    <value>Log10(Valor)
+Retorna a logarítmo na base 10 do número especificado.</value>
+  </data>
+  <data name="BitwiseXor.Description" xml:space="preserve">
+    <value>Executa uma comparação lógica bit a bit XOR de dois valores inteiros.</value>
+  </data>
+  <data name="GetMonth.Description" xml:space="preserve">
+    <value>GetMonth(DataHora)
+Obtem o mês a partir da DataHora informada.</value>
+  </data>
+  <data name="PadLeft3Param.Description" xml:space="preserve">
+    <value>PadLeft(String, Comprimento, Caracter)
+Alinha à esquerda os caracteres da string informada, preenchendo o lado esquerdo com o caracter informado até o comprimento total.</value>
+  </data>
+  <data name="Functions.Text" xml:space="preserve">
+    <value>Funções</value>
+  </data>
+  <data name="Concat.Description" xml:space="preserve">
+    <value>Concat(String1, ... , StringN)
+Retorna a string contendo a concatenação das strings informadas.</value>
+  </data>
+  <data name="Not.Description" xml:space="preserve">
+    <value>Executa uma operação lógica NOT.</value>
+  </data>
+  <data name="AddMonths.Description" xml:space="preserve">
+    <value>AddMonths(DataHora, NumeroDeMeses)
+Retorna um valor do tipo DataHora que representa a data final após transcorridos o número de meses informado a partir da data inicial.</value>
+  </data>
+  <data name="buttonOK.Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="GetMilliSecond.Description" xml:space="preserve">
+    <value>GetMilliSecond(DataHora)
+Obtem os milisegundos a partir da DataHora informada.</value>
+  </data>
+  <data name="CharIndex.Description" xml:space="preserve">
+    <value>CharIndex(String1, String2)
+Retorna a posição inicial da String1 dentro da String2, começando do caracter zero até o final da string.</value>
+  </data>
+  <data name="PadLeft.Description" xml:space="preserve">
+    <value>PadLeft(String, Comprimento)
+Alinha à esquerda os caracteres da string informada, preenchendo o lado esquerdo com espaços até o comprimento total.
+</value>
+  </data>
+  <data name="Fields.Text" xml:space="preserve">
+    <value>Campos</value>
+  </data>
+  <data name="Len.Description" xml:space="preserve">
+    <value>Len(Valor)
+Retorna um valor contendo ou o comprimento da string informado ou o número de bytes requerido para armazenar o valor.</value>
+  </data>
+  <data name="functionsTypes.Properties.DateTimeItems" xml:space="preserve">
+    <value>Data-hora</value>
+  </data>
+  <data name="Cos.Description" xml:space="preserve">
+    <value>Cos(Valor)
+Retorna o coseno do ângulo definido em radianos.</value>
+  </data>
+  <data name="AddMinutes.Description" xml:space="preserve">
+    <value>AddMinutes(DataHora, NumeroDeMinutos)
+Retorna um valor do tipo DataHora que representa a data final após transcorridos o número de minutos informado a partir da data inicial.</value>
+  </data>
+  <data name="Less.Description" xml:space="preserve">
+    <value>Operador menor que.</value>
+  </data>
+  <data name="functionsTypes.Properties.LogicalItems" xml:space="preserve">
+    <value>Logico</value>
+  </data>
+  <data name="Operators.Text" xml:space="preserve">
+    <value>Operadores</value>
+  </data>
+  <data name="LessOrEqual.Description" xml:space="preserve">
+    <value>Operador menor que ou igual.</value>
+  </data>
+  <data name="AddSeconds.Description" xml:space="preserve">
+    <value>AddSeconds(DataHora, NumeroDeSegundos)
+Retorna um valor do tipo DataHora que representa a data final após transcorridos o número de segundos informado a partir da data inicial.</value>
+  </data>
+  <data name="Asin.Description" xml:space="preserve">
+    <value>Asin(Valor)
+Retorna o arcoseno de valor informado em radianos.</value>
+  </data>
+  <data name="Log2Param.Description" xml:space="preserve">
+    <value>Log(Valor, Base)
+Retorna o logarítmo do valor especificado na base especificada.</value>
+  </data>
+  <data name="CurrentRowIndex.Description" xml:space="preserve">
+    <value>Retorna o íncice da linha atual em uma fonte de dados. Este índice começa em zero.</value>
+  </data>
+  <data name="Or.Description" xml:space="preserve">
+    <value>Executa um operador lógico OR</value>
+  </data>
+  <data name="Floor.Description" xml:space="preserve">
+    <value>Floor(Valor)
+Retorna o maior valor inteiro menor ou igual ao valor informado.</value>
+  </data>
+  <data name="GetDayOfYear.Description" xml:space="preserve">
+    <value>GetDayOfYear(DataHora)
+Obtem o ano a partir da DataHora informada.</value>
+  </data>
+  <data name="Divide.Description" xml:space="preserve">
+    <value>Divide o primeiro operando pelo segundo.
+</value>
+  </data>
+  <data name="AddTicks.Description" xml:space="preserve">
+    <value>AddTicks(DataHora, NumeroDeTicks)
+Retorna um valor do tipo DataHora que representa a data final após transcorridos o número de ticks informado a partir da data inicial.</value>
+  </data>
+  <data name="GetDate.Description" xml:space="preserve">
+    <value>GetDate(DataHora)
+Obtem a data a partir da DataHora informada.</value>
+  </data>
+  <data name="AddMilliSeconds.Description" xml:space="preserve">
+    <value>AddMilliSeconds(DataHora, NumeroDeMilisegundos)
+Retorna um valor do tipo DataHora que representa a data final após transcorridos o número de milisegundos informado a partir da data inicial.</value>
+  </data>
+  <data name="IsNullOrEmpty.Description" xml:space="preserve">
+    <value>IsNullOrEmpty(String)
+Retorna Verdadeiro se a string especificada é NULA ou vazia, caso contrário, retorna Falso.</value>
+  </data>
+  <data name="Expression.Text" xml:space="preserve">
+    <value>Editor de Expressões</value>
+  </data>
+  <data name="Like.Description" xml:space="preserve">
+    <value>Compara a string com o padrão informado. Se o valor está dentro do padrão, retorna verdadeiro, caso contrário, retorna falso.</value>
+  </data>
+  <data name="AddHours.Description" xml:space="preserve">
+    <value>AddHours(DataHora, NumeroDeHoras)
+Retorna um valor do tipo DataHora que representa a data final após transcorridos o número de horas informado a partir da data inicial.</value>
+  </data>
+  <data name="Insert.Description" xml:space="preserve">
+    <value>Insert(String1, PosicaoInicial, String2)
+Insere a String2 na String1 na posição especificada em PosicaoInicial.</value>
+  </data>
+  <data name="AddDays.Description" xml:space="preserve">
+    <value>AddDays(DataHora, NumeroDeDias)
+Retorna um valor do tipo DataHora que representa a data final após transcorridos o número de dias informado a partir da data inicial.</value>
+  </data>
+  <data name="Fields Description Prefix" xml:space="preserve">
+    <value>O tipo deste campo é:</value>
+  </data>
+  <data name="False.Description" xml:space="preserve">
+    <value>Representa o valor boleano Falso.</value>
+  </data>
+  <data name="Condition.Caption" xml:space="preserve">
+    <value>Editor de condições de expressão</value>
+  </data>
+  <data name="functionsTypes.Properties.StringItems" xml:space="preserve">
+    <value>Corda</value>
+  </data>
+  <data name="functionsTypes.Properties.MathItems" xml:space="preserve">
+    <value>Matemático</value>
+  </data>
+  <data name="DateDiffDay.Description" xml:space="preserve">
+    <value>DataDifDia(inicioData, fimData)
+Retorna o número de limites de dias entre duas datas não-anulável.</value>
+  </data>
+  <data name="DateDiffMinute.Description" xml:space="preserve">
+    <value>DataDifMinuto(inicioDate, fimData)
+Retorna o número de limites de minutos entre duas datas não-anulável.</value>
+  </data>
+  <data name="Min.Description" xml:space="preserve">
+    <value>Min (valor1, valor2)
+Retorna o valor mínimo dos valores especificados.</value>
+  </data>
+  <data name="DateDiffTick.Description" xml:space="preserve">
+    <value>DataDifEscala(inicioData, fimData)
+Retorna o número de limites de escala entre as duas datas não-anulável.</value>
+  </data>
+  <data name="DateDiffMilliSecond.Description" xml:space="preserve">
+    <value>DataDifMiliSegundos(inicioData, fimDate)
+Retorna o número de milissegundos limites entre duas datas não-anulável.</value>
+  </data>
+  <data name="DateDiffYear.Description" xml:space="preserve">
+    <value>DataDifAno(inicioData, fimData)
+Retorna o número de limites de anos entre duas datas não-anulável.</value>
+  </data>
+  <data name="DateDiffMonth.Description" xml:space="preserve">
+    <value>DataDifMês(inicioDate, fimData)
+Retorna o número de limites meses entre duas datas não-anulável.</value>
+  </data>
+  <data name="Max.Description" xml:space="preserve">
+    <value>Max (valor1, valor2)
+Retorna o valor máximo dos valores especificados.</value>
+  </data>
+  <data name="DateDiffSecond.Description" xml:space="preserve">
+    <value>DataDifSegundo(inicioData, fimData)
+Retorna o número de limites segundo entre duas datas não-anulável.</value>
+  </data>
+  <data name="DateDiffHour.Description" xml:space="preserve">
+    <value>DataDifHora(inicioData, fimDate)
+Retorna o número de limites de horas entre duas datas não-anulável.</value>
+  </data>
+  <data name="Contains.Description" xml:space="preserve">
+    <value>Contém (substring, string) Retorna true se substring ocorre dentro de string, caso contrário, FALSE é retornado.</value>
+  </data>
+  <data name="StartsWith.Description" xml:space="preserve">
+    <value>Começa com (StartString, String) Retorna True se o texto corresponde ao início de startstring, caso contrário, FALSE é retornado.</value>
+  </data>
+  <data name="Round2Param.Description" xml:space="preserve">
+    <value>Arredonda (precisão, valor) Arredonda o valor dado para o inteiro mais próximo, ou para um número especificado de casas decimais.</value>
+  </data>
+  <data name="EndsWith.Description" xml:space="preserve">
+    <value>Terminar com (String, endstring) Retorna True se o texto corresponde ao final do endstring, caso contrário, FALSE é retornado.</value>
+  </data>
+  <data name="ExistsAggregate.Description" xml:space="preserve">
+    <value>Exists()
+Determina se o objeto existe na coleção.</value>
+  </data>
+  <data name="IsThisWeek.Description" xml:space="preserve">
+    <value>IsThisWeek(DateTime)
+Retorna Verdadeiro se a data especificada é abrangido por esta semana.</value>
+  </data>
+  <data name="LocalDateTimeDayAfterTomorrow.Description" xml:space="preserve">
+    <value>LocalDateTimeDayAfterTomorrow()
+Retorna um valor de data e hora correspondente para depois de amanhã.</value>
+  </data>
+  <data name="LocalDateTimeLastWeek.Description" xml:space="preserve">
+    <value>LocalDateTimeLastWeek()
+Retorna um valor de data e hora correspondente ao primeiro dia da semana anterior.</value>
+  </data>
+  <data name="LocalDateTimeNextMonth.Description" xml:space="preserve">
+    <value>LocalDateTimeNextMonth()
+Retorna um valor de data e hora correspondente ao primeiro dia do mês que vem.</value>
+  </data>
+  <data name="LocalDateTimeNextWeek.Description" xml:space="preserve">
+    <value>LocalDateTimeNextWeek()
+Retorna um valor de data e hora correspondente ao primeiro dia da semana seguinte.</value>
+  </data>
+  <data name="LocalDateTimeNextYear.Description" xml:space="preserve">
+    <value>LocalDateTimeNextYear()
+Retorna um valor de data e hora correspondente ao primeiro dia do ano seguinte.</value>
+  </data>
+  <data name="LocalDateTimeNow.Description" xml:space="preserve">
+    <value>LocalDateTimeNow()
+Retorna um valor de data e hora correspondente para o atual momento.</value>
+  </data>
+  <data name="LocalDateTimeThisMonth.Description" xml:space="preserve">
+    <value>LocalDateTimeThisMonth()
+Retorna um valor de data e hora correspondente ao primeiro dia do mês em curso.</value>
+  </data>
+  <data name="LocalDateTimeThisWeek.Description" xml:space="preserve">
+    <value>LocalDateTimeThisWeek()
+Retorna um valor de data e hora correspondente ao primeiro dia da semana atual.</value>
+  </data>
+  <data name="LocalDateTimeThisYear.Description" xml:space="preserve">
+    <value>LocalDateTimeThisYear()
+Retorna um valor de data e hora correspondente ao primeiro dia do ano em curso.</value>
+  </data>
+  <data name="LocalDateTimeToday.Description" xml:space="preserve">
+    <value>LocalDateTimeToday()
+Retorna um valor de data e hora correspondente hoje.</value>
+  </data>
+  <data name="LocalDateTimeTomorrow.Description" xml:space="preserve">
+    <value>LocalDateTimeTomorrow()
+Retorna um valor de data e hora correspondente amanhã.</value>
+  </data>
+  <data name="LocalDateTimeTwoWeeksAway.Description" xml:space="preserve">
+    <value>LocalDateTimeTwoWeeksAway()
+Retorna um valor de data e hora correspondente ao primeiro dia da semana, é a partir da próxima semana.</value>
+  </data>
+  <data name="LocalDateTimeYesterday.Description" xml:space="preserve">
+    <value>LocalDateTimeYesterday()
+Retorna um valor de data e hora correspondente ontem.</value>
+  </data>
+  <data name="SingleAggregate.Description" xml:space="preserve">
+    <value>Single()
+Retorna um único objeto da coleção.</value>
+  </data>
+  <data name="SumAggregate.Description" xml:space="preserve">
+    <value>Sum(Valor)
+Retorna a soma de todos os valores de expressão na coleção.</value>
+  </data>
+  <data name="ToDecimal.Description" xml:space="preserve">
+    <value>ToDecimal(Valor)
+Converte o valor para um número decimal equivalente.</value>
+  </data>
+  <data name="ToDouble.Description" xml:space="preserve">
+    <value>ToDouble(Valor)
+Converte o valor para um número de ponto flutuante de precisão dupla equivalente 64-bit.</value>
+  </data>
+  <data name="CountAggregate.Description" xml:space="preserve">
+    <value>Count()
+Retorna o número de objetos em uma coleção.</value>
+  </data>
+  <data name="functionsTypes.Properties.AggregateItems" xml:space="preserve">
+    <value>Agregado</value>
+  </data>
+  <data name="AvgAggregate.Description" xml:space="preserve">
+    <value>Avg(Value)
+Avalia a média dos valores na coleção.</value>
+  </data>
+  <data name="ToFloat.Description" xml:space="preserve">
+    <value>ToFloat(Value)
+Converte o valor para um número equivalente de ponto flutuante de precisão simples de 32 bits.</value>
+  </data>
+  <data name="ToInt.Description" xml:space="preserve">
+    <value>ToInt(Value)
+Converte o valor para um inteiro com sinal de 32 bits equivalente.</value>
+  </data>
+  <data name="ToLong.Description" xml:space="preserve">
+    <value>ToLong(Value)
+Converte o valor para um inteiro com sinal de 64 bits equivalente.</value>
+  </data>
+  <data name="IsThisMonth.Description" xml:space="preserve">
+    <value>IsThisMonth(DateTime)
+Retorna True se a data especificada cai dentro do mês atual.</value>
+  </data>
+  <data name="IsThisYear.Description" xml:space="preserve">
+    <value>IsThisYear(DateTime)
+Retorna True se a data especificada cai dentro do corrente ano.</value>
+  </data>
+  <data name="MaxAggregate.Description" xml:space="preserve">
+    <value>Max(Value)
+Retorna o valor da expressão máxima em uma coleção.</value>
+  </data>
+  <data name="MinAggregate.Description" xml:space="preserve">
+    <value>Min(Value)
+Retorna o valor mínimo de expressão em uma coleção.</value>
+  </data>
+  <data name="FormatRule.Caption" xml:space="preserve">
+    <value>Editor de expressões de regra de formato</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.XtraForm, DevExpress.Utils.v16.2, cultura = neutral</value>
+  </data>
+  <data name="&gt;&gt;buttonCancel.Name" xml:space="preserve">
+    <value>buttonCancel</value>
+  </data>
+  <data name="&gt;&gt;buttonCancel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;buttonCancel.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v16.2, cultura = neutral</value>
+  </data>
+  <data name="&gt;&gt;buttonCancel.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;buttonOK.Name" xml:space="preserve">
+    <value>buttonOK</value>
+  </data>
+  <data name="&gt;&gt;buttonOK.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;buttonOK.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v16.2, cultura = neutral</value>
+  </data>
+  <data name="&gt;&gt;buttonOK.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;descriptionControl.Name" xml:space="preserve">
+    <value>descriptionControl</value>
+  </data>
+  <data name="&gt;&gt;descriptionControl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;descriptionControl.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.Utils.v16.2, cultura = neutral</value>
+  </data>
+  <data name="&gt;&gt;descriptionControl.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;expressionEdit.Name" xml:space="preserve">
+    <value>expressionEdit</value>
+  </data>
+  <data name="&gt;&gt;expressionEdit.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;expressionEdit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.MemoEdit, DevExpress.XtraEditors.v16.2, cultura = neutral</value>
+  </data>
+  <data name="&gt;&gt;expressionEdit.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;functionsTypes.Name" xml:space="preserve">
+    <value>functionsTypes</value>
+  </data>
+  <data name="&gt;&gt;functionsTypes.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;functionsTypes.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ComboBoxEdit, DevExpress.XtraEditors.v16.2, cultura = neutral</value>
+  </data>
+  <data name="&gt;&gt;functionsTypes.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;labelControl1.Name" xml:space="preserve">
+    <value>labelControl1</value>
+  </data>
+  <data name="&gt;&gt;labelControl1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;labelControl1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.2, cultura = neutral</value>
+  </data>
+  <data name="&gt;&gt;labelControl1.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;labelControl2.Name" xml:space="preserve">
+    <value>labelControl2</value>
+  </data>
+  <data name="&gt;&gt;labelControl2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;labelControl2.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.2, cultura = neutral</value>
+  </data>
+  <data name="&gt;&gt;labelControl2.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;labelControl3.Name" xml:space="preserve">
+    <value>labelControl3</value>
+  </data>
+  <data name="&gt;&gt;labelControl3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;labelControl3.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.2, cultura = neutral</value>
+  </data>
+  <data name="&gt;&gt;labelControl3.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;labelControl4.Name" xml:space="preserve">
+    <value>labelControl4</value>
+  </data>
+  <data name="&gt;&gt;labelControl4.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;labelControl4.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v16.2, cultura = neutral</value>
+  </data>
+  <data name="&gt;&gt;labelControl4.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;layoutItemButton10.Name" xml:space="preserve">
+    <value>layoutItemButton10</value>
+  </data>
+  <data name="&gt;&gt;layoutItemButton10.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;layoutItemButton10.Type" xml:space="preserve">
+    <value>DevExpress.XtraReports.Native.LayoutItemButton, DevExpress.XtraReports.v16.2, cultura = neutral</value>
+  </data>
+  <data name="&gt;&gt;layoutItemButton10.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;layoutItemButton11.Name" xml:space="preserve">
+    <value>layoutItemButton11</value>
+  </data>
+  <data name="&gt;&gt;layoutItemButton11.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;layoutItemButton11.Type" xml:space="preserve">
+    <value>DevExpress.XtraReports.Native.LayoutItemButton, DevExpress.XtraReports.v16.2, cultura = neutral</value>
+  </data>
+  <data name="&gt;&gt;layoutItemButton11.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;layoutItemButton12.Name" xml:space="preserve">
+    <value>layoutItemButton12</value>
+  </data>
+  <data name="&gt;&gt;layoutItemButton12.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;layoutItemButton12.Type" xml:space="preserve">
+    <value>DevExpress.XtraReports.Native.LayoutItemButton, DevExpress.XtraReports.v16.2, cultura = neutral</value>
+  </data>
+  <data name="&gt;&gt;layoutItemButton12.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;layoutItemButton13.Name" xml:space="preserve">
+    <value>layoutItemButton13</value>
+  </data>
+  <data name="&gt;&gt;layoutItemButton13.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;layoutItemButton13.Type" xml:space="preserve">
+    <value>DevExpress.XtraReports.Native.LayoutItemButton, DevExpress.XtraReports.v16.2, cultura = neutral</value>
+  </data>
+  <data name="&gt;&gt;layoutItemButton13.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;layoutItemButton14.Name" xml:space="preserve">
+    <value>layoutItemButton14</value>
+  </data>
+  <data name="&gt;&gt;layoutItemButton14.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;layoutItemButton14.Type" xml:space="preserve">
+    <value>DevExpress.XtraReports.Native.LayoutItemButton, DevExpress.XtraReports.v16.2, cultura = neutral</value>
+  </data>
+  <data name="&gt;&gt;layoutItemButton14.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;layoutItemButton15.Name" xml:space="preserve">
+    <value>layoutItemButton15</value>
+  </data>
+  <data name="&gt;&gt;layoutItemButton15.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;layoutItemButton15.Type" xml:space="preserve">
+    <value>DevExpress.XtraReports.Native.LayoutItemButton, DevExpress.XtraReports.v16.2, cultura = neutral</value>
+  </data>
+  <data name="&gt;&gt;layoutItemButton15.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;layoutItemButton2.Name" xml:space="preserve">
+    <value>layoutItemButton2</value>
+  </data>
+  <data name="&gt;&gt;layoutItemButton2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;layoutItemButton2.Type" xml:space="preserve">
+    <value>DevExpress.XtraReports.Native.LayoutItemButton, DevExpress.XtraReports.v16.2, cultura = neutral</value>
+  </data>
+  <data name="&gt;&gt;layoutItemButton2.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;layoutItemButton3.Name" xml:space="preserve">
+    <value>layoutItemButton3</value>
+  </data>
+  <data name="&gt;&gt;layoutItemButton3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;layoutItemButton3.Type" xml:space="preserve">
+    <value>DevExpress.XtraReports.Native.LayoutItemButton, DevExpress.XtraReports.v16.2, cultura = neutral</value>
+  </data>
+  <data name="&gt;&gt;layoutItemButton3.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;layoutItemButton4.Name" xml:space="preserve">
+    <value>layoutItemButton4</value>
+  </data>
+  <data name="&gt;&gt;layoutItemButton4.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;layoutItemButton4.Type" xml:space="preserve">
+    <value>DevExpress.XtraReports.Native.LayoutItemButton, DevExpress.XtraReports.v16.2, cultura = neutral</value>
+  </data>
+  <data name="&gt;&gt;layoutItemButton4.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;layoutItemButton5.Name" xml:space="preserve">
+    <value>layoutItemButton5</value>
+  </data>
+  <data name="&gt;&gt;layoutItemButton5.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;layoutItemButton5.Type" xml:space="preserve">
+    <value>DevExpress.XtraReports.Native.LayoutItemButton, DevExpress.XtraReports.v16.2, cultura = neutral</value>
+  </data>
+  <data name="&gt;&gt;layoutItemButton5.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;layoutItemButton6.Name" xml:space="preserve">
+    <value>layoutItemButton6</value>
+  </data>
+  <data name="&gt;&gt;layoutItemButton6.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;layoutItemButton6.Type" xml:space="preserve">
+    <value>DevExpress.XtraReports.Native.LayoutItemButton, DevExpress.XtraReports.v16.2, cultura = neutral</value>
+  </data>
+  <data name="&gt;&gt;layoutItemButton6.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;layoutItemButton7.Name" xml:space="preserve">
+    <value>layoutItemButton7</value>
+  </data>
+  <data name="&gt;&gt;layoutItemButton7.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;layoutItemButton7.Type" xml:space="preserve">
+    <value>DevExpress.XtraReports.Native.LayoutItemButton, DevExpress.XtraReports.v16.2, cultura = neutral</value>
+  </data>
+  <data name="&gt;&gt;layoutItemButton7.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;layoutItemButton8.Name" xml:space="preserve">
+    <value>layoutItemButton8</value>
+  </data>
+  <data name="&gt;&gt;layoutItemButton8.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;layoutItemButton8.Type" xml:space="preserve">
+    <value>DevExpress.XtraReports.Native.LayoutItemButton, DevExpress.XtraReports.v16.2, cultura = neutral</value>
+  </data>
+  <data name="&gt;&gt;layoutItemButton8.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;layoutItemButton9.Name" xml:space="preserve">
+    <value>layoutItemButton9</value>
+  </data>
+  <data name="&gt;&gt;layoutItemButton9.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;layoutItemButton9.Type" xml:space="preserve">
+    <value>DevExpress.XtraReports.Native.LayoutItemButton, DevExpress.XtraReports.v16.2, cultura = neutral</value>
+  </data>
+  <data name="&gt;&gt;layoutItemButton9.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;listOfInputParameters.Name" xml:space="preserve">
+    <value>listOfInputParameters</value>
+  </data>
+  <data name="&gt;&gt;listOfInputParameters.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;listOfInputParameters.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ListBoxControl, DevExpress.XtraEditors.v16.2, cultura = neutral</value>
+  </data>
+  <data name="&gt;&gt;listOfInputParameters.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;listOfInputTypes.Name" xml:space="preserve">
+    <value>listOfInputTypes</value>
+  </data>
+  <data name="&gt;&gt;listOfInputTypes.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;listOfInputTypes.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ListBoxControl, DevExpress.XtraEditors.v16.2, cultura = neutral</value>
+  </data>
+  <data name="&gt;&gt;listOfInputTypes.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;plusItemButton.Name" xml:space="preserve">
+    <value>plusItemButton</value>
+  </data>
+  <data name="&gt;&gt;plusItemButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;plusItemButton.Type" xml:space="preserve">
+    <value>DevExpress.XtraReports.Native.LayoutItemButton, DevExpress.XtraReports.v16.2, cultura = neutral</value>
+  </data>
+  <data name="&gt;&gt;plusItemButton.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>CalculatedFieldExpressionEditorForm</value>
+  </data>
+</root>

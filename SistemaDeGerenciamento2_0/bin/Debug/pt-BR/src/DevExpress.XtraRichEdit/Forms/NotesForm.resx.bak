@@ -1,0 +1,978 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"></assembly>
+  <data name="lblLocation.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 4</value>
+  </data>
+  <data name="lblLocation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>285, 13</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"></assembly>
+  <data name="notesFormLayoutControl.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="cbApplyChangesTo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>123, 280</value>
+  </data>
+  <data name="cbApplyChangesTo.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>166, 20</value>
+  </data>
+  <data name="cbApplyChangesTo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>176, 20</value>
+  </data>
+  <data name="cbApplyChangesTo.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;cbApplyChangesTo.Name" xml:space="preserve">
+    <value>cbApplyChangesTo</value>
+  </data>
+  <data name="&gt;&gt;cbApplyChangesTo.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ComboBoxEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;cbApplyChangesTo.Parent" xml:space="preserve">
+    <value>notesFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;cbApplyChangesTo.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="edtCustomMark.Location" type="System.Drawing.Point, System.Drawing">
+    <value>123, 189</value>
+  </data>
+  <data name="edtCustomMark.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>69, 20</value>
+  </data>
+  <data name="edtCustomMark.Size" type="System.Drawing.Size, System.Drawing">
+    <value>81, 22</value>
+  </data>
+  <data name="edtCustomMark.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;edtCustomMark.Name" xml:space="preserve">
+    <value>edtCustomMark</value>
+  </data>
+  <data name="&gt;&gt;edtCustomMark.Type" xml:space="preserve">
+    <value>DevExpress.XtraRichEdit.Forms.SimpleRichEditControl, DevExpress.XtraRichEdit.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtCustomMark.Parent" xml:space="preserve">
+    <value>notesFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;edtCustomMark.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="lblApplyChangesTo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 283</value>
+  </data>
+  <data name="lblApplyChangesTo.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>95, 14</value>
+  </data>
+  <data name="lblApplyChangesTo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 14</value>
+  </data>
+  <data name="lblApplyChangesTo.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="lblApplyChangesTo.Text" xml:space="preserve">
+    <value>&amp;Apply changes to:</value>
+  </data>
+  <data name="&gt;&gt;lblApplyChangesTo.Name" xml:space="preserve">
+    <value>lblApplyChangesTo</value>
+  </data>
+  <data name="&gt;&gt;lblApplyChangesTo.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblApplyChangesTo.Parent" xml:space="preserve">
+    <value>notesFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblApplyChangesTo.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="cbNumberingRestartType.Location" type="System.Drawing.Point, System.Drawing">
+    <value>123, 239</value>
+  </data>
+  <data name="cbNumberingRestartType.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>166, 20</value>
+  </data>
+  <data name="cbNumberingRestartType.Size" type="System.Drawing.Size, System.Drawing">
+    <value>176, 20</value>
+  </data>
+  <data name="cbNumberingRestartType.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;cbNumberingRestartType.Name" xml:space="preserve">
+    <value>cbNumberingRestartType</value>
+  </data>
+  <data name="&gt;&gt;cbNumberingRestartType.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ComboBoxEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;cbNumberingRestartType.Parent" xml:space="preserve">
+    <value>notesFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;cbNumberingRestartType.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="lblApplyChanges.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 263</value>
+  </data>
+  <data name="lblApplyChanges.Size" type="System.Drawing.Size, System.Drawing">
+    <value>285, 13</value>
+  </data>
+  <data name="lblApplyChanges.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="lblApplyChanges.Text" xml:space="preserve">
+    <value>&amp;Apply changes</value>
+  </data>
+  <data name="&gt;&gt;lblApplyChanges.Name" xml:space="preserve">
+    <value>lblApplyChanges</value>
+  </data>
+  <data name="&gt;&gt;lblApplyChanges.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblApplyChanges.Parent" xml:space="preserve">
+    <value>notesFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblApplyChanges.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="edtStartAt.EditValue" type="System.Decimal, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="edtStartAt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>123, 215</value>
+  </data>
+  <data name="edtStartAt.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>69, 20</value>
+  </data>
+  <data name="edtStartAt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>81, 20</value>
+  </data>
+  <data name="edtStartAt.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;edtStartAt.Name" xml:space="preserve">
+    <value>edtStartAt</value>
+  </data>
+  <data name="&gt;&gt;edtStartAt.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SpinEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtStartAt.Parent" xml:space="preserve">
+    <value>notesFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;edtStartAt.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="edtNumberingFormat.Location" type="System.Drawing.Point, System.Drawing">
+    <value>123, 165</value>
+  </data>
+  <data name="edtNumberingFormat.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>166, 20</value>
+  </data>
+  <data name="edtNumberingFormat.Size" type="System.Drawing.Size, System.Drawing">
+    <value>176, 20</value>
+  </data>
+  <data name="edtNumberingFormat.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;edtNumberingFormat.Name" xml:space="preserve">
+    <value>edtNumberingFormat</value>
+  </data>
+  <data name="&gt;&gt;edtNumberingFormat.Type" xml:space="preserve">
+    <value>DevExpress.XtraRichEdit.Forms.Design.DisplayFormatEdit, DevExpress.XtraRichEdit.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtNumberingFormat.Parent" xml:space="preserve">
+    <value>notesFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;edtNumberingFormat.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="lblNumbering.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 242</value>
+  </data>
+  <data name="lblNumbering.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 13</value>
+  </data>
+  <data name="lblNumbering.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="lblNumbering.Text" xml:space="preserve">
+    <value>&amp;Numbering:</value>
+  </data>
+  <data name="&gt;&gt;lblNumbering.Name" xml:space="preserve">
+    <value>lblNumbering</value>
+  </data>
+  <data name="&gt;&gt;lblNumbering.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblNumbering.Parent" xml:space="preserve">
+    <value>notesFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblNumbering.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="btnSymbol.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="btnSymbol.Location" type="System.Drawing.Point, System.Drawing">
+    <value>208, 189</value>
+  </data>
+  <data name="btnSymbol.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>91, 22</value>
+  </data>
+  <data name="btnSymbol.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 22</value>
+  </data>
+  <data name="btnSymbol.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="btnSymbol.Text" xml:space="preserve">
+    <value>&amp;Symbol</value>
+  </data>
+  <data name="&gt;&gt;btnSymbol.Name" xml:space="preserve">
+    <value>btnSymbol</value>
+  </data>
+  <data name="&gt;&gt;btnSymbol.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;btnSymbol.Parent" xml:space="preserve">
+    <value>notesFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;btnSymbol.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="btnApply.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="btnApply.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="btnApply.Location" type="System.Drawing.Point, System.Drawing">
+    <value>207, 308</value>
+  </data>
+  <data name="btnApply.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>91, 22</value>
+  </data>
+  <data name="btnApply.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 22</value>
+  </data>
+  <data name="btnApply.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="btnApply.Text" xml:space="preserve">
+    <value>&amp;Apply</value>
+  </data>
+  <data name="&gt;&gt;btnApply.Name" xml:space="preserve">
+    <value>btnApply</value>
+  </data>
+  <data name="&gt;&gt;btnApply.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;btnApply.Parent" xml:space="preserve">
+    <value>notesFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;btnApply.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="lblStartAt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 218</value>
+  </data>
+  <data name="lblStartAt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 13</value>
+  </data>
+  <data name="lblStartAt.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="lblStartAt.Text" xml:space="preserve">
+    <value>&amp;Start at:</value>
+  </data>
+  <data name="&gt;&gt;lblStartAt.Name" xml:space="preserve">
+    <value>lblStartAt</value>
+  </data>
+  <data name="&gt;&gt;lblStartAt.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblStartAt.Parent" xml:space="preserve">
+    <value>notesFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblStartAt.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="btnCancel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="btnCancel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>110, 308</value>
+  </data>
+  <data name="btnCancel.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>91, 22</value>
+  </data>
+  <data name="btnCancel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 22</value>
+  </data>
+  <data name="btnCancel.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="btnCancel.Text" xml:space="preserve">
+    <value>&amp;Cancel</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.Name" xml:space="preserve">
+    <value>btnCancel</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.Parent" xml:space="preserve">
+    <value>notesFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="btnInsert.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="btnInsert.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 308</value>
+  </data>
+  <data name="btnInsert.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>91, 22</value>
+  </data>
+  <data name="btnInsert.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 22</value>
+  </data>
+  <data name="btnInsert.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="btnInsert.Text" xml:space="preserve">
+    <value>&amp;Insert</value>
+  </data>
+  <data name="&gt;&gt;btnInsert.Name" xml:space="preserve">
+    <value>btnInsert</value>
+  </data>
+  <data name="&gt;&gt;btnInsert.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;btnInsert.Parent" xml:space="preserve">
+    <value>notesFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;btnInsert.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="rgNoteType.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"></assembly>
+  <data name="rgNoteType.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="rgNoteType.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 21</value>
+  </data>
+  <data name="rgNoteType.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>105, 56</value>
+  </data>
+  <data name="rgNoteType.Properties.Items" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value></value>
+  </data>
+  <data name="rgNoteType.Properties.Items1" xml:space="preserve">
+    <value>&amp;Footnotes:</value>
+  </data>
+  <data name="rgNoteType.Properties.Items2" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value></value>
+  </data>
+  <data name="rgNoteType.Properties.Items3" xml:space="preserve">
+    <value>&amp;Endnotes:</value>
+  </data>
+  <data name="rgNoteType.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 56</value>
+  </data>
+  <data name="rgNoteType.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;rgNoteType.Name" xml:space="preserve">
+    <value>rgNoteType</value>
+  </data>
+  <data name="&gt;&gt;rgNoteType.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.RadioGroup, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;rgNoteType.Parent" xml:space="preserve">
+    <value>notesFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;rgNoteType.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="lblCustomMark.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 193</value>
+  </data>
+  <data name="lblCustomMark.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 13</value>
+  </data>
+  <data name="lblCustomMark.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="lblCustomMark.Text" xml:space="preserve">
+    <value>&amp;Custom mark:</value>
+  </data>
+  <data name="&gt;&gt;lblCustomMark.Name" xml:space="preserve">
+    <value>lblCustomMark</value>
+  </data>
+  <data name="&gt;&gt;lblCustomMark.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblCustomMark.Parent" xml:space="preserve">
+    <value>notesFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblCustomMark.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="cbFootnoteLocation.Location" type="System.Drawing.Point, System.Drawing">
+    <value>123, 24</value>
+  </data>
+  <data name="cbFootnoteLocation.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>166, 20</value>
+  </data>
+  <data name="cbFootnoteLocation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>176, 20</value>
+  </data>
+  <data name="cbFootnoteLocation.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;cbFootnoteLocation.Name" xml:space="preserve">
+    <value>cbFootnoteLocation</value>
+  </data>
+  <data name="&gt;&gt;cbFootnoteLocation.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ComboBoxEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;cbFootnoteLocation.Parent" xml:space="preserve">
+    <value>notesFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;cbFootnoteLocation.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="cbEndnoteLocation.Location" type="System.Drawing.Point, System.Drawing">
+    <value>123, 54</value>
+  </data>
+  <data name="cbEndnoteLocation.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>166, 20</value>
+  </data>
+  <data name="cbEndnoteLocation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>176, 20</value>
+  </data>
+  <data name="cbEndnoteLocation.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;cbEndnoteLocation.Name" xml:space="preserve">
+    <value>cbEndnoteLocation</value>
+  </data>
+  <data name="&gt;&gt;cbEndnoteLocation.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ComboBoxEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;cbEndnoteLocation.Parent" xml:space="preserve">
+    <value>notesFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;cbEndnoteLocation.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="btnConvert.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="btnConvert.Location" type="System.Drawing.Point, System.Drawing">
+    <value>208, 81</value>
+  </data>
+  <data name="btnConvert.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>91, 22</value>
+  </data>
+  <data name="btnConvert.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 22</value>
+  </data>
+  <data name="btnConvert.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="btnConvert.Text" xml:space="preserve">
+    <value>&amp;Convert</value>
+  </data>
+  <data name="&gt;&gt;btnConvert.Name" xml:space="preserve">
+    <value>btnConvert</value>
+  </data>
+  <data name="&gt;&gt;btnConvert.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;btnConvert.Parent" xml:space="preserve">
+    <value>notesFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;btnConvert.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="lblNumberFormat.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 168</value>
+  </data>
+  <data name="lblNumberFormat.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 13</value>
+  </data>
+  <data name="lblNumberFormat.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="lblNumberFormat.Text" xml:space="preserve">
+    <value>&amp;Number format:</value>
+  </data>
+  <data name="&gt;&gt;lblNumberFormat.Name" xml:space="preserve">
+    <value>lblNumberFormat</value>
+  </data>
+  <data name="&gt;&gt;lblNumberFormat.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblNumberFormat.Parent" xml:space="preserve">
+    <value>notesFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblNumberFormat.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="lblFootnoteLayout.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 107</value>
+  </data>
+  <data name="lblFootnoteLayout.Size" type="System.Drawing.Size, System.Drawing">
+    <value>285, 13</value>
+  </data>
+  <data name="lblFootnoteLayout.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="lblFootnoteLayout.Text" xml:space="preserve">
+    <value>&amp;Footnote layout</value>
+  </data>
+  <data name="&gt;&gt;lblFootnoteLayout.Name" xml:space="preserve">
+    <value>lblFootnoteLayout</value>
+  </data>
+  <data name="&gt;&gt;lblFootnoteLayout.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblFootnoteLayout.Parent" xml:space="preserve">
+    <value>notesFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblFootnoteLayout.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="lblFormat.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 148</value>
+  </data>
+  <data name="lblFormat.Size" type="System.Drawing.Size, System.Drawing">
+    <value>285, 13</value>
+  </data>
+  <data name="lblFormat.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="lblFormat.Text" xml:space="preserve">
+    <value>&amp;Format</value>
+  </data>
+  <data name="&gt;&gt;lblFormat.Name" xml:space="preserve">
+    <value>lblFormat</value>
+  </data>
+  <data name="&gt;&gt;lblFormat.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblFormat.Parent" xml:space="preserve">
+    <value>notesFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblFormat.ZOrder" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="lblColumns.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 127</value>
+  </data>
+  <data name="lblColumns.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 13</value>
+  </data>
+  <data name="lblColumns.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="lblColumns.Text" xml:space="preserve">
+    <value>&amp;Columns:</value>
+  </data>
+  <data name="&gt;&gt;lblColumns.Name" xml:space="preserve">
+    <value>lblColumns</value>
+  </data>
+  <data name="&gt;&gt;lblColumns.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblColumns.Parent" xml:space="preserve">
+    <value>notesFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblColumns.ZOrder" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="cbFootnoteColumnCount.Location" type="System.Drawing.Point, System.Drawing">
+    <value>123, 124</value>
+  </data>
+  <data name="cbFootnoteColumnCount.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>166, 20</value>
+  </data>
+  <data name="cbFootnoteColumnCount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>176, 20</value>
+  </data>
+  <data name="cbFootnoteColumnCount.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;cbFootnoteColumnCount.Name" xml:space="preserve">
+    <value>cbFootnoteColumnCount</value>
+  </data>
+  <data name="&gt;&gt;cbFootnoteColumnCount.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ComboBoxEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;cbFootnoteColumnCount.Parent" xml:space="preserve">
+    <value>notesFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;cbFootnoteColumnCount.ZOrder" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="notesFormLayoutControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="notesFormLayoutControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>313, 344</value>
+  </data>
+  <data name="notesFormLayoutControl.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="notesFormLayoutControl.Text" xml:space="preserve">
+    <value>layoutControl1</value>
+  </data>
+  <data name="&gt;&gt;notesFormLayoutControl.Name" xml:space="preserve">
+    <value>notesFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;notesFormLayoutControl.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControl, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;notesFormLayoutControl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;notesFormLayoutControl.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblLocation.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblLocation.Text" xml:space="preserve">
+    <value>&amp;Location</value>
+  </data>
+  <data name="&gt;&gt;lblLocation.Name" xml:space="preserve">
+    <value>lblLocation</value>
+  </data>
+  <data name="&gt;&gt;lblLocation.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblLocation.Parent" xml:space="preserve">
+    <value>notesFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblLocation.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>334, 346</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterParent</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Footnote and Endnote</value>
+  </data>
+  <data name="&gt;&gt;Root.Name" xml:space="preserve">
+    <value>Root</value>
+  </data>
+  <data name="&gt;&gt;Root.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;propertiesLayoutControlGroup.Name" xml:space="preserve">
+    <value>propertiesLayoutControlGroup</value>
+  </data>
+  <data name="&gt;&gt;propertiesLayoutControlGroup.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblLocationLayoutControlItem.Name" xml:space="preserve">
+    <value>lblLocationLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;lblLocationLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;rgNoteTypeLayoutControlItem.Name" xml:space="preserve">
+    <value>rgNoteTypeLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;rgNoteTypeLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;cbFootnoteLocationLayoutControlItem.Name" xml:space="preserve">
+    <value>cbFootnoteLocationLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;cbFootnoteLocationLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;cbEndnoteLocationLayoutControlItem.Name" xml:space="preserve">
+    <value>cbEndnoteLocationLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;cbEndnoteLocationLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;btnConvertLayoutControlItem.Name" xml:space="preserve">
+    <value>btnConvertLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;btnConvertLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblFootnoteLayoutLayoutControlItem.Name" xml:space="preserve">
+    <value>lblFootnoteLayoutLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;lblFootnoteLayoutLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblColumnsLayoutControlItem.Name" xml:space="preserve">
+    <value>lblColumnsLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;lblColumnsLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;cbFootnoteColumnCountLayoutControlItem.Name" xml:space="preserve">
+    <value>cbFootnoteColumnCountLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;cbFootnoteColumnCountLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblFormatLayoutControlItem.Name" xml:space="preserve">
+    <value>lblFormatLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;lblFormatLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblNumberFormatLayoutControlItem.Name" xml:space="preserve">
+    <value>lblNumberFormatLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;lblNumberFormatLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblCustomMarkLayoutControlItem.Name" xml:space="preserve">
+    <value>lblCustomMarkLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;lblCustomMarkLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;btnSymbolLayoutControlItem.Name" xml:space="preserve">
+    <value>btnSymbolLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;btnSymbolLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblStartAtLayoutControlItem.Name" xml:space="preserve">
+    <value>lblStartAtLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;lblStartAtLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtStartAtLayoutControlItem.Name" xml:space="preserve">
+    <value>edtStartAtLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;edtStartAtLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblNumberingLayoutControlItem.Name" xml:space="preserve">
+    <value>lblNumberingLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;lblNumberingLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;cbNumberingRestartTypeLayoutControlItem.Name" xml:space="preserve">
+    <value>cbNumberingRestartTypeLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;cbNumberingRestartTypeLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblApplyChangesLayoutControlItem.Name" xml:space="preserve">
+    <value>lblApplyChangesLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;lblApplyChangesLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblApplyChangesToLayoutControlItem.Name" xml:space="preserve">
+    <value>lblApplyChangesToLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;lblApplyChangesToLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;cbApplyChangesToLayoutControlItem.Name" xml:space="preserve">
+    <value>cbApplyChangesToLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;cbApplyChangesToLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;buttonLayoutControlGroup.Name" xml:space="preserve">
+    <value>buttonLayoutControlGroup</value>
+  </data>
+  <data name="&gt;&gt;buttonLayoutControlGroup.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;btnInsertLayoutControlItem.Name" xml:space="preserve">
+    <value>btnInsertLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;btnInsertLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;btnCancelLayoutControlItem.Name" xml:space="preserve">
+    <value>btnCancelLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;btnCancelLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;btnApplyLayoutControlItem.Name" xml:space="preserve">
+    <value>btnApplyLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;btnApplyLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;object_1bd71e7f_5ec0_4c11_87a0_18844e0cdbe8.Name" xml:space="preserve">
+    <value>object_1bd71e7f_5ec0_4c11_87a0_18844e0cdbe8</value>
+  </data>
+  <data name="&gt;&gt;object_1bd71e7f_5ec0_4c11_87a0_18844e0cdbe8.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemComboBox, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtNumberingFormatLayoutControlItem.Name" xml:space="preserve">
+    <value>edtNumberingFormatLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;edtNumberingFormatLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtCustomMarkLayoutControlItem.Name" xml:space="preserve">
+    <value>edtCustomMarkLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;edtCustomMarkLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>NotesForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.XtraForm, DevExpress.Utils.v21.2, Culture=neutral</value>
+  </data>
+</root>

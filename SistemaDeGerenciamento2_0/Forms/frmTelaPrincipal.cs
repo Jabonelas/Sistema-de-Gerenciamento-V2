@@ -17,15 +17,19 @@ namespace SistemaDeGerenciamento2_0
 {
     public partial class frmTelaPrincipal : DevExpress.XtraBars.FluentDesignSystem.FluentDesignForm
     {
+        private PermissoesCadastro permissoesCadastro = new PermissoesCadastro();
+
         private List<tb_permissoes> listaPermissoes = new List<tb_permissoes>();
 
-        private frmLogin frmLogin = new frmLogin();
+        //private frmLogin frmLogin = new frmLogin();
 
         public frmTelaPrincipal()
         {
             InitializeComponent();
 
             TelaAcessoRapido();
+
+            lblUsuarioLogado.Text = frmLogin.UsuarioLogado;
         }
 
         private void TelaAcessoRapido()
@@ -67,7 +71,7 @@ namespace SistemaDeGerenciamento2_0
             frmConfiguracoes.Show();
         }
 
-        private void ReloadData()
+        public void ReloadData()
         {
             using (var handle = SplashScreenManager.ShowOverlayForm(this))
             {
@@ -111,14 +115,10 @@ namespace SistemaDeGerenciamento2_0
                         Registro = registro,
                     }).Where(x => x.Permissao.id_permissoes == x.Registro.fk_permissoes && x.Registro.rg_login == frmLogin.UsuarioLogado);
 
-                    //acessosUsuario.ForEach(x => listaPermissoes.Add(x.Permissao));
-
                     foreach (var item in acessosUsuario)
                     {
                         listaPermissoes.Add(item.Permissao);
                     }
-
-                    int s = 0;
                 }
             }
             catch (Exception x)
@@ -158,60 +158,26 @@ namespace SistemaDeGerenciamento2_0
 
         private void btnNovoCliente_Click(object sender, EventArgs e)
         {
-            ReloadData();
-
-            VerificarAcessoCadastro("Cliente");
-
-            //frmCadastroRegistros frmCadastroRegistros = new frmCadastroRegistros("Cliente", this);
-            //frmCadastroRegistros.ShowDialog();
-        }
-
-        private void VerificarAcessoCadastro(string _Cadastro)
-        {
-            bool IsUsuarioPossuiAcesso = false;
-
-            listaPermissoes.ForEach(x => IsUsuarioPossuiAcesso = x.pm_efetuar_cadastro);
-
-            if (IsUsuarioPossuiAcesso == true)
-            {
-                frmCadastro frmCadastro = new frmCadastro(this);
-                frmCadastro.ShowDialog();
-            }
-            else
-            {
-                frmConfirmarAcesso frmConfirmarAcesso = new frmConfirmarAcesso(this, _Cadastro);
-                frmConfirmarAcesso.ShowDialog();
-            }
+            permissoesCadastro.ReloadData(this);
+            permissoesCadastro.VerificarAcessoCadastro("Cliente");
         }
 
         private void btnNovoFornecedor_Click(object sender, EventArgs e)
         {
-            ReloadData();
-
-            VerificarAcessoCadastro("Fornecedor");
-
-            //frmCadastroRegistros frmCadastroRegistros = new frmCadastroRegistros("Fornecedor", this);
-            //frmCadastroRegistros.ShowDialog();
+            permissoesCadastro.ReloadData(this);
+            permissoesCadastro.VerificarAcessoCadastro("Fornecedor");
         }
 
         private void btnNovoFuncionario_Click(object sender, EventArgs e)
         {
-            ReloadData();
-
-            VerificarAcessoCadastro("Funcionario");
-
-            //frmCadastroRegistros frmCadastroRegistros = new frmCadastroRegistros("Funcionario", this);
-            //frmCadastroRegistros.ShowDialog();
+            permissoesCadastro.ReloadData(this);
+            permissoesCadastro.VerificarAcessoCadastro("Funcionario");
         }
 
         private void btnTodosOsCadastro_Click(object sender, EventArgs e)
         {
-            ReloadData();
-
-            VerificarAcessoCadastro("Todos Os Cadastros");
-
-            //frmCadastro frmCadastro = new frmCadastro(this);
-            //frmCadastro.ShowDialog();
+            permissoesCadastro.ReloadData(this);
+            permissoesCadastro.VerificarAcessoTodosCadastro("Todos Os Cadastros");
         }
 
         private void Cadastro_Click(object sender, EventArgs e)

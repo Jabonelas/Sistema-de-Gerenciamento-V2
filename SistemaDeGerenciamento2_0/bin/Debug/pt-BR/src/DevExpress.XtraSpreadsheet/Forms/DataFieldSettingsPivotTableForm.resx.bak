@@ -1,0 +1,856 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnOk.AccessibleName" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"></assembly>
+  <data name="btnOk.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"></assembly>
+  <data name="btnOk.Location" type="System.Drawing.Point, System.Drawing">
+    <value>228, 277</value>
+  </data>
+  <data name="btnOk.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btnOk.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="lblSourceNameValue.AccessibleName" xml:space="preserve">
+    <value>Source Name Value</value>
+  </data>
+  <data name="lblSourceNameValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>86, 15</value>
+  </data>
+  <data name="lblSourceNameValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>296, 13</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"></assembly>
+  <data name="lblSourceNameValue.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;lblSourceNameValue.Name" xml:space="preserve">
+    <value>lblSourceNameValue</value>
+  </data>
+  <data name="&gt;&gt;lblSourceNameValue.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblSourceNameValue.Parent" xml:space="preserve">
+    <value>dataFieldSettingsPivotTableFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblSourceNameValue.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="btnNumberFormat.AccessibleName" xml:space="preserve">
+    <value>Number Format</value>
+  </data>
+  <data name="btnNumberFormat.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="btnNumberFormat.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 277</value>
+  </data>
+  <data name="btnNumberFormat.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>100, 23</value>
+  </data>
+  <data name="btnNumberFormat.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 23</value>
+  </data>
+  <data name="btnNumberFormat.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="btnNumberFormat.Text" xml:space="preserve">
+    <value>&amp;Number Format</value>
+  </data>
+  <data name="&gt;&gt;btnNumberFormat.Name" xml:space="preserve">
+    <value>btnNumberFormat</value>
+  </data>
+  <data name="&gt;&gt;btnNumberFormat.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;btnNumberFormat.Parent" xml:space="preserve">
+    <value>dataFieldSettingsPivotTableFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;btnNumberFormat.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="btnCancel.AccessibleName" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="btnCancel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="btnCancel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>307, 277</value>
+  </data>
+  <data name="btnCancel.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btnCancel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btnCancel.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="btnCancel.Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.Name" xml:space="preserve">
+    <value>btnCancel</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.Parent" xml:space="preserve">
+    <value>dataFieldSettingsPivotTableFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="edtCustomName.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="edtCustomName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>86, 36</value>
+  </data>
+  <data name="edtCustomName.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>296, 20</value>
+  </data>
+  <data name="edtCustomName.Properties.AccessibleName" xml:space="preserve">
+    <value>Custom Name</value>
+  </data>
+  <data name="edtCustomName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>296, 20</value>
+  </data>
+  <data name="edtCustomName.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;edtCustomName.Name" xml:space="preserve">
+    <value>edtCustomName</value>
+  </data>
+  <data name="&gt;&gt;edtCustomName.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtCustomName.Parent" xml:space="preserve">
+    <value>dataFieldSettingsPivotTableFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;edtCustomName.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="lblCustomName.AccessibleName" xml:space="preserve">
+    <value>Custom Name</value>
+  </data>
+  <data name="lblCustomName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 39</value>
+  </data>
+  <data name="lblCustomName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 13</value>
+  </data>
+  <data name="lblCustomName.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="lblCustomName.Text" xml:space="preserve">
+    <value>&amp;Custom Name:</value>
+  </data>
+  <data name="&gt;&gt;lblCustomName.Name" xml:space="preserve">
+    <value>lblCustomName</value>
+  </data>
+  <data name="&gt;&gt;lblCustomName.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblCustomName.Parent" xml:space="preserve">
+    <value>dataFieldSettingsPivotTableFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblCustomName.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="lblSourceName.AccessibleName" xml:space="preserve">
+    <value>Source Name</value>
+  </data>
+  <data name="lblSourceName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 15</value>
+  </data>
+  <data name="lblSourceName.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>80, 0</value>
+  </data>
+  <data name="lblSourceName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 13</value>
+  </data>
+  <data name="lblSourceName.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="lblSourceName.Text" xml:space="preserve">
+    <value>Source Name:</value>
+  </data>
+  <data name="&gt;&gt;lblSourceName.Name" xml:space="preserve">
+    <value>lblSourceName</value>
+  </data>
+  <data name="&gt;&gt;lblSourceName.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblSourceName.Parent" xml:space="preserve">
+    <value>dataFieldSettingsPivotTableFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblSourceName.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="edtShowValuesAs.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 129</value>
+  </data>
+  <data name="edtShowValuesAs.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>346, 20</value>
+  </data>
+  <data name="edtShowValuesAs.Properties.NullText" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="edtShowValuesAs.Size" type="System.Drawing.Size, System.Drawing">
+    <value>346, 20</value>
+  </data>
+  <data name="edtShowValuesAs.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;edtShowValuesAs.Name" xml:space="preserve">
+    <value>edtShowValuesAs</value>
+  </data>
+  <data name="&gt;&gt;edtShowValuesAs.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.Forms.Design.SpreadsheetLookUpEdit, DevExpress.XtraSpreadsheet.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtShowValuesAs.Parent" xml:space="preserve">
+    <value>dataFieldSettingsPivotTableFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;edtShowValuesAs.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="lblSeparator3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="lblSeparator3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 112</value>
+  </data>
+  <data name="lblSeparator3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>346, 13</value>
+  </data>
+  <data name="lblSeparator3.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;lblSeparator3.Name" xml:space="preserve">
+    <value>lblSeparator3</value>
+  </data>
+  <data name="&gt;&gt;lblSeparator3.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblSeparator3.Parent" xml:space="preserve">
+    <value>dataFieldSettingsPivotTableFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblSeparator3.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="lbBaseItem.AccessibleName" xml:space="preserve">
+    <value>Base item</value>
+  </data>
+  <data name="lbBaseItem.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left</value>
+  </data>
+  <data name="lbBaseItem.Location" type="System.Drawing.Point, System.Drawing">
+    <value>199, 173</value>
+  </data>
+  <data name="lbBaseItem.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>171, 88</value>
+  </data>
+  <data name="lbBaseItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>171, 88</value>
+  </data>
+  <data name="lbBaseItem.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;lbBaseItem.Name" xml:space="preserve">
+    <value>lbBaseItem</value>
+  </data>
+  <data name="&gt;&gt;lbBaseItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ListBoxControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lbBaseItem.Parent" xml:space="preserve">
+    <value>dataFieldSettingsPivotTableFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;lbBaseItem.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="lbBaseField.AccessibleName" xml:space="preserve">
+    <value>Base field</value>
+  </data>
+  <data name="lbBaseField.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left</value>
+  </data>
+  <data name="lbBaseField.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 173</value>
+  </data>
+  <data name="lbBaseField.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>171, 88</value>
+  </data>
+  <data name="lbBaseField.Size" type="System.Drawing.Size, System.Drawing">
+    <value>171, 88</value>
+  </data>
+  <data name="lbBaseField.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;lbBaseField.Name" xml:space="preserve">
+    <value>lbBaseField</value>
+  </data>
+  <data name="&gt;&gt;lbBaseField.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ListBoxControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lbBaseField.Parent" xml:space="preserve">
+    <value>dataFieldSettingsPivotTableFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;lbBaseField.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="lblBaseItem.AccessibleName" xml:space="preserve">
+    <value>Base item</value>
+  </data>
+  <data name="lblBaseItem.Location" type="System.Drawing.Point, System.Drawing">
+    <value>199, 156</value>
+  </data>
+  <data name="lblBaseItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 13</value>
+  </data>
+  <data name="lblBaseItem.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="lblBaseItem.Text" xml:space="preserve">
+    <value>Base &amp;item:</value>
+  </data>
+  <data name="&gt;&gt;lblBaseItem.Name" xml:space="preserve">
+    <value>lblBaseItem</value>
+  </data>
+  <data name="&gt;&gt;lblBaseItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblBaseItem.Parent" xml:space="preserve">
+    <value>dataFieldSettingsPivotTableFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblBaseItem.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="lblBaseField.AccessibleName" xml:space="preserve">
+    <value>Base field</value>
+  </data>
+  <data name="lblBaseField.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 156</value>
+  </data>
+  <data name="lblBaseField.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 13</value>
+  </data>
+  <data name="lblBaseField.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="lblBaseField.Text" xml:space="preserve">
+    <value>Base &amp;field:</value>
+  </data>
+  <data name="&gt;&gt;lblBaseField.Name" xml:space="preserve">
+    <value>lblBaseField</value>
+  </data>
+  <data name="&gt;&gt;lblBaseField.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblBaseField.Parent" xml:space="preserve">
+    <value>dataFieldSettingsPivotTableFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblBaseField.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="lblShowValuesAs.AccessibleName" xml:space="preserve">
+    <value>Show values as</value>
+  </data>
+  <data name="lblShowValuesAs.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="lblShowValuesAs.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 95</value>
+  </data>
+  <data name="lblShowValuesAs.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 13</value>
+  </data>
+  <data name="lblShowValuesAs.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="lblShowValuesAs.Text" xml:space="preserve">
+    <value>Show v&amp;alues as</value>
+  </data>
+  <data name="&gt;&gt;lblShowValuesAs.Name" xml:space="preserve">
+    <value>lblShowValuesAs</value>
+  </data>
+  <data name="&gt;&gt;lblShowValuesAs.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblShowValuesAs.Parent" xml:space="preserve">
+    <value>dataFieldSettingsPivotTableFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblShowValuesAs.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="lbFunctions.AccessibleName" xml:space="preserve">
+    <value>Functions</value>
+  </data>
+  <data name="lbFunctions.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left</value>
+  </data>
+  <data name="lbFunctions.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 159</value>
+  </data>
+  <data name="lbFunctions.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>346, 102</value>
+  </data>
+  <data name="lbFunctions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>346, 102</value>
+  </data>
+  <data name="lbFunctions.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;lbFunctions.Name" xml:space="preserve">
+    <value>lbFunctions</value>
+  </data>
+  <data name="&gt;&gt;lbFunctions.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ListBoxControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lbFunctions.Parent" xml:space="preserve">
+    <value>dataFieldSettingsPivotTableFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;lbFunctions.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="lblTypeOfCalculation.AccessibleName" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="lblTypeOfCalculation.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 129</value>
+  </data>
+  <data name="lblTypeOfCalculation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>346, 26</value>
+  </data>
+  <data name="lblTypeOfCalculation.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="lblTypeOfCalculation.Text" xml:space="preserve">
+    <value>Choose the type of calculation that you want to use to summarize data
+for the selected field</value>
+  </data>
+  <data name="&gt;&gt;lblTypeOfCalculation.Name" xml:space="preserve">
+    <value>lblTypeOfCalculation</value>
+  </data>
+  <data name="&gt;&gt;lblTypeOfCalculation.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblTypeOfCalculation.Parent" xml:space="preserve">
+    <value>dataFieldSettingsPivotTableFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblTypeOfCalculation.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="lblSeparator.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="lblSeparator.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 112</value>
+  </data>
+  <data name="lblSeparator.Size" type="System.Drawing.Size, System.Drawing">
+    <value>346, 13</value>
+  </data>
+  <data name="lblSeparator.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;lblSeparator.Name" xml:space="preserve">
+    <value>lblSeparator</value>
+  </data>
+  <data name="&gt;&gt;lblSeparator.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblSeparator.Parent" xml:space="preserve">
+    <value>dataFieldSettingsPivotTableFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblSeparator.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="lblSummarizeValueFieldBy.AccessibleName" xml:space="preserve">
+    <value>Summarize value field by</value>
+  </data>
+  <data name="lblSummarizeValueFieldBy.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="lblSummarizeValueFieldBy.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 95</value>
+  </data>
+  <data name="lblSummarizeValueFieldBy.Size" type="System.Drawing.Size, System.Drawing">
+    <value>346, 13</value>
+  </data>
+  <data name="lblSummarizeValueFieldBy.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="lblSummarizeValueFieldBy.Text" xml:space="preserve">
+    <value>&amp;Summarize value field by</value>
+  </data>
+  <data name="&gt;&gt;lblSummarizeValueFieldBy.Name" xml:space="preserve">
+    <value>lblSummarizeValueFieldBy</value>
+  </data>
+  <data name="&gt;&gt;lblSummarizeValueFieldBy.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblSummarizeValueFieldBy.Parent" xml:space="preserve">
+    <value>dataFieldSettingsPivotTableFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;lblSummarizeValueFieldBy.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="dataFieldSettingsPivotTableFormLayoutControl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="dataFieldSettingsPivotTableFormLayoutControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="grpShowValuesAs.Text" xml:space="preserve">
+    <value>Show Values As</value>
+  </data>
+  <data name="grpSummarizeValuesBy.Text" xml:space="preserve">
+    <value>Summarize Values By</value>
+  </data>
+  <data name="dataFieldSettingsPivotTableFormLayoutControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>394, 312</value>
+  </data>
+  <data name="dataFieldSettingsPivotTableFormLayoutControl.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="dataFieldSettingsPivotTableFormLayoutControl.Text" xml:space="preserve">
+    <value>layoutControl2</value>
+  </data>
+  <data name="&gt;&gt;dataFieldSettingsPivotTableFormLayoutControl.Name" xml:space="preserve">
+    <value>dataFieldSettingsPivotTableFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;dataFieldSettingsPivotTableFormLayoutControl.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControl, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;dataFieldSettingsPivotTableFormLayoutControl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;dataFieldSettingsPivotTableFormLayoutControl.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btnOk.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="btnOk.Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="&gt;&gt;btnOk.Name" xml:space="preserve">
+    <value>btnOk</value>
+  </data>
+  <data name="&gt;&gt;btnOk.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;btnOk.Parent" xml:space="preserve">
+    <value>dataFieldSettingsPivotTableFormLayoutControl</value>
+  </data>
+  <data name="&gt;&gt;btnOk.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>394, 312</value>
+  </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>396, 344</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterParent</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Value Field Settings</value>
+  </data>
+  <data name="&gt;&gt;Root.Name" xml:space="preserve">
+    <value>Root</value>
+  </data>
+  <data name="&gt;&gt;Root.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;tabControl.Name" xml:space="preserve">
+    <value>tabControl</value>
+  </data>
+  <data name="&gt;&gt;tabControl.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.TabbedControlGroup, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;grpShowValuesAs.Name" xml:space="preserve">
+    <value>grpShowValuesAs</value>
+  </data>
+  <data name="&gt;&gt;grpShowValuesAs.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblShowValuesAsLayoutControlItem.Name" xml:space="preserve">
+    <value>lblShowValuesAsLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;lblShowValuesAsLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblSeparator3LayoutControlItem.Name" xml:space="preserve">
+    <value>lblSeparator3LayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;lblSeparator3LayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;layoutControlBaseItems.Name" xml:space="preserve">
+    <value>layoutControlBaseItems</value>
+  </data>
+  <data name="&gt;&gt;layoutControlBaseItems.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblBaseFieldLayoutControlItem.Name" xml:space="preserve">
+    <value>lblBaseFieldLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;lblBaseFieldLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblBaseItemLayoutControlItem.Name" xml:space="preserve">
+    <value>lblBaseItemLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;lblBaseItemLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lbBaseFieldLayoutControlItem.Name" xml:space="preserve">
+    <value>lbBaseFieldLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;lbBaseFieldLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lbBaseItemLayoutControlItem.Name" xml:space="preserve">
+    <value>lbBaseItemLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;lbBaseItemLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem1.Name" xml:space="preserve">
+    <value>emptySpaceItem1</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;grpSummarizeValuesBy.Name" xml:space="preserve">
+    <value>grpSummarizeValuesBy</value>
+  </data>
+  <data name="&gt;&gt;grpSummarizeValuesBy.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblSummarizeValueFieldByLayoutControlItem.Name" xml:space="preserve">
+    <value>lblSummarizeValueFieldByLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;lblSummarizeValueFieldByLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblSeparatorLayoutControlItem.Name" xml:space="preserve">
+    <value>lblSeparatorLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;lblSeparatorLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblTypeOfCalculationLayoutControlItem.Name" xml:space="preserve">
+    <value>lblTypeOfCalculationLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;lblTypeOfCalculationLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lbFunctionsLayoutControlItem.Name" xml:space="preserve">
+    <value>lbFunctionsLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;lbFunctionsLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;btnNumberFormatLayoutControlItem.Name" xml:space="preserve">
+    <value>btnNumberFormatLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;btnNumberFormatLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;btnOkLayoutControlItem.Name" xml:space="preserve">
+    <value>btnOkLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;btnOkLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;btnCancelLayoutControlItem.Name" xml:space="preserve">
+    <value>btnCancelLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;btnCancelLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;layoutGroupName.Name" xml:space="preserve">
+    <value>layoutGroupName</value>
+  </data>
+  <data name="&gt;&gt;layoutGroupName.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblSourceNameLayoutControlItem.Name" xml:space="preserve">
+    <value>lblSourceNameLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;lblSourceNameLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblCustomNameLayoutControlItem.Name" xml:space="preserve">
+    <value>lblCustomNameLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;lblCustomNameLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtCustomNameLayoutControlItem.Name" xml:space="preserve">
+    <value>edtCustomNameLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;edtCustomNameLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblSourceNameValueLayoutControlItem.Name" xml:space="preserve">
+    <value>lblSourceNameValueLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;lblSourceNameValueLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem2.Name" xml:space="preserve">
+    <value>emptySpaceItem2</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem2.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtShowValuesAsLayoutControlItem.Name" xml:space="preserve">
+    <value>edtShowValuesAsLayoutControlItem</value>
+  </data>
+  <data name="&gt;&gt;edtShowValuesAsLayoutControlItem.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>DataFieldSettingsPivotTableForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.XtraForm, DevExpress.Utils.v21.2, Culture=neutral</value>
+  </data>
+</root>

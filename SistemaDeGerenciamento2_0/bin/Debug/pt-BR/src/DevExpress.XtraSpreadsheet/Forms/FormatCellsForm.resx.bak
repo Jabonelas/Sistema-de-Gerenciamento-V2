@@ -1,0 +1,2417 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+              <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+              <xsd:attribute ref="xml:space"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"></assembly>
+  <data name="tabControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="formatNumberCustomControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>116, 72</value>
+  </data>
+  <data name="formatNumberCustomControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>352, 201</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"></assembly>
+  <data name="formatNumberCustomControl.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="formatNumberCustomControl.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;formatNumberCustomControl.Name" xml:space="preserve">
+    <value>formatNumberCustomControl</value>
+  </data>
+  <data name="&gt;&gt;formatNumberCustomControl.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.Forms.Design.FormatNumberCustomControl, DevExpress.XtraSpreadsheet.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;formatNumberCustomControl.Parent" xml:space="preserve">
+    <value>xtraTabNumber</value>
+  </data>
+  <data name="&gt;&gt;formatNumberCustomControl.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblCategoryDescription.AccessibleName" xml:space="preserve">
+    <value>Category description</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"></assembly>
+  <data name="lblCategoryDescription.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="lblCategoryDescription.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 279</value>
+  </data>
+  <data name="lblCategoryDescription.Size" type="System.Drawing.Size, System.Drawing">
+    <value>461, 70</value>
+  </data>
+  <data name="lblCategoryDescription.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;lblCategoryDescription.Name" xml:space="preserve">
+    <value>lblCategoryDescription</value>
+  </data>
+  <data name="&gt;&gt;lblCategoryDescription.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblCategoryDescription.Parent" xml:space="preserve">
+    <value>xtraTabNumber</value>
+  </data>
+  <data name="&gt;&gt;lblCategoryDescription.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lblNumberDescription.Location" type="System.Drawing.Point, System.Drawing">
+    <value>116, 72</value>
+  </data>
+  <data name="lblNumberDescription.Size" type="System.Drawing.Size, System.Drawing">
+    <value>358, 201</value>
+  </data>
+  <data name="lblNumberDescription.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="lblNumberDescription.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;lblNumberDescription.Name" xml:space="preserve">
+    <value>lblNumberDescription</value>
+  </data>
+  <data name="&gt;&gt;lblNumberDescription.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblNumberDescription.Parent" xml:space="preserve">
+    <value>xtraTabNumber</value>
+  </data>
+  <data name="&gt;&gt;lblNumberDescription.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="formatNumberTypeControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>116, 72</value>
+  </data>
+  <data name="formatNumberTypeControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>352, 201</value>
+  </data>
+  <data name="formatNumberTypeControl.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="formatNumberTypeControl.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;formatNumberTypeControl.Name" xml:space="preserve">
+    <value>formatNumberTypeControl</value>
+  </data>
+  <data name="&gt;&gt;formatNumberTypeControl.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.Forms.Design.FormatNumberTypeControl, DevExpress.XtraSpreadsheet.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;formatNumberTypeControl.Parent" xml:space="preserve">
+    <value>xtraTabNumber</value>
+  </data>
+  <data name="&gt;&gt;formatNumberTypeControl.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="formatNumberDecimalControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>116, 72</value>
+  </data>
+  <data name="formatNumberDecimalControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>352, 201</value>
+  </data>
+  <data name="formatNumberDecimalControl.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="formatNumberDecimalControl.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;formatNumberDecimalControl.Name" xml:space="preserve">
+    <value>formatNumberDecimalControl</value>
+  </data>
+  <data name="&gt;&gt;formatNumberDecimalControl.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.Forms.Design.FormatNumberDecimalControl, DevExpress.XtraSpreadsheet.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;formatNumberDecimalControl.Parent" xml:space="preserve">
+    <value>xtraTabNumber</value>
+  </data>
+  <data name="&gt;&gt;formatNumberDecimalControl.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="grpNumberSample.AccessibleName" xml:space="preserve">
+    <value>Sample</value>
+  </data>
+  <data name="grpNumberSample.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="lblNumberSample.AccessibleName" xml:space="preserve">
+    <value>Sample</value>
+  </data>
+  <data name="lblNumberSample.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 24</value>
+  </data>
+  <data name="lblNumberSample.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 13</value>
+  </data>
+  <data name="lblNumberSample.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;lblNumberSample.Name" xml:space="preserve">
+    <value>lblNumberSample</value>
+  </data>
+  <data name="&gt;&gt;lblNumberSample.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblNumberSample.Parent" xml:space="preserve">
+    <value>grpNumberSample</value>
+  </data>
+  <data name="&gt;&gt;lblNumberSample.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="grpNumberSample.Location" type="System.Drawing.Point, System.Drawing">
+    <value>116, 22</value>
+  </data>
+  <data name="grpNumberSample.Size" type="System.Drawing.Size, System.Drawing">
+    <value>352, 44</value>
+  </data>
+  <data name="grpNumberSample.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="grpNumberSample.Text" xml:space="preserve">
+    <value>Sample</value>
+  </data>
+  <data name="&gt;&gt;grpNumberSample.Name" xml:space="preserve">
+    <value>grpNumberSample</value>
+  </data>
+  <data name="&gt;&gt;grpNumberSample.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.GroupControl, DevExpress.Utils.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;grpNumberSample.Parent" xml:space="preserve">
+    <value>xtraTabNumber</value>
+  </data>
+  <data name="&gt;&gt;grpNumberSample.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="lbCategory.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 3</value>
+  </data>
+  <data name="lbCategory.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 13</value>
+  </data>
+  <data name="lbCategory.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lbCategory.Text" xml:space="preserve">
+    <value>&amp;Category:</value>
+  </data>
+  <data name="&gt;&gt;lbCategory.Name" xml:space="preserve">
+    <value>lbCategory</value>
+  </data>
+  <data name="&gt;&gt;lbCategory.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lbCategory.Parent" xml:space="preserve">
+    <value>xtraTabNumber</value>
+  </data>
+  <data name="&gt;&gt;lbCategory.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="lBoxNumberCategory.AccessibleName" xml:space="preserve">
+    <value>Number Category</value>
+  </data>
+  <data name="lBoxNumberCategory.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 22</value>
+  </data>
+  <data name="lBoxNumberCategory.Size" type="System.Drawing.Size, System.Drawing">
+    <value>103, 251</value>
+  </data>
+  <data name="lBoxNumberCategory.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;lBoxNumberCategory.Name" xml:space="preserve">
+    <value>lBoxNumberCategory</value>
+  </data>
+  <data name="&gt;&gt;lBoxNumberCategory.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ListBoxControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lBoxNumberCategory.Parent" xml:space="preserve">
+    <value>xtraTabNumber</value>
+  </data>
+  <data name="&gt;&gt;lBoxNumberCategory.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="xtraTabNumber.Size" type="System.Drawing.Size, System.Drawing">
+    <value>474, 352</value>
+  </data>
+  <data name="xtraTabNumber.Text" xml:space="preserve">
+    <value>Number</value>
+  </data>
+  <data name="&gt;&gt;xtraTabNumber.Name" xml:space="preserve">
+    <value>xtraTabNumber</value>
+  </data>
+  <data name="&gt;&gt;xtraTabNumber.Type" xml:space="preserve">
+    <value>DevExpress.XtraTab.XtraTabPage, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;xtraTabNumber.Parent" xml:space="preserve">
+    <value>tabControl</value>
+  </data>
+  <data name="&gt;&gt;xtraTabNumber.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tabControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>480, 380</value>
+  </data>
+  <data name="tabControl.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblOrientation.AccessibleName" xml:space="preserve">
+    <value>Orientation</value>
+  </data>
+  <data name="lblOrientation.Location" type="System.Drawing.Point, System.Drawing">
+    <value>326, 9</value>
+  </data>
+  <data name="lblOrientation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>145, 13</value>
+  </data>
+  <data name="lblOrientation.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="lblOrientation.Text" xml:space="preserve">
+    <value>Orientation</value>
+  </data>
+  <data name="&gt;&gt;lblOrientation.Name" xml:space="preserve">
+    <value>lblOrientation</value>
+  </data>
+  <data name="&gt;&gt;lblOrientation.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblOrientation.Parent" xml:space="preserve">
+    <value>xtraTabAlignment</value>
+  </data>
+  <data name="&gt;&gt;lblOrientation.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lbPreviewRotatedText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>337, 70</value>
+  </data>
+  <data name="lbPreviewRotatedText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>114, 61</value>
+  </data>
+  <data name="lbPreviewRotatedText.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;lbPreviewRotatedText.Name" xml:space="preserve">
+    <value>lbPreviewRotatedText</value>
+  </data>
+  <data name="&gt;&gt;lbPreviewRotatedText.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ListBoxControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lbPreviewRotatedText.Parent" xml:space="preserve">
+    <value>xtraTabAlignment</value>
+  </data>
+  <data name="&gt;&gt;lbPreviewRotatedText.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="edtVerticalAlignment.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 93</value>
+  </data>
+  <data name="edtVerticalAlignment.Properties.NullText" xml:space="preserve">
+    <value>Bottom</value>
+  </data>
+  <data name="edtVerticalAlignment.Size" type="System.Drawing.Size, System.Drawing">
+    <value>141, 20</value>
+  </data>
+  <data name="edtVerticalAlignment.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;edtVerticalAlignment.Name" xml:space="preserve">
+    <value>edtVerticalAlignment</value>
+  </data>
+  <data name="&gt;&gt;edtVerticalAlignment.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.Forms.Design.SpreadsheetLookUpEdit, DevExpress.XtraSpreadsheet.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtVerticalAlignment.Parent" xml:space="preserve">
+    <value>xtraTabAlignment</value>
+  </data>
+  <data name="&gt;&gt;edtVerticalAlignment.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lblPreview.AccessibleName" xml:space="preserve">
+    <value>Preview</value>
+  </data>
+  <data name="lblPreview.Location" type="System.Drawing.Point, System.Drawing">
+    <value>337, 51</value>
+  </data>
+  <data name="lblPreview.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 13</value>
+  </data>
+  <data name="lblPreview.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="lblPreview.Text" xml:space="preserve">
+    <value>Preview:</value>
+  </data>
+  <data name="&gt;&gt;lblPreview.Name" xml:space="preserve">
+    <value>lblPreview</value>
+  </data>
+  <data name="&gt;&gt;lblPreview.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblPreview.Parent" xml:space="preserve">
+    <value>xtraTabAlignment</value>
+  </data>
+  <data name="&gt;&gt;lblPreview.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="edtHorizontalAlignment.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 48</value>
+  </data>
+  <data name="edtHorizontalAlignment.Properties.NullText" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="edtHorizontalAlignment.Size" type="System.Drawing.Size, System.Drawing">
+    <value>141, 20</value>
+  </data>
+  <data name="edtHorizontalAlignment.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;edtHorizontalAlignment.Name" xml:space="preserve">
+    <value>edtHorizontalAlignment</value>
+  </data>
+  <data name="&gt;&gt;edtHorizontalAlignment.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.Forms.Design.SpreadsheetLookUpEdit, DevExpress.XtraSpreadsheet.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtHorizontalAlignment.Parent" xml:space="preserve">
+    <value>xtraTabAlignment</value>
+  </data>
+  <data name="&gt;&gt;edtHorizontalAlignment.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="edtDegrees.EditValue" type="System.Decimal, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="edtDegrees.Location" type="System.Drawing.Point, System.Drawing">
+    <value>337, 26</value>
+  </data>
+  <data name="edtDegrees.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>100, 0</value>
+  </data>
+  <data name="edtDegrees.Properties.Mask.EditMask" xml:space="preserve">
+    <value>N00</value>
+  </data>
+  <data name="edtDegrees.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 20</value>
+  </data>
+  <data name="edtDegrees.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;edtDegrees.Name" xml:space="preserve">
+    <value>edtDegrees</value>
+  </data>
+  <data name="&gt;&gt;edtDegrees.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SpinEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtDegrees.Parent" xml:space="preserve">
+    <value>xtraTabAlignment</value>
+  </data>
+  <data name="&gt;&gt;edtDegrees.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="lblDegrees.AccessibleName" xml:space="preserve">
+    <value>Degrees</value>
+  </data>
+  <data name="lblDegrees.Location" type="System.Drawing.Point, System.Drawing">
+    <value>411, 29</value>
+  </data>
+  <data name="lblDegrees.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 13</value>
+  </data>
+  <data name="lblDegrees.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="lblDegrees.Text" xml:space="preserve">
+    <value>&amp;Degrees</value>
+  </data>
+  <data name="&gt;&gt;lblDegrees.Name" xml:space="preserve">
+    <value>lblDegrees</value>
+  </data>
+  <data name="&gt;&gt;lblDegrees.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblDegrees.Parent" xml:space="preserve">
+    <value>xtraTabAlignment</value>
+  </data>
+  <data name="&gt;&gt;lblDegrees.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="edtTextDirection.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 275</value>
+  </data>
+  <data name="edtTextDirection.Properties.NullText" xml:space="preserve">
+    <value>Context</value>
+  </data>
+  <data name="edtTextDirection.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="edtTextDirection.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;edtTextDirection.Name" xml:space="preserve">
+    <value>edtTextDirection</value>
+  </data>
+  <data name="&gt;&gt;edtTextDirection.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.Forms.Design.SpreadsheetLookUpEdit, DevExpress.XtraSpreadsheet.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtTextDirection.Parent" xml:space="preserve">
+    <value>xtraTabAlignment</value>
+  </data>
+  <data name="&gt;&gt;edtTextDirection.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="chkWrapText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 165</value>
+  </data>
+  <data name="chkWrapText.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="chkWrapText.Properties.Caption" xml:space="preserve">
+    <value>&amp;Wrap text</value>
+  </data>
+  <data name="chkWrapText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 19</value>
+  </data>
+  <data name="chkWrapText.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;chkWrapText.Name" xml:space="preserve">
+    <value>chkWrapText</value>
+  </data>
+  <data name="&gt;&gt;chkWrapText.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;chkWrapText.Parent" xml:space="preserve">
+    <value>xtraTabAlignment</value>
+  </data>
+  <data name="&gt;&gt;chkWrapText.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="chkShrinkToFit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 186</value>
+  </data>
+  <data name="chkShrinkToFit.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="chkShrinkToFit.Properties.Caption" xml:space="preserve">
+    <value>Shrin&amp;k to fit</value>
+  </data>
+  <data name="chkShrinkToFit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 19</value>
+  </data>
+  <data name="chkShrinkToFit.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;chkShrinkToFit.Name" xml:space="preserve">
+    <value>chkShrinkToFit</value>
+  </data>
+  <data name="&gt;&gt;chkShrinkToFit.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;chkShrinkToFit.Parent" xml:space="preserve">
+    <value>xtraTabAlignment</value>
+  </data>
+  <data name="&gt;&gt;chkShrinkToFit.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="chkMergeCells.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 208</value>
+  </data>
+  <data name="chkMergeCells.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="chkMergeCells.Properties.Caption" xml:space="preserve">
+    <value>&amp;Merge cells</value>
+  </data>
+  <data name="chkMergeCells.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 19</value>
+  </data>
+  <data name="chkMergeCells.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;chkMergeCells.Name" xml:space="preserve">
+    <value>chkMergeCells</value>
+  </data>
+  <data name="&gt;&gt;chkMergeCells.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;chkMergeCells.Parent" xml:space="preserve">
+    <value>xtraTabAlignment</value>
+  </data>
+  <data name="&gt;&gt;chkMergeCells.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="chkJustifyDistributed.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="chkJustifyDistributed.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 117</value>
+  </data>
+  <data name="chkJustifyDistributed.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="chkJustifyDistributed.Properties.Caption" xml:space="preserve">
+    <value>Justify distributed</value>
+  </data>
+  <data name="chkJustifyDistributed.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 19</value>
+  </data>
+  <data name="chkJustifyDistributed.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;chkJustifyDistributed.Name" xml:space="preserve">
+    <value>chkJustifyDistributed</value>
+  </data>
+  <data name="&gt;&gt;chkJustifyDistributed.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;chkJustifyDistributed.Parent" xml:space="preserve">
+    <value>xtraTabAlignment</value>
+  </data>
+  <data name="&gt;&gt;chkJustifyDistributed.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="lblTextDirection.AccessibleName" xml:space="preserve">
+    <value>Text Direction</value>
+  </data>
+  <data name="lblTextDirection.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 256</value>
+  </data>
+  <data name="lblTextDirection.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 13</value>
+  </data>
+  <data name="lblTextDirection.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="lblTextDirection.Text" xml:space="preserve">
+    <value>&amp;Text direction:</value>
+  </data>
+  <data name="&gt;&gt;lblTextDirection.Name" xml:space="preserve">
+    <value>lblTextDirection</value>
+  </data>
+  <data name="&gt;&gt;lblTextDirection.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblTextDirection.Parent" xml:space="preserve">
+    <value>xtraTabAlignment</value>
+  </data>
+  <data name="&gt;&gt;lblTextDirection.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="lblIndent.AccessibleName" xml:space="preserve">
+    <value>Indent</value>
+  </data>
+  <data name="lblIndent.Location" type="System.Drawing.Point, System.Drawing">
+    <value>171, 52</value>
+  </data>
+  <data name="lblIndent.Size" type="System.Drawing.Size, System.Drawing">
+    <value>36, 13</value>
+  </data>
+  <data name="lblIndent.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="lblIndent.Text" xml:space="preserve">
+    <value>Indent:</value>
+  </data>
+  <data name="&gt;&gt;lblIndent.Name" xml:space="preserve">
+    <value>lblIndent</value>
+  </data>
+  <data name="&gt;&gt;lblIndent.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblIndent.Parent" xml:space="preserve">
+    <value>xtraTabAlignment</value>
+  </data>
+  <data name="&gt;&gt;lblIndent.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="lblVertical.AccessibleName" xml:space="preserve">
+    <value>Vertical</value>
+  </data>
+  <data name="lblVertical.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 74</value>
+  </data>
+  <data name="lblVertical.Size" type="System.Drawing.Size, System.Drawing">
+    <value>39, 13</value>
+  </data>
+  <data name="lblVertical.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="lblVertical.Text" xml:space="preserve">
+    <value>&amp;Vertical:</value>
+  </data>
+  <data name="&gt;&gt;lblVertical.Name" xml:space="preserve">
+    <value>lblVertical</value>
+  </data>
+  <data name="&gt;&gt;lblVertical.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblVertical.Parent" xml:space="preserve">
+    <value>xtraTabAlignment</value>
+  </data>
+  <data name="&gt;&gt;lblVertical.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="lblHorizontal.AccessibleName" xml:space="preserve">
+    <value>Horizontal</value>
+  </data>
+  <data name="lblHorizontal.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 29</value>
+  </data>
+  <data name="lblHorizontal.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 13</value>
+  </data>
+  <data name="lblHorizontal.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="lblHorizontal.Text" xml:space="preserve">
+    <value>&amp;Horizontal:</value>
+  </data>
+  <data name="&gt;&gt;lblHorizontal.Name" xml:space="preserve">
+    <value>lblHorizontal</value>
+  </data>
+  <data name="&gt;&gt;lblHorizontal.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblHorizontal.Parent" xml:space="preserve">
+    <value>xtraTabAlignment</value>
+  </data>
+  <data name="&gt;&gt;lblHorizontal.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="lblRightToLeft.AccessibleName" xml:space="preserve">
+    <value>Right to left</value>
+  </data>
+  <data name="lblRightToLeft.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 237</value>
+  </data>
+  <data name="lblRightToLeft.Size" type="System.Drawing.Size, System.Drawing">
+    <value>307, 13</value>
+  </data>
+  <data name="lblRightToLeft.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="lblRightToLeft.Text" xml:space="preserve">
+    <value>Right-to-left</value>
+  </data>
+  <data name="&gt;&gt;lblRightToLeft.Name" xml:space="preserve">
+    <value>lblRightToLeft</value>
+  </data>
+  <data name="&gt;&gt;lblRightToLeft.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblRightToLeft.Parent" xml:space="preserve">
+    <value>xtraTabAlignment</value>
+  </data>
+  <data name="&gt;&gt;lblRightToLeft.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="lblTextControl.AccessibleName" xml:space="preserve">
+    <value>Text Control</value>
+  </data>
+  <data name="lblTextControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 146</value>
+  </data>
+  <data name="lblTextControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>307, 13</value>
+  </data>
+  <data name="lblTextControl.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="lblTextControl.Text" xml:space="preserve">
+    <value>Text control</value>
+  </data>
+  <data name="&gt;&gt;lblTextControl.Name" xml:space="preserve">
+    <value>lblTextControl</value>
+  </data>
+  <data name="&gt;&gt;lblTextControl.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblTextControl.Parent" xml:space="preserve">
+    <value>xtraTabAlignment</value>
+  </data>
+  <data name="&gt;&gt;lblTextControl.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="lblTextAlignment.AccessibleName" xml:space="preserve">
+    <value>Text Alignment</value>
+  </data>
+  <data name="lblTextAlignment.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 9</value>
+  </data>
+  <data name="lblTextAlignment.Size" type="System.Drawing.Size, System.Drawing">
+    <value>307, 13</value>
+  </data>
+  <data name="lblTextAlignment.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="lblTextAlignment.Text" xml:space="preserve">
+    <value>Text alignment</value>
+  </data>
+  <data name="&gt;&gt;lblTextAlignment.Name" xml:space="preserve">
+    <value>lblTextAlignment</value>
+  </data>
+  <data name="&gt;&gt;lblTextAlignment.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblTextAlignment.Parent" xml:space="preserve">
+    <value>xtraTabAlignment</value>
+  </data>
+  <data name="&gt;&gt;lblTextAlignment.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="edtIndent.EditValue" type="System.Decimal, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="edtIndent.Location" type="System.Drawing.Point, System.Drawing">
+    <value>171, 71</value>
+  </data>
+  <data name="edtIndent.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>100, 0</value>
+  </data>
+  <data name="edtIndent.Properties.Mask.EditMask" xml:space="preserve">
+    <value>N00</value>
+  </data>
+  <data name="edtIndent.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 20</value>
+  </data>
+  <data name="edtIndent.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;edtIndent.Name" xml:space="preserve">
+    <value>edtIndent</value>
+  </data>
+  <data name="&gt;&gt;edtIndent.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SpinEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtIndent.Parent" xml:space="preserve">
+    <value>xtraTabAlignment</value>
+  </data>
+  <data name="&gt;&gt;edtIndent.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="xtraTabAlignment.Size" type="System.Drawing.Size, System.Drawing">
+    <value>474, 352</value>
+  </data>
+  <data name="xtraTabAlignment.Text" xml:space="preserve">
+    <value>Alignment</value>
+  </data>
+  <data name="&gt;&gt;xtraTabAlignment.Name" xml:space="preserve">
+    <value>xtraTabAlignment</value>
+  </data>
+  <data name="&gt;&gt;xtraTabAlignment.Type" xml:space="preserve">
+    <value>DevExpress.XtraTab.XtraTabPage, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;xtraTabAlignment.Parent" xml:space="preserve">
+    <value>tabControl</value>
+  </data>
+  <data name="&gt;&gt;xtraTabAlignment.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lblFontDescription.AccessibleName" xml:space="preserve">
+    <value>Font Description</value>
+  </data>
+  <data name="lblFontDescription.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 295</value>
+  </data>
+  <data name="lblFontDescription.Size" type="System.Drawing.Size, System.Drawing">
+    <value>429, 13</value>
+  </data>
+  <data name="lblFontDescription.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="lblFontDescription.Text" xml:space="preserve">
+    <value>This is a TrueType font. The same font will be used on both your printer and your screen.</value>
+  </data>
+  <data name="&gt;&gt;lblFontDescription.Name" xml:space="preserve">
+    <value>lblFontDescription</value>
+  </data>
+  <data name="&gt;&gt;lblFontDescription.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblFontDescription.Parent" xml:space="preserve">
+    <value>xtraTabFont</value>
+  </data>
+  <data name="&gt;&gt;lblFontDescription.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="edtColorFont.EditValue" type="System.Drawing.Color, System.Drawing">
+    <value></value>
+  </data>
+  <data name="edtColorFont.Location" type="System.Drawing.Point, System.Drawing">
+    <value>232, 160</value>
+  </data>
+  <data name="edtColorFont.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 20</value>
+  </data>
+  <data name="edtColorFont.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;edtColorFont.Name" xml:space="preserve">
+    <value>edtColorFont</value>
+  </data>
+  <data name="&gt;&gt;edtColorFont.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ColorPickEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtColorFont.Parent" xml:space="preserve">
+    <value>xtraTabFont</value>
+  </data>
+  <data name="&gt;&gt;edtColorFont.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="grpPreview.AccessibleName" xml:space="preserve">
+    <value>Preview</value>
+  </data>
+  <data name="grpPreview.Appearance.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>Transparent</value>
+  </data>
+  <data name="edtFontPreview.Appearance.Text.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 12pt</value>
+  </data>
+  <data name="edtFontPreview.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="edtFontPreview.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 25</value>
+  </data>
+  <data name="edtFontPreview.Size" type="System.Drawing.Size, System.Drawing">
+    <value>223, 61</value>
+  </data>
+  <data name="edtFontPreview.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="edtFontPreview.Text" xml:space="preserve">
+    <value>AaBbCcYyZz</value>
+  </data>
+  <data name="&gt;&gt;edtFontPreview.Name" xml:space="preserve">
+    <value>edtFontPreview</value>
+  </data>
+  <data name="&gt;&gt;edtFontPreview.Type" xml:space="preserve">
+    <value>DevExpress.XtraRichEdit.Forms.SimpleRichEditControl, DevExpress.XtraRichEdit.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtFontPreview.Parent" xml:space="preserve">
+    <value>grpPreview</value>
+  </data>
+  <data name="&gt;&gt;edtFontPreview.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="grpPreview.Location" type="System.Drawing.Point, System.Drawing">
+    <value>232, 187</value>
+  </data>
+  <data name="grpPreview.Size" type="System.Drawing.Size, System.Drawing">
+    <value>234, 91</value>
+  </data>
+  <data name="grpPreview.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="grpPreview.Text" xml:space="preserve">
+    <value>Preview</value>
+  </data>
+  <data name="&gt;&gt;grpPreview.Name" xml:space="preserve">
+    <value>grpPreview</value>
+  </data>
+  <data name="&gt;&gt;grpPreview.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.GroupControl, DevExpress.Utils.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;grpPreview.Parent" xml:space="preserve">
+    <value>xtraTabFont</value>
+  </data>
+  <data name="&gt;&gt;grpPreview.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="chkNormalFont.EditValue" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkNormalFont.Location" type="System.Drawing.Point, System.Drawing">
+    <value>366, 160</value>
+  </data>
+  <data name="chkNormalFont.Properties.Caption" xml:space="preserve">
+    <value>&amp;Normal font</value>
+  </data>
+  <data name="chkNormalFont.Size" type="System.Drawing.Size, System.Drawing">
+    <value>78, 19</value>
+  </data>
+  <data name="chkNormalFont.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="chkNormalFont.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;chkNormalFont.Name" xml:space="preserve">
+    <value>chkNormalFont</value>
+  </data>
+  <data name="&gt;&gt;chkNormalFont.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;chkNormalFont.Parent" xml:space="preserve">
+    <value>xtraTabFont</value>
+  </data>
+  <data name="&gt;&gt;chkNormalFont.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="lblColorFont.AccessibleName" xml:space="preserve">
+    <value>Color</value>
+  </data>
+  <data name="lblColorFont.Location" type="System.Drawing.Point, System.Drawing">
+    <value>232, 141</value>
+  </data>
+  <data name="lblColorFont.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 13</value>
+  </data>
+  <data name="lblColorFont.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="lblColorFont.Text" xml:space="preserve">
+    <value>&amp;Color:</value>
+  </data>
+  <data name="&gt;&gt;lblColorFont.Name" xml:space="preserve">
+    <value>lblColorFont</value>
+  </data>
+  <data name="&gt;&gt;lblColorFont.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblColorFont.Parent" xml:space="preserve">
+    <value>xtraTabFont</value>
+  </data>
+  <data name="&gt;&gt;lblColorFont.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="grpEffects.AccessibleName" xml:space="preserve">
+    <value>Effects</value>
+  </data>
+  <data name="grpEffects.Appearance.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>Transparent</value>
+  </data>
+  <data name="chkSubscript.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 67</value>
+  </data>
+  <data name="chkSubscript.Properties.Caption" xml:space="preserve">
+    <value>Su&amp;bscript</value>
+  </data>
+  <data name="chkSubscript.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 19</value>
+  </data>
+  <data name="chkSubscript.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;chkSubscript.Name" xml:space="preserve">
+    <value>chkSubscript</value>
+  </data>
+  <data name="&gt;&gt;chkSubscript.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;chkSubscript.Parent" xml:space="preserve">
+    <value>grpEffects</value>
+  </data>
+  <data name="&gt;&gt;chkSubscript.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="chkSuperscript.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 45</value>
+  </data>
+  <data name="chkSuperscript.Properties.Caption" xml:space="preserve">
+    <value>Sup&amp;erscript</value>
+  </data>
+  <data name="chkSuperscript.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 19</value>
+  </data>
+  <data name="chkSuperscript.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;chkSuperscript.Name" xml:space="preserve">
+    <value>chkSuperscript</value>
+  </data>
+  <data name="&gt;&gt;chkSuperscript.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;chkSuperscript.Parent" xml:space="preserve">
+    <value>grpEffects</value>
+  </data>
+  <data name="&gt;&gt;chkSuperscript.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="chkStrikeThrough.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 24</value>
+  </data>
+  <data name="chkStrikeThrough.Properties.Caption" xml:space="preserve">
+    <value>Stri&amp;kethrough</value>
+  </data>
+  <data name="chkStrikeThrough.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 19</value>
+  </data>
+  <data name="chkStrikeThrough.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;chkStrikeThrough.Name" xml:space="preserve">
+    <value>chkStrikeThrough</value>
+  </data>
+  <data name="&gt;&gt;chkStrikeThrough.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;chkStrikeThrough.Parent" xml:space="preserve">
+    <value>grpEffects</value>
+  </data>
+  <data name="&gt;&gt;chkStrikeThrough.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="grpEffects.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 187</value>
+  </data>
+  <data name="grpEffects.Size" type="System.Drawing.Size, System.Drawing">
+    <value>219, 91</value>
+  </data>
+  <data name="grpEffects.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="grpEffects.Text" xml:space="preserve">
+    <value>Effects</value>
+  </data>
+  <data name="&gt;&gt;grpEffects.Name" xml:space="preserve">
+    <value>grpEffects</value>
+  </data>
+  <data name="&gt;&gt;grpEffects.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.GroupControl, DevExpress.Utils.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;grpEffects.Parent" xml:space="preserve">
+    <value>xtraTabFont</value>
+  </data>
+  <data name="&gt;&gt;grpEffects.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="edtUnderline.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 160</value>
+  </data>
+  <data name="edtUnderline.Properties.NullText" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="edtUnderline.Size" type="System.Drawing.Size, System.Drawing">
+    <value>220, 20</value>
+  </data>
+  <data name="edtUnderline.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;edtUnderline.Name" xml:space="preserve">
+    <value>edtUnderline</value>
+  </data>
+  <data name="&gt;&gt;edtUnderline.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.Forms.Design.SpreadsheetLookUpEdit, DevExpress.XtraSpreadsheet.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtUnderline.Parent" xml:space="preserve">
+    <value>xtraTabFont</value>
+  </data>
+  <data name="&gt;&gt;edtUnderline.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="lblUnderline.AccessibleName" xml:space="preserve">
+    <value>Underline</value>
+  </data>
+  <data name="lblUnderline.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 140</value>
+  </data>
+  <data name="lblUnderline.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 13</value>
+  </data>
+  <data name="lblUnderline.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="lblUnderline.Text" xml:space="preserve">
+    <value>&amp;Underline:</value>
+  </data>
+  <data name="&gt;&gt;lblUnderline.Name" xml:space="preserve">
+    <value>lblUnderline</value>
+  </data>
+  <data name="&gt;&gt;lblUnderline.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblUnderline.Parent" xml:space="preserve">
+    <value>xtraTabFont</value>
+  </data>
+  <data name="&gt;&gt;lblUnderline.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="lBoxSize.AccessibleName" xml:space="preserve">
+    <value>Size</value>
+  </data>
+  <data name="lBoxSize.Location" type="System.Drawing.Point, System.Drawing">
+    <value>366, 50</value>
+  </data>
+  <data name="lBoxSize.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 84</value>
+  </data>
+  <data name="lBoxSize.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;lBoxSize.Name" xml:space="preserve">
+    <value>lBoxSize</value>
+  </data>
+  <data name="&gt;&gt;lBoxSize.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ListBoxControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lBoxSize.Parent" xml:space="preserve">
+    <value>xtraTabFont</value>
+  </data>
+  <data name="&gt;&gt;lBoxSize.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="lBoxFontStyle.AccessibleName" xml:space="preserve">
+    <value>Font style</value>
+  </data>
+  <data name="lBoxFontStyle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>232, 50</value>
+  </data>
+  <data name="lBoxFontStyle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 84</value>
+  </data>
+  <data name="lBoxFontStyle.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;lBoxFontStyle.Name" xml:space="preserve">
+    <value>lBoxFontStyle</value>
+  </data>
+  <data name="&gt;&gt;lBoxFontStyle.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ListBoxControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lBoxFontStyle.Parent" xml:space="preserve">
+    <value>xtraTabFont</value>
+  </data>
+  <data name="&gt;&gt;lBoxFontStyle.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="lBoxFont.AccessibleName" xml:space="preserve">
+    <value>Font</value>
+  </data>
+  <data name="lBoxFont.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 50</value>
+  </data>
+  <data name="lBoxFont.Size" type="System.Drawing.Size, System.Drawing">
+    <value>220, 84</value>
+  </data>
+  <data name="lBoxFont.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;lBoxFont.Name" xml:space="preserve">
+    <value>lBoxFont</value>
+  </data>
+  <data name="&gt;&gt;lBoxFont.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ListBoxControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lBoxFont.Parent" xml:space="preserve">
+    <value>xtraTabFont</value>
+  </data>
+  <data name="&gt;&gt;lBoxFont.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="edtSize.Location" type="System.Drawing.Point, System.Drawing">
+    <value>366, 31</value>
+  </data>
+  <data name="edtSize.Properties.Appearance.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>32, 31, 53</value>
+  </data>
+  <data name="edtSize.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="edtSize.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;edtSize.Name" xml:space="preserve">
+    <value>edtSize</value>
+  </data>
+  <data name="&gt;&gt;edtSize.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtSize.Parent" xml:space="preserve">
+    <value>xtraTabFont</value>
+  </data>
+  <data name="&gt;&gt;edtSize.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="lblSize.AccessibleName" xml:space="preserve">
+    <value>Size</value>
+  </data>
+  <data name="lblSize.Location" type="System.Drawing.Point, System.Drawing">
+    <value>366, 12</value>
+  </data>
+  <data name="lblSize.Size" type="System.Drawing.Size, System.Drawing">
+    <value>23, 13</value>
+  </data>
+  <data name="lblSize.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="lblSize.Text" xml:space="preserve">
+    <value>&amp;Size:</value>
+  </data>
+  <data name="&gt;&gt;lblSize.Name" xml:space="preserve">
+    <value>lblSize</value>
+  </data>
+  <data name="&gt;&gt;lblSize.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblSize.Parent" xml:space="preserve">
+    <value>xtraTabFont</value>
+  </data>
+  <data name="&gt;&gt;lblSize.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="edtFontStyle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>232, 31</value>
+  </data>
+  <data name="edtFontStyle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 20</value>
+  </data>
+  <data name="edtFontStyle.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;edtFontStyle.Name" xml:space="preserve">
+    <value>edtFontStyle</value>
+  </data>
+  <data name="&gt;&gt;edtFontStyle.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtFontStyle.Parent" xml:space="preserve">
+    <value>xtraTabFont</value>
+  </data>
+  <data name="&gt;&gt;edtFontStyle.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="lblFontStyle.AccessibleName" xml:space="preserve">
+    <value>Font Style</value>
+  </data>
+  <data name="lblFontStyle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>232, 12</value>
+  </data>
+  <data name="lblFontStyle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 13</value>
+  </data>
+  <data name="lblFontStyle.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="lblFontStyle.Text" xml:space="preserve">
+    <value>F&amp;ont style:</value>
+  </data>
+  <data name="&gt;&gt;lblFontStyle.Name" xml:space="preserve">
+    <value>lblFontStyle</value>
+  </data>
+  <data name="&gt;&gt;lblFontStyle.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblFontStyle.Parent" xml:space="preserve">
+    <value>xtraTabFont</value>
+  </data>
+  <data name="&gt;&gt;lblFontStyle.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="edtFont.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 31</value>
+  </data>
+  <data name="edtFont.Size" type="System.Drawing.Size, System.Drawing">
+    <value>220, 20</value>
+  </data>
+  <data name="edtFont.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;edtFont.Name" xml:space="preserve">
+    <value>edtFont</value>
+  </data>
+  <data name="&gt;&gt;edtFont.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtFont.Parent" xml:space="preserve">
+    <value>xtraTabFont</value>
+  </data>
+  <data name="&gt;&gt;edtFont.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="lblFont.AccessibleName" xml:space="preserve">
+    <value>Font</value>
+  </data>
+  <data name="lblFont.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 12</value>
+  </data>
+  <data name="lblFont.Size" type="System.Drawing.Size, System.Drawing">
+    <value>26, 13</value>
+  </data>
+  <data name="lblFont.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="lblFont.Text" xml:space="preserve">
+    <value>&amp;Font:</value>
+  </data>
+  <data name="&gt;&gt;lblFont.Name" xml:space="preserve">
+    <value>lblFont</value>
+  </data>
+  <data name="&gt;&gt;lblFont.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblFont.Parent" xml:space="preserve">
+    <value>xtraTabFont</value>
+  </data>
+  <data name="&gt;&gt;lblFont.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="xtraTabFont.Size" type="System.Drawing.Size, System.Drawing">
+    <value>474, 352</value>
+  </data>
+  <data name="xtraTabFont.Text" xml:space="preserve">
+    <value>Font</value>
+  </data>
+  <data name="&gt;&gt;xtraTabFont.Name" xml:space="preserve">
+    <value>xtraTabFont</value>
+  </data>
+  <data name="&gt;&gt;xtraTabFont.Type" xml:space="preserve">
+    <value>DevExpress.XtraTab.XtraTabPage, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;xtraTabFont.Parent" xml:space="preserve">
+    <value>tabControl</value>
+  </data>
+  <data name="&gt;&gt;xtraTabFont.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="formatBorderControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>173, 115</value>
+  </data>
+  <data name="formatBorderControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>247, 145</value>
+  </data>
+  <data name="formatBorderControl.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;formatBorderControl.Name" xml:space="preserve">
+    <value>formatBorderControl</value>
+  </data>
+  <data name="&gt;&gt;formatBorderControl.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.Forms.Design.FormatBorderControl, DevExpress.XtraSpreadsheet.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;formatBorderControl.Parent" xml:space="preserve">
+    <value>xtraTabBorder</value>
+  </data>
+  <data name="&gt;&gt;formatBorderControl.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblBorderDescription.AccessibleName" xml:space="preserve">
+    <value>Border Description</value>
+  </data>
+  <data name="lblBorderDescription.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 266</value>
+  </data>
+  <data name="lblBorderDescription.Size" type="System.Drawing.Size, System.Drawing">
+    <value>461, 26</value>
+  </data>
+  <data name="lblBorderDescription.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="lblBorderDescription.Text" xml:space="preserve">
+    <value>The selected border style can be applied by clicking the presets, preview diagram or the buttons
+above.</value>
+  </data>
+  <data name="&gt;&gt;lblBorderDescription.Name" xml:space="preserve">
+    <value>lblBorderDescription</value>
+  </data>
+  <data name="&gt;&gt;lblBorderDescription.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblBorderDescription.Parent" xml:space="preserve">
+    <value>xtraTabBorder</value>
+  </data>
+  <data name="&gt;&gt;lblBorderDescription.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btnInside.AccessibleName" xml:space="preserve">
+    <value>Inside</value>
+  </data>
+  <data name="btnInside.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="btnInside.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAv5JREFUWEfF
+        l1lTE0EQx/lsQjiiBBL5DiohIEcuDrkSUyhaHiByCSTAm5agPsiNCvgihNOP0/a/J0s2u6GY2aLk4dc9
+        2d6q+XfvTM+kgohuFTETq8fsqGJ8JV/ixz4fiX/76VD8q49/xIOmzG+6//SA2b98NrJ8IOPMkvLp3J74
+        1ILyQ/M/xffP7ooHYrzQlDmg5NIFhWwCvCDGytgEZC4CUuYC+qa32amxK6hLKL1PicVzTwLsiPFSgWBB
+        QDClvq8JPVNb7NTYFdQFE8dZQOOwuQA7YqzVbgIExHLn1DD8i3+Wf+cqku832amxK6gLMo9lz6hhSG0t
+        r4h5U9jnJiBzCAgMmguIT2ywU2NXUBdkHoWAgRuowGtbh9OlgTPvWjijewM/+Gf5d64iOr7GTo1dQV3q
+        eWIR0G8uwE7ZhzpAQOf8Kd3tL/Z1L4iRg4V7Ow4XdLhgek8aTJBXOhYbCAwxXPZ6/uaYHJl3QMCTHfL3
+        7ZK/d4fqerepFvRsUU33FlUnNy/xxTeoKrFOVbF1qmRKBGDi5PIFJRf/SndL8P5O5C5kn8ey4EzKrTil
+        Lp64c+6UOpj2uRNq/3BCj5m2WXBMbTPH1DqTp9bpPEWm8tQCJvMUnjqi5skjqow6BIRwrHLmoULm2OON
+        yJxXegBw5gHOWmW+K2VH5hDg54zrOPvaHpU5qC5k70sgawbZx1XmldE1uhP9XirAC/6+HckcZXfGTCj7
+        UAcRwCXHN3fGTBBj3WRMQOb43ii9M3YdkZff2KmxK6iLJaCmu3iweEFMZtG8Asgcq706WTzbdWl58ZWd
+        GruCumCfR3ibYbU7YyaISWfNLxU1PDH2uS9hLiA8+oWdGruCuvhYACqAfe6MmSAmtWB+q0GTiXBnQ5Nx
+        xq7j0fNVdmrsCuoCAS0QYOvrXhAzOGd+qUBrDUtfL57tujx8dgMVQF9vnjzkvm4uwI4Y67+a9Y/Furdb
+        t9f4O1Vm+00GE1tYz6wOZ+3z8Kjy1jd/MLJS4oGY26Tsw/8HVfwD1nK2lbCoZHcAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="btnInside.Location" type="System.Drawing.Point, System.Drawing">
+    <value>331, 32</value>
+  </data>
+  <data name="btnInside.Size" type="System.Drawing.Size, System.Drawing">
+    <value>46, 37</value>
+  </data>
+  <data name="btnInside.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;btnInside.Name" xml:space="preserve">
+    <value>btnInside</value>
+  </data>
+  <data name="&gt;&gt;btnInside.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;btnInside.Parent" xml:space="preserve">
+    <value>xtraTabBorder</value>
+  </data>
+  <data name="&gt;&gt;btnInside.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btnNone.AccessibleName" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="btnNone.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAABHxJREFUWEfF
+        lllXVFcQRuvfxjHGAZJo4gTGoZuxu0GJyuyMypwASgSaBgXFX1T5qk6de+vcvs3KU3goWIuXXfurOnUh
+        Zj7R0h+jC995ZP6IGvNH3HgfftfffyMU1959pdrbrzw8d0iDc4eMooE3B9z36guhuPryM1Ve7POD53t0
+        /1mL783u0d3ZFv8xvUt3ppvcO7VDvZNN7pncodsT23xzfItuPPkErGvA4NQIUKq/CyXw4beHWkNzB9IA
+        Dbw+oP7XCieDU4Dv0b3ZFt2daZHCp5pa0kDPxA7dmtgihT/9RNcf/5MmEMxzeA2/a9bAkMJh/0bNi3Az
+        d/CZXW2gd7pJPYDDGvDtAH8S4L//uQmsb0Bi72hucDU/yOEv96nyfN/BA/iOwDX2aG5wMwecfkOlDejM
+        j2TWaq7gCEf0av7KwfPYMXPAUQIXe41d5y2F2J9KGfwx4GMf6drYR2BdA1n0Yq72iD4sG+qLxt5v8OqL
+        z+0zF3uBI3ax19jHC+aoa2ObAqerjz6kCYRtRwMChrksW2auMwcYJeZSGdy2XWcO87DpFjvMi7EL/NeH
+        H6SAdQ3k5gYvXzgzbyXmGrmZZzMXeL5wmbnCYf/LaCEBRM5h3gaPTw0VF670qU03OcaeLFwBfvWRxI4G
+        FL5BP49uAOsaGLKZ5+alCwc4jow3R+S6cJMlTw2lsaNk5gp/qHDqHllPEwCcBR6tFW4z72CuDeCdsyzc
+        bVk43fatFG4LJ9GbOXU31qmrsQasa+C/XbgAjg3EhZMG2mYe4TL3gnkXGrhSX0sT6MdtPx5uscd5S6GB
+        W+NbjCrddp25mAscYDHvbqwp/HLtb2B9AwAfZ67WiDzOvSfO3D81VGYe4TF2Zw44XRr+K00A8MJXzS7c
+        zG74qk3hq6bgHXzVFJ591cyczZwlchTLU5NtF/uu+hpHc4FfHF4F1jVQZq7XLS5cjN7MNXY3czuvaexm
+        7mJX84uon4ZW0gSceRq7wGXbbeGKn1TEHs3bZ14SO8wVfmFwBVjXwEmW/gj/ydi2i7lsvJkf90mVmccj
+        I/Yh9g155+3mg2pOPw4s0/n+ZWBdA3nsftPlwoV3njw1VNvMZdt13mUzj/BVwFcETuf7ltMEYB63PTdH
+        ZQvnzONTy7ddFi7OPIeHZfPmAX6ub0kKWNeAwGMDag9wNM/+mchjh3mIvRP8Ug3mAteFc+bawDKdrS6m
+        CQAc/nstPjUfO+ByWuNt15mPrLPd9hSu275KFwDOY1dzhaOAdQ2IdYTrbRd42/fcvmo682Af4IWnlpln
+        C5dFf7a6RGcqi1rFBvTChdi3O8D9ec1ijxeu07brwinc7M9UFuh0ZQFY10BcuOS2ZzPfzJ5Z2Pby2+6O
+        TBv8HMwDfFHgdOrBQpoArMNXzZ9XlFjnC6cz13IzZ9n2EHth5lnsAHv4/XlpAFjXQPHIhNgL71ztHbye
+        m4t1NI/22cLZzE9LwfwHNCCVNFD6VQMYxXbbuTBztm3neNvNnA3OCq8usZmzwdkaANY1cJJV+sf/r5j+
+        BaDLtod1Qj/6AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="btnNone.Location" type="System.Drawing.Point, System.Drawing">
+    <value>214, 32</value>
+  </data>
+  <data name="btnNone.Size" type="System.Drawing.Size, System.Drawing">
+    <value>46, 37</value>
+  </data>
+  <data name="btnNone.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;btnNone.Name" xml:space="preserve">
+    <value>btnNone</value>
+  </data>
+  <data name="&gt;&gt;btnNone.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;btnNone.Parent" xml:space="preserve">
+    <value>xtraTabBorder</value>
+  </data>
+  <data name="&gt;&gt;btnNone.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="btnOutline.AccessibleName" xml:space="preserve">
+    <value>Outline</value>
+  </data>
+  <data name="btnOutline.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAA/NJREFUWEfF
+        l9s7lFEUxvu/KlFEYTCl6F5RomHGmDFjSEhxlUNREZ27rsgppyjj0BH9M6v3Xdt+aHw9zzc9z1cXv71n
+        73Wx33d9+7DmkIj8V7S50JMUUk66V6WM3LZ8kvO3yEc5h/5cF/quFTnbuSxnO5blDGn/IH5QcoMsSUnb
+        ohS1LYnv+oJS2DoP0CfmJb+ZzGHZfQLKu5OSePVTEi93dsHvFzvSjN/N6OMg9pxsK03PtgxPtyQKGh//
+        kLBl7Js0jH2X0Og3CT0iXyU4Yqgf/ip14ICACz2rELAj5XCsGdh1XqbO6do4L4Xz0pt0v6LO/R3GuR/O
+        i+G4mM6vG3xw7INzX8uCFLTMSUFiThcODH+R0/H3vwvgonROATbgBflYOPDwDwKakXY6twE3dD1dQecc
+        c4ILBx5+llOxWQzNnDZl3Z80A0y7DXjBqdh7qX3wWfKaZjA0c9pwYW42fm8bcEPnk2V0zjEn6Lz2PgRE
+        nQRgl/Oo2YAX0HkNBORGpzE0c9rQeRzH6zx2uw24oX1sCZ1zzIncplkI2JSTkVQBOGI83zxqNuAFuZEZ
+        uTq0KTmNUxiaOW2YehVwMz0BbaOL6JxjTtD51cENyQmnCKDz2PMtvWRswAtyIKB6cFOyUzNQCuexZ9t6
+        v9uAG1qH59E5x5xg6ingRMMkhmZOm1JcrRHc6ekKSJfs8KRcvrtxUAAXjj75IWd2BdgbrvPxB+3bR81u
+        b3tkvnnryIL2iQfmUYkPmZutadCc78g9s8vDAybVod532mdj4aq763Ii5CAgAgF+PDA24AV0XjWwLsdD
+        RhDRhi9aBE8p33IbcEP8/t6j4oas0IRUDqxJZv0EhmZOG3/7kr7pJXhSbcALsoITUtW/flAAnYdRRPBN
+        twE32G/uliwsXNm/JsfqxjE0c9oU31hUAUUoKGzAC+j8EgUE3mJo5rShc5ZRRahibMANdre7JRPOKSAj
+        VUARCscG1G+FKJ9swAsy6t7Kxb6kZFxLEeBrXdQCsrAlvZst3L93nt1A5xRw9NobDM2cNiweg38hIF2O
+        wnmFkwCmPojyuQB1uw24IdS3d6G4gQtX9EJAbaoAlMys2/fX615wBAtX9K7K4drXGJo5bfLhvB4CWLVa
+        WEDmoYLJjZIZVDFkWnIiU5KN95zXKq9UBRdMJqkf1zOuBMaFm47fnamn6yPMwJ0kBKRkIB8ZqMMfBtbs
+        FlavLCBZQrGOYyWjoKCovrchVwgelsuA93slwREjl/pAf1I3HFN+EbDn4iqgJjUDSL26VuezWjazfjPO
+        p43zxmktJPikqvvgO+HVSnjBHCO7jhW45TdX6B7QORc/IOB/4jj575BDvwBSKohZAcZZjAAAAABJRU5E
+        rkJggg==
+</value>
+  </data>
+  <data name="btnOutline.Location" type="System.Drawing.Point, System.Drawing">
+    <value>272, 32</value>
+  </data>
+  <data name="btnOutline.Size" type="System.Drawing.Size, System.Drawing">
+    <value>46, 37</value>
+  </data>
+  <data name="btnOutline.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;btnOutline.Name" xml:space="preserve">
+    <value>btnOutline</value>
+  </data>
+  <data name="&gt;&gt;btnOutline.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;btnOutline.Parent" xml:space="preserve">
+    <value>xtraTabBorder</value>
+  </data>
+  <data name="&gt;&gt;btnOutline.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="lblBorder.AccessibleName" xml:space="preserve">
+    <value>Border</value>
+  </data>
+  <data name="lblBorder.Location" type="System.Drawing.Point, System.Drawing">
+    <value>175, 94</value>
+  </data>
+  <data name="lblBorder.Size" type="System.Drawing.Size, System.Drawing">
+    <value>296, 13</value>
+  </data>
+  <data name="lblBorder.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="lblBorder.Text" xml:space="preserve">
+    <value>Border</value>
+  </data>
+  <data name="&gt;&gt;lblBorder.Name" xml:space="preserve">
+    <value>lblBorder</value>
+  </data>
+  <data name="&gt;&gt;lblBorder.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblBorder.Parent" xml:space="preserve">
+    <value>xtraTabBorder</value>
+  </data>
+  <data name="&gt;&gt;lblBorder.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="lblInside.AccessibleName" xml:space="preserve">
+    <value>Inside</value>
+  </data>
+  <data name="lblInside.Location" type="System.Drawing.Point, System.Drawing">
+    <value>339, 75</value>
+  </data>
+  <data name="lblInside.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 13</value>
+  </data>
+  <data name="lblInside.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="lblInside.Text" xml:space="preserve">
+    <value>Inside</value>
+  </data>
+  <data name="&gt;&gt;lblInside.Name" xml:space="preserve">
+    <value>lblInside</value>
+  </data>
+  <data name="&gt;&gt;lblInside.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblInside.Parent" xml:space="preserve">
+    <value>xtraTabBorder</value>
+  </data>
+  <data name="&gt;&gt;lblInside.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="lblOutline.AccessibleName" xml:space="preserve">
+    <value>Outline</value>
+  </data>
+  <data name="lblOutline.Location" type="System.Drawing.Point, System.Drawing">
+    <value>278, 75</value>
+  </data>
+  <data name="lblOutline.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 13</value>
+  </data>
+  <data name="lblOutline.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="lblOutline.Text" xml:space="preserve">
+    <value>&amp;Outline</value>
+  </data>
+  <data name="&gt;&gt;lblOutline.Name" xml:space="preserve">
+    <value>lblOutline</value>
+  </data>
+  <data name="&gt;&gt;lblOutline.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblOutline.Parent" xml:space="preserve">
+    <value>xtraTabBorder</value>
+  </data>
+  <data name="&gt;&gt;lblOutline.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="lblNone.AccessibleName" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="lblNone.Location" type="System.Drawing.Point, System.Drawing">
+    <value>224, 75</value>
+  </data>
+  <data name="lblNone.Size" type="System.Drawing.Size, System.Drawing">
+    <value>25, 13</value>
+  </data>
+  <data name="lblNone.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="lblNone.Text" xml:space="preserve">
+    <value>&amp;None</value>
+  </data>
+  <data name="&gt;&gt;lblNone.Name" xml:space="preserve">
+    <value>lblNone</value>
+  </data>
+  <data name="&gt;&gt;lblNone.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblNone.Parent" xml:space="preserve">
+    <value>xtraTabBorder</value>
+  </data>
+  <data name="&gt;&gt;lblNone.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="lblPresets.AccessibleName" xml:space="preserve">
+    <value>Presets</value>
+  </data>
+  <data name="lblPresets.Location" type="System.Drawing.Point, System.Drawing">
+    <value>175, 13</value>
+  </data>
+  <data name="lblPresets.Size" type="System.Drawing.Size, System.Drawing">
+    <value>296, 13</value>
+  </data>
+  <data name="lblPresets.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="lblPresets.Text" xml:space="preserve">
+    <value>Presets</value>
+  </data>
+  <data name="&gt;&gt;lblPresets.Name" xml:space="preserve">
+    <value>lblPresets</value>
+  </data>
+  <data name="&gt;&gt;lblPresets.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblPresets.Parent" xml:space="preserve">
+    <value>xtraTabBorder</value>
+  </data>
+  <data name="&gt;&gt;lblPresets.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="grpLine.AccessibleName" xml:space="preserve">
+    <value>Line</value>
+  </data>
+  <data name="edtColorBorder.EditValue" type="System.Drawing.Color, System.Drawing">
+    <value></value>
+  </data>
+  <data name="edtColorBorder.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 198</value>
+  </data>
+  <data name="edtColorBorder.Size" type="System.Drawing.Size, System.Drawing">
+    <value>142, 20</value>
+  </data>
+  <data name="edtColorBorder.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;edtColorBorder.Name" xml:space="preserve">
+    <value>edtColorBorder</value>
+  </data>
+  <data name="&gt;&gt;edtColorBorder.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ColorPickEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtColorBorder.Parent" xml:space="preserve">
+    <value>grpLine</value>
+  </data>
+  <data name="&gt;&gt;edtColorBorder.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblColorBorder.AccessibleName" xml:space="preserve">
+    <value>Color</value>
+  </data>
+  <data name="lblColorBorder.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 179</value>
+  </data>
+  <data name="lblColorBorder.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 13</value>
+  </data>
+  <data name="lblColorBorder.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="lblColorBorder.Text" xml:space="preserve">
+    <value>&amp;Color:</value>
+  </data>
+  <data name="&gt;&gt;lblColorBorder.Name" xml:space="preserve">
+    <value>lblColorBorder</value>
+  </data>
+  <data name="&gt;&gt;lblColorBorder.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblColorBorder.Parent" xml:space="preserve">
+    <value>grpLine</value>
+  </data>
+  <data name="&gt;&gt;lblColorBorder.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lblStyle.AccessibleName" xml:space="preserve">
+    <value>Style</value>
+  </data>
+  <data name="lblStyle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 33</value>
+  </data>
+  <data name="lblStyle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>28, 13</value>
+  </data>
+  <data name="lblStyle.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="lblStyle.Text" xml:space="preserve">
+    <value>&amp;Style:</value>
+  </data>
+  <data name="&gt;&gt;lblStyle.Name" xml:space="preserve">
+    <value>lblStyle</value>
+  </data>
+  <data name="&gt;&gt;lblStyle.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblStyle.Parent" xml:space="preserve">
+    <value>grpLine</value>
+  </data>
+  <data name="&gt;&gt;lblStyle.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lbBorderLineStyle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 52</value>
+  </data>
+  <data name="lbBorderLineStyle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>142, 121</value>
+  </data>
+  <data name="lbBorderLineStyle.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;lbBorderLineStyle.Name" xml:space="preserve">
+    <value>lbBorderLineStyle</value>
+  </data>
+  <data name="&gt;&gt;lbBorderLineStyle.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.Forms.Design.BorderLineStyleListBox, DevExpress.XtraSpreadsheet.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lbBorderLineStyle.Parent" xml:space="preserve">
+    <value>grpLine</value>
+  </data>
+  <data name="&gt;&gt;lbBorderLineStyle.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="grpLine.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 13</value>
+  </data>
+  <data name="grpLine.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 237</value>
+  </data>
+  <data name="grpLine.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="grpLine.Text" xml:space="preserve">
+    <value>Line</value>
+  </data>
+  <data name="&gt;&gt;grpLine.Name" xml:space="preserve">
+    <value>grpLine</value>
+  </data>
+  <data name="&gt;&gt;grpLine.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.GroupControl, DevExpress.Utils.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;grpLine.Parent" xml:space="preserve">
+    <value>xtraTabBorder</value>
+  </data>
+  <data name="&gt;&gt;grpLine.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="xtraTabBorder.Size" type="System.Drawing.Size, System.Drawing">
+    <value>474, 352</value>
+  </data>
+  <data name="xtraTabBorder.Text" xml:space="preserve">
+    <value>Border</value>
+  </data>
+  <data name="&gt;&gt;xtraTabBorder.Name" xml:space="preserve">
+    <value>xtraTabBorder</value>
+  </data>
+  <data name="&gt;&gt;xtraTabBorder.Type" xml:space="preserve">
+    <value>DevExpress.XtraTab.XtraTabPage, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;xtraTabBorder.Parent" xml:space="preserve">
+    <value>tabControl</value>
+  </data>
+  <data name="&gt;&gt;xtraTabBorder.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="bthFillEffects.AccessibleName" xml:space="preserve">
+    <value>Fill Effects</value>
+  </data>
+  <data name="bthFillEffects.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 106</value>
+  </data>
+  <data name="bthFillEffects.Size" type="System.Drawing.Size, System.Drawing">
+    <value>166, 23</value>
+  </data>
+  <data name="bthFillEffects.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="bthFillEffects.Text" xml:space="preserve">
+    <value>F&amp;ill Effects...</value>
+  </data>
+  <data name="&gt;&gt;bthFillEffects.Name" xml:space="preserve">
+    <value>bthFillEffects</value>
+  </data>
+  <data name="&gt;&gt;bthFillEffects.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;bthFillEffects.Parent" xml:space="preserve">
+    <value>xtraTabFill</value>
+  </data>
+  <data name="&gt;&gt;bthFillEffects.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="chkNoColor.AccessibleName" xml:space="preserve">
+    <value>No Color</value>
+  </data>
+  <data name="chkNoColor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 38</value>
+  </data>
+  <data name="chkNoColor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>166, 23</value>
+  </data>
+  <data name="chkNoColor.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="chkNoColor.Text" xml:space="preserve">
+    <value>No Color</value>
+  </data>
+  <data name="&gt;&gt;chkNoColor.Name" xml:space="preserve">
+    <value>chkNoColor</value>
+  </data>
+  <data name="&gt;&gt;chkNoColor.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckButton, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;chkNoColor.Parent" xml:space="preserve">
+    <value>xtraTabFill</value>
+  </data>
+  <data name="&gt;&gt;chkNoColor.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lblBackgroundColor.AccessibleName" xml:space="preserve">
+    <value>Background Color</value>
+  </data>
+  <data name="lblBackgroundColor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 18</value>
+  </data>
+  <data name="lblBackgroundColor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 13</value>
+  </data>
+  <data name="lblBackgroundColor.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="lblBackgroundColor.Text" xml:space="preserve">
+    <value>Background &amp;Color:</value>
+  </data>
+  <data name="&gt;&gt;lblBackgroundColor.Name" xml:space="preserve">
+    <value>lblBackgroundColor</value>
+  </data>
+  <data name="&gt;&gt;lblBackgroundColor.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblBackgroundColor.Parent" xml:space="preserve">
+    <value>xtraTabFill</value>
+  </data>
+  <data name="&gt;&gt;lblBackgroundColor.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="edtPatternColor.EditValue" type="System.Drawing.Color, System.Drawing">
+    <value></value>
+  </data>
+  <data name="edtPatternColor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>299, 37</value>
+  </data>
+  <data name="edtPatternColor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>164, 20</value>
+  </data>
+  <data name="edtPatternColor.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;edtPatternColor.Name" xml:space="preserve">
+    <value>edtPatternColor</value>
+  </data>
+  <data name="&gt;&gt;edtPatternColor.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ColorPickEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtPatternColor.Parent" xml:space="preserve">
+    <value>xtraTabFill</value>
+  </data>
+  <data name="&gt;&gt;edtPatternColor.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="lblPatternColor.AccessibleName" xml:space="preserve">
+    <value>Pattern Color</value>
+  </data>
+  <data name="lblPatternColor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>299, 18</value>
+  </data>
+  <data name="lblPatternColor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 13</value>
+  </data>
+  <data name="lblPatternColor.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="lblPatternColor.Text" xml:space="preserve">
+    <value>P&amp;attern Color:</value>
+  </data>
+  <data name="&gt;&gt;lblPatternColor.Name" xml:space="preserve">
+    <value>lblPatternColor</value>
+  </data>
+  <data name="&gt;&gt;lblPatternColor.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblPatternColor.Parent" xml:space="preserve">
+    <value>xtraTabFill</value>
+  </data>
+  <data name="&gt;&gt;lblPatternColor.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="edtPatternStyle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>299, 82</value>
+  </data>
+  <data name="edtPatternStyle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>164, 20</value>
+  </data>
+  <data name="edtPatternStyle.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <metadata name="toolTipController1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>208, 17</value>
+  </metadata>
+  <data name="&gt;&gt;edtPatternStyle.Name" xml:space="preserve">
+    <value>edtPatternStyle</value>
+  </data>
+  <data name="&gt;&gt;edtPatternStyle.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpreadsheet.Forms.Design.PatternStyleImageComboBoxEdit, DevExpress.XtraSpreadsheet.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtPatternStyle.Parent" xml:space="preserve">
+    <value>xtraTabFill</value>
+  </data>
+  <data name="&gt;&gt;edtPatternStyle.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="lblPatternStyle.AccessibleName" xml:space="preserve">
+    <value>Pattern Style</value>
+  </data>
+  <data name="lblPatternStyle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>299, 63</value>
+  </data>
+  <data name="lblPatternStyle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 13</value>
+  </data>
+  <data name="lblPatternStyle.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="lblPatternStyle.Text" xml:space="preserve">
+    <value>P&amp;attern Style:</value>
+  </data>
+  <data name="&gt;&gt;lblPatternStyle.Name" xml:space="preserve">
+    <value>lblPatternStyle</value>
+  </data>
+  <data name="&gt;&gt;lblPatternStyle.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblPatternStyle.Parent" xml:space="preserve">
+    <value>xtraTabFill</value>
+  </data>
+  <data name="&gt;&gt;lblPatternStyle.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="grpFillSample.AccessibleName" xml:space="preserve">
+    <value>Sample</value>
+  </data>
+  <data name="drawFillType.Appearance.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>Control</value>
+  </data>
+  <data name="drawFillType.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 24</value>
+  </data>
+  <data name="drawFillType.Size" type="System.Drawing.Size, System.Drawing">
+    <value>445, 62</value>
+  </data>
+  <data name="drawFillType.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="&gt;&gt;drawFillType.Name" xml:space="preserve">
+    <value>drawFillType</value>
+  </data>
+  <data name="&gt;&gt;drawFillType.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;drawFillType.Parent" xml:space="preserve">
+    <value>grpFillSample</value>
+  </data>
+  <data name="&gt;&gt;drawFillType.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="grpFillSample.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 242</value>
+  </data>
+  <data name="grpFillSample.Size" type="System.Drawing.Size, System.Drawing">
+    <value>455, 91</value>
+  </data>
+  <data name="grpFillSample.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="grpFillSample.Text" xml:space="preserve">
+    <value>Sample</value>
+  </data>
+  <data name="&gt;&gt;grpFillSample.Name" xml:space="preserve">
+    <value>grpFillSample</value>
+  </data>
+  <data name="&gt;&gt;grpFillSample.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.GroupControl, DevExpress.Utils.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;grpFillSample.Parent" xml:space="preserve">
+    <value>xtraTabFill</value>
+  </data>
+  <data name="&gt;&gt;grpFillSample.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="edtBackColor.EditValue" type="System.Drawing.Color, System.Drawing">
+    <value></value>
+  </data>
+  <data name="edtBackColor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 67</value>
+  </data>
+  <data name="edtBackColor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>166, 20</value>
+  </data>
+  <data name="edtBackColor.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;edtBackColor.Name" xml:space="preserve">
+    <value>edtBackColor</value>
+  </data>
+  <data name="&gt;&gt;edtBackColor.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.ColorPickEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;edtBackColor.Parent" xml:space="preserve">
+    <value>xtraTabFill</value>
+  </data>
+  <data name="&gt;&gt;edtBackColor.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="xtraTabFill.Size" type="System.Drawing.Size, System.Drawing">
+    <value>474, 352</value>
+  </data>
+  <data name="xtraTabFill.Text" xml:space="preserve">
+    <value>Fill</value>
+  </data>
+  <data name="&gt;&gt;xtraTabFill.Name" xml:space="preserve">
+    <value>xtraTabFill</value>
+  </data>
+  <data name="&gt;&gt;xtraTabFill.Type" xml:space="preserve">
+    <value>DevExpress.XtraTab.XtraTabPage, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;xtraTabFill.Parent" xml:space="preserve">
+    <value>tabControl</value>
+  </data>
+  <data name="&gt;&gt;xtraTabFill.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="lblProtection.AccessibleName" xml:space="preserve">
+    <value>Protection</value>
+  </data>
+  <data name="lblProtection.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 53</value>
+  </data>
+  <data name="lblProtection.Size" type="System.Drawing.Size, System.Drawing">
+    <value>432, 26</value>
+  </data>
+  <data name="lblProtection.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="lblProtection.Text" xml:space="preserve">
+    <value>Locking cells or hiding formulas has no effect until you protect the worksheet (Review tab,
+Changes group, Protect Sheet button).</value>
+  </data>
+  <data name="&gt;&gt;lblProtection.Name" xml:space="preserve">
+    <value>lblProtection</value>
+  </data>
+  <data name="&gt;&gt;lblProtection.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;lblProtection.Parent" xml:space="preserve">
+    <value>xtraTabProtection</value>
+  </data>
+  <data name="&gt;&gt;lblProtection.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="chkHidden.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 30</value>
+  </data>
+  <data name="chkHidden.Properties.Caption" xml:space="preserve">
+    <value>H&amp;idden</value>
+  </data>
+  <data name="chkHidden.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 19</value>
+  </data>
+  <data name="chkHidden.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;chkHidden.Name" xml:space="preserve">
+    <value>chkHidden</value>
+  </data>
+  <data name="&gt;&gt;chkHidden.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;chkHidden.Parent" xml:space="preserve">
+    <value>xtraTabProtection</value>
+  </data>
+  <data name="&gt;&gt;chkHidden.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="chkLocked.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 10</value>
+  </data>
+  <data name="chkLocked.Properties.Caption" xml:space="preserve">
+    <value>&amp;Locked</value>
+  </data>
+  <data name="chkLocked.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 19</value>
+  </data>
+  <data name="chkLocked.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;chkLocked.Name" xml:space="preserve">
+    <value>chkLocked</value>
+  </data>
+  <data name="&gt;&gt;chkLocked.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;chkLocked.Parent" xml:space="preserve">
+    <value>xtraTabProtection</value>
+  </data>
+  <data name="&gt;&gt;chkLocked.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="xtraTabProtection.Size" type="System.Drawing.Size, System.Drawing">
+    <value>474, 352</value>
+  </data>
+  <data name="xtraTabProtection.Text" xml:space="preserve">
+    <value>Protection</value>
+  </data>
+  <data name="&gt;&gt;xtraTabProtection.Name" xml:space="preserve">
+    <value>xtraTabProtection</value>
+  </data>
+  <data name="&gt;&gt;xtraTabProtection.Type" xml:space="preserve">
+    <value>DevExpress.XtraTab.XtraTabPage, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;xtraTabProtection.Parent" xml:space="preserve">
+    <value>tabControl</value>
+  </data>
+  <data name="&gt;&gt;xtraTabProtection.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;tabControl.Name" xml:space="preserve">
+    <value>tabControl</value>
+  </data>
+  <data name="&gt;&gt;tabControl.Type" xml:space="preserve">
+    <value>DevExpress.XtraTab.XtraTabControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;tabControl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;tabControl.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btnOk.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="btnOk.Location" type="System.Drawing.Point, System.Drawing">
+    <value>336, 398</value>
+  </data>
+  <data name="btnOk.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btnOk.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="btnOk.Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="&gt;&gt;btnOk.Name" xml:space="preserve">
+    <value>btnOk</value>
+  </data>
+  <data name="&gt;&gt;btnOk.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;btnOk.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnOk.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btnCancel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="btnCancel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>417, 398</value>
+  </data>
+  <data name="btnCancel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btnCancel.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="btnCancel.Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.Name" xml:space="preserve">
+    <value>btnCancel</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>504, 432</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterParent</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Format Cells</value>
+  </data>
+  <data name="&gt;&gt;toolTipController1.Name" xml:space="preserve">
+    <value>toolTipController1</value>
+  </data>
+  <data name="&gt;&gt;toolTipController1.Type" xml:space="preserve">
+    <value>DevExpress.Utils.ToolTipController, DevExpress.Utils.v21.2, Culture=neutral</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FormatCellsForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.XtraForm, DevExpress.Utils.v21.2, Culture=neutral</value>
+  </data>
+</root>
