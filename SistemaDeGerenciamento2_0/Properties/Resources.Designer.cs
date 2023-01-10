@@ -723,6 +723,26 @@ namespace SistemaDeGerenciamento2_0.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap multiply_20px {
+            get {
+                object obj = ResourceManager.GetObject("multiply_20px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap multiply1_20px {
+            get {
+                object obj = ResourceManager.GetObject("multiply1_20px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap olho_20 {
             get {
                 object obj = ResourceManager.GetObject("olho_20", resourceCulture);
@@ -1026,6 +1046,16 @@ namespace SistemaDeGerenciamento2_0.Properties {
         internal static System.Drawing.Bitmap separador___Copia {
             get {
                 object obj = ResourceManager.GetObject("separador - Copia", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap services_200px {
+            get {
+                object obj = ResourceManager.GetObject("services_200px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

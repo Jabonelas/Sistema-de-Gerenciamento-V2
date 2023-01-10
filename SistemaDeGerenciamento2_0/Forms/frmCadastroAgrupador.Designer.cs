@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCadastroAgrupador));
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.AlertaSalvar = new DevExpress.XtraBars.Alerter.AlertControl(this.components);
@@ -125,7 +124,7 @@
             this.txtAgrupador.Properties.Appearance.Options.UseFont = true;
             this.txtAgrupador.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.RegExpMaskManager));
             this.txtAgrupador.Properties.MaskSettings.Set("mask", "\\p{L}+");
-            this.txtAgrupador.Size = new System.Drawing.Size(300, 26);
+            this.txtAgrupador.Size = new System.Drawing.Size(300, 34);
             this.txtAgrupador.TabIndex = 0;
             // 
             // btnFechar
@@ -135,9 +134,9 @@
             this.btnFechar.AppearanceDisabled.BorderColor = System.Drawing.Color.Transparent;
             this.btnFechar.AppearanceDisabled.Options.UseBorderColor = true;
             this.btnFechar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnFechar.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnFechar.ImageOptions.Image")));
+            this.btnFechar.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.multiply1_20px;
             this.btnFechar.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
-            this.btnFechar.Location = new System.Drawing.Point(323, 0);
+            this.btnFechar.Location = new System.Drawing.Point(321, 2);
             this.btnFechar.Name = "btnFechar";
             this.btnFechar.Size = new System.Drawing.Size(24, 24);
             this.btnFechar.TabIndex = 94;

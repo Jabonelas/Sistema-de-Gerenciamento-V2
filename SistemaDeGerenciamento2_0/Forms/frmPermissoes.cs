@@ -96,9 +96,9 @@ namespace SistemaDeGerenciamento2_0.Forms
 
                         ////Produto
                         pm_adicionar_produto = Convert.ToBoolean(chkCadastrarProduto.Checked),
-                        pm_remover_produto = Convert.ToBoolean(cnkEditarRemoverProduto.Checked),
-                        pm_filtrar_produto = Convert.ToBoolean(chkPesquisarProduto.Checked),
-                        pm_tabela_produtos_removidos = Convert.ToBoolean(chkProdutosRemovidos.Checked),
+                        pm_remover_produto = Convert.ToBoolean(chkRemoverProduto.Checked),
+                        pm_editar_produto = Convert.ToBoolean(cnkEditarProduto.Checked),
+                        pm_visualizar_todos_produtos = Convert.ToBoolean(chkTodosProdutos.Checked),
                         pm_alerta_estoque_baixo = Convert.ToBoolean(chkAlertaEstoqueBaixo.Checked),
 
                         ////Cadastro
@@ -188,9 +188,9 @@ namespace SistemaDeGerenciamento2_0.Forms
 
                                 //Produto
                                 chkCadastrarProduto.Checked = Convert.ToBoolean(item.pm_adicionar_produto);
-                                cnkEditarRemoverProduto.Checked = Convert.ToBoolean(item.pm_remover_produto);
-                                chkPesquisarProduto.Checked = Convert.ToBoolean(item.pm_filtrar_produto);
-                                chkProdutosRemovidos.Checked = Convert.ToBoolean(item.pm_tabela_produtos_removidos);
+                                cnkEditarProduto.Checked = Convert.ToBoolean(item.pm_editar_produto);
+                                chkRemoverProduto.Checked = Convert.ToBoolean(item.pm_remover_produto);
+                                chkTodosProdutos.Checked = Convert.ToBoolean(item.pm_visualizar_todos_produtos);
                                 chkAlertaEstoqueBaixo.Checked = Convert.ToBoolean(item.pm_alerta_estoque_baixo);
 
                                 //Cadastro
@@ -246,9 +246,9 @@ namespace SistemaDeGerenciamento2_0.Forms
 
                     ////Produto
                     checkBoxPreenchidas.pm_adicionar_produto = Convert.ToBoolean(chkCadastrarProduto.Checked);
-                    checkBoxPreenchidas.pm_remover_produto = Convert.ToBoolean(cnkEditarRemoverProduto.Checked);
-                    checkBoxPreenchidas.pm_filtrar_produto = Convert.ToBoolean(chkPesquisarProduto.Checked);
-                    checkBoxPreenchidas.pm_tabela_produtos_removidos = Convert.ToBoolean(chkProdutosRemovidos.Checked);
+                    checkBoxPreenchidas.pm_remover_produto = Convert.ToBoolean(chkRemoverProduto.Checked);
+                    checkBoxPreenchidas.pm_editar_produto = Convert.ToBoolean(cnkEditarProduto.Checked);
+                    checkBoxPreenchidas.pm_visualizar_todos_produtos = Convert.ToBoolean(chkTodosProdutos.Checked);
                     checkBoxPreenchidas.pm_alerta_estoque_baixo = Convert.ToBoolean(chkAlertaEstoqueBaixo.Checked);
 
                     ////Cadastro

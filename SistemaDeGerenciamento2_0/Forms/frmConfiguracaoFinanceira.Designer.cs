@@ -30,20 +30,20 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmConfiguracaoFinanceira));
-            DevExpress.DataAccess.Sql.CustomSqlQuery customSqlQuery1 = new DevExpress.DataAccess.Sql.CustomSqlQuery();
-            DevExpress.DataAccess.Sql.SelectQuery selectQuery1 = new DevExpress.DataAccess.Sql.SelectQuery();
-            DevExpress.DataAccess.Sql.Column column1 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression1 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Table table1 = new DevExpress.DataAccess.Sql.Table();
-            DevExpress.DataAccess.Sql.Column column2 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression2 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column3 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression3 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Table table2 = new DevExpress.DataAccess.Sql.Table();
-            DevExpress.DataAccess.Sql.Column column4 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression4 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Join join1 = new DevExpress.DataAccess.Sql.Join();
-            DevExpress.DataAccess.Sql.RelationColumnInfo relationColumnInfo1 = new DevExpress.DataAccess.Sql.RelationColumnInfo();
+            DevExpress.DataAccess.Sql.CustomSqlQuery customSqlQuery4 = new DevExpress.DataAccess.Sql.CustomSqlQuery();
+            DevExpress.DataAccess.Sql.SelectQuery selectQuery4 = new DevExpress.DataAccess.Sql.SelectQuery();
+            DevExpress.DataAccess.Sql.Column column13 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression13 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Table table7 = new DevExpress.DataAccess.Sql.Table();
+            DevExpress.DataAccess.Sql.Column column14 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression14 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column15 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression15 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Table table8 = new DevExpress.DataAccess.Sql.Table();
+            DevExpress.DataAccess.Sql.Column column16 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression16 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Join join4 = new DevExpress.DataAccess.Sql.Join();
+            DevExpress.DataAccess.Sql.RelationColumnInfo relationColumnInfo4 = new DevExpress.DataAccess.Sql.RelationColumnInfo();
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
             this.btnSalvar = new DevExpress.XtraEditors.SimpleButton();
             this.pcbRequesitosCodigoDeBarras = new DevExpress.XtraEditors.PictureEdit();
@@ -101,7 +101,7 @@
             // 
             // labelControl7
             // 
-            this.labelControl7.Appearance.BackColor = System.Drawing.Color.Silver;
+            this.labelControl7.Appearance.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.labelControl7.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl7.Appearance.Options.UseBackColor = true;
             this.labelControl7.Appearance.Options.UseFont = true;
@@ -115,6 +115,7 @@
             // 
             this.btnSalvar.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalvar.Appearance.Options.UseFont = true;
+            this.btnSalvar.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.save_20px;
             this.btnSalvar.ImageOptions.ImageIndex = 5;
             this.btnSalvar.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftBottom;
             this.btnSalvar.ImageOptions.ImageToTextIndent = 10;
@@ -132,7 +133,7 @@
             this.pcbRequesitosCodigoDeBarras.EditValue = ((object)(resources.GetObject("pcbRequesitosCodigoDeBarras.EditValue")));
             this.pcbRequesitosCodigoDeBarras.Location = new System.Drawing.Point(164, 84);
             this.pcbRequesitosCodigoDeBarras.Name = "pcbRequesitosCodigoDeBarras";
-            this.pcbRequesitosCodigoDeBarras.Properties.Appearance.BackColor = System.Drawing.Color.Silver;
+            this.pcbRequesitosCodigoDeBarras.Properties.Appearance.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.pcbRequesitosCodigoDeBarras.Properties.Appearance.Options.UseBackColor = true;
             this.pcbRequesitosCodigoDeBarras.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.pcbRequesitosCodigoDeBarras.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
@@ -167,7 +168,7 @@
             this.pictureEdit3.EditValue = ((object)(resources.GetObject("pictureEdit3.EditValue")));
             this.pictureEdit3.Location = new System.Drawing.Point(820, 84);
             this.pictureEdit3.Name = "pictureEdit3";
-            this.pictureEdit3.Properties.Appearance.BackColor = System.Drawing.Color.Silver;
+            this.pictureEdit3.Properties.Appearance.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.pictureEdit3.Properties.Appearance.Options.UseBackColor = true;
             this.pictureEdit3.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.pictureEdit3.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
@@ -178,7 +179,7 @@
             // 
             // labelControl3
             // 
-            this.labelControl3.Appearance.BackColor = System.Drawing.Color.Silver;
+            this.labelControl3.Appearance.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.labelControl3.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl3.Appearance.Options.UseBackColor = true;
             this.labelControl3.Appearance.Options.UseFont = true;
@@ -193,7 +194,7 @@
             this.pictureEdit4.EditValue = ((object)(resources.GetObject("pictureEdit4.EditValue")));
             this.pictureEdit4.Location = new System.Drawing.Point(500, 84);
             this.pictureEdit4.Name = "pictureEdit4";
-            this.pictureEdit4.Properties.Appearance.BackColor = System.Drawing.Color.Silver;
+            this.pictureEdit4.Properties.Appearance.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.pictureEdit4.Properties.Appearance.Options.UseBackColor = true;
             this.pictureEdit4.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.pictureEdit4.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
@@ -204,7 +205,7 @@
             // 
             // labelControl4
             // 
-            this.labelControl4.Appearance.BackColor = System.Drawing.Color.Silver;
+            this.labelControl4.Appearance.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.labelControl4.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl4.Appearance.Options.UseBackColor = true;
             this.labelControl4.Appearance.Options.UseFont = true;
@@ -219,7 +220,7 @@
             this.pictureEdit1.EditValue = ((object)(resources.GetObject("pictureEdit1.EditValue")));
             this.pictureEdit1.Location = new System.Drawing.Point(198, 198);
             this.pictureEdit1.Name = "pictureEdit1";
-            this.pictureEdit1.Properties.Appearance.BackColor = System.Drawing.Color.Silver;
+            this.pictureEdit1.Properties.Appearance.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.pictureEdit1.Properties.Appearance.Options.UseBackColor = true;
             this.pictureEdit1.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.pictureEdit1.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
@@ -230,7 +231,7 @@
             // 
             // labelControl1
             // 
-            this.labelControl1.Appearance.BackColor = System.Drawing.Color.Silver;
+            this.labelControl1.Appearance.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.labelControl1.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl1.Appearance.Options.UseBackColor = true;
             this.labelControl1.Appearance.Options.UseFont = true;
@@ -246,7 +247,7 @@
             this.pictureEdit33.Enabled = false;
             this.pictureEdit33.Location = new System.Drawing.Point(30, 56);
             this.pictureEdit33.Name = "pictureEdit33";
-            this.pictureEdit33.Properties.Appearance.BackColor = System.Drawing.Color.Silver;
+            this.pictureEdit33.Properties.Appearance.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.pictureEdit33.Properties.Appearance.BackColor2 = System.Drawing.Color.Gray;
             this.pictureEdit33.Properties.Appearance.Options.UseBackColor = true;
             this.pictureEdit33.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
@@ -262,7 +263,7 @@
             this.pictureEdit6.Enabled = false;
             this.pictureEdit6.Location = new System.Drawing.Point(366, 56);
             this.pictureEdit6.Name = "pictureEdit6";
-            this.pictureEdit6.Properties.Appearance.BackColor = System.Drawing.Color.Silver;
+            this.pictureEdit6.Properties.Appearance.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.pictureEdit6.Properties.Appearance.BackColor2 = System.Drawing.Color.Gray;
             this.pictureEdit6.Properties.Appearance.Options.UseBackColor = true;
             this.pictureEdit6.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
@@ -278,7 +279,7 @@
             this.pictureEdit7.Enabled = false;
             this.pictureEdit7.Location = new System.Drawing.Point(702, 56);
             this.pictureEdit7.Name = "pictureEdit7";
-            this.pictureEdit7.Properties.Appearance.BackColor = System.Drawing.Color.Silver;
+            this.pictureEdit7.Properties.Appearance.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.pictureEdit7.Properties.Appearance.BackColor2 = System.Drawing.Color.Gray;
             this.pictureEdit7.Properties.Appearance.Options.UseBackColor = true;
             this.pictureEdit7.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
@@ -294,7 +295,7 @@
             this.pictureEdit8.Enabled = false;
             this.pictureEdit8.Location = new System.Drawing.Point(30, 165);
             this.pictureEdit8.Name = "pictureEdit8";
-            this.pictureEdit8.Properties.Appearance.BackColor = System.Drawing.Color.Silver;
+            this.pictureEdit8.Properties.Appearance.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.pictureEdit8.Properties.Appearance.BackColor2 = System.Drawing.Color.Gray;
             this.pictureEdit8.Properties.Appearance.Options.UseBackColor = true;
             this.pictureEdit8.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
@@ -306,7 +307,7 @@
             // 
             // labelControl5
             // 
-            this.labelControl5.Appearance.BackColor = System.Drawing.Color.Silver;
+            this.labelControl5.Appearance.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.labelControl5.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl5.Appearance.Options.UseBackColor = true;
             this.labelControl5.Appearance.Options.UseFont = true;
@@ -339,12 +340,12 @@
             "12x"});
             this.cmbQtdParcelas.Properties.MaxLength = 20;
             this.cmbQtdParcelas.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.cmbQtdParcelas.Size = new System.Drawing.Size(141, 26);
+            this.cmbQtdParcelas.Size = new System.Drawing.Size(141, 34);
             this.cmbQtdParcelas.TabIndex = 341;
             // 
             // labelControl16
             // 
-            this.labelControl16.Appearance.BackColor = System.Drawing.Color.Silver;
+            this.labelControl16.Appearance.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.labelControl16.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl16.Appearance.Options.UseBackColor = true;
             this.labelControl16.Appearance.Options.UseFont = true;
@@ -356,7 +357,7 @@
             // 
             // separatorControl4
             // 
-            this.separatorControl4.BackColor = System.Drawing.Color.Silver;
+            this.separatorControl4.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.separatorControl4.LineColor = System.Drawing.Color.Black;
             this.separatorControl4.Location = new System.Drawing.Point(46, 273);
             this.separatorControl4.Name = "separatorControl4";
@@ -375,7 +376,7 @@
             this.txtPorcentagemJuros.Properties.MaxLength = 20;
             this.txtPorcentagemJuros.Properties.NullText = "0,00%";
             this.txtPorcentagemJuros.Properties.UseMaskAsDisplayFormat = true;
-            this.txtPorcentagemJuros.Size = new System.Drawing.Size(141, 26);
+            this.txtPorcentagemJuros.Size = new System.Drawing.Size(141, 34);
             this.txtPorcentagemJuros.TabIndex = 346;
             // 
             // txtPorcentagemDesconto
@@ -390,7 +391,7 @@
             this.txtPorcentagemDesconto.Properties.MaxLength = 20;
             this.txtPorcentagemDesconto.Properties.NullText = "0,00%";
             this.txtPorcentagemDesconto.Properties.UseMaskAsDisplayFormat = true;
-            this.txtPorcentagemDesconto.Size = new System.Drawing.Size(141, 26);
+            this.txtPorcentagemDesconto.Size = new System.Drawing.Size(141, 34);
             this.txtPorcentagemDesconto.TabIndex = 347;
             // 
             // txtPorcentagemDescontoGrupo
@@ -405,7 +406,7 @@
             this.txtPorcentagemDescontoGrupo.Properties.MaxLength = 20;
             this.txtPorcentagemDescontoGrupo.Properties.NullText = "0,00%";
             this.txtPorcentagemDescontoGrupo.Properties.UseMaskAsDisplayFormat = true;
-            this.txtPorcentagemDescontoGrupo.Size = new System.Drawing.Size(141, 26);
+            this.txtPorcentagemDescontoGrupo.Size = new System.Drawing.Size(141, 34);
             this.txtPorcentagemDescontoGrupo.TabIndex = 348;
             // 
             // cmbGrupoAgrupador
@@ -417,9 +418,9 @@
             this.cmbGrupoAgrupador.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.cmbGrupoAgrupador.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("id_grupo", "ID", 25, DevExpress.Utils.FormatType.Numeric, "", true, DevExpress.Utils.HorzAlignment.Far, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("gp_nome_grupo", "Nome Grupo", 87, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("gp_nome_agrupador", "Nome Agrupador", 109, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default)});
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("id_grupo", "ID", 25, DevExpress.Utils.FormatType.Numeric, "", true, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("gp_nome_grupo", "Grupo", 87, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("gp_nome_agrupador", "Agrupador", 109, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default)});
             this.cmbGrupoAgrupador.Properties.DataSource = this.queryBindingSource;
             this.cmbGrupoAgrupador.Properties.DisplayMember = "gp_nome_grupo";
             this.cmbGrupoAgrupador.Properties.DropDownRows = 5;
@@ -428,7 +429,7 @@
             this.cmbGrupoAgrupador.Properties.PopupSizeable = false;
             this.cmbGrupoAgrupador.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
             this.cmbGrupoAgrupador.Properties.ValueMember = "id_grupo";
-            this.cmbGrupoAgrupador.Size = new System.Drawing.Size(250, 26);
+            this.cmbGrupoAgrupador.Size = new System.Drawing.Size(304, 34);
             this.cmbGrupoAgrupador.TabIndex = 349;
             // 
             // queryBindingSource
@@ -440,12 +441,12 @@
             // 
             this.sqlDataSource1.ConnectionName = "SistemaDeGerenciamento2_0ConnectionString";
             this.sqlDataSource1.Name = "sqlDataSource1";
-            customSqlQuery1.Name = "Query";
-            customSqlQuery1.Sql = "select \"tb_grupo\".\"id_grupo\",\r\n       \"tb_grupo\".\"gp_nome_grupo\",\r\n       \"tb_gru" +
+            customSqlQuery4.Name = "Query";
+            customSqlQuery4.Sql = "select \"tb_grupo\".\"id_grupo\",\r\n       \"tb_grupo\".\"gp_nome_grupo\",\r\n       \"tb_gru" +
     "po\".\"gp_nome_agrupador\"\r\n  from \"dbo\".\"tb_grupo\" \"tb_grupo\"\r\nwhere \"tb_grupo\".\"g" +
     "p_nome_grupo\" is not null";
             this.sqlDataSource1.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
-            customSqlQuery1});
+            customSqlQuery4});
             this.sqlDataSource1.ResultSchemaSerializable = resources.GetString("sqlDataSource1.ResultSchemaSerializable");
             // 
             // gdvGruposAgrupadores
@@ -464,37 +465,37 @@
             // 
             this.sqlDataSource2.ConnectionName = "SistemaDeGerenciamento2_0ConnectionString";
             this.sqlDataSource2.Name = "sqlDataSource2";
-            columnExpression1.ColumnName = "id_configuracao_financeira";
-            table1.MetaSerializable = "<Meta X=\"30\" Y=\"30\" Width=\"125\" Height=\"183\" />";
-            table1.Name = "tb_configuracao_financeira";
-            columnExpression1.Table = table1;
-            column1.Expression = columnExpression1;
-            columnExpression2.ColumnName = "cf_desconto_grupo_produto";
-            columnExpression2.Table = table1;
-            column2.Expression = columnExpression2;
-            columnExpression3.ColumnName = "gp_nome_grupo";
-            table2.MetaSerializable = "<Meta X=\"185\" Y=\"30\" Width=\"125\" Height=\"123\" />";
-            table2.Name = "tb_grupo";
-            columnExpression3.Table = table2;
-            column3.Expression = columnExpression3;
-            columnExpression4.ColumnName = "gp_nome_agrupador";
-            columnExpression4.Table = table2;
-            column4.Expression = columnExpression4;
-            selectQuery1.Columns.Add(column1);
-            selectQuery1.Columns.Add(column2);
-            selectQuery1.Columns.Add(column3);
-            selectQuery1.Columns.Add(column4);
-            selectQuery1.Name = "tb_configuracao_financeira";
-            relationColumnInfo1.NestedKeyColumn = "id_grupo";
-            relationColumnInfo1.ParentKeyColumn = "fk_grupo";
-            join1.KeyColumns.Add(relationColumnInfo1);
-            join1.Nested = table2;
-            join1.Parent = table1;
-            selectQuery1.Relations.Add(join1);
-            selectQuery1.Tables.Add(table1);
-            selectQuery1.Tables.Add(table2);
+            columnExpression13.ColumnName = "id_configuracao_financeira";
+            table7.MetaSerializable = "<Meta X=\"30\" Y=\"30\" Width=\"125\" Height=\"183\" />";
+            table7.Name = "tb_configuracao_financeira";
+            columnExpression13.Table = table7;
+            column13.Expression = columnExpression13;
+            columnExpression14.ColumnName = "cf_desconto_grupo_produto";
+            columnExpression14.Table = table7;
+            column14.Expression = columnExpression14;
+            columnExpression15.ColumnName = "gp_nome_grupo";
+            table8.MetaSerializable = "<Meta X=\"185\" Y=\"30\" Width=\"125\" Height=\"123\" />";
+            table8.Name = "tb_grupo";
+            columnExpression15.Table = table8;
+            column15.Expression = columnExpression15;
+            columnExpression16.ColumnName = "gp_nome_agrupador";
+            columnExpression16.Table = table8;
+            column16.Expression = columnExpression16;
+            selectQuery4.Columns.Add(column13);
+            selectQuery4.Columns.Add(column14);
+            selectQuery4.Columns.Add(column15);
+            selectQuery4.Columns.Add(column16);
+            selectQuery4.Name = "tb_configuracao_financeira";
+            relationColumnInfo4.NestedKeyColumn = "id_grupo";
+            relationColumnInfo4.ParentKeyColumn = "fk_grupo";
+            join4.KeyColumns.Add(relationColumnInfo4);
+            join4.Nested = table8;
+            join4.Parent = table7;
+            selectQuery4.Relations.Add(join4);
+            selectQuery4.Tables.Add(table7);
+            selectQuery4.Tables.Add(table8);
             this.sqlDataSource2.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
-            selectQuery1});
+            selectQuery4});
             this.sqlDataSource2.ResultSchemaSerializable = resources.GetString("sqlDataSource2.ResultSchemaSerializable");
             // 
             // gridView1
@@ -590,9 +591,9 @@
             this.btnFechar.AppearanceDisabled.BorderColor = System.Drawing.Color.Transparent;
             this.btnFechar.AppearanceDisabled.Options.UseBorderColor = true;
             this.btnFechar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnFechar.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnFechar.ImageOptions.Image")));
+            this.btnFechar.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.multiply1_20px;
             this.btnFechar.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
-            this.btnFechar.Location = new System.Drawing.Point(897, 0);
+            this.btnFechar.Location = new System.Drawing.Point(895, 2);
             this.btnFechar.Name = "btnFechar";
             this.btnFechar.Size = new System.Drawing.Size(24, 24);
             this.btnFechar.TabIndex = 351;

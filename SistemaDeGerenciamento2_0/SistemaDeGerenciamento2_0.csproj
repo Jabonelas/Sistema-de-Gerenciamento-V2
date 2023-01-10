@@ -285,6 +285,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class\ApiCorreios.cs" />
+    <Compile Include="Class\BuscarPermissoesUsuario.cs" />
     <Compile Include="Class\DadosCEP.cs" />
     <Compile Include="Class\DadosMensagemAlerta.cs" />
     <Compile Include="Class\DadosNotaFiscalEntrada.cs" />
@@ -292,7 +293,7 @@
     <Compile Include="Class\ListaEstados.cs" />
     <Compile Include="Class\MensagemErros.cs" />
     <Compile Include="Class\MensagemAtencao.cs" />
-    <Compile Include="Class\PermissoesCadastro.cs" />
+    <Compile Include="Class\PermissoesUsuario.cs" />
     <Compile Include="Class\Validacoes.cs" />
     <Compile Include="Context\SistemaDeGerenciamento2_0Context.cs" />
     <Compile Include="Forms\frmAcessoRapido.cs">
@@ -723,6 +724,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\lock_error_200px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\multiply_20px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\multiply1_20px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\services_200px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

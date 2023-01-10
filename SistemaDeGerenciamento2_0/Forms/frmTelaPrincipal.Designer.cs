@@ -54,11 +54,11 @@
             this.btnConfigFinanceiro = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.btnConfigDesepsa = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.fluentDesignFormControl1 = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormControl();
+            this.lblUsuarioLogado = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.skinBarSubItem1 = new DevExpress.XtraBars.SkinBarSubItem();
             this.fluentFormDefaultManager1 = new DevExpress.XtraBars.FluentDesignSystem.FluentFormDefaultManager(this.components);
             this.pnlTelaPrincipal = new System.Windows.Forms.FlowLayoutPanel();
-            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.lblUsuarioLogado = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).BeginInit();
             this.accordionControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fluentDesignFormControl1)).BeginInit();
@@ -88,23 +88,23 @@
             this.Produtos,
             this.Relatorios,
             this.Configuracao});
-            this.accordionControl1.Location = new System.Drawing.Point(0, 31);
+            this.accordionControl1.Location = new System.Drawing.Point(0, 33);
             this.accordionControl1.Name = "accordionControl1";
             this.accordionControl1.ScrollBarMode = DevExpress.XtraBars.Navigation.ScrollBarMode.Touch;
-            this.accordionControl1.Size = new System.Drawing.Size(260, 447);
+            this.accordionControl1.Size = new System.Drawing.Size(260, 466);
             this.accordionControl1.TabIndex = 1;
             this.accordionControl1.ViewType = DevExpress.XtraBars.Navigation.AccordionControlViewType.HamburgerMenu;
             // 
             // accordionContentContainer1
             // 
             this.accordionContentContainer1.Name = "accordionContentContainer1";
-            this.accordionContentContainer1.Size = new System.Drawing.Size(241, 76);
+            this.accordionContentContainer1.Size = new System.Drawing.Size(234, 76);
             this.accordionContentContainer1.TabIndex = 2;
             // 
             // accordionContentContainer2
             // 
             this.accordionContentContainer2.Name = "accordionContentContainer2";
-            this.accordionContentContainer2.Size = new System.Drawing.Size(241, 76);
+            this.accordionContentContainer2.Size = new System.Drawing.Size(234, 76);
             this.accordionContentContainer2.TabIndex = 5;
             // 
             // btnAcessoRapido
@@ -244,7 +244,6 @@
             this.btnNovoFornecedor,
             this.btnNovoFuncionario,
             this.btnTodosOsCadastro});
-            this.Cadastro.Expanded = true;
             this.Cadastro.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.add_user_male_30px;
             this.Cadastro.Name = "Cadastro";
             this.Cadastro.Text = "Cadastros";
@@ -300,6 +299,8 @@
             this.Produtos.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.btnNovoProduto,
             this.btnTodosOsProdutos});
+            this.Produtos.Expanded = true;
+            this.Produtos.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.produto_preto1;
             this.Produtos.Name = "Produtos";
             this.Produtos.Text = "Produtos";
             this.Produtos.Click += new System.EventHandler(this.Produtos_Click);
@@ -372,7 +373,6 @@
             this.btnConfigPerfil,
             this.btnConfigFinanceiro,
             this.btnConfigDesepsa});
-            this.Configuracao.Expanded = true;
             this.Configuracao.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.automation_30px;
             this.Configuracao.Name = "Configuracao";
             this.Configuracao.Text = "Configurações";
@@ -423,10 +423,26 @@
             this.fluentDesignFormControl1.Location = new System.Drawing.Point(0, 0);
             this.fluentDesignFormControl1.Manager = this.fluentFormDefaultManager1;
             this.fluentDesignFormControl1.Name = "fluentDesignFormControl1";
-            this.fluentDesignFormControl1.Size = new System.Drawing.Size(1237, 31);
+            this.fluentDesignFormControl1.Size = new System.Drawing.Size(1269, 33);
             this.fluentDesignFormControl1.TabIndex = 2;
             this.fluentDesignFormControl1.TabStop = false;
             this.fluentDesignFormControl1.TitleItemLinks.Add(this.skinBarSubItem1);
+            // 
+            // lblUsuarioLogado
+            // 
+            this.lblUsuarioLogado.Location = new System.Drawing.Point(582, 13);
+            this.lblUsuarioLogado.Name = "lblUsuarioLogado";
+            this.lblUsuarioLogado.Size = new System.Drawing.Size(63, 13);
+            this.lblUsuarioLogado.TabIndex = 5;
+            this.lblUsuarioLogado.Text = "labelControl2";
+            // 
+            // labelControl1
+            // 
+            this.labelControl1.Location = new System.Drawing.Point(536, 13);
+            this.labelControl1.Name = "labelControl1";
+            this.labelControl1.Size = new System.Drawing.Size(40, 13);
+            this.labelControl1.TabIndex = 4;
+            this.labelControl1.Text = "Usuário:";
             // 
             // skinBarSubItem1
             // 
@@ -449,30 +465,15 @@
             this.pnlTelaPrincipal.AutoScroll = true;
             this.pnlTelaPrincipal.Location = new System.Drawing.Point(260, 31);
             this.pnlTelaPrincipal.Name = "pnlTelaPrincipal";
-            this.pnlTelaPrincipal.Size = new System.Drawing.Size(974, 444);
+            this.pnlTelaPrincipal.Size = new System.Drawing.Size(1006, 465);
             this.pnlTelaPrincipal.TabIndex = 3;
-            // 
-            // labelControl1
-            // 
-            this.labelControl1.Location = new System.Drawing.Point(536, 13);
-            this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(40, 13);
-            this.labelControl1.TabIndex = 4;
-            this.labelControl1.Text = "Usuário:";
-            // 
-            // lblUsuarioLogado
-            // 
-            this.lblUsuarioLogado.Location = new System.Drawing.Point(582, 13);
-            this.lblUsuarioLogado.Name = "lblUsuarioLogado";
-            this.lblUsuarioLogado.Size = new System.Drawing.Size(63, 13);
-            this.lblUsuarioLogado.TabIndex = 5;
-            this.lblUsuarioLogado.Text = "labelControl2";
+            this.pnlTelaPrincipal.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlTelaPrincipal_Paint);
             // 
             // frmTelaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1237, 478);
+            this.ClientSize = new System.Drawing.Size(1269, 499);
             this.Controls.Add(this.pnlTelaPrincipal);
             this.Controls.Add(this.accordionControl1);
             this.Controls.Add(this.fluentDesignFormControl1);

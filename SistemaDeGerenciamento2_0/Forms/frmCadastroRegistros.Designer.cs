@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCadastroRegistros));
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl13 = new DevExpress.XtraEditors.LabelControl();
@@ -81,9 +80,9 @@
             this.btnFechar.AppearanceDisabled.BorderColor = System.Drawing.Color.Transparent;
             this.btnFechar.AppearanceDisabled.Options.UseBorderColor = true;
             this.btnFechar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnFechar.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnFechar.ImageOptions.Image")));
+            this.btnFechar.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.multiply1_20px;
             this.btnFechar.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
-            this.btnFechar.Location = new System.Drawing.Point(1048, -1);
+            this.btnFechar.Location = new System.Drawing.Point(1046, 1);
             this.btnFechar.Name = "btnFechar";
             this.btnFechar.Size = new System.Drawing.Size(24, 24);
             this.btnFechar.TabIndex = 121;
@@ -127,7 +126,7 @@
             "Pessoa Fisica",
             "Pessoa Juridica"});
             this.cmbTipoPessoa.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.cmbTipoPessoa.Size = new System.Drawing.Size(243, 26);
+            this.cmbTipoPessoa.Size = new System.Drawing.Size(243, 34);
             this.cmbTipoPessoa.TabIndex = 0;
             this.cmbTipoPessoa.SelectedValueChanged += new System.EventHandler(this.cmbTipoPessoa_SelectedValueChanged);
             // 

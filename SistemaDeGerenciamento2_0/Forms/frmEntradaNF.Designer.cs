@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmEntradaNF));
             this.labelControl13 = new DevExpress.XtraEditors.LabelControl();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.btnFechar = new DevExpress.XtraEditors.SimpleButton();
@@ -121,9 +120,9 @@
             this.btnFechar.AppearanceDisabled.BorderColor = System.Drawing.Color.Transparent;
             this.btnFechar.AppearanceDisabled.Options.UseBorderColor = true;
             this.btnFechar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnFechar.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnFechar.ImageOptions.Image")));
+            this.btnFechar.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.multiply1_20px;
             this.btnFechar.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
-            this.btnFechar.Location = new System.Drawing.Point(1048, 0);
+            this.btnFechar.Location = new System.Drawing.Point(1046, 2);
             this.btnFechar.Name = "btnFechar";
             this.btnFechar.Size = new System.Drawing.Size(24, 24);
             this.btnFechar.TabIndex = 120;
@@ -137,7 +136,7 @@
             this.txtBairroEmissor.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBairroEmissor.Properties.Appearance.Options.UseFont = true;
             this.txtBairroEmissor.Properties.ReadOnly = true;
-            this.txtBairroEmissor.Size = new System.Drawing.Size(332, 26);
+            this.txtBairroEmissor.Size = new System.Drawing.Size(332, 34);
             this.txtBairroEmissor.TabIndex = 128;
             // 
             // txtInscricaoEstadualEmissor
@@ -148,7 +147,7 @@
             this.txtInscricaoEstadualEmissor.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtInscricaoEstadualEmissor.Properties.Appearance.Options.UseFont = true;
             this.txtInscricaoEstadualEmissor.Properties.ReadOnly = true;
-            this.txtInscricaoEstadualEmissor.Size = new System.Drawing.Size(332, 26);
+            this.txtInscricaoEstadualEmissor.Size = new System.Drawing.Size(332, 34);
             this.txtInscricaoEstadualEmissor.TabIndex = 127;
             // 
             // labelControl8
@@ -192,7 +191,7 @@
             this.txtCNPJEmissor.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCNPJEmissor.Properties.Appearance.Options.UseFont = true;
             this.txtCNPJEmissor.Properties.ReadOnly = true;
-            this.txtCNPJEmissor.Size = new System.Drawing.Size(332, 26);
+            this.txtCNPJEmissor.Size = new System.Drawing.Size(332, 34);
             this.txtCNPJEmissor.TabIndex = 123;
             // 
             // txtPaisEmissor
@@ -203,7 +202,7 @@
             this.txtPaisEmissor.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPaisEmissor.Properties.Appearance.Options.UseFont = true;
             this.txtPaisEmissor.Properties.ReadOnly = true;
-            this.txtPaisEmissor.Size = new System.Drawing.Size(332, 26);
+            this.txtPaisEmissor.Size = new System.Drawing.Size(332, 34);
             this.txtPaisEmissor.TabIndex = 132;
             // 
             // txtCEPEmissor
@@ -214,7 +213,7 @@
             this.txtCEPEmissor.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCEPEmissor.Properties.Appearance.Options.UseFont = true;
             this.txtCEPEmissor.Properties.ReadOnly = true;
-            this.txtCEPEmissor.Size = new System.Drawing.Size(332, 26);
+            this.txtCEPEmissor.Size = new System.Drawing.Size(332, 34);
             this.txtCEPEmissor.TabIndex = 131;
             // 
             // labelControl10
@@ -258,7 +257,7 @@
             this.txtRazaoSocialEmitente.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRazaoSocialEmitente.Properties.Appearance.Options.UseFont = true;
             this.txtRazaoSocialEmitente.Properties.ReadOnly = true;
-            this.txtRazaoSocialEmitente.Size = new System.Drawing.Size(603, 26);
+            this.txtRazaoSocialEmitente.Size = new System.Drawing.Size(603, 34);
             this.txtRazaoSocialEmitente.TabIndex = 143;
             // 
             // labelControl4
@@ -313,7 +312,7 @@
             this.txtValorTotalNF.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtValorTotalNF.Properties.Appearance.Options.UseFont = true;
             this.txtValorTotalNF.Properties.ReadOnly = true;
-            this.txtValorTotalNF.Size = new System.Drawing.Size(240, 26);
+            this.txtValorTotalNF.Size = new System.Drawing.Size(240, 34);
             this.txtValorTotalNF.TabIndex = 138;
             // 
             // txtDataEmissao
@@ -324,7 +323,7 @@
             this.txtDataEmissao.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDataEmissao.Properties.Appearance.Options.UseFont = true;
             this.txtDataEmissao.Properties.ReadOnly = true;
-            this.txtDataEmissao.Size = new System.Drawing.Size(240, 26);
+            this.txtDataEmissao.Size = new System.Drawing.Size(240, 34);
             this.txtDataEmissao.TabIndex = 137;
             // 
             // txtNumeroNF
@@ -335,7 +334,7 @@
             this.txtNumeroNF.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNumeroNF.Properties.Appearance.Options.UseFont = true;
             this.txtNumeroNF.Properties.ReadOnly = true;
-            this.txtNumeroNF.Size = new System.Drawing.Size(240, 26);
+            this.txtNumeroNF.Size = new System.Drawing.Size(240, 34);
             this.txtNumeroNF.TabIndex = 136;
             // 
             // txtNaturezaDaOperacao
@@ -346,7 +345,7 @@
             this.txtNaturezaDaOperacao.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNaturezaDaOperacao.Properties.Appearance.Options.UseFont = true;
             this.txtNaturezaDaOperacao.Properties.ReadOnly = true;
-            this.txtNaturezaDaOperacao.Size = new System.Drawing.Size(332, 26);
+            this.txtNaturezaDaOperacao.Size = new System.Drawing.Size(332, 34);
             this.txtNaturezaDaOperacao.TabIndex = 135;
             // 
             // txtLocalArquivo
@@ -356,7 +355,7 @@
             this.txtLocalArquivo.Name = "txtLocalArquivo";
             this.txtLocalArquivo.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLocalArquivo.Properties.Appearance.Options.UseFont = true;
-            this.txtLocalArquivo.Size = new System.Drawing.Size(332, 26);
+            this.txtLocalArquivo.Size = new System.Drawing.Size(332, 34);
             this.txtLocalArquivo.TabIndex = 134;
             // 
             // btnProcurar
@@ -426,7 +425,7 @@
             this.txtTelefoneEmissor.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTelefoneEmissor.Properties.Appearance.Options.UseFont = true;
             this.txtTelefoneEmissor.Properties.ReadOnly = true;
-            this.txtTelefoneEmissor.Size = new System.Drawing.Size(240, 26);
+            this.txtTelefoneEmissor.Size = new System.Drawing.Size(240, 34);
             this.txtTelefoneEmissor.TabIndex = 148;
             // 
             // txtNomeFantasia
@@ -437,7 +436,7 @@
             this.txtNomeFantasia.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNomeFantasia.Properties.Appearance.Options.UseFont = true;
             this.txtNomeFantasia.Properties.ReadOnly = true;
-            this.txtNomeFantasia.Size = new System.Drawing.Size(603, 26);
+            this.txtNomeFantasia.Size = new System.Drawing.Size(603, 34);
             this.txtNomeFantasia.TabIndex = 149;
             // 
             // labelControl12
@@ -470,7 +469,7 @@
             this.txtEnderecoEmissor.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEnderecoEmissor.Properties.Appearance.Options.UseFont = true;
             this.txtEnderecoEmissor.Properties.ReadOnly = true;
-            this.txtEnderecoEmissor.Size = new System.Drawing.Size(603, 26);
+            this.txtEnderecoEmissor.Size = new System.Drawing.Size(603, 34);
             this.txtEnderecoEmissor.TabIndex = 152;
             // 
             // txtEstado
@@ -481,7 +480,7 @@
             this.txtEstado.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEstado.Properties.Appearance.Options.UseFont = true;
             this.txtEstado.Properties.ReadOnly = true;
-            this.txtEstado.Size = new System.Drawing.Size(240, 26);
+            this.txtEstado.Size = new System.Drawing.Size(240, 34);
             this.txtEstado.TabIndex = 153;
             // 
             // labelControl15
@@ -503,7 +502,7 @@
             this.txtCidade.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCidade.Properties.Appearance.Options.UseFont = true;
             this.txtCidade.Properties.ReadOnly = true;
-            this.txtCidade.Size = new System.Drawing.Size(240, 26);
+            this.txtCidade.Size = new System.Drawing.Size(240, 34);
             this.txtCidade.TabIndex = 155;
             // 
             // labelControl16

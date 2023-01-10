@@ -9,6 +9,7 @@ using DevExpress.XtraSplashScreen;
 using System.Diagnostics;
 using SistemaDeGerenciamento2_0.Context;
 using SistemaDeGerenciamento2_0.Models;
+using Microsoft.Win32;
 
 namespace SistemaDeGerenciamento2_0.Forms
 {
@@ -26,6 +27,76 @@ namespace SistemaDeGerenciamento2_0.Forms
             sqlGrupo.FillAsync();
 
             sqlFornecedor.FillAsync();
+        }
+
+        private string codigoProduto = string.Empty;
+
+        public frmCadastroProduto(string _codigoProduto)
+        {
+            InitializeComponent();
+
+            sqlGrupo.FillAsync();
+
+            sqlFornecedor.FillAsync();
+
+            codigoProduto = _codigoProduto;
+
+            ExibirDadosproduto();
+        }
+
+        private void ExibirDadosproduto()
+        {
+            try
+            {
+                using (SistemaDeGerenciamento2_0Context db = new SistemaDeGerenciamento2_0Context())
+                {
+                    var dadosProdutoCadastrado = (from produto in db.tb_produto
+                                                  join grupo in db.tb_grupo
+                                                  on produto.fk_grupo equals grupo.id_grupo
+                                                  join registro in db.tb_registro
+                                                  on produto.fk_registro_forncedor equals registro.id_registro
+                                                  where produto.pd_codigo == codigoProduto.ToString()
+                                                  select new
+                                                  {
+                                                      Produto = produto,
+                                                      Grupo = grupo,
+                                                      Registro = registro
+                                                  }).ToList();
+
+                    foreach (var item in dadosProdutoCadastrado)
+                    {
+                        txtCodigo.Text = item.Produto.pd_codigo;
+                        txtCodigoDeBarras.Text = item.Produto.pd_codigo_barras;
+                        cmbFinalidade.Text = item.Produto.pd_finalidade;
+                        txtNome.Text = item.Produto.pd_nome;
+                        cmbGrupo.Text = item.Grupo.gp_nome_grupo;
+                        if (item.Registro.rg_cnpj != string.Empty)
+                        {
+                            //cmbFornecedor.EditValue = item.Registro.rg_cnpj;
+                            //cmbFornecedor.Text = item.Registro.rg_cnpj;
+                            //cmbFornecedor.Properties.set = item.Registro.rg_cnpj;
+                            //cmbFornecedor.Properties.ValueMember = item.Registro.rg_cnpj;
+                        }
+                        else
+                        {
+                            cmbFornecedor.Text = item.Registro.rg_cpf;
+                        }
+                        txtTipoUnidade.Text = item.Produto.pd_tipo_unidade;
+                        cmbTipoProduto.Text = item.Produto.pd_tipo_produto;
+                        txtCusto.Text = item.Produto.pd_custo.ToString("C");
+                        txtMargemLucro.Text = $"{item.Produto.pd_margem}%";
+                        txtPreco.Text = item.Produto.pd_preco.ToString("C");
+                        txtEstoqueMinimo.Text = item.Produto.pd_estoque_minimo.ToString();
+                        txtObservacoes.Text = item.Produto.pd_observacoes;
+                    }
+                }
+            }
+            catch (Exception x)
+            {
+                LogErros.EscreverArquivoDeLog($"{DateTime.Now} - Erro ao Buscar Dados Cadastro Produto - | {x.Message} | {x.StackTrace}");
+
+                MensagemErros.ErroAoBuscarDadosProduto(x);
+            }
         }
 
         private void btnFechar_Click(object sender, EventArgs e)

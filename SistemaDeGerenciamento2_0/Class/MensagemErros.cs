@@ -203,6 +203,11 @@ namespace SistemaDeGerenciamento2_0.Class
             MessageBox.Show($"(BUS-PR07) Erro ao Buscar Código do Produto e Descrição \n\nErro: {_e}", "Erro Buscar Código do Produto e Descrição!", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
+        public static void ErroAoBuscarDadosProduto(Exception _e)
+        {
+            MessageBox.Show($"(BUS-PR08) Erro ao Buscar Dados Cadastro de Produto \n\nErro: {_e}", "Erro Buscar Dados Cadastro de Produto!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
         #endregion Produto
 
         #region Registro
@@ -230,6 +235,11 @@ namespace SistemaDeGerenciamento2_0.Class
         public static void ErroAoBuscarDadosRegistroPessoaJuridica(Exception _e)
         {
             MessageBox.Show($"(BUS-RE05) Erro ao Buscar Dados Registro Pessoa Juridica \n\nErro: {_e}", "Erro Buscar Dados Registro Pessoa Juridica!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        public static void ErroAoBuscarDadosRegistroPessoaFisica(Exception _e)
+        {
+            MessageBox.Show($"(BUS-RE06) Erro ao Buscar Dados Registro Pessoa Fisica \n\nErro: {_e}", "Erro Buscar Dados Registro Pessoa Fisica!", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
         #endregion Registro

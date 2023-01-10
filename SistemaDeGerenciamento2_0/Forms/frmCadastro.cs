@@ -28,15 +28,15 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private frmTelaPrincipal frmTelaPrincipal;
 
-        private List<tb_permissoes> listaPermissoes = new List<tb_permissoes>();
+        private BuscarPermissoesUsuario buscarPermissoesUsuario = new BuscarPermissoesUsuario();
 
         public frmCadastro(frmTelaPrincipal _frmTelaPrincipal)
         {
             InitializeComponent();
 
-            sqlDataSource1.FillAsync();
-
             frmTelaPrincipal = _frmTelaPrincipal;
+
+            sqlDataSource1.FillAsync();
         }
 
         private void btnAdicionarCadastro_Click(object sender, EventArgs e)
@@ -46,46 +46,25 @@ namespace SistemaDeGerenciamento2_0.Forms
             tipoPessoa = "Cliente";
 
             VerificarAcessoCadastro();
+
+            sqlDataSource1.FillAsync();
         }
 
         private void ReloadDataConfigUsuario()
         {
             using (var handle = SplashScreenManager.ShowOverlayForm(frmTelaPrincipal))
             {
-                BuscarPermissoesUsuario();
-            }
-        }
-
-        private void BuscarPermissoesUsuario()
-        {
-            try
-            {
-                using (SistemaDeGerenciamento2_0Context db = new SistemaDeGerenciamento2_0Context())
-                {
-                    var acessosUsuario = db.tb_permissoes.Join(db.tb_registro, permissao => permissao.id_permissoes, registro => registro.fk_permissoes, (permissao, registro) => new
-                    {
-                        Permissao = permissao,
-                        Registro = registro,
-                    }).Where(x => x.Permissao.id_permissoes == x.Registro.fk_permissoes && x.Registro.rg_login == frmLogin.UsuarioLogado);
-
-                    acessosUsuario.ForEach(x => listaPermissoes.Add(x.Permissao));
-                }
-            }
-            catch (Exception x)
-            {
-                LogErros.EscreverArquivoDeLog($"{DateTime.Now} - Erro ao Buscar Permissões Usuários Na Tela Exibir Todos Os Cadastros| {x.Message} | {x.StackTrace}");
-
-                MensagemErros.ErroAoBuscarPermissoesTelaTodosCadastro(x);
+                buscarPermissoesUsuario.ListaPermissoesUsuario();
             }
         }
 
         private void VerificarAcessoCadastro()
         {
-            BuscarPermissoesUsuario();
+            buscarPermissoesUsuario.ListaPermissoesUsuario();
 
             bool IsUsuarioPossuiAcesso = false;
 
-            listaPermissoes.ForEach(x => IsUsuarioPossuiAcesso = x.pm_efetuar_cadastro);
+            buscarPermissoesUsuario.listaPermissoes.ForEach(x => IsUsuarioPossuiAcesso = x.pm_efetuar_cadastro);
 
             if (IsUsuarioPossuiAcesso == true)
             {
@@ -103,7 +82,7 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             bool IsUsuarioPossuiAcesso = false;
 
-            listaPermissoes.ForEach(x => IsUsuarioPossuiAcesso = x.pm_editar_cadastro);
+            buscarPermissoesUsuario.listaPermissoes.ForEach(x => IsUsuarioPossuiAcesso = x.pm_editar_cadastro);
 
             if (IsUsuarioPossuiAcesso == true)
             {
@@ -123,11 +102,16 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             bool IsUsuarioPossuiAcesso = false;
 
-            listaPermissoes.ForEach(x => IsUsuarioPossuiAcesso = x.pm_remover_cadastro);
+            buscarPermissoesUsuario.listaPermissoes.ForEach(x => IsUsuarioPossuiAcesso = x.pm_remover_cadastro);
 
             if (IsUsuarioPossuiAcesso == true)
             {
-                DeletarCadastro();
+                DialogResult OpcaoDoUsuario = new DialogResult();
+                OpcaoDoUsuario = MessageBox.Show("Realmente Deletar Cadastro?", "Atenção!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (OpcaoDoUsuario == DialogResult.Yes)
+                {
+                    DeletarCadastro();
+                }
             }
             else
             {
@@ -211,7 +195,7 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             using (var handle = SplashScreenManager.ShowOverlayForm(this))
             {
-                BuscarPermissoesUsuario();
+                buscarPermissoesUsuario.ListaPermissoesUsuario();
 
                 PegandoDadosDaLinha();
 
@@ -223,7 +207,7 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             using (var handle = SplashScreenManager.ShowOverlayForm(this))
             {
-                BuscarPermissoesUsuario();
+                buscarPermissoesUsuario.ListaPermissoesUsuario();
 
                 PegandoDadosDaLinha();
 
@@ -233,12 +217,7 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private void Deletar_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            DialogResult OpcaoDoUsuario = new DialogResult();
-            OpcaoDoUsuario = MessageBox.Show("Realmente Deletar Cadastro?", "Atenção!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-            if (OpcaoDoUsuario == DialogResult.Yes)
-            {
-                ReloadDataDeletar();
-            }
+            ReloadDataDeletar();
         }
 
         public void DeletarCadastro()

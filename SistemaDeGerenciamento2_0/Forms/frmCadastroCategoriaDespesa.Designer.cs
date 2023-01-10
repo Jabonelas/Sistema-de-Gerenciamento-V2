@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             DevExpress.XtraSplashScreen.SplashScreenManager splashScreenManager1 = new DevExpress.XtraSplashScreen.SplashScreenManager(this, null, true, true);
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCadastroCategoriaDespesa));
             this.labelControl13 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
@@ -126,7 +125,7 @@
             "Impostos"});
             this.cmbCategoriaAgrupadora.Properties.MaxLength = 20;
             this.cmbCategoriaAgrupadora.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.cmbCategoriaAgrupadora.Size = new System.Drawing.Size(243, 26);
+            this.cmbCategoriaAgrupadora.Size = new System.Drawing.Size(243, 34);
             this.cmbCategoriaAgrupadora.TabIndex = 113;
             // 
             // cmbCusto
@@ -143,7 +142,7 @@
             "Imobilizado"});
             this.cmbCusto.Properties.MaxLength = 20;
             this.cmbCusto.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.cmbCusto.Size = new System.Drawing.Size(243, 26);
+            this.cmbCusto.Size = new System.Drawing.Size(243, 34);
             this.cmbCusto.TabIndex = 112;
             // 
             // btnCancelar
@@ -187,9 +186,9 @@
             this.btnFechar.AppearanceDisabled.BorderColor = System.Drawing.Color.Transparent;
             this.btnFechar.AppearanceDisabled.Options.UseBorderColor = true;
             this.btnFechar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnFechar.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnFechar.ImageOptions.Image")));
+            this.btnFechar.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.multiply1_20px;
             this.btnFechar.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
-            this.btnFechar.Location = new System.Drawing.Point(297, 0);
+            this.btnFechar.Location = new System.Drawing.Point(295, 2);
             this.btnFechar.Name = "btnFechar";
             this.btnFechar.Size = new System.Drawing.Size(24, 24);
             this.btnFechar.TabIndex = 102;
@@ -212,7 +211,7 @@
             this.txtCategoria.Name = "txtCategoria";
             this.txtCategoria.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCategoria.Properties.Appearance.Options.UseFont = true;
-            this.txtCategoria.Size = new System.Drawing.Size(243, 26);
+            this.txtCategoria.Size = new System.Drawing.Size(243, 34);
             this.txtCategoria.TabIndex = 114;
             this.txtCategoria.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCategoria_KeyPress_1);
             // 

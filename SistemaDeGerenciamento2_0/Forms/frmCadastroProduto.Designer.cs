@@ -30,8 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             DevExpress.XtraSplashScreen.SplashScreenManager splashScreenManager1 = new DevExpress.XtraSplashScreen.SplashScreenManager(this, null, true, true);
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCadastroProduto));
             DevExpress.DataAccess.Sql.CustomSqlQuery customSqlQuery1 = new DevExpress.DataAccess.Sql.CustomSqlQuery();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCadastroProduto));
             DevExpress.DataAccess.Sql.CustomSqlQuery customSqlQuery2 = new DevExpress.DataAccess.Sql.CustomSqlQuery();
             this.labelControl12 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
@@ -299,7 +299,7 @@
             this.txtCusto.Properties.MaxLength = 20;
             this.txtCusto.Properties.NullText = "R$ 0,00";
             this.txtCusto.Properties.UseMaskAsDisplayFormat = true;
-            this.txtCusto.Size = new System.Drawing.Size(180, 26);
+            this.txtCusto.Size = new System.Drawing.Size(180, 34);
             this.txtCusto.TabIndex = 9;
             this.txtCusto.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtCusto_KeyUp);
             this.txtCusto.Leave += new System.EventHandler(this.txtCusto_Leave);
@@ -316,7 +316,7 @@
             this.txtMargemLucro.Properties.MaxLength = 20;
             this.txtMargemLucro.Properties.NullText = "0,00%";
             this.txtMargemLucro.Properties.UseMaskAsDisplayFormat = true;
-            this.txtMargemLucro.Size = new System.Drawing.Size(180, 26);
+            this.txtMargemLucro.Size = new System.Drawing.Size(180, 34);
             this.txtMargemLucro.TabIndex = 10;
             this.txtMargemLucro.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtMargemLucro_KeyUp);
             this.txtMargemLucro.Leave += new System.EventHandler(this.txtMargemLucro_Leave);
@@ -333,7 +333,7 @@
             this.txtPreco.Properties.MaxLength = 20;
             this.txtPreco.Properties.NullText = "R$ 0,00";
             this.txtPreco.Properties.UseMaskAsDisplayFormat = true;
-            this.txtPreco.Size = new System.Drawing.Size(180, 26);
+            this.txtPreco.Size = new System.Drawing.Size(180, 34);
             this.txtPreco.TabIndex = 12;
             this.txtPreco.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtPreco_KeyUp);
             this.txtPreco.Leave += new System.EventHandler(this.txtPreco_Leave);
@@ -350,7 +350,7 @@
             this.txtEstoqueMinimo.Properties.MaxLength = 20;
             this.txtEstoqueMinimo.Properties.NullText = "0";
             this.txtEstoqueMinimo.Properties.UseMaskAsDisplayFormat = true;
-            this.txtEstoqueMinimo.Size = new System.Drawing.Size(180, 26);
+            this.txtEstoqueMinimo.Size = new System.Drawing.Size(180, 34);
             this.txtEstoqueMinimo.TabIndex = 13;
             this.txtEstoqueMinimo.Leave += new System.EventHandler(this.txtEstoqueMinimo_Leave);
             // 
@@ -364,7 +364,7 @@
             this.txtTipoUnidade.Properties.MaskSettings.Set("mask", "\\p{L}+");
             this.txtTipoUnidade.Properties.MaxLength = 20;
             this.txtTipoUnidade.Properties.NullText = "Ex.: Peça, Un, Kg";
-            this.txtTipoUnidade.Size = new System.Drawing.Size(288, 26);
+            this.txtTipoUnidade.Size = new System.Drawing.Size(288, 34);
             this.txtTipoUnidade.TabIndex = 7;
             // 
             // cmbTipoProduto
@@ -381,7 +381,7 @@
             "Grade"});
             this.cmbTipoProduto.Properties.MaxLength = 20;
             this.cmbTipoProduto.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.cmbTipoProduto.Size = new System.Drawing.Size(243, 26);
+            this.cmbTipoProduto.Size = new System.Drawing.Size(243, 34);
             this.cmbTipoProduto.TabIndex = 8;
             this.cmbTipoProduto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cmbTipoProduto_KeyPress);
             // 
@@ -399,7 +399,7 @@
             "Matéria Prima"});
             this.cmbFinalidade.Properties.MaxLength = 20;
             this.cmbFinalidade.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.cmbFinalidade.Size = new System.Drawing.Size(243, 26);
+            this.cmbFinalidade.Size = new System.Drawing.Size(243, 34);
             this.cmbFinalidade.TabIndex = 2;
             this.cmbFinalidade.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cmbFinalidade_KeyPress);
             // 
@@ -409,7 +409,7 @@
             this.txtNome.Name = "txtNome";
             this.txtNome.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNome.Properties.Appearance.Options.UseFont = true;
-            this.txtNome.Size = new System.Drawing.Size(589, 26);
+            this.txtNome.Size = new System.Drawing.Size(589, 34);
             this.txtNome.TabIndex = 3;
             this.txtNome.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNome_KeyPress);
             // 
@@ -423,7 +423,7 @@
             this.txtCodigoDeBarras.Properties.MaskSettings.Set("MaskManagerSignature", "allowNull=False");
             this.txtCodigoDeBarras.Properties.MaskSettings.Set("mask", "d");
             this.txtCodigoDeBarras.Properties.MaxLength = 20;
-            this.txtCodigoDeBarras.Size = new System.Drawing.Size(288, 26);
+            this.txtCodigoDeBarras.Size = new System.Drawing.Size(288, 34);
             this.txtCodigoDeBarras.TabIndex = 1;
             // 
             // txtCodigo
@@ -433,7 +433,7 @@
             this.txtCodigo.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCodigo.Properties.Appearance.Options.UseFont = true;
             this.txtCodigo.Properties.MaxLength = 20;
-            this.txtCodigo.Size = new System.Drawing.Size(243, 26);
+            this.txtCodigo.Size = new System.Drawing.Size(243, 34);
             this.txtCodigo.TabIndex = 0;
             this.txtCodigo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCodigo_KeyPress);
             // 
@@ -444,9 +444,9 @@
             this.btnFechar.AppearanceDisabled.BorderColor = System.Drawing.Color.Transparent;
             this.btnFechar.AppearanceDisabled.Options.UseBorderColor = true;
             this.btnFechar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnFechar.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnFechar.ImageOptions.Image")));
+            this.btnFechar.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.multiply1_20px;
             this.btnFechar.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
-            this.btnFechar.Location = new System.Drawing.Point(928, -1);
+            this.btnFechar.Location = new System.Drawing.Point(926, 1);
             this.btnFechar.Name = "btnFechar";
             this.btnFechar.Size = new System.Drawing.Size(24, 24);
             this.btnFechar.TabIndex = 75;
@@ -495,9 +495,9 @@
             this.cmbFornecedor.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.cmbFornecedor.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("id_registro", "ID", 20, DevExpress.Utils.FormatType.Numeric, "", true, DevExpress.Utils.HorzAlignment.Far, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("rg_cnpj", "CNPJ", 60, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("rg_nome_fantasia", "Nome Fantasia", 96, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default)});
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("id_registro", "ID", 67, DevExpress.Utils.FormatType.Numeric, "", true, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("rg_cnpj", "CNPJ", 52, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("rg_nome_fantasia", "Nome Fantasia", 103, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default)});
             this.cmbFornecedor.Properties.DataSource = this.queryFornecedor;
             this.cmbFornecedor.Properties.DisplayMember = "rg_cnpj";
             this.cmbFornecedor.Properties.DropDownRows = 5;
@@ -506,7 +506,7 @@
             this.cmbFornecedor.Properties.PopupSizeable = false;
             this.cmbFornecedor.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
             this.cmbFornecedor.Properties.ValueMember = "id_registro";
-            this.cmbFornecedor.Size = new System.Drawing.Size(240, 26);
+            this.cmbFornecedor.Size = new System.Drawing.Size(240, 34);
             this.cmbFornecedor.TabIndex = 6;
             // 
             // queryFornecedor
@@ -563,9 +563,9 @@
             this.cmbGrupo.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.cmbGrupo.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("id_grupo", "ID", 25, DevExpress.Utils.FormatType.Numeric, "", true, DevExpress.Utils.HorzAlignment.Far, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("gp_nome_grupo", "Nome Grupo", 87, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("gp_nome_agrupador", "Nome Agrupador", 109, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default)});
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("id_grupo", "ID", 25, DevExpress.Utils.FormatType.Numeric, "", true, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("gp_nome_grupo", "Grupo", 87, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("gp_nome_agrupador", "Agrupador", 100, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default)});
             this.cmbGrupo.Properties.DataSource = this.queryGrupo;
             this.cmbGrupo.Properties.DisplayMember = "gp_nome_grupo";
             this.cmbGrupo.Properties.DropDownRows = 5;
@@ -574,7 +574,7 @@
             this.cmbGrupo.Properties.PopupSizeable = false;
             this.cmbGrupo.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
             this.cmbGrupo.Properties.ValueMember = "id_grupo";
-            this.cmbGrupo.Size = new System.Drawing.Size(206, 26);
+            this.cmbGrupo.Size = new System.Drawing.Size(206, 34);
             this.cmbGrupo.TabIndex = 4;
             // 
             // queryGrupo

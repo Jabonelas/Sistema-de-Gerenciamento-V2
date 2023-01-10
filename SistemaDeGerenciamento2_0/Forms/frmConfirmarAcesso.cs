@@ -73,7 +73,9 @@ namespace SistemaDeGerenciamento2_0.Forms
                 {
                     VerificarAcessoConfigUsuario();
                 }
-                else if (tela == "Cliente" || tela == "Funcionario" || tela == "Fornecedor" && CPFouCNPJCadastrado == string.Empty)
+                else if (tela == "Cliente" && CPFouCNPJCadastrado == string.Empty
+                    || tela == "Funcionario" && CPFouCNPJCadastrado == string.Empty
+                    || tela == "Fornecedor" && CPFouCNPJCadastrado == string.Empty)
                 {
                     VerificarAcessoNovoCadastro(tela);
                 }
@@ -81,13 +83,32 @@ namespace SistemaDeGerenciamento2_0.Forms
                 {
                     VerificarAcessoTodosCadastros();
                 }
-                else if (tela == "Cliente" || tela == "Funcionario" || tela == "Fornecedor" && CPFouCNPJCadastrado != string.Empty)
+                else if (tela == "Cliente" && CPFouCNPJCadastrado != string.Empty
+                    || tela == "Funcionario" && CPFouCNPJCadastrado == string.Empty
+                    || tela == "Fornecedor" && CPFouCNPJCadastrado != string.Empty)
                 {
                     VerificarAcessoAlterarCadastro();
                 }
                 else if (tela == "Apagar Cadastro")
                 {
-                    VerificarAcessoDeletarCadastro();
+                    DialogResult OpcaoDoUsuario = new DialogResult();
+                    OpcaoDoUsuario = MessageBox.Show("Realmente Deletar Cadastro?", "Atenção!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                    if (OpcaoDoUsuario == DialogResult.Yes)
+                    {
+                        VerificarAcessoDeletarCadastro();
+                    }
+                }
+                else if (tela == "Adiconar Produto")
+                {
+                    VerificarAcessoAdicionarProduto();
+                }
+                else if (tela == "Todos Produtos")
+                {
+                    VerificarAcessoTodosProdutos();
+                }
+                else if (tela == "Editar Produto")
+                {
+                    VerificarAcessoEditarProdutos();
                 }
             }
             else
@@ -95,6 +116,67 @@ namespace SistemaDeGerenciamento2_0.Forms
                 MensagemAtencao.MensagemUsuarioSenhasNaoEncontrados();
 
                 txtUsuario.Focus();
+            }
+        }
+
+        private frmProdutos frmProdutos;
+
+        private void VerificarAcessoEditarProdutos()
+        {
+            listaPermissoes.ForEach(x => IsUsuarioPossuiAcesso = x.pm_editar_produto);
+
+            if (IsUsuarioPossuiAcesso == true)
+            {
+                this.Hide();
+
+                string codigoProduto = frmProdutos.codigoProduto;
+
+                frmCadastroProduto frmCadastroProduto = new frmCadastroProduto(codigoProduto);
+                frmCadastroProduto.ShowDialog();
+
+                this.Close();
+            }
+            else
+            {
+                MenssagemUsuarioSemPermissao();
+            }
+        }
+
+        private void VerificarAcessoTodosProdutos()
+        {
+            listaPermissoes.ForEach(x => IsUsuarioPossuiAcesso = x.pm_visualizar_todos_produtos);
+
+            if (IsUsuarioPossuiAcesso == true)
+            {
+                this.Hide();
+
+                frmProdutos frmProdutos = new frmProdutos(frmTelaPrincipal);
+                frmProdutos.ShowDialog();
+
+                this.Close();
+            }
+            else
+            {
+                MenssagemUsuarioSemPermissao();
+            }
+        }
+
+        private void VerificarAcessoAdicionarProduto()
+        {
+            listaPermissoes.ForEach(x => IsUsuarioPossuiAcesso = x.pm_adicionar_produto);
+
+            if (IsUsuarioPossuiAcesso == true)
+            {
+                this.Hide();
+
+                frmCadastroProduto frmCadastroProduto = new frmCadastroProduto();
+                frmCadastroProduto.ShowDialog();
+
+                this.Close();
+            }
+            else
+            {
+                MenssagemUsuarioSemPermissao();
             }
         }
 

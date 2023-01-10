@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCadastroGrupo));
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.btnCancelar = new DevExpress.XtraEditors.SimpleButton();
@@ -107,7 +106,7 @@
             this.cmbAgrupador.Properties.Appearance.Options.UseFont = true;
             this.cmbAgrupador.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cmbAgrupador.Size = new System.Drawing.Size(200, 26);
+            this.cmbAgrupador.Size = new System.Drawing.Size(200, 34);
             this.cmbAgrupador.TabIndex = 1;
             this.cmbAgrupador.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cmbAgrupador_KeyPress);
             // 
@@ -119,7 +118,7 @@
             this.txtNomeGrupo.Properties.Appearance.Options.UseFont = true;
             this.txtNomeGrupo.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.RegExpMaskManager));
             this.txtNomeGrupo.Properties.MaskSettings.Set("mask", "\\p{L}+");
-            this.txtNomeGrupo.Size = new System.Drawing.Size(200, 26);
+            this.txtNomeGrupo.Size = new System.Drawing.Size(200, 34);
             this.txtNomeGrupo.TabIndex = 0;
             // 
             // btnFechar
@@ -129,9 +128,9 @@
             this.btnFechar.AppearanceDisabled.BorderColor = System.Drawing.Color.Transparent;
             this.btnFechar.AppearanceDisabled.Options.UseBorderColor = true;
             this.btnFechar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnFechar.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnFechar.ImageOptions.Image")));
+            this.btnFechar.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.multiply1_20px;
             this.btnFechar.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
-            this.btnFechar.Location = new System.Drawing.Point(489, 0);
+            this.btnFechar.Location = new System.Drawing.Point(487, 2);
             this.btnFechar.Name = "btnFechar";
             this.btnFechar.Size = new System.Drawing.Size(24, 24);
             this.btnFechar.TabIndex = 94;

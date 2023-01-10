@@ -30,10 +30,10 @@ namespace SistemaDeGerenciamento2_0.Models
         public bool pm_visualizar_dre { get; set; }
         public bool pm_criar_visualizar_relatorios { get; set; }
         public bool pm_adicionar_produto { get; set; }
+        public bool pm_editar_produto { get; set; }
         public bool pm_remover_produto { get; set; }
-        public bool pm_filtrar_produto { get; set; }
+        public bool pm_visualizar_todos_produtos { get; set; }
         public bool pm_alerta_estoque_baixo { get; set; }
-        public bool pm_tabela_produtos_removidos { get; set; }
         public bool pm_efetuar_cadastro { get; set; }
         public bool pm_editar_cadastro { get; set; }
         public bool pm_remover_cadastro { get; set; }

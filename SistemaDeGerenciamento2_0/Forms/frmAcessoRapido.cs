@@ -12,7 +12,7 @@ namespace SistemaDeGerenciamento2_0.Forms
 {
     public partial class frmAcessoRapido : Form
     {
-        private PermissoesCadastro permissoesCadastro = new PermissoesCadastro();
+        private PermissoesUsuario permissoesCadastro = new PermissoesUsuario();
 
         private frmTelaPrincipal frmTelaPrincipal;
 
@@ -29,8 +29,8 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private void btnNovoProduto_Click(object sender, EventArgs e)
         {
-            frmCadastroProduto frmCadastroProduto = new frmCadastroProduto();
-            frmCadastroProduto.ShowDialog();
+            permissoesCadastro.ReloadData(frmTelaPrincipal);
+            permissoesCadastro.VerificarAcessoCadastroProduto();
         }
 
         private void btnNovoCliente_Click(object sender, EventArgs e)
@@ -77,14 +77,14 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private void btnIrParaProdutos_Click(object sender, EventArgs e)
         {
-            frmProdutos frmProdutos = new frmProdutos();
-            frmProdutos.ShowDialog();
+            permissoesCadastro.ReloadData(frmTelaPrincipal);
+            permissoesCadastro.VerificarAcessoTodosProdutos();
         }
 
         private void btnIrParaCadastro_Click(object sender, EventArgs e)
         {
             permissoesCadastro.ReloadData(frmTelaPrincipal);
-            permissoesCadastro.VerificarAcessoTodosCadastro("Todos Os Cadastros");
+            permissoesCadastro.VerificarAcessoTodosCadastros("Todos Os Cadastros");
         }
     }
 }

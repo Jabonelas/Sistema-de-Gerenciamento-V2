@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             DevExpress.XtraSplashScreen.SplashScreenManager splashScreenManager1 = new DevExpress.XtraSplashScreen.SplashScreenManager(this, null, true, true);
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDadosEmpresa));
             this.txtInscricaoMunicipal = new DevExpress.XtraEditors.TextEdit();
             this.txtInscricaoEstadual = new DevExpress.XtraEditors.TextEdit();
             this.pictureEdit2 = new DevExpress.XtraEditors.PictureEdit();
@@ -115,7 +114,7 @@
             this.txtInscricaoMunicipal.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.NumericMaskManager));
             this.txtInscricaoMunicipal.Properties.MaskSettings.Set("mask", "d");
             this.txtInscricaoMunicipal.Properties.MaxLength = 14;
-            this.txtInscricaoMunicipal.Size = new System.Drawing.Size(255, 26);
+            this.txtInscricaoMunicipal.Size = new System.Drawing.Size(255, 34);
             this.txtInscricaoMunicipal.TabIndex = 251;
             this.txtInscricaoMunicipal.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtInscricaoMunicipal_KeyPress);
             // 
@@ -129,7 +128,7 @@
             this.txtInscricaoEstadual.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.NumericMaskManager));
             this.txtInscricaoEstadual.Properties.MaskSettings.Set("mask", "d");
             this.txtInscricaoEstadual.Properties.MaxLength = 14;
-            this.txtInscricaoEstadual.Size = new System.Drawing.Size(255, 26);
+            this.txtInscricaoEstadual.Size = new System.Drawing.Size(255, 34);
             this.txtInscricaoEstadual.TabIndex = 250;
             this.txtInscricaoEstadual.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtInscricaoEstadual_KeyPress);
             // 
@@ -189,7 +188,7 @@
             this.txtRazaoSocial.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRazaoSocial.Properties.Appearance.Options.UseFont = true;
             this.txtRazaoSocial.Properties.MaxLength = 100;
-            this.txtRazaoSocial.Size = new System.Drawing.Size(391, 26);
+            this.txtRazaoSocial.Size = new System.Drawing.Size(391, 34);
             this.txtRazaoSocial.TabIndex = 248;
             this.txtRazaoSocial.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtRazaoSocial_KeyPress);
             // 
@@ -230,7 +229,7 @@
             this.txtCNPJ.Name = "txtCNPJ";
             this.txtCNPJ.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCNPJ.Properties.Appearance.Options.UseFont = true;
-            this.txtCNPJ.Size = new System.Drawing.Size(256, 26);
+            this.txtCNPJ.Size = new System.Drawing.Size(256, 34);
             this.txtCNPJ.TabIndex = 246;
             this.txtCNPJ.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCNPJ_KeyPress);
             this.txtCNPJ.Leave += new System.EventHandler(this.txtCNPJ_Leave);
@@ -248,7 +247,7 @@
             this.cmbEstado.Properties.NullText = "";
             this.cmbEstado.Properties.PopupSizeable = false;
             this.cmbEstado.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
-            this.cmbEstado.Size = new System.Drawing.Size(91, 26);
+            this.cmbEstado.Size = new System.Drawing.Size(91, 34);
             this.cmbEstado.TabIndex = 263;
             // 
             // labelControl23
@@ -328,7 +327,7 @@
             this.txtCidade.Name = "txtCidade";
             this.txtCidade.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCidade.Properties.Appearance.Options.UseFont = true;
-            this.txtCidade.Size = new System.Drawing.Size(223, 26);
+            this.txtCidade.Size = new System.Drawing.Size(223, 34);
             this.txtCidade.TabIndex = 264;
             this.txtCidade.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCidade_KeyPress);
             // 
@@ -339,7 +338,7 @@
             this.txtBairro.Name = "txtBairro";
             this.txtBairro.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBairro.Properties.Appearance.Options.UseFont = true;
-            this.txtBairro.Size = new System.Drawing.Size(223, 26);
+            this.txtBairro.Size = new System.Drawing.Size(223, 34);
             this.txtBairro.TabIndex = 265;
             this.txtBairro.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBairro_KeyPress);
             // 
@@ -351,7 +350,7 @@
             this.txtComplemento.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtComplemento.Properties.Appearance.Options.UseFont = true;
             this.txtComplemento.Properties.MaxLength = 100;
-            this.txtComplemento.Size = new System.Drawing.Size(292, 26);
+            this.txtComplemento.Size = new System.Drawing.Size(292, 34);
             this.txtComplemento.TabIndex = 268;
             // 
             // txtNumero
@@ -361,7 +360,7 @@
             this.txtNumero.Name = "txtNumero";
             this.txtNumero.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNumero.Properties.Appearance.Options.UseFont = true;
-            this.txtNumero.Size = new System.Drawing.Size(124, 26);
+            this.txtNumero.Size = new System.Drawing.Size(124, 34);
             this.txtNumero.TabIndex = 267;
             this.txtNumero.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNumero_KeyPress);
             // 
@@ -373,7 +372,7 @@
             this.txtLogradouro.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLogradouro.Properties.Appearance.Options.UseFont = true;
             this.txtLogradouro.Properties.MaxLength = 100;
-            this.txtLogradouro.Size = new System.Drawing.Size(398, 26);
+            this.txtLogradouro.Size = new System.Drawing.Size(398, 34);
             this.txtLogradouro.TabIndex = 266;
             // 
             // btnBuscarPorCEP
@@ -402,7 +401,7 @@
             this.txtCEP.Name = "txtCEP";
             this.txtCEP.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCEP.Properties.Appearance.Options.UseFont = true;
-            this.txtCEP.Size = new System.Drawing.Size(138, 26);
+            this.txtCEP.Size = new System.Drawing.Size(138, 34);
             this.txtCEP.TabIndex = 261;
             this.txtCEP.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCEP_KeyPress);
             this.txtCEP.Leave += new System.EventHandler(this.txtCEP_Leave);
@@ -456,7 +455,7 @@
             this.txtTelefoneFixo.Name = "txtTelefoneFixo";
             this.txtTelefoneFixo.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTelefoneFixo.Properties.Appearance.Options.UseFont = true;
-            this.txtTelefoneFixo.Size = new System.Drawing.Size(235, 26);
+            this.txtTelefoneFixo.Size = new System.Drawing.Size(235, 34);
             this.txtTelefoneFixo.TabIndex = 281;
             this.txtTelefoneFixo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTelefoneFixo_KeyPress);
             this.txtTelefoneFixo.Leave += new System.EventHandler(this.txtTelefoneResidencial_Leave);
@@ -468,7 +467,7 @@
             this.txtCelular.Name = "txtCelular";
             this.txtCelular.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCelular.Properties.Appearance.Options.UseFont = true;
-            this.txtCelular.Size = new System.Drawing.Size(235, 26);
+            this.txtCelular.Size = new System.Drawing.Size(235, 34);
             this.txtCelular.TabIndex = 280;
             this.txtCelular.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCelular_KeyPress);
             this.txtCelular.Leave += new System.EventHandler(this.txtCelular_Leave);
@@ -490,7 +489,7 @@
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmail.Properties.Appearance.Options.UseFont = true;
-            this.txtEmail.Size = new System.Drawing.Size(293, 26);
+            this.txtEmail.Size = new System.Drawing.Size(293, 34);
             this.txtEmail.TabIndex = 279;
             this.txtEmail.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtEmail_KeyPress);
             this.txtEmail.Leave += new System.EventHandler(this.txtEmail_Leave);
@@ -558,7 +557,7 @@
             this.txtNomeFantasia.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNomeFantasia.Properties.Appearance.Options.UseFont = true;
             this.txtNomeFantasia.Properties.MaxLength = 100;
-            this.txtNomeFantasia.Size = new System.Drawing.Size(446, 26);
+            this.txtNomeFantasia.Size = new System.Drawing.Size(446, 34);
             this.txtNomeFantasia.TabIndex = 247;
             this.txtNomeFantasia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNomeFantasia_KeyPress);
             // 
@@ -610,9 +609,9 @@
             this.btnFechar.AppearanceDisabled.BorderColor = System.Drawing.Color.Transparent;
             this.btnFechar.AppearanceDisabled.Options.UseBorderColor = true;
             this.btnFechar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnFechar.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnFechar.ImageOptions.Image")));
+            this.btnFechar.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.multiply1_20px;
             this.btnFechar.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
-            this.btnFechar.Location = new System.Drawing.Point(899, -1);
+            this.btnFechar.Location = new System.Drawing.Point(898, 1);
             this.btnFechar.Name = "btnFechar";
             this.btnFechar.Size = new System.Drawing.Size(24, 24);
             this.btnFechar.TabIndex = 293;

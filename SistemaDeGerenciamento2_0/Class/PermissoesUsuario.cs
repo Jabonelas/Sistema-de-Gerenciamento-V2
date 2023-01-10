@@ -10,11 +10,11 @@ using System.Threading.Tasks;
 
 namespace SistemaDeGerenciamento2_0.Class
 {
-    internal class PermissoesCadastro
+    internal class PermissoesUsuario
     {
         private frmTelaPrincipal frmTelaPrincipal;
 
-        private List<tb_permissoes> listaPermissoes = new List<tb_permissoes>();
+        public List<tb_permissoes> listaPermissoesUsuario = new List<tb_permissoes>();
 
         public void ReloadData(frmTelaPrincipal _frmTelaPrincipal)
         {
@@ -22,11 +22,11 @@ namespace SistemaDeGerenciamento2_0.Class
             {
                 BuscarPermissoesUsuario();
 
-                frmTelaPrincipal =_frmTelaPrincipal;
+                frmTelaPrincipal = _frmTelaPrincipal;
             }
         }
 
-        private void BuscarPermissoesUsuario()
+        public void BuscarPermissoesUsuario()
         {
             try
             {
@@ -40,7 +40,7 @@ namespace SistemaDeGerenciamento2_0.Class
 
                     foreach (var item in acessosUsuario)
                     {
-                        listaPermissoes.Add(item.Permissao);
+                        listaPermissoesUsuario.Add(item.Permissao);
                     }
                 }
             }
@@ -56,7 +56,7 @@ namespace SistemaDeGerenciamento2_0.Class
         {
             bool IsUsuarioPossuiAcesso = false;
 
-            listaPermissoes.ForEach(x => IsUsuarioPossuiAcesso = x.pm_efetuar_cadastro);
+            listaPermissoesUsuario.ForEach(x => IsUsuarioPossuiAcesso = x.pm_efetuar_cadastro);
 
             if (IsUsuarioPossuiAcesso == true)
             {
@@ -70,11 +70,11 @@ namespace SistemaDeGerenciamento2_0.Class
             }
         }
 
-        public void VerificarAcessoTodosCadastro(string _Cadastro)
+        public void VerificarAcessoTodosCadastros(string _Cadastro)
         {
             bool IsUsuarioPossuiAcesso = false;
 
-            listaPermissoes.ForEach(x => IsUsuarioPossuiAcesso = x.pm_visualizar_cadastro_completo);
+            listaPermissoesUsuario.ForEach(x => IsUsuarioPossuiAcesso = x.pm_visualizar_cadastro_completo);
 
             if (IsUsuarioPossuiAcesso == true)
             {
@@ -84,6 +84,60 @@ namespace SistemaDeGerenciamento2_0.Class
             else
             {
                 frmConfirmarAcesso frmConfirmarAcesso = new frmConfirmarAcesso(frmTelaPrincipal, _Cadastro);
+                frmConfirmarAcesso.ShowDialog();
+            }
+        }
+
+        public void VerificarAcessoCadastroProduto()
+        {
+            bool IsUsuarioPossuiAcesso = false;
+
+            listaPermissoesUsuario.ForEach(x => IsUsuarioPossuiAcesso = x.pm_adicionar_produto);
+
+            if (IsUsuarioPossuiAcesso == true)
+            {
+                frmCadastroProduto frmCadastroProduto = new frmCadastroProduto();
+                frmCadastroProduto.ShowDialog();
+            }
+            else
+            {
+                frmConfirmarAcesso frmConfirmarAcesso = new frmConfirmarAcesso(frmTelaPrincipal, "Adiconar Produto");
+                frmConfirmarAcesso.ShowDialog();
+            }
+        }
+
+        public void VerificarAcessoTodosProdutos()
+        {
+            bool IsUsuarioPossuiAcesso = false;
+
+            listaPermissoesUsuario.ForEach(x => IsUsuarioPossuiAcesso = x.pm_visualizar_todos_produtos);
+
+            if (IsUsuarioPossuiAcesso == true)
+            {
+                frmProdutos frmProdutos = new frmProdutos(frmTelaPrincipal);
+                frmProdutos.ShowDialog();
+            }
+            else
+            {
+                frmConfirmarAcesso frmConfirmarAcesso = new frmConfirmarAcesso(frmTelaPrincipal, "Todos Produtos");
+                frmConfirmarAcesso.ShowDialog();
+            }
+        }
+
+        public void VerificarAcessoEditarProduto(string _codigoProduto)
+        {
+            bool IsUsuarioPossuiAcesso = false;
+
+            listaPermissoesUsuario.ForEach(x => IsUsuarioPossuiAcesso = x.pm_editar_produto);
+
+            if (IsUsuarioPossuiAcesso == true)
+            {
+                frmCadastroProduto frmCadastroProduto = new frmCadastroProduto(_codigoProduto);
+                frmCadastroProduto.ShowDialog();
+            }
+            else
+            {
+                frmConfirmarAcesso frmConfirmarAcesso = new frmConfirmarAcesso(frmTelaPrincipal, "Editar Produto");
                 frmConfirmarAcesso.ShowDialog();
             }
         }

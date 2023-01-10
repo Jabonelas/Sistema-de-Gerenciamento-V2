@@ -21,9 +21,11 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private bool IsAlteracaoCadastro = false;
 
-        private ApiCorreios Api = new ApiCorreios();
-
         private Form telaRegistro = null;
+
+        private frmLogin frmLogin;
+
+        private ApiCorreios Api = new ApiCorreios();
 
         public frmCadastroRegistroPessoaJuridica(string _tipoCadastro, Form _telaRegistro)
         {
@@ -202,19 +204,15 @@ namespace SistemaDeGerenciamento2_0.Forms
             {
                 if (Validacoes.IsCampoPreenchido(txtCNPJ) == true)
                 {
-                    if (Validacoes.IsCnpjValido(txtCNPJ.Text) == true)
-                    {
-                        txtCNPJ.BackColor = Color.FromArgb(0, 255, 255, 255);
-                    }
-                    else
+                    if (Validacoes.IsCnpjValido(txtCNPJ.Text) == false)
                     {
                         MensagemAtencao.MensagemCampoDigitadoInvalido("CNPJ");
 
-                        txtCNPJ.BackColor = Color.LightGray;
-
-                        txtCNPJ.Text = string.Empty;
-
-                        txtCNPJ.Focus();
+                        ModificacoesTextBox(txtCNPJ);
+                    }
+                    else
+                    {
+                        txtCNPJ.BackColor = Color.FromArgb(0, 255, 255, 255);
                     }
                 }
             }
@@ -227,17 +225,13 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private void txtEmailXML_Leave(object sender, EventArgs e)
         {
-            if (txtEmail.Text != string.Empty)
+            if (txtEmailXML.Text != string.Empty)
             {
-                if (Validacoes.IsEmailValido(txtEmail.Text) == false)
+                if (Validacoes.IsEmailValido(txtEmailXML.Text) == false)
                 {
                     MensagemAtencao.MensagemCampoDigitadoInvalido("Email");
 
-                    txtEmail.BackColor = Color.LightGray;
-
-                    txtEmail.Text = string.Empty;
-
-                    txtEmail.Focus();
+                    ModificacoesTextBox(txtEmailXML);
                 }
                 else
                 {
@@ -257,13 +251,9 @@ namespace SistemaDeGerenciamento2_0.Forms
             {
                 if (Validacoes.IsEmailValido(txtEmail.Text) == false)
                 {
-                    txtEmail.BackColor = Color.LightGray;
-
                     MensagemAtencao.MensagemCampoDigitadoInvalido("Email");
 
-                    txtEmail.Text = string.Empty;
-
-                    txtEmail.Focus();
+                    ModificacoesTextBox(txtEmail);
                 }
                 else
                 {
@@ -301,7 +291,7 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private void txtNumero_KeyPress(object sender, KeyPressEventArgs e)
         {
-            ManipulacaoTextBox.DigitarApenasLetrasOuNumeros(e, txtNumero);
+            ManipulacaoTextBox.DigitarApenasNumero(e, txtNumero);
         }
 
         private void txtCEP_Leave(object sender, EventArgs e)
@@ -315,13 +305,9 @@ namespace SistemaDeGerenciamento2_0.Forms
             {
                 if (Validacoes.IsCampoPreenchido(txtCelular) == false)
                 {
-                    txtCelular.BackColor = Color.LightGray;
-
                     MensagemAtencao.MensagemCampoDigitadoInvalido("Celular");
 
-                    txtCelular.Text = string.Empty;
-
-                    txtCelular.Focus();
+                    ModificacoesTextBox(txtCelular);
                 }
                 else
                 {
@@ -336,19 +322,24 @@ namespace SistemaDeGerenciamento2_0.Forms
             {
                 if (Validacoes.IsCampoPreenchido(txtTelefoneFixo) == false)
                 {
-                    txtTelefoneFixo.BackColor = Color.LightGray;
-
                     MensagemAtencao.MensagemCampoDigitadoInvalido("Telefone");
 
-                    txtTelefoneFixo.Text = string.Empty;
-
-                    txtTelefoneFixo.Focus();
+                    ModificacoesTextBox(txtTelefoneFixo);
                 }
                 else
                 {
                     txtTelefoneFixo.BackColor = Color.FromArgb(0, 255, 255, 255);
                 }
             }
+        }
+
+        private void ModificacoesTextBox(DevExpress.XtraEditors.TextEdit _textBox)
+        {
+            _textBox.BackColor = Color.LightGray;
+
+            _textBox.Text = string.Empty;
+
+            _textBox.Focus();
         }
 
         private void txtLimiteCredito_KeyPress(object sender, KeyPressEventArgs e)
@@ -417,12 +408,14 @@ namespace SistemaDeGerenciamento2_0.Forms
             {
                 using (SistemaDeGerenciamento2_0Context db = new SistemaDeGerenciamento2_0Context())
                 {
+                    string usuarioLogado = frmLogin.UsuarioLogado;
+
                     var informacaoComercialPessoaFisica = new tb_informacoes_comerciais()
                     {
                         ic_limite_credito = Convert.ToDecimal(txtLimiteCredito.Text.Replace("R$ ", "")),
                         ic_prioridade = cmbPrioridade.Text,
                         ic_situacao = cmbSituacao.Text,
-                        ic_vendedor = "Nome Usuario que esta cadastrando"
+                        ic_vendedor = usuarioLogado
                     };
 
                     db.tb_informacoes_comerciais.Add(informacaoComercialPessoaFisica);

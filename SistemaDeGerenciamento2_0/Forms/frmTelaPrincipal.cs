@@ -17,7 +17,7 @@ namespace SistemaDeGerenciamento2_0
 {
     public partial class frmTelaPrincipal : DevExpress.XtraBars.FluentDesignSystem.FluentDesignForm
     {
-        private PermissoesCadastro permissoesCadastro = new PermissoesCadastro();
+        private PermissoesUsuario permissoesCadastro = new PermissoesUsuario();
 
         private List<tb_permissoes> listaPermissoes = new List<tb_permissoes>();
 
@@ -146,14 +146,17 @@ namespace SistemaDeGerenciamento2_0
 
         private void btnNovoProduto_Click(object sender, EventArgs e)
         {
-            frmCadastroProduto frmCadastroProduto = new frmCadastroProduto();
-            frmCadastroProduto.ShowDialog();
+            permissoesCadastro.ReloadData(this);
+            permissoesCadastro.VerificarAcessoCadastroProduto();
         }
 
         private void btnTodosOsProdutos_Click(object sender, EventArgs e)
         {
-            frmProdutos frmProdutos = new frmProdutos();
-            frmProdutos.ShowDialog();
+            permissoesCadastro.ReloadData(this);
+            permissoesCadastro.VerificarAcessoTodosProdutos();
+
+            //frmProdutos frmProdutos = new frmProdutos();
+            //frmProdutos.ShowDialog();
         }
 
         private void btnNovoCliente_Click(object sender, EventArgs e)
@@ -177,7 +180,7 @@ namespace SistemaDeGerenciamento2_0
         private void btnTodosOsCadastro_Click(object sender, EventArgs e)
         {
             permissoesCadastro.ReloadData(this);
-            permissoesCadastro.VerificarAcessoTodosCadastro("Todos Os Cadastros");
+            permissoesCadastro.VerificarAcessoTodosCadastros("Todos Os Cadastros");
         }
 
         private void Cadastro_Click(object sender, EventArgs e)
@@ -201,6 +204,10 @@ namespace SistemaDeGerenciamento2_0
             pnlTelaPrincipal.Controls.Add(frmDespesas);
             pnlTelaPrincipal.Tag = frmDespesas;
             frmDespesas.Show();
+        }
+
+        private void pnlTelaPrincipal_Paint(object sender, PaintEventArgs e)
+        {
         }
     }
 }

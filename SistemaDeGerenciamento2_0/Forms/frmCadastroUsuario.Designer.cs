@@ -31,7 +31,6 @@
             this.components = new System.ComponentModel.Container();
             DevExpress.XtraSplashScreen.SplashScreenManager splashScreenManager1 = new DevExpress.XtraSplashScreen.SplashScreenManager(this, null, true, true);
             DevExpress.DataAccess.Sql.CustomSqlQuery customSqlQuery1 = new DevExpress.DataAccess.Sql.CustomSqlQuery();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCadastroUsuario));
             this.queryBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.sqlDataSource2 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
@@ -163,7 +162,7 @@
             this.txtSenha.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSenha.Properties.Appearance.Options.UseFont = true;
             this.txtSenha.Properties.MaxLength = 20;
-            this.txtSenha.Size = new System.Drawing.Size(231, 26);
+            this.txtSenha.Size = new System.Drawing.Size(231, 34);
             this.txtSenha.TabIndex = 105;
             this.txtSenha.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSenha_KeyPress);
             // 
@@ -174,7 +173,7 @@
             this.txtConfirmacaoSenha.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtConfirmacaoSenha.Properties.Appearance.Options.UseFont = true;
             this.txtConfirmacaoSenha.Properties.MaxLength = 20;
-            this.txtConfirmacaoSenha.Size = new System.Drawing.Size(231, 26);
+            this.txtConfirmacaoSenha.Size = new System.Drawing.Size(231, 34);
             this.txtConfirmacaoSenha.TabIndex = 104;
             this.txtConfirmacaoSenha.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtConfirmacaoSenha_KeyPress);
             this.txtConfirmacaoSenha.Leave += new System.EventHandler(this.txtConfirmacaoSenha_Leave);
@@ -185,7 +184,7 @@
             this.txtNomeUsuario.Name = "txtNomeUsuario";
             this.txtNomeUsuario.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNomeUsuario.Properties.Appearance.Options.UseFont = true;
-            this.txtNomeUsuario.Size = new System.Drawing.Size(252, 26);
+            this.txtNomeUsuario.Size = new System.Drawing.Size(252, 34);
             this.txtNomeUsuario.TabIndex = 103;
             // 
             // btnFechar
@@ -195,9 +194,9 @@
             this.btnFechar.AppearanceDisabled.BorderColor = System.Drawing.Color.Transparent;
             this.btnFechar.AppearanceDisabled.Options.UseBorderColor = true;
             this.btnFechar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnFechar.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnFechar.ImageOptions.Image")));
+            this.btnFechar.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.multiply1_20px;
             this.btnFechar.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
-            this.btnFechar.Location = new System.Drawing.Point(823, -1);
+            this.btnFechar.Location = new System.Drawing.Point(821, 1);
             this.btnFechar.Name = "btnFechar";
             this.btnFechar.Size = new System.Drawing.Size(24, 24);
             this.btnFechar.TabIndex = 81;
@@ -233,7 +232,7 @@
             this.cmbFuncionario.Properties.PopupSizeable = false;
             this.cmbFuncionario.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
             this.cmbFuncionario.Properties.ValueMember = "id_registro";
-            this.cmbFuncionario.Size = new System.Drawing.Size(206, 26);
+            this.cmbFuncionario.Size = new System.Drawing.Size(206, 34);
             this.cmbFuncionario.TabIndex = 116;
             this.cmbFuncionario.TextChanged += new System.EventHandler(this.cmbFuncionario_TextChanged_1);
             // 
@@ -245,7 +244,7 @@
             this.cmbFuncionario2.Properties.Appearance.Options.UseFont = true;
             this.cmbFuncionario2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cmbFuncionario2.Size = new System.Drawing.Size(206, 26);
+            this.cmbFuncionario2.Size = new System.Drawing.Size(206, 34);
             this.cmbFuncionario2.TabIndex = 117;
             this.cmbFuncionario2.Visible = false;
             // 

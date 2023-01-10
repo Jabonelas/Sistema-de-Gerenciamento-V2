@@ -21,11 +21,13 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private string tipoCadastro = string.Empty;
 
-        private ApiCorreios Api = new ApiCorreios();
+        private string CPFouCNPJCadastrado = string.Empty;
+
+        private frmLogin frmLogin;
 
         private Form telaRegistro = null;
 
-        private string CPFouCNPJCadastrado = string.Empty;
+        private ApiCorreios Api = new ApiCorreios();
 
         public frmCadastroRegistroPessoaFisica(string _tipoCadastro, Form _telaRegistro, string _CPFouCNPJCadastrado)
         {
@@ -37,7 +39,63 @@ namespace SistemaDeGerenciamento2_0.Forms
 
             CPFouCNPJCadastrado = _CPFouCNPJCadastrado;
 
-            SetandoDados();
+            ExibirDadosCadastro();
+        }
+
+        private void ExibirDadosCadastro()
+        {
+            try
+            {
+                using (SistemaDeGerenciamento2_0Context db = new SistemaDeGerenciamento2_0Context())
+                {
+                    var dadosCadastro = (from registro in db.tb_registro
+                                         join endereco in db.tb_enderecos
+                                         on registro.fk_endereco equals endereco.id_endereco
+                                         join informacoes in db.tb_informacoes_comerciais
+                                         on registro.fk_informacao_comercial equals informacoes.id_informacao_comercial
+                                         where registro.rg_cpf == CPFouCNPJCadastrado
+                                         select new
+                                         {
+                                             Registro = registro,
+                                             Endereco = endereco,
+                                             Informacoes = informacoes
+                                         }).ToList();
+
+                    foreach (var item in dadosCadastro)
+                    {
+                        //Registro
+                        txtCPF.Text = item.Registro.rg_cpf;
+                        txtDataCadastro.Text = item.Registro.rg_data_cadastro.ToShortDateString();
+                        txtRG.Text = item.Registro.rg_rg;
+                        txtNome.Text = item.Registro.rg_nome;
+                        cmbSexo.Text = item.Registro.rg_sexo;
+                        txtDataNascimento.Text = item.Registro.rg_data_nascimento.ToString();
+                        txtEmail.Text = item.Registro.rg_email;
+                        txtCelular.Text = item.Registro.rg_celular;
+                        txtTelefoneFixo.Text = item.Registro.rg_telefone_fixo;
+                        txtObservacoes.Text = item.Registro.rg_observacoes;
+                        //Endereço
+                        cmbTipoEndereco.Text = item.Endereco.ed_tipo;
+                        txtCEP.Text = item.Endereco.ed_cep;
+                        cmbEstado.Text = item.Endereco.ed_estado;
+                        txtCidade.Text = item.Endereco.ed_cidade;
+                        txtBairro.Text = item.Endereco.ed_bairro;
+                        txtLogradouro.Text = item.Endereco.ed_locgradouro;
+                        txtNumero.Text = item.Endereco.ed_numero;
+                        txtComplemento.Text = item.Endereco.ed_complemento;
+                        //Informações Comerciais
+                        cmbPrioridade.Text = item.Informacoes.ic_prioridade;
+                        cmbSituacao.Text = item.Informacoes.ic_situacao;
+                        txtLimiteCredito.Text = item.Informacoes.ic_limite_credito.ToString();
+                    }
+                }
+            }
+            catch (Exception x)
+            {
+                LogErros.EscreverArquivoDeLog($"{DateTime.Now} - Erro ao Buscar Dados Registro Pessoa Fisica | {x.Message} | {x.StackTrace}");
+
+                MensagemErros.ErroAoBuscarDadosRegistroPessoaFisica(x);
+            }
         }
 
         public frmCadastroRegistroPessoaFisica(string _tipoCadastro, Form _telaRegistro)
@@ -51,9 +109,77 @@ namespace SistemaDeGerenciamento2_0.Forms
             SetandoDados();
         }
 
+        private bool IsAlterarCadastro = false;
+
         private void btnSalvar_Click(object sender, EventArgs e)
         {
-            Salvar();
+            if (IsAlterarCadastro == false)
+            {
+                SalvarCadastro();
+            }
+            else
+            {
+                AlterarDadosCadastro();
+            }
+        }
+
+        private void AlterarDadosCadastro()
+        {
+            try
+            {
+                using (SistemaDeGerenciamento2_0Context db = new SistemaDeGerenciamento2_0Context())
+                {
+                    var dadosCadastroParaAlterar = (from registro in db.tb_registro
+                                                    join endereco in db.tb_enderecos
+                                                    on registro.fk_endereco equals endereco.id_endereco
+                                                    join informacoes in db.tb_informacoes_comerciais
+                                                    on registro.fk_informacao_comercial equals informacoes.id_informacao_comercial
+                                                    where registro.rg_cpf == CPFouCNPJCadastrado
+                                                    select new
+                                                    {
+                                                        Registro = registro,
+                                                        Endereco = endereco,
+                                                        Informacoes = informacoes
+                                                    }).ToList();
+
+                    foreach (var item in dadosCadastroParaAlterar)
+                    {
+                        item.Registro.rg_cpf = txtCPF.Text;
+                        item.Registro.rg_data_cadastro = Convert.ToDateTime(txtDataCadastro.Text);
+                        item.Registro.rg_rg = txtRG.Text;
+                        item.Registro.rg_nome = txtNome.Text;
+                        item.Registro.rg_sexo = cmbSexo.Text;
+                        item.Registro.rg_data_nascimento = Convert.ToDateTime(txtDataNascimento.Text);
+                        item.Registro.rg_email = txtEmail.Text;
+                        item.Registro.rg_celular = txtCelular.Text;
+                        item.Registro.rg_telefone_fixo = txtTelefoneFixo.Text;
+                        item.Registro.rg_observacoes = txtObservacoes.Text;
+                        //Endereço
+                        item.Endereco.ed_tipo = cmbTipoEndereco.Text;
+                        item.Endereco.ed_cep = txtCEP.Text;
+                        item.Endereco.ed_estado = cmbEstado.Text;
+                        item.Endereco.ed_cidade = txtCidade.Text;
+                        item.Endereco.ed_bairro = txtBairro.Text;
+                        item.Endereco.ed_locgradouro = txtLogradouro.Text;
+                        item.Endereco.ed_numero = txtNumero.Text;
+                        item.Endereco.ed_complemento = txtComplemento.Text;
+                        //Informações Comerciais
+                        item.Informacoes.ic_prioridade = cmbPrioridade.Text;
+                        item.Informacoes.ic_situacao = cmbSituacao.Text;
+                        item.Informacoes.ic_limite_credito = Convert.ToDecimal(txtLimiteCredito.Text.Replace("R$", ""));
+                    }
+
+                    db.SaveChanges();
+
+                    ChamandoAlertaSucessoNoCantoInferiorDireito();
+                }
+            }
+            catch (Exception x)
+            {
+                LogErros.EscreverArquivoDeLog($"{DateTime.Now} - Erro ao Alterar Dados Registro Pessoa Juridica | {x.Message} | {x.StackTrace}");
+
+                MensagemErros.ErroAoAtualizarCadastroPessoaJuridica(x);
+            }
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
@@ -68,7 +194,7 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private void txtDataNascimento_KeyPress(object sender, KeyPressEventArgs e)
         {
-            ManipulacaoTextBox.FormatoData(txtDataNascimento);
+            ManipulacaoTextBox.FormatoData(e, txtDataNascimento);
         }
 
         private void txtCPF_KeyPress(object sender, KeyPressEventArgs e)
@@ -125,11 +251,7 @@ namespace SistemaDeGerenciamento2_0.Forms
                     {
                         MensagemAtencao.MensagemCampoDigitadoInvalido("CPF");
 
-                        txtCPF.BackColor = Color.LightGray;
-
-                        txtCPF.Text = string.Empty;
-
-                        txtCPF.Focus();
+                        ModificacoesTextBox(txtCPF);
                     }
                     else
                     {
@@ -137,6 +259,15 @@ namespace SistemaDeGerenciamento2_0.Forms
                     }
                 }
             }
+        }
+
+        private void ModificacoesTextBox(DevExpress.XtraEditors.TextEdit _textBox)
+        {
+            _textBox.BackColor = Color.LightGray;
+
+            _textBox.Text = string.Empty;
+
+            _textBox.Focus();
         }
 
         private void txtRG_Leave(object sender, EventArgs e)
@@ -149,11 +280,7 @@ namespace SistemaDeGerenciamento2_0.Forms
                     {
                         MensagemAtencao.MensagemCampoDigitadoInvalido("RG");
 
-                        txtRG.BackColor = Color.LightGray;
-
-                        txtRG.Text = string.Empty;
-
-                        txtRG.Focus();
+                        ModificacoesTextBox(txtRG);
                     }
                     else
                     {
@@ -171,16 +298,62 @@ namespace SistemaDeGerenciamento2_0.Forms
                 {
                     MensagemAtencao.MensagemCampoDigitadoInvalido("Email");
 
-                    txtEmail.BackColor = Color.LightGray;
-
-                    txtEmail.Text = string.Empty;
-
-                    txtEmail.Focus();
+                    ModificacoesTextBox(txtEmail);
                 }
                 else
                 {
                     txtEmail.BackColor = Color.FromArgb(0, 255, 255, 255);
                 }
+            }
+        }
+
+        private void txtCelular_Leave(object sender, EventArgs e)
+        {
+            if (txtCelular.Text != string.Empty)
+            {
+                if (Validacoes.IsCampoPreenchido(txtCelular) == false)
+                {
+                    MensagemAtencao.MensagemCampoDigitadoInvalido("Celular");
+
+                    ModificacoesTextBox(txtCelular);
+                }
+                else
+                {
+                    txtCelular.BackColor = Color.FromArgb(0, 255, 255, 255);
+                }
+            }
+        }
+
+        private void txtTelefoneResidencial_Leave(object sender, EventArgs e)
+        {
+            if (txtTelefoneFixo.Text != string.Empty)
+            {
+                if (Validacoes.IsCampoPreenchido(txtTelefoneFixo) == false)
+                {
+                    MensagemAtencao.MensagemCampoDigitadoInvalido("Telefone");
+
+                    ModificacoesTextBox(txtTelefoneFixo);
+                }
+                else
+                {
+                    txtTelefoneFixo.BackColor = Color.FromArgb(0, 255, 255, 255);
+                }
+            }
+        }
+
+        private void VerificarIdade()
+        {
+            var dataNascimentoInformada = Convert.ToDateTime(txtDataNascimento.Text);
+
+            if (dataNascimentoInformada.AddYears(18) > DateTime.Today)
+            {
+                MensagemAtencao.MensagemDataNasciemntoInvalida();
+
+                ModificacoesTextBox(txtDataNascimento);
+            }
+            else
+            {
+                txtDataNascimento.BackColor = Color.FromArgb(0, 255, 255, 255);
             }
         }
 
@@ -198,12 +371,12 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private void txtNumero_KeyPress(object sender, KeyPressEventArgs e)
         {
-            ManipulacaoTextBox.DigitarApenasLetrasOuNumeros(e, txtNumero);
+            ManipulacaoTextBox.DigitarApenasNumero(e, txtNumero);
         }
 
         private void txtCidade_KeyPress(object sender, KeyPressEventArgs e)
         {
-            ManipulacaoTextBox.DigitarApenasLetrasOuNumeros(e, txtCidade);
+            ManipulacaoTextBox.DigitarApenasLetras(e, txtCidade);
         }
 
         private void txtBairro_KeyPress(object sender, KeyPressEventArgs e)
@@ -231,48 +404,6 @@ namespace SistemaDeGerenciamento2_0.Forms
             }
         }
 
-        private void txtCelular_Leave(object sender, EventArgs e)
-        {
-            if (txtCelular.Text != string.Empty)
-            {
-                if (Validacoes.IsCampoPreenchido(txtCelular) == false)
-                {
-                    txtCelular.BackColor = Color.LightGray;
-
-                    MensagemAtencao.MensagemCampoDigitadoInvalido("Celular");
-
-                    txtCelular.Text = string.Empty;
-
-                    txtCelular.Focus();
-                }
-                else
-                {
-                    txtCelular.BackColor = Color.FromArgb(0, 255, 255, 255);
-                }
-            }
-        }
-
-        private void txtTelefoneResidencial_Leave(object sender, EventArgs e)
-        {
-            if (txtTelefoneFixo.Text != string.Empty)
-            {
-                if (Validacoes.IsCampoPreenchido(txtTelefoneFixo) == false)
-                {
-                    txtTelefoneFixo.BackColor = Color.LightGray;
-
-                    MensagemAtencao.MensagemCampoDigitadoInvalido("Telefone");
-
-                    txtTelefoneFixo.Text = string.Empty;
-
-                    txtTelefoneFixo.Focus();
-                }
-                else
-                {
-                    txtTelefoneFixo.BackColor = Color.FromArgb(0, 255, 255, 255);
-                }
-            }
-        }
-
         private void frmCadastroRegistroPessoaFisica_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Escape)
@@ -281,13 +412,13 @@ namespace SistemaDeGerenciamento2_0.Forms
             }
             else if (e.KeyCode == Keys.F10)
             {
-                Salvar();
+                SalvarCadastro();
             }
         }
 
         private void SetandoDados()
         {
-            lblDataCadastro.Text = DateTime.Now.ToString();
+            txtDataCadastro.Text = DateTime.Now.ToString();
 
             PreenchimentoComboBoxEstado();
 
@@ -300,7 +431,7 @@ namespace SistemaDeGerenciamento2_0.Forms
             AlertaSalvar.Show(this, $"{msg.titulo}", msg.texto, string.Empty, msg.image, msg);
         }
 
-        private void Salvar()
+        private void SalvarCadastro()
         {
             if (IsCampoEnderecoPreenchido() == true && IsCampoBasicoPreenchido() == true)
             {
@@ -350,26 +481,6 @@ namespace SistemaDeGerenciamento2_0.Forms
                 MensagemErros.ErroAoBuscarCPFParaVerificacaoExistencia(x);
 
                 return false;
-            }
-        }
-
-        private void VerificarIdade()
-        {
-            var dataNascimentoInformada = Convert.ToDateTime(txtDataNascimento.Text);
-
-            if (dataNascimentoInformada.AddYears(18) > DateTime.Today)
-            {
-                txtDataNascimento.BackColor = Color.LightGray;
-
-                MensagemAtencao.MensagemDataNasciemntoInvalida();
-
-                txtDataNascimento.Text = string.Empty;
-
-                txtDataNascimento.Focus();
-            }
-            else
-            {
-                txtDataNascimento.BackColor = Color.FromArgb(0, 255, 255, 255);
             }
         }
 
@@ -509,12 +620,14 @@ namespace SistemaDeGerenciamento2_0.Forms
             {
                 using (SistemaDeGerenciamento2_0Context db = new SistemaDeGerenciamento2_0Context())
                 {
+                    string usuarioLogado = frmLogin.UsuarioLogado;
+
                     var informacaoComercialPessoaFisica = new tb_informacoes_comerciais()
                     {
                         ic_limite_credito = Convert.ToDecimal(txtLimiteCredito.Text.Replace("R$ ", "")),
                         ic_prioridade = cmbPrioridade.Text,
                         ic_situacao = cmbSituacao.Text,
-                        ic_vendedor = "Nome Usuario que esta cadastrando"
+                        ic_vendedor = usuarioLogado
                     };
 
                     db.tb_informacoes_comerciais.Add(informacaoComercialPessoaFisica);
@@ -572,7 +685,7 @@ namespace SistemaDeGerenciamento2_0.Forms
                     var pessoaFisica = new tb_registro()
                     {
                         rg_tipo_cadastro = tipoCadastro,
-                        rg_data_cadastro = Convert.ToDateTime(lblDataCadastro.Text),
+                        rg_data_cadastro = Convert.ToDateTime(txtDataCadastro.Text),
                         rg_categoria = "Pessoa Fisica",
                         rg_cpf = txtCPF.Text,
                         rg_rg = txtRG.Text,

@@ -112,25 +112,33 @@ namespace SistemaDeGerenciamento2_0
             }
         }
 
-        public static void FormatoData(DevExpress.XtraEditors.TextEdit _textBox)
+        public static void FormatoData(KeyPressEventArgs e, DevExpress.XtraEditors.TextEdit _textBox)
         {
             _textBox.Properties.MaxLength = 10;
 
-            switch (_textBox.Text.Length)
+            //Verifica se oq foi digitado é um numero
+            if (!Char.IsDigit(e.KeyChar) && e.KeyChar != (char)8)
             {
-                case 0:
-                    _textBox.Text = "";
-                    break;
+                e.Handled = true;
+            }
+            else
+            {
+                switch (_textBox.Text.Length)
+                {
+                    case 0:
+                        _textBox.Text = "";
+                        break;
 
-                case 2:
-                    _textBox.Text = _textBox.Text + "/";
-                    _textBox.SelectionStart = 3;
-                    break;
+                    case 2:
+                        _textBox.Text = _textBox.Text + "/";
+                        _textBox.SelectionStart = 3;
+                        break;
 
-                case 5:
-                    _textBox.Text = _textBox.Text + "/";
-                    _textBox.SelectionStart = 6;
-                    break;
+                    case 5:
+                        _textBox.Text = _textBox.Text + "/";
+                        _textBox.SelectionStart = 6;
+                        break;
+                }
             }
         }
 
@@ -138,7 +146,12 @@ namespace SistemaDeGerenciamento2_0
         {
             _textBox.Properties.MaxLength = 14;
 
-            if (char.IsNumber(e.KeyChar) == true)
+            //Verifica se oq foi digitado é um numero
+            if (!Char.IsDigit(e.KeyChar) && e.KeyChar != (char)8)
+            {
+                e.Handled = true;
+            }
+            else
             {
                 switch (_textBox.Text.Length)
                 {
@@ -169,7 +182,12 @@ namespace SistemaDeGerenciamento2_0
         {
             _textBox.Properties.MaxLength = 12;
 
-            if (char.IsNumber(e.KeyChar) == true)
+            //Verifica se oq foi digitado é um numero
+            if (!Char.IsDigit(e.KeyChar) && e.KeyChar != (char)8)
+            {
+                e.Handled = true;
+            }
+            else
             {
                 switch (_textBox.Text.Length)
                 {
@@ -213,7 +231,12 @@ namespace SistemaDeGerenciamento2_0
         {
             _textBox.Properties.MaxLength = 15;
 
-            if (char.IsNumber(e.KeyChar) == true)
+            //Verifica se oq foi digitado é um numero
+            if (!Char.IsDigit(e.KeyChar) && e.KeyChar != (char)8)
+            {
+                e.Handled = true;
+            }
+            else
             {
                 switch (_textBox.Text.Length)
                 {
@@ -239,7 +262,12 @@ namespace SistemaDeGerenciamento2_0
         {
             _textBox.Properties.MaxLength = 14;
 
-            if (char.IsNumber(e.KeyChar) == true)
+            //Verifica se oq foi digitado é um numero
+            if (!Char.IsDigit(e.KeyChar) && e.KeyChar != (char)8)
+            {
+                e.Handled = true;
+            }
+            else
             {
                 switch (_textBox.Text.Length)
                 {
@@ -282,7 +310,11 @@ namespace SistemaDeGerenciamento2_0
         {
             _txtBox.Properties.MaxLength = 18;
 
-            if (char.IsNumber(e.KeyChar) == true)
+            if (!Char.IsDigit(e.KeyChar) && e.KeyChar != (char)8)
+            {
+                e.Handled = true;
+            }
+            else
             {
                 switch (_txtBox.Text.Length)
                 {

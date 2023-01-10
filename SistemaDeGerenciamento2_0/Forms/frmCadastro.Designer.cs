@@ -30,8 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             DevExpress.XtraSplashScreen.SplashScreenManager splashScreenManager1 = new DevExpress.XtraSplashScreen.SplashScreenManager(this, null, true, true);
+            DevExpress.DataAccess.Sql.CustomSqlQuery customSqlQuery1 = new DevExpress.DataAccess.Sql.CustomSqlQuery();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCadastro));
-            DevExpress.DataAccess.Sql.CustomSqlQuery customSqlQuery2 = new DevExpress.DataAccess.Sql.CustomSqlQuery();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.btnFechar = new DevExpress.XtraEditors.SimpleButton();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
@@ -96,9 +96,9 @@
             this.btnFechar.AppearanceDisabled.BorderColor = System.Drawing.Color.Transparent;
             this.btnFechar.AppearanceDisabled.Options.UseBorderColor = true;
             this.btnFechar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnFechar.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnFechar.ImageOptions.Image")));
+            this.btnFechar.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.multiply1_20px;
             this.btnFechar.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
-            this.btnFechar.Location = new System.Drawing.Point(1135, -1);
+            this.btnFechar.Location = new System.Drawing.Point(1134, 1);
             this.btnFechar.Name = "btnFechar";
             this.btnFechar.Size = new System.Drawing.Size(24, 24);
             this.btnFechar.TabIndex = 99;
@@ -153,7 +153,6 @@
             this.btnAdicionarCadastro.AppearancePressed.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(218)))), ((int)(((byte)(153)))));
             this.btnAdicionarCadastro.AppearancePressed.Options.UseBackColor = true;
             this.btnAdicionarCadastro.AppearancePressed.Options.UseBorderColor = true;
-            this.btnAdicionarCadastro.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.adcao9;
             this.btnAdicionarCadastro.ImageOptions.ImageIndex = 5;
             this.btnAdicionarCadastro.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftBottom;
             this.btnAdicionarCadastro.ImageOptions.ImageToTextIndent = 10;
@@ -190,7 +189,7 @@
             // 
             // gridControl1
             // 
-            this.gridControl1.DataMember = "tb_registro";
+            this.gridControl1.DataMember = "Query";
             this.gridControl1.DataSource = this.sqlDataSource1;
             this.gridControl1.Location = new System.Drawing.Point(19, 183);
             this.gridControl1.MainView = this.gridView1;
@@ -202,12 +201,12 @@
             // 
             // sqlDataSource1
             // 
-            this.sqlDataSource1.ConnectionName = "SistemaDeGerenciamento2_0ConnectionString";
+            this.sqlDataSource1.ConnectionName = "update";
             this.sqlDataSource1.Name = "sqlDataSource1";
-            customSqlQuery2.Name = "tb_registro";
-            customSqlQuery2.Sql = resources.GetString("customSqlQuery2.Sql");
+            customSqlQuery1.Name = "Query";
+            customSqlQuery1.Sql = resources.GetString("customSqlQuery1.Sql");
             this.sqlDataSource1.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
-            customSqlQuery2});
+            customSqlQuery1});
             this.sqlDataSource1.ResultSchemaSerializable = resources.GetString("sqlDataSource1.ResultSchemaSerializable");
             // 
             // gridView1
@@ -239,6 +238,7 @@
             this.colrg_tipo_cadastro.Caption = "Tipo Cadastro";
             this.colrg_tipo_cadastro.FieldName = "rg_tipo_cadastro";
             this.colrg_tipo_cadastro.Name = "colrg_tipo_cadastro";
+            this.colrg_tipo_cadastro.OptionsColumn.AllowEdit = false;
             this.colrg_tipo_cadastro.Visible = true;
             this.colrg_tipo_cadastro.VisibleIndex = 0;
             // 
@@ -251,6 +251,7 @@
             this.colrg_categoria.Caption = "Pessoa";
             this.colrg_categoria.FieldName = "rg_categoria";
             this.colrg_categoria.Name = "colrg_categoria";
+            this.colrg_categoria.OptionsColumn.AllowEdit = false;
             this.colrg_categoria.Visible = true;
             this.colrg_categoria.VisibleIndex = 1;
             // 
@@ -263,6 +264,7 @@
             this.colrg_nome.Caption = "Nome";
             this.colrg_nome.FieldName = "rg_nome";
             this.colrg_nome.Name = "colrg_nome";
+            this.colrg_nome.OptionsColumn.AllowEdit = false;
             this.colrg_nome.Visible = true;
             this.colrg_nome.VisibleIndex = 2;
             // 
@@ -275,6 +277,7 @@
             this.colrg_sexo.Caption = "Sexo";
             this.colrg_sexo.FieldName = "rg_sexo";
             this.colrg_sexo.Name = "colrg_sexo";
+            this.colrg_sexo.OptionsColumn.AllowEdit = false;
             this.colrg_sexo.Visible = true;
             this.colrg_sexo.VisibleIndex = 3;
             // 
@@ -287,6 +290,7 @@
             this.colrg_cpf.Caption = "CPF";
             this.colrg_cpf.FieldName = "rg_cpf";
             this.colrg_cpf.Name = "colrg_cpf";
+            this.colrg_cpf.OptionsColumn.AllowEdit = false;
             this.colrg_cpf.Visible = true;
             this.colrg_cpf.VisibleIndex = 4;
             // 
@@ -299,6 +303,7 @@
             this.colrg_nome_fantasia.Caption = "Nome Fantasia";
             this.colrg_nome_fantasia.FieldName = "rg_nome_fantasia";
             this.colrg_nome_fantasia.Name = "colrg_nome_fantasia";
+            this.colrg_nome_fantasia.OptionsColumn.AllowEdit = false;
             this.colrg_nome_fantasia.Visible = true;
             this.colrg_nome_fantasia.VisibleIndex = 5;
             // 
@@ -311,6 +316,7 @@
             this.colrg_cnpj.Caption = "CNPJ";
             this.colrg_cnpj.FieldName = "rg_cnpj";
             this.colrg_cnpj.Name = "colrg_cnpj";
+            this.colrg_cnpj.OptionsColumn.AllowEdit = false;
             this.colrg_cnpj.Visible = true;
             this.colrg_cnpj.VisibleIndex = 6;
             // 
@@ -323,6 +329,7 @@
             this.colic_situacao.Caption = "Situação";
             this.colic_situacao.FieldName = "ic_situacao";
             this.colic_situacao.Name = "colic_situacao";
+            this.colic_situacao.OptionsColumn.AllowEdit = false;
             this.colic_situacao.Visible = true;
             this.colic_situacao.VisibleIndex = 7;
             // 
@@ -335,6 +342,7 @@
             this.colic_prioridade.Caption = "Prioridade";
             this.colic_prioridade.FieldName = "ic_prioridade";
             this.colic_prioridade.Name = "colic_prioridade";
+            this.colic_prioridade.OptionsColumn.AllowEdit = false;
             this.colic_prioridade.Visible = true;
             this.colic_prioridade.VisibleIndex = 8;
             // 
@@ -347,6 +355,7 @@
             this.colic_vendedor.Caption = "Vendedor";
             this.colic_vendedor.FieldName = "ic_vendedor";
             this.colic_vendedor.Name = "colic_vendedor";
+            this.colic_vendedor.OptionsColumn.AllowEdit = false;
             this.colic_vendedor.Visible = true;
             this.colic_vendedor.VisibleIndex = 9;
             // 
@@ -359,6 +368,7 @@
             this.coled_locgradouro.Caption = "Endereço";
             this.coled_locgradouro.FieldName = "ed_locgradouro";
             this.coled_locgradouro.Name = "coled_locgradouro";
+            this.coled_locgradouro.OptionsColumn.AllowEdit = false;
             this.coled_locgradouro.Visible = true;
             this.coled_locgradouro.VisibleIndex = 10;
             // 
@@ -371,6 +381,7 @@
             this.coled_bairro.Caption = "Bairro";
             this.coled_bairro.FieldName = "ed_bairro";
             this.coled_bairro.Name = "coled_bairro";
+            this.coled_bairro.OptionsColumn.AllowEdit = false;
             this.coled_bairro.Visible = true;
             this.coled_bairro.VisibleIndex = 11;
             // 
@@ -383,6 +394,7 @@
             this.coled_cidade.Caption = "Cidade";
             this.coled_cidade.FieldName = "ed_cidade";
             this.coled_cidade.Name = "coled_cidade";
+            this.coled_cidade.OptionsColumn.AllowEdit = false;
             this.coled_cidade.Visible = true;
             this.coled_cidade.VisibleIndex = 12;
             // 
@@ -415,7 +427,6 @@
             // 
             this.Alterar.Caption = "Alterar";
             this.Alterar.Id = 0;
-            this.Alterar.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.update_left_rotation_20px;
             this.Alterar.Name = "Alterar";
             this.Alterar.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.Alterar_ItemClick);
             // 
@@ -423,7 +434,6 @@
             // 
             this.Deletar.Caption = "Deletar";
             this.Deletar.Id = 1;
-            this.Deletar.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.deletar_20;
             this.Deletar.Name = "Deletar";
             this.Deletar.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.Deletar_ItemClick);
             // 
@@ -541,7 +551,6 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private DevExpress.XtraGrid.GridControl gridControl1;
-        private DevExpress.DataAccess.Sql.SqlDataSource sqlDataSource1;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private DevExpress.XtraGrid.Columns.GridColumn colrg_tipo_cadastro;
         private DevExpress.XtraGrid.Columns.GridColumn colrg_categoria;
@@ -566,5 +575,6 @@
         private DevExpress.XtraBars.BarDockControl barDockControlLeft;
         private DevExpress.XtraBars.BarDockControl barDockControlRight;
         private DevExpress.XtraBars.Alerter.AlertControl AlertaSalvar;
+        private DevExpress.DataAccess.Sql.SqlDataSource sqlDataSource1;
     }
 }
