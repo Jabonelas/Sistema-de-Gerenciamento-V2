@@ -19,7 +19,8 @@ namespace SistemaDeGerenciamento2_0.Forms
     {
         private int X = 0;
         private int Y = 0;
-        public string codigoProduto = string.Empty;
+
+        public static string codigoProduto = string.Empty;
 
         private frmTelaPrincipal frmTelaPrincipal;
 
@@ -30,6 +31,7 @@ namespace SistemaDeGerenciamento2_0.Forms
             InitializeComponent();
 
             frmTelaPrincipal = _frmTelaPrincipal;
+
             sqlDataSource1.FillAsync();
         }
 
@@ -42,6 +44,7 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             permissoesUsuario.ReloadData(frmTelaPrincipal);
             permissoesUsuario.VerificarAcessoCadastroProduto();
+            sqlDataSource1.FillAsync();
         }
 
         private void frmProdutos_KeyDown(object sender, System.Windows.Forms.KeyEventArgs e)
@@ -78,7 +81,45 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private void btnDeletar_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            MessageBox.Show("Deletar");
+            ReloadDataDeletar();
+        }
+
+        private void ReloadDataDeletar()
+        {
+            using (var handle = SplashScreenManager.ShowOverlayForm(this))
+            {
+                permissoesUsuario.BuscarPermissoesUsuario();
+
+                PegandoDadosDaLinha();
+
+                VerificarAcessoDeletarCadastroProduto();
+
+                ChamandoAlertaSucessoNoCantoInferiorDireito();
+
+                sqlDataSource1.FillAsync();
+            }
+        }
+
+        private void VerificarAcessoDeletarCadastroProduto()
+        {
+            bool IsUsuarioPossuiAcesso = false;
+
+            permissoesUsuario.listaPermissoesUsuario.ForEach(x => IsUsuarioPossuiAcesso = x.pm_remover_cadastro);
+
+            if (IsUsuarioPossuiAcesso == true)
+            {
+                DialogResult OpcaoDoUsuario = new DialogResult();
+                OpcaoDoUsuario = MessageBox.Show("Realmente Deletar o Cadastros do Produto?", "Atenção!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (OpcaoDoUsuario == DialogResult.Yes)
+                {
+                    DeletarDados.DeletarCadastroProduto(codigoProduto);
+                }
+            }
+            else
+            {
+                frmConfirmarAcesso frmConfirmarAcesso = new frmConfirmarAcesso(frmTelaPrincipal, "Apagar Produto");
+                frmConfirmarAcesso.ShowDialog();
+            }
         }
 
         private void ReloadDataAlterar()
@@ -90,6 +131,10 @@ namespace SistemaDeGerenciamento2_0.Forms
                 PegandoDadosDaLinha();
 
                 permissoesUsuario.VerificarAcessoEditarProduto(codigoProduto);
+
+                ChamandoAlertaSucessoNoCantoInferiorDireito();
+
+                sqlDataSource1.FillAsync();
             }
         }
 
@@ -114,6 +159,12 @@ namespace SistemaDeGerenciamento2_0.Forms
                 column = hitInfo.Column;
                 popupMenu1.ShowPopup(barManager1, view.GridControl.PointToScreen(e.Point));
             }
+        }
+
+        private void ChamandoAlertaSucessoNoCantoInferiorDireito()
+        {
+            DadosMensagemAlerta msg = new DadosMensagemAlerta("\n   Sucesso!", Resources.salvar_verde50);
+            AlertaSalvar.Show(this, $"{msg.titulo}", msg.texto, string.Empty, msg.image, msg);
         }
     }
 }

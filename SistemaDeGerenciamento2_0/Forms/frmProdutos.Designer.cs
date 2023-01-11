@@ -30,13 +30,30 @@
         {
             this.components = new System.ComponentModel.Container();
             DevExpress.XtraSplashScreen.SplashScreenManager splashScreenManager1 = new DevExpress.XtraSplashScreen.SplashScreenManager(this, null, true, true);
-            DevExpress.DataAccess.Sql.CustomSqlQuery customSqlQuery1 = new DevExpress.DataAccess.Sql.CustomSqlQuery();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmProdutos));
+            DevExpress.DataAccess.Sql.SelectQuery selectQuery1 = new DevExpress.DataAccess.Sql.SelectQuery();
+            DevExpress.DataAccess.Sql.Column column1 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression1 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Table table1 = new DevExpress.DataAccess.Sql.Table();
+            DevExpress.DataAccess.Sql.Column column2 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression2 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column3 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression3 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column4 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression4 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Table table2 = new DevExpress.DataAccess.Sql.Table();
+            DevExpress.DataAccess.Sql.Column column5 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression5 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column6 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression6 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column7 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression7 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Join join1 = new DevExpress.DataAccess.Sql.Join();
+            DevExpress.DataAccess.Sql.RelationColumnInfo relationColumnInfo1 = new DevExpress.DataAccess.Sql.RelationColumnInfo();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.btnAdicionarGrupo = new DevExpress.XtraEditors.SimpleButton();
             this.btnFechar = new DevExpress.XtraEditors.SimpleButton();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.labelControl16 = new DevExpress.XtraEditors.LabelControl();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -51,11 +68,6 @@
             this.colpd_custo = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colpd_margem = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colpd_preco = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colep_quantidade = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colpd_tipo_unidade = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colpd_estoque_minimo = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colep_data_entrada = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colnfe_quantidade = new DevExpress.XtraGrid.Columns.GridColumn();
             this.btnSair = new DevExpress.XtraEditors.SimpleButton();
             this.barManager1 = new DevExpress.XtraBars.BarManager(this.components);
             this.bar1 = new DevExpress.XtraBars.Bar();
@@ -68,6 +80,8 @@
             this.btnAlterar = new DevExpress.XtraBars.BarButtonItem();
             this.btnDeletar = new DevExpress.XtraBars.BarButtonItem();
             this.popupMenu1 = new DevExpress.XtraBars.PopupMenu(this.components);
+            this.labelControl16 = new DevExpress.XtraEditors.LabelControl();
+            this.AlertaSalvar = new DevExpress.XtraBars.Alerter.AlertControl(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -88,9 +102,9 @@
             this.labelControl3.Appearance.Options.UseFont = true;
             this.labelControl3.Location = new System.Drawing.Point(19, 12);
             this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(135, 20);
+            this.labelControl3.Size = new System.Drawing.Size(225, 20);
             this.labelControl3.TabIndex = 98;
-            this.labelControl3.Text = "Consultar Produtos";
+            this.labelControl3.Text = "Consultar Produtos Cadastrados";
             // 
             // btnAdicionarGrupo
             // 
@@ -110,7 +124,7 @@
             this.btnAdicionarGrupo.AppearancePressed.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(218)))), ((int)(((byte)(153)))));
             this.btnAdicionarGrupo.AppearancePressed.Options.UseBackColor = true;
             this.btnAdicionarGrupo.AppearancePressed.Options.UseBorderColor = true;
-            this.btnAdicionarGrupo.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.adcao9;
+            this.btnAdicionarGrupo.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnAdicionarGrupo.ImageOptions.Image")));
             this.btnAdicionarGrupo.ImageOptions.ImageIndex = 5;
             this.btnAdicionarGrupo.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftBottom;
             this.btnAdicionarGrupo.ImageOptions.ImageToTextIndent = 10;
@@ -130,7 +144,7 @@
             this.btnFechar.AppearanceDisabled.BorderColor = System.Drawing.Color.Transparent;
             this.btnFechar.AppearanceDisabled.Options.UseBorderColor = true;
             this.btnFechar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnFechar.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.multiply1_20px;
+            this.btnFechar.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnFechar.ImageOptions.Image")));
             this.btnFechar.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
             this.btnFechar.Location = new System.Drawing.Point(1121, 1);
             this.btnFechar.Name = "btnFechar";
@@ -141,7 +155,7 @@
             // pictureBox6
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox6.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.separador;
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
             this.pictureBox6.Location = new System.Drawing.Point(-14, 28);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(215, 25);
@@ -149,20 +163,10 @@
             this.pictureBox6.TabIndex = 95;
             this.pictureBox6.TabStop = false;
             // 
-            // labelControl16
-            // 
-            this.labelControl16.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl16.Appearance.Options.UseFont = true;
-            this.labelControl16.Location = new System.Drawing.Point(19, 137);
-            this.labelControl16.Name = "labelControl16";
-            this.labelControl16.Size = new System.Drawing.Size(104, 15);
-            this.labelControl16.TabIndex = 290;
-            this.labelControl16.Text = "Todos os Produtos:";
-            // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.separador;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(-184, 141);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(1512, 25);
@@ -183,7 +187,7 @@
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.separador;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(-184, 66);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(1517, 25);
@@ -211,10 +215,49 @@
             // 
             this.sqlDataSource1.ConnectionName = "SistemaDeGerenciamento2_0ConnectionString";
             this.sqlDataSource1.Name = "sqlDataSource1";
-            customSqlQuery1.Name = "Query";
-            customSqlQuery1.Sql = resources.GetString("customSqlQuery1.Sql");
+            columnExpression1.ColumnName = "pd_nome";
+            table1.MetaSerializable = "<Meta X=\"30\" Y=\"30\" Width=\"125\" Height=\"363\" />";
+            table1.Name = "tb_produto";
+            columnExpression1.Table = table1;
+            column1.Expression = columnExpression1;
+            columnExpression2.ColumnName = "pd_codigo";
+            columnExpression2.Table = table1;
+            column2.Expression = columnExpression2;
+            columnExpression3.ColumnName = "pd_codigo_barras";
+            columnExpression3.Table = table1;
+            column3.Expression = columnExpression3;
+            columnExpression4.ColumnName = "gp_nome_grupo";
+            table2.MetaSerializable = "<Meta X=\"185\" Y=\"30\" Width=\"125\" Height=\"123\" />";
+            table2.Name = "tb_grupo";
+            columnExpression4.Table = table2;
+            column4.Expression = columnExpression4;
+            columnExpression5.ColumnName = "pd_custo";
+            columnExpression5.Table = table1;
+            column5.Expression = columnExpression5;
+            columnExpression6.ColumnName = "pd_margem";
+            columnExpression6.Table = table1;
+            column6.Expression = columnExpression6;
+            columnExpression7.ColumnName = "pd_preco";
+            columnExpression7.Table = table1;
+            column7.Expression = columnExpression7;
+            selectQuery1.Columns.Add(column1);
+            selectQuery1.Columns.Add(column2);
+            selectQuery1.Columns.Add(column3);
+            selectQuery1.Columns.Add(column4);
+            selectQuery1.Columns.Add(column5);
+            selectQuery1.Columns.Add(column6);
+            selectQuery1.Columns.Add(column7);
+            selectQuery1.Name = "Query";
+            relationColumnInfo1.NestedKeyColumn = "id_grupo";
+            relationColumnInfo1.ParentKeyColumn = "fk_grupo";
+            join1.KeyColumns.Add(relationColumnInfo1);
+            join1.Nested = table2;
+            join1.Parent = table1;
+            selectQuery1.Relations.Add(join1);
+            selectQuery1.Tables.Add(table1);
+            selectQuery1.Tables.Add(table2);
             this.sqlDataSource1.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
-            customSqlQuery1});
+            selectQuery1});
             this.sqlDataSource1.ResultSchemaSerializable = resources.GetString("sqlDataSource1.ResultSchemaSerializable");
             // 
             // gridView1
@@ -226,12 +269,7 @@
             this.colgp_nome_grupo,
             this.colpd_custo,
             this.colpd_margem,
-            this.colpd_preco,
-            this.colep_quantidade,
-            this.colpd_tipo_unidade,
-            this.colpd_estoque_minimo,
-            this.colep_data_entrada,
-            this.colnfe_quantidade});
+            this.colpd_preco});
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsBehavior.Editable = false;
@@ -328,71 +366,11 @@
             this.colpd_preco.Visible = true;
             this.colpd_preco.VisibleIndex = 6;
             // 
-            // colep_quantidade
-            // 
-            this.colep_quantidade.AppearanceCell.Options.UseTextOptions = true;
-            this.colep_quantidade.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.colep_quantidade.AppearanceHeader.Options.UseTextOptions = true;
-            this.colep_quantidade.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.colep_quantidade.Caption = "Qtd. Estoque";
-            this.colep_quantidade.FieldName = "ep_quantidade";
-            this.colep_quantidade.Name = "colep_quantidade";
-            this.colep_quantidade.Visible = true;
-            this.colep_quantidade.VisibleIndex = 7;
-            // 
-            // colpd_tipo_unidade
-            // 
-            this.colpd_tipo_unidade.AppearanceCell.Options.UseTextOptions = true;
-            this.colpd_tipo_unidade.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.colpd_tipo_unidade.AppearanceHeader.Options.UseTextOptions = true;
-            this.colpd_tipo_unidade.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.colpd_tipo_unidade.Caption = "Unidade";
-            this.colpd_tipo_unidade.FieldName = "pd_tipo_unidade";
-            this.colpd_tipo_unidade.Name = "colpd_tipo_unidade";
-            this.colpd_tipo_unidade.Visible = true;
-            this.colpd_tipo_unidade.VisibleIndex = 8;
-            // 
-            // colpd_estoque_minimo
-            // 
-            this.colpd_estoque_minimo.AppearanceCell.Options.UseTextOptions = true;
-            this.colpd_estoque_minimo.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.colpd_estoque_minimo.AppearanceHeader.Options.UseTextOptions = true;
-            this.colpd_estoque_minimo.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.colpd_estoque_minimo.Caption = "Estoque Mínimo";
-            this.colpd_estoque_minimo.FieldName = "pd_estoque_minimo";
-            this.colpd_estoque_minimo.Name = "colpd_estoque_minimo";
-            this.colpd_estoque_minimo.Visible = true;
-            this.colpd_estoque_minimo.VisibleIndex = 9;
-            // 
-            // colep_data_entrada
-            // 
-            this.colep_data_entrada.AppearanceCell.Options.UseTextOptions = true;
-            this.colep_data_entrada.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.colep_data_entrada.AppearanceHeader.Options.UseTextOptions = true;
-            this.colep_data_entrada.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.colep_data_entrada.Caption = "Data Entrada";
-            this.colep_data_entrada.FieldName = "ep_data_entrada";
-            this.colep_data_entrada.Name = "colep_data_entrada";
-            this.colep_data_entrada.Visible = true;
-            this.colep_data_entrada.VisibleIndex = 10;
-            // 
-            // colnfe_quantidade
-            // 
-            this.colnfe_quantidade.AppearanceCell.Options.UseTextOptions = true;
-            this.colnfe_quantidade.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.colnfe_quantidade.AppearanceHeader.Options.UseTextOptions = true;
-            this.colnfe_quantidade.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.colnfe_quantidade.Caption = "Qtd. NF Entrada";
-            this.colnfe_quantidade.FieldName = "nfe_quantidade";
-            this.colnfe_quantidade.Name = "colnfe_quantidade";
-            this.colnfe_quantidade.Visible = true;
-            this.colnfe_quantidade.VisibleIndex = 11;
-            // 
             // btnSair
             // 
             this.btnSair.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSair.Appearance.Options.UseFont = true;
-            this.btnSair.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.exit_20px;
+            this.btnSair.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnSair.ImageOptions.Image")));
             this.btnSair.ImageOptions.ImageIndex = 5;
             this.btnSair.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftBottom;
             this.btnSair.ImageOptions.ImageToTextIndent = 10;
@@ -496,6 +474,7 @@
             // 
             this.btnDeletar.Caption = "Deletar";
             this.btnDeletar.Id = 1;
+            this.btnDeletar.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnDeletar.ImageOptions.Image")));
             this.btnDeletar.Name = "btnDeletar";
             this.btnDeletar.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDeletar_ItemClick);
             // 
@@ -506,6 +485,36 @@
             new DevExpress.XtraBars.LinkPersistInfo(this.btnDeletar)});
             this.popupMenu1.Manager = this.barManager1;
             this.popupMenu1.Name = "popupMenu1";
+            // 
+            // labelControl16
+            // 
+            this.labelControl16.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl16.Appearance.Options.UseFont = true;
+            this.labelControl16.Location = new System.Drawing.Point(19, 137);
+            this.labelControl16.Name = "labelControl16";
+            this.labelControl16.Size = new System.Drawing.Size(173, 15);
+            this.labelControl16.TabIndex = 290;
+            this.labelControl16.Text = "Todos os Produtos Cadastrados:";
+            // 
+            // AlertaSalvar
+            // 
+            this.AlertaSalvar.AppearanceCaption.BackColor = System.Drawing.Color.Red;
+            this.AlertaSalvar.AppearanceCaption.BackColor2 = System.Drawing.Color.Yellow;
+            this.AlertaSalvar.AppearanceCaption.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AlertaSalvar.AppearanceCaption.ForeColor = System.Drawing.Color.White;
+            this.AlertaSalvar.AppearanceCaption.Options.UseBackColor = true;
+            this.AlertaSalvar.AppearanceCaption.Options.UseFont = true;
+            this.AlertaSalvar.AppearanceCaption.Options.UseForeColor = true;
+            this.AlertaSalvar.AppearanceHotTrackedText.BackColor = System.Drawing.Color.Lime;
+            this.AlertaSalvar.AppearanceHotTrackedText.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AlertaSalvar.AppearanceHotTrackedText.Options.UseBackColor = true;
+            this.AlertaSalvar.AppearanceHotTrackedText.Options.UseFont = true;
+            this.AlertaSalvar.AppearanceText.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AlertaSalvar.AppearanceText.Options.UseFont = true;
+            this.AlertaSalvar.AutoFormDelay = 2000;
+            this.AlertaSalvar.ShowCloseButton = false;
+            this.AlertaSalvar.ShowPinButton = false;
+            this.AlertaSalvar.ShowToolTips = false;
             // 
             // frmProdutos
             // 
@@ -553,7 +562,6 @@
         private System.Windows.Forms.PictureBox pictureBox6;
         private DevExpress.XtraEditors.LabelControl labelControl3;
         private DevExpress.XtraEditors.SimpleButton btnAdicionarGrupo;
-        private DevExpress.XtraEditors.LabelControl labelControl16;
         private System.Windows.Forms.PictureBox pictureBox1;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private System.Windows.Forms.PictureBox pictureBox2;
@@ -567,11 +575,6 @@
         private DevExpress.XtraGrid.Columns.GridColumn colpd_custo;
         private DevExpress.XtraGrid.Columns.GridColumn colpd_margem;
         private DevExpress.XtraGrid.Columns.GridColumn colpd_preco;
-        private DevExpress.XtraGrid.Columns.GridColumn colep_quantidade;
-        private DevExpress.XtraGrid.Columns.GridColumn colpd_tipo_unidade;
-        private DevExpress.XtraGrid.Columns.GridColumn colpd_estoque_minimo;
-        private DevExpress.XtraGrid.Columns.GridColumn colep_data_entrada;
-        private DevExpress.XtraGrid.Columns.GridColumn colnfe_quantidade;
         private DevExpress.XtraEditors.SimpleButton btnSair;
         private System.Windows.Forms.BindingSource queryBindingSource;
         private DevExpress.XtraBars.BarManager barManager1;
@@ -585,5 +588,7 @@
         private DevExpress.XtraBars.BarButtonItem btnAlterar;
         private DevExpress.XtraBars.BarButtonItem btnDeletar;
         private DevExpress.XtraBars.PopupMenu popupMenu1;
+        private DevExpress.XtraEditors.LabelControl labelControl16;
+        private DevExpress.XtraBars.Alerter.AlertControl AlertaSalvar;
     }
 }

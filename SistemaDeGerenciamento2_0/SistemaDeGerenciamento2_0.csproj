@@ -285,10 +285,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class\ApiCorreios.cs" />
-    <Compile Include="Class\BuscarPermissoesUsuario.cs" />
     <Compile Include="Class\DadosCEP.cs" />
     <Compile Include="Class\DadosMensagemAlerta.cs" />
     <Compile Include="Class\DadosNotaFiscalEntrada.cs" />
+    <Compile Include="Class\DeletarDados.cs" />
     <Compile Include="Class\LimparCampos.cs" />
     <Compile Include="Class\ListaEstados.cs" />
     <Compile Include="Class\MensagemErros.cs" />
@@ -733,6 +733,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\services_200px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\update_left_rotation_50px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

@@ -24,11 +24,16 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private string tipoCadastro = string.Empty;
 
-        private string CNPJouCPF = string.Empty;
+        public static string CNPJouCPF = string.Empty;
 
         private frmTelaPrincipal frmTelaPrincipal;
 
-        private BuscarPermissoesUsuario buscarPermissoesUsuario = new BuscarPermissoesUsuario();
+        private PermissoesUsuario permissoesUsuario = new PermissoesUsuario();
+
+        public frmCadastro()
+        {
+            InitializeComponent();
+        }
 
         public frmCadastro(frmTelaPrincipal _frmTelaPrincipal)
         {
@@ -54,17 +59,17 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             using (var handle = SplashScreenManager.ShowOverlayForm(frmTelaPrincipal))
             {
-                buscarPermissoesUsuario.ListaPermissoesUsuario();
+                permissoesUsuario.BuscarPermissoesUsuario();
             }
         }
 
         private void VerificarAcessoCadastro()
         {
-            buscarPermissoesUsuario.ListaPermissoesUsuario();
+            permissoesUsuario.BuscarPermissoesUsuario();
 
             bool IsUsuarioPossuiAcesso = false;
 
-            buscarPermissoesUsuario.listaPermissoes.ForEach(x => IsUsuarioPossuiAcesso = x.pm_efetuar_cadastro);
+            permissoesUsuario.listaPermissoesUsuario.ForEach(x => IsUsuarioPossuiAcesso = x.pm_efetuar_cadastro);
 
             if (IsUsuarioPossuiAcesso == true)
             {
@@ -82,7 +87,7 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             bool IsUsuarioPossuiAcesso = false;
 
-            buscarPermissoesUsuario.listaPermissoes.ForEach(x => IsUsuarioPossuiAcesso = x.pm_editar_cadastro);
+            permissoesUsuario.listaPermissoesUsuario.ForEach(x => IsUsuarioPossuiAcesso = x.pm_editar_cadastro);
 
             if (IsUsuarioPossuiAcesso == true)
             {
@@ -102,7 +107,7 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             bool IsUsuarioPossuiAcesso = false;
 
-            buscarPermissoesUsuario.listaPermissoes.ForEach(x => IsUsuarioPossuiAcesso = x.pm_remover_cadastro);
+            permissoesUsuario.listaPermissoesUsuario.ForEach(x => IsUsuarioPossuiAcesso = x.pm_remover_cadastro);
 
             if (IsUsuarioPossuiAcesso == true)
             {
@@ -110,7 +115,7 @@ namespace SistemaDeGerenciamento2_0.Forms
                 OpcaoDoUsuario = MessageBox.Show("Realmente Deletar Cadastro?", "Atenção!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                 if (OpcaoDoUsuario == DialogResult.Yes)
                 {
-                    DeletarCadastro();
+                    DeletarDados.DeletarCadastro(CNPJouCPF);
                 }
             }
             else
@@ -195,7 +200,7 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             using (var handle = SplashScreenManager.ShowOverlayForm(this))
             {
-                buscarPermissoesUsuario.ListaPermissoesUsuario();
+                permissoesUsuario.BuscarPermissoesUsuario();
 
                 PegandoDadosDaLinha();
 
@@ -207,7 +212,7 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             using (var handle = SplashScreenManager.ShowOverlayForm(this))
             {
-                buscarPermissoesUsuario.ListaPermissoesUsuario();
+                permissoesUsuario.BuscarPermissoesUsuario();
 
                 PegandoDadosDaLinha();
 
@@ -220,42 +225,42 @@ namespace SistemaDeGerenciamento2_0.Forms
             ReloadDataDeletar();
         }
 
-        public void DeletarCadastro()
-        {
-            try
-            {
-                using (SistemaDeGerenciamento2_0Context db = new SistemaDeGerenciamento2_0Context())
-                {
-                    var dadosDeletarCadastro = (from registro in db.tb_registro
-                                                join endereco in db.tb_enderecos
-                                                on registro.fk_endereco equals endereco.id_endereco
-                                                join informacoes in db.tb_informacoes_comerciais
-                                                on registro.fk_informacao_comercial equals informacoes.id_informacao_comercial
-                                                where registro.rg_cnpj == CNPJouCPF || registro.rg_cpf == CNPJouCPF
-                                                select new
-                                                {
-                                                    Registro = registro,
-                                                    Endereco = endereco,
-                                                    Informacoes = informacoes
-                                                }).ToList();
+        //public void DeletarCadastro()
+        //{
+        //    try
+        //    {
+        //        using (SistemaDeGerenciamento2_0Context db = new SistemaDeGerenciamento2_0Context())
+        //        {
+        //            var dadosDeletarCadastro = (from registro in db.tb_registro
+        //                                        join endereco in db.tb_enderecos
+        //                                        on registro.fk_endereco equals endereco.id_endereco
+        //                                        join informacoes in db.tb_informacoes_comerciais
+        //                                        on registro.fk_informacao_comercial equals informacoes.id_informacao_comercial
+        //                                        where registro.rg_cnpj == CNPJouCPF || registro.rg_cpf == CNPJouCPF
+        //                                        select new
+        //                                        {
+        //                                            Registro = registro,
+        //                                            Endereco = endereco,
+        //                                            Informacoes = informacoes
+        //                                        }).ToList();
 
-                    db.tb_registro.Remove(dadosDeletarCadastro[0].Registro);
-                    db.tb_enderecos.Remove(dadosDeletarCadastro[0].Endereco);
-                    db.tb_informacoes_comerciais.Remove(dadosDeletarCadastro[0].Informacoes);
-                    db.SaveChanges();
+        //            db.tb_registro.Remove(dadosDeletarCadastro[0].Registro);
+        //            db.tb_enderecos.Remove(dadosDeletarCadastro[0].Endereco);
+        //            db.tb_informacoes_comerciais.Remove(dadosDeletarCadastro[0].Informacoes);
+        //            db.SaveChanges();
 
-                    sqlDataSource1.FillAsync();
+        //            sqlDataSource1.FillAsync();
 
-                    ChamandoAlertaSucessoNoCantoInferiorDireito();
-                }
-            }
-            catch (Exception x)
-            {
-                LogErros.EscreverArquivoDeLog($"{DateTime.Now} - Erro ao Apagar Cadastro | {x.Message} | {x.StackTrace}");
+        //            ChamandoAlertaSucessoNoCantoInferiorDireito();
+        //        }
+        //    }
+        //    catch (Exception x)
+        //    {
+        //        LogErros.EscreverArquivoDeLog($"{DateTime.Now} - Erro ao Apagar Cadastro | {x.Message} | {x.StackTrace}");
 
-                MensagemErros.ErroAoDeletarCadastro(x);
-            }
-        }
+        //        MensagemErros.ErroAoDeletarCadastro(x);
+        //    }
+        //}
 
         private void ChamandoAlertaSucessoNoCantoInferiorDireito()
         {

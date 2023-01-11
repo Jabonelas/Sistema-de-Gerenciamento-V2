@@ -1,4 +1,5 @@
-﻿using DevExpress.XtraSplashScreen;
+﻿using DevExpress.Utils.Extensions;
+using DevExpress.XtraSplashScreen;
 using SistemaDeGerenciamento2_0.Context;
 using SistemaDeGerenciamento2_0.Forms;
 using SistemaDeGerenciamento2_0.Models;
@@ -38,10 +39,7 @@ namespace SistemaDeGerenciamento2_0.Class
                         Registro = registro,
                     }).Where(x => x.Permissao.id_permissoes == x.Registro.fk_permissoes && x.Registro.rg_login == frmLogin.UsuarioLogado);
 
-                    foreach (var item in acessosUsuario)
-                    {
-                        listaPermissoesUsuario.Add(item.Permissao);
-                    }
+                    acessosUsuario.ForEach(x => listaPermissoesUsuario.Add(x.Permissao));
                 }
             }
             catch (Exception x)

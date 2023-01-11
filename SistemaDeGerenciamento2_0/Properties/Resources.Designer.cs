@@ -1123,6 +1123,16 @@ namespace SistemaDeGerenciamento2_0.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap update_left_rotation_50px {
+            get {
+                object obj = ResourceManager.GetObject("update_left_rotation_50px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap user_group_200px {
             get {
                 object obj = ResourceManager.GetObject("user_group_200px", resourceCulture);

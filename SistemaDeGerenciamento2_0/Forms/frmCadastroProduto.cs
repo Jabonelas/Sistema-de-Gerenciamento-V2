@@ -10,6 +10,8 @@ using System.Diagnostics;
 using SistemaDeGerenciamento2_0.Context;
 using SistemaDeGerenciamento2_0.Models;
 using Microsoft.Win32;
+using DevExpress.Utils.MVVM;
+using System.Threading.Tasks;
 
 namespace SistemaDeGerenciamento2_0.Forms
 {
@@ -19,6 +21,8 @@ namespace SistemaDeGerenciamento2_0.Forms
         private int Y = 0;
 
         private int idProduto = 0;
+
+        private bool IsAlteracaoCadastroProduto = false;
 
         public frmCadastroProduto()
         {
@@ -35,13 +39,25 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             InitializeComponent();
 
-            sqlGrupo.FillAsync();
-
-            sqlFornecedor.FillAsync();
-
             codigoProduto = _codigoProduto;
 
-            ExibirDadosproduto();
+            var tarefa = Task.Run(() =>
+            {
+                sqlGrupo.FillAsync();
+
+                sqlFornecedor.FillAsync();
+            });
+
+            var esperador = tarefa.GetAwaiter();
+            esperador.OnCompleted(() =>
+            {
+                ExibirDadosproduto();
+            });
+
+            txtCodigo.Enabled = false;
+            txtCodigoDeBarras.Enabled = false;
+
+            IsAlteracaoCadastroProduto = true;
         }
 
         private void ExibirDadosproduto()
@@ -72,10 +88,7 @@ namespace SistemaDeGerenciamento2_0.Forms
                         cmbGrupo.Text = item.Grupo.gp_nome_grupo;
                         if (item.Registro.rg_cnpj != string.Empty)
                         {
-                            //cmbFornecedor.EditValue = item.Registro.rg_cnpj;
-                            //cmbFornecedor.Text = item.Registro.rg_cnpj;
-                            //cmbFornecedor.Properties.set = item.Registro.rg_cnpj;
-                            //cmbFornecedor.Properties.ValueMember = item.Registro.rg_cnpj;
+                            cmbFornecedor.Text = item.Registro.rg_cnpj;
                         }
                         else
                         {
@@ -117,7 +130,52 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
-            Salvar();
+            if (IsAlteracaoCadastroProduto == false)
+            {
+                SalvarProduto();
+            }
+            else
+            {
+                AlterarProduto();
+            }
+        }
+
+        private void AlterarCadastroProduto()
+        {
+            try
+            {
+                using (SistemaDeGerenciamento2_0Context db = new SistemaDeGerenciamento2_0Context())
+                {
+                    var dadosCadastroProduto = db.tb_produto.Where(x => x.pd_codigo.Equals(txtCodigo.Text));
+
+                    foreach (var item in dadosCadastroProduto)
+                    {
+                        item.pd_codigo = txtCodigo.Text;
+                        item.pd_codigo_barras = txtCodigoDeBarras.Text;
+                        item.pd_finalidade = cmbFinalidade.Text;
+                        item.pd_nome = txtNome.Text;
+                        item.pd_estoque_minimo = Convert.ToDecimal(txtEstoqueMinimo.Text);
+                        item.pd_custo = Convert.ToDecimal(txtCusto.Text.Replace("R$ ", string.Empty));
+                        item.pd_margem = Convert.ToDecimal(txtMargemLucro.Text.Replace("%", string.Empty));
+                        item.pd_preco = Convert.ToDecimal(txtPreco.Text.Replace("R$ ", string.Empty));
+                        item.pd_tipo_produto = cmbTipoProduto.Text;
+                        item.pd_tipo_unidade = txtTipoUnidade.Text;
+                        item.pd_observacoes = txtObservacoes.Text;
+                        item.fk_grupo = Convert.ToInt32(cmbGrupo.Properties.GetKeyValueByDisplayValue(cmbGrupo.Text));
+                        item.fk_registro_forncedor = Convert.ToInt32(cmbFornecedor.Properties.GetKeyValueByDisplayValue(cmbFornecedor.Text));
+                    }
+
+                    db.SaveChanges();
+
+                    ChamandoAlertaSucessoNoCantoInferiorDireito();
+                }
+            }
+            catch (Exception x)
+            {
+                LogErros.EscreverArquivoDeLog($"{DateTime.Now} - Erro ao Alterar Dados Produto - | {x.Message} | {x.StackTrace}");
+
+                MensagemErros.ErroAoAtualizarDadosProduto(x);
+            }
         }
 
         private void txtCusto_KeyUp(object sender, KeyEventArgs e)
@@ -196,14 +254,23 @@ namespace SistemaDeGerenciamento2_0.Forms
             ManipulacaoTextBox.DigitarApenasLetras(e, cmbTipoProduto);
         }
 
-        private void Salvar()
+        private void AlterarProduto()
+        {
+            if (IsNomeProdutoComMesmoFornecedorJaCadastrado() == false &&
+                IsTodosTextBoxForamPreenchidos() == true)
+            {
+                AlterarCadastroProduto();
+            }
+        }
+
+        private void SalvarProduto()
         {
             if (IsNomeProdutoComMesmoFornecedorJaCadastrado() == false &&
                 IsCodigoDeprodutoJaCadastrado() == false &&
                 IsCodigoDeBarrasJaCadastrado() == false &&
                 IsTodosTextBoxForamPreenchidos() == true)
             {
-                ConexaoSalvar();
+                SalvarCadastroProduto();
 
                 if (txtCodigoDeBarras.Text == string.Empty)
                 {
@@ -217,6 +284,7 @@ namespace SistemaDeGerenciamento2_0.Forms
                 txtCusto.Text = "R$ 0,00";
                 txtMargemLucro.Text = "0,00%";
                 txtPreco.Text = "R$ 0,00";
+                txtObservacoes.Text = string.Empty;
             }
         }
 
@@ -250,9 +318,9 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             if (_valor < 0)
             {
-                _textBox.BackColor = Color.LightGray;
-
                 MensagemAtencao.MensagemNaoAceitoValoresNegativos();
+
+                _textBox.BackColor = Color.LightGray;
 
                 _textBox.Focus();
             }
@@ -334,7 +402,7 @@ namespace SistemaDeGerenciamento2_0.Forms
             }
             else if (e.KeyCode == Keys.F10)
             {
-                Salvar();
+                SalvarProduto();
             }
         }
 
@@ -424,7 +492,7 @@ namespace SistemaDeGerenciamento2_0.Forms
             txtEstoqueMinimo.BackColor = corFundo;
         }
 
-        private void ConexaoSalvar()
+        private void SalvarCadastroProduto()
         {
             try
             {

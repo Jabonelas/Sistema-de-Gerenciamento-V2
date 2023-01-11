@@ -23,7 +23,9 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private string CPFouCNPJCadastrado = string.Empty;
 
-        private frmLogin frmLogin;
+        private bool IsAlterarCadastro = false;
+
+        //private frmLogin frmLogin;
 
         private Form telaRegistro = null;
 
@@ -108,8 +110,6 @@ namespace SistemaDeGerenciamento2_0.Forms
 
             SetandoDados();
         }
-
-        private bool IsAlterarCadastro = false;
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {

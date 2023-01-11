@@ -344,9 +344,14 @@ namespace SistemaDeGerenciamento2_0.Class
 
         #region Produto
 
-        public static void ErroAoAtualizarProduto(Exception _e)
+        public static void ErroAoAtualizarCodigoDeBarrasProduto(Exception _e)
         {
-            MessageBox.Show($"(ATU-AT01) Erro ao Atualizar Codigo de Barras do Produto \n\nErro: {_e}", "Erro Atualizar Produto!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            MessageBox.Show($"(ATU-AT01) Erro ao Atualizar Codigo de Barras do Produto \n\nErro: {_e}", "Erro Atualizar Codigo de Barras Produto!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        public static void ErroAoAtualizarDadosProduto(Exception _e)
+        {
+            MessageBox.Show($"(ATU-AT02) Erro ao Atualizar Dados do Produto \n\nErro: {_e}", "Erro Atualizar Dados do Produto!", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
         #endregion Produto
@@ -423,6 +428,15 @@ namespace SistemaDeGerenciamento2_0.Class
         }
 
         #endregion Cadastro
+
+        #region Produto
+
+        public static void ErroAoDeletarCadastroProduto(Exception _e)
+        {
+            MessageBox.Show($"(DEL-PD01) Erro ao Deletar Cadastro do Produto \n\nErro: {_e}", "Erro Deletar Cadastro do Produto!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        #endregion Produto
 
         #endregion Deletar
 

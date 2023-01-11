@@ -26,6 +26,8 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private frmCadastro frmCadastro;
 
+        private frmProdutos frmProdutos;
+
         private frmTelaPrincipal frmTelaPrincipal = new frmTelaPrincipal();
 
         private List<tb_permissoes> listaPermissoes = new List<tb_permissoes>();
@@ -110,6 +112,15 @@ namespace SistemaDeGerenciamento2_0.Forms
                 {
                     VerificarAcessoEditarProdutos();
                 }
+                else if (tela == "Apagar Produto")
+                {
+                    DialogResult OpcaoDoUsuario = new DialogResult();
+                    OpcaoDoUsuario = MessageBox.Show("Realmente Deletar Cadastro do Produto?", "Atenção!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                    if (OpcaoDoUsuario == DialogResult.Yes)
+                    {
+                        VerificarAcessoDeletarProdutos();
+                    }
+                }
             }
             else
             {
@@ -119,7 +130,23 @@ namespace SistemaDeGerenciamento2_0.Forms
             }
         }
 
-        private frmProdutos frmProdutos;
+        private void VerificarAcessoDeletarProdutos()
+        {
+            listaPermissoes.ForEach(x => IsUsuarioPossuiAcesso = x.pm_remover_produto);
+
+            if (IsUsuarioPossuiAcesso == true)
+            {
+                this.Hide();
+
+                DeletarDados.DeletarCadastroProduto(frmProdutos.codigoProduto);
+
+                this.Close();
+            }
+            else
+            {
+                MenssagemUsuarioSemPermissao();
+            }
+        }
 
         private void VerificarAcessoEditarProdutos()
         {
@@ -188,7 +215,7 @@ namespace SistemaDeGerenciamento2_0.Forms
             {
                 this.Hide();
 
-                frmCadastro.DeletarCadastro();
+                DeletarDados.DeletarCadastro(frmCadastro.CNPJouCPF);
 
                 this.Close();
             }
