@@ -209,5 +209,11 @@ namespace SistemaDeGerenciamento2_0
         private void pnlTelaPrincipal_Paint(object sender, PaintEventArgs e)
         {
         }
+
+        private void btnConsultarEstoque_Click(object sender, EventArgs e)
+        {
+            frmConsultarEstoque frmConsultarEstoque = new frmConsultarEstoque();
+            frmConsultarEstoque.ShowDialog();
+        }
     }
 }

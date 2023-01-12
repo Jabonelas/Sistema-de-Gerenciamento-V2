@@ -166,5 +166,9 @@ namespace SistemaDeGerenciamento2_0.Forms
             DadosMensagemAlerta msg = new DadosMensagemAlerta("\n   Sucesso!", Resources.salvar_verde50);
             AlertaSalvar.Show(this, $"{msg.titulo}", msg.texto, string.Empty, msg.image, msg);
         }
+
+        private void gridControl1_Click(object sender, EventArgs e)
+        {
+        }
     }
 }

@@ -45,7 +45,8 @@
             this.btnTodosOsCadastro = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.Produtos = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.btnNovoProduto = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.btnTodosOsProdutos = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.btnProdutosCadastrados = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.btnConsultarEstoque = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.Relatorios = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.Configuracao = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.btnConfigUsuario = new DevExpress.XtraBars.Navigation.AccordionControlElement();
@@ -298,8 +299,8 @@
             this.Produtos.ContentContainer = this.accordionContentContainer2;
             this.Produtos.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.btnNovoProduto,
-            this.btnTodosOsProdutos});
-            this.Produtos.Expanded = true;
+            this.btnProdutosCadastrados,
+            this.btnConsultarEstoque});
             this.Produtos.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.produto_preto1;
             this.Produtos.Name = "Produtos";
             this.Produtos.Text = "Produtos";
@@ -311,11 +312,17 @@
             this.btnNovoProduto.Text = "Novo Produto";
             this.btnNovoProduto.Click += new System.EventHandler(this.btnNovoProduto_Click);
             // 
-            // btnTodosOsProdutos
+            // btnProdutosCadastrados
             // 
-            this.btnTodosOsProdutos.Name = "btnTodosOsProdutos";
-            this.btnTodosOsProdutos.Text = "Todos os Produtos";
-            this.btnTodosOsProdutos.Click += new System.EventHandler(this.btnTodosOsProdutos_Click);
+            this.btnProdutosCadastrados.Name = "btnProdutosCadastrados";
+            this.btnProdutosCadastrados.Text = "Produtos Cadastrados";
+            this.btnProdutosCadastrados.Click += new System.EventHandler(this.btnTodosOsProdutos_Click);
+            // 
+            // btnConsultarEstoque
+            // 
+            this.btnConsultarEstoque.Name = "btnConsultarEstoque";
+            this.btnConsultarEstoque.Text = "Consultar Estoque";
+            this.btnConsultarEstoque.Click += new System.EventHandler(this.btnConsultarEstoque_Click);
             // 
             // Relatorios
             // 
@@ -515,7 +522,7 @@
         private DevExpress.XtraBars.Navigation.AccordionControlElement btnConfigFinanceiro;
         private DevExpress.XtraBars.Navigation.AccordionContentContainer accordionContentContainer2;
         private DevExpress.XtraBars.Navigation.AccordionControlElement btnNovoProduto;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement btnTodosOsProdutos;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement btnProdutosCadastrados;
         private DevExpress.XtraBars.Navigation.AccordionControlElement btnNovoCliente;
         private DevExpress.XtraBars.Navigation.AccordionControlElement btnNovoFornecedor;
         private DevExpress.XtraBars.Navigation.AccordionControlElement btnNovoFuncionario;
@@ -523,6 +530,7 @@
         private DevExpress.XtraBars.Navigation.AccordionControlElement btnConfigDesepsa;
         private DevExpress.XtraEditors.LabelControl lblUsuarioLogado;
         private DevExpress.XtraEditors.LabelControl labelControl1;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement btnConsultarEstoque;
     }
 }
 

@@ -53,9 +53,10 @@
             this.btnNovoFuncionario = new DevExpress.XtraEditors.SimpleButton();
             this.btnNovoFornecedor = new DevExpress.XtraEditors.SimpleButton();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
+            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnIrParaProdutos = new DevExpress.XtraEditors.SimpleButton();
+            this.btnIrParaProdutosCadastrados = new DevExpress.XtraEditors.SimpleButton();
             this.btnNovoProduto = new DevExpress.XtraEditors.SimpleButton();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
@@ -410,15 +411,33 @@
             this.panelControl2.Appearance.BackColor = System.Drawing.Color.Gray;
             this.panelControl2.Appearance.Options.UseBackColor = true;
             this.panelControl2.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            this.panelControl2.Controls.Add(this.simpleButton1);
             this.panelControl2.Controls.Add(this.labelControl1);
             this.panelControl2.Controls.Add(this.pictureBox1);
-            this.panelControl2.Controls.Add(this.btnIrParaProdutos);
+            this.panelControl2.Controls.Add(this.btnIrParaProdutosCadastrados);
             this.panelControl2.Controls.Add(this.btnNovoProduto);
             this.panelControl2.Controls.Add(this.pictureBox5);
             this.panelControl2.Location = new System.Drawing.Point(25, 26);
             this.panelControl2.Name = "panelControl2";
             this.panelControl2.Size = new System.Drawing.Size(203, 355);
             this.panelControl2.TabIndex = 14;
+            // 
+            // simpleButton1
+            // 
+            this.simpleButton1.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton1.Appearance.Options.UseFont = true;
+            this.simpleButton1.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.reserve_15px;
+            this.simpleButton1.ImageOptions.ImageIndex = 5;
+            this.simpleButton1.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftBottom;
+            this.simpleButton1.ImageOptions.ImageToTextIndent = 10;
+            this.simpleButton1.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
+            this.simpleButton1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.simpleButton1.Location = new System.Drawing.Point(13, 268);
+            this.simpleButton1.Name = "simpleButton1";
+            this.simpleButton1.Size = new System.Drawing.Size(179, 30);
+            this.simpleButton1.TabIndex = 25;
+            this.simpleButton1.Text = "Ir para Estoque Produtos";
+            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
             // labelControl1
             // 
@@ -441,22 +460,22 @@
             this.pictureBox1.TabIndex = 21;
             this.pictureBox1.TabStop = false;
             // 
-            // btnIrParaProdutos
+            // btnIrParaProdutosCadastrados
             // 
-            this.btnIrParaProdutos.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIrParaProdutos.Appearance.Options.UseFont = true;
-            this.btnIrParaProdutos.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.produtos_preto;
-            this.btnIrParaProdutos.ImageOptions.ImageIndex = 5;
-            this.btnIrParaProdutos.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftBottom;
-            this.btnIrParaProdutos.ImageOptions.ImageToTextIndent = 10;
-            this.btnIrParaProdutos.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-            this.btnIrParaProdutos.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnIrParaProdutos.Location = new System.Drawing.Point(13, 225);
-            this.btnIrParaProdutos.Name = "btnIrParaProdutos";
-            this.btnIrParaProdutos.Size = new System.Drawing.Size(179, 30);
-            this.btnIrParaProdutos.TabIndex = 17;
-            this.btnIrParaProdutos.Text = "Ir para Produtos";
-            this.btnIrParaProdutos.Click += new System.EventHandler(this.btnIrParaProdutos_Click);
+            this.btnIrParaProdutosCadastrados.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIrParaProdutosCadastrados.Appearance.Options.UseFont = true;
+            this.btnIrParaProdutosCadastrados.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.produtos_preto;
+            this.btnIrParaProdutosCadastrados.ImageOptions.ImageIndex = 5;
+            this.btnIrParaProdutosCadastrados.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftBottom;
+            this.btnIrParaProdutosCadastrados.ImageOptions.ImageToTextIndent = 10;
+            this.btnIrParaProdutosCadastrados.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
+            this.btnIrParaProdutosCadastrados.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnIrParaProdutosCadastrados.Location = new System.Drawing.Point(13, 225);
+            this.btnIrParaProdutosCadastrados.Name = "btnIrParaProdutosCadastrados";
+            this.btnIrParaProdutosCadastrados.Size = new System.Drawing.Size(179, 30);
+            this.btnIrParaProdutosCadastrados.TabIndex = 17;
+            this.btnIrParaProdutosCadastrados.Text = "Produtos Cadastrados";
+            this.btnIrParaProdutosCadastrados.Click += new System.EventHandler(this.btnIrParaProdutos_Click);
             // 
             // btnNovoProduto
             // 
@@ -554,7 +573,7 @@
         private DevExpress.XtraEditors.PanelControl panelControl2;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private DevExpress.XtraEditors.SimpleButton btnIrParaProdutos;
+        private DevExpress.XtraEditors.SimpleButton btnIrParaProdutosCadastrados;
         private DevExpress.XtraEditors.SimpleButton btnNovoProduto;
         private System.Windows.Forms.PictureBox pictureBox5;
         private DevExpress.XtraEditors.PanelControl panelControl1;
@@ -565,5 +584,6 @@
         private DevExpress.XtraEditors.SimpleButton btnNovaVenda;
         private DevExpress.XtraEditors.SimpleButton btnIrParaFinanceiro;
         private DevExpress.XtraEditors.SimpleButton btnNovaCompra;
+        private DevExpress.XtraEditors.SimpleButton simpleButton1;
     }
 }

@@ -86,5 +86,11 @@ namespace SistemaDeGerenciamento2_0.Forms
             permissoesCadastro.ReloadData(frmTelaPrincipal);
             permissoesCadastro.VerificarAcessoTodosCadastros("Todos Os Cadastros");
         }
+
+        private void simpleButton1_Click(object sender, EventArgs e)
+        {
+            frmConsultarEstoque frmConsultarEstoque = new frmConsultarEstoque();
+            frmConsultarEstoque.ShowDialog();
+        }
     }
 }
