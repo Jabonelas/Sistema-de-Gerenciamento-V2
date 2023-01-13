@@ -59,13 +59,13 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             using (var handle = SplashScreenManager.ShowOverlayForm(frmTelaPrincipal))
             {
-                permissoesUsuario.BuscarPermissoesUsuario();
+                permissoesUsuario.BuscarPermissoesUsuario(frmLogin.UsuarioLogado);
             }
         }
 
         private void VerificarAcessoCadastro()
         {
-            permissoesUsuario.BuscarPermissoesUsuario();
+            permissoesUsuario.BuscarPermissoesUsuario(frmLogin.UsuarioLogado);
 
             bool IsUsuarioPossuiAcesso = false;
 
@@ -200,7 +200,7 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             using (var handle = SplashScreenManager.ShowOverlayForm(this))
             {
-                permissoesUsuario.BuscarPermissoesUsuario();
+                permissoesUsuario.BuscarPermissoesUsuario(frmLogin.UsuarioLogado);
 
                 PegandoDadosDaLinha();
 
@@ -212,7 +212,7 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             using (var handle = SplashScreenManager.ShowOverlayForm(this))
             {
-                permissoesUsuario.BuscarPermissoesUsuario();
+                permissoesUsuario.BuscarPermissoesUsuario(frmLogin.UsuarioLogado);
 
                 PegandoDadosDaLinha();
 

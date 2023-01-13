@@ -24,12 +24,12 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         public static string UsuarioLogado = string.Empty;
 
+        private frmTelaPrincipal frmTelaPrincipal;
+
         public frmLogin()
         {
             InitializeComponent();
         }
-
-        private frmTelaPrincipal frmTelaPrincipal;
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
@@ -117,7 +117,8 @@ namespace SistemaDeGerenciamento2_0.Forms
 
                 this.Hide();
                 frmTelaPrincipal frmTelaPrincipal = new frmTelaPrincipal();
-                frmTelaPrincipal.Show();
+                frmTelaPrincipal.ShowDialog();
+                this.Close();
             }
             else
             {

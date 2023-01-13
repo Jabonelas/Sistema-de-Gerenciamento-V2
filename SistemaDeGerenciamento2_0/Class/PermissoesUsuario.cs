@@ -17,17 +17,19 @@ namespace SistemaDeGerenciamento2_0.Class
 
         public List<tb_permissoes> listaPermissoesUsuario = new List<tb_permissoes>();
 
-        public void ReloadData(frmTelaPrincipal _frmTelaPrincipal)
+        public void ReloadData(frmTelaPrincipal _frmTelaPrincipal, string _usuario)
         {
             using (var handle = SplashScreenManager.ShowOverlayForm(_frmTelaPrincipal))
             {
-                BuscarPermissoesUsuario();
+                listaPermissoesUsuario.Clear();
+
+                BuscarPermissoesUsuario(_usuario);
 
                 frmTelaPrincipal = _frmTelaPrincipal;
             }
         }
 
-        public void BuscarPermissoesUsuario()
+        public void BuscarPermissoesUsuario(string _usuario)
         {
             try
             {
@@ -37,7 +39,8 @@ namespace SistemaDeGerenciamento2_0.Class
                     {
                         Permissao = permissao,
                         Registro = registro,
-                    }).Where(x => x.Permissao.id_permissoes == x.Registro.fk_permissoes && x.Registro.rg_login == frmLogin.UsuarioLogado);
+                    }).Where(x => x.Permissao.id_permissoes == x.Registro.fk_permissoes && x.Registro.rg_login == _usuario);
+                    //}).Where(x => x.Permissao.id_permissoes == x.Registro.fk_permissoes && x.Registro.rg_login == frmLogin.UsuarioLogado);
 
                     acessosUsuario.ForEach(x => listaPermissoesUsuario.Add(x.Permissao));
                 }
@@ -138,6 +141,153 @@ namespace SistemaDeGerenciamento2_0.Class
                 frmConfirmarAcesso frmConfirmarAcesso = new frmConfirmarAcesso(frmTelaPrincipal, "Editar Produto");
                 frmConfirmarAcesso.ShowDialog();
             }
+        }
+
+        public void VerificarAcessoConfigUsuario(string _tela)
+        {
+            bool IsUsuarioPossuiAcesso = false;
+
+            listaPermissoesUsuario.ForEach(x => IsUsuarioPossuiAcesso = x.pm_criar_editar_usuario);
+
+            if (IsUsuarioPossuiAcesso == true)
+            {
+                TelaConfiguracoes(_tela);
+            }
+            else
+            {
+                frmConfirmarAcesso frmConfirmarAcesso = new frmConfirmarAcesso(frmTelaPrincipal, _tela);
+                frmConfirmarAcesso.ShowDialog();
+            }
+        }
+
+        public void VerificarAcessoConfigEmpresa(string _tela)
+        {
+            bool IsUsuarioPossuiAcesso = false;
+
+            listaPermissoesUsuario.ForEach(x => IsUsuarioPossuiAcesso = x.pm_configuracoes_empresa);
+
+            if (IsUsuarioPossuiAcesso == true)
+            {
+                TelaConfiguracoes(_tela);
+            }
+            else
+            {
+                frmConfirmarAcesso frmConfirmarAcesso = new frmConfirmarAcesso(frmTelaPrincipal, _tela);
+                frmConfirmarAcesso.ShowDialog();
+            }
+        }
+
+        public void VerificarAcessoConfigEmpresaTelaAcessoRapido(string _tela)
+        {
+            bool IsUsuarioPossuiAcesso = false;
+
+            listaPermissoesUsuario.ForEach(x => IsUsuarioPossuiAcesso = x.pm_configuracoes_empresa);
+
+            if (IsUsuarioPossuiAcesso == true)
+            {
+                frmDadosEmpresa frmDadosEmpresa = new frmDadosEmpresa(frmTelaPrincipal);
+                frmDadosEmpresa.btnFechar.Visible = true;
+                frmDadosEmpresa.btnSalvar.TabIndex = 0;
+                frmDadosEmpresa.ShowDialog();
+            }
+            else
+            {
+                frmConfirmarAcesso frmConfirmarAcesso = new frmConfirmarAcesso(frmTelaPrincipal, _tela);
+                frmConfirmarAcesso.ShowDialog();
+            }
+        }
+
+        public void VerificarAcessoConfigPerfil(string _tela)
+        {
+            bool IsUsuarioPossuiAcesso = false;
+
+            listaPermissoesUsuario.ForEach(x => IsUsuarioPossuiAcesso = x.pm_configuracoes_perfil);
+
+            if (IsUsuarioPossuiAcesso == true)
+            {
+                TelaConfiguracoes(_tela);
+            }
+            else
+            {
+                frmConfirmarAcesso frmConfirmarAcesso = new frmConfirmarAcesso(frmTelaPrincipal, _tela);
+                frmConfirmarAcesso.ShowDialog();
+            }
+        }
+
+        public void VerificarAcessoConfigFinanceira(string _tela)
+        {
+            bool IsUsuarioPossuiAcesso = false;
+
+            listaPermissoesUsuario.ForEach(x => IsUsuarioPossuiAcesso = x.pm_configuracoes_financeira);
+
+            if (IsUsuarioPossuiAcesso == true)
+            {
+                TelaConfiguracoes(_tela);
+            }
+            else
+            {
+                frmConfirmarAcesso frmConfirmarAcesso = new frmConfirmarAcesso(frmTelaPrincipal, _tela);
+                frmConfirmarAcesso.ShowDialog();
+            }
+        }
+
+        public void VerificarAcessoConfigFinanceiraTelaAcessoRapido(string _tela)
+        {
+            bool IsUsuarioPossuiAcesso = false;
+
+            listaPermissoesUsuario.ForEach(x => IsUsuarioPossuiAcesso = x.pm_configuracoes_financeira);
+
+            if (IsUsuarioPossuiAcesso == true)
+            {
+                frmConfiguracaoFinanceira frmConfiguracaoFinanceira = new frmConfiguracaoFinanceira(frmTelaPrincipal);
+                frmConfiguracaoFinanceira.AutoScroll = false;
+                frmConfiguracaoFinanceira.btnCancelar.Visible = true;
+                frmConfiguracaoFinanceira.KeyPreview = true;
+                frmConfiguracaoFinanceira.btnFechar.Visible = true;
+                frmConfiguracaoFinanceira.ShowDialog();
+            }
+            else
+            {
+                frmConfirmarAcesso frmConfirmarAcesso = new frmConfirmarAcesso(frmTelaPrincipal, _tela);
+                frmConfirmarAcesso.ShowDialog();
+            }
+        }
+
+        public void VerificarAcessoConfigDespesa(string _tela)
+        {
+            bool IsUsuarioPossuiAcesso = false;
+
+            listaPermissoesUsuario.ForEach(x => IsUsuarioPossuiAcesso = x.pm_configuracoes_despesa);
+
+            if (IsUsuarioPossuiAcesso == true)
+            {
+                AcessoTelaDespesa();
+            }
+            else
+            {
+                frmConfirmarAcesso frmConfirmarAcesso = new frmConfirmarAcesso(frmTelaPrincipal, _tela);
+                frmConfirmarAcesso.ShowDialog();
+            }
+        }
+
+        public void AcessoTelaDespesa()
+        {
+            frmTelaPrincipal.pnlTelaPrincipal.Controls.Clear();
+            frmDespesas frmDespesas = new frmDespesas(frmTelaPrincipal);
+            frmDespesas.TopLevel = false;
+            frmTelaPrincipal.pnlTelaPrincipal.Controls.Add(frmDespesas);
+            frmTelaPrincipal.pnlTelaPrincipal.Tag = frmDespesas;
+            frmDespesas.Show();
+        }
+
+        public void TelaConfiguracoes(string _tela)
+        {
+            frmTelaPrincipal.pnlTelaPrincipal.Controls.Clear();
+            frmConfiguracoes frmConfiguracoes = new frmConfiguracoes(frmTelaPrincipal, _tela);
+            frmConfiguracoes.TopLevel = false;
+            frmTelaPrincipal.pnlTelaPrincipal.Controls.Add(frmConfiguracoes);
+            frmTelaPrincipal.pnlTelaPrincipal.Tag = frmConfiguracoes;
+            frmConfiguracoes.Show();
         }
     }
 }

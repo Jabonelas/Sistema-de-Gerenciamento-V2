@@ -42,7 +42,7 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private void btnAdicionarGrupo_Click(object sender, EventArgs e)
         {
-            permissoesUsuario.ReloadData(frmTelaPrincipal);
+            permissoesUsuario.ReloadData(frmTelaPrincipal, frmLogin.UsuarioLogado);
             permissoesUsuario.VerificarAcessoCadastroProduto();
             sqlDataSource1.FillAsync();
         }
@@ -88,7 +88,7 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             using (var handle = SplashScreenManager.ShowOverlayForm(this))
             {
-                permissoesUsuario.BuscarPermissoesUsuario();
+                permissoesUsuario.BuscarPermissoesUsuario(frmLogin.UsuarioLogado);
 
                 PegandoDadosDaLinha();
 
@@ -126,7 +126,7 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             using (var handle = SplashScreenManager.ShowOverlayForm(this))
             {
-                permissoesUsuario.BuscarPermissoesUsuario();
+                permissoesUsuario.BuscarPermissoesUsuario(frmLogin.UsuarioLogado);
 
                 PegandoDadosDaLinha();
 

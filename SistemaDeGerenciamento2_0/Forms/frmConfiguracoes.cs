@@ -33,8 +33,6 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             if (_tela == "ConfigUsuario")
             {
-                //TelaNovoUsuario(frmTelaPrincipal);
-
                 ExibindoTelaUsuario();
             }
             else if (_tela == "ConfigEmpresa")

@@ -24,13 +24,19 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private string tela;
 
+        private string tipoCadastro = string.Empty;
+
+        private string CPFouCNPJCadastrado = string.Empty;
+
+        private bool IsUsuarioPossuiAcesso = false;
+
         private frmCadastro frmCadastro;
 
         private frmProdutos frmProdutos;
 
         private frmTelaPrincipal frmTelaPrincipal = new frmTelaPrincipal();
 
-        private List<tb_permissoes> listaPermissoes = new List<tb_permissoes>();
+        private PermissoesUsuario permissoesUsuario = new PermissoesUsuario();
 
         public frmConfirmarAcesso(frmTelaPrincipal _frmTelaPrincipal, string _tela)
         {
@@ -40,10 +46,6 @@ namespace SistemaDeGerenciamento2_0.Forms
 
             tela = _tela;
         }
-
-        private string tipoCadastro = string.Empty;
-
-        private string CPFouCNPJCadastrado = string.Empty;
 
         public frmConfirmarAcesso(string _tipoCadastro, frmTelaPrincipal _frmTelaPrincipal, string _CPFouCNPJCadastrado, string _tela)
         {
@@ -63,13 +65,11 @@ namespace SistemaDeGerenciamento2_0.Forms
             RealizarLogin();
         }
 
-        private bool IsUsuarioPossuiAcesso = false;
-
         private void RealizarLogin()
         {
             if (IsLoginExiste() == true)
             {
-                AcessosUsuarios();
+                permissoesUsuario.ReloadData(frmTelaPrincipal, txtUsuario.Text);
 
                 if (tela == "ConfigUsuario")
                 {
@@ -121,6 +121,30 @@ namespace SistemaDeGerenciamento2_0.Forms
                         VerificarAcessoDeletarProdutos();
                     }
                 }
+                else if (tela == "ConfigEmpresa")
+                {
+                    VerificarAcessoConfiguracoesEmpresa();
+                }
+                else if (tela == "ConfigPerfil")
+                {
+                    VerificarAcessoConfiguracoesPerfil();
+                }
+                else if (tela == "ConfigFinanceiro")
+                {
+                    VerificarAcessoConfiguracoesFinanceiro();
+                }
+                else if (tela == "ConfigDespesa")
+                {
+                    VerificarAcessoConfiguracoesDespesa();
+                }
+                else if (tela == "Config Empresa Acesso Rapido")
+                {
+                    VerificarAcessoConfiguracoesEmpresaAcessoRapido();
+                }
+                else if (tela == "Config Financeiro Acesso Rapido")
+                {
+                    VerificarAcessoConfiguracoesFinanceiraAcessoRapido();
+                }
             }
             else
             {
@@ -130,9 +154,125 @@ namespace SistemaDeGerenciamento2_0.Forms
             }
         }
 
+        private void VerificarAcessoConfiguracoesFinanceiraAcessoRapido()
+        {
+            permissoesUsuario.listaPermissoesUsuario.ForEach(x => IsUsuarioPossuiAcesso = x.pm_configuracoes_financeira);
+
+            if (IsUsuarioPossuiAcesso == true)
+            {
+                this.Hide();
+
+                frmConfiguracaoFinanceira frmConfiguracaoFinanceira = new frmConfiguracaoFinanceira(frmTelaPrincipal);
+                frmConfiguracaoFinanceira.AutoScroll = false;
+                frmConfiguracaoFinanceira.btnCancelar.Visible = true;
+                frmConfiguracaoFinanceira.KeyPreview = true;
+                frmConfiguracaoFinanceira.btnFechar.Visible = true;
+                frmConfiguracaoFinanceira.ShowDialog();
+
+                this.Close();
+            }
+            else
+            {
+                MenssagemUsuarioSemPermissao();
+            }
+        }
+
+        private void VerificarAcessoConfiguracoesEmpresaAcessoRapido()
+        {
+            permissoesUsuario.listaPermissoesUsuario.ForEach(x => IsUsuarioPossuiAcesso = x.pm_configuracoes_empresa);
+
+            if (IsUsuarioPossuiAcesso == true)
+            {
+                this.Hide();
+
+                frmDadosEmpresa frmDadosEmpresa = new frmDadosEmpresa(frmTelaPrincipal);
+                frmDadosEmpresa.btnFechar.Visible = true;
+                frmDadosEmpresa.btnSalvar.TabIndex = 0;
+                frmDadosEmpresa.ShowDialog();
+
+                this.Close();
+            }
+            else
+            {
+                MenssagemUsuarioSemPermissao();
+            }
+        }
+
+        private void VerificarAcessoConfiguracoesDespesa()
+        {
+            permissoesUsuario.listaPermissoesUsuario.ForEach(x => IsUsuarioPossuiAcesso = x.pm_configuracoes_despesa);
+
+            if (IsUsuarioPossuiAcesso == true)
+            {
+                this.Hide();
+
+                permissoesUsuario.AcessoTelaDespesa();
+
+                this.Close();
+            }
+            else
+            {
+                MenssagemUsuarioSemPermissao();
+            }
+        }
+
+        private void VerificarAcessoConfiguracoesFinanceiro()
+        {
+            permissoesUsuario.listaPermissoesUsuario.ForEach(x => IsUsuarioPossuiAcesso = x.pm_configuracoes_financeira);
+
+            if (IsUsuarioPossuiAcesso == true)
+            {
+                this.Hide();
+
+                permissoesUsuario.TelaConfiguracoes("ConfigFinanceiro");
+
+                this.Close();
+            }
+            else
+            {
+                MenssagemUsuarioSemPermissao();
+            }
+        }
+
+        private void VerificarAcessoConfiguracoesPerfil()
+        {
+            permissoesUsuario.listaPermissoesUsuario.ForEach(x => IsUsuarioPossuiAcesso = x.pm_configuracoes_perfil);
+
+            if (IsUsuarioPossuiAcesso == true)
+            {
+                this.Hide();
+
+                permissoesUsuario.TelaConfiguracoes("ConfigPerfil");
+
+                this.Close();
+            }
+            else
+            {
+                MenssagemUsuarioSemPermissao();
+            }
+        }
+
+        private void VerificarAcessoConfiguracoesEmpresa()
+        {
+            permissoesUsuario.listaPermissoesUsuario.ForEach(x => IsUsuarioPossuiAcesso = x.pm_configuracoes_empresa);
+
+            if (IsUsuarioPossuiAcesso == true)
+            {
+                this.Hide();
+
+                permissoesUsuario.TelaConfiguracoes("ConfigEmpresa");
+
+                this.Close();
+            }
+            else
+            {
+                MenssagemUsuarioSemPermissao();
+            }
+        }
+
         private void VerificarAcessoDeletarProdutos()
         {
-            listaPermissoes.ForEach(x => IsUsuarioPossuiAcesso = x.pm_remover_produto);
+            permissoesUsuario.listaPermissoesUsuario.ForEach(x => IsUsuarioPossuiAcesso = x.pm_remover_produto);
 
             if (IsUsuarioPossuiAcesso == true)
             {
@@ -150,7 +290,7 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private void VerificarAcessoEditarProdutos()
         {
-            listaPermissoes.ForEach(x => IsUsuarioPossuiAcesso = x.pm_editar_produto);
+            permissoesUsuario.listaPermissoesUsuario.ForEach(x => IsUsuarioPossuiAcesso = x.pm_editar_produto);
 
             if (IsUsuarioPossuiAcesso == true)
             {
@@ -171,7 +311,7 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private void VerificarAcessoTodosProdutos()
         {
-            listaPermissoes.ForEach(x => IsUsuarioPossuiAcesso = x.pm_visualizar_todos_produtos);
+            permissoesUsuario.listaPermissoesUsuario.ForEach(x => IsUsuarioPossuiAcesso = x.pm_visualizar_todos_produtos);
 
             if (IsUsuarioPossuiAcesso == true)
             {
@@ -190,7 +330,7 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private void VerificarAcessoAdicionarProduto()
         {
-            listaPermissoes.ForEach(x => IsUsuarioPossuiAcesso = x.pm_adicionar_produto);
+            permissoesUsuario.listaPermissoesUsuario.ForEach(x => IsUsuarioPossuiAcesso = x.pm_adicionar_produto);
 
             if (IsUsuarioPossuiAcesso == true)
             {
@@ -209,7 +349,7 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private void VerificarAcessoDeletarCadastro()
         {
-            listaPermissoes.ForEach(x => IsUsuarioPossuiAcesso = x.pm_remover_cadastro);
+            permissoesUsuario.listaPermissoesUsuario.ForEach(x => IsUsuarioPossuiAcesso = x.pm_remover_cadastro);
 
             if (IsUsuarioPossuiAcesso == true)
             {
@@ -227,7 +367,7 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private void VerificarAcessoAlterarCadastro()
         {
-            listaPermissoes.ForEach(x => IsUsuarioPossuiAcesso = x.pm_editar_cadastro);
+            permissoesUsuario.listaPermissoesUsuario.ForEach(x => IsUsuarioPossuiAcesso = x.pm_editar_cadastro);
 
             if (IsUsuarioPossuiAcesso == true)
             {
@@ -245,7 +385,7 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private void VerificarAcessoTodosCadastros()
         {
-            listaPermissoes.ForEach(x => IsUsuarioPossuiAcesso = x.pm_visualizar_cadastro_completo);
+            permissoesUsuario.listaPermissoesUsuario.ForEach(x => IsUsuarioPossuiAcesso = x.pm_visualizar_cadastro_completo);
 
             if (IsUsuarioPossuiAcesso == true)
             {
@@ -263,7 +403,7 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private void VerificarAcessoConfigUsuario()
         {
-            listaPermissoes.ForEach(x => IsUsuarioPossuiAcesso = x.pm_criar_editar_usuario);
+            permissoesUsuario.listaPermissoesUsuario.ForEach(x => IsUsuarioPossuiAcesso = x.pm_criar_editar_usuario);
 
             if (IsUsuarioPossuiAcesso == true)
             {
@@ -277,7 +417,7 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private void VerificarAcessoNovoCadastro(string _Cadastro)
         {
-            listaPermissoes.ForEach(x => IsUsuarioPossuiAcesso = x.pm_editar_cadastro);
+            permissoesUsuario.listaPermissoesUsuario.ForEach(x => IsUsuarioPossuiAcesso = x.pm_editar_cadastro);
 
             if (IsUsuarioPossuiAcesso == true)
             {
@@ -327,29 +467,6 @@ namespace SistemaDeGerenciamento2_0.Forms
                 MensagemErros.ErroAoBuscarUsuarioSenhaAcessoRestrito(x);
 
                 return false;
-            }
-        }
-
-        private void AcessosUsuarios()
-        {
-            try
-            {
-                using (SistemaDeGerenciamento2_0Context db = new SistemaDeGerenciamento2_0Context())
-                {
-                    var acessosUsuario = db.tb_permissoes.Join(db.tb_registro, permissao => permissao.id_permissoes, registro => registro.fk_permissoes, (permissao, registro) => new
-                    {
-                        Permissao = permissao,
-                        Registro = registro,
-                    }).Where(x => x.Permissao.id_permissoes == x.Registro.fk_permissoes && x.Registro.rg_login == txtUsuario.Text);
-
-                    acessosUsuario.ForEach(x => listaPermissoes.Add(x.Permissao));
-                }
-            }
-            catch (Exception x)
-            {
-                LogErros.EscreverArquivoDeLog($"{DateTime.Now} - Erro ao Buscar Permissões Usuários Para Acesso Restrito | {x.Message} | {x.StackTrace}");
-
-                MensagemErros.ErroAoBuscarPermissoesAcessoRestrito(x);
             }
         }
 

@@ -189,6 +189,7 @@
             this.PDV.Name = "PDV";
             this.PDV.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.PDV.Text = "PDV";
+            this.PDV.Click += new System.EventHandler(this.PDV_Click);
             // 
             // Financeiro
             // 
@@ -514,7 +515,6 @@
         private DevExpress.XtraBars.Navigation.AccordionControlElement Configuracao;
         private DevExpress.XtraBars.SkinBarSubItem skinBarSubItem1;
         private DevExpress.XtraBars.Navigation.AccordionControlElement btnAcessoRapido;
-        private System.Windows.Forms.FlowLayoutPanel pnlTelaPrincipal;
         private DevExpress.XtraBars.Navigation.AccordionContentContainer accordionContentContainer1;
         private DevExpress.XtraBars.Navigation.AccordionControlElement btnConfigUsuario;
         private DevExpress.XtraBars.Navigation.AccordionControlElement btnConfigEmpresa;
@@ -531,6 +531,7 @@
         private DevExpress.XtraEditors.LabelControl lblUsuarioLogado;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraBars.Navigation.AccordionControlElement btnConsultarEstoque;
+        public System.Windows.Forms.FlowLayoutPanel pnlTelaPrincipal;
     }
 }
 

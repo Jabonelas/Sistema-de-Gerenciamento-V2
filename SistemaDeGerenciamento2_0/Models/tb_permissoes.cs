@@ -26,6 +26,10 @@ namespace SistemaDeGerenciamento2_0.Models
         public bool pm_receber_contas { get; set; }
         public bool pm_visualizar_fluxo_caixa { get; set; }
         public bool pm_criar_editar_usuario { get; set; }
+        public bool pm_configuracoes_empresa { get; set; }
+        public bool pm_configuracoes_financeira { get; set; }
+        public bool pm_configuracoes_perfil { get; set; }
+        public bool pm_configuracoes_despesa { get; set; }
         public bool pm_visualizar_visao_geral { get; set; }
         public bool pm_visualizar_dre { get; set; }
         public bool pm_criar_visualizar_relatorios { get; set; }

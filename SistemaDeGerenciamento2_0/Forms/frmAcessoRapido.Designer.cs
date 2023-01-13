@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            DevExpress.XtraSplashScreen.SplashScreenManager splashScreenManager1 = new DevExpress.XtraSplashScreen.SplashScreenManager(this, null, true, true);
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAcessoRapido));
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.panelControl5 = new DevExpress.XtraEditors.PanelControl();
@@ -53,7 +54,7 @@
             this.btnNovoFuncionario = new DevExpress.XtraEditors.SimpleButton();
             this.btnNovoFornecedor = new DevExpress.XtraEditors.SimpleButton();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            this.btnEstoqueProduto = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnIrParaProdutosCadastrados = new DevExpress.XtraEditors.SimpleButton();
@@ -78,6 +79,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
+            // 
+            // splashScreenManager1
+            // 
+            splashScreenManager1.ClosingDelay = 500;
             // 
             // panelControl1
             // 
@@ -411,7 +416,7 @@
             this.panelControl2.Appearance.BackColor = System.Drawing.Color.Gray;
             this.panelControl2.Appearance.Options.UseBackColor = true;
             this.panelControl2.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            this.panelControl2.Controls.Add(this.simpleButton1);
+            this.panelControl2.Controls.Add(this.btnEstoqueProduto);
             this.panelControl2.Controls.Add(this.labelControl1);
             this.panelControl2.Controls.Add(this.pictureBox1);
             this.panelControl2.Controls.Add(this.btnIrParaProdutosCadastrados);
@@ -422,22 +427,21 @@
             this.panelControl2.Size = new System.Drawing.Size(203, 355);
             this.panelControl2.TabIndex = 14;
             // 
-            // simpleButton1
+            // btnEstoqueProduto
             // 
-            this.simpleButton1.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton1.Appearance.Options.UseFont = true;
-            this.simpleButton1.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.reserve_15px;
-            this.simpleButton1.ImageOptions.ImageIndex = 5;
-            this.simpleButton1.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftBottom;
-            this.simpleButton1.ImageOptions.ImageToTextIndent = 10;
-            this.simpleButton1.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-            this.simpleButton1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.simpleButton1.Location = new System.Drawing.Point(13, 268);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(179, 30);
-            this.simpleButton1.TabIndex = 25;
-            this.simpleButton1.Text = "Ir para Estoque Produtos";
-            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
+            this.btnEstoqueProduto.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEstoqueProduto.Appearance.Options.UseFont = true;
+            this.btnEstoqueProduto.ImageOptions.ImageIndex = 5;
+            this.btnEstoqueProduto.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftBottom;
+            this.btnEstoqueProduto.ImageOptions.ImageToTextIndent = 10;
+            this.btnEstoqueProduto.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
+            this.btnEstoqueProduto.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnEstoqueProduto.Location = new System.Drawing.Point(13, 268);
+            this.btnEstoqueProduto.Name = "btnEstoqueProduto";
+            this.btnEstoqueProduto.Size = new System.Drawing.Size(179, 30);
+            this.btnEstoqueProduto.TabIndex = 25;
+            this.btnEstoqueProduto.Text = "Ir para Estoque Produtos";
+            this.btnEstoqueProduto.Click += new System.EventHandler(this.btnEstoqueProduto_Click);
             // 
             // labelControl1
             // 
@@ -584,6 +588,6 @@
         private DevExpress.XtraEditors.SimpleButton btnNovaVenda;
         private DevExpress.XtraEditors.SimpleButton btnIrParaFinanceiro;
         private DevExpress.XtraEditors.SimpleButton btnNovaCompra;
-        private DevExpress.XtraEditors.SimpleButton simpleButton1;
+        private DevExpress.XtraEditors.SimpleButton btnEstoqueProduto;
     }
 }

@@ -12,7 +12,7 @@ namespace SistemaDeGerenciamento2_0.Forms
 {
     public partial class frmAcessoRapido : Form
     {
-        private PermissoesUsuario permissoesCadastro = new PermissoesUsuario();
+        private PermissoesUsuario permissoesUsuario = new PermissoesUsuario();
 
         private frmTelaPrincipal frmTelaPrincipal;
 
@@ -27,67 +27,131 @@ namespace SistemaDeGerenciamento2_0.Forms
             frmTelaPrincipal = _frmTelaPrincipal;
         }
 
+        public void ReloadData(string _btnSolitador)
+        {
+            using (var handle = SplashScreenManager.ShowOverlayForm(frmTelaPrincipal))
+            {
+                if (_btnSolitador == "Novo Produto")
+                {
+                    permissoesUsuario.ReloadData(frmTelaPrincipal, frmLogin.UsuarioLogado);
+                    permissoesUsuario.VerificarAcessoCadastroProduto();
+                }
+                else if (_btnSolitador == "Cliente")
+                {
+                    permissoesUsuario.ReloadData(frmTelaPrincipal, frmLogin.UsuarioLogado);
+                    permissoesUsuario.VerificarAcessoCadastro("Cliente");
+                }
+                else if (_btnSolitador == "Fornecedor")
+                {
+                    permissoesUsuario.ReloadData(frmTelaPrincipal, frmLogin.UsuarioLogado);
+                    permissoesUsuario.VerificarAcessoCadastro("Fornecedor");
+                }
+                else if (_btnSolitador == "Funcionario")
+                {
+                    permissoesUsuario.ReloadData(frmTelaPrincipal, frmLogin.UsuarioLogado);
+                    permissoesUsuario.VerificarAcessoCadastro("Funcionario");
+                }
+                else if (_btnSolitador == "ConfigUsuario")
+                {
+                    permissoesUsuario.ReloadData(frmTelaPrincipal, frmLogin.UsuarioLogado);
+                    permissoesUsuario.VerificarAcessoConfigUsuario("ConfigUsuario");
+                }
+                else if (_btnSolitador == "Config Empresa Acesso Rapido")
+                {
+                    permissoesUsuario.ReloadData(frmTelaPrincipal, frmLogin.UsuarioLogado);
+                    permissoesUsuario.VerificarAcessoConfigEmpresaTelaAcessoRapido("Config Empresa Acesso Rapido");
+                }
+                else if (_btnSolitador == "Config Financeiro Acesso Rapido")
+                {
+                    permissoesUsuario.ReloadData(frmTelaPrincipal, frmLogin.UsuarioLogado);
+                    permissoesUsuario.VerificarAcessoConfigFinanceiraTelaAcessoRapido("Config Financeiro Acesso Rapido");
+                }
+                else if (_btnSolitador == "Ir para produtos")
+                {
+                    permissoesUsuario.ReloadData(frmTelaPrincipal, frmLogin.UsuarioLogado);
+                    permissoesUsuario.VerificarAcessoTodosProdutos();
+                }
+                else if (_btnSolitador == "Todos Os Cadastros")
+                {
+                    permissoesUsuario.ReloadData(frmTelaPrincipal, frmLogin.UsuarioLogado);
+                    permissoesUsuario.VerificarAcessoTodosCadastros("Todos Os Cadastros");
+                }
+            }
+        }
+
         private void btnNovoProduto_Click(object sender, EventArgs e)
         {
-            permissoesCadastro.ReloadData(frmTelaPrincipal);
-            permissoesCadastro.VerificarAcessoCadastroProduto();
+            ReloadData("Novo Produto");
+
+            //permissoesUsuario.ReloadData(frmTelaPrincipal, frmLogin.UsuarioLogado);
+            //permissoesUsuario.VerificarAcessoCadastroProduto();
         }
 
         private void btnNovoCliente_Click(object sender, EventArgs e)
         {
-            permissoesCadastro.ReloadData(frmTelaPrincipal);
-            permissoesCadastro.VerificarAcessoCadastro("Cliente");
+            ReloadData("Cliente");
+
+            //permissoesUsuario.ReloadData(frmTelaPrincipal, frmLogin.UsuarioLogado);
+            //permissoesUsuario.VerificarAcessoCadastro("Cliente");
         }
 
         private void btnNovoFornecedor_Click(object sender, EventArgs e)
         {
-            permissoesCadastro.ReloadData(frmTelaPrincipal);
-            permissoesCadastro.VerificarAcessoCadastro("Fornecedor");
+            ReloadData("Fornecedor");
+
+            //permissoesUsuario.ReloadData(frmTelaPrincipal, frmLogin.UsuarioLogado);
+            //permissoesUsuario.VerificarAcessoCadastro("Fornecedor");
         }
 
         private void btnNovoTransporte_Click(object sender, EventArgs e)
         {
-            permissoesCadastro.ReloadData(frmTelaPrincipal);
-            permissoesCadastro.VerificarAcessoCadastro("Funcionario");
+            ReloadData("Funcionario");
+
+            //permissoesUsuario.ReloadData(frmTelaPrincipal, frmLogin.UsuarioLogado);
+            //permissoesUsuario.VerificarAcessoCadastro("Funcionario");
         }
 
         private void btnNovoUsuario_Click(object sender, EventArgs e)
         {
-            frmCadastroUsuario frmCadastroUsuario = new frmCadastroUsuario();
-            frmCadastroUsuario.ShowDialog();
+            ReloadData("ConfigUsuario");
+
+            //permissoesUsuario.ReloadData(frmTelaPrincipal, frmLogin.UsuarioLogado);
+            //permissoesUsuario.VerificarAcessoConfigUsuario("ConfigUsuario");
         }
 
         private void btnDadosEmpresa_Click(object sender, EventArgs e)
         {
-            frmDadosEmpresa frmDadosEmpresa = new frmDadosEmpresa(frmTelaPrincipal);
-            frmDadosEmpresa.btnFechar.Visible = true;
-            frmDadosEmpresa.btnSalvar.TabIndex = 0;
-            frmDadosEmpresa.ShowDialog();
+            ReloadData("Config Empresa Acesso Rapido");
+
+            //permissoesUsuario.ReloadData(frmTelaPrincipal, frmLogin.UsuarioLogado);
+            //permissoesUsuario.VerificarAcessoConfigEmpresaTelaAcessoRapido("Config Empresa Acesso Rapido");
         }
 
         private void btnIrParaConfiguracoes_Click(object sender, EventArgs e)
         {
-            frmConfiguracaoFinanceira frmConfiguracaoFinanceira = new frmConfiguracaoFinanceira(this);
-            frmConfiguracaoFinanceira.AutoScroll = false;
-            frmConfiguracaoFinanceira.btnCancelar.Visible = true;
-            frmConfiguracaoFinanceira.KeyPreview = true;
-            frmConfiguracaoFinanceira.btnFechar.Visible = true;
-            frmConfiguracaoFinanceira.ShowDialog();
+            ReloadData("Config Financeiro Acesso Rapido");
+
+            //permissoesUsuario.ReloadData(frmTelaPrincipal, frmLogin.UsuarioLogado);
+            //permissoesUsuario.VerificarAcessoConfigFinanceiraTelaAcessoRapido("Config Financeiro Acesso Rapido");
         }
 
         private void btnIrParaProdutos_Click(object sender, EventArgs e)
         {
-            permissoesCadastro.ReloadData(frmTelaPrincipal);
-            permissoesCadastro.VerificarAcessoTodosProdutos();
+            ReloadData("Ir para produtos");
+
+            //permissoesUsuario.ReloadData(frmTelaPrincipal, frmLogin.UsuarioLogado);
+            //permissoesUsuario.VerificarAcessoTodosProdutos();
         }
 
         private void btnIrParaCadastro_Click(object sender, EventArgs e)
         {
-            permissoesCadastro.ReloadData(frmTelaPrincipal);
-            permissoesCadastro.VerificarAcessoTodosCadastros("Todos Os Cadastros");
+            ReloadData("Todos Os Cadastros");
+
+            //permissoesUsuario.ReloadData(frmTelaPrincipal, frmLogin.UsuarioLogado);
+            //permissoesUsuario.VerificarAcessoTodosCadastros("Todos Os Cadastros");
         }
 
-        private void simpleButton1_Click(object sender, EventArgs e)
+        private void btnEstoqueProduto_Click(object sender, EventArgs e)
         {
             frmConsultarEstoque frmConsultarEstoque = new frmConsultarEstoque();
             frmConsultarEstoque.ShowDialog();

@@ -115,6 +115,10 @@ namespace SistemaDeGerenciamento2_0.Forms
 
                         ////Configuração
                         pm_criar_editar_usuario = Convert.ToBoolean(chkCriarEditarUsuarios.Checked),
+                        pm_configuracoes_empresa = Convert.ToBoolean(chkConfiguracaoEmpresa.Checked),
+                        pm_configuracoes_perfil = Convert.ToBoolean(chkConfiguracaoPerfil.Checked),
+                        pm_configuracoes_financeira = Convert.ToBoolean(chkConfiguracaoFinanceira.Checked),
+                        pm_configuracoes_despesa = Convert.ToBoolean(chkConfiguracaoDespesa.Checked),
 
                         ////Relatorio
                         pm_visualizar_visao_geral = Convert.ToBoolean(chkVisualizarVisaoGeral.Checked),
@@ -207,6 +211,10 @@ namespace SistemaDeGerenciamento2_0.Forms
 
                                 //Configuração
                                 chkCriarEditarUsuarios.Checked = Convert.ToBoolean(item.pm_criar_editar_usuario);
+                                chkConfiguracaoEmpresa.Checked = Convert.ToBoolean(item.pm_configuracoes_empresa);
+                                chkConfiguracaoPerfil.Checked = Convert.ToBoolean(item.pm_configuracoes_perfil);
+                                chkConfiguracaoFinanceira.Checked = Convert.ToBoolean(item.pm_configuracoes_financeira);
+                                chkConfiguracaoDespesa.Checked = Convert.ToBoolean(item.pm_configuracoes_despesa);
 
                                 //Relatorio
                                 chkVisualizarVisaoGeral.Checked = Convert.ToBoolean(item.pm_visualizar_visao_geral);
@@ -264,7 +272,12 @@ namespace SistemaDeGerenciamento2_0.Forms
                     checkBoxPreenchidas.pm_visualizar_fluxo_caixa = Convert.ToBoolean(chkVisualizarFluxoCaixa.Checked);
 
                     ////Configuração
+
                     checkBoxPreenchidas.pm_criar_editar_usuario = Convert.ToBoolean(chkCriarEditarUsuarios.Checked);
+                    checkBoxPreenchidas.pm_configuracoes_empresa = Convert.ToBoolean(chkConfiguracaoEmpresa.Checked);
+                    checkBoxPreenchidas.pm_configuracoes_perfil = Convert.ToBoolean(chkConfiguracaoPerfil.Checked);
+                    checkBoxPreenchidas.pm_configuracoes_financeira = Convert.ToBoolean(chkConfiguracaoFinanceira.Checked);
+                    checkBoxPreenchidas.pm_configuracoes_despesa = Convert.ToBoolean(chkConfiguracaoDespesa.Checked);
 
                     ////Relatorio
                     checkBoxPreenchidas.pm_visualizar_visao_geral = Convert.ToBoolean(chkVisualizarVisaoGeral.Checked);
@@ -346,7 +359,5 @@ namespace SistemaDeGerenciamento2_0.Forms
                 Salvar();
             }
         }
-
-
     }
 }
