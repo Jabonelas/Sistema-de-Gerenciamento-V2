@@ -40,7 +40,6 @@ namespace SistemaDeGerenciamento2_0.Class
                         Permissao = permissao,
                         Registro = registro,
                     }).Where(x => x.Permissao.id_permissoes == x.Registro.fk_permissoes && x.Registro.rg_login == _usuario);
-                    //}).Where(x => x.Permissao.id_permissoes == x.Registro.fk_permissoes && x.Registro.rg_login == frmLogin.UsuarioLogado);
 
                     acessosUsuario.ForEach(x => listaPermissoesUsuario.Add(x.Permissao));
                 }

@@ -82,73 +82,46 @@ namespace SistemaDeGerenciamento2_0.Forms
         private void btnNovoProduto_Click(object sender, EventArgs e)
         {
             ReloadData("Novo Produto");
-
-            //permissoesUsuario.ReloadData(frmTelaPrincipal, frmLogin.UsuarioLogado);
-            //permissoesUsuario.VerificarAcessoCadastroProduto();
         }
 
         private void btnNovoCliente_Click(object sender, EventArgs e)
         {
             ReloadData("Cliente");
-
-            //permissoesUsuario.ReloadData(frmTelaPrincipal, frmLogin.UsuarioLogado);
-            //permissoesUsuario.VerificarAcessoCadastro("Cliente");
         }
 
         private void btnNovoFornecedor_Click(object sender, EventArgs e)
         {
             ReloadData("Fornecedor");
-
-            //permissoesUsuario.ReloadData(frmTelaPrincipal, frmLogin.UsuarioLogado);
-            //permissoesUsuario.VerificarAcessoCadastro("Fornecedor");
         }
 
         private void btnNovoTransporte_Click(object sender, EventArgs e)
         {
             ReloadData("Funcionario");
-
-            //permissoesUsuario.ReloadData(frmTelaPrincipal, frmLogin.UsuarioLogado);
-            //permissoesUsuario.VerificarAcessoCadastro("Funcionario");
         }
 
         private void btnNovoUsuario_Click(object sender, EventArgs e)
         {
             ReloadData("ConfigUsuario");
-
-            //permissoesUsuario.ReloadData(frmTelaPrincipal, frmLogin.UsuarioLogado);
-            //permissoesUsuario.VerificarAcessoConfigUsuario("ConfigUsuario");
         }
 
         private void btnDadosEmpresa_Click(object sender, EventArgs e)
         {
             ReloadData("Config Empresa Acesso Rapido");
-
-            //permissoesUsuario.ReloadData(frmTelaPrincipal, frmLogin.UsuarioLogado);
-            //permissoesUsuario.VerificarAcessoConfigEmpresaTelaAcessoRapido("Config Empresa Acesso Rapido");
         }
 
         private void btnIrParaConfiguracoes_Click(object sender, EventArgs e)
         {
             ReloadData("Config Financeiro Acesso Rapido");
-
-            //permissoesUsuario.ReloadData(frmTelaPrincipal, frmLogin.UsuarioLogado);
-            //permissoesUsuario.VerificarAcessoConfigFinanceiraTelaAcessoRapido("Config Financeiro Acesso Rapido");
         }
 
         private void btnIrParaProdutos_Click(object sender, EventArgs e)
         {
             ReloadData("Ir para produtos");
-
-            //permissoesUsuario.ReloadData(frmTelaPrincipal, frmLogin.UsuarioLogado);
-            //permissoesUsuario.VerificarAcessoTodosProdutos();
         }
 
         private void btnIrParaCadastro_Click(object sender, EventArgs e)
         {
             ReloadData("Todos Os Cadastros");
-
-            //permissoesUsuario.ReloadData(frmTelaPrincipal, frmLogin.UsuarioLogado);
-            //permissoesUsuario.VerificarAcessoTodosCadastros("Todos Os Cadastros");
         }
 
         private void btnEstoqueProduto_Click(object sender, EventArgs e)

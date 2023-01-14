@@ -146,89 +146,56 @@ namespace SistemaDeGerenciamento2_0
         private void btnConfigUsuario_Click(object sender, EventArgs e)
         {
             ReloadData("ConfigUsuario");
-
-            //permissoesUsuario.ReloadData(this, frmLogin.UsuarioLogado);
-            //permissoesUsuario.VerificarAcessoConfigUsuario("ConfigUsuario");
         }
 
         private void btnConfigEmpresa_Click(object sender, EventArgs e)
         {
             ReloadData("ConfigEmpresa");
-
-            //permissoesUsuario.ReloadData(this, frmLogin.UsuarioLogado);
-            //permissoesUsuario.VerificarAcessoConfigEmpresa("ConfigEmpresa");
         }
 
         private void btnConfigPerfil_Click(object sender, EventArgs e)
         {
             ReloadData("ConfigPerfil");
-
-            //permissoesUsuario.ReloadData(this, frmLogin.UsuarioLogado);
-            //permissoesUsuario.VerificarAcessoConfigPerfil("ConfigPerfil");
         }
 
         private void btnConfigFinanceiro_Click(object sender, EventArgs e)
         {
             ReloadData("ConfigFinanceiro");
-
-            //permissoesUsuario.ReloadData(this, frmLogin.UsuarioLogado);
-            //permissoesUsuario.VerificarAcessoConfigFinanceira("ConfigFinanceiro");
         }
 
         private void btnConfigDesepsa_Click(object sender, EventArgs e)
         {
             ReloadData("ConfigDespesa");
-
-            //permissoesCadastro.ReloadData(this, frmLogin.UsuarioLogado);
-            //permissoesCadastro.VerificarAcessoConfigDespesa("ConfigDespesa");
         }
 
         private void btnNovoProduto_Click(object sender, EventArgs e)
         {
             ReloadData("Novo Produto");
-
-            //permissoesCadastro.ReloadData(this, frmLogin.UsuarioLogado);
-            //permissoesCadastro.VerificarAcessoCadastroProduto();
         }
 
         private void btnTodosOsProdutos_Click(object sender, EventArgs e)
         {
             ReloadData("Todos Os Produtos");
-
-            //permissoesCadastro.ReloadData(this, frmLogin.UsuarioLogado);
-            //permissoesCadastro.VerificarAcessoTodosProdutos();
         }
 
         private void btnNovoCliente_Click(object sender, EventArgs e)
         {
             ReloadData("Cliente");
-
-            //permissoesCadastro.ReloadData(this, frmLogin.UsuarioLogado);
-            //permissoesCadastro.VerificarAcessoCadastro("Cliente");
         }
 
         private void btnNovoFornecedor_Click(object sender, EventArgs e)
         {
             ReloadData("Fornecedor");
-
-            //permissoesCadastro.ReloadData(this, frmLogin.UsuarioLogado);
-            //permissoesCadastro.VerificarAcessoCadastro("Fornecedor");
         }
 
         private void btnNovoFuncionario_Click(object sender, EventArgs e)
         {
             ReloadData("Funcionario");
-
-            //permissoesCadastro.ReloadData(this, frmLogin.UsuarioLogado);
-            //permissoesCadastro.VerificarAcessoCadastro("Funcionario");
         }
 
         private void btnTodosOsCadastro_Click(object sender, EventArgs e)
         {
             ReloadData("Todos Os Cadastros");
-
-            //permissoesCadastro.ReloadData(this, frmLogin.UsuarioLogado);
-            //permissoesCadastro.VerificarAcessoTodosCadastros("Todos Os Cadastros");
         }
 
         private void Cadastro_Click(object sender, EventArgs e)
