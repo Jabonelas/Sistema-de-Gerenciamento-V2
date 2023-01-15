@@ -68,5 +68,10 @@ namespace SistemaDeGerenciamento2_0
         {
             MessageBox.Show("Desculpe, Usuário Sem Permissão!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
+
+        public static void MensagemQuantidadeIndisponivel()
+        {
+            MessageBox.Show("Desculpe, Quantidade Solicitada Indisponivel!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        }
     }
 }

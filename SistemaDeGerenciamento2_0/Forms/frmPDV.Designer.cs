@@ -39,7 +39,7 @@
             this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
             this.panelControl4 = new DevExpress.XtraEditors.PanelControl();
-            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
+            this.lblValorUnitario = new DevExpress.XtraEditors.LabelControl();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.lblDescricaoProduto = new DevExpress.XtraEditors.LabelControl();
             this.txtCodigoDeBarras = new DevExpress.XtraEditors.TextEdit();
@@ -194,7 +194,7 @@
             // 
             this.panelControl4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panelControl4.Controls.Add(this.labelControl5);
+            this.panelControl4.Controls.Add(this.lblValorUnitario);
             this.panelControl4.Controls.Add(this.labelControl4);
             this.panelControl4.Controls.Add(this.lblDescricaoProduto);
             this.panelControl4.Controls.Add(this.txtCodigoDeBarras);
@@ -206,15 +206,15 @@
             this.panelControl4.Size = new System.Drawing.Size(618, 234);
             this.panelControl4.TabIndex = 3;
             // 
-            // labelControl5
+            // lblValorUnitario
             // 
-            this.labelControl5.Appearance.Font = new System.Drawing.Font("Segoe UI Semibold", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl5.Appearance.Options.UseFont = true;
-            this.labelControl5.Location = new System.Drawing.Point(5, 165);
-            this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(164, 65);
-            this.labelControl5.TabIndex = 6;
-            this.labelControl5.Text = "R$ 2,45";
+            this.lblValorUnitario.Appearance.Font = new System.Drawing.Font("Segoe UI Semibold", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblValorUnitario.Appearance.Options.UseFont = true;
+            this.lblValorUnitario.Location = new System.Drawing.Point(5, 165);
+            this.lblValorUnitario.Name = "lblValorUnitario";
+            this.lblValorUnitario.Size = new System.Drawing.Size(164, 65);
+            this.lblValorUnitario.TabIndex = 6;
+            this.lblValorUnitario.Text = "R$ 2,45";
             // 
             // labelControl4
             // 
@@ -476,6 +476,10 @@
             this.AlertaSalvar.AppearanceText.Options.UseBackColor = true;
             this.AlertaSalvar.AppearanceText.Options.UseFont = true;
             this.AlertaSalvar.AutoFormDelay = 2000;
+            this.AlertaSalvar.LookAndFeel.SkinMaskColor = System.Drawing.Color.Transparent;
+            this.AlertaSalvar.LookAndFeel.SkinMaskColor2 = System.Drawing.Color.Transparent;
+            this.AlertaSalvar.LookAndFeel.SkinName = "Darkroom";
+            this.AlertaSalvar.LookAndFeel.UseDefaultLookAndFeel = false;
             this.AlertaSalvar.ShowCloseButton = false;
             this.AlertaSalvar.ShowPinButton = false;
             this.AlertaSalvar.ShowToolTips = false;
@@ -558,7 +562,7 @@
             // 
             this.labelControl13.Appearance.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl13.Appearance.Options.UseFont = true;
-            this.labelControl13.Location = new System.Drawing.Point(484, 17);
+            this.labelControl13.Location = new System.Drawing.Point(397, 17);
             this.labelControl13.Name = "labelControl13";
             this.labelControl13.Size = new System.Drawing.Size(83, 25);
             this.labelControl13.TabIndex = 10;
@@ -675,7 +679,7 @@
         private DevExpress.XtraEditors.SimpleButton simpleButton6;
         private DevExpress.XtraEditors.SimpleButton btnNovoProduto;
         private DevExpress.XtraBars.Alerter.AlertControl AlertaSalvar;
-        private DevExpress.XtraEditors.LabelControl labelControl5;
+        private DevExpress.XtraEditors.LabelControl lblValorUnitario;
         private DevExpress.XtraEditors.LabelControl labelControl4;
         private DevExpress.XtraEditors.LabelControl lblDescricaoProduto;
         private DevExpress.XtraEditors.LabelControl lblNumeroPedido;

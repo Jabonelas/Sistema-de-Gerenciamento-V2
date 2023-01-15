@@ -24,6 +24,10 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private frmLogin frmLogin;
 
+        private DataTable dt = new DataTable();
+
+        private List<DadosProduto> listaEstoque = new List<DadosProduto>();
+
         public frmPDV()
         {
             InitializeComponent();
@@ -34,6 +38,8 @@ namespace SistemaDeGerenciamento2_0.Forms
             //lblNomeUsuario.Text = frmLogin.UsuarioLogado;
 
             //BuscarNumeroPedido();
+
+            SetandoColunasGrid();
         }
 
         private void BuscarNumeroPedido()
@@ -77,6 +83,14 @@ namespace SistemaDeGerenciamento2_0.Forms
             {
                 this.Close();
             }
+            else if (e.KeyCode == Keys.F1)
+            {
+                txtCodigoDeBarras.Focus();
+            }
+            else if (e.KeyCode == Keys.F3)
+            {
+                txtQuantidadeProduto.Focus();
+            }
         }
 
         private void simpleButton6_Click(object sender, EventArgs e)
@@ -114,21 +128,21 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private void txtCodigoDeBarras_TextChanged(object sender, EventArgs e)
         {
-            BuscarProdutoPorCodigoDeBarras();
+            if (txtCodigoDeBarras.Text != string.Empty)
+            {
+                BuscarProdutoPorCodigoDeBarras();
 
-            PreencherGrid();
+                PreencherGrid();
+            }
         }
 
-        //private Dictionary<tb_estoque, tb_produto> listaEstoque = new Dictionary<tb_estoque, tb_produto>();
-        //private List<tb_estoque, tb_produto> listaEstoque = new List<tb_estoque, tb_produto>();
-
-        public class MyClass
+        public class DadosProduto
         {
             public string codigoProduto = string.Empty;
             public string nomePrdouto = string.Empty;
             public decimal preco = 0;
 
-            public MyClass(string _codigoProduto, string _nomePrdouto, decimal _preco)
+            public DadosProduto(string _codigoProduto, string _nomePrdouto, decimal _preco)
             {
                 codigoProduto = _codigoProduto;
                 nomePrdouto = _nomePrdouto;
@@ -136,30 +150,35 @@ namespace SistemaDeGerenciamento2_0.Forms
             }
         }
 
-        private List<MyClass> listaEstoque = new List<MyClass>();
-
         private void BuscarProdutoPorCodigoDeBarras()
         {
             try
             {
+                listaEstoque.Clear();
+
+                int qdtSolicitada = Convert.ToInt32(txtQuantidadeProduto.Text);
+
                 using (SistemaDeGerenciamento2_0Context db = new SistemaDeGerenciamento2_0Context())
                 {
-                    //listaEstoque = db.tb_estoque.Where(x => x.ep_codigo_barras == txtCodigoDeBarras.Text).ToList();
                     var dados = db.tb_estoque.Join(db.tb_produto, estoque => estoque.fk_produto, produto => produto.id_produto, (estoque, produto)
                         => new
                         {
                             Estoque = estoque,
                             Produto = produto,
-                        }).Where(x => x.Produto.id_produto == x.Estoque.fk_produto && x.Estoque.ep_quantidade > 0)
-                        .Select(x => new { x.Produto.pd_codigo, x.Produto.pd_nome, x.Produto.pd_preco }).First();
+                        }).Where(x => x.Produto.id_produto == x.Estoque.fk_produto && x.Estoque.ep_quantidade > qdtSolicitada && x.Produto.pd_codigo_barras == txtCodigoDeBarras.Text)
+                        .Select(x => new { x.Produto.pd_codigo, x.Produto.pd_nome, x.Produto.pd_preco }).FirstOrDefault();
 
-                    //dados.ForEach(x => listaEstoque.Add(x.Produto));
+                    if (dados != null)
+                    {
+                        listaEstoque.Add(new DadosProduto(dados.pd_codigo, dados.pd_nome, dados.pd_preco));
 
-                    //listaEstoque.Add( dados.pd_codigo, dados.pd_nome, dados.pd_preco );
-                    //listaEstoque.Add(new MyClass { dados.pd_codigo, dados.pd_nome, dados.pd_preco });
-                    //listaEstoque.Add(new MyClass { "sas", "ss",1 });
-                    //listaEstoque.Add(new MyClass { codigoProduto = dados.pd_codigo, nomePrdouto = dados.pd_nome, preco = dados.pd_preco });
-                    listaEstoque.Add(new MyClass(dados.pd_codigo, dados.pd_nome, dados.pd_preco));
+                        lblDescricaoProduto.Text = dados.pd_nome;
+                        lblValorUnitario.Text = dados.pd_preco.ToString("C2");
+                    }
+                    else
+                    {
+                        MensagemAtencao.MensagemQuantidadeIndisponivel();
+                    }
                 }
             }
             catch (Exception x)
@@ -168,39 +187,61 @@ namespace SistemaDeGerenciamento2_0.Forms
             }
         }
 
+        private void SetandoColunasGrid()
+        {
+            dt.Columns.Add("SEQ.");
+            dt.Columns.Add("CODIGO PRODUTO");
+            dt.Columns.Add("QTD UN");
+            dt.Columns.Add("DESCRICAO");
+            dt.Columns.Add("VALOR TOTAL R$");
+        }
+
+        private int qtdLinhasGrid = 0;
+
         private void PreencherGrid()
         {
             try
             {
-                DataTable dt = new DataTable();
-                dt.Columns.Add("SEQ.");
-                dt.Columns.Add("CODIGO PRODUTO");
-                dt.Columns.Add("QTD UN");
-                dt.Columns.Add("DESCRICAO");
-                dt.Columns.Add("VALOR TOTAL R$");
-
-                int sequencia = 1;
+                int sequencia = gridView1.RowCount;
 
                 int qtdProduto = Convert.ToInt32(txtQuantidadeProduto.Text);
 
                 foreach (var item in listaEstoque)
                 {
-                    //dt.Rows.Add(sequencia, item.pd_codigo, qtdProduto, item.pd_nome, (item.pd_preco * qtdProduto));
-
-                    sequencia++;
+                    dt.Rows.Add(++sequencia, item.codigoProduto, qtdProduto, item.nomePrdouto, (item.preco * qtdProduto));
                 }
+
+                lblQtdItens.Text = sequencia.ToString();
 
                 gridControl1.DataSource = dt;
                 gridControl1.Refresh();
 
-                //using (SistemaDeGerenciamento2_0Context db = new SistemaDeGerenciamento2_0Context())
-                //{
-                //}
+                SetandoValoTotal();
             }
             catch (Exception x)
             {
                 MessageBox.Show(x.ToString());
             }
+        }
+
+        private void SetandoValoTotal()
+        {
+            int[] SelectedRowHandles = gridView1.GetSelectedRows();
+
+            qtdLinhasGrid = gridView1.RowCount;
+
+            decimal valorTotal = 0;
+
+            for (int i = 0; i < qtdLinhasGrid; i++)
+            {
+                DataRow row = gridView1.GetDataRow(i);
+                object cellValue = row["VALOR TOTAL R$"];
+
+                valorTotal = valorTotal + Convert.ToDecimal(cellValue);
+            }
+
+            lblValorTotal.Text = valorTotal.ToString("C2");
+            lblSubtotal.Text = valorTotal.ToString("C2");
         }
     }
 }
