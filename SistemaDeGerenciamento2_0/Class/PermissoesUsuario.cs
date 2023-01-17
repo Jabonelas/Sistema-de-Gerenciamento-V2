@@ -52,6 +52,41 @@ namespace SistemaDeGerenciamento2_0.Class
             }
         }
 
+        public void VerificarRemoverItemTelaPDV(string _Cadastro)
+        {
+            bool IsUsuarioPossuiAcesso = false;
+
+            listaPermissoesUsuario.ForEach(x => IsUsuarioPossuiAcesso = x.pm_remover_venda);
+
+            if (IsUsuarioPossuiAcesso == true)
+            {
+                frmPDV.permissaoRemoverItem = true;
+            }
+            else
+            {
+                frmConfirmarAcesso frmConfirmarAcesso = new frmConfirmarAcesso(frmTelaPrincipal, _Cadastro);
+                frmConfirmarAcesso.ShowDialog();
+            }
+        }
+
+        public void VerificarAcessoPDV(string _Cadastro)
+        {
+            bool IsUsuarioPossuiAcesso = false;
+
+            listaPermissoesUsuario.ForEach(x => IsUsuarioPossuiAcesso = x.pm_acesso_pdv);
+
+            if (IsUsuarioPossuiAcesso == true)
+            {
+                frmPDV frmPDV = new frmPDV(frmTelaPrincipal);
+                frmPDV.ShowDialog();
+            }
+            else
+            {
+                frmConfirmarAcesso frmConfirmarAcesso = new frmConfirmarAcesso(frmTelaPrincipal, _Cadastro);
+                frmConfirmarAcesso.ShowDialog();
+            }
+        }
+
         public void VerificarAcessoCadastro(string _Cadastro)
         {
             bool IsUsuarioPossuiAcesso = false;

@@ -102,6 +102,7 @@
             this.gridControl1.TabIndex = 102;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
+            this.gridControl1.DoubleClick += new System.EventHandler(this.gridControl1_DoubleClick);
             // 
             // sqlDataSource1
             // 

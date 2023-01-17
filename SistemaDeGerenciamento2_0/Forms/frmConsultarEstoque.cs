@@ -23,6 +23,15 @@ namespace SistemaDeGerenciamento2_0.Forms
             InitializeComponent();
 
             sqlDataSource1.FillAsync();
+
+            gridControl1.DoubleClick -= gridControl1_DoubleClick;
+        }
+
+        public frmConsultarEstoque(string _tela)
+        {
+            InitializeComponent();
+
+            sqlDataSource1.FillAsync();
         }
 
         private void btnFechar_Click(object sender, EventArgs e)
@@ -44,8 +53,6 @@ namespace SistemaDeGerenciamento2_0.Forms
             Y = this.Top - MousePosition.Y;
         }
 
-    
-
         private void frmConsultarEstoque_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Escape)
@@ -57,6 +64,26 @@ namespace SistemaDeGerenciamento2_0.Forms
         private void btnSair_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        //private frmPDV frmPDV = new frmPDV();
+
+        private void gridControl1_DoubleClick(object sender, EventArgs e)
+        {
+            string codigoDeBarras = PegandoIndiceDaLinhaDoGrid().ToString();
+
+            frmPDV.passagemDeCodigoDeBarras = codigoDeBarras;
+
+            this.Close();
+        }
+
+        private string PegandoIndiceDaLinhaDoGrid()
+        {
+            int[] SelectedRowHandles = gridView1.GetSelectedRows();
+
+            string idConfiguracaoFinanceira = gridView1.GetRowCellValue(SelectedRowHandles[0], gridView1.Columns[2]).ToString();
+
+            return idConfiguracaoFinanceira;
         }
     }
 }

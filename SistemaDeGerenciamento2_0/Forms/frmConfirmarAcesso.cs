@@ -145,12 +145,57 @@ namespace SistemaDeGerenciamento2_0.Forms
                 {
                     VerificarAcessoConfiguracoesFinanceiraAcessoRapido();
                 }
+                else if (tela == "Acesso PDV")
+                {
+                    VerificarAcessoPDV();
+                }
+                else if (tela == "Remover Item Tela PDV")
+                {
+                    VerificarRemoverProdutoTelaPDV();
+                }
             }
             else
             {
                 MensagemAtencao.MensagemUsuarioSenhasNaoEncontrados();
 
                 txtUsuario.Focus();
+            }
+        }
+
+        private void VerificarRemoverProdutoTelaPDV()
+        {
+            permissoesUsuario.listaPermissoesUsuario.ForEach(x => IsUsuarioPossuiAcesso = x.pm_remover_venda);
+
+            if (IsUsuarioPossuiAcesso == true)
+            {
+                this.Hide();
+
+                frmPDV.permissaoRemoverItem = true;
+
+                this.Close();
+            }
+            else
+            {
+                MenssagemUsuarioSemPermissao();
+            }
+        }
+
+        private void VerificarAcessoPDV()
+        {
+            permissoesUsuario.listaPermissoesUsuario.ForEach(x => IsUsuarioPossuiAcesso = x.pm_acesso_pdv);
+
+            if (IsUsuarioPossuiAcesso == true)
+            {
+                this.Hide();
+
+                frmPDV frmPDV = new frmPDV(frmTelaPrincipal);
+                frmPDV.ShowDialog();
+
+                this.Close();
+            }
+            else
+            {
+                MenssagemUsuarioSemPermissao();
             }
         }
 

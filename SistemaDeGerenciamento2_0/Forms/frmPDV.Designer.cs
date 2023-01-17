@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            DevExpress.XtraSplashScreen.SplashScreenManager splashScreenManager1 = new DevExpress.XtraSplashScreen.SplashScreenManager(this, null, true, true);
             this.lblStatusCaixa = new DevExpress.XtraEditors.LabelControl();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
@@ -51,14 +52,14 @@
             this.panelControl6 = new DevExpress.XtraEditors.PanelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.panelControl7 = new DevExpress.XtraEditors.PanelControl();
-            this.simpleButton5 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
+            this.btn2FinalizarVenda = new DevExpress.XtraEditors.SimpleButton();
+            this.btnCliente = new DevExpress.XtraEditors.SimpleButton();
+            this.btn2CancelarVenda = new DevExpress.XtraEditors.SimpleButton();
+            this.btnCancelarItem = new DevExpress.XtraEditors.SimpleButton();
+            this.btnLocalizarProduto = new DevExpress.XtraEditors.SimpleButton();
             this.panelControl8 = new DevExpress.XtraEditors.PanelControl();
-            this.simpleButton6 = new DevExpress.XtraEditors.SimpleButton();
-            this.btnNovoProduto = new DevExpress.XtraEditors.SimpleButton();
+            this.btn1FinalizarVenda = new DevExpress.XtraEditors.SimpleButton();
+            this.btn1CancelarVenda = new DevExpress.XtraEditors.SimpleButton();
             this.AlertaSalvar = new DevExpress.XtraBars.Alerter.AlertControl(this.components);
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -238,6 +239,8 @@
             // 
             // txtCodigoDeBarras
             // 
+            this.txtCodigoDeBarras.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtCodigoDeBarras.Location = new System.Drawing.Point(255, 39);
             this.txtCodigoDeBarras.Name = "txtCodigoDeBarras";
             this.txtCodigoDeBarras.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -269,6 +272,8 @@
             // 
             // txtQuantidadeProduto
             // 
+            this.txtQuantidadeProduto.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtQuantidadeProduto.Location = new System.Drawing.Point(5, 39);
             this.txtQuantidadeProduto.Name = "txtQuantidadeProduto";
             this.txtQuantidadeProduto.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -322,141 +327,157 @@
             // 
             this.panelControl7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panelControl7.Controls.Add(this.simpleButton5);
-            this.panelControl7.Controls.Add(this.simpleButton4);
-            this.panelControl7.Controls.Add(this.simpleButton3);
-            this.panelControl7.Controls.Add(this.simpleButton1);
-            this.panelControl7.Controls.Add(this.simpleButton2);
+            this.panelControl7.Controls.Add(this.btn2FinalizarVenda);
+            this.panelControl7.Controls.Add(this.btnCliente);
+            this.panelControl7.Controls.Add(this.btn2CancelarVenda);
+            this.panelControl7.Controls.Add(this.btnCancelarItem);
+            this.panelControl7.Controls.Add(this.btnLocalizarProduto);
             this.panelControl7.Location = new System.Drawing.Point(12, 628);
             this.panelControl7.Name = "panelControl7";
             this.panelControl7.Size = new System.Drawing.Size(618, 135);
             this.panelControl7.TabIndex = 5;
             // 
-            // simpleButton5
+            // btn2FinalizarVenda
             // 
-            this.simpleButton5.Appearance.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton5.Appearance.Options.UseFont = true;
-            this.simpleButton5.Location = new System.Drawing.Point(430, 17);
-            this.simpleButton5.Name = "simpleButton5";
-            this.simpleButton5.Size = new System.Drawing.Size(183, 37);
-            this.simpleButton5.TabIndex = 5;
-            this.simpleButton5.Text = "Finalizar Venda (F4)";
+            this.btn2FinalizarVenda.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn2FinalizarVenda.Appearance.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn2FinalizarVenda.Appearance.Options.UseFont = true;
+            this.btn2FinalizarVenda.Location = new System.Drawing.Point(430, 17);
+            this.btn2FinalizarVenda.Name = "btn2FinalizarVenda";
+            this.btn2FinalizarVenda.Size = new System.Drawing.Size(183, 37);
+            this.btn2FinalizarVenda.TabIndex = 5;
+            this.btn2FinalizarVenda.Text = "Finalizar Venda (F2)";
             // 
-            // simpleButton4
+            // btnCliente
             // 
-            this.simpleButton4.Appearance.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton4.Appearance.Options.UseFont = true;
-            this.simpleButton4.Location = new System.Drawing.Point(219, 78);
-            this.simpleButton4.Name = "simpleButton4";
-            this.simpleButton4.Size = new System.Drawing.Size(183, 37);
-            this.simpleButton4.TabIndex = 4;
-            this.simpleButton4.Text = "Cliente/CPF (F4)";
+            this.btnCliente.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCliente.Appearance.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCliente.Appearance.Options.UseFont = true;
+            this.btnCliente.Location = new System.Drawing.Point(219, 78);
+            this.btnCliente.Name = "btnCliente";
+            this.btnCliente.Size = new System.Drawing.Size(183, 37);
+            this.btnCliente.TabIndex = 4;
+            this.btnCliente.Text = "Cliente/CPF (F4)";
             // 
-            // simpleButton3
+            // btn2CancelarVenda
             // 
-            this.simpleButton3.Appearance.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton3.Appearance.Options.UseFont = true;
-            this.simpleButton3.Location = new System.Drawing.Point(219, 17);
-            this.simpleButton3.Name = "simpleButton3";
-            this.simpleButton3.Size = new System.Drawing.Size(183, 37);
-            this.simpleButton3.TabIndex = 3;
-            this.simpleButton3.Text = "Cancelar Venda (F9)";
+            this.btn2CancelarVenda.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn2CancelarVenda.Appearance.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn2CancelarVenda.Appearance.Options.UseFont = true;
+            this.btn2CancelarVenda.Location = new System.Drawing.Point(219, 17);
+            this.btn2CancelarVenda.Name = "btn2CancelarVenda";
+            this.btn2CancelarVenda.Size = new System.Drawing.Size(183, 37);
+            this.btn2CancelarVenda.TabIndex = 3;
+            this.btn2CancelarVenda.Text = "Cancelar Venda (F9)";
             // 
-            // simpleButton1
+            // btnCancelarItem
             // 
-            this.simpleButton1.Appearance.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton1.Appearance.Options.UseFont = true;
-            this.simpleButton1.Location = new System.Drawing.Point(5, 78);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(183, 37);
-            this.simpleButton1.TabIndex = 2;
-            this.simpleButton1.Text = "Cancelar Item (F6)";
+            this.btnCancelarItem.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCancelarItem.Appearance.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelarItem.Appearance.Options.UseFont = true;
+            this.btnCancelarItem.Location = new System.Drawing.Point(5, 78);
+            this.btnCancelarItem.Name = "btnCancelarItem";
+            this.btnCancelarItem.Size = new System.Drawing.Size(183, 37);
+            this.btnCancelarItem.TabIndex = 2;
+            this.btnCancelarItem.Text = "Cancelar Item (F6)";
+            this.btnCancelarItem.Click += new System.EventHandler(this.btnCancelarItem_Click);
             // 
-            // simpleButton2
+            // btnLocalizarProduto
             // 
-            this.simpleButton2.Appearance.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton2.Appearance.Options.UseFont = true;
-            this.simpleButton2.Location = new System.Drawing.Point(5, 17);
-            this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.Size = new System.Drawing.Size(183, 37);
-            this.simpleButton2.TabIndex = 1;
-            this.simpleButton2.Text = "Localizar Produto (F5)";
+            this.btnLocalizarProduto.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnLocalizarProduto.Appearance.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLocalizarProduto.Appearance.Options.UseFont = true;
+            this.btnLocalizarProduto.Location = new System.Drawing.Point(5, 17);
+            this.btnLocalizarProduto.Name = "btnLocalizarProduto";
+            this.btnLocalizarProduto.Size = new System.Drawing.Size(183, 37);
+            this.btnLocalizarProduto.TabIndex = 1;
+            this.btnLocalizarProduto.Text = "Localizar Produto (F5)";
+            this.btnLocalizarProduto.Click += new System.EventHandler(this.btnLocalizarProduto_Click);
             // 
             // panelControl8
             // 
             this.panelControl8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panelControl8.Controls.Add(this.simpleButton6);
-            this.panelControl8.Controls.Add(this.btnNovoProduto);
+            this.panelControl8.Controls.Add(this.btn1FinalizarVenda);
+            this.panelControl8.Controls.Add(this.btn1CancelarVenda);
             this.panelControl8.Location = new System.Drawing.Point(12, 513);
             this.panelControl8.Name = "panelControl8";
             this.panelControl8.Size = new System.Drawing.Size(618, 68);
             this.panelControl8.TabIndex = 4;
             // 
-            // simpleButton6
+            // btn1FinalizarVenda
             // 
-            this.simpleButton6.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Success;
-            this.simpleButton6.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(218)))), ((int)(((byte)(153)))));
-            this.simpleButton6.Appearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(218)))), ((int)(((byte)(153)))));
-            this.simpleButton6.Appearance.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton6.Appearance.Options.UseBackColor = true;
-            this.simpleButton6.Appearance.Options.UseBorderColor = true;
-            this.simpleButton6.Appearance.Options.UseFont = true;
-            this.simpleButton6.AppearanceDisabled.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.simpleButton6.AppearanceDisabled.BackColor2 = System.Drawing.Color.Yellow;
-            this.simpleButton6.AppearanceDisabled.Options.UseBackColor = true;
-            this.simpleButton6.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.simpleButton6.AppearanceHovered.BackColor2 = System.Drawing.Color.Red;
-            this.simpleButton6.AppearanceHovered.Options.UseBackColor = true;
-            this.simpleButton6.AppearancePressed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.simpleButton6.AppearancePressed.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(218)))), ((int)(((byte)(153)))));
-            this.simpleButton6.AppearancePressed.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(218)))), ((int)(((byte)(153)))));
-            this.simpleButton6.AppearancePressed.Options.UseBackColor = true;
-            this.simpleButton6.AppearancePressed.Options.UseBorderColor = true;
-            this.simpleButton6.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.checkmark_30px;
-            this.simpleButton6.ImageOptions.ImageIndex = 5;
-            this.simpleButton6.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftBottom;
-            this.simpleButton6.ImageOptions.ImageToTextIndent = 10;
-            this.simpleButton6.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-            this.simpleButton6.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.simpleButton6.Location = new System.Drawing.Point(367, 7);
-            this.simpleButton6.Name = "simpleButton6";
-            this.simpleButton6.Size = new System.Drawing.Size(243, 53);
-            this.simpleButton6.TabIndex = 17;
-            this.simpleButton6.Text = "Finalizar Venda (F2)";
-            this.simpleButton6.Click += new System.EventHandler(this.simpleButton6_Click);
+            this.btn1FinalizarVenda.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn1FinalizarVenda.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Success;
+            this.btn1FinalizarVenda.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(218)))), ((int)(((byte)(153)))));
+            this.btn1FinalizarVenda.Appearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(218)))), ((int)(((byte)(153)))));
+            this.btn1FinalizarVenda.Appearance.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn1FinalizarVenda.Appearance.Options.UseBackColor = true;
+            this.btn1FinalizarVenda.Appearance.Options.UseBorderColor = true;
+            this.btn1FinalizarVenda.Appearance.Options.UseFont = true;
+            this.btn1FinalizarVenda.AppearanceDisabled.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btn1FinalizarVenda.AppearanceDisabled.BackColor2 = System.Drawing.Color.Yellow;
+            this.btn1FinalizarVenda.AppearanceDisabled.Options.UseBackColor = true;
+            this.btn1FinalizarVenda.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btn1FinalizarVenda.AppearanceHovered.BackColor2 = System.Drawing.Color.Red;
+            this.btn1FinalizarVenda.AppearanceHovered.Options.UseBackColor = true;
+            this.btn1FinalizarVenda.AppearancePressed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btn1FinalizarVenda.AppearancePressed.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(218)))), ((int)(((byte)(153)))));
+            this.btn1FinalizarVenda.AppearancePressed.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(218)))), ((int)(((byte)(153)))));
+            this.btn1FinalizarVenda.AppearancePressed.Options.UseBackColor = true;
+            this.btn1FinalizarVenda.AppearancePressed.Options.UseBorderColor = true;
+            this.btn1FinalizarVenda.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.checkmark_30px;
+            this.btn1FinalizarVenda.ImageOptions.ImageIndex = 5;
+            this.btn1FinalizarVenda.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftBottom;
+            this.btn1FinalizarVenda.ImageOptions.ImageToTextIndent = 10;
+            this.btn1FinalizarVenda.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
+            this.btn1FinalizarVenda.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btn1FinalizarVenda.Location = new System.Drawing.Point(367, 7);
+            this.btn1FinalizarVenda.Name = "btn1FinalizarVenda";
+            this.btn1FinalizarVenda.Size = new System.Drawing.Size(243, 53);
+            this.btn1FinalizarVenda.TabIndex = 17;
+            this.btn1FinalizarVenda.Text = "Finalizar Venda (F2)";
+            this.btn1FinalizarVenda.Click += new System.EventHandler(this.btn1FinalizarVenda_Click);
             // 
-            // btnNovoProduto
+            // btn1CancelarVenda
             // 
-            this.btnNovoProduto.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Danger;
-            this.btnNovoProduto.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(218)))), ((int)(((byte)(153)))));
-            this.btnNovoProduto.Appearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(218)))), ((int)(((byte)(153)))));
-            this.btnNovoProduto.Appearance.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNovoProduto.Appearance.Options.UseBackColor = true;
-            this.btnNovoProduto.Appearance.Options.UseBorderColor = true;
-            this.btnNovoProduto.Appearance.Options.UseFont = true;
-            this.btnNovoProduto.AppearanceDisabled.BackColor = System.Drawing.Color.Red;
-            this.btnNovoProduto.AppearanceDisabled.BackColor2 = System.Drawing.Color.Yellow;
-            this.btnNovoProduto.AppearanceDisabled.Options.UseBackColor = true;
-            this.btnNovoProduto.AppearanceHovered.BackColor = System.Drawing.Color.Red;
-            this.btnNovoProduto.AppearanceHovered.BackColor2 = System.Drawing.Color.Red;
-            this.btnNovoProduto.AppearanceHovered.Options.UseBackColor = true;
-            this.btnNovoProduto.AppearancePressed.BackColor = System.Drawing.Color.Red;
-            this.btnNovoProduto.AppearancePressed.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(218)))), ((int)(((byte)(153)))));
-            this.btnNovoProduto.AppearancePressed.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(218)))), ((int)(((byte)(153)))));
-            this.btnNovoProduto.AppearancePressed.Options.UseBackColor = true;
-            this.btnNovoProduto.AppearancePressed.Options.UseBorderColor = true;
-            this.btnNovoProduto.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.delete_30px;
-            this.btnNovoProduto.ImageOptions.ImageIndex = 5;
-            this.btnNovoProduto.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftBottom;
-            this.btnNovoProduto.ImageOptions.ImageToTextIndent = 10;
-            this.btnNovoProduto.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-            this.btnNovoProduto.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnNovoProduto.Location = new System.Drawing.Point(9, 7);
-            this.btnNovoProduto.Name = "btnNovoProduto";
-            this.btnNovoProduto.Size = new System.Drawing.Size(243, 53);
-            this.btnNovoProduto.TabIndex = 16;
-            this.btnNovoProduto.Text = "Cancelar Venda (F9)";
+            this.btn1CancelarVenda.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn1CancelarVenda.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Danger;
+            this.btn1CancelarVenda.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(218)))), ((int)(((byte)(153)))));
+            this.btn1CancelarVenda.Appearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(218)))), ((int)(((byte)(153)))));
+            this.btn1CancelarVenda.Appearance.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn1CancelarVenda.Appearance.Options.UseBackColor = true;
+            this.btn1CancelarVenda.Appearance.Options.UseBorderColor = true;
+            this.btn1CancelarVenda.Appearance.Options.UseFont = true;
+            this.btn1CancelarVenda.AppearanceDisabled.BackColor = System.Drawing.Color.Red;
+            this.btn1CancelarVenda.AppearanceDisabled.BackColor2 = System.Drawing.Color.Yellow;
+            this.btn1CancelarVenda.AppearanceDisabled.Options.UseBackColor = true;
+            this.btn1CancelarVenda.AppearanceHovered.BackColor = System.Drawing.Color.Red;
+            this.btn1CancelarVenda.AppearanceHovered.BackColor2 = System.Drawing.Color.Red;
+            this.btn1CancelarVenda.AppearanceHovered.Options.UseBackColor = true;
+            this.btn1CancelarVenda.AppearancePressed.BackColor = System.Drawing.Color.Red;
+            this.btn1CancelarVenda.AppearancePressed.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(218)))), ((int)(((byte)(153)))));
+            this.btn1CancelarVenda.AppearancePressed.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(218)))), ((int)(((byte)(153)))));
+            this.btn1CancelarVenda.AppearancePressed.Options.UseBackColor = true;
+            this.btn1CancelarVenda.AppearancePressed.Options.UseBorderColor = true;
+            this.btn1CancelarVenda.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.delete_30px;
+            this.btn1CancelarVenda.ImageOptions.ImageIndex = 5;
+            this.btn1CancelarVenda.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftBottom;
+            this.btn1CancelarVenda.ImageOptions.ImageToTextIndent = 10;
+            this.btn1CancelarVenda.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
+            this.btn1CancelarVenda.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btn1CancelarVenda.Location = new System.Drawing.Point(9, 7);
+            this.btn1CancelarVenda.Name = "btn1CancelarVenda";
+            this.btn1CancelarVenda.Size = new System.Drawing.Size(243, 53);
+            this.btn1CancelarVenda.TabIndex = 16;
+            this.btn1CancelarVenda.Text = "Cancelar Venda (F9)";
             // 
             // AlertaSalvar
             // 
@@ -598,6 +619,10 @@
             this.labelControl10.TabIndex = 7;
             this.labelControl10.Text = "Qtd. Itens:";
             // 
+            // splashScreenManager1
+            // 
+            splashScreenManager1.ClosingDelay = 500;
+            // 
             // frmPDV
             // 
             this.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -666,18 +691,17 @@
         private DevExpress.XtraEditors.PanelControl panelControl6;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.PanelControl panelControl7;
-        private DevExpress.XtraEditors.SimpleButton simpleButton5;
-        private DevExpress.XtraEditors.SimpleButton simpleButton4;
-        private DevExpress.XtraEditors.SimpleButton simpleButton3;
-        private DevExpress.XtraEditors.SimpleButton simpleButton1;
-        private DevExpress.XtraEditors.SimpleButton simpleButton2;
+        private DevExpress.XtraEditors.SimpleButton btn2FinalizarVenda;
+        private DevExpress.XtraEditors.SimpleButton btnCliente;
+        private DevExpress.XtraEditors.SimpleButton btn2CancelarVenda;
+        private DevExpress.XtraEditors.SimpleButton btnCancelarItem;
+        private DevExpress.XtraEditors.SimpleButton btnLocalizarProduto;
         private DevExpress.XtraEditors.PanelControl panelControl8;
         private DevExpress.XtraEditors.TextEdit txtQuantidadeProduto;
-        private DevExpress.XtraEditors.TextEdit txtCodigoDeBarras;
         private DevExpress.XtraEditors.LabelControl labelControl3;
         private DevExpress.XtraEditors.LabelControl labelControl2;
-        private DevExpress.XtraEditors.SimpleButton simpleButton6;
-        private DevExpress.XtraEditors.SimpleButton btnNovoProduto;
+        private DevExpress.XtraEditors.SimpleButton btn1FinalizarVenda;
+        private DevExpress.XtraEditors.SimpleButton btn1CancelarVenda;
         private DevExpress.XtraBars.Alerter.AlertControl AlertaSalvar;
         private DevExpress.XtraEditors.LabelControl lblValorUnitario;
         private DevExpress.XtraEditors.LabelControl labelControl4;
@@ -699,5 +723,6 @@
         private DevExpress.XtraEditors.LabelControl lblValorTotal;
         private DevExpress.XtraEditors.LabelControl lblDesconto;
         private DevExpress.XtraEditors.LabelControl lblSubtotal;
+        public DevExpress.XtraEditors.TextEdit txtCodigoDeBarras;
     }
 }

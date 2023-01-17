@@ -135,10 +135,10 @@ namespace SistemaDeGerenciamento2_0
                     permissoesCadastro.ReloadData(this, frmLogin.UsuarioLogado);
                     permissoesCadastro.VerificarAcessoTodosProdutos();
                 }
-                else if (_btnSolitador == "Tele de PDV")
+                else if (_btnSolitador == "Acesso PDV")
                 {
-                    //permissoesCadastro.ReloadData(this, frmLogin.UsuarioLogado);
-                    //permissoesCadastro.VerificarAcessoTodosProdutos();
+                    permissoesCadastro.ReloadData(this, frmLogin.UsuarioLogado);
+                    permissoesCadastro.VerificarAcessoPDV("Acesso PDV");
                 }
             }
         }
@@ -218,8 +218,7 @@ namespace SistemaDeGerenciamento2_0
 
         private void PDV_Click(object sender, EventArgs e)
         {
-            frmPDV frmPDV = new frmPDV();
-            frmPDV.ShowDialog();
+            ReloadData("Acesso PDV");
         }
     }
 }

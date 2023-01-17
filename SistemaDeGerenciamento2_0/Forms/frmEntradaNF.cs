@@ -193,16 +193,10 @@ namespace SistemaDeGerenciamento2_0.Forms
                 {
                     int i = 0;
 
-                    string a = "";
-                    string b = "";
-
                     foreach (var item in ListaCodigoProdutoEDescricaoDaNF)
                     {
                         var codigoProduto = db.tb_produto.Where(x => x.pd_codigo == item.codigoProduto && x.pd_nome == item.descricao)
                         .Select(x => x.id_produto).ToList();
-
-                        // var codigoProduto = db.tb_produto.Where(x => x.pd_codigo == item.codigoProduto && x.pd_nome == item.descricao)
-                        //.Select(x => x.id_produto).ToList();
 
                         codigoProduto.ForEach(x => ListaCodigoProdutoEDescricaoCadastrado.Add(x.ToString()));
                         codigoProduto.ForEach(x => ListaDadosNFEntrada[i].FKProduto = x);
