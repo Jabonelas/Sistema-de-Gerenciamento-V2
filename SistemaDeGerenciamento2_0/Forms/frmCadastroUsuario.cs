@@ -233,7 +233,5 @@ namespace SistemaDeGerenciamento2_0.Forms
             X = this.Left - MousePosition.X;
             Y = this.Top - MousePosition.Y;
         }
-
-   
     }
 }

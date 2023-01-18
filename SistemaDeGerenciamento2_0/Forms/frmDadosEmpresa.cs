@@ -587,5 +587,9 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             MensagemAtencao.MensagemCancelar(this);
         }
+
+        private void frmDadosEmpresa_Load(object sender, EventArgs e)
+        {
+        }
     }
 }

@@ -338,6 +338,30 @@ namespace SistemaDeGerenciamento2_0.Class
 
         #endregion Permissoes
 
+        #region PDV
+
+        public static void ErroAoBuscarGrupoDesconto(Exception _e)
+        {
+            MessageBox.Show($"(BUS-PDV01) Erro ao Buscar Grupo com Desconto \n\nErro: {_e}", "Erro Buscar Grupo com Desconto!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        public static void ErroAoBuscarTodosOsProdutos(Exception _e)
+        {
+            MessageBox.Show($"(BUS-PDV02) Erro ao Buscar Todos os Produtos \n\nErro: {_e}", "Erro Buscar Todos os Produtos!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        public static void ErroAoBuscarProdutoPorCodigoDeBarras(Exception _e)
+        {
+            MessageBox.Show($"(BUS-PDV03) Erro ao Buscar Produto por Codigo de Barras \n\nErro: {_e}", "Erro Buscar Produto por Codigo de Barras!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        public static void ErroAoBuscarUltimaNFSaida(Exception _e)
+        {
+            MessageBox.Show($"(BUS-PDV04) Erro ao Buscar Numero da Ultima NF de Saida \n\nErro: {_e}", "Erro Buscar Ultima NF de Saida!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        #endregion PDV
+
         #endregion Buscar
 
         #region Atualizar

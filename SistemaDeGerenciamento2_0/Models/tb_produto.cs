@@ -35,8 +35,6 @@ namespace SistemaDeGerenciamento2_0.Models
         [Required]
         [StringLength(255)]
         public string pd_observacoes { get; set; }
-        public int fk_grupo { get; set; }
-        public int? fk_registro_forncedor { get; set; }
         [Required]
         [StringLength(255)]
         public string pd_codigo_barras { get; set; }
@@ -48,6 +46,8 @@ namespace SistemaDeGerenciamento2_0.Models
         public string pd_tipo_unidade { get; set; }
         [StringLength(255)]
         public string pd_usuario_cadastrador { get; set; }
+        public int fk_grupo { get; set; }
+        public int? fk_registro_forncedor { get; set; }
 
         [ForeignKey(nameof(fk_grupo))]
         [InverseProperty(nameof(tb_grupo.tb_produto))]

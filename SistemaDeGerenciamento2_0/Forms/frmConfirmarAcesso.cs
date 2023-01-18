@@ -153,12 +153,34 @@ namespace SistemaDeGerenciamento2_0.Forms
                 {
                     VerificarRemoverProdutoTelaPDV();
                 }
+                else if (tela == "Cancelar Venda Tela PDV")
+                {
+                    VerificarCancelarVendaTelaPDV();
+                }
             }
             else
             {
                 MensagemAtencao.MensagemUsuarioSenhasNaoEncontrados();
 
                 txtUsuario.Focus();
+            }
+        }
+
+        private void VerificarCancelarVendaTelaPDV()
+        {
+            permissoesUsuario.listaPermissoesUsuario.ForEach(x => IsUsuarioPossuiAcesso = x.pm_cancelar_venda);
+
+            if (IsUsuarioPossuiAcesso == true)
+            {
+                this.Hide();
+
+                frmPDV.permissaoCancelarVenda = true;
+
+                this.Close();
+            }
+            else
+            {
+                MenssagemUsuarioSemPermissao();
             }
         }
 

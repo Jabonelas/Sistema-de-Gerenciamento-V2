@@ -52,6 +52,23 @@ namespace SistemaDeGerenciamento2_0.Class
             }
         }
 
+        public void VerificarCancelarVendaTelaPDV(string _Cadastro)
+        {
+            bool IsUsuarioPossuiAcesso = false;
+
+            listaPermissoesUsuario.ForEach(x => IsUsuarioPossuiAcesso = x.pm_cancelar_venda);
+
+            if (IsUsuarioPossuiAcesso == true)
+            {
+                frmPDV.permissaoCancelarVenda = true;
+            }
+            else
+            {
+                frmConfirmarAcesso frmConfirmarAcesso = new frmConfirmarAcesso(frmTelaPrincipal, _Cadastro);
+                frmConfirmarAcesso.ShowDialog();
+            }
+        }
+
         public void VerificarRemoverItemTelaPDV(string _Cadastro)
         {
             bool IsUsuarioPossuiAcesso = false;

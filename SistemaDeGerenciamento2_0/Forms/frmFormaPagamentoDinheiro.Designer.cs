@@ -34,12 +34,12 @@
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.lblTroco = new DevExpress.XtraEditors.LabelControl();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
+            this.lblNomeUsuario = new DevExpress.XtraEditors.LabelControl();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
+            this.txtValorEntregue = new DevExpress.XtraEditors.TextEdit();
             this.btn1FinalizarVenda = new DevExpress.XtraEditors.SimpleButton();
             this.btn1CancelarVenda = new DevExpress.XtraEditors.SimpleButton();
-            this.txtValorEntregue = new DevExpress.XtraEditors.TextEdit();
             ((System.ComponentModel.ISupportInitialize)(this.txtValorEntregue.Properties)).BeginInit();
             this.SuspendLayout();
             // 
@@ -89,29 +89,30 @@
             this.lblTroco.Appearance.Options.UseFont = true;
             this.lblTroco.Location = new System.Drawing.Point(746, 105);
             this.lblTroco.Name = "lblTroco";
-            this.lblTroco.Size = new System.Drawing.Size(216, 65);
+            this.lblTroco.Size = new System.Drawing.Size(163, 65);
             this.lblTroco.TabIndex = 302;
-            this.lblTroco.Text = "R$ 752,00";
+            this.lblTroco.Text = "R$ 0,00";
             // 
             // labelControl4
             // 
             this.labelControl4.Appearance.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl4.Appearance.Options.UseFont = true;
-            this.labelControl4.Location = new System.Drawing.Point(393, 235);
+            this.labelControl4.Location = new System.Drawing.Point(382, 241);
             this.labelControl4.Name = "labelControl4";
             this.labelControl4.Size = new System.Drawing.Size(104, 20);
             this.labelControl4.TabIndex = 304;
             this.labelControl4.Text = "VENDEDOR(A):";
             // 
-            // labelControl5
+            // lblNomeUsuario
             // 
-            this.labelControl5.Appearance.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl5.Appearance.Options.UseFont = true;
-            this.labelControl5.Location = new System.Drawing.Point(503, 235);
-            this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(130, 20);
-            this.labelControl5.TabIndex = 305;
-            this.labelControl5.Text = "NOME VENDEDOR";
+            this.lblNomeUsuario.Appearance.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNomeUsuario.Appearance.Options.UseFont = true;
+            this.lblNomeUsuario.Location = new System.Drawing.Point(492, 241);
+            this.lblNomeUsuario.Name = "lblNomeUsuario";
+            this.lblNomeUsuario.Size = new System.Drawing.Size(130, 20);
+            this.lblNomeUsuario.TabIndex = 305;
+            this.lblNomeUsuario.Text = "NOME VENDEDOR";
+            this.lblNomeUsuario.Click += new System.EventHandler(this.lblNomeUsuario_Click);
             // 
             // labelControl6
             // 
@@ -132,6 +133,22 @@
             this.labelControl7.Size = new System.Drawing.Size(91, 25);
             this.labelControl7.TabIndex = 307;
             this.labelControl7.Text = "DINHEIRO";
+            // 
+            // txtValorEntregue
+            // 
+            this.txtValorEntregue.Location = new System.Drawing.Point(382, 105);
+            this.txtValorEntregue.Name = "txtValorEntregue";
+            this.txtValorEntregue.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI Semibold", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtValorEntregue.Properties.Appearance.Options.UseFont = true;
+            this.txtValorEntregue.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.NumericMaskManager));
+            this.txtValorEntregue.Properties.MaskSettings.Set("MaskManagerSignature", "allowNull=False");
+            this.txtValorEntregue.Properties.MaskSettings.Set("mask", "c");
+            this.txtValorEntregue.Properties.MaxLength = 20;
+            this.txtValorEntregue.Properties.NullText = "R$ 0,00";
+            this.txtValorEntregue.Properties.UseMaskAsDisplayFormat = true;
+            this.txtValorEntregue.Size = new System.Drawing.Size(269, 80);
+            this.txtValorEntregue.TabIndex = 310;
+            this.txtValorEntregue.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtValorEntregue_KeyUp);
             // 
             // btn1FinalizarVenda
             // 
@@ -169,7 +186,7 @@
             this.btn1FinalizarVenda.ImageOptions.ImageToTextIndent = 10;
             this.btn1FinalizarVenda.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
             this.btn1FinalizarVenda.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btn1FinalizarVenda.Location = new System.Drawing.Point(703, 219);
+            this.btn1FinalizarVenda.Location = new System.Drawing.Point(703, 217);
             this.btn1FinalizarVenda.Name = "btn1FinalizarVenda";
             this.btn1FinalizarVenda.Size = new System.Drawing.Size(280, 44);
             this.btn1FinalizarVenda.TabIndex = 309;
@@ -209,22 +226,6 @@
             this.btn1CancelarVenda.TabIndex = 308;
             this.btn1CancelarVenda.Text = "Cancelar Pagamento (F9)";
             // 
-            // txtValorEntregue
-            // 
-            this.txtValorEntregue.Location = new System.Drawing.Point(382, 105);
-            this.txtValorEntregue.Name = "txtValorEntregue";
-            this.txtValorEntregue.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI Semibold", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtValorEntregue.Properties.Appearance.Options.UseFont = true;
-            this.txtValorEntregue.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.NumericMaskManager));
-            this.txtValorEntregue.Properties.MaskSettings.Set("MaskManagerSignature", "allowNull=False");
-            this.txtValorEntregue.Properties.MaskSettings.Set("mask", "c");
-            this.txtValorEntregue.Properties.MaxLength = 20;
-            this.txtValorEntregue.Properties.NullText = "R$ 0,00";
-            this.txtValorEntregue.Properties.UseMaskAsDisplayFormat = true;
-            this.txtValorEntregue.Size = new System.Drawing.Size(269, 80);
-            this.txtValorEntregue.TabIndex = 310;
-            this.txtValorEntregue.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtValorEntregue_KeyUp);
-            // 
             // frmFormaPagamentoDinheiro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -235,7 +236,7 @@
             this.Controls.Add(this.btn1CancelarVenda);
             this.Controls.Add(this.labelControl7);
             this.Controls.Add(this.labelControl6);
-            this.Controls.Add(this.labelControl5);
+            this.Controls.Add(this.lblNomeUsuario);
             this.Controls.Add(this.labelControl4);
             this.Controls.Add(this.lblTroco);
             this.Controls.Add(this.labelControl2);
@@ -260,7 +261,7 @@
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.LabelControl lblTroco;
         private DevExpress.XtraEditors.LabelControl labelControl4;
-        private DevExpress.XtraEditors.LabelControl labelControl5;
+        private DevExpress.XtraEditors.LabelControl lblNomeUsuario;
         private DevExpress.XtraEditors.LabelControl labelControl6;
         private DevExpress.XtraEditors.LabelControl labelControl7;
         private DevExpress.XtraEditors.SimpleButton btn1FinalizarVenda;

@@ -48,29 +48,28 @@
             // 
             // lblValorTotal
             // 
-            this.lblValorTotal.Appearance.Font = new System.Drawing.Font("Segoe UI Semibold", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblValorTotal.Appearance.Font = new System.Drawing.Font("Segoe UI", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblValorTotal.Appearance.Options.UseFont = true;
-            this.lblValorTotal.Location = new System.Drawing.Point(639, 64);
+            this.lblValorTotal.Location = new System.Drawing.Point(515, 66);
             this.lblValorTotal.Name = "lblValorTotal";
-            this.lblValorTotal.Size = new System.Drawing.Size(287, 86);
+            this.lblValorTotal.Size = new System.Drawing.Size(555, 128);
             this.lblValorTotal.TabIndex = 297;
-            this.lblValorTotal.Text = "R$ 752,00";
+            this.lblValorTotal.Text = "R$ 00752,00";
             // 
             // labelControl13
             // 
-            this.labelControl13.Appearance.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl13.Appearance.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl13.Appearance.Options.UseFont = true;
-            this.labelControl13.Location = new System.Drawing.Point(639, 33);
+            this.labelControl13.Location = new System.Drawing.Point(515, 23);
             this.labelControl13.Name = "labelControl13";
-            this.labelControl13.Size = new System.Drawing.Size(146, 25);
+            this.labelControl13.Size = new System.Drawing.Size(217, 37);
             this.labelControl13.TabIndex = 296;
             this.labelControl13.Text = "TOTAL A PAGAR:";
-            this.labelControl13.Click += new System.EventHandler(this.labelControl13_Click);
             // 
             // btnCliente
             // 
             this.btnCliente.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Success;
-            this.btnCliente.Appearance.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCliente.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCliente.Appearance.Options.UseBackColor = true;
             this.btnCliente.Appearance.Options.UseFont = true;
             this.btnCliente.Location = new System.Drawing.Point(15, 211);
@@ -78,7 +77,7 @@
             this.btnCliente.Size = new System.Drawing.Size(227, 74);
             this.btnCliente.TabIndex = 295;
             this.btnCliente.Text = "DINHEIRO (SHIFT + D)";
-            this.btnCliente.Click += new System.EventHandler(this.btnCliente_Click);
+            this.btnCliente.Click += new System.EventHandler(this.btnCliente_Click_1);
             // 
             // labelControl1
             // 
@@ -94,18 +93,17 @@
             // 
             this.labelControl2.Appearance.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl2.Appearance.Options.UseFont = true;
-            this.labelControl2.Location = new System.Drawing.Point(15, 50);
+            this.labelControl2.Location = new System.Drawing.Point(15, 58);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(204, 25);
             this.labelControl2.TabIndex = 299;
             this.labelControl2.Text = "DESCONTO NOS ITENS:";
-            this.labelControl2.Click += new System.EventHandler(this.labelControl2_Click);
             // 
             // labelControl3
             // 
             this.labelControl3.Appearance.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl3.Appearance.Options.UseFont = true;
-            this.labelControl3.Location = new System.Drawing.Point(12, 87);
+            this.labelControl3.Location = new System.Drawing.Point(15, 103);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Size = new System.Drawing.Size(166, 25);
             this.labelControl3.TabIndex = 300;
@@ -115,7 +113,7 @@
             // 
             this.labelControl4.Appearance.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl4.Appearance.Options.UseFont = true;
-            this.labelControl4.Location = new System.Drawing.Point(15, 124);
+            this.labelControl4.Location = new System.Drawing.Point(15, 148);
             this.labelControl4.Name = "labelControl4";
             this.labelControl4.Size = new System.Drawing.Size(112, 25);
             this.labelControl4.TabIndex = 301;
@@ -135,7 +133,7 @@
             // 
             this.lblAcrescimo.Appearance.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAcrescimo.Appearance.Options.UseFont = true;
-            this.lblAcrescimo.Location = new System.Drawing.Point(290, 124);
+            this.lblAcrescimo.Location = new System.Drawing.Point(290, 148);
             this.lblAcrescimo.Name = "lblAcrescimo";
             this.lblAcrescimo.Size = new System.Drawing.Size(66, 25);
             this.lblAcrescimo.TabIndex = 303;
@@ -145,7 +143,7 @@
             // 
             this.lblDescontoGeral.Appearance.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDescontoGeral.Appearance.Options.UseFont = true;
-            this.lblDescontoGeral.Location = new System.Drawing.Point(290, 87);
+            this.lblDescontoGeral.Location = new System.Drawing.Point(290, 103);
             this.lblDescontoGeral.Name = "lblDescontoGeral";
             this.lblDescontoGeral.Size = new System.Drawing.Size(66, 25);
             this.lblDescontoGeral.TabIndex = 304;
@@ -155,7 +153,7 @@
             // 
             this.lblDescontoItens.Appearance.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDescontoItens.Appearance.Options.UseFont = true;
-            this.lblDescontoItens.Location = new System.Drawing.Point(290, 50);
+            this.lblDescontoItens.Location = new System.Drawing.Point(290, 58);
             this.lblDescontoItens.Name = "lblDescontoItens";
             this.lblDescontoItens.Size = new System.Drawing.Size(66, 25);
             this.lblDescontoItens.TabIndex = 305;
@@ -164,7 +162,7 @@
             // btnDebito
             // 
             this.btnDebito.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Question;
-            this.btnDebito.Appearance.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDebito.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDebito.Appearance.Options.UseBackColor = true;
             this.btnDebito.Appearance.Options.UseFont = true;
             this.btnDebito.Location = new System.Drawing.Point(271, 211);
@@ -172,11 +170,12 @@
             this.btnDebito.Size = new System.Drawing.Size(227, 74);
             this.btnDebito.TabIndex = 306;
             this.btnDebito.Text = "CARTÃO DEBITO (SHIFT +R )";
+            this.btnDebito.Click += new System.EventHandler(this.btnDebito_Click);
             // 
             // btnCredito
             // 
             this.btnCredito.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Danger;
-            this.btnCredito.Appearance.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCredito.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCredito.Appearance.Options.UseBackColor = true;
             this.btnCredito.Appearance.Options.UseFont = true;
             this.btnCredito.Location = new System.Drawing.Point(527, 211);
@@ -184,11 +183,12 @@
             this.btnCredito.Size = new System.Drawing.Size(227, 74);
             this.btnCredito.TabIndex = 307;
             this.btnCredito.Text = "CARTÃO CREDITO (SHIFT + C)";
+            this.btnCredito.Click += new System.EventHandler(this.btnCredito_Click);
             // 
             // btnPix
             // 
             this.btnPix.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Warning;
-            this.btnPix.Appearance.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPix.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPix.Appearance.Options.UseBackColor = true;
             this.btnPix.Appearance.Options.UseFont = true;
             this.btnPix.Location = new System.Drawing.Point(783, 211);
@@ -196,6 +196,7 @@
             this.btnPix.Size = new System.Drawing.Size(227, 74);
             this.btnPix.TabIndex = 308;
             this.btnPix.Text = "PIX (SHIFT + P)";
+            this.btnPix.Click += new System.EventHandler(this.btnPix_Click);
             // 
             // pnlTipoPagamento
             // 
@@ -231,6 +232,8 @@
             this.Text = "frmPagamento";
             this.Load += new System.EventHandler(this.frmPagamento_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmPagamento_KeyDown);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.frmPagamento_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.frmPagamento_MouseMove);
             ((System.ComponentModel.ISupportInitialize)(this.pnlTipoPagamento)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

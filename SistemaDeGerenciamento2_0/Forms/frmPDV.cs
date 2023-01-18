@@ -23,10 +23,15 @@ namespace SistemaDeGerenciamento2_0.Forms
     {
         private int X = 0;
         private int Y = 0;
+        private int qtdLinhasGrid = 0;
+
+        private decimal valorDesconto = 0;
 
         public static string passagemDeCodigoDeBarras = string.Empty;
+        public static string clienteCPF = string.Empty;
 
         public static bool permissaoRemoverItem = false;
+        public static bool permissaoCancelarVenda = false;
 
         private DataTable dt = new DataTable();
 
@@ -35,8 +40,9 @@ namespace SistemaDeGerenciamento2_0.Forms
         private frmLogin frmLogin;
 
         private List<DadosProduto> listaEstoque = new List<DadosProduto>();
-
         private List<DadosProduto> listaSecundaria = new List<DadosProduto>();
+
+        public List<tb_nota_fiscal_saida> listaNFSaida = new List<tb_nota_fiscal_saida>();
 
         private PermissoesUsuario permissoesUsuario = new PermissoesUsuario();
 
@@ -73,27 +79,48 @@ namespace SistemaDeGerenciamento2_0.Forms
             return SelectedRowHandles;
         }
 
-        private void ApagarGrupoComDesconto()
+        private void GrupoComDesconto(string _tipoOperacao, string _codigoBarras)
         {
             try
             {
                 using (SistemaDeGerenciamento2_0Context db = new SistemaDeGerenciamento2_0Context())
                 {
-                    //int idConfiguracaoFinanceira = PegandoDadosDaLinha();
+                    var dadosDeletarCadastro = (from produto in db.tb_produto
+                                                join grupo in db.tb_grupo
+                                                on produto.fk_grupo equals grupo.id_grupo
+                                                join configFinanceira in db.tb_configuracao_financeira
+                                                on grupo.id_grupo equals configFinanceira.fk_grupo
+                                                where produto.pd_codigo_barras == _codigoBarras
+                                                select new
+                                                {
+                                                    Produto = produto,
+                                                    ConfigFinanceira = configFinanceira
+                                                }).ToList();
 
-                    //var dadosConfiguracaoFinanceira = db.tb_configuracao_financeira.Where(x => x.id_configuracao_financeira == idConfiguracaoFinanceira).First();
+                    foreach (var item in dadosDeletarCadastro)
+                    {
+                        valorDesconto = Convert.ToDecimal(item.ConfigFinanceira.cf_desconto_grupo_produto * item.Produto.pd_preco / 100);
 
-                    //db.Entry(dadosConfiguracaoFinanceira).State = Microsoft.EntityFrameworkCore.EntityState.Deleted;
+                        if (_tipoOperacao == "Adcionar Desconto")
+                        {
+                            decimal somaDescontoTotal = Convert.ToDecimal(lblDesconto.Text.Replace("R$", "")) + valorDesconto;
 
-                    //db.tb_configuracao_financeira.Remove(dadosConfiguracaoFinanceira);
-                    //db.SaveChanges();
+                            lblDesconto.Text = somaDescontoTotal.ToString("C2");
+                        }
+                        else if (_tipoOperacao == "Remover Desconto")
+                        {
+                            decimal somaDescontoTotal = Convert.ToDecimal(lblDesconto.Text.Replace("R$", "")) - valorDesconto;
+
+                            lblDesconto.Text = somaDescontoTotal.ToString("C2");
+                        }
+                    }
                 }
             }
             catch (Exception x)
             {
-                LogErros.EscreverArquivoDeLog($"{DateTime.Now} - Erro ao Deletar Configurações Financeiras Desconto Por Grupo - | {x.Message} | {x.StackTrace}");
+                LogErros.EscreverArquivoDeLog($"{DateTime.Now} - Erro ao Buscar Grupos Com Descontos - | {x.Message} | {x.StackTrace}");
 
-                MensagemErros.ErroAoDeletarGrupoComDesconto(x);
+                MensagemErros.ErroAoBuscarGrupoDesconto(x);
             }
         }
 
@@ -120,7 +147,9 @@ namespace SistemaDeGerenciamento2_0.Forms
             }
             catch (Exception x)
             {
-                MessageBox.Show(x.ToString());
+                LogErros.EscreverArquivoDeLog($"{DateTime.Now} - Erro ao Buscar Todos os Produtos - | {x.Message} | {x.StackTrace}");
+
+                MensagemErros.ErroAoBuscarTodosOsProdutos(x);
             }
         }
 
@@ -140,6 +169,8 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             if (txtCodigoDeBarras.Text != string.Empty)
             {
+                GrupoComDesconto("Adcionar Desconto", txtCodigoDeBarras.Text);
+
                 BuscarProdutoPeloCodigoDeBarras();
             }
         }
@@ -162,7 +193,9 @@ namespace SistemaDeGerenciamento2_0.Forms
                     {
                         if (quantidadeProduto >= Convert.ToDecimal(txtQuantidadeProduto.Text))
                         {
-                            listaSecundaria.Add(new DadosProduto(codigoProduto, nomePrdouto, precoProduto));
+                            listaSecundaria.Add(new DadosProduto(codigoBarras, codigoProduto, nomePrdouto, Convert.ToDecimal((precoProduto - valorDesconto).ToString("N2"))));
+
+                            valorDesconto = 0;
 
                             quantidadeProduto -= Convert.ToDecimal(txtQuantidadeProduto.Text);
 
@@ -187,7 +220,9 @@ namespace SistemaDeGerenciamento2_0.Forms
             }
             catch (Exception x)
             {
-                MessageBox.Show(x.ToString());
+                LogErros.EscreverArquivoDeLog($"{DateTime.Now} - Erro ao Buscar Produto por Codigo de Barras - | {x.Message} | {x.StackTrace}");
+
+                MensagemErros.ErroAoBuscarProdutoPorCodigoDeBarras(x);
             }
         }
 
@@ -232,61 +267,57 @@ namespace SistemaDeGerenciamento2_0.Forms
         private void SetandoColunasGrid()
         {
             dt.Columns.Add("SEQ.");
+            dt.Columns.Add("CODIGO DE BARRAS");
             dt.Columns.Add("CODIGO PRODUTO");
             dt.Columns.Add("QTD UN");
             dt.Columns.Add("DESCRICAO");
             dt.Columns.Add("VALOR TOTAL R$");
         }
 
-        private int qtdLinhasGrid = 0;
-
         private void PreencherGrid()
         {
-            try
+            int sequencia = gridView1.RowCount;
+
+            int qtdProduto = Convert.ToInt32(txtQuantidadeProduto.Text);
+
+            foreach (var item in listaSecundaria)
             {
-                int sequencia = gridView1.RowCount;
-
-                int qtdProduto = Convert.ToInt32(txtQuantidadeProduto.Text);
-
-                foreach (var item in listaSecundaria)
-                {
-                    dt.Rows.Add(++sequencia, item.codigoProduto, qtdProduto, item.nomePrdouto, (item.preco * qtdProduto));
-                }
-
-                lblQtdItens.Text = sequencia.ToString();
-
-                gridControl1.DataSource = dt;
-                gridControl1.Refresh();
-
-                SetandoValorTotal();
+                dt.Rows.Add(++sequencia, item.codigoBarras, item.codigoProduto, qtdProduto, item.nomePrdouto, (item.preco * qtdProduto));
             }
-            catch (Exception x)
-            {
-                MessageBox.Show(x.ToString());
-            }
+
+            lblQtdItens.Text = sequencia.ToString();
+
+            gridControl1.DataSource = dt;
+            gridControl1.Refresh();
+
+            SetandoValorTotal();
+        }
+
+        private void RemoverDesconto()
+        {
+            int[] SelectedRowHandles = gridView1.GetSelectedRows();
+
+            string codigoBarras = gridView1.GetRowCellValue(SelectedRowHandles[0], gridView1.Columns[1]).ToString();
+
+            GrupoComDesconto("Remover Desconto", codigoBarras.ToString());
         }
 
         public void RemoverProdutoGrid()
         {
-            try
-            {
-                int[] indiceProdutro = PegandoIndiceDaLinhaDoGrid();
+            RemoverDesconto();
 
-                dt.Rows.RemoveAt(indiceProdutro[0]);
+            int[] indiceProdutro = PegandoIndiceDaLinhaDoGrid();
 
-                int qtdItens = gridView1.RowCount;
+            dt.Rows.RemoveAt(indiceProdutro[0]);
 
-                lblQtdItens.Text = qtdItens.ToString();
+            int qtdItens = gridView1.RowCount;
 
-                gridControl1.DataSource = dt;
-                gridControl1.Refresh();
+            lblQtdItens.Text = qtdItens.ToString();
 
-                SetandoValorTotal();
-            }
-            catch (Exception x)
-            {
-                MessageBox.Show(x.ToString());
-            }
+            gridControl1.DataSource = dt;
+            gridControl1.Refresh();
+
+            SetandoValorTotal();
         }
 
         private void SetandoValorTotal()
@@ -309,6 +340,7 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         public class DadosProduto
         {
+            public string codigoBarras = string.Empty;
             public string codigoProduto = string.Empty;
             public string nomePrdouto = string.Empty;
             public decimal preco = 0;
@@ -319,8 +351,9 @@ namespace SistemaDeGerenciamento2_0.Forms
             public decimal PrecoProduto = 0;
             public decimal QuantidadeProduto = 0;
 
-            public DadosProduto(string _codigoProduto, string _nomePrdouto, decimal _preco)
+            public DadosProduto(string _codigoBarras, string _codigoProduto, string _nomePrdouto, decimal _preco)
             {
+                codigoBarras = _codigoBarras;
                 codigoProduto = _codigoProduto;
                 nomePrdouto = _nomePrdouto;
                 preco = _preco;
@@ -347,7 +380,9 @@ namespace SistemaDeGerenciamento2_0.Forms
             }
             catch (Exception x)
             {
-                MessageBox.Show(x.ToString());
+                LogErros.EscreverArquivoDeLog($"{DateTime.Now} - Erro ao Buscar Ultimo Numero da NF de Saida - | {x.Message} | {x.StackTrace}");
+
+                MensagemErros.ErroAoBuscarUltimaNFSaida(x);
             }
         }
 
@@ -355,12 +390,6 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             FormBorderStyle = FormBorderStyle.None;
             WindowState = FormWindowState.Maximized;
-        }
-
-        private void ChamandoAlertaSucessoNoCantoInferiorDireito()
-        {
-            DadosMensagemAlerta msg = new DadosMensagemAlerta("\n   Sucesso!", Resources.salvar_verde50);
-            AlertaSalvar.Show(this, $"{msg.titulo}", msg.texto, string.Empty, msg.image, msg);
         }
 
         private void txtQuantidadeProduto_KeyPress(object sender, KeyPressEventArgs e)
@@ -391,7 +420,9 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             if (e.KeyCode == Keys.Escape)
             {
-                this.Close();
+                CancelarVenda();
+
+                MensagemAtencao.MensagemCancelar(this);
             }
             else if (e.KeyCode == Keys.F1)
             {
@@ -409,59 +440,54 @@ namespace SistemaDeGerenciamento2_0.Forms
             {
                 FinalizarVenda();
             }
+            else if (e.KeyCode == Keys.F9)
+            {
+                CancelarVenda();
+            }
         }
 
         private void FinalizarVenda()
         {
             PreencherListaNFSaida();
 
-            frmPagamento frmPagamento = new frmPagamento(lblValorTotal.Text);
+            frmPagamento frmPagamento = new frmPagamento(lblValorTotal.Text, lblDesconto.Text);
             frmPagamento.ShowDialog();
         }
 
         private void btn1FinalizarVenda_Click(object sender, EventArgs e)
         {
-            FinalizarVenda();
+            if (gridView1.RowCount > 0)
+            {
+                FinalizarVenda();
+            }
         }
-
-        public List<tb_nota_fiscal_saida> listaNFSaida = new List<tb_nota_fiscal_saida>();
 
         private void PreencherListaNFSaida()
         {
-            try
+            qtdLinhasGrid = gridView1.RowCount;
+
+            for (int i = 0; i < qtdLinhasGrid; i++)
             {
-                using (SistemaDeGerenciamento2_0Context db = new SistemaDeGerenciamento2_0Context())
+                DataRow row = gridView1.GetDataRow(i);
+                object sequenciaProduto = row["SEQ."];
+                object codProduto = row["CODIGO PRODUTO"];
+                object qtdProduto = row["QTD UN"];
+                object nomeProduto = row["DESCRICAO"];
+                object valorProduto = row["VALOR TOTAL R$"];
+
+                listaNFSaida.Add(new tb_nota_fiscal_saida
                 {
-                    qtdLinhasGrid = gridView1.RowCount;
-
-                    for (int i = 0; i < qtdLinhasGrid; i++)
-                    {
-                        DataRow row = gridView1.GetDataRow(i);
-                        object sequenciaProduto = row["SEQ."];
-                        object codProduto = row["CODIGO PRODUTO"];
-                        object qtdProduto = row["QTD UN"];
-                        object nomeProduto = row["DESCRICAO"];
-                        object valorProduto = row["VALOR TOTAL R$"];
-
-                        listaNFSaida.Add(new tb_nota_fiscal_saida
-                        {
-                            nfs_numero_nf_saida = 1,
-                            nfs_data_emissao = DateTime.Today,
-                            nfs_quantidade = 0,
-                            nfs_valor_total_parcial = 0,
-                            nfs_valor_pago = 0,
-                            nfs_valor_juros = 0,
-                            nfs_valor_desconto = 0,
-                            nfs_vendedor = "",
-                            fk_estoque = 0,
-                            fk_registro_cliente = 0
-                        });
-                    }
-                }
-            }
-            catch (Exception x)
-            {
-                MessageBox.Show(x.ToString());
+                    nfs_numero_nf_saida = 1,
+                    nfs_data_emissao = DateTime.Today,
+                    nfs_quantidade = 0,
+                    nfs_valor_total_parcial = 0,
+                    nfs_valor_pago = 0,
+                    nfs_valor_juros = 0,
+                    nfs_valor_desconto = 0,
+                    nfs_vendedor = "",
+                    fk_estoque = 0,
+                    fk_registro_cliente = 0
+                });
             }
         }
 
@@ -475,7 +501,10 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private void btnCancelarItem_Click(object sender, EventArgs e)
         {
-            RemoverItem();
+            if (gridView1.RowCount > 0)
+            {
+                RemoverItem();
+            }
         }
 
         private void RemoverItem()
@@ -486,12 +515,68 @@ namespace SistemaDeGerenciamento2_0.Forms
             if (permissaoRemoverItem == true)
             {
                 DialogResult OpcaoDoUsuario = new DialogResult();
-                OpcaoDoUsuario = MessageBox.Show("Realmente Deletar Remover o Produto?", "Atenção!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                OpcaoDoUsuario = MessageBox.Show("Realmente Deseja Remover o Produto?", "Atenção!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                 if (OpcaoDoUsuario == DialogResult.Yes)
                 {
                     RemoverProdutoGrid();
                 }
             }
+        }
+
+        private void btn1CancelarVenda_Click(object sender, EventArgs e)
+        {
+            if (gridView1.RowCount > 0)
+            {
+                CancelarVenda();
+            }
+        }
+
+        private void CancelarVenda()
+        {
+            permissoesUsuario.ReloadData(frmTelaPrincipal, frmLogin.UsuarioLogado);
+            permissoesUsuario.VerificarCancelarVendaTelaPDV("Cancelar Venda Tela PDV");
+
+            if (permissaoCancelarVenda == true)
+            {
+                DialogResult OpcaoDoUsuario = new DialogResult();
+                OpcaoDoUsuario = MessageBox.Show("Realmente Cancela a Venda?", "Atenção!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (OpcaoDoUsuario == DialogResult.Yes)
+                {
+                    BuscarTodosOsProdutos();
+
+                    dt.Rows.Clear();
+
+                    lblSubtotal.Text = "R$ 0,00";
+                    lblValorTotal.Text = "R$ 0,00";
+                    lblQtdItens.Text = "0";
+                    lblDesconto.Text = "0";
+                    lblValorUnitario.Text = "R$ 0,00";
+                    lblDescricaoProduto.Text = "Produto";
+                    txtCodigoDeBarras.Text = string.Empty;
+                }
+            }
+        }
+
+        private void btn2CancelarVenda_Click(object sender, EventArgs e)
+        {
+            if (gridView1.RowCount > 0)
+            {
+                CancelarVenda();
+            }
+        }
+
+        private void btn2FinalizarVenda_Click(object sender, EventArgs e)
+        {
+            if (gridView1.RowCount > 0)
+            {
+                FinalizarVenda();
+            }
+        }
+
+        private void btnCliente_Click(object sender, EventArgs e)
+        {
+            frmClienteCPF frmClienteCPF = new frmClienteCPF();
+            frmClienteCPF.ShowDialog();
         }
     }
 }

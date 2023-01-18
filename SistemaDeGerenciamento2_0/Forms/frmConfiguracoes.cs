@@ -111,7 +111,7 @@ namespace SistemaDeGerenciamento2_0.Forms
             frmDadosEmpresa frmDadosEmpresa = new frmDadosEmpresa(frmTelaPrincipal);
             frmDadosEmpresa.TopLevel = false;
             frmDadosEmpresa.btnCancelar.Visible = false;
-            frmDadosEmpresa.btnSalvar.Location = new Point(784, 539);
+            frmDadosEmpresa.btnSalvar.Location = new Point(783, 553);
             pnlConfiguracoes.Controls.Add(frmDadosEmpresa);
             pnlConfiguracoes.Tag = frmDadosEmpresa;
             frmDadosEmpresa.Show();

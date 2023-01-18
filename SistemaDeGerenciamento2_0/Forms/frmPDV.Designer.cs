@@ -96,6 +96,10 @@
             this.panelControl9.SuspendLayout();
             this.SuspendLayout();
             // 
+            // splashScreenManager1
+            // 
+            splashScreenManager1.ClosingDelay = 500;
+            // 
             // lblStatusCaixa
             // 
             this.lblStatusCaixa.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -348,6 +352,7 @@
             this.btn2FinalizarVenda.Size = new System.Drawing.Size(183, 37);
             this.btn2FinalizarVenda.TabIndex = 5;
             this.btn2FinalizarVenda.Text = "Finalizar Venda (F2)";
+            this.btn2FinalizarVenda.Click += new System.EventHandler(this.btn2FinalizarVenda_Click);
             // 
             // btnCliente
             // 
@@ -360,6 +365,7 @@
             this.btnCliente.Size = new System.Drawing.Size(183, 37);
             this.btnCliente.TabIndex = 4;
             this.btnCliente.Text = "Cliente/CPF (F4)";
+            this.btnCliente.Click += new System.EventHandler(this.btnCliente_Click);
             // 
             // btn2CancelarVenda
             // 
@@ -372,6 +378,7 @@
             this.btn2CancelarVenda.Size = new System.Drawing.Size(183, 37);
             this.btn2CancelarVenda.TabIndex = 3;
             this.btn2CancelarVenda.Text = "Cancelar Venda (F9)";
+            this.btn2CancelarVenda.Click += new System.EventHandler(this.btn2CancelarVenda_Click);
             // 
             // btnCancelarItem
             // 
@@ -478,6 +485,7 @@
             this.btn1CancelarVenda.Size = new System.Drawing.Size(243, 53);
             this.btn1CancelarVenda.TabIndex = 16;
             this.btn1CancelarVenda.Text = "Cancelar Venda (F9)";
+            this.btn1CancelarVenda.Click += new System.EventHandler(this.btn1CancelarVenda_Click);
             // 
             // AlertaSalvar
             // 
@@ -618,10 +626,6 @@
             this.labelControl10.Size = new System.Drawing.Size(89, 25);
             this.labelControl10.TabIndex = 7;
             this.labelControl10.Text = "Qtd. Itens:";
-            // 
-            // splashScreenManager1
-            // 
-            splashScreenManager1.ClosingDelay = 500;
             // 
             // frmPDV
             // 

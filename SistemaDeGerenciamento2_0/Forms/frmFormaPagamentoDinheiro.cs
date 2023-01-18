@@ -16,7 +16,10 @@ namespace SistemaDeGerenciamento2_0.Forms
         public frmFormaPagamentoDinheiro(string _valorTotal)
         {
             InitializeComponent();
+
             lblValorTotal.Text = _valorTotal;
+
+            lblNomeUsuario.Text = frmLogin.UsuarioLogado;
         }
 
         private void frmFormaPagamentoDinheiro_Load(object sender, EventArgs e)
@@ -29,6 +32,11 @@ namespace SistemaDeGerenciamento2_0.Forms
             {
                 lblTroco.Text = (Convert.ToDecimal(txtValorEntregue.Text.Replace("R$", "")) - Convert.ToDecimal(lblValorTotal.Text.Replace("R$", ""))).ToString("C2");
             }
+        }
+
+        private void lblNomeUsuario_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
