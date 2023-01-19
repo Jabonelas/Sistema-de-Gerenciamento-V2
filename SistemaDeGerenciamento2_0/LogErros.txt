@@ -1,17 +1,5 @@
-07/01/2023 17:15:29 - Erro ao Buscar Permissões Usuários | The LINQ expression 'DbSet<tb_permissoes>
-    .Join(
-        outer: DbSet<tb_registro>, 
-        inner: t => (Nullable<int>)t.id_permissoes, 
-        outerKeySelector: t0 => t0.fk_permissoes, 
-        innerKeySelector: (t, t0) => new TransparentIdentifier<tb_permissoes, tb_registro>(
-            Outer = t, 
-            Inner = t0
-        ))
-    .Where(ti => (Nullable<int>)ti.Outer.id_permissoes == ti.Inner.fk_permissoes && ti.Inner.ToString() == __UsuarioLogado_0)' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information. |    em Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.<VisitMethodCall>g__CheckTranslated|8_0(ShapedQueryExpression translated, <>c__DisplayClass8_0& )
-   em Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
-   em Microsoft.EntityFrameworkCore.Query.RelationalQueryableMethodTranslatingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
-   em System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
-   em System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+18/01/2023 23:17:08 - Erro ao Buscar Ultimo Numero da NF de Saida - | The LINQ expression 'DbSet<tb_nota_fiscal_saida>
+    .LastOrDefault()' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information. |    em Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.<VisitMethodCall>g__CheckTranslated|8_0(ShapedQueryExpression translated, <>c__DisplayClass8_0& )
    em Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
    em Microsoft.EntityFrameworkCore.Query.RelationalQueryableMethodTranslatingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
    em System.Linq.Expressions.MethodCallExpression.Accept(ExpressionVisitor visitor)
@@ -24,6 +12,5 @@
    em Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
    em Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
    em Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
-   em Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1.GetEnumerator()
-   em DevExpress.Utils.Extensions.EnumerableExtensions.ForEach[T](IEnumerable`1 this, Action`1 action)
-   em SistemaDeGerenciamento2_0.frmTelaPrincipal.BuscarPermissoesUsuario() na C:\Users\israe\source\repos\SistemaDeGerenciamento2_0\SistemaDeGerenciamento2_0\Forms\frmTelaPrincipal.cs:linha 106
+   em System.Linq.Queryable.LastOrDefault[TSource](IQueryable`1 source)
+   em SistemaDeGerenciamento2_0.Forms.frmPDV.BuscarNumeroPedido() na C:\Users\israe\source\repos\SistemaDeGerenciamento2_0\SistemaDeGerenciamento2_0\Forms\frmPDV.cs:linha 388

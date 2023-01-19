@@ -88,7 +88,6 @@ namespace SistemaDeGerenciamento2_0.Forms
                         ////PDV
                         pm_acesso_pdv = Convert.ToBoolean(chkAcessoAoPDV.Checked),
                         pm_vendas_do_dias = Convert.ToBoolean(chkVendasDoDia.Checked),
-                        pm_receber_conta = Convert.ToBoolean(chkReceberConta.Checked),
                         pm_todas_vendas = Convert.ToBoolean(chkTodasVendas.Checked),
                         pm_remover_venda = Convert.ToBoolean(chkRemoverVenda.Checked),
                         pm_cancelar_venda = Convert.ToBoolean(chkCancelarVenda.Checked),
@@ -184,7 +183,6 @@ namespace SistemaDeGerenciamento2_0.Forms
                                 //PDV
                                 chkAcessoAoPDV.Checked = Convert.ToBoolean(item.pm_acesso_pdv);
                                 chkVendasDoDia.Checked = Convert.ToBoolean(item.pm_vendas_do_dias);
-                                chkReceberConta.Checked = Convert.ToBoolean(item.pm_receber_conta);
                                 chkTodasVendas.Checked = Convert.ToBoolean(item.pm_todas_vendas);
                                 chkRemoverVenda.Checked = Convert.ToBoolean(item.pm_remover_venda);
                                 chkCancelarVenda.Checked = Convert.ToBoolean(item.pm_cancelar_venda);
@@ -246,7 +244,6 @@ namespace SistemaDeGerenciamento2_0.Forms
                     ////PDV
                     checkBoxPreenchidas.pm_acesso_pdv = Convert.ToBoolean(chkAcessoAoPDV.Checked);
                     checkBoxPreenchidas.pm_vendas_do_dias = Convert.ToBoolean(chkVendasDoDia.Checked);
-                    checkBoxPreenchidas.pm_receber_conta = Convert.ToBoolean(chkReceberConta.Checked);
                     checkBoxPreenchidas.pm_todas_vendas = Convert.ToBoolean(chkTodasVendas.Checked);
                     checkBoxPreenchidas.pm_remover_venda = Convert.ToBoolean(chkRemoverVenda.Checked);
                     checkBoxPreenchidas.pm_cancelar_venda = Convert.ToBoolean(chkCancelarVenda.Checked);

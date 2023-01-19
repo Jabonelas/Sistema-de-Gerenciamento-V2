@@ -25,6 +25,8 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private string valorTotal;
 
+        private frmTelaPrincipal frmTelaPrincipal;
+
         public frmPagamento()
         {
             InitializeComponent();
@@ -32,7 +34,9 @@ namespace SistemaDeGerenciamento2_0.Forms
             ValoresConfiguracoesFinanceiras();
         }
 
-        public frmPagamento(string _valorTotal, string _valorDesconto)
+        private string numeroNF;
+
+        public frmPagamento(string _valorTotal, string _valorDesconto, string _numeroNF, frmTelaPrincipal _frmTelaPrincipal)
         {
             InitializeComponent();
 
@@ -43,6 +47,10 @@ namespace SistemaDeGerenciamento2_0.Forms
             lblDescontoItens.Text = _valorDesconto;
 
             valorTotal = _valorTotal;
+
+            numeroNF = _numeroNF;
+
+            frmTelaPrincipal = _frmTelaPrincipal;
 
             lblValorTotal.Font = new Font(lblValorTotal.Font.FontFamily, 55, FontStyle.Bold);
 
@@ -121,8 +129,12 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             DescontoAvista();
 
+            decimal valorPagoNoProduto = Convert.ToDecimal(lblDescontoGeral.Text.Replace("R$", ""));
+            decimal valorJuros = Convert.ToDecimal(lblAcrescimo.Text.Replace("R$", ""));
+
             pnlTipoPagamento.Controls.Clear();
-            frmFormaPagamentoDinheiro frmFormaPagamentoDinheiro = new frmFormaPagamentoDinheiro(lblValorTotal.Text);
+            frmFormaPagamentoDinheiro frmFormaPagamentoDinheiro = new frmFormaPagamentoDinheiro(lblValorTotal.Text, numeroNF, valorPagoNoProduto, valorJuros, frmTelaPrincipal, this);
+
             frmFormaPagamentoDinheiro.TopLevel = false;
             pnlTipoPagamento.Controls.Add(frmFormaPagamentoDinheiro);
             pnlTipoPagamento.Tag = frmFormaPagamentoDinheiro;
@@ -178,6 +190,11 @@ namespace SistemaDeGerenciamento2_0.Forms
             lblDescontoGeral.Text = "R$ 0,00";
 
             lblValorTotal.Text = (valorParcial + valorTotalJuros).ToString("C2");
+        }
+
+        private void btnFechar_Click(object sender, EventArgs e)
+        {
+            MensagemAtencao.MensagemCancelar(this);
         }
     }
 }

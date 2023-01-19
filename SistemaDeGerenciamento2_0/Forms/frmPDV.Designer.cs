@@ -141,9 +141,9 @@
             this.lblNumeroPedido.Appearance.Options.UseFont = true;
             this.lblNumeroPedido.Location = new System.Drawing.Point(143, 50);
             this.lblNumeroPedido.Name = "lblNumeroPedido";
-            this.lblNumeroPedido.Size = new System.Drawing.Size(219, 37);
+            this.lblNumeroPedido.Size = new System.Drawing.Size(11, 37);
             this.lblNumeroPedido.TabIndex = 11;
-            this.lblNumeroPedido.Text = "NUMERO PEDIDO";
+            this.lblNumeroPedido.Text = "1";
             // 
             // lblNomeUsuario
             // 
@@ -710,7 +710,6 @@
         private DevExpress.XtraEditors.LabelControl lblValorUnitario;
         private DevExpress.XtraEditors.LabelControl labelControl4;
         private DevExpress.XtraEditors.LabelControl lblDescricaoProduto;
-        private DevExpress.XtraEditors.LabelControl lblNumeroPedido;
         private DevExpress.XtraEditors.LabelControl lblNomeUsuario;
         private DevExpress.XtraEditors.LabelControl labelControl8;
         private DevExpress.XtraEditors.LabelControl labelControl7;
@@ -728,5 +727,6 @@
         private DevExpress.XtraEditors.LabelControl lblDesconto;
         private DevExpress.XtraEditors.LabelControl lblSubtotal;
         public DevExpress.XtraEditors.TextEdit txtCodigoDeBarras;
+        public DevExpress.XtraEditors.LabelControl lblNumeroPedido;
     }
 }

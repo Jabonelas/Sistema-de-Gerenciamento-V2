@@ -22,9 +22,13 @@ namespace SistemaDeGerenciamento2_0.Models
         [Column(TypeName = "decimal(10, 2)")]
         public decimal? nfs_valor_juros { get; set; }
         [Column(TypeName = "decimal(10, 2)")]
+        public decimal? nfs_valor_final_pago { get; set; }
+        [Column(TypeName = "decimal(10, 2)")]
         public decimal? nfs_valor_desconto { get; set; }
         [StringLength(255)]
         public string nfs_vendedor { get; set; }
+        [StringLength(255)]
+        public string nfs_tipo_pagamento { get; set; }
         public int? fk_estoque { get; set; }
         public int? fk_registro_cliente { get; set; }
 

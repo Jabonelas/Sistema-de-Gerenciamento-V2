@@ -112,7 +112,6 @@
             this.lblNomeUsuario.Size = new System.Drawing.Size(130, 20);
             this.lblNomeUsuario.TabIndex = 305;
             this.lblNomeUsuario.Text = "NOME VENDEDOR";
-            this.lblNomeUsuario.Click += new System.EventHandler(this.lblNomeUsuario_Click);
             // 
             // labelControl6
             // 
@@ -191,6 +190,7 @@
             this.btn1FinalizarVenda.Size = new System.Drawing.Size(280, 44);
             this.btn1FinalizarVenda.TabIndex = 309;
             this.btn1FinalizarVenda.Text = "Finalizar Pagamento (F2)";
+            this.btn1FinalizarVenda.Click += new System.EventHandler(this.btn1FinalizarVenda_Click);
             // 
             // btn1CancelarVenda
             // 
@@ -225,6 +225,7 @@
             this.btn1CancelarVenda.Size = new System.Drawing.Size(280, 44);
             this.btn1CancelarVenda.TabIndex = 308;
             this.btn1CancelarVenda.Text = "Cancelar Pagamento (F9)";
+            this.btn1CancelarVenda.Click += new System.EventHandler(this.btn1CancelarVenda_Click);
             // 
             // frmFormaPagamentoDinheiro
             // 
@@ -246,7 +247,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmFormaPagamentoDinheiro";
             this.Text = "frmFormaPagamentoDinheiro";
-            this.Load += new System.EventHandler(this.frmFormaPagamentoDinheiro_Load);
             ((System.ComponentModel.ISupportInitialize)(this.txtValorEntregue.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

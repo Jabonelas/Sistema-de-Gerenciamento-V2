@@ -23,7 +23,7 @@ namespace SistemaDeGerenciamento2_0.Forms
             InitializeComponent();
 
             lblValorTotal.Text = _valorTotal;
-            lblNomeUsuario.Text = frmLogin.UsuarioLogado;
+            lblNomeUsuario.Text = frmLogin.UsuarioLogado.ToUpper();
             cmbQdtParcelas.SelectedIndex = 0;
         }
 

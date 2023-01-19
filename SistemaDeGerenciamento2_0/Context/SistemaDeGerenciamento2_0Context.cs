@@ -176,6 +176,8 @@ namespace SistemaDeGerenciamento2_0.Context
                 entity.HasKey(e => e.id_nota_fiscal_saida)
                     .HasName("PK_TB_NOTA_FISCAL_SAIDA");
 
+                entity.Property(e => e.nfs_tipo_pagamento).IsUnicode(false);
+
                 entity.Property(e => e.nfs_vendedor).IsUnicode(false);
 
                 entity.HasOne(d => d.fk_estoqueNavigation)

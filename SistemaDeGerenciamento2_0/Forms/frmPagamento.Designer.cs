@@ -43,6 +43,7 @@
             this.btnCredito = new DevExpress.XtraEditors.SimpleButton();
             this.btnPix = new DevExpress.XtraEditors.SimpleButton();
             this.pnlTipoPagamento = new DevExpress.XtraEditors.PanelControl();
+            this.btnFechar = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.pnlTipoPagamento)).BeginInit();
             this.SuspendLayout();
             // 
@@ -205,11 +206,27 @@
             this.pnlTipoPagamento.Size = new System.Drawing.Size(995, 269);
             this.pnlTipoPagamento.TabIndex = 309;
             // 
+            // btnFechar
+            // 
+            this.btnFechar.Appearance.BorderColor = System.Drawing.Color.Transparent;
+            this.btnFechar.Appearance.Options.UseBorderColor = true;
+            this.btnFechar.AppearanceDisabled.BorderColor = System.Drawing.Color.Transparent;
+            this.btnFechar.AppearanceDisabled.Options.UseBorderColor = true;
+            this.btnFechar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnFechar.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.multiply1_20px;
+            this.btnFechar.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
+            this.btnFechar.Location = new System.Drawing.Point(997, 2);
+            this.btnFechar.Name = "btnFechar";
+            this.btnFechar.Size = new System.Drawing.Size(24, 24);
+            this.btnFechar.TabIndex = 310;
+            this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
+            // 
             // frmPagamento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1023, 591);
+            this.Controls.Add(this.btnFechar);
             this.Controls.Add(this.pnlTipoPagamento);
             this.Controls.Add(this.btnPix);
             this.Controls.Add(this.btnCredito);
@@ -249,12 +266,13 @@
         private DevExpress.XtraEditors.LabelControl labelControl3;
         private DevExpress.XtraEditors.LabelControl labelControl4;
         private DevExpress.XtraEditors.LabelControl lblSubTotal;
-        private DevExpress.XtraEditors.LabelControl lblAcrescimo;
-        private DevExpress.XtraEditors.LabelControl lblDescontoGeral;
         private DevExpress.XtraEditors.LabelControl lblDescontoItens;
         private DevExpress.XtraEditors.SimpleButton btnDebito;
         private DevExpress.XtraEditors.SimpleButton btnCredito;
         private DevExpress.XtraEditors.SimpleButton btnPix;
         private DevExpress.XtraEditors.PanelControl pnlTipoPagamento;
+        public DevExpress.XtraEditors.LabelControl lblAcrescimo;
+        public DevExpress.XtraEditors.LabelControl lblDescontoGeral;
+        private DevExpress.XtraEditors.SimpleButton btnFechar;
     }
 }

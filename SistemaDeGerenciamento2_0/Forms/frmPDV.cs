@@ -40,7 +40,7 @@ namespace SistemaDeGerenciamento2_0.Forms
         private frmLogin frmLogin;
 
         private List<DadosProduto> listaEstoque = new List<DadosProduto>();
-        private List<DadosProduto> listaSecundaria = new List<DadosProduto>();
+        public static List<DadosProduto> listaSecundaria = new List<DadosProduto>();
 
         public List<tb_nota_fiscal_saida> listaNFSaida = new List<tb_nota_fiscal_saida>();
 
@@ -57,9 +57,9 @@ namespace SistemaDeGerenciamento2_0.Forms
             ReloadData();
 
             lblStatusCaixa.Font = new Font("Segoe UI", 90, FontStyle.Bold);
-            lblNomeUsuario.Text = frmLogin.UsuarioLogado;
+            lblNomeUsuario.Text = frmLogin.UsuarioLogado.ToUpper();
 
-            //BuscarNumeroPedido();
+            BuscarNumeroPedido();
         }
 
         private void ReloadData()
@@ -141,7 +141,8 @@ namespace SistemaDeGerenciamento2_0.Forms
 
                     foreach (var item in dados)
                     {
-                        listaEstoque.Add(new DadosProduto(item.Produto.pd_codigo, item.Produto.pd_codigo_barras, item.Produto.pd_nome, item.Produto.pd_preco, item.Estoque.ep_quantidade));
+                        listaEstoque.Add(new DadosProduto(item.Produto.id_produto, item.Produto.pd_codigo,
+                            item.Produto.pd_codigo_barras, item.Produto.pd_nome, item.Produto.pd_preco, item.Estoque.ep_quantidade));
                     }
                 }
             }
@@ -186,14 +187,17 @@ namespace SistemaDeGerenciamento2_0.Forms
                     string codigoProduto = item.CodigoProduto;
                     string nomePrdouto = item.NomeProduto;
                     string codigoBarras = item.CodigoDeBarrasProduto;
-                    decimal quantidadeProduto = item.QuantidadeProduto;
+                    decimal quantidadeProduto = Convert.ToDecimal(txtQuantidadeProduto.Text);
                     decimal precoProduto = item.PrecoProduto;
+                    int idProduto = item.IdProduto;
 
                     if (codigoBarras == txtCodigoDeBarras.Text)
                     {
                         if (quantidadeProduto >= Convert.ToDecimal(txtQuantidadeProduto.Text))
                         {
-                            listaSecundaria.Add(new DadosProduto(codigoBarras, codigoProduto, nomePrdouto, Convert.ToDecimal((precoProduto - valorDesconto).ToString("N2"))));
+                            decimal valorProduto = Convert.ToDecimal((precoProduto - valorDesconto).ToString("N2"));
+
+                            listaSecundaria.Add(new DadosProduto(idProduto, codigoBarras, codigoProduto, nomePrdouto, valorProduto, quantidadeProduto, valorDesconto));
 
                             valorDesconto = 0;
 
@@ -282,7 +286,12 @@ namespace SistemaDeGerenciamento2_0.Forms
 
             foreach (var item in listaSecundaria)
             {
-                dt.Rows.Add(++sequencia, item.codigoBarras, item.codigoProduto, qtdProduto, item.nomePrdouto, (item.preco * qtdProduto));
+                string codigoProduto = item.CodigoProduto;
+                string nomePrdouto = item.NomeProduto;
+                string codigoBarras = item.CodigoDeBarrasProduto;
+                decimal precoProduto = item.PrecoProduto;
+
+                dt.Rows.Add(++sequencia, codigoBarras, codigoProduto, qtdProduto, nomePrdouto, (precoProduto * qtdProduto));
             }
 
             lblQtdItens.Text = sequencia.ToString();
@@ -340,27 +349,28 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         public class DadosProduto
         {
-            public string codigoBarras = string.Empty;
-            public string codigoProduto = string.Empty;
-            public string nomePrdouto = string.Empty;
-            public decimal preco = 0;
-
             public string CodigoProduto = string.Empty;
             public string CodigoDeBarrasProduto = string.Empty;
             public string NomeProduto = string.Empty;
             public decimal PrecoProduto = 0;
             public decimal QuantidadeProduto = 0;
+            public int IdProduto = 0;
+            public decimal ValorDesconto = 0;
 
-            public DadosProduto(string _codigoBarras, string _codigoProduto, string _nomePrdouto, decimal _preco)
+            public DadosProduto(int _idProduto, string _codigoProdutos, string _codigoDeBarrasProduto, string _nomeProduto, decimal _precoProduto, decimal _quantidadeProduto, decimal _valorDesconto)
             {
-                codigoBarras = _codigoBarras;
-                codigoProduto = _codigoProduto;
-                nomePrdouto = _nomePrdouto;
-                preco = _preco;
+                IdProduto = _idProduto;
+                CodigoProduto = _codigoProdutos;
+                CodigoDeBarrasProduto = _codigoDeBarrasProduto;
+                NomeProduto = _nomeProduto;
+                PrecoProduto = _precoProduto;
+                QuantidadeProduto = _quantidadeProduto;
+                ValorDesconto = _valorDesconto;
             }
 
-            public DadosProduto(string _codigoProduto, string _codigoDeBarrasProduto, string _nomeProduto, decimal _precoProduto, decimal _quantidadeProduto)
+            public DadosProduto(int _idProduto, string _codigoProduto, string _codigoDeBarrasProduto, string _nomeProduto, decimal _precoProduto, decimal _quantidadeProduto)
             {
+                IdProduto = _idProduto;
                 CodigoProduto = _codigoProduto;
                 CodigoDeBarrasProduto = _codigoDeBarrasProduto;
                 NomeProduto = _nomeProduto;
@@ -376,6 +386,11 @@ namespace SistemaDeGerenciamento2_0.Forms
                 using (SistemaDeGerenciamento2_0Context db = new SistemaDeGerenciamento2_0Context())
                 {
                     var numeroPedido = db.tb_nota_fiscal_saida.LastOrDefault().nfs_numero_nf_saida;
+                    //var numeroPedido = db.tb_nota_fiscal_saida.Select(x => x.nfs_numero_nf_saida).LastOrDefault();
+
+                    //lblNumeroPedido.Text = (++numeroPedido).ToString();
+
+                    string a = "";
                 }
             }
             catch (Exception x)
@@ -450,7 +465,7 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             PreencherListaNFSaida();
 
-            frmPagamento frmPagamento = new frmPagamento(lblValorTotal.Text, lblDesconto.Text);
+            frmPagamento frmPagamento = new frmPagamento(lblValorTotal.Text, lblDesconto.Text, lblNumeroPedido.Text, frmTelaPrincipal);
             frmPagamento.ShowDialog();
         }
 
@@ -553,6 +568,8 @@ namespace SistemaDeGerenciamento2_0.Forms
                     lblValorUnitario.Text = "R$ 0,00";
                     lblDescricaoProduto.Text = "Produto";
                     txtCodigoDeBarras.Text = string.Empty;
+
+                    permissaoCancelarVenda = false;
                 }
             }
         }

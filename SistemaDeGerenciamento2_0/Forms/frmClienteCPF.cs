@@ -1,5 +1,7 @@
-﻿using DevExpress.XtraEditors;
+﻿using DevExpress.Utils.Extensions;
+using DevExpress.XtraEditors;
 using SistemaDeGerenciamento2_0.Class;
+using SistemaDeGerenciamento2_0.Context;
 using SistemaDeGerenciamento2_0.Properties;
 using System;
 using System.Collections.Generic;
@@ -17,10 +19,29 @@ namespace SistemaDeGerenciamento2_0.Forms
     {
         private int X = 0;
         private int Y = 0;
+        public static int idRegistro = 0;
 
         public frmClienteCPF()
         {
             InitializeComponent();
+        }
+
+        private void BuscarClientePeloCPF()
+        {
+            try
+            {
+                using (SistemaDeGerenciamento2_0Context db = new SistemaDeGerenciamento2_0Context())
+                {
+                    var dadoCliente = db.tb_registro.Where(x => x.rg_cpf == txtClienteCPF.Text && x.rg_tipo_cadastro == "Cliente"
+                    || x.rg_cnpj == txtClienteCPF.Text && x.rg_tipo_cadastro == "Cliente").Select(x => x.id_registro);
+
+                    dadoCliente.ForEach(x => idRegistro = x);
+                }
+            }
+            catch (Exception x)
+            {
+                MessageBox.Show(x.ToString());
+            }
         }
 
         private void btnFechar_Click(object sender, EventArgs e)
@@ -38,7 +59,14 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private void txtClienteCPF_KeyPress(object sender, KeyPressEventArgs e)
         {
-            ManipulacaoTextBox.FormatoCPF(e, txtClienteCPF);
+            if (cmbTipoCliente.Text == "Pessoa Fisica")
+            {
+                ManipulacaoTextBox.FormatoCPF(e, txtClienteCPF);
+            }
+            else
+            {
+                ManipulacaoTextBox.FormatoCNPJ(e, txtClienteCPF);
+            }
         }
 
         private void frmClienteCPF_MouseDown(object sender, MouseEventArgs e)
@@ -57,8 +85,10 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
-            frmPDV.clienteCPF = txtClienteCPF.Text;
-            this.Close();
+            BuscarClientePeloCPF();
+
+            //frmPDV.clienteCPF = txtClienteCPF.Text;
+            //this.Close();
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
@@ -68,19 +98,38 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private void txtClienteCPF_Leave(object sender, EventArgs e)
         {
-            if (txtClienteCPF.Text != string.Empty)
+            if (txtClienteCPF.Text != string.Empty && txtClienteCPF.Text != " _")
             {
-                if (Validacoes.IsCampoPreenchido(txtClienteCPF) == true)
+                if (cmbTipoCliente.Text == "Pessoa Fisica")
                 {
-                    if (Validacoes.IsCpfValido(txtClienteCPF.Text) == false)
+                    if (Validacoes.IsCampoPreenchido(txtClienteCPF) == true)
                     {
-                        MensagemAtencao.MensagemCampoDigitadoInvalido("CPF");
+                        if (Validacoes.IsCpfValido(txtClienteCPF.Text) == false)
+                        {
+                            MensagemAtencao.MensagemCampoDigitadoInvalido("CPF");
 
-                        ModificacoesTextBox(txtClienteCPF);
+                            ModificacoesTextBox(txtClienteCPF);
+                        }
+                        else
+                        {
+                            txtClienteCPF.BackColor = Color.FromArgb(0, 255, 255, 255);
+                        }
                     }
-                    else
+                }
+                else
+                {
+                    if (Validacoes.IsCampoPreenchido(txtClienteCPF) == true)
                     {
-                        txtClienteCPF.BackColor = Color.FromArgb(0, 255, 255, 255);
+                        if (Validacoes.IsCnpjValido(txtClienteCPF.Text) == false)
+                        {
+                            MensagemAtencao.MensagemCampoDigitadoInvalido("CNPJ");
+
+                            ModificacoesTextBox(txtClienteCPF);
+                        }
+                        else
+                        {
+                            txtClienteCPF.BackColor = Color.FromArgb(0, 255, 255, 255);
+                        }
                     }
                 }
             }
@@ -93,6 +142,18 @@ namespace SistemaDeGerenciamento2_0.Forms
             _textBox.Text = string.Empty;
 
             _textBox.Focus();
+        }
+
+        private void cmbTipoCliente_TextChanged(object sender, EventArgs e)
+        {
+            if (cmbTipoCliente.Text == "Pessoa Fisica")
+            {
+                lblCliente.Text = "Cliente CPF";
+            }
+            else
+            {
+                lblCliente.Text = "Cliente CNPJ";
+            }
         }
     }
 }

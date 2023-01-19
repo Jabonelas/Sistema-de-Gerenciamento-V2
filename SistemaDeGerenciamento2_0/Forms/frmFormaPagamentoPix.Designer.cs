@@ -35,10 +35,9 @@
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
             this.pcbQRCode = new DevExpress.XtraEditors.PictureEdit();
-            this.txtTeste = new DevExpress.XtraEditors.TextEdit();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.lblChavePix = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.pcbQRCode.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtTeste.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // btn1FinalizarVenda
@@ -156,38 +155,44 @@
             this.labelControl6.Size = new System.Drawing.Size(223, 25);
             this.labelControl6.TabIndex = 314;
             this.labelControl6.Text = "FORMA DE PAGAMENTO:";
+            this.labelControl6.Click += new System.EventHandler(this.labelControl6_Click);
             // 
             // pcbQRCode
             // 
-            this.pcbQRCode.Location = new System.Drawing.Point(423, 52);
+            this.pcbQRCode.Location = new System.Drawing.Point(321, 32);
             this.pcbQRCode.Name = "pcbQRCode";
             this.pcbQRCode.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pcbQRCode.Size = new System.Drawing.Size(213, 141);
+            this.pcbQRCode.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Squeeze;
+            this.pcbQRCode.Size = new System.Drawing.Size(351, 179);
             this.pcbQRCode.TabIndex = 316;
             // 
-            // txtTeste
+            // labelControl1
             // 
-            this.txtTeste.Location = new System.Drawing.Point(230, 107);
-            this.txtTeste.Name = "txtTeste";
-            this.txtTeste.Size = new System.Drawing.Size(100, 28);
-            this.txtTeste.TabIndex = 317;
+            this.labelControl1.Appearance.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl1.Appearance.Options.UseFont = true;
+            this.labelControl1.Location = new System.Drawing.Point(12, 76);
+            this.labelControl1.Name = "labelControl1";
+            this.labelControl1.Size = new System.Drawing.Size(100, 25);
+            this.labelControl1.TabIndex = 317;
+            this.labelControl1.Text = "CHAVE PIX:";
             // 
-            // simpleButton1
+            // lblChavePix
             // 
-            this.simpleButton1.Location = new System.Drawing.Point(171, 62);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(75, 23);
-            this.simpleButton1.TabIndex = 318;
-            this.simpleButton1.Text = "simpleButton1";
-            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
+            this.lblChavePix.Appearance.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblChavePix.Appearance.Options.UseFont = true;
+            this.lblChavePix.Location = new System.Drawing.Point(12, 107);
+            this.lblChavePix.Name = "lblChavePix";
+            this.lblChavePix.Size = new System.Drawing.Size(223, 25);
+            this.lblChavePix.TabIndex = 318;
+            this.lblChavePix.Text = "FORMA DE PAGAMENTO:";
             // 
             // frmFormaPagamentoPix
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(995, 269);
-            this.Controls.Add(this.simpleButton1);
-            this.Controls.Add(this.txtTeste);
+            this.Controls.Add(this.lblChavePix);
+            this.Controls.Add(this.labelControl1);
             this.Controls.Add(this.pcbQRCode);
             this.Controls.Add(this.labelControl7);
             this.Controls.Add(this.labelControl6);
@@ -199,7 +204,6 @@
             this.Name = "frmFormaPagamentoPix";
             this.Text = "frmFormaPagamentoPix";
             ((System.ComponentModel.ISupportInitialize)(this.pcbQRCode.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtTeste.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -214,7 +218,7 @@
         private DevExpress.XtraEditors.LabelControl labelControl7;
         private DevExpress.XtraEditors.LabelControl labelControl6;
         private DevExpress.XtraEditors.PictureEdit pcbQRCode;
-        private DevExpress.XtraEditors.TextEdit txtTeste;
-        private DevExpress.XtraEditors.SimpleButton simpleButton1;
+        private DevExpress.XtraEditors.LabelControl labelControl1;
+        private DevExpress.XtraEditors.LabelControl lblChavePix;
     }
 }
