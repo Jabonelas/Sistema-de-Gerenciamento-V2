@@ -258,14 +258,12 @@
         }
 
         #endregion
-        private DevExpress.XtraEditors.LabelControl lblValorTotal;
         private DevExpress.XtraEditors.LabelControl labelControl13;
         private DevExpress.XtraEditors.SimpleButton btnCliente;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.LabelControl labelControl3;
         private DevExpress.XtraEditors.LabelControl labelControl4;
-        private DevExpress.XtraEditors.LabelControl lblSubTotal;
         private DevExpress.XtraEditors.LabelControl lblDescontoItens;
         private DevExpress.XtraEditors.SimpleButton btnDebito;
         private DevExpress.XtraEditors.SimpleButton btnCredito;
@@ -274,5 +272,7 @@
         public DevExpress.XtraEditors.LabelControl lblAcrescimo;
         public DevExpress.XtraEditors.LabelControl lblDescontoGeral;
         private DevExpress.XtraEditors.SimpleButton btnFechar;
+        public DevExpress.XtraEditors.LabelControl lblValorTotal;
+        public DevExpress.XtraEditors.LabelControl lblSubTotal;
     }
 }

@@ -1,4 +1,7 @@
 ﻿using DevExpress.XtraEditors;
+using SistemaDeGerenciamento2_0.Class;
+using SistemaDeGerenciamento2_0.Context;
+using SistemaDeGerenciamento2_0.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,18 +16,52 @@ namespace SistemaDeGerenciamento2_0.Forms
 {
     public partial class frmFormaPagamentoCredito : DevExpress.XtraEditors.XtraForm
     {
-        public frmFormaPagamentoCredito()
+        private decimal valorPagoNoProduto = 0;
+        private decimal valorJuros = 0;
+        private decimal valorFinalPago = 0;
+        //private decimal valorTotal = 0;
+
+        private string numeroNF;
+
+        private frmTelaPrincipal frmTelaPrincipal;
+
+        private frmPagamento frmPagamento;
+
+        private PermissoesUsuario permissoesUsuario = new PermissoesUsuario();
+
+        private List<tb_configuracao_financeira> listaConfiguracoesFinanceiras = new List<tb_configuracao_financeira>();
+
+        public frmFormaPagamentoCredito(string _valorFinalPago, string _numeroNF, decimal _valorPagoNoProduto,
+            decimal _valorJuros, frmTelaPrincipal _frmTelaPrincipal, frmPagamento _frmPagamento)
         {
             InitializeComponent();
+
+            BuscarConfiguracoesFinanceiras();
+
+            lblNomeUsuario.Text = frmLogin.UsuarioLogado.ToUpper();
+
+            lblValorTotal.Text = _valorFinalPago;
+
+            numeroNF = _numeroNF;
+
+            valorPagoNoProduto = _valorPagoNoProduto;
+
+            valorJuros = _valorJuros;
+
+            frmTelaPrincipal = _frmTelaPrincipal;
+
+            frmPagamento = _frmPagamento;
+
+            valorFinalPago = Convert.ToDecimal(_valorFinalPago.Replace("R$", ""));
+
+            lblNomeUsuario.Text = frmLogin.UsuarioLogado.ToUpper();
+
+            cmbQdtParcelas.SelectedIndex = 0;
         }
 
-        public frmFormaPagamentoCredito(string _valorTotal)
+        public frmFormaPagamentoCredito(string _valorTotal, frmPagamento _frmPagamento)
         {
             InitializeComponent();
-
-            lblValorTotal.Text = _valorTotal;
-            lblNomeUsuario.Text = frmLogin.UsuarioLogado.ToUpper();
-            cmbQdtParcelas.SelectedIndex = 0;
         }
 
         private void frmFormaPagamentoCredito_Load(object sender, EventArgs e)
@@ -33,7 +70,86 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private void cmbQdtParcelas_TextChanged(object sender, EventArgs e)
         {
-            lblValorParcela.Text = (Convert.ToDecimal(lblValorTotal.Text.Replace("R$", "")) / Convert.ToInt32(cmbQdtParcelas.Text.Replace("x", ""))).ToString("C2");
+            int quantidadeParcelas = Convert.ToInt32(cmbQdtParcelas.Text.Replace("x", ""));
+
+            foreach (var item in listaConfiguracoesFinanceiras)
+            {
+                if (item.cf_parcela_juros <= quantidadeParcelas)
+                {
+                    decimal valorComJuro = Convert.ToDecimal(((item.cf_juros_dia * valorFinalPago) / 100) + valorFinalPago);
+                    decimal valorComJuros = Convert.ToDecimal(valorComJuro.ToString("N2"));
+
+                    lblValorTotal.Text = valorComJuros.ToString("C2");
+                    lblValorParcela.Text = (valorComJuros / quantidadeParcelas).ToString("C2");
+
+                    frmPagamento.lblAcrescimo.Text = (valorComJuros - valorFinalPago).ToString("C2");
+                    frmPagamento.lblValorTotal.Text = valorComJuros.ToString("C2");
+                }
+                else
+                {
+                    lblValorTotal.Text = valorFinalPago.ToString("C2");
+                    lblValorParcela.Text = (valorFinalPago / quantidadeParcelas).ToString("C2");
+
+                    frmPagamento.lblAcrescimo.Text = "R$ 0,00";
+                    frmPagamento.lblValorTotal.Text = valorFinalPago.ToString("C2");
+                }
+            }
+        }
+
+        private void SetandoJuros()
+        {
+        }
+
+        private void BuscarConfiguracoesFinanceiras()
+        {
+            try
+            {
+                using (SistemaDeGerenciamento2_0Context db = new SistemaDeGerenciamento2_0Context())
+                {
+                    var configuracoesFinanceiras = db.tb_configuracao_financeira.Where(x => x.id_configuracao_financeira == 1);
+
+                    foreach (var item in configuracoesFinanceiras)
+                    {
+                        listaConfiguracoesFinanceiras.Add(new tb_configuracao_financeira() { cf_juros_dia = item.cf_juros_dia, cf_parcela_juros = item.cf_parcela_juros });
+                    }
+                }
+            }
+            catch (Exception x)
+            {
+                MessageBox.Show(x.ToString());
+            }
+        }
+
+        private void btn1FinalizarVenda_Click(object sender, EventArgs e)
+        {
+            NFSaida.NotaFiscalSaida(numeroNF, valorPagoNoProduto, valorJuros, valorFinalPago, "Credito");
+
+            AlterarEstoque.AlterandoEstoque();
+
+            btn1CancelarVenda.Enabled = false;
+            btn1FinalizarVenda.Enabled = false;
+        }
+
+        private void btn1CancelarVenda_Click(object sender, EventArgs e)
+        {
+            CancelarVenda();
+        }
+
+        private void CancelarVenda()
+        {
+            permissoesUsuario.ReloadData(frmTelaPrincipal, frmLogin.UsuarioLogado);
+            permissoesUsuario.VerificarCancelarVendaTelaPDV("Cancelar Venda Tela PDV");
+
+            if (frmPDV.permissaoCancelarVenda == true)
+            {
+                DialogResult OpcaoDoUsuario = new DialogResult();
+                OpcaoDoUsuario = MessageBox.Show("Realmente Cancela a Venda?", "Atenção!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (OpcaoDoUsuario == DialogResult.Yes)
+                {
+                    frmPDV.permissaoCancelarVenda = false;
+                    frmPagamento.Close();
+                }
+            }
         }
     }
 }

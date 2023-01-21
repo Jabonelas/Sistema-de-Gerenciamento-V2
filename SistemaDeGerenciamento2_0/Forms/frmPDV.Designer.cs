@@ -31,7 +31,7 @@
             this.components = new System.ComponentModel.Container();
             DevExpress.XtraSplashScreen.SplashScreenManager splashScreenManager1 = new DevExpress.XtraSplashScreen.SplashScreenManager(this, null, true, true);
             this.lblStatusCaixa = new DevExpress.XtraEditors.LabelControl();
-            this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
+            this.pnlTitulo = new DevExpress.XtraEditors.PanelControl();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             this.lblNumeroPedido = new DevExpress.XtraEditors.LabelControl();
             this.lblNomeUsuario = new DevExpress.XtraEditors.LabelControl();
@@ -52,6 +52,7 @@
             this.panelControl6 = new DevExpress.XtraEditors.PanelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.panelControl7 = new DevExpress.XtraEditors.PanelControl();
+            this.btnNovaVenda = new DevExpress.XtraEditors.SimpleButton();
             this.btn2FinalizarVenda = new DevExpress.XtraEditors.SimpleButton();
             this.btnCliente = new DevExpress.XtraEditors.SimpleButton();
             this.btn2CancelarVenda = new DevExpress.XtraEditors.SimpleButton();
@@ -72,8 +73,8 @@
             this.labelControl12 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
-            this.panelControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pnlTitulo)).BeginInit();
+            this.pnlTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
             this.panelControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).BeginInit();
@@ -112,15 +113,19 @@
             this.lblStatusCaixa.TabIndex = 0;
             this.lblStatusCaixa.Text = "CAIXA ABERTO";
             // 
-            // panelControl1
+            // pnlTitulo
             // 
-            this.panelControl1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.pnlTitulo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panelControl1.Controls.Add(this.lblStatusCaixa);
-            this.panelControl1.Location = new System.Drawing.Point(12, 6);
-            this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(1302, 100);
-            this.panelControl1.TabIndex = 1;
+            this.pnlTitulo.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.pnlTitulo.Appearance.Options.UseBackColor = true;
+            this.pnlTitulo.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.pnlTitulo.Controls.Add(this.lblStatusCaixa);
+            this.pnlTitulo.Location = new System.Drawing.Point(12, 6);
+            this.pnlTitulo.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.pnlTitulo.Name = "pnlTitulo";
+            this.pnlTitulo.Size = new System.Drawing.Size(1302, 100);
+            this.pnlTitulo.TabIndex = 1;
             // 
             // panelControl2
             // 
@@ -217,9 +222,9 @@
             this.lblValorUnitario.Appearance.Options.UseFont = true;
             this.lblValorUnitario.Location = new System.Drawing.Point(5, 165);
             this.lblValorUnitario.Name = "lblValorUnitario";
-            this.lblValorUnitario.Size = new System.Drawing.Size(164, 65);
+            this.lblValorUnitario.Size = new System.Drawing.Size(163, 65);
             this.lblValorUnitario.TabIndex = 6;
-            this.lblValorUnitario.Text = "R$ 2,45";
+            this.lblValorUnitario.Text = "R$ 0,00";
             // 
             // labelControl4
             // 
@@ -237,9 +242,9 @@
             this.lblDescricaoProduto.Appearance.Options.UseFont = true;
             this.lblDescricaoProduto.Location = new System.Drawing.Point(5, 93);
             this.lblDescricaoProduto.Name = "lblDescricaoProduto";
-            this.lblDescricaoProduto.Size = new System.Drawing.Size(132, 45);
+            this.lblDescricaoProduto.Size = new System.Drawing.Size(217, 45);
             this.lblDescricaoProduto.TabIndex = 4;
-            this.lblDescricaoProduto.Text = "Perfume ";
+            this.lblDescricaoProduto.Text = "Nome Produto";
             // 
             // txtCodigoDeBarras
             // 
@@ -331,6 +336,7 @@
             // 
             this.panelControl7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelControl7.Controls.Add(this.btnNovaVenda);
             this.panelControl7.Controls.Add(this.btn2FinalizarVenda);
             this.panelControl7.Controls.Add(this.btnCliente);
             this.panelControl7.Controls.Add(this.btn2CancelarVenda);
@@ -341,13 +347,26 @@
             this.panelControl7.Size = new System.Drawing.Size(618, 135);
             this.panelControl7.TabIndex = 5;
             // 
+            // btnNovaVenda
+            // 
+            this.btnNovaVenda.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnNovaVenda.Appearance.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNovaVenda.Appearance.Options.UseFont = true;
+            this.btnNovaVenda.Location = new System.Drawing.Point(429, 78);
+            this.btnNovaVenda.Name = "btnNovaVenda";
+            this.btnNovaVenda.Size = new System.Drawing.Size(183, 37);
+            this.btnNovaVenda.TabIndex = 6;
+            this.btnNovaVenda.Text = "Nova Venda (F12)";
+            this.btnNovaVenda.Click += new System.EventHandler(this.btnNovaVenda_Click);
+            // 
             // btn2FinalizarVenda
             // 
             this.btn2FinalizarVenda.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btn2FinalizarVenda.Appearance.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn2FinalizarVenda.Appearance.Options.UseFont = true;
-            this.btn2FinalizarVenda.Location = new System.Drawing.Point(430, 17);
+            this.btn2FinalizarVenda.Location = new System.Drawing.Point(5, 17);
             this.btn2FinalizarVenda.Name = "btn2FinalizarVenda";
             this.btn2FinalizarVenda.Size = new System.Drawing.Size(183, 37);
             this.btn2FinalizarVenda.TabIndex = 5;
@@ -360,7 +379,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCliente.Appearance.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCliente.Appearance.Options.UseFont = true;
-            this.btnCliente.Location = new System.Drawing.Point(219, 78);
+            this.btnCliente.Location = new System.Drawing.Point(217, 17);
             this.btnCliente.Name = "btnCliente";
             this.btnCliente.Size = new System.Drawing.Size(183, 37);
             this.btnCliente.TabIndex = 4;
@@ -373,7 +392,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btn2CancelarVenda.Appearance.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn2CancelarVenda.Appearance.Options.UseFont = true;
-            this.btn2CancelarVenda.Location = new System.Drawing.Point(219, 17);
+            this.btn2CancelarVenda.Location = new System.Drawing.Point(217, 79);
             this.btn2CancelarVenda.Name = "btn2CancelarVenda";
             this.btn2CancelarVenda.Size = new System.Drawing.Size(183, 37);
             this.btn2CancelarVenda.TabIndex = 3;
@@ -399,7 +418,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnLocalizarProduto.Appearance.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLocalizarProduto.Appearance.Options.UseFont = true;
-            this.btnLocalizarProduto.Location = new System.Drawing.Point(5, 17);
+            this.btnLocalizarProduto.Location = new System.Drawing.Point(429, 17);
             this.btnLocalizarProduto.Name = "btnLocalizarProduto";
             this.btnLocalizarProduto.Size = new System.Drawing.Size(183, 37);
             this.btnLocalizarProduto.TabIndex = 1;
@@ -563,9 +582,9 @@
             this.lblSubtotal.Appearance.Options.UseFont = true;
             this.lblSubtotal.Location = new System.Drawing.Point(128, 54);
             this.lblSubtotal.Name = "lblSubtotal";
-            this.lblSubtotal.Size = new System.Drawing.Size(87, 25);
+            this.lblSubtotal.Size = new System.Drawing.Size(66, 25);
             this.lblSubtotal.TabIndex = 13;
-            this.lblSubtotal.Text = "R$ 720,60";
+            this.lblSubtotal.Text = "R$ 0,00";
             // 
             // lblValorTotal
             // 
@@ -573,9 +592,9 @@
             this.lblValorTotal.Appearance.Options.UseFont = true;
             this.lblValorTotal.Location = new System.Drawing.Point(397, 54);
             this.lblValorTotal.Name = "lblValorTotal";
-            this.lblValorTotal.Size = new System.Drawing.Size(216, 65);
+            this.lblValorTotal.Size = new System.Drawing.Size(163, 65);
             this.lblValorTotal.TabIndex = 12;
-            this.lblValorTotal.Text = "R$ 752,00";
+            this.lblValorTotal.Text = "R$ 0,00";
             // 
             // lblQtdItens
             // 
@@ -585,7 +604,7 @@
             this.lblQtdItens.Name = "lblQtdItens";
             this.lblQtdItens.Size = new System.Drawing.Size(11, 25);
             this.lblQtdItens.TabIndex = 11;
-            this.lblQtdItens.Text = "2";
+            this.lblQtdItens.Text = "0";
             // 
             // labelControl13
             // 
@@ -643,7 +662,7 @@
             this.Controls.Add(this.panelControl4);
             this.Controls.Add(this.panelControl3);
             this.Controls.Add(this.panelControl2);
-            this.Controls.Add(this.panelControl1);
+            this.Controls.Add(this.pnlTitulo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.KeyPreview = true;
             this.Name = "frmPDV";
@@ -652,9 +671,9 @@
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmPDV_KeyDown);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.frmPDV_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.frmPDV_MouseMove);
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
-            this.panelControl1.ResumeLayout(false);
-            this.panelControl1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pnlTitulo)).EndInit();
+            this.pnlTitulo.ResumeLayout(false);
+            this.pnlTitulo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
             this.panelControl2.ResumeLayout(false);
             this.panelControl2.PerformLayout();
@@ -687,7 +706,7 @@
 
         #endregion
         private DevExpress.XtraEditors.LabelControl lblStatusCaixa;
-        private DevExpress.XtraEditors.PanelControl panelControl1;
+        private DevExpress.XtraEditors.PanelControl pnlTitulo;
         private DevExpress.XtraEditors.PanelControl panelControl2;
         private DevExpress.XtraEditors.PanelControl panelControl3;
         private DevExpress.XtraEditors.PanelControl panelControl4;
@@ -728,5 +747,6 @@
         private DevExpress.XtraEditors.LabelControl lblSubtotal;
         public DevExpress.XtraEditors.TextEdit txtCodigoDeBarras;
         public DevExpress.XtraEditors.LabelControl lblNumeroPedido;
+        private DevExpress.XtraEditors.SimpleButton btnNovaVenda;
     }
 }

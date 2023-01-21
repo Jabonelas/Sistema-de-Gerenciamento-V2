@@ -431,6 +431,15 @@ namespace SistemaDeGerenciamento2_0.Class
 
         #endregion Despesa
 
+        #region Estoque
+
+        public static void ErroAoAtualizarEstoqueDepoisDeVenda(Exception _e)
+        {
+            MessageBox.Show($"(ATU-ES01) Erro ao Atualizar Estoque Apos Veenda \n\nErro: {_e}", "Erro Atualizar Estoque!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        #endregion Estoque
+
         #endregion Atualizar
 
         #region Deletar

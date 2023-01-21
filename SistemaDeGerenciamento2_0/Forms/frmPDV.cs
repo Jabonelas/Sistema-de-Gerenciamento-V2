@@ -27,9 +27,10 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private decimal valorDesconto = 0;
 
-        public static string passagemDeCodigoDeBarras = string.Empty;
         public static string clienteCPF = string.Empty;
+        public static string passagemDeCodigoDeBarras = string.Empty;
 
+        private bool isfecharTela = false;
         public static bool permissaoRemoverItem = false;
         public static bool permissaoCancelarVenda = false;
 
@@ -99,7 +100,9 @@ namespace SistemaDeGerenciamento2_0.Forms
 
                     foreach (var item in dadosDeletarCadastro)
                     {
-                        valorDesconto = Convert.ToDecimal(item.ConfigFinanceira.cf_desconto_grupo_produto * item.Produto.pd_preco / 100);
+                        int quantidade = Convert.ToInt32(txtQuantidadeProduto.Text);
+
+                        valorDesconto = Convert.ToDecimal(Convert.ToDecimal(item.ConfigFinanceira.cf_desconto_grupo_produto * item.Produto.pd_preco / 100) * quantidade);
 
                         if (_tipoOperacao == "Adcionar Desconto")
                         {
@@ -173,6 +176,10 @@ namespace SistemaDeGerenciamento2_0.Forms
                 GrupoComDesconto("Adcionar Desconto", txtCodigoDeBarras.Text);
 
                 BuscarProdutoPeloCodigoDeBarras();
+
+                lblStatusCaixa.Text = "CAIXA OCUPADO";
+
+                pnlTitulo.BackColor = Color.FromArgb(255, 107, 107);
             }
         }
 
@@ -180,24 +187,27 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             try
             {
-                listaSecundaria.Clear();
-
                 foreach (var item in listaEstoque)
                 {
                     string codigoProduto = item.CodigoProduto;
                     string nomePrdouto = item.NomeProduto;
                     string codigoBarras = item.CodigoDeBarrasProduto;
                     decimal quantidadeProduto = Convert.ToDecimal(txtQuantidadeProduto.Text);
-                    decimal precoProduto = item.PrecoProduto;
+                    decimal precoProdutoSemDesconto = item.PrecoProdutoSemDesconto;
                     int idProduto = item.IdProduto;
 
                     if (codigoBarras == txtCodigoDeBarras.Text)
                     {
                         if (quantidadeProduto >= Convert.ToDecimal(txtQuantidadeProduto.Text))
                         {
-                            decimal valorProduto = Convert.ToDecimal((precoProduto - valorDesconto).ToString("N2"));
+                            //decimal valorProdutoComDesconto = Convert.ToDecimal((precoProdutoSemDesconto - valorDesconto).ToString("N2"));
 
-                            listaSecundaria.Add(new DadosProduto(idProduto, codigoBarras, codigoProduto, nomePrdouto, valorProduto, quantidadeProduto, valorDesconto));
+                            decimal valorProdutoComDesconto = Convert.ToDecimal(((precoProdutoSemDesconto * quantidadeProduto) - valorDesconto).ToString("N2"));
+
+                            decimal valorProdutoSemDesconto = Convert.ToDecimal((precoProdutoSemDesconto * quantidadeProduto).ToString("N2"));
+
+                            listaSecundaria.Add(new DadosProduto(idProduto, codigoBarras, codigoProduto, nomePrdouto,
+                                valorProdutoSemDesconto, valorProdutoComDesconto, quantidadeProduto, valorDesconto));
 
                             valorDesconto = 0;
 
@@ -205,7 +215,7 @@ namespace SistemaDeGerenciamento2_0.Forms
 
                             lblDescricaoProduto.Text = nomePrdouto;
 
-                            lblValorUnitario.Text = precoProduto.ToString("C2");
+                            lblValorUnitario.Text = precoProdutoSemDesconto.ToString("C2");
 
                             PreencherGrid();
 
@@ -276,22 +286,27 @@ namespace SistemaDeGerenciamento2_0.Forms
             dt.Columns.Add("QTD UN");
             dt.Columns.Add("DESCRICAO");
             dt.Columns.Add("VALOR TOTAL R$");
+            dt.Columns.Add("VALOR A PAGAR R$");
         }
 
         private void PreencherGrid()
         {
-            int sequencia = gridView1.RowCount;
+            dt.Rows.Clear();
 
-            int qtdProduto = Convert.ToInt32(txtQuantidadeProduto.Text);
+            dt.Clear();
+
+            int sequencia = gridView1.RowCount;
 
             foreach (var item in listaSecundaria)
             {
                 string codigoProduto = item.CodigoProduto;
                 string nomePrdouto = item.NomeProduto;
                 string codigoBarras = item.CodigoDeBarrasProduto;
-                decimal precoProduto = item.PrecoProduto;
+                decimal precoProdutoSemDesconto = item.PrecoProdutoSemDesconto;
+                decimal precoProdutoComDesconto = item.PrecoProdutoComDesconto;
+                decimal qtdProduto = item.QuantidadeProduto;
 
-                dt.Rows.Add(++sequencia, codigoBarras, codigoProduto, qtdProduto, nomePrdouto, (precoProduto * qtdProduto));
+                dt.Rows.Add(++sequencia, codigoBarras, codigoProduto, qtdProduto, nomePrdouto, precoProdutoSemDesconto, precoProdutoComDesconto);
             }
 
             lblQtdItens.Text = sequencia.ToString();
@@ -333,18 +348,22 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             qtdLinhasGrid = gridView1.RowCount;
 
-            decimal valorTotal = 0;
+            decimal valorTotalSemDesconto = 0;
+            decimal valorTotalComDesconto = 0;
 
             for (int i = 0; i < qtdLinhasGrid; i++)
             {
                 DataRow row = gridView1.GetDataRow(i);
-                object cellValue = row["VALOR TOTAL R$"];
+                object comDesconto = row["VALOR A PAGAR R$"];
+                object semDesconto = row["VALOR TOTAL R$"];
 
-                valorTotal = valorTotal + Convert.ToDecimal(cellValue);
+                valorTotalComDesconto = valorTotalComDesconto + Convert.ToDecimal(comDesconto);
+
+                valorTotalSemDesconto = valorTotalSemDesconto + Convert.ToDecimal(semDesconto);
             }
 
-            lblValorTotal.Text = valorTotal.ToString("C2");
-            lblSubtotal.Text = valorTotal.ToString("C2");
+            lblValorTotal.Text = valorTotalComDesconto.ToString("C2");
+            lblSubtotal.Text = valorTotalSemDesconto.ToString("C2");
         }
 
         public class DadosProduto
@@ -352,18 +371,22 @@ namespace SistemaDeGerenciamento2_0.Forms
             public string CodigoProduto = string.Empty;
             public string CodigoDeBarrasProduto = string.Empty;
             public string NomeProduto = string.Empty;
-            public decimal PrecoProduto = 0;
+            public decimal PrecoProdutoSemDesconto = 0;
+            public decimal PrecoProdutoComDesconto = 0;
             public decimal QuantidadeProduto = 0;
+
             public int IdProduto = 0;
             public decimal ValorDesconto = 0;
 
-            public DadosProduto(int _idProduto, string _codigoProdutos, string _codigoDeBarrasProduto, string _nomeProduto, decimal _precoProduto, decimal _quantidadeProduto, decimal _valorDesconto)
+            public DadosProduto(int _idProduto, string _codigoProdutos, string _codigoDeBarrasProduto, string _nomeProduto,
+                decimal _precoProdutoSemDesconto, decimal _precoProdutoComDesconto, decimal _quantidadeProduto, decimal _valorDesconto)
             {
                 IdProduto = _idProduto;
                 CodigoProduto = _codigoProdutos;
                 CodigoDeBarrasProduto = _codigoDeBarrasProduto;
                 NomeProduto = _nomeProduto;
-                PrecoProduto = _precoProduto;
+                PrecoProdutoSemDesconto = _precoProdutoSemDesconto;
+                PrecoProdutoComDesconto = _precoProdutoComDesconto;
                 QuantidadeProduto = _quantidadeProduto;
                 ValorDesconto = _valorDesconto;
             }
@@ -374,7 +397,7 @@ namespace SistemaDeGerenciamento2_0.Forms
                 CodigoProduto = _codigoProduto;
                 CodigoDeBarrasProduto = _codigoDeBarrasProduto;
                 NomeProduto = _nomeProduto;
-                PrecoProduto = _precoProduto;
+                PrecoProdutoSemDesconto = _precoProduto;
                 QuantidadeProduto = _quantidadeProduto;
             }
         }
@@ -385,12 +408,9 @@ namespace SistemaDeGerenciamento2_0.Forms
             {
                 using (SistemaDeGerenciamento2_0Context db = new SistemaDeGerenciamento2_0Context())
                 {
-                    var numeroPedido = db.tb_nota_fiscal_saida.LastOrDefault().nfs_numero_nf_saida;
-                    //var numeroPedido = db.tb_nota_fiscal_saida.Select(x => x.nfs_numero_nf_saida).LastOrDefault();
+                    var numeroPedido = db.tb_nota_fiscal_saida.OrderBy(y => y.id_nota_fiscal_saida).Select(x => x.nfs_numero_nf_saida).LastOrDefault();
 
-                    //lblNumeroPedido.Text = (++numeroPedido).ToString();
-
-                    string a = "";
+                    lblNumeroPedido.Text = (++numeroPedido).ToString();
                 }
             }
             catch (Exception x)
@@ -435,7 +455,19 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             if (e.KeyCode == Keys.Escape)
             {
-                CancelarVenda();
+                if (gridView1.RowCount > 0)
+                {
+                    CancelarVenda();
+
+                    if (isfecharTela == true)
+                    {
+                        this.Close();
+                    }
+
+                    isfecharTela = false;
+
+                    return;
+                }
 
                 MensagemAtencao.MensagemCancelar(this);
             }
@@ -459,11 +491,15 @@ namespace SistemaDeGerenciamento2_0.Forms
             {
                 CancelarVenda();
             }
+            else if (e.KeyCode == Keys.F12)
+            {
+                NovaVenda();
+            }
         }
 
         private void FinalizarVenda()
         {
-            PreencherListaNFSaida();
+            //PreencherListaNFSaida();
 
             frmPagamento frmPagamento = new frmPagamento(lblValorTotal.Text, lblDesconto.Text, lblNumeroPedido.Text, frmTelaPrincipal);
             frmPagamento.ShowDialog();
@@ -489,13 +525,14 @@ namespace SistemaDeGerenciamento2_0.Forms
                 object qtdProduto = row["QTD UN"];
                 object nomeProduto = row["DESCRICAO"];
                 object valorProduto = row["VALOR TOTAL R$"];
+                object valorProdutoComDesconto = row["VALOR A PAGAR R$"];
 
                 listaNFSaida.Add(new tb_nota_fiscal_saida
                 {
                     nfs_numero_nf_saida = 1,
                     nfs_data_emissao = DateTime.Today,
                     nfs_quantidade = 0,
-                    nfs_valor_total_parcial = 0,
+                    nfs_valor_parcial = 0,
                     nfs_valor_pago = 0,
                     nfs_valor_juros = 0,
                     nfs_valor_desconto = 0,
@@ -557,21 +594,35 @@ namespace SistemaDeGerenciamento2_0.Forms
                 OpcaoDoUsuario = MessageBox.Show("Realmente Cancela a Venda?", "Atenção!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                 if (OpcaoDoUsuario == DialogResult.Yes)
                 {
-                    BuscarTodosOsProdutos();
-
-                    dt.Rows.Clear();
-
-                    lblSubtotal.Text = "R$ 0,00";
-                    lblValorTotal.Text = "R$ 0,00";
-                    lblQtdItens.Text = "0";
-                    lblDesconto.Text = "0";
-                    lblValorUnitario.Text = "R$ 0,00";
-                    lblDescricaoProduto.Text = "Produto";
-                    txtCodigoDeBarras.Text = string.Empty;
-
-                    permissaoCancelarVenda = false;
+                    ZerandoTodosCampos();
                 }
             }
+        }
+
+        private void ZerandoTodosCampos()
+        {
+            BuscarTodosOsProdutos();
+
+            listaSecundaria.Clear();
+
+            dt.Clear();
+
+            dt.Rows.Clear();
+
+            txtCodigoDeBarras.Focus();
+
+            txtQuantidadeProduto.Text = "1";
+            lblSubtotal.Text = "R$ 0,00";
+            lblValorTotal.Text = "R$ 0,00";
+            lblQtdItens.Text = "0";
+            lblDesconto.Text = "0";
+            lblValorUnitario.Text = "R$ 0,00";
+            lblDescricaoProduto.Text = "Produto";
+            txtCodigoDeBarras.Text = string.Empty;
+
+            permissaoCancelarVenda = false;
+
+            isfecharTela = true;
         }
 
         private void btn2CancelarVenda_Click(object sender, EventArgs e)
@@ -594,6 +645,26 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             frmClienteCPF frmClienteCPF = new frmClienteCPF();
             frmClienteCPF.ShowDialog();
+        }
+
+        private void btnNovaVenda_Click(object sender, EventArgs e)
+        {
+            NovaVenda();
+        }
+
+        private void NovaVenda()
+        {
+            if (gridView1.RowCount > 0)
+            {
+                CancelarVenda();
+                pnlTitulo.BackColor = Color.FromArgb(0, 204, 105);
+            }
+            else
+            {
+                lblStatusCaixa.Text = "CAIXA LIVRE";
+
+                pnlTitulo.BackColor = Color.FromArgb(0, 204, 105);
+            }
         }
     }
 }

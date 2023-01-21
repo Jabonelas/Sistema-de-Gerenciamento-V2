@@ -16,9 +16,9 @@ namespace SistemaDeGerenciamento2_0.Forms
 {
     public partial class frmFormaPagamentoDinheiro : DevExpress.XtraEditors.XtraForm
     {
-        private decimal valorPagoNoProduto = 0;
-        private decimal valorJuros = 0;
-        private decimal valorFinalPago = 0;
+        public decimal valorPagoNoProduto = 0;
+        public decimal valorJuros = 0;
+        public decimal valorFinalPago = 0;
 
         private string numeroNF;
 
@@ -64,37 +64,16 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private void btn1FinalizarVenda_Click(object sender, EventArgs e)
         {
-            NotaFiscalSaida();
+            NFSaida.NotaFiscalSaida(numeroNF, valorPagoNoProduto, valorJuros, valorFinalPago, "Dinheiro");
 
-            AlterandoEstoque();
+            //AlterandoEstoque();
+            //NotaFiscalSaida();
+
+            AlterarEstoque.AlterandoEstoque();
 
             btn1CancelarVenda.Enabled = false;
             btn1FinalizarVenda.Enabled = false;
-        }
-
-        private void AlterandoEstoque()
-        {
-            try
-            {
-                using (SistemaDeGerenciamento2_0Context db = new SistemaDeGerenciamento2_0Context())
-                {
-                    foreach (var item1 in frmPDV.listaSecundaria)
-                    {
-                        var produtoParaAlterarEstoque = db.tb_estoque.Where(x => x.fk_produto == item1.IdProduto).ToList();
-
-                        foreach (var item2 in produtoParaAlterarEstoque)
-                        {
-                            item2.ep_quantidade -= item1.QuantidadeProduto;
-
-                            db.SaveChanges();
-                        }
-                    }
-                }
-            }
-            catch (Exception x)
-            {
-                MessageBox.Show(x.ToString());
-            }
+            txtValorEntregue.Enabled = false;
         }
 
         private void NotaFiscalSaida()
@@ -109,7 +88,7 @@ namespace SistemaDeGerenciamento2_0.Forms
                     {
                         int idProduto = item.IdProduto;
                         decimal quantidadeProduto = item.QuantidadeProduto;
-                        decimal valorProdutoSemDesconto = item.PrecoProduto;
+                        decimal valorProdutoSemDesconto = item.PrecoProdutoSemDesconto;
                         decimal valorDesconto = item.ValorDesconto;
 
                         int fkCliente = 0;
@@ -123,11 +102,11 @@ namespace SistemaDeGerenciamento2_0.Forms
                                 nfs_numero_nf_saida = numeroNFSaida,
                                 nfs_data_emissao = DateTime.Today,
                                 nfs_quantidade = quantidadeProduto,
-                                nfs_valor_total_parcial = valorProdutoSemDesconto,
+                                nfs_valor_parcial = valorProdutoSemDesconto,
                                 nfs_valor_desconto = valorDesconto,
                                 nfs_valor_pago = valorPagoNoProduto,
                                 nfs_valor_juros = valorJuros,
-                                nfs_valor_final_pago = valorFinalPago,
+                                nfs_valor_total_pago = valorFinalPago,
                                 nfs_vendedor = frmLogin.UsuarioLogado,
                                 nfs_tipo_pagamento = "Dinheiro",
                                 fk_estoque = idProduto,
@@ -144,11 +123,11 @@ namespace SistemaDeGerenciamento2_0.Forms
                                 nfs_numero_nf_saida = numeroNFSaida,
                                 nfs_data_emissao = DateTime.Today,
                                 nfs_quantidade = quantidadeProduto,
-                                nfs_valor_total_parcial = valorProdutoSemDesconto,
+                                nfs_valor_parcial = valorProdutoSemDesconto,
                                 nfs_valor_desconto = valorDesconto,
                                 nfs_valor_pago = valorPagoNoProduto,
                                 nfs_valor_juros = valorJuros,
-                                nfs_valor_final_pago = valorFinalPago,
+                                nfs_valor_total_pago = valorFinalPago,
                                 nfs_vendedor = frmLogin.UsuarioLogado,
                                 nfs_tipo_pagamento = "Dinheiro",
                                 fk_estoque = idProduto,

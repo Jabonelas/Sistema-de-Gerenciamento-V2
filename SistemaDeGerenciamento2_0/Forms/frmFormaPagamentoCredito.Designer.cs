@@ -84,6 +84,7 @@
             this.btn1FinalizarVenda.Size = new System.Drawing.Size(280, 44);
             this.btn1FinalizarVenda.TabIndex = 311;
             this.btn1FinalizarVenda.Text = "Finalizar Pagamento (F2)";
+            this.btn1FinalizarVenda.Click += new System.EventHandler(this.btn1FinalizarVenda_Click);
             // 
             // btn1CancelarVenda
             // 
@@ -118,6 +119,7 @@
             this.btn1CancelarVenda.Size = new System.Drawing.Size(280, 44);
             this.btn1CancelarVenda.TabIndex = 310;
             this.btn1CancelarVenda.Text = "Cancelar Pagamento (F9)";
+            this.btn1CancelarVenda.Click += new System.EventHandler(this.btn1CancelarVenda_Click);
             // 
             // lblNomeUsuario
             // 

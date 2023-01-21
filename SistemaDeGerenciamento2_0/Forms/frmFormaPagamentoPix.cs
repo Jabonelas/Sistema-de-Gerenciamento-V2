@@ -1,6 +1,7 @@
 ﻿using DevExpress.XtraEditors;
 using DevExpress.XtraPrinting.BarCode;
 using QRCoder;
+using SistemaDeGerenciamento2_0.Class;
 using SistemaDeGerenciamento2_0.Context;
 using System;
 using System.Collections.Generic;
@@ -19,9 +20,44 @@ namespace SistemaDeGerenciamento2_0.Forms
     {
         private string CNPJ = string.Empty;
 
-        public frmFormaPagamentoPix()
+        private decimal valorPagoNoProduto = 0;
+        private decimal valorJuros = 0;
+        private decimal valorFinalPago = 0;
+
+        private string numeroNF;
+
+        private frmTelaPrincipal frmTelaPrincipal;
+
+        private frmPagamento frmPagamento;
+
+        private PermissoesUsuario permissoesUsuario = new PermissoesUsuario();
+
+        public frmFormaPagamentoPix(string _valorFinalPago, string _numeroNF, decimal _valorPagoNoProduto,
+            decimal _valorJuros, frmTelaPrincipal _frmTelaPrincipal, frmPagamento _frmPagamento)
         {
             InitializeComponent();
+
+            lblValorTotal.Text = _valorFinalPago;
+
+            numeroNF = _numeroNF;
+
+            valorPagoNoProduto = _valorPagoNoProduto;
+
+            valorJuros = _valorJuros;
+
+            frmTelaPrincipal = _frmTelaPrincipal;
+
+            frmPagamento = _frmPagamento;
+
+            valorFinalPago = Convert.ToDecimal(_valorFinalPago.Replace("R$", ""));
+
+            lblValorTotal.Text = _valorFinalPago;
+
+            lblNomeUsuario.Text = frmLogin.UsuarioLogado.ToUpper();
+
+            BuscarCNPJ();
+
+            QRCodeImagem();
         }
 
         private frmLogin frmLogin;
@@ -65,8 +101,14 @@ namespace SistemaDeGerenciamento2_0.Forms
             pcbQRCode.Image = qrCodeImage;
         }
 
-        private void labelControl6_Click(object sender, EventArgs e)
+        private void btn1FinalizarVenda_Click(object sender, EventArgs e)
         {
+            NFSaida.NotaFiscalSaida(numeroNF, valorPagoNoProduto, valorJuros, valorFinalPago, "Pix");
+
+            AlterarEstoque.AlterandoEstoque();
+
+            btn1CancelarVenda.Enabled = false;
+            btn1FinalizarVenda.Enabled = false;
         }
     }
 }

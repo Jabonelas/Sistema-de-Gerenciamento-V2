@@ -37,6 +37,8 @@
             this.pcbQRCode = new DevExpress.XtraEditors.PictureEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.lblChavePix = new DevExpress.XtraEditors.LabelControl();
+            this.lblValorTotal = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl13 = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.pcbQRCode.Properties)).BeginInit();
             this.SuspendLayout();
             // 
@@ -81,6 +83,7 @@
             this.btn1FinalizarVenda.Size = new System.Drawing.Size(280, 44);
             this.btn1FinalizarVenda.TabIndex = 313;
             this.btn1FinalizarVenda.Text = "Finalizar Pagamento (F2)";
+            this.btn1FinalizarVenda.Click += new System.EventHandler(this.btn1FinalizarVenda_Click);
             // 
             // btn1CancelarVenda
             // 
@@ -155,7 +158,6 @@
             this.labelControl6.Size = new System.Drawing.Size(223, 25);
             this.labelControl6.TabIndex = 314;
             this.labelControl6.Text = "FORMA DE PAGAMENTO:";
-            this.labelControl6.Click += new System.EventHandler(this.labelControl6_Click);
             // 
             // pcbQRCode
             // 
@@ -186,11 +188,33 @@
             this.lblChavePix.TabIndex = 318;
             this.lblChavePix.Text = "FORMA DE PAGAMENTO:";
             // 
+            // lblValorTotal
+            // 
+            this.lblValorTotal.Appearance.Font = new System.Drawing.Font("Segoe UI Semibold", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblValorTotal.Appearance.Options.UseFont = true;
+            this.lblValorTotal.Location = new System.Drawing.Point(742, 92);
+            this.lblValorTotal.Name = "lblValorTotal";
+            this.lblValorTotal.Size = new System.Drawing.Size(216, 65);
+            this.lblValorTotal.TabIndex = 320;
+            this.lblValorTotal.Text = "R$ 752,00";
+            // 
+            // labelControl13
+            // 
+            this.labelControl13.Appearance.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl13.Appearance.Options.UseFont = true;
+            this.labelControl13.Location = new System.Drawing.Point(744, 61);
+            this.labelControl13.Name = "labelControl13";
+            this.labelControl13.Size = new System.Drawing.Size(146, 25);
+            this.labelControl13.TabIndex = 319;
+            this.labelControl13.Text = "TOTAL A PAGAR:";
+            // 
             // frmFormaPagamentoPix
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(995, 269);
+            this.Controls.Add(this.lblValorTotal);
+            this.Controls.Add(this.labelControl13);
             this.Controls.Add(this.lblChavePix);
             this.Controls.Add(this.labelControl1);
             this.Controls.Add(this.pcbQRCode);
@@ -220,5 +244,7 @@
         private DevExpress.XtraEditors.PictureEdit pcbQRCode;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.LabelControl lblChavePix;
+        private DevExpress.XtraEditors.LabelControl lblValorTotal;
+        private DevExpress.XtraEditors.LabelControl labelControl13;
     }
 }

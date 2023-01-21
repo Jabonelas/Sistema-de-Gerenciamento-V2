@@ -16,13 +16,13 @@ namespace SistemaDeGerenciamento2_0.Models
         [Column(TypeName = "decimal(10, 2)")]
         public decimal nfs_quantidade { get; set; }
         [Column(TypeName = "decimal(10, 2)")]
-        public decimal nfs_valor_total_parcial { get; set; }
+        public decimal nfs_valor_parcial { get; set; }
         [Column(TypeName = "decimal(10, 2)")]
         public decimal nfs_valor_pago { get; set; }
         [Column(TypeName = "decimal(10, 2)")]
         public decimal? nfs_valor_juros { get; set; }
         [Column(TypeName = "decimal(10, 2)")]
-        public decimal? nfs_valor_final_pago { get; set; }
+        public decimal? nfs_valor_total_pago { get; set; }
         [Column(TypeName = "decimal(10, 2)")]
         public decimal? nfs_valor_desconto { get; set; }
         [StringLength(255)]

@@ -63,7 +63,7 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             if (e.KeyCode == Keys.Escape)
             {
-                this.Close();
+                CancelarVenda();
             }
         }
 
@@ -112,8 +112,11 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             DescontoAvista();
 
+            decimal valorPagoNoProduto = Convert.ToDecimal(lblDescontoGeral.Text.Replace("R$", ""));
+            decimal valorJuros = Convert.ToDecimal(lblAcrescimo.Text.Replace("R$", ""));
+
             pnlTipoPagamento.Controls.Clear();
-            frmFormaPagamentoDebito frmFormaPagamentoDebito = new frmFormaPagamentoDebito(lblValorTotal.Text);
+            frmFormaPagamentoDebito frmFormaPagamentoDebito = new frmFormaPagamentoDebito(lblValorTotal.Text, numeroNF, valorPagoNoProduto, valorJuros, frmTelaPrincipal, this);
             frmFormaPagamentoDebito.TopLevel = false;
             pnlTipoPagamento.Controls.Add(frmFormaPagamentoDebito);
             pnlTipoPagamento.Tag = frmFormaPagamentoDebito;
@@ -159,8 +162,11 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             DescontoAvista();
 
+            decimal valorPagoNoProduto = Convert.ToDecimal(lblDescontoGeral.Text.Replace("R$", ""));
+            decimal valorJuros = Convert.ToDecimal(lblAcrescimo.Text.Replace("R$", ""));
+
             pnlTipoPagamento.Controls.Clear();
-            frmFormaPagamentoPix frmFormaPagamentoPix = new frmFormaPagamentoPix(lblValorTotal.Text);
+            frmFormaPagamentoPix frmFormaPagamentoPix = new frmFormaPagamentoPix(lblValorTotal.Text, numeroNF, valorPagoNoProduto, valorJuros, frmTelaPrincipal, this);
             frmFormaPagamentoPix.TopLevel = false;
             pnlTipoPagamento.Controls.Add(frmFormaPagamentoPix);
             pnlTipoPagamento.Tag = frmFormaPagamentoPix;
@@ -171,8 +177,11 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             JurosCredito();
 
+            decimal valorPagoNoProduto = Convert.ToDecimal(lblDescontoGeral.Text.Replace("R$", ""));
+            decimal valorJuros = Convert.ToDecimal(lblAcrescimo.Text.Replace("R$", ""));
+
             pnlTipoPagamento.Controls.Clear();
-            frmFormaPagamentoCredito frmFormaPagamentoCredito = new frmFormaPagamentoCredito(lblValorTotal.Text);
+            frmFormaPagamentoCredito frmFormaPagamentoCredito = new frmFormaPagamentoCredito(lblValorTotal.Text, numeroNF, valorPagoNoProduto, valorJuros, frmTelaPrincipal, this);
             frmFormaPagamentoCredito.TopLevel = false;
             pnlTipoPagamento.Controls.Add(frmFormaPagamentoCredito);
             pnlTipoPagamento.Tag = frmFormaPagamentoCredito;
@@ -183,18 +192,38 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             decimal valorParcial = Convert.ToDecimal(valorTotal.Replace("R$", ""));
 
-            decimal valorTotalJuros = Convert.ToDecimal(valorParcial * jurosDia / 100);
+            //decimal valorTotalJuros = Convert.ToDecimal(valorParcial * jurosDia / 100);
 
-            lblAcrescimo.Text = valorTotalJuros.ToString("C2");
+            //lblAcrescimo.Text = valorTotalJuros.ToString("C2");
 
             lblDescontoGeral.Text = "R$ 0,00";
 
-            lblValorTotal.Text = (valorParcial + valorTotalJuros).ToString("C2");
+            lblValorTotal.Text = valorTotal;
+            //lblValorTotal.Text = (valorParcial + valorTotalJuros).ToString("C2");
         }
 
         private void btnFechar_Click(object sender, EventArgs e)
         {
-            MensagemAtencao.MensagemCancelar(this);
+            CancelarVenda();
+        }
+
+        private PermissoesUsuario permissoesUsuario = new PermissoesUsuario();
+
+        private void CancelarVenda()
+        {
+            permissoesUsuario.ReloadData(frmTelaPrincipal, frmLogin.UsuarioLogado);
+            permissoesUsuario.VerificarCancelarVendaTelaPDV("Cancelar Venda Tela PDV");
+
+            if (frmPDV.permissaoCancelarVenda == true)
+            {
+                DialogResult OpcaoDoUsuario = new DialogResult();
+                OpcaoDoUsuario = MessageBox.Show("Realmente Cancela a Venda?", "Atenção!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (OpcaoDoUsuario == DialogResult.Yes)
+                {
+                    frmPDV.permissaoCancelarVenda = false;
+                    this.Close();
+                }
+            }
         }
     }
 }
