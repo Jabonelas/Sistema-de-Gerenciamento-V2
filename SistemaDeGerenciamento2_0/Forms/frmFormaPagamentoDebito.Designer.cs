@@ -77,7 +77,7 @@
             this.btn1FinalizarVenda.Location = new System.Drawing.Point(703, 217);
             this.btn1FinalizarVenda.Name = "btn1FinalizarVenda";
             this.btn1FinalizarVenda.Size = new System.Drawing.Size(282, 44);
-            this.btn1FinalizarVenda.TabIndex = 311;
+            this.btn1FinalizarVenda.TabIndex = 0;
             this.btn1FinalizarVenda.Text = "Finalizar Pagamento (F2)";
             this.btn1FinalizarVenda.Click += new System.EventHandler(this.btn1FinalizarVenda_Click);
             // 
@@ -112,7 +112,7 @@
             this.btn1CancelarVenda.Location = new System.Drawing.Point(12, 217);
             this.btn1CancelarVenda.Name = "btn1CancelarVenda";
             this.btn1CancelarVenda.Size = new System.Drawing.Size(282, 44);
-            this.btn1CancelarVenda.TabIndex = 310;
+            this.btn1CancelarVenda.TabIndex = 1;
             this.btn1CancelarVenda.Text = "Cancelar Pagamento (F9)";
             this.btn1CancelarVenda.Click += new System.EventHandler(this.btn1CancelarVenda_Click);
             // 

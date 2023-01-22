@@ -30,7 +30,6 @@
         {
             this.lblValorTotal = new DevExpress.XtraEditors.LabelControl();
             this.labelControl13 = new DevExpress.XtraEditors.LabelControl();
-            this.btnCliente = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
@@ -40,10 +39,11 @@
             this.lblDescontoGeral = new DevExpress.XtraEditors.LabelControl();
             this.lblDescontoItens = new DevExpress.XtraEditors.LabelControl();
             this.btnDebito = new DevExpress.XtraEditors.SimpleButton();
-            this.btnCredito = new DevExpress.XtraEditors.SimpleButton();
             this.btnPix = new DevExpress.XtraEditors.SimpleButton();
             this.pnlTipoPagamento = new DevExpress.XtraEditors.PanelControl();
             this.btnFechar = new DevExpress.XtraEditors.SimpleButton();
+            this.btnCliente = new DevExpress.XtraEditors.SimpleButton();
+            this.btnCredito = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.pnlTipoPagamento)).BeginInit();
             this.SuspendLayout();
             // 
@@ -66,19 +66,6 @@
             this.labelControl13.Size = new System.Drawing.Size(217, 37);
             this.labelControl13.TabIndex = 296;
             this.labelControl13.Text = "TOTAL A PAGAR:";
-            // 
-            // btnCliente
-            // 
-            this.btnCliente.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Success;
-            this.btnCliente.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCliente.Appearance.Options.UseBackColor = true;
-            this.btnCliente.Appearance.Options.UseFont = true;
-            this.btnCliente.Location = new System.Drawing.Point(15, 211);
-            this.btnCliente.Name = "btnCliente";
-            this.btnCliente.Size = new System.Drawing.Size(227, 74);
-            this.btnCliente.TabIndex = 295;
-            this.btnCliente.Text = "DINHEIRO (SHIFT + D)";
-            this.btnCliente.Click += new System.EventHandler(this.btnCliente_Click_1);
             // 
             // labelControl1
             // 
@@ -166,25 +153,13 @@
             this.btnDebito.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDebito.Appearance.Options.UseBackColor = true;
             this.btnDebito.Appearance.Options.UseFont = true;
+            this.btnDebito.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.bank_30px;
             this.btnDebito.Location = new System.Drawing.Point(271, 211);
             this.btnDebito.Name = "btnDebito";
             this.btnDebito.Size = new System.Drawing.Size(227, 74);
-            this.btnDebito.TabIndex = 306;
-            this.btnDebito.Text = "CARTÃO DEBITO (SHIFT +R )";
+            this.btnDebito.TabIndex = 1;
+            this.btnDebito.Text = "DEBITO (SHIFT +R )";
             this.btnDebito.Click += new System.EventHandler(this.btnDebito_Click);
-            // 
-            // btnCredito
-            // 
-            this.btnCredito.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Danger;
-            this.btnCredito.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCredito.Appearance.Options.UseBackColor = true;
-            this.btnCredito.Appearance.Options.UseFont = true;
-            this.btnCredito.Location = new System.Drawing.Point(527, 211);
-            this.btnCredito.Name = "btnCredito";
-            this.btnCredito.Size = new System.Drawing.Size(227, 74);
-            this.btnCredito.TabIndex = 307;
-            this.btnCredito.Text = "CARTÃO CREDITO (SHIFT + C)";
-            this.btnCredito.Click += new System.EventHandler(this.btnCredito_Click);
             // 
             // btnPix
             // 
@@ -192,10 +167,11 @@
             this.btnPix.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPix.Appearance.Options.UseBackColor = true;
             this.btnPix.Appearance.Options.UseFont = true;
+            this.btnPix.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.qr_code_30px;
             this.btnPix.Location = new System.Drawing.Point(783, 211);
             this.btnPix.Name = "btnPix";
             this.btnPix.Size = new System.Drawing.Size(227, 74);
-            this.btnPix.TabIndex = 308;
+            this.btnPix.TabIndex = 3;
             this.btnPix.Text = "PIX (SHIFT + P)";
             this.btnPix.Click += new System.EventHandler(this.btnPix_Click);
             // 
@@ -220,6 +196,34 @@
             this.btnFechar.Size = new System.Drawing.Size(24, 24);
             this.btnFechar.TabIndex = 310;
             this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
+            // 
+            // btnCliente
+            // 
+            this.btnCliente.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Success;
+            this.btnCliente.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCliente.Appearance.Options.UseBackColor = true;
+            this.btnCliente.Appearance.Options.UseFont = true;
+            this.btnCliente.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.money1_30px1;
+            this.btnCliente.Location = new System.Drawing.Point(15, 211);
+            this.btnCliente.Name = "btnCliente";
+            this.btnCliente.Size = new System.Drawing.Size(227, 74);
+            this.btnCliente.TabIndex = 0;
+            this.btnCliente.Text = "DINHEIRO (SHIFT + D)";
+            this.btnCliente.Click += new System.EventHandler(this.btnCliente_Click_1);
+            // 
+            // btnCredito
+            // 
+            this.btnCredito.Appearance.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Danger;
+            this.btnCredito.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCredito.Appearance.Options.UseBackColor = true;
+            this.btnCredito.Appearance.Options.UseFont = true;
+            this.btnCredito.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.bank_cards_30px;
+            this.btnCredito.Location = new System.Drawing.Point(527, 211);
+            this.btnCredito.Name = "btnCredito";
+            this.btnCredito.Size = new System.Drawing.Size(227, 74);
+            this.btnCredito.TabIndex = 2;
+            this.btnCredito.Text = "CREDITO (SHIFT + C)";
+            this.btnCredito.Click += new System.EventHandler(this.btnCredito_Click);
             // 
             // frmPagamento
             // 
@@ -247,7 +251,6 @@
             this.Name = "frmPagamento";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmPagamento";
-            this.Load += new System.EventHandler(this.frmPagamento_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmPagamento_KeyDown);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.frmPagamento_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.frmPagamento_MouseMove);
@@ -266,7 +269,6 @@
         private DevExpress.XtraEditors.LabelControl labelControl4;
         private DevExpress.XtraEditors.LabelControl lblDescontoItens;
         private DevExpress.XtraEditors.SimpleButton btnDebito;
-        private DevExpress.XtraEditors.SimpleButton btnCredito;
         private DevExpress.XtraEditors.SimpleButton btnPix;
         private DevExpress.XtraEditors.PanelControl pnlTipoPagamento;
         public DevExpress.XtraEditors.LabelControl lblAcrescimo;
@@ -274,5 +276,6 @@
         private DevExpress.XtraEditors.SimpleButton btnFechar;
         public DevExpress.XtraEditors.LabelControl lblValorTotal;
         public DevExpress.XtraEditors.LabelControl lblSubTotal;
+        private DevExpress.XtraEditors.SimpleButton btnCredito;
     }
 }

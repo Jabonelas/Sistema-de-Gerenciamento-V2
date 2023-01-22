@@ -1,7 +1,9 @@
 ﻿using DevExpress.Data.ODataLinq.Helpers;
 using DevExpress.LookAndFeel;
+using DevExpress.Office.Model;
 using DevExpress.Utils.Extensions;
 using DevExpress.XtraSplashScreen;
+using DevExpress.XtraVerticalGrid.Painters;
 using Microsoft.EntityFrameworkCore.Internal;
 using Microsoft.Win32;
 using SistemaDeGerenciamento2_0.Class;
@@ -10,6 +12,7 @@ using SistemaDeGerenciamento2_0.Forms;
 using SistemaDeGerenciamento2_0.Models;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
 
@@ -219,6 +222,18 @@ namespace SistemaDeGerenciamento2_0
         private void PDV_Click(object sender, EventArgs e)
         {
             ReloadData("Acesso PDV");
+        }
+
+        private void toggleSwitch1_Toggled(object sender, EventArgs e)
+        {
+            if (toggleSwitch1.IsOn == true)
+            {
+                UserLookAndFeel.Default.SetSkinStyle(SkinStyle.Office2019White);
+            }
+            else
+            {
+                UserLookAndFeel.Default.SetSkinStyle(SkinStyle.WXI);
+            }
         }
     }
 }

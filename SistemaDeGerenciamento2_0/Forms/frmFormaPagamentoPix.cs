@@ -26,9 +26,11 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private string numeroNF;
 
-        private frmTelaPrincipal frmTelaPrincipal;
+        private frmLogin frmLogin;
 
         private frmPagamento frmPagamento;
+
+        private frmTelaPrincipal frmTelaPrincipal;
 
         private PermissoesUsuario permissoesUsuario = new PermissoesUsuario();
 
@@ -60,19 +62,6 @@ namespace SistemaDeGerenciamento2_0.Forms
             QRCodeImagem();
         }
 
-        private frmLogin frmLogin;
-
-        public frmFormaPagamentoPix(string _valor)
-        {
-            InitializeComponent();
-
-            BuscarCNPJ();
-
-            QRCodeImagem();
-
-            lblNomeUsuario.Text = frmLogin.UsuarioLogado.ToUpper();
-        }
-
         private void BuscarCNPJ()
         {
             try
@@ -88,7 +77,9 @@ namespace SistemaDeGerenciamento2_0.Forms
             }
             catch (Exception x)
             {
-                MessageBox.Show(x.ToString());
+                LogErros.EscreverArquivoDeLog($"{DateTime.Now} - Erro ao Buscar CNPJ da empresa na tela de pagamento Pix - | {x.Message} | {x.StackTrace}");
+
+                MensagemErros.ErroAoBuscarCNPJDaEmpresaTelaPagamentoPix(x);
             }
         }
 

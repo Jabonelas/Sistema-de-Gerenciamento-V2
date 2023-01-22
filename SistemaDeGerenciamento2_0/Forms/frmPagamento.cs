@@ -23,9 +23,12 @@ namespace SistemaDeGerenciamento2_0.Forms
         private decimal? jurosDia = 0;
         private decimal? parcelasJuros = 0;
 
+        private string numeroNF;
         private string valorTotal;
 
         private frmTelaPrincipal frmTelaPrincipal;
+
+        private PermissoesUsuario permissoesUsuario = new PermissoesUsuario();
 
         public frmPagamento()
         {
@@ -33,8 +36,6 @@ namespace SistemaDeGerenciamento2_0.Forms
 
             ValoresConfiguracoesFinanceiras();
         }
-
-        private string numeroNF;
 
         public frmPagamento(string _valorTotal, string _valorDesconto, string _numeroNF, frmTelaPrincipal _frmTelaPrincipal)
         {
@@ -85,9 +86,9 @@ namespace SistemaDeGerenciamento2_0.Forms
             }
             catch (Exception x)
             {
-                LogErros.EscreverArquivoDeLog($"{DateTime.Now} - Erro ao Deletar Configurações Financeiras Desconto Por Grupo - | {x.Message} | {x.StackTrace}");
+                LogErros.EscreverArquivoDeLog($"{DateTime.Now} - Erro ao Buscar Dados Configurações Financeiras na Tela de Pagamento - | {x.Message} | {x.StackTrace}");
 
-                MensagemErros.ErroAoDeletarGrupoComDesconto(x);
+                MensagemErros.ErroAoBuscarDadosConfiguracoesFinanceirasTelaPagamento(x);
             }
         }
 
@@ -102,10 +103,6 @@ namespace SistemaDeGerenciamento2_0.Forms
             lblAcrescimo.Text = "R$ 0,00";
 
             lblValorTotal.Text = (valorParcial - valorTotalDesconto).ToString("C2");
-        }
-
-        private void frmPagamento_Load(object sender, EventArgs e)
-        {
         }
 
         private void btnDebito_Click(object sender, EventArgs e)
@@ -192,22 +189,15 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             decimal valorParcial = Convert.ToDecimal(valorTotal.Replace("R$", ""));
 
-            //decimal valorTotalJuros = Convert.ToDecimal(valorParcial * jurosDia / 100);
-
-            //lblAcrescimo.Text = valorTotalJuros.ToString("C2");
-
             lblDescontoGeral.Text = "R$ 0,00";
 
             lblValorTotal.Text = valorTotal;
-            //lblValorTotal.Text = (valorParcial + valorTotalJuros).ToString("C2");
         }
 
         private void btnFechar_Click(object sender, EventArgs e)
         {
             CancelarVenda();
         }
-
-        private PermissoesUsuario permissoesUsuario = new PermissoesUsuario();
 
         private void CancelarVenda()
         {

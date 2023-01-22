@@ -66,83 +66,11 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             NFSaida.NotaFiscalSaida(numeroNF, valorPagoNoProduto, valorJuros, valorFinalPago, "Dinheiro");
 
-            //AlterandoEstoque();
-            //NotaFiscalSaida();
-
             AlterarEstoque.AlterandoEstoque();
 
             btn1CancelarVenda.Enabled = false;
             btn1FinalizarVenda.Enabled = false;
             txtValorEntregue.Enabled = false;
-        }
-
-        private void NotaFiscalSaida()
-        {
-            try
-            {
-                int numeroNFSaida = Convert.ToInt32(numeroNF);
-
-                using (SistemaDeGerenciamento2_0Context db = new SistemaDeGerenciamento2_0Context())
-                {
-                    foreach (var item in frmPDV.listaSecundaria)
-                    {
-                        int idProduto = item.IdProduto;
-                        decimal quantidadeProduto = item.QuantidadeProduto;
-                        decimal valorProdutoSemDesconto = item.PrecoProdutoSemDesconto;
-                        decimal valorDesconto = item.ValorDesconto;
-
-                        int fkCliente = 0;
-
-                        if (frmClienteCPF.idRegistro != 0)
-                        {
-                            fkCliente = frmClienteCPF.idRegistro;
-
-                            var NFSaida = new tb_nota_fiscal_saida()
-                            {
-                                nfs_numero_nf_saida = numeroNFSaida,
-                                nfs_data_emissao = DateTime.Today,
-                                nfs_quantidade = quantidadeProduto,
-                                nfs_valor_parcial = valorProdutoSemDesconto,
-                                nfs_valor_desconto = valorDesconto,
-                                nfs_valor_pago = valorPagoNoProduto,
-                                nfs_valor_juros = valorJuros,
-                                nfs_valor_total_pago = valorFinalPago,
-                                nfs_vendedor = frmLogin.UsuarioLogado,
-                                nfs_tipo_pagamento = "Dinheiro",
-                                fk_estoque = idProduto,
-                                fk_registro_cliente = fkCliente
-                            };
-
-                            db.tb_nota_fiscal_saida.Add(NFSaida);
-                            db.SaveChanges();
-                        }
-                        else
-                        {
-                            var NFSaida = new tb_nota_fiscal_saida()
-                            {
-                                nfs_numero_nf_saida = numeroNFSaida,
-                                nfs_data_emissao = DateTime.Today,
-                                nfs_quantidade = quantidadeProduto,
-                                nfs_valor_parcial = valorProdutoSemDesconto,
-                                nfs_valor_desconto = valorDesconto,
-                                nfs_valor_pago = valorPagoNoProduto,
-                                nfs_valor_juros = valorJuros,
-                                nfs_valor_total_pago = valorFinalPago,
-                                nfs_vendedor = frmLogin.UsuarioLogado,
-                                nfs_tipo_pagamento = "Dinheiro",
-                                fk_estoque = idProduto,
-                            };
-
-                            db.tb_nota_fiscal_saida.Add(NFSaida);
-                            db.SaveChanges();
-                        }
-                    }
-                }
-            }
-            catch (Exception x)
-            {
-                MessageBox.Show(x.ToString());
-            }
         }
 
         private void btn1CancelarVenda_Click(object sender, EventArgs e)

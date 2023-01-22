@@ -675,7 +675,7 @@ namespace SistemaDeGerenciamento2_0.Forms
             {
                 LogErros.EscreverArquivoDeLog($"{DateTime.Now} - Erro ao Buscar CNPJ Recepitor - | {x.Message} | {x.StackTrace}");
 
-                MensagemErros.ErroAoBuscarCNPJDaEmpresa(x);
+                MensagemErros.ErroAoBuscarCNPJDaEmpresaTelaNFEmpresa(x);
 
                 return false;
             }

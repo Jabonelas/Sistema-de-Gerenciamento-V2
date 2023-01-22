@@ -222,9 +222,9 @@ namespace SistemaDeGerenciamento2_0.Class
             MessageBox.Show($"(BUS-RE02) Erro ao Buscar CNPJ para verificação de existencia \n\nErro: {_e}", "Erro Buscar CNPJ para verificação!", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
-        public static void ErroAoBuscarCNPJDaEmpresa(Exception _e)
+        public static void ErroAoBuscarCNPJDaEmpresaTelaNFEmpresa(Exception _e)
         {
-            MessageBox.Show($"(BUS-RE03) Erro ao Buscar CNPJ da Empresa \n\nErro: {_e}", "Erro Buscar CNPJ da Empresa!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            MessageBox.Show($"(BUS-RE03) Erro ao Buscar CNPJ da Empresa Tela de Nota Fiscal de Saida \n\nErro: {_e}", "Erro Buscar CNPJ da Empresa Nota Fiscal de Saida!", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
         public static void ErroAoBuscarDadosUsuario(Exception _e)
@@ -361,6 +361,25 @@ namespace SistemaDeGerenciamento2_0.Class
         }
 
         #endregion PDV
+
+        #region Pagamento
+
+        public static void ErroAoBuscarDadosConfiguracoesFinanceirasTelaPagamento(Exception _e)
+        {
+            MessageBox.Show($"(BUS-PG01) Erro ao Buscar Dados Configurações Financeiras Tela de Pagamento \n\nErro: {_e}", "Erro Buscar Dados Configurações Financeiras!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        public static void ErroAoBuscarDadosConfiguracoesFinanceirasTelaPagamentoCredito(Exception _e)
+        {
+            MessageBox.Show($"(BUS-PG02) Erro ao Buscar Dados Configurações Financeiras Tela de Pagamento Credito \n\nErro: {_e}", "Erro Buscar Dados Configurações Financeiras!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        public static void ErroAoBuscarCNPJDaEmpresaTelaPagamentoPix(Exception _e)
+        {
+            MessageBox.Show($"(BUS-PG03) Erro ao Buscar CNPJ da empresa Tela de Pagamento Pix \n\nErro: {_e}", "Erro Buscar CNPJ da empresa Tela de Pagamento Pix!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        #endregion Pagamento
 
         #endregion Buscar
 

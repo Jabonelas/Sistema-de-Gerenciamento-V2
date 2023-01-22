@@ -30,7 +30,7 @@ namespace SistemaDeGerenciamento2_0.Forms
         public static string clienteCPF = string.Empty;
         public static string passagemDeCodigoDeBarras = string.Empty;
 
-        private bool isfecharTela = false;
+        private bool isFecharTela = false;
         public static bool permissaoRemoverItem = false;
         public static bool permissaoCancelarVenda = false;
 
@@ -459,12 +459,12 @@ namespace SistemaDeGerenciamento2_0.Forms
                 {
                     CancelarVenda();
 
-                    if (isfecharTela == true)
+                    if (isFecharTela == true)
                     {
                         this.Close();
                     }
 
-                    isfecharTela = false;
+                    isFecharTela = false;
 
                     return;
                 }
@@ -619,10 +619,11 @@ namespace SistemaDeGerenciamento2_0.Forms
             lblValorUnitario.Text = "R$ 0,00";
             lblDescricaoProduto.Text = "Produto";
             txtCodigoDeBarras.Text = string.Empty;
-
+            lblStatusCaixa.Text = "CAIXA LIVRE";
+            pnlTitulo.BackColor = Color.FromArgb(0, 204, 105);
             permissaoCancelarVenda = false;
 
-            isfecharTela = true;
+            isFecharTela = true;
         }
 
         private void btn2CancelarVenda_Click(object sender, EventArgs e)
@@ -657,12 +658,13 @@ namespace SistemaDeGerenciamento2_0.Forms
             if (gridView1.RowCount > 0)
             {
                 CancelarVenda();
+
+                lblStatusCaixa.Text = "CAIXA LIVRE";
                 pnlTitulo.BackColor = Color.FromArgb(0, 204, 105);
             }
             else
             {
                 lblStatusCaixa.Text = "CAIXA LIVRE";
-
                 pnlTitulo.BackColor = Color.FromArgb(0, 204, 105);
             }
         }

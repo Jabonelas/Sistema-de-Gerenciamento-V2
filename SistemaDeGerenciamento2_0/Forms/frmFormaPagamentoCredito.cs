@@ -19,7 +19,6 @@ namespace SistemaDeGerenciamento2_0.Forms
         private decimal valorPagoNoProduto = 0;
         private decimal valorJuros = 0;
         private decimal valorFinalPago = 0;
-        //private decimal valorTotal = 0;
 
         private string numeroNF;
 
@@ -29,7 +28,7 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private PermissoesUsuario permissoesUsuario = new PermissoesUsuario();
 
-        private List<tb_configuracao_financeira> listaConfiguracoesFinanceiras = new List<tb_configuracao_financeira>();
+        public static List<tb_configuracao_financeira> listaConfiguracoesFinanceiras = new List<tb_configuracao_financeira>();
 
         public frmFormaPagamentoCredito(string _valorFinalPago, string _numeroNF, decimal _valorPagoNoProduto,
             decimal _valorJuros, frmTelaPrincipal _frmTelaPrincipal, frmPagamento _frmPagamento)
@@ -57,15 +56,6 @@ namespace SistemaDeGerenciamento2_0.Forms
             lblNomeUsuario.Text = frmLogin.UsuarioLogado.ToUpper();
 
             cmbQdtParcelas.SelectedIndex = 0;
-        }
-
-        public frmFormaPagamentoCredito(string _valorTotal, frmPagamento _frmPagamento)
-        {
-            InitializeComponent();
-        }
-
-        private void frmFormaPagamentoCredito_Load(object sender, EventArgs e)
-        {
         }
 
         private void cmbQdtParcelas_TextChanged(object sender, EventArgs e)
@@ -96,10 +86,6 @@ namespace SistemaDeGerenciamento2_0.Forms
             }
         }
 
-        private void SetandoJuros()
-        {
-        }
-
         private void BuscarConfiguracoesFinanceiras()
         {
             try
@@ -116,13 +102,19 @@ namespace SistemaDeGerenciamento2_0.Forms
             }
             catch (Exception x)
             {
-                MessageBox.Show(x.ToString());
+                LogErros.EscreverArquivoDeLog($"{DateTime.Now} - Erro ao Buscar Dados Configurações Financeiras na Tela de Pagamento Credito - | {x.Message} | {x.StackTrace}");
+
+                MensagemErros.ErroAoBuscarDadosConfiguracoesFinanceirasTelaPagamentoCredito(x);
             }
         }
 
         private void btn1FinalizarVenda_Click(object sender, EventArgs e)
         {
-            NFSaida.NotaFiscalSaida(numeroNF, valorPagoNoProduto, valorJuros, valorFinalPago, "Credito");
+            valorJuros = Convert.ToDecimal(frmPagamento.lblAcrescimo.Text.Replace("R$", ""));
+
+            valorFinalPago = Convert.ToDecimal(lblValorTotal.Text.Replace("R$", ""));
+
+            NFSaida.NotaFiscalSaidaCredito(numeroNF, valorPagoNoProduto, valorJuros, valorFinalPago, "Credito");
 
             AlterarEstoque.AlterandoEstoque();
 

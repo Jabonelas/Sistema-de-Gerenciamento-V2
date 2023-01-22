@@ -146,7 +146,7 @@
             this.txtValorEntregue.Properties.NullText = "R$ 0,00";
             this.txtValorEntregue.Properties.UseMaskAsDisplayFormat = true;
             this.txtValorEntregue.Size = new System.Drawing.Size(269, 80);
-            this.txtValorEntregue.TabIndex = 310;
+            this.txtValorEntregue.TabIndex = 0;
             this.txtValorEntregue.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtValorEntregue_KeyUp);
             // 
             // btn1FinalizarVenda
@@ -188,7 +188,7 @@
             this.btn1FinalizarVenda.Location = new System.Drawing.Point(703, 217);
             this.btn1FinalizarVenda.Name = "btn1FinalizarVenda";
             this.btn1FinalizarVenda.Size = new System.Drawing.Size(280, 44);
-            this.btn1FinalizarVenda.TabIndex = 309;
+            this.btn1FinalizarVenda.TabIndex = 1;
             this.btn1FinalizarVenda.Text = "Finalizar Pagamento (F2)";
             this.btn1FinalizarVenda.Click += new System.EventHandler(this.btn1FinalizarVenda_Click);
             // 
@@ -223,7 +223,7 @@
             this.btn1CancelarVenda.Location = new System.Drawing.Point(12, 217);
             this.btn1CancelarVenda.Name = "btn1CancelarVenda";
             this.btn1CancelarVenda.Size = new System.Drawing.Size(280, 44);
-            this.btn1CancelarVenda.TabIndex = 308;
+            this.btn1CancelarVenda.TabIndex = 2;
             this.btn1CancelarVenda.Text = "Cancelar Pagamento (F9)";
             this.btn1CancelarVenda.Click += new System.EventHandler(this.btn1CancelarVenda_Click);
             // 
