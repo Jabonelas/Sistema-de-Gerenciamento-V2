@@ -103,7 +103,7 @@ namespace SistemaDeGerenciamento2_0.Forms
 
                 SalvarEstoque();
 
-                ChamandoAlertaSucessoNoCantoInferiorDireito();
+                AlertaConfirmacao.ChamandoAlertaSucessoNoCantoInferiorDireito(AlertaSalvar, this);
             }
         }
 
@@ -564,12 +564,6 @@ namespace SistemaDeGerenciamento2_0.Forms
             {
                 this.Close();
             }
-        }
-
-        private void ChamandoAlertaSucessoNoCantoInferiorDireito()
-        {
-            DadosMensagemAlerta msg = new DadosMensagemAlerta("\n   Sucesso!", Resources.salvar_verde50);
-            AlertaSalvar.Show(this, $"{msg.titulo}", msg.texto, string.Empty, msg.image, msg);
         }
 
         private void SalvarNFEntrada()

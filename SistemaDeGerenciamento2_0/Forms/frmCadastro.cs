@@ -251,7 +251,7 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         //            sqlDataSource1.FillAsync();
 
-        //            ChamandoAlertaSucessoNoCantoInferiorDireito();
+        //            AlertaConfirmacao.ChamandoAlertaSucessoNoCantoInferiorDireito(AlertaSalvar, this);
         //        }
         //    }
         //    catch (Exception x)
@@ -261,11 +261,5 @@ namespace SistemaDeGerenciamento2_0.Forms
         //        MensagemErros.ErroAoDeletarCadastro(x);
         //    }
         //}
-
-        private void ChamandoAlertaSucessoNoCantoInferiorDireito()
-        {
-            DadosMensagemAlerta msg = new DadosMensagemAlerta("\n   Sucesso!", Resources.salvar_verde50);
-            AlertaSalvar.Show(this, $"{msg.titulo}", msg.texto, string.Empty, msg.image, msg);
-        }
     }
 }

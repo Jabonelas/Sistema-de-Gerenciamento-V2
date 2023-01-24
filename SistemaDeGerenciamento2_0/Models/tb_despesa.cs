@@ -12,19 +12,16 @@ namespace SistemaDeGerenciamento2_0.Models
         public int id_despesa { get; set; }
         [Column(TypeName = "date")]
         public DateTime dp_data { get; set; }
-        [Required]
         [StringLength(255)]
         public string dp_observacao { get; set; }
         [Column(TypeName = "decimal(10, 2)")]
         public decimal dp_sub_valor_total { get; set; }
         [Column(TypeName = "decimal(10, 2)")]
-        public decimal dp_desconto { get; set; }
+        public decimal? dp_desconto { get; set; }
         [Column(TypeName = "decimal(10, 2)")]
-        public decimal dp_valor_lancamento { get; set; }
-        [Required]
+        public decimal? dp_valor_lancamento { get; set; }
         [StringLength(255)]
         public string dp_forma_pagamento { get; set; }
-        [Required]
         [StringLength(255)]
         public string dp_pagamento_em { get; set; }
         [Column(TypeName = "date")]

@@ -134,6 +134,20 @@ namespace SistemaDeGerenciamento2_0.Class
 
         #endregion Despesa
 
+        #region Despesas
+
+        public static void ErroAoCadastroDespesas(Exception _e)
+        {
+            MessageBox.Show($"(CAD-DE01) Erro ao Cadastrar Despesa \n\nErro: {_e.Message}", "Erro Cadastrar Despesa!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        public static void ErroAoCadastroDespesasRepeticao(Exception _e)
+        {
+            MessageBox.Show($"(CAD-DE02) Erro ao Cadastrar Despesa Repetição \n\nErro: {_e.Message}", "Erro Cadastrar Despesa Repetição!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        #endregion Despesas
+
         #endregion Cadastrar
 
         #region Buscar

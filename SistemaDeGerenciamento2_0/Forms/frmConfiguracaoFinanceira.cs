@@ -146,7 +146,7 @@ namespace SistemaDeGerenciamento2_0.Forms
 
                     db.SaveChanges();
 
-                    ChamandoAlertaSucessoNoCantoInferiorDireito();
+                    AlertaConfirmacao.ChamandoAlertaSucessoNoCantoInferiorDireito(AlertaSalvar, this);
                 }
             }
             catch (Exception x)
@@ -173,7 +173,7 @@ namespace SistemaDeGerenciamento2_0.Forms
                     db.tb_configuracao_financeira.Add(dadosFinaneiros);
                     db.SaveChanges();
 
-                    ChamandoAlertaSucessoNoCantoInferiorDireito();
+                    AlertaConfirmacao.ChamandoAlertaSucessoNoCantoInferiorDireito(AlertaSalvar, this);
                 }
             }
             catch (Exception x)
@@ -201,7 +201,7 @@ namespace SistemaDeGerenciamento2_0.Forms
                     db.tb_configuracao_financeira.Add(dadosFinaneiros);
                     db.SaveChanges();
 
-                    ChamandoAlertaSucessoNoCantoInferiorDireito();
+                    AlertaConfirmacao.ChamandoAlertaSucessoNoCantoInferiorDireito(AlertaSalvar, this);
                 }
             }
             catch (Exception x)
@@ -210,12 +210,6 @@ namespace SistemaDeGerenciamento2_0.Forms
 
                 MensagemErros.ErroAoCadastroFinanceiroDescontoPorGrupo(x);
             }
-        }
-
-        private void ChamandoAlertaSucessoNoCantoInferiorDireito()
-        {
-            DadosMensagemAlerta msg = new DadosMensagemAlerta("\n   Sucesso!", Resources.salvar_verde50);
-            AlertaSalvar.Show(this, $"{msg.titulo}", msg.texto, string.Empty, msg.image, msg);
         }
 
         private void ApagarGrupoComDesconto()

@@ -29,5 +29,10 @@ namespace SistemaDeGerenciamento2_0.Forms
             frmContasComRepeticao frmContasComRepeticao = new frmContasComRepeticao();
             frmContasComRepeticao.ShowDialog();
         }
+
+        private void frmFinanceiro_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

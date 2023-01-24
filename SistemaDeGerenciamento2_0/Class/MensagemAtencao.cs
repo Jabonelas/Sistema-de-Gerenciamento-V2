@@ -73,5 +73,10 @@ namespace SistemaDeGerenciamento2_0
         {
             MessageBox.Show("Desculpe, Quantidade Solicitada Indisponivel!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
+
+        public static void MensagemDataVencimentoMaiorQueLancamento()
+        {
+            MessageBox.Show("Atenção, Data de Vencimento é maior que Data de Lançamento!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        }
     }
 }

@@ -88,12 +88,6 @@ namespace SistemaDeGerenciamento2_0.Forms
             this.Top = Y + MousePosition.Y;
         }
 
-        private void ChamandoAlertaSucessoNoCantoInferiorDireito()
-        {
-            DadosMensagemAlerta msg = new DadosMensagemAlerta("\n   Sucesso!", Resources.salvar_verde50);
-            AlertaSalvar.Show(this, $"{msg.titulo}", msg.texto, string.Empty, msg.image, msg);
-        }
-
         private void FecharTela()
         {
             if (txtAgrupador.Text != string.Empty)
@@ -137,7 +131,7 @@ namespace SistemaDeGerenciamento2_0.Forms
                     db.tb_grupo.Add(subGrupo);
                     db.SaveChanges();
 
-                    ChamandoAlertaSucessoNoCantoInferiorDireito();
+                    AlertaConfirmacao.ChamandoAlertaSucessoNoCantoInferiorDireito(AlertaSalvar, this);
                 }
             }
             catch (Exception x)

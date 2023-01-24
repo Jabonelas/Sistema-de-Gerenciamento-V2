@@ -18,8 +18,8 @@ namespace SistemaDeGerenciamento2_0.Forms
     public partial class frmContasComRepeticao : DevExpress.XtraEditors.XtraForm
     {
         private int X = 0;
-
         private int Y = 0;
+        private int FK_Repeticao = 0;
 
         public frmContasComRepeticao()
         {
@@ -27,7 +27,7 @@ namespace SistemaDeGerenciamento2_0.Forms
 
             sqlDataSource1.FillAsync();
 
-            //txtDataInicial.Text = DateTime.Today.ToShortDateString();
+            txtDataLancamento.Text = DateTime.Today.ToShortDateString();
 
             sqlDataSource3.Fill();
         }
@@ -85,7 +85,14 @@ namespace SistemaDeGerenciamento2_0.Forms
             {
                 if (Validacoes.IsCampoPreenchido(txtDataVencimento) == true)
                 {
-                    Validacoes.IsDataValida(txtDataVencimento);
+                    if (Validacoes.IsDataValida(txtDataVencimento) == true)
+                    {
+                        if (Convert.ToDateTime(txtDataVencimento.Text) < Convert.ToDateTime(txtDataLancamento.Text))
+                        {
+                            MensagemAtencao.MensagemDataVencimentoMaiorQueLancamento();
+                            txtDataVencimento.Focus();
+                        }
+                    }
                 }
             }
         }
@@ -117,11 +124,19 @@ namespace SistemaDeGerenciamento2_0.Forms
             }
         }
 
-        private int FK_Endereco = 0;
-
         private void btnSalvar_Click(object sender, EventArgs e)
         {
-            SalvarDespesaComRepeticao();
+            if (txtDataLancamento.Text != string.Empty && txtDataVencimento.Text != string.Empty && txtValor.Text != string.Empty
+                && cmbFornecedor.Text != string.Empty && cmbCategoria.Text != string.Empty)
+            {
+                SalvarDespesaComRepeticao();
+
+                SalvarDespesa();
+            }
+            else
+            {
+                MensagemAtencao.MensagemPreencherCampos();
+            }
         }
 
         private void SalvarDespesa()
@@ -130,12 +145,27 @@ namespace SistemaDeGerenciamento2_0.Forms
             {
                 using (SistemaDeGerenciamento2_0Context db = new SistemaDeGerenciamento2_0Context())
                 {
-                    var despesa = new tb_despesa() { };
+                    var despesa = new tb_despesa()
+                    {
+                        dp_data = Convert.ToDateTime(txtDataLancamento.Text),
+                        dp_observacao = txtObservacoesDespesa.Text,
+                        dp_sub_valor_total = Convert.ToDecimal(txtValor.Text.Replace("R$", "")),
+                        dp_vencimento = Convert.ToDateTime(txtDataVencimento.Text),
+                        fk_registro = Convert.ToInt32(cmbFornecedor.Properties.GetKeyValueByDisplayValue(cmbFornecedor.Text)),
+                        fk_repeticao_despesa = FK_Repeticao
+                    };
+
+                    db.tb_despesa.Add(despesa);
+                    db.SaveChanges();
+
+                    AlertaConfirmacao.ChamandoAlertaSucessoNoCantoInferiorDireito(AlertaSalvar, this);
                 }
             }
             catch (Exception x)
             {
-                MessageBox.Show(x.ToString());
+                LogErros.EscreverArquivoDeLog($"{DateTime.Now} - Erro ao Cadastrar Despesas - Despesa - Contas Com Repetição | {x.Message} | {x.StackTrace}");
+
+                MensagemErros.ErroAoCadastroDespesas(x);
             }
         }
 
@@ -147,8 +177,8 @@ namespace SistemaDeGerenciamento2_0.Forms
                 {
                     var repeticaoDespesa = new tb_repeticao_despesa()
                     {
-                        rp_data_final = Convert.ToDateTime(txtDataVencimento.ToString()),
-                        rp_data_inicial = Convert.ToDateTime(txtDataLancamento.ToString()),
+                        rp_data_final = Convert.ToDateTime(txtDataVencimento.Text.ToString()),
+                        rp_data_inicial = Convert.ToDateTime(txtDataLancamento.Text.ToString()),
                         rp_observacao = txtObservacoesDespesaRepeticao.Text,
                         rp_periodicidade = cmbPeriocidade.Text,
                         fk_cadastro_despesa = Convert.ToInt32(cmbCategoria.Properties.GetKeyValueByDisplayValue(cmbCategoria.Text))
@@ -157,12 +187,14 @@ namespace SistemaDeGerenciamento2_0.Forms
                     db.tb_repeticao_despesa.Add(repeticaoDespesa);
                     db.SaveChanges();
 
-                    FK_Endereco = repeticaoDespesa.id_repeticao_despesas;
+                    FK_Repeticao = repeticaoDespesa.id_repeticao_despesas;
                 }
             }
             catch (Exception x)
             {
-                MessageBox.Show(x.ToString());
+                LogErros.EscreverArquivoDeLog($"{DateTime.Now} - Erro ao Cadastrar Despesas Repetição - Despesa - Contas Com Repetição | {x.Message} | {x.StackTrace}");
+
+                MensagemErros.ErroAoCadastroDespesasRepeticao(x);
             }
         }
     }

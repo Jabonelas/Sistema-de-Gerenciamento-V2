@@ -693,6 +693,16 @@ namespace SistemaDeGerenciamento2_0.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap general_ledger_20px {
+            get {
+                object obj = ResourceManager.GetObject("general_ledger_20px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap info_20px {
             get {
                 object obj = ResourceManager.GetObject("info_20px", resourceCulture);
@@ -1246,6 +1256,16 @@ namespace SistemaDeGerenciamento2_0.Properties {
         internal static System.Drawing.Bitmap vision_30px {
             get {
                 object obj = ResourceManager.GetObject("vision_30px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap xml_20px {
+            get {
+                object obj = ResourceManager.GetObject("xml_20px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

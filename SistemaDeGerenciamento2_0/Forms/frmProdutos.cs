@@ -94,7 +94,7 @@ namespace SistemaDeGerenciamento2_0.Forms
 
                 VerificarAcessoDeletarCadastroProduto();
 
-                ChamandoAlertaSucessoNoCantoInferiorDireito();
+                AlertaConfirmacao.ChamandoAlertaSucessoNoCantoInferiorDireito(AlertaSalvar, this);
 
                 sqlDataSource1.FillAsync();
             }
@@ -132,7 +132,7 @@ namespace SistemaDeGerenciamento2_0.Forms
 
                 permissoesUsuario.VerificarAcessoEditarProduto(codigoProduto);
 
-                ChamandoAlertaSucessoNoCantoInferiorDireito();
+                AlertaConfirmacao.ChamandoAlertaSucessoNoCantoInferiorDireito(AlertaSalvar, this);
 
                 sqlDataSource1.FillAsync();
             }
@@ -159,12 +159,6 @@ namespace SistemaDeGerenciamento2_0.Forms
                 column = hitInfo.Column;
                 popupMenu1.ShowPopup(barManager1, view.GridControl.PointToScreen(e.Point));
             }
-        }
-
-        private void ChamandoAlertaSucessoNoCantoInferiorDireito()
-        {
-            DadosMensagemAlerta msg = new DadosMensagemAlerta("\n   Sucesso!", Resources.salvar_verde50);
-            AlertaSalvar.Show(this, $"{msg.titulo}", msg.texto, string.Empty, msg.image, msg);
         }
 
         private void gridControl1_Click(object sender, EventArgs e)

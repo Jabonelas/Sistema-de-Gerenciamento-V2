@@ -158,7 +158,7 @@ namespace SistemaDeGerenciamento2_0.Forms
                     db.tb_grupo.Add(grupoProduto);
                     db.SaveChanges();
 
-                    ChamandoAlertaSucessoNoCantoInferiorDireito();
+                    AlertaConfirmacao.ChamandoAlertaSucessoNoCantoInferiorDireito(AlertaSalvar, this);
 
                     txtNomeGrupo.Text = string.Empty;
                     cmbAgrupador.Text = string.Empty;
@@ -170,12 +170,6 @@ namespace SistemaDeGerenciamento2_0.Forms
 
                 MensagemErros.ErroAoCadastroGrupo(x);
             }
-        }
-
-        private void ChamandoAlertaSucessoNoCantoInferiorDireito()
-        {
-            DadosMensagemAlerta msg = new DadosMensagemAlerta("\n   Sucesso!", Resources.salvar_verde50);
-            AlertaSalvar.Show(this, $"{msg.titulo}", msg.texto, string.Empty, msg.image, msg);
         }
 
         private void cmbAgrupador_KeyPress(object sender, KeyPressEventArgs e)
