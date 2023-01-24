@@ -30,7 +30,7 @@ namespace SistemaDeGerenciamento2_0.Models
         [Column(TypeName = "date")]
         public DateTime dp_vencimento { get; set; }
         public int fk_registro { get; set; }
-        public int fk_repeticao_despesa { get; set; }
+        public int? fk_repeticao_despesa { get; set; }
 
         [ForeignKey(nameof(fk_registro))]
         [InverseProperty(nameof(tb_registro.tb_despesa))]

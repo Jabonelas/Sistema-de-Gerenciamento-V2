@@ -85,7 +85,6 @@ namespace SistemaDeGerenciamento2_0.Context
                 entity.HasOne(d => d.fk_repeticao_despesaNavigation)
                     .WithMany(p => p.tb_despesa)
                     .HasForeignKey(d => d.fk_repeticao_despesa)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("tb_despesa_fk1");
             });
 
@@ -294,6 +293,8 @@ namespace SistemaDeGerenciamento2_0.Context
                     .HasName("PK_TB_REPETICAO_DESPESA");
 
                 entity.Property(e => e.rp_observacao).IsUnicode(false);
+
+                entity.Property(e => e.rp_periodicidade).IsUnicode(false);
 
                 entity.HasOne(d => d.fk_cadastro_despesaNavigation)
                     .WithMany(p => p.tb_repeticao_despesa)

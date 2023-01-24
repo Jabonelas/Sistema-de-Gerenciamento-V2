@@ -21,6 +21,9 @@ namespace SistemaDeGerenciamento2_0.Models
         public DateTime rp_data_final { get; set; }
         [Required]
         [StringLength(255)]
+        public string rp_periodicidade { get; set; }
+        [Required]
+        [StringLength(255)]
         public string rp_observacao { get; set; }
         public int fk_cadastro_despesa { get; set; }
 
