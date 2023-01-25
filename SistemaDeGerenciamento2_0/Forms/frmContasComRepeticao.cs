@@ -132,11 +132,26 @@ namespace SistemaDeGerenciamento2_0.Forms
                 SalvarDespesaComRepeticao();
 
                 SalvarDespesa();
+
+                LimpandoCampos();
             }
             else
             {
                 MensagemAtencao.MensagemPreencherCampos();
             }
+        }
+
+        private void LimpandoCampos()
+        {
+            txtDataVencimento.Text = string.Empty;
+            txtValor.Text = "R$ 0,00";
+            cmbFornecedor.Text = string.Empty;
+            cmbCategoria.Text = string.Empty;
+            txtObservacoesDespesa.Text = string.Empty;
+
+            chkRepetirDespesa.Checked = false;
+            cmbPeriocidade.Text = string.Empty;
+            txtObservacoesDespesaRepeticao.Text = string.Empty;
         }
 
         private void SalvarDespesa()

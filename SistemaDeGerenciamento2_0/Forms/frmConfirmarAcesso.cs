@@ -157,12 +157,35 @@ namespace SistemaDeGerenciamento2_0.Forms
                 {
                     VerificarCancelarVendaTelaPDV();
                 }
+                else if (tela == "Acesso Financeiro")
+                {
+                    VerificarAcessoFinanceiro();
+                }
             }
             else
             {
                 MensagemAtencao.MensagemUsuarioSenhasNaoEncontrados();
 
                 txtUsuario.Focus();
+            }
+        }
+
+        private void VerificarAcessoFinanceiro()
+        {
+            permissoesUsuario.listaPermissoesUsuario.ForEach(x => IsUsuarioPossuiAcesso = x.pm_acesso_financeiro);
+
+            if (IsUsuarioPossuiAcesso == true)
+            {
+                this.Hide();
+
+                frmFinanceiro frmFinanceiro = new frmFinanceiro(frmTelaPrincipal);
+                frmFinanceiro.ShowDialog();
+
+                this.Close();
+            }
+            else
+            {
+                MenssagemUsuarioSemPermissao();
             }
         }
 

@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            DevExpress.DataAccess.Sql.CustomSqlQuery customSqlQuery1 = new DevExpress.DataAccess.Sql.CustomSqlQuery();
+            DevExpress.DataAccess.Sql.CustomSqlQuery customSqlQuery3 = new DevExpress.DataAccess.Sql.CustomSqlQuery();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmContasComRepeticao));
-            DevExpress.DataAccess.Sql.SelectQuery selectQuery1 = new DevExpress.DataAccess.Sql.SelectQuery();
-            DevExpress.DataAccess.Sql.Column column1 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression1 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Table table1 = new DevExpress.DataAccess.Sql.Table();
-            DevExpress.DataAccess.Sql.Column column2 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression2 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.SelectQuery selectQuery3 = new DevExpress.DataAccess.Sql.SelectQuery();
+            DevExpress.DataAccess.Sql.Column column5 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression5 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Table table3 = new DevExpress.DataAccess.Sql.Table();
+            DevExpress.DataAccess.Sql.Column column6 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression6 = new DevExpress.DataAccess.Sql.ColumnExpression();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
@@ -145,7 +145,7 @@
             "Mensal",
             "Anual"});
             this.cmbPeriocidade.Size = new System.Drawing.Size(191, 36);
-            this.cmbPeriocidade.TabIndex = 89;
+            this.cmbPeriocidade.TabIndex = 7;
             // 
             // txtObservacoesDespesa
             // 
@@ -155,7 +155,7 @@
             this.txtObservacoesDespesa.Properties.Appearance.Options.UseFont = true;
             this.txtObservacoesDespesa.Properties.MaxLength = 200;
             this.txtObservacoesDespesa.Size = new System.Drawing.Size(625, 34);
-            this.txtObservacoesDespesa.TabIndex = 88;
+            this.txtObservacoesDespesa.TabIndex = 5;
             // 
             // txtValor
             // 
@@ -170,7 +170,7 @@
             this.txtValor.Properties.NullText = "R$ 0,00";
             this.txtValor.Properties.UseMaskAsDisplayFormat = true;
             this.txtValor.Size = new System.Drawing.Size(191, 34);
-            this.txtValor.TabIndex = 90;
+            this.txtValor.TabIndex = 2;
             this.txtValor.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtValor_KeyPress);
             // 
             // cmbFornecedor
@@ -194,7 +194,7 @@
             this.cmbFornecedor.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
             this.cmbFornecedor.Properties.ValueMember = "id_registro";
             this.cmbFornecedor.Size = new System.Drawing.Size(280, 34);
-            this.cmbFornecedor.TabIndex = 91;
+            this.cmbFornecedor.TabIndex = 3;
             // 
             // queryBindingSource
             // 
@@ -205,10 +205,10 @@
             // 
             this.sqlDataSource1.ConnectionName = "update";
             this.sqlDataSource1.Name = "sqlDataSource1";
-            customSqlQuery1.Name = "Query";
-            customSqlQuery1.Sql = resources.GetString("customSqlQuery1.Sql");
+            customSqlQuery3.Name = "Query";
+            customSqlQuery3.Sql = resources.GetString("customSqlQuery3.Sql");
             this.sqlDataSource1.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
-            customSqlQuery1});
+            customSqlQuery3});
             this.sqlDataSource1.ResultSchemaSerializable = resources.GetString("sqlDataSource1.ResultSchemaSerializable");
             // 
             // btnCancelar
@@ -224,7 +224,7 @@
             this.btnCancelar.Location = new System.Drawing.Point(525, 482);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(113, 30);
-            this.btnCancelar.TabIndex = 94;
+            this.btnCancelar.TabIndex = 10;
             this.btnCancelar.Text = "Cancelar (Esc)";
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
@@ -241,7 +241,7 @@
             this.btnSalvar.Location = new System.Drawing.Point(395, 482);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(113, 30);
-            this.btnSalvar.TabIndex = 93;
+            this.btnSalvar.TabIndex = 9;
             this.btnSalvar.Text = "Salvar (F10)";
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
@@ -265,7 +265,7 @@
             this.cmbCategoria.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
             this.cmbCategoria.Properties.ValueMember = "id_categoria_despesa";
             this.cmbCategoria.Size = new System.Drawing.Size(318, 34);
-            this.cmbCategoria.TabIndex = 95;
+            this.cmbCategoria.TabIndex = 4;
             // 
             // tb_cadastro_despesaBindingSource
             // 
@@ -276,20 +276,20 @@
             // 
             this.sqlDataSource3.ConnectionName = "update";
             this.sqlDataSource3.Name = "sqlDataSource3";
-            columnExpression1.ColumnName = "id_categoria_despesa";
-            table1.MetaSerializable = "<Meta X=\"30\" Y=\"30\" Width=\"125\" Height=\"143\" />";
-            table1.Name = "tb_cadastro_despesa";
-            columnExpression1.Table = table1;
-            column1.Expression = columnExpression1;
-            columnExpression2.ColumnName = "cd_categoria";
-            columnExpression2.Table = table1;
-            column2.Expression = columnExpression2;
-            selectQuery1.Columns.Add(column1);
-            selectQuery1.Columns.Add(column2);
-            selectQuery1.Name = "tb_cadastro_despesa";
-            selectQuery1.Tables.Add(table1);
+            columnExpression5.ColumnName = "id_categoria_despesa";
+            table3.MetaSerializable = "<Meta X=\"30\" Y=\"30\" Width=\"125\" Height=\"143\" />";
+            table3.Name = "tb_cadastro_despesa";
+            columnExpression5.Table = table3;
+            column5.Expression = columnExpression5;
+            columnExpression6.ColumnName = "cd_categoria";
+            columnExpression6.Table = table3;
+            column6.Expression = columnExpression6;
+            selectQuery3.Columns.Add(column5);
+            selectQuery3.Columns.Add(column6);
+            selectQuery3.Name = "tb_cadastro_despesa";
+            selectQuery3.Tables.Add(table3);
             this.sqlDataSource3.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
-            selectQuery1});
+            selectQuery3});
             this.sqlDataSource3.ResultSchemaSerializable = resources.GetString("sqlDataSource3.ResultSchemaSerializable");
             // 
             // txtDataLancamento
@@ -300,7 +300,8 @@
             this.txtDataLancamento.Properties.Appearance.Options.UseFont = true;
             this.txtDataLancamento.Properties.MaxLength = 20;
             this.txtDataLancamento.Size = new System.Drawing.Size(191, 34);
-            this.txtDataLancamento.TabIndex = 97;
+            this.txtDataLancamento.TabIndex = 0;
+            this.txtDataLancamento.TabStop = false;
             this.txtDataLancamento.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDataLancamento_KeyPress);
             this.txtDataLancamento.Leave += new System.EventHandler(this.txtDataLancamento_Leave);
             // 
@@ -345,7 +346,7 @@
             this.txtDataVencimento.Properties.Appearance.Options.UseFont = true;
             this.txtDataVencimento.Properties.MaxLength = 20;
             this.txtDataVencimento.Size = new System.Drawing.Size(191, 34);
-            this.txtDataVencimento.TabIndex = 123;
+            this.txtDataVencimento.TabIndex = 1;
             this.txtDataVencimento.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDataVencimento_KeyPress);
             this.txtDataVencimento.Leave += new System.EventHandler(this.txtDataVencimento_Leave);
             // 
@@ -380,7 +381,7 @@
             this.txtObservacoesDespesaRepeticao.Properties.Appearance.Options.UseFont = true;
             this.txtObservacoesDespesaRepeticao.Properties.MaxLength = 200;
             this.txtObservacoesDespesaRepeticao.Size = new System.Drawing.Size(625, 34);
-            this.txtObservacoesDespesaRepeticao.TabIndex = 127;
+            this.txtObservacoesDespesaRepeticao.TabIndex = 8;
             // 
             // labelControl11
             // 
@@ -415,7 +416,7 @@
             this.chkRepetirDespesa.Properties.Appearance.Options.UseFont = true;
             this.chkRepetirDespesa.Properties.Caption = "Repetir Despesa";
             this.chkRepetirDespesa.Size = new System.Drawing.Size(249, 25);
-            this.chkRepetirDespesa.TabIndex = 130;
+            this.chkRepetirDespesa.TabIndex = 6;
             this.chkRepetirDespesa.CheckedChanged += new System.EventHandler(this.chkRepetirDespesa_CheckedChanged);
             // 
             // AlertaSalvar

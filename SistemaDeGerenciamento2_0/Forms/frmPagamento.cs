@@ -30,13 +30,6 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private PermissoesUsuario permissoesUsuario = new PermissoesUsuario();
 
-        public frmPagamento()
-        {
-            InitializeComponent();
-
-            ValoresConfiguracoesFinanceiras();
-        }
-
         public frmPagamento(string _valorTotal, string _valorDesconto, string _numeroNF, frmTelaPrincipal _frmTelaPrincipal)
         {
             InitializeComponent();

@@ -35,9 +35,12 @@
             this.accordionContentContainer1 = new DevExpress.XtraBars.Navigation.AccordionContentContainer();
             this.accordionContentContainer2 = new DevExpress.XtraBars.Navigation.AccordionContentContainer();
             this.btnAcessoRapido = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.VisaoGeral = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.PDV = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.VisaoGeral = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.Financeiro = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.btnImportarXML = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.btnDespesaContas = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.btnDespesaCategoria = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.Cadastro = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.btnNovoCliente = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.btnNovoFornecedor = new DevExpress.XtraBars.Navigation.AccordionControlElement();
@@ -84,8 +87,8 @@
             this.accordionControl1.Dock = System.Windows.Forms.DockStyle.Left;
             this.accordionControl1.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.btnAcessoRapido,
-            this.VisaoGeral,
             this.PDV,
+            this.VisaoGeral,
             this.Financeiro,
             this.Cadastro,
             this.Produtos,
@@ -138,33 +141,6 @@
             this.btnAcessoRapido.Text = "Acesso Rápido";
             this.btnAcessoRapido.Click += new System.EventHandler(this.btnAcessoRapido_Click_1);
             // 
-            // VisaoGeral
-            // 
-            this.VisaoGeral.Appearance.Default.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
-            this.VisaoGeral.Appearance.Default.ForeColor = System.Drawing.Color.White;
-            this.VisaoGeral.Appearance.Default.Options.UseFont = true;
-            this.VisaoGeral.Appearance.Default.Options.UseForeColor = true;
-            this.VisaoGeral.Appearance.Disabled.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
-            this.VisaoGeral.Appearance.Disabled.ForeColor = System.Drawing.Color.White;
-            this.VisaoGeral.Appearance.Disabled.Options.UseFont = true;
-            this.VisaoGeral.Appearance.Disabled.Options.UseForeColor = true;
-            this.VisaoGeral.Appearance.Hovered.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
-            this.VisaoGeral.Appearance.Hovered.ForeColor = System.Drawing.Color.LightGray;
-            this.VisaoGeral.Appearance.Hovered.Options.UseFont = true;
-            this.VisaoGeral.Appearance.Hovered.Options.UseForeColor = true;
-            this.VisaoGeral.Appearance.Normal.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
-            this.VisaoGeral.Appearance.Normal.ForeColor = System.Drawing.Color.White;
-            this.VisaoGeral.Appearance.Normal.Options.UseFont = true;
-            this.VisaoGeral.Appearance.Normal.Options.UseForeColor = true;
-            this.VisaoGeral.Appearance.Pressed.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.VisaoGeral.Appearance.Pressed.ForeColor = System.Drawing.Color.Silver;
-            this.VisaoGeral.Appearance.Pressed.Options.UseFont = true;
-            this.VisaoGeral.Appearance.Pressed.Options.UseForeColor = true;
-            this.VisaoGeral.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.vision_30px;
-            this.VisaoGeral.Name = "VisaoGeral";
-            this.VisaoGeral.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.VisaoGeral.Text = "Visão Geral";
-            // 
             // PDV
             // 
             this.PDV.Appearance.Default.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
@@ -193,6 +169,33 @@
             this.PDV.Text = "PDV";
             this.PDV.Click += new System.EventHandler(this.PDV_Click);
             // 
+            // VisaoGeral
+            // 
+            this.VisaoGeral.Appearance.Default.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.VisaoGeral.Appearance.Default.ForeColor = System.Drawing.Color.White;
+            this.VisaoGeral.Appearance.Default.Options.UseFont = true;
+            this.VisaoGeral.Appearance.Default.Options.UseForeColor = true;
+            this.VisaoGeral.Appearance.Disabled.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.VisaoGeral.Appearance.Disabled.ForeColor = System.Drawing.Color.White;
+            this.VisaoGeral.Appearance.Disabled.Options.UseFont = true;
+            this.VisaoGeral.Appearance.Disabled.Options.UseForeColor = true;
+            this.VisaoGeral.Appearance.Hovered.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.VisaoGeral.Appearance.Hovered.ForeColor = System.Drawing.Color.LightGray;
+            this.VisaoGeral.Appearance.Hovered.Options.UseFont = true;
+            this.VisaoGeral.Appearance.Hovered.Options.UseForeColor = true;
+            this.VisaoGeral.Appearance.Normal.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.VisaoGeral.Appearance.Normal.ForeColor = System.Drawing.Color.White;
+            this.VisaoGeral.Appearance.Normal.Options.UseFont = true;
+            this.VisaoGeral.Appearance.Normal.Options.UseForeColor = true;
+            this.VisaoGeral.Appearance.Pressed.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.VisaoGeral.Appearance.Pressed.ForeColor = System.Drawing.Color.Silver;
+            this.VisaoGeral.Appearance.Pressed.Options.UseFont = true;
+            this.VisaoGeral.Appearance.Pressed.Options.UseForeColor = true;
+            this.VisaoGeral.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.vision_30px;
+            this.VisaoGeral.Name = "VisaoGeral";
+            this.VisaoGeral.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.VisaoGeral.Text = "Visão Geral";
+            // 
             // Financeiro
             // 
             this.Financeiro.Appearance.Default.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
@@ -215,11 +218,32 @@
             this.Financeiro.Appearance.Pressed.ForeColor = System.Drawing.Color.Silver;
             this.Financeiro.Appearance.Pressed.Options.UseFont = true;
             this.Financeiro.Appearance.Pressed.Options.UseForeColor = true;
+            this.Financeiro.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
+            this.btnImportarXML,
+            this.btnDespesaContas,
+            this.btnDespesaCategoria});
             this.Financeiro.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.dollar_place_marker_30px;
             this.Financeiro.Name = "Financeiro";
-            this.Financeiro.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.Financeiro.Text = "Financeiro";
             this.Financeiro.Click += new System.EventHandler(this.Financeiro_Click);
+            // 
+            // btnImportarXML
+            // 
+            this.btnImportarXML.Name = "btnImportarXML";
+            this.btnImportarXML.Text = "Importar XML";
+            this.btnImportarXML.Click += new System.EventHandler(this.btnImportarXML_Click);
+            // 
+            // btnDespesaContas
+            // 
+            this.btnDespesaContas.Name = "btnDespesaContas";
+            this.btnDespesaContas.Text = "Despesas/Contas";
+            this.btnDespesaContas.Click += new System.EventHandler(this.btnDespesaContas_Click);
+            // 
+            // btnDespesaCategoria
+            // 
+            this.btnDespesaCategoria.Name = "btnDespesaCategoria";
+            this.btnDespesaCategoria.Text = "Despesa/Categoria";
+            this.btnDespesaCategoria.Click += new System.EventHandler(this.btnDespesaCategoria_Click);
             // 
             // Cadastro
             // 
@@ -468,7 +492,7 @@
             // 
             // lblUsuarioLogado
             // 
-            this.lblUsuarioLogado.Location = new System.Drawing.Point(582, 13);
+            this.lblUsuarioLogado.Location = new System.Drawing.Point(359, 9);
             this.lblUsuarioLogado.Name = "lblUsuarioLogado";
             this.lblUsuarioLogado.Size = new System.Drawing.Size(63, 13);
             this.lblUsuarioLogado.TabIndex = 5;
@@ -476,7 +500,7 @@
             // 
             // labelControl1
             // 
-            this.labelControl1.Location = new System.Drawing.Point(536, 13);
+            this.labelControl1.Location = new System.Drawing.Point(313, 9);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(40, 13);
             this.labelControl1.TabIndex = 4;
@@ -548,6 +572,9 @@
         private DevExpress.XtraBars.Navigation.AccordionControlElement btnConsultarEstoque;
         public System.Windows.Forms.FlowLayoutPanel pnlTelaPrincipal;
         private DevExpress.XtraEditors.ToggleSwitch toggleSwitch1;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement btnImportarXML;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement btnDespesaContas;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement btnDespesaCategoria;
     }
 }
 

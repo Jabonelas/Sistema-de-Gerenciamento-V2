@@ -111,6 +111,7 @@ namespace SistemaDeGerenciamento2_0.Forms
                         pm_visualizar_contas_pagar = Convert.ToBoolean(chkVisualizarContasReceberPagar.Checked),
                         pm_receber_contas = Convert.ToBoolean(chkPermitePagarReceberContas.Checked),
                         pm_visualizar_fluxo_caixa = Convert.ToBoolean(chkVisualizarFluxoCaixa.Checked),
+                        pm_acesso_financeiro = Convert.ToBoolean(chkAcessoFinanceiro.Checked),
 
                         ////Configuração
                         pm_criar_editar_usuario = Convert.ToBoolean(chkCriarEditarUsuarios.Checked),
@@ -206,6 +207,7 @@ namespace SistemaDeGerenciamento2_0.Forms
                                 chkVisualizarContasReceberPagar.Checked = Convert.ToBoolean(item.pm_visualizar_contas_pagar);
                                 chkPermitePagarReceberContas.Checked = Convert.ToBoolean(item.pm_receber_contas);
                                 chkVisualizarFluxoCaixa.Checked = Convert.ToBoolean(item.pm_visualizar_fluxo_caixa);
+                                chkAcessoFinanceiro.Checked = Convert.ToBoolean(item.pm_acesso_financeiro);
 
                                 //Configuração
                                 chkCriarEditarUsuarios.Checked = Convert.ToBoolean(item.pm_criar_editar_usuario);
@@ -267,6 +269,7 @@ namespace SistemaDeGerenciamento2_0.Forms
                     checkBoxPreenchidas.pm_visualizar_contas_pagar = Convert.ToBoolean(chkVisualizarContasReceberPagar.Checked);
                     checkBoxPreenchidas.pm_receber_contas = Convert.ToBoolean(chkPermitePagarReceberContas.Checked);
                     checkBoxPreenchidas.pm_visualizar_fluxo_caixa = Convert.ToBoolean(chkVisualizarFluxoCaixa.Checked);
+                    checkBoxPreenchidas.pm_acesso_financeiro = Convert.ToBoolean(chkAcessoFinanceiro.Checked);
 
                     ////Configuração
 

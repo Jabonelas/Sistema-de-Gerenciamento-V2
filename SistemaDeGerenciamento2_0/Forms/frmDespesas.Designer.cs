@@ -90,7 +90,7 @@
             this.btnNovaDespesa.Name = "btnNovaDespesa";
             this.btnNovaDespesa.Size = new System.Drawing.Size(179, 30);
             this.btnNovaDespesa.TabIndex = 20;
-            this.btnNovaDespesa.Text = "Nova Despesa";
+            this.btnNovaDespesa.Text = "Nova Despesa / Categoria";
             this.btnNovaDespesa.Click += new System.EventHandler(this.btnNovaDespesa_Click);
             // 
             // gridControl1
@@ -200,9 +200,9 @@
             this.labelControl3.Appearance.Options.UseFont = true;
             this.labelControl3.Location = new System.Drawing.Point(19, 12);
             this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(136, 20);
+            this.labelControl3.Size = new System.Drawing.Size(147, 20);
             this.labelControl3.TabIndex = 297;
-            this.labelControl3.Text = "Consultar Despesas";
+            this.labelControl3.Text = "Despesas / Categoria";
             // 
             // pictureBox6
             // 
@@ -221,9 +221,9 @@
             this.labelControl1.Appearance.Options.UseFont = true;
             this.labelControl1.Location = new System.Drawing.Point(19, 60);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(104, 15);
+            this.labelControl1.Size = new System.Drawing.Size(111, 15);
             this.labelControl1.TabIndex = 298;
-            this.labelControl1.Text = "Adicionar Despesa:";
+            this.labelControl1.Text = "Adicionar Categoria:";
             // 
             // pictureBox2
             // 

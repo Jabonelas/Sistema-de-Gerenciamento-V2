@@ -52,6 +52,24 @@ namespace SistemaDeGerenciamento2_0.Class
             }
         }
 
+        public void VerificarAcessoFinanceiro(string _Cadastro)
+        {
+            bool IsUsuarioPossuiAcesso = false;
+
+            listaPermissoesUsuario.ForEach(x => IsUsuarioPossuiAcesso = x.pm_acesso_financeiro);
+
+            if (IsUsuarioPossuiAcesso == true)
+            {
+                frmFinanceiro frmFinanceiro = new frmFinanceiro(frmTelaPrincipal);
+                frmFinanceiro.ShowDialog();
+            }
+            else
+            {
+                frmConfirmarAcesso frmConfirmarAcesso = new frmConfirmarAcesso(frmTelaPrincipal, _Cadastro);
+                frmConfirmarAcesso.ShowDialog();
+            }
+        }
+
         public void VerificarCancelarVendaTelaPDV(string _Cadastro)
         {
             bool IsUsuarioPossuiAcesso = false;

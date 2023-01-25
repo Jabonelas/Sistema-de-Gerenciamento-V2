@@ -275,6 +275,26 @@ namespace SistemaDeGerenciamento2_0.Class
             MessageBox.Show($"(BUS-FI03) Erro ao Buscar Dados Configurações financeiras \n\nErro: {_e}", "Erro Buscar Dados Configurações financeiras!", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
+        public static void ErroAoBuscarValorTotal(Exception _e)
+        {
+            MessageBox.Show($"(BUS-FI04) Erro ao Buscar Total Aguardando \n\nErro: {_e}", "Erro Buscar Total Aguardando!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        public static void ErroAoBuscarValorAguardandoPagamento(Exception _e)
+        {
+            MessageBox.Show($"(BUS-FI05) Erro ao Buscar Total Aguardando Pagamento \n\nErro: {_e}", "Erro Buscar Total Aguardando Pagamento!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        public static void ErroAoBuscarValorPagamentoRealizado(Exception _e)
+        {
+            MessageBox.Show($"(BUS-FI06) Erro ao Buscar Total Pagamento Realizado \n\nErro: {_e}", "Erro Buscar Total Pagamento Realizado!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        public static void ErroAoBuscarValorPagamentoAtrasado(Exception _e)
+        {
+            MessageBox.Show($"(BUS-FI07) Erro ao Buscar Total Pagamento Atrasado \n\nErro: {_e}", "Erro Buscar Total Pagamento Atrasado!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
         #endregion Financeiro
 
         #region NF Entrada

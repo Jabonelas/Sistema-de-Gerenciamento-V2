@@ -55,8 +55,10 @@ namespace SistemaDeGerenciamento2_0
 
         private void Financeiro_Click(object sender, EventArgs e)
         {
-            frmFinanceiro frmFinanceiro = new frmFinanceiro();
-            frmFinanceiro.ShowDialog();
+            //ReloadData("Acesso Financeiro");
+
+            //frmFinanceiro frmFinanceiro = new frmFinanceiro(this);
+            //frmFinanceiro.ShowDialog();
         }
 
         private void btnAcessoRapido_Click_1(object sender, EventArgs e)
@@ -142,6 +144,11 @@ namespace SistemaDeGerenciamento2_0
                 {
                     permissoesCadastro.ReloadData(this, frmLogin.UsuarioLogado);
                     permissoesCadastro.VerificarAcessoPDV("Acesso PDV");
+                }
+                else if (_btnSolitador == "Acesso Financeiro")
+                {
+                    permissoesCadastro.ReloadData(this, frmLogin.UsuarioLogado);
+                    permissoesCadastro.VerificarAcessoFinanceiro("Acesso Financeiro");
                 }
             }
         }
@@ -234,6 +241,23 @@ namespace SistemaDeGerenciamento2_0
             {
                 UserLookAndFeel.Default.SetSkinStyle(SkinStyle.WXI);
             }
+        }
+
+        private void btnImportarXML_Click(object sender, EventArgs e)
+        {
+            frmEntradaNF frm = new frmEntradaNF();
+            frm.ShowDialog();
+        }
+
+        private void btnDespesaContas_Click(object sender, EventArgs e)
+        {
+            frmFinanceiro frmFinanceiro = new frmFinanceiro(this);
+            frmFinanceiro.ShowDialog();
+        }
+
+        private void btnDespesaCategoria_Click(object sender, EventArgs e)
+        {
+            ReloadData("ConfigDespesa");
         }
     }
 }
