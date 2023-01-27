@@ -33,7 +33,7 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private List<DadosNotaFiscalEntrada> ListaValorProdutoECoditoProdutoNF = new List<DadosNotaFiscalEntrada>();
 
-        public frmEntradaNF()
+        public frmEntradaNF(frmTelaPrincipal frmTelaPrincipal)
         {
             InitializeComponent();
         }

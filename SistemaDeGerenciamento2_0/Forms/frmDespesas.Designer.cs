@@ -53,7 +53,6 @@
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.labelControl16 = new DevExpress.XtraEditors.LabelControl();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.popupMenu1 = new DevExpress.XtraBars.PopupMenu(this.components);
             this.btnAlterar = new DevExpress.XtraBars.BarButtonItem();
@@ -63,6 +62,7 @@
             this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
+            this.labelControl16 = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -90,7 +90,7 @@
             this.btnNovaDespesa.Name = "btnNovaDespesa";
             this.btnNovaDespesa.Size = new System.Drawing.Size(179, 30);
             this.btnNovaDespesa.TabIndex = 20;
-            this.btnNovaDespesa.Text = "Nova Despesa / Categoria";
+            this.btnNovaDespesa.Text = "Nova Categoria / Despesa";
             this.btnNovaDespesa.Click += new System.EventHandler(this.btnNovaDespesa_Click);
             // 
             // gridControl1
@@ -200,9 +200,9 @@
             this.labelControl3.Appearance.Options.UseFont = true;
             this.labelControl3.Location = new System.Drawing.Point(19, 12);
             this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(147, 20);
+            this.labelControl3.Size = new System.Drawing.Size(140, 20);
             this.labelControl3.TabIndex = 297;
-            this.labelControl3.Text = "Despesas / Categoria";
+            this.labelControl3.Text = "Categoria / Despesa";
             // 
             // pictureBox6
             // 
@@ -235,16 +235,6 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 299;
             this.pictureBox2.TabStop = false;
-            // 
-            // labelControl16
-            // 
-            this.labelControl16.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl16.Appearance.Options.UseFont = true;
-            this.labelControl16.Location = new System.Drawing.Point(19, 137);
-            this.labelControl16.Name = "labelControl16";
-            this.labelControl16.Size = new System.Drawing.Size(103, 15);
-            this.labelControl16.TabIndex = 300;
-            this.labelControl16.Text = "Todas as Despesas:";
             // 
             // pictureBox1
             // 
@@ -323,6 +313,16 @@
             this.barDockControlRight.Manager = this.barManager1;
             this.barDockControlRight.Size = new System.Drawing.Size(0, 563);
             // 
+            // labelControl16
+            // 
+            this.labelControl16.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl16.Appearance.Options.UseFont = true;
+            this.labelControl16.Location = new System.Drawing.Point(19, 137);
+            this.labelControl16.Name = "labelControl16";
+            this.labelControl16.Size = new System.Drawing.Size(110, 15);
+            this.labelControl16.TabIndex = 300;
+            this.labelControl16.Text = "Todas as Categorias:";
+            // 
             // frmDespesas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -364,7 +364,6 @@
         private System.Windows.Forms.PictureBox pictureBox6;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private DevExpress.XtraEditors.LabelControl labelControl16;
         private System.Windows.Forms.PictureBox pictureBox1;
         private DevExpress.DataAccess.Sql.SqlDataSource sqlDataSource1;
         private DevExpress.XtraGrid.Columns.GridColumn id_categoria_despesa;
@@ -379,5 +378,6 @@
         private DevExpress.XtraBars.BarDockControl barDockControlBottom;
         private DevExpress.XtraBars.BarDockControl barDockControlLeft;
         private DevExpress.XtraBars.BarDockControl barDockControlRight;
+        private DevExpress.XtraEditors.LabelControl labelControl16;
     }
 }

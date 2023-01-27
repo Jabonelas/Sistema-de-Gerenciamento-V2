@@ -78,5 +78,10 @@ namespace SistemaDeGerenciamento2_0
         {
             MessageBox.Show("Atenção, Data de Vencimento é maior que Data de Lançamento!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
+
+        public static void MensagemPreenchimentoCampoPeriocidade()
+        {
+            MessageBox.Show("Atenção, Campo de Periocidade deve estar Preenchido!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        }
     }
 }

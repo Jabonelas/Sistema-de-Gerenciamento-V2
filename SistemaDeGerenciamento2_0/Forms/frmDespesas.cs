@@ -1,19 +1,12 @@
-﻿using DevExpress.Utils.Menu;
-using DevExpress.XtraEditors;
+﻿using DevExpress.XtraEditors;
 using DevExpress.XtraGrid.Columns;
 using DevExpress.XtraGrid.Views.Grid;
 using DevExpress.XtraGrid.Views.Grid.ViewInfo;
 using DevExpress.XtraSplashScreen;
 using SistemaDeGerenciamento2_0.Context;
-using SistemaDeGerenciamento2_0.Properties;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace SistemaDeGerenciamento2_0.Forms
@@ -65,18 +58,6 @@ namespace SistemaDeGerenciamento2_0.Forms
                 popupMenu1.ShowPopup(barManager1, view.GridControl.PointToScreen(e.Point));
             }
         }
-
-        //private class RowInfo
-        //{
-        //    public RowInfo(GridView view, int rowHandle)
-        //    {
-        //        this.RowHandle = rowHandle;
-        //        this.View = view;
-        //    }
-
-        //    public GridView View;
-        //    public int RowHandle;
-        //}
 
         private int PegandoDadosDaLinha()
         {
@@ -131,7 +112,5 @@ namespace SistemaDeGerenciamento2_0.Forms
                 AtualizarGrid();
             }
         }
-
-       
     }
 }

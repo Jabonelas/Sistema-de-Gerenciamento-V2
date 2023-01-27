@@ -109,9 +109,12 @@ namespace SistemaDeGerenciamento2_0.Forms
                         ////Financeiro
                         pm_alerta_contas_atrasadas = Convert.ToBoolean(chkAlertaContasAtrasadas.Checked),
                         pm_visualizar_contas_pagar = Convert.ToBoolean(chkVisualizarContasReceberPagar.Checked),
-                        pm_receber_contas = Convert.ToBoolean(chkPermitePagarReceberContas.Checked),
+                        pm_pagar_contas = Convert.ToBoolean(chkPermitePagarReceberContas.Checked),
                         pm_visualizar_fluxo_caixa = Convert.ToBoolean(chkVisualizarFluxoCaixa.Checked),
                         pm_acesso_financeiro = Convert.ToBoolean(chkAcessoFinanceiro.Checked),
+                        pm_cadastrar_conta = Convert.ToBoolean(chkCadastrarCategoriaDespesa.Checked),
+                        pm_cadastrar_despesa = Convert.ToBoolean(chkCadastrarDespesa.Checked),
+                        pm_importar_xml = Convert.ToBoolean(chkPermissaoImportarXML.Checked),
 
                         ////Configuração
                         pm_criar_editar_usuario = Convert.ToBoolean(chkCriarEditarUsuarios.Checked),
@@ -205,9 +208,12 @@ namespace SistemaDeGerenciamento2_0.Forms
                                 //Financeiro
                                 chkAlertaContasAtrasadas.Checked = Convert.ToBoolean(item.pm_alerta_contas_atrasadas);
                                 chkVisualizarContasReceberPagar.Checked = Convert.ToBoolean(item.pm_visualizar_contas_pagar);
-                                chkPermitePagarReceberContas.Checked = Convert.ToBoolean(item.pm_receber_contas);
+                                chkPermitePagarReceberContas.Checked = Convert.ToBoolean(item.pm_pagar_contas);
                                 chkVisualizarFluxoCaixa.Checked = Convert.ToBoolean(item.pm_visualizar_fluxo_caixa);
                                 chkAcessoFinanceiro.Checked = Convert.ToBoolean(item.pm_acesso_financeiro);
+                                chkCadastrarCategoriaDespesa.Checked = Convert.ToBoolean(item.pm_cadastrar_conta);
+                                chkCadastrarDespesa.Checked = Convert.ToBoolean(item.pm_cadastrar_despesa);
+                                chkPermissaoImportarXML.Checked = Convert.ToBoolean(item.pm_importar_xml);
 
                                 //Configuração
                                 chkCriarEditarUsuarios.Checked = Convert.ToBoolean(item.pm_criar_editar_usuario);
@@ -267,9 +273,12 @@ namespace SistemaDeGerenciamento2_0.Forms
                     ////Financeiro
                     checkBoxPreenchidas.pm_alerta_contas_atrasadas = Convert.ToBoolean(chkAlertaContasAtrasadas.Checked);
                     checkBoxPreenchidas.pm_visualizar_contas_pagar = Convert.ToBoolean(chkVisualizarContasReceberPagar.Checked);
-                    checkBoxPreenchidas.pm_receber_contas = Convert.ToBoolean(chkPermitePagarReceberContas.Checked);
+                    checkBoxPreenchidas.pm_pagar_contas = Convert.ToBoolean(chkPermitePagarReceberContas.Checked);
                     checkBoxPreenchidas.pm_visualizar_fluxo_caixa = Convert.ToBoolean(chkVisualizarFluxoCaixa.Checked);
                     checkBoxPreenchidas.pm_acesso_financeiro = Convert.ToBoolean(chkAcessoFinanceiro.Checked);
+                    checkBoxPreenchidas.pm_cadastrar_conta = Convert.ToBoolean(chkCadastrarCategoriaDespesa.Checked);
+                    checkBoxPreenchidas.pm_cadastrar_despesa = Convert.ToBoolean(chkCadastrarDespesa.Checked);
+                    checkBoxPreenchidas.pm_importar_xml = Convert.ToBoolean(chkPermissaoImportarXML.Checked);
 
                     ////Configuração
 

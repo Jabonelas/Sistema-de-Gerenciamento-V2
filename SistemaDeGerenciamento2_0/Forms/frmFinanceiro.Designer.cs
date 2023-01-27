@@ -30,10 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             DevExpress.XtraSplashScreen.SplashScreenManager splashScreenManager1 = new DevExpress.XtraSplashScreen.SplashScreenManager(this, null, true, true);
-            DevExpress.DataAccess.Sql.CustomSqlQuery customSqlQuery2 = new DevExpress.DataAccess.Sql.CustomSqlQuery();
+            DevExpress.DataAccess.Sql.CustomSqlQuery customSqlQuery1 = new DevExpress.DataAccess.Sql.CustomSqlQuery();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmFinanceiro));
-            this.btnAdicionarXML = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
+            this.btnNovaDespesaContas = new DevExpress.XtraEditors.SimpleButton();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -43,9 +42,11 @@
             this.rg_cpf = new DevExpress.XtraGrid.Columns.GridColumn();
             this.rg_nome_fantasia = new DevExpress.XtraGrid.Columns.GridColumn();
             this.rg_cnpj = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.dp_parcelas = new DevExpress.XtraGrid.Columns.GridColumn();
             this.cd_categoria = new DevExpress.XtraGrid.Columns.GridColumn();
             this.dp_sub_valor_total = new DevExpress.XtraGrid.Columns.GridColumn();
             this.dp_vencimento = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.dp_imagem = new DevExpress.XtraGrid.Columns.GridColumn();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
@@ -82,68 +83,35 @@
             // 
             splashScreenManager1.ClosingDelay = 500;
             // 
-            // btnAdicionarXML
+            // btnNovaDespesaContas
             // 
-            this.btnAdicionarXML.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(218)))), ((int)(((byte)(153)))));
-            this.btnAdicionarXML.Appearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(218)))), ((int)(((byte)(153)))));
-            this.btnAdicionarXML.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdicionarXML.Appearance.Options.UseBorderColor = true;
-            this.btnAdicionarXML.Appearance.Options.UseFont = true;
-            this.btnAdicionarXML.AppearanceDisabled.BackColor = System.Drawing.Color.Yellow;
-            this.btnAdicionarXML.AppearanceDisabled.BackColor2 = System.Drawing.Color.Yellow;
-            this.btnAdicionarXML.AppearanceDisabled.Options.UseBackColor = true;
-            this.btnAdicionarXML.AppearanceHovered.BackColor = System.Drawing.Color.Red;
-            this.btnAdicionarXML.AppearanceHovered.BackColor2 = System.Drawing.Color.Red;
-            this.btnAdicionarXML.AppearanceHovered.Options.UseBackColor = true;
-            this.btnAdicionarXML.AppearancePressed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(218)))), ((int)(((byte)(153)))));
-            this.btnAdicionarXML.AppearancePressed.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(218)))), ((int)(((byte)(153)))));
-            this.btnAdicionarXML.AppearancePressed.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(218)))), ((int)(((byte)(153)))));
-            this.btnAdicionarXML.AppearancePressed.Options.UseBackColor = true;
-            this.btnAdicionarXML.AppearancePressed.Options.UseBorderColor = true;
-            this.btnAdicionarXML.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.xml_20px;
-            this.btnAdicionarXML.ImageOptions.ImageIndex = 5;
-            this.btnAdicionarXML.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftBottom;
-            this.btnAdicionarXML.ImageOptions.ImageToTextIndent = 10;
-            this.btnAdicionarXML.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-            this.btnAdicionarXML.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnAdicionarXML.Location = new System.Drawing.Point(622, 40);
-            this.btnAdicionarXML.Name = "btnAdicionarXML";
-            this.btnAdicionarXML.Size = new System.Drawing.Size(217, 30);
-            this.btnAdicionarXML.TabIndex = 74;
-            this.btnAdicionarXML.Text = "Importar XML";
-            this.btnAdicionarXML.Visible = false;
-            this.btnAdicionarXML.Click += new System.EventHandler(this.btnAdicionarXML_Click);
-            // 
-            // simpleButton2
-            // 
-            this.simpleButton2.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(218)))), ((int)(((byte)(153)))));
-            this.simpleButton2.Appearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(218)))), ((int)(((byte)(153)))));
-            this.simpleButton2.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton2.Appearance.Options.UseBorderColor = true;
-            this.simpleButton2.Appearance.Options.UseFont = true;
-            this.simpleButton2.AppearanceDisabled.BackColor = System.Drawing.Color.Yellow;
-            this.simpleButton2.AppearanceDisabled.BackColor2 = System.Drawing.Color.Yellow;
-            this.simpleButton2.AppearanceDisabled.Options.UseBackColor = true;
-            this.simpleButton2.AppearanceHovered.BackColor = System.Drawing.Color.Red;
-            this.simpleButton2.AppearanceHovered.BackColor2 = System.Drawing.Color.Red;
-            this.simpleButton2.AppearanceHovered.Options.UseBackColor = true;
-            this.simpleButton2.AppearancePressed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(218)))), ((int)(((byte)(153)))));
-            this.simpleButton2.AppearancePressed.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(218)))), ((int)(((byte)(153)))));
-            this.simpleButton2.AppearancePressed.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(218)))), ((int)(((byte)(153)))));
-            this.simpleButton2.AppearancePressed.Options.UseBackColor = true;
-            this.simpleButton2.AppearancePressed.Options.UseBorderColor = true;
-            this.simpleButton2.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.adcao9;
-            this.simpleButton2.ImageOptions.ImageIndex = 5;
-            this.simpleButton2.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftBottom;
-            this.simpleButton2.ImageOptions.ImageToTextIndent = 10;
-            this.simpleButton2.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-            this.simpleButton2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.simpleButton2.Location = new System.Drawing.Point(19, 53);
-            this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.Size = new System.Drawing.Size(217, 30);
-            this.simpleButton2.TabIndex = 80;
-            this.simpleButton2.Text = "Nova Despesas/Contas";
-            this.simpleButton2.Click += new System.EventHandler(this.simpleButton2_Click);
+            this.btnNovaDespesaContas.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(218)))), ((int)(((byte)(153)))));
+            this.btnNovaDespesaContas.Appearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(218)))), ((int)(((byte)(153)))));
+            this.btnNovaDespesaContas.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNovaDespesaContas.Appearance.Options.UseBorderColor = true;
+            this.btnNovaDespesaContas.Appearance.Options.UseFont = true;
+            this.btnNovaDespesaContas.AppearanceDisabled.BackColor = System.Drawing.Color.Yellow;
+            this.btnNovaDespesaContas.AppearanceDisabled.BackColor2 = System.Drawing.Color.Yellow;
+            this.btnNovaDespesaContas.AppearanceDisabled.Options.UseBackColor = true;
+            this.btnNovaDespesaContas.AppearanceHovered.BackColor = System.Drawing.Color.Red;
+            this.btnNovaDespesaContas.AppearanceHovered.BackColor2 = System.Drawing.Color.Red;
+            this.btnNovaDespesaContas.AppearanceHovered.Options.UseBackColor = true;
+            this.btnNovaDespesaContas.AppearancePressed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(218)))), ((int)(((byte)(153)))));
+            this.btnNovaDespesaContas.AppearancePressed.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(218)))), ((int)(((byte)(153)))));
+            this.btnNovaDespesaContas.AppearancePressed.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(218)))), ((int)(((byte)(153)))));
+            this.btnNovaDespesaContas.AppearancePressed.Options.UseBackColor = true;
+            this.btnNovaDespesaContas.AppearancePressed.Options.UseBorderColor = true;
+            this.btnNovaDespesaContas.ImageOptions.ImageIndex = 5;
+            this.btnNovaDespesaContas.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftBottom;
+            this.btnNovaDespesaContas.ImageOptions.ImageToTextIndent = 10;
+            this.btnNovaDespesaContas.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
+            this.btnNovaDespesaContas.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnNovaDespesaContas.Location = new System.Drawing.Point(19, 53);
+            this.btnNovaDespesaContas.Name = "btnNovaDespesaContas";
+            this.btnNovaDespesaContas.Size = new System.Drawing.Size(217, 30);
+            this.btnNovaDespesaContas.TabIndex = 80;
+            this.btnNovaDespesaContas.Text = "Nova Despesas/Contas";
+            this.btnNovaDespesaContas.Click += new System.EventHandler(this.btnNovaDespesaContas_Click);
             // 
             // gridControl1
             // 
@@ -161,10 +129,10 @@
             // 
             this.sqlDataSource1.ConnectionName = "update";
             this.sqlDataSource1.Name = "sqlDataSource1";
-            customSqlQuery2.Name = "Query";
-            customSqlQuery2.Sql = resources.GetString("customSqlQuery2.Sql");
+            customSqlQuery1.Name = "Query";
+            customSqlQuery1.Sql = resources.GetString("customSqlQuery1.Sql");
             this.sqlDataSource1.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
-            customSqlQuery2});
+            customSqlQuery1});
             this.sqlDataSource1.ResultSchemaSerializable = resources.GetString("sqlDataSource1.ResultSchemaSerializable");
             // 
             // gridView1
@@ -176,9 +144,11 @@
             this.rg_cpf,
             this.rg_nome_fantasia,
             this.rg_cnpj,
+            this.dp_parcelas,
             this.cd_categoria,
             this.dp_sub_valor_total,
-            this.dp_vencimento});
+            this.dp_vencimento,
+            this.dp_imagem});
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsBehavior.Editable = false;
@@ -257,6 +227,18 @@
             this.rg_cnpj.Visible = true;
             this.rg_cnpj.VisibleIndex = 5;
             // 
+            // dp_parcelas
+            // 
+            this.dp_parcelas.AppearanceCell.Options.UseTextOptions = true;
+            this.dp_parcelas.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.dp_parcelas.AppearanceHeader.Options.UseTextOptions = true;
+            this.dp_parcelas.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.dp_parcelas.Caption = "Parcela";
+            this.dp_parcelas.FieldName = "dp_parcelas";
+            this.dp_parcelas.Name = "dp_parcelas";
+            this.dp_parcelas.Visible = true;
+            this.dp_parcelas.VisibleIndex = 6;
+            // 
             // cd_categoria
             // 
             this.cd_categoria.AppearanceCell.Options.UseTextOptions = true;
@@ -267,7 +249,7 @@
             this.cd_categoria.FieldName = "cd_categoria";
             this.cd_categoria.Name = "cd_categoria";
             this.cd_categoria.Visible = true;
-            this.cd_categoria.VisibleIndex = 6;
+            this.cd_categoria.VisibleIndex = 7;
             // 
             // dp_sub_valor_total
             // 
@@ -281,7 +263,7 @@
             this.dp_sub_valor_total.FieldName = "dp_sub_valor_total";
             this.dp_sub_valor_total.Name = "dp_sub_valor_total";
             this.dp_sub_valor_total.Visible = true;
-            this.dp_sub_valor_total.VisibleIndex = 7;
+            this.dp_sub_valor_total.VisibleIndex = 8;
             // 
             // dp_vencimento
             // 
@@ -293,7 +275,19 @@
             this.dp_vencimento.FieldName = "dp_vencimento";
             this.dp_vencimento.Name = "dp_vencimento";
             this.dp_vencimento.Visible = true;
-            this.dp_vencimento.VisibleIndex = 8;
+            this.dp_vencimento.VisibleIndex = 9;
+            // 
+            // dp_imagem
+            // 
+            this.dp_imagem.AppearanceCell.Options.UseTextOptions = true;
+            this.dp_imagem.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.dp_imagem.AppearanceHeader.Options.UseTextOptions = true;
+            this.dp_imagem.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.dp_imagem.Caption = "Status";
+            this.dp_imagem.FieldName = "dp_imagem";
+            this.dp_imagem.Name = "dp_imagem";
+            this.dp_imagem.Visible = true;
+            this.dp_imagem.VisibleIndex = 10;
             // 
             // labelControl3
             // 
@@ -351,7 +345,7 @@
             // 
             this.lblTotalAguardando.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotalAguardando.Appearance.Options.UseFont = true;
-            this.lblTotalAguardando.Location = new System.Drawing.Point(176, 449);
+            this.lblTotalAguardando.Location = new System.Drawing.Point(149, 449);
             this.lblTotalAguardando.Name = "lblTotalAguardando";
             this.lblTotalAguardando.Size = new System.Drawing.Size(48, 20);
             this.lblTotalAguardando.TabIndex = 306;
@@ -361,7 +355,7 @@
             // 
             this.lblTotalFinalizadas.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotalFinalizadas.Appearance.Options.UseFont = true;
-            this.lblTotalFinalizadas.Location = new System.Drawing.Point(520, 449);
+            this.lblTotalFinalizadas.Location = new System.Drawing.Point(495, 449);
             this.lblTotalFinalizadas.Name = "lblTotalFinalizadas";
             this.lblTotalFinalizadas.Size = new System.Drawing.Size(48, 20);
             this.lblTotalFinalizadas.TabIndex = 307;
@@ -371,7 +365,7 @@
             // 
             this.lblTotalAtrasadas.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotalAtrasadas.Appearance.Options.UseFont = true;
-            this.lblTotalAtrasadas.Location = new System.Drawing.Point(857, 449);
+            this.lblTotalAtrasadas.Location = new System.Drawing.Point(833, 449);
             this.lblTotalAtrasadas.Name = "lblTotalAtrasadas";
             this.lblTotalAtrasadas.Size = new System.Drawing.Size(48, 20);
             this.lblTotalAtrasadas.TabIndex = 308;
@@ -381,7 +375,7 @@
             // 
             this.lblTotal.Appearance.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotal.Appearance.Options.UseFont = true;
-            this.lblTotal.Location = new System.Drawing.Point(95, 494);
+            this.lblTotal.Location = new System.Drawing.Point(89, 494);
             this.lblTotal.Name = "lblTotal";
             this.lblTotal.Size = new System.Drawing.Size(66, 25);
             this.lblTotal.TabIndex = 310;
@@ -536,8 +530,7 @@
             this.Controls.Add(this.labelControl2);
             this.Controls.Add(this.labelControl3);
             this.Controls.Add(this.gridControl1);
-            this.Controls.Add(this.simpleButton2);
-            this.Controls.Add(this.btnAdicionarXML);
+            this.Controls.Add(this.btnNovaDespesaContas);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.barDockControlLeft);
@@ -565,9 +558,7 @@
         }
 
         #endregion
-
-        private DevExpress.XtraEditors.SimpleButton btnAdicionarXML;
-        private DevExpress.XtraEditors.SimpleButton simpleButton2;
+        private DevExpress.XtraEditors.SimpleButton btnNovaDespesaContas;
         private DevExpress.XtraGrid.GridControl gridControl1;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private DevExpress.XtraGrid.Columns.GridColumn id_despesa;
@@ -603,5 +594,7 @@
         private DevExpress.XtraBars.BarDockControl barDockControlBottom;
         private DevExpress.XtraBars.BarDockControl barDockControlLeft;
         private DevExpress.XtraBars.BarDockControl barDockControlRight;
+        private DevExpress.XtraGrid.Columns.GridColumn dp_parcelas;
+        private DevExpress.XtraGrid.Columns.GridColumn dp_imagem;
     }
 }

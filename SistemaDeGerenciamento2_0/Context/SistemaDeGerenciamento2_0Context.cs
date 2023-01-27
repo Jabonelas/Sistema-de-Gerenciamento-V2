@@ -70,11 +70,7 @@ namespace SistemaDeGerenciamento2_0.Context
                 entity.HasKey(e => e.id_despesa)
                     .HasName("PK_TB_DESPESA");
 
-                entity.Property(e => e.dp_forma_pagamento).IsUnicode(false);
-
                 entity.Property(e => e.dp_observacao).IsUnicode(false);
-
-                entity.Property(e => e.dp_pagamento_em).IsUnicode(false);
 
                 entity.HasOne(d => d.fk_registroNavigation)
                     .WithMany(p => p.tb_despesa)

@@ -145,10 +145,20 @@ namespace SistemaDeGerenciamento2_0
                     permissoesCadastro.ReloadData(this, frmLogin.UsuarioLogado);
                     permissoesCadastro.VerificarAcessoPDV("Acesso PDV");
                 }
-                else if (_btnSolitador == "Acesso Financeiro")
+                else if (_btnSolitador == "Acesso Importar XML")
                 {
                     permissoesCadastro.ReloadData(this, frmLogin.UsuarioLogado);
-                    permissoesCadastro.VerificarAcessoFinanceiro("Acesso Financeiro");
+                    permissoesCadastro.VerificarAcessoFinanceiroImportarXML("Acesso Importar XML");
+                }
+                else if (_btnSolitador == "Acesso Despesa")
+                {
+                    permissoesCadastro.ReloadData(this, frmLogin.UsuarioLogado);
+                    permissoesCadastro.VerificarAcessoFinanceiroDespesa("Acesso Despesa");
+                }
+                else if (_btnSolitador == "Acesso Categoria")
+                {
+                    permissoesCadastro.ReloadData(this, frmLogin.UsuarioLogado);
+                    permissoesCadastro.VerificarAcessoFinanceiroCategoria("Acesso Categoria");
                 }
             }
         }
@@ -245,19 +255,17 @@ namespace SistemaDeGerenciamento2_0
 
         private void btnImportarXML_Click(object sender, EventArgs e)
         {
-            frmEntradaNF frm = new frmEntradaNF();
-            frm.ShowDialog();
+            ReloadData("Acesso Importar XML");
         }
 
         private void btnDespesaContas_Click(object sender, EventArgs e)
         {
-            frmFinanceiro frmFinanceiro = new frmFinanceiro(this);
-            frmFinanceiro.ShowDialog();
+            ReloadData("Acesso Despesa");
         }
 
-        private void btnDespesaCategoria_Click(object sender, EventArgs e)
+        private void btnCategoriaDespesa_Click(object sender, EventArgs e)
         {
-            ReloadData("ConfigDespesa");
+            ReloadData("Acesso Categoria");
         }
     }
 }

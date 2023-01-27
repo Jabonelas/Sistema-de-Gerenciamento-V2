@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            DevExpress.DataAccess.Sql.CustomSqlQuery customSqlQuery3 = new DevExpress.DataAccess.Sql.CustomSqlQuery();
+            DevExpress.DataAccess.Sql.CustomSqlQuery customSqlQuery1 = new DevExpress.DataAccess.Sql.CustomSqlQuery();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmContasComRepeticao));
-            DevExpress.DataAccess.Sql.SelectQuery selectQuery3 = new DevExpress.DataAccess.Sql.SelectQuery();
-            DevExpress.DataAccess.Sql.Column column5 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression5 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Table table3 = new DevExpress.DataAccess.Sql.Table();
-            DevExpress.DataAccess.Sql.Column column6 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression6 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.SelectQuery selectQuery1 = new DevExpress.DataAccess.Sql.SelectQuery();
+            DevExpress.DataAccess.Sql.Column column1 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression1 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Table table1 = new DevExpress.DataAccess.Sql.Table();
+            DevExpress.DataAccess.Sql.Column column2 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression2 = new DevExpress.DataAccess.Sql.ColumnExpression();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
@@ -65,6 +65,8 @@
             this.btnFechar = new DevExpress.XtraEditors.SimpleButton();
             this.chkRepetirDespesa = new DevExpress.XtraEditors.CheckEdit();
             this.AlertaSalvar = new DevExpress.XtraBars.Alerter.AlertControl(this.components);
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.cmbPrazo = new DevExpress.XtraEditors.ComboBoxEdit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbPeriocidade.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtObservacoesDespesa.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtValor.Properties)).BeginInit();
@@ -78,6 +80,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtObservacoesDespesaRepeticao.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chkRepetirDespesa.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbPrazo.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // labelControl3
@@ -205,10 +208,10 @@
             // 
             this.sqlDataSource1.ConnectionName = "update";
             this.sqlDataSource1.Name = "sqlDataSource1";
-            customSqlQuery3.Name = "Query";
-            customSqlQuery3.Sql = resources.GetString("customSqlQuery3.Sql");
+            customSqlQuery1.Name = "Query";
+            customSqlQuery1.Sql = resources.GetString("customSqlQuery1.Sql");
             this.sqlDataSource1.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
-            customSqlQuery3});
+            customSqlQuery1});
             this.sqlDataSource1.ResultSchemaSerializable = resources.GetString("sqlDataSource1.ResultSchemaSerializable");
             // 
             // btnCancelar
@@ -276,20 +279,20 @@
             // 
             this.sqlDataSource3.ConnectionName = "update";
             this.sqlDataSource3.Name = "sqlDataSource3";
-            columnExpression5.ColumnName = "id_categoria_despesa";
-            table3.MetaSerializable = "<Meta X=\"30\" Y=\"30\" Width=\"125\" Height=\"143\" />";
-            table3.Name = "tb_cadastro_despesa";
-            columnExpression5.Table = table3;
-            column5.Expression = columnExpression5;
-            columnExpression6.ColumnName = "cd_categoria";
-            columnExpression6.Table = table3;
-            column6.Expression = columnExpression6;
-            selectQuery3.Columns.Add(column5);
-            selectQuery3.Columns.Add(column6);
-            selectQuery3.Name = "tb_cadastro_despesa";
-            selectQuery3.Tables.Add(table3);
+            columnExpression1.ColumnName = "id_categoria_despesa";
+            table1.MetaSerializable = "<Meta X=\"30\" Y=\"30\" Width=\"125\" Height=\"143\" />";
+            table1.Name = "tb_cadastro_despesa";
+            columnExpression1.Table = table1;
+            column1.Expression = columnExpression1;
+            columnExpression2.ColumnName = "cd_categoria";
+            columnExpression2.Table = table1;
+            column2.Expression = columnExpression2;
+            selectQuery1.Columns.Add(column1);
+            selectQuery1.Columns.Add(column2);
+            selectQuery1.Name = "tb_cadastro_despesa";
+            selectQuery1.Tables.Add(table1);
             this.sqlDataSource3.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
-            selectQuery3});
+            selectQuery1});
             this.sqlDataSource3.ResultSchemaSerializable = resources.GetString("sqlDataSource3.ResultSchemaSerializable");
             // 
             // txtDataLancamento
@@ -414,7 +417,7 @@
             this.chkRepetirDespesa.Name = "chkRepetirDespesa";
             this.chkRepetirDespesa.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkRepetirDespesa.Properties.Appearance.Options.UseFont = true;
-            this.chkRepetirDespesa.Properties.Caption = "Repetir Despesa";
+            this.chkRepetirDespesa.Properties.Caption = "Repetir Despesa / A Prazo";
             this.chkRepetirDespesa.Size = new System.Drawing.Size(249, 25);
             this.chkRepetirDespesa.TabIndex = 6;
             this.chkRepetirDespesa.CheckedChanged += new System.EventHandler(this.chkRepetirDespesa_CheckedChanged);
@@ -439,11 +442,48 @@
             this.AlertaSalvar.ShowPinButton = false;
             this.AlertaSalvar.ShowToolTips = false;
             // 
+            // labelControl1
+            // 
+            this.labelControl1.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl1.Appearance.Options.UseFont = true;
+            this.labelControl1.Location = new System.Drawing.Point(275, 325);
+            this.labelControl1.Name = "labelControl1";
+            this.labelControl1.Size = new System.Drawing.Size(40, 20);
+            this.labelControl1.TabIndex = 129;
+            this.labelControl1.Text = "Prazo:";
+            // 
+            // cmbPrazo
+            // 
+            this.cmbPrazo.Enabled = false;
+            this.cmbPrazo.Location = new System.Drawing.Point(275, 350);
+            this.cmbPrazo.Name = "cmbPrazo";
+            this.cmbPrazo.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbPrazo.Properties.Appearance.Options.UseFont = true;
+            this.cmbPrazo.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cmbPrazo.Properties.Items.AddRange(new object[] {
+            "1x",
+            "2x",
+            "3x",
+            "4x",
+            "5x",
+            "6x",
+            "7x",
+            "8x",
+            "9x",
+            "10x",
+            "11x",
+            "12x"});
+            this.cmbPrazo.Size = new System.Drawing.Size(191, 36);
+            this.cmbPrazo.TabIndex = 130;
+            // 
             // frmContasComRepeticao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(650, 527);
+            this.Controls.Add(this.cmbPrazo);
+            this.Controls.Add(this.labelControl1);
             this.Controls.Add(this.chkRepetirDespesa);
             this.Controls.Add(this.btnFechar);
             this.Controls.Add(this.txtObservacoesDespesaRepeticao);
@@ -488,6 +528,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtObservacoesDespesaRepeticao.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chkRepetirDespesa.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbPrazo.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -522,5 +563,7 @@
         private DevExpress.XtraEditors.SimpleButton btnFechar;
         private DevExpress.XtraEditors.CheckEdit chkRepetirDespesa;
         private DevExpress.XtraBars.Alerter.AlertControl AlertaSalvar;
+        private DevExpress.XtraEditors.LabelControl labelControl1;
+        private DevExpress.XtraEditors.ComboBoxEdit cmbPrazo;
     }
 }

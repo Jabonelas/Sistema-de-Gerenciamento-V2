@@ -19,13 +19,18 @@ namespace SistemaDeGerenciamento2_0.Models
         [Column(TypeName = "decimal(10, 2)")]
         public decimal? dp_desconto { get; set; }
         [Column(TypeName = "decimal(10, 2)")]
+        public decimal? dp_juros { get; set; }
+        [Column(TypeName = "decimal(10, 2)")]
+        public decimal? dp_multa { get; set; }
+        [Column(TypeName = "decimal(10, 2)")]
         public decimal? dp_valor_lancamento { get; set; }
-        [StringLength(255)]
-        public string dp_forma_pagamento { get; set; }
-        [StringLength(255)]
-        public string dp_pagamento_em { get; set; }
+        [Column(TypeName = "date")]
+        public DateTime? dp_pagamento_em { get; set; }
         [Column(TypeName = "date")]
         public DateTime dp_vencimento { get; set; }
+        public int? dp_parcelas { get; set; }
+        [Column(TypeName = "image")]
+        public byte[] dp_imagem { get; set; }
         public int fk_registro { get; set; }
         public int? fk_repeticao_despesa { get; set; }
 

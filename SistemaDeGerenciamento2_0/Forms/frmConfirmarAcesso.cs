@@ -38,11 +38,22 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private PermissoesUsuario permissoesUsuario = new PermissoesUsuario();
 
+        private frmFinanceiro frmFinanceiro;
+
         public frmConfirmarAcesso(frmTelaPrincipal _frmTelaPrincipal, string _tela)
         {
             InitializeComponent();
 
             frmTelaPrincipal = _frmTelaPrincipal;
+
+            tela = _tela;
+        }
+
+        public frmConfirmarAcesso(frmFinanceiro _frmFinanceiro, string _tela)
+        {
+            InitializeComponent();
+
+            frmFinanceiro = _frmFinanceiro;
 
             tela = _tela;
         }
@@ -69,7 +80,8 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             if (IsLoginExiste() == true)
             {
-                permissoesUsuario.ReloadData(frmTelaPrincipal, txtUsuario.Text);
+                permissoesUsuario.BuscarPermissoesUsuario(txtUsuario.Text);
+                //permissoesUsuario.ReloadData(frmTelaPrincipal, txtUsuario.Text);
 
                 if (tela == "ConfigUsuario")
                 {
@@ -157,9 +169,21 @@ namespace SistemaDeGerenciamento2_0.Forms
                 {
                     VerificarCancelarVendaTelaPDV();
                 }
-                else if (tela == "Acesso Financeiro")
+                else if (tela == "Acesso Importar XML")
                 {
-                    VerificarAcessoFinanceiro();
+                    VerificarAcessoFinanceiroImportarXML();
+                }
+                else if (tela == "Acesso Despesa")
+                {
+                    VerificarAcessoCadastrarDespesas();
+                }
+                else if (tela == "Acesso Categoria")
+                {
+                    VerificarAcessoFinanceiroAcessoCategoria();
+                }
+                else if (tela == "Pagar Contas")
+                {
+                    VerificarAcessoFinanceiroPagarConta(frmFinanceiro);
                 }
             }
             else
@@ -170,9 +194,9 @@ namespace SistemaDeGerenciamento2_0.Forms
             }
         }
 
-        private void VerificarAcessoFinanceiro()
+        private void VerificarAcessoCadastrarDespesas()
         {
-            permissoesUsuario.listaPermissoesUsuario.ForEach(x => IsUsuarioPossuiAcesso = x.pm_acesso_financeiro);
+            permissoesUsuario.listaPermissoesUsuario.ForEach(x => IsUsuarioPossuiAcesso = x.pm_pagar_contas);
 
             if (IsUsuarioPossuiAcesso == true)
             {
@@ -180,6 +204,73 @@ namespace SistemaDeGerenciamento2_0.Forms
 
                 frmFinanceiro frmFinanceiro = new frmFinanceiro(frmTelaPrincipal);
                 frmFinanceiro.ShowDialog();
+
+                this.Close();
+            }
+            else
+            {
+                MenssagemUsuarioSemPermissao();
+            }
+        }
+
+        private void VerificarAcessoFinanceiroPagarConta(frmFinanceiro frmFinanceiro)
+        {
+            permissoesUsuario.listaPermissoesUsuario.ForEach(x => IsUsuarioPossuiAcesso = x.pm_pagar_contas);
+
+            if (IsUsuarioPossuiAcesso == true)
+            {
+                this.Hide();
+
+                frmPagamentoDespesa frmPagamentoDespesa = new frmPagamentoDespesa(frmFinanceiro.idDespesa, frmFinanceiro.parcela,
+                frmFinanceiro.nomeEmpresa, frmFinanceiro.categoria, frmFinanceiro.valor, frmFinanceiro.vencimento);
+                frmPagamentoDespesa.ShowDialog();
+
+                this.Close();
+            }
+            else
+            {
+                MenssagemUsuarioSemPermissao();
+            }
+        }
+
+        private void VerificarAcessoFinanceiroAcessoCategoria()
+        {
+            permissoesUsuario.listaPermissoesUsuario.ForEach(x => IsUsuarioPossuiAcesso = x.pm_cadastrar_despesa);
+
+            if (IsUsuarioPossuiAcesso == true)
+            {
+                this.Hide();
+
+                AcessoTelaDespesa();
+
+                this.Close();
+            }
+            else
+            {
+                MenssagemUsuarioSemPermissao();
+            }
+        }
+
+        public void AcessoTelaDespesa()
+        {
+            frmTelaPrincipal.pnlTelaPrincipal.Controls.Clear();
+            frmDespesas frmDespesas = new frmDespesas(frmTelaPrincipal);
+            frmDespesas.TopLevel = false;
+            frmTelaPrincipal.pnlTelaPrincipal.Controls.Add(frmDespesas);
+            frmTelaPrincipal.pnlTelaPrincipal.Tag = frmDespesas;
+            frmDespesas.Show();
+        }
+
+        private void VerificarAcessoFinanceiroImportarXML()
+        {
+            permissoesUsuario.listaPermissoesUsuario.ForEach(x => IsUsuarioPossuiAcesso = x.pm_importar_xml);
+
+            if (IsUsuarioPossuiAcesso == true)
+            {
+                this.Hide();
+
+                frmEntradaNF frm = new frmEntradaNF(frmTelaPrincipal);
+                frm.ShowDialog();
 
                 this.Close();
             }

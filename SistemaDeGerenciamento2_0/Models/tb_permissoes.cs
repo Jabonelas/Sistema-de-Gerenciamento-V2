@@ -23,7 +23,10 @@ namespace SistemaDeGerenciamento2_0.Models
         public bool pm_realizar_devolucao { get; set; }
         public bool pm_alerta_contas_atrasadas { get; set; }
         public bool pm_visualizar_contas_pagar { get; set; }
-        public bool pm_receber_contas { get; set; }
+        public bool pm_cadastrar_conta { get; set; }
+        public bool pm_cadastrar_despesa { get; set; }
+        public bool pm_importar_xml { get; set; }
+        public bool pm_pagar_contas { get; set; }
         public bool pm_visualizar_fluxo_caixa { get; set; }
         public bool pm_acesso_financeiro { get; set; }
         public bool pm_criar_editar_usuario { get; set; }

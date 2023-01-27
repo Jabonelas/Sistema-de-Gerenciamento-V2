@@ -1,4 +1,5 @@
 ﻿using DevExpress.Utils.Extensions;
+using DevExpress.XtraLayout.Customization;
 using DevExpress.XtraSplashScreen;
 using SistemaDeGerenciamento2_0.Context;
 using SistemaDeGerenciamento2_0.Forms;
@@ -52,11 +53,65 @@ namespace SistemaDeGerenciamento2_0.Class
             }
         }
 
-        public void VerificarAcessoFinanceiro(string _Cadastro)
+        public void VerificarAcessoFinanceiroPagarContas(string _Cadastro, frmFinanceiro _frmFinanceiro)
         {
             bool IsUsuarioPossuiAcesso = false;
 
-            listaPermissoesUsuario.ForEach(x => IsUsuarioPossuiAcesso = x.pm_acesso_financeiro);
+            listaPermissoesUsuario.ForEach(x => IsUsuarioPossuiAcesso = x.pm_pagar_contas);
+
+            if (IsUsuarioPossuiAcesso == true)
+            {
+                frmPagamentoDespesa frmPagamentoDespesa = new frmPagamentoDespesa(_frmFinanceiro.idDespesa, _frmFinanceiro.parcela,
+                _frmFinanceiro.nomeEmpresa, _frmFinanceiro.categoria, _frmFinanceiro.valor, _frmFinanceiro.vencimento);
+                frmPagamentoDespesa.ShowDialog();
+            }
+            else
+            {
+                frmConfirmarAcesso frmConfirmarAcesso = new frmConfirmarAcesso(_frmFinanceiro, _Cadastro);
+                frmConfirmarAcesso.ShowDialog();
+            }
+        }
+
+        public void VerificarAcessoFinanceiroImportarXML(string _Cadastro)
+        {
+            bool IsUsuarioPossuiAcesso = false;
+
+            listaPermissoesUsuario.ForEach(x => IsUsuarioPossuiAcesso = x.pm_importar_xml);
+
+            if (IsUsuarioPossuiAcesso == true)
+            {
+                frmEntradaNF frm = new frmEntradaNF(frmTelaPrincipal);
+                frm.ShowDialog();
+            }
+            else
+            {
+                frmConfirmarAcesso frmConfirmarAcesso = new frmConfirmarAcesso(frmTelaPrincipal, _Cadastro);
+                frmConfirmarAcesso.ShowDialog();
+            }
+        }
+
+        public void VerificarAcessoFinanceiroCategoria(string _Cadastro)
+        {
+            bool IsUsuarioPossuiAcesso = false;
+
+            listaPermissoesUsuario.ForEach(x => IsUsuarioPossuiAcesso = x.pm_cadastrar_despesa);
+
+            if (IsUsuarioPossuiAcesso == true)
+            {
+                AcessoTelaDespesa();
+            }
+            else
+            {
+                frmConfirmarAcesso frmConfirmarAcesso = new frmConfirmarAcesso(frmTelaPrincipal, _Cadastro);
+                frmConfirmarAcesso.ShowDialog();
+            }
+        }
+
+        public void VerificarAcessoFinanceiroDespesa(string _Cadastro)
+        {
+            bool IsUsuarioPossuiAcesso = false;
+
+            listaPermissoesUsuario.ForEach(x => IsUsuarioPossuiAcesso = x.pm_cadastrar_despesa);
 
             if (IsUsuarioPossuiAcesso == true)
             {

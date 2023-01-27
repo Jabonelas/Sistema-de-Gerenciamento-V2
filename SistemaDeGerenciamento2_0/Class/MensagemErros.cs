@@ -488,10 +488,19 @@ namespace SistemaDeGerenciamento2_0.Class
 
         public static void ErroAoAtualizarEstoqueDepoisDeVenda(Exception _e)
         {
-            MessageBox.Show($"(ATU-ES01) Erro ao Atualizar Estoque Apos Veenda \n\nErro: {_e}", "Erro Atualizar Estoque!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            MessageBox.Show($"(ATU-ES01) Erro ao Atualizar Estoque Apos Venda \n\nErro: {_e}", "Erro Atualizar Estoque!", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
         #endregion Estoque
+
+        #region Pagamento
+
+        public static void ErroAoAtualizarPagamentoDespesa(Exception _e)
+        {
+            MessageBox.Show($"(ATU-PA01) Erro ao Atualizar Pagamento Despesa \n\nErro: {_e}", "Erro Atualizar Pagamento Despesa!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        #endregion Pagamento
 
         #endregion Atualizar
 

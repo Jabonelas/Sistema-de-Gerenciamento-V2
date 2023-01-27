@@ -3,6 +3,7 @@ using DevExpress.XtraEditors.Filtering.Templates;
 using SistemaDeGerenciamento2_0.Class;
 using SistemaDeGerenciamento2_0.Context;
 using SistemaDeGerenciamento2_0.Models;
+using SistemaDeGerenciamento2_0.Properties;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -36,7 +37,11 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             if (e.KeyCode == Keys.Escape)
             {
-                this.Close();
+                MensagemAtencao.MensagemCancelar(this);
+            }
+            else if (e.KeyCode == Keys.F10)
+            {
+                Salvar();
             }
         }
 
@@ -114,30 +119,47 @@ namespace SistemaDeGerenciamento2_0.Forms
             {
                 cmbPeriocidade.Enabled = true;
                 txtObservacoesDespesaRepeticao.Enabled = true;
+                cmbPrazo.Enabled = true;
+                cmbPrazo.SelectedIndex = 0;
             }
             else
             {
                 cmbPeriocidade.Enabled = false;
                 txtObservacoesDespesaRepeticao.Enabled = false;
-                cmbPeriocidade.Text = "";
-                txtObservacoesDespesaRepeticao.Text = "";
+                cmbPrazo.Enabled = false;
+                cmbPeriocidade.Text = string.Empty;
+                txtObservacoesDespesaRepeticao.Text = string.Empty;
+                cmbPrazo.Text = string.Empty;
             }
         }
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
-            if (txtDataLancamento.Text != string.Empty && txtDataVencimento.Text != string.Empty && txtValor.Text != string.Empty
-                && cmbFornecedor.Text != string.Empty && cmbCategoria.Text != string.Empty)
+            Salvar();
+        }
+
+        private void Salvar()
+        {
+            if (cmbPrazo.Text != string.Empty && cmbPeriocidade.Text == string.Empty)
             {
-                SalvarDespesaComRepeticao();
-
-                SalvarDespesa();
-
-                LimpandoCampos();
+                MensagemAtencao.MensagemPreenchimentoCampoPeriocidade();
+                cmbPeriocidade.Focus();
             }
             else
             {
-                MensagemAtencao.MensagemPreencherCampos();
+                if (txtDataLancamento.Text != string.Empty && txtDataVencimento.Text != string.Empty && txtValor.Text != string.Empty
+                    && cmbFornecedor.Text != string.Empty && cmbCategoria.Text != string.Empty)
+                {
+                    SalvarDespesaComRepeticao();
+
+                    SalvarDespesa();
+
+                    LimpandoCampos();
+                }
+                else
+                {
+                    MensagemAtencao.MensagemPreencherCampos();
+                }
             }
         }
 
@@ -160,18 +182,29 @@ namespace SistemaDeGerenciamento2_0.Forms
             {
                 using (SistemaDeGerenciamento2_0Context db = new SistemaDeGerenciamento2_0Context())
                 {
-                    var despesa = new tb_despesa()
-                    {
-                        dp_data = Convert.ToDateTime(txtDataLancamento.Text),
-                        dp_observacao = txtObservacoesDespesa.Text,
-                        dp_sub_valor_total = Convert.ToDecimal(txtValor.Text.Replace("R$", "")),
-                        dp_vencimento = Convert.ToDateTime(txtDataVencimento.Text),
-                        fk_registro = Convert.ToInt32(cmbFornecedor.Properties.GetKeyValueByDisplayValue(cmbFornecedor.Text)),
-                        fk_repeticao_despesa = FK_Repeticao
-                    };
+                    int quantidadeParcelas = Convert.ToInt32(cmbPrazo.Text.Replace("x", string.Empty));
 
-                    db.tb_despesa.Add(despesa);
-                    db.SaveChanges();
+                    for (int cont = 1; cont <= quantidadeParcelas; cont++)
+                    {
+                        byte[] imagem;
+                        ImageConverter converter = new ImageConverter();
+                        imagem = (byte[])converter.ConvertTo(Resources.delete_20px, typeof(byte[]));
+
+                        var despesa = new tb_despesa()
+                        {
+                            dp_data = Convert.ToDateTime(txtDataLancamento.Text),
+                            dp_observacao = txtObservacoesDespesa.Text,
+                            dp_sub_valor_total = Convert.ToDecimal(txtValor.Text.Replace("R$", string.Empty)),
+                            dp_vencimento = Convert.ToDateTime(txtDataVencimento.Text),
+                            dp_parcelas = cont,
+                            dp_imagem = imagem,
+                            fk_registro = Convert.ToInt32(cmbFornecedor.Properties.GetKeyValueByDisplayValue(cmbFornecedor.Text)),
+                            fk_repeticao_despesa = FK_Repeticao
+                        };
+
+                        db.tb_despesa.Add(despesa);
+                        db.SaveChanges();
+                    }
 
                     AlertaConfirmacao.ChamandoAlertaSucessoNoCantoInferiorDireito(AlertaSalvar, this);
                 }

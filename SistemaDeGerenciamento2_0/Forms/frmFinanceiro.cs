@@ -8,6 +8,7 @@ using System.Windows.Forms;
 using DevExpress.XtraGrid.Columns;
 using DevExpress.XtraGrid.Views.Grid;
 using System.Data;
+using Microsoft.IdentityModel.Tokens;
 
 namespace SistemaDeGerenciamento2_0.Forms
 {
@@ -15,12 +16,21 @@ namespace SistemaDeGerenciamento2_0.Forms
     {
         private int X = 0;
         private int Y = 0;
+        public int rowHandle = 0;
+        public int idDespesa = 0;
+        public int parcela = 0;
 
-        private int rowHandle = 0;
+        public string nomeEmpresa = string.Empty;
+        public string categoria = string.Empty;
+        public string valor = string.Empty;
+
+        public DateTime vencimento = DateTime.Today;
 
         private GridColumn column;
 
         private frmTelaPrincipal frmTelaPrincipal;
+
+        private PermissoesUsuario permissoesUsuario = new PermissoesUsuario();
 
         public frmFinanceiro(frmTelaPrincipal _frmTelaPrincipal)
         {
@@ -48,10 +58,31 @@ namespace SistemaDeGerenciamento2_0.Forms
             }
         }
 
-        private void btnAdicionarXML_Click(object sender, EventArgs e)
+        private void btnFechar_Click(object sender, EventArgs e)
         {
-            frmEntradaNF frm = new frmEntradaNF();
-            frm.ShowDialog();
+            Close();
+        }
+
+        private void btnAlterar_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            PegandoDadosDaLinha();
+
+            permissoesUsuario.BuscarPermissoesUsuario(frmLogin.UsuarioLogado);
+            permissoesUsuario.VerificarAcessoFinanceiroPagarContas("Pagar Contas", this);
+
+            sqlDataSource1.FillAsync();
+
+            ReloadData();
+        }
+
+        private void btnNovaDespesaContas_Click(object sender, EventArgs e)
+        {
+            frmContasComRepeticao frmContasComRepeticao = new frmContasComRepeticao();
+            frmContasComRepeticao.ShowDialog();
+
+            sqlDataSource1.FillAsync();
+
+            ReloadData();
         }
 
         private void frmFinanceiro_KeyDown(object sender, System.Windows.Forms.KeyEventArgs e)
@@ -60,17 +91,6 @@ namespace SistemaDeGerenciamento2_0.Forms
             {
                 this.Close();
             }
-        }
-
-        private void simpleButton2_Click(object sender, EventArgs e)
-        {
-            frmContasComRepeticao frmContasComRepeticao = new frmContasComRepeticao();
-            frmContasComRepeticao.ShowDialog();
-        }
-
-        private void btnFechar_Click(object sender, EventArgs e)
-        {
-            Close();
         }
 
         private void frmFinanceiro_MouseMove(object sender, MouseEventArgs e)
@@ -112,7 +132,7 @@ namespace SistemaDeGerenciamento2_0.Forms
             {
                 using (SistemaDeGerenciamento2_0Context db = new SistemaDeGerenciamento2_0Context())
                 {
-                    var valorAguadandoPagamento = db.tb_despesa.Where(x => x.dp_pagamento_em.Equals(null)).Select(x => x.dp_sub_valor_total).Sum();
+                    var valorAguadandoPagamento = db.tb_despesa.Where(x => x.dp_pagamento_em == null).Select(x => x.dp_sub_valor_total).Sum();
 
                     lblTotalAguardando.Text = valorAguadandoPagamento.ToString("C2");
                 }
@@ -175,9 +195,26 @@ namespace SistemaDeGerenciamento2_0.Forms
             }
         }
 
-        private void btnAlterar_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        private void PegandoDadosDaLinha()
         {
-            MessageBox.Show("Test");
+            int[] SelectedRowHandles = gridView1.GetSelectedRows();
+
+            bool isFornecedorPessoaFisica = string.IsNullOrEmpty(gridView1.GetRowCellValue(SelectedRowHandles[0], gridView1.Columns[2]).ToString());
+
+            idDespesa = Convert.ToInt32(gridView1.GetRowCellValue(SelectedRowHandles[0], gridView1.Columns[0]));
+            parcela = Convert.ToInt32(gridView1.GetRowCellValue(SelectedRowHandles[0], gridView1.Columns[6]));
+            categoria = gridView1.GetRowCellValue(SelectedRowHandles[0], gridView1.Columns[7]).ToString();
+            valor = gridView1.GetRowCellValue(SelectedRowHandles[0], gridView1.Columns[8]).ToString();
+            vencimento = Convert.ToDateTime(gridView1.GetRowCellValue(SelectedRowHandles[0], gridView1.Columns[9]));
+
+            if (isFornecedorPessoaFisica == false)
+            {
+                nomeEmpresa = gridView1.GetRowCellValue(SelectedRowHandles[0], gridView1.Columns[2]).ToString();
+            }
+            else
+            {
+                nomeEmpresa = gridView1.GetRowCellValue(SelectedRowHandles[0], gridView1.Columns[4]).ToString();
+            }
         }
     }
 }

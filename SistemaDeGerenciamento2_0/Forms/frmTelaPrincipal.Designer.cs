@@ -40,7 +40,7 @@
             this.Financeiro = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.btnImportarXML = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.btnDespesaContas = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.btnDespesaCategoria = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.btnCategoriaDespesa = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.Cadastro = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.btnNovoCliente = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.btnNovoFornecedor = new DevExpress.XtraBars.Navigation.AccordionControlElement();
@@ -64,6 +64,7 @@
             this.lblUsuarioLogado = new DevExpress.XtraEditors.LabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.pnlTelaPrincipal = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnDespesaCategoria = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).BeginInit();
             this.accordionControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fluentDesignFormControl1)).BeginInit();
@@ -221,7 +222,8 @@
             this.Financeiro.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.btnImportarXML,
             this.btnDespesaContas,
-            this.btnDespesaCategoria});
+            this.btnCategoriaDespesa});
+            this.Financeiro.Expanded = true;
             this.Financeiro.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.dollar_place_marker_30px;
             this.Financeiro.Name = "Financeiro";
             this.Financeiro.Text = "Financeiro";
@@ -239,11 +241,11 @@
             this.btnDespesaContas.Text = "Despesas/Contas";
             this.btnDespesaContas.Click += new System.EventHandler(this.btnDespesaContas_Click);
             // 
-            // btnDespesaCategoria
+            // btnCategoriaDespesa
             // 
-            this.btnDespesaCategoria.Name = "btnDespesaCategoria";
-            this.btnDespesaCategoria.Text = "Despesa/Categoria";
-            this.btnDespesaCategoria.Click += new System.EventHandler(this.btnDespesaCategoria_Click);
+            this.btnCategoriaDespesa.Name = "btnCategoriaDespesa";
+            this.btnCategoriaDespesa.Text = "Categoria/Despesa";
+            this.btnCategoriaDespesa.Click += new System.EventHandler(this.btnCategoriaDespesa_Click);
             // 
             // Cadastro
             // 
@@ -407,6 +409,7 @@
             this.btnConfigPerfil,
             this.btnConfigFinanceiro,
             this.btnConfigDesepsa});
+            this.Configuracao.Expanded = true;
             this.Configuracao.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.automation_30px;
             this.Configuracao.Name = "Configuracao";
             this.Configuracao.Text = "Configurações";
@@ -515,6 +518,11 @@
             this.pnlTelaPrincipal.TabIndex = 3;
             this.pnlTelaPrincipal.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlTelaPrincipal_Paint);
             // 
+            // btnDespesaCategoria
+            // 
+            this.btnDespesaCategoria.Name = "btnDespesaCategoria";
+            this.btnDespesaCategoria.Text = "Despesa/Categoria";
+            // 
             // frmTelaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -574,6 +582,7 @@
         private DevExpress.XtraEditors.ToggleSwitch toggleSwitch1;
         private DevExpress.XtraBars.Navigation.AccordionControlElement btnImportarXML;
         private DevExpress.XtraBars.Navigation.AccordionControlElement btnDespesaContas;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement btnCategoriaDespesa;
         private DevExpress.XtraBars.Navigation.AccordionControlElement btnDespesaCategoria;
     }
 }
