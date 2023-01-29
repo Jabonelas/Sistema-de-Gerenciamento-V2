@@ -223,7 +223,6 @@
             this.btnImportarXML,
             this.btnDespesaContas,
             this.btnCategoriaDespesa});
-            this.Financeiro.Expanded = true;
             this.Financeiro.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.dollar_place_marker_30px;
             this.Financeiro.Name = "Financeiro";
             this.Financeiro.Text = "Financeiro";
@@ -379,6 +378,7 @@
             this.Relatorios.Name = "Relatorios";
             this.Relatorios.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.Relatorios.Text = "Relatórios";
+            this.Relatorios.Click += new System.EventHandler(this.Relatorios_Click);
             // 
             // Configuracao
             // 
@@ -409,7 +409,6 @@
             this.btnConfigPerfil,
             this.btnConfigFinanceiro,
             this.btnConfigDesepsa});
-            this.Configuracao.Expanded = true;
             this.Configuracao.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.automation_30px;
             this.Configuracao.Name = "Configuracao";
             this.Configuracao.Text = "Configurações";

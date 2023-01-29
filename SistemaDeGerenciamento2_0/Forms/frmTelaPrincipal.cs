@@ -76,146 +76,143 @@ namespace SistemaDeGerenciamento2_0
             frmConfiguracoes.Show();
         }
 
-        public void ReloadData(string _btnSolitador)
+        private void AcessandoTelas(string _btnSolitador)
         {
-            using (var handle = SplashScreenManager.ShowOverlayForm(this))
+            if (_btnSolitador == "Novo Produto")
             {
-                if (_btnSolitador == "Novo Produto")
-                {
-                    permissoesUsuario.ReloadData(this, frmLogin.UsuarioLogado);
-                    permissoesUsuario.VerificarAcessoCadastroProduto();
-                }
-                else if (_btnSolitador == "Cliente")
-                {
-                    permissoesUsuario.ReloadData(this, frmLogin.UsuarioLogado);
-                    permissoesUsuario.VerificarAcessoCadastro("Cliente");
-                }
-                else if (_btnSolitador == "Fornecedor")
-                {
-                    permissoesUsuario.ReloadData(this, frmLogin.UsuarioLogado);
-                    permissoesUsuario.VerificarAcessoCadastro("Fornecedor");
-                }
-                else if (_btnSolitador == "Funcionario")
-                {
-                    permissoesUsuario.ReloadData(this, frmLogin.UsuarioLogado);
-                    permissoesUsuario.VerificarAcessoCadastro("Funcionario");
-                }
-                else if (_btnSolitador == "ConfigUsuario")
-                {
-                    permissoesUsuario.ReloadData(this, frmLogin.UsuarioLogado);
-                    permissoesUsuario.VerificarAcessoConfigUsuario("ConfigUsuario");
-                }
-                else if (_btnSolitador == "ConfigEmpresa")
-                {
-                    permissoesUsuario.ReloadData(this, frmLogin.UsuarioLogado);
-                    permissoesUsuario.VerificarAcessoConfigEmpresa("ConfigEmpresa");
-                }
-                else if (_btnSolitador == "ConfigFinanceiro")
-                {
-                    permissoesUsuario.ReloadData(this, frmLogin.UsuarioLogado);
-                    permissoesUsuario.VerificarAcessoConfigFinanceira("ConfigFinanceiro");
-                }
-                else if (_btnSolitador == "Ir para produtos")
-                {
-                    permissoesUsuario.ReloadData(this, frmLogin.UsuarioLogado);
-                    permissoesUsuario.VerificarAcessoTodosProdutos();
-                }
-                else if (_btnSolitador == "Todos Os Cadastros")
-                {
-                    permissoesUsuario.ReloadData(this, frmLogin.UsuarioLogado);
-                    permissoesUsuario.VerificarAcessoTodosCadastros("Todos Os Cadastros");
-                }
-                else if (_btnSolitador == "ConfigPerfil")
-                {
-                    permissoesUsuario.ReloadData(this, frmLogin.UsuarioLogado);
-                    permissoesUsuario.VerificarAcessoConfigPerfil("ConfigPerfil");
-                }
-                else if (_btnSolitador == "ConfigDespesa")
-                {
-                    permissoesCadastro.ReloadData(this, frmLogin.UsuarioLogado);
-                    permissoesCadastro.VerificarAcessoConfigDespesa("ConfigDespesa");
-                }
-                else if (_btnSolitador == "Todos Os Produtos")
-                {
-                    permissoesCadastro.ReloadData(this, frmLogin.UsuarioLogado);
-                    permissoesCadastro.VerificarAcessoTodosProdutos();
-                }
-                else if (_btnSolitador == "Acesso PDV")
-                {
-                    permissoesCadastro.ReloadData(this, frmLogin.UsuarioLogado);
-                    permissoesCadastro.VerificarAcessoPDV("Acesso PDV");
-                }
-                else if (_btnSolitador == "Acesso Importar XML")
-                {
-                    permissoesCadastro.ReloadData(this, frmLogin.UsuarioLogado);
-                    permissoesCadastro.VerificarAcessoFinanceiroImportarXML("Acesso Importar XML");
-                }
-                else if (_btnSolitador == "Acesso Despesa")
-                {
-                    permissoesCadastro.ReloadData(this, frmLogin.UsuarioLogado);
-                    permissoesCadastro.VerificarAcessoFinanceiroDespesa("Acesso Despesa");
-                }
-                else if (_btnSolitador == "Acesso Categoria")
-                {
-                    permissoesCadastro.ReloadData(this, frmLogin.UsuarioLogado);
-                    permissoesCadastro.VerificarAcessoFinanceiroCategoria("Acesso Categoria");
-                }
+                permissoesUsuario.ReloadData(this, frmLogin.UsuarioLogado);
+                permissoesUsuario.VerificarAcessoCadastroProduto();
+            }
+            else if (_btnSolitador == "Cliente")
+            {
+                permissoesUsuario.ReloadData(this, frmLogin.UsuarioLogado);
+                permissoesUsuario.VerificarAcessoCadastro("Cliente");
+            }
+            else if (_btnSolitador == "Fornecedor")
+            {
+                permissoesUsuario.ReloadData(this, frmLogin.UsuarioLogado);
+                permissoesUsuario.VerificarAcessoCadastro("Fornecedor");
+            }
+            else if (_btnSolitador == "Funcionario")
+            {
+                permissoesUsuario.ReloadData(this, frmLogin.UsuarioLogado);
+                permissoesUsuario.VerificarAcessoCadastro("Funcionario");
+            }
+            else if (_btnSolitador == "ConfigUsuario")
+            {
+                permissoesUsuario.ReloadData(this, frmLogin.UsuarioLogado);
+                permissoesUsuario.VerificarAcessoConfigUsuario("ConfigUsuario");
+            }
+            else if (_btnSolitador == "ConfigEmpresa")
+            {
+                permissoesUsuario.ReloadData(this, frmLogin.UsuarioLogado);
+                permissoesUsuario.VerificarAcessoConfigEmpresa("ConfigEmpresa");
+            }
+            else if (_btnSolitador == "ConfigFinanceiro")
+            {
+                permissoesUsuario.ReloadData(this, frmLogin.UsuarioLogado);
+                permissoesUsuario.VerificarAcessoConfigFinanceira("ConfigFinanceiro");
+            }
+            else if (_btnSolitador == "Ir para produtos")
+            {
+                permissoesUsuario.ReloadData(this, frmLogin.UsuarioLogado);
+                permissoesUsuario.VerificarAcessoTodosProdutos();
+            }
+            else if (_btnSolitador == "Todos Os Cadastros")
+            {
+                permissoesUsuario.ReloadData(this, frmLogin.UsuarioLogado);
+                permissoesUsuario.VerificarAcessoTodosCadastros("Todos Os Cadastros");
+            }
+            else if (_btnSolitador == "ConfigPerfil")
+            {
+                permissoesUsuario.ReloadData(this, frmLogin.UsuarioLogado);
+                permissoesUsuario.VerificarAcessoConfigPerfil("ConfigPerfil");
+            }
+            else if (_btnSolitador == "ConfigDespesa")
+            {
+                permissoesCadastro.ReloadData(this, frmLogin.UsuarioLogado);
+                permissoesCadastro.VerificarAcessoConfigDespesa("ConfigDespesa");
+            }
+            else if (_btnSolitador == "Todos Os Produtos")
+            {
+                permissoesCadastro.ReloadData(this, frmLogin.UsuarioLogado);
+                permissoesCadastro.VerificarAcessoTodosProdutos();
+            }
+            else if (_btnSolitador == "Acesso PDV")
+            {
+                permissoesCadastro.ReloadData(this, frmLogin.UsuarioLogado);
+                permissoesCadastro.VerificarAcessoPDV("Acesso PDV");
+            }
+            else if (_btnSolitador == "Acesso Importar XML")
+            {
+                permissoesCadastro.ReloadData(this, frmLogin.UsuarioLogado);
+                permissoesCadastro.VerificarAcessoFinanceiroImportarXML("Acesso Importar XML");
+            }
+            else if (_btnSolitador == "Acesso Despesa")
+            {
+                permissoesCadastro.ReloadData(this, frmLogin.UsuarioLogado);
+                permissoesCadastro.VerificarAcessoFinanceiroDespesa("Acesso Despesa");
+            }
+            else if (_btnSolitador == "Acesso Categoria")
+            {
+                permissoesCadastro.ReloadData(this, frmLogin.UsuarioLogado);
+                permissoesCadastro.VerificarAcessoFinanceiroCategoria("Acesso Categoria");
             }
         }
 
         private void btnConfigUsuario_Click(object sender, EventArgs e)
         {
-            ReloadData("ConfigUsuario");
+            AcessandoTelas("ConfigUsuario");
         }
 
         private void btnConfigEmpresa_Click(object sender, EventArgs e)
         {
-            ReloadData("ConfigEmpresa");
+            AcessandoTelas("ConfigEmpresa");
         }
 
         private void btnConfigPerfil_Click(object sender, EventArgs e)
         {
-            ReloadData("ConfigPerfil");
+            AcessandoTelas("ConfigPerfil");
         }
 
         private void btnConfigFinanceiro_Click(object sender, EventArgs e)
         {
-            ReloadData("ConfigFinanceiro");
+            AcessandoTelas("ConfigFinanceiro");
         }
 
         private void btnConfigDesepsa_Click(object sender, EventArgs e)
         {
-            ReloadData("ConfigDespesa");
+            AcessandoTelas("ConfigDespesa");
         }
 
         private void btnNovoProduto_Click(object sender, EventArgs e)
         {
-            ReloadData("Novo Produto");
+            AcessandoTelas("Novo Produto");
         }
 
         private void btnTodosOsProdutos_Click(object sender, EventArgs e)
         {
-            ReloadData("Todos Os Produtos");
+            AcessandoTelas("Todos Os Produtos");
         }
 
         private void btnNovoCliente_Click(object sender, EventArgs e)
         {
-            ReloadData("Cliente");
+            AcessandoTelas("Cliente");
         }
 
         private void btnNovoFornecedor_Click(object sender, EventArgs e)
         {
-            ReloadData("Fornecedor");
+            AcessandoTelas("Fornecedor");
         }
 
         private void btnNovoFuncionario_Click(object sender, EventArgs e)
         {
-            ReloadData("Funcionario");
+            AcessandoTelas("Funcionario");
         }
 
         private void btnTodosOsCadastro_Click(object sender, EventArgs e)
         {
-            ReloadData("Todos Os Cadastros");
+            AcessandoTelas("Todos Os Cadastros");
         }
 
         private void Cadastro_Click(object sender, EventArgs e)
@@ -238,7 +235,22 @@ namespace SistemaDeGerenciamento2_0
 
         private void PDV_Click(object sender, EventArgs e)
         {
-            ReloadData("Acesso PDV");
+            AcessandoTelas("Acesso PDV");
+        }
+
+        private void btnImportarXML_Click(object sender, EventArgs e)
+        {
+            AcessandoTelas("Acesso Importar XML");
+        }
+
+        private void btnDespesaContas_Click(object sender, EventArgs e)
+        {
+            AcessandoTelas("Acesso Despesa");
+        }
+
+        private void btnCategoriaDespesa_Click(object sender, EventArgs e)
+        {
+            AcessandoTelas("Acesso Categoria");
         }
 
         private void toggleSwitch1_Toggled(object sender, EventArgs e)
@@ -253,19 +265,19 @@ namespace SistemaDeGerenciamento2_0
             }
         }
 
-        private void btnImportarXML_Click(object sender, EventArgs e)
+        private void Relatorios_Click(object sender, EventArgs e)
         {
-            ReloadData("Acesso Importar XML");
+            TelaRelatorios();
         }
 
-        private void btnDespesaContas_Click(object sender, EventArgs e)
+        private void TelaRelatorios()
         {
-            ReloadData("Acesso Despesa");
-        }
-
-        private void btnCategoriaDespesa_Click(object sender, EventArgs e)
-        {
-            ReloadData("Acesso Categoria");
+            pnlTelaPrincipal.Controls.Clear();
+            frmRelatorios frmRelatorios = new frmRelatorios(this);
+            frmRelatorios.TopLevel = false;
+            pnlTelaPrincipal.Controls.Add(frmRelatorios);
+            pnlTelaPrincipal.Tag = frmRelatorios;
+            frmRelatorios.Show();
         }
     }
 }

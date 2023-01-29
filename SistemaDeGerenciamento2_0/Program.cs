@@ -21,8 +21,6 @@ namespace SistemaDeGerenciamento2_0
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new frmTelaPrincipal());
             Application.Run(new frmLogin());
-            //Application.Run(new frmPagamento());
-            //Application.Run(new frmPDV());
         }
     }
 }
