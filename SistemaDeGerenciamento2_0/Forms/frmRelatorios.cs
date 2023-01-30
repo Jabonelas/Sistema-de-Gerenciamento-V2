@@ -44,7 +44,10 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private void btnFaturamentoPorDia_ItemClick(object sender, ItemClickEventArgs e)
         {
-            TeladeFaturamentoPorDia();
+            frmFaturamentoPorDia frmFaturamentoPorDia = new frmFaturamentoPorDia();
+            frmFaturamentoPorDia.ShowDialog();
+
+            //TeladeFaturamentoPorDia();
         }
     }
 }
