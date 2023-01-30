@@ -415,6 +415,15 @@ namespace SistemaDeGerenciamento2_0.Class
 
         #endregion Pagamento
 
+        #region Relatorios
+
+        public static void ErroAoBuscarDadosFaturamentoPorDia(Exception _e)
+        {
+            MessageBox.Show($"(BUS-FD01) Erro ao Buscar Dados do Faturamento por dia \n\nErro: {_e}", "Erro Buscar Dados do Faturamento por dia!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        #endregion Relatorios
+
         #endregion Buscar
 
         #region Atualizar

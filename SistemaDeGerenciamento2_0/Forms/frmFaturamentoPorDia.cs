@@ -2,6 +2,7 @@
 using DevExpress.XtraEditors;
 using DevExpress.XtraLayout.Filtering.Templates;
 using Microsoft.EntityFrameworkCore.Internal;
+using SistemaDeGerenciamento2_0.Class;
 using SistemaDeGerenciamento2_0.Context;
 using SistemaDeGerenciamento2_0.Models;
 using System;
@@ -94,7 +95,9 @@ namespace SistemaDeGerenciamento2_0.Forms
             }
             catch (Exception x)
             {
-                MessageBox.Show(x.ToString());
+                LogErros.EscreverArquivoDeLog($"{DateTime.Now} - Erro ao Buscar Dados Relatorio por dia - Relatorio - Faturamento por dia | {x.Message} | {x.StackTrace}");
+
+                MensagemErros.ErroAoBuscarDadosFaturamentoPorDia(x);
             }
         }
 
