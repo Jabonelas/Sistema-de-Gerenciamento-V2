@@ -213,6 +213,16 @@ namespace SistemaDeGerenciamento2_0.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap calendar_plus_20px {
+            get {
+                object obj = ResourceManager.GetObject("calendar_plus_20px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap caminhao_preto {
             get {
                 object obj = ResourceManager.GetObject("caminhao-preto", resourceCulture);
