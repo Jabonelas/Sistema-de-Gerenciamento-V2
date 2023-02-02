@@ -249,5 +249,13 @@ namespace SistemaDeGerenciamento2_0.Forms
 
             IsCalendarioAberto = false;
         }
+
+        private void frmFaturamentoPorDia_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+            {
+                this.Close();
+            }
+        }
     }
 }

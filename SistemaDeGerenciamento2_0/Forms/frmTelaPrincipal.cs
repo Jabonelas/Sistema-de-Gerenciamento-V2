@@ -277,7 +277,7 @@ namespace SistemaDeGerenciamento2_0
 
         private void Relatorios_Click(object sender, EventArgs e)
         {
-            TelaRelatorios();
+            //TelaRelatorios();
         }
 
         private void TelaRelatorios()
@@ -293,17 +293,17 @@ namespace SistemaDeGerenciamento2_0
         private void btnFaturamentoPorDia_Click(object sender, EventArgs e)
         {
             AcessandoTelas("Faturamento Por Dia");
-
-            //frmFaturamentoPorDia frmFaturamentoPorDia = new frmFaturamentoPorDia(this);
-            //frmFaturamentoPorDia.ShowDialog();
         }
 
         private void btnFaturamentoPorVendedor_Click(object sender, EventArgs e)
         {
             AcessandoTelas("Faturamento Por Vendedor");
+        }
 
-            //frmIndicadorVenda frmIndicadorVenda = new frmIndicadorVenda(this);
-            //frmIndicadorVenda.ShowDialog();
+        private void btnIndicadoresVendas_Click(object sender, EventArgs e)
+        {
+            frmIndicadorVenda frmIndicadorVenda = new frmIndicadorVenda(this);
+            frmIndicadorVenda.ShowDialog();
         }
     }
 }

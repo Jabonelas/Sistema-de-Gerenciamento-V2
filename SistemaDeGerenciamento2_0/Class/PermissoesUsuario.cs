@@ -66,8 +66,8 @@ namespace SistemaDeGerenciamento2_0.Class
             }
             else if (IsUsuarioPossuiAcesso == true && _Cadastro == "Faturamento Por Vendedor")
             {
-                frmIndicadorVenda frmIndicadorVenda = new frmIndicadorVenda(frmTelaPrincipal);
-                frmIndicadorVenda.ShowDialog();
+                frmFaturamentoPorVendedor frmFaturamentoPorVendedor = new frmFaturamentoPorVendedor(frmTelaPrincipal);
+                frmFaturamentoPorVendedor.ShowDialog();
             }
             else
             {

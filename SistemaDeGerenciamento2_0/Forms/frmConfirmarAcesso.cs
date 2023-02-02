@@ -185,7 +185,7 @@ namespace SistemaDeGerenciamento2_0.Forms
                 {
                     VerificarAcessoFinanceiroPagarConta(frmFinanceiro);
                 }
-                else if (tela == "Faturamento Por Dia")
+                else if (tela == "Faturamento Por Dia" || tela == "Faturamento Por Vendedor")
                 {
                     VerificarAcessoRelatorioFaturamentoPorDia();
                 }
@@ -215,8 +215,8 @@ namespace SistemaDeGerenciamento2_0.Forms
             {
                 this.Hide();
 
-                frmIndicadorVenda frmIndicadorVenda = new frmIndicadorVenda(frmTelaPrincipal);
-                frmIndicadorVenda.ShowDialog();
+                frmFaturamentoPorVendedor frmFaturamentoPorVendedor = new frmFaturamentoPorVendedor(frmTelaPrincipal);
+                frmFaturamentoPorVendedor.ShowDialog();
 
                 this.Close();
             }

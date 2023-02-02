@@ -44,31 +44,16 @@
             DevExpress.DataAccess.Sql.Column column6 = new DevExpress.DataAccess.Sql.Column();
             DevExpress.DataAccess.Sql.ColumnExpression columnExpression6 = new DevExpress.DataAccess.Sql.ColumnExpression();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(XtraForm1));
-            this.gridControl3 = new DevExpress.XtraGrid.GridControl();
             this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
+            this.gridControl3 = new DevExpress.XtraGrid.GridControl();
             this.bandedGridView2 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridView();
             this.gridBand2 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
-            this.id_nota_fiscal_saida = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
-            this.nfs_numero_nf_saida = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
-            this.nfs_quantidade = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
-            this.nfs_valor_pago = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
-            this.nfs_valor_desconto = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
-            this.nfs_valor_total_pago = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
+            this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.bandedGridColumn2 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bandedGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
             this.SuspendLayout();
-            // 
-            // gridControl3
-            // 
-            this.gridControl3.DataMember = "Query";
-            this.gridControl3.DataSource = this.sqlDataSource1;
-            this.gridControl3.Location = new System.Drawing.Point(28, 16);
-            this.gridControl3.MainView = this.bandedGridView2;
-            this.gridControl3.Name = "gridControl3";
-            this.gridControl3.Size = new System.Drawing.Size(827, 327);
-            this.gridControl3.TabIndex = 0;
-            this.gridControl3.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.bandedGridView2});
             // 
             // sqlDataSource1
             // 
@@ -106,17 +91,23 @@
             selectQuery1});
             this.sqlDataSource1.ResultSchemaSerializable = resources.GetString("sqlDataSource1.ResultSchemaSerializable");
             // 
+            // gridControl3
+            // 
+            this.gridControl3.Location = new System.Drawing.Point(42, 40);
+            this.gridControl3.MainView = this.bandedGridView2;
+            this.gridControl3.Name = "gridControl3";
+            this.gridControl3.Size = new System.Drawing.Size(797, 289);
+            this.gridControl3.TabIndex = 0;
+            this.gridControl3.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.bandedGridView2,
+            this.gridView2});
+            // 
             // bandedGridView2
             // 
             this.bandedGridView2.Bands.AddRange(new DevExpress.XtraGrid.Views.BandedGrid.GridBand[] {
             this.gridBand2});
             this.bandedGridView2.Columns.AddRange(new DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn[] {
-            this.id_nota_fiscal_saida,
-            this.nfs_numero_nf_saida,
-            this.nfs_quantidade,
-            this.nfs_valor_pago,
-            this.nfs_valor_desconto,
-            this.nfs_valor_total_pago});
+            this.bandedGridColumn2});
             this.bandedGridView2.GridControl = this.gridControl3;
             this.bandedGridView2.Name = "bandedGridView2";
             // 
@@ -126,47 +117,17 @@
             this.gridBand2.Name = "gridBand2";
             this.gridBand2.VisibleIndex = 0;
             // 
-            // id_nota_fiscal_saida
+            // gridView2
             // 
-            this.id_nota_fiscal_saida.Caption = "id_nota_fiscal_saida";
-            this.id_nota_fiscal_saida.FieldName = "id_nota_fiscal_saida";
-            this.id_nota_fiscal_saida.Name = "id_nota_fiscal_saida";
-            this.id_nota_fiscal_saida.Visible = true;
+            this.gridView2.GridControl = this.gridControl3;
+            this.gridView2.Name = "gridView2";
             // 
-            // nfs_numero_nf_saida
+            // bandedGridColumn2
             // 
-            this.nfs_numero_nf_saida.Caption = "nfs_numero_nf_saida";
-            this.nfs_numero_nf_saida.FieldName = "nfs_numero_nf_saida";
-            this.nfs_numero_nf_saida.Name = "nfs_numero_nf_saida";
-            this.nfs_numero_nf_saida.Visible = true;
-            // 
-            // nfs_quantidade
-            // 
-            this.nfs_quantidade.Caption = "nfs_quantidade";
-            this.nfs_quantidade.FieldName = "nfs_quantidade";
-            this.nfs_quantidade.Name = "nfs_quantidade";
-            this.nfs_quantidade.Visible = true;
-            // 
-            // nfs_valor_pago
-            // 
-            this.nfs_valor_pago.Caption = "nfs_valor_pago";
-            this.nfs_valor_pago.FieldName = "nfs_valor_pago";
-            this.nfs_valor_pago.Name = "nfs_valor_pago";
-            this.nfs_valor_pago.Visible = true;
-            // 
-            // nfs_valor_desconto
-            // 
-            this.nfs_valor_desconto.Caption = "nfs_valor_desconto";
-            this.nfs_valor_desconto.FieldName = "nfs_valor_desconto";
-            this.nfs_valor_desconto.Name = "nfs_valor_desconto";
-            this.nfs_valor_desconto.Visible = true;
-            // 
-            // nfs_valor_total_pago
-            // 
-            this.nfs_valor_total_pago.Caption = "nfs_valor_total_pago";
-            this.nfs_valor_total_pago.FieldName = "nfs_valor_total_pago";
-            this.nfs_valor_total_pago.Name = "nfs_valor_total_pago";
-            this.nfs_valor_total_pago.Visible = true;
+            this.bandedGridColumn2.Caption = "bandedGridColumn2";
+            this.bandedGridColumn2.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Custom;
+            this.bandedGridColumn2.Name = "bandedGridColumn2";
+            this.bandedGridColumn2.Visible = true;
             // 
             // XtraForm1
             // 
@@ -175,6 +136,7 @@
             this.Name = "XtraForm1";
             ((System.ComponentModel.ISupportInitialize)(this.gridControl3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bandedGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -187,15 +149,11 @@
         private DevExpress.XtraGrid.Views.BandedGrid.BandedGridView bandedGridView1;
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand1;
         private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn bandedGridColumn1;
+        private DevExpress.DataAccess.Sql.SqlDataSource sqlDataSource1;
         private DevExpress.XtraGrid.GridControl gridControl3;
         private DevExpress.XtraGrid.Views.BandedGrid.BandedGridView bandedGridView2;
         private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand2;
-        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn id_nota_fiscal_saida;
-        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn nfs_numero_nf_saida;
-        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn nfs_quantidade;
-        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn nfs_valor_total_pago;
-        private DevExpress.DataAccess.Sql.SqlDataSource sqlDataSource1;
-        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn nfs_valor_pago;
-        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn nfs_valor_desconto;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView2;
+        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn bandedGridColumn2;
     }
 }

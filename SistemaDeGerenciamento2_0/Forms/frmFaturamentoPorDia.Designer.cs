@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            DevExpress.XtraSplashScreen.SplashScreenManager splashScreenManager1 = new DevExpress.XtraSplashScreen.SplashScreenManager(this, null, true, true);
             DevExpress.DataAccess.Sql.CustomSqlQuery customSqlQuery1 = new DevExpress.DataAccess.Sql.CustomSqlQuery();
             DevExpress.DataAccess.Sql.QueryParameter queryParameter1 = new DevExpress.DataAccess.Sql.QueryParameter();
             DevExpress.DataAccess.Sql.QueryParameter queryParameter2 = new DevExpress.DataAccess.Sql.QueryParameter();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmFaturamentoPorDia));
-            DevExpress.XtraSplashScreen.SplashScreenManager splashScreenManager1 = new DevExpress.XtraSplashScreen.SplashScreenManager(this, null, true, true);
             this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
@@ -46,11 +46,16 @@
             this.lblValorTotal = new DevExpress.XtraEditors.LabelControl();
             this.txtCalendario = new DevExpress.XtraEditors.TextEdit();
             this.btnCalendario = new DevExpress.XtraEditors.SimpleButton();
+            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCalendario.Properties)).BeginInit();
             this.SuspendLayout();
+            // 
+            // splashScreenManager1
+            // 
+            splashScreenManager1.ClosingDelay = 500;
             // 
             // sqlDataSource1
             // 
@@ -196,15 +201,22 @@
             this.btnCalendario.Click += new System.EventHandler(this.btnCalendario_Click);
             this.btnCalendario.Leave += new System.EventHandler(this.btnCalendario_Leave);
             // 
-            // splashScreenManager1
+            // labelControl4
             // 
-            splashScreenManager1.ClosingDelay = 500;
+            this.labelControl4.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl4.Appearance.Options.UseFont = true;
+            this.labelControl4.Location = new System.Drawing.Point(643, 19);
+            this.labelControl4.Name = "labelControl4";
+            this.labelControl4.Size = new System.Drawing.Size(38, 20);
+            this.labelControl4.TabIndex = 323;
+            this.labelControl4.Text = "Datas";
             // 
             // frmFaturamentoPorDia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(893, 467);
+            this.Controls.Add(this.labelControl4);
             this.Controls.Add(this.btnCalendario);
             this.Controls.Add(this.txtCalendario);
             this.Controls.Add(this.lblValorTotal);
@@ -216,10 +228,12 @@
             this.Controls.Add(this.labelControl3);
             this.Controls.Add(this.pictureBox6);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.KeyPreview = true;
             this.Name = "frmFaturamentoPorDia";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmFaturamentoPorDia";
             this.Click += new System.EventHandler(this.frmFaturamentoPorDia_Click);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmFaturamentoPorDia_KeyDown);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.frmFaturamentoPorDia_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.frmFaturamentoPorDia_MouseMove);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
@@ -244,5 +258,6 @@
         private DevExpress.XtraEditors.LabelControl lblValorTotal;
         public DevExpress.XtraEditors.TextEdit txtCalendario;
         public DevExpress.XtraEditors.SimpleButton btnCalendario;
+        private DevExpress.XtraEditors.LabelControl labelControl4;
     }
 }
