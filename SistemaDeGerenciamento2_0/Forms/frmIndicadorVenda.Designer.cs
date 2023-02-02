@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            DevExpress.DataAccess.Sql.CustomSqlQuery customSqlQuery5 = new DevExpress.DataAccess.Sql.CustomSqlQuery();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmIndicadorVenda));
-            DevExpress.DataAccess.Sql.CustomSqlQuery customSqlQuery6 = new DevExpress.DataAccess.Sql.CustomSqlQuery();
-            DevExpress.DataAccess.Sql.CustomSqlQuery customSqlQuery7 = new DevExpress.DataAccess.Sql.CustomSqlQuery();
-            DevExpress.DataAccess.Sql.CustomSqlQuery customSqlQuery8 = new DevExpress.DataAccess.Sql.CustomSqlQuery();
             DevExpress.XtraSplashScreen.SplashScreenManager splashScreenManager1 = new DevExpress.XtraSplashScreen.SplashScreenManager(this, null, true, true);
+            DevExpress.DataAccess.Sql.CustomSqlQuery customSqlQuery1 = new DevExpress.DataAccess.Sql.CustomSqlQuery();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmIndicadorVenda));
+            DevExpress.DataAccess.Sql.CustomSqlQuery customSqlQuery2 = new DevExpress.DataAccess.Sql.CustomSqlQuery();
+            DevExpress.DataAccess.Sql.CustomSqlQuery customSqlQuery3 = new DevExpress.DataAccess.Sql.CustomSqlQuery();
+            DevExpress.DataAccess.Sql.CustomSqlQuery customSqlQuery4 = new DevExpress.DataAccess.Sql.CustomSqlQuery();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -85,6 +85,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
+            // splashScreenManager1
+            // 
+            splashScreenManager1.ClosingDelay = 500;
+            // 
             // gridControl1
             // 
             this.gridControl1.DataMember = "Query";
@@ -101,10 +105,10 @@
             // 
             this.sqlDataSource1.ConnectionName = "update";
             this.sqlDataSource1.Name = "sqlDataSource1";
-            customSqlQuery5.Name = "Query";
-            customSqlQuery5.Sql = resources.GetString("customSqlQuery5.Sql");
+            customSqlQuery1.Name = "Query";
+            customSqlQuery1.Sql = resources.GetString("customSqlQuery1.Sql");
             this.sqlDataSource1.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
-            customSqlQuery5});
+            customSqlQuery1});
             this.sqlDataSource1.ResultSchemaSerializable = resources.GetString("sqlDataSource1.ResultSchemaSerializable");
             // 
             // gridView1
@@ -171,12 +175,12 @@
             // 
             this.sqlDataSource4.ConnectionName = "update";
             this.sqlDataSource4.Name = "sqlDataSource4";
-            customSqlQuery6.Name = "Query";
-            customSqlQuery6.Sql = "select top 5 pd_codigo, pd_nome,(pd_preco - pd_custo ) as \'valor\' from tb_produto" +
+            customSqlQuery2.Name = "Query";
+            customSqlQuery2.Sql = "select top 5 pd_codigo, pd_nome,(pd_preco - pd_custo ) as \'valor\' from tb_produto" +
     "\r\n\t  group by pd_codigo, pd_nome, (pd_preco - pd_custo )\r\n\t   ORDER BY \r\n\t   \'va" +
     "lor\' DESC";
             this.sqlDataSource4.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
-            customSqlQuery6});
+            customSqlQuery2});
             this.sqlDataSource4.ResultSchemaSerializable = resources.GetString("sqlDataSource4.ResultSchemaSerializable");
             // 
             // gridView2
@@ -244,11 +248,11 @@
             // 
             this.sqlDataSource3.ConnectionName = "update";
             this.sqlDataSource3.Name = "sqlDataSource3";
-            customSqlQuery7.Name = "Query";
-            customSqlQuery7.Sql = "select top 5 pd_codigo, pd_nome,pd_margem from tb_produto\r\n\t   group by pd_codigo" +
+            customSqlQuery3.Name = "Query";
+            customSqlQuery3.Sql = "select top 5 pd_codigo, pd_nome,pd_margem from tb_produto\r\n\t   group by pd_codigo" +
     ", pd_nome,pd_margem\r\n\t   ORDER BY \r\n\t   pd_margem DESC";
             this.sqlDataSource3.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
-            customSqlQuery7});
+            customSqlQuery3});
             this.sqlDataSource3.ResultSchemaSerializable = resources.GetString("sqlDataSource3.ResultSchemaSerializable");
             // 
             // gridView3
@@ -316,10 +320,10 @@
             // 
             this.sqlDataSource2.ConnectionName = "update";
             this.sqlDataSource2.Name = "sqlDataSource2";
-            customSqlQuery8.Name = "Query";
-            customSqlQuery8.Sql = resources.GetString("customSqlQuery8.Sql");
+            customSqlQuery4.Name = "Query";
+            customSqlQuery4.Sql = resources.GetString("customSqlQuery4.Sql");
             this.sqlDataSource2.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
-            customSqlQuery8});
+            customSqlQuery4});
             this.sqlDataSource2.ResultSchemaSerializable = resources.GetString("sqlDataSource2.ResultSchemaSerializable");
             // 
             // gridView4
@@ -492,10 +496,6 @@
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 310;
             this.pictureBox4.TabStop = false;
-            // 
-            // splashScreenManager1
-            // 
-            splashScreenManager1.ClosingDelay = 500;
             // 
             // frmIndicadorVenda
             // 

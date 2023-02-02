@@ -29,6 +29,8 @@ namespace SistemaDeGerenciamento2_0.Forms
             PreencherEsteMes();
 
             Datas.ForEach(x => { txtDataInicial.Text = x.Key; txtDataFinal.Text = x.Value; });
+
+            frmFaturamentoPorDia.IsCalendarioAberto = true;
         }
 
         private void PreencherHoje()

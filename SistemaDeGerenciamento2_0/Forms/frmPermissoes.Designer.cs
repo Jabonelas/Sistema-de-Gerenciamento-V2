@@ -121,6 +121,8 @@
             this.chkCadastrarCategoriaDespesa = new DevExpress.XtraEditors.CheckEdit();
             this.pictureEdit40 = new DevExpress.XtraEditors.PictureEdit();
             this.chkCadastrarDespesa = new DevExpress.XtraEditors.CheckEdit();
+            this.chkVisualizarFaturamento = new DevExpress.XtraEditors.CheckEdit();
+            this.pictureEdit41 = new DevExpress.XtraEditors.PictureEdit();
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl5)).BeginInit();
@@ -203,6 +205,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.chkCadastrarCategoriaDespesa.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit40.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chkCadastrarDespesa.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chkVisualizarFaturamento.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit41.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // labelControl2
@@ -730,7 +734,7 @@
             this.pictureEdit39.Properties.PictureAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.pictureEdit39.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.pictureEdit39.Properties.ShowMenu = false;
-            this.pictureEdit39.Size = new System.Drawing.Size(368, 140);
+            this.pictureEdit39.Size = new System.Drawing.Size(368, 185);
             this.pictureEdit39.TabIndex = 232;
             // 
             // chkRealizarDevolucao
@@ -1099,7 +1103,7 @@
             this.btnCancelar.ImageOptions.ImageToTextIndent = 10;
             this.btnCancelar.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
             this.btnCancelar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnCancelar.Location = new System.Drawing.Point(211, 639);
+            this.btnCancelar.Location = new System.Drawing.Point(202, 687);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(113, 30);
             this.btnCancelar.TabIndex = 127;
@@ -1116,7 +1120,7 @@
             this.btnSalvar.ImageOptions.ImageToTextIndent = 10;
             this.btnSalvar.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
             this.btnSalvar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnSalvar.Location = new System.Drawing.Point(81, 639);
+            this.btnSalvar.Location = new System.Drawing.Point(72, 687);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(113, 30);
             this.btnSalvar.TabIndex = 126;
@@ -1384,6 +1388,32 @@
             this.chkCadastrarDespesa.Size = new System.Drawing.Size(157, 24);
             this.chkCadastrarDespesa.TabIndex = 283;
             // 
+            // chkVisualizarFaturamento
+            // 
+            this.chkVisualizarFaturamento.Location = new System.Drawing.Point(29, 591);
+            this.chkVisualizarFaturamento.Name = "chkVisualizarFaturamento";
+            this.chkVisualizarFaturamento.Properties.Appearance.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.chkVisualizarFaturamento.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkVisualizarFaturamento.Properties.Appearance.Options.UseBackColor = true;
+            this.chkVisualizarFaturamento.Properties.Appearance.Options.UseFont = true;
+            this.chkVisualizarFaturamento.Properties.Caption = "Visualizar Faturamentos";
+            this.chkVisualizarFaturamento.Size = new System.Drawing.Size(190, 24);
+            this.chkVisualizarFaturamento.TabIndex = 286;
+            // 
+            // pictureEdit41
+            // 
+            this.pictureEdit41.EditValue = ((object)(resources.GetObject("pictureEdit41.EditValue")));
+            this.pictureEdit41.Location = new System.Drawing.Point(221, 595);
+            this.pictureEdit41.Name = "pictureEdit41";
+            this.pictureEdit41.Properties.Appearance.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.pictureEdit41.Properties.Appearance.Options.UseBackColor = true;
+            this.pictureEdit41.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.pictureEdit41.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit41.Properties.ZoomAcceleration = 5D;
+            this.pictureEdit41.Size = new System.Drawing.Size(23, 20);
+            this.pictureEdit41.TabIndex = 285;
+            this.pictureEdit41.ToolTip = "Liber acesso aos relatorios de faturamento.";
+            // 
             // frmPermissoes
             // 
             this.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
@@ -1391,6 +1421,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(759, 729);
+            this.Controls.Add(this.chkVisualizarFaturamento);
+            this.Controls.Add(this.pictureEdit41);
             this.Controls.Add(this.pictureEdit40);
             this.Controls.Add(this.chkCadastrarDespesa);
             this.Controls.Add(this.pictureEdit35);
@@ -1568,6 +1600,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.chkCadastrarCategoriaDespesa.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit40.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chkCadastrarDespesa.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chkVisualizarFaturamento.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit41.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1665,5 +1699,7 @@
         private DevExpress.XtraEditors.CheckEdit chkCadastrarCategoriaDespesa;
         private DevExpress.XtraEditors.PictureEdit pictureEdit40;
         private DevExpress.XtraEditors.CheckEdit chkCadastrarDespesa;
+        private DevExpress.XtraEditors.CheckEdit chkVisualizarFaturamento;
+        private DevExpress.XtraEditors.PictureEdit pictureEdit41;
     }
 }

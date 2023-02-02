@@ -158,6 +158,16 @@ namespace SistemaDeGerenciamento2_0
                 permissoesCadastro.ReloadData(this, frmLogin.UsuarioLogado);
                 permissoesCadastro.VerificarAcessoFinanceiroCategoria("Acesso Categoria");
             }
+            else if (_btnSolitador == "Faturamento Por Dia")
+            {
+                permissoesCadastro.ReloadData(this, frmLogin.UsuarioLogado);
+                permissoesCadastro.VerificarAcessoRelatorioFaturamento("Faturamento Por Dia", this);
+            }
+            else if (_btnSolitador == "Faturamento Por Vendedor")
+            {
+                permissoesCadastro.ReloadData(this, frmLogin.UsuarioLogado);
+                permissoesCadastro.VerificarAcessoRelatorioFaturamento("Faturamento Por Vendedor", this);
+            }
         }
 
         private void btnConfigUsuario_Click(object sender, EventArgs e)
@@ -278,6 +288,22 @@ namespace SistemaDeGerenciamento2_0
             pnlTelaPrincipal.Controls.Add(frmRelatorios);
             pnlTelaPrincipal.Tag = frmRelatorios;
             frmRelatorios.Show();
+        }
+
+        private void btnFaturamentoPorDia_Click(object sender, EventArgs e)
+        {
+            AcessandoTelas("Faturamento Por Dia");
+
+            //frmFaturamentoPorDia frmFaturamentoPorDia = new frmFaturamentoPorDia(this);
+            //frmFaturamentoPorDia.ShowDialog();
+        }
+
+        private void btnFaturamentoPorVendedor_Click(object sender, EventArgs e)
+        {
+            AcessandoTelas("Faturamento Por Vendedor");
+
+            //frmIndicadorVenda frmIndicadorVenda = new frmIndicadorVenda(this);
+            //frmIndicadorVenda.ShowDialog();
         }
     }
 }

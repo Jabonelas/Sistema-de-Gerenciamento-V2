@@ -47,6 +47,7 @@ namespace SistemaDeGerenciamento2_0.Models
         public bool pm_remover_cadastro { get; set; }
         public bool pm_visualizar_cadastro_completo { get; set; }
         public bool pm_acesso_pdv { get; set; }
+        public bool pm_visualizar_faturamento { get; set; }
 
         [InverseProperty("fk_permissoesNavigation")]
         public virtual ICollection<tb_registro> tb_registro { get; set; }

@@ -185,12 +185,44 @@ namespace SistemaDeGerenciamento2_0.Forms
                 {
                     VerificarAcessoFinanceiroPagarConta(frmFinanceiro);
                 }
+                else if (tela == "Faturamento Por Dia")
+                {
+                    VerificarAcessoRelatorioFaturamentoPorDia();
+                }
             }
             else
             {
                 MensagemAtencao.MensagemUsuarioSenhasNaoEncontrados();
 
                 txtUsuario.Focus();
+            }
+        }
+
+        private void VerificarAcessoRelatorioFaturamentoPorDia()
+        {
+            permissoesUsuario.listaPermissoesUsuario.ForEach(x => IsUsuarioPossuiAcesso = x.pm_visualizar_faturamento);
+
+            if (IsUsuarioPossuiAcesso == true && tela == "Faturamento Por Dia")
+            {
+                this.Hide();
+
+                frmFaturamentoPorDia frmFaturamentoPorDia = new frmFaturamentoPorDia(frmTelaPrincipal);
+                frmFaturamentoPorDia.ShowDialog();
+
+                this.Close();
+            }
+            else if (IsUsuarioPossuiAcesso == true && tela == "Faturamento Por Vendedor")
+            {
+                this.Hide();
+
+                frmIndicadorVenda frmIndicadorVenda = new frmIndicadorVenda(frmTelaPrincipal);
+                frmIndicadorVenda.ShowDialog();
+
+                this.Close();
+            }
+            else
+            {
+                MenssagemUsuarioSemPermissao();
             }
         }
 

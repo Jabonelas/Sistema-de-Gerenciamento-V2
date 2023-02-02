@@ -29,10 +29,11 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            DevExpress.DataAccess.Sql.CustomSqlQuery customSqlQuery6 = new DevExpress.DataAccess.Sql.CustomSqlQuery();
-            DevExpress.DataAccess.Sql.QueryParameter queryParameter11 = new DevExpress.DataAccess.Sql.QueryParameter();
-            DevExpress.DataAccess.Sql.QueryParameter queryParameter12 = new DevExpress.DataAccess.Sql.QueryParameter();
+            DevExpress.DataAccess.Sql.CustomSqlQuery customSqlQuery1 = new DevExpress.DataAccess.Sql.CustomSqlQuery();
+            DevExpress.DataAccess.Sql.QueryParameter queryParameter1 = new DevExpress.DataAccess.Sql.QueryParameter();
+            DevExpress.DataAccess.Sql.QueryParameter queryParameter2 = new DevExpress.DataAccess.Sql.QueryParameter();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmFaturamentoPorDia));
+            DevExpress.XtraSplashScreen.SplashScreenManager splashScreenManager1 = new DevExpress.XtraSplashScreen.SplashScreenManager(this, null, true, true);
             this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
@@ -55,19 +56,19 @@
             // 
             this.sqlDataSource1.ConnectionName = "update";
             this.sqlDataSource1.Name = "sqlDataSource1";
-            customSqlQuery6.Name = "tb_nota_fiscal_saida";
-            queryParameter11.Name = "DataInicial";
-            queryParameter11.Type = typeof(System.DateTime);
-            queryParameter11.ValueInfo = "2023-01-01";
-            queryParameter12.Name = "DataFinal";
-            queryParameter12.Type = typeof(System.DateTime);
-            queryParameter12.ValueInfo = "2023-02-02";
-            customSqlQuery6.Parameters.AddRange(new DevExpress.DataAccess.Sql.QueryParameter[] {
-            queryParameter11,
-            queryParameter12});
-            customSqlQuery6.Sql = resources.GetString("customSqlQuery6.Sql");
+            customSqlQuery1.Name = "tb_nota_fiscal_saida";
+            queryParameter1.Name = "DataInicial";
+            queryParameter1.Type = typeof(System.DateTime);
+            queryParameter1.ValueInfo = "2023-01-01";
+            queryParameter2.Name = "DataFinal";
+            queryParameter2.Type = typeof(System.DateTime);
+            queryParameter2.ValueInfo = "2023-02-02";
+            customSqlQuery1.Parameters.AddRange(new DevExpress.DataAccess.Sql.QueryParameter[] {
+            queryParameter1,
+            queryParameter2});
+            customSqlQuery1.Sql = resources.GetString("customSqlQuery1.Sql");
             this.sqlDataSource1.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
-            customSqlQuery6});
+            customSqlQuery1});
             this.sqlDataSource1.ResultSchemaSerializable = resources.GetString("sqlDataSource1.ResultSchemaSerializable");
             // 
             // labelControl3
@@ -194,6 +195,10 @@
             this.btnCalendario.TabIndex = 322;
             this.btnCalendario.Click += new System.EventHandler(this.btnCalendario_Click);
             this.btnCalendario.Leave += new System.EventHandler(this.btnCalendario_Leave);
+            // 
+            // splashScreenManager1
+            // 
+            splashScreenManager1.ClosingDelay = 500;
             // 
             // frmFaturamentoPorDia
             // 

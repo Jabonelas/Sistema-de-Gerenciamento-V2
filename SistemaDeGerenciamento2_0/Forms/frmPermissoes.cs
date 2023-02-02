@@ -126,7 +126,8 @@ namespace SistemaDeGerenciamento2_0.Forms
                         ////Relatorio
                         pm_visualizar_visao_geral = Convert.ToBoolean(chkVisualizarVisaoGeral.Checked),
                         pm_visualizar_dre = Convert.ToBoolean(chkVisualizarDRE.Checked),
-                        pm_criar_visualizar_relatorios = Convert.ToBoolean(chkCriarVisualizarRelatorios.Checked)
+                        pm_criar_visualizar_relatorios = Convert.ToBoolean(chkCriarVisualizarRelatorios.Checked),
+                        pm_visualizar_faturamento = Convert.ToBoolean(chkVisualizarFaturamento.Checked)
                     };
 
                     db.tb_permissoes.Add(checkBoxPreenchidas);
@@ -226,6 +227,7 @@ namespace SistemaDeGerenciamento2_0.Forms
                                 chkVisualizarVisaoGeral.Checked = Convert.ToBoolean(item.pm_visualizar_visao_geral);
                                 chkVisualizarDRE.Checked = Convert.ToBoolean(item.pm_visualizar_dre);
                                 chkCriarVisualizarRelatorios.Checked = Convert.ToBoolean(item.pm_criar_visualizar_relatorios);
+                                chkVisualizarFaturamento.Checked = Convert.ToBoolean(item.pm_visualizar_faturamento);
                             }
                         }
                     }
@@ -292,6 +294,7 @@ namespace SistemaDeGerenciamento2_0.Forms
                     checkBoxPreenchidas.pm_visualizar_visao_geral = Convert.ToBoolean(chkVisualizarVisaoGeral.Checked);
                     checkBoxPreenchidas.pm_visualizar_dre = Convert.ToBoolean(chkVisualizarDRE.Checked);
                     checkBoxPreenchidas.pm_criar_visualizar_relatorios = Convert.ToBoolean(chkCriarVisualizarRelatorios.Checked);
+                    checkBoxPreenchidas.pm_visualizar_faturamento = Convert.ToBoolean(chkVisualizarFaturamento.Checked);
 
                     db.SaveChanges();
                 };

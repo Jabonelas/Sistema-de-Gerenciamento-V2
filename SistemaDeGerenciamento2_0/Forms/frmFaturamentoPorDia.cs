@@ -3,6 +3,7 @@ using DevExpress.XtraEditors;
 using DevExpress.XtraGrid.Design;
 using DevExpress.XtraGrid.Extensions;
 using DevExpress.XtraLayout.Filtering.Templates;
+using DevExpress.XtraSplashScreen;
 using Microsoft.EntityFrameworkCore.Internal;
 using SistemaDeGerenciamento2_0.Class;
 using SistemaDeGerenciamento2_0.Context;
@@ -28,6 +29,7 @@ namespace SistemaDeGerenciamento2_0.Forms
         private int Y = 0;
 
         public bool IsPreencherGrid = false;
+        public bool IsCalendarioAberto = false;
 
         public DateTime dataInicial = DateTime.Today;
         public DateTime dataFinal = DateTime.Today;
@@ -35,6 +37,7 @@ namespace SistemaDeGerenciamento2_0.Forms
         private DataTable dt = new DataTable();
 
         private frmCalendario frmCalendario;
+        private frmTelaPrincipal frmTelaPrincipal;
 
         public frmFaturamentoPorDia()
         {
@@ -43,6 +46,25 @@ namespace SistemaDeGerenciamento2_0.Forms
             PreencherData();
 
             PreencherGrid();
+        }
+
+        public frmFaturamentoPorDia(frmTelaPrincipal _frmTelaPrincipal)
+        {
+            InitializeComponent();
+
+            frmTelaPrincipal = _frmTelaPrincipal;
+
+            ReloadData(frmTelaPrincipal);
+        }
+
+        public void ReloadData(frmTelaPrincipal _frmTelaPrincipal)
+        {
+            using (var handle = SplashScreenManager.ShowOverlayForm(_frmTelaPrincipal))
+            {
+                PreencherData();
+
+                PreencherGrid();
+            }
         }
 
         private void PreencherData()
@@ -181,15 +203,9 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private void ExibirCalendario()
         {
-            string localizacao = txtCalendario.Location.ToString();
-
-            string a = localizacao.Replace("X=", "");
-            a = localizacao.Replace("Y=", "");
-
             frmCalendario = new frmCalendario(this);
             frmCalendario.StartPosition = FormStartPosition.Manual;
-            frmCalendario.Location = new Point(a);
-            //frmCalendario.Location = new Point(480, 200);
+            frmCalendario.Location = new Point(480, 200);
             frmCalendario.Show();
         }
 
@@ -212,16 +228,26 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private void frmFaturamentoPorDia_Click(object sender, EventArgs e)
         {
+            if (IsCalendarioAberto == true)
+            {
+                PreencherGridFecharCalendario();
+            }
+        }
+
+        private void PreencherGridFecharCalendario()
+        {
+            txtCalendario.Text = $"{dataInicial.ToShortDateString()} - {dataFinal.ToShortDateString()}";
+
             dataInicial = Convert.ToDateTime(frmCalendario.txtDataInicial.Text);
             dataFinal = Convert.ToDateTime(frmCalendario.txtDataFinal.Text);
-
-            txtCalendario.Text = $"{dataInicial.ToShortDateString()} - {dataFinal.ToShortDateString()}";
 
             PreencherGrid();
 
             frmCalendario.Close();
 
             gridControl1.Focus();
+
+            IsCalendarioAberto = false;
         }
     }
 }

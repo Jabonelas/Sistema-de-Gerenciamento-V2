@@ -540,6 +540,12 @@
     <Compile Include="Forms\uscUsuarios.Designer.cs">
       <DependentUpon>uscUsuarios.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\XtraForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\XtraForm1.Designer.cs">
+      <DependentUpon>XtraForm1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Models\tb_cadastro_despesa.cs" />
     <Compile Include="Models\tb_configuracao_financeira.cs" />
     <Compile Include="Models\tb_despesa.cs" />
@@ -678,6 +684,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\uscUsuarios.resx">
       <DependentUpon>uscUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\XtraForm1.resx">
+      <DependentUpon>XtraForm1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">

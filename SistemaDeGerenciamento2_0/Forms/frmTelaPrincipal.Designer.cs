@@ -65,6 +65,12 @@
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.pnlTelaPrincipal = new System.Windows.Forms.FlowLayoutPanel();
             this.btnDespesaCategoria = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.accordionControlElement2 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.accordionControlElement3 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.accordionControlElement4 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.accordionControlElement5 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.btnFaturamentoPorVendedor = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.btnFaturamentoPorDia = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).BeginInit();
             this.accordionControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fluentDesignFormControl1)).BeginInit();
@@ -374,9 +380,14 @@
             this.Relatorios.Appearance.Pressed.ForeColor = System.Drawing.Color.Silver;
             this.Relatorios.Appearance.Pressed.Options.UseFont = true;
             this.Relatorios.Appearance.Pressed.Options.UseForeColor = true;
+            this.Relatorios.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
+            this.accordionControlElement2,
+            this.accordionControlElement3,
+            this.accordionControlElement4,
+            this.accordionControlElement5});
+            this.Relatorios.Expanded = true;
             this.Relatorios.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.check_30px;
             this.Relatorios.Name = "Relatorios";
-            this.Relatorios.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.Relatorios.Text = "Relatórios";
             this.Relatorios.Click += new System.EventHandler(this.Relatorios_Click);
             // 
@@ -522,6 +533,50 @@
             this.btnDespesaCategoria.Name = "btnDespesaCategoria";
             this.btnDespesaCategoria.Text = "Despesa/Categoria";
             // 
+            // accordionControlElement2
+            // 
+            this.accordionControlElement2.Expanded = true;
+            this.accordionControlElement2.Name = "accordionControlElement2";
+            this.accordionControlElement2.Text = "Histórico de Venda";
+            // 
+            // accordionControlElement3
+            // 
+            this.accordionControlElement3.Expanded = true;
+            this.accordionControlElement3.Name = "accordionControlElement3";
+            this.accordionControlElement3.Text = "Indicadores de Venda";
+            // 
+            // accordionControlElement4
+            // 
+            this.accordionControlElement4.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
+            this.btnFaturamentoPorVendedor,
+            this.btnFaturamentoPorDia});
+            this.accordionControlElement4.Expanded = true;
+            this.accordionControlElement4.Name = "accordionControlElement4";
+            this.accordionControlElement4.Text = "Faturamento";
+            // 
+            // accordionControlElement5
+            // 
+            this.accordionControlElement5.Name = "accordionControlElement5";
+            this.accordionControlElement5.Text = "Fluxo de Caixa";
+            // 
+            // btnFaturamentoPorVendedor
+            // 
+            this.btnFaturamentoPorVendedor.Appearance.Default.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFaturamentoPorVendedor.Appearance.Default.Options.UseFont = true;
+            this.btnFaturamentoPorVendedor.Name = "btnFaturamentoPorVendedor";
+            this.btnFaturamentoPorVendedor.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.btnFaturamentoPorVendedor.Text = "Faturamento Por Vendedor";
+            this.btnFaturamentoPorVendedor.Click += new System.EventHandler(this.btnFaturamentoPorVendedor_Click);
+            // 
+            // btnFaturamentoPorDia
+            // 
+            this.btnFaturamentoPorDia.Appearance.Default.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFaturamentoPorDia.Appearance.Default.Options.UseFont = true;
+            this.btnFaturamentoPorDia.Name = "btnFaturamentoPorDia";
+            this.btnFaturamentoPorDia.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.btnFaturamentoPorDia.Text = "Faturamento Por Dia";
+            this.btnFaturamentoPorDia.Click += new System.EventHandler(this.btnFaturamentoPorDia_Click);
+            // 
             // frmTelaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -583,6 +638,12 @@
         private DevExpress.XtraBars.Navigation.AccordionControlElement btnDespesaContas;
         private DevExpress.XtraBars.Navigation.AccordionControlElement btnCategoriaDespesa;
         private DevExpress.XtraBars.Navigation.AccordionControlElement btnDespesaCategoria;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement2;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement3;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement4;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement5;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement btnFaturamentoPorVendedor;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement btnFaturamentoPorDia;
     }
 }
 

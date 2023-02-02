@@ -53,6 +53,29 @@ namespace SistemaDeGerenciamento2_0.Class
             }
         }
 
+        public void VerificarAcessoRelatorioFaturamento(string _Cadastro, frmTelaPrincipal _frmTelaPrincipal)
+        {
+            bool IsUsuarioPossuiAcesso = false;
+
+            listaPermissoesUsuario.ForEach(x => IsUsuarioPossuiAcesso = x.pm_visualizar_faturamento);
+
+            if (IsUsuarioPossuiAcesso == true && _Cadastro == "Faturamento Por Dia")
+            {
+                frmFaturamentoPorDia frmFaturamentoPorDia = new frmFaturamentoPorDia(frmTelaPrincipal);
+                frmFaturamentoPorDia.ShowDialog();
+            }
+            else if (IsUsuarioPossuiAcesso == true && _Cadastro == "Faturamento Por Vendedor")
+            {
+                frmIndicadorVenda frmIndicadorVenda = new frmIndicadorVenda(frmTelaPrincipal);
+                frmIndicadorVenda.ShowDialog();
+            }
+            else
+            {
+                frmConfirmarAcesso frmConfirmarAcesso = new frmConfirmarAcesso(_frmTelaPrincipal, _Cadastro);
+                frmConfirmarAcesso.ShowDialog();
+            }
+        }
+
         public void VerificarAcessoFinanceiroPagarContas(string _Cadastro, frmFinanceiro _frmFinanceiro)
         {
             bool IsUsuarioPossuiAcesso = false;
