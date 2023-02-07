@@ -33,6 +33,21 @@ namespace SistemaDeGerenciamento2_0.Forms
             frmFaturamentoPorDia.IsCalendarioAberto = true;
         }
 
+        private frmHistoricoVenda frmHistoricoVenda;
+
+        public frmCalendario(frmHistoricoVenda _frmHistoricoVenda)
+        {
+            InitializeComponent();
+
+            frmHistoricoVenda = _frmHistoricoVenda;
+
+            PreencherEsteMes();
+
+            Datas.ForEach(x => { txtDataInicial.Text = x.Key; txtDataFinal.Text = x.Value; });
+
+            //frmFaturamentoPorDia.IsCalendarioAberto = true;
+        }
+
         private void PreencherHoje()
         {
             Datas.Clear();
@@ -95,21 +110,41 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private void AplicarBusca()
         {
-            frmFaturamentoPorDia.dataInicial = Convert.ToDateTime(txtDataInicial.Text);
-            frmFaturamentoPorDia.dataFinal = Convert.ToDateTime(txtDataFinal.Text);
+            if (frmFaturamentoPorDia != null)
+            {
+                frmFaturamentoPorDia.dataInicial = Convert.ToDateTime(txtDataInicial.Text);
+                frmFaturamentoPorDia.dataFinal = Convert.ToDateTime(txtDataFinal.Text);
 
-            frmFaturamentoPorDia.IsPreencherGrid = true;
+                frmFaturamentoPorDia.IsPreencherGrid = true;
 
-            frmFaturamentoPorDia.txtCalendario.Text = $"{txtDataInicial.Text} - {txtDataFinal.Text}";
-            frmFaturamentoPorDia.btnCalendario.Focus();
-            this.Close();
+                frmFaturamentoPorDia.txtCalendario.Text = $"{txtDataInicial.Text} - {txtDataFinal.Text}";
+                frmFaturamentoPorDia.btnCalendario.Focus();
+
+                Datas.ForEach(x => { frmFaturamentoPorDia.txtCalendario.Text = $"{x.Key} - {x.Value}"; });
+
+                this.Close();
+            }
+            else
+            {
+                frmHistoricoVenda.dataInicial = Convert.ToDateTime(txtDataInicial.Text);
+                frmHistoricoVenda.dataFinal = Convert.ToDateTime(txtDataFinal.Text);
+
+                frmHistoricoVenda.IsPreencherGrid = true;
+
+                frmHistoricoVenda.txtCalendario.Text = $"{txtDataInicial.Text} - {txtDataFinal.Text}";
+                frmHistoricoVenda.btnCalendario.Focus();
+
+                Datas.ForEach(x => { frmHistoricoVenda.txtCalendario.Text = $"{x.Key} - {x.Value}"; });
+
+                this.Close();
+            }
         }
 
         private void btnHoje_Click_1(object sender, EventArgs e)
         {
             PreencherHoje();
 
-            Datas.ForEach(x => { frmFaturamentoPorDia.txtCalendario.Text = $"{x.Key} - {x.Value}"; });
+            //Datas.ForEach(x => { frmFaturamentoPorDia.txtCalendario.Text = $"{x.Key} - {x.Value}"; });
 
             AplicarBusca();
         }
@@ -125,7 +160,7 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             PreencherOntem();
 
-            Datas.ForEach(x => { frmFaturamentoPorDia.txtCalendario.Text = $"{x.Key} - {x.Value}"; });
+            //Datas.ForEach(x => { frmFaturamentoPorDia.txtCalendario.Text = $"{x.Key} - {x.Value}"; });
 
             AplicarBusca();
         }
@@ -141,7 +176,7 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             PreencherUltimos7Dias();
 
-            Datas.ForEach(x => { frmFaturamentoPorDia.txtCalendario.Text = $"{x.Key} - {x.Value}"; });
+            //Datas.ForEach(x => { frmFaturamentoPorDia.txtCalendario.Text = $"{x.Key} - {x.Value}"; });
 
             AplicarBusca();
         }
@@ -157,7 +192,7 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             PreencherUltimos30Dias();
 
-            Datas.ForEach(x => { frmFaturamentoPorDia.txtCalendario.Text = $"{x.Key} - {x.Value}"; });
+            //Datas.ForEach(x => { frmFaturamentoPorDia.txtCalendario.Text = $"{x.Key} - {x.Value}"; });
 
             AplicarBusca();
         }
@@ -173,7 +208,7 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             PreencherEsteMes();
 
-            Datas.ForEach(x => frmFaturamentoPorDia.txtCalendario.Text = ($"{x.Value}, {x.Key}"));
+            //Datas.ForEach(x => frmFaturamentoPorDia.txtCalendario.Text = ($"{x.Value}, {x.Key}"));
 
             AplicarBusca();
         }
@@ -189,7 +224,7 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             PreencherProximoMes();
 
-            Datas.ForEach(x => frmFaturamentoPorDia.txtCalendario.Text = $"{x.Key} - {x.Value}");
+            //Datas.ForEach(x => frmFaturamentoPorDia.txtCalendario.Text = $"{x.Key} - {x.Value}");
 
             AplicarBusca();
         }
@@ -229,6 +264,9 @@ namespace SistemaDeGerenciamento2_0.Forms
 
             if (dataFinalSelecionada > dataInicalSelecionada)
             {
+                MensagemAtencao.MensagemDataFinalMaiorQueDataInicial();
+
+                dtDataFinal.Focus();
             }
         }
     }

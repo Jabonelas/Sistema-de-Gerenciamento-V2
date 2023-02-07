@@ -51,7 +51,7 @@
             this.btnProdutosCadastrados = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.btnConsultarEstoque = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.Relatorios = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlElement2 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.btnHistorioDeVenda = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.btnIndicadoresVendas = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement4 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.btnFaturamentoPorVendedor = new DevExpress.XtraBars.Navigation.AccordionControlElement();
@@ -381,20 +381,22 @@
             this.Relatorios.Appearance.Pressed.Options.UseFont = true;
             this.Relatorios.Appearance.Pressed.Options.UseForeColor = true;
             this.Relatorios.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
-            this.accordionControlElement2,
+            this.btnHistorioDeVenda,
             this.btnIndicadoresVendas,
             this.accordionControlElement4,
             this.accordionControlElement5});
+            this.Relatorios.Expanded = true;
             this.Relatorios.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.check_30px;
             this.Relatorios.Name = "Relatorios";
             this.Relatorios.Text = "Relatórios";
             this.Relatorios.Click += new System.EventHandler(this.Relatorios_Click);
             // 
-            // accordionControlElement2
+            // btnHistorioDeVenda
             // 
-            this.accordionControlElement2.Expanded = true;
-            this.accordionControlElement2.Name = "accordionControlElement2";
-            this.accordionControlElement2.Text = "Histórico de Venda";
+            this.btnHistorioDeVenda.Expanded = true;
+            this.btnHistorioDeVenda.Name = "btnHistorioDeVenda";
+            this.btnHistorioDeVenda.Text = "Histórico de Venda";
+            this.btnHistorioDeVenda.Click += new System.EventHandler(this.btnHistorioDeVenda_Click);
             // 
             // btnIndicadoresVendas
             // 
@@ -637,7 +639,7 @@
         private DevExpress.XtraBars.Navigation.AccordionControlElement btnDespesaContas;
         private DevExpress.XtraBars.Navigation.AccordionControlElement btnCategoriaDespesa;
         private DevExpress.XtraBars.Navigation.AccordionControlElement btnDespesaCategoria;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement2;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement btnHistorioDeVenda;
         private DevExpress.XtraBars.Navigation.AccordionControlElement btnIndicadoresVendas;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement4;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement5;

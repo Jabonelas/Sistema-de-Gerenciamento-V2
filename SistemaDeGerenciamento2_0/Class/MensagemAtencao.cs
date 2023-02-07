@@ -83,5 +83,10 @@ namespace SistemaDeGerenciamento2_0
         {
             MessageBox.Show("Atenção, Campo de Periocidade deve estar Preenchido!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
+
+        public static void MensagemDataFinalMaiorQueDataInicial()
+        {
+            MessageBox.Show("Atenção, Data Final informada maior que a data incial!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        }
     }
 }

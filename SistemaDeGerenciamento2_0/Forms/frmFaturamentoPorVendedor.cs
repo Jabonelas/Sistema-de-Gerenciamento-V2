@@ -47,7 +47,7 @@ namespace SistemaDeGerenciamento2_0.Forms
             this.Close();
         }
 
-        private void PreencherGrid()
+        private void CriandoColunasGrid()
         {
             dt.Clear();
             dt.Columns.Clear();
@@ -56,6 +56,11 @@ namespace SistemaDeGerenciamento2_0.Forms
             dt.Columns.Add("Dia Semana");
             dt.Columns.Add("Quantidade Total");
             dt.Columns.Add("Valor Total Produto");
+        }
+
+        private void PreencherGrid()
+        {
+            CriandoColunasGrid();
 
             try
             {
@@ -96,9 +101,9 @@ namespace SistemaDeGerenciamento2_0.Forms
             }
             catch (Exception x)
             {
-                LogErros.EscreverArquivoDeLog($"{DateTime.Now} - Erro ao Buscar Dados Relatorio por dia - Relatorio - Faturamento por dia | {x.Message} | {x.StackTrace}");
+                LogErros.EscreverArquivoDeLog($"{DateTime.Now} - Erro ao Buscar Dados Relatorio por Vendedor - Relatorio - Faturamento por Vendedor | {x.Message} | {x.StackTrace}");
 
-                MensagemErros.ErroAoBuscarDadosFaturamentoPorDia(x);
+                MensagemErros.ErroAoBuscarDadosFaturamentoPorVendedor(x);
             }
         }
 

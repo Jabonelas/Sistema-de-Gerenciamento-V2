@@ -168,6 +168,16 @@ namespace SistemaDeGerenciamento2_0
                 permissoesCadastro.ReloadData(this, frmLogin.UsuarioLogado);
                 permissoesCadastro.VerificarAcessoRelatorioFaturamento("Faturamento Por Vendedor", this);
             }
+            else if (_btnSolitador == "Indicadores de Venda")
+            {
+                permissoesCadastro.ReloadData(this, frmLogin.UsuarioLogado);
+                permissoesCadastro.VerificarAcessoIndicadoresDeVenda("Indicadores de Venda", this);
+            }
+            else if (_btnSolitador == "Historico de Venda")
+            {
+                permissoesCadastro.ReloadData(this, frmLogin.UsuarioLogado);
+                permissoesCadastro.VerificarAcessoHistoricoDeVenda("Historico de Venda", this);
+            }
         }
 
         private void btnConfigUsuario_Click(object sender, EventArgs e)
@@ -302,8 +312,15 @@ namespace SistemaDeGerenciamento2_0
 
         private void btnIndicadoresVendas_Click(object sender, EventArgs e)
         {
-            frmIndicadorVenda frmIndicadorVenda = new frmIndicadorVenda(this);
-            frmIndicadorVenda.ShowDialog();
+            AcessandoTelas("Indicadores de Venda");
+        }
+
+        private void btnHistorioDeVenda_Click(object sender, EventArgs e)
+        {
+            AcessandoTelas("Historico de Venda");
+
+            //frmHistoricoVenda frmHistoricoVenda = new frmHistoricoVenda();
+            //frmHistoricoVenda.ShowDialog();
         }
     }
 }

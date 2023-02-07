@@ -53,6 +53,42 @@ namespace SistemaDeGerenciamento2_0.Class
             }
         }
 
+        public void VerificarAcessoHistoricoDeVenda(string _Cadastro, frmTelaPrincipal _frmTelaPrincipal)
+        {
+            bool IsUsuarioPossuiAcesso = false;
+
+            listaPermissoesUsuario.ForEach(x => IsUsuarioPossuiAcesso = x.pm_historico_venda);
+
+            if (IsUsuarioPossuiAcesso == true && _Cadastro == "Historico de Venda")
+            {
+                frmHistoricoVenda frmHistoricoVenda = new frmHistoricoVenda();
+                frmHistoricoVenda.ShowDialog();
+            }
+            else
+            {
+                frmConfirmarAcesso frmConfirmarAcesso = new frmConfirmarAcesso(_frmTelaPrincipal, _Cadastro);
+                frmConfirmarAcesso.ShowDialog();
+            }
+        }
+
+        public void VerificarAcessoIndicadoresDeVenda(string _Cadastro, frmTelaPrincipal _frmTelaPrincipal)
+        {
+            bool IsUsuarioPossuiAcesso = false;
+
+            listaPermissoesUsuario.ForEach(x => IsUsuarioPossuiAcesso = x.pm_indicadores_venda);
+
+            if (IsUsuarioPossuiAcesso == true && _Cadastro == "Indicadores de Venda")
+            {
+                frmIndicadorVenda frmIndicadorVenda = new frmIndicadorVenda(frmTelaPrincipal);
+                frmIndicadorVenda.ShowDialog();
+            }
+            else
+            {
+                frmConfirmarAcesso frmConfirmarAcesso = new frmConfirmarAcesso(_frmTelaPrincipal, _Cadastro);
+                frmConfirmarAcesso.ShowDialog();
+            }
+        }
+
         public void VerificarAcessoRelatorioFaturamento(string _Cadastro, frmTelaPrincipal _frmTelaPrincipal)
         {
             bool IsUsuarioPossuiAcesso = false;

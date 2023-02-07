@@ -207,9 +207,9 @@
             this.labelControl4.Appearance.Options.UseFont = true;
             this.labelControl4.Location = new System.Drawing.Point(643, 19);
             this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(38, 20);
+            this.labelControl4.Size = new System.Drawing.Size(35, 20);
             this.labelControl4.TabIndex = 323;
-            this.labelControl4.Text = "Datas";
+            this.labelControl4.Text = "Data:";
             // 
             // frmFaturamentoPorDia
             // 

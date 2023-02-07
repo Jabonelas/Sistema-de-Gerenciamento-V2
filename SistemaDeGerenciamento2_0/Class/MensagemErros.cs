@@ -422,6 +422,16 @@ namespace SistemaDeGerenciamento2_0.Class
             MessageBox.Show($"(BUS-FD01) Erro ao Buscar Dados do Faturamento por dia \n\nErro: {_e}", "Erro Buscar Dados do Faturamento por dia!", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
+        public static void ErroAoBuscarDadosFaturamentoPorVendedor(Exception _e)
+        {
+            MessageBox.Show($"(BUS-FD02) Erro ao Buscar Dados do Faturamento por vendedor \n\nErro: {_e}", "Erro Buscar Dados do Faturamento por vendedor!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        public static void ErroAoBuscarHistoricoDeVenda(Exception _e)
+        {
+            MessageBox.Show($"(BUS-FD03) Erro ao Buscar Historico de Vendas \n\nErro: {_e}", "Erro Buscar Historico de Vendas!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
         #endregion Relatorios
 
         #endregion Buscar

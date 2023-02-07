@@ -20,8 +20,8 @@ namespace SistemaDeGerenciamento2_0
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new frmTelaPrincipal());
-            //Application.Run(new frmLogin());
-            Application.Run(new XtraForm1());
+            Application.Run(new frmLogin());
+            //Application.Run(new frmHistoricoVenda());
             //Application.Run(new frmFaturamentoPorVendedor());
         }
     }

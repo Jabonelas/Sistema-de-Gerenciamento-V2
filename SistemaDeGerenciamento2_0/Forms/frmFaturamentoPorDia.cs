@@ -76,7 +76,7 @@ namespace SistemaDeGerenciamento2_0.Forms
             txtCalendario.Text = $"{dataInicial.ToShortDateString()} - {dataFinal.ToShortDateString()}";
         }
 
-        private void PreencherGrid()
+        private void CriandoColunasGrid()
         {
             dt.Clear();
             dt.Columns.Clear();
@@ -85,6 +85,11 @@ namespace SistemaDeGerenciamento2_0.Forms
             dt.Columns.Add("Dia Semana");
             dt.Columns.Add("Quantidade Total");
             dt.Columns.Add("Valor Total Produto");
+        }
+
+        private void PreencherGrid()
+        {
+            CriandoColunasGrid();
 
             try
             {

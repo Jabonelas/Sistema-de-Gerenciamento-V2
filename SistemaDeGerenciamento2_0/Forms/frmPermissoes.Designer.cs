@@ -123,6 +123,10 @@
             this.chkCadastrarDespesa = new DevExpress.XtraEditors.CheckEdit();
             this.chkVisualizarFaturamento = new DevExpress.XtraEditors.CheckEdit();
             this.pictureEdit41 = new DevExpress.XtraEditors.PictureEdit();
+            this.chkIndicadoresDeVenda = new DevExpress.XtraEditors.CheckEdit();
+            this.pictureEdit42 = new DevExpress.XtraEditors.PictureEdit();
+            this.pictureEdit43 = new DevExpress.XtraEditors.PictureEdit();
+            this.chkHistoricoVenda = new DevExpress.XtraEditors.CheckEdit();
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl5)).BeginInit();
@@ -207,6 +211,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.chkCadastrarDespesa.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chkVisualizarFaturamento.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit41.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chkIndicadoresDeVenda.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit42.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit43.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chkHistoricoVenda.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // labelControl2
@@ -734,7 +742,7 @@
             this.pictureEdit39.Properties.PictureAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.pictureEdit39.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.pictureEdit39.Properties.ShowMenu = false;
-            this.pictureEdit39.Size = new System.Drawing.Size(368, 185);
+            this.pictureEdit39.Size = new System.Drawing.Size(368, 224);
             this.pictureEdit39.TabIndex = 232;
             // 
             // chkRealizarDevolucao
@@ -1414,6 +1422,58 @@
             this.pictureEdit41.TabIndex = 285;
             this.pictureEdit41.ToolTip = "Liber acesso aos relatorios de faturamento.";
             // 
+            // chkIndicadoresDeVenda
+            // 
+            this.chkIndicadoresDeVenda.Location = new System.Drawing.Point(29, 621);
+            this.chkIndicadoresDeVenda.Name = "chkIndicadoresDeVenda";
+            this.chkIndicadoresDeVenda.Properties.Appearance.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.chkIndicadoresDeVenda.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkIndicadoresDeVenda.Properties.Appearance.Options.UseBackColor = true;
+            this.chkIndicadoresDeVenda.Properties.Appearance.Options.UseFont = true;
+            this.chkIndicadoresDeVenda.Properties.Caption = "Indicadores de Venda";
+            this.chkIndicadoresDeVenda.Size = new System.Drawing.Size(204, 24);
+            this.chkIndicadoresDeVenda.TabIndex = 287;
+            // 
+            // pictureEdit42
+            // 
+            this.pictureEdit42.EditValue = ((object)(resources.GetObject("pictureEdit42.EditValue")));
+            this.pictureEdit42.Location = new System.Drawing.Point(202, 625);
+            this.pictureEdit42.Name = "pictureEdit42";
+            this.pictureEdit42.Properties.Appearance.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.pictureEdit42.Properties.Appearance.Options.UseBackColor = true;
+            this.pictureEdit42.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.pictureEdit42.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit42.Properties.ZoomAcceleration = 5D;
+            this.pictureEdit42.Size = new System.Drawing.Size(23, 20);
+            this.pictureEdit42.TabIndex = 288;
+            this.pictureEdit42.ToolTip = "Visualizar indicadores de venda";
+            // 
+            // pictureEdit43
+            // 
+            this.pictureEdit43.EditValue = ((object)(resources.GetObject("pictureEdit43.EditValue")));
+            this.pictureEdit43.Location = new System.Drawing.Point(192, 655);
+            this.pictureEdit43.Name = "pictureEdit43";
+            this.pictureEdit43.Properties.Appearance.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.pictureEdit43.Properties.Appearance.Options.UseBackColor = true;
+            this.pictureEdit43.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.pictureEdit43.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit43.Properties.ZoomAcceleration = 5D;
+            this.pictureEdit43.Size = new System.Drawing.Size(23, 20);
+            this.pictureEdit43.TabIndex = 290;
+            this.pictureEdit43.ToolTip = "Visualizar historico de venda";
+            // 
+            // chkHistoricoVenda
+            // 
+            this.chkHistoricoVenda.Location = new System.Drawing.Point(29, 651);
+            this.chkHistoricoVenda.Name = "chkHistoricoVenda";
+            this.chkHistoricoVenda.Properties.Appearance.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.chkHistoricoVenda.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkHistoricoVenda.Properties.Appearance.Options.UseBackColor = true;
+            this.chkHistoricoVenda.Properties.Appearance.Options.UseFont = true;
+            this.chkHistoricoVenda.Properties.Caption = "Historico de Venda";
+            this.chkHistoricoVenda.Size = new System.Drawing.Size(159, 24);
+            this.chkHistoricoVenda.TabIndex = 289;
+            // 
             // frmPermissoes
             // 
             this.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
@@ -1421,6 +1481,10 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(759, 729);
+            this.Controls.Add(this.pictureEdit43);
+            this.Controls.Add(this.chkHistoricoVenda);
+            this.Controls.Add(this.pictureEdit42);
+            this.Controls.Add(this.chkIndicadoresDeVenda);
             this.Controls.Add(this.chkVisualizarFaturamento);
             this.Controls.Add(this.pictureEdit41);
             this.Controls.Add(this.pictureEdit40);
@@ -1602,6 +1666,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.chkCadastrarDespesa.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chkVisualizarFaturamento.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit41.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chkIndicadoresDeVenda.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit42.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit43.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chkHistoricoVenda.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1701,5 +1769,9 @@
         private DevExpress.XtraEditors.CheckEdit chkCadastrarDespesa;
         private DevExpress.XtraEditors.CheckEdit chkVisualizarFaturamento;
         private DevExpress.XtraEditors.PictureEdit pictureEdit41;
+        private DevExpress.XtraEditors.CheckEdit chkIndicadoresDeVenda;
+        private DevExpress.XtraEditors.PictureEdit pictureEdit42;
+        private DevExpress.XtraEditors.PictureEdit pictureEdit43;
+        private DevExpress.XtraEditors.CheckEdit chkHistoricoVenda;
     }
 }

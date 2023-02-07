@@ -189,12 +189,58 @@ namespace SistemaDeGerenciamento2_0.Forms
                 {
                     VerificarAcessoRelatorioFaturamentoPorDia();
                 }
+                else if (tela == "Indicadores de Venda")
+                {
+                    VerificarAcessoIndicadoresDeVenda();
+                }
+                else if (tela == "Historico de Venda")
+                {
+                    VerificarAcessoHistoricoDeVenda();
+                }
             }
             else
             {
                 MensagemAtencao.MensagemUsuarioSenhasNaoEncontrados();
 
                 txtUsuario.Focus();
+            }
+        }
+
+        private void VerificarAcessoHistoricoDeVenda()
+        {
+            permissoesUsuario.listaPermissoesUsuario.ForEach(x => IsUsuarioPossuiAcesso = x.pm_historico_venda);
+
+            if (IsUsuarioPossuiAcesso == true && tela == "Historico de Venda")
+            {
+                this.Hide();
+
+                frmHistoricoVenda frmHistoricoVenda = new frmHistoricoVenda();
+                frmHistoricoVenda.ShowDialog();
+
+                this.Close();
+            }
+            else
+            {
+                MenssagemUsuarioSemPermissao();
+            }
+        }
+
+        private void VerificarAcessoIndicadoresDeVenda()
+        {
+            permissoesUsuario.listaPermissoesUsuario.ForEach(x => IsUsuarioPossuiAcesso = x.pm_indicadores_venda);
+
+            if (IsUsuarioPossuiAcesso == true && tela == "Indicadores de Venda")
+            {
+                this.Hide();
+
+                frmIndicadorVenda frmIndicadorVenda = new frmIndicadorVenda(frmTelaPrincipal);
+                frmIndicadorVenda.ShowDialog();
+
+                this.Close();
+            }
+            else
+            {
+                MenssagemUsuarioSemPermissao();
             }
         }
 

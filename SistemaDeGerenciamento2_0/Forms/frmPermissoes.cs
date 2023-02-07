@@ -127,7 +127,9 @@ namespace SistemaDeGerenciamento2_0.Forms
                         pm_visualizar_visao_geral = Convert.ToBoolean(chkVisualizarVisaoGeral.Checked),
                         pm_visualizar_dre = Convert.ToBoolean(chkVisualizarDRE.Checked),
                         pm_criar_visualizar_relatorios = Convert.ToBoolean(chkCriarVisualizarRelatorios.Checked),
-                        pm_visualizar_faturamento = Convert.ToBoolean(chkVisualizarFaturamento.Checked)
+                        pm_visualizar_faturamento = Convert.ToBoolean(chkVisualizarFaturamento.Checked),
+                        pm_indicadores_venda = Convert.ToBoolean(chkIndicadoresDeVenda.Checked),
+                        pm_historico_venda = Convert.ToBoolean(chkHistoricoVenda.Checked),
                     };
 
                     db.tb_permissoes.Add(checkBoxPreenchidas);
@@ -228,6 +230,8 @@ namespace SistemaDeGerenciamento2_0.Forms
                                 chkVisualizarDRE.Checked = Convert.ToBoolean(item.pm_visualizar_dre);
                                 chkCriarVisualizarRelatorios.Checked = Convert.ToBoolean(item.pm_criar_visualizar_relatorios);
                                 chkVisualizarFaturamento.Checked = Convert.ToBoolean(item.pm_visualizar_faturamento);
+                                chkIndicadoresDeVenda.Checked = Convert.ToBoolean(item.pm_indicadores_venda);
+                                chkHistoricoVenda.Checked = Convert.ToBoolean(item.pm_historico_venda);
                             }
                         }
                     }
@@ -295,6 +299,8 @@ namespace SistemaDeGerenciamento2_0.Forms
                     checkBoxPreenchidas.pm_visualizar_dre = Convert.ToBoolean(chkVisualizarDRE.Checked);
                     checkBoxPreenchidas.pm_criar_visualizar_relatorios = Convert.ToBoolean(chkCriarVisualizarRelatorios.Checked);
                     checkBoxPreenchidas.pm_visualizar_faturamento = Convert.ToBoolean(chkVisualizarFaturamento.Checked);
+                    checkBoxPreenchidas.pm_indicadores_venda = Convert.ToBoolean(chkIndicadoresDeVenda.Checked);
+                    checkBoxPreenchidas.pm_historico_venda = Convert.ToBoolean(chkHistoricoVenda.Checked);
 
                     db.SaveChanges();
                 };
