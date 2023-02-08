@@ -28,9 +28,11 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private frmTelaPrincipal frmTelaPrincipal;
 
+        private frmPDV frmPDV;
+
         private PermissoesUsuario permissoesUsuario = new PermissoesUsuario();
 
-        public frmPagamento(string _valorTotal, string _valorDesconto, string _numeroNF, frmTelaPrincipal _frmTelaPrincipal)
+        public frmPagamento(string _valorTotal, string _valorDesconto, string _numeroNF, frmTelaPrincipal _frmTelaPrincipal, frmPDV _frmPDV)
         {
             InitializeComponent();
 
@@ -45,6 +47,8 @@ namespace SistemaDeGerenciamento2_0.Forms
             numeroNF = _numeroNF;
 
             frmTelaPrincipal = _frmTelaPrincipal;
+
+            frmPDV = _frmPDV;
 
             lblValorTotal.Font = new Font(lblValorTotal.Font.FontFamily, 55, FontStyle.Bold);
 
@@ -106,7 +110,7 @@ namespace SistemaDeGerenciamento2_0.Forms
             decimal valorJuros = Convert.ToDecimal(lblAcrescimo.Text.Replace("R$", ""));
 
             pnlTipoPagamento.Controls.Clear();
-            frmFormaPagamentoDebito frmFormaPagamentoDebito = new frmFormaPagamentoDebito(lblValorTotal.Text, numeroNF, valorPagoNoProduto, valorJuros, frmTelaPrincipal, this);
+            frmFormaPagamentoDebito frmFormaPagamentoDebito = new frmFormaPagamentoDebito(lblValorTotal.Text, numeroNF, valorPagoNoProduto, valorJuros, frmTelaPrincipal, this, frmPDV);
             frmFormaPagamentoDebito.TopLevel = false;
             pnlTipoPagamento.Controls.Add(frmFormaPagamentoDebito);
             pnlTipoPagamento.Tag = frmFormaPagamentoDebito;
@@ -126,7 +130,7 @@ namespace SistemaDeGerenciamento2_0.Forms
             decimal valorJuros = Convert.ToDecimal(lblAcrescimo.Text.Replace("R$", ""));
 
             pnlTipoPagamento.Controls.Clear();
-            frmFormaPagamentoDinheiro frmFormaPagamentoDinheiro = new frmFormaPagamentoDinheiro(lblValorTotal.Text, numeroNF, valorPagoNoProduto, valorJuros, frmTelaPrincipal, this);
+            frmFormaPagamentoDinheiro frmFormaPagamentoDinheiro = new frmFormaPagamentoDinheiro(lblValorTotal.Text, numeroNF, valorPagoNoProduto, valorJuros, frmTelaPrincipal, this, frmPDV);
 
             frmFormaPagamentoDinheiro.TopLevel = false;
             pnlTipoPagamento.Controls.Add(frmFormaPagamentoDinheiro);
@@ -156,7 +160,8 @@ namespace SistemaDeGerenciamento2_0.Forms
             decimal valorJuros = Convert.ToDecimal(lblAcrescimo.Text.Replace("R$", ""));
 
             pnlTipoPagamento.Controls.Clear();
-            frmFormaPagamentoPix frmFormaPagamentoPix = new frmFormaPagamentoPix(lblValorTotal.Text, numeroNF, valorPagoNoProduto, valorJuros, frmTelaPrincipal, this);
+            frmFormaPagamentoPix frmFormaPagamentoPix = new frmFormaPagamentoPix(lblValorTotal.Text, numeroNF, valorPagoNoProduto, valorJuros,
+            frmTelaPrincipal, this, frmPDV);
             frmFormaPagamentoPix.TopLevel = false;
             pnlTipoPagamento.Controls.Add(frmFormaPagamentoPix);
             pnlTipoPagamento.Tag = frmFormaPagamentoPix;
@@ -171,7 +176,7 @@ namespace SistemaDeGerenciamento2_0.Forms
             decimal valorJuros = Convert.ToDecimal(lblAcrescimo.Text.Replace("R$", ""));
 
             pnlTipoPagamento.Controls.Clear();
-            frmFormaPagamentoCredito frmFormaPagamentoCredito = new frmFormaPagamentoCredito(lblValorTotal.Text, numeroNF, valorPagoNoProduto, valorJuros, frmTelaPrincipal, this);
+            frmFormaPagamentoCredito frmFormaPagamentoCredito = new frmFormaPagamentoCredito(lblValorTotal.Text, numeroNF, valorPagoNoProduto, valorJuros, frmTelaPrincipal, this, frmPDV);
             frmFormaPagamentoCredito.TopLevel = false;
             pnlTipoPagamento.Controls.Add(frmFormaPagamentoCredito);
             pnlTipoPagamento.Tag = frmFormaPagamentoCredito;

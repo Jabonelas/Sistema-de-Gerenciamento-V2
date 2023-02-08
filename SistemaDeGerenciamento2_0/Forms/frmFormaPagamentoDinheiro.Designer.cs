@@ -245,8 +245,10 @@
             this.Controls.Add(this.lblValorTotal);
             this.Controls.Add(this.labelControl13);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.KeyPreview = true;
             this.Name = "frmFormaPagamentoDinheiro";
             this.Text = "frmFormaPagamentoDinheiro";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmFormaPagamentoDinheiro_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.txtValorEntregue.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

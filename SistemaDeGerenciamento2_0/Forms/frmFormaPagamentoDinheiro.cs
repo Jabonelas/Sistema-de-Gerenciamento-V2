@@ -33,7 +33,7 @@ namespace SistemaDeGerenciamento2_0.Forms
         private PermissoesUsuario permissoesUsuario = new PermissoesUsuario();
 
         public frmFormaPagamentoDinheiro(string _valorFinalPago, string _numeroNF, decimal _valorPagoNoProduto,
-            decimal _valorJuros, frmTelaPrincipal _frmTelaPrincipal, frmPagamento _frmPagamento)
+            decimal _valorJuros, frmTelaPrincipal _frmTelaPrincipal, frmPagamento _frmPagamento, frmPDV _frmPDV)
         {
             InitializeComponent();
 
@@ -45,9 +45,11 @@ namespace SistemaDeGerenciamento2_0.Forms
 
             valorJuros = _valorJuros;
 
-            frmTelaPrincipal = _frmTelaPrincipal;
+            frmPDV = _frmPDV;
 
             frmPagamento = _frmPagamento;
+
+            frmTelaPrincipal = _frmTelaPrincipal;
 
             valorFinalPago = Convert.ToDecimal(_valorFinalPago.Replace("R$", ""));
 
@@ -64,6 +66,11 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private void btn1FinalizarVenda_Click(object sender, EventArgs e)
         {
+            FinalizarVenda();
+        }
+
+        private void FinalizarVenda()
+        {
             NFSaida.NotaFiscalSaida(numeroNF, valorPagoNoProduto, valorJuros, valorFinalPago, "Dinheiro");
 
             AlterarEstoque.AlterandoEstoque();
@@ -71,6 +78,8 @@ namespace SistemaDeGerenciamento2_0.Forms
             btn1CancelarVenda.Enabled = false;
             btn1FinalizarVenda.Enabled = false;
             txtValorEntregue.Enabled = false;
+
+            this.Close();
         }
 
         private void btn1CancelarVenda_Click(object sender, EventArgs e)
@@ -90,8 +99,27 @@ namespace SistemaDeGerenciamento2_0.Forms
                 if (OpcaoDoUsuario == DialogResult.Yes)
                 {
                     frmPDV.permissaoCancelarVenda = false;
+                    
                     frmPagamento.Close();
+
+                    frmPDV.ZerandoTodosCampos();
+
+                    frmPagamento.Close();
+
+                    this.Close();
                 }
+            }
+        }
+
+        private void frmFormaPagamentoDinheiro_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.F2)
+            {
+                FinalizarVenda();
+            }
+            else if (e.KeyCode == Keys.F9)
+            {
+                CancelarVenda();
             }
         }
     }

@@ -255,8 +255,10 @@
             this.Controls.Add(this.btn1FinalizarVenda);
             this.Controls.Add(this.btn1CancelarVenda);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.KeyPreview = true;
             this.Name = "frmFormaPagamentoCredito";
             this.Text = "frmFormaPagamentoCredito";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmFormaPagamentoCredito_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.cmbQdtParcelas.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

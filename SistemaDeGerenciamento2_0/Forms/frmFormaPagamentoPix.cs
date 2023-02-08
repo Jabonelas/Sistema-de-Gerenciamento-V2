@@ -26,6 +26,8 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private string numeroNF;
 
+        private frmPDV frmPDV;
+
         private frmLogin frmLogin;
 
         private frmPagamento frmPagamento;
@@ -35,7 +37,7 @@ namespace SistemaDeGerenciamento2_0.Forms
         private PermissoesUsuario permissoesUsuario = new PermissoesUsuario();
 
         public frmFormaPagamentoPix(string _valorFinalPago, string _numeroNF, decimal _valorPagoNoProduto,
-            decimal _valorJuros, frmTelaPrincipal _frmTelaPrincipal, frmPagamento _frmPagamento)
+            decimal _valorJuros, frmTelaPrincipal _frmTelaPrincipal, frmPagamento _frmPagamento, frmPDV _frmPDV)
         {
             InitializeComponent();
 
@@ -47,9 +49,11 @@ namespace SistemaDeGerenciamento2_0.Forms
 
             valorJuros = _valorJuros;
 
-            frmTelaPrincipal = _frmTelaPrincipal;
+            frmPDV = _frmPDV;
 
             frmPagamento = _frmPagamento;
+
+            frmTelaPrincipal = _frmTelaPrincipal;
 
             valorFinalPago = Convert.ToDecimal(_valorFinalPago.Replace("R$", ""));
 
@@ -94,12 +98,58 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private void btn1FinalizarVenda_Click(object sender, EventArgs e)
         {
+            FinalizarVenda();
+        }
+
+        private void FinalizarVenda()
+        {
             NFSaida.NotaFiscalSaida(numeroNF, valorPagoNoProduto, valorJuros, valorFinalPago, "Pix");
 
             AlterarEstoque.AlterandoEstoque();
 
             btn1CancelarVenda.Enabled = false;
             btn1FinalizarVenda.Enabled = false;
+
+            this.Close();
+        }
+
+        private void frmFormaPagamentoPix_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.F2)
+            {
+                FinalizarVenda();
+            }
+            else if (e.KeyCode == Keys.F9)
+            {
+                CancelarVenda();
+            }
+        }
+
+        private void btn1CancelarVenda_Click(object sender, EventArgs e)
+        {
+            CancelarVenda();
+        }
+
+        private void CancelarVenda()
+        {
+            permissoesUsuario.ReloadData(frmTelaPrincipal, frmLogin.UsuarioLogado);
+            permissoesUsuario.VerificarCancelarVendaTelaPDV("Cancelar Venda Tela PDV");
+
+            if (frmPDV.permissaoCancelarVenda == true)
+            {
+                DialogResult OpcaoDoUsuario = new DialogResult();
+                OpcaoDoUsuario = MessageBox.Show("Realmente Cancela a Venda?", "Atenção!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (OpcaoDoUsuario == DialogResult.Yes)
+                {
+                    frmPDV.permissaoCancelarVenda = false;
+
+                    frmPDV.ZerandoTodosCampos();
+
+                    frmPagamento.Close();
+
+                    this.Close();
+                }
+            }
         }
     }
 }

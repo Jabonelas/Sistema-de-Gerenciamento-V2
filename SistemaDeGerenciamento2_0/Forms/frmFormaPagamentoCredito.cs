@@ -22,16 +22,18 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private string numeroNF;
 
-        private frmTelaPrincipal frmTelaPrincipal;
+        private frmPDV frmPDV;
 
         private frmPagamento frmPagamento;
+
+        private frmTelaPrincipal frmTelaPrincipal;
 
         private PermissoesUsuario permissoesUsuario = new PermissoesUsuario();
 
         public static List<tb_configuracao_financeira> listaConfiguracoesFinanceiras = new List<tb_configuracao_financeira>();
 
         public frmFormaPagamentoCredito(string _valorFinalPago, string _numeroNF, decimal _valorPagoNoProduto,
-            decimal _valorJuros, frmTelaPrincipal _frmTelaPrincipal, frmPagamento _frmPagamento)
+            decimal _valorJuros, frmTelaPrincipal _frmTelaPrincipal, frmPagamento _frmPagamento, frmPDV _frmPDV)
         {
             InitializeComponent();
 
@@ -47,9 +49,11 @@ namespace SistemaDeGerenciamento2_0.Forms
 
             valorJuros = _valorJuros;
 
-            frmTelaPrincipal = _frmTelaPrincipal;
+            frmPDV = _frmPDV;
 
             frmPagamento = _frmPagamento;
+
+            frmTelaPrincipal = _frmTelaPrincipal;
 
             valorFinalPago = Convert.ToDecimal(_valorFinalPago.Replace("R$", ""));
 
@@ -110,6 +114,11 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private void btn1FinalizarVenda_Click(object sender, EventArgs e)
         {
+            FinalizarVenda();
+        }
+
+        private void FinalizarVenda()
+        {
             valorJuros = Convert.ToDecimal(frmPagamento.lblAcrescimo.Text.Replace("R$", ""));
 
             valorFinalPago = Convert.ToDecimal(lblValorTotal.Text.Replace("R$", ""));
@@ -120,6 +129,12 @@ namespace SistemaDeGerenciamento2_0.Forms
 
             btn1CancelarVenda.Enabled = false;
             btn1FinalizarVenda.Enabled = false;
+
+            frmPDV.ZerandoTodosCampos();
+
+            frmPagamento.Close();
+
+            this.Close();
         }
 
         private void btn1CancelarVenda_Click(object sender, EventArgs e)
@@ -139,8 +154,25 @@ namespace SistemaDeGerenciamento2_0.Forms
                 if (OpcaoDoUsuario == DialogResult.Yes)
                 {
                     frmPDV.permissaoCancelarVenda = false;
+
+                    frmPDV.ZerandoTodosCampos();
+
                     frmPagamento.Close();
+
+                    this.Close();
                 }
+            }
+        }
+
+        private void frmFormaPagamentoCredito_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.F2)
+            {
+                FinalizarVenda();
+            }
+            else if (e.KeyCode == Keys.F9)
+            {
+                CancelarVenda();
             }
         }
     }

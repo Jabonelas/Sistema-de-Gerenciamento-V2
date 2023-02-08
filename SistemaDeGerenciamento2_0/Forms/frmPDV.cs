@@ -140,12 +140,15 @@ namespace SistemaDeGerenciamento2_0.Forms
                     {
                         Estoque = estoque,
                         Produto = produto,
-                    }).Where(x => x.Produto.id_produto == x.Estoque.fk_produto && x.Estoque.ep_quantidade > 0);
+                    }).Where(x => x.Produto.id_produto == x.Estoque.fk_produto && x.Estoque.ep_quantidade > 0).ToList();
 
                     foreach (var item in dados)
                     {
-                        listaEstoque.Add(new DadosProduto(item.Produto.id_produto, item.Produto.pd_codigo,
+                        listaEstoque.Add(new DadosProduto(item.Estoque.id_estoque, item.Produto.pd_codigo,
                             item.Produto.pd_codigo_barras, item.Produto.pd_nome, item.Produto.pd_preco, item.Estoque.ep_quantidade));
+
+                        //listaEstoque.Add(new DadosProduto(item.Produto.id_produto, item.Produto.pd_codigo,
+                        //item.Produto.pd_codigo_barras, item.Produto.pd_nome, item.Produto.pd_preco, item.Estoque.ep_quantidade));
                     }
                 }
             }
@@ -501,7 +504,7 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             //PreencherListaNFSaida();
 
-            frmPagamento frmPagamento = new frmPagamento(lblValorTotal.Text, lblDesconto.Text, lblNumeroPedido.Text, frmTelaPrincipal);
+            frmPagamento frmPagamento = new frmPagamento(lblValorTotal.Text, lblDesconto.Text, lblNumeroPedido.Text, frmTelaPrincipal, this);
             frmPagamento.ShowDialog();
         }
 
@@ -599,7 +602,7 @@ namespace SistemaDeGerenciamento2_0.Forms
             }
         }
 
-        private void ZerandoTodosCampos()
+        public void ZerandoTodosCampos()
         {
             BuscarTodosOsProdutos();
 

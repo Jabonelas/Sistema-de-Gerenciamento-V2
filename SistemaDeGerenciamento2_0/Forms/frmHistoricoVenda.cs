@@ -20,6 +20,13 @@ namespace SistemaDeGerenciamento2_0.Forms
         private int X = 0;
         private int Y = 0;
 
+        public bool IsPreencherGrid = false;
+
+        public DateTime dataInicial = DateTime.Today;
+        public DateTime dataFinal = DateTime.Today;
+
+        private frmCalendario frmCalendario;
+
         public frmHistoricoVenda()
         {
             InitializeComponent();
@@ -50,8 +57,6 @@ namespace SistemaDeGerenciamento2_0.Forms
             ExibirCalendario();
         }
 
-        private frmCalendario frmCalendario;
-
         private void ExibirCalendario()
         {
             frmCalendario = new frmCalendario(this);
@@ -64,11 +69,6 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             ExibirCalendario();
         }
-
-        public bool IsPreencherGrid = false;
-
-        public DateTime dataInicial = DateTime.Today;
-        public DateTime dataFinal = DateTime.Today;
 
         private void txtCalendario_Leave(object sender, EventArgs e)
         {

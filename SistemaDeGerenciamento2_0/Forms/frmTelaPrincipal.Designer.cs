@@ -56,7 +56,6 @@
             this.accordionControlElement4 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.btnFaturamentoPorVendedor = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.btnFaturamentoPorDia = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlElement5 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.Configuracao = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.btnConfigUsuario = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.btnConfigEmpresa = new DevExpress.XtraBars.Navigation.AccordionControlElement();
@@ -202,6 +201,7 @@
             this.VisaoGeral.Name = "VisaoGeral";
             this.VisaoGeral.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.VisaoGeral.Text = "Visão Geral";
+            this.VisaoGeral.Click += new System.EventHandler(this.VisaoGeral_Click);
             // 
             // Financeiro
             // 
@@ -383,8 +383,7 @@
             this.Relatorios.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.btnHistorioDeVenda,
             this.btnIndicadoresVendas,
-            this.accordionControlElement4,
-            this.accordionControlElement5});
+            this.accordionControlElement4});
             this.Relatorios.Expanded = true;
             this.Relatorios.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.check_30px;
             this.Relatorios.Name = "Relatorios";
@@ -430,11 +429,6 @@
             this.btnFaturamentoPorDia.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.btnFaturamentoPorDia.Text = "Faturamento Por Dia";
             this.btnFaturamentoPorDia.Click += new System.EventHandler(this.btnFaturamentoPorDia_Click);
-            // 
-            // accordionControlElement5
-            // 
-            this.accordionControlElement5.Name = "accordionControlElement5";
-            this.accordionControlElement5.Text = "Fluxo de Caixa";
             // 
             // Configuracao
             // 
@@ -642,7 +636,6 @@
         private DevExpress.XtraBars.Navigation.AccordionControlElement btnHistorioDeVenda;
         private DevExpress.XtraBars.Navigation.AccordionControlElement btnIndicadoresVendas;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement4;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement5;
         private DevExpress.XtraBars.Navigation.AccordionControlElement btnFaturamentoPorVendedor;
         private DevExpress.XtraBars.Navigation.AccordionControlElement btnFaturamentoPorDia;
     }

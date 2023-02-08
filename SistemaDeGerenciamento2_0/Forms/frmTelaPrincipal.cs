@@ -322,5 +322,11 @@ namespace SistemaDeGerenciamento2_0
             //frmHistoricoVenda frmHistoricoVenda = new frmHistoricoVenda();
             //frmHistoricoVenda.ShowDialog();
         }
+
+        private void VisaoGeral_Click(object sender, EventArgs e)
+        {
+            frmteste frmteste = new frmteste();
+            frmteste.ShowDialog();
+        }
     }
 }

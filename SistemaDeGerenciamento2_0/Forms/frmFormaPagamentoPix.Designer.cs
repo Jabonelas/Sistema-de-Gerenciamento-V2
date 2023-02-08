@@ -118,6 +118,7 @@
             this.btn1CancelarVenda.Size = new System.Drawing.Size(280, 44);
             this.btn1CancelarVenda.TabIndex = 1;
             this.btn1CancelarVenda.Text = "Cancelar Pagamento (F9)";
+            this.btn1CancelarVenda.Click += new System.EventHandler(this.btn1CancelarVenda_Click);
             // 
             // lblNomeUsuario
             // 
@@ -225,8 +226,10 @@
             this.Controls.Add(this.lblNomeUsuario);
             this.Controls.Add(this.labelControl4);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.KeyPreview = true;
             this.Name = "frmFormaPagamentoPix";
             this.Text = "frmFormaPagamentoPix";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmFormaPagamentoPix_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.pcbQRCode.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

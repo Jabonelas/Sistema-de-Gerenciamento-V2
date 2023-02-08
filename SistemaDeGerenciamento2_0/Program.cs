@@ -21,8 +21,7 @@ namespace SistemaDeGerenciamento2_0
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new frmTelaPrincipal());
             Application.Run(new frmLogin());
-            //Application.Run(new frmHistoricoVenda());
-            //Application.Run(new frmFaturamentoPorVendedor());
+            //Application.Run(new frmIndicadorVenda());
         }
     }
 }

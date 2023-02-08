@@ -30,11 +30,12 @@
         {
             this.components = new System.ComponentModel.Container();
             DevExpress.XtraSplashScreen.SplashScreenManager splashScreenManager1 = new DevExpress.XtraSplashScreen.SplashScreenManager(this, null, true, true);
-            DevExpress.DataAccess.Sql.CustomSqlQuery customSqlQuery1 = new DevExpress.DataAccess.Sql.CustomSqlQuery();
+            DevExpress.DataAccess.Sql.CustomSqlQuery customSqlQuery9 = new DevExpress.DataAccess.Sql.CustomSqlQuery();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmIndicadorVenda));
-            DevExpress.DataAccess.Sql.CustomSqlQuery customSqlQuery2 = new DevExpress.DataAccess.Sql.CustomSqlQuery();
-            DevExpress.DataAccess.Sql.CustomSqlQuery customSqlQuery3 = new DevExpress.DataAccess.Sql.CustomSqlQuery();
-            DevExpress.DataAccess.Sql.CustomSqlQuery customSqlQuery4 = new DevExpress.DataAccess.Sql.CustomSqlQuery();
+            DevExpress.DataAccess.Sql.CustomSqlQuery customSqlQuery10 = new DevExpress.DataAccess.Sql.CustomSqlQuery();
+            DevExpress.DataAccess.Sql.CustomSqlQuery customSqlQuery11 = new DevExpress.DataAccess.Sql.CustomSqlQuery();
+            DevExpress.DataAccess.Sql.CustomSqlQuery customSqlQuery12 = new DevExpress.DataAccess.Sql.CustomSqlQuery();
+            DevExpress.XtraCharts.ChartTitle chartTitle3 = new DevExpress.XtraCharts.ChartTitle();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -70,6 +71,9 @@
             this.btnFechar = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl13 = new DevExpress.XtraEditors.LabelControl();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.chartControl1 = new DevExpress.XtraCharts.ChartControl();
+            this.btnCalendario = new DevExpress.XtraEditors.SimpleButton();
+            this.txtCalendario = new DevExpress.XtraEditors.TextEdit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).BeginInit();
@@ -83,6 +87,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtCalendario.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // splashScreenManager1
@@ -100,15 +106,16 @@
             this.gridControl1.TabIndex = 297;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
+            this.gridControl1.Visible = false;
             // 
             // sqlDataSource1
             // 
             this.sqlDataSource1.ConnectionName = "update";
             this.sqlDataSource1.Name = "sqlDataSource1";
-            customSqlQuery1.Name = "Query";
-            customSqlQuery1.Sql = resources.GetString("customSqlQuery1.Sql");
+            customSqlQuery9.Name = "Query";
+            customSqlQuery9.Sql = resources.GetString("customSqlQuery9.Sql");
             this.sqlDataSource1.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
-            customSqlQuery1});
+            customSqlQuery9});
             this.sqlDataSource1.ResultSchemaSerializable = resources.GetString("sqlDataSource1.ResultSchemaSerializable");
             // 
             // gridView1
@@ -166,7 +173,7 @@
             this.gridControl2.Location = new System.Drawing.Point(21, 412);
             this.gridControl2.MainView = this.gridView2;
             this.gridControl2.Name = "gridControl2";
-            this.gridControl2.Size = new System.Drawing.Size(495, 282);
+            this.gridControl2.Size = new System.Drawing.Size(602, 282);
             this.gridControl2.TabIndex = 298;
             this.gridControl2.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView2});
@@ -175,12 +182,12 @@
             // 
             this.sqlDataSource4.ConnectionName = "update";
             this.sqlDataSource4.Name = "sqlDataSource4";
-            customSqlQuery2.Name = "Query";
-            customSqlQuery2.Sql = "select top 5 pd_codigo, pd_nome,(pd_preco - pd_custo ) as \'valor\' from tb_produto" +
+            customSqlQuery10.Name = "Query";
+            customSqlQuery10.Sql = "select top 5 pd_codigo, pd_nome,(pd_preco - pd_custo ) as \'valor\' from tb_produto" +
     "\r\n\t  group by pd_codigo, pd_nome, (pd_preco - pd_custo )\r\n\t   ORDER BY \r\n\t   \'va" +
     "lor\' DESC";
             this.sqlDataSource4.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
-            customSqlQuery2});
+            customSqlQuery10});
             this.sqlDataSource4.ResultSchemaSerializable = resources.GetString("sqlDataSource4.ResultSchemaSerializable");
             // 
             // gridView2
@@ -236,10 +243,10 @@
             // 
             this.gridControl3.DataMember = "Query";
             this.gridControl3.DataSource = this.sqlDataSource3;
-            this.gridControl3.Location = new System.Drawing.Point(550, 412);
+            this.gridControl3.Location = new System.Drawing.Point(640, 412);
             this.gridControl3.MainView = this.gridView3;
             this.gridControl3.Name = "gridControl3";
-            this.gridControl3.Size = new System.Drawing.Size(495, 282);
+            this.gridControl3.Size = new System.Drawing.Size(602, 282);
             this.gridControl3.TabIndex = 299;
             this.gridControl3.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView3});
@@ -248,11 +255,11 @@
             // 
             this.sqlDataSource3.ConnectionName = "update";
             this.sqlDataSource3.Name = "sqlDataSource3";
-            customSqlQuery3.Name = "Query";
-            customSqlQuery3.Sql = "select top 5 pd_codigo, pd_nome,pd_margem from tb_produto\r\n\t   group by pd_codigo" +
+            customSqlQuery11.Name = "Query";
+            customSqlQuery11.Sql = "select top 5 pd_codigo, pd_nome,pd_margem from tb_produto\r\n\t   group by pd_codigo" +
     ", pd_nome,pd_margem\r\n\t   ORDER BY \r\n\t   pd_margem DESC";
             this.sqlDataSource3.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
-            customSqlQuery3});
+            customSqlQuery11});
             this.sqlDataSource3.ResultSchemaSerializable = resources.GetString("sqlDataSource3.ResultSchemaSerializable");
             // 
             // gridView3
@@ -308,10 +315,10 @@
             // 
             this.gridControl4.DataMember = "Query";
             this.gridControl4.DataSource = this.sqlDataSource2;
-            this.gridControl4.Location = new System.Drawing.Point(550, 80);
+            this.gridControl4.Location = new System.Drawing.Point(640, 80);
             this.gridControl4.MainView = this.gridView4;
             this.gridControl4.Name = "gridControl4";
-            this.gridControl4.Size = new System.Drawing.Size(495, 282);
+            this.gridControl4.Size = new System.Drawing.Size(602, 282);
             this.gridControl4.TabIndex = 300;
             this.gridControl4.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView4});
@@ -320,10 +327,10 @@
             // 
             this.sqlDataSource2.ConnectionName = "update";
             this.sqlDataSource2.Name = "sqlDataSource2";
-            customSqlQuery4.Name = "Query";
-            customSqlQuery4.Sql = resources.GetString("customSqlQuery4.Sql");
+            customSqlQuery12.Name = "Query";
+            customSqlQuery12.Sql = resources.GetString("customSqlQuery12.Sql");
             this.sqlDataSource2.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
-            customSqlQuery4});
+            customSqlQuery12});
             this.sqlDataSource2.ResultSchemaSerializable = resources.GetString("sqlDataSource2.ResultSchemaSerializable");
             // 
             // gridView4
@@ -377,11 +384,11 @@
             // 
             // labelControl3
             // 
-            this.labelControl3.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl3.Appearance.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl3.Appearance.Options.UseFont = true;
             this.labelControl3.Location = new System.Drawing.Point(21, 48);
             this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(400, 20);
+            this.labelControl3.Size = new System.Drawing.Size(350, 17);
             this.labelControl3.TabIndex = 301;
             this.labelControl3.Text = "PRODUTOS MAIS VENDIDOS (EM QUANTIDADE) - TOP 5";
             // 
@@ -398,11 +405,11 @@
             // 
             // labelControl1
             // 
-            this.labelControl1.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl1.Appearance.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl1.Appearance.Options.UseFont = true;
-            this.labelControl1.Location = new System.Drawing.Point(550, 48);
+            this.labelControl1.Location = new System.Drawing.Point(640, 48);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(429, 20);
+            this.labelControl1.Size = new System.Drawing.Size(377, 17);
             this.labelControl1.TabIndex = 303;
             this.labelControl1.Text = "PRODUTOS MAIS VENDIDOS (EM VALOR DE VENDA) - TOP 5";
             // 
@@ -410,7 +417,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.separador;
-            this.pictureBox1.Location = new System.Drawing.Point(479, 63);
+            this.pictureBox1.Location = new System.Drawing.Point(564, 63);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(594, 19);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -419,11 +426,11 @@
             // 
             // labelControl4
             // 
-            this.labelControl4.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl4.Appearance.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl4.Appearance.Options.UseFont = true;
-            this.labelControl4.Location = new System.Drawing.Point(550, 379);
+            this.labelControl4.Location = new System.Drawing.Point(640, 379);
             this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(346, 20);
+            this.labelControl4.Size = new System.Drawing.Size(301, 17);
             this.labelControl4.TabIndex = 305;
             this.labelControl4.Text = "PRODUTO COM MAIOR MARGEM MÉDIA - TOP 5";
             // 
@@ -442,7 +449,7 @@
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.separador;
-            this.pictureBox3.Location = new System.Drawing.Point(478, 396);
+            this.pictureBox3.Location = new System.Drawing.Point(568, 396);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(478, 19);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -451,11 +458,11 @@
             // 
             // labelControl2
             // 
-            this.labelControl2.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl2.Appearance.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl2.Appearance.Options.UseFont = true;
             this.labelControl2.Location = new System.Drawing.Point(21, 379);
             this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(369, 20);
+            this.labelControl2.Size = new System.Drawing.Size(322, 17);
             this.labelControl2.TabIndex = 307;
             this.labelControl2.Text = "PRODUTO COM MAIOR MARGEM DE LUCRO - TOP 5";
             // 
@@ -468,7 +475,7 @@
             this.btnFechar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnFechar.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.multiply1_20px;
             this.btnFechar.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
-            this.btnFechar.Location = new System.Drawing.Point(1045, 1);
+            this.btnFechar.Location = new System.Drawing.Point(1234, 1);
             this.btnFechar.Name = "btnFechar";
             this.btnFechar.Size = new System.Drawing.Size(24, 24);
             this.btnFechar.TabIndex = 309;
@@ -489,19 +496,61 @@
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox4.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.separador;
-            this.pictureBox4.Location = new System.Drawing.Point(-166, 14);
+            this.pictureBox4.Location = new System.Drawing.Point(-244, 17);
             this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(1389, 41);
+            this.pictureBox4.Size = new System.Drawing.Size(1733, 26);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 310;
             this.pictureBox4.TabStop = false;
+            // 
+            // chartControl1
+            // 
+            this.chartControl1.Legend.Visibility = DevExpress.Utils.DefaultBoolean.True;
+            this.chartControl1.Location = new System.Drawing.Point(21, 81);
+            this.chartControl1.Name = "chartControl1";
+            this.chartControl1.SeriesSerializable = new DevExpress.XtraCharts.Series[0];
+            this.chartControl1.Size = new System.Drawing.Size(602, 282);
+            this.chartControl1.TabIndex = 312;
+            chartTitle3.Dock = DevExpress.XtraCharts.ChartTitleDockStyle.Left;
+            chartTitle3.Indent = 6;
+            chartTitle3.Text = "Quantidade Produto";
+            this.chartControl1.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
+            chartTitle3});
+            // 
+            // btnCalendario
+            // 
+            this.btnCalendario.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCalendario.Appearance.Options.UseFont = true;
+            this.btnCalendario.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.calendar_plus_20px;
+            this.btnCalendario.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
+            this.btnCalendario.Location = new System.Drawing.Point(395, 40);
+            this.btnCalendario.Name = "btnCalendario";
+            this.btnCalendario.Size = new System.Drawing.Size(35, 34);
+            this.btnCalendario.TabIndex = 325;
+            // 
+            // txtCalendario
+            // 
+            this.txtCalendario.Location = new System.Drawing.Point(437, 40);
+            this.txtCalendario.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtCalendario.Name = "txtCalendario";
+            this.txtCalendario.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCalendario.Properties.Appearance.Options.UseFont = true;
+            this.txtCalendario.Properties.MaxLength = 14;
+            this.txtCalendario.Size = new System.Drawing.Size(186, 34);
+            this.txtCalendario.TabIndex = 324;
+            this.txtCalendario.TextChanged += new System.EventHandler(this.txtCalendario_TextChanged);
+            this.txtCalendario.Enter += new System.EventHandler(this.txtCalendario_Enter);
+            this.txtCalendario.Leave += new System.EventHandler(this.txtCalendario_Leave);
             // 
             // frmIndicadorVenda
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1071, 706);
+            this.ClientSize = new System.Drawing.Size(1260, 706);
+            this.Controls.Add(this.btnCalendario);
+            this.Controls.Add(this.txtCalendario);
+            this.Controls.Add(this.chartControl1);
             this.Controls.Add(this.labelControl13);
             this.Controls.Add(this.btnFechar);
             this.Controls.Add(this.gridControl1);
@@ -537,6 +586,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtCalendario.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -579,5 +630,8 @@
         private DevExpress.XtraEditors.SimpleButton btnFechar;
         private DevExpress.XtraEditors.LabelControl labelControl13;
         private System.Windows.Forms.PictureBox pictureBox4;
+        private DevExpress.XtraCharts.ChartControl chartControl1;
+        public DevExpress.XtraEditors.SimpleButton btnCalendario;
+        public DevExpress.XtraEditors.TextEdit txtCalendario;
     }
 }

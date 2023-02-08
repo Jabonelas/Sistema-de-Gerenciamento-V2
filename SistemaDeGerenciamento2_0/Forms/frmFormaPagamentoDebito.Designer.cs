@@ -190,8 +190,10 @@
             this.Controls.Add(this.btn1FinalizarVenda);
             this.Controls.Add(this.btn1CancelarVenda);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.KeyPreview = true;
             this.Name = "frmFormaPagamentoDebito";
             this.Text = "frmFormaPagamentoDebito";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmFormaPagamentoDebito_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 
