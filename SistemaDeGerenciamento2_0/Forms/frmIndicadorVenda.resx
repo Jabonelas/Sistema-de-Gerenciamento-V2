@@ -117,68 +117,16 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="sqlDataSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>194, 17</value>
-  </metadata>
-  <data name="customSqlQuery9.Sql" xml:space="preserve">
-    <value>select top 5 "tb_produto"."pd_codigo",
-       "tb_produto"."pd_nome",
-	   SUM("tb_nota_fiscal_saida"."nfs_quantidade") as 'Quantidade'
-
-  from (("dbo"."tb_nota_fiscal_saida"
-       "tb_nota_fiscal_saida"
-  inner join "dbo"."tb_estoque" "tb_estoque"
-       on ("tb_estoque"."id_estoque" = "tb_nota_fiscal_saida"."fk_estoque"))
-  inner join "dbo"."tb_produto" "tb_produto"
-       on ("tb_produto"."id_produto" = "tb_estoque"."fk_produto"))
-
-	WHERE MONTH("tb_nota_fiscal_saida"."nfs_data_emissao") = MONTH(GETDATE())
-
-group by "tb_produto"."pd_codigo",
-       "tb_produto"."pd_nome"
-
-ORDER BY 
-    SUM("tb_nota_fiscal_saida"."nfs_quantidade") DESC</value>
-  </data>
-  <data name="sqlDataSource1.ResultSchemaSerializable" xml:space="preserve">
-    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxWaWV3IE5hbWU9IlF1ZXJ5Ij48RmllbGQgTmFtZT0icGRfY29kaWdvIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9InBkX25vbWUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iUXVhbnRpZGFkZSIgVHlwZT0iRGVjaW1hbCIgLz48L1ZpZXc+PC9EYXRhU2V0Pg==</value>
-  </data>
   <metadata name="sqlDataSource4.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>602, 17</value>
+    <value>330, 17</value>
   </metadata>
   <data name="sqlDataSource4.ResultSchemaSerializable" xml:space="preserve">
     <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTQiPjxWaWV3IE5hbWU9IlF1ZXJ5Ij48RmllbGQgTmFtZT0icGRfY29kaWdvIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9InBkX25vbWUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0idmFsb3IiIFR5cGU9IkRlY2ltYWwiIC8+PC9WaWV3PjwvRGF0YVNldD4=</value>
   </data>
   <metadata name="sqlDataSource3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>466, 17</value>
+    <value>194, 17</value>
   </metadata>
   <data name="sqlDataSource3.ResultSchemaSerializable" xml:space="preserve">
     <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTMiPjxWaWV3IE5hbWU9IlF1ZXJ5Ij48RmllbGQgTmFtZT0icGRfY29kaWdvIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9InBkX25vbWUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0icGRfbWFyZ2VtIiBUeXBlPSJEZWNpbWFsIiAvPjwvVmlldz48L0RhdGFTZXQ+</value>
-  </data>
-  <metadata name="sqlDataSource2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>330, 17</value>
-  </metadata>
-  <data name="customSqlQuery12.Sql" xml:space="preserve">
-    <value>select top 5 "tb_produto"."pd_codigo",
-       "tb_produto"."pd_nome",
-	   SUM("tb_nota_fiscal_saida"."nfs_valor_pago") as 'Valor'
-
-  from (("dbo"."tb_nota_fiscal_saida"
-       "tb_nota_fiscal_saida"
-  inner join "dbo"."tb_estoque" "tb_estoque"
-       on ("tb_estoque"."id_estoque" = "tb_nota_fiscal_saida"."fk_estoque"))
-  inner join "dbo"."tb_produto" "tb_produto"
-       on ("tb_produto"."id_produto" = "tb_estoque"."fk_produto"))
-
-	WHERE MONTH("tb_nota_fiscal_saida"."nfs_valor_pago") = MONTH(GETDATE())
-
-group by "tb_produto"."pd_codigo",
-       "tb_produto"."pd_nome"
-
-ORDER BY 
-    SUM("tb_nota_fiscal_saida"."nfs_valor_pago") DESC</value>
-  </data>
-  <data name="sqlDataSource2.ResultSchemaSerializable" xml:space="preserve">
-    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTIiPjxWaWV3IE5hbWU9IlF1ZXJ5Ij48RmllbGQgTmFtZT0icGRfY29kaWdvIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9InBkX25vbWUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iVmFsb3IiIFR5cGU9IkRlY2ltYWwiIC8+PC9WaWV3PjwvRGF0YVNldD4=</value>
   </data>
 </root>

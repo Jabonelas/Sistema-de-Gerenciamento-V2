@@ -109,6 +109,9 @@ namespace SistemaDeGerenciamento2_0.Forms
             DateTime finalDoMes = new DateTime(DateTime.Today.Year, DateTime.Today.Month, DateTime.DaysInMonth(DateTime.Today.Year, DateTime.Today.Month));
 
             Datas.Add(inicioDoMes.ToShortDateString(), finalDoMes.ToShortDateString());
+
+            dtDataInicial.EditValue = inicioDoMes;
+            dtDataFinal.EditValue = finalDoMes;
         }
 
         private void PreencherProximoMes()
@@ -155,13 +158,25 @@ namespace SistemaDeGerenciamento2_0.Forms
 
                     this.Close();
                 }
-                else if (frmIndicadorVenda != null)
+                else if (frmIndicadorVenda != null && frmIndicadorVenda.solicitacao == "Qtd")
                 {
                     //Datas.ForEach(x => { frmIndicadorVenda.txtCalendario.Text = $"{x.Key} - {x.Value}"; });
-                    frmIndicadorVenda.txtCalendario.Text = ($"{txtDataInicial.Text} - {txtDataFinal.Text}");
+                    frmIndicadorVenda.txtCalendarioQtd.Text = ($"{txtDataInicial.Text} - {txtDataFinal.Text}");
 
                     frmIndicadorVenda.dataInicial = Convert.ToDateTime(txtDataInicial.Text);
                     frmIndicadorVenda.dataFinal = Convert.ToDateTime(txtDataFinal.Text);
+                    frmIndicadorVenda.chartControl1.Focus();
+
+                    this.Close();
+                }
+                else if (frmIndicadorVenda != null && frmIndicadorVenda.solicitacao == "Vlr")
+                {
+                    //Datas.ForEach(x => { frmIndicadorVenda.txtCalendario.Text = $"{x.Key} - {x.Value}"; });
+                    frmIndicadorVenda.txtCalendarioVlr.Text = ($"{txtDataInicial.Text} - {txtDataFinal.Text}");
+
+                    frmIndicadorVenda.dataInicial = Convert.ToDateTime(txtDataInicial.Text);
+                    frmIndicadorVenda.dataFinal = Convert.ToDateTime(txtDataFinal.Text);
+                    frmIndicadorVenda.chartControl2.Focus();
 
                     this.Close();
                 }

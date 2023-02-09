@@ -325,8 +325,8 @@ namespace SistemaDeGerenciamento2_0
 
         private void VisaoGeral_Click(object sender, EventArgs e)
         {
-            frmteste frmteste = new frmteste();
-            frmteste.ShowDialog();
+            frmVisaoGeral frmVisaoGeral = new frmVisaoGeral();
+            frmVisaoGeral.ShowDialog();
         }
     }
 }

@@ -432,7 +432,31 @@ namespace SistemaDeGerenciamento2_0.Class
             MessageBox.Show($"(BUS-FD03) Erro ao Buscar Historico de Vendas \n\nErro: {_e}", "Erro Buscar Historico de Vendas!", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
+        public static void ErroAoBuscarQuantidadeProdutosVendidos(Exception _e)
+        {
+            MessageBox.Show($"(BUS-FD04) Erro ao Buscar Quantidade de Produtos Vendidos Indicador de Venda \n\nErro: {_e}", "Erro Buscar Quantidade Produtos Vendidos!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        public static void ErroAoBuscarValoresProdutosVendidos(Exception _e)
+        {
+            MessageBox.Show($"(BUS-FD05) Erro ao Buscar Valores de Produtos Vendidos Indicador de Venda \n\nErro: {_e}", "Erro Buscar Valores Produtos Vendidos!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
         #endregion Relatorios
+
+        #region Visao Geral
+
+        public static void ErroAoBuscarValoresDespesa(Exception _e)
+        {
+            MessageBox.Show($"(BUS-VG01) Erro ao Buscar Valores de Despesa \n\nErro: {_e}", "Erro Buscar Valores Despesa!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        public static void ErroAoBuscarValoresNFSaida(Exception _e)
+        {
+            MessageBox.Show($"(BUS-VG01) Erro ao Buscar Valores Nota Fiscal Saida \n\nErro: {_e}", "Erro Buscar Valores Nota Fiscal Saida!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        #endregion Visao Geral
 
         #endregion Buscar
 

@@ -90,8 +90,10 @@
             this.txtCalendario.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCalendario.Properties.Appearance.Options.UseFont = true;
             this.txtCalendario.Properties.MaxLength = 14;
+            this.txtCalendario.Properties.ReadOnly = true;
             this.txtCalendario.Size = new System.Drawing.Size(223, 34);
             this.txtCalendario.TabIndex = 324;
+            this.txtCalendario.Click += new System.EventHandler(this.txtCalendario_Click);
             this.txtCalendario.Enter += new System.EventHandler(this.txtCalendario_Enter);
             this.txtCalendario.Leave += new System.EventHandler(this.txtCalendario_Leave);
             // 

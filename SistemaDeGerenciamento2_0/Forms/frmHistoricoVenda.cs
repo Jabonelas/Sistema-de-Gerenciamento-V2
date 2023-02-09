@@ -30,7 +30,18 @@ namespace SistemaDeGerenciamento2_0.Forms
         public frmHistoricoVenda()
         {
             InitializeComponent();
+
+            PreencherDataEsteMes();
+
             PreencherGrid();
+        }
+
+        private void PreencherDataEsteMes()
+        {
+            dataInicial = new DateTime(DateTime.Today.Year, DateTime.Today.Month, 1);
+            dataFinal = new DateTime(DateTime.Today.Year, DateTime.Today.Month, DateTime.DaysInMonth(DateTime.Today.Year, DateTime.Today.Month));
+
+            txtCalendario.Text = $"{dataInicial.ToShortDateString()} - {dataFinal.ToShortDateString()}";
         }
 
         private void btnFechar_Click(object sender, EventArgs e)
@@ -182,6 +193,13 @@ namespace SistemaDeGerenciamento2_0.Forms
             {
                 this.Close();
             }
+        }
+
+        private void txtCalendario_Click(object sender, EventArgs e)
+        {
+            FechandoTela();
+
+            ExibirCalendario();
         }
     }
 }
