@@ -446,14 +446,24 @@ namespace SistemaDeGerenciamento2_0.Class
 
         #region Visao Geral
 
-        public static void ErroAoBuscarValoresDespesa(Exception _e)
+        public static void ErroAoBuscarValoresDespesaAnual(Exception _e)
         {
-            MessageBox.Show($"(BUS-VG01) Erro ao Buscar Valores de Despesa \n\nErro: {_e}", "Erro Buscar Valores Despesa!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            MessageBox.Show($"(BUS-VG01) Erro ao Buscar Valores de Despesa Anual \n\nErro: {_e}", "Erro Buscar Valores Despesa!", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
-        public static void ErroAoBuscarValoresNFSaida(Exception _e)
+        public static void ErroAoBuscarValoresNFSaidaAnual(Exception _e)
         {
-            MessageBox.Show($"(BUS-VG01) Erro ao Buscar Valores Nota Fiscal Saida \n\nErro: {_e}", "Erro Buscar Valores Nota Fiscal Saida!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            MessageBox.Show($"(BUS-VG02) Erro ao Buscar Valores Nota Fiscal Saida Anual \n\nErro: {_e}", "Erro Buscar Valores Nota Fiscal Saida!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        public static void ErroAoBuscarValoresDespesaSemanal(Exception _e)
+        {
+            MessageBox.Show($"(BUS-VG03) Erro ao Buscar Valores de Despesa Semanal \n\nErro: {_e}", "Erro Buscar Valores Despesa!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        public static void ErroAoBuscarValoresNFSaidaSemanal(Exception _e)
+        {
+            MessageBox.Show($"(BUS-VG04) Erro ao Buscar Valores Nota Fiscal Saida Semanal \n\nErro: {_e}", "Erro Buscar Valores Nota Fiscal Saida!", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
         #endregion Visao Geral

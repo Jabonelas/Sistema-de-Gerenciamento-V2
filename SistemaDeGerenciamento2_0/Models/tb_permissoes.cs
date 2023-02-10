@@ -50,6 +50,7 @@ namespace SistemaDeGerenciamento2_0.Models
         public bool pm_visualizar_faturamento { get; set; }
         public bool pm_indicadores_venda { get; set; }
         public bool pm_historico_venda { get; set; }
+        public bool pm_visao_geral { get; set; }
 
         [InverseProperty("fk_permissoesNavigation")]
         public virtual ICollection<tb_registro> tb_registro { get; set; }

@@ -53,6 +53,24 @@ namespace SistemaDeGerenciamento2_0.Class
             }
         }
 
+        public void VerificarAcessoVisaoGeral(string _Cadastro, frmTelaPrincipal _frmTelaPrincipal)
+        {
+            bool IsUsuarioPossuiAcesso = false;
+
+            listaPermissoesUsuario.ForEach(x => IsUsuarioPossuiAcesso = x.pm_visao_geral);
+
+            if (IsUsuarioPossuiAcesso == true && _Cadastro == "Visao Geral")
+            {
+                frmVisaoGeral frmVisaoGeral = new frmVisaoGeral(frmTelaPrincipal);
+                frmVisaoGeral.ShowDialog();
+            }
+            else
+            {
+                frmConfirmarAcesso frmConfirmarAcesso = new frmConfirmarAcesso(_frmTelaPrincipal, _Cadastro);
+                frmConfirmarAcesso.ShowDialog();
+            }
+        }
+
         public void VerificarAcessoHistoricoDeVenda(string _Cadastro, frmTelaPrincipal _frmTelaPrincipal)
         {
             bool IsUsuarioPossuiAcesso = false;

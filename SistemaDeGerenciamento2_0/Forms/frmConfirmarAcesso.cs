@@ -197,12 +197,35 @@ namespace SistemaDeGerenciamento2_0.Forms
                 {
                     VerificarAcessoHistoricoDeVenda();
                 }
+                else if (tela == "Visao Geral")
+                {
+                    VerificarAcessoVisaoGeral();
+                }
             }
             else
             {
                 MensagemAtencao.MensagemUsuarioSenhasNaoEncontrados();
 
                 txtUsuario.Focus();
+            }
+        }
+
+        private void VerificarAcessoVisaoGeral()
+        {
+            permissoesUsuario.listaPermissoesUsuario.ForEach(x => IsUsuarioPossuiAcesso = x.pm_visao_geral);
+
+            if (IsUsuarioPossuiAcesso == true && tela == "Visao Geral")
+            {
+                this.Hide();
+
+                frmVisaoGeral frmVisaoGeral = new frmVisaoGeral(frmTelaPrincipal);
+                frmVisaoGeral.ShowDialog();
+
+                this.Close();
+            }
+            else
+            {
+                MenssagemUsuarioSemPermissao();
             }
         }
 

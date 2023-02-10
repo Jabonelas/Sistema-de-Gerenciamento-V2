@@ -130,6 +130,7 @@ namespace SistemaDeGerenciamento2_0.Forms
                         pm_visualizar_faturamento = Convert.ToBoolean(chkVisualizarFaturamento.Checked),
                         pm_indicadores_venda = Convert.ToBoolean(chkIndicadoresDeVenda.Checked),
                         pm_historico_venda = Convert.ToBoolean(chkHistoricoVenda.Checked),
+                        pm_visao_geral = Convert.ToBoolean(chkVisaoGeral.Checked),
                     };
 
                     db.tb_permissoes.Add(checkBoxPreenchidas);
@@ -232,6 +233,7 @@ namespace SistemaDeGerenciamento2_0.Forms
                                 chkVisualizarFaturamento.Checked = Convert.ToBoolean(item.pm_visualizar_faturamento);
                                 chkIndicadoresDeVenda.Checked = Convert.ToBoolean(item.pm_indicadores_venda);
                                 chkHistoricoVenda.Checked = Convert.ToBoolean(item.pm_historico_venda);
+                                chkVisaoGeral.Checked = Convert.ToBoolean(item.pm_visao_geral);
                             }
                         }
                     }
@@ -301,6 +303,7 @@ namespace SistemaDeGerenciamento2_0.Forms
                     checkBoxPreenchidas.pm_visualizar_faturamento = Convert.ToBoolean(chkVisualizarFaturamento.Checked);
                     checkBoxPreenchidas.pm_indicadores_venda = Convert.ToBoolean(chkIndicadoresDeVenda.Checked);
                     checkBoxPreenchidas.pm_historico_venda = Convert.ToBoolean(chkHistoricoVenda.Checked);
+                    checkBoxPreenchidas.pm_visao_geral = Convert.ToBoolean(chkVisaoGeral.Checked);
 
                     db.SaveChanges();
                 };

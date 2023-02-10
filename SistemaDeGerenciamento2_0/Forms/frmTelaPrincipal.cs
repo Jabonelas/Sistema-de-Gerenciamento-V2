@@ -178,6 +178,11 @@ namespace SistemaDeGerenciamento2_0
                 permissoesCadastro.ReloadData(this, frmLogin.UsuarioLogado);
                 permissoesCadastro.VerificarAcessoHistoricoDeVenda("Historico de Venda", this);
             }
+            else if (_btnSolitador == "Visao Geral")
+            {
+                permissoesCadastro.ReloadData(this, frmLogin.UsuarioLogado);
+                permissoesCadastro.VerificarAcessoVisaoGeral("Visao Geral", this);
+            }
         }
 
         private void btnConfigUsuario_Click(object sender, EventArgs e)
@@ -325,8 +330,10 @@ namespace SistemaDeGerenciamento2_0
 
         private void VisaoGeral_Click(object sender, EventArgs e)
         {
-            frmVisaoGeral frmVisaoGeral = new frmVisaoGeral();
-            frmVisaoGeral.ShowDialog();
+            AcessandoTelas("Visao Geral");
+
+            //frmVisaoGeral frmVisaoGeral = new frmVisaoGeral();
+            //frmVisaoGeral.ShowDialog();
         }
     }
 }

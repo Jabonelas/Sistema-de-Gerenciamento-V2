@@ -1,3 +1,4 @@
-02/02/2023 17:06:14 - Erro ao Buscar Dados Relatorio por dia - Relatorio - Faturamento por dia | A matriz de entrada é maior do que o número de colunas desta tabela. |    em System.Data.DataTable.NewRecordFromArray(Object[] value)
-   em System.Data.DataRowCollection.Add(Object[] values)
-   em SistemaDeGerenciamento2_0.Forms.XtraForm1.PreencherGrid() na C:\Users\israe\source\repos\SistemaDeGerenciamento2_0\SistemaDeGerenciamento2_0\Forms\XtraForm1.cs:linha 88
+09/02/2023 13:47:15 - Erro ao Buscar Valor de Despesas - Visão Geral - Visão Geral | A cadeia de caracteres de entrada não estava em um formato correto. |    em System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   em System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   em System.Convert.ToInt32(String value)
+   em SistemaDeGerenciamento2_0.Forms.frmVisaoGeral.BuscarDadosDespesaAnual() na C:\Users\israe\source\repos\SistemaDeGerenciamento2_0\SistemaDeGerenciamento2_0\Forms\frmVisaoGeral.cs:linha 265
