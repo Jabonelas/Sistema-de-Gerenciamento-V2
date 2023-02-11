@@ -49,5 +49,9 @@ namespace SistemaDeGerenciamento2_0.Forms
 
             //TeladeFaturamentoPorDia();
         }
+
+        private void btnFaturamento_Click(object sender, EventArgs e)
+        {
+        }
     }
 }

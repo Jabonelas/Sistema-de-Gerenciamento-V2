@@ -169,6 +169,7 @@
             this.btnFaturamento.Size = new System.Drawing.Size(179, 30);
             this.btnFaturamento.TabIndex = 307;
             this.btnFaturamento.Text = "Faturamento";
+            this.btnFaturamento.Click += new System.EventHandler(this.btnFaturamento_Click);
             // 
             // popupMenu1
             // 

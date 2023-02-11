@@ -15,16 +15,28 @@ namespace SistemaDeGerenciamento2_0.Forms
     public partial class frmConsultarEstoque : DevExpress.XtraEditors.XtraForm
     {
         private int X = 0;
-
         private int Y = 0;
 
         public frmConsultarEstoque()
         {
             InitializeComponent();
 
+            gridControl1.DataSource = sqlDataSource1;
+
             sqlDataSource1.FillAsync();
 
             gridControl1.DoubleClick -= gridControl1_DoubleClick;
+        }
+
+        public frmConsultarEstoque(frmTelaPrincipal frmTelaPrincipal)
+        {
+            InitializeComponent();
+
+            gridControl1.DataSource = sqlDataSource2;
+
+            gridControl1.DoubleClick -= gridControl1_DoubleClick;
+
+            sqlDataSource2.FillAsync();
         }
 
         public frmConsultarEstoque(string _tela)
@@ -65,8 +77,6 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             this.Close();
         }
-
-        //private frmPDV frmPDV = new frmPDV();
 
         private void gridControl1_DoubleClick(object sender, EventArgs e)
         {

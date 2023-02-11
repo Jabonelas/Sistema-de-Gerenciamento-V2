@@ -31,6 +31,7 @@ namespace SistemaDeGerenciamento2_0.Models
         public int? dp_parcelas { get; set; }
         [Column(TypeName = "image")]
         public byte[] dp_imagem { get; set; }
+        public bool? dp_repeticao { get; set; }
         public int fk_registro { get; set; }
         public int? fk_repeticao_despesa { get; set; }
 

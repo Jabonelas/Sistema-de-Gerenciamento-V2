@@ -1,5 +1,6 @@
 ﻿using DevExpress.XtraEditors;
 using DevExpress.XtraEditors.Filtering.Templates;
+using DevExpress.XtraLayout.Filtering.Templates;
 using SistemaDeGerenciamento2_0.Class;
 using SistemaDeGerenciamento2_0.Context;
 using SistemaDeGerenciamento2_0.Models;
@@ -20,7 +21,8 @@ namespace SistemaDeGerenciamento2_0.Forms
     {
         private int X = 0;
         private int Y = 0;
-        private int FK_Repeticao = 0;
+        private int? FK_Repeticao = null;
+        private int quantidadeParcelas = 1;
 
         public frmContasComRepeticao()
         {
@@ -150,17 +152,52 @@ namespace SistemaDeGerenciamento2_0.Forms
                 if (txtDataLancamento.Text != string.Empty && txtDataVencimento.Text != string.Empty && txtValor.Text != string.Empty
                     && cmbFornecedor.Text != string.Empty && cmbCategoria.Text != string.Empty)
                 {
-                    SalvarDespesaComRepeticao();
+                    if (chkRepetirDespesa.Checked == true)
+                    {
+                        SalvarDespesaComRepeticao();
+
+                        quantidadeParcelas = Convert.ToInt32(cmbPrazo.Text.Replace("x", string.Empty));
+                    }
 
                     SalvarDespesa();
 
                     LimpandoCampos();
+
+                    btnSalvar.Enabled = false;
+
+                    btnCancelar.Enabled = false;
+
+                    AlertaConfirmacao.ChamandoAlertaSucessoNoCantoInferiorDireito(AlertaSalvar, this);
                 }
                 else
                 {
                     MensagemAtencao.MensagemPreencherCampos();
                 }
             }
+        }
+
+        private int TransformarPeridoEmNumeroDeDias(string _periodo)
+        {
+            switch (_periodo)
+            {
+                case "Diário":
+
+                    return 1;
+
+                case "Semanal":
+
+                    return 7;
+
+                case "Mensal":
+
+                    return 30;
+
+                case "Anual":
+
+                    return 365;
+            }
+
+            return 0;
         }
 
         private void LimpandoCampos()
@@ -182,7 +219,9 @@ namespace SistemaDeGerenciamento2_0.Forms
             {
                 using (SistemaDeGerenciamento2_0Context db = new SistemaDeGerenciamento2_0Context())
                 {
-                    int quantidadeParcelas = Convert.ToInt32(cmbPrazo.Text.Replace("x", string.Empty));
+                    DateTime dataVencimento = Convert.ToDateTime(txtDataVencimento.Text);
+
+                    int quantidadeDias = TransformarPeridoEmNumeroDeDias(cmbPeriocidade.Text);
 
                     for (int cont = 1; cont <= quantidadeParcelas; cont++)
                     {
@@ -195,12 +234,14 @@ namespace SistemaDeGerenciamento2_0.Forms
                             dp_data = Convert.ToDateTime(txtDataLancamento.Text),
                             dp_observacao = txtObservacoesDespesa.Text,
                             dp_sub_valor_total = Convert.ToDecimal(txtValor.Text.Replace("R$", string.Empty)),
-                            dp_vencimento = Convert.ToDateTime(txtDataVencimento.Text),
+                            dp_vencimento = dataVencimento,
                             dp_parcelas = cont,
                             dp_imagem = imagem,
                             fk_registro = Convert.ToInt32(cmbFornecedor.Properties.GetKeyValueByDisplayValue(cmbFornecedor.Text)),
                             fk_repeticao_despesa = FK_Repeticao
                         };
+
+                        dataVencimento = dataVencimento.AddDays(quantidadeDias);
 
                         db.tb_despesa.Add(despesa);
                         db.SaveChanges();

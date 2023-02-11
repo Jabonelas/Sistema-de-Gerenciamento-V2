@@ -80,7 +80,6 @@
             // 
             this.btnNovaDespesa.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNovaDespesa.Appearance.Options.UseFont = true;
-            this.btnNovaDespesa.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.adcao9;
             this.btnNovaDespesa.ImageOptions.ImageIndex = 5;
             this.btnNovaDespesa.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftBottom;
             this.btnNovaDespesa.ImageOptions.ImageToTextIndent = 10;
@@ -143,7 +142,7 @@
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsBehavior.Editable = false;
-            this.gridView1.OptionsView.ShowFooter = true;
+            this.gridView1.OptionsView.ShowIndicator = false;
             this.gridView1.PopupMenuShowing += new DevExpress.XtraGrid.Views.Grid.PopupMenuShowingEventHandler(this.gridView1_PopupMenuShowing);
             // 
             // id_categoria_despesa

@@ -143,8 +143,10 @@
        "tb_cadastro_despesa"
        on ("tb_cadastro_despesa"."id_categoria_despesa" = "tb_repeticao_despesa"."fk_cadastro_despesa"))
 --where "tb_despesa"."dp_pagamento_em" is null
-WHERE MONTH(dp_data) = MONTH(GETDATE())
-or "tb_despesa"."dp_pagamento_em" is null</value>
+WHERE MONTH(dp_data) = MONTH(GETDATE()) or "tb_despesa"."dp_vencimento" &lt;= GETDATE() and  
+"tb_despesa"."dp_pagamento_em" is null
+
+--or "tb_despesa"."dp_pagamento_em" is null</value>
   </data>
   <data name="sqlDataSource1.ResultSchemaSerializable" xml:space="preserve">
     <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxWaWV3IE5hbWU9IlF1ZXJ5Ij48RmllbGQgTmFtZT0iaWRfZGVzcGVzYSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9InJnX3RpcG9fY2FkYXN0cm8iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0icmdfY3BmIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9InJnX25vbWUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0icmdfY25waiIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJyZ19ub21lX2ZhbnRhc2lhIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9ImRwX3BhcmNlbGFzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iY2RfY2F0ZWdvcmlhIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9ImRwX3N1Yl92YWxvcl90b3RhbCIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iZHBfdmVuY2ltZW50byIgVHlwZT0iRGF0ZVRpbWUiIC8+PEZpZWxkIE5hbWU9ImRwX2ltYWdlbSIgVHlwZT0iQnl0ZUFycmF5IiAvPjwvVmlldz48L0RhdGFTZXQ+</value>
@@ -154,5 +156,8 @@ or "tb_despesa"."dp_pagamento_em" is null</value>
   </metadata>
   <metadata name="barManager1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>456, 17</value>
+  </metadata>
+  <metadata name="AlertaSalvar.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>581, 17</value>
   </metadata>
 </root>

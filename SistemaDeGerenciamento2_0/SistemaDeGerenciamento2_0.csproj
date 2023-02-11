@@ -303,6 +303,7 @@
     <Compile Include="Class\DeletarDados.cs" />
     <Compile Include="Class\LimparCampos.cs" />
     <Compile Include="Class\ListaEstados.cs" />
+    <Compile Include="Class\MensagemAlerta.cs" />
     <Compile Include="Class\MensagemErros.cs" />
     <Compile Include="Class\MensagemAtencao.cs" />
     <Compile Include="Class\NFSaida.cs" />
@@ -944,6 +945,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\calendar_plus_20px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\box_important_20px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new_product_20px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reserve_20px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

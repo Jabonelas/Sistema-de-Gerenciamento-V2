@@ -63,19 +63,38 @@
             this.btnConfigFinanceiro = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.btnConfigDesepsa = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.fluentDesignFormControl1 = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormControl();
+            this.btnDespesaAtrasada = new DevExpress.XtraEditors.SimpleButton();
+            this.btnEstoque = new DevExpress.XtraEditors.SimpleButton();
             this.toggleSwitch1 = new DevExpress.XtraEditors.ToggleSwitch();
             this.fluentFormDefaultManager1 = new DevExpress.XtraBars.FluentDesignSystem.FluentFormDefaultManager(this.components);
             this.skinBarSubItem1 = new DevExpress.XtraBars.SkinBarSubItem();
+            this.btnProdutoEstoqueBaixo = new DevExpress.XtraBars.BarButtonItem();
+            this.btnContasAtrasadas = new DevExpress.XtraBars.BarButtonItem();
             this.lblUsuarioLogado = new DevExpress.XtraEditors.LabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.popupMenu1 = new DevExpress.XtraBars.PopupMenu(this.components);
+            this.barManager1 = new DevExpress.XtraBars.BarManager(this.components);
+            this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
+            this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
+            this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
+            this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
             this.pnlTelaPrincipal = new System.Windows.Forms.FlowLayoutPanel();
             this.btnDespesaCategoria = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.badge1 = new DevExpress.Utils.VisualEffects.Badge();
+            this.adornerUIManager1 = new DevExpress.Utils.VisualEffects.AdornerUIManager(this.components);
+            this.badge2 = new DevExpress.Utils.VisualEffects.Badge();
+            this.alertEstoqueBaixo = new DevExpress.XtraBars.Alerter.AlertControl(this.components);
+            this.alertContaAtrasada = new DevExpress.XtraBars.Alerter.AlertControl(this.components);
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).BeginInit();
             this.accordionControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fluentDesignFormControl1)).BeginInit();
             this.fluentDesignFormControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.toggleSwitch1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fluentFormDefaultManager1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.popupMenu1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.adornerUIManager1)).BeginInit();
             this.SuspendLayout();
             // 
             // splashScreenManager1
@@ -103,7 +122,7 @@
             this.accordionControl1.Location = new System.Drawing.Point(0, 33);
             this.accordionControl1.Name = "accordionControl1";
             this.accordionControl1.ScrollBarMode = DevExpress.XtraBars.Navigation.ScrollBarMode.Touch;
-            this.accordionControl1.Size = new System.Drawing.Size(260, 466);
+            this.accordionControl1.Size = new System.Drawing.Size(260, 468);
             this.accordionControl1.TabIndex = 1;
             this.accordionControl1.ViewType = DevExpress.XtraBars.Navigation.AccordionControlViewType.HamburgerMenu;
             // 
@@ -384,7 +403,6 @@
             this.btnHistorioDeVenda,
             this.btnIndicadoresVendas,
             this.accordionControlElement4});
-            this.Relatorios.Expanded = true;
             this.Relatorios.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.check_30px;
             this.Relatorios.Name = "Relatorios";
             this.Relatorios.Text = "Relatórios";
@@ -501,12 +519,16 @@
             // 
             // fluentDesignFormControl1
             // 
+            this.fluentDesignFormControl1.Controls.Add(this.btnDespesaAtrasada);
+            this.fluentDesignFormControl1.Controls.Add(this.btnEstoque);
             this.fluentDesignFormControl1.Controls.Add(this.toggleSwitch1);
             this.fluentDesignFormControl1.Controls.Add(this.lblUsuarioLogado);
             this.fluentDesignFormControl1.Controls.Add(this.labelControl1);
             this.fluentDesignFormControl1.FluentDesignForm = this;
             this.fluentDesignFormControl1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
-            this.skinBarSubItem1});
+            this.skinBarSubItem1,
+            this.btnProdutoEstoqueBaixo,
+            this.btnContasAtrasadas});
             this.fluentDesignFormControl1.Location = new System.Drawing.Point(0, 0);
             this.fluentDesignFormControl1.Manager = this.fluentFormDefaultManager1;
             this.fluentDesignFormControl1.Name = "fluentDesignFormControl1";
@@ -514,6 +536,44 @@
             this.fluentDesignFormControl1.TabIndex = 2;
             this.fluentDesignFormControl1.TabStop = false;
             this.fluentDesignFormControl1.TitleItemLinks.Add(this.skinBarSubItem1);
+            // 
+            // btnDespesaAtrasada
+            // 
+            this.btnDespesaAtrasada.Appearance.BorderColor = System.Drawing.Color.Transparent;
+            this.btnDespesaAtrasada.Appearance.Options.UseBorderColor = true;
+            this.btnDespesaAtrasada.AppearanceDisabled.BorderColor = System.Drawing.Color.Transparent;
+            this.btnDespesaAtrasada.AppearanceDisabled.Options.UseBorderColor = true;
+            this.btnDespesaAtrasada.AppearanceHovered.BorderColor = System.Drawing.Color.Transparent;
+            this.btnDespesaAtrasada.AppearanceHovered.Options.UseBorderColor = true;
+            this.btnDespesaAtrasada.AppearancePressed.BorderColor = System.Drawing.Color.Transparent;
+            this.btnDespesaAtrasada.AppearancePressed.Options.UseBorderColor = true;
+            this.btnDespesaAtrasada.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.reserve_20px;
+            this.btnDespesaAtrasada.Location = new System.Drawing.Point(1056, 3);
+            this.btnDespesaAtrasada.Name = "btnDespesaAtrasada";
+            this.btnDespesaAtrasada.Size = new System.Drawing.Size(28, 30);
+            this.btnDespesaAtrasada.TabIndex = 8;
+            this.btnDespesaAtrasada.ToolTip = "Contas/Despesas Atrasadas";
+            this.btnDespesaAtrasada.Visible = false;
+            this.btnDespesaAtrasada.Click += new System.EventHandler(this.btnDespesaAtrasada_Click);
+            // 
+            // btnEstoque
+            // 
+            this.btnEstoque.Appearance.BorderColor = System.Drawing.Color.Transparent;
+            this.btnEstoque.Appearance.Options.UseBorderColor = true;
+            this.btnEstoque.AppearanceDisabled.BorderColor = System.Drawing.Color.Transparent;
+            this.btnEstoque.AppearanceDisabled.Options.UseBorderColor = true;
+            this.btnEstoque.AppearanceHovered.BorderColor = System.Drawing.Color.Transparent;
+            this.btnEstoque.AppearanceHovered.Options.UseBorderColor = true;
+            this.btnEstoque.AppearancePressed.BorderColor = System.Drawing.Color.Transparent;
+            this.btnEstoque.AppearancePressed.Options.UseBorderColor = true;
+            this.btnEstoque.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.new_product_20px;
+            this.btnEstoque.Location = new System.Drawing.Point(1099, 3);
+            this.btnEstoque.Name = "btnEstoque";
+            this.btnEstoque.Size = new System.Drawing.Size(28, 30);
+            this.btnEstoque.TabIndex = 7;
+            this.btnEstoque.ToolTip = "Produto Com Estoque Baixo";
+            this.btnEstoque.Visible = false;
+            this.btnEstoque.Click += new System.EventHandler(this.btnEstoque_Click);
             // 
             // toggleSwitch1
             // 
@@ -530,8 +590,10 @@
             // 
             this.fluentFormDefaultManager1.Form = this;
             this.fluentFormDefaultManager1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
-            this.skinBarSubItem1});
-            this.fluentFormDefaultManager1.MaxItemId = 1;
+            this.skinBarSubItem1,
+            this.btnProdutoEstoqueBaixo,
+            this.btnContasAtrasadas});
+            this.fluentFormDefaultManager1.MaxItemId = 3;
             // 
             // skinBarSubItem1
             // 
@@ -541,6 +603,18 @@
             this.skinBarSubItem1.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("skinBarSubItem1.ImageOptions.LargeImage")));
             this.skinBarSubItem1.Name = "skinBarSubItem1";
             this.skinBarSubItem1.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionInMenu;
+            // 
+            // btnProdutoEstoqueBaixo
+            // 
+            this.btnProdutoEstoqueBaixo.Caption = "Produto Com Estoque Baixo";
+            this.btnProdutoEstoqueBaixo.Id = 1;
+            this.btnProdutoEstoqueBaixo.Name = "btnProdutoEstoqueBaixo";
+            // 
+            // btnContasAtrasadas
+            // 
+            this.btnContasAtrasadas.Caption = "Contas Atrasadas";
+            this.btnContasAtrasadas.Id = 2;
+            this.btnContasAtrasadas.Name = "btnContasAtrasadas";
             // 
             // lblUsuarioLogado
             // 
@@ -558,10 +632,58 @@
             this.labelControl1.TabIndex = 4;
             this.labelControl1.Text = "Usuário:";
             // 
+            // popupMenu1
+            // 
+            this.popupMenu1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.btnProdutoEstoqueBaixo),
+            new DevExpress.XtraBars.LinkPersistInfo(this.btnContasAtrasadas)});
+            this.popupMenu1.Manager = this.barManager1;
+            this.popupMenu1.Name = "popupMenu1";
+            // 
+            // barManager1
+            // 
+            this.barManager1.DockControls.Add(this.barDockControlTop);
+            this.barManager1.DockControls.Add(this.barDockControlBottom);
+            this.barManager1.DockControls.Add(this.barDockControlLeft);
+            this.barManager1.DockControls.Add(this.barDockControlRight);
+            this.barManager1.Form = this;
+            // 
+            // barDockControlTop
+            // 
+            this.barDockControlTop.CausesValidation = false;
+            this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.barDockControlTop.Location = new System.Drawing.Point(0, 33);
+            this.barDockControlTop.Manager = this.barManager1;
+            this.barDockControlTop.Size = new System.Drawing.Size(1269, 0);
+            // 
+            // barDockControlBottom
+            // 
+            this.barDockControlBottom.CausesValidation = false;
+            this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 501);
+            this.barDockControlBottom.Manager = this.barManager1;
+            this.barDockControlBottom.Size = new System.Drawing.Size(1269, 0);
+            // 
+            // barDockControlLeft
+            // 
+            this.barDockControlLeft.CausesValidation = false;
+            this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
+            this.barDockControlLeft.Location = new System.Drawing.Point(0, 33);
+            this.barDockControlLeft.Manager = this.barManager1;
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 468);
+            // 
+            // barDockControlRight
+            // 
+            this.barDockControlRight.CausesValidation = false;
+            this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
+            this.barDockControlRight.Location = new System.Drawing.Point(1269, 33);
+            this.barDockControlRight.Manager = this.barManager1;
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 468);
+            // 
             // pnlTelaPrincipal
             // 
             this.pnlTelaPrincipal.AutoScroll = true;
-            this.pnlTelaPrincipal.Location = new System.Drawing.Point(260, 31);
+            this.pnlTelaPrincipal.Location = new System.Drawing.Point(260, 34);
             this.pnlTelaPrincipal.Name = "pnlTelaPrincipal";
             this.pnlTelaPrincipal.Size = new System.Drawing.Size(1006, 465);
             this.pnlTelaPrincipal.TabIndex = 3;
@@ -572,13 +694,48 @@
             this.btnDespesaCategoria.Name = "btnDespesaCategoria";
             this.btnDespesaCategoria.Text = "Despesa/Categoria";
             // 
+            // badge1
+            // 
+            this.badge1.Properties.Location = System.Drawing.ContentAlignment.MiddleRight;
+            this.badge1.TargetElement = this.btnEstoque;
+            // 
+            // adornerUIManager1
+            // 
+            this.adornerUIManager1.Elements.Add(this.badge1);
+            this.adornerUIManager1.Elements.Add(this.badge2);
+            this.adornerUIManager1.Owner = this;
+            // 
+            // badge2
+            // 
+            this.badge2.Properties.Location = System.Drawing.ContentAlignment.MiddleRight;
+            this.badge2.TargetElement = this.btnDespesaAtrasada;
+            // 
+            // alertEstoqueBaixo
+            // 
+            this.alertEstoqueBaixo.AlertClick += new DevExpress.XtraBars.Alerter.AlertClickEventHandler(this.alertEstoqueBaixo_AlertClick);
+            this.alertEstoqueBaixo.BeforeFormShow += new DevExpress.XtraBars.Alerter.AlertFormEventHandler(this.alertEstoqueBaixo_BeforeFormShow);
+            // 
+            // alertContaAtrasada
+            // 
+            this.alertContaAtrasada.AlertClick += new DevExpress.XtraBars.Alerter.AlertClickEventHandler(this.alertContaAtrasada_AlertClick);
+            this.alertContaAtrasada.BeforeFormShow += new DevExpress.XtraBars.Alerter.AlertFormEventHandler(this.alertContaAtrasada_BeforeFormShow);
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 72000000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // frmTelaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1269, 499);
+            this.ClientSize = new System.Drawing.Size(1269, 501);
             this.Controls.Add(this.pnlTelaPrincipal);
             this.Controls.Add(this.accordionControl1);
+            this.Controls.Add(this.barDockControlLeft);
+            this.Controls.Add(this.barDockControlRight);
+            this.Controls.Add(this.barDockControlBottom);
+            this.Controls.Add(this.barDockControlTop);
             this.Controls.Add(this.fluentDesignFormControl1);
             this.FluentDesignFormControl = this.fluentDesignFormControl1;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
@@ -586,6 +743,7 @@
             this.Name = "frmTelaPrincipal";
             this.NavigationControl = this.accordionControl1;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Shown += new System.EventHandler(this.frmTelaPrincipal_Shown);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmTelaPrincipal_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).EndInit();
             this.accordionControl1.ResumeLayout(false);
@@ -594,7 +752,11 @@
             this.fluentDesignFormControl1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.toggleSwitch1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fluentFormDefaultManager1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.popupMenu1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.adornerUIManager1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -638,6 +800,22 @@
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement4;
         private DevExpress.XtraBars.Navigation.AccordionControlElement btnFaturamentoPorVendedor;
         private DevExpress.XtraBars.Navigation.AccordionControlElement btnFaturamentoPorDia;
+        private DevExpress.Utils.VisualEffects.Badge badge1;
+        private DevExpress.Utils.VisualEffects.AdornerUIManager adornerUIManager1;
+        private DevExpress.XtraEditors.SimpleButton btnEstoque;
+        private DevExpress.XtraBars.BarDockControl barDockControlLeft;
+        private DevExpress.XtraBars.BarManager barManager1;
+        private DevExpress.XtraBars.BarDockControl barDockControlTop;
+        private DevExpress.XtraBars.BarDockControl barDockControlBottom;
+        private DevExpress.XtraBars.BarDockControl barDockControlRight;
+        private DevExpress.XtraBars.PopupMenu popupMenu1;
+        private DevExpress.XtraBars.BarButtonItem btnProdutoEstoqueBaixo;
+        private DevExpress.XtraBars.BarButtonItem btnContasAtrasadas;
+        private DevExpress.XtraEditors.SimpleButton btnDespesaAtrasada;
+        private DevExpress.Utils.VisualEffects.Badge badge2;
+        private DevExpress.XtraBars.Alerter.AlertControl alertEstoqueBaixo;
+        private DevExpress.XtraBars.Alerter.AlertControl alertContaAtrasada;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 

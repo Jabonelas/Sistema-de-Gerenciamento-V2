@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            DevExpress.DataAccess.Sql.CustomSqlQuery customSqlQuery1 = new DevExpress.DataAccess.Sql.CustomSqlQuery();
             DevExpress.XtraSplashScreen.SplashScreenManager splashScreenManager1 = new DevExpress.XtraSplashScreen.SplashScreenManager(this, null, true, true);
+            DevExpress.DataAccess.Sql.CustomSqlQuery customSqlQuery1 = new DevExpress.DataAccess.Sql.CustomSqlQuery();
             this.btnFechar = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
@@ -50,6 +50,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.cmbVendedor.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.queryBindingSource)).BeginInit();
             this.SuspendLayout();
+            // 
+            // splashScreenManager1
+            // 
+            splashScreenManager1.ClosingDelay = 500;
             // 
             // btnFechar
             // 
@@ -108,7 +112,7 @@
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsBehavior.Editable = false;
-            this.gridView1.OptionsView.ShowFooter = true;
+            this.gridView1.OptionsView.ShowIndicator = false;
             // 
             // sqlDataSource1
             // 
@@ -201,10 +205,6 @@
             this.labelControl4.Size = new System.Drawing.Size(57, 20);
             this.labelControl4.TabIndex = 322;
             this.labelControl4.Text = "Usuário: ";
-            // 
-            // splashScreenManager1
-            // 
-            splashScreenManager1.ClosingDelay = 500;
             // 
             // frmFaturamentoPorVendedor
             // 

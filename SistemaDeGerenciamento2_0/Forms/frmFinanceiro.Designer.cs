@@ -70,6 +70,8 @@
             this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
             this.btnDeletar = new DevExpress.XtraBars.BarButtonItem();
+            this.btnRemoverDespesaConta = new DevExpress.XtraBars.BarButtonItem();
+            this.AlertaSalvar = new DevExpress.XtraBars.Alerter.AlertControl(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -101,7 +103,6 @@
             this.btnNovaDespesaContas.AppearancePressed.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(218)))), ((int)(((byte)(153)))));
             this.btnNovaDespesaContas.AppearancePressed.Options.UseBackColor = true;
             this.btnNovaDespesaContas.AppearancePressed.Options.UseBorderColor = true;
-            this.btnNovaDespesaContas.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.adcao9;
             this.btnNovaDespesaContas.ImageOptions.ImageIndex = 5;
             this.btnNovaDespesaContas.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftBottom;
             this.btnNovaDespesaContas.ImageOptions.ImageToTextIndent = 10;
@@ -153,7 +154,7 @@
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsBehavior.Editable = false;
-            this.gridView1.OptionsView.ShowFooter = true;
+            this.gridView1.OptionsView.ShowIndicator = false;
             this.gridView1.PopupMenuShowing += new DevExpress.XtraGrid.Views.Grid.PopupMenuShowingEventHandler(this.gridView1_PopupMenuShowing_1);
             // 
             // id_despesa
@@ -451,7 +452,8 @@
             // popupMenu1
             // 
             this.popupMenu1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.btnRealizarPagamento)});
+            new DevExpress.XtraBars.LinkPersistInfo(this.btnRealizarPagamento),
+            new DevExpress.XtraBars.LinkPersistInfo(this.btnRemoverDespesaConta)});
             this.popupMenu1.Manager = this.barManager1;
             this.popupMenu1.Name = "popupMenu1";
             // 
@@ -471,8 +473,9 @@
             this.barManager1.Form = this;
             this.barManager1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.btnRealizarPagamento,
-            this.btnDeletar});
-            this.barManager1.MaxItemId = 2;
+            this.btnDeletar,
+            this.btnRemoverDespesaConta});
+            this.barManager1.MaxItemId = 3;
             // 
             // barDockControlTop
             // 
@@ -511,6 +514,33 @@
             this.btnDeletar.Caption = "Deletar";
             this.btnDeletar.Id = 1;
             this.btnDeletar.Name = "btnDeletar";
+            // 
+            // btnRemoverDespesaConta
+            // 
+            this.btnRemoverDespesaConta.Caption = "Remover Despesa/Conta";
+            this.btnRemoverDespesaConta.Id = 2;
+            this.btnRemoverDespesaConta.Name = "btnRemoverDespesaConta";
+            this.btnRemoverDespesaConta.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnRemoverDespesaConta_ItemClick);
+            // 
+            // AlertaSalvar
+            // 
+            this.AlertaSalvar.AppearanceCaption.BackColor = System.Drawing.Color.Red;
+            this.AlertaSalvar.AppearanceCaption.BackColor2 = System.Drawing.Color.Yellow;
+            this.AlertaSalvar.AppearanceCaption.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AlertaSalvar.AppearanceCaption.ForeColor = System.Drawing.Color.White;
+            this.AlertaSalvar.AppearanceCaption.Options.UseBackColor = true;
+            this.AlertaSalvar.AppearanceCaption.Options.UseFont = true;
+            this.AlertaSalvar.AppearanceCaption.Options.UseForeColor = true;
+            this.AlertaSalvar.AppearanceHotTrackedText.BackColor = System.Drawing.Color.Lime;
+            this.AlertaSalvar.AppearanceHotTrackedText.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AlertaSalvar.AppearanceHotTrackedText.Options.UseBackColor = true;
+            this.AlertaSalvar.AppearanceHotTrackedText.Options.UseFont = true;
+            this.AlertaSalvar.AppearanceText.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AlertaSalvar.AppearanceText.Options.UseFont = true;
+            this.AlertaSalvar.AutoFormDelay = 2000;
+            this.AlertaSalvar.ShowCloseButton = false;
+            this.AlertaSalvar.ShowPinButton = false;
+            this.AlertaSalvar.ShowToolTips = false;
             // 
             // frmFinanceiro
             // 
@@ -597,5 +627,7 @@
         private DevExpress.XtraBars.BarDockControl barDockControlRight;
         private DevExpress.XtraGrid.Columns.GridColumn dp_parcelas;
         private DevExpress.XtraGrid.Columns.GridColumn dp_imagem;
+        private DevExpress.XtraBars.BarButtonItem btnRemoverDespesaConta;
+        private DevExpress.XtraBars.Alerter.AlertControl AlertaSalvar;
     }
 }

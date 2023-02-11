@@ -1,4 +1,10 @@
-09/02/2023 13:47:15 - Erro ao Buscar Valor de Despesas - Visão Geral - Visão Geral | A cadeia de caracteres de entrada não estava em um formato correto. |    em System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
-   em System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
-   em System.Convert.ToInt32(String value)
-   em SistemaDeGerenciamento2_0.Forms.frmVisaoGeral.BuscarDadosDespesaAnual() na C:\Users\israe\source\repos\SistemaDeGerenciamento2_0\SistemaDeGerenciamento2_0\Forms\frmVisaoGeral.cs:linha 265
+10/02/2023 20:31:41 - Erro ao Cadastrar Despesas - Despesa - Contas Com Repetição | An error occurred while updating the entries. See the inner exception for details. |    em Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   em Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   em Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   em Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   em Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   em Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   em Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   em Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   em Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   em SistemaDeGerenciamento2_0.Forms.frmContasComRepeticao.SalvarDespesa() na C:\Users\israe\source\repos\SistemaDeGerenciamento2_0\SistemaDeGerenciamento2_0\Forms\frmContasComRepeticao.cs:linha 249

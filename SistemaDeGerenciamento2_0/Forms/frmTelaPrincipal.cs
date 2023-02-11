@@ -1,7 +1,10 @@
-﻿using DevExpress.Data.ODataLinq.Helpers;
+﻿using DevExpress.ClipboardSource.SpreadsheetML;
+using DevExpress.Data.ODataLinq.Helpers;
 using DevExpress.LookAndFeel;
 using DevExpress.Office.Model;
 using DevExpress.Utils.Extensions;
+using DevExpress.Utils.VisualEffects;
+using DevExpress.XtraScheduler;
 using DevExpress.XtraSplashScreen;
 using DevExpress.XtraVerticalGrid.Painters;
 using Microsoft.EntityFrameworkCore.Internal;
@@ -10,6 +13,7 @@ using SistemaDeGerenciamento2_0.Class;
 using SistemaDeGerenciamento2_0.Context;
 using SistemaDeGerenciamento2_0.Forms;
 using SistemaDeGerenciamento2_0.Models;
+using SistemaDeGerenciamento2_0.Properties;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -20,9 +24,13 @@ namespace SistemaDeGerenciamento2_0
 {
     public partial class frmTelaPrincipal : DevExpress.XtraBars.FluentDesignSystem.FluentDesignForm
     {
-        private PermissoesUsuario permissoesCadastro = new PermissoesUsuario();
+        private List<tb_despesa> listaDespesa = new List<tb_despesa>();
 
         private List<tb_permissoes> listaPermissoes = new List<tb_permissoes>();
+
+        private List<tb_repeticao_despesa> listaRepeticaoDespesa = new List<tb_repeticao_despesa>();
+
+        private PermissoesUsuario permissoesCadastro = new PermissoesUsuario();
 
         private PermissoesUsuario permissoesUsuario = new PermissoesUsuario();
 
@@ -33,6 +41,24 @@ namespace SistemaDeGerenciamento2_0
             TelaAcessoRapido();
 
             lblUsuarioLogado.Text = frmLogin.UsuarioLogado;
+
+            timer1.Start();
+
+            BuscarDespesaContas();
+
+            teste();
+        }
+
+        private void VerificarAcessoAlertaEstoqueBaixo()
+        {
+            permissoesUsuario.ReloadData(this, frmLogin.UsuarioLogado);
+            permissoesUsuario.VerificarAcessoEstoqueBaixo("Estoque Baixo", this);
+        }
+
+        private void VerificarAcessoContasAtrasadas()
+        {
+            permissoesUsuario.ReloadData(this, frmLogin.UsuarioLogado);
+            permissoesUsuario.VerificarAcessoContasAtrasada("Contas Atrasadas", this);
         }
 
         private void TelaAcessoRapido()
@@ -323,17 +349,323 @@ namespace SistemaDeGerenciamento2_0
         private void btnHistorioDeVenda_Click(object sender, EventArgs e)
         {
             AcessandoTelas("Historico de Venda");
-
-            //frmHistoricoVenda frmHistoricoVenda = new frmHistoricoVenda();
-            //frmHistoricoVenda.ShowDialog();
         }
 
         private void VisaoGeral_Click(object sender, EventArgs e)
         {
             AcessandoTelas("Visao Geral");
+        }
 
-            //frmVisaoGeral frmVisaoGeral = new frmVisaoGeral();
-            //frmVisaoGeral.ShowDialog();
+        public void ProdutosComEstoqueBaixo()
+        {
+            try
+            {
+                using (SistemaDeGerenciamento2_0Context db = new SistemaDeGerenciamento2_0Context())
+                {
+                    var teste = db.tb_estoque.Join(db.tb_produto, estoque => estoque.fk_produto, produto => produto.id_produto, (estoque, produto) => new
+                    {
+                        Estoque = estoque,
+                        Produto = produto,
+                    }).Where(x => x.Estoque.ep_quantidade <= x.Produto.pd_estoque_minimo && x.Estoque.fk_produto == x.Produto.id_produto).ToList();
+
+                    int cont = 0;
+
+                    foreach (var item in teste)
+                    {
+                        btnEstoque.Visible = true;
+
+                        badge1.Properties.Text = (++cont).ToString();
+                        badge1.Visible = true;
+                    }
+
+                    ChamandoMensagemAlertaEstoqueBaixo();
+                }
+            }
+            catch (Exception x)
+            {
+                LogErros.EscreverArquivoDeLog($"{DateTime.Now} - Erro ao Buscar Produtos com Estoque Minimo - Tela Principal - Buscar Contas Atradas | {x.Message} | {x.StackTrace}");
+
+                MensagemErros.ErroAoBuscarProdutosComEstoqueBaixo(x);
+            }
+        }
+
+        public void ContasAtrasadas()
+        {
+            try
+            {
+                using (SistemaDeGerenciamento2_0Context db = new SistemaDeGerenciamento2_0Context())
+                {
+                    var teste = db.tb_despesa.Where(x => x.dp_pagamento_em == null && x.dp_vencimento <= DateTime.Today).Select(x => x.dp_vencimento).ToList();
+
+                    int cont = 0;
+
+                    foreach (var item in teste)
+                    {
+                        btnDespesaAtrasada.Visible = true;
+
+                        badge2.Properties.Text = (++cont).ToString();
+                        badge2.Visible = true;
+                    }
+
+                    ChamandoMensagemContaAtrasada();
+                }
+            }
+            catch (Exception x)
+            {
+                LogErros.EscreverArquivoDeLog($"{DateTime.Now} - Erro ao Buscar Contas Atrasadas - Tela Principal - Buscar Contas Atradas | {x.Message} | {x.StackTrace}");
+
+                MensagemErros.ErroAoBuscarContasAtrasadas(x);
+            }
+        }
+
+        private void frmTelaPrincipal_Shown(object sender, EventArgs e)
+        {
+            VerificarAcessoAlertaEstoqueBaixo();
+
+            VerificarAcessoContasAtrasadas();
+        }
+
+        private void ChamandoMensagemAlertaEstoqueBaixo()
+        {
+            MensagemAlerta msg = new MensagemAlerta("Atenção! \nExistencia de Estoque Baixo", Resources.new_product_20px);
+            alertEstoqueBaixo.Show(this, msg.titulo, msg.texto, string.Empty, msg.image, msg);
+        }
+
+        private void ChamandoMensagemContaAtrasada()
+        {
+            MensagemAlerta msg = new MensagemAlerta("Atenção! \nExistencia Conta Atrasada", Resources.reserve_20px);
+            alertContaAtrasada.Show(this, msg.titulo, msg.texto, string.Empty, msg.image, msg);
+        }
+
+        private void btnDespesaAtrasada_Click(object sender, EventArgs e)
+        {
+            ReloadDataDespesaAtrasada();
+
+            ContasAtrasadas();
+        }
+
+        private void ReloadDataDespesaAtrasada()
+        {
+            using (var handle = SplashScreenManager.ShowOverlayForm(this))
+            {
+                frmFinanceiro frmFinanceiro = new frmFinanceiro(this);
+                frmFinanceiro.ShowDialog();
+            }
+        }
+
+        private void alertEstoqueBaixo_AlertClick(object sender, DevExpress.XtraBars.Alerter.AlertClickEventArgs e)
+        {
+            frmConsultarEstoque frmConsultarEstoque = new frmConsultarEstoque(this);
+            frmConsultarEstoque.ShowDialog();
+        }
+
+        private void alertContaAtrasada_AlertClick(object sender, DevExpress.XtraBars.Alerter.AlertClickEventArgs e)
+        {
+            frmFinanceiro frmFinanceiro = new frmFinanceiro(this);
+            frmFinanceiro.ShowDialog();
+        }
+
+        private void alertEstoqueBaixo_BeforeFormShow(object sender, DevExpress.XtraBars.Alerter.AlertFormEventArgs e)
+        {
+            e.AlertForm.OpacityLevel = 1;
+        }
+
+        private void alertContaAtrasada_BeforeFormShow(object sender, DevExpress.XtraBars.Alerter.AlertFormEventArgs e)
+        {
+            e.AlertForm.OpacityLevel = 1;
+        }
+
+        private void btnEstoque_Click(object sender, EventArgs e)
+        {
+            ReloadDataEstoqueBaixo();
+
+            ProdutosComEstoqueBaixo();
+        }
+
+        private void ReloadDataEstoqueBaixo()
+        {
+            using (var handle = SplashScreenManager.ShowOverlayForm(this))
+            {
+                frmConsultarEstoque frmConsultarEstoque = new frmConsultarEstoque(this);
+                frmConsultarEstoque.ShowDialog();
+            }
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            VerificarAcessoAlertaEstoqueBaixo();
+
+            VerificarAcessoContasAtrasadas();
+        }
+
+        private void RepeticaoDespesaContas()
+        {
+        }
+
+        private void teste()
+        {
+            //foreach (tb_despesa item1 in listaDespesa)
+            //{
+            foreach (tb_repeticao_despesa item in listaRepeticaoDespesa)
+            {
+                int diasPeriodicidade = ConverterPeriodicidadeParaDias(item.rp_periodicidade);
+
+                for (int i = 0; i <= diasPeriodicidade; i++)
+                {
+                    SetandoRepeticaoDespesa(diasPeriodicidade, item.id_repeticao_despesas);
+                }
+            }
+            //}
+        }
+
+        private void SetandoRepeticaoDespesa(int _diasPeriodicidade, int _id)
+        {
+            try
+            {
+                using (SistemaDeGerenciamento2_0Context db = new SistemaDeGerenciamento2_0Context())
+                {
+                    foreach (tb_despesa item in listaDespesa)
+                    {
+                        if (_id == item.fk_repeticao_despesa)
+                        {
+                            DateTime data = item.dp_data;
+                            string observacao = item.dp_observacao;
+                            decimal subValorTotal = item.dp_sub_valor_total;
+                            decimal? desconto = item.dp_desconto;
+                            decimal? juros = item.dp_juros;
+                            decimal? multa = item.dp_multa;
+                            decimal? valorLancamento = item.dp_valor_lancamento;
+                            DateTime? pagamento = item.dp_pagamento_em;
+                            DateTime vencimento = item.dp_vencimento;
+                            vencimento = vencimento.AddDays(_diasPeriodicidade);
+                            int? parcelas = item.dp_parcelas;
+                            byte[] imagem = item.dp_imagem;
+                            bool? repeticao = item.dp_repeticao;
+                            int fkRegistro = item.fk_registro;
+                            int? fkRepeticao = item.fk_repeticao_despesa;
+
+                            var despesa = new tb_despesa()
+                            {
+                                dp_data = data,
+                                dp_observacao = observacao,
+                                dp_sub_valor_total = subValorTotal,
+                                dp_desconto = desconto,
+                                dp_juros = juros,
+                                dp_multa = multa,
+                                dp_valor_lancamento = valorLancamento,
+                                dp_pagamento_em = pagamento,
+                                dp_vencimento = vencimento,
+                                dp_parcelas = parcelas,
+                                dp_imagem = imagem,
+                                dp_repeticao = repeticao,
+                                fk_registro = fkRegistro,
+                                fk_repeticao_despesa = fkRepeticao,
+                            };
+
+                            //MessageBox.Show($"{data}-{observacao}-{subValorTotal}-{desconto}-{juros}");
+
+                            break;
+
+                            //db.tb_despesa.Add(despesa);
+
+                            //db.SaveChanges();
+                        }
+                    }
+                }
+            }
+            catch (Exception x)
+            {
+                MessageBox.Show(x.ToString());
+            }
+        }
+
+        private int ConverterPeriodicidadeParaDias(string _periodicidade)
+        {
+            switch (_periodicidade)
+            {
+                case "Diário":
+
+                    return 1;
+
+                case "Semanal":
+
+                    return 7;
+
+                case "Mensal":
+
+                    return 30;
+
+                case "Anual":
+
+                    return 365;
+            }
+
+            return 0;
+        }
+
+        private void BuscarDespesaContas()
+        {
+            try
+            {
+                using (SistemaDeGerenciamento2_0Context db = new SistemaDeGerenciamento2_0Context())
+                {
+                    var teste = db.tb_repeticao_despesa.Join(db.tb_despesa, repeticao => repeticao.id_repeticao_despesas,
+                        despesa => despesa.fk_repeticao_despesa, (repeticao, despesa) => new
+                        {
+                            Repeticao = repeticao,
+                            Despesa = despesa,
+                        }).Where(x => x.Despesa.fk_repeticao_despesa != null && x.Despesa.dp_repeticao != false).ToList();
+
+                    foreach (var item in teste)
+                    {
+                        DateTime data = item.Despesa.dp_data;
+                        string observacao = item.Despesa.dp_observacao;
+                        decimal subValorTotal = item.Despesa.dp_sub_valor_total;
+                        decimal? desconto = item.Despesa.dp_desconto;
+                        decimal? juros = item.Despesa.dp_juros;
+                        decimal? multa = item.Despesa.dp_multa;
+                        decimal? valorLancamento = item.Despesa.dp_valor_lancamento;
+                        DateTime? pagamento = item.Despesa.dp_pagamento_em;
+                        DateTime vencimento = item.Despesa.dp_vencimento;
+                        int? parcelas = item.Despesa.dp_parcelas;
+                        byte[] imagem = item.Despesa.dp_imagem;
+                        bool? repeticao = item.Despesa.dp_repeticao;
+                        int fkRegistro = item.Despesa.fk_registro;
+                        int? fkRepeticao = item.Despesa.fk_repeticao_despesa;
+
+                        listaDespesa.Add(new tb_despesa
+                        {
+                            dp_data = data,
+                            dp_observacao = observacao,
+                            dp_sub_valor_total = subValorTotal,
+                            dp_desconto = desconto,
+                            dp_juros = juros,
+                            dp_multa = multa,
+                            dp_valor_lancamento = valorLancamento,
+                            dp_pagamento_em = pagamento,
+                            dp_vencimento = vencimento,
+                            dp_parcelas = parcelas,
+                            dp_imagem = imagem,
+                            dp_repeticao = repeticao,
+                            fk_registro = fkRegistro,
+                            fk_repeticao_despesa = fkRepeticao,
+                        });
+
+                        int idRepeticao = item.Repeticao.id_repeticao_despesas;
+                        string periodicidade = item.Repeticao.rp_periodicidade;
+
+                        listaRepeticaoDespesa.Add(new tb_repeticao_despesa
+                        {
+                            id_repeticao_despesas = idRepeticao,
+                            rp_periodicidade = periodicidade
+                        });
+                    }
+                }
+            }
+            catch (Exception x)
+            {
+                MessageBox.Show(x.ToString());
+            }
         }
     }
 }

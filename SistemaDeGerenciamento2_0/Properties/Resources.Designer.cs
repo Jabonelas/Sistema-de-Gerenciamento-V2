@@ -133,6 +133,16 @@ namespace SistemaDeGerenciamento2_0.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap box_important_20px {
+            get {
+                object obj = ResourceManager.GetObject("box_important_20px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap cadastro_15 {
             get {
                 object obj = ResourceManager.GetObject("cadastro_15", resourceCulture);
@@ -863,6 +873,16 @@ namespace SistemaDeGerenciamento2_0.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap new_product_20px {
+            get {
+                object obj = ResourceManager.GetObject("new_product_20px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap olho_20 {
             get {
                 object obj = ResourceManager.GetObject("olho_20", resourceCulture);
@@ -1076,6 +1096,16 @@ namespace SistemaDeGerenciamento2_0.Properties {
         internal static System.Drawing.Bitmap reserve_15px {
             get {
                 object obj = ResourceManager.GetObject("reserve_15px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap reserve_20px {
+            get {
+                object obj = ResourceManager.GetObject("reserve_20px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -53,6 +53,30 @@ namespace SistemaDeGerenciamento2_0.Class
             }
         }
 
+        public void VerificarAcessoContasAtrasada(string _Cadastro, frmTelaPrincipal _frmTelaPrincipal)
+        {
+            bool IsUsuarioPossuiAcesso = false;
+
+            listaPermissoesUsuario.ForEach(x => IsUsuarioPossuiAcesso = x.pm_alerta_contas_atrasadas);
+
+            if (IsUsuarioPossuiAcesso == true && _Cadastro == "Contas Atrasadas")
+            {
+                frmTelaPrincipal.ContasAtrasadas();
+            }
+        }
+
+        public void VerificarAcessoEstoqueBaixo(string _Cadastro, frmTelaPrincipal _frmTelaPrincipal)
+        {
+            bool IsUsuarioPossuiAcesso = false;
+
+            listaPermissoesUsuario.ForEach(x => IsUsuarioPossuiAcesso = x.pm_alerta_estoque_baixo);
+
+            if (IsUsuarioPossuiAcesso == true && _Cadastro == "Estoque Baixo")
+            {
+                frmTelaPrincipal.ProdutosComEstoqueBaixo();
+            }
+        }
+
         public void VerificarAcessoVisaoGeral(string _Cadastro, frmTelaPrincipal _frmTelaPrincipal)
         {
             bool IsUsuarioPossuiAcesso = false;

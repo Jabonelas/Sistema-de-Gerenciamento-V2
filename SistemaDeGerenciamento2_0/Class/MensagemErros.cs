@@ -152,6 +152,20 @@ namespace SistemaDeGerenciamento2_0.Class
 
         #region Buscar
 
+        #region Tela Principal
+
+        public static void ErroAoBuscarProdutosComEstoqueBaixo(Exception _e)
+        {
+            MessageBox.Show($"(BUS-TP01) Erro ao Buscar Produtos Com Estoque Baixo \n\nErro: {_e}", "Erro Buscar Produto Estoque Baixo!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        public static void ErroAoBuscarContasAtrasadas(Exception _e)
+        {
+            MessageBox.Show($"(BUS-TP02) Erro ao Buscar Contas Atrasadas \n\nErro: {_e}", "Erro Buscar Produto Estoque Baixo!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        #endregion Tela Principal
+
         #region Grupo
 
         public static void ErroAoBuscarGrupo(Exception _e)
@@ -515,6 +529,11 @@ namespace SistemaDeGerenciamento2_0.Class
         public static void ErroAoAtualizarDadosFinanceiros(Exception _e)
         {
             MessageBox.Show($"(ATU-FI01) Erro ao Atualizar Dados Financeiros \n\nErro: {_e}", "Erro Atualizar Dados Financieros!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        public static void ErroAoAtualizarParaApagarDespesaContas(Exception _e)
+        {
+            MessageBox.Show($"(ATU-FI02) Erro ao Atualizar para apagar Despesas/Contas \n\nErro: {_e}", "Erro Atualizar Despesa/Contas!", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
         #endregion Financeiro

@@ -31,11 +31,12 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmConsultarEstoque));
             DevExpress.DataAccess.Sql.CustomSqlQuery customSqlQuery1 = new DevExpress.DataAccess.Sql.CustomSqlQuery();
+            DevExpress.DataAccess.Sql.CustomSqlQuery customSqlQuery2 = new DevExpress.DataAccess.Sql.CustomSqlQuery();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.btnFechar = new DevExpress.XtraEditors.SimpleButton();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
-            this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
+            this.sqlDataSource2 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colpd_nome = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colpd_codigo = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -49,6 +50,7 @@
             this.colpd_estoque_minimo = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colep_data_entrada = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colnfe_quantidade = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             this.btnSair = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
@@ -94,7 +96,7 @@
             // gridControl1
             // 
             this.gridControl1.DataMember = "Query";
-            this.gridControl1.DataSource = this.sqlDataSource1;
+            this.gridControl1.DataSource = this.sqlDataSource2;
             this.gridControl1.Location = new System.Drawing.Point(23, 76);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
@@ -104,15 +106,15 @@
             this.gridView1});
             this.gridControl1.DoubleClick += new System.EventHandler(this.gridControl1_DoubleClick);
             // 
-            // sqlDataSource1
+            // sqlDataSource2
             // 
-            this.sqlDataSource1.ConnectionName = "update";
-            this.sqlDataSource1.Name = "sqlDataSource1";
+            this.sqlDataSource2.ConnectionName = "update";
+            this.sqlDataSource2.Name = "sqlDataSource2";
             customSqlQuery1.Name = "Query";
             customSqlQuery1.Sql = resources.GetString("customSqlQuery1.Sql");
-            this.sqlDataSource1.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
+            this.sqlDataSource2.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
             customSqlQuery1});
-            this.sqlDataSource1.ResultSchemaSerializable = resources.GetString("sqlDataSource1.ResultSchemaSerializable");
+            this.sqlDataSource2.ResultSchemaSerializable = resources.GetString("sqlDataSource2.ResultSchemaSerializable");
             // 
             // gridView1
             // 
@@ -131,6 +133,7 @@
             this.colnfe_quantidade});
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
+            this.gridView1.OptionsView.ShowIndicator = false;
             // 
             // colpd_nome
             // 
@@ -296,6 +299,16 @@
             this.colnfe_quantidade.Visible = true;
             this.colnfe_quantidade.VisibleIndex = 11;
             // 
+            // sqlDataSource1
+            // 
+            this.sqlDataSource1.ConnectionName = "update";
+            this.sqlDataSource1.Name = "sqlDataSource1";
+            customSqlQuery2.Name = "Query";
+            customSqlQuery2.Sql = resources.GetString("customSqlQuery2.Sql");
+            this.sqlDataSource1.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
+            customSqlQuery2});
+            this.sqlDataSource1.ResultSchemaSerializable = resources.GetString("sqlDataSource1.ResultSchemaSerializable");
+            // 
             // btnSair
             // 
             this.btnSair.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -360,5 +373,6 @@
         private DevExpress.XtraGrid.Columns.GridColumn colep_data_entrada;
         private DevExpress.XtraGrid.Columns.GridColumn colnfe_quantidade;
         private DevExpress.XtraEditors.SimpleButton btnSair;
+        private DevExpress.DataAccess.Sql.SqlDataSource sqlDataSource2;
     }
 }
