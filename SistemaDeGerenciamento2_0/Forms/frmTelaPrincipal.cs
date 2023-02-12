@@ -46,7 +46,7 @@ namespace SistemaDeGerenciamento2_0
 
             BuscarDespesaContas();
 
-            teste();
+            RepeticaoDeContasFixas();
         }
 
         private void VerificarAcessoAlertaEstoqueBaixo()
@@ -378,7 +378,10 @@ namespace SistemaDeGerenciamento2_0
                         badge1.Visible = true;
                     }
 
-                    ChamandoMensagemAlertaEstoqueBaixo();
+                    if (cont != 0)
+                    {
+                        ChamandoMensagemAlertaEstoqueBaixo();
+                    }
                 }
             }
             catch (Exception x)
@@ -407,7 +410,10 @@ namespace SistemaDeGerenciamento2_0
                         badge2.Visible = true;
                     }
 
-                    ChamandoMensagemContaAtrasada();
+                    if (cont != 0)
+                    {
+                        ChamandoMensagemContaAtrasada();
+                    }
                 }
             }
             catch (Exception x)
@@ -439,9 +445,9 @@ namespace SistemaDeGerenciamento2_0
 
         private void btnDespesaAtrasada_Click(object sender, EventArgs e)
         {
-            ReloadDataDespesaAtrasada();
-
             ContasAtrasadas();
+
+            ReloadDataDespesaAtrasada();
         }
 
         private void ReloadDataDespesaAtrasada()
@@ -477,9 +483,9 @@ namespace SistemaDeGerenciamento2_0
 
         private void btnEstoque_Click(object sender, EventArgs e)
         {
-            ReloadDataEstoqueBaixo();
-
             ProdutosComEstoqueBaixo();
+
+            ReloadDataEstoqueBaixo();
         }
 
         private void ReloadDataEstoqueBaixo()
@@ -502,23 +508,20 @@ namespace SistemaDeGerenciamento2_0
         {
         }
 
-        private void teste()
+        private void RepeticaoDeContasFixas()
         {
-            //foreach (tb_despesa item1 in listaDespesa)
-            //{
             foreach (tb_repeticao_despesa item in listaRepeticaoDespesa)
             {
                 int diasPeriodicidade = ConverterPeriodicidadeParaDias(item.rp_periodicidade);
 
-                for (int i = 0; i <= diasPeriodicidade; i++)
-                {
-                    SetandoRepeticaoDespesa(diasPeriodicidade, item.id_repeticao_despesas);
-                }
+                //for (int i = 0; i <= diasPeriodicidade; i++)
+                //{
+                InserindoDespesaContaFixas(diasPeriodicidade, item.id_repeticao_despesas);
+                //}
             }
-            //}
         }
 
-        private void SetandoRepeticaoDespesa(int _diasPeriodicidade, int _id)
+        private void InserindoDespesaContaFixas(int _diasPeriodicidade, int _id)
         {
             try
             {
@@ -528,6 +531,11 @@ namespace SistemaDeGerenciamento2_0
                     {
                         if (_id == item.fk_repeticao_despesa)
                         {
+                            byte[] imagem;
+                            ImageConverter converter = new ImageConverter();
+                            imagem = (byte[])converter.ConvertTo(Resources.delete_20px, typeof(byte[]));
+
+                            int idDespesa = item.id_despesa;
                             DateTime data = item.dp_data;
                             string observacao = item.dp_observacao;
                             decimal subValorTotal = item.dp_sub_valor_total;
@@ -539,7 +547,7 @@ namespace SistemaDeGerenciamento2_0
                             DateTime vencimento = item.dp_vencimento;
                             vencimento = vencimento.AddDays(_diasPeriodicidade);
                             int? parcelas = item.dp_parcelas;
-                            byte[] imagem = item.dp_imagem;
+
                             bool? repeticao = item.dp_repeticao;
                             int fkRegistro = item.fk_registro;
                             int? fkRepeticao = item.fk_repeticao_despesa;
@@ -549,33 +557,59 @@ namespace SistemaDeGerenciamento2_0
                                 dp_data = data,
                                 dp_observacao = observacao,
                                 dp_sub_valor_total = subValorTotal,
-                                dp_desconto = desconto,
-                                dp_juros = juros,
-                                dp_multa = multa,
-                                dp_valor_lancamento = valorLancamento,
-                                dp_pagamento_em = pagamento,
+                                //dp_desconto = desconto,
+                                //dp_juros = juros,
+                                //dp_multa = multa,
+                                //dp_valor_lancamento = valorLancamento,
+                                //dp_pagamento_em = pagamento,
                                 dp_vencimento = vencimento,
                                 dp_parcelas = parcelas,
                                 dp_imagem = imagem,
-                                dp_repeticao = repeticao,
+                                dp_repeticao = false,
                                 fk_registro = fkRegistro,
                                 fk_repeticao_despesa = fkRepeticao,
                             };
 
-                            //MessageBox.Show($"{data}-{observacao}-{subValorTotal}-{desconto}-{juros}");
+                            db.tb_despesa.Add(despesa);
+
+                            db.SaveChanges();
+
+                            AtualizandoDespesasContasFixas(idDespesa);
 
                             break;
-
-                            //db.tb_despesa.Add(despesa);
-
-                            //db.SaveChanges();
                         }
                     }
                 }
             }
             catch (Exception x)
             {
-                MessageBox.Show(x.ToString());
+                LogErros.EscreverArquivoDeLog($"{DateTime.Now} - Erro ao Cadastrar Despesa/Contas que Possuem Tipo de Custo Fixo (Repetição) - Tela Principal - Despesas/Contas Com Repetição | {x.Message} | {x.StackTrace}");
+
+                MensagemErros.ErroAoCadastroDespesaContasFixas(x);
+            }
+        }
+
+        private void AtualizandoDespesasContasFixas(int _idDespesa)
+        {
+            try
+            {
+                using (SistemaDeGerenciamento2_0Context db = new SistemaDeGerenciamento2_0Context())
+                {
+                    var atualizandoDespesa = db.tb_despesa.Where(x => x.id_despesa == _idDespesa);
+
+                    foreach (var item in atualizandoDespesa)
+                    {
+                        item.dp_repeticao = true;
+                    }
+
+                    db.SaveChanges();
+                }
+            }
+            catch (Exception x)
+            {
+                LogErros.EscreverArquivoDeLog($"{DateTime.Now} - Erro ao Atualizar Despesa/Contas que Possuem Tipo de Custo Fixo (Repetição) - Tela Principal - Despesas/Contas Com Repetição | {x.Message} | {x.StackTrace}");
+
+                MensagemErros.ErroAoAtualizarDespesaContasFixas(x);
             }
         }
 
@@ -609,15 +643,23 @@ namespace SistemaDeGerenciamento2_0
             {
                 using (SistemaDeGerenciamento2_0Context db = new SistemaDeGerenciamento2_0Context())
                 {
-                    var teste = db.tb_repeticao_despesa.Join(db.tb_despesa, repeticao => repeticao.id_repeticao_despesas,
-                        despesa => despesa.fk_repeticao_despesa, (repeticao, despesa) => new
-                        {
-                            Repeticao = repeticao,
-                            Despesa = despesa,
-                        }).Where(x => x.Despesa.fk_repeticao_despesa != null && x.Despesa.dp_repeticao != false).ToList();
+                    var dadosDeletarCadastro = (from despesa in db.tb_despesa
+                                                join repeticao in db.tb_repeticao_despesa
+                                                on despesa.fk_repeticao_despesa equals repeticao.id_repeticao_despesas
+                                                join cadastro in db.tb_cadastro_despesa
+                                                on repeticao.fk_cadastro_despesa equals cadastro.id_categoria_despesa
+                                                where despesa.dp_repeticao == false && cadastro.cd_tipo_custo == "Fixo"
+                                                && despesa.dp_vencimento <= DateTime.Today
+                                                select new
+                                                {
+                                                    Despesa = despesa,
+                                                    Repeticao = repeticao,
+                                                    Cadastro = cadastro
+                                                }).ToList();
 
-                    foreach (var item in teste)
+                    foreach (var item in dadosDeletarCadastro)
                     {
+                        int idDespesa = item.Despesa.id_despesa;
                         DateTime data = item.Despesa.dp_data;
                         string observacao = item.Despesa.dp_observacao;
                         decimal subValorTotal = item.Despesa.dp_sub_valor_total;
@@ -635,6 +677,7 @@ namespace SistemaDeGerenciamento2_0
 
                         listaDespesa.Add(new tb_despesa
                         {
+                            id_despesa = idDespesa,
                             dp_data = data,
                             dp_observacao = observacao,
                             dp_sub_valor_total = subValorTotal,
@@ -664,7 +707,9 @@ namespace SistemaDeGerenciamento2_0
             }
             catch (Exception x)
             {
-                MessageBox.Show(x.ToString());
+                LogErros.EscreverArquivoDeLog($"{DateTime.Now} - Erro ao Buscar Despesas/Contas Com Repetição - Tela Principal - Despesas/Contas Com Repetição | {x.Message} | {x.StackTrace}");
+
+                MensagemErros.ErroAoBuscarDespesaContasComRepeticaoAtrasadas(x);
             }
         }
     }

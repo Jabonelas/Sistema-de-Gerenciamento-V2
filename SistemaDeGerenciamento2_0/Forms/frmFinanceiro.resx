@@ -143,7 +143,7 @@
        "tb_cadastro_despesa"
        on ("tb_cadastro_despesa"."id_categoria_despesa" = "tb_repeticao_despesa"."fk_cadastro_despesa"))
 --where "tb_despesa"."dp_pagamento_em" is null
-WHERE MONTH(dp_data) = MONTH(GETDATE()) or "tb_despesa"."dp_vencimento" &lt;= GETDATE() and  
+WHERE MONTH(dp_data) = MONTH(GETDATE()) and "tb_despesa"."dp_vencimento" &lt;= GETDATE() and  
 "tb_despesa"."dp_pagamento_em" is null
 
 --or "tb_despesa"."dp_pagamento_em" is null</value>

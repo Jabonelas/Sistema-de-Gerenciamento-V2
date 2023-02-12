@@ -19,7 +19,6 @@ namespace SistemaDeGerenciamento2_0.Models
         public DateTime rp_data_inicial { get; set; }
         [Column(TypeName = "date")]
         public DateTime rp_data_final { get; set; }
-        [Required]
         [StringLength(255)]
         public string rp_periodicidade { get; set; }
         [Required]

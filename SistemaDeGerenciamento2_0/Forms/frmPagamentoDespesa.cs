@@ -80,7 +80,7 @@ namespace SistemaDeGerenciamento2_0.Forms
             }
             else if (e.KeyCode == Keys.F10)
             {
-                RealizarPagamento();
+                MensagemAtencao.MensagemConfirmar(this);
             }
         }
 
@@ -122,10 +122,10 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private void btnRealizarPagamento_Click(object sender, EventArgs e)
         {
-            RealizarPagamento();
+            MensagemAtencao.MensagemConfirmar(this);
         }
 
-        private void RealizarPagamento()
+        public void RealizarPagamento()
         {
             try
             {

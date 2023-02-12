@@ -64,13 +64,13 @@
             this.btnFechar = new DevExpress.XtraEditors.SimpleButton();
             this.popupMenu1 = new DevExpress.XtraBars.PopupMenu(this.components);
             this.btnRealizarPagamento = new DevExpress.XtraBars.BarButtonItem();
+            this.btnRemoverDespesaConta = new DevExpress.XtraBars.BarButtonItem();
             this.barManager1 = new DevExpress.XtraBars.BarManager(this.components);
             this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
             this.btnDeletar = new DevExpress.XtraBars.BarButtonItem();
-            this.btnRemoverDespesaConta = new DevExpress.XtraBars.BarButtonItem();
             this.AlertaSalvar = new DevExpress.XtraBars.Alerter.AlertControl(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
@@ -165,6 +165,7 @@
             this.id_despesa.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.id_despesa.Caption = "ID";
             this.id_despesa.FieldName = "id_despesa";
+            this.id_despesa.MinWidth = 15;
             this.id_despesa.Name = "id_despesa";
             this.id_despesa.Visible = true;
             this.id_despesa.VisibleIndex = 0;
@@ -464,6 +465,13 @@
             this.btnRealizarPagamento.Name = "btnRealizarPagamento";
             this.btnRealizarPagamento.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnAlterar_ItemClick);
             // 
+            // btnRemoverDespesaConta
+            // 
+            this.btnRemoverDespesaConta.Caption = "Remover Despesa/Conta";
+            this.btnRemoverDespesaConta.Id = 2;
+            this.btnRemoverDespesaConta.Name = "btnRemoverDespesaConta";
+            this.btnRemoverDespesaConta.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnRemoverDespesaConta_ItemClick);
+            // 
             // barManager1
             // 
             this.barManager1.DockControls.Add(this.barDockControlTop);
@@ -514,13 +522,6 @@
             this.btnDeletar.Caption = "Deletar";
             this.btnDeletar.Id = 1;
             this.btnDeletar.Name = "btnDeletar";
-            // 
-            // btnRemoverDespesaConta
-            // 
-            this.btnRemoverDespesaConta.Caption = "Remover Despesa/Conta";
-            this.btnRemoverDespesaConta.Id = 2;
-            this.btnRemoverDespesaConta.Name = "btnRemoverDespesaConta";
-            this.btnRemoverDespesaConta.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnRemoverDespesaConta_ItemClick);
             // 
             // AlertaSalvar
             // 

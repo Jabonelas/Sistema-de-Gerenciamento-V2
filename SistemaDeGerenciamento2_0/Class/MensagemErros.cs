@@ -7,6 +7,15 @@ namespace SistemaDeGerenciamento2_0.Class
     {
         #region Cadastrar
 
+        #region Tela Principal
+
+        public static void ErroAoCadastroDespesaContasFixas(Exception _e)
+        {
+            MessageBox.Show($"(CAD-TP01) Erro ao Cadastrar Despesa/Contas Fixas \n\nErro: {_e}", "Erro Cadastro Despesa/Conta!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        #endregion Tela Principal
+
         #region Produto
 
         public static void ErroAoCadastroProduto(Exception _e)
@@ -162,6 +171,11 @@ namespace SistemaDeGerenciamento2_0.Class
         public static void ErroAoBuscarContasAtrasadas(Exception _e)
         {
             MessageBox.Show($"(BUS-TP02) Erro ao Buscar Contas Atrasadas \n\nErro: {_e}", "Erro Buscar Produto Estoque Baixo!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        public static void ErroAoBuscarDespesaContasComRepeticaoAtrasadas(Exception _e)
+        {
+            MessageBox.Show($"(BUS-TP03) Erro ao Buscar Despesa/Contas Com Repetição \n\nErro: {_e}", "Erro Buscar Despesa/Conta Com Repetição!", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
         #endregion Tela Principal
@@ -327,6 +341,11 @@ namespace SistemaDeGerenciamento2_0.Class
             MessageBox.Show($"(BUS-DE01) Erro ao Bucar Dados Despesa \n\nErro: {_e}", "Erro Buscar Dados Despesa!", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
+        public static void ErroAoBuscarTipoCustoDespesa(Exception _e)
+        {
+            MessageBox.Show($"(BUS-DE02) Erro ao Bucar Tipo de Custo de Despesa \n\nErro: {_e}", "Erro Buscar Tipo Custo Despesa!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
         #endregion Despesa
 
         #region Configuracoes
@@ -485,6 +504,15 @@ namespace SistemaDeGerenciamento2_0.Class
         #endregion Buscar
 
         #region Atualizar
+
+        #region Tela Principal
+
+        public static void ErroAoAtualizarDespesaContasFixas(Exception _e)
+        {
+            MessageBox.Show($"(ATU-TP01) Erro ao Atualizar Despesa/Conta Fixas \n\nErro: {_e}", "Erro Atualizar Despesa/Conta Fixas!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        #endregion Tela Principal
 
         #region Produto
 

@@ -1,4 +1,4 @@
-10/02/2023 20:31:41 - Erro ao Cadastrar Despesas - Despesa - Contas Com Repetição | An error occurred while updating the entries. See the inner exception for details. |    em Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+11/02/2023 20:05:41 - Erro ao Cadastrar Despesas Repetição - Despesa - Contas Com Repetição | An error occurred while updating the entries. See the inner exception for details. |    em Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
    em Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
    em Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
    em Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
@@ -7,4 +7,4 @@
    em Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
    em Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
    em Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
-   em SistemaDeGerenciamento2_0.Forms.frmContasComRepeticao.SalvarDespesa() na C:\Users\israe\source\repos\SistemaDeGerenciamento2_0\SistemaDeGerenciamento2_0\Forms\frmContasComRepeticao.cs:linha 249
+   em SistemaDeGerenciamento2_0.Forms.frmContasComRepeticao.SalvarDespesaComRepeticao() na C:\Users\israe\source\repos\SistemaDeGerenciamento2_0\SistemaDeGerenciamento2_0\Forms\frmContasComRepeticao.cs:linha 278

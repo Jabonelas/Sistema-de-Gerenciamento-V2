@@ -1,4 +1,5 @@
-﻿using System.Windows.Forms;
+﻿using SistemaDeGerenciamento2_0.Forms;
+using System.Windows.Forms;
 
 namespace SistemaDeGerenciamento2_0
 {
@@ -87,6 +88,26 @@ namespace SistemaDeGerenciamento2_0
         public static void MensagemDataFinalMaiorQueDataInicial()
         {
             MessageBox.Show("Atenção, Data Final informada maior que a data incial!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        }
+
+        public static void MensagemExcluir(frmFinanceiro frmFinanceiro)
+        {
+            DialogResult OpcaoDoUsuario = new DialogResult();
+            OpcaoDoUsuario = MessageBox.Show("Realmente Deseja Excluir?", "Atenção!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (OpcaoDoUsuario == DialogResult.Yes)
+            {
+                frmFinanceiro.RemoverDespesaConta();
+            }
+        }
+
+        public static void MensagemConfirmar(frmPagamentoDespesa frmPagamentoDespesa)
+        {
+            DialogResult OpcaoDoUsuario = new DialogResult();
+            OpcaoDoUsuario = MessageBox.Show("Realmente Deseja Realizar o Pagamento?", "Atenção!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (OpcaoDoUsuario == DialogResult.Yes)
+            {
+                frmPagamentoDespesa.RealizarPagamento();
+            }
         }
     }
 }

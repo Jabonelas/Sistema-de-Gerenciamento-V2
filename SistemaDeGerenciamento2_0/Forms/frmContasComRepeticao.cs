@@ -24,6 +24,8 @@ namespace SistemaDeGerenciamento2_0.Forms
         private int? FK_Repeticao = null;
         private int quantidadeParcelas = 1;
 
+        private string tipoCusto = string.Empty;
+
         public frmContasComRepeticao()
         {
             InitializeComponent();
@@ -152,20 +154,16 @@ namespace SistemaDeGerenciamento2_0.Forms
                 if (txtDataLancamento.Text != string.Empty && txtDataVencimento.Text != string.Empty && txtValor.Text != string.Empty
                     && cmbFornecedor.Text != string.Empty && cmbCategoria.Text != string.Empty)
                 {
-                    if (chkRepetirDespesa.Checked == true)
-                    {
-                        SalvarDespesaComRepeticao();
+                    SalvarDespesaComRepeticao();
 
+                    if (cmbPrazo.Text != string.Empty)
+                    {
                         quantidadeParcelas = Convert.ToInt32(cmbPrazo.Text.Replace("x", string.Empty));
                     }
 
                     SalvarDespesa();
 
                     LimpandoCampos();
-
-                    btnSalvar.Enabled = false;
-
-                    btnCancelar.Enabled = false;
 
                     AlertaConfirmacao.ChamandoAlertaSucessoNoCantoInferiorDireito(AlertaSalvar, this);
                 }
@@ -237,6 +235,7 @@ namespace SistemaDeGerenciamento2_0.Forms
                             dp_vencimento = dataVencimento,
                             dp_parcelas = cont,
                             dp_imagem = imagem,
+                            dp_repeticao = false,
                             fk_registro = Convert.ToInt32(cmbFornecedor.Properties.GetKeyValueByDisplayValue(cmbFornecedor.Text)),
                             fk_repeticao_despesa = FK_Repeticao
                         };
@@ -246,8 +245,6 @@ namespace SistemaDeGerenciamento2_0.Forms
                         db.tb_despesa.Add(despesa);
                         db.SaveChanges();
                     }
-
-                    AlertaConfirmacao.ChamandoAlertaSucessoNoCantoInferiorDireito(AlertaSalvar, this);
                 }
             }
             catch (Exception x)
@@ -285,6 +282,71 @@ namespace SistemaDeGerenciamento2_0.Forms
 
                 MensagemErros.ErroAoCadastroDespesasRepeticao(x);
             }
+        }
+
+        private void BuscarTipoCusto()
+        {
+            try
+            {
+                using (SistemaDeGerenciamento2_0Context db = new SistemaDeGerenciamento2_0Context())
+                {
+                    int idTipoCusto = Convert.ToInt32(cmbCategoria.Properties.GetKeyValueByDisplayValue(cmbCategoria.Text));
+
+                    var despesaCadastrada = db.tb_cadastro_despesa.Where(x => x.id_categoria_despesa.Equals(idTipoCusto)).First();
+
+                    if (despesaCadastrada.cd_tipo_custo == "Fixo")
+                    {
+                        tipoCusto = "Fixo";
+                        chkRepetirDespesa.Checked = true;
+                        cmbPrazo.ReadOnly = true;
+                        cmbPrazo.Text = "1x";
+                    }
+                    else
+                    {
+                        tipoCusto = "Variavel";
+                        chkRepetirDespesa.Checked = false;
+                        cmbPrazo.ReadOnly = false;
+                        cmbPrazo.Text = "";
+                    }
+                }
+            }
+            catch (Exception x)
+            {
+                LogErros.EscreverArquivoDeLog($"{DateTime.Now} - Erro ao Buscar Tipo Custos de Despesa/Custo - Despesa - Contas Com Repetição | {x.Message} | {x.StackTrace}");
+
+                MensagemErros.ErroAoBuscarTipoCustoDespesa(x);
+            }
+        }
+
+        private void cmbCategoria_TextChanged(object sender, EventArgs e)
+        {
+            BuscarTipoCusto();
+        }
+
+        private void simpleButton1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                frmCupomFiscal frmCupomFiscal = new frmCupomFiscal();
+                frmCupomFiscal.CreateDocument();
+            }
+            catch (Exception x)
+            {
+                MessageBox.Show(x.ToString());
+            }
+        }
+
+        private void frmContasComRepeticao_Load(object sender, EventArgs e)
+        {
+            //try
+            //{
+            //    frmCupomFiscal frmCupomFiscal = new frmCupomFiscal();
+            //    frmCupomFiscal.CreateDocument();
+            //}
+            //catch (Exception x)
+            //{
+            //    MessageBox.Show(x.ToString());
+            //}
         }
     }
 }

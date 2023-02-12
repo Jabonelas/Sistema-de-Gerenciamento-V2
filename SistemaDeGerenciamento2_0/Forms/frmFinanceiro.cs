@@ -230,15 +230,19 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private void btnRemoverDespesaConta_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            RemoverDespesaConta();
+            MensagemAtencao.MensagemExcluir(this);
+
+            //RemoverDespesaConta();
         }
 
-        private void RemoverDespesaConta()
+        public void RemoverDespesaConta()
         {
             try
             {
                 using (SistemaDeGerenciamento2_0Context db = new SistemaDeGerenciamento2_0Context())
                 {
+                    PegandoDadosDaLinha();
+
                     var despesa = db.tb_despesa.Where(x => x.id_despesa == idDespesa);
 
                     foreach (var item in despesa)
@@ -248,6 +252,8 @@ namespace SistemaDeGerenciamento2_0.Forms
                     }
 
                     db.SaveChanges();
+
+                    sqlDataSource1.FillAsync();
 
                     AlertaConfirmacao.ChamandoAlertaSucessoNoCantoInferiorDireito(AlertaSalvar, this);
                 }
