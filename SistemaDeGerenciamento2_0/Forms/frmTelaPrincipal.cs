@@ -356,6 +356,16 @@ namespace SistemaDeGerenciamento2_0
             AcessandoTelas("Visao Geral");
         }
 
+        public void TelaVisaoGeral()
+        {
+            pnlTelaPrincipal.Controls.Clear();
+            frmVisaoGeral frmVisaoGeral = new frmVisaoGeral(this);
+            frmVisaoGeral.TopLevel = false;
+            pnlTelaPrincipal.Controls.Add(frmVisaoGeral);
+            pnlTelaPrincipal.Tag = frmVisaoGeral;
+            frmVisaoGeral.Show();
+        }
+
         public void ProdutosComEstoqueBaixo()
         {
             try
@@ -544,10 +554,9 @@ namespace SistemaDeGerenciamento2_0
                             decimal? multa = item.dp_multa;
                             decimal? valorLancamento = item.dp_valor_lancamento;
                             DateTime? pagamento = item.dp_pagamento_em;
-                            DateTime vencimento = item.dp_vencimento;
-                            vencimento = vencimento.AddDays(_diasPeriodicidade);
+                            DateTime? vencimento = item.dp_vencimento;
+                            vencimento = vencimento?.AddDays(_diasPeriodicidade);
                             int? parcelas = item.dp_parcelas;
-
                             bool? repeticao = item.dp_repeticao;
                             int fkRegistro = item.fk_registro;
                             int? fkRepeticao = item.fk_repeticao_despesa;
@@ -668,7 +677,7 @@ namespace SistemaDeGerenciamento2_0
                         decimal? multa = item.Despesa.dp_multa;
                         decimal? valorLancamento = item.Despesa.dp_valor_lancamento;
                         DateTime? pagamento = item.Despesa.dp_pagamento_em;
-                        DateTime vencimento = item.Despesa.dp_vencimento;
+                        DateTime? vencimento = item.Despesa.dp_vencimento;
                         int? parcelas = item.Despesa.dp_parcelas;
                         byte[] imagem = item.Despesa.dp_imagem;
                         bool? repeticao = item.Despesa.dp_repeticao;

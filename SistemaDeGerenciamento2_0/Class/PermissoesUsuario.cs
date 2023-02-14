@@ -85,8 +85,7 @@ namespace SistemaDeGerenciamento2_0.Class
 
             if (IsUsuarioPossuiAcesso == true && _Cadastro == "Visao Geral")
             {
-                frmVisaoGeral frmVisaoGeral = new frmVisaoGeral(frmTelaPrincipal);
-                frmVisaoGeral.ShowDialog();
+                frmTelaPrincipal.TelaVisaoGeral();
             }
             else
             {

@@ -27,7 +27,7 @@ namespace SistemaDeGerenciamento2_0.Models
         [Column(TypeName = "date")]
         public DateTime? dp_pagamento_em { get; set; }
         [Column(TypeName = "date")]
-        public DateTime dp_vencimento { get; set; }
+        public DateTime? dp_vencimento { get; set; }
         public int? dp_parcelas { get; set; }
         [Column(TypeName = "image")]
         public byte[] dp_imagem { get; set; }

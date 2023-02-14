@@ -218,8 +218,7 @@ namespace SistemaDeGerenciamento2_0.Forms
             {
                 this.Hide();
 
-                frmVisaoGeral frmVisaoGeral = new frmVisaoGeral(frmTelaPrincipal);
-                frmVisaoGeral.ShowDialog();
+                frmTelaPrincipal.TelaVisaoGeral();
 
                 this.Close();
             }

@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             DevExpress.XtraSplashScreen.SplashScreenManager splashScreenManager1 = new DevExpress.XtraSplashScreen.SplashScreenManager(this, null, true, true);
-            DevExpress.DataAccess.Sql.CustomSqlQuery customSqlQuery1 = new DevExpress.DataAccess.Sql.CustomSqlQuery();
+            DevExpress.DataAccess.Sql.CustomSqlQuery customSqlQuery8 = new DevExpress.DataAccess.Sql.CustomSqlQuery();
             this.btnFechar = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
@@ -44,11 +44,15 @@
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.btnCalendario = new DevExpress.XtraEditors.SimpleButton();
+            this.txtCalendario = new DevExpress.XtraEditors.TextEdit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbVendedor.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.queryBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtCalendario.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // splashScreenManager1
@@ -118,19 +122,19 @@
             // 
             this.sqlDataSource1.ConnectionName = "update";
             this.sqlDataSource1.Name = "sqlDataSource1";
-            customSqlQuery1.Name = "Query";
-            customSqlQuery1.Sql = "select \"tb_registro\".\"id_registro\",\r\n       \"tb_registro\".\"rg_login\"\r\n  from \"dbo" +
+            customSqlQuery8.Name = "Query";
+            customSqlQuery8.Sql = "select \"tb_registro\".\"id_registro\",\r\n       \"tb_registro\".\"rg_login\"\r\n  from \"dbo" +
     "\".\"tb_registro\" \"tb_registro\"\r\nwhere \"tb_registro\".\"rg_tipo_cadastro\" = \'Funcion" +
     "ario\'";
             this.sqlDataSource1.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
-            customSqlQuery1});
+            customSqlQuery8});
             this.sqlDataSource1.ResultSchemaSerializable = "PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxWaWV3IE5hbWU9IlF1ZXJ5Ij48RmllbGQgTmFtZ" +
     "T0iaWRfcmVnaXN0cm8iIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJyZ19sb2dpbiIgVHlwZT0iU" +
     "3RyaW5nIiAvPjwvVmlldz48L0RhdGFTZXQ+";
             // 
             // cmbVendedor
             // 
-            this.cmbVendedor.Location = new System.Drawing.Point(626, 51);
+            this.cmbVendedor.Location = new System.Drawing.Point(24, 58);
             this.cmbVendedor.Name = "cmbVendedor";
             this.cmbVendedor.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbVendedor.Properties.Appearance.Options.UseFont = true;
@@ -200,17 +204,56 @@
             // 
             this.labelControl4.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl4.Appearance.Options.UseFont = true;
-            this.labelControl4.Location = new System.Drawing.Point(626, 25);
+            this.labelControl4.Location = new System.Drawing.Point(24, 32);
             this.labelControl4.Name = "labelControl4";
             this.labelControl4.Size = new System.Drawing.Size(57, 20);
             this.labelControl4.TabIndex = 322;
             this.labelControl4.Text = "Usuário: ";
+            // 
+            // labelControl1
+            // 
+            this.labelControl1.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl1.Appearance.Options.UseFont = true;
+            this.labelControl1.Location = new System.Drawing.Point(643, 32);
+            this.labelControl1.Name = "labelControl1";
+            this.labelControl1.Size = new System.Drawing.Size(35, 20);
+            this.labelControl1.TabIndex = 329;
+            this.labelControl1.Text = "Data:";
+            // 
+            // btnCalendario
+            // 
+            this.btnCalendario.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCalendario.Appearance.Options.UseFont = true;
+            this.btnCalendario.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.calendar_plus_20px;
+            this.btnCalendario.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
+            this.btnCalendario.Location = new System.Drawing.Point(601, 58);
+            this.btnCalendario.Name = "btnCalendario";
+            this.btnCalendario.Size = new System.Drawing.Size(35, 34);
+            this.btnCalendario.TabIndex = 328;
+            this.btnCalendario.Click += new System.EventHandler(this.btnCalendario_Click);
+            // 
+            // txtCalendario
+            // 
+            this.txtCalendario.Location = new System.Drawing.Point(643, 58);
+            this.txtCalendario.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtCalendario.Name = "txtCalendario";
+            this.txtCalendario.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCalendario.Properties.Appearance.Options.UseFont = true;
+            this.txtCalendario.Properties.MaxLength = 14;
+            this.txtCalendario.Size = new System.Drawing.Size(223, 34);
+            this.txtCalendario.TabIndex = 327;
+            this.txtCalendario.Click += new System.EventHandler(this.txtCalendario_Click);
+            this.txtCalendario.Enter += new System.EventHandler(this.txtCalendario_Enter);
+            this.txtCalendario.Leave += new System.EventHandler(this.txtCalendario_Leave);
             // 
             // frmFaturamentoPorVendedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(893, 467);
+            this.Controls.Add(this.labelControl1);
+            this.Controls.Add(this.btnCalendario);
+            this.Controls.Add(this.txtCalendario);
             this.Controls.Add(this.lblValorTotal);
             this.Controls.Add(this.lblQuantidadeTotal);
             this.Controls.Add(this.labelControl5);
@@ -226,6 +269,7 @@
             this.Name = "frmFaturamentoPorVendedor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmFaturamentoPorVendedor";
+            this.Click += new System.EventHandler(this.frmFaturamentoPorVendedor_Click);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmFaturamentoPorVendedor_KeyDown);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.frmFaturamentoPorVendedor_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.frmFaturamentoPorVendedor_MouseMove);
@@ -234,6 +278,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbVendedor.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.queryBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtCalendario.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -244,7 +289,6 @@
         public DevExpress.XtraEditors.SimpleButton btnFechar;
         private DevExpress.XtraEditors.LabelControl labelControl3;
         private System.Windows.Forms.PictureBox pictureBox6;
-        private DevExpress.XtraGrid.GridControl gridControl1;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private DevExpress.XtraEditors.LookUpEdit cmbVendedor;
         private DevExpress.DataAccess.Sql.SqlDataSource sqlDataSource1;
@@ -254,5 +298,9 @@
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private System.Windows.Forms.BindingSource queryBindingSource;
         private DevExpress.XtraEditors.LabelControl labelControl4;
+        private DevExpress.XtraEditors.LabelControl labelControl1;
+        public DevExpress.XtraEditors.SimpleButton btnCalendario;
+        public DevExpress.XtraEditors.TextEdit txtCalendario;
+        public DevExpress.XtraGrid.GridControl gridControl1;
     }
 }

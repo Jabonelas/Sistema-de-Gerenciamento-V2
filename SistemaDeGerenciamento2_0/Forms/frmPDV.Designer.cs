@@ -32,6 +32,7 @@
             DevExpress.XtraSplashScreen.SplashScreenManager splashScreenManager1 = new DevExpress.XtraSplashScreen.SplashScreenManager(this, null, true, true);
             this.lblStatusCaixa = new DevExpress.XtraEditors.LabelControl();
             this.pnlTitulo = new DevExpress.XtraEditors.PanelControl();
+            this.btnSair = new DevExpress.XtraEditors.SimpleButton();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             this.lblNumeroPedido = new DevExpress.XtraEditors.LabelControl();
             this.lblNomeUsuario = new DevExpress.XtraEditors.LabelControl();
@@ -120,12 +121,31 @@
             this.pnlTitulo.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
             this.pnlTitulo.Appearance.Options.UseBackColor = true;
             this.pnlTitulo.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.pnlTitulo.Controls.Add(this.btnSair);
             this.pnlTitulo.Controls.Add(this.lblStatusCaixa);
             this.pnlTitulo.Location = new System.Drawing.Point(12, 6);
             this.pnlTitulo.LookAndFeel.UseDefaultLookAndFeel = false;
             this.pnlTitulo.Name = "pnlTitulo";
             this.pnlTitulo.Size = new System.Drawing.Size(1302, 100);
             this.pnlTitulo.TabIndex = 1;
+            // 
+            // btnSair
+            // 
+            this.btnSair.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btnSair.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSair.Appearance.Options.UseFont = true;
+            this.btnSair.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.entrada_preta;
+            this.btnSair.ImageOptions.ImageIndex = 5;
+            this.btnSair.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftBottom;
+            this.btnSair.ImageOptions.ImageToTextIndent = 10;
+            this.btnSair.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
+            this.btnSair.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnSair.Location = new System.Drawing.Point(1196, 6);
+            this.btnSair.Name = "btnSair";
+            this.btnSair.Size = new System.Drawing.Size(100, 26);
+            this.btnSair.TabIndex = 19;
+            this.btnSair.Text = "Sair";
+            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
             // 
             // panelControl2
             // 
@@ -748,5 +768,6 @@
         public DevExpress.XtraEditors.TextEdit txtCodigoDeBarras;
         public DevExpress.XtraEditors.LabelControl lblNumeroPedido;
         private DevExpress.XtraEditors.SimpleButton btnNovaVenda;
+        private DevExpress.XtraEditors.SimpleButton btnSair;
     }
 }

@@ -2,6 +2,7 @@
 using DevExpress.Utils.Extensions;
 using DevExpress.XtraEditors;
 using DevExpress.XtraSplashScreen;
+using Microsoft.EntityFrameworkCore.Internal;
 using SistemaDeGerenciamento2_0.Class;
 using SistemaDeGerenciamento2_0.Context;
 using SistemaDeGerenciamento2_0.Properties;
@@ -29,6 +30,28 @@ namespace SistemaDeGerenciamento2_0.Forms
         public frmLogin()
         {
             InitializeComponent();
+
+            TestandoConexaoBanco();
+        }
+
+        private bool TestandoConexaoBanco()
+        {
+            try
+            {
+                using (SistemaDeGerenciamento2_0Context db = new SistemaDeGerenciamento2_0Context())
+                {
+                    var testandoConexaoBanco = db.tb_grupo.Select(x => x.id_grupo).Any();
+
+                    return true;
+                }
+            }
+            catch (Exception)
+            {
+                frmConexaoBanco frmConexaoBanco = new frmConexaoBanco();
+                frmConexaoBanco.ShowDialog();
+
+                return false;
+            }
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
@@ -43,7 +66,14 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private void btnLogar_Click(object sender, EventArgs e)
         {
-            ReloadData();
+            bool IsExisteConexaoBanco =
+
+            TestandoConexaoBanco();
+
+            if (IsExisteConexaoBanco == true)
+            {
+                ReloadData();
+            }
         }
 
         private void txtUsuario_KeyPress(object sender, KeyPressEventArgs e)

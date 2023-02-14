@@ -118,30 +118,6 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="customSqlQuery1.Sql" xml:space="preserve">
-    <value>select "tb_nota_fiscal_saida"."id_nota_fiscal_saida",
-       "tb_nota_fiscal_saida"."nfs_numero_nf_saida",
-       "tb_nota_fiscal_saida"."nfs_data_emissao",
-       "tb_nota_fiscal_saida"."nfs_quantidade",
-       "tb_nota_fiscal_saida"."nfs_valor_parcial",
-       "tb_nota_fiscal_saida"."nfs_valor_pago",
-       "tb_nota_fiscal_saida"."nfs_valor_juros",
-       "tb_nota_fiscal_saida"."nfs_valor_total_pago",
-       "tb_nota_fiscal_saida"."nfs_valor_desconto",
-       "tb_nota_fiscal_saida"."nfs_vendedor",
-       "tb_nota_fiscal_saida"."nfs_tipo_pagamento",
-       "tb_nota_fiscal_saida"."fk_estoque",
-       "tb_nota_fiscal_saida"."fk_registro_cliente",
-       "tb_produto"."pd_nome",
-       "tb_produto"."pd_codigo"
-  from (("dbo"."tb_nota_fiscal_saida"
-       "tb_nota_fiscal_saida"
-  inner join "dbo"."tb_estoque" "tb_estoque"
-       on ("tb_estoque"."id_estoque" = "tb_nota_fiscal_saida"."fk_estoque"))
-  inner join "dbo"."tb_produto" "tb_produto"
-       on ("tb_produto"."id_produto" = "tb_estoque"."fk_produto"))
-WHERE "tb_nota_fiscal_saida"."nfs_numero_nf_saida" =1</value>
-  </data>
-  <data name="customSqlQuery2.Sql" xml:space="preserve">
     <value>select "tb_produto"."pd_codigo",
        "tb_produto"."pd_finalidade",
        "tb_produto"."pd_nome",

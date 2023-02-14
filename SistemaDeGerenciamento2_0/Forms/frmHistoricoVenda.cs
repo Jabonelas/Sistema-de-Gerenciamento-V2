@@ -78,6 +78,8 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private void btnCalendario_Click(object sender, EventArgs e)
         {
+            FechandoTela();
+
             ExibirCalendario();
         }
 
@@ -200,6 +202,11 @@ namespace SistemaDeGerenciamento2_0.Forms
             FechandoTela();
 
             ExibirCalendario();
+        }
+
+        private void frmHistoricoVenda_Click(object sender, EventArgs e)
+        {
+            FechandoTela();
         }
     }
 }

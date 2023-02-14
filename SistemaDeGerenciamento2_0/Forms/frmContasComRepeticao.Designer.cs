@@ -69,7 +69,6 @@
             this.AlertaSalvar = new DevExpress.XtraBars.Alerter.AlertControl(this.components);
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.cmbPrazo = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.cmbPeriocidade.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtObservacoesDespesa.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtValor.Properties)).BeginInit();
@@ -486,21 +485,11 @@
             this.cmbPrazo.Size = new System.Drawing.Size(191, 36);
             this.cmbPrazo.TabIndex = 130;
             // 
-            // simpleButton1
-            // 
-            this.simpleButton1.Location = new System.Drawing.Point(346, 13);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(75, 23);
-            this.simpleButton1.TabIndex = 131;
-            this.simpleButton1.Text = "simpleButton1";
-            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
-            // 
             // frmContasComRepeticao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(650, 527);
-            this.Controls.Add(this.simpleButton1);
             this.Controls.Add(this.cmbPrazo);
             this.Controls.Add(this.labelControl1);
             this.Controls.Add(this.chkRepetirDespesa);
@@ -531,7 +520,6 @@
             this.Name = "frmContasComRepeticao";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmContasComRepeticao";
-            this.Load += new System.EventHandler(this.frmContasComRepeticao_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmContasComRepeticao_KeyDown);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.frmContasComRepeticao_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.frmContasComRepeticao_MouseMove);
@@ -585,6 +573,5 @@
         private DevExpress.XtraBars.Alerter.AlertControl AlertaSalvar;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.ComboBoxEdit cmbPrazo;
-        private DevExpress.XtraEditors.SimpleButton simpleButton1;
     }
 }

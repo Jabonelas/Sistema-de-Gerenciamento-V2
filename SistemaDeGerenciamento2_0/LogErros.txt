@@ -1,10 +1,4 @@
-11/02/2023 20:05:41 - Erro ao Cadastrar Despesas Repetição - Despesa - Contas Com Repetição | An error occurred while updating the entries. See the inner exception for details. |    em Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
-   em Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
-   em Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
-   em Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
-   em Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
-   em Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
-   em Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
-   em Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
-   em Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
-   em SistemaDeGerenciamento2_0.Forms.frmContasComRepeticao.SalvarDespesaComRepeticao() na C:\Users\israe\source\repos\SistemaDeGerenciamento2_0\SistemaDeGerenciamento2_0\Forms\frmContasComRepeticao.cs:linha 278
+14/02/2023 14:21:44 - Erro ao Buscar Produto por Codigo de Barras - | A cadeia de caracteres de entrada não estava em um formato correto. |    em System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   em System.Number.ParseDecimal(String value, NumberStyles options, NumberFormatInfo numfmt)
+   em System.Convert.ToDecimal(String value)
+   em SistemaDeGerenciamento2_0.Forms.frmPDV.BuscarProdutoPeloCodigoDeBarras() na C:\Users\israe\source\repos\SistemaDeGerenciamento2_0\SistemaDeGerenciamento2_0\Forms\frmPDV.cs:linha 198

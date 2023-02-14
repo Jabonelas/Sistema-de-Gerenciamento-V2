@@ -61,6 +61,9 @@ namespace SistemaDeGerenciamento2_0.Forms
             lblNomeUsuario.Text = frmLogin.UsuarioLogado.ToUpper();
 
             BuscarNumeroPedido();
+
+            txtQuantidadeProduto.Text = "1";
+            txtCodigoDeBarras.Focus();
         }
 
         private void ReloadData()
@@ -664,12 +667,37 @@ namespace SistemaDeGerenciamento2_0.Forms
 
                 lblStatusCaixa.Text = "CAIXA LIVRE";
                 pnlTitulo.BackColor = Color.FromArgb(0, 204, 105);
+
+                txtQuantidadeProduto.Text = "1";
+                txtCodigoDeBarras.Focus();
             }
             else
             {
                 lblStatusCaixa.Text = "CAIXA LIVRE";
                 pnlTitulo.BackColor = Color.FromArgb(0, 204, 105);
+
+                txtQuantidadeProduto.Text = "1";
+                txtCodigoDeBarras.Focus();
             }
+        }
+
+        private void btnSair_Click(object sender, EventArgs e)
+        {
+            if (gridView1.RowCount > 0)
+            {
+                CancelarVenda();
+
+                if (isFecharTela == true)
+                {
+                    this.Close();
+                }
+
+                isFecharTela = false;
+
+                return;
+            }
+
+            MensagemAtencao.MensagemCancelar(this);
         }
     }
 }

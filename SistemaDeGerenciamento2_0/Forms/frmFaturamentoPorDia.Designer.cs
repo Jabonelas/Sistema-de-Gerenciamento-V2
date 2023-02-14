@@ -185,6 +185,7 @@
             this.txtCalendario.Properties.MaxLength = 14;
             this.txtCalendario.Size = new System.Drawing.Size(223, 34);
             this.txtCalendario.TabIndex = 321;
+            this.txtCalendario.Click += new System.EventHandler(this.txtCalendario_Click);
             this.txtCalendario.Enter += new System.EventHandler(this.txtCalendario_Enter);
             this.txtCalendario.Leave += new System.EventHandler(this.txtCalendario_Leave);
             // 

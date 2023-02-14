@@ -322,31 +322,5 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             BuscarTipoCusto();
         }
-
-        private void simpleButton1_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                frmCupomFiscal frmCupomFiscal = new frmCupomFiscal();
-                frmCupomFiscal.CreateDocument();
-            }
-            catch (Exception x)
-            {
-                MessageBox.Show(x.ToString());
-            }
-        }
-
-        private void frmContasComRepeticao_Load(object sender, EventArgs e)
-        {
-            //try
-            //{
-            //    frmCupomFiscal frmCupomFiscal = new frmCupomFiscal();
-            //    frmCupomFiscal.CreateDocument();
-            //}
-            //catch (Exception x)
-            //{
-            //    MessageBox.Show(x.ToString());
-            //}
-        }
     }
 }

@@ -248,7 +248,7 @@ namespace SistemaDeGerenciamento2_0.Forms
                     foreach (var item in despesa)
                     {
                         item.fk_repeticao_despesa = null;
-                        item.dp_vencimento = Convert.ToDateTime("01/01/1900");
+                        item.dp_vencimento = null;
                     }
 
                     db.SaveChanges();

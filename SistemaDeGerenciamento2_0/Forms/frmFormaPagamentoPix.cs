@@ -1,5 +1,6 @@
 ﻿using DevExpress.XtraEditors;
 using DevExpress.XtraPrinting.BarCode;
+using DevExpress.XtraReports.UI;
 using QRCoder;
 using SistemaDeGerenciamento2_0.Class;
 using SistemaDeGerenciamento2_0.Context;
@@ -110,7 +111,20 @@ namespace SistemaDeGerenciamento2_0.Forms
             btn1CancelarVenda.Enabled = false;
             btn1FinalizarVenda.Enabled = false;
 
+            ImprimirCupomFiscal(numeroNF);
+
+            frmPDV.ZerandoTodosCampos();
+
+            frmPagamento.Close();
+
             this.Close();
+        }
+
+        private void ImprimirCupomFiscal(string _numeroNF)
+        {
+            frmCupomFiscal frmCupomFiscal = new frmCupomFiscal();
+            frmCupomFiscal.Parameters["parameter1"].Value = _numeroNF;
+            frmCupomFiscal.ShowPreviewDialog();
         }
 
         private void frmFormaPagamentoPix_KeyDown(object sender, KeyEventArgs e)

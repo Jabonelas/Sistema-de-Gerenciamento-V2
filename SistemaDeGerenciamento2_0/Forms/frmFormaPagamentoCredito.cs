@@ -1,4 +1,5 @@
 ﻿using DevExpress.XtraEditors;
+using DevExpress.XtraReports.UI;
 using SistemaDeGerenciamento2_0.Class;
 using SistemaDeGerenciamento2_0.Context;
 using SistemaDeGerenciamento2_0.Models;
@@ -130,11 +131,20 @@ namespace SistemaDeGerenciamento2_0.Forms
             btn1CancelarVenda.Enabled = false;
             btn1FinalizarVenda.Enabled = false;
 
+            ImprimirCupomFiscal(numeroNF);
+
             frmPDV.ZerandoTodosCampos();
 
             frmPagamento.Close();
 
             this.Close();
+        }
+
+        private void ImprimirCupomFiscal(string _numeroNF)
+        {
+            frmCupomFiscal frmCupomFiscal = new frmCupomFiscal();
+            frmCupomFiscal.Parameters["parameter1"].Value = _numeroNF;
+            frmCupomFiscal.ShowPreviewDialog();
         }
 
         private void btn1CancelarVenda_Click(object sender, EventArgs e)

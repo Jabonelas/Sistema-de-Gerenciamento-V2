@@ -21,7 +21,15 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private DataTable dt = new DataTable();
 
+        private frmCalendario frmCalendario;
+
         private frmTelaPrincipal frmTelaPrincipal;
+
+        public bool IsPreencherGrid = false;
+        public bool IsCalendarioAberto = false;
+
+        public DateTime dataInicial = DateTime.Today;
+        public DateTime dataFinal = DateTime.Today;
 
         public frmFaturamentoPorVendedor(frmTelaPrincipal _frmTelaPrincipal)
         {
@@ -32,6 +40,17 @@ namespace SistemaDeGerenciamento2_0.Forms
             sqlDataSource1.FillAsync();
 
             frmTelaPrincipal = _frmTelaPrincipal;
+
+            PreencherData();
+        }
+
+        private void PreencherData()
+        {
+            dataInicial = new DateTime(DateTime.Today.Year, DateTime.Today.Month, 1);
+
+            dataFinal = new DateTime(DateTime.Today.Year, DateTime.Today.Month, DateTime.DaysInMonth(DateTime.Today.Year, DateTime.Today.Month));
+
+            txtCalendario.Text = $"{dataInicial.ToShortDateString()} - {dataFinal.ToShortDateString()}";
         }
 
         private void ReloadDataConfigUsuario()
@@ -67,7 +86,7 @@ namespace SistemaDeGerenciamento2_0.Forms
                 SistemaDeGerenciamento2_0Context db = new SistemaDeGerenciamento2_0Context();
 
                 var result = db.tb_nota_fiscal_saida
-                    .Where(x => x.nfs_vendedor == cmbVendedor.Text)
+                    .Where(x => x.nfs_vendedor == cmbVendedor.Text && x.nfs_data_emissao >= dataInicial && x.nfs_data_emissao <= dataFinal)
                     .GroupBy(x => x.nfs_data_emissao)
                     .OrderBy(x => x.Key)
                     .Select(g => new
@@ -169,6 +188,74 @@ namespace SistemaDeGerenciamento2_0.Forms
             {
                 this.Close();
             }
+        }
+
+        private void txtCalendario_Enter(object sender, EventArgs e)
+        {
+            ExibirCalendario();
+        }
+
+        private void txtCalendario_Click(object sender, EventArgs e)
+        {
+            FechandoTela();
+
+            ExibirCalendario();
+        }
+
+        private void FechandoTela()
+        {
+            if (IsPreencherGrid == true)
+            {
+                PreencherGrid();
+            }
+
+            IsPreencherGrid = false;
+
+            frmCalendario.Close();
+        }
+
+        private void ExibirCalendario()
+        {
+            frmCalendario = new frmCalendario(this);
+            frmCalendario.StartPosition = FormStartPosition.Manual;
+            frmCalendario.Location = new Point(480, 220);
+            frmCalendario.Show();
+        }
+
+        private void frmFaturamentoPorVendedor_Click(object sender, EventArgs e)
+        {
+            if (IsCalendarioAberto == true)
+            {
+                PreencherGridFecharCalendario();
+            }
+
+            //FechandoTela();
+        }
+
+        private void PreencherGridFecharCalendario()
+        {
+            txtCalendario.Text = $"{dataInicial.ToShortDateString()} - {dataFinal.ToShortDateString()}";
+
+            dataInicial = Convert.ToDateTime(frmCalendario.txtDataInicial.Text);
+            dataFinal = Convert.ToDateTime(frmCalendario.txtDataFinal.Text);
+
+            PreencherGrid();
+
+            frmCalendario.Close();
+
+            gridControl1.Focus();
+
+            IsCalendarioAberto = false;
+        }
+
+        private void btnCalendario_Click(object sender, EventArgs e)
+        {
+            ExibirCalendario();
+        }
+
+        private void txtCalendario_Leave(object sender, EventArgs e)
+        {
+            FechandoTela();
         }
     }
 }

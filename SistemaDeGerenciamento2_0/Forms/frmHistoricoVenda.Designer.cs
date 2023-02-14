@@ -180,6 +180,7 @@
             this.Name = "frmHistoricoVenda";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmHistoricoVenda";
+            this.Click += new System.EventHandler(this.frmHistoricoVenda_Click);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmHistoricoVenda_KeyDown);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.frmHistoricoVenda_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.frmHistoricoVenda_MouseMove);

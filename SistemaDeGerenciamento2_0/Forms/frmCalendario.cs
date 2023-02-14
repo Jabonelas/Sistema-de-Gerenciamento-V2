@@ -63,6 +63,21 @@ namespace SistemaDeGerenciamento2_0.Forms
             //frmHistoricoVenda.IsCalendarioAberto = true;
         }
 
+        private frmFaturamentoPorVendedor frmFaturamentoPorVendedor;
+
+        public frmCalendario(frmFaturamentoPorVendedor _frmFaturamentoPorVendedor)
+        {
+            InitializeComponent();
+
+            frmFaturamentoPorVendedor = _frmFaturamentoPorVendedor;
+
+            PreencherEsteMes();
+
+            Datas.ForEach(x => { txtDataInicial.Text = x.Key; txtDataFinal.Text = x.Value; });
+
+            frmFaturamentoPorVendedor.IsCalendarioAberto = true;
+        }
+
         private void PreencherHoje()
         {
             Datas.Clear();
@@ -177,6 +192,20 @@ namespace SistemaDeGerenciamento2_0.Forms
                     frmIndicadorVenda.dataInicial = Convert.ToDateTime(txtDataInicial.Text);
                     frmIndicadorVenda.dataFinal = Convert.ToDateTime(txtDataFinal.Text);
                     frmIndicadorVenda.chartControl2.Focus();
+
+                    this.Close();
+                }
+                else if (frmFaturamentoPorVendedor != null)
+                {
+                    frmFaturamentoPorVendedor.dataInicial = Convert.ToDateTime(txtDataInicial.Text);
+                    frmFaturamentoPorVendedor.dataFinal = Convert.ToDateTime(txtDataFinal.Text);
+
+                    frmFaturamentoPorVendedor.IsPreencherGrid = true;
+
+                    frmFaturamentoPorVendedor.txtCalendario.Text = $"{txtDataInicial.Text} - {txtDataFinal.Text}";
+                    frmFaturamentoPorVendedor.btnCalendario.Focus();
+
+                    Datas.ForEach(x => { frmFaturamentoPorVendedor.txtCalendario.Text = $"{x.Key} - {x.Value}"; });
 
                     this.Close();
                 }

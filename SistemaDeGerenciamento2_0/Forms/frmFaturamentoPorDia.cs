@@ -210,7 +210,7 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             frmCalendario = new frmCalendario(this);
             frmCalendario.StartPosition = FormStartPosition.Manual;
-            frmCalendario.Location = new Point(480, 200);
+            frmCalendario.Location = new Point(480, 210);
             frmCalendario.Show();
         }
 
@@ -233,6 +233,8 @@ namespace SistemaDeGerenciamento2_0.Forms
 
         private void frmFaturamentoPorDia_Click(object sender, EventArgs e)
         {
+            //FechandoTela();
+
             if (IsCalendarioAberto == true)
             {
                 PreencherGridFecharCalendario();
@@ -261,6 +263,13 @@ namespace SistemaDeGerenciamento2_0.Forms
             {
                 this.Close();
             }
+        }
+
+        private void txtCalendario_Click(object sender, EventArgs e)
+        {
+            FechandoTela();
+
+            ExibirCalendario();
         }
     }
 }

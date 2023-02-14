@@ -300,7 +300,7 @@ namespace SistemaDeGerenciamento2_0.Forms
             {
                 SistemaDeGerenciamento2_0Context db = new SistemaDeGerenciamento2_0Context();
 
-                var result = db.tb_despesa.GroupBy(d => new { Month = d.dp_vencimento.Month, Year = d.dp_vencimento.Year })
+                var result = db.tb_despesa.GroupBy(d => new { Month = d.dp_vencimento.Value.Month, Year = d.dp_vencimento.Value.Year })
                     .Where(x => x.Key.Year == anoAtual)
                     .Select(g => new
                     {
@@ -388,8 +388,8 @@ namespace SistemaDeGerenciamento2_0.Forms
                 SistemaDeGerenciamento2_0Context db = new SistemaDeGerenciamento2_0Context();
 
                 var result = db.tb_despesa
-                .Where(x => x.dp_vencimento.Month == Convert.ToInt32(mes) && x.dp_vencimento.Year == anoAtual)
-                .GroupBy(x => x.dp_vencimento.Year * 100 + x.dp_vencimento.DayOfYear / 7)
+                .Where(x => x.dp_vencimento.Value.Month == Convert.ToInt32(mes) && x.dp_vencimento.Value.Year == anoAtual)
+                .GroupBy(x => x.dp_vencimento.Value.Year * 100 + x.dp_vencimento.Value.DayOfYear / 7)
                 .Select(g => new
                 {
                     Semana = g.Key,
