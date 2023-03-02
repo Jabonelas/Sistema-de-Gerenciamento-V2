@@ -26,8 +26,6 @@ namespace SistemaDeGerenciamento2_0
     {
         private List<tb_despesa> listaDespesa = new List<tb_despesa>();
 
-        private List<tb_permissoes> listaPermissoes = new List<tb_permissoes>();
-
         private List<tb_repeticao_despesa> listaRepeticaoDespesa = new List<tb_repeticao_despesa>();
 
         private PermissoesUsuario permissoesCadastro = new PermissoesUsuario();
@@ -154,11 +152,11 @@ namespace SistemaDeGerenciamento2_0
                 permissoesUsuario.ReloadData(this, frmLogin.UsuarioLogado);
                 permissoesUsuario.VerificarAcessoConfigPerfil("ConfigPerfil");
             }
-            else if (_btnSolitador == "ConfigDespesa")
-            {
-                permissoesCadastro.ReloadData(this, frmLogin.UsuarioLogado);
-                permissoesCadastro.VerificarAcessoConfigDespesa("ConfigDespesa");
-            }
+            //else if (_btnSolitador == "ConfigDespesa")
+            //{
+            //    permissoesCadastro.ReloadData(this, frmLogin.UsuarioLogado);
+            //    permissoesCadastro.VerificarAcessoConfigDespesa("ConfigDespesa");
+            //}
             else if (_btnSolitador == "Todos Os Produtos")
             {
                 permissoesCadastro.ReloadData(this, frmLogin.UsuarioLogado);
@@ -231,11 +229,6 @@ namespace SistemaDeGerenciamento2_0
             AcessandoTelas("ConfigFinanceiro");
         }
 
-        private void btnConfigDesepsa_Click(object sender, EventArgs e)
-        {
-            AcessandoTelas("ConfigDespesa");
-        }
-
         private void btnNovoProduto_Click(object sender, EventArgs e)
         {
             AcessandoTelas("Novo Produto");
@@ -266,18 +259,6 @@ namespace SistemaDeGerenciamento2_0
             AcessandoTelas("Todos Os Cadastros");
         }
 
-        private void Cadastro_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void Produtos_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void pnlTelaPrincipal_Paint(object sender, PaintEventArgs e)
-        {
-        }
-
         private void btnConsultarEstoque_Click(object sender, EventArgs e)
         {
             frmConsultarEstoque frmConsultarEstoque = new frmConsultarEstoque();
@@ -297,6 +278,40 @@ namespace SistemaDeGerenciamento2_0
         private void btnDespesaContas_Click(object sender, EventArgs e)
         {
             AcessandoTelas("Acesso Despesa");
+        }
+
+        private void btnFaturamentoPorDia_Click(object sender, EventArgs e)
+        {
+            AcessandoTelas("Faturamento Por Dia");
+        }
+
+        private void btnFaturamentoPorVendedor_Click(object sender, EventArgs e)
+        {
+            AcessandoTelas("Faturamento Por Vendedor");
+        }
+
+        private void btnIndicadoresVendas_Click(object sender, EventArgs e)
+        {
+            AcessandoTelas("Indicadores de Venda");
+        }
+
+        private void btnHistorioDeVenda_Click(object sender, EventArgs e)
+        {
+            AcessandoTelas("Historico de Venda");
+        }
+
+        private void btnDespesaAtrasada_Click(object sender, EventArgs e)
+        {
+            ContasAtrasadas();
+
+            ReloadDataDespesaAtrasada();
+        }
+
+        private void btnEstoque_Click(object sender, EventArgs e)
+        {
+            ProdutosComEstoqueBaixo();
+
+            ReloadDataEstoqueBaixo();
         }
 
         private void btnCategoriaDespesa_Click(object sender, EventArgs e)
@@ -329,26 +344,6 @@ namespace SistemaDeGerenciamento2_0
             pnlTelaPrincipal.Controls.Add(frmRelatorios);
             pnlTelaPrincipal.Tag = frmRelatorios;
             frmRelatorios.Show();
-        }
-
-        private void btnFaturamentoPorDia_Click(object sender, EventArgs e)
-        {
-            AcessandoTelas("Faturamento Por Dia");
-        }
-
-        private void btnFaturamentoPorVendedor_Click(object sender, EventArgs e)
-        {
-            AcessandoTelas("Faturamento Por Vendedor");
-        }
-
-        private void btnIndicadoresVendas_Click(object sender, EventArgs e)
-        {
-            AcessandoTelas("Indicadores de Venda");
-        }
-
-        private void btnHistorioDeVenda_Click(object sender, EventArgs e)
-        {
-            AcessandoTelas("Historico de Venda");
         }
 
         private void VisaoGeral_Click(object sender, EventArgs e)
@@ -453,13 +448,6 @@ namespace SistemaDeGerenciamento2_0
             alertContaAtrasada.Show(this, msg.titulo, msg.texto, string.Empty, msg.image, msg);
         }
 
-        private void btnDespesaAtrasada_Click(object sender, EventArgs e)
-        {
-            ContasAtrasadas();
-
-            ReloadDataDespesaAtrasada();
-        }
-
         private void ReloadDataDespesaAtrasada()
         {
             using (var handle = SplashScreenManager.ShowOverlayForm(this))
@@ -491,13 +479,6 @@ namespace SistemaDeGerenciamento2_0
             e.AlertForm.OpacityLevel = 1;
         }
 
-        private void btnEstoque_Click(object sender, EventArgs e)
-        {
-            ProdutosComEstoqueBaixo();
-
-            ReloadDataEstoqueBaixo();
-        }
-
         private void ReloadDataEstoqueBaixo()
         {
             using (var handle = SplashScreenManager.ShowOverlayForm(this))
@@ -512,10 +493,6 @@ namespace SistemaDeGerenciamento2_0
             VerificarAcessoAlertaEstoqueBaixo();
 
             VerificarAcessoContasAtrasadas();
-        }
-
-        private void RepeticaoDespesaContas()
-        {
         }
 
         private void RepeticaoDeContasFixas()
@@ -566,11 +543,6 @@ namespace SistemaDeGerenciamento2_0
                                 dp_data = data,
                                 dp_observacao = observacao,
                                 dp_sub_valor_total = subValorTotal,
-                                //dp_desconto = desconto,
-                                //dp_juros = juros,
-                                //dp_multa = multa,
-                                //dp_valor_lancamento = valorLancamento,
-                                //dp_pagamento_em = pagamento,
                                 dp_vencimento = vencimento,
                                 dp_parcelas = parcelas,
                                 dp_imagem = imagem,

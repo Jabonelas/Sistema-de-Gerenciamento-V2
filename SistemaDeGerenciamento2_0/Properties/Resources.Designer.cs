@@ -763,9 +763,29 @@ namespace SistemaDeGerenciamento2_0.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap general_ledger_15px {
+            get {
+                object obj = ResourceManager.GetObject("general_ledger_15px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap general_ledger_20px {
             get {
                 object obj = ResourceManager.GetObject("general_ledger_20px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap gold_bars_20px {
+            get {
+                object obj = ResourceManager.GetObject("gold_bars_20px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1216,6 +1236,16 @@ namespace SistemaDeGerenciamento2_0.Properties {
         internal static System.Drawing.Bitmap search1_20px {
             get {
                 object obj = ResourceManager.GetObject("search1_20px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap send_20px {
+            get {
+                object obj = ResourceManager.GetObject("send_20px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

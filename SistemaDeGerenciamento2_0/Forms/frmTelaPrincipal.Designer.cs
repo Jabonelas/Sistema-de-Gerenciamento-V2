@@ -61,7 +61,6 @@
             this.btnConfigEmpresa = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.btnConfigPerfil = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.btnConfigFinanceiro = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.btnConfigDesepsa = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.fluentDesignFormControl1 = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormControl();
             this.btnDespesaAtrasada = new DevExpress.XtraEditors.SimpleButton();
             this.btnEstoque = new DevExpress.XtraEditors.SimpleButton();
@@ -248,6 +247,7 @@
             this.btnImportarXML,
             this.btnDespesaContas,
             this.btnCategoriaDespesa});
+            this.Financeiro.Expanded = true;
             this.Financeiro.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.dollar_place_marker_30px;
             this.Financeiro.Name = "Financeiro";
             this.Financeiro.Text = "Financeiro";
@@ -298,10 +298,10 @@
             this.btnNovoFornecedor,
             this.btnNovoFuncionario,
             this.btnTodosOsCadastro});
+            this.Cadastro.Expanded = true;
             this.Cadastro.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.add_user_male_30px;
             this.Cadastro.Name = "Cadastro";
             this.Cadastro.Text = "Cadastros";
-            this.Cadastro.Click += new System.EventHandler(this.Cadastro_Click);
             // 
             // btnNovoCliente
             // 
@@ -357,7 +357,6 @@
             this.Produtos.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.produto_preto1;
             this.Produtos.Name = "Produtos";
             this.Produtos.Text = "Produtos";
-            this.Produtos.Click += new System.EventHandler(this.Produtos_Click);
             // 
             // btnNovoProduto
             // 
@@ -475,8 +474,8 @@
             this.btnConfigUsuario,
             this.btnConfigEmpresa,
             this.btnConfigPerfil,
-            this.btnConfigFinanceiro,
-            this.btnConfigDesepsa});
+            this.btnConfigFinanceiro});
+            this.Configuracao.Expanded = true;
             this.Configuracao.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.automation_30px;
             this.Configuracao.Name = "Configuracao";
             this.Configuracao.Text = "Configurações";
@@ -510,12 +509,6 @@
             this.btnConfigFinanceiro.Name = "btnConfigFinanceiro";
             this.btnConfigFinanceiro.Text = "Config. Financeira";
             this.btnConfigFinanceiro.Click += new System.EventHandler(this.btnConfigFinanceiro_Click);
-            // 
-            // btnConfigDesepsa
-            // 
-            this.btnConfigDesepsa.Name = "btnConfigDesepsa";
-            this.btnConfigDesepsa.Text = "Config. Despesa";
-            this.btnConfigDesepsa.Click += new System.EventHandler(this.btnConfigDesepsa_Click);
             // 
             // fluentDesignFormControl1
             // 
@@ -687,7 +680,6 @@
             this.pnlTelaPrincipal.Name = "pnlTelaPrincipal";
             this.pnlTelaPrincipal.Size = new System.Drawing.Size(1006, 465);
             this.pnlTelaPrincipal.TabIndex = 3;
-            this.pnlTelaPrincipal.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlTelaPrincipal_Paint);
             // 
             // btnDespesaCategoria
             // 
@@ -785,7 +777,6 @@
         private DevExpress.XtraBars.Navigation.AccordionControlElement btnNovoFornecedor;
         private DevExpress.XtraBars.Navigation.AccordionControlElement btnNovoFuncionario;
         private DevExpress.XtraBars.Navigation.AccordionControlElement btnTodosOsCadastro;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement btnConfigDesepsa;
         private DevExpress.XtraEditors.LabelControl lblUsuarioLogado;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraBars.Navigation.AccordionControlElement btnConsultarEstoque;

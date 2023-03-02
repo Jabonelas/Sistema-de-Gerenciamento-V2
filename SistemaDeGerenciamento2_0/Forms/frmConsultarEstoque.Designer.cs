@@ -76,7 +76,7 @@
             this.btnFechar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnFechar.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnFechar.ImageOptions.Image")));
             this.btnFechar.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
-            this.btnFechar.Location = new System.Drawing.Point(1121, 2);
+            this.btnFechar.Location = new System.Drawing.Point(1120, 2);
             this.btnFechar.Name = "btnFechar";
             this.btnFechar.Size = new System.Drawing.Size(24, 24);
             this.btnFechar.TabIndex = 99;

@@ -42,9 +42,9 @@
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.btnNovaVenda = new DevExpress.XtraEditors.SimpleButton();
-            this.btnIrParaFinanceiro = new DevExpress.XtraEditors.SimpleButton();
-            this.btnNovaCompra = new DevExpress.XtraEditors.SimpleButton();
+            this.btnImportar = new DevExpress.XtraEditors.SimpleButton();
+            this.btnCategoria = new DevExpress.XtraEditors.SimpleButton();
+            this.btnDespesa = new DevExpress.XtraEditors.SimpleButton();
             this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
@@ -206,9 +206,9 @@
             this.panelControl4.Controls.Add(this.labelControl3);
             this.panelControl4.Controls.Add(this.pictureBox7);
             this.panelControl4.Controls.Add(this.pictureBox3);
-            this.panelControl4.Controls.Add(this.btnNovaVenda);
-            this.panelControl4.Controls.Add(this.btnIrParaFinanceiro);
-            this.panelControl4.Controls.Add(this.btnNovaCompra);
+            this.panelControl4.Controls.Add(this.btnImportar);
+            this.panelControl4.Controls.Add(this.btnCategoria);
+            this.panelControl4.Controls.Add(this.btnDespesa);
             this.panelControl4.Location = new System.Drawing.Point(504, 26);
             this.panelControl4.Name = "panelControl4";
             this.panelControl4.Size = new System.Drawing.Size(203, 355);
@@ -218,11 +218,11 @@
             // 
             this.labelControl3.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl3.Appearance.Options.UseFont = true;
-            this.labelControl3.Location = new System.Drawing.Point(39, 118);
+            this.labelControl3.Location = new System.Drawing.Point(66, 118);
             this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(130, 21);
+            this.labelControl3.Size = new System.Drawing.Size(72, 21);
             this.labelControl3.TabIndex = 26;
-            this.labelControl3.Text = "Vendas e Compras";
+            this.labelControl3.Text = "Financeiro";
             // 
             // pictureBox7
             // 
@@ -238,7 +238,7 @@
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.carrinho_preto_grande;
+            this.pictureBox3.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.dinheiro_preto2;
             this.pictureBox3.Location = new System.Drawing.Point(52, 9);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(98, 94);
@@ -246,53 +246,56 @@
             this.pictureBox3.TabIndex = 23;
             this.pictureBox3.TabStop = false;
             // 
-            // btnNovaVenda
+            // btnImportar
             // 
-            this.btnNovaVenda.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNovaVenda.Appearance.Options.UseFont = true;
-            this.btnNovaVenda.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.entrada_preta;
-            this.btnNovaVenda.ImageOptions.ImageIndex = 5;
-            this.btnNovaVenda.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftBottom;
-            this.btnNovaVenda.ImageOptions.ImageToTextIndent = 10;
-            this.btnNovaVenda.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-            this.btnNovaVenda.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnNovaVenda.Location = new System.Drawing.Point(12, 181);
-            this.btnNovaVenda.Name = "btnNovaVenda";
-            this.btnNovaVenda.Size = new System.Drawing.Size(179, 30);
-            this.btnNovaVenda.TabIndex = 18;
-            this.btnNovaVenda.Text = "Nova Venda / Receita";
+            this.btnImportar.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnImportar.Appearance.Options.UseFont = true;
+            this.btnImportar.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.xml_20px;
+            this.btnImportar.ImageOptions.ImageIndex = 5;
+            this.btnImportar.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftBottom;
+            this.btnImportar.ImageOptions.ImageToTextIndent = 10;
+            this.btnImportar.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
+            this.btnImportar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnImportar.Location = new System.Drawing.Point(12, 181);
+            this.btnImportar.Name = "btnImportar";
+            this.btnImportar.Size = new System.Drawing.Size(179, 30);
+            this.btnImportar.TabIndex = 18;
+            this.btnImportar.Text = "Importar XML";
+            this.btnImportar.Click += new System.EventHandler(this.btnImportar_Click);
             // 
-            // btnIrParaFinanceiro
+            // btnCategoria
             // 
-            this.btnIrParaFinanceiro.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIrParaFinanceiro.Appearance.Options.UseFont = true;
-            this.btnIrParaFinanceiro.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.dollar_place_marker_20px;
-            this.btnIrParaFinanceiro.ImageOptions.ImageIndex = 5;
-            this.btnIrParaFinanceiro.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftBottom;
-            this.btnIrParaFinanceiro.ImageOptions.ImageToTextIndent = 10;
-            this.btnIrParaFinanceiro.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-            this.btnIrParaFinanceiro.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnIrParaFinanceiro.Location = new System.Drawing.Point(12, 268);
-            this.btnIrParaFinanceiro.Name = "btnIrParaFinanceiro";
-            this.btnIrParaFinanceiro.Size = new System.Drawing.Size(179, 30);
-            this.btnIrParaFinanceiro.TabIndex = 16;
-            this.btnIrParaFinanceiro.Text = "Ir para Financeiro";
+            this.btnCategoria.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCategoria.Appearance.Options.UseFont = true;
+            this.btnCategoria.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.general_ledger_15px;
+            this.btnCategoria.ImageOptions.ImageIndex = 5;
+            this.btnCategoria.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftBottom;
+            this.btnCategoria.ImageOptions.ImageToTextIndent = 10;
+            this.btnCategoria.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
+            this.btnCategoria.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnCategoria.Location = new System.Drawing.Point(12, 268);
+            this.btnCategoria.Name = "btnCategoria";
+            this.btnCategoria.Size = new System.Drawing.Size(179, 30);
+            this.btnCategoria.TabIndex = 16;
+            this.btnCategoria.Text = "Categoria/Despesa";
+            this.btnCategoria.Click += new System.EventHandler(this.btnCategoria_Click);
             // 
-            // btnNovaCompra
+            // btnDespesa
             // 
-            this.btnNovaCompra.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNovaCompra.Appearance.Options.UseFont = true;
-            this.btnNovaCompra.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.saida_preto;
-            this.btnNovaCompra.ImageOptions.ImageIndex = 5;
-            this.btnNovaCompra.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftBottom;
-            this.btnNovaCompra.ImageOptions.ImageToTextIndent = 10;
-            this.btnNovaCompra.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-            this.btnNovaCompra.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnNovaCompra.Location = new System.Drawing.Point(12, 225);
-            this.btnNovaCompra.Name = "btnNovaCompra";
-            this.btnNovaCompra.Size = new System.Drawing.Size(179, 30);
-            this.btnNovaCompra.TabIndex = 15;
-            this.btnNovaCompra.Text = "Nova Compra / Despesa";
+            this.btnDespesa.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDespesa.Appearance.Options.UseFont = true;
+            this.btnDespesa.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.reserve_15px;
+            this.btnDespesa.ImageOptions.ImageIndex = 5;
+            this.btnDespesa.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftBottom;
+            this.btnDespesa.ImageOptions.ImageToTextIndent = 10;
+            this.btnDespesa.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
+            this.btnDespesa.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnDespesa.Location = new System.Drawing.Point(12, 225);
+            this.btnDespesa.Name = "btnDespesa";
+            this.btnDespesa.Size = new System.Drawing.Size(179, 30);
+            this.btnDespesa.TabIndex = 15;
+            this.btnDespesa.Text = "Despesas/Contas";
+            this.btnDespesa.Click += new System.EventHandler(this.btnDespesa_Click);
             // 
             // panelControl3
             // 
@@ -431,6 +434,7 @@
             // 
             this.btnEstoqueProduto.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEstoqueProduto.Appearance.Options.UseFont = true;
+            this.btnEstoqueProduto.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.gold_bars_20px;
             this.btnEstoqueProduto.ImageOptions.ImageIndex = 5;
             this.btnEstoqueProduto.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftBottom;
             this.btnEstoqueProduto.ImageOptions.ImageToTextIndent = 10;
@@ -585,9 +589,9 @@
         private DevExpress.XtraEditors.LabelControl labelControl3;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private DevExpress.XtraEditors.SimpleButton btnNovaVenda;
-        private DevExpress.XtraEditors.SimpleButton btnIrParaFinanceiro;
-        private DevExpress.XtraEditors.SimpleButton btnNovaCompra;
+        private DevExpress.XtraEditors.SimpleButton btnImportar;
+        private DevExpress.XtraEditors.SimpleButton btnCategoria;
+        private DevExpress.XtraEditors.SimpleButton btnDespesa;
         private DevExpress.XtraEditors.SimpleButton btnEstoqueProduto;
     }
 }

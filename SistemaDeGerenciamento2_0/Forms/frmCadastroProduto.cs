@@ -511,6 +511,7 @@ namespace SistemaDeGerenciamento2_0.Forms
                         pd_tipo_produto = cmbTipoProduto.Text,
                         pd_tipo_unidade = txtTipoUnidade.Text,
                         pd_observacoes = txtObservacoes.Text,
+                        pd_usuario_cadastrador = frmLogin.UsuarioLogado,
                         fk_grupo = Convert.ToInt32(cmbGrupo.Properties.GetKeyValueByDisplayValue(cmbGrupo.Text)),
                         fk_registro_forncedor = Convert.ToInt32(cmbFornecedor.Properties.GetKeyValueByDisplayValue(cmbFornecedor.Text)),
                     };

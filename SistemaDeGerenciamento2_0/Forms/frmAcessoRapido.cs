@@ -76,6 +76,21 @@ namespace SistemaDeGerenciamento2_0.Forms
                     permissoesUsuario.ReloadData(frmTelaPrincipal, frmLogin.UsuarioLogado);
                     permissoesUsuario.VerificarAcessoTodosCadastros("Todos Os Cadastros");
                 }
+                else if (_btnSolitador == "Acesso Importar XML")
+                {
+                    permissoesUsuario.ReloadData(frmTelaPrincipal, frmLogin.UsuarioLogado);
+                    permissoesUsuario.VerificarAcessoFinanceiroImportarXML("Acesso Importar XML");
+                }
+                else if (_btnSolitador == "Acesso Despesa")
+                {
+                    permissoesUsuario.ReloadData(frmTelaPrincipal, frmLogin.UsuarioLogado);
+                    permissoesUsuario.VerificarAcessoFinanceiroDespesa("Acesso Despesa");
+                }
+                else if (_btnSolitador == "Acesso Categoria")
+                {
+                    permissoesUsuario.ReloadData(frmTelaPrincipal, frmLogin.UsuarioLogado);
+                    permissoesUsuario.VerificarAcessoFinanceiroCategoria("Acesso Categoria");
+                }
             }
         }
 
@@ -128,6 +143,21 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             frmConsultarEstoque frmConsultarEstoque = new frmConsultarEstoque();
             frmConsultarEstoque.ShowDialog();
+        }
+
+        private void btnImportar_Click(object sender, EventArgs e)
+        {
+            ReloadData("Acesso Importar XML");
+        }
+
+        private void btnDespesa_Click(object sender, EventArgs e)
+        {
+            ReloadData("Acesso Despesa");
+        }
+
+        private void btnCategoria_Click(object sender, EventArgs e)
+        {
+            ReloadData("Acesso Categoria");
         }
     }
 }
