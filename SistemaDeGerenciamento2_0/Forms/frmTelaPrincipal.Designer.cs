@@ -247,7 +247,6 @@
             this.btnImportarXML,
             this.btnDespesaContas,
             this.btnCategoriaDespesa});
-            this.Financeiro.Expanded = true;
             this.Financeiro.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.dollar_place_marker_30px;
             this.Financeiro.Name = "Financeiro";
             this.Financeiro.Text = "Financeiro";
@@ -298,7 +297,6 @@
             this.btnNovoFornecedor,
             this.btnNovoFuncionario,
             this.btnTodosOsCadastro});
-            this.Cadastro.Expanded = true;
             this.Cadastro.ImageOptions.Image = global::SistemaDeGerenciamento2_0.Properties.Resources.add_user_male_30px;
             this.Cadastro.Name = "Cadastro";
             this.Cadastro.Text = "Cadastros";

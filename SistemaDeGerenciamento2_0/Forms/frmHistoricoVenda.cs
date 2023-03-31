@@ -102,7 +102,12 @@ namespace SistemaDeGerenciamento2_0.Forms
 
             IsPreencherGrid = false;
 
+
+            if (Application.OpenForms.OfType<frmCalendario>().Any())
+            {
+                
             frmCalendario.Close();
+            }
         }
 
         private DataTable dt = new DataTable();

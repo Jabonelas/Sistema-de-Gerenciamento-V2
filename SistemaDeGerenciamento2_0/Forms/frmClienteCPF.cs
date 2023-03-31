@@ -87,8 +87,8 @@ namespace SistemaDeGerenciamento2_0.Forms
         {
             BuscarClientePeloCPF();
 
-            //frmPDV.clienteCPF = txtClienteCPF.Text;
-            //this.Close();
+            frmPDV.clienteCPF = txtClienteCPF.Text;
+            this.Close();
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
